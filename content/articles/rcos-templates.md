@@ -36,4 +36,4 @@ Adoption can be incremental. Partial RCOS compliance is still meaningful, as lon
 
 ## Languages and Downloads
 
-The templates are available in **English, German, Spanish, and French**. You can browse each artifact online, or [download the full bundle](/downloads) as a single package (Markdown, DOCX, or ODT) to edit offline with your group.
+The templates are available in **English, German, Spanish, and French**. You can browse each artifact online, or [download the full bundle](#downloads) as a single package (Markdown, DOCX, or ODT) to edit offline with your group.
