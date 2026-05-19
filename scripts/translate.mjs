@@ -423,25 +423,58 @@ function stripCodeFence(s) {
 	return m ? m[1] : s;
 }
 
+// Reasoning-leak phrases the model sometimes emits when it gets confused about
+// the output contract. Treat them as a signal that the response is malformed.
+// Patterns are case-insensitive and matched against the raw response and (after
+// recovery) the final body.
+const LEAK_MARKERS = [
+	/\bwait,?\s+let me\b/i,
+	/\blet me re-?read\b/i,
+	/\bI should output\s+only\b/i,
+	/\bapologies[,.]/i,
+	/\bwithout wrapping code fences?\b/i
+];
+
+function hasLeakMarkers(s) {
+	return LEAK_MARKERS.some((re) => re.test(s));
+}
+
 /**
- * Models occasionally leak a reasoning preamble ("Now I have good context for
- * terminology consistency. Let me produce the translation.") before the actual
- * markdown output, despite the prompt saying "output ONLY the translated
- * markdown". When that happens, the leading prose ends up in the body and the
- * intended frontmatter ends up inside the body too.
+ * Models occasionally leak a reasoning preamble before the actual translated
+ * markdown. Two known shapes:
  *
- * If we can find a frontmatter block (`---\n...\n---`) in the response, slice
- * the response from there and discard anything before it. That recovers a
- * well-formed file even when the model went chatty.
+ *   1. Plain leading aside ("Now I have good context for terminology
+ *      consistency. Let me produce the translation.") followed by the real
+ *      frontmatter. Trim everything before the frontmatter.
  *
- * Idempotent: a clean response (frontmatter at byte 0) passes through unchanged.
+ *   2. The model wraps its output in ```markdown … ``` fences, then mid-stream
+ *      "realizes" it shouldn't have, leaks a self-correction ("Wait, let me
+ *      re-read the instructions") and emits a SECOND corrected frontmatter
+ *      block. The first frontmatter ends up parsed as the document and its
+ *      body becomes a garbage mix of the close fence, the leaked aside, and
+ *      the corrected frontmatter as plain text.
+ *
+ * Strategy: find every `---\n…\n---\n?` block in the input. If there are
+ * multiple AND a leak marker appears anywhere in the response AND the last
+ * block has the structural fields of our frontmatter (`id:` + `title:`),
+ * prefer the LAST block — that's the model's self-correction. Otherwise,
+ * prefer the FIRST block and trim any plain preamble before it.
+ *
+ * Idempotent: a clean response (frontmatter at byte 0, no leak) passes
+ * through unchanged.
  */
 function trimPreamble(s) {
-	// Match a YAML frontmatter block anywhere in the string. Multiline-mode `^`
-	// means the opening `---` must be at the start of a line.
-	const fmMatch = s.match(/^---\r?\n[\s\S]*?\r?\n---\r?\n?/m);
-	if (!fmMatch || fmMatch.index === 0) return s; // no preamble to strip
-	return s.slice(fmMatch.index);
+	// Multiline-mode `^` so each `---` must start a line.
+	const fmRe = /^---\r?\n[\s\S]*?\r?\n---\r?\n?/gm;
+	const matches = [...s.matchAll(fmRe)];
+	if (matches.length === 0) return s;
+
+	const looksLikeOurFm = (m) => /^\s*id:/m.test(m[0]) && /^\s*title:/m.test(m[0]);
+	const useLast =
+		matches.length >= 2 && looksLikeOurFm(matches[matches.length - 1]) && hasLeakMarkers(s);
+
+	const target = useLast ? matches[matches.length - 1] : matches[0];
+	return target.index === 0 ? s : s.slice(target.index);
 }
 
 function finalizeOutput(translatedRaw, job) {
@@ -455,6 +488,14 @@ function finalizeOutput(translatedRaw, job) {
 	if (!fm.data.title || typeof fm.data.title !== 'string' || !fm.data.title.trim()) {
 		throw new Error(
 			`provider returned no translated \`title\` in frontmatter — refusing to write a broken file`
+		);
+	}
+
+	// If reasoning-leak text survived recovery, the body would render as
+	// garbage on the site. Better to fail and re-run than write it.
+	if (hasLeakMarkers(fm.content)) {
+		throw new Error(
+			`provider returned reasoning text that post-processing could not isolate — refusing to write a broken file. Re-run translation.`
 		);
 	}
 
