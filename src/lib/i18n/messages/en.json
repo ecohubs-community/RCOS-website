@@ -6,6 +6,7 @@
 	"stress_tests.coverage.uncovered": "Not yet covered",
 
 	"self_assessment.results_title": "Your most relevant stress tests",
+	"self_assessment.top_match": "Top match",
 	"self_assessment.empty": "Tick the signs that feel familiar below — your most relevant stress tests will appear here, most pressing first.",
 	"self_assessment.signs": "{count} of {total} signs",
 	"self_assessment.selected": "{n} selected",

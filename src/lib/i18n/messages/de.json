@@ -6,6 +6,7 @@
 	"stress_tests.coverage.uncovered": "Noch nicht abgedeckt",
 
 	"self_assessment.results_title": "Eure relevantesten Stresstests",
+	"self_assessment.top_match": "Beste Übereinstimmung",
 	"self_assessment.empty": "Hake unten die Anzeichen an, die dir bekannt vorkommen — eure relevantesten Stresstests erscheinen hier, die dringendsten zuerst.",
 	"self_assessment.signs": "{count} von {total} Anzeichen",
 	"self_assessment.selected": "{n} ausgewählt",

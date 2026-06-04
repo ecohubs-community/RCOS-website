@@ -6,6 +6,7 @@
 	"stress_tests.coverage.uncovered": "Aún no cubierta",
 
 	"self_assessment.results_title": "Vuestras pruebas de estrés más relevantes",
+	"self_assessment.top_match": "Mejor coincidencia",
 	"self_assessment.empty": "Marca abajo las señales que te resulten familiares — tus pruebas de estrés más relevantes aparecerán aquí, las más urgentes primero.",
 	"self_assessment.signs": "{count} de {total} señales",
 	"self_assessment.selected": "{n} seleccionadas",
