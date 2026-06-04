@@ -76,20 +76,21 @@ function layerOf(code: string): number {
 export async function buildCoverage(locale: string = DEFAULT_LOCALE): Promise<Coverage> {
   const meta = await readArticleMeta();
 
-  // Group by id so we can prefer the localized title while reading `invariants`
-  // (a structural field) from the default-locale source.
-  const byId = new Map<string, { source?: ArticleMeta; localized?: ArticleMeta }>();
+  // Group by slug (unique per article, identical across locales) so we can
+  // prefer the localized title while reading `invariants` (a structural field)
+  // from the default-locale source. NB: grouping by `id` would be wrong — some
+  // tests share a frontmatter id, which would collapse distinct tests.
+  const bySlug = new Map<string, { source?: ArticleMeta; localized?: ArticleMeta }>();
   for (const a of meta) {
-    const id = (a.id as string) || a.slug;
-    const g = byId.get(id) ?? {};
+    const g = bySlug.get(a.slug) ?? {};
     if ((a.lang ?? DEFAULT_LOCALE) === DEFAULT_LOCALE) g.source = a;
     if (a.lang === locale) g.localized = a;
-    byId.set(id, g);
+    bySlug.set(a.slug, g);
   }
 
   // code -> [{ title, slug }]
   const coveredBy = new Map<string, CoverageTestRef[]>();
-  for (const { source, localized } of byId.values()) {
+  for (const { source, localized } of bySlug.values()) {
     if (!source) continue;
     const slug = source.slug;
     // Leaf tests live at rcos-stress-tests/<category>/<test> (depth 3).

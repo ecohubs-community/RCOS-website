@@ -1,5 +1,5 @@
 ---
-id: 9e4c3b21
+id: 7b1c4e02
 title: Outsourced Labor Bypassing Contribution
 summary: When money quietly buys a way out of community life.
 parentId: cbd2804b

@@ -1,5 +1,5 @@
 ---
-id: 9e4c3b21
+id: 8c2d5f13
 title: Invisible Care Labor Burnout
 summary: When the community runs on the unpaid care of a quietly exhausted few.
 parentId: a9e4c65d

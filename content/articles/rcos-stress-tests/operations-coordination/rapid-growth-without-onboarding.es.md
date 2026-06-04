@@ -1,5 +1,5 @@
 ---
-id: 9e4c3b21
+id: 9d3e6a24
 title: Crecimiento rápido sin integración
 parentId: a9e4c65d
 order: 2

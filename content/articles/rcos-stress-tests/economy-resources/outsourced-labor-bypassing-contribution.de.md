@@ -1,5 +1,5 @@
 ---
-id: 9e4c3b21
+id: 7b1c4e02
 title: Ausgelagerte Arbeit umgeht Beitragspflicht
 parentId: cbd2804b
 order: 1
