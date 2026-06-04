@@ -1,4 +1,10 @@
 {
+	"stress_tests.coverage.title": "Couverture des invariants",
+	"stress_tests.coverage.subtitle": "Chaque invariant RCOS et les tests de résistance qui le sollicitent actuellement.",
+	"stress_tests.coverage.summary": "{covered} sur {total} invariants couverts",
+	"stress_tests.coverage.layer": "Couche {n}",
+	"stress_tests.coverage.uncovered": "Pas encore couvert",
+
 	"site.name": "RCOS — Système d'Exploitation de Communauté Régénérative",
 	"site.short_name": "RCOS",
 	"site.tagline": "Blueprint / RCOS",

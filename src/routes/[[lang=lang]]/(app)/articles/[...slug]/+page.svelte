@@ -6,6 +6,7 @@
   import SEO from '$lib/components/seo/SEO.svelte';
   import { buildArticleSchema, buildBreadcrumbSchema } from '$lib/utils/jsonld';
   import TemplateDownloads from '$lib/components/templates/TemplateDownloads.svelte';
+  import CoverageMatrix from '$lib/components/articles/CoverageMatrix.svelte';
   import LocaleFallbackBanner from '$lib/components/i18n/LocaleFallbackBanner.svelte';
   import { m } from '$lib/i18n';
   import { localized } from '$lib/i18n/path';
@@ -116,6 +117,13 @@
             </Card>
           {/each}
         </div>
+      </section>
+    {/if}
+
+    <!-- Invariant coverage matrix (Stress Tests index only) -->
+    {#if data.coverage}
+      <section class="pt-8 border-t border-border">
+        <CoverageMatrix coverage={data.coverage} {locale} />
       </section>
     {/if}
 

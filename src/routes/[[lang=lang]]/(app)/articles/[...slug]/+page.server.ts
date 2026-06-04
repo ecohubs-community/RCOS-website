@@ -1,8 +1,12 @@
 import { buildGraph } from '$lib/server/graph';
 import { readArticleBody } from '$lib/server/content';
 import { getArticleDownloads } from '$lib/server/downloads';
+import { buildCoverage } from '$lib/server/coverage';
 import { DEFAULT_LOCALE } from '$lib/i18n/languages';
 import type { EntryGenerator, PageServerLoad } from './$types';
+
+/** Slug of the Stress Tests index, which additionally renders an invariant-coverage matrix. */
+const STRESS_TESTS_INDEX_SLUG = 'rcos-stress-tests';
 
 export const entries: EntryGenerator = async () => {
   // Use the default-locale graph for entry enumeration. Non-default locale
@@ -26,6 +30,11 @@ export const load: PageServerLoad = async ({ params }) => {
   const breadcrumbs = meta ? buildBreadcrumbs(graph.articles, meta.id) : [];
   const parent = meta?.parentId ? graph.articles.find((a) => a.id === meta.parentId) : undefined;
 
+  // Only the Stress Tests index renders the coverage matrix; skip the extra
+  // content scan on every other article page.
+  const coverage =
+    params.slug === STRESS_TESTS_INDEX_SLUG ? await buildCoverage(locale) : null;
+
   return {
     article: meta ?? null,
     breadcrumbs,
@@ -34,6 +43,7 @@ export const load: PageServerLoad = async ({ params }) => {
     bodyLang: article?.lang ?? locale,
     bodyIsFallback: article?.isFallback ?? false,
     downloads,
+    coverage,
     availableLocales: meta?.availableLocales ?? [DEFAULT_LOCALE]
   };
 };
