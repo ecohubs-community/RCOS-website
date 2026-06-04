@@ -2,11 +2,14 @@ import { buildGraph } from '$lib/server/graph';
 import { readArticleBody } from '$lib/server/content';
 import { getArticleDownloads } from '$lib/server/downloads';
 import { buildCoverage } from '$lib/server/coverage';
+import { buildAssessment } from '$lib/server/assessment';
 import { DEFAULT_LOCALE } from '$lib/i18n/languages';
 import type { EntryGenerator, PageServerLoad } from './$types';
 
 /** Slug of the Stress Tests index, which additionally renders an invariant-coverage matrix. */
 const STRESS_TESTS_INDEX_SLUG = 'rcos-stress-tests';
+/** Slug of the self-assessment page, which renders the interactive symptom checklist. */
+const SELF_ASSESSMENT_SLUG = 'rcos-stress-tests/self-assessment';
 
 export const entries: EntryGenerator = async () => {
   // Use the default-locale graph for entry enumeration. Non-default locale
@@ -34,6 +37,8 @@ export const load: PageServerLoad = async ({ params }) => {
   // content scan on every other article page.
   const coverage =
     params.slug === STRESS_TESTS_INDEX_SLUG ? await buildCoverage(locale) : null;
+  const assessment =
+    params.slug === SELF_ASSESSMENT_SLUG ? await buildAssessment(locale) : null;
 
   return {
     article: meta ?? null,
@@ -44,6 +49,7 @@ export const load: PageServerLoad = async ({ params }) => {
     bodyIsFallback: article?.isFallback ?? false,
     downloads,
     coverage,
+    assessment,
     availableLocales: meta?.availableLocales ?? [DEFAULT_LOCALE]
   };
 };

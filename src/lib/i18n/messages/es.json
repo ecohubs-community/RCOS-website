@@ -5,6 +5,16 @@
 	"stress_tests.coverage.layer": "Capa {n}",
 	"stress_tests.coverage.uncovered": "Aún no cubierta",
 
+	"self_assessment.results_title": "Vuestras pruebas de estrés más relevantes",
+	"self_assessment.empty": "Marca abajo las señales que te resulten familiares — tus pruebas de estrés más relevantes aparecerán aquí, las más urgentes primero.",
+	"self_assessment.signs": "{count} de {total} señales",
+	"self_assessment.selected": "{n} seleccionadas",
+	"self_assessment.clear": "Borrar todo",
+	"self_assessment.prevent_with": "Construir primero",
+	"self_assessment.severity.high": "Gravedad alta",
+	"self_assessment.severity.medium": "Gravedad media",
+	"self_assessment.severity.low": "Gravedad baja",
+
 	"site.name": "RCOS — Sistema Operativo de Comunidad Regenerativa",
 	"site.short_name": "RCOS",
 	"site.tagline": "Blueprint / RCOS",

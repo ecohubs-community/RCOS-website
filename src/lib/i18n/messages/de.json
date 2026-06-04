@@ -5,6 +5,16 @@
 	"stress_tests.coverage.layer": "Schicht {n}",
 	"stress_tests.coverage.uncovered": "Noch nicht abgedeckt",
 
+	"self_assessment.results_title": "Eure relevantesten Stresstests",
+	"self_assessment.empty": "Hake unten die Anzeichen an, die dir bekannt vorkommen — eure relevantesten Stresstests erscheinen hier, die dringendsten zuerst.",
+	"self_assessment.signs": "{count} von {total} Anzeichen",
+	"self_assessment.selected": "{n} ausgewählt",
+	"self_assessment.clear": "Alle zurücksetzen",
+	"self_assessment.prevent_with": "Zuerst aufbauen",
+	"self_assessment.severity.high": "Hohe Schwere",
+	"self_assessment.severity.medium": "Mittlere Schwere",
+	"self_assessment.severity.low": "Geringe Schwere",
+
 	"site.name": "RCOS – Regenerative Community Operating System",
 	"site.short_name": "RCOS",
 	"site.tagline": "Blueprint / RCOS",

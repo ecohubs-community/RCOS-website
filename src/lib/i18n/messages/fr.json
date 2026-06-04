@@ -5,6 +5,16 @@
 	"stress_tests.coverage.layer": "Couche {n}",
 	"stress_tests.coverage.uncovered": "Pas encore couvert",
 
+	"self_assessment.results_title": "Vos tests de résistance les plus pertinents",
+	"self_assessment.empty": "Cochez ci-dessous les signes qui vous semblent familiers — vos tests de résistance les plus pertinents apparaîtront ici, les plus urgents d'abord.",
+	"self_assessment.signs": "{count} sur {total} signes",
+	"self_assessment.selected": "{n} sélectionné(s)",
+	"self_assessment.clear": "Tout effacer",
+	"self_assessment.prevent_with": "À construire en priorité",
+	"self_assessment.severity.high": "Gravité élevée",
+	"self_assessment.severity.medium": "Gravité moyenne",
+	"self_assessment.severity.low": "Gravité faible",
+
 	"site.name": "RCOS — Système d'Exploitation de Communauté Régénérative",
 	"site.short_name": "RCOS",
 	"site.tagline": "Blueprint / RCOS",

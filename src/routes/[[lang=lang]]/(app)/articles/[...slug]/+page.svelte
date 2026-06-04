@@ -7,6 +7,7 @@
   import { buildArticleSchema, buildBreadcrumbSchema } from '$lib/utils/jsonld';
   import TemplateDownloads from '$lib/components/templates/TemplateDownloads.svelte';
   import CoverageMatrix from '$lib/components/articles/CoverageMatrix.svelte';
+  import SelfAssessment from '$lib/components/articles/SelfAssessment.svelte';
   import LocaleFallbackBanner from '$lib/components/i18n/LocaleFallbackBanner.svelte';
   import { m } from '$lib/i18n';
   import { localized } from '$lib/i18n/path';
@@ -88,6 +89,10 @@
         <p class="text-text-tertiary italic">{m('articles.no_content')}</p>
       {/if}
     </article>
+
+    {#if data.assessment}
+      <SelfAssessment assessment={data.assessment} {locale} />
+    {/if}
 
     {#if data.downloads && data.downloads.type === 'index'}
       <TemplateDownloads downloads={data.downloads} />

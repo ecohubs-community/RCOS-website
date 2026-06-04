@@ -5,6 +5,16 @@
 	"stress_tests.coverage.layer": "Layer {n}",
 	"stress_tests.coverage.uncovered": "Not yet covered",
 
+	"self_assessment.results_title": "Your most relevant stress tests",
+	"self_assessment.empty": "Tick the signs that feel familiar below — your most relevant stress tests will appear here, most pressing first.",
+	"self_assessment.signs": "{count} of {total} signs",
+	"self_assessment.selected": "{n} selected",
+	"self_assessment.clear": "Clear all",
+	"self_assessment.prevent_with": "Build first",
+	"self_assessment.severity.high": "High severity",
+	"self_assessment.severity.medium": "Medium severity",
+	"self_assessment.severity.low": "Low severity",
+
 	"site.name": "RCOS - Regenerative Community Operating System",
 	"site.short_name": "RCOS",
 	"site.tagline": "Blueprint / RCOS",
