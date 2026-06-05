@@ -155,7 +155,7 @@
     {#each assessment.categories as cat (cat.key)}
       <div>
         <h3 class="mb-3 text-sm font-semibold uppercase tracking-wide text-text-tertiary">
-          {cat.title}
+          {m(`self_assessment.category.${cat.key}`)}
         </h3>
         <div class="space-y-4">
           {#each cat.tests as test (test.slug)}

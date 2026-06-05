@@ -78,7 +78,10 @@ export async function buildAssessment(locale: string = DEFAULT_LOCALE): Promise<
     // Leaf tests only: rcos-stress-tests/<category>/<test>.
     if (parts[0] !== 'rcos-stress-tests' || parts.length !== 3) continue;
 
-    const symptoms = stringList(source.symptoms);
+    // Symptoms (the checkbox labels) must come from the localized entry so they
+    // render in the requested locale; fall back to the source if untranslated.
+    const localizedSymptoms = stringList(g.localized?.symptoms);
+    const symptoms = localizedSymptoms.length ? localizedSymptoms : stringList(source.symptoms);
     if (symptoms.length === 0) continue;
 
     const category = parts[1];

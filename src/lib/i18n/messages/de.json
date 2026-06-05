@@ -15,6 +15,13 @@
 	"self_assessment.severity.high": "Hohe Schwere",
 	"self_assessment.severity.medium": "Mittlere Schwere",
 	"self_assessment.severity.low": "Geringe Schwere",
+	"self_assessment.category.governance-power": "Governance & Macht",
+	"self_assessment.category.conflict-accountability": "Konflikt & Rechenschaft",
+	"self_assessment.category.culture-influence": "Kultur & Einfluss",
+	"self_assessment.category.economy-resources": "Wirtschaft & Ressourcen",
+	"self_assessment.category.membership-boundaries": "Mitgliedschaft & Grenzen",
+	"self_assessment.category.operations-coordination": "Betrieb & Koordination",
+	"self_assessment.category.change-emergencies": "Wandel & Notfälle",
 
 	"site.name": "RCOS – Regenerative Community Operating System",
 	"site.short_name": "RCOS",
