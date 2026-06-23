@@ -3,13 +3,13 @@
 # Version History
 
 - **Generated:** 2026-04-29
-- **Source (latest version):** [https://blueprint.ecohubs.community/articles/rcos-templates/layer-6/version-history](https://blueprint.ecohubs.community/articles/rcos-templates/layer-6/version-history)
-- **All RCOS templates:** [https://blueprint.ecohubs.community/articles/rcos-templates](https://blueprint.ecohubs.community/articles/rcos-templates)
+- **Source (latest version):** [https://rcos.ecohubs.community/articles/rcos-templates/layer-6/version-history](https://rcos.ecohubs.community/articles/rcos-templates/layer-6/version-history)
+- **All RCOS templates:** [https://rcos.ecohubs.community/articles/rcos-templates](https://rcos.ecohubs.community/articles/rcos-templates)
 
 ---
 - **Layer:** 6 — Evolution & Adaptation
 - **Status:** Template — adapt for your community; updated with each adopted change
-- **RCOS reference:** [§8.2](https://blueprint.ecohubs.community/articles/rcos-core/v0-1/layer-6-evolution-adaptation#82-versioning-and-authority), [§8.6](https://blueprint.ecohubs.community/articles/rcos-core/v0-1/layer-6-evolution-adaptation#86-artifacts)
+- **RCOS reference:** [§8.2](https://rcos.ecohubs.community/articles/rcos-core/v0-1/layer-6-evolution-adaptation#82-versioning-and-authority), [§8.6](https://rcos.ecohubs.community/articles/rcos-core/v0-1/layer-6-evolution-adaptation#86-artifacts)
 
 > The authoritative human-readable record of all adopted changes to your community's RCOS implementation. The currently active version is the most recent entry at the top of this file. Superseded rules remain accessible via version control.
 
@@ -17,7 +17,7 @@
 
 ## Entry Format
 
-*RCOS clauses: [8.2.1](https://blueprint.ecohubs.community/articles/rcos-core/v0-1/layer-6-evolution-adaptation#82-versioning-and-authority), [8.2.2](https://blueprint.ecohubs.community/articles/rcos-core/v0-1/layer-6-evolution-adaptation#82-versioning-and-authority), [8.2.3](https://blueprint.ecohubs.community/articles/rcos-core/v0-1/layer-6-evolution-adaptation#82-versioning-and-authority), [8.2.4](https://blueprint.ecohubs.community/articles/rcos-core/v0-1/layer-6-evolution-adaptation#82-versioning-and-authority), [8.2.5](https://blueprint.ecohubs.community/articles/rcos-core/v0-1/layer-6-evolution-adaptation#82-versioning-and-authority), [8.6.4](https://blueprint.ecohubs.community/articles/rcos-core/v0-1/layer-6-evolution-adaptation#86-artifacts), [8.7.2](https://blueprint.ecohubs.community/articles/rcos-core/v0-1/layer-6-evolution-adaptation#87-layer-invariants)*
+*RCOS clauses: [8.2.1](https://rcos.ecohubs.community/articles/rcos-core/v0-1/layer-6-evolution-adaptation#82-versioning-and-authority), [8.2.2](https://rcos.ecohubs.community/articles/rcos-core/v0-1/layer-6-evolution-adaptation#82-versioning-and-authority), [8.2.3](https://rcos.ecohubs.community/articles/rcos-core/v0-1/layer-6-evolution-adaptation#82-versioning-and-authority), [8.2.4](https://rcos.ecohubs.community/articles/rcos-core/v0-1/layer-6-evolution-adaptation#82-versioning-and-authority), [8.2.5](https://rcos.ecohubs.community/articles/rcos-core/v0-1/layer-6-evolution-adaptation#82-versioning-and-authority), [8.6.4](https://rcos.ecohubs.community/articles/rcos-core/v0-1/layer-6-evolution-adaptation#86-artifacts), [8.7.2](https://rcos.ecohubs.community/articles/rcos-core/v0-1/layer-6-evolution-adaptation#87-layer-invariants)*
 
 <details data-kind="rationale">
 <summary>Why record every adopted change?</summary>

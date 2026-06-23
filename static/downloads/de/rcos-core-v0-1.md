@@ -3,7 +3,7 @@
 # RCOS-Kernspezifikation — v0.1
 
 - **Generiert:** 2026-04-29
-- **Quelle (aktuelle Version):** [https://blueprint.ecohubs.community/de/articles/rcos-core/v0-1](https://blueprint.ecohubs.community/de/articles/rcos-core/v0-1)
+- **Quelle (aktuelle Version):** [https://rcos.ecohubs.community/de/articles/rcos-core/v0-1](https://rcos.ecohubs.community/de/articles/rcos-core/v0-1)
 
 - Status: Entwurf
 - Version: RCOS-Core v0.1
@@ -219,7 +219,7 @@ RCOS verwandelt:
 
 ### Bekannte Fehlermodi, die RCOS verhindern soll
 
-Siehe [RCOS-Stresstests](https://blueprint.ecohubs.community/de/articles/rcos-stress-tests?id=6acbe9a7)
+Siehe [RCOS-Stresstests](https://rcos.ecohubs.community/de/articles/rcos-stress-tests?id=6acbe9a7)
 
 ## Referenzimplementierungen
 
@@ -287,7 +287,7 @@ damit Fürsorge, Autonomie und Regeneration etwas Solides haben, worauf sie steh
 
 ## Änderungsprotokoll
 
-- [v0.1](https://blueprint.ecohubs.community/de/articles/rcos-core/v0-1?id=e6de7a5d) — Erste Version
+- [v0.1](https://rcos.ecohubs.community/de/articles/rcos-core/v0-1?id=e6de7a5d) — Erste Version
 
 
 ---

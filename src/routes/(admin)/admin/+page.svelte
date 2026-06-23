@@ -227,7 +227,7 @@
 					</div>
 					{#if stats.openPRs > 0}
 						<a
-							href="https://github.com/ecohubs-community/regenerative-community-blueprint/pulls"
+							href="https://github.com/ecohubs-community/RCOS-website/pulls"
 							target="_blank"
 							rel="noopener noreferrer"
 							class="px-3 py-1.5 text-sm font-medium text-green-700 bg-green-100 rounded-lg hover:bg-green-200 transition-colors"

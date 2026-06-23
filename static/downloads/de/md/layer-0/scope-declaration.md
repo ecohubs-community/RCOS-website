@@ -3,19 +3,19 @@
 # Geltungsbereichserklärung
 
 - **Generiert:** 2026-04-29
-- **Quelle (aktuelle Version):** [https://blueprint.ecohubs.community/de/articles/rcos-templates/layer-0/scope-declaration](https://blueprint.ecohubs.community/de/articles/rcos-templates/layer-0/scope-declaration)
-- **Alle RCOS-Vorlagen:** [https://blueprint.ecohubs.community/de/articles/rcos-templates](https://blueprint.ecohubs.community/de/articles/rcos-templates)
+- **Quelle (aktuelle Version):** [https://rcos.ecohubs.community/de/articles/rcos-templates/layer-0/scope-declaration](https://rcos.ecohubs.community/de/articles/rcos-templates/layer-0/scope-declaration)
+- **Alle RCOS-Vorlagen:** [https://rcos.ecohubs.community/de/articles/rcos-templates](https://rcos.ecohubs.community/de/articles/rcos-templates)
 
 ---
 - **Layer:** 0 — Identität & Geltungsbereich
 - **Status:** Vorlage — an eure Gemeinschaft anpassen
-- **RCOS-Referenz:** [§2.2](https://blueprint.ecohubs.community/de/articles/rcos-core/v0-1/layer-0-identity-scope#22-scope-declaration), [§2.5](https://blueprint.ecohubs.community/de/articles/rcos-core/v0-1/layer-0-identity-scope#25-artifacts)
+- **RCOS-Referenz:** [§2.2](https://rcos.ecohubs.community/de/articles/rcos-core/v0-1/layer-0-identity-scope#22-scope-declaration), [§2.5](https://rcos.ecohubs.community/de/articles/rcos-core/v0-1/layer-0-identity-scope#25-artifacts)
 
 ---
 
 ## Erfasste Vermögenswerte
 
-*RCOS-Klauseln: [2.2.1](https://blueprint.ecohubs.community/de/articles/rcos-core/v0-1/layer-0-identity-scope#22-scope-declaration), [2.2.2](https://blueprint.ecohubs.community/de/articles/rcos-core/v0-1/layer-0-identity-scope#22-scope-declaration), [2.2.4](https://blueprint.ecohubs.community/de/articles/rcos-core/v0-1/layer-0-identity-scope#22-scope-declaration)*
+*RCOS-Klauseln: [2.2.1](https://rcos.ecohubs.community/de/articles/rcos-core/v0-1/layer-0-identity-scope#22-scope-declaration), [2.2.2](https://rcos.ecohubs.community/de/articles/rcos-core/v0-1/layer-0-identity-scope#22-scope-declaration), [2.2.4](https://rcos.ecohubs.community/de/articles/rcos-core/v0-1/layer-0-identity-scope#22-scope-declaration)*
 
 <details data-kind="rationale">
 <summary>Warum jeden verwalteten Vermögenswert aufzählen?</summary>
@@ -38,7 +38,7 @@ Liste jeden Vermögenswert auf, den die Gemeinschaft gemeinsam verwaltet: gemein
 
 ## Erfasste Entscheidungsbereiche
 
-*RCOS-Klauseln: [2.2.1](https://blueprint.ecohubs.community/de/articles/rcos-core/v0-1/layer-0-identity-scope#22-scope-declaration), [2.2.2](https://blueprint.ecohubs.community/de/articles/rcos-core/v0-1/layer-0-identity-scope#22-scope-declaration)*
+*RCOS-Klauseln: [2.2.1](https://rcos.ecohubs.community/de/articles/rcos-core/v0-1/layer-0-identity-scope#22-scope-declaration), [2.2.2](https://rcos.ecohubs.community/de/articles/rcos-core/v0-1/layer-0-identity-scope#22-scope-declaration)*
 
 <details data-kind="rationale">
 <summary>Warum Entscheidungsbereiche benennen, nicht nur Vermögenswerte?</summary>
@@ -61,7 +61,7 @@ Liste die Kategorien von Entscheidungen auf, über die die Gemeinschaft Autorit�
 
 ## Erfasste Aktivitäten und Verantwortlichkeiten
 
-*RCOS-Klauseln: [2.2.1](https://blueprint.ecohubs.community/de/articles/rcos-core/v0-1/layer-0-identity-scope#22-scope-declaration), [2.2.2](https://blueprint.ecohubs.community/de/articles/rcos-core/v0-1/layer-0-identity-scope#22-scope-declaration)*
+*RCOS-Klauseln: [2.2.1](https://rcos.ecohubs.community/de/articles/rcos-core/v0-1/layer-0-identity-scope#22-scope-declaration), [2.2.2](https://rcos.ecohubs.community/de/articles/rcos-core/v0-1/layer-0-identity-scope#22-scope-declaration)*
 
 <details data-kind="rationale">
 <summary>Warum die Arbeit deklarieren, die der Gemeinschaft gehört?</summary>
@@ -84,7 +84,7 @@ Liste die laufenden Aktivitäten auf, für die die Gemeinschaft verantwortlich i
 
 ## Ausdrücklich nicht erfasst
 
-*RCOS-Klauseln: [2.2.3](https://blueprint.ecohubs.community/de/articles/rcos-core/v0-1/layer-0-identity-scope#22-scope-declaration), [2.2.4](https://blueprint.ecohubs.community/de/articles/rcos-core/v0-1/layer-0-identity-scope#22-scope-declaration), [2.2.5](https://blueprint.ecohubs.community/de/articles/rcos-core/v0-1/layer-0-identity-scope#22-scope-declaration)*
+*RCOS-Klauseln: [2.2.3](https://rcos.ecohubs.community/de/articles/rcos-core/v0-1/layer-0-identity-scope#22-scope-declaration), [2.2.4](https://rcos.ecohubs.community/de/articles/rcos-core/v0-1/layer-0-identity-scope#22-scope-declaration), [2.2.5](https://rcos.ecohubs.community/de/articles/rcos-core/v0-1/layer-0-identity-scope#22-scope-declaration)*
 
 <details data-kind="rationale">
 <summary>Warum benennen, was die Gemeinschaft nicht anfassen darf?</summary>

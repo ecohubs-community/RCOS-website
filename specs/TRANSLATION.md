@@ -1,8 +1,8 @@
-# Translation Plan for RCOS Blueprint
+# Translation Plan for RCOS Standard
 
 ## Overview
 
-This document describes how to add multi-language support to the RCOS Blueprint platform. The system has **four** distinct translation surfaces, each with its own strategy:
+This document describes how to add multi-language support to the RCOS Standard platform. The system has **four** distinct translation surfaces, each with its own strategy:
 
 1. **Articles** (~80 markdown files in `content/articles/`) — the core knowledge base, including the `rcos-core` spec and the `rcos-templates` library.
 2. **Website UI** (~50 strings hardcoded across ~15 Svelte components) — navigation, buttons, headings, the search box.
@@ -649,20 +649,20 @@ Resulting fragment (one article available in `en` + `de`):
 
 ```xml
 <url>
-  <loc>https://blueprint.ecohubs.community/articles/rcos-core</loc>
+  <loc>https://rcos.ecohubs.community/articles/rcos-core</loc>
   <changefreq>weekly</changefreq>
   <priority>0.6</priority>
-  <xhtml:link rel="alternate" hreflang="en" href="https://blueprint.ecohubs.community/articles/rcos-core" />
-  <xhtml:link rel="alternate" hreflang="de" href="https://blueprint.ecohubs.community/de/articles/rcos-core" />
-  <xhtml:link rel="alternate" hreflang="x-default" href="https://blueprint.ecohubs.community/articles/rcos-core" />
+  <xhtml:link rel="alternate" hreflang="en" href="https://rcos.ecohubs.community/articles/rcos-core" />
+  <xhtml:link rel="alternate" hreflang="de" href="https://rcos.ecohubs.community/de/articles/rcos-core" />
+  <xhtml:link rel="alternate" hreflang="x-default" href="https://rcos.ecohubs.community/articles/rcos-core" />
 </url>
 <url>
-  <loc>https://blueprint.ecohubs.community/de/articles/rcos-core</loc>
+  <loc>https://rcos.ecohubs.community/de/articles/rcos-core</loc>
   <changefreq>weekly</changefreq>
   <priority>0.6</priority>
-  <xhtml:link rel="alternate" hreflang="en" href="https://blueprint.ecohubs.community/articles/rcos-core" />
-  <xhtml:link rel="alternate" hreflang="de" href="https://blueprint.ecohubs.community/de/articles/rcos-core" />
-  <xhtml:link rel="alternate" hreflang="x-default" href="https://blueprint.ecohubs.community/articles/rcos-core" />
+  <xhtml:link rel="alternate" hreflang="en" href="https://rcos.ecohubs.community/articles/rcos-core" />
+  <xhtml:link rel="alternate" hreflang="de" href="https://rcos.ecohubs.community/de/articles/rcos-core" />
+  <xhtml:link rel="alternate" hreflang="x-default" href="https://rcos.ecohubs.community/articles/rcos-core" />
 </url>
 ```
 

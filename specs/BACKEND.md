@@ -8,7 +8,7 @@ This document provides a full technical overview of the **EcoHubs Backend**, inc
 
 The backend is a **SvelteKit 5** application designed specifically for:
 
-- Decentralized editing of the EcoHubs Community Blueprint
+- Decentralized editing of the EcoHubs Community Standard
 - GitHub-backed version control (branches, commits, PRs)
 - GitHub membership authentication
 - Custom content model (Domains → Topics → Modules → Articles)
@@ -124,7 +124,7 @@ A rich editor similar to Notion/Outline/Ghost:
 
 # 4. Core Data Model
 
-All blueprint elements live inside `/content/`:
+All RCOS Standard elements live inside `/content/`:
 
 ```
 content/
@@ -411,7 +411,7 @@ This backend design enables:
 
 - True decentralized collaboration
 - Git-native workflows (branches, commits, PRs)
-- A custom editorial UX tailored to the EcoHubs blueprint
+- A custom editorial UX tailored to the EcoHubs RCOS standard
 - Rich Markdown editing
 - Full control over authorization and branch policies
 - Future integration with Snapshot and DAO voting

@@ -3,13 +3,13 @@
 # Experiment Template
 
 - **Generated:** 2026-04-29
-- **Source (latest version):** [https://blueprint.ecohubs.community/articles/rcos-templates/layer-6/experiment-template](https://blueprint.ecohubs.community/articles/rcos-templates/layer-6/experiment-template)
-- **All RCOS templates:** [https://blueprint.ecohubs.community/articles/rcos-templates](https://blueprint.ecohubs.community/articles/rcos-templates)
+- **Source (latest version):** [https://rcos.ecohubs.community/articles/rcos-templates/layer-6/experiment-template](https://rcos.ecohubs.community/articles/rcos-templates/layer-6/experiment-template)
+- **All RCOS templates:** [https://rcos.ecohubs.community/articles/rcos-templates](https://rcos.ecohubs.community/articles/rcos-templates)
 
 ---
 - **Layer:** 6 — Evolution & Adaptation
 - **Status:** Template — use to propose a time-bounded experiment
-- **RCOS reference:** [§8.3](https://blueprint.ecohubs.community/articles/rcos-core/v0-1/layer-6-evolution-adaptation#83-experiments), [§8.7](https://blueprint.ecohubs.community/articles/rcos-core/v0-1/layer-6-evolution-adaptation#87-layer-invariants)
+- **RCOS reference:** [§8.3](https://rcos.ecohubs.community/articles/rcos-core/v0-1/layer-6-evolution-adaptation#83-experiments), [§8.7](https://rcos.ecohubs.community/articles/rcos-core/v0-1/layer-6-evolution-adaptation#87-layer-invariants)
 
 > Experiments let the community try a change without permanently adopting it. To stay safe, every experiment must be time-bounded, labeled, and auto-expiring — and must record its results in the Learning Log.
 
@@ -17,7 +17,7 @@
 
 ## Required Fields
 
-*RCOS clauses: [8.3.1](https://blueprint.ecohubs.community/articles/rcos-core/v0-1/layer-6-evolution-adaptation#83-experiments), [8.3.2](https://blueprint.ecohubs.community/articles/rcos-core/v0-1/layer-6-evolution-adaptation#83-experiments), [8.3.3](https://blueprint.ecohubs.community/articles/rcos-core/v0-1/layer-6-evolution-adaptation#83-experiments), [8.3.4](https://blueprint.ecohubs.community/articles/rcos-core/v0-1/layer-6-evolution-adaptation#83-experiments), [8.3.5](https://blueprint.ecohubs.community/articles/rcos-core/v0-1/layer-6-evolution-adaptation#83-experiments), [8.7.3](https://blueprint.ecohubs.community/articles/rcos-core/v0-1/layer-6-evolution-adaptation#87-layer-invariants)*
+*RCOS clauses: [8.3.1](https://rcos.ecohubs.community/articles/rcos-core/v0-1/layer-6-evolution-adaptation#83-experiments), [8.3.2](https://rcos.ecohubs.community/articles/rcos-core/v0-1/layer-6-evolution-adaptation#83-experiments), [8.3.3](https://rcos.ecohubs.community/articles/rcos-core/v0-1/layer-6-evolution-adaptation#83-experiments), [8.3.4](https://rcos.ecohubs.community/articles/rcos-core/v0-1/layer-6-evolution-adaptation#83-experiments), [8.3.5](https://rcos.ecohubs.community/articles/rcos-core/v0-1/layer-6-evolution-adaptation#83-experiments), [8.7.3](https://rcos.ecohubs.community/articles/rcos-core/v0-1/layer-6-evolution-adaptation#87-layer-invariants)*
 
 <details data-kind="rationale">
 <summary>Why require these fields?</summary>

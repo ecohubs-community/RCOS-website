@@ -51,7 +51,7 @@ const TEMPLATES_DIR = path.join(ROOT, 'content/articles/rcos-templates');
 const OUT_DIR = path.join(ROOT, 'static/downloads');
 const LOGO_PNG = path.join(__dirname, 'logo.png');
 
-const SITE_URL = process.env.PUBLIC_APP_URL || 'https://blueprint.ecohubs.community';
+const SITE_URL = process.env.PUBLIC_APP_URL || 'https://rcos.ecohubs.community';
 const DEFAULT_LOCALE = 'en';
 
 const FORMATS = ['md', 'docx', 'odt'];

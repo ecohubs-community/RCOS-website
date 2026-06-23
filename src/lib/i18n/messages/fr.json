@@ -25,7 +25,7 @@
 
 	"site.name": "RCOS — Système d'Exploitation de Communauté Régénérative",
 	"site.short_name": "RCOS",
-	"site.tagline": "Blueprint / RCOS",
+	"site.tagline": "RCOS Standard",
 	"site.description": "RCOS est un système ouvert et partagé pour organiser des communautés intentionnelles. Des structures claires et prêtes à l'emploi pour la prise de décision, les rôles, le partage des ressources et la gestion des conflits.",
 	"site.brand": "EcoHubs",
 
@@ -109,7 +109,7 @@
 	"downloads.template_fallback_inline": "Pas encore traduit — le fichier est servi en {served}.",
 	"downloads.template_fallback_tooltip": "Pas encore traduit dans la langue sélectionnée — remplacé par la version anglaise.",
 
-	"footer.brand_prefix": "RCOS Blueprint par",
+	"footer.brand_prefix": "RCOS Standard par",
 	"footer.tagline": "Un système d'exploitation modulaire qui définit comment s'organisent les communautés intentionnelles — de la gouvernance et des rôles au partage des ressources et à la résolution des conflits — au service de la résilience, de l'équité et de la régénération.",
 	"footer.section.resources": "Ressources",
 	"footer.link.about_us": "À propos de nous",

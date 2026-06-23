@@ -3,13 +3,13 @@
 # Registro de Restricciones de Identidad
 
 - **Generado:** 2026-04-29
-- **Fuente (versión más reciente):** [https://blueprint.ecohubs.community/es/articles/rcos-templates/layer-0/identity-constraints-register](https://blueprint.ecohubs.community/es/articles/rcos-templates/layer-0/identity-constraints-register)
-- **Todas las plantillas RCOS:** [https://blueprint.ecohubs.community/es/articles/rcos-templates](https://blueprint.ecohubs.community/es/articles/rcos-templates)
+- **Fuente (versión más reciente):** [https://rcos.ecohubs.community/es/articles/rcos-templates/layer-0/identity-constraints-register](https://rcos.ecohubs.community/es/articles/rcos-templates/layer-0/identity-constraints-register)
+- **Todas las plantillas RCOS:** [https://rcos.ecohubs.community/es/articles/rcos-templates](https://rcos.ecohubs.community/es/articles/rcos-templates)
 
 ---
 - **Capa:** 0 — Identidad y Alcance
 - **Estado:** Plantilla — adaptar para tu comunidad
-- **Referencia RCOS:** [§2.4](https://blueprint.ecohubs.community/es/articles/rcos-core/v0-1/layer-0-identity-scope#24-identity-constraints), [§2.5](https://blueprint.ecohubs.community/es/articles/rcos-core/v0-1/layer-0-identity-scope#25-artifacts)
+- **Referencia RCOS:** [§2.4](https://rcos.ecohubs.community/es/articles/rcos-core/v0-1/layer-0-identity-scope#24-identity-constraints), [§2.5](https://rcos.ecohubs.community/es/articles/rcos-core/v0-1/layer-0-identity-scope#25-artifacts)
 
 > Las restricciones de identidad son los límites conductuales, éticos y estructurales no negociables que definen quién es la comunidad. A diferencia de los invariantes (que protegen el sistema en sí), las restricciones de identidad definen cómo los miembros y la comunidad se relacionan con las personas, los ecosistemas y las ideologías.
 
@@ -17,7 +17,7 @@
 
 ## Restricciones de Identidad Activas
 
-*Cláusulas RCOS: [2.4.1](https://blueprint.ecohubs.community/es/articles/rcos-core/v0-1/layer-0-identity-scope#24-identity-constraints), [2.4.3](https://blueprint.ecohubs.community/es/articles/rcos-core/v0-1/layer-0-identity-scope#24-identity-constraints), [2.4.4](https://blueprint.ecohubs.community/es/articles/rcos-core/v0-1/layer-0-identity-scope#24-identity-constraints)*
+*Cláusulas RCOS: [2.4.1](https://rcos.ecohubs.community/es/articles/rcos-core/v0-1/layer-0-identity-scope#24-identity-constraints), [2.4.3](https://rcos.ecohubs.community/es/articles/rcos-core/v0-1/layer-0-identity-scope#24-identity-constraints), [2.4.4](https://rcos.ecohubs.community/es/articles/rcos-core/v0-1/layer-0-identity-scope#24-identity-constraints)*
 
 <details data-kind="rationale">
 <summary>¿Por qué declarar las restricciones de identidad explícitamente?</summary>
@@ -44,7 +44,7 @@ Cada restricción debe ser verificable y aplicable mediante un proceso definido 
 
 ## Aplicación y Verificabilidad
 
-*Cláusulas RCOS: [2.4.3](https://blueprint.ecohubs.community/es/articles/rcos-core/v0-1/layer-0-identity-scope#24-identity-constraints), [2.4.4](https://blueprint.ecohubs.community/es/articles/rcos-core/v0-1/layer-0-identity-scope#24-identity-constraints)*
+*Cláusulas RCOS: [2.4.3](https://rcos.ecohubs.community/es/articles/rcos-core/v0-1/layer-0-identity-scope#24-identity-constraints), [2.4.4](https://rcos.ecohubs.community/es/articles/rcos-core/v0-1/layer-0-identity-scope#24-identity-constraints)*
 
 <details data-kind="rationale">
 <summary>¿Por qué las restricciones deben ser verificables, no informales?</summary>
@@ -66,7 +66,7 @@ Para cada restricción anterior (o como política general), describe cómo se id
 
 ## Condiciones para el Cambio
 
-*Cláusulas RCOS: [2.4.1](https://blueprint.ecohubs.community/es/articles/rcos-core/v0-1/layer-0-identity-scope#24-identity-constraints), [2.5.2](https://blueprint.ecohubs.community/es/articles/rcos-core/v0-1/layer-0-identity-scope#25-artifacts)*
+*Cláusulas RCOS: [2.4.1](https://rcos.ecohubs.community/es/articles/rcos-core/v0-1/layer-0-identity-scope#24-identity-constraints), [2.5.2](https://rcos.ecohubs.community/es/articles/rcos-core/v0-1/layer-0-identity-scope#25-artifacts)*
 
 <details data-kind="instructions">
 <summary>Cómo rellenar esto</summary>

@@ -3,19 +3,19 @@
 # Manuel opérationnel
 
 - **Généré:** 2026-04-29
-- **Source (version la plus récente):** [https://blueprint.ecohubs.community/fr/articles/rcos-templates/layer-5/operations-manual](https://blueprint.ecohubs.community/fr/articles/rcos-templates/layer-5/operations-manual)
-- **Tous les modèles RCOS:** [https://blueprint.ecohubs.community/fr/articles/rcos-templates](https://blueprint.ecohubs.community/fr/articles/rcos-templates)
+- **Source (version la plus récente):** [https://rcos.ecohubs.community/fr/articles/rcos-templates/layer-5/operations-manual](https://rcos.ecohubs.community/fr/articles/rcos-templates/layer-5/operations-manual)
+- **Tous les modèles RCOS:** [https://rcos.ecohubs.community/fr/articles/rcos-templates](https://rcos.ecohubs.community/fr/articles/rcos-templates)
 
 ---
 - **Couche :** 5 — Opérations et coordination
 - **Statut :** Modèle — à adapter pour ta communauté
-- **Référence RCOS :** [§7.1](https://blueprint.ecohubs.community/fr/articles/rcos-core/v0-1/layer-5-operations-coordination#71-roles-and-responsibilities), [§7.3](https://blueprint.ecohubs.community/fr/articles/rcos-core/v0-1/layer-5-operations-coordination#73-documentation-and-information-flow), [§7.4](https://blueprint.ecohubs.community/fr/articles/rcos-core/v0-1/layer-5-operations-coordination#74-workload-and-capacity-boundaries), [§7.5](https://blueprint.ecohubs.community/fr/articles/rcos-core/v0-1/layer-5-operations-coordination#75-operational-continuity), [§7.6](https://blueprint.ecohubs.community/fr/articles/rcos-core/v0-1/layer-5-operations-coordination#76-artifacts)
+- **Référence RCOS :** [§7.1](https://rcos.ecohubs.community/fr/articles/rcos-core/v0-1/layer-5-operations-coordination#71-roles-and-responsibilities), [§7.3](https://rcos.ecohubs.community/fr/articles/rcos-core/v0-1/layer-5-operations-coordination#73-documentation-and-information-flow), [§7.4](https://rcos.ecohubs.community/fr/articles/rcos-core/v0-1/layer-5-operations-coordination#74-workload-and-capacity-boundaries), [§7.5](https://rcos.ecohubs.community/fr/articles/rcos-core/v0-1/layer-5-operations-coordination#75-operational-continuity), [§7.6](https://rcos.ecohubs.community/fr/articles/rcos-core/v0-1/layer-5-operations-coordination#76-artifacts)
 
 ---
 
 ## Processus opérationnels essentiels
 
-*Clauses RCOS : [7.3.4](https://blueprint.ecohubs.community/fr/articles/rcos-core/v0-1/layer-5-operations-coordination#73-documentation-and-information-flow), [7.7.2](https://blueprint.ecohubs.community/fr/articles/rcos-core/v0-1/layer-5-operations-coordination#77-layer-invariants), [7.6.3](https://blueprint.ecohubs.community/fr/articles/rcos-core/v0-1/layer-5-operations-coordination#76-artifacts)*
+*Clauses RCOS : [7.3.4](https://rcos.ecohubs.community/fr/articles/rcos-core/v0-1/layer-5-operations-coordination#73-documentation-and-information-flow), [7.7.2](https://rcos.ecohubs.community/fr/articles/rcos-core/v0-1/layer-5-operations-coordination#77-layer-invariants), [7.6.3](https://rcos.ecohubs.community/fr/articles/rcos-core/v0-1/layer-5-operations-coordination#76-artifacts)*
 
 <details data-kind="rationale">
 <summary>Pourquoi documenter les processus critiques ?</summary>
@@ -43,7 +43,7 @@ Pour chaque processus critique récurrent (intégration, départ, publication de
 
 ## Responsabilités temporaires et ponctuelles
 
-*Clauses RCOS : [7.1.5](https://blueprint.ecohubs.community/fr/articles/rcos-core/v0-1/layer-5-operations-coordination#71-roles-and-responsibilities), [7.1.4](https://blueprint.ecohubs.community/fr/articles/rcos-core/v0-1/layer-5-operations-coordination#71-roles-and-responsibilities), [7.7.1](https://blueprint.ecohubs.community/fr/articles/rcos-core/v0-1/layer-5-operations-coordination#77-layer-invariants)*
+*Clauses RCOS : [7.1.5](https://rcos.ecohubs.community/fr/articles/rcos-core/v0-1/layer-5-operations-coordination#71-roles-and-responsibilities), [7.1.4](https://rcos.ecohubs.community/fr/articles/rcos-core/v0-1/layer-5-operations-coordination#71-roles-and-responsibilities), [7.7.1](https://rcos.ecohubs.community/fr/articles/rcos-core/v0-1/layer-5-operations-coordination#77-layer-invariants)*
 
 <details data-kind="rationale">
 <summary>Pourquoi limiter les responsabilités temporaires dans le temps ?</summary>
@@ -71,7 +71,7 @@ _<Durée maximale de toute responsabilité temporaire avant qu'elle ne DOIVE êt
 
 ## Interfaces entre rôles et domaines
 
-*Clauses RCOS : [7.6.3](https://blueprint.ecohubs.community/fr/articles/rcos-core/v0-1/layer-5-operations-coordination#76-artifacts), [7.3.4](https://blueprint.ecohubs.community/fr/articles/rcos-core/v0-1/layer-5-operations-coordination#73-documentation-and-information-flow)*
+*Clauses RCOS : [7.6.3](https://rcos.ecohubs.community/fr/articles/rcos-core/v0-1/layer-5-operations-coordination#76-artifacts), [7.3.4](https://rcos.ecohubs.community/fr/articles/rcos-core/v0-1/layer-5-operations-coordination#73-documentation-and-information-flow)*
 
 <details data-kind="rationale">
 <summary>Pourquoi cartographier explicitement les passations ?</summary>
@@ -94,7 +94,7 @@ Pour chaque paire de rôles qui se transmettent du travail, nomme la passation e
 
 ## Limites de charge de travail
 
-*Clauses RCOS : [7.4.1](https://blueprint.ecohubs.community/fr/articles/rcos-core/v0-1/layer-5-operations-coordination#74-workload-and-capacity-boundaries), [7.4.2](https://blueprint.ecohubs.community/fr/articles/rcos-core/v0-1/layer-5-operations-coordination#74-workload-and-capacity-boundaries), [7.4.3](https://blueprint.ecohubs.community/fr/articles/rcos-core/v0-1/layer-5-operations-coordination#74-workload-and-capacity-boundaries), [7.7.3](https://blueprint.ecohubs.community/fr/articles/rcos-core/v0-1/layer-5-operations-coordination#77-layer-invariants)*
+*Clauses RCOS : [7.4.1](https://rcos.ecohubs.community/fr/articles/rcos-core/v0-1/layer-5-operations-coordination#74-workload-and-capacity-boundaries), [7.4.2](https://rcos.ecohubs.community/fr/articles/rcos-core/v0-1/layer-5-operations-coordination#74-workload-and-capacity-boundaries), [7.4.3](https://rcos.ecohubs.community/fr/articles/rcos-core/v0-1/layer-5-operations-coordination#74-workload-and-capacity-boundaries), [7.7.3](https://rcos.ecohubs.community/fr/articles/rcos-core/v0-1/layer-5-operations-coordination#77-layer-invariants)*
 
 <details data-kind="rationale">
 <summary>Pourquoi rendre les limites de charge explicites ?</summary>
@@ -117,7 +117,7 @@ Définis des limites pour la charge de réunions, la charge par rôle, les atten
 
 ## Continuité opérationnelle
 
-*Clauses RCOS : [7.5.1](https://blueprint.ecohubs.community/fr/articles/rcos-core/v0-1/layer-5-operations-coordination#75-operational-continuity), [7.5.2](https://blueprint.ecohubs.community/fr/articles/rcos-core/v0-1/layer-5-operations-coordination#75-operational-continuity), [7.5.3](https://blueprint.ecohubs.community/fr/articles/rcos-core/v0-1/layer-5-operations-coordination#75-operational-continuity)*
+*Clauses RCOS : [7.5.1](https://rcos.ecohubs.community/fr/articles/rcos-core/v0-1/layer-5-operations-coordination#75-operational-continuity), [7.5.2](https://rcos.ecohubs.community/fr/articles/rcos-core/v0-1/layer-5-operations-coordination#75-operational-continuity), [7.5.3](https://rcos.ecohubs.community/fr/articles/rcos-core/v0-1/layer-5-operations-coordination#75-operational-continuity)*
 
 <details data-kind="rationale">
 <summary>Pourquoi planifier la continuité dès maintenant ?</summary>
@@ -139,7 +139,7 @@ Nomme honnêtement les points de défaillance uniques actuels. Indique les exige
 
 ## Flux d'information et anti-verrouillage
 
-*Clauses RCOS : [7.3.5](https://blueprint.ecohubs.community/fr/articles/rcos-core/v0-1/layer-5-operations-coordination#73-documentation-and-information-flow), [7.7.4](https://blueprint.ecohubs.community/fr/articles/rcos-core/v0-1/layer-5-operations-coordination#77-layer-invariants), [7.3.2](https://blueprint.ecohubs.community/fr/articles/rcos-core/v0-1/layer-5-operations-coordination#73-documentation-and-information-flow)*
+*Clauses RCOS : [7.3.5](https://rcos.ecohubs.community/fr/articles/rcos-core/v0-1/layer-5-operations-coordination#73-documentation-and-information-flow), [7.7.4](https://rcos.ecohubs.community/fr/articles/rcos-core/v0-1/layer-5-operations-coordination#77-layer-invariants), [7.3.2](https://rcos.ecohubs.community/fr/articles/rcos-core/v0-1/layer-5-operations-coordination#73-documentation-and-information-flow)*
 
 <details data-kind="rationale">
 <summary>Pourquoi traiter l'accès à l'information comme un enjeu de gouvernance ?</summary>
@@ -167,7 +167,7 @@ Indique quels registres sont accessibles à tou·tes les Membres actifs, le dél
 
 ## Emplacements de la documentation et procédures de mise à jour
 
-*Clauses RCOS : [7.3.1](https://blueprint.ecohubs.community/fr/articles/rcos-core/v0-1/layer-5-operations-coordination#73-documentation-and-information-flow), [7.3.2](https://blueprint.ecohubs.community/fr/articles/rcos-core/v0-1/layer-5-operations-coordination#73-documentation-and-information-flow), [7.3.3](https://blueprint.ecohubs.community/fr/articles/rcos-core/v0-1/layer-5-operations-coordination#73-documentation-and-information-flow)*
+*Clauses RCOS : [7.3.1](https://rcos.ecohubs.community/fr/articles/rcos-core/v0-1/layer-5-operations-coordination#73-documentation-and-information-flow), [7.3.2](https://rcos.ecohubs.community/fr/articles/rcos-core/v0-1/layer-5-operations-coordination#73-documentation-and-information-flow), [7.3.3](https://rcos.ecohubs.community/fr/articles/rcos-core/v0-1/layer-5-operations-coordination#73-documentation-and-information-flow)*
 
 <details data-kind="rationale">
 <summary>Pourquoi nommer l'emplacement de chaque document ?</summary>

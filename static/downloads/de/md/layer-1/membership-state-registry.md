@@ -3,19 +3,19 @@
 # Mitgliedschaftsstatus-Register
 
 - **Generiert:** 2026-04-29
-- **Quelle (aktuelle Version):** [https://blueprint.ecohubs.community/de/articles/rcos-templates/layer-1/membership-state-registry](https://blueprint.ecohubs.community/de/articles/rcos-templates/layer-1/membership-state-registry)
-- **Alle RCOS-Vorlagen:** [https://blueprint.ecohubs.community/de/articles/rcos-templates](https://blueprint.ecohubs.community/de/articles/rcos-templates)
+- **Quelle (aktuelle Version):** [https://rcos.ecohubs.community/de/articles/rcos-templates/layer-1/membership-state-registry](https://rcos.ecohubs.community/de/articles/rcos-templates/layer-1/membership-state-registry)
+- **Alle RCOS-Vorlagen:** [https://rcos.ecohubs.community/de/articles/rcos-templates](https://rcos.ecohubs.community/de/articles/rcos-templates)
 
 ---
 - **Ebene:** 1 — Mitgliedschaftssystem
 - **Status:** Vorlage — an eure Gemeinschaft anpassen
-- **RCOS-Referenz:** [§3.1](https://blueprint.ecohubs.community/de/articles/rcos-core/v0-1/layer-1-membership-system#31-membership-states), [§3.8](https://blueprint.ecohubs.community/de/articles/rcos-core/v0-1/layer-1-membership-system#38-artifacts)
+- **RCOS-Referenz:** [§3.1](https://rcos.ecohubs.community/de/articles/rcos-core/v0-1/layer-1-membership-system#31-membership-states), [§3.8](https://rcos.ecohubs.community/de/articles/rcos-core/v0-1/layer-1-membership-system#38-artifacts)
 
 ---
 
 ## Definierte Mitgliedschaftsstatus
 
-*RCOS-Klauseln: [3.1.1](https://blueprint.ecohubs.community/de/articles/rcos-core/v0-1/layer-1-membership-system#31-membership-states), [3.1.2](https://blueprint.ecohubs.community/de/articles/rcos-core/v0-1/layer-1-membership-system#31-membership-states), [3.1.3](https://blueprint.ecohubs.community/de/articles/rcos-core/v0-1/layer-1-membership-system#31-membership-states), [3.1.4](https://blueprint.ecohubs.community/de/articles/rcos-core/v0-1/layer-1-membership-system#31-membership-states), [3.1.5](https://blueprint.ecohubs.community/de/articles/rcos-core/v0-1/layer-1-membership-system#31-membership-states)*
+*RCOS-Klauseln: [3.1.1](https://rcos.ecohubs.community/de/articles/rcos-core/v0-1/layer-1-membership-system#31-membership-states), [3.1.2](https://rcos.ecohubs.community/de/articles/rcos-core/v0-1/layer-1-membership-system#31-membership-states), [3.1.3](https://rcos.ecohubs.community/de/articles/rcos-core/v0-1/layer-1-membership-system#31-membership-states), [3.1.4](https://rcos.ecohubs.community/de/articles/rcos-core/v0-1/layer-1-membership-system#31-membership-states), [3.1.5](https://rcos.ecohubs.community/de/articles/rcos-core/v0-1/layer-1-membership-system#31-membership-states)*
 
 <details data-kind="rationale">
 <summary>Warum eine einzige Statustabelle?</summary>
@@ -63,7 +63,7 @@ Beschreibt, welche Aufzeichnungen nach dem Austritt erhalten bleiben, wo Statusz
 
 ## Aktuelle Mitgliederliste
 
-*RCOS-Klauseln: [3.8.2](https://blueprint.ecohubs.community/de/articles/rcos-core/v0-1/layer-1-membership-system#38-artifacts)*
+*RCOS-Klauseln: [3.8.2](https://rcos.ecohubs.community/de/articles/rcos-core/v0-1/layer-1-membership-system#38-artifacts)*
 
 <details data-kind="rationale">
 <summary>Warum Definition und Liste trennen?</summary>

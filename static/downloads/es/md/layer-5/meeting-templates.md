@@ -3,13 +3,13 @@
 # Plantillas de Reuniones
 
 - **Generado:** 2026-04-29
-- **Fuente (versión más reciente):** [https://blueprint.ecohubs.community/es/articles/rcos-templates/layer-5/meeting-templates](https://blueprint.ecohubs.community/es/articles/rcos-templates/layer-5/meeting-templates)
-- **Todas las plantillas RCOS:** [https://blueprint.ecohubs.community/es/articles/rcos-templates](https://blueprint.ecohubs.community/es/articles/rcos-templates)
+- **Fuente (versión más reciente):** [https://rcos.ecohubs.community/es/articles/rcos-templates/layer-5/meeting-templates](https://rcos.ecohubs.community/es/articles/rcos-templates/layer-5/meeting-templates)
+- **Todas las plantillas RCOS:** [https://rcos.ecohubs.community/es/articles/rcos-templates](https://rcos.ecohubs.community/es/articles/rcos-templates)
 
 ---
 - **Capa:** 5 — Operaciones y Coordinación
 - **Estado:** Plantilla — adaptar para tu comunidad
-- **Referencia RCOS:** [§7.2](https://blueprint.ecohubs.community/es/articles/rcos-core/v0-1/layer-5-operations-coordination#72-meeting-system), [§7.6](https://blueprint.ecohubs.community/es/articles/rcos-core/v0-1/layer-5-operations-coordination#76-artifacts)
+- **Referencia RCOS:** [§7.2](https://rcos.ecohubs.community/es/articles/rcos-core/v0-1/layer-5-operations-coordination#72-meeting-system), [§7.6](https://rcos.ecohubs.community/es/articles/rcos-core/v0-1/layer-5-operations-coordination#76-artifacts)
 
 > Las plantillas de reuniones declaran el propósito, el alcance de decisión, el quórum y la estructura de cada tipo de reunión. Una reunión sin una plantilla declarada, dado el tiempo suficiente, acumulará autoridad que no debería tener. Adapta estas plantillas y añade o elimina tipos de reunión según las necesidades de tu comunidad.
 
@@ -17,7 +17,7 @@
 
 ## Tipo de Reunión: Operaciones
 
-*Cláusulas RCOS: [7.2.1](https://blueprint.ecohubs.community/es/articles/rcos-core/v0-1/layer-5-operations-coordination#72-meeting-system), [7.2.2](https://blueprint.ecohubs.community/es/articles/rcos-core/v0-1/layer-5-operations-coordination#72-meeting-system), [7.2.3](https://blueprint.ecohubs.community/es/articles/rcos-core/v0-1/layer-5-operations-coordination#72-meeting-system), [7.2.4](https://blueprint.ecohubs.community/es/articles/rcos-core/v0-1/layer-5-operations-coordination#72-meeting-system), [7.6.4](https://blueprint.ecohubs.community/es/articles/rcos-core/v0-1/layer-5-operations-coordination#76-artifacts)*
+*Cláusulas RCOS: [7.2.1](https://rcos.ecohubs.community/es/articles/rcos-core/v0-1/layer-5-operations-coordination#72-meeting-system), [7.2.2](https://rcos.ecohubs.community/es/articles/rcos-core/v0-1/layer-5-operations-coordination#72-meeting-system), [7.2.3](https://rcos.ecohubs.community/es/articles/rcos-core/v0-1/layer-5-operations-coordination#72-meeting-system), [7.2.4](https://rcos.ecohubs.community/es/articles/rcos-core/v0-1/layer-5-operations-coordination#72-meeting-system), [7.6.4](https://rcos.ecohubs.community/es/articles/rcos-core/v0-1/layer-5-operations-coordination#76-artifacts)*
 
 <details data-kind="rationale">
 <summary>¿Por qué una reunión de Operaciones regular?</summary>
@@ -71,7 +71,7 @@ Define el propósito, el alcance de decisión, los participantes obligatorios y 
 
 ## Tipo de Reunión: Gobernanza
 
-*Cláusulas RCOS: [7.2.1](https://blueprint.ecohubs.community/es/articles/rcos-core/v0-1/layer-5-operations-coordination#72-meeting-system), [7.2.2](https://blueprint.ecohubs.community/es/articles/rcos-core/v0-1/layer-5-operations-coordination#72-meeting-system), [7.2.3](https://blueprint.ecohubs.community/es/articles/rcos-core/v0-1/layer-5-operations-coordination#72-meeting-system), [7.6.4](https://blueprint.ecohubs.community/es/articles/rcos-core/v0-1/layer-5-operations-coordination#76-artifacts)*
+*Cláusulas RCOS: [7.2.1](https://rcos.ecohubs.community/es/articles/rcos-core/v0-1/layer-5-operations-coordination#72-meeting-system), [7.2.2](https://rcos.ecohubs.community/es/articles/rcos-core/v0-1/layer-5-operations-coordination#72-meeting-system), [7.2.3](https://rcos.ecohubs.community/es/articles/rcos-core/v0-1/layer-5-operations-coordination#72-meeting-system), [7.6.4](https://rcos.ecohubs.community/es/articles/rcos-core/v0-1/layer-5-operations-coordination#76-artifacts)*
 
 <details data-kind="rationale">
 <summary>¿Por qué separar la deliberación de la votación vinculante?</summary>
@@ -124,7 +124,7 @@ Esta reunión delibera sobre propuestas activas durante su período de deliberac
 
 ## Tipo de Reunión: Coordinación y Alineación
 
-*Cláusulas RCOS: [7.2.1](https://blueprint.ecohubs.community/es/articles/rcos-core/v0-1/layer-5-operations-coordination#72-meeting-system), [7.2.2](https://blueprint.ecohubs.community/es/articles/rcos-core/v0-1/layer-5-operations-coordination#72-meeting-system), [7.2.3](https://blueprint.ecohubs.community/es/articles/rcos-core/v0-1/layer-5-operations-coordination#72-meeting-system), [7.6.4](https://blueprint.ecohubs.community/es/articles/rcos-core/v0-1/layer-5-operations-coordination#76-artifacts)*
+*Cláusulas RCOS: [7.2.1](https://rcos.ecohubs.community/es/articles/rcos-core/v0-1/layer-5-operations-coordination#72-meeting-system), [7.2.2](https://rcos.ecohubs.community/es/articles/rcos-core/v0-1/layer-5-operations-coordination#72-meeting-system), [7.2.3](https://rcos.ecohubs.community/es/articles/rcos-core/v0-1/layer-5-operations-coordination#72-meeting-system), [7.6.4](https://rcos.ecohubs.community/es/articles/rcos-core/v0-1/layer-5-operations-coordination#76-artifacts)*
 
 <details data-kind="rationale">
 <summary>¿Por qué una reunión de coordinación dedicada?</summary>
@@ -166,7 +166,7 @@ Usa esta plantilla cuando se necesite coordinación entre roles. Mantén el alca
 
 ## Tipo de Reunión: Reflexión y Aprendizaje
 
-*Cláusulas RCOS: [7.2.1](https://blueprint.ecohubs.community/es/articles/rcos-core/v0-1/layer-5-operations-coordination#72-meeting-system), [7.2.2](https://blueprint.ecohubs.community/es/articles/rcos-core/v0-1/layer-5-operations-coordination#72-meeting-system), [7.2.3](https://blueprint.ecohubs.community/es/articles/rcos-core/v0-1/layer-5-operations-coordination#72-meeting-system), [7.6.4](https://blueprint.ecohubs.community/es/articles/rcos-core/v0-1/layer-5-operations-coordination#76-artifacts)*
+*Cláusulas RCOS: [7.2.1](https://rcos.ecohubs.community/es/articles/rcos-core/v0-1/layer-5-operations-coordination#72-meeting-system), [7.2.2](https://rcos.ecohubs.community/es/articles/rcos-core/v0-1/layer-5-operations-coordination#72-meeting-system), [7.2.3](https://rcos.ecohubs.community/es/articles/rcos-core/v0-1/layer-5-operations-coordination#72-meeting-system), [7.6.4](https://rcos.ecohubs.community/es/articles/rcos-core/v0-1/layer-5-operations-coordination#76-artifacts)*
 
 <details data-kind="rationale">
 <summary>¿Por qué darle a la reflexión su propio tipo de reunión?</summary>
@@ -212,7 +212,7 @@ Esta reunión revisa el período más reciente y alimenta los aprendizajes al Re
 
 ## Tipo de Reunión: Gestión de Conflictos
 
-*Cláusulas RCOS: [7.2.1](https://blueprint.ecohubs.community/es/articles/rcos-core/v0-1/layer-5-operations-coordination#72-meeting-system), [7.2.2](https://blueprint.ecohubs.community/es/articles/rcos-core/v0-1/layer-5-operations-coordination#72-meeting-system), [7.2.3](https://blueprint.ecohubs.community/es/articles/rcos-core/v0-1/layer-5-operations-coordination#72-meeting-system), [7.6.4](https://blueprint.ecohubs.community/es/articles/rcos-core/v0-1/layer-5-operations-coordination#76-artifacts); ver también Capa 4 — [Escalera de Resolución de Conflictos](https://blueprint.ecohubs.community/es/articles/rcos-core/v0-1/layer-4-conflict-repair-accountability#62-resolution-pathways)*
+*Cláusulas RCOS: [7.2.1](https://rcos.ecohubs.community/es/articles/rcos-core/v0-1/layer-5-operations-coordination#72-meeting-system), [7.2.2](https://rcos.ecohubs.community/es/articles/rcos-core/v0-1/layer-5-operations-coordination#72-meeting-system), [7.2.3](https://rcos.ecohubs.community/es/articles/rcos-core/v0-1/layer-5-operations-coordination#72-meeting-system), [7.6.4](https://rcos.ecohubs.community/es/articles/rcos-core/v0-1/layer-5-operations-coordination#76-artifacts); ver también Capa 4 — [Escalera de Resolución de Conflictos](https://rcos.ecohubs.community/es/articles/rcos-core/v0-1/layer-4-conflict-repair-accountability#62-resolution-pathways)*
 
 <details data-kind="rationale">
 <summary>¿Por qué un tipo de reunión distinto para conflictos?</summary>

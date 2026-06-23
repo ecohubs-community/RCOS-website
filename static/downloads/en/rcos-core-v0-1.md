@@ -3,7 +3,7 @@
 # RCOS Core Specification — v0.1
 
 - **Generated:** 2026-04-29
-- **Source (latest version):** [https://blueprint.ecohubs.community/articles/rcos-core/v0-1](https://blueprint.ecohubs.community/articles/rcos-core/v0-1)
+- **Source (latest version):** [https://rcos.ecohubs.community/articles/rcos-core/v0-1](https://rcos.ecohubs.community/articles/rcos-core/v0-1)
 
 - Status: Draft
 - Version: RCOS-Core v0.1
@@ -220,7 +220,7 @@ RCOS turns:
 
 ### Known Failure Modes RCOS Is Designed to Prevent
 
-See [RCOS Stress Tests](https://blueprint.ecohubs.community/articles/rcos-stress-tests?id=6acbe9a7)
+See [RCOS Stress Tests](https://rcos.ecohubs.community/articles/rcos-stress-tests?id=6acbe9a7)
 
 ## Reference Implementations
 
@@ -288,7 +288,7 @@ so that care, autonomy, and regeneration have something solid to stand on.
 
 ## Change Log
 
-- [v0.1](https://blueprint.ecohubs.community/articles/rcos-core/v0-1?id=e6de7a5d) — Initial version
+- [v0.1](https://rcos.ecohubs.community/articles/rcos-core/v0-1?id=e6de7a5d) — Initial version
 
 
 ---

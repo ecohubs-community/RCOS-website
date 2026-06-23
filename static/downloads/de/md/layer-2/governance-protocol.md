@@ -3,13 +3,13 @@
 # Governance-Protokoll
 
 - **Generiert:** 2026-04-29
-- **Quelle (aktuelle Version):** [https://blueprint.ecohubs.community/de/articles/rcos-templates/layer-2/governance-protocol](https://blueprint.ecohubs.community/de/articles/rcos-templates/layer-2/governance-protocol)
-- **Alle RCOS-Vorlagen:** [https://blueprint.ecohubs.community/de/articles/rcos-templates](https://blueprint.ecohubs.community/de/articles/rcos-templates)
+- **Quelle (aktuelle Version):** [https://rcos.ecohubs.community/de/articles/rcos-templates/layer-2/governance-protocol](https://rcos.ecohubs.community/de/articles/rcos-templates/layer-2/governance-protocol)
+- **Alle RCOS-Vorlagen:** [https://rcos.ecohubs.community/de/articles/rcos-templates](https://rcos.ecohubs.community/de/articles/rcos-templates)
 
 ---
 - **Layer:** 2 — Governance & Entscheidungslogik
 - **Status:** Vorlage — an deine Gemeinschaft anpassen
-- **RCOS-Referenz:** [§4.5](https://blueprint.ecohubs.community/de/articles/rcos-core/v0-1/layer-2-governance-decision-logic#45-governance-protocol), [§4.6](https://blueprint.ecohubs.community/de/articles/rcos-core/v0-1/layer-2-governance-decision-logic#46-safeguards-and-failure-modes), [§4.7](https://blueprint.ecohubs.community/de/articles/rcos-core/v0-1/layer-2-governance-decision-logic#47-artifacts)
+- **RCOS-Referenz:** [§4.5](https://rcos.ecohubs.community/de/articles/rcos-core/v0-1/layer-2-governance-decision-logic#45-governance-protocol), [§4.6](https://rcos.ecohubs.community/de/articles/rcos-core/v0-1/layer-2-governance-decision-logic#46-safeguards-and-failure-modes), [§4.7](https://rcos.ecohubs.community/de/articles/rcos-core/v0-1/layer-2-governance-decision-logic#47-artifacts)
 
 > Definiert den vollständigen Lebenszyklus einer kollektiven Entscheidung — von der Antragseinreichung bis zur Dokumentation und zum Einspruch.
 
@@ -17,7 +17,7 @@
 
 ## Antragseinreichung
 
-*RCOS-Klauseln: [4.5.1](https://blueprint.ecohubs.community/de/articles/rcos-core/v0-1/layer-2-governance-decision-logic#45-governance-protocol), [4.5.2](https://blueprint.ecohubs.community/de/articles/rcos-core/v0-1/layer-2-governance-decision-logic#45-governance-protocol)*
+*RCOS-Klauseln: [4.5.1](https://rcos.ecohubs.community/de/articles/rcos-core/v0-1/layer-2-governance-decision-logic#45-governance-protocol), [4.5.2](https://rcos.ecohubs.community/de/articles/rcos-core/v0-1/layer-2-governance-decision-logic#45-governance-protocol)*
 
 <details data-kind="rationale">
 <summary>Warum formalisieren, wie Anträge ins System gelangen?</summary>
@@ -41,7 +41,7 @@ Lege fest, wer Anträge stellen darf, wo Anträge eingereicht werden, welche Inh
 
 ## Prüfung und Beratung
 
-*RCOS-Klauseln: [4.5.1](https://blueprint.ecohubs.community/de/articles/rcos-core/v0-1/layer-2-governance-decision-logic#45-governance-protocol), [4.5.2](https://blueprint.ecohubs.community/de/articles/rcos-core/v0-1/layer-2-governance-decision-logic#45-governance-protocol)*
+*RCOS-Klauseln: [4.5.1](https://rcos.ecohubs.community/de/articles/rcos-core/v0-1/layer-2-governance-decision-logic#45-governance-protocol), [4.5.2](https://rcos.ecohubs.community/de/articles/rcos-core/v0-1/layer-2-governance-decision-logic#45-governance-protocol)*
 
 <details data-kind="rationale">
 <summary>Warum eine Mindestberatungsfrist vorschreiben?</summary>
@@ -64,7 +64,7 @@ Benenne die Beratungsorte und die Mindestfristen für strategische und Verfassun
 
 ## Entscheidungsumsetzung
 
-*RCOS-Klauseln: [4.5.1](https://blueprint.ecohubs.community/de/articles/rcos-core/v0-1/layer-2-governance-decision-logic#45-governance-protocol), [4.5.4](https://blueprint.ecohubs.community/de/articles/rcos-core/v0-1/layer-2-governance-decision-logic#45-governance-protocol)*
+*RCOS-Klauseln: [4.5.1](https://rcos.ecohubs.community/de/articles/rcos-core/v0-1/layer-2-governance-decision-logic#45-governance-protocol), [4.5.4](https://rcos.ecohubs.community/de/articles/rcos-core/v0-1/layer-2-governance-decision-logic#45-governance-protocol)*
 
 <details data-kind="rationale">
 <summary>Warum die Umsetzung an die Dokumentation binden?</summary>
@@ -86,7 +86,7 @@ Lege fest, was passiert, wenn ein Antrag angenommen wird (Artefakt-Aktualisierun
 
 ## Dokumentation und Veröffentlichung
 
-*RCOS-Klauseln: [4.5.4](https://blueprint.ecohubs.community/de/articles/rcos-core/v0-1/layer-2-governance-decision-logic#45-governance-protocol)*
+*RCOS-Klauseln: [4.5.4](https://rcos.ecohubs.community/de/articles/rcos-core/v0-1/layer-2-governance-decision-logic#45-governance-protocol)*
 
 <details data-kind="rationale">
 <summary>Warum jedes Ergebnis dokumentieren, einschließlich Ablehnungen?</summary>
@@ -108,7 +108,7 @@ Lege Aufbewahrungsregeln für angenommene und abgelehnte Anträge fest, was als 
 
 ## Einspruch und Überprüfung
 
-*RCOS-Klauseln: [4.5.2](https://blueprint.ecohubs.community/de/articles/rcos-core/v0-1/layer-2-governance-decision-logic#45-governance-protocol), [4.6.2](https://blueprint.ecohubs.community/de/articles/rcos-core/v0-1/layer-2-governance-decision-logic#46-safeguards-and-failure-modes)*
+*RCOS-Klauseln: [4.5.2](https://rcos.ecohubs.community/de/articles/rcos-core/v0-1/layer-2-governance-decision-logic#45-governance-protocol), [4.6.2](https://rcos.ecohubs.community/de/articles/rcos-core/v0-1/layer-2-governance-decision-logic#46-safeguards-and-failure-modes)*
 
 <details data-kind="rationale">
 <summary>Warum erneute Abstimmungen ermöglichen, aber begrenzen?</summary>
@@ -131,7 +131,7 @@ Definiere die Bedingungen für eine erneute Abstimmung, das Format des Einwands 
 
 ## Konflikte zwischen Entscheidungen
 
-*RCOS-Klauseln: [4.5.3](https://blueprint.ecohubs.community/de/articles/rcos-core/v0-1/layer-2-governance-decision-logic#45-governance-protocol)*
+*RCOS-Klauseln: [4.5.3](https://rcos.ecohubs.community/de/articles/rcos-core/v0-1/layer-2-governance-decision-logic#45-governance-protocol)*
 
 <details data-kind="rationale">
 <summary>Warum die Konfliktlösung vorab festlegen?</summary>
@@ -153,7 +153,7 @@ Lege die Vorrangregel fest (typischerweise: höherer Entscheidungstyp hat Vorran
 
 ## Schutzmaßnahmen und Fehlermodi
 
-*RCOS-Klauseln: [4.6.1](https://blueprint.ecohubs.community/de/articles/rcos-core/v0-1/layer-2-governance-decision-logic#46-safeguards-and-failure-modes), [4.6.2](https://blueprint.ecohubs.community/de/articles/rcos-core/v0-1/layer-2-governance-decision-logic#46-safeguards-and-failure-modes), [4.6.3](https://blueprint.ecohubs.community/de/articles/rcos-core/v0-1/layer-2-governance-decision-logic#46-safeguards-and-failure-modes)*
+*RCOS-Klauseln: [4.6.1](https://rcos.ecohubs.community/de/articles/rcos-core/v0-1/layer-2-governance-decision-logic#46-safeguards-and-failure-modes), [4.6.2](https://rcos.ecohubs.community/de/articles/rcos-core/v0-1/layer-2-governance-decision-logic#46-safeguards-and-failure-modes), [4.6.3](https://rcos.ecohubs.community/de/articles/rcos-core/v0-1/layer-2-governance-decision-logic#46-safeguards-and-failure-modes)*
 
 <details data-kind="rationale">
 <summary>Warum Governance-Versagen von Anfang an einplanen?</summary>

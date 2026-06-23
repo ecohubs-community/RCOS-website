@@ -3,13 +3,13 @@
 # Invariants Register
 
 - **Generated:** 2026-04-29
-- **Source (latest version):** [https://blueprint.ecohubs.community/articles/rcos-templates/layer-0/invariants-register](https://blueprint.ecohubs.community/articles/rcos-templates/layer-0/invariants-register)
-- **All RCOS templates:** [https://blueprint.ecohubs.community/articles/rcos-templates](https://blueprint.ecohubs.community/articles/rcos-templates)
+- **Source (latest version):** [https://rcos.ecohubs.community/articles/rcos-templates/layer-0/invariants-register](https://rcos.ecohubs.community/articles/rcos-templates/layer-0/invariants-register)
+- **All RCOS templates:** [https://rcos.ecohubs.community/articles/rcos-templates](https://rcos.ecohubs.community/articles/rcos-templates)
 
 ---
 - **Layer:** 0 — Identity & Scope
 - **Status:** Template — adapt for your community
-- **RCOS reference:** [§2.3](https://blueprint.ecohubs.community/articles/rcos-core/v0-1/layer-0-identity-scope#23-invariants), [§2.5](https://blueprint.ecohubs.community/articles/rcos-core/v0-1/layer-0-identity-scope#25-artifacts)
+- **RCOS reference:** [§2.3](https://rcos.ecohubs.community/articles/rcos-core/v0-1/layer-0-identity-scope#23-invariants), [§2.5](https://rcos.ecohubs.community/articles/rcos-core/v0-1/layer-0-identity-scope#25-artifacts)
 
 > Invariants are constraints that MUST NOT be violated while they are in force. No decision, role, process, or emergency measure may override an invariant. If a conflict arises between an invariant and any other rule, the invariant prevails.
 
@@ -17,7 +17,7 @@
 
 ## Active Invariants
 
-*RCOS clauses: [2.3.1](https://blueprint.ecohubs.community/articles/rcos-core/v0-1/layer-0-identity-scope#23-invariants), [2.3.2](https://blueprint.ecohubs.community/articles/rcos-core/v0-1/layer-0-identity-scope#23-invariants), [2.3.3](https://blueprint.ecohubs.community/articles/rcos-core/v0-1/layer-0-identity-scope#23-invariants), [2.3.4](https://blueprint.ecohubs.community/articles/rcos-core/v0-1/layer-0-identity-scope#23-invariants), [2.3.5](https://blueprint.ecohubs.community/articles/rcos-core/v0-1/layer-0-identity-scope#23-invariants), [2.3.6](https://blueprint.ecohubs.community/articles/rcos-core/v0-1/layer-0-identity-scope#23-invariants)*
+*RCOS clauses: [2.3.1](https://rcos.ecohubs.community/articles/rcos-core/v0-1/layer-0-identity-scope#23-invariants), [2.3.2](https://rcos.ecohubs.community/articles/rcos-core/v0-1/layer-0-identity-scope#23-invariants), [2.3.3](https://rcos.ecohubs.community/articles/rcos-core/v0-1/layer-0-identity-scope#23-invariants), [2.3.4](https://rcos.ecohubs.community/articles/rcos-core/v0-1/layer-0-identity-scope#23-invariants), [2.3.5](https://rcos.ecohubs.community/articles/rcos-core/v0-1/layer-0-identity-scope#23-invariants), [2.3.6](https://rcos.ecohubs.community/articles/rcos-core/v0-1/layer-0-identity-scope#23-invariants)*
 
 <details data-kind="rationale">
 <summary>Why are invariants unoverridable?</summary>

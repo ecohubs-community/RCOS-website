@@ -3,19 +3,19 @@
 # Déclaration de périmètre
 
 - **Généré:** 2026-04-29
-- **Source (version la plus récente):** [https://blueprint.ecohubs.community/fr/articles/rcos-templates/layer-0/scope-declaration](https://blueprint.ecohubs.community/fr/articles/rcos-templates/layer-0/scope-declaration)
-- **Tous les modèles RCOS:** [https://blueprint.ecohubs.community/fr/articles/rcos-templates](https://blueprint.ecohubs.community/fr/articles/rcos-templates)
+- **Source (version la plus récente):** [https://rcos.ecohubs.community/fr/articles/rcos-templates/layer-0/scope-declaration](https://rcos.ecohubs.community/fr/articles/rcos-templates/layer-0/scope-declaration)
+- **Tous les modèles RCOS:** [https://rcos.ecohubs.community/fr/articles/rcos-templates](https://rcos.ecohubs.community/fr/articles/rcos-templates)
 
 ---
 - **Couche :** 0 — Identité et périmètre
 - **Statut :** Modèle — à adapter pour ta communauté
-- **Référence RCOS :** [§2.2](https://blueprint.ecohubs.community/fr/articles/rcos-core/v0-1/layer-0-identity-scope#22-scope-declaration), [§2.5](https://blueprint.ecohubs.community/fr/articles/rcos-core/v0-1/layer-0-identity-scope#25-artifacts)
+- **Référence RCOS :** [§2.2](https://rcos.ecohubs.community/fr/articles/rcos-core/v0-1/layer-0-identity-scope#22-scope-declaration), [§2.5](https://rcos.ecohubs.community/fr/articles/rcos-core/v0-1/layer-0-identity-scope#25-artifacts)
 
 ---
 
 ## Actifs dans le périmètre
 
-*Clauses RCOS : [2.2.1](https://blueprint.ecohubs.community/fr/articles/rcos-core/v0-1/layer-0-identity-scope#22-scope-declaration), [2.2.2](https://blueprint.ecohubs.community/fr/articles/rcos-core/v0-1/layer-0-identity-scope#22-scope-declaration), [2.2.4](https://blueprint.ecohubs.community/fr/articles/rcos-core/v0-1/layer-0-identity-scope#22-scope-declaration)*
+*Clauses RCOS : [2.2.1](https://rcos.ecohubs.community/fr/articles/rcos-core/v0-1/layer-0-identity-scope#22-scope-declaration), [2.2.2](https://rcos.ecohubs.community/fr/articles/rcos-core/v0-1/layer-0-identity-scope#22-scope-declaration), [2.2.4](https://rcos.ecohubs.community/fr/articles/rcos-core/v0-1/layer-0-identity-scope#22-scope-declaration)*
 
 <details data-kind="rationale">
 <summary>Pourquoi énumérer chaque actif gouverné ?</summary>
@@ -38,7 +38,7 @@ Liste tous les actifs que la communauté gouverne collectivement : fonds partag�
 
 ## Domaines de décision dans le périmètre
 
-*Clauses RCOS : [2.2.1](https://blueprint.ecohubs.community/fr/articles/rcos-core/v0-1/layer-0-identity-scope#22-scope-declaration), [2.2.2](https://blueprint.ecohubs.community/fr/articles/rcos-core/v0-1/layer-0-identity-scope#22-scope-declaration)*
+*Clauses RCOS : [2.2.1](https://rcos.ecohubs.community/fr/articles/rcos-core/v0-1/layer-0-identity-scope#22-scope-declaration), [2.2.2](https://rcos.ecohubs.community/fr/articles/rcos-core/v0-1/layer-0-identity-scope#22-scope-declaration)*
 
 <details data-kind="rationale">
 <summary>Pourquoi nommer les domaines de décision, et pas seulement les actifs ?</summary>
@@ -61,7 +61,7 @@ Liste les catégories de décisions sur lesquelles la communauté a autorité. E
 
 ## Activités et responsabilités dans le périmètre
 
-*Clauses RCOS : [2.2.1](https://blueprint.ecohubs.community/fr/articles/rcos-core/v0-1/layer-0-identity-scope#22-scope-declaration), [2.2.2](https://blueprint.ecohubs.community/fr/articles/rcos-core/v0-1/layer-0-identity-scope#22-scope-declaration)*
+*Clauses RCOS : [2.2.1](https://rcos.ecohubs.community/fr/articles/rcos-core/v0-1/layer-0-identity-scope#22-scope-declaration), [2.2.2](https://rcos.ecohubs.community/fr/articles/rcos-core/v0-1/layer-0-identity-scope#22-scope-declaration)*
 
 <details data-kind="rationale">
 <summary>Pourquoi déclarer le travail dont la communauté est responsable ?</summary>
@@ -84,7 +84,7 @@ Liste les activités permanentes dont la communauté est responsable : entretien
 
 ## Explicitement hors périmètre
 
-*Clauses RCOS : [2.2.3](https://blueprint.ecohubs.community/fr/articles/rcos-core/v0-1/layer-0-identity-scope#22-scope-declaration), [2.2.4](https://blueprint.ecohubs.community/fr/articles/rcos-core/v0-1/layer-0-identity-scope#22-scope-declaration), [2.2.5](https://blueprint.ecohubs.community/fr/articles/rcos-core/v0-1/layer-0-identity-scope#22-scope-declaration)*
+*Clauses RCOS : [2.2.3](https://rcos.ecohubs.community/fr/articles/rcos-core/v0-1/layer-0-identity-scope#22-scope-declaration), [2.2.4](https://rcos.ecohubs.community/fr/articles/rcos-core/v0-1/layer-0-identity-scope#22-scope-declaration), [2.2.5](https://rcos.ecohubs.community/fr/articles/rcos-core/v0-1/layer-0-identity-scope#22-scope-declaration)*
 
 <details data-kind="rationale">
 <summary>Pourquoi nommer ce que la communauté ne doit pas toucher ?</summary>

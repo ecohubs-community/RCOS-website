@@ -22,7 +22,7 @@ const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const ROOT = path.resolve(__dirname, '..');
 const OUT_DIR = path.join(ROOT, 'static/downloads');
 
-const SITE_URL = process.env.PUBLIC_APP_URL || 'https://blueprint.ecohubs.community';
+const SITE_URL = process.env.PUBLIC_APP_URL || 'https://rcos.ecohubs.community';
 const DEFAULT_LOCALE = 'en';
 const today = new Date().toISOString().slice(0, 10);
 

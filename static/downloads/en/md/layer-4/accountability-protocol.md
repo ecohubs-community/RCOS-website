@@ -3,19 +3,19 @@
 # Accountability Protocol
 
 - **Generated:** 2026-04-29
-- **Source (latest version):** [https://blueprint.ecohubs.community/articles/rcos-templates/layer-4/accountability-protocol](https://blueprint.ecohubs.community/articles/rcos-templates/layer-4/accountability-protocol)
-- **All RCOS templates:** [https://blueprint.ecohubs.community/articles/rcos-templates](https://blueprint.ecohubs.community/articles/rcos-templates)
+- **Source (latest version):** [https://rcos.ecohubs.community/articles/rcos-templates/layer-4/accountability-protocol](https://rcos.ecohubs.community/articles/rcos-templates/layer-4/accountability-protocol)
+- **All RCOS templates:** [https://rcos.ecohubs.community/articles/rcos-templates](https://rcos.ecohubs.community/articles/rcos-templates)
 
 ---
 - **Layer:** 4 — Conflict, Repair & Accountability
 - **Status:** Template — adapt for your community
-- **RCOS reference:** [§6.4](https://blueprint.ecohubs.community/articles/rcos-core/v0-1/layer-4-conflict-repair-accountability#64-sanctions-repair-and-separation), [§6.5](https://blueprint.ecohubs.community/articles/rcos-core/v0-1/layer-4-conflict-repair-accountability#65-artifacts)
+- **RCOS reference:** [§6.4](https://rcos.ecohubs.community/articles/rcos-core/v0-1/layer-4-conflict-repair-accountability#64-sanctions-repair-and-separation), [§6.5](https://rcos.ecohubs.community/articles/rcos-core/v0-1/layer-4-conflict-repair-accountability#65-artifacts)
 
 ---
 
 ## Triggers
 
-*RCOS clauses: [6.4.1](https://blueprint.ecohubs.community/articles/rcos-core/v0-1/layer-4-conflict-repair-accountability#64-sanctions-repair-and-separation), [6.5.4](https://blueprint.ecohubs.community/articles/rcos-core/v0-1/layer-4-conflict-repair-accountability#65-artifacts)*
+*RCOS clauses: [6.4.1](https://rcos.ecohubs.community/articles/rcos-core/v0-1/layer-4-conflict-repair-accountability#64-sanctions-repair-and-separation), [6.5.4](https://rcos.ecohubs.community/articles/rcos-core/v0-1/layer-4-conflict-repair-accountability#65-artifacts)*
 
 <details data-kind="rationale">
 <summary>Why enumerate what starts an accountability check?</summary>
@@ -40,7 +40,7 @@ An accountability check is initiated when:
 
 ## Investigation and Review
 
-*RCOS clauses: [6.4.2](https://blueprint.ecohubs.community/articles/rcos-core/v0-1/layer-4-conflict-repair-accountability#64-sanctions-repair-and-separation), [6.4.3](https://blueprint.ecohubs.community/articles/rcos-core/v0-1/layer-4-conflict-repair-accountability#64-sanctions-repair-and-separation), [6.4.6](https://blueprint.ecohubs.community/articles/rcos-core/v0-1/layer-4-conflict-repair-accountability#64-sanctions-repair-and-separation), [6.5.4](https://blueprint.ecohubs.community/articles/rcos-core/v0-1/layer-4-conflict-repair-accountability#65-artifacts)*
+*RCOS clauses: [6.4.2](https://rcos.ecohubs.community/articles/rcos-core/v0-1/layer-4-conflict-repair-accountability#64-sanctions-repair-and-separation), [6.4.3](https://rcos.ecohubs.community/articles/rcos-core/v0-1/layer-4-conflict-repair-accountability#64-sanctions-repair-and-separation), [6.4.6](https://rcos.ecohubs.community/articles/rcos-core/v0-1/layer-4-conflict-repair-accountability#64-sanctions-repair-and-separation), [6.5.4](https://rcos.ecohubs.community/articles/rcos-core/v0-1/layer-4-conflict-repair-accountability#65-artifacts)*
 
 <details data-kind="rationale">
 <summary>Why graduate the response by severity?</summary>
@@ -64,7 +64,7 @@ Define soft (inactivity), medium (obligation breach), and serious (invariant vio
 
 ## Due Process Guarantees
 
-*RCOS clauses: [6.4.2](https://blueprint.ecohubs.community/articles/rcos-core/v0-1/layer-4-conflict-repair-accountability#64-sanctions-repair-and-separation), [6.4.4](https://blueprint.ecohubs.community/articles/rcos-core/v0-1/layer-4-conflict-repair-accountability#64-sanctions-repair-and-separation), [6.5.4](https://blueprint.ecohubs.community/articles/rcos-core/v0-1/layer-4-conflict-repair-accountability#65-artifacts)*
+*RCOS clauses: [6.4.2](https://rcos.ecohubs.community/articles/rcos-core/v0-1/layer-4-conflict-repair-accountability#64-sanctions-repair-and-separation), [6.4.4](https://rcos.ecohubs.community/articles/rcos-core/v0-1/layer-4-conflict-repair-accountability#64-sanctions-repair-and-separation), [6.5.4](https://rcos.ecohubs.community/articles/rcos-core/v0-1/layer-4-conflict-repair-accountability#65-artifacts)*
 
 <details data-kind="rationale">
 <summary>Why spell out notice, response, and appeal rights?</summary>
@@ -86,7 +86,7 @@ State the right to written notice, a minimum response window, and an explicit ap
 
 ## Anti-Retaliation Protections
 
-*RCOS clauses: [6.3.2](https://blueprint.ecohubs.community/articles/rcos-core/v0-1/layer-4-conflict-repair-accountability#63-safeguards)*
+*RCOS clauses: [6.3.2](https://rcos.ecohubs.community/articles/rcos-core/v0-1/layer-4-conflict-repair-accountability#63-safeguards)*
 
 <details data-kind="rationale">
 <summary>Why protect participants explicitly?</summary>
@@ -106,7 +106,7 @@ _<Retaliation against a member for participating in any part of this process is 
 
 ## Sanction and Repair Options
 
-*RCOS clauses: [6.4.1](https://blueprint.ecohubs.community/articles/rcos-core/v0-1/layer-4-conflict-repair-accountability#64-sanctions-repair-and-separation), [6.4.2](https://blueprint.ecohubs.community/articles/rcos-core/v0-1/layer-4-conflict-repair-accountability#64-sanctions-repair-and-separation), [6.4.3](https://blueprint.ecohubs.community/articles/rcos-core/v0-1/layer-4-conflict-repair-accountability#64-sanctions-repair-and-separation), [6.4.5](https://blueprint.ecohubs.community/articles/rcos-core/v0-1/layer-4-conflict-repair-accountability#64-sanctions-repair-and-separation), [6.4.6](https://blueprint.ecohubs.community/articles/rcos-core/v0-1/layer-4-conflict-repair-accountability#64-sanctions-repair-and-separation), [6.5.4](https://blueprint.ecohubs.community/articles/rcos-core/v0-1/layer-4-conflict-repair-accountability#65-artifacts)*
+*RCOS clauses: [6.4.1](https://rcos.ecohubs.community/articles/rcos-core/v0-1/layer-4-conflict-repair-accountability#64-sanctions-repair-and-separation), [6.4.2](https://rcos.ecohubs.community/articles/rcos-core/v0-1/layer-4-conflict-repair-accountability#64-sanctions-repair-and-separation), [6.4.3](https://rcos.ecohubs.community/articles/rcos-core/v0-1/layer-4-conflict-repair-accountability#64-sanctions-repair-and-separation), [6.4.5](https://rcos.ecohubs.community/articles/rcos-core/v0-1/layer-4-conflict-repair-accountability#64-sanctions-repair-and-separation), [6.4.6](https://rcos.ecohubs.community/articles/rcos-core/v0-1/layer-4-conflict-repair-accountability#64-sanctions-repair-and-separation), [6.5.4](https://rcos.ecohubs.community/articles/rcos-core/v0-1/layer-4-conflict-repair-accountability#65-artifacts)*
 
 <details data-kind="rationale">
 <summary>Why pre-define the menu of sanctions?</summary>
@@ -134,7 +134,7 @@ For each sanction type, define preconditions, authorized body, and appeal path. 
 
 ## Conditions for Restoring Rights
 
-*RCOS clauses: [6.4.4](https://blueprint.ecohubs.community/articles/rcos-core/v0-1/layer-4-conflict-repair-accountability#64-sanctions-repair-and-separation)*
+*RCOS clauses: [6.4.4](https://rcos.ecohubs.community/articles/rcos-core/v0-1/layer-4-conflict-repair-accountability#64-sanctions-repair-and-separation)*
 
 <details data-kind="rationale">
 <summary>Why make restoration conditions explicit?</summary>
@@ -156,7 +156,7 @@ For each sanction class, state the path to restoration of rights — re-applicat
 
 ## Coordination with Layer 1
 
-*RCOS clauses: [6.4.4](https://blueprint.ecohubs.community/articles/rcos-core/v0-1/layer-4-conflict-repair-accountability#64-sanctions-repair-and-separation)*
+*RCOS clauses: [6.4.4](https://rcos.ecohubs.community/articles/rcos-core/v0-1/layer-4-conflict-repair-accountability#64-sanctions-repair-and-separation)*
 
 <details data-kind="rationale">
 <summary>Why tie this to the Exit & Separation Protocol?</summary>

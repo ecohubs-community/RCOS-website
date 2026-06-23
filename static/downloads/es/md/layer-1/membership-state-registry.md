@@ -3,19 +3,19 @@
 # Registro de Estados de Membresía
 
 - **Generado:** 2026-04-29
-- **Fuente (versión más reciente):** [https://blueprint.ecohubs.community/es/articles/rcos-templates/layer-1/membership-state-registry](https://blueprint.ecohubs.community/es/articles/rcos-templates/layer-1/membership-state-registry)
-- **Todas las plantillas RCOS:** [https://blueprint.ecohubs.community/es/articles/rcos-templates](https://blueprint.ecohubs.community/es/articles/rcos-templates)
+- **Fuente (versión más reciente):** [https://rcos.ecohubs.community/es/articles/rcos-templates/layer-1/membership-state-registry](https://rcos.ecohubs.community/es/articles/rcos-templates/layer-1/membership-state-registry)
+- **Todas las plantillas RCOS:** [https://rcos.ecohubs.community/es/articles/rcos-templates](https://rcos.ecohubs.community/es/articles/rcos-templates)
 
 ---
 - **Capa:** 1 — Sistema de Membresía
 - **Estado:** Plantilla — adaptar para tu comunidad
-- **Referencia RCOS:** [§3.1](https://blueprint.ecohubs.community/es/articles/rcos-core/v0-1/layer-1-membership-system#31-membership-states), [§3.8](https://blueprint.ecohubs.community/es/articles/rcos-core/v0-1/layer-1-membership-system#38-artifacts)
+- **Referencia RCOS:** [§3.1](https://rcos.ecohubs.community/es/articles/rcos-core/v0-1/layer-1-membership-system#31-membership-states), [§3.8](https://rcos.ecohubs.community/es/articles/rcos-core/v0-1/layer-1-membership-system#38-artifacts)
 
 ---
 
 ## Estados de Membresía Definidos
 
-*Cláusulas RCOS: [3.1.1](https://blueprint.ecohubs.community/es/articles/rcos-core/v0-1/layer-1-membership-system#31-membership-states), [3.1.2](https://blueprint.ecohubs.community/es/articles/rcos-core/v0-1/layer-1-membership-system#31-membership-states), [3.1.3](https://blueprint.ecohubs.community/es/articles/rcos-core/v0-1/layer-1-membership-system#31-membership-states), [3.1.4](https://blueprint.ecohubs.community/es/articles/rcos-core/v0-1/layer-1-membership-system#31-membership-states), [3.1.5](https://blueprint.ecohubs.community/es/articles/rcos-core/v0-1/layer-1-membership-system#31-membership-states)*
+*Cláusulas RCOS: [3.1.1](https://rcos.ecohubs.community/es/articles/rcos-core/v0-1/layer-1-membership-system#31-membership-states), [3.1.2](https://rcos.ecohubs.community/es/articles/rcos-core/v0-1/layer-1-membership-system#31-membership-states), [3.1.3](https://rcos.ecohubs.community/es/articles/rcos-core/v0-1/layer-1-membership-system#31-membership-states), [3.1.4](https://rcos.ecohubs.community/es/articles/rcos-core/v0-1/layer-1-membership-system#31-membership-states), [3.1.5](https://rcos.ecohubs.community/es/articles/rcos-core/v0-1/layer-1-membership-system#31-membership-states)*
 
 <details data-kind="rationale">
 <summary>¿Por qué una única tabla de estados?</summary>
@@ -63,7 +63,7 @@ Describe qué registros se conservan después de la salida, dónde se gestionan 
 
 ## Lista Actual de Miembros
 
-*Cláusulas RCOS: [3.8.2](https://blueprint.ecohubs.community/es/articles/rcos-core/v0-1/layer-1-membership-system#38-artifacts)*
+*Cláusulas RCOS: [3.8.2](https://rcos.ecohubs.community/es/articles/rcos-core/v0-1/layer-1-membership-system#38-artifacts)*
 
 <details data-kind="rationale">
 <summary>¿Por qué separar la definición de la lista?</summary>

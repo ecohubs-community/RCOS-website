@@ -3,19 +3,19 @@
 # Protocole de sortie et de séparation
 
 - **Généré:** 2026-04-29
-- **Source (version la plus récente):** [https://blueprint.ecohubs.community/fr/articles/rcos-templates/layer-1/exit-protocol](https://blueprint.ecohubs.community/fr/articles/rcos-templates/layer-1/exit-protocol)
-- **Tous les modèles RCOS:** [https://blueprint.ecohubs.community/fr/articles/rcos-templates](https://blueprint.ecohubs.community/fr/articles/rcos-templates)
+- **Source (version la plus récente):** [https://rcos.ecohubs.community/fr/articles/rcos-templates/layer-1/exit-protocol](https://rcos.ecohubs.community/fr/articles/rcos-templates/layer-1/exit-protocol)
+- **Tous les modèles RCOS:** [https://rcos.ecohubs.community/fr/articles/rcos-templates](https://rcos.ecohubs.community/fr/articles/rcos-templates)
 
 ---
 - **Couche :** 1 — Système d'adhésion
 - **Statut :** Modèle — à adapter pour ta communauté
-- **Référence RCOS :** [§3.6](https://blueprint.ecohubs.community/fr/articles/rcos-core/v0-1/layer-1-membership-system#36-exit-and-separation), [§3.7](https://blueprint.ecohubs.community/fr/articles/rcos-core/v0-1/layer-1-membership-system#37-suspension-and-temporary-status), [§3.8](https://blueprint.ecohubs.community/fr/articles/rcos-core/v0-1/layer-1-membership-system#38-artifacts)
+- **Référence RCOS :** [§3.6](https://rcos.ecohubs.community/fr/articles/rcos-core/v0-1/layer-1-membership-system#36-exit-and-separation), [§3.7](https://rcos.ecohubs.community/fr/articles/rcos-core/v0-1/layer-1-membership-system#37-suspension-and-temporary-status), [§3.8](https://rcos.ecohubs.community/fr/articles/rcos-core/v0-1/layer-1-membership-system#38-artifacts)
 
 ---
 
 ## Sortie volontaire
 
-*Clauses RCOS : [3.6.1](https://blueprint.ecohubs.community/fr/articles/rcos-core/v0-1/layer-1-membership-system#36-exit-and-separation), [3.6.2](https://blueprint.ecohubs.community/fr/articles/rcos-core/v0-1/layer-1-membership-system#36-exit-and-separation), [3.6.4](https://blueprint.ecohubs.community/fr/articles/rcos-core/v0-1/layer-1-membership-system#36-exit-and-separation)*
+*Clauses RCOS : [3.6.1](https://rcos.ecohubs.community/fr/articles/rcos-core/v0-1/layer-1-membership-system#36-exit-and-separation), [3.6.2](https://rcos.ecohubs.community/fr/articles/rcos-core/v0-1/layer-1-membership-system#36-exit-and-separation), [3.6.4](https://rcos.ecohubs.community/fr/articles/rcos-core/v0-1/layer-1-membership-system#36-exit-and-separation)*
 
 <details data-kind="rationale">
 <summary>Pourquoi rendre le départ sans friction ?</summary>
@@ -40,7 +40,7 @@ Décris le canal de soumission de la sortie, le délai de révocation des accès
 
 ## Sortie forcée
 
-*Clauses RCOS : [3.6.3](https://blueprint.ecohubs.community/fr/articles/rcos-core/v0-1/layer-1-membership-system#36-exit-and-separation), [3.6.4](https://blueprint.ecohubs.community/fr/articles/rcos-core/v0-1/layer-1-membership-system#36-exit-and-separation)*
+*Clauses RCOS : [3.6.3](https://rcos.ecohubs.community/fr/articles/rcos-core/v0-1/layer-1-membership-system#36-exit-and-separation), [3.6.4](https://rcos.ecohubs.community/fr/articles/rcos-core/v0-1/layer-1-membership-system#36-exit-and-separation)*
 
 <details data-kind="rationale">
 <summary>Pourquoi conditionner l'exclusion à la Couche 4 ?</summary>
@@ -65,7 +65,7 @@ Indique que la sortie forcée ne peut résulter que d'un processus de responsabi
 
 ## Suspension
 
-*Clauses RCOS : [3.7.1](https://blueprint.ecohubs.community/fr/articles/rcos-core/v0-1/layer-1-membership-system#37-suspension-and-temporary-status), [3.7.2](https://blueprint.ecohubs.community/fr/articles/rcos-core/v0-1/layer-1-membership-system#37-suspension-and-temporary-status), [3.7.3](https://blueprint.ecohubs.community/fr/articles/rcos-core/v0-1/layer-1-membership-system#37-suspension-and-temporary-status)*
+*Clauses RCOS : [3.7.1](https://rcos.ecohubs.community/fr/articles/rcos-core/v0-1/layer-1-membership-system#37-suspension-and-temporary-status), [3.7.2](https://rcos.ecohubs.community/fr/articles/rcos-core/v0-1/layer-1-membership-system#37-suspension-and-temporary-status), [3.7.3](https://rcos.ecohubs.community/fr/articles/rcos-core/v0-1/layer-1-membership-system#37-suspension-and-temporary-status)*
 
 <details data-kind="rationale">
 <summary>Pourquoi concevoir la suspension avec soin — ou pas du tout ?</summary>
@@ -85,7 +85,7 @@ _<Soit : définis l'état de suspension avec les conditions d'entrée, la durée
 
 ## Séparation des actifs, rôles et responsabilités
 
-*Clauses RCOS : [3.6.5](https://blueprint.ecohubs.community/fr/articles/rcos-core/v0-1/layer-1-membership-system#36-exit-and-separation)*
+*Clauses RCOS : [3.6.5](https://rcos.ecohubs.community/fr/articles/rcos-core/v0-1/layer-1-membership-system#36-exit-and-separation)*
 
 <details data-kind="rationale">
 <summary>Pourquoi énumérer les étapes de séparation ?</summary>

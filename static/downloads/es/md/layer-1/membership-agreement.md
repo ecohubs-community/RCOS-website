@@ -3,13 +3,13 @@
 # Acuerdo de Membresía
 
 - **Generado:** 2026-04-29
-- **Fuente (versión más reciente):** [https://blueprint.ecohubs.community/es/articles/rcos-templates/layer-1/membership-agreement](https://blueprint.ecohubs.community/es/articles/rcos-templates/layer-1/membership-agreement)
-- **Todas las plantillas RCOS:** [https://blueprint.ecohubs.community/es/articles/rcos-templates](https://blueprint.ecohubs.community/es/articles/rcos-templates)
+- **Fuente (versión más reciente):** [https://rcos.ecohubs.community/es/articles/rcos-templates/layer-1/membership-agreement](https://rcos.ecohubs.community/es/articles/rcos-templates/layer-1/membership-agreement)
+- **Todas las plantillas RCOS:** [https://rcos.ecohubs.community/es/articles/rcos-templates](https://rcos.ecohubs.community/es/articles/rcos-templates)
 
 ---
 - **Capa:** 1 — Sistema de Membresía
 - **Estado:** Plantilla — adaptar para tu comunidad
-- **Referencia RCOS:** [§3.4](https://blueprint.ecohubs.community/es/articles/rcos-core/v0-1/layer-1-membership-system#34-rights-and-obligations), [§3.5](https://blueprint.ecohubs.community/es/articles/rcos-core/v0-1/layer-1-membership-system#35-participation-and-contribution), [§3.8](https://blueprint.ecohubs.community/es/articles/rcos-core/v0-1/layer-1-membership-system#38-artifacts)
+- **Referencia RCOS:** [§3.4](https://rcos.ecohubs.community/es/articles/rcos-core/v0-1/layer-1-membership-system#34-rights-and-obligations), [§3.5](https://rcos.ecohubs.community/es/articles/rcos-core/v0-1/layer-1-membership-system#35-participation-and-contribution), [§3.8](https://rcos.ecohubs.community/es/articles/rcos-core/v0-1/layer-1-membership-system#38-artifacts)
 
 > Firmado (o reconocido explícitamente) por cada miembro en el momento de su admisión. Define los derechos y obligaciones de cada estado de membresía.
 
@@ -17,7 +17,7 @@
 
 ## Estado de Membresía al Firmar
 
-*Cláusulas RCOS: [3.1.2](https://blueprint.ecohubs.community/es/articles/rcos-core/v0-1/layer-1-membership-system#31-membership-states), [3.1.4](https://blueprint.ecohubs.community/es/articles/rcos-core/v0-1/layer-1-membership-system#31-membership-states)*
+*Cláusulas RCOS: [3.1.2](https://rcos.ecohubs.community/es/articles/rcos-core/v0-1/layer-1-membership-system#31-membership-states), [3.1.4](https://rcos.ecohubs.community/es/articles/rcos-core/v0-1/layer-1-membership-system#31-membership-states)*
 
 <details data-kind="rationale">
 <summary>¿Por qué declarar el estado al firmar?</summary>
@@ -37,7 +37,7 @@ _<Estado de membresía asignado al firmar — p. ej., Miembro en Prueba tras la 
 
 ## Derechos del Miembro
 
-*Cláusulas RCOS: [3.4.1](https://blueprint.ecohubs.community/es/articles/rcos-core/v0-1/layer-1-membership-system#34-rights-and-obligations), [3.4.3](https://blueprint.ecohubs.community/es/articles/rcos-core/v0-1/layer-1-membership-system#34-rights-and-obligations), [3.4.4](https://blueprint.ecohubs.community/es/articles/rcos-core/v0-1/layer-1-membership-system#34-rights-and-obligations)*
+*Cláusulas RCOS: [3.4.1](https://rcos.ecohubs.community/es/articles/rcos-core/v0-1/layer-1-membership-system#34-rights-and-obligations), [3.4.3](https://rcos.ecohubs.community/es/articles/rcos-core/v0-1/layer-1-membership-system#34-rights-and-obligations), [3.4.4](https://rcos.ecohubs.community/es/articles/rcos-core/v0-1/layer-1-membership-system#34-rights-and-obligations)*
 
 <details data-kind="rationale">
 <summary>¿Por qué enumerar los derechos explícitamente?</summary>
@@ -64,7 +64,7 @@ Enumera los derechos concretos otorgados a cada estado de membresía. Consulta l
 
 ## Obligaciones del Miembro
 
-*Cláusulas RCOS: [3.4.2](https://blueprint.ecohubs.community/es/articles/rcos-core/v0-1/layer-1-membership-system#34-rights-and-obligations), [3.4.4](https://blueprint.ecohubs.community/es/articles/rcos-core/v0-1/layer-1-membership-system#34-rights-and-obligations), [3.4.5](https://blueprint.ecohubs.community/es/articles/rcos-core/v0-1/layer-1-membership-system#34-rights-and-obligations)*
+*Cláusulas RCOS: [3.4.2](https://rcos.ecohubs.community/es/articles/rcos-core/v0-1/layer-1-membership-system#34-rights-and-obligations), [3.4.4](https://rcos.ecohubs.community/es/articles/rcos-core/v0-1/layer-1-membership-system#34-rights-and-obligations), [3.4.5](https://rcos.ecohubs.community/es/articles/rcos-core/v0-1/layer-1-membership-system#34-rights-and-obligations)*
 
 <details data-kind="rationale">
 <summary>¿Por qué acotar las obligaciones estrictamente?</summary>
@@ -90,7 +90,7 @@ Enumera obligaciones concretas y acotadas. Cada obligación debe ser verificable
 
 ## Expectativas de Participación y Contribución
 
-*Cláusulas RCOS: [3.5.1](https://blueprint.ecohubs.community/es/articles/rcos-core/v0-1/layer-1-membership-system#35-participation-and-contribution), [3.5.2](https://blueprint.ecohubs.community/es/articles/rcos-core/v0-1/layer-1-membership-system#35-participation-and-contribution), [3.5.3](https://blueprint.ecohubs.community/es/articles/rcos-core/v0-1/layer-1-membership-system#35-participation-and-contribution), [3.5.4](https://blueprint.ecohubs.community/es/articles/rcos-core/v0-1/layer-1-membership-system#35-participation-and-contribution)*
+*Cláusulas RCOS: [3.5.1](https://rcos.ecohubs.community/es/articles/rcos-core/v0-1/layer-1-membership-system#35-participation-and-contribution), [3.5.2](https://rcos.ecohubs.community/es/articles/rcos-core/v0-1/layer-1-membership-system#35-participation-and-contribution), [3.5.3](https://rcos.ecohubs.community/es/articles/rcos-core/v0-1/layer-1-membership-system#35-participation-and-contribution), [3.5.4](https://rcos.ecohubs.community/es/articles/rcos-core/v0-1/layer-1-membership-system#35-participation-and-contribution)*
 
 <details data-kind="rationale">
 <summary>¿Por qué definir la participación con números?</summary>

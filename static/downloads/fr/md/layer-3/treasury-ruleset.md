@@ -3,19 +3,19 @@
 # Règles de trésorerie
 
 - **Généré:** 2026-04-29
-- **Source (version la plus récente):** [https://blueprint.ecohubs.community/fr/articles/rcos-templates/layer-3/treasury-ruleset](https://blueprint.ecohubs.community/fr/articles/rcos-templates/layer-3/treasury-ruleset)
-- **Tous les modèles RCOS:** [https://blueprint.ecohubs.community/fr/articles/rcos-templates](https://blueprint.ecohubs.community/fr/articles/rcos-templates)
+- **Source (version la plus récente):** [https://rcos.ecohubs.community/fr/articles/rcos-templates/layer-3/treasury-ruleset](https://rcos.ecohubs.community/fr/articles/rcos-templates/layer-3/treasury-ruleset)
+- **Tous les modèles RCOS:** [https://rcos.ecohubs.community/fr/articles/rcos-templates](https://rcos.ecohubs.community/fr/articles/rcos-templates)
 
 ---
 - **Couche :** 3 — Système économique et des ressources
 - **Statut :** Modèle — à adapter pour ta communauté
-- **Référence RCOS :** [§5.3](https://blueprint.ecohubs.community/fr/articles/rcos-core/v0-1/layer-3-economic-resource-system#53-treasury-management), [§5.5](https://blueprint.ecohubs.community/fr/articles/rcos-core/v0-1/layer-3-economic-resource-system#55-artifacts)
+- **Référence RCOS :** [§5.3](https://rcos.ecohubs.community/fr/articles/rcos-core/v0-1/layer-3-economic-resource-system#53-treasury-management), [§5.5](https://rcos.ecohubs.community/fr/articles/rcos-core/v0-1/layer-3-economic-resource-system#55-artifacts)
 
 ---
 
 ## Périmètre de la trésorerie
 
-*Clauses RCOS : [5.3.1](https://blueprint.ecohubs.community/fr/articles/rcos-core/v0-1/layer-3-economic-resource-system#53-treasury-management), [5.5.4](https://blueprint.ecohubs.community/fr/articles/rcos-core/v0-1/layer-3-economic-resource-system#55-artifacts)*
+*Clauses RCOS : [5.3.1](https://rcos.ecohubs.community/fr/articles/rcos-core/v0-1/layer-3-economic-resource-system#53-treasury-management), [5.5.4](https://rcos.ecohubs.community/fr/articles/rcos-core/v0-1/layer-3-economic-resource-system#55-artifacts)*
 
 <details data-kind="rationale">
 <summary>Pourquoi tracer une frontière nette autour des fonds de trésorerie ?</summary>
@@ -35,7 +35,7 @@ _<Définis quels comptes constituent la trésorerie communautaire — adresses d
 
 ## Sources de revenus
 
-*Clauses RCOS : [5.3.2](https://blueprint.ecohubs.community/fr/articles/rcos-core/v0-1/layer-3-economic-resource-system#53-treasury-management)*
+*Clauses RCOS : [5.3.2](https://rcos.ecohubs.community/fr/articles/rcos-core/v0-1/layer-3-economic-resource-system#53-treasury-management)*
 
 <details data-kind="rationale">
 <summary>Pourquoi faire transiter tous les revenus par une liste unique et déclarée ?</summary>
@@ -55,7 +55,7 @@ _<Liste les sources de revenus actuelles, ou indique qu'il n'y en a aucune. Renv
 
 ## Autorité de dépense
 
-*Clauses RCOS : [5.3.3](https://blueprint.ecohubs.community/fr/articles/rcos-core/v0-1/layer-3-economic-resource-system#53-treasury-management), [5.7.1](https://blueprint.ecohubs.community/fr/articles/rcos-core/v0-1/layer-3-economic-resource-system#57-explicitness-rules)*
+*Clauses RCOS : [5.3.3](https://rcos.ecohubs.community/fr/articles/rcos-core/v0-1/layer-3-economic-resource-system#53-treasury-management), [5.7.1](https://rcos.ecohubs.community/fr/articles/rcos-core/v0-1/layer-3-economic-resource-system#57-explicitness-rules)*
 
 <details data-kind="rationale">
 <summary>Pourquoi détailler les seuils dans un tableau ?</summary>
@@ -79,7 +79,7 @@ Définis des paliers de dépense par montant avec le type de décision, l'organe
 
 ## Transparence et rapports
 
-*Clauses RCOS : [5.3.4](https://blueprint.ecohubs.community/fr/articles/rcos-core/v0-1/layer-3-economic-resource-system#53-treasury-management), [5.3.5](https://blueprint.ecohubs.community/fr/articles/rcos-core/v0-1/layer-3-economic-resource-system#53-treasury-management), [5.6.1](https://blueprint.ecohubs.community/fr/articles/rcos-core/v0-1/layer-3-economic-resource-system#56-layer-invariants)*
+*Clauses RCOS : [5.3.4](https://rcos.ecohubs.community/fr/articles/rcos-core/v0-1/layer-3-economic-resource-system#53-treasury-management), [5.3.5](https://rcos.ecohubs.community/fr/articles/rcos-core/v0-1/layer-3-economic-resource-system#53-treasury-management), [5.6.1](https://rcos.ecohubs.community/fr/articles/rcos-core/v0-1/layer-3-economic-resource-system#56-layer-invariants)*
 
 <details data-kind="rationale">
 <summary>Pourquoi faire de la transparence le défaut, et non une fonctionnalité ?</summary>
@@ -101,7 +101,7 @@ Indique le niveau de visibilité par défaut pour chaque compte de trésorerie. 
 
 ## Réserve, risque et contraintes d'endettement
 
-*Clauses RCOS : [5.3.6](https://blueprint.ecohubs.community/fr/articles/rcos-core/v0-1/layer-3-economic-resource-system#53-treasury-management)*
+*Clauses RCOS : [5.3.6](https://rcos.ecohubs.community/fr/articles/rcos-core/v0-1/layer-3-economic-resource-system#53-treasury-management)*
 
 <details data-kind="rationale">
 <summary>Pourquoi bloquer la dette et les engagements à long terme par défaut ?</summary>
@@ -124,7 +124,7 @@ Indique les règles concernant la dette, les engagements récurrents, les réser
 
 ## Règles relatives aux conflits d'intérêts
 
-*Clauses RCOS : [5.4.3](https://blueprint.ecohubs.community/fr/articles/rcos-core/v0-1/layer-3-economic-resource-system#54-accumulation-constraints)*
+*Clauses RCOS : [5.4.3](https://rcos.ecohubs.community/fr/articles/rcos-core/v0-1/layer-3-economic-resource-system#54-accumulation-constraints)*
 
 <details data-kind="rationale">
 <summary>Pourquoi interdire purement et simplement l'auto-approbation ?</summary>

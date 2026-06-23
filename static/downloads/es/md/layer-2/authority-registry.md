@@ -3,13 +3,13 @@
 # Registro de Autoridades
 
 - **Generado:** 2026-04-29
-- **Fuente (versión más reciente):** [https://blueprint.ecohubs.community/es/articles/rcos-templates/layer-2/authority-registry](https://blueprint.ecohubs.community/es/articles/rcos-templates/layer-2/authority-registry)
-- **Todas las plantillas RCOS:** [https://blueprint.ecohubs.community/es/articles/rcos-templates](https://blueprint.ecohubs.community/es/articles/rcos-templates)
+- **Fuente (versión más reciente):** [https://rcos.ecohubs.community/es/articles/rcos-templates/layer-2/authority-registry](https://rcos.ecohubs.community/es/articles/rcos-templates/layer-2/authority-registry)
+- **Todas las plantillas RCOS:** [https://rcos.ecohubs.community/es/articles/rcos-templates](https://rcos.ecohubs.community/es/articles/rcos-templates)
 
 ---
 - **Capa:** 2 — Gobernanza y Lógica de Decisión
 - **Estado:** Plantilla — adaptar para tu comunidad
-- **Referencia RCOS:** [§4.3](https://blueprint.ecohubs.community/es/articles/rcos-core/v0-1/layer-2-governance-decision-logic#43-authority-boundaries), [§4.7](https://blueprint.ecohubs.community/es/articles/rcos-core/v0-1/layer-2-governance-decision-logic#47-artifacts)
+- **Referencia RCOS:** [§4.3](https://rcos.ecohubs.community/es/articles/rcos-core/v0-1/layer-2-governance-decision-logic#43-authority-boundaries), [§4.7](https://rcos.ecohubs.community/es/articles/rcos-core/v0-1/layer-2-governance-decision-logic#47-artifacts)
 
 > Enumera todos los roles, círculos u órganos que poseen autoridad de toma de decisiones, junto con su alcance explícito, límites y duración del mandato.
 
@@ -17,7 +17,7 @@
 
 ## Autoridades Registradas
 
-*Cláusulas RCOS: [4.3.1](https://blueprint.ecohubs.community/es/articles/rcos-core/v0-1/layer-2-governance-decision-logic#43-authority-boundaries), [4.3.2](https://blueprint.ecohubs.community/es/articles/rcos-core/v0-1/layer-2-governance-decision-logic#43-authority-boundaries), [4.3.3](https://blueprint.ecohubs.community/es/articles/rcos-core/v0-1/layer-2-governance-decision-logic#43-authority-boundaries), [4.3.4](https://blueprint.ecohubs.community/es/articles/rcos-core/v0-1/layer-2-governance-decision-logic#43-authority-boundaries), [4.3.5](https://blueprint.ecohubs.community/es/articles/rcos-core/v0-1/layer-2-governance-decision-logic#43-authority-boundaries)*
+*Cláusulas RCOS: [4.3.1](https://rcos.ecohubs.community/es/articles/rcos-core/v0-1/layer-2-governance-decision-logic#43-authority-boundaries), [4.3.2](https://rcos.ecohubs.community/es/articles/rcos-core/v0-1/layer-2-governance-decision-logic#43-authority-boundaries), [4.3.3](https://rcos.ecohubs.community/es/articles/rcos-core/v0-1/layer-2-governance-decision-logic#43-authority-boundaries), [4.3.4](https://rcos.ecohubs.community/es/articles/rcos-core/v0-1/layer-2-governance-decision-logic#43-authority-boundaries), [4.3.5](https://rcos.ecohubs.community/es/articles/rcos-core/v0-1/layer-2-governance-decision-logic#43-authority-boundaries)*
 
 <details data-kind="rationale">
 <summary>¿Por qué documentar cada autoridad por escrito?</summary>

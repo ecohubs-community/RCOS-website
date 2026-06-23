@@ -3,19 +3,19 @@
 # Onboarding Protocol
 
 - **Generated:** 2026-04-29
-- **Source (latest version):** [https://blueprint.ecohubs.community/articles/rcos-templates/layer-1/onboarding-protocol](https://blueprint.ecohubs.community/articles/rcos-templates/layer-1/onboarding-protocol)
-- **All RCOS templates:** [https://blueprint.ecohubs.community/articles/rcos-templates](https://blueprint.ecohubs.community/articles/rcos-templates)
+- **Source (latest version):** [https://rcos.ecohubs.community/articles/rcos-templates/layer-1/onboarding-protocol](https://rcos.ecohubs.community/articles/rcos-templates/layer-1/onboarding-protocol)
+- **All RCOS templates:** [https://rcos.ecohubs.community/articles/rcos-templates](https://rcos.ecohubs.community/articles/rcos-templates)
 
 ---
 - **Layer:** 1 — Membership System
 - **Status:** Template — adapt for your community
-- **RCOS reference:** [§3.2](https://blueprint.ecohubs.community/articles/rcos-core/v0-1/layer-1-membership-system#32-entry-and-onboarding), [§3.3](https://blueprint.ecohubs.community/articles/rcos-core/v0-1/layer-1-membership-system#33-trial-and-evaluation), [§3.8](https://blueprint.ecohubs.community/articles/rcos-core/v0-1/layer-1-membership-system#38-artifacts)
+- **RCOS reference:** [§3.2](https://rcos.ecohubs.community/articles/rcos-core/v0-1/layer-1-membership-system#32-entry-and-onboarding), [§3.3](https://rcos.ecohubs.community/articles/rcos-core/v0-1/layer-1-membership-system#33-trial-and-evaluation), [§3.8](https://rcos.ecohubs.community/articles/rcos-core/v0-1/layer-1-membership-system#38-artifacts)
 
 ---
 
 ## Admission Criteria
 
-*RCOS clauses: [3.2.3](https://blueprint.ecohubs.community/articles/rcos-core/v0-1/layer-1-membership-system#32-entry-and-onboarding), [3.2.4](https://blueprint.ecohubs.community/articles/rcos-core/v0-1/layer-1-membership-system#32-entry-and-onboarding)*
+*RCOS clauses: [3.2.3](https://rcos.ecohubs.community/articles/rcos-core/v0-1/layer-1-membership-system#32-entry-and-onboarding), [3.2.4](https://rcos.ecohubs.community/articles/rcos-core/v0-1/layer-1-membership-system#32-entry-and-onboarding)*
 
 <details data-kind="rationale">
 <summary>Why write down who gets in?</summary>
@@ -38,7 +38,7 @@ State the explicit conditions under which an applicant may be admitted. Each cri
 
 ## Onboarding Steps
 
-*RCOS clauses: [3.2.1](https://blueprint.ecohubs.community/articles/rcos-core/v0-1/layer-1-membership-system#32-entry-and-onboarding), [3.2.2](https://blueprint.ecohubs.community/articles/rcos-core/v0-1/layer-1-membership-system#32-entry-and-onboarding)*
+*RCOS clauses: [3.2.1](https://rcos.ecohubs.community/articles/rcos-core/v0-1/layer-1-membership-system#32-entry-and-onboarding), [3.2.2](https://rcos.ecohubs.community/articles/rcos-core/v0-1/layer-1-membership-system#32-entry-and-onboarding)*
 
 <details data-kind="rationale">
 <summary>Why make the process a fixed sequence?</summary>
@@ -63,7 +63,7 @@ List the ordered steps every new member must complete to move from applicant to 
 
 ## Initial Membership State
 
-*RCOS clauses: [3.1.2](https://blueprint.ecohubs.community/articles/rcos-core/v0-1/layer-1-membership-system#31-membership-states), [3.1.4](https://blueprint.ecohubs.community/articles/rcos-core/v0-1/layer-1-membership-system#31-membership-states)*
+*RCOS clauses: [3.1.2](https://rcos.ecohubs.community/articles/rcos-core/v0-1/layer-1-membership-system#31-membership-states), [3.1.4](https://rcos.ecohubs.community/articles/rcos-core/v0-1/layer-1-membership-system#31-membership-states)*
 
 <details data-kind="rationale">
 <summary>Why assign a state at the end of onboarding?</summary>
@@ -84,7 +84,7 @@ State the membership states a member transitions through during onboarding, and 
 
 ## Trial and Evaluation
 
-*RCOS clauses: [3.3.1](https://blueprint.ecohubs.community/articles/rcos-core/v0-1/layer-1-membership-system#33-trial-and-evaluation), [3.3.2](https://blueprint.ecohubs.community/articles/rcos-core/v0-1/layer-1-membership-system#33-trial-and-evaluation), [3.3.3](https://blueprint.ecohubs.community/articles/rcos-core/v0-1/layer-1-membership-system#33-trial-and-evaluation), [3.3.4](https://blueprint.ecohubs.community/articles/rcos-core/v0-1/layer-1-membership-system#33-trial-and-evaluation)*
+*RCOS clauses: [3.3.1](https://rcos.ecohubs.community/articles/rcos-core/v0-1/layer-1-membership-system#33-trial-and-evaluation), [3.3.2](https://rcos.ecohubs.community/articles/rcos-core/v0-1/layer-1-membership-system#33-trial-and-evaluation), [3.3.3](https://rcos.ecohubs.community/articles/rcos-core/v0-1/layer-1-membership-system#33-trial-and-evaluation), [3.3.4](https://rcos.ecohubs.community/articles/rcos-core/v0-1/layer-1-membership-system#33-trial-and-evaluation)*
 
 <details data-kind="rationale">
 <summary>Why bound the trial period?</summary>
@@ -111,7 +111,7 @@ Define the duration, evaluation criteria, transition decision, grace period, fai
 
 ## Completion Record
 
-*RCOS clauses: [3.8.2](https://blueprint.ecohubs.community/articles/rcos-core/v0-1/layer-1-membership-system#38-artifacts)*
+*RCOS clauses: [3.8.2](https://rcos.ecohubs.community/articles/rcos-core/v0-1/layer-1-membership-system#38-artifacts)*
 
 <details data-kind="rationale">
 <summary>Why keep the record permanent?</summary>

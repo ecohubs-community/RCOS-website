@@ -3,13 +3,13 @@
 # Registro de Invariantes
 
 - **Generado:** 2026-04-29
-- **Fuente (versión más reciente):** [https://blueprint.ecohubs.community/es/articles/rcos-templates/layer-0/invariants-register](https://blueprint.ecohubs.community/es/articles/rcos-templates/layer-0/invariants-register)
-- **Todas las plantillas RCOS:** [https://blueprint.ecohubs.community/es/articles/rcos-templates](https://blueprint.ecohubs.community/es/articles/rcos-templates)
+- **Fuente (versión más reciente):** [https://rcos.ecohubs.community/es/articles/rcos-templates/layer-0/invariants-register](https://rcos.ecohubs.community/es/articles/rcos-templates/layer-0/invariants-register)
+- **Todas las plantillas RCOS:** [https://rcos.ecohubs.community/es/articles/rcos-templates](https://rcos.ecohubs.community/es/articles/rcos-templates)
 
 ---
 - **Capa:** 0 — Identidad y Alcance
 - **Estado:** Plantilla — adaptar para tu comunidad
-- **Referencia RCOS:** [§2.3](https://blueprint.ecohubs.community/es/articles/rcos-core/v0-1/layer-0-identity-scope#23-invariants), [§2.5](https://blueprint.ecohubs.community/es/articles/rcos-core/v0-1/layer-0-identity-scope#25-artifacts)
+- **Referencia RCOS:** [§2.3](https://rcos.ecohubs.community/es/articles/rcos-core/v0-1/layer-0-identity-scope#23-invariants), [§2.5](https://rcos.ecohubs.community/es/articles/rcos-core/v0-1/layer-0-identity-scope#25-artifacts)
 
 > Las invariantes son restricciones que NO DEBEN ser violadas mientras estén en vigor. Ninguna decisión, rol, proceso o medida de emergencia puede anular una invariante. Si surge un conflicto entre una invariante y cualquier otra regla, la invariante prevalece.
 
@@ -17,7 +17,7 @@
 
 ## Invariantes Activas
 
-*Cláusulas RCOS: [2.3.1](https://blueprint.ecohubs.community/es/articles/rcos-core/v0-1/layer-0-identity-scope#23-invariants), [2.3.2](https://blueprint.ecohubs.community/es/articles/rcos-core/v0-1/layer-0-identity-scope#23-invariants), [2.3.3](https://blueprint.ecohubs.community/es/articles/rcos-core/v0-1/layer-0-identity-scope#23-invariants), [2.3.4](https://blueprint.ecohubs.community/es/articles/rcos-core/v0-1/layer-0-identity-scope#23-invariants), [2.3.5](https://blueprint.ecohubs.community/es/articles/rcos-core/v0-1/layer-0-identity-scope#23-invariants), [2.3.6](https://blueprint.ecohubs.community/es/articles/rcos-core/v0-1/layer-0-identity-scope#23-invariants)*
+*Cláusulas RCOS: [2.3.1](https://rcos.ecohubs.community/es/articles/rcos-core/v0-1/layer-0-identity-scope#23-invariants), [2.3.2](https://rcos.ecohubs.community/es/articles/rcos-core/v0-1/layer-0-identity-scope#23-invariants), [2.3.3](https://rcos.ecohubs.community/es/articles/rcos-core/v0-1/layer-0-identity-scope#23-invariants), [2.3.4](https://rcos.ecohubs.community/es/articles/rcos-core/v0-1/layer-0-identity-scope#23-invariants), [2.3.5](https://rcos.ecohubs.community/es/articles/rcos-core/v0-1/layer-0-identity-scope#23-invariants), [2.3.6](https://rcos.ecohubs.community/es/articles/rcos-core/v0-1/layer-0-identity-scope#23-invariants)*
 
 <details data-kind="rationale">
 <summary>¿Por qué las invariantes no pueden ser anuladas?</summary>

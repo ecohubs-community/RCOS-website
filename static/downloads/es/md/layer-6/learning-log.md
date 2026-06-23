@@ -3,13 +3,13 @@
 # Registro de Aprendizajes
 
 - **Generado:** 2026-04-29
-- **Fuente (versión más reciente):** [https://blueprint.ecohubs.community/es/articles/rcos-templates/layer-6/learning-log](https://blueprint.ecohubs.community/es/articles/rcos-templates/layer-6/learning-log)
-- **Todas las plantillas RCOS:** [https://blueprint.ecohubs.community/es/articles/rcos-templates](https://blueprint.ecohubs.community/es/articles/rcos-templates)
+- **Fuente (versión más reciente):** [https://rcos.ecohubs.community/es/articles/rcos-templates/layer-6/learning-log](https://rcos.ecohubs.community/es/articles/rcos-templates/layer-6/learning-log)
+- **Todas las plantillas RCOS:** [https://rcos.ecohubs.community/es/articles/rcos-templates](https://rcos.ecohubs.community/es/articles/rcos-templates)
 
 ---
 - **Capa:** 6 — Evolución y Adaptación
 - **Estado:** Plantilla — adapta para tu comunidad; se actualiza cuando ocurren eventos de aprendizaje
-- **Referencia RCOS:** [§8.4](https://blueprint.ecohubs.community/es/articles/rcos-core/v0-1/layer-6-evolution-adaptation#84-learning-and-feedback-capture), [§8.6](https://blueprint.ecohubs.community/es/articles/rcos-core/v0-1/layer-6-evolution-adaptation#86-artifacts)
+- **Referencia RCOS:** [§8.4](https://rcos.ecohubs.community/es/articles/rcos-core/v0-1/layer-6-evolution-adaptation#84-learning-and-feedback-capture), [§8.6](https://rcos.ecohubs.community/es/articles/rcos-core/v0-1/layer-6-evolution-adaptation#86-artifacts)
 
 > Registra fallos importantes, adaptaciones, reversiones y aprendizajes sistémicos. Los patrones de fallo recurrentes DEBEN activar una revisión estructural, no culpa individual. Las entradas se añaden al inicio (las más recientes primero).
 
@@ -17,7 +17,7 @@
 
 ## Qué constituye un evento de aprendizaje
 
-*Cláusulas RCOS: [8.4.1](https://blueprint.ecohubs.community/es/articles/rcos-core/v0-1/layer-6-evolution-adaptation#84-learning-and-feedback-capture), [8.4.4](https://blueprint.ecohubs.community/es/articles/rcos-core/v0-1/layer-6-evolution-adaptation#84-learning-and-feedback-capture), [8.6.5](https://blueprint.ecohubs.community/es/articles/rcos-core/v0-1/layer-6-evolution-adaptation#86-artifacts), [8.7.4](https://blueprint.ecohubs.community/es/articles/rcos-core/v0-1/layer-6-evolution-adaptation#87-layer-invariants)*
+*Cláusulas RCOS: [8.4.1](https://rcos.ecohubs.community/es/articles/rcos-core/v0-1/layer-6-evolution-adaptation#84-learning-and-feedback-capture), [8.4.4](https://rcos.ecohubs.community/es/articles/rcos-core/v0-1/layer-6-evolution-adaptation#84-learning-and-feedback-capture), [8.6.5](https://rcos.ecohubs.community/es/articles/rcos-core/v0-1/layer-6-evolution-adaptation#86-artifacts), [8.7.4](https://rcos.ecohubs.community/es/articles/rcos-core/v0-1/layer-6-evolution-adaptation#87-layer-invariants)*
 
 <details data-kind="rationale">
 <summary>¿Por qué definir el detonante explícitamente?</summary>
@@ -57,7 +57,7 @@ _Aún no hay entradas. La primera entrada se añadirá cuando ocurra el primer e
 
 ## Formato de entrada
 
-*Cláusulas RCOS: [8.4.2](https://blueprint.ecohubs.community/es/articles/rcos-core/v0-1/layer-6-evolution-adaptation#84-learning-and-feedback-capture), [8.4.3](https://blueprint.ecohubs.community/es/articles/rcos-core/v0-1/layer-6-evolution-adaptation#84-learning-and-feedback-capture), [8.6.5](https://blueprint.ecohubs.community/es/articles/rcos-core/v0-1/layer-6-evolution-adaptation#86-artifacts)*
+*Cláusulas RCOS: [8.4.2](https://rcos.ecohubs.community/es/articles/rcos-core/v0-1/layer-6-evolution-adaptation#84-learning-and-feedback-capture), [8.4.3](https://rcos.ecohubs.community/es/articles/rcos-core/v0-1/layer-6-evolution-adaptation#84-learning-and-feedback-capture), [8.6.5](https://rcos.ecohubs.community/es/articles/rcos-core/v0-1/layer-6-evolution-adaptation#86-artifacts)*
 
 <details data-kind="rationale">
 <summary>¿Por qué una plantilla fija de entrada?</summary>

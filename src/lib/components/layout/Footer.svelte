@@ -12,7 +12,7 @@
 			<div class="space-y-4">
 				<h3 class="text-lg font-bold text-gradient">
 					{m('footer.brand_prefix')}
-					<a href="https://ecohubs.community" class="hover:text-text-primary transition-colors underline">{m('site.brand')}</a>
+					<a href="https://rcos.ecohubs.community" class="hover:text-text-primary transition-colors underline">{m('site.brand')}</a>
 				</h3>
 				<p class="text-sm text-text-secondary max-w-full">
 					{m('footer.tagline')}
@@ -50,7 +50,7 @@
 				<ul class="space-y-2 text-sm text-text-secondary">
 					<li>
 						<a
-							href="https://github.com/ecohubs-community/regenerative-community-blueprint"
+							href="https://github.com/ecohubs-community/RCOS-website"
 							target="_blank"
 							rel="noreferrer"
 							class="hover:text-text-primary transition-colors flex items-center gap-1"

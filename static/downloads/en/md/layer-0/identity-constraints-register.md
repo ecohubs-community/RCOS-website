@@ -3,13 +3,13 @@
 # Identity Constraints Register
 
 - **Generated:** 2026-04-29
-- **Source (latest version):** [https://blueprint.ecohubs.community/articles/rcos-templates/layer-0/identity-constraints-register](https://blueprint.ecohubs.community/articles/rcos-templates/layer-0/identity-constraints-register)
-- **All RCOS templates:** [https://blueprint.ecohubs.community/articles/rcos-templates](https://blueprint.ecohubs.community/articles/rcos-templates)
+- **Source (latest version):** [https://rcos.ecohubs.community/articles/rcos-templates/layer-0/identity-constraints-register](https://rcos.ecohubs.community/articles/rcos-templates/layer-0/identity-constraints-register)
+- **All RCOS templates:** [https://rcos.ecohubs.community/articles/rcos-templates](https://rcos.ecohubs.community/articles/rcos-templates)
 
 ---
 - **Layer:** 0 — Identity & Scope
 - **Status:** Template — adapt for your community
-- **RCOS reference:** [§2.4](https://blueprint.ecohubs.community/articles/rcos-core/v0-1/layer-0-identity-scope#24-identity-constraints), [§2.5](https://blueprint.ecohubs.community/articles/rcos-core/v0-1/layer-0-identity-scope#25-artifacts)
+- **RCOS reference:** [§2.4](https://rcos.ecohubs.community/articles/rcos-core/v0-1/layer-0-identity-scope#24-identity-constraints), [§2.5](https://rcos.ecohubs.community/articles/rcos-core/v0-1/layer-0-identity-scope#25-artifacts)
 
 > Identity constraints are the non-negotiable behavioural, ethical, and structural boundaries that shape who the community is. Unlike invariants (which protect the system itself), identity constraints define how members and the community relate to people, ecosystems, and ideologies.
 
@@ -17,7 +17,7 @@
 
 ## Active Identity Constraints
 
-*RCOS clauses: [2.4.1](https://blueprint.ecohubs.community/articles/rcos-core/v0-1/layer-0-identity-scope#24-identity-constraints), [2.4.3](https://blueprint.ecohubs.community/articles/rcos-core/v0-1/layer-0-identity-scope#24-identity-constraints), [2.4.4](https://blueprint.ecohubs.community/articles/rcos-core/v0-1/layer-0-identity-scope#24-identity-constraints)*
+*RCOS clauses: [2.4.1](https://rcos.ecohubs.community/articles/rcos-core/v0-1/layer-0-identity-scope#24-identity-constraints), [2.4.3](https://rcos.ecohubs.community/articles/rcos-core/v0-1/layer-0-identity-scope#24-identity-constraints), [2.4.4](https://rcos.ecohubs.community/articles/rcos-core/v0-1/layer-0-identity-scope#24-identity-constraints)*
 
 <details data-kind="rationale">
 <summary>Why declare identity constraints explicitly?</summary>
@@ -44,7 +44,7 @@ Each constraint must be testable and enforceable through a defined process — n
 
 ## Enforcement and Testability
 
-*RCOS clauses: [2.4.3](https://blueprint.ecohubs.community/articles/rcos-core/v0-1/layer-0-identity-scope#24-identity-constraints), [2.4.4](https://blueprint.ecohubs.community/articles/rcos-core/v0-1/layer-0-identity-scope#24-identity-constraints)*
+*RCOS clauses: [2.4.3](https://rcos.ecohubs.community/articles/rcos-core/v0-1/layer-0-identity-scope#24-identity-constraints), [2.4.4](https://rcos.ecohubs.community/articles/rcos-core/v0-1/layer-0-identity-scope#24-identity-constraints)*
 
 <details data-kind="rationale">
 <summary>Why must constraints be testable, not informal?</summary>
@@ -66,7 +66,7 @@ For each constraint above (or as a general policy), describe how a violation is 
 
 ## Conditions for Change
 
-*RCOS clauses: [2.4.1](https://blueprint.ecohubs.community/articles/rcos-core/v0-1/layer-0-identity-scope#24-identity-constraints), [2.5.2](https://blueprint.ecohubs.community/articles/rcos-core/v0-1/layer-0-identity-scope#25-artifacts)*
+*RCOS clauses: [2.4.1](https://rcos.ecohubs.community/articles/rcos-core/v0-1/layer-0-identity-scope#24-identity-constraints), [2.5.2](https://rcos.ecohubs.community/articles/rcos-core/v0-1/layer-0-identity-scope#25-artifacts)*
 
 <details data-kind="instructions">
 <summary>How to fill this in</summary>

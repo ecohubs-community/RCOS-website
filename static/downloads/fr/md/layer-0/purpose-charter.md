@@ -3,19 +3,19 @@
 # Charte de raison d'être
 
 - **Généré:** 2026-04-29
-- **Source (version la plus récente):** [https://blueprint.ecohubs.community/fr/articles/rcos-templates/layer-0/purpose-charter](https://blueprint.ecohubs.community/fr/articles/rcos-templates/layer-0/purpose-charter)
-- **Tous les modèles RCOS:** [https://blueprint.ecohubs.community/fr/articles/rcos-templates](https://blueprint.ecohubs.community/fr/articles/rcos-templates)
+- **Source (version la plus récente):** [https://rcos.ecohubs.community/fr/articles/rcos-templates/layer-0/purpose-charter](https://rcos.ecohubs.community/fr/articles/rcos-templates/layer-0/purpose-charter)
+- **Tous les modèles RCOS:** [https://rcos.ecohubs.community/fr/articles/rcos-templates](https://rcos.ecohubs.community/fr/articles/rcos-templates)
 
 ---
 - **Couche :** 0 — Identité et périmètre
 - **Statut :** Modèle — à adapter pour ta communauté
-- **Référence RCOS :** [§2.1](https://blueprint.ecohubs.community/fr/articles/rcos-core/v0-1/layer-0-identity-scope#21-purpose-definition), [§2.5](https://blueprint.ecohubs.community/fr/articles/rcos-core/v0-1/layer-0-identity-scope#25-artifacts)
+- **Référence RCOS :** [§2.1](https://rcos.ecohubs.community/fr/articles/rcos-core/v0-1/layer-0-identity-scope#21-purpose-definition), [§2.5](https://rcos.ecohubs.community/fr/articles/rcos-core/v0-1/layer-0-identity-scope#25-artifacts)
 
 ---
 
 ## Raison d'être principale
 
-*Clauses RCOS : [2.1.1](https://blueprint.ecohubs.community/fr/articles/rcos-core/v0-1/layer-0-identity-scope#21-purpose-definition), [2.1.2](https://blueprint.ecohubs.community/fr/articles/rcos-core/v0-1/layer-0-identity-scope#21-purpose-definition), [2.1.5](https://blueprint.ecohubs.community/fr/articles/rcos-core/v0-1/layer-0-identity-scope#21-purpose-definition)*
+*Clauses RCOS : [2.1.1](https://rcos.ecohubs.community/fr/articles/rcos-core/v0-1/layer-0-identity-scope#21-purpose-definition), [2.1.2](https://rcos.ecohubs.community/fr/articles/rcos-core/v0-1/layer-0-identity-scope#21-purpose-definition), [2.1.5](https://rcos.ecohubs.community/fr/articles/rcos-core/v0-1/layer-0-identity-scope#21-purpose-definition)*
 
 <details data-kind="rationale">
 <summary>Pourquoi une raison d'être unique et pérenne ?</summary>
@@ -35,7 +35,7 @@ _<La raison d'être principale de ta communauté, en une ou deux phrases.>_
 
 ## Raisons d'être secondaires
 
-*Clauses RCOS : [2.1.4](https://blueprint.ecohubs.community/fr/articles/rcos-core/v0-1/layer-0-identity-scope#21-purpose-definition)*
+*Clauses RCOS : [2.1.4](https://rcos.ecohubs.community/fr/articles/rcos-core/v0-1/layer-0-identity-scope#21-purpose-definition)*
 
 <details data-kind="rationale">
 <summary>Pourquoi autoriser des raisons d'être secondaires ?</summary>
@@ -77,7 +77,7 @@ Nomme les choses que ta communauté n'est explicitement PAS, en particulier les 
 
 ## Conditions de modification de la raison d'être
 
-*Clauses RCOS : [2.1.3](https://blueprint.ecohubs.community/fr/articles/rcos-core/v0-1/layer-0-identity-scope#21-purpose-definition)*
+*Clauses RCOS : [2.1.3](https://rcos.ecohubs.community/fr/articles/rcos-core/v0-1/layer-0-identity-scope#21-purpose-definition)*
 
 <details data-kind="rationale">
 <summary>Pourquoi rendre la modification de la raison d'être difficile ?</summary>

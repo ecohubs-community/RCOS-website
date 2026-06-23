@@ -3,19 +3,19 @@
 # Internal Economy Protocol
 
 - **Generated:** 2026-04-29
-- **Source (latest version):** [https://blueprint.ecohubs.community/articles/rcos-templates/layer-3/internal-economy-protocol](https://blueprint.ecohubs.community/articles/rcos-templates/layer-3/internal-economy-protocol)
-- **All RCOS templates:** [https://blueprint.ecohubs.community/articles/rcos-templates](https://blueprint.ecohubs.community/articles/rcos-templates)
+- **Source (latest version):** [https://rcos.ecohubs.community/articles/rcos-templates/layer-3/internal-economy-protocol](https://rcos.ecohubs.community/articles/rcos-templates/layer-3/internal-economy-protocol)
+- **All RCOS templates:** [https://rcos.ecohubs.community/articles/rcos-templates](https://rcos.ecohubs.community/articles/rcos-templates)
 
 ---
 - **Layer:** 3 — Economic & Resource System
 - **Status:** Template — adapt for your community
-- **RCOS reference:** [§5.1](https://blueprint.ecohubs.community/articles/rcos-core/v0-1/layer-3-economic-resource-system#51-commons-vs-private-resources), [§5.2](https://blueprint.ecohubs.community/articles/rcos-core/v0-1/layer-3-economic-resource-system#52-contribution-recognition), [§5.4](https://blueprint.ecohubs.community/articles/rcos-core/v0-1/layer-3-economic-resource-system#54-accumulation-constraints), [§5.5](https://blueprint.ecohubs.community/articles/rcos-core/v0-1/layer-3-economic-resource-system#55-artifacts)
+- **RCOS reference:** [§5.1](https://rcos.ecohubs.community/articles/rcos-core/v0-1/layer-3-economic-resource-system#51-commons-vs-private-resources), [§5.2](https://rcos.ecohubs.community/articles/rcos-core/v0-1/layer-3-economic-resource-system#52-contribution-recognition), [§5.4](https://rcos.ecohubs.community/articles/rcos-core/v0-1/layer-3-economic-resource-system#54-accumulation-constraints), [§5.5](https://rcos.ecohubs.community/articles/rcos-core/v0-1/layer-3-economic-resource-system#55-artifacts)
 
 ---
 
 ## Commons vs. Private Classification
 
-*RCOS clauses: [5.1.1](https://blueprint.ecohubs.community/articles/rcos-core/v0-1/layer-3-economic-resource-system#51-commons-vs-private-resources), [5.1.2](https://blueprint.ecohubs.community/articles/rcos-core/v0-1/layer-3-economic-resource-system#51-commons-vs-private-resources), [5.1.3](https://blueprint.ecohubs.community/articles/rcos-core/v0-1/layer-3-economic-resource-system#51-commons-vs-private-resources), [5.1.4](https://blueprint.ecohubs.community/articles/rcos-core/v0-1/layer-3-economic-resource-system#51-commons-vs-private-resources), [5.1.5](https://blueprint.ecohubs.community/articles/rcos-core/v0-1/layer-3-economic-resource-system#51-commons-vs-private-resources), [5.6.2](https://blueprint.ecohubs.community/articles/rcos-core/v0-1/layer-3-economic-resource-system#56-layer-invariants)*
+*RCOS clauses: [5.1.1](https://rcos.ecohubs.community/articles/rcos-core/v0-1/layer-3-economic-resource-system#51-commons-vs-private-resources), [5.1.2](https://rcos.ecohubs.community/articles/rcos-core/v0-1/layer-3-economic-resource-system#51-commons-vs-private-resources), [5.1.3](https://rcos.ecohubs.community/articles/rcos-core/v0-1/layer-3-economic-resource-system#51-commons-vs-private-resources), [5.1.4](https://rcos.ecohubs.community/articles/rcos-core/v0-1/layer-3-economic-resource-system#51-commons-vs-private-resources), [5.1.5](https://rcos.ecohubs.community/articles/rcos-core/v0-1/layer-3-economic-resource-system#51-commons-vs-private-resources), [5.6.2](https://rcos.ecohubs.community/articles/rcos-core/v0-1/layer-3-economic-resource-system#56-layer-invariants)*
 
 <details data-kind="rationale">
 <summary>Why classify every resource?</summary>
@@ -43,7 +43,7 @@ For each resource the community holds, declare classification (Commons / Private
 
 ## Recognized Contribution Categories
 
-*RCOS clauses: [5.2.1](https://blueprint.ecohubs.community/articles/rcos-core/v0-1/layer-3-economic-resource-system#52-contribution-recognition), [5.2.3](https://blueprint.ecohubs.community/articles/rcos-core/v0-1/layer-3-economic-resource-system#52-contribution-recognition), [5.6.3](https://blueprint.ecohubs.community/articles/rcos-core/v0-1/layer-3-economic-resource-system#56-layer-invariants)*
+*RCOS clauses: [5.2.1](https://rcos.ecohubs.community/articles/rcos-core/v0-1/layer-3-economic-resource-system#52-contribution-recognition), [5.2.3](https://rcos.ecohubs.community/articles/rcos-core/v0-1/layer-3-economic-resource-system#52-contribution-recognition), [5.6.3](https://rcos.ecohubs.community/articles/rcos-core/v0-1/layer-3-economic-resource-system#56-layer-invariants)*
 
 <details data-kind="rationale">
 <summary>Why name the kinds of work that count?</summary>
@@ -71,7 +71,7 @@ List the categories of contribution your community recognizes. Care, facilitatio
 
 ## Contribution Recognition Mechanism
 
-*RCOS clauses: [5.2.2](https://blueprint.ecohubs.community/articles/rcos-core/v0-1/layer-3-economic-resource-system#52-contribution-recognition), [5.2.5](https://blueprint.ecohubs.community/articles/rcos-core/v0-1/layer-3-economic-resource-system#52-contribution-recognition)*
+*RCOS clauses: [5.2.2](https://rcos.ecohubs.community/articles/rcos-core/v0-1/layer-3-economic-resource-system#52-contribution-recognition), [5.2.5](https://rcos.ecohubs.community/articles/rcos-core/v0-1/layer-3-economic-resource-system#52-contribution-recognition)*
 
 <details data-kind="rationale">
 <summary>Why pin down how recognition actually works?</summary>
@@ -95,7 +95,7 @@ State what qualifies, how recognitions are recorded, who validates, what they un
 
 ## Internal Units
 
-*RCOS clauses: [5.2.4](https://blueprint.ecohubs.community/articles/rcos-core/v0-1/layer-3-economic-resource-system#52-contribution-recognition), [5.2.5](https://blueprint.ecohubs.community/articles/rcos-core/v0-1/layer-3-economic-resource-system#52-contribution-recognition)*
+*RCOS clauses: [5.2.4](https://rcos.ecohubs.community/articles/rcos-core/v0-1/layer-3-economic-resource-system#52-contribution-recognition), [5.2.5](https://rcos.ecohubs.community/articles/rcos-core/v0-1/layer-3-economic-resource-system#52-contribution-recognition)*
 
 <details data-kind="rationale">
 <summary>Why define internal units this precisely?</summary>
@@ -125,7 +125,7 @@ If your community uses internal units (XP, ECO, credits, etc.), define each unit
 
 ## Accumulation Constraints
 
-*RCOS clauses: [5.4.1](https://blueprint.ecohubs.community/articles/rcos-core/v0-1/layer-3-economic-resource-system#54-accumulation-constraints), [5.4.2](https://blueprint.ecohubs.community/articles/rcos-core/v0-1/layer-3-economic-resource-system#54-accumulation-constraints), [5.4.3](https://blueprint.ecohubs.community/articles/rcos-core/v0-1/layer-3-economic-resource-system#54-accumulation-constraints), [5.4.4](https://blueprint.ecohubs.community/articles/rcos-core/v0-1/layer-3-economic-resource-system#54-accumulation-constraints), [5.6.4](https://blueprint.ecohubs.community/articles/rcos-core/v0-1/layer-3-economic-resource-system#56-layer-invariants)*
+*RCOS clauses: [5.4.1](https://rcos.ecohubs.community/articles/rcos-core/v0-1/layer-3-economic-resource-system#54-accumulation-constraints), [5.4.2](https://rcos.ecohubs.community/articles/rcos-core/v0-1/layer-3-economic-resource-system#54-accumulation-constraints), [5.4.3](https://rcos.ecohubs.community/articles/rcos-core/v0-1/layer-3-economic-resource-system#54-accumulation-constraints), [5.4.4](https://rcos.ecohubs.community/articles/rcos-core/v0-1/layer-3-economic-resource-system#54-accumulation-constraints), [5.6.4](https://rcos.ecohubs.community/articles/rcos-core/v0-1/layer-3-economic-resource-system#56-layer-invariants)*
 
 <details data-kind="rationale">
 <summary>Why constrain accumulation at all?</summary>
@@ -147,7 +147,7 @@ State the current accumulation rule (cap, decay, none) and the rule that no inte
 
 ## External Income Interfaces
 
-*RCOS clauses: [5.3.2](https://blueprint.ecohubs.community/articles/rcos-core/v0-1/layer-3-economic-resource-system#53-treasury-management)*
+*RCOS clauses: [5.3.2](https://rcos.ecohubs.community/articles/rcos-core/v0-1/layer-3-economic-resource-system#53-treasury-management)*
 
 <details data-kind="rationale">
 <summary>Why require approval before money arrives?</summary>

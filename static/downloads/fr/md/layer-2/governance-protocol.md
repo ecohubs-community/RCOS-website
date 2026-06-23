@@ -3,13 +3,13 @@
 # Protocole de gouvernance
 
 - **Généré:** 2026-04-29
-- **Source (version la plus récente):** [https://blueprint.ecohubs.community/fr/articles/rcos-templates/layer-2/governance-protocol](https://blueprint.ecohubs.community/fr/articles/rcos-templates/layer-2/governance-protocol)
-- **Tous les modèles RCOS:** [https://blueprint.ecohubs.community/fr/articles/rcos-templates](https://blueprint.ecohubs.community/fr/articles/rcos-templates)
+- **Source (version la plus récente):** [https://rcos.ecohubs.community/fr/articles/rcos-templates/layer-2/governance-protocol](https://rcos.ecohubs.community/fr/articles/rcos-templates/layer-2/governance-protocol)
+- **Tous les modèles RCOS:** [https://rcos.ecohubs.community/fr/articles/rcos-templates](https://rcos.ecohubs.community/fr/articles/rcos-templates)
 
 ---
 - **Couche :** 2 — Gouvernance et logique décisionnelle
 - **Statut :** Modèle — à adapter pour ta communauté
-- **Référence RCOS :** [§4.5](https://blueprint.ecohubs.community/fr/articles/rcos-core/v0-1/layer-2-governance-decision-logic#45-governance-protocol), [§4.6](https://blueprint.ecohubs.community/fr/articles/rcos-core/v0-1/layer-2-governance-decision-logic#46-safeguards-and-failure-modes), [§4.7](https://blueprint.ecohubs.community/fr/articles/rcos-core/v0-1/layer-2-governance-decision-logic#47-artifacts)
+- **Référence RCOS :** [§4.5](https://rcos.ecohubs.community/fr/articles/rcos-core/v0-1/layer-2-governance-decision-logic#45-governance-protocol), [§4.6](https://rcos.ecohubs.community/fr/articles/rcos-core/v0-1/layer-2-governance-decision-logic#46-safeguards-and-failure-modes), [§4.7](https://rcos.ecohubs.community/fr/articles/rcos-core/v0-1/layer-2-governance-decision-logic#47-artifacts)
 
 > Définit le cycle de vie complet d'une décision collective — de la soumission de proposition à la documentation et à l'appel.
 
@@ -17,7 +17,7 @@
 
 ## Soumission de proposition
 
-*Clauses RCOS : [4.5.1](https://blueprint.ecohubs.community/fr/articles/rcos-core/v0-1/layer-2-governance-decision-logic#45-governance-protocol), [4.5.2](https://blueprint.ecohubs.community/fr/articles/rcos-core/v0-1/layer-2-governance-decision-logic#45-governance-protocol)*
+*Clauses RCOS : [4.5.1](https://rcos.ecohubs.community/fr/articles/rcos-core/v0-1/layer-2-governance-decision-logic#45-governance-protocol), [4.5.2](https://rcos.ecohubs.community/fr/articles/rcos-core/v0-1/layer-2-governance-decision-logic#45-governance-protocol)*
 
 <details data-kind="rationale">
 <summary>Pourquoi formaliser la manière dont les propositions entrent dans le système ?</summary>
@@ -41,7 +41,7 @@ Indique qui peut proposer, où les propositions sont soumises, les champs de con
 
 ## Examen et délibération
 
-*Clauses RCOS : [4.5.1](https://blueprint.ecohubs.community/fr/articles/rcos-core/v0-1/layer-2-governance-decision-logic#45-governance-protocol), [4.5.2](https://blueprint.ecohubs.community/fr/articles/rcos-core/v0-1/layer-2-governance-decision-logic#45-governance-protocol)*
+*Clauses RCOS : [4.5.1](https://rcos.ecohubs.community/fr/articles/rcos-core/v0-1/layer-2-governance-decision-logic#45-governance-protocol), [4.5.2](https://rcos.ecohubs.community/fr/articles/rcos-core/v0-1/layer-2-governance-decision-logic#45-governance-protocol)*
 
 <details data-kind="rationale">
 <summary>Pourquoi imposer une période minimale de délibération ?</summary>
@@ -64,7 +64,7 @@ Nomme les lieux de délibération et les périodes minimales pour les décisions
 
 ## Exécution de la décision
 
-*Clauses RCOS : [4.5.1](https://blueprint.ecohubs.community/fr/articles/rcos-core/v0-1/layer-2-governance-decision-logic#45-governance-protocol), [4.5.4](https://blueprint.ecohubs.community/fr/articles/rcos-core/v0-1/layer-2-governance-decision-logic#45-governance-protocol)*
+*Clauses RCOS : [4.5.1](https://rcos.ecohubs.community/fr/articles/rcos-core/v0-1/layer-2-governance-decision-logic#45-governance-protocol), [4.5.4](https://rcos.ecohubs.community/fr/articles/rcos-core/v0-1/layer-2-governance-decision-logic#45-governance-protocol)*
 
 <details data-kind="rationale">
 <summary>Pourquoi lier l'exécution au registre ?</summary>
@@ -86,7 +86,7 @@ Indique ce qui se passe quand une proposition est adoptée (mise à jour des art
 
 ## Documentation et publication
 
-*Clauses RCOS : [4.5.4](https://blueprint.ecohubs.community/fr/articles/rcos-core/v0-1/layer-2-governance-decision-logic#45-governance-protocol)*
+*Clauses RCOS : [4.5.4](https://rcos.ecohubs.community/fr/articles/rcos-core/v0-1/layer-2-governance-decision-logic#45-governance-protocol)*
 
 <details data-kind="rationale">
 <summary>Pourquoi documenter chaque résultat, y compris les rejets ?</summary>
@@ -108,7 +108,7 @@ Indique les règles de conservation pour les propositions adoptées et rejetées
 
 ## Appel et révision
 
-*Clauses RCOS : [4.5.2](https://blueprint.ecohubs.community/fr/articles/rcos-core/v0-1/layer-2-governance-decision-logic#45-governance-protocol), [4.6.2](https://blueprint.ecohubs.community/fr/articles/rcos-core/v0-1/layer-2-governance-decision-logic#46-safeguards-and-failure-modes)*
+*Clauses RCOS : [4.5.2](https://rcos.ecohubs.community/fr/articles/rcos-core/v0-1/layer-2-governance-decision-logic#45-governance-protocol), [4.6.2](https://rcos.ecohubs.community/fr/articles/rcos-core/v0-1/layer-2-governance-decision-logic#46-safeguards-and-failure-modes)*
 
 <details data-kind="rationale">
 <summary>Pourquoi rendre les re-votes possibles mais encadrés ?</summary>
@@ -131,7 +131,7 @@ Définis les conditions pour déclencher un re-vote, le format de l'objection, e
 
 ## Conflit entre décisions
 
-*Clauses RCOS : [4.5.3](https://blueprint.ecohubs.community/fr/articles/rcos-core/v0-1/layer-2-governance-decision-logic#45-governance-protocol)*
+*Clauses RCOS : [4.5.3](https://rcos.ecohubs.community/fr/articles/rcos-core/v0-1/layer-2-governance-decision-logic#45-governance-protocol)*
 
 <details data-kind="rationale">
 <summary>Pourquoi prédéfinir la résolution des conflits ?</summary>
@@ -153,7 +153,7 @@ Indique la règle de préséance (typiquement : le type de décision supérieur 
 
 ## Garde-fous et modes de défaillance
 
-*Clauses RCOS : [4.6.1](https://blueprint.ecohubs.community/fr/articles/rcos-core/v0-1/layer-2-governance-decision-logic#46-safeguards-and-failure-modes), [4.6.2](https://blueprint.ecohubs.community/fr/articles/rcos-core/v0-1/layer-2-governance-decision-logic#46-safeguards-and-failure-modes), [4.6.3](https://blueprint.ecohubs.community/fr/articles/rcos-core/v0-1/layer-2-governance-decision-logic#46-safeguards-and-failure-modes)*
+*Clauses RCOS : [4.6.1](https://rcos.ecohubs.community/fr/articles/rcos-core/v0-1/layer-2-governance-decision-logic#46-safeguards-and-failure-modes), [4.6.2](https://rcos.ecohubs.community/fr/articles/rcos-core/v0-1/layer-2-governance-decision-logic#46-safeguards-and-failure-modes), [4.6.3](https://rcos.ecohubs.community/fr/articles/rcos-core/v0-1/layer-2-governance-decision-logic#46-safeguards-and-failure-modes)*
 
 <details data-kind="rationale">
 <summary>Pourquoi planifier les défaillances de gouvernance à l'avance ?</summary>

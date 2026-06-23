@@ -3,13 +3,13 @@
 # Modèles de réunion
 
 - **Généré:** 2026-04-29
-- **Source (version la plus récente):** [https://blueprint.ecohubs.community/fr/articles/rcos-templates/layer-5/meeting-templates](https://blueprint.ecohubs.community/fr/articles/rcos-templates/layer-5/meeting-templates)
-- **Tous les modèles RCOS:** [https://blueprint.ecohubs.community/fr/articles/rcos-templates](https://blueprint.ecohubs.community/fr/articles/rcos-templates)
+- **Source (version la plus récente):** [https://rcos.ecohubs.community/fr/articles/rcos-templates/layer-5/meeting-templates](https://rcos.ecohubs.community/fr/articles/rcos-templates/layer-5/meeting-templates)
+- **Tous les modèles RCOS:** [https://rcos.ecohubs.community/fr/articles/rcos-templates](https://rcos.ecohubs.community/fr/articles/rcos-templates)
 
 ---
 - **Couche :** 5 — Opérations & Coordination
 - **Statut :** Modèle — à adapter pour ta communauté
-- **Référence RCOS :** [§7.2](https://blueprint.ecohubs.community/fr/articles/rcos-core/v0-1/layer-5-operations-coordination#72-meeting-system), [§7.6](https://blueprint.ecohubs.community/fr/articles/rcos-core/v0-1/layer-5-operations-coordination#76-artifacts)
+- **Référence RCOS :** [§7.2](https://rcos.ecohubs.community/fr/articles/rcos-core/v0-1/layer-5-operations-coordination#72-meeting-system), [§7.6](https://rcos.ecohubs.community/fr/articles/rcos-core/v0-1/layer-5-operations-coordination#76-artifacts)
 
 > Les modèles de réunion déclarent l'objectif, le périmètre de décision, le quorum et la structure de chaque type de réunion. Une réunion sans modèle déclaré finira, avec le temps, par accumuler une autorité qu'elle ne devrait pas avoir. Adapte ces modèles et ajoute ou supprime des types de réunion selon les besoins de ta communauté.
 
@@ -17,7 +17,7 @@
 
 ## Type de réunion : Opérations
 
-*Clauses RCOS : [7.2.1](https://blueprint.ecohubs.community/fr/articles/rcos-core/v0-1/layer-5-operations-coordination#72-meeting-system), [7.2.2](https://blueprint.ecohubs.community/fr/articles/rcos-core/v0-1/layer-5-operations-coordination#72-meeting-system), [7.2.3](https://blueprint.ecohubs.community/fr/articles/rcos-core/v0-1/layer-5-operations-coordination#72-meeting-system), [7.2.4](https://blueprint.ecohubs.community/fr/articles/rcos-core/v0-1/layer-5-operations-coordination#72-meeting-system), [7.6.4](https://blueprint.ecohubs.community/fr/articles/rcos-core/v0-1/layer-5-operations-coordination#76-artifacts)*
+*Clauses RCOS : [7.2.1](https://rcos.ecohubs.community/fr/articles/rcos-core/v0-1/layer-5-operations-coordination#72-meeting-system), [7.2.2](https://rcos.ecohubs.community/fr/articles/rcos-core/v0-1/layer-5-operations-coordination#72-meeting-system), [7.2.3](https://rcos.ecohubs.community/fr/articles/rcos-core/v0-1/layer-5-operations-coordination#72-meeting-system), [7.2.4](https://rcos.ecohubs.community/fr/articles/rcos-core/v0-1/layer-5-operations-coordination#72-meeting-system), [7.6.4](https://rcos.ecohubs.community/fr/articles/rcos-core/v0-1/layer-5-operations-coordination#76-artifacts)*
 
 <details data-kind="rationale">
 <summary>Pourquoi une réunion Opérations régulière ?</summary>
@@ -71,7 +71,7 @@ Définis l'objectif, le périmètre de décision, les participants requis et opt
 
 ## Type de réunion : Gouvernance
 
-*Clauses RCOS : [7.2.1](https://blueprint.ecohubs.community/fr/articles/rcos-core/v0-1/layer-5-operations-coordination#72-meeting-system), [7.2.2](https://blueprint.ecohubs.community/fr/articles/rcos-core/v0-1/layer-5-operations-coordination#72-meeting-system), [7.2.3](https://blueprint.ecohubs.community/fr/articles/rcos-core/v0-1/layer-5-operations-coordination#72-meeting-system), [7.6.4](https://blueprint.ecohubs.community/fr/articles/rcos-core/v0-1/layer-5-operations-coordination#76-artifacts)*
+*Clauses RCOS : [7.2.1](https://rcos.ecohubs.community/fr/articles/rcos-core/v0-1/layer-5-operations-coordination#72-meeting-system), [7.2.2](https://rcos.ecohubs.community/fr/articles/rcos-core/v0-1/layer-5-operations-coordination#72-meeting-system), [7.2.3](https://rcos.ecohubs.community/fr/articles/rcos-core/v0-1/layer-5-operations-coordination#72-meeting-system), [7.6.4](https://rcos.ecohubs.community/fr/articles/rcos-core/v0-1/layer-5-operations-coordination#76-artifacts)*
 
 <details data-kind="rationale">
 <summary>Pourquoi séparer la délibération du vote contraignant ?</summary>
@@ -124,7 +124,7 @@ Cette réunion délibère sur les propositions actives pendant leur période de 
 
 ## Type de réunion : Coordination & Alignement
 
-*Clauses RCOS : [7.2.1](https://blueprint.ecohubs.community/fr/articles/rcos-core/v0-1/layer-5-operations-coordination#72-meeting-system), [7.2.2](https://blueprint.ecohubs.community/fr/articles/rcos-core/v0-1/layer-5-operations-coordination#72-meeting-system), [7.2.3](https://blueprint.ecohubs.community/fr/articles/rcos-core/v0-1/layer-5-operations-coordination#72-meeting-system), [7.6.4](https://blueprint.ecohubs.community/fr/articles/rcos-core/v0-1/layer-5-operations-coordination#76-artifacts)*
+*Clauses RCOS : [7.2.1](https://rcos.ecohubs.community/fr/articles/rcos-core/v0-1/layer-5-operations-coordination#72-meeting-system), [7.2.2](https://rcos.ecohubs.community/fr/articles/rcos-core/v0-1/layer-5-operations-coordination#72-meeting-system), [7.2.3](https://rcos.ecohubs.community/fr/articles/rcos-core/v0-1/layer-5-operations-coordination#72-meeting-system), [7.6.4](https://rcos.ecohubs.community/fr/articles/rcos-core/v0-1/layer-5-operations-coordination#76-artifacts)*
 
 <details data-kind="rationale">
 <summary>Pourquoi une réunion de coordination dédiée ?</summary>
@@ -166,7 +166,7 @@ Utilise ce modèle lorsqu'une coordination entre rôles est nécessaire. Limite 
 
 ## Type de réunion : Réflexion & Apprentissage
 
-*Clauses RCOS : [7.2.1](https://blueprint.ecohubs.community/fr/articles/rcos-core/v0-1/layer-5-operations-coordination#72-meeting-system), [7.2.2](https://blueprint.ecohubs.community/fr/articles/rcos-core/v0-1/layer-5-operations-coordination#72-meeting-system), [7.2.3](https://blueprint.ecohubs.community/fr/articles/rcos-core/v0-1/layer-5-operations-coordination#72-meeting-system), [7.6.4](https://blueprint.ecohubs.community/fr/articles/rcos-core/v0-1/layer-5-operations-coordination#76-artifacts)*
+*Clauses RCOS : [7.2.1](https://rcos.ecohubs.community/fr/articles/rcos-core/v0-1/layer-5-operations-coordination#72-meeting-system), [7.2.2](https://rcos.ecohubs.community/fr/articles/rcos-core/v0-1/layer-5-operations-coordination#72-meeting-system), [7.2.3](https://rcos.ecohubs.community/fr/articles/rcos-core/v0-1/layer-5-operations-coordination#72-meeting-system), [7.6.4](https://rcos.ecohubs.community/fr/articles/rcos-core/v0-1/layer-5-operations-coordination#76-artifacts)*
 
 <details data-kind="rationale">
 <summary>Pourquoi accorder à la réflexion son propre type de réunion ?</summary>
@@ -212,7 +212,7 @@ Cette réunion passe en revue la période la plus récente et alimente le Journa
 
 ## Type de réunion : Traitement des conflits
 
-*Clauses RCOS : [7.2.1](https://blueprint.ecohubs.community/fr/articles/rcos-core/v0-1/layer-5-operations-coordination#72-meeting-system), [7.2.2](https://blueprint.ecohubs.community/fr/articles/rcos-core/v0-1/layer-5-operations-coordination#72-meeting-system), [7.2.3](https://blueprint.ecohubs.community/fr/articles/rcos-core/v0-1/layer-5-operations-coordination#72-meeting-system), [7.6.4](https://blueprint.ecohubs.community/fr/articles/rcos-core/v0-1/layer-5-operations-coordination#76-artifacts) ; voir aussi Couche 4 — [Échelle de résolution des conflits](https://blueprint.ecohubs.community/fr/articles/rcos-core/v0-1/layer-4-conflict-repair-accountability#62-resolution-pathways)*
+*Clauses RCOS : [7.2.1](https://rcos.ecohubs.community/fr/articles/rcos-core/v0-1/layer-5-operations-coordination#72-meeting-system), [7.2.2](https://rcos.ecohubs.community/fr/articles/rcos-core/v0-1/layer-5-operations-coordination#72-meeting-system), [7.2.3](https://rcos.ecohubs.community/fr/articles/rcos-core/v0-1/layer-5-operations-coordination#72-meeting-system), [7.6.4](https://rcos.ecohubs.community/fr/articles/rcos-core/v0-1/layer-5-operations-coordination#76-artifacts) ; voir aussi Couche 4 — [Échelle de résolution des conflits](https://rcos.ecohubs.community/fr/articles/rcos-core/v0-1/layer-4-conflict-repair-accountability#62-resolution-pathways)*
 
 <details data-kind="rationale">
 <summary>Pourquoi un type de réunion distinct pour les conflits ?</summary>

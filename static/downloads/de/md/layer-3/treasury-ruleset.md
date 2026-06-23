@@ -3,19 +3,19 @@
 # Kassensatzung
 
 - **Generiert:** 2026-04-29
-- **Quelle (aktuelle Version):** [https://blueprint.ecohubs.community/de/articles/rcos-templates/layer-3/treasury-ruleset](https://blueprint.ecohubs.community/de/articles/rcos-templates/layer-3/treasury-ruleset)
-- **Alle RCOS-Vorlagen:** [https://blueprint.ecohubs.community/de/articles/rcos-templates](https://blueprint.ecohubs.community/de/articles/rcos-templates)
+- **Quelle (aktuelle Version):** [https://rcos.ecohubs.community/de/articles/rcos-templates/layer-3/treasury-ruleset](https://rcos.ecohubs.community/de/articles/rcos-templates/layer-3/treasury-ruleset)
+- **Alle RCOS-Vorlagen:** [https://rcos.ecohubs.community/de/articles/rcos-templates](https://rcos.ecohubs.community/de/articles/rcos-templates)
 
 ---
 - **Ebene:** 3 — Wirtschafts- & Ressourcensystem
 - **Status:** Vorlage — an eure Gemeinschaft anpassen
-- **RCOS-Referenz:** [§5.3](https://blueprint.ecohubs.community/de/articles/rcos-core/v0-1/layer-3-economic-resource-system#53-treasury-management), [§5.5](https://blueprint.ecohubs.community/de/articles/rcos-core/v0-1/layer-3-economic-resource-system#55-artifacts)
+- **RCOS-Referenz:** [§5.3](https://rcos.ecohubs.community/de/articles/rcos-core/v0-1/layer-3-economic-resource-system#53-treasury-management), [§5.5](https://rcos.ecohubs.community/de/articles/rcos-core/v0-1/layer-3-economic-resource-system#55-artifacts)
 
 ---
 
 ## Geltungsbereich der Kasse
 
-*RCOS-Klauseln: [5.3.1](https://blueprint.ecohubs.community/de/articles/rcos-core/v0-1/layer-3-economic-resource-system#53-treasury-management), [5.5.4](https://blueprint.ecohubs.community/de/articles/rcos-core/v0-1/layer-3-economic-resource-system#55-artifacts)*
+*RCOS-Klauseln: [5.3.1](https://rcos.ecohubs.community/de/articles/rcos-core/v0-1/layer-3-economic-resource-system#53-treasury-management), [5.5.4](https://rcos.ecohubs.community/de/articles/rcos-core/v0-1/layer-3-economic-resource-system#55-artifacts)*
 
 <details data-kind="rationale">
 <summary>Warum eine klare Grenze um die Gemeinschaftskasse ziehen?</summary>
@@ -35,7 +35,7 @@ _<Legt fest, welche Konten die Gemeinschaftskasse bilden — explizite Wallet-Ad
 
 ## Einnahmequellen
 
-*RCOS-Klauseln: [5.3.2](https://blueprint.ecohubs.community/de/articles/rcos-core/v0-1/layer-3-economic-resource-system#53-treasury-management)*
+*RCOS-Klauseln: [5.3.2](https://rcos.ecohubs.community/de/articles/rcos-core/v0-1/layer-3-economic-resource-system#53-treasury-management)*
 
 <details data-kind="rationale">
 <summary>Warum alle Einnahmen über eine einzige deklarierte Liste laufen lassen?</summary>
@@ -55,7 +55,7 @@ _<Listet die aktuellen Einnahmequellen auf oder stellt fest, dass es keine gibt.
 
 ## Ausgabenbefugnis
 
-*RCOS-Klauseln: [5.3.3](https://blueprint.ecohubs.community/de/articles/rcos-core/v0-1/layer-3-economic-resource-system#53-treasury-management), [5.7.1](https://blueprint.ecohubs.community/de/articles/rcos-core/v0-1/layer-3-economic-resource-system#57-explicitness-rules)*
+*RCOS-Klauseln: [5.3.3](https://rcos.ecohubs.community/de/articles/rcos-core/v0-1/layer-3-economic-resource-system#53-treasury-management), [5.7.1](https://rcos.ecohubs.community/de/articles/rcos-core/v0-1/layer-3-economic-resource-system#57-explicitness-rules)*
 
 <details data-kind="rationale">
 <summary>Warum Schwellenwerte in einer Tabelle festhalten?</summary>
@@ -79,7 +79,7 @@ Definiert Ausgabenstufen nach Betrag sowie den Entscheidungstyp, das befugte Gre
 
 ## Transparenz und Berichtswesen
 
-*RCOS-Klauseln: [5.3.4](https://blueprint.ecohubs.community/de/articles/rcos-core/v0-1/layer-3-economic-resource-system#53-treasury-management), [5.3.5](https://blueprint.ecohubs.community/de/articles/rcos-core/v0-1/layer-3-economic-resource-system#53-treasury-management), [5.6.1](https://blueprint.ecohubs.community/de/articles/rcos-core/v0-1/layer-3-economic-resource-system#56-layer-invariants)*
+*RCOS-Klauseln: [5.3.4](https://rcos.ecohubs.community/de/articles/rcos-core/v0-1/layer-3-economic-resource-system#53-treasury-management), [5.3.5](https://rcos.ecohubs.community/de/articles/rcos-core/v0-1/layer-3-economic-resource-system#53-treasury-management), [5.6.1](https://rcos.ecohubs.community/de/articles/rcos-core/v0-1/layer-3-economic-resource-system#56-layer-invariants)*
 
 <details data-kind="rationale">
 <summary>Warum Transparenz zum Standard machen statt zum Feature?</summary>
@@ -101,7 +101,7 @@ Legt den Sichtbarkeitsstandard für jedes Kassenkonto fest. Wo direkte Einsicht 
 
 ## Rücklagen-, Risiko- und Schuldenbeschränkungen
 
-*RCOS-Klauseln: [5.3.6](https://blueprint.ecohubs.community/de/articles/rcos-core/v0-1/layer-3-economic-resource-system#53-treasury-management)*
+*RCOS-Klauseln: [5.3.6](https://rcos.ecohubs.community/de/articles/rcos-core/v0-1/layer-3-economic-resource-system#53-treasury-management)*
 
 <details data-kind="rationale">
 <summary>Warum Schulden und langfristige Verpflichtungen standardmäßig sperren?</summary>
@@ -124,7 +124,7 @@ Legt die Regeln zu Schulden, wiederkehrenden Verpflichtungen, Rücklagen und au�
 
 ## Interessenkonfliktregeln
 
-*RCOS-Klauseln: [5.4.3](https://blueprint.ecohubs.community/de/articles/rcos-core/v0-1/layer-3-economic-resource-system#54-accumulation-constraints)*
+*RCOS-Klauseln: [5.4.3](https://rcos.ecohubs.community/de/articles/rcos-core/v0-1/layer-3-economic-resource-system#54-accumulation-constraints)*
 
 <details data-kind="rationale">
 <summary>Warum Selbstgenehmigung komplett verbieten?</summary>

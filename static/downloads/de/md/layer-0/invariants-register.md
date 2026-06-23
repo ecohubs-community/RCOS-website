@@ -3,13 +3,13 @@
 # Invariantenregister
 
 - **Generiert:** 2026-04-29
-- **Quelle (aktuelle Version):** [https://blueprint.ecohubs.community/de/articles/rcos-templates/layer-0/invariants-register](https://blueprint.ecohubs.community/de/articles/rcos-templates/layer-0/invariants-register)
-- **Alle RCOS-Vorlagen:** [https://blueprint.ecohubs.community/de/articles/rcos-templates](https://blueprint.ecohubs.community/de/articles/rcos-templates)
+- **Quelle (aktuelle Version):** [https://rcos.ecohubs.community/de/articles/rcos-templates/layer-0/invariants-register](https://rcos.ecohubs.community/de/articles/rcos-templates/layer-0/invariants-register)
+- **Alle RCOS-Vorlagen:** [https://rcos.ecohubs.community/de/articles/rcos-templates](https://rcos.ecohubs.community/de/articles/rcos-templates)
 
 ---
 - **Schicht:** 0 — Identität & Geltungsbereich
 - **Status:** Vorlage — für deine Gemeinschaft anpassen
-- **RCOS-Referenz:** [§2.3](https://blueprint.ecohubs.community/de/articles/rcos-core/v0-1/layer-0-identity-scope#23-invariants), [§2.5](https://blueprint.ecohubs.community/de/articles/rcos-core/v0-1/layer-0-identity-scope#25-artifacts)
+- **RCOS-Referenz:** [§2.3](https://rcos.ecohubs.community/de/articles/rcos-core/v0-1/layer-0-identity-scope#23-invariants), [§2.5](https://rcos.ecohubs.community/de/articles/rcos-core/v0-1/layer-0-identity-scope#25-artifacts)
 
 > Invarianten sind Rahmenbedingungen, die DARF NICHT verletzt werden, solange sie in Kraft sind. Keine Entscheidung, Rolle, Prozess oder Notfallmaßnahme darf eine Invariante außer Kraft setzen. Entsteht ein Konflikt zwischen einer Invariante und einer anderen Regel, hat die Invariante Vorrang.
 
@@ -17,7 +17,7 @@
 
 ## Aktive Invarianten
 
-*RCOS-Klauseln: [2.3.1](https://blueprint.ecohubs.community/de/articles/rcos-core/v0-1/layer-0-identity-scope#23-invariants), [2.3.2](https://blueprint.ecohubs.community/de/articles/rcos-core/v0-1/layer-0-identity-scope#23-invariants), [2.3.3](https://blueprint.ecohubs.community/de/articles/rcos-core/v0-1/layer-0-identity-scope#23-invariants), [2.3.4](https://blueprint.ecohubs.community/de/articles/rcos-core/v0-1/layer-0-identity-scope#23-invariants), [2.3.5](https://blueprint.ecohubs.community/de/articles/rcos-core/v0-1/layer-0-identity-scope#23-invariants), [2.3.6](https://blueprint.ecohubs.community/de/articles/rcos-core/v0-1/layer-0-identity-scope#23-invariants)*
+*RCOS-Klauseln: [2.3.1](https://rcos.ecohubs.community/de/articles/rcos-core/v0-1/layer-0-identity-scope#23-invariants), [2.3.2](https://rcos.ecohubs.community/de/articles/rcos-core/v0-1/layer-0-identity-scope#23-invariants), [2.3.3](https://rcos.ecohubs.community/de/articles/rcos-core/v0-1/layer-0-identity-scope#23-invariants), [2.3.4](https://rcos.ecohubs.community/de/articles/rcos-core/v0-1/layer-0-identity-scope#23-invariants), [2.3.5](https://rcos.ecohubs.community/de/articles/rcos-core/v0-1/layer-0-identity-scope#23-invariants), [2.3.6](https://rcos.ecohubs.community/de/articles/rcos-core/v0-1/layer-0-identity-scope#23-invariants)*
 
 <details data-kind="rationale">
 <summary>Warum können Invarianten nicht außer Kraft gesetzt werden?</summary>

@@ -3,13 +3,13 @@
 # Register der Identitätsbeschränkungen
 
 - **Generiert:** 2026-04-29
-- **Quelle (aktuelle Version):** [https://blueprint.ecohubs.community/de/articles/rcos-templates/layer-0/identity-constraints-register](https://blueprint.ecohubs.community/de/articles/rcos-templates/layer-0/identity-constraints-register)
-- **Alle RCOS-Vorlagen:** [https://blueprint.ecohubs.community/de/articles/rcos-templates](https://blueprint.ecohubs.community/de/articles/rcos-templates)
+- **Quelle (aktuelle Version):** [https://rcos.ecohubs.community/de/articles/rcos-templates/layer-0/identity-constraints-register](https://rcos.ecohubs.community/de/articles/rcos-templates/layer-0/identity-constraints-register)
+- **Alle RCOS-Vorlagen:** [https://rcos.ecohubs.community/de/articles/rcos-templates](https://rcos.ecohubs.community/de/articles/rcos-templates)
 
 ---
 - **Ebene:** 0 — Identität & Geltungsbereich
 - **Status:** Vorlage — an deine Gemeinschaft anpassen
-- **RCOS-Referenz:** [§2.4](https://blueprint.ecohubs.community/de/articles/rcos-core/v0-1/layer-0-identity-scope#24-identity-constraints), [§2.5](https://blueprint.ecohubs.community/de/articles/rcos-core/v0-1/layer-0-identity-scope#25-artifacts)
+- **RCOS-Referenz:** [§2.4](https://rcos.ecohubs.community/de/articles/rcos-core/v0-1/layer-0-identity-scope#24-identity-constraints), [§2.5](https://rcos.ecohubs.community/de/articles/rcos-core/v0-1/layer-0-identity-scope#25-artifacts)
 
 > Identitätsbeschränkungen sind die nicht verhandelbaren verhaltensbezogenen, ethischen und strukturellen Grenzen, die bestimmen, wer die Gemeinschaft ist. Anders als Invarianten (die das System selbst schützen) definieren Identitätsbeschränkungen, wie Mitglieder und die Gemeinschaft sich zu Menschen, Ökosystemen und Ideologien verhalten.
 
@@ -17,7 +17,7 @@
 
 ## Aktive Identitätsbeschränkungen
 
-*RCOS-Klauseln: [2.4.1](https://blueprint.ecohubs.community/de/articles/rcos-core/v0-1/layer-0-identity-scope#24-identity-constraints), [2.4.3](https://blueprint.ecohubs.community/de/articles/rcos-core/v0-1/layer-0-identity-scope#24-identity-constraints), [2.4.4](https://blueprint.ecohubs.community/de/articles/rcos-core/v0-1/layer-0-identity-scope#24-identity-constraints)*
+*RCOS-Klauseln: [2.4.1](https://rcos.ecohubs.community/de/articles/rcos-core/v0-1/layer-0-identity-scope#24-identity-constraints), [2.4.3](https://rcos.ecohubs.community/de/articles/rcos-core/v0-1/layer-0-identity-scope#24-identity-constraints), [2.4.4](https://rcos.ecohubs.community/de/articles/rcos-core/v0-1/layer-0-identity-scope#24-identity-constraints)*
 
 <details data-kind="rationale">
 <summary>Warum Identitätsbeschränkungen explizit festhalten?</summary>
@@ -44,7 +44,7 @@ Jede Beschränkung muss durch einen definierten Prozess überprüfbar und durchs
 
 ## Durchsetzung und Überprüfbarkeit
 
-*RCOS-Klauseln: [2.4.3](https://blueprint.ecohubs.community/de/articles/rcos-core/v0-1/layer-0-identity-scope#24-identity-constraints), [2.4.4](https://blueprint.ecohubs.community/de/articles/rcos-core/v0-1/layer-0-identity-scope#24-identity-constraints)*
+*RCOS-Klauseln: [2.4.3](https://rcos.ecohubs.community/de/articles/rcos-core/v0-1/layer-0-identity-scope#24-identity-constraints), [2.4.4](https://rcos.ecohubs.community/de/articles/rcos-core/v0-1/layer-0-identity-scope#24-identity-constraints)*
 
 <details data-kind="rationale">
 <summary>Warum müssen Beschränkungen überprüfbar sein und nicht informell?</summary>
@@ -66,7 +66,7 @@ Beschreibe für jede oben genannte Beschränkung (oder als allgemeine Richtlinie
 
 ## Bedingungen für Änderungen
 
-*RCOS-Klauseln: [2.4.1](https://blueprint.ecohubs.community/de/articles/rcos-core/v0-1/layer-0-identity-scope#24-identity-constraints), [2.5.2](https://blueprint.ecohubs.community/de/articles/rcos-core/v0-1/layer-0-identity-scope#25-artifacts)*
+*RCOS-Klauseln: [2.4.1](https://rcos.ecohubs.community/de/articles/rcos-core/v0-1/layer-0-identity-scope#24-identity-constraints), [2.5.2](https://rcos.ecohubs.community/de/articles/rcos-core/v0-1/layer-0-identity-scope#25-artifacts)*
 
 <details data-kind="instructions">
 <summary>Wie du diesen Abschnitt ausfüllst</summary>

@@ -3,13 +3,13 @@
 # Registre des contraintes d'identité
 
 - **Généré:** 2026-04-29
-- **Source (version la plus récente):** [https://blueprint.ecohubs.community/fr/articles/rcos-templates/layer-0/identity-constraints-register](https://blueprint.ecohubs.community/fr/articles/rcos-templates/layer-0/identity-constraints-register)
-- **Tous les modèles RCOS:** [https://blueprint.ecohubs.community/fr/articles/rcos-templates](https://blueprint.ecohubs.community/fr/articles/rcos-templates)
+- **Source (version la plus récente):** [https://rcos.ecohubs.community/fr/articles/rcos-templates/layer-0/identity-constraints-register](https://rcos.ecohubs.community/fr/articles/rcos-templates/layer-0/identity-constraints-register)
+- **Tous les modèles RCOS:** [https://rcos.ecohubs.community/fr/articles/rcos-templates](https://rcos.ecohubs.community/fr/articles/rcos-templates)
 
 ---
 - **Couche :** 0 — Identité et portée
 - **Statut :** Modèle — à adapter pour ta communauté
-- **Référence RCOS :** [§2.4](https://blueprint.ecohubs.community/fr/articles/rcos-core/v0-1/layer-0-identity-scope#24-identity-constraints), [§2.5](https://blueprint.ecohubs.community/fr/articles/rcos-core/v0-1/layer-0-identity-scope#25-artifacts)
+- **Référence RCOS :** [§2.4](https://rcos.ecohubs.community/fr/articles/rcos-core/v0-1/layer-0-identity-scope#24-identity-constraints), [§2.5](https://rcos.ecohubs.community/fr/articles/rcos-core/v0-1/layer-0-identity-scope#25-artifacts)
 
 > Les contraintes d'identité sont les limites comportementales, éthiques et structurelles non négociables qui définissent ce qu'est la communauté. Contrairement aux invariants (qui protègent le système lui-même), les contraintes d'identité définissent la manière dont les membres et la communauté se rapportent aux personnes, aux écosystèmes et aux idéologies.
 
@@ -17,7 +17,7 @@
 
 ## Contraintes d'identité actives
 
-*Clauses RCOS : [2.4.1](https://blueprint.ecohubs.community/fr/articles/rcos-core/v0-1/layer-0-identity-scope#24-identity-constraints), [2.4.3](https://blueprint.ecohubs.community/fr/articles/rcos-core/v0-1/layer-0-identity-scope#24-identity-constraints), [2.4.4](https://blueprint.ecohubs.community/fr/articles/rcos-core/v0-1/layer-0-identity-scope#24-identity-constraints)*
+*Clauses RCOS : [2.4.1](https://rcos.ecohubs.community/fr/articles/rcos-core/v0-1/layer-0-identity-scope#24-identity-constraints), [2.4.3](https://rcos.ecohubs.community/fr/articles/rcos-core/v0-1/layer-0-identity-scope#24-identity-constraints), [2.4.4](https://rcos.ecohubs.community/fr/articles/rcos-core/v0-1/layer-0-identity-scope#24-identity-constraints)*
 
 <details data-kind="rationale">
 <summary>Pourquoi déclarer explicitement les contraintes d'identité ?</summary>
@@ -44,7 +44,7 @@ Chaque contrainte doit être vérifiable et applicable à travers un processus d
 
 ## Application et vérifiabilité
 
-*Clauses RCOS : [2.4.3](https://blueprint.ecohubs.community/fr/articles/rcos-core/v0-1/layer-0-identity-scope#24-identity-constraints), [2.4.4](https://blueprint.ecohubs.community/fr/articles/rcos-core/v0-1/layer-0-identity-scope#24-identity-constraints)*
+*Clauses RCOS : [2.4.3](https://rcos.ecohubs.community/fr/articles/rcos-core/v0-1/layer-0-identity-scope#24-identity-constraints), [2.4.4](https://rcos.ecohubs.community/fr/articles/rcos-core/v0-1/layer-0-identity-scope#24-identity-constraints)*
 
 <details data-kind="rationale">
 <summary>Pourquoi les contraintes doivent-elles être vérifiables et non informelles ?</summary>
@@ -66,7 +66,7 @@ Pour chaque contrainte ci-dessus (ou en tant que politique générale), décris 
 
 ## Conditions de modification
 
-*Clauses RCOS : [2.4.1](https://blueprint.ecohubs.community/fr/articles/rcos-core/v0-1/layer-0-identity-scope#24-identity-constraints), [2.5.2](https://blueprint.ecohubs.community/fr/articles/rcos-core/v0-1/layer-0-identity-scope#25-artifacts)*
+*Clauses RCOS : [2.4.1](https://rcos.ecohubs.community/fr/articles/rcos-core/v0-1/layer-0-identity-scope#24-identity-constraints), [2.5.2](https://rcos.ecohubs.community/fr/articles/rcos-core/v0-1/layer-0-identity-scope#25-artifacts)*
 
 <details data-kind="instructions">
 <summary>Comment remplir cette section</summary>

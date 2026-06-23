@@ -3,19 +3,19 @@
 # Conflict Resolution Ladder
 
 - **Generated:** 2026-04-29
-- **Source (latest version):** [https://blueprint.ecohubs.community/articles/rcos-templates/layer-4/conflict-resolution-ladder](https://blueprint.ecohubs.community/articles/rcos-templates/layer-4/conflict-resolution-ladder)
-- **All RCOS templates:** [https://blueprint.ecohubs.community/articles/rcos-templates](https://blueprint.ecohubs.community/articles/rcos-templates)
+- **Source (latest version):** [https://rcos.ecohubs.community/articles/rcos-templates/layer-4/conflict-resolution-ladder](https://rcos.ecohubs.community/articles/rcos-templates/layer-4/conflict-resolution-ladder)
+- **All RCOS templates:** [https://rcos.ecohubs.community/articles/rcos-templates](https://rcos.ecohubs.community/articles/rcos-templates)
 
 ---
 - **Layer:** 4 — Conflict, Repair & Accountability
 - **Status:** Template — adapt for your community
-- **RCOS reference:** [§6.1](https://blueprint.ecohubs.community/articles/rcos-core/v0-1/layer-4-conflict-repair-accountability#61-conflict-classification), [§6.2](https://blueprint.ecohubs.community/articles/rcos-core/v0-1/layer-4-conflict-repair-accountability#62-resolution-pathways), [§6.3](https://blueprint.ecohubs.community/articles/rcos-core/v0-1/layer-4-conflict-repair-accountability#63-safeguards), [§6.5](https://blueprint.ecohubs.community/articles/rcos-core/v0-1/layer-4-conflict-repair-accountability#65-artifacts)
+- **RCOS reference:** [§6.1](https://rcos.ecohubs.community/articles/rcos-core/v0-1/layer-4-conflict-repair-accountability#61-conflict-classification), [§6.2](https://rcos.ecohubs.community/articles/rcos-core/v0-1/layer-4-conflict-repair-accountability#62-resolution-pathways), [§6.3](https://rcos.ecohubs.community/articles/rcos-core/v0-1/layer-4-conflict-repair-accountability#63-safeguards), [§6.5](https://rcos.ecohubs.community/articles/rcos-core/v0-1/layer-4-conflict-repair-accountability#65-artifacts)
 
 ---
 
 ## Conflict Classification
 
-*RCOS clauses: [6.1.1](https://blueprint.ecohubs.community/articles/rcos-core/v0-1/layer-4-conflict-repair-accountability#61-conflict-classification), [6.1.2](https://blueprint.ecohubs.community/articles/rcos-core/v0-1/layer-4-conflict-repair-accountability#61-conflict-classification), [6.1.3](https://blueprint.ecohubs.community/articles/rcos-core/v0-1/layer-4-conflict-repair-accountability#61-conflict-classification), [6.1.4](https://blueprint.ecohubs.community/articles/rcos-core/v0-1/layer-4-conflict-repair-accountability#61-conflict-classification), [6.1.5](https://blueprint.ecohubs.community/articles/rcos-core/v0-1/layer-4-conflict-repair-accountability#61-conflict-classification), [6.5.3](https://blueprint.ecohubs.community/articles/rcos-core/v0-1/layer-4-conflict-repair-accountability#65-artifacts)*
+*RCOS clauses: [6.1.1](https://rcos.ecohubs.community/articles/rcos-core/v0-1/layer-4-conflict-repair-accountability#61-conflict-classification), [6.1.2](https://rcos.ecohubs.community/articles/rcos-core/v0-1/layer-4-conflict-repair-accountability#61-conflict-classification), [6.1.3](https://rcos.ecohubs.community/articles/rcos-core/v0-1/layer-4-conflict-repair-accountability#61-conflict-classification), [6.1.4](https://rcos.ecohubs.community/articles/rcos-core/v0-1/layer-4-conflict-repair-accountability#61-conflict-classification), [6.1.5](https://rcos.ecohubs.community/articles/rcos-core/v0-1/layer-4-conflict-repair-accountability#61-conflict-classification), [6.5.3](https://rcos.ecohubs.community/articles/rcos-core/v0-1/layer-4-conflict-repair-accountability#65-artifacts)*
 
 <details data-kind="rationale">
 <summary>Why classify conflicts at all?</summary>
@@ -43,7 +43,7 @@ For each class, set entry criteria, the entry step in the ladder, the initial re
 
 ## Resolution Ladder Steps
 
-*RCOS clauses: [6.2.1](https://blueprint.ecohubs.community/articles/rcos-core/v0-1/layer-4-conflict-repair-accountability#62-resolution-pathways), [6.2.2](https://blueprint.ecohubs.community/articles/rcos-core/v0-1/layer-4-conflict-repair-accountability#62-resolution-pathways), [6.2.3](https://blueprint.ecohubs.community/articles/rcos-core/v0-1/layer-4-conflict-repair-accountability#62-resolution-pathways), [6.2.4](https://blueprint.ecohubs.community/articles/rcos-core/v0-1/layer-4-conflict-repair-accountability#62-resolution-pathways), [6.2.5](https://blueprint.ecohubs.community/articles/rcos-core/v0-1/layer-4-conflict-repair-accountability#62-resolution-pathways), [6.5.3](https://blueprint.ecohubs.community/articles/rcos-core/v0-1/layer-4-conflict-repair-accountability#65-artifacts)*
+*RCOS clauses: [6.2.1](https://rcos.ecohubs.community/articles/rcos-core/v0-1/layer-4-conflict-repair-accountability#62-resolution-pathways), [6.2.2](https://rcos.ecohubs.community/articles/rcos-core/v0-1/layer-4-conflict-repair-accountability#62-resolution-pathways), [6.2.3](https://rcos.ecohubs.community/articles/rcos-core/v0-1/layer-4-conflict-repair-accountability#62-resolution-pathways), [6.2.4](https://rcos.ecohubs.community/articles/rcos-core/v0-1/layer-4-conflict-repair-accountability#62-resolution-pathways), [6.2.5](https://rcos.ecohubs.community/articles/rcos-core/v0-1/layer-4-conflict-repair-accountability#62-resolution-pathways), [6.5.3](https://rcos.ecohubs.community/articles/rcos-core/v0-1/layer-4-conflict-repair-accountability#65-artifacts)*
 
 <details data-kind="rationale">
 <summary>Why a stepped ladder instead of a single process?</summary>
@@ -68,7 +68,7 @@ Define each ladder step: who is involved, what happens, the time window, and the
 
 ## Non-Response, Withdrawal, and Deadlock
 
-*RCOS clauses: [6.2.5](https://blueprint.ecohubs.community/articles/rcos-core/v0-1/layer-4-conflict-repair-accountability#62-resolution-pathways), [6.1.5](https://blueprint.ecohubs.community/articles/rcos-core/v0-1/layer-4-conflict-repair-accountability#61-conflict-classification)*
+*RCOS clauses: [6.2.5](https://rcos.ecohubs.community/articles/rcos-core/v0-1/layer-4-conflict-repair-accountability#62-resolution-pathways), [6.1.5](https://rcos.ecohubs.community/articles/rcos-core/v0-1/layer-4-conflict-repair-accountability#61-conflict-classification)*
 
 <details data-kind="rationale">
 <summary>What stops a process from being killed by silence?</summary>
@@ -100,7 +100,7 @@ Define how non-response, mid-process withdrawal, deadlock, and procedural failur
 
 ## Facilitator Selection and Replacement
 
-*RCOS clauses: [6.3.1](https://blueprint.ecohubs.community/articles/rcos-core/v0-1/layer-4-conflict-repair-accountability#63-safeguards), [6.3.3](https://blueprint.ecohubs.community/articles/rcos-core/v0-1/layer-4-conflict-repair-accountability#63-safeguards)*
+*RCOS clauses: [6.3.1](https://rcos.ecohubs.community/articles/rcos-core/v0-1/layer-4-conflict-repair-accountability#63-safeguards), [6.3.3](https://rcos.ecohubs.community/articles/rcos-core/v0-1/layer-4-conflict-repair-accountability#63-safeguards)*
 
 <details data-kind="rationale">
 <summary>Why name how the Facilitator is chosen or replaced?</summary>
@@ -123,7 +123,7 @@ State the default facilitator role, the rule when the facilitator is a party, th
 
 ## Privacy and Information Access Boundaries
 
-*RCOS clauses: [6.5.3](https://blueprint.ecohubs.community/articles/rcos-core/v0-1/layer-4-conflict-repair-accountability#65-artifacts)*
+*RCOS clauses: [6.5.3](https://rcos.ecohubs.community/articles/rcos-core/v0-1/layer-4-conflict-repair-accountability#65-artifacts)*
 
 <details data-kind="rationale">
 <summary>Why bound information flow so tightly?</summary>
@@ -146,7 +146,7 @@ State which steps are fully confidential, what minimum information may be disclo
 
 ## Safeguards
 
-*RCOS clauses: [6.3.1](https://blueprint.ecohubs.community/articles/rcos-core/v0-1/layer-4-conflict-repair-accountability#63-safeguards), [6.3.2](https://blueprint.ecohubs.community/articles/rcos-core/v0-1/layer-4-conflict-repair-accountability#63-safeguards), [6.3.3](https://blueprint.ecohubs.community/articles/rcos-core/v0-1/layer-4-conflict-repair-accountability#63-safeguards), [6.3.4](https://blueprint.ecohubs.community/articles/rcos-core/v0-1/layer-4-conflict-repair-accountability#63-safeguards), [6.3.5](https://blueprint.ecohubs.community/articles/rcos-core/v0-1/layer-4-conflict-repair-accountability#63-safeguards)*
+*RCOS clauses: [6.3.1](https://rcos.ecohubs.community/articles/rcos-core/v0-1/layer-4-conflict-repair-accountability#63-safeguards), [6.3.2](https://rcos.ecohubs.community/articles/rcos-core/v0-1/layer-4-conflict-repair-accountability#63-safeguards), [6.3.3](https://rcos.ecohubs.community/articles/rcos-core/v0-1/layer-4-conflict-repair-accountability#63-safeguards), [6.3.4](https://rcos.ecohubs.community/articles/rcos-core/v0-1/layer-4-conflict-repair-accountability#63-safeguards), [6.3.5](https://rcos.ecohubs.community/articles/rcos-core/v0-1/layer-4-conflict-repair-accountability#63-safeguards)*
 
 <details data-kind="rationale">
 <summary>Why do safeguards exist on top of the ladder?</summary>

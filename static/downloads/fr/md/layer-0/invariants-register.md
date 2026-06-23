@@ -3,13 +3,13 @@
 # Registre des invariants
 
 - **Généré:** 2026-04-29
-- **Source (version la plus récente):** [https://blueprint.ecohubs.community/fr/articles/rcos-templates/layer-0/invariants-register](https://blueprint.ecohubs.community/fr/articles/rcos-templates/layer-0/invariants-register)
-- **Tous les modèles RCOS:** [https://blueprint.ecohubs.community/fr/articles/rcos-templates](https://blueprint.ecohubs.community/fr/articles/rcos-templates)
+- **Source (version la plus récente):** [https://rcos.ecohubs.community/fr/articles/rcos-templates/layer-0/invariants-register](https://rcos.ecohubs.community/fr/articles/rcos-templates/layer-0/invariants-register)
+- **Tous les modèles RCOS:** [https://rcos.ecohubs.community/fr/articles/rcos-templates](https://rcos.ecohubs.community/fr/articles/rcos-templates)
 
 ---
 - **Couche :** 0 — Identité et périmètre
 - **Statut :** Modèle — à adapter pour ta communauté
-- **Référence RCOS :** [§2.3](https://blueprint.ecohubs.community/fr/articles/rcos-core/v0-1/layer-0-identity-scope#23-invariants), [§2.5](https://blueprint.ecohubs.community/fr/articles/rcos-core/v0-1/layer-0-identity-scope#25-artifacts)
+- **Référence RCOS :** [§2.3](https://rcos.ecohubs.community/fr/articles/rcos-core/v0-1/layer-0-identity-scope#23-invariants), [§2.5](https://rcos.ecohubs.community/fr/articles/rcos-core/v0-1/layer-0-identity-scope#25-artifacts)
 
 > Les invariants sont des contraintes qui NE DOIVENT PAS être violées tant qu'ils sont en vigueur. Aucune décision, aucun rôle, processus ou mesure d'urgence ne PEUT outrepasser un invariant. En cas de conflit entre un invariant et toute autre règle, l'invariant prévaut.
 
@@ -17,7 +17,7 @@
 
 ## Invariants actifs
 
-*Clauses RCOS : [2.3.1](https://blueprint.ecohubs.community/fr/articles/rcos-core/v0-1/layer-0-identity-scope#23-invariants), [2.3.2](https://blueprint.ecohubs.community/fr/articles/rcos-core/v0-1/layer-0-identity-scope#23-invariants), [2.3.3](https://blueprint.ecohubs.community/fr/articles/rcos-core/v0-1/layer-0-identity-scope#23-invariants), [2.3.4](https://blueprint.ecohubs.community/fr/articles/rcos-core/v0-1/layer-0-identity-scope#23-invariants), [2.3.5](https://blueprint.ecohubs.community/fr/articles/rcos-core/v0-1/layer-0-identity-scope#23-invariants), [2.3.6](https://blueprint.ecohubs.community/fr/articles/rcos-core/v0-1/layer-0-identity-scope#23-invariants)*
+*Clauses RCOS : [2.3.1](https://rcos.ecohubs.community/fr/articles/rcos-core/v0-1/layer-0-identity-scope#23-invariants), [2.3.2](https://rcos.ecohubs.community/fr/articles/rcos-core/v0-1/layer-0-identity-scope#23-invariants), [2.3.3](https://rcos.ecohubs.community/fr/articles/rcos-core/v0-1/layer-0-identity-scope#23-invariants), [2.3.4](https://rcos.ecohubs.community/fr/articles/rcos-core/v0-1/layer-0-identity-scope#23-invariants), [2.3.5](https://rcos.ecohubs.community/fr/articles/rcos-core/v0-1/layer-0-identity-scope#23-invariants), [2.3.6](https://rcos.ecohubs.community/fr/articles/rcos-core/v0-1/layer-0-identity-scope#23-invariants)*
 
 <details data-kind="rationale">
 <summary>Pourquoi les invariants sont-ils impossibles à outrepasser ?</summary>

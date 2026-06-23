@@ -3,13 +3,13 @@
 # Modèle d'expérimentation
 
 - **Généré:** 2026-04-29
-- **Source (version la plus récente):** [https://blueprint.ecohubs.community/fr/articles/rcos-templates/layer-6/experiment-template](https://blueprint.ecohubs.community/fr/articles/rcos-templates/layer-6/experiment-template)
-- **Tous les modèles RCOS:** [https://blueprint.ecohubs.community/fr/articles/rcos-templates](https://blueprint.ecohubs.community/fr/articles/rcos-templates)
+- **Source (version la plus récente):** [https://rcos.ecohubs.community/fr/articles/rcos-templates/layer-6/experiment-template](https://rcos.ecohubs.community/fr/articles/rcos-templates/layer-6/experiment-template)
+- **Tous les modèles RCOS:** [https://rcos.ecohubs.community/fr/articles/rcos-templates](https://rcos.ecohubs.community/fr/articles/rcos-templates)
 
 ---
 - **Couche :** 6 — Évolution et adaptation
 - **Statut :** Modèle — à utiliser pour proposer une expérimentation limitée dans le temps
-- **Référence RCOS :** [§8.3](https://blueprint.ecohubs.community/fr/articles/rcos-core/v0-1/layer-6-evolution-adaptation#83-experiments), [§8.7](https://blueprint.ecohubs.community/fr/articles/rcos-core/v0-1/layer-6-evolution-adaptation#87-layer-invariants)
+- **Référence RCOS :** [§8.3](https://rcos.ecohubs.community/fr/articles/rcos-core/v0-1/layer-6-evolution-adaptation#83-experiments), [§8.7](https://rcos.ecohubs.community/fr/articles/rcos-core/v0-1/layer-6-evolution-adaptation#87-layer-invariants)
 
 > Les expérimentations permettent à la communauté d'essayer un changement sans l'adopter définitivement. Pour rester sûre, chaque expérimentation DOIT être limitée dans le temps, étiquetée et à expiration automatique — et DOIT consigner ses résultats dans le Journal d'apprentissage.
 
@@ -17,7 +17,7 @@
 
 ## Champs obligatoires
 
-*Clauses RCOS : [8.3.1](https://blueprint.ecohubs.community/fr/articles/rcos-core/v0-1/layer-6-evolution-adaptation#83-experiments), [8.3.2](https://blueprint.ecohubs.community/fr/articles/rcos-core/v0-1/layer-6-evolution-adaptation#83-experiments), [8.3.3](https://blueprint.ecohubs.community/fr/articles/rcos-core/v0-1/layer-6-evolution-adaptation#83-experiments), [8.3.4](https://blueprint.ecohubs.community/fr/articles/rcos-core/v0-1/layer-6-evolution-adaptation#83-experiments), [8.3.5](https://blueprint.ecohubs.community/fr/articles/rcos-core/v0-1/layer-6-evolution-adaptation#83-experiments), [8.7.3](https://blueprint.ecohubs.community/fr/articles/rcos-core/v0-1/layer-6-evolution-adaptation#87-layer-invariants)*
+*Clauses RCOS : [8.3.1](https://rcos.ecohubs.community/fr/articles/rcos-core/v0-1/layer-6-evolution-adaptation#83-experiments), [8.3.2](https://rcos.ecohubs.community/fr/articles/rcos-core/v0-1/layer-6-evolution-adaptation#83-experiments), [8.3.3](https://rcos.ecohubs.community/fr/articles/rcos-core/v0-1/layer-6-evolution-adaptation#83-experiments), [8.3.4](https://rcos.ecohubs.community/fr/articles/rcos-core/v0-1/layer-6-evolution-adaptation#83-experiments), [8.3.5](https://rcos.ecohubs.community/fr/articles/rcos-core/v0-1/layer-6-evolution-adaptation#83-experiments), [8.7.3](https://rcos.ecohubs.community/fr/articles/rcos-core/v0-1/layer-6-evolution-adaptation#87-layer-invariants)*
 
 <details data-kind="rationale">
 <summary>Pourquoi exiger ces champs ?</summary>

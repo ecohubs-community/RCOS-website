@@ -3,7 +3,7 @@
 # Especificación RCOS Core — v0.1
 
 - **Generado:** 2026-04-29
-- **Fuente (versión más reciente):** [https://blueprint.ecohubs.community/es/articles/rcos-core/v0-1](https://blueprint.ecohubs.community/es/articles/rcos-core/v0-1)
+- **Fuente (versión más reciente):** [https://rcos.ecohubs.community/es/articles/rcos-core/v0-1](https://rcos.ecohubs.community/es/articles/rcos-core/v0-1)
 
 - Estado: Borrador
 - Versión: RCOS-Core v0.1
@@ -219,7 +219,7 @@ RCOS transforma:
 
 ### Modos de fallo conocidos que RCOS está diseñado para prevenir
 
-Ver [Pruebas de estrés de RCOS](https://blueprint.ecohubs.community/es/articles/rcos-stress-tests?id=6acbe9a7)
+Ver [Pruebas de estrés de RCOS](https://rcos.ecohubs.community/es/articles/rcos-stress-tests?id=6acbe9a7)
 
 ## Implementaciones de referencia
 
@@ -287,7 +287,7 @@ para que el cuidado, la autonomía y la regeneración tengan algo sólido sobre 
 
 ## Registro de cambios
 
-- [v0.1](https://blueprint.ecohubs.community/es/articles/rcos-core/v0-1?id=e6de7a5d) — Versión inicial
+- [v0.1](https://rcos.ecohubs.community/es/articles/rcos-core/v0-1?id=e6de7a5d) — Versión inicial
 
 
 ---

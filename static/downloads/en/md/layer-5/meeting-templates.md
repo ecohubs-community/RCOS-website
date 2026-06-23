@@ -3,13 +3,13 @@
 # Meeting Templates
 
 - **Generated:** 2026-04-29
-- **Source (latest version):** [https://blueprint.ecohubs.community/articles/rcos-templates/layer-5/meeting-templates](https://blueprint.ecohubs.community/articles/rcos-templates/layer-5/meeting-templates)
-- **All RCOS templates:** [https://blueprint.ecohubs.community/articles/rcos-templates](https://blueprint.ecohubs.community/articles/rcos-templates)
+- **Source (latest version):** [https://rcos.ecohubs.community/articles/rcos-templates/layer-5/meeting-templates](https://rcos.ecohubs.community/articles/rcos-templates/layer-5/meeting-templates)
+- **All RCOS templates:** [https://rcos.ecohubs.community/articles/rcos-templates](https://rcos.ecohubs.community/articles/rcos-templates)
 
 ---
 - **Layer:** 5 — Operations & Coordination
 - **Status:** Template — adapt for your community
-- **RCOS reference:** [§7.2](https://blueprint.ecohubs.community/articles/rcos-core/v0-1/layer-5-operations-coordination#72-meeting-system), [§7.6](https://blueprint.ecohubs.community/articles/rcos-core/v0-1/layer-5-operations-coordination#76-artifacts)
+- **RCOS reference:** [§7.2](https://rcos.ecohubs.community/articles/rcos-core/v0-1/layer-5-operations-coordination#72-meeting-system), [§7.6](https://rcos.ecohubs.community/articles/rcos-core/v0-1/layer-5-operations-coordination#76-artifacts)
 
 > Meeting templates declare the purpose, decision scope, quorum, and structure of each meeting type. A meeting without a declared template will, given enough time, accumulate authority it should not have. Adapt these templates and add or remove meeting types as your community needs.
 
@@ -17,7 +17,7 @@
 
 ## Meeting Type: Operations
 
-*RCOS clauses: [7.2.1](https://blueprint.ecohubs.community/articles/rcos-core/v0-1/layer-5-operations-coordination#72-meeting-system), [7.2.2](https://blueprint.ecohubs.community/articles/rcos-core/v0-1/layer-5-operations-coordination#72-meeting-system), [7.2.3](https://blueprint.ecohubs.community/articles/rcos-core/v0-1/layer-5-operations-coordination#72-meeting-system), [7.2.4](https://blueprint.ecohubs.community/articles/rcos-core/v0-1/layer-5-operations-coordination#72-meeting-system), [7.6.4](https://blueprint.ecohubs.community/articles/rcos-core/v0-1/layer-5-operations-coordination#76-artifacts)*
+*RCOS clauses: [7.2.1](https://rcos.ecohubs.community/articles/rcos-core/v0-1/layer-5-operations-coordination#72-meeting-system), [7.2.2](https://rcos.ecohubs.community/articles/rcos-core/v0-1/layer-5-operations-coordination#72-meeting-system), [7.2.3](https://rcos.ecohubs.community/articles/rcos-core/v0-1/layer-5-operations-coordination#72-meeting-system), [7.2.4](https://rcos.ecohubs.community/articles/rcos-core/v0-1/layer-5-operations-coordination#72-meeting-system), [7.6.4](https://rcos.ecohubs.community/articles/rcos-core/v0-1/layer-5-operations-coordination#76-artifacts)*
 
 <details data-kind="rationale">
 <summary>Why a regular Operations meeting?</summary>
@@ -71,7 +71,7 @@ Set purpose, decision scope, required and optional participants, cadence, durati
 
 ## Meeting Type: Governance
 
-*RCOS clauses: [7.2.1](https://blueprint.ecohubs.community/articles/rcos-core/v0-1/layer-5-operations-coordination#72-meeting-system), [7.2.2](https://blueprint.ecohubs.community/articles/rcos-core/v0-1/layer-5-operations-coordination#72-meeting-system), [7.2.3](https://blueprint.ecohubs.community/articles/rcos-core/v0-1/layer-5-operations-coordination#72-meeting-system), [7.6.4](https://blueprint.ecohubs.community/articles/rcos-core/v0-1/layer-5-operations-coordination#76-artifacts)*
+*RCOS clauses: [7.2.1](https://rcos.ecohubs.community/articles/rcos-core/v0-1/layer-5-operations-coordination#72-meeting-system), [7.2.2](https://rcos.ecohubs.community/articles/rcos-core/v0-1/layer-5-operations-coordination#72-meeting-system), [7.2.3](https://rcos.ecohubs.community/articles/rcos-core/v0-1/layer-5-operations-coordination#72-meeting-system), [7.6.4](https://rcos.ecohubs.community/articles/rcos-core/v0-1/layer-5-operations-coordination#76-artifacts)*
 
 <details data-kind="rationale">
 <summary>Why separate deliberation from the binding vote?</summary>
@@ -124,7 +124,7 @@ This meeting deliberates on active proposals during their deliberation period. T
 
 ## Meeting Type: Coordination & Alignment
 
-*RCOS clauses: [7.2.1](https://blueprint.ecohubs.community/articles/rcos-core/v0-1/layer-5-operations-coordination#72-meeting-system), [7.2.2](https://blueprint.ecohubs.community/articles/rcos-core/v0-1/layer-5-operations-coordination#72-meeting-system), [7.2.3](https://blueprint.ecohubs.community/articles/rcos-core/v0-1/layer-5-operations-coordination#72-meeting-system), [7.6.4](https://blueprint.ecohubs.community/articles/rcos-core/v0-1/layer-5-operations-coordination#76-artifacts)*
+*RCOS clauses: [7.2.1](https://rcos.ecohubs.community/articles/rcos-core/v0-1/layer-5-operations-coordination#72-meeting-system), [7.2.2](https://rcos.ecohubs.community/articles/rcos-core/v0-1/layer-5-operations-coordination#72-meeting-system), [7.2.3](https://rcos.ecohubs.community/articles/rcos-core/v0-1/layer-5-operations-coordination#72-meeting-system), [7.6.4](https://rcos.ecohubs.community/articles/rcos-core/v0-1/layer-5-operations-coordination#76-artifacts)*
 
 <details data-kind="rationale">
 <summary>Why a dedicated coordination meeting?</summary>
@@ -166,7 +166,7 @@ Use this template when cross-role coordination is needed. Keep decision scope Op
 
 ## Meeting Type: Reflection & Learning
 
-*RCOS clauses: [7.2.1](https://blueprint.ecohubs.community/articles/rcos-core/v0-1/layer-5-operations-coordination#72-meeting-system), [7.2.2](https://blueprint.ecohubs.community/articles/rcos-core/v0-1/layer-5-operations-coordination#72-meeting-system), [7.2.3](https://blueprint.ecohubs.community/articles/rcos-core/v0-1/layer-5-operations-coordination#72-meeting-system), [7.6.4](https://blueprint.ecohubs.community/articles/rcos-core/v0-1/layer-5-operations-coordination#76-artifacts)*
+*RCOS clauses: [7.2.1](https://rcos.ecohubs.community/articles/rcos-core/v0-1/layer-5-operations-coordination#72-meeting-system), [7.2.2](https://rcos.ecohubs.community/articles/rcos-core/v0-1/layer-5-operations-coordination#72-meeting-system), [7.2.3](https://rcos.ecohubs.community/articles/rcos-core/v0-1/layer-5-operations-coordination#72-meeting-system), [7.6.4](https://rcos.ecohubs.community/articles/rcos-core/v0-1/layer-5-operations-coordination#76-artifacts)*
 
 <details data-kind="rationale">
 <summary>Why give reflection its own meeting type?</summary>
@@ -212,7 +212,7 @@ This meeting reviews the most recent period and feeds insights to the Learning L
 
 ## Meeting Type: Conflict Handling
 
-*RCOS clauses: [7.2.1](https://blueprint.ecohubs.community/articles/rcos-core/v0-1/layer-5-operations-coordination#72-meeting-system), [7.2.2](https://blueprint.ecohubs.community/articles/rcos-core/v0-1/layer-5-operations-coordination#72-meeting-system), [7.2.3](https://blueprint.ecohubs.community/articles/rcos-core/v0-1/layer-5-operations-coordination#72-meeting-system), [7.6.4](https://blueprint.ecohubs.community/articles/rcos-core/v0-1/layer-5-operations-coordination#76-artifacts); see also Layer 4 — [Conflict Resolution Ladder](https://blueprint.ecohubs.community/articles/rcos-core/v0-1/layer-4-conflict-repair-accountability#62-resolution-pathways)*
+*RCOS clauses: [7.2.1](https://rcos.ecohubs.community/articles/rcos-core/v0-1/layer-5-operations-coordination#72-meeting-system), [7.2.2](https://rcos.ecohubs.community/articles/rcos-core/v0-1/layer-5-operations-coordination#72-meeting-system), [7.2.3](https://rcos.ecohubs.community/articles/rcos-core/v0-1/layer-5-operations-coordination#72-meeting-system), [7.6.4](https://rcos.ecohubs.community/articles/rcos-core/v0-1/layer-5-operations-coordination#76-artifacts); see also Layer 4 — [Conflict Resolution Ladder](https://rcos.ecohubs.community/articles/rcos-core/v0-1/layer-4-conflict-repair-accountability#62-resolution-pathways)*
 
 <details data-kind="rationale">
 <summary>Why a distinct meeting type for conflict?</summary>

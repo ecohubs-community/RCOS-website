@@ -3,19 +3,19 @@
 # Registre des rôles
 
 - **Généré:** 2026-04-29
-- **Source (version la plus récente):** [https://blueprint.ecohubs.community/fr/articles/rcos-templates/layer-5/role-registry](https://blueprint.ecohubs.community/fr/articles/rcos-templates/layer-5/role-registry)
-- **Tous les modèles RCOS:** [https://blueprint.ecohubs.community/fr/articles/rcos-templates](https://blueprint.ecohubs.community/fr/articles/rcos-templates)
+- **Source (version la plus récente):** [https://rcos.ecohubs.community/fr/articles/rcos-templates/layer-5/role-registry](https://rcos.ecohubs.community/fr/articles/rcos-templates/layer-5/role-registry)
+- **Tous les modèles RCOS:** [https://rcos.ecohubs.community/fr/articles/rcos-templates](https://rcos.ecohubs.community/fr/articles/rcos-templates)
 
 ---
 - **Couche :** 5 — Opérations & Coordination
 - **Statut :** Modèle — à adapter pour ta communauté
-- **Référence RCOS :** [§7.1](https://blueprint.ecohubs.community/fr/articles/rcos-core/v0-1/layer-5-operations-coordination#71-roles-and-responsibilities), [§7.6](https://blueprint.ecohubs.community/fr/articles/rcos-core/v0-1/layer-5-operations-coordination#76-artifacts)
+- **Référence RCOS :** [§7.1](https://rcos.ecohubs.community/fr/articles/rcos-core/v0-1/layer-5-operations-coordination#71-roles-and-responsibilities), [§7.6](https://rcos.ecohubs.community/fr/articles/rcos-core/v0-1/layer-5-operations-coordination#76-artifacts)
 
 ---
 
 ## Vue d'ensemble
 
-*Clauses RCOS : [7.1.1](https://blueprint.ecohubs.community/fr/articles/rcos-core/v0-1/layer-5-operations-coordination#71-roles-and-responsibilities), [7.1.2](https://blueprint.ecohubs.community/fr/articles/rcos-core/v0-1/layer-5-operations-coordination#71-roles-and-responsibilities), [7.1.4](https://blueprint.ecohubs.community/fr/articles/rcos-core/v0-1/layer-5-operations-coordination#71-roles-and-responsibilities), [7.7.1](https://blueprint.ecohubs.community/fr/articles/rcos-core/v0-1/layer-5-operations-coordination#77-layer-invariants)*
+*Clauses RCOS : [7.1.1](https://rcos.ecohubs.community/fr/articles/rcos-core/v0-1/layer-5-operations-coordination#71-roles-and-responsibilities), [7.1.2](https://rcos.ecohubs.community/fr/articles/rcos-core/v0-1/layer-5-operations-coordination#71-roles-and-responsibilities), [7.1.4](https://rcos.ecohubs.community/fr/articles/rcos-core/v0-1/layer-5-operations-coordination#71-roles-and-responsibilities), [7.7.1](https://rcos.ecohubs.community/fr/articles/rcos-core/v0-1/layer-5-operations-coordination#77-layer-invariants)*
 
 <details data-kind="rationale">
 <summary>Pourquoi exiger qu'un rôle nommé existe pour chaque responsabilité ?</summary>
@@ -48,7 +48,7 @@ Ce registre définit tous les rôles reconnus au sein de la communauté. Les rô
 
 ## Rôles opérationnels
 
-*Clauses RCOS : [7.1.2](https://blueprint.ecohubs.community/fr/articles/rcos-core/v0-1/layer-5-operations-coordination#71-roles-and-responsibilities), [7.1.3](https://blueprint.ecohubs.community/fr/articles/rcos-core/v0-1/layer-5-operations-coordination#71-roles-and-responsibilities)*
+*Clauses RCOS : [7.1.2](https://rcos.ecohubs.community/fr/articles/rcos-core/v0-1/layer-5-operations-coordination#71-roles-and-responsibilities), [7.1.3](https://rcos.ecohubs.community/fr/articles/rcos-core/v0-1/layer-5-operations-coordination#71-roles-and-responsibilities)*
 
 <details data-kind="rationale">
 <summary>Pourquoi définir la redevabilité pour l'autorité déléguée ?</summary>
@@ -102,7 +102,7 @@ Les rôles opérationnels détiennent une autorité déléguée pour agir dans d
 
 ## Rôles fonctionnels
 
-*Clauses RCOS : [7.1.1](https://blueprint.ecohubs.community/fr/articles/rcos-core/v0-1/layer-5-operations-coordination#71-roles-and-responsibilities), [7.1.2](https://blueprint.ecohubs.community/fr/articles/rcos-core/v0-1/layer-5-operations-coordination#71-roles-and-responsibilities)*
+*Clauses RCOS : [7.1.1](https://rcos.ecohubs.community/fr/articles/rcos-core/v0-1/layer-5-operations-coordination#71-roles-and-responsibilities), [7.1.2](https://rcos.ecohubs.community/fr/articles/rcos-core/v0-1/layer-5-operations-coordination#71-roles-and-responsibilities)*
 
 <details data-kind="rationale">
 <summary>Pourquoi séparer les rôles fonctionnels des rôles opérationnels ?</summary>

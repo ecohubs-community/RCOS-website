@@ -3,13 +3,13 @@
 # Lernprotokoll
 
 - **Generiert:** 2026-04-29
-- **Quelle (aktuelle Version):** [https://blueprint.ecohubs.community/de/articles/rcos-templates/layer-6/learning-log](https://blueprint.ecohubs.community/de/articles/rcos-templates/layer-6/learning-log)
-- **Alle RCOS-Vorlagen:** [https://blueprint.ecohubs.community/de/articles/rcos-templates](https://blueprint.ecohubs.community/de/articles/rcos-templates)
+- **Quelle (aktuelle Version):** [https://rcos.ecohubs.community/de/articles/rcos-templates/layer-6/learning-log](https://rcos.ecohubs.community/de/articles/rcos-templates/layer-6/learning-log)
+- **Alle RCOS-Vorlagen:** [https://rcos.ecohubs.community/de/articles/rcos-templates](https://rcos.ecohubs.community/de/articles/rcos-templates)
 
 ---
 - **Schicht:** 6 — Evolution & Anpassung
 - **Status:** Vorlage — an deine Gemeinschaft anpassen; wird aktualisiert, wenn lernrelevante Ereignisse eintreten
-- **RCOS-Referenz:** [§8.4](https://blueprint.ecohubs.community/de/articles/rcos-core/v0-1/layer-6-evolution-adaptation#84-learning-and-feedback-capture), [§8.6](https://blueprint.ecohubs.community/de/articles/rcos-core/v0-1/layer-6-evolution-adaptation#86-artifacts)
+- **RCOS-Referenz:** [§8.4](https://rcos.ecohubs.community/de/articles/rcos-core/v0-1/layer-6-evolution-adaptation#84-learning-and-feedback-capture), [§8.6](https://rcos.ecohubs.community/de/articles/rcos-core/v0-1/layer-6-evolution-adaptation#86-artifacts)
 
 > Dokumentiert größere Fehler, Anpassungen, Rücknahmen und systemische Erkenntnisse. Wiederkehrende Fehlermuster müssen eine strukturelle Überprüfung auslösen, keine individuelle Schuldzuweisung. Einträge werden vorangestellt (neueste zuerst).
 
@@ -17,7 +17,7 @@
 
 ## Was ein lernrelevantes Ereignis ausmacht
 
-*RCOS-Klauseln: [8.4.1](https://blueprint.ecohubs.community/de/articles/rcos-core/v0-1/layer-6-evolution-adaptation#84-learning-and-feedback-capture), [8.4.4](https://blueprint.ecohubs.community/de/articles/rcos-core/v0-1/layer-6-evolution-adaptation#84-learning-and-feedback-capture), [8.6.5](https://blueprint.ecohubs.community/de/articles/rcos-core/v0-1/layer-6-evolution-adaptation#86-artifacts), [8.7.4](https://blueprint.ecohubs.community/de/articles/rcos-core/v0-1/layer-6-evolution-adaptation#87-layer-invariants)*
+*RCOS-Klauseln: [8.4.1](https://rcos.ecohubs.community/de/articles/rcos-core/v0-1/layer-6-evolution-adaptation#84-learning-and-feedback-capture), [8.4.4](https://rcos.ecohubs.community/de/articles/rcos-core/v0-1/layer-6-evolution-adaptation#84-learning-and-feedback-capture), [8.6.5](https://rcos.ecohubs.community/de/articles/rcos-core/v0-1/layer-6-evolution-adaptation#86-artifacts), [8.7.4](https://rcos.ecohubs.community/de/articles/rcos-core/v0-1/layer-6-evolution-adaptation#87-layer-invariants)*
 
 <details data-kind="rationale">
 <summary>Warum den Auslöser explizit definieren?</summary>
@@ -57,7 +57,7 @@ _Noch keine Einträge. Der erste Eintrag wird hinzugefügt, wenn das erste lernr
 
 ## Eintragsformat
 
-*RCOS-Klauseln: [8.4.2](https://blueprint.ecohubs.community/de/articles/rcos-core/v0-1/layer-6-evolution-adaptation#84-learning-and-feedback-capture), [8.4.3](https://blueprint.ecohubs.community/de/articles/rcos-core/v0-1/layer-6-evolution-adaptation#84-learning-and-feedback-capture), [8.6.5](https://blueprint.ecohubs.community/de/articles/rcos-core/v0-1/layer-6-evolution-adaptation#86-artifacts)*
+*RCOS-Klauseln: [8.4.2](https://rcos.ecohubs.community/de/articles/rcos-core/v0-1/layer-6-evolution-adaptation#84-learning-and-feedback-capture), [8.4.3](https://rcos.ecohubs.community/de/articles/rcos-core/v0-1/layer-6-evolution-adaptation#84-learning-and-feedback-capture), [8.6.5](https://rcos.ecohubs.community/de/articles/rcos-core/v0-1/layer-6-evolution-adaptation#86-artifacts)*
 
 <details data-kind="rationale">
 <summary>Warum eine feste Eintragsvorlage?</summary>

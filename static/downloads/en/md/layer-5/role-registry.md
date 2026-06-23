@@ -3,19 +3,19 @@
 # Role Registry
 
 - **Generated:** 2026-04-29
-- **Source (latest version):** [https://blueprint.ecohubs.community/articles/rcos-templates/layer-5/role-registry](https://blueprint.ecohubs.community/articles/rcos-templates/layer-5/role-registry)
-- **All RCOS templates:** [https://blueprint.ecohubs.community/articles/rcos-templates](https://blueprint.ecohubs.community/articles/rcos-templates)
+- **Source (latest version):** [https://rcos.ecohubs.community/articles/rcos-templates/layer-5/role-registry](https://rcos.ecohubs.community/articles/rcos-templates/layer-5/role-registry)
+- **All RCOS templates:** [https://rcos.ecohubs.community/articles/rcos-templates](https://rcos.ecohubs.community/articles/rcos-templates)
 
 ---
 - **Layer:** 5 — Operations & Coordination
 - **Status:** Template — adapt for your community
-- **RCOS reference:** [§7.1](https://blueprint.ecohubs.community/articles/rcos-core/v0-1/layer-5-operations-coordination#71-roles-and-responsibilities), [§7.6](https://blueprint.ecohubs.community/articles/rcos-core/v0-1/layer-5-operations-coordination#76-artifacts)
+- **RCOS reference:** [§7.1](https://rcos.ecohubs.community/articles/rcos-core/v0-1/layer-5-operations-coordination#71-roles-and-responsibilities), [§7.6](https://rcos.ecohubs.community/articles/rcos-core/v0-1/layer-5-operations-coordination#76-artifacts)
 
 ---
 
 ## Overview
 
-*RCOS clauses: [7.1.1](https://blueprint.ecohubs.community/articles/rcos-core/v0-1/layer-5-operations-coordination#71-roles-and-responsibilities), [7.1.2](https://blueprint.ecohubs.community/articles/rcos-core/v0-1/layer-5-operations-coordination#71-roles-and-responsibilities), [7.1.4](https://blueprint.ecohubs.community/articles/rcos-core/v0-1/layer-5-operations-coordination#71-roles-and-responsibilities), [7.7.1](https://blueprint.ecohubs.community/articles/rcos-core/v0-1/layer-5-operations-coordination#77-layer-invariants)*
+*RCOS clauses: [7.1.1](https://rcos.ecohubs.community/articles/rcos-core/v0-1/layer-5-operations-coordination#71-roles-and-responsibilities), [7.1.2](https://rcos.ecohubs.community/articles/rcos-core/v0-1/layer-5-operations-coordination#71-roles-and-responsibilities), [7.1.4](https://rcos.ecohubs.community/articles/rcos-core/v0-1/layer-5-operations-coordination#71-roles-and-responsibilities), [7.7.1](https://rcos.ecohubs.community/articles/rcos-core/v0-1/layer-5-operations-coordination#77-layer-invariants)*
 
 <details data-kind="rationale">
 <summary>Why require every responsibility to have a named role?</summary>
@@ -48,7 +48,7 @@ This registry defines all recognized roles within the community. Roles are eithe
 
 ## Operational Roles
 
-*RCOS clauses: [7.1.2](https://blueprint.ecohubs.community/articles/rcos-core/v0-1/layer-5-operations-coordination#71-roles-and-responsibilities), [7.1.3](https://blueprint.ecohubs.community/articles/rcos-core/v0-1/layer-5-operations-coordination#71-roles-and-responsibilities)*
+*RCOS clauses: [7.1.2](https://rcos.ecohubs.community/articles/rcos-core/v0-1/layer-5-operations-coordination#71-roles-and-responsibilities), [7.1.3](https://rcos.ecohubs.community/articles/rcos-core/v0-1/layer-5-operations-coordination#71-roles-and-responsibilities)*
 
 <details data-kind="rationale">
 <summary>Why define accountability for delegated authority?</summary>
@@ -102,7 +102,7 @@ Operational roles carry delegated authority to act within explicitly defined lim
 
 ## Functional Roles
 
-*RCOS clauses: [7.1.1](https://blueprint.ecohubs.community/articles/rcos-core/v0-1/layer-5-operations-coordination#71-roles-and-responsibilities), [7.1.2](https://blueprint.ecohubs.community/articles/rcos-core/v0-1/layer-5-operations-coordination#71-roles-and-responsibilities)*
+*RCOS clauses: [7.1.1](https://rcos.ecohubs.community/articles/rcos-core/v0-1/layer-5-operations-coordination#71-roles-and-responsibilities), [7.1.2](https://rcos.ecohubs.community/articles/rcos-core/v0-1/layer-5-operations-coordination#71-roles-and-responsibilities)*
 
 <details data-kind="rationale">
 <summary>Why separate functional from operational roles?</summary>

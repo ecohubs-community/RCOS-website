@@ -3,13 +3,13 @@
 # Membership Agreement
 
 - **Generated:** 2026-04-29
-- **Source (latest version):** [https://blueprint.ecohubs.community/articles/rcos-templates/layer-1/membership-agreement](https://blueprint.ecohubs.community/articles/rcos-templates/layer-1/membership-agreement)
-- **All RCOS templates:** [https://blueprint.ecohubs.community/articles/rcos-templates](https://blueprint.ecohubs.community/articles/rcos-templates)
+- **Source (latest version):** [https://rcos.ecohubs.community/articles/rcos-templates/layer-1/membership-agreement](https://rcos.ecohubs.community/articles/rcos-templates/layer-1/membership-agreement)
+- **All RCOS templates:** [https://rcos.ecohubs.community/articles/rcos-templates](https://rcos.ecohubs.community/articles/rcos-templates)
 
 ---
 - **Layer:** 1 — Membership System
 - **Status:** Template — adapt for your community
-- **RCOS reference:** [§3.4](https://blueprint.ecohubs.community/articles/rcos-core/v0-1/layer-1-membership-system#34-rights-and-obligations), [§3.5](https://blueprint.ecohubs.community/articles/rcos-core/v0-1/layer-1-membership-system#35-participation-and-contribution), [§3.8](https://blueprint.ecohubs.community/articles/rcos-core/v0-1/layer-1-membership-system#38-artifacts)
+- **RCOS reference:** [§3.4](https://rcos.ecohubs.community/articles/rcos-core/v0-1/layer-1-membership-system#34-rights-and-obligations), [§3.5](https://rcos.ecohubs.community/articles/rcos-core/v0-1/layer-1-membership-system#35-participation-and-contribution), [§3.8](https://rcos.ecohubs.community/articles/rcos-core/v0-1/layer-1-membership-system#38-artifacts)
 
 > Signed (or explicitly acknowledged) by every member at the time of admission. Defines the rights and obligations of each membership state.
 
@@ -17,7 +17,7 @@
 
 ## Membership State on Signing
 
-*RCOS clauses: [3.1.2](https://blueprint.ecohubs.community/articles/rcos-core/v0-1/layer-1-membership-system#31-membership-states), [3.1.4](https://blueprint.ecohubs.community/articles/rcos-core/v0-1/layer-1-membership-system#31-membership-states)*
+*RCOS clauses: [3.1.2](https://rcos.ecohubs.community/articles/rcos-core/v0-1/layer-1-membership-system#31-membership-states), [3.1.4](https://rcos.ecohubs.community/articles/rcos-core/v0-1/layer-1-membership-system#31-membership-states)*
 
 <details data-kind="rationale">
 <summary>Why declare state at signing?</summary>
@@ -37,7 +37,7 @@ _<Membership state assigned at signing — e.g. Trial Member on application appr
 
 ## Member Rights
 
-*RCOS clauses: [3.4.1](https://blueprint.ecohubs.community/articles/rcos-core/v0-1/layer-1-membership-system#34-rights-and-obligations), [3.4.3](https://blueprint.ecohubs.community/articles/rcos-core/v0-1/layer-1-membership-system#34-rights-and-obligations), [3.4.4](https://blueprint.ecohubs.community/articles/rcos-core/v0-1/layer-1-membership-system#34-rights-and-obligations)*
+*RCOS clauses: [3.4.1](https://rcos.ecohubs.community/articles/rcos-core/v0-1/layer-1-membership-system#34-rights-and-obligations), [3.4.3](https://rcos.ecohubs.community/articles/rcos-core/v0-1/layer-1-membership-system#34-rights-and-obligations), [3.4.4](https://rcos.ecohubs.community/articles/rcos-core/v0-1/layer-1-membership-system#34-rights-and-obligations)*
 
 <details data-kind="rationale">
 <summary>Why enumerate rights explicitly?</summary>
@@ -64,7 +64,7 @@ List concrete rights granted to each membership state. Reference the Decision Ma
 
 ## Member Obligations
 
-*RCOS clauses: [3.4.2](https://blueprint.ecohubs.community/articles/rcos-core/v0-1/layer-1-membership-system#34-rights-and-obligations), [3.4.4](https://blueprint.ecohubs.community/articles/rcos-core/v0-1/layer-1-membership-system#34-rights-and-obligations), [3.4.5](https://blueprint.ecohubs.community/articles/rcos-core/v0-1/layer-1-membership-system#34-rights-and-obligations)*
+*RCOS clauses: [3.4.2](https://rcos.ecohubs.community/articles/rcos-core/v0-1/layer-1-membership-system#34-rights-and-obligations), [3.4.4](https://rcos.ecohubs.community/articles/rcos-core/v0-1/layer-1-membership-system#34-rights-and-obligations), [3.4.5](https://rcos.ecohubs.community/articles/rcos-core/v0-1/layer-1-membership-system#34-rights-and-obligations)*
 
 <details data-kind="rationale">
 <summary>Why bound obligations tightly?</summary>
@@ -90,7 +90,7 @@ List concrete, bounded obligations. Each obligation must be testable: a member m
 
 ## Participation and Contribution Expectations
 
-*RCOS clauses: [3.5.1](https://blueprint.ecohubs.community/articles/rcos-core/v0-1/layer-1-membership-system#35-participation-and-contribution), [3.5.2](https://blueprint.ecohubs.community/articles/rcos-core/v0-1/layer-1-membership-system#35-participation-and-contribution), [3.5.3](https://blueprint.ecohubs.community/articles/rcos-core/v0-1/layer-1-membership-system#35-participation-and-contribution), [3.5.4](https://blueprint.ecohubs.community/articles/rcos-core/v0-1/layer-1-membership-system#35-participation-and-contribution)*
+*RCOS clauses: [3.5.1](https://rcos.ecohubs.community/articles/rcos-core/v0-1/layer-1-membership-system#35-participation-and-contribution), [3.5.2](https://rcos.ecohubs.community/articles/rcos-core/v0-1/layer-1-membership-system#35-participation-and-contribution), [3.5.3](https://rcos.ecohubs.community/articles/rcos-core/v0-1/layer-1-membership-system#35-participation-and-contribution), [3.5.4](https://rcos.ecohubs.community/articles/rcos-core/v0-1/layer-1-membership-system#35-participation-and-contribution)*
 
 <details data-kind="rationale">
 <summary>Why define participation in numbers?</summary>

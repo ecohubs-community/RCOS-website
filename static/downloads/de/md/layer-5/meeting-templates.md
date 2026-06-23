@@ -3,13 +3,13 @@
 # Sitzungsvorlagen
 
 - **Generiert:** 2026-04-29
-- **Quelle (aktuelle Version):** [https://blueprint.ecohubs.community/de/articles/rcos-templates/layer-5/meeting-templates](https://blueprint.ecohubs.community/de/articles/rcos-templates/layer-5/meeting-templates)
-- **Alle RCOS-Vorlagen:** [https://blueprint.ecohubs.community/de/articles/rcos-templates](https://blueprint.ecohubs.community/de/articles/rcos-templates)
+- **Quelle (aktuelle Version):** [https://rcos.ecohubs.community/de/articles/rcos-templates/layer-5/meeting-templates](https://rcos.ecohubs.community/de/articles/rcos-templates/layer-5/meeting-templates)
+- **Alle RCOS-Vorlagen:** [https://rcos.ecohubs.community/de/articles/rcos-templates](https://rcos.ecohubs.community/de/articles/rcos-templates)
 
 ---
 - **Schicht:** 5 — Betrieb & Koordination
 - **Status:** Vorlage — an eure Gemeinschaft anpassen
-- **RCOS-Referenz:** [§7.2](https://blueprint.ecohubs.community/de/articles/rcos-core/v0-1/layer-5-operations-coordination#72-meeting-system), [§7.6](https://blueprint.ecohubs.community/de/articles/rcos-core/v0-1/layer-5-operations-coordination#76-artifacts)
+- **RCOS-Referenz:** [§7.2](https://rcos.ecohubs.community/de/articles/rcos-core/v0-1/layer-5-operations-coordination#72-meeting-system), [§7.6](https://rcos.ecohubs.community/de/articles/rcos-core/v0-1/layer-5-operations-coordination#76-artifacts)
 
 > Sitzungsvorlagen legen Zweck, Entscheidungsbereich, Beschlussfähigkeit und Struktur jedes Sitzungstyps fest. Eine Sitzung ohne festgelegte Vorlage wird mit der Zeit Befugnisse ansammeln, die sie nicht haben sollte. Passt diese Vorlagen an und fügt Sitzungstypen hinzu oder entfernt sie, wie es eure Gemeinschaft braucht.
 
@@ -17,7 +17,7 @@
 
 ## Sitzungstyp: Operativ
 
-*RCOS-Klauseln: [7.2.1](https://blueprint.ecohubs.community/de/articles/rcos-core/v0-1/layer-5-operations-coordination#72-meeting-system), [7.2.2](https://blueprint.ecohubs.community/de/articles/rcos-core/v0-1/layer-5-operations-coordination#72-meeting-system), [7.2.3](https://blueprint.ecohubs.community/de/articles/rcos-core/v0-1/layer-5-operations-coordination#72-meeting-system), [7.2.4](https://blueprint.ecohubs.community/de/articles/rcos-core/v0-1/layer-5-operations-coordination#72-meeting-system), [7.6.4](https://blueprint.ecohubs.community/de/articles/rcos-core/v0-1/layer-5-operations-coordination#76-artifacts)*
+*RCOS-Klauseln: [7.2.1](https://rcos.ecohubs.community/de/articles/rcos-core/v0-1/layer-5-operations-coordination#72-meeting-system), [7.2.2](https://rcos.ecohubs.community/de/articles/rcos-core/v0-1/layer-5-operations-coordination#72-meeting-system), [7.2.3](https://rcos.ecohubs.community/de/articles/rcos-core/v0-1/layer-5-operations-coordination#72-meeting-system), [7.2.4](https://rcos.ecohubs.community/de/articles/rcos-core/v0-1/layer-5-operations-coordination#72-meeting-system), [7.6.4](https://rcos.ecohubs.community/de/articles/rcos-core/v0-1/layer-5-operations-coordination#76-artifacts)*
 
 <details data-kind="rationale">
 <summary>Warum eine regelmäßige operative Sitzung?</summary>
@@ -71,7 +71,7 @@ Legt Zweck, Entscheidungsbereich, erforderliche und optionale Teilnehmende, Rhyt
 
 ## Sitzungstyp: Governance
 
-*RCOS-Klauseln: [7.2.1](https://blueprint.ecohubs.community/de/articles/rcos-core/v0-1/layer-5-operations-coordination#72-meeting-system), [7.2.2](https://blueprint.ecohubs.community/de/articles/rcos-core/v0-1/layer-5-operations-coordination#72-meeting-system), [7.2.3](https://blueprint.ecohubs.community/de/articles/rcos-core/v0-1/layer-5-operations-coordination#72-meeting-system), [7.6.4](https://blueprint.ecohubs.community/de/articles/rcos-core/v0-1/layer-5-operations-coordination#76-artifacts)*
+*RCOS-Klauseln: [7.2.1](https://rcos.ecohubs.community/de/articles/rcos-core/v0-1/layer-5-operations-coordination#72-meeting-system), [7.2.2](https://rcos.ecohubs.community/de/articles/rcos-core/v0-1/layer-5-operations-coordination#72-meeting-system), [7.2.3](https://rcos.ecohubs.community/de/articles/rcos-core/v0-1/layer-5-operations-coordination#72-meeting-system), [7.6.4](https://rcos.ecohubs.community/de/articles/rcos-core/v0-1/layer-5-operations-coordination#76-artifacts)*
 
 <details data-kind="rationale">
 <summary>Warum Beratung und verbindliche Abstimmung trennen?</summary>
@@ -124,7 +124,7 @@ Diese Sitzung berät über aktive Vorschläge während ihrer Beratungsphase. Die
 
 ## Sitzungstyp: Koordination & Abstimmung
 
-*RCOS-Klauseln: [7.2.1](https://blueprint.ecohubs.community/de/articles/rcos-core/v0-1/layer-5-operations-coordination#72-meeting-system), [7.2.2](https://blueprint.ecohubs.community/de/articles/rcos-core/v0-1/layer-5-operations-coordination#72-meeting-system), [7.2.3](https://blueprint.ecohubs.community/de/articles/rcos-core/v0-1/layer-5-operations-coordination#72-meeting-system), [7.6.4](https://blueprint.ecohubs.community/de/articles/rcos-core/v0-1/layer-5-operations-coordination#76-artifacts)*
+*RCOS-Klauseln: [7.2.1](https://rcos.ecohubs.community/de/articles/rcos-core/v0-1/layer-5-operations-coordination#72-meeting-system), [7.2.2](https://rcos.ecohubs.community/de/articles/rcos-core/v0-1/layer-5-operations-coordination#72-meeting-system), [7.2.3](https://rcos.ecohubs.community/de/articles/rcos-core/v0-1/layer-5-operations-coordination#72-meeting-system), [7.6.4](https://rcos.ecohubs.community/de/articles/rcos-core/v0-1/layer-5-operations-coordination#76-artifacts)*
 
 <details data-kind="rationale">
 <summary>Warum eine eigene Koordinationssitzung?</summary>
@@ -166,7 +166,7 @@ Nutzt diese Vorlage, wenn rollenübergreifende Koordination nötig ist. Beschrä
 
 ## Sitzungstyp: Reflexion & Lernen
 
-*RCOS-Klauseln: [7.2.1](https://blueprint.ecohubs.community/de/articles/rcos-core/v0-1/layer-5-operations-coordination#72-meeting-system), [7.2.2](https://blueprint.ecohubs.community/de/articles/rcos-core/v0-1/layer-5-operations-coordination#72-meeting-system), [7.2.3](https://blueprint.ecohubs.community/de/articles/rcos-core/v0-1/layer-5-operations-coordination#72-meeting-system), [7.6.4](https://blueprint.ecohubs.community/de/articles/rcos-core/v0-1/layer-5-operations-coordination#76-artifacts)*
+*RCOS-Klauseln: [7.2.1](https://rcos.ecohubs.community/de/articles/rcos-core/v0-1/layer-5-operations-coordination#72-meeting-system), [7.2.2](https://rcos.ecohubs.community/de/articles/rcos-core/v0-1/layer-5-operations-coordination#72-meeting-system), [7.2.3](https://rcos.ecohubs.community/de/articles/rcos-core/v0-1/layer-5-operations-coordination#72-meeting-system), [7.6.4](https://rcos.ecohubs.community/de/articles/rcos-core/v0-1/layer-5-operations-coordination#76-artifacts)*
 
 <details data-kind="rationale">
 <summary>Warum bekommt Reflexion einen eigenen Sitzungstyp?</summary>
@@ -212,7 +212,7 @@ Diese Sitzung bilanziert den letzten Zeitraum und speist Erkenntnisse in das Ler
 
 ## Sitzungstyp: Konfliktbearbeitung
 
-*RCOS-Klauseln: [7.2.1](https://blueprint.ecohubs.community/de/articles/rcos-core/v0-1/layer-5-operations-coordination#72-meeting-system), [7.2.2](https://blueprint.ecohubs.community/de/articles/rcos-core/v0-1/layer-5-operations-coordination#72-meeting-system), [7.2.3](https://blueprint.ecohubs.community/de/articles/rcos-core/v0-1/layer-5-operations-coordination#72-meeting-system), [7.6.4](https://blueprint.ecohubs.community/de/articles/rcos-core/v0-1/layer-5-operations-coordination#76-artifacts); siehe auch Schicht 4 — [Konfliktlösungsleiter](https://blueprint.ecohubs.community/de/articles/rcos-core/v0-1/layer-4-conflict-repair-accountability#62-resolution-pathways)*
+*RCOS-Klauseln: [7.2.1](https://rcos.ecohubs.community/de/articles/rcos-core/v0-1/layer-5-operations-coordination#72-meeting-system), [7.2.2](https://rcos.ecohubs.community/de/articles/rcos-core/v0-1/layer-5-operations-coordination#72-meeting-system), [7.2.3](https://rcos.ecohubs.community/de/articles/rcos-core/v0-1/layer-5-operations-coordination#72-meeting-system), [7.6.4](https://rcos.ecohubs.community/de/articles/rcos-core/v0-1/layer-5-operations-coordination#76-artifacts); siehe auch Schicht 4 — [Konfliktlösungsleiter](https://rcos.ecohubs.community/de/articles/rcos-core/v0-1/layer-4-conflict-repair-accountability#62-resolution-pathways)*
 
 <details data-kind="rationale">
 <summary>Warum ein eigener Sitzungstyp für Konflikte?</summary>

@@ -3,19 +3,19 @@
 # Protocolo de Rendición de Cuentas
 
 - **Generado:** 2026-04-29
-- **Fuente (versión más reciente):** [https://blueprint.ecohubs.community/es/articles/rcos-templates/layer-4/accountability-protocol](https://blueprint.ecohubs.community/es/articles/rcos-templates/layer-4/accountability-protocol)
-- **Todas las plantillas RCOS:** [https://blueprint.ecohubs.community/es/articles/rcos-templates](https://blueprint.ecohubs.community/es/articles/rcos-templates)
+- **Fuente (versión más reciente):** [https://rcos.ecohubs.community/es/articles/rcos-templates/layer-4/accountability-protocol](https://rcos.ecohubs.community/es/articles/rcos-templates/layer-4/accountability-protocol)
+- **Todas las plantillas RCOS:** [https://rcos.ecohubs.community/es/articles/rcos-templates](https://rcos.ecohubs.community/es/articles/rcos-templates)
 
 ---
 - **Capa:** 4 — Conflicto, Reparación y Rendición de Cuentas
 - **Estado:** Plantilla — adaptar para tu comunidad
-- **Referencia RCOS:** [§6.4](https://blueprint.ecohubs.community/es/articles/rcos-core/v0-1/layer-4-conflict-repair-accountability#64-sanctions-repair-and-separation), [§6.5](https://blueprint.ecohubs.community/es/articles/rcos-core/v0-1/layer-4-conflict-repair-accountability#65-artifacts)
+- **Referencia RCOS:** [§6.4](https://rcos.ecohubs.community/es/articles/rcos-core/v0-1/layer-4-conflict-repair-accountability#64-sanctions-repair-and-separation), [§6.5](https://rcos.ecohubs.community/es/articles/rcos-core/v0-1/layer-4-conflict-repair-accountability#65-artifacts)
 
 ---
 
 ## Desencadenantes
 
-*Cláusulas RCOS: [6.4.1](https://blueprint.ecohubs.community/es/articles/rcos-core/v0-1/layer-4-conflict-repair-accountability#64-sanctions-repair-and-separation), [6.5.4](https://blueprint.ecohubs.community/es/articles/rcos-core/v0-1/layer-4-conflict-repair-accountability#65-artifacts)*
+*Cláusulas RCOS: [6.4.1](https://rcos.ecohubs.community/es/articles/rcos-core/v0-1/layer-4-conflict-repair-accountability#64-sanctions-repair-and-separation), [6.5.4](https://rcos.ecohubs.community/es/articles/rcos-core/v0-1/layer-4-conflict-repair-accountability#65-artifacts)*
 
 <details data-kind="rationale">
 <summary>¿Por qué enumerar qué inicia una revisión de rendición de cuentas?</summary>
@@ -40,7 +40,7 @@ Se inicia una revisión de rendición de cuentas cuando:
 
 ## Investigación y Revisión
 
-*Cláusulas RCOS: [6.4.2](https://blueprint.ecohubs.community/es/articles/rcos-core/v0-1/layer-4-conflict-repair-accountability#64-sanctions-repair-and-separation), [6.4.3](https://blueprint.ecohubs.community/es/articles/rcos-core/v0-1/layer-4-conflict-repair-accountability#64-sanctions-repair-and-separation), [6.4.6](https://blueprint.ecohubs.community/es/articles/rcos-core/v0-1/layer-4-conflict-repair-accountability#64-sanctions-repair-and-separation), [6.5.4](https://blueprint.ecohubs.community/es/articles/rcos-core/v0-1/layer-4-conflict-repair-accountability#65-artifacts)*
+*Cláusulas RCOS: [6.4.2](https://rcos.ecohubs.community/es/articles/rcos-core/v0-1/layer-4-conflict-repair-accountability#64-sanctions-repair-and-separation), [6.4.3](https://rcos.ecohubs.community/es/articles/rcos-core/v0-1/layer-4-conflict-repair-accountability#64-sanctions-repair-and-separation), [6.4.6](https://rcos.ecohubs.community/es/articles/rcos-core/v0-1/layer-4-conflict-repair-accountability#64-sanctions-repair-and-separation), [6.5.4](https://rcos.ecohubs.community/es/articles/rcos-core/v0-1/layer-4-conflict-repair-accountability#65-artifacts)*
 
 <details data-kind="rationale">
 <summary>¿Por qué graduar la respuesta según la gravedad?</summary>
@@ -64,7 +64,7 @@ Define las vías suave (inactividad), intermedia (incumplimiento de obligación)
 
 ## Garantías de Debido Proceso
 
-*Cláusulas RCOS: [6.4.2](https://blueprint.ecohubs.community/es/articles/rcos-core/v0-1/layer-4-conflict-repair-accountability#64-sanctions-repair-and-separation), [6.4.4](https://blueprint.ecohubs.community/es/articles/rcos-core/v0-1/layer-4-conflict-repair-accountability#64-sanctions-repair-and-separation), [6.5.4](https://blueprint.ecohubs.community/es/articles/rcos-core/v0-1/layer-4-conflict-repair-accountability#65-artifacts)*
+*Cláusulas RCOS: [6.4.2](https://rcos.ecohubs.community/es/articles/rcos-core/v0-1/layer-4-conflict-repair-accountability#64-sanctions-repair-and-separation), [6.4.4](https://rcos.ecohubs.community/es/articles/rcos-core/v0-1/layer-4-conflict-repair-accountability#64-sanctions-repair-and-separation), [6.5.4](https://rcos.ecohubs.community/es/articles/rcos-core/v0-1/layer-4-conflict-repair-accountability#65-artifacts)*
 
 <details data-kind="rationale">
 <summary>¿Por qué detallar los derechos de notificación, respuesta y apelación?</summary>
@@ -86,7 +86,7 @@ Establece el derecho a notificación por escrito, un plazo mínimo de respuesta 
 
 ## Protecciones contra Represalias
 
-*Cláusulas RCOS: [6.3.2](https://blueprint.ecohubs.community/es/articles/rcos-core/v0-1/layer-4-conflict-repair-accountability#63-safeguards)*
+*Cláusulas RCOS: [6.3.2](https://rcos.ecohubs.community/es/articles/rcos-core/v0-1/layer-4-conflict-repair-accountability#63-safeguards)*
 
 <details data-kind="rationale">
 <summary>¿Por qué proteger explícitamente a los participantes?</summary>
@@ -106,7 +106,7 @@ _<Las represalias contra un miembro por participar en cualquier parte de este pr
 
 ## Opciones de Sanción y Reparación
 
-*Cláusulas RCOS: [6.4.1](https://blueprint.ecohubs.community/es/articles/rcos-core/v0-1/layer-4-conflict-repair-accountability#64-sanctions-repair-and-separation), [6.4.2](https://blueprint.ecohubs.community/es/articles/rcos-core/v0-1/layer-4-conflict-repair-accountability#64-sanctions-repair-and-separation), [6.4.3](https://blueprint.ecohubs.community/es/articles/rcos-core/v0-1/layer-4-conflict-repair-accountability#64-sanctions-repair-and-separation), [6.4.5](https://blueprint.ecohubs.community/es/articles/rcos-core/v0-1/layer-4-conflict-repair-accountability#64-sanctions-repair-and-separation), [6.4.6](https://blueprint.ecohubs.community/es/articles/rcos-core/v0-1/layer-4-conflict-repair-accountability#64-sanctions-repair-and-separation), [6.5.4](https://blueprint.ecohubs.community/es/articles/rcos-core/v0-1/layer-4-conflict-repair-accountability#65-artifacts)*
+*Cláusulas RCOS: [6.4.1](https://rcos.ecohubs.community/es/articles/rcos-core/v0-1/layer-4-conflict-repair-accountability#64-sanctions-repair-and-separation), [6.4.2](https://rcos.ecohubs.community/es/articles/rcos-core/v0-1/layer-4-conflict-repair-accountability#64-sanctions-repair-and-separation), [6.4.3](https://rcos.ecohubs.community/es/articles/rcos-core/v0-1/layer-4-conflict-repair-accountability#64-sanctions-repair-and-separation), [6.4.5](https://rcos.ecohubs.community/es/articles/rcos-core/v0-1/layer-4-conflict-repair-accountability#64-sanctions-repair-and-separation), [6.4.6](https://rcos.ecohubs.community/es/articles/rcos-core/v0-1/layer-4-conflict-repair-accountability#64-sanctions-repair-and-separation), [6.5.4](https://rcos.ecohubs.community/es/articles/rcos-core/v0-1/layer-4-conflict-repair-accountability#65-artifacts)*
 
 <details data-kind="rationale">
 <summary>¿Por qué predefinir el menú de sanciones?</summary>
@@ -134,7 +134,7 @@ Para cada tipo de sanción, define las precondiciones, el órgano autorizado y l
 
 ## Condiciones para la Restitución de Derechos
 
-*Cláusulas RCOS: [6.4.4](https://blueprint.ecohubs.community/es/articles/rcos-core/v0-1/layer-4-conflict-repair-accountability#64-sanctions-repair-and-separation)*
+*Cláusulas RCOS: [6.4.4](https://rcos.ecohubs.community/es/articles/rcos-core/v0-1/layer-4-conflict-repair-accountability#64-sanctions-repair-and-separation)*
 
 <details data-kind="rationale">
 <summary>¿Por qué hacer explícitas las condiciones de restitución?</summary>
@@ -156,7 +156,7 @@ Para cada clase de sanción, establece el camino hacia la restitución de derech
 
 ## Coordinación con la Capa 1
 
-*Cláusulas RCOS: [6.4.4](https://blueprint.ecohubs.community/es/articles/rcos-core/v0-1/layer-4-conflict-repair-accountability#64-sanctions-repair-and-separation)*
+*Cláusulas RCOS: [6.4.4](https://rcos.ecohubs.community/es/articles/rcos-core/v0-1/layer-4-conflict-repair-accountability#64-sanctions-repair-and-separation)*
 
 <details data-kind="rationale">
 <summary>¿Por qué vincular esto al Protocolo de Salida y Separación?</summary>

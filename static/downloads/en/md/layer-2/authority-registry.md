@@ -3,13 +3,13 @@
 # Authority Registry
 
 - **Generated:** 2026-04-29
-- **Source (latest version):** [https://blueprint.ecohubs.community/articles/rcos-templates/layer-2/authority-registry](https://blueprint.ecohubs.community/articles/rcos-templates/layer-2/authority-registry)
-- **All RCOS templates:** [https://blueprint.ecohubs.community/articles/rcos-templates](https://blueprint.ecohubs.community/articles/rcos-templates)
+- **Source (latest version):** [https://rcos.ecohubs.community/articles/rcos-templates/layer-2/authority-registry](https://rcos.ecohubs.community/articles/rcos-templates/layer-2/authority-registry)
+- **All RCOS templates:** [https://rcos.ecohubs.community/articles/rcos-templates](https://rcos.ecohubs.community/articles/rcos-templates)
 
 ---
 - **Layer:** 2 — Governance & Decision Logic
 - **Status:** Template — adapt for your community
-- **RCOS reference:** [§4.3](https://blueprint.ecohubs.community/articles/rcos-core/v0-1/layer-2-governance-decision-logic#43-authority-boundaries), [§4.7](https://blueprint.ecohubs.community/articles/rcos-core/v0-1/layer-2-governance-decision-logic#47-artifacts)
+- **RCOS reference:** [§4.3](https://rcos.ecohubs.community/articles/rcos-core/v0-1/layer-2-governance-decision-logic#43-authority-boundaries), [§4.7](https://rcos.ecohubs.community/articles/rcos-core/v0-1/layer-2-governance-decision-logic#47-artifacts)
 
 > Lists all roles, circles, or bodies that hold decision-making authority, along with their explicit scope, limits, and term.
 
@@ -17,7 +17,7 @@
 
 ## Registered Authorities
 
-*RCOS clauses: [4.3.1](https://blueprint.ecohubs.community/articles/rcos-core/v0-1/layer-2-governance-decision-logic#43-authority-boundaries), [4.3.2](https://blueprint.ecohubs.community/articles/rcos-core/v0-1/layer-2-governance-decision-logic#43-authority-boundaries), [4.3.3](https://blueprint.ecohubs.community/articles/rcos-core/v0-1/layer-2-governance-decision-logic#43-authority-boundaries), [4.3.4](https://blueprint.ecohubs.community/articles/rcos-core/v0-1/layer-2-governance-decision-logic#43-authority-boundaries), [4.3.5](https://blueprint.ecohubs.community/articles/rcos-core/v0-1/layer-2-governance-decision-logic#43-authority-boundaries)*
+*RCOS clauses: [4.3.1](https://rcos.ecohubs.community/articles/rcos-core/v0-1/layer-2-governance-decision-logic#43-authority-boundaries), [4.3.2](https://rcos.ecohubs.community/articles/rcos-core/v0-1/layer-2-governance-decision-logic#43-authority-boundaries), [4.3.3](https://rcos.ecohubs.community/articles/rcos-core/v0-1/layer-2-governance-decision-logic#43-authority-boundaries), [4.3.4](https://rcos.ecohubs.community/articles/rcos-core/v0-1/layer-2-governance-decision-logic#43-authority-boundaries), [4.3.5](https://rcos.ecohubs.community/articles/rcos-core/v0-1/layer-2-governance-decision-logic#43-authority-boundaries)*
 
 <details data-kind="rationale">
 <summary>Why write every authority down?</summary>

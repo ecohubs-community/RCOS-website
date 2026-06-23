@@ -3,7 +3,7 @@
 # Spécification RCOS Core — v0.1
 
 - **Généré:** 2026-04-29
-- **Source (version la plus récente):** [https://blueprint.ecohubs.community/fr/articles/rcos-core/v0-1](https://blueprint.ecohubs.community/fr/articles/rcos-core/v0-1)
+- **Source (version la plus récente):** [https://rcos.ecohubs.community/fr/articles/rcos-core/v0-1](https://rcos.ecohubs.community/fr/articles/rcos-core/v0-1)
 
 - Statut : Brouillon
 - Version : RCOS-Core v0.1
@@ -219,7 +219,7 @@ RCOS transforme :
 
 ### Modes d'échec connus que RCOS est conçu pour prévenir
 
-Voir [Tests de résistance RCOS](https://blueprint.ecohubs.community/fr/articles/rcos-stress-tests?id=6acbe9a7)
+Voir [Tests de résistance RCOS](https://rcos.ecohubs.community/fr/articles/rcos-stress-tests?id=6acbe9a7)
 
 ## Implémentations de référence
 
@@ -287,7 +287,7 @@ afin que le soin, l'autonomie et la régénération aient quelque chose de solid
 
 ## Journal des modifications
 
-- [v0.1](https://blueprint.ecohubs.community/fr/articles/rcos-core/v0-1?id=e6de7a5d) — Version initiale
+- [v0.1](https://rcos.ecohubs.community/fr/articles/rcos-core/v0-1?id=e6de7a5d) — Version initiale
 
 
 ---

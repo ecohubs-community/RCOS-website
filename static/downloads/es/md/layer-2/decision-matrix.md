@@ -3,13 +3,13 @@
 # Matriz de Decisiones
 
 - **Generado:** 2026-04-29
-- **Fuente (versión más reciente):** [https://blueprint.ecohubs.community/es/articles/rcos-templates/layer-2/decision-matrix](https://blueprint.ecohubs.community/es/articles/rcos-templates/layer-2/decision-matrix)
-- **Todas las plantillas RCOS:** [https://blueprint.ecohubs.community/es/articles/rcos-templates](https://blueprint.ecohubs.community/es/articles/rcos-templates)
+- **Fuente (versión más reciente):** [https://rcos.ecohubs.community/es/articles/rcos-templates/layer-2/decision-matrix](https://rcos.ecohubs.community/es/articles/rcos-templates/layer-2/decision-matrix)
+- **Todas las plantillas RCOS:** [https://rcos.ecohubs.community/es/articles/rcos-templates](https://rcos.ecohubs.community/es/articles/rcos-templates)
 
 ---
 - **Capa:** 2 — Gobernanza y Lógica de Decisión
 - **Estado:** Plantilla — adaptar para tu comunidad
-- **Referencia RCOS:** [§4.2](https://blueprint.ecohubs.community/es/articles/rcos-core/v0-1/layer-2-governance-decision-logic#42-decision-mechanisms), [§4.4](https://blueprint.ecohubs.community/es/articles/rcos-core/v0-1/layer-2-governance-decision-logic#44-decision-matrix), [§4.7](https://blueprint.ecohubs.community/es/articles/rcos-core/v0-1/layer-2-governance-decision-logic#47-artifacts)
+- **Referencia RCOS:** [§4.2](https://rcos.ecohubs.community/es/articles/rcos-core/v0-1/layer-2-governance-decision-logic#42-decision-mechanisms), [§4.4](https://rcos.ecohubs.community/es/articles/rcos-core/v0-1/layer-2-governance-decision-logic#44-decision-matrix), [§4.7](https://rcos.ecohubs.community/es/articles/rcos-core/v0-1/layer-2-governance-decision-logic#47-artifacts)
 
 > Asigna cada tipo de decisión y dominio a un rol o cuerpo autorizado, mecanismo, umbral y vía de escalamiento. Las decisiones tomadas fuera de esta matriz se consideran inválidas.
 
@@ -17,7 +17,7 @@
 
 ## Principios de Votación
 
-*Cláusulas RCOS: [4.2.1](https://blueprint.ecohubs.community/es/articles/rcos-core/v0-1/layer-2-governance-decision-logic#42-decision-mechanisms), [4.2.3](https://blueprint.ecohubs.community/es/articles/rcos-core/v0-1/layer-2-governance-decision-logic#42-decision-mechanisms), [4.2.4](https://blueprint.ecohubs.community/es/articles/rcos-core/v0-1/layer-2-governance-decision-logic#42-decision-mechanisms)*
+*Cláusulas RCOS: [4.2.1](https://rcos.ecohubs.community/es/articles/rcos-core/v0-1/layer-2-governance-decision-logic#42-decision-mechanisms), [4.2.3](https://rcos.ecohubs.community/es/articles/rcos-core/v0-1/layer-2-governance-decision-logic#42-decision-mechanisms), [4.2.4](https://rcos.ecohubs.community/es/articles/rcos-core/v0-1/layer-2-governance-decision-logic#42-decision-mechanisms)*
 
 <details data-kind="rationale">
 <summary>¿Por qué fijar mecanismo, umbral y plazos?</summary>
@@ -47,7 +47,7 @@ Indica la plataforma de votación, el umbral para cada tipo de decisión, el per
 
 ## Matriz
 
-*Cláusulas RCOS: [4.4.1](https://blueprint.ecohubs.community/es/articles/rcos-core/v0-1/layer-2-governance-decision-logic#44-decision-matrix), [4.4.2](https://blueprint.ecohubs.community/es/articles/rcos-core/v0-1/layer-2-governance-decision-logic#44-decision-matrix), [4.4.3](https://blueprint.ecohubs.community/es/articles/rcos-core/v0-1/layer-2-governance-decision-logic#44-decision-matrix), [4.4.4](https://blueprint.ecohubs.community/es/articles/rcos-core/v0-1/layer-2-governance-decision-logic#44-decision-matrix)*
+*Cláusulas RCOS: [4.4.1](https://rcos.ecohubs.community/es/articles/rcos-core/v0-1/layer-2-governance-decision-logic#44-decision-matrix), [4.4.2](https://rcos.ecohubs.community/es/articles/rcos-core/v0-1/layer-2-governance-decision-logic#44-decision-matrix), [4.4.3](https://rcos.ecohubs.community/es/articles/rcos-core/v0-1/layer-2-governance-decision-logic#44-decision-matrix), [4.4.4](https://rcos.ecohubs.community/es/articles/rcos-core/v0-1/layer-2-governance-decision-logic#44-decision-matrix)*
 
 <details data-kind="rationale">
 <summary>¿Por qué una única matriz autoritativa?</summary>
@@ -75,7 +75,7 @@ Para cada dominio de decisión (membresía, tesorería, plataforma, alianzas, go
 
 ## Definiciones de Tipos de Decisión
 
-*Cláusulas RCOS: [4.1.1](https://blueprint.ecohubs.community/es/articles/rcos-core/v0-1/layer-2-governance-decision-logic#41-decision-types), [4.1.2](https://blueprint.ecohubs.community/es/articles/rcos-core/v0-1/layer-2-governance-decision-logic#41-decision-types), [4.1.3](https://blueprint.ecohubs.community/es/articles/rcos-core/v0-1/layer-2-governance-decision-logic#41-decision-types), [4.1.4](https://blueprint.ecohubs.community/es/articles/rcos-core/v0-1/layer-2-governance-decision-logic#41-decision-types), [4.1.5](https://blueprint.ecohubs.community/es/articles/rcos-core/v0-1/layer-2-governance-decision-logic#41-decision-types)*
+*Cláusulas RCOS: [4.1.1](https://rcos.ecohubs.community/es/articles/rcos-core/v0-1/layer-2-governance-decision-logic#41-decision-types), [4.1.2](https://rcos.ecohubs.community/es/articles/rcos-core/v0-1/layer-2-governance-decision-logic#41-decision-types), [4.1.3](https://rcos.ecohubs.community/es/articles/rcos-core/v0-1/layer-2-governance-decision-logic#41-decision-types), [4.1.4](https://rcos.ecohubs.community/es/articles/rcos-core/v0-1/layer-2-governance-decision-logic#41-decision-types), [4.1.5](https://rcos.ecohubs.community/es/articles/rcos-core/v0-1/layer-2-governance-decision-logic#41-decision-types)*
 
 <details data-kind="rationale">
 <summary>¿Por qué clasificar cada decisión?</summary>

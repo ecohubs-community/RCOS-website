@@ -3,19 +3,19 @@
 # Protocole de changement
 
 - **Généré:** 2026-04-29
-- **Source (version la plus récente):** [https://blueprint.ecohubs.community/fr/articles/rcos-templates/layer-6/change-protocol](https://blueprint.ecohubs.community/fr/articles/rcos-templates/layer-6/change-protocol)
-- **Tous les modèles RCOS:** [https://blueprint.ecohubs.community/fr/articles/rcos-templates](https://blueprint.ecohubs.community/fr/articles/rcos-templates)
+- **Source (version la plus récente):** [https://rcos.ecohubs.community/fr/articles/rcos-templates/layer-6/change-protocol](https://rcos.ecohubs.community/fr/articles/rcos-templates/layer-6/change-protocol)
+- **Tous les modèles RCOS:** [https://rcos.ecohubs.community/fr/articles/rcos-templates](https://rcos.ecohubs.community/fr/articles/rcos-templates)
 
 ---
 - **Couche :** 6 — Évolution et adaptation
 - **Statut :** Modèle — à adapter pour ta communauté
-- **Référence RCOS :** [§8.1](https://blueprint.ecohubs.community/fr/articles/rcos-core/v0-1/layer-6-evolution-adaptation#81-change-mechanisms), [§8.5](https://blueprint.ecohubs.community/fr/articles/rcos-core/v0-1/layer-6-evolution-adaptation#85-change-safety-and-reversibility), [§8.6](https://blueprint.ecohubs.community/fr/articles/rcos-core/v0-1/layer-6-evolution-adaptation#86-artifacts)
+- **Référence RCOS :** [§8.1](https://rcos.ecohubs.community/fr/articles/rcos-core/v0-1/layer-6-evolution-adaptation#81-change-mechanisms), [§8.5](https://rcos.ecohubs.community/fr/articles/rcos-core/v0-1/layer-6-evolution-adaptation#85-change-safety-and-reversibility), [§8.6](https://rcos.ecohubs.community/fr/articles/rcos-core/v0-1/layer-6-evolution-adaptation#86-artifacts)
 
 ---
 
 ## Comment les changements sont proposés
 
-*Clauses RCOS : [8.1.1](https://blueprint.ecohubs.community/fr/articles/rcos-core/v0-1/layer-6-evolution-adaptation#81-change-mechanisms), [8.1.3](https://blueprint.ecohubs.community/fr/articles/rcos-core/v0-1/layer-6-evolution-adaptation#81-change-mechanisms), [8.6.3](https://blueprint.ecohubs.community/fr/articles/rcos-core/v0-1/layer-6-evolution-adaptation#86-artifacts), [8.8.1](https://blueprint.ecohubs.community/fr/articles/rcos-core/v0-1/layer-6-evolution-adaptation#88-explicitness-rules)*
+*Clauses RCOS : [8.1.1](https://rcos.ecohubs.community/fr/articles/rcos-core/v0-1/layer-6-evolution-adaptation#81-change-mechanisms), [8.1.3](https://rcos.ecohubs.community/fr/articles/rcos-core/v0-1/layer-6-evolution-adaptation#81-change-mechanisms), [8.6.3](https://rcos.ecohubs.community/fr/articles/rcos-core/v0-1/layer-6-evolution-adaptation#86-artifacts), [8.8.1](https://rcos.ecohubs.community/fr/articles/rcos-core/v0-1/layer-6-evolution-adaptation#88-explicitness-rules)*
 
 <details data-kind="rationale">
 <summary>Pourquoi exiger une proposition structurée ?</summary>
@@ -43,7 +43,7 @@ _<Tout Membre de plein droit peut proposer un changement à tout artefact RCOS. 
 
 ## Comment les propositions sont classifiées
 
-*Clauses RCOS : [8.1.2](https://blueprint.ecohubs.community/fr/articles/rcos-core/v0-1/layer-6-evolution-adaptation#81-change-mechanisms), [8.1.4](https://blueprint.ecohubs.community/fr/articles/rcos-core/v0-1/layer-6-evolution-adaptation#81-change-mechanisms)*
+*Clauses RCOS : [8.1.2](https://rcos.ecohubs.community/fr/articles/rcos-core/v0-1/layer-6-evolution-adaptation#81-change-mechanisms), [8.1.4](https://rcos.ecohubs.community/fr/articles/rcos-core/v0-1/layer-6-evolution-adaptation#81-change-mechanisms)*
 
 <details data-kind="rationale">
 <summary>Pourquoi classifier selon l'impact ?</summary>
@@ -67,7 +67,7 @@ Définis ce qui relève de chaque type de décision. Indique la règle de classi
 
 ## Examen et délibération
 
-*Clauses RCOS : [8.1.2](https://blueprint.ecohubs.community/fr/articles/rcos-core/v0-1/layer-6-evolution-adaptation#81-change-mechanisms), [8.7.1](https://blueprint.ecohubs.community/fr/articles/rcos-core/v0-1/layer-6-evolution-adaptation#87-layer-invariants)*
+*Clauses RCOS : [8.1.2](https://rcos.ecohubs.community/fr/articles/rcos-core/v0-1/layer-6-evolution-adaptation#81-change-mechanisms), [8.7.1](https://rcos.ecohubs.community/fr/articles/rcos-core/v0-1/layer-6-evolution-adaptation#87-layer-invariants)*
 
 <details data-kind="rationale">
 <summary>Pourquoi imposer des périodes minimales de délibération ?</summary>
@@ -89,7 +89,7 @@ Définis les périodes minimales de délibération pour chaque type de décision
 
 ## Adoption et publication
 
-*Clauses RCOS : [8.2.1](https://blueprint.ecohubs.community/fr/articles/rcos-core/v0-1/layer-6-evolution-adaptation#82-versioning-and-authority), [8.2.2](https://blueprint.ecohubs.community/fr/articles/rcos-core/v0-1/layer-6-evolution-adaptation#82-versioning-and-authority), [8.2.5](https://blueprint.ecohubs.community/fr/articles/rcos-core/v0-1/layer-6-evolution-adaptation#82-versioning-and-authority), [8.6.3](https://blueprint.ecohubs.community/fr/articles/rcos-core/v0-1/layer-6-evolution-adaptation#86-artifacts)*
+*Clauses RCOS : [8.2.1](https://rcos.ecohubs.community/fr/articles/rcos-core/v0-1/layer-6-evolution-adaptation#82-versioning-and-authority), [8.2.2](https://rcos.ecohubs.community/fr/articles/rcos-core/v0-1/layer-6-evolution-adaptation#82-versioning-and-authority), [8.2.5](https://rcos.ecohubs.community/fr/articles/rcos-core/v0-1/layer-6-evolution-adaptation#82-versioning-and-authority), [8.6.3](https://rcos.ecohubs.community/fr/articles/rcos-core/v0-1/layer-6-evolution-adaptation#86-artifacts)*
 
 <details data-kind="rationale">
 <summary>Pourquoi des étapes de publication fixes ?</summary>
@@ -114,7 +114,7 @@ Lorsqu'une proposition est adoptée :
 
 ## Rejet
 
-*Clauses RCOS : [8.2.2](https://blueprint.ecohubs.community/fr/articles/rcos-core/v0-1/layer-6-evolution-adaptation#82-versioning-and-authority), [8.2.4](https://blueprint.ecohubs.community/fr/articles/rcos-core/v0-1/layer-6-evolution-adaptation#82-versioning-and-authority)*
+*Clauses RCOS : [8.2.2](https://rcos.ecohubs.community/fr/articles/rcos-core/v0-1/layer-6-evolution-adaptation#82-versioning-and-authority), [8.2.4](https://rcos.ecohubs.community/fr/articles/rcos-core/v0-1/layer-6-evolution-adaptation#82-versioning-and-authority)*
 
 <details data-kind="rationale">
 <summary>Pourquoi archiver les propositions rejetées ?</summary>
@@ -138,7 +138,7 @@ Lorsqu'une proposition est rejetée :
 
 ## Transition et migration
 
-*Clauses RCOS : [8.5.1](https://blueprint.ecohubs.community/fr/articles/rcos-core/v0-1/layer-6-evolution-adaptation#85-change-safety-and-reversibility), [8.5.2](https://blueprint.ecohubs.community/fr/articles/rcos-core/v0-1/layer-6-evolution-adaptation#85-change-safety-and-reversibility)*
+*Clauses RCOS : [8.5.1](https://rcos.ecohubs.community/fr/articles/rcos-core/v0-1/layer-6-evolution-adaptation#85-change-safety-and-reversibility), [8.5.2](https://rcos.ecohubs.community/fr/articles/rcos-core/v0-1/layer-6-evolution-adaptation#85-change-safety-and-reversibility)*
 
 <details data-kind="rationale">
 <summary>Pourquoi protéger les droits existants pendant les transitions ?</summary>
@@ -163,7 +163,7 @@ Lorsqu'un changement de règle affecte des rôles, accords ou registres existant
 
 ## Retour en arrière
 
-*Clauses RCOS : [8.1.5](https://blueprint.ecohubs.community/fr/articles/rcos-core/v0-1/layer-6-evolution-adaptation#81-change-mechanisms), [8.5.1](https://blueprint.ecohubs.community/fr/articles/rcos-core/v0-1/layer-6-evolution-adaptation#85-change-safety-and-reversibility)*
+*Clauses RCOS : [8.1.5](https://rcos.ecohubs.community/fr/articles/rcos-core/v0-1/layer-6-evolution-adaptation#81-change-mechanisms), [8.5.1](https://rcos.ecohubs.community/fr/articles/rcos-core/v0-1/layer-6-evolution-adaptation#85-change-safety-and-reversibility)*
 
 <details data-kind="rationale">
 <summary>Pourquoi rendre le retour en arrière symétrique à l'adoption ?</summary>
@@ -183,7 +183,7 @@ _<Toute décision adoptée peut être annulée par le même processus que l'orig
 
 ## Changements d'urgence
 
-*Clauses RCOS : [8.5.3](https://blueprint.ecohubs.community/fr/articles/rcos-core/v0-1/layer-6-evolution-adaptation#85-change-safety-and-reversibility)*
+*Clauses RCOS : [8.5.3](https://rcos.ecohubs.community/fr/articles/rcos-core/v0-1/layer-6-evolution-adaptation#85-change-safety-and-reversibility)*
 
 <details data-kind="rationale">
 <summary>Pourquoi autoriser les changements d'urgence ?</summary>
@@ -213,7 +213,7 @@ Les changements d'urgence doivent être :
 
 ## Expérimentations
 
-*Clauses RCOS : [8.3.1](https://blueprint.ecohubs.community/fr/articles/rcos-core/v0-1/layer-6-evolution-adaptation#83-experiments), [8.3.2](https://blueprint.ecohubs.community/fr/articles/rcos-core/v0-1/layer-6-evolution-adaptation#83-experiments), [8.3.3](https://blueprint.ecohubs.community/fr/articles/rcos-core/v0-1/layer-6-evolution-adaptation#83-experiments), [8.3.4](https://blueprint.ecohubs.community/fr/articles/rcos-core/v0-1/layer-6-evolution-adaptation#83-experiments), [8.3.5](https://blueprint.ecohubs.community/fr/articles/rcos-core/v0-1/layer-6-evolution-adaptation#83-experiments), [8.7.3](https://blueprint.ecohubs.community/fr/articles/rcos-core/v0-1/layer-6-evolution-adaptation#87-layer-invariants)*
+*Clauses RCOS : [8.3.1](https://rcos.ecohubs.community/fr/articles/rcos-core/v0-1/layer-6-evolution-adaptation#83-experiments), [8.3.2](https://rcos.ecohubs.community/fr/articles/rcos-core/v0-1/layer-6-evolution-adaptation#83-experiments), [8.3.3](https://rcos.ecohubs.community/fr/articles/rcos-core/v0-1/layer-6-evolution-adaptation#83-experiments), [8.3.4](https://rcos.ecohubs.community/fr/articles/rcos-core/v0-1/layer-6-evolution-adaptation#83-experiments), [8.3.5](https://rcos.ecohubs.community/fr/articles/rcos-core/v0-1/layer-6-evolution-adaptation#83-experiments), [8.7.3](https://rcos.ecohubs.community/fr/articles/rcos-core/v0-1/layer-6-evolution-adaptation#87-layer-invariants)*
 
 <details data-kind="rationale">
 <summary>Pourquoi traiter les expérimentations comme un mécanisme distinct ?</summary>

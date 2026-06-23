@@ -139,7 +139,7 @@ pnpm run normalize:terms        -- --locale <locale>                   # safety 
 
 If the locale isn't registered yet (no `<code>` entry in
 `src/lib/i18n/languages.ts`), follow the [Spanish setup commit
-](https://github.com/ecohubs-community/regenerative-community-blueprint/commit/multi-lang)
+](https://github.com/ecohubs-community/RCOS-website/commit/multi-lang)
 as a template. The full step list:
 
 1. Add the locale to `src/lib/i18n/languages.ts` `LOCALES`.

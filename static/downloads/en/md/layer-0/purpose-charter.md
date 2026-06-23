@@ -3,19 +3,19 @@
 # Purpose Charter
 
 - **Generated:** 2026-04-29
-- **Source (latest version):** [https://blueprint.ecohubs.community/articles/rcos-templates/layer-0/purpose-charter](https://blueprint.ecohubs.community/articles/rcos-templates/layer-0/purpose-charter)
-- **All RCOS templates:** [https://blueprint.ecohubs.community/articles/rcos-templates](https://blueprint.ecohubs.community/articles/rcos-templates)
+- **Source (latest version):** [https://rcos.ecohubs.community/articles/rcos-templates/layer-0/purpose-charter](https://rcos.ecohubs.community/articles/rcos-templates/layer-0/purpose-charter)
+- **All RCOS templates:** [https://rcos.ecohubs.community/articles/rcos-templates](https://rcos.ecohubs.community/articles/rcos-templates)
 
 ---
 - **Layer:** 0 — Identity & Scope
 - **Status:** Template — adapt for your community
-- **RCOS reference:** [§2.1](https://blueprint.ecohubs.community/articles/rcos-core/v0-1/layer-0-identity-scope#21-purpose-definition), [§2.5](https://blueprint.ecohubs.community/articles/rcos-core/v0-1/layer-0-identity-scope#25-artifacts)
+- **RCOS reference:** [§2.1](https://rcos.ecohubs.community/articles/rcos-core/v0-1/layer-0-identity-scope#21-purpose-definition), [§2.5](https://rcos.ecohubs.community/articles/rcos-core/v0-1/layer-0-identity-scope#25-artifacts)
 
 ---
 
 ## Primary Purpose
 
-*RCOS clauses: [2.1.1](https://blueprint.ecohubs.community/articles/rcos-core/v0-1/layer-0-identity-scope#21-purpose-definition), [2.1.2](https://blueprint.ecohubs.community/articles/rcos-core/v0-1/layer-0-identity-scope#21-purpose-definition), [2.1.5](https://blueprint.ecohubs.community/articles/rcos-core/v0-1/layer-0-identity-scope#21-purpose-definition)*
+*RCOS clauses: [2.1.1](https://rcos.ecohubs.community/articles/rcos-core/v0-1/layer-0-identity-scope#21-purpose-definition), [2.1.2](https://rcos.ecohubs.community/articles/rcos-core/v0-1/layer-0-identity-scope#21-purpose-definition), [2.1.5](https://rcos.ecohubs.community/articles/rcos-core/v0-1/layer-0-identity-scope#21-purpose-definition)*
 
 <details data-kind="rationale">
 <summary>Why a single enduring purpose?</summary>
@@ -35,7 +35,7 @@ _<Your community's primary purpose, in one or two sentences.>_
 
 ## Secondary Purposes
 
-*RCOS clauses: [2.1.4](https://blueprint.ecohubs.community/articles/rcos-core/v0-1/layer-0-identity-scope#21-purpose-definition)*
+*RCOS clauses: [2.1.4](https://rcos.ecohubs.community/articles/rcos-core/v0-1/layer-0-identity-scope#21-purpose-definition)*
 
 <details data-kind="rationale">
 <summary>Why allow secondary purposes?</summary>
@@ -77,7 +77,7 @@ Name the things your community is explicitly NOT, especially identities or roles
 
 ## Conditions for Purpose Change
 
-*RCOS clauses: [2.1.3](https://blueprint.ecohubs.community/articles/rcos-core/v0-1/layer-0-identity-scope#21-purpose-definition)*
+*RCOS clauses: [2.1.3](https://rcos.ecohubs.community/articles/rcos-core/v0-1/layer-0-identity-scope#21-purpose-definition)*
 
 <details data-kind="rationale">
 <summary>Why make changing the purpose hard?</summary>

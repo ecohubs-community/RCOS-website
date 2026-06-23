@@ -3,19 +3,19 @@
 # Membership State Registry
 
 - **Generated:** 2026-04-29
-- **Source (latest version):** [https://blueprint.ecohubs.community/articles/rcos-templates/layer-1/membership-state-registry](https://blueprint.ecohubs.community/articles/rcos-templates/layer-1/membership-state-registry)
-- **All RCOS templates:** [https://blueprint.ecohubs.community/articles/rcos-templates](https://blueprint.ecohubs.community/articles/rcos-templates)
+- **Source (latest version):** [https://rcos.ecohubs.community/articles/rcos-templates/layer-1/membership-state-registry](https://rcos.ecohubs.community/articles/rcos-templates/layer-1/membership-state-registry)
+- **All RCOS templates:** [https://rcos.ecohubs.community/articles/rcos-templates](https://rcos.ecohubs.community/articles/rcos-templates)
 
 ---
 - **Layer:** 1 — Membership System
 - **Status:** Template — adapt for your community
-- **RCOS reference:** [§3.1](https://blueprint.ecohubs.community/articles/rcos-core/v0-1/layer-1-membership-system#31-membership-states), [§3.8](https://blueprint.ecohubs.community/articles/rcos-core/v0-1/layer-1-membership-system#38-artifacts)
+- **RCOS reference:** [§3.1](https://rcos.ecohubs.community/articles/rcos-core/v0-1/layer-1-membership-system#31-membership-states), [§3.8](https://rcos.ecohubs.community/articles/rcos-core/v0-1/layer-1-membership-system#38-artifacts)
 
 ---
 
 ## Defined Membership States
 
-*RCOS clauses: [3.1.1](https://blueprint.ecohubs.community/articles/rcos-core/v0-1/layer-1-membership-system#31-membership-states), [3.1.2](https://blueprint.ecohubs.community/articles/rcos-core/v0-1/layer-1-membership-system#31-membership-states), [3.1.3](https://blueprint.ecohubs.community/articles/rcos-core/v0-1/layer-1-membership-system#31-membership-states), [3.1.4](https://blueprint.ecohubs.community/articles/rcos-core/v0-1/layer-1-membership-system#31-membership-states), [3.1.5](https://blueprint.ecohubs.community/articles/rcos-core/v0-1/layer-1-membership-system#31-membership-states)*
+*RCOS clauses: [3.1.1](https://rcos.ecohubs.community/articles/rcos-core/v0-1/layer-1-membership-system#31-membership-states), [3.1.2](https://rcos.ecohubs.community/articles/rcos-core/v0-1/layer-1-membership-system#31-membership-states), [3.1.3](https://rcos.ecohubs.community/articles/rcos-core/v0-1/layer-1-membership-system#31-membership-states), [3.1.4](https://rcos.ecohubs.community/articles/rcos-core/v0-1/layer-1-membership-system#31-membership-states), [3.1.5](https://rcos.ecohubs.community/articles/rcos-core/v0-1/layer-1-membership-system#31-membership-states)*
 
 <details data-kind="rationale">
 <summary>Why a single table of states?</summary>
@@ -63,7 +63,7 @@ Describe which records persist after exit, where state assignments are tracked o
 
 ## Current Member List
 
-*RCOS clauses: [3.8.2](https://blueprint.ecohubs.community/articles/rcos-core/v0-1/layer-1-membership-system#38-artifacts)*
+*RCOS clauses: [3.8.2](https://rcos.ecohubs.community/articles/rcos-core/v0-1/layer-1-membership-system#38-artifacts)*
 
 <details data-kind="rationale">
 <summary>Why separate the definition from the list?</summary>
