@@ -1,11 +1,12 @@
 {
-  "generated": "2026-04-29",
+  "generated": "2026-06-26",
   "defaultLocale": "en",
   "locales": [
     "en",
     "de",
     "es",
-    "fr"
+    "fr",
+    "pt-br"
   ],
   "entries": [
     {
@@ -14,9 +15,10 @@
         "en": "RCOS Core Specification — v0.1",
         "de": "RCOS-Kernspezifikation — v0.1",
         "es": "Especificación RCOS Core — v0.1",
-        "fr": "Spécification RCOS Core — v0.1"
+        "fr": "Spécification RCOS Core — v0.1",
+        "pt-br": "Especificação do RCOS Core — v0.1"
       },
-      "generated": "2026-04-29",
+      "generated": "2026-06-26",
       "formats": [
         "md"
       ],
@@ -32,13 +34,17 @@
         },
         "fr": {
           "md": "/downloads/fr/rcos-core-v0-1.md"
+        },
+        "pt-br": {
+          "md": "/downloads/pt-br/rcos-core-v0-1.md"
         }
       },
       "availableLocales": [
         "en",
         "de",
         "es",
-        "fr"
+        "fr",
+        "pt-br"
       ]
     }
   ]

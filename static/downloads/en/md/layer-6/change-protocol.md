@@ -2,7 +2,7 @@
 
 # Change Protocol
 
-- **Generated:** 2026-04-29
+- **Generated:** 2026-06-26
 - **Source (latest version):** [https://rcos.ecohubs.community/articles/rcos-templates/layer-6/change-protocol](https://rcos.ecohubs.community/articles/rcos-templates/layer-6/change-protocol)
 - **All RCOS templates:** [https://rcos.ecohubs.community/articles/rcos-templates](https://rcos.ecohubs.community/articles/rcos-templates)
 

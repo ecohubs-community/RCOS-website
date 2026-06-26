@@ -58,8 +58,8 @@ const DEFAULT_LOCALE = 'en';
 const LANGUAGE_NAMES = {
 	de: 'German (Deutsch)',
 	es: 'Spanish (Español)',
-	pt: 'Portuguese (Português)',
-	fr: 'French (Français)'
+	fr: 'French (Français)',
+	'pt-br': 'Brazilian Portuguese (Português do Brasil)'
 };
 
 const args = parseArgs(process.argv.slice(2));
@@ -246,6 +246,7 @@ Rules:
      - **German**: MUST → MUSS, MUST NOT → DARF NICHT, SHOULD → SOLLTE, SHOULD NOT → SOLLTE NICHT, MAY → KANN, REQUIRED → ERFORDERLICH, RECOMMENDED → EMPFOHLEN, OPTIONAL → OPTIONAL.
      - **Spanish**: MUST → DEBE, MUST NOT → NO DEBE, SHOULD → DEBERÍA, SHOULD NOT → NO DEBERÍA, MAY → PUEDE, REQUIRED → REQUERIDO, RECOMMENDED → RECOMENDADO, OPTIONAL → OPCIONAL.
      - **French**: MUST → DOIT, MUST NOT → NE DOIT PAS, SHOULD → DEVRAIT, SHOULD NOT → NE DEVRAIT PAS, MAY → PEUT, REQUIRED → REQUIS, RECOMMENDED → RECOMMANDÉ, OPTIONAL → OPTIONNEL.
+     - **Brazilian Portuguese**: MUST → DEVE, MUST NOT → NÃO DEVE, SHOULD → DEVERIA, SHOULD NOT → NÃO DEVERIA, MAY → PODE, REQUIRED → OBRIGATÓRIO, RECOMMENDED → RECOMENDADO, OPTIONAL → OPCIONAL.
      Apply this both inside backticks (\`DEBE\`) and inline in prose. For other languages, use the established translation of RFC 2119 keywords; if none is established, keep the English original.
    - Keep technical terms that are conventionally kept in English in the target language (e.g., "API", "Git", "Markdown", "MD5") — translate the surrounding prose only.
 
@@ -253,6 +254,7 @@ Rules:
    - Match the source register (formal for spec-like documents, more conversational for templates).
    - For German: prefer informal "du"/"ihr" addressing the reader, matching the source's friendly-but-precise voice. Use natural German technical vocabulary (e.g., "Gemeinschaft" for "community", "Vorlage" for "template").
    - For French: prefer informal "tu"/"vous" addressing the reader as appropriate to the source's friendly-but-precise voice (default to "tu" for templates and conversational content, "vous" for formal spec-like documents). Use natural French technical vocabulary (e.g., "communauté" for "community", "modèle" for "template").
+   - For Brazilian Portuguese: prefer informal "você" addressing the reader, matching the source's friendly-but-precise voice. Use natural Brazilian vocabulary (e.g., "comunidade" for "community", "modelo" for "template", "arquivo" for "file", "compartilhar" for "share", "seção" for "section").
    - For other languages: prefer the natural informal register a community organizer would use, unless the source is clearly formal.
 
 6. **Glossary — keep this consistent across articles**
@@ -260,6 +262,7 @@ Rules:
      - **German**: → **Schicht N**. Always "Schicht", never "Ebene" or "Layer". Examples: "Layer 0" → "Schicht 0", "Layer 2 governance" → "Governance auf Schicht 2".
      - **Spanish**: → **Capa N**. Always "Capa", never "Nivel" or "Layer". Examples: "Layer 0" → "Capa 0", "Layer 2 governance" → "gobernanza en la Capa 2".
      - **French**: → **Couche N**. Always "Couche", never "Niveau" or "Layer". Examples: "Layer 0" → "Couche 0", "Layer 2 governance" → "gouvernance à la Couche 2".
+     - **Brazilian Portuguese**: → **Camada N**. Always "Camada", never "Nível" or "Layer". Examples: "Layer 0" → "Camada 0", "Layer 2 governance" → "governança na Camada 2".
    - Applies in titles, prose, and inside backticks. For other languages, pick the natural translation of "layer" used in protocol-stack contexts and apply it consistently.`;
    
 function buildUserPrompt(job) {

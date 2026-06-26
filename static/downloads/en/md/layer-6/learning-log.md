@@ -2,7 +2,7 @@
 
 # Learning Log
 
-- **Generated:** 2026-04-29
+- **Generated:** 2026-06-26
 - **Source (latest version):** [https://rcos.ecohubs.community/articles/rcos-templates/layer-6/learning-log](https://rcos.ecohubs.community/articles/rcos-templates/layer-6/learning-log)
 - **All RCOS templates:** [https://rcos.ecohubs.community/articles/rcos-templates](https://rcos.ecohubs.community/articles/rcos-templates)
 

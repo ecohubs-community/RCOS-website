@@ -2,7 +2,7 @@
 
 # Registro de Aprendizajes
 
-- **Generado:** 2026-04-29
+- **Generado:** 2026-06-26
 - **Fuente (versión más reciente):** [https://rcos.ecohubs.community/es/articles/rcos-templates/layer-6/learning-log](https://rcos.ecohubs.community/es/articles/rcos-templates/layer-6/learning-log)
 - **Todas las plantillas RCOS:** [https://rcos.ecohubs.community/es/articles/rcos-templates](https://rcos.ecohubs.community/es/articles/rcos-templates)
 

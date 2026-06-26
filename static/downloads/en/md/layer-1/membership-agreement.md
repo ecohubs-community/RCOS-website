@@ -2,7 +2,7 @@
 
 # Membership Agreement
 
-- **Generated:** 2026-04-29
+- **Generated:** 2026-06-26
 - **Source (latest version):** [https://rcos.ecohubs.community/articles/rcos-templates/layer-1/membership-agreement](https://rcos.ecohubs.community/articles/rcos-templates/layer-1/membership-agreement)
 - **All RCOS templates:** [https://rcos.ecohubs.community/articles/rcos-templates](https://rcos.ecohubs.community/articles/rcos-templates)
 

@@ -21,13 +21,18 @@ export type Locale = {
 };
 
 export const LOCALES: readonly Locale[] = [
-	{ code: 'en', englishName: 'English', nativeName: 'English', default: true },
-	{ code: 'de', englishName: 'German', nativeName: 'Deutsch' },
-	{ code: 'es', englishName: 'Spanish', nativeName: 'Español' },
-	{ code: 'fr', englishName: 'French', nativeName: 'Français' }
+	// Region tags reflect the actual variant of each bundle, not an aspiration:
+	// the English source is US-spelling (behavior/organize) and the Spanish is
+	// neutral/pan-Hispanic (informal "tú", no "vosotros"), so they are labelled
+	// honestly rather than as British/Castilian. German and French are the
+	// European standard (Germany German with ß; France French).
+	{ code: 'en', englishName: 'English (US)', nativeName: 'English (US)', default: true },
+	{ code: 'de', englishName: 'German (Germany)', nativeName: 'Deutsch (Deutschland)' },
+	{ code: 'es', englishName: 'Spanish (International)', nativeName: 'Español (Internacional)' },
+	{ code: 'fr', englishName: 'French (France)', nativeName: 'Français (France)' },
+	{ code: 'pt-br', englishName: 'Portuguese (Brazil)', nativeName: 'Português (Brasil)' }
 	// Add more as translations land:
-	// { code: 'pt', englishName: 'Portuguese', nativeName: 'Português' },
-	// { code: 'fr', englishName: 'French',     nativeName: 'Français' },
+	// { code: 'pt-pt', englishName: 'Portuguese (Portugal)', nativeName: 'Português (Portugal)' },
 ] as const;
 
 export const DEFAULT_LOCALE: string = LOCALES.find((l) => l.default)?.code ?? 'en';

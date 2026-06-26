@@ -92,6 +92,25 @@ export const DOWNLOADS_I18N = {
 		bundleNote:
 			'Chaque modèle inclut un bloc de justification (pourquoi la section existe) et des instructions (comment la remplir).',
 		bundleSectionHeading: 'Modèles'
+	},
+	'pt-br': {
+		siteName: 'RCOS — Sistema Operacional de Comunidade Regenerativa',
+		generated: 'Gerado em',
+		source: 'Fonte (versão mais recente)',
+		allTemplates: 'Todos os modelos RCOS',
+		translatedFromEnglish:
+			'Este conteúdo ainda não foi traduzido para o português; a fonte em inglês está sendo exibida.',
+		toc: 'Sumário',
+		aboutCore: 'Sobre o RCOS Core',
+		coreSpecTitle: 'Especificação do RCOS Core — v0.1',
+		rationale: 'Justificativa',
+		instructions: 'Instruções',
+		bundleHeading: 'Modelos RCOS',
+		bundleIntro:
+			'Este pacote contém todos os modelos RCOS, prontos para copiar e adaptar à sua comunidade.',
+		bundleNote:
+			'Cada modelo inclui um bloco de justificativa (por que a seção existe) e instruções (como preenchê-la).',
+		bundleSectionHeading: 'Modelos'
 	}
 };
 

@@ -2,7 +2,7 @@
 
 # Matrice de décision
 
-- **Généré:** 2026-04-29
+- **Généré:** 2026-06-26
 - **Source (version la plus récente):** [https://rcos.ecohubs.community/fr/articles/rcos-templates/layer-2/decision-matrix](https://rcos.ecohubs.community/fr/articles/rcos-templates/layer-2/decision-matrix)
 - **Tous les modèles RCOS:** [https://rcos.ecohubs.community/fr/articles/rcos-templates](https://rcos.ecohubs.community/fr/articles/rcos-templates)
 
