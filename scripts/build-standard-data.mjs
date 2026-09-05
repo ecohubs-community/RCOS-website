@@ -411,6 +411,50 @@ async function loadAuthored() {
 }
 
 /**
+ * Which section a community writes its own answer to a term in.
+ *
+ * Appendix A says what a term means in RCOS. A community also has its own
+ * answer for some of them — what "Member" means here, what counts as
+ * "Commons" — and that answer lives in a template section. The link between
+ * the two is editorial judgement about where a reader would go to write their
+ * version, so it is authored rather than extracted, like `owners` above.
+ *
+ * Most terms have no such section, and that is the correct answer rather than
+ * a gap: `layer`, `compliance` and `reference-implementation` describe the
+ * standard, not the community, and inventing a link for them would put words
+ * in a community's mouth about a rule that is ours.
+ *
+ * A term naming a section that does not exist is a problem, not a shrug — the
+ * mapping is only useful if it is exactly right, and a typo that silently
+ * produced an empty column is the failure this is meant to prevent.
+ */
+function applyGlossarySections(glossary, artifacts, authored) {
+	const wanted = authored.glossary ?? {};
+	const problems = [];
+
+	const sections = new Set();
+	for (const artifact of artifacts) {
+		for (const section of artifact.sections ?? []) sections.add(section.key);
+	}
+	const terms = new Map(glossary.map((term) => [term.key, term]));
+
+	for (const [termKey, sectionKey] of Object.entries(wanted)) {
+		const term = terms.get(termKey);
+		if (!term) {
+			problems.push(`glossary: "${termKey}" is not a term in the appendix`);
+			continue;
+		}
+		if (!sections.has(sectionKey)) {
+			problems.push(`glossary: "${termKey}" names section "${sectionKey}", which does not exist`);
+			continue;
+		}
+		term.definedBy = sectionKey;
+	}
+
+	return problems;
+}
+
+/**
  * Section dispositions — what a section *is*, as distinct from what it says.
  *
  * Most sections are written by the community. A handful are not, and treating
@@ -570,7 +614,8 @@ async function main() {
 
 	const problems = [
 		...applyAuthored(clauses, artifacts, authored),
-		...applySectionDispositions(artifacts, authored)
+		...applySectionDispositions(artifacts, authored),
+		...applyGlossarySections(glossary, artifacts, authored)
 	];
 
 	const sections = artifacts.flatMap((a) =>
