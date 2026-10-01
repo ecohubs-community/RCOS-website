@@ -292,3 +292,54 @@ sections:
       It carries no clause reference only because the experiment MUSTs were
       moved to the Change Protocol (see rule 2 above), so it is written but
       counts toward nothing.
+
+# ---------------------------------------------------------------------------
+# Glossary terms → the section a community writes its own answer in
+#
+# Appendix A defines each term as RCOS means it. A community also has its own
+# answer for some of them — what "Member" means here, what counts as "Commons"
+# — and that answer lives in a template section they fill in. This says which.
+#
+# Extraction cannot find these: the appendix is prose, and the link between a
+# term and a section is editorial judgement about where a reader would go to
+# write their own version. Same reason `owners` and `sections` are authored.
+#
+# The rule for including a term: **would a community write its own definition
+# of this, in a section of a template?** If yes, name the section. If the term
+# describes the standard rather than the community — `artifact`, `layer`,
+# `compliance`, `reference-implementation` — leave it out. Most terms are left
+# out, and that is the correct answer rather than a gap: a glossary that
+# invented a link for `explicitness-rule` would be putting words in a
+# community's mouth about a rule that is ours, not theirs.
+#
+# A term naming a section that does not exist fails the build.
+
+glossary:
+  # Layer 0 — identity
+  invariant: invariants-register.active-invariants
+  scope: scope-declaration.in-scope-decision-domains
+  in-scope-out-of-scope: scope-declaration.explicitly-out-of-scope
+
+  # Layer 1 — membership
+  member: membership-state-registry.defined-membership-states
+  due-process: membership-agreement.due-process-reference
+
+  # Layer 2 — governance
+  role: role-registry.overview
+  authority-boundary: authority-registry.registered-authorities
+  decision-type: decision-matrix.decision-type-definitions
+  constitutional-decision: decision-matrix.decision-type-definitions
+
+  # Layer 3 — economy
+  commons: internal-economy-protocol.commons-vs-private-classification
+  treasury: treasury-ruleset.treasury-scope
+
+  # Layer 4 — conflict
+  sanction: accountability-protocol.sanction-and-repair-options
+
+  # Layer 5 — operations
+  stewardship: operations-manual.role-and-domain-interfaces
+
+  # Layer 6 — evolution
+  emergency-change: change-protocol.emergency-changes
+  experiment: change-protocol.experiments
