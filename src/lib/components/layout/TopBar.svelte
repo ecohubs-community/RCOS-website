@@ -1,5 +1,5 @@
 <script lang="ts">
-  import { sidebarOpen, toggleTheme } from '$lib/stores/ui';
+  import { sidebarOpen, theme, toggleTheme } from '$lib/stores/ui';
   import SearchBar from '$lib/components/search/SearchBar.svelte';
   import Button from '$lib/components/common/Button.svelte';
   import Icon from '@iconify/svelte';
@@ -52,7 +52,8 @@
         onclick={toggleTheme}
         aria-label={m('nav.toggle_theme')}
       >
-        <Icon icon="tabler:sun-moon" class="w-5 h-5" />
+        <!-- Shows what a click switches to; neutral icon until the theme is known -->
+        <Icon icon={$theme === 'dark' ? 'tabler:sun' : $theme === 'light' ? 'tabler:moon' : 'tabler:sun-moon'} class="w-5 h-5" />
       </Button>
 
       <LanguageSwitcher {availableLocales} />

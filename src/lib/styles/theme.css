@@ -263,6 +263,15 @@ html.dark {
   color-scheme: light dark;
 }
 
+/* A saved theme choice also overrides native UI (scrollbars, form controls) */
+html.light {
+  color-scheme: light;
+}
+
+html.dark {
+  color-scheme: dark;
+}
+
 html {
   font-family: var(--font-sans);
   line-height: 1.6;

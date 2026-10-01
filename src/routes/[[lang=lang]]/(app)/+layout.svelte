@@ -2,7 +2,7 @@
   import './layout.css';
   import { onMount } from 'svelte';
   import { graph } from '$lib/stores/graph';
-  import { sidebarOpen, theme, setTheme } from '$lib/stores/ui';
+  import { sidebarOpen, initTheme } from '$lib/stores/ui';
   import AppShell from '$lib/components/layout/AppShell.svelte';
 
   let { children, data } = $props();
@@ -14,14 +14,8 @@
     }
   });
 
-  // Persist theme preference
-  onMount(() => {
-    const stored = localStorage.getItem('theme') as 'light' | 'dark' | null;
-    const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
-    const initial = stored ?? (prefersDark ? 'dark' : 'light');
-    setTheme(initial);
-    theme.set(initial);
-  });
+  // Theme: saved choice, else system setting (app.html already applied it pre-paint)
+  onMount(() => initTheme());
 
   // Persist sidebar state on mobile
   $effect(() => {
