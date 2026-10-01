@@ -30,7 +30,17 @@
   description={article?.summary || ''}
   url={`/articles/${slug}`}
   type="article"
-  jsonLd={article ? [buildArticleSchema(article, breadcrumbs), buildBreadcrumbSchema(breadcrumbs)] : undefined}
+  jsonLd={article
+    ? [
+        buildArticleSchema(article, breadcrumbs, {
+          locale,
+          inLanguage: data.bodyLang,
+          datePublished: data.datePublished,
+          dateModified: data.dateModified
+        }),
+        buildBreadcrumbSchema(breadcrumbs, locale)
+      ]
+    : undefined}
   locale={data.locale}
   availableLocales={data.availableLocales}
 />

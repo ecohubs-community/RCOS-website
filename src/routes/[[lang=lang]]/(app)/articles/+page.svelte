@@ -27,7 +27,7 @@
   title={m('articles.title')}
   description={m('articles.seo_description')}
   url="/articles"
-  jsonLd={buildBreadcrumbSchema([])}
+  jsonLd={buildBreadcrumbSchema([], locale)}
   locale={data.locale}
 />
 

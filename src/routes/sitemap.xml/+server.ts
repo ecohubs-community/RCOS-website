@@ -1,4 +1,6 @@
 import { buildGraph } from '$lib/server/graph';
+import { readArticleMeta } from '$lib/server/content';
+import { getFileDates } from '$lib/server/dates';
 import { SITE_URL } from '$lib/config/site';
 import { LOCALES, DEFAULT_LOCALE } from '$lib/i18n/languages';
 import { localeUrl } from '$lib/i18n/path';
@@ -25,6 +27,10 @@ type Entry = {
 	availableLocales: string[]; // locales where a real translation exists
 	changefreq: string;
 	priority: string;
+	/** Last commit date of the file served per locale. Google uses <lastmod> to
+	 * schedule recrawls (and ignores changefreq/priority), so only emit it when
+	 * git history gives a real date — see src/lib/server/dates.ts. */
+	lastmod?: Record<string, string>;
 };
 
 export const GET: RequestHandler = async () => {
@@ -49,11 +55,23 @@ export const GET: RequestHandler = async () => {
 		}
 	];
 
+	// slug → locale → last-modified date of that locale's file.
+	const [meta, fileDates] = await Promise.all([readArticleMeta(), getFileDates()]);
+	const lastmodBySlug = new Map<string, Record<string, string>>();
+	for (const entry of meta) {
+		const modified = entry.filePath ? fileDates.get(entry.filePath)?.modified : undefined;
+		if (!modified) continue;
+		const bySlug = lastmodBySlug.get(entry.slug) ?? {};
+		bySlug[entry.lang ?? DEFAULT_LOCALE] = modified;
+		lastmodBySlug.set(entry.slug, bySlug);
+	}
+
 	const articleEntries: Entry[] = graph.articles.map((article) => ({
 		path: `/articles/${article.slug}`,
 		availableLocales: article.availableLocales.length ? article.availableLocales : [DEFAULT_LOCALE],
 		changefreq: 'weekly',
-		priority: '0.6'
+		priority: '0.6',
+		lastmod: lastmodBySlug.get(article.slug)
 	}));
 
 	const allEntries = [...staticEntries, ...articleEntries];
@@ -70,8 +88,10 @@ export const GET: RequestHandler = async () => {
 					`\n    <xhtml:link rel="alternate" hreflang="x-default" href="${localeUrl(SITE_URL, entry.path, DEFAULT_LOCALE)}" />`
 				: '';
 
+		const lastmod = entry.lastmod?.[loc];
+
 		return `  <url>
-    <loc>${localeUrl(SITE_URL, entry.path, loc)}</loc>
+    <loc>${localeUrl(SITE_URL, entry.path, loc)}</loc>${lastmod ? `\n    <lastmod>${lastmod}</lastmod>` : ''}
     <changefreq>${entry.changefreq}</changefreq>
     <priority>${entry.priority}</priority>${alternates ? '\n' + alternates : ''}
   </url>`;

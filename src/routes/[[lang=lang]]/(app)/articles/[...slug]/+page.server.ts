@@ -3,6 +3,8 @@ import { readArticleBody } from '$lib/server/content';
 import { getArticleDownloads } from '$lib/server/downloads';
 import { buildCoverage } from '$lib/server/coverage';
 import { buildAssessment } from '$lib/server/assessment';
+import { getFileDates } from '$lib/server/dates';
+import { rewriteArticleLinks } from '$lib/server/links';
 import { DEFAULT_LOCALE } from '$lib/i18n/languages';
 import type { EntryGenerator, PageServerLoad } from './$types';
 
@@ -40,11 +42,16 @@ export const load: PageServerLoad = async ({ params }) => {
   const assessment =
     params.slug === SELF_ASSESSMENT_SLUG ? await buildAssessment(locale) : null;
 
+  // Dates of the file actually served (the English source on a fallback page).
+  const dates = article?.filePath ? (await getFileDates()).get(article.filePath) : undefined;
+
   return {
     article: meta ?? null,
     breadcrumbs,
     parent: parent ?? null,
-    body: article?.body || null,
+    body: article?.body ? rewriteArticleLinks(article.body, locale, graph.articles) : null,
+    datePublished: dates?.published ?? null,
+    dateModified: dates?.modified ?? null,
     bodyLang: article?.lang ?? locale,
     bodyIsFallback: article?.isFallback ?? false,
     downloads,

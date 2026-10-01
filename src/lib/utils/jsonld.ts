@@ -1,5 +1,6 @@
 import { SITE_URL, SITE_NAME } from '$lib/config/site';
-import type { Article } from '$lib/server/graph';
+import { localeUrl } from '$lib/i18n/path';
+import { t } from '$lib/i18n';
 
 export function buildWebSiteSchema(): Record<string, unknown> {
 	return {
@@ -15,26 +16,68 @@ export function buildWebSiteSchema(): Record<string, unknown> {
 	};
 }
 
+const PUBLISHER = {
+	'@type': 'Organization',
+	'@id': 'https://ecohubs.community/#organization',
+	name: 'EcoHubs Community',
+	url: 'https://ecohubs.community'
+};
+
+/**
+ * Home page graph: the site (in the page's language) plus who publishes it.
+ * `inLanguage` and the locale-specific URL let search engines tie each
+ * translated home page to its own language instead of folding them together.
+ */
+export function buildHomeSchema(locale: string, description: string): Record<string, unknown>[] {
+	return [
+		{
+			...buildWebSiteSchema(),
+			url: localeUrl(SITE_URL, '/', locale),
+			description,
+			inLanguage: locale,
+			publisher: { '@id': PUBLISHER['@id'] }
+		},
+		{ '@context': 'https://schema.org', ...PUBLISHER }
+	];
+}
+
+type Crumb = { title: string; slug: string };
+
+/**
+ * Article schema for one locale's page. `url` must match the page's canonical
+ * (locale-prefixed) URL, and `inLanguage` is the language of the body actually
+ * served, which is English on a not-yet-translated page.
+ */
 export function buildArticleSchema(
-	article: Article,
-	breadcrumbs: Article[]
+	article: Crumb & { summary?: string; tags?: string[] },
+	breadcrumbs: Crumb[],
+	opts: {
+		locale: string;
+		inLanguage: string;
+		datePublished?: string | null;
+		dateModified?: string | null;
+	}
 ): Record<string, unknown> {
+	const articleUrl = (slug: string) => localeUrl(SITE_URL, `/articles/${slug}`, opts.locale);
+	const url = articleUrl(article.slug);
+
 	const schema: Record<string, unknown> = {
 		'@context': 'https://schema.org',
 		'@type': 'Article',
 		headline: article.title,
-		url: `${SITE_URL}/articles/${article.slug}`,
-		publisher: {
-			'@type': 'Organization',
-			name: 'EcoHubs Community',
-			url: 'https://ecohubs.community'
-		},
+		url,
+		mainEntityOfPage: url,
+		inLanguage: opts.inLanguage,
+		publisher: PUBLISHER,
 		isPartOf: {
 			'@type': 'WebSite',
 			name: SITE_NAME,
-			url: SITE_URL
+			url: localeUrl(SITE_URL, '/', opts.locale)
 		}
 	};
+
+	if (opts.datePublished) schema.datePublished = opts.datePublished;
+	if (opts.dateModified) schema.dateModified = opts.dateModified;
 
 	if (article.summary) {
 		schema.description = article.summary;
@@ -49,22 +92,21 @@ export function buildArticleSchema(
 		schema.isPartOf = {
 			'@type': 'Article',
 			name: parent.title,
-			url: `${SITE_URL}/articles/${parent.slug}`
+			url: articleUrl(parent.slug)
 		};
 	}
 
 	return schema;
 }
 
-export function buildBreadcrumbSchema(
-	breadcrumbs: { title: string; slug: string }[]
-): Record<string, unknown> {
+/** Breadcrumb trail Home → Articles → …crumbs, with names and URLs in the page's locale. */
+export function buildBreadcrumbSchema(breadcrumbs: Crumb[], locale: string): Record<string, unknown> {
 	const items = [
-		{ name: 'Home', url: SITE_URL },
-		{ name: 'Articles', url: `${SITE_URL}/articles` },
+		{ name: t(locale, 'nav.home'), url: localeUrl(SITE_URL, '/', locale) },
+		{ name: t(locale, 'breadcrumb.segment.articles'), url: localeUrl(SITE_URL, '/articles', locale) },
 		...breadcrumbs.map((crumb) => ({
 			name: crumb.title,
-			url: `${SITE_URL}/articles/${crumb.slug}`
+			url: localeUrl(SITE_URL, `/articles/${crumb.slug}`, locale)
 		}))
 	];
 

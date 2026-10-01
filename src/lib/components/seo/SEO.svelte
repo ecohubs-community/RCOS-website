@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { SITE_URL, DEFAULT_OG_IMAGE } from '$lib/config/site';
+	import { SITE_URL, DEFAULT_OG_IMAGE, DEFAULT_OG_IMAGE_SIZE } from '$lib/config/site';
 	import { DEFAULT_LOCALE, LOCALES } from '$lib/i18n/languages';
 	import { localeUrl } from '$lib/i18n/path';
 	import { t } from '$lib/i18n';
@@ -46,6 +46,18 @@
 
 	const ogImage = $derived(image.startsWith('http') ? image : `${SITE_URL}${image}`);
 
+	// Open Graph wants language_TERRITORY ("pt_BR"), not BCP-47 ("pt-br").
+	// Territories follow the actual variant of each bundle (see languages.ts);
+	// es_LA is the closest OG value to our neutral Spanish.
+	const OG_LOCALES: Record<string, string> = {
+		en: 'en_US',
+		de: 'de_DE',
+		es: 'es_LA',
+		fr: 'fr_FR',
+		'pt-br': 'pt_BR'
+	};
+	const ogLocale = (code: string) => OG_LOCALES[code] ?? code.replace('-', '_');
+
 	const jsonLdScript = $derived(
 		jsonLd ? JSON.stringify(Array.isArray(jsonLd) ? jsonLd : jsonLd) : undefined
 	);
@@ -85,10 +97,15 @@
 	<meta property="og:url" content={canonicalUrl} />
 	<meta property="og:type" content={type} />
 	<meta property="og:image" content={ogImage} />
+	{#if image === DEFAULT_OG_IMAGE}
+		<meta property="og:image:width" content={String(DEFAULT_OG_IMAGE_SIZE.width)} />
+		<meta property="og:image:height" content={String(DEFAULT_OG_IMAGE_SIZE.height)} />
+		<meta property="og:image:alt" content={siteName} />
+	{/if}
 	<meta property="og:site_name" content={siteName} />
-	<meta property="og:locale" content={locale} />
+	<meta property="og:locale" content={ogLocale(locale)} />
 	{#each alternates.filter((l) => l.code !== locale) as alt (alt.code)}
-		<meta property="og:locale:alternate" content={alt.code} />
+		<meta property="og:locale:alternate" content={ogLocale(alt.code)} />
 	{/each}
 
 	<!-- Twitter Card -->
@@ -98,6 +115,9 @@
 		<meta name="twitter:description" content={description} />
 	{/if}
 	<meta name="twitter:image" content={ogImage} />
+	{#if image === DEFAULT_OG_IMAGE}
+		<meta name="twitter:image:alt" content={siteName} />
+	{/if}
 
 	{#if noindex}
 		<meta name="robots" content="noindex, nofollow" />
