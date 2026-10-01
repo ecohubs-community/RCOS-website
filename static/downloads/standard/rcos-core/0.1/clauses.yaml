@@ -562,10 +562,13 @@
       - Publicamente acessíveis a todos os membros
       - Versionados
       - Adotados por meio de um processo formal de ratificação
-  disposition: defined_by_section
+  disposition: satisfied_by_platform
+  dispositionNote: >-
+    As 4.7.2: publicly accessible to all members, versioned, and adopted through a recorded
+    ratification are properties of how each Layer 0 artifact is held, not text a community writes.
+  owner: null
   referencedBy:
     - identity-constraints-register.conditions-for-change
-  owner: identity-constraints-register.conditions-for-change
 - ref: 2.5.3
   layer: 0
   specSection:
@@ -1310,10 +1313,14 @@
       - Explícitos e inequívocos
       - Versionados
       - Acessíveis a todos os membros
-  disposition: defined_by_section
+  disposition: satisfied_by_platform
+  dispositionNote: >-
+    As 4.7.2: versioned, accessible to all members, and adopted through a recorded decision are
+    structural. "Explicit and unambiguous" is not — the definition linter assists, and each
+    artifact's own adoption is where a community answers for it; no tool certifies it.
+  owner: null
   referencedBy:
     - onboarding-protocol.completion-record
-  owner: onboarding-protocol.completion-record
 - ref: 3.8.3
   layer: 1
   specSection:

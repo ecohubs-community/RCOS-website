@@ -1,6 +1,6 @@
 standard: rcos-core
 version: '0.1'
-generated: '2026-09-03'
+generated: '2026-10-01'
 licence: CC BY 4.0 — https://creativecommons.org/licenses/by/4.0/
 attribution: RCOS — Regenerative Community Operating System, EcoHubs
 source: https://rcos.ecohubs.community/articles/rcos-core/v0-1
@@ -29,7 +29,7 @@ layers:
 counts:
   clauses: 213
   must: 185
-  countable: 173
+  countable: 171
   artifacts: 22
   mandatoryArtifacts: 21
   sections: 118

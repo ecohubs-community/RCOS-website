@@ -110,6 +110,7 @@
       definition: >-
         Os limites explícitos dentro dos quais um papel, círculo ou corpo pode tomar decisões ou
         agir.
+  definedBy: authority-registry.registered-authorities
 - key: change-protocol
   i18n:
     en:
@@ -161,6 +162,7 @@
     pt-br:
       term: Bens Comuns (Commons)
       definition: Recursos governados coletivamente sob regras explícitas de zeladoria, acesso e decisão.
+  definedBy: internal-economy-protocol.commons-vs-private-classification
 - key: community
   i18n:
     en:
@@ -267,6 +269,7 @@
       definition: >-
         Uma decisão que modifica o propósito, escopo, invariantes ou restrições de identidade da
         Camada 0, ou o próprio sistema de governança.
+  definedBy: decision-matrix.decision-type-definitions
 - key: decision-matrix
   i18n:
     en:
@@ -321,6 +324,7 @@
       definition: >-
         Uma classificação de decisões (Operacionais, Estratégicas, Constitucionais) usada para
         determinar autoridade e processo.
+  definedBy: decision-matrix.decision-type-definitions
 - key: due-process
   i18n:
     en:
@@ -351,6 +355,7 @@
       definition: >-
         As garantias mínimas de justiça exigidas antes de restringir direitos, aplicar sanções ou
         acionar separação, incluindo notificação, revisão e caminhos de apelação conforme definido.
+  definedBy: membership-agreement.due-process-reference
 - key: emergency-change
   i18n:
     en:
@@ -379,6 +384,7 @@
       definition: >-
         Uma mudança com prazo determinado, decretada sob condições de emergência explicitamente
         definidas, exigindo revisão posterior e ratificação ou reversão.
+  definedBy: change-protocol.emergency-changes
 - key: explicit
   i18n:
     en:
@@ -446,6 +452,7 @@
     pt-br:
       term: Experimento
       definition: Uma mudança com prazo determinado e reversível adotada para aprendizado e avaliação.
+  definedBy: change-protocol.experiments
 - key: exit-separation-protocol
   i18n:
     en:
@@ -531,6 +538,7 @@
         Dentro do escopo refere-se a pessoas, ativos, domínios e atividades explicitamente
         governados pela comunidade. Fora do escopo refere-se a tudo que é explicitamente excluído ou
         não declarado dentro do escopo.
+  definedBy: scope-declaration.explicitly-out-of-scope
 - key: internal-economy-protocol
   i18n:
     en:
@@ -577,6 +585,7 @@
     pt-br:
       term: Invariante
       definition: Uma restrição inegociável que não pode ser substituída enquanto estiver em vigor.
+  definedBy: invariants-register.active-invariants
 - key: layer
   i18n:
     en:
@@ -650,6 +659,7 @@
       definition: >-
         Uma pessoa que entrou explicitamente na comunidade por meio do processo de associação
         definido.
+  definedBy: membership-state-registry.defined-membership-states
 - key: optional-module
   i18n:
     en:
@@ -749,6 +759,7 @@
       definition: >-
         Um conjunto explicitamente definido de responsabilidades, autoridade e prestação de contas,
         independente da pessoa que o ocupa.
+  definedBy: role-registry.overview
 - key: safety-critical
   i18n:
     en:
@@ -805,6 +816,7 @@
       definition: >-
         Uma restrição ou ação corretiva definida e documentada, aplicada por meio de processo
         autorizado, proporcional a uma violação e sujeita a revisão.
+  definedBy: accountability-protocol.sanction-and-repair-options
 - key: scope
   i18n:
     en:
@@ -832,6 +844,7 @@
       definition: >-
         Os domínios, ativos e atividades explicitamente declarados sobre os quais a comunidade
         exerce autoridade.
+  definedBy: scope-declaration.in-scope-decision-domains
 - key: stewardship
   i18n:
     en:
@@ -859,6 +872,7 @@
       definition: >-
         Responsabilidade pelo cuidado, manutenção e governança de um recurso dentro de limites
         definidos.
+  definedBy: operations-manual.role-and-domain-interfaces
 - key: treasury
   i18n:
     en:
@@ -886,6 +900,7 @@
       definition: >-
         O conjunto de recursos compartilhados, saldos, obrigações e compromissos mantidos sob regras
         coletivas.
+  definedBy: treasury-ruleset.treasury-scope
 - key: treasury-ruleset
   i18n:
     en:

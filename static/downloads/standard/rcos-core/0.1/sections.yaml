@@ -355,8 +355,7 @@
         - duração
   disposition: authored
   dispositionNote: null
-  ownsClauses:
-    - 2.5.2
+  ownsClauses: []
 - key: identity-constraints-register.ratification-record
   artifact: identity-constraints-register
   order: 3
@@ -3376,8 +3375,7 @@
           permanentemente após a saída.
   disposition: authored
   dispositionNote: null
-  ownsClauses:
-    - 3.8.2
+  ownsClauses: []
 - key: onboarding-protocol.ratification-record
   artifact: onboarding-protocol
   order: 5
