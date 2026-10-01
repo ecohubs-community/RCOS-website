@@ -131,9 +131,18 @@ dispositions:
       As 4.7.2: publicly accessible to all members, versioned, and adopted
       through a recorded ratification are properties of how each Layer 0
       artifact is held, not text a community writes.
+  # 3.8.2 also lists "explicit and unambiguous", which no tool can certify. It
+  # stays here rather than with a section because no single section can answer a
+  # property every Layer 1 artifact must have — giving it back to Completion
+  # Record is the mistake this entry corrects — and 4.7.2–8.6.2 already treat the
+  # same list this way for Layers 2–6.
   '3.8.2':
     disposition: satisfied_by_platform
-    note: 'As 4.7.2.'
+    note: >-
+      As 4.7.2: versioned, accessible to all members, and adopted through a
+      recorded decision are structural. "Explicit and unambiguous" is not — the
+      definition linter assists, and each artifact's own adoption is where a
+      community answers for it; no tool certifies it.
   '4.7.2':
     disposition: satisfied_by_platform
     note: >-

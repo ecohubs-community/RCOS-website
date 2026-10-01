@@ -1314,7 +1314,10 @@
       - Versionados
       - Acessíveis a todos os membros
   disposition: satisfied_by_platform
-  dispositionNote: As 4.7.2.
+  dispositionNote: >-
+    As 4.7.2: versioned, accessible to all members, and adopted through a recorded decision are
+    structural. "Explicit and unambiguous" is not — the definition linter assists, and each
+    artifact's own adoption is where a community answers for it; no tool certifies it.
   owner: null
   referencedBy:
     - onboarding-protocol.completion-record

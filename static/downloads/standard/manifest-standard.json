@@ -21,8 +21,8 @@
   ],
   "files": {
     "rcos-core/0.1/clauses.yaml": {
-      "sha256": "a7c4cea7126489f25f991efad3e374e970c3a1b132f3d1f501b614b870e0a852",
-      "bytes": 271652
+      "sha256": "fb8d9d08d55139c56b767baabf48d365d40b6fcb142c63c49c1412f907ef472d",
+      "bytes": 271922
     },
     "rcos-core/0.1/sections.yaml": {
       "sha256": "01457b6729b739a86c97e9c76fbb20885fd953484afa13dba1e20765a4892405",
