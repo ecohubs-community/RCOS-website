@@ -120,6 +120,20 @@ dispositions:
   # adopted through an authorized process." A tool that versions every definition,
   # shows it to every member by default, and records the decision that adopted it
   # satisfies these structurally.
+  #
+  # Layers 0 and 1 say the same thing in 2.5.2 and 3.8.2 and were the only two
+  # left as community answers — owned by "Conditions for Change" and "Completion
+  # Record" by default, as the only sections citing them. Freezing either of those
+  # then marked a property of every artifact in its layer as answered.
+  '2.5.2':
+    disposition: satisfied_by_platform
+    note: >-
+      As 4.7.2: publicly accessible to all members, versioned, and adopted
+      through a recorded ratification are properties of how each Layer 0
+      artifact is held, not text a community writes.
+  '3.8.2':
+    disposition: satisfied_by_platform
+    note: 'As 4.7.2.'
   '4.7.2':
     disposition: satisfied_by_platform
     note: >-
