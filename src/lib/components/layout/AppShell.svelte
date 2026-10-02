@@ -6,7 +6,7 @@
   import { sidebarOpen } from '$lib/stores/ui';
   import Icon from '@iconify/svelte';
   import { page } from '$app/state';
-  import ResizableSidebar from '$lib/components/admin/ResizableSidebar.svelte';
+  import ResizableSidebar from '$lib/components/layout/ResizableSidebar.svelte';
   import { m } from '$lib/i18n';
   import { stripLocale } from '$lib/i18n/path';
 
