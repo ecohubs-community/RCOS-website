@@ -305,5 +305,20 @@
 	"std_not_translated": "This page is not translated yet; it is shown in English.",
 	"std_layer_templates": "Layer {n} templates",
 	"std_plain_language": "Read in plain language",
-	"std_propose_change": "Propose a change"
+	"std_propose_change": "Propose a change",
+	"std_related_to": "Related to Layer {n}",
+	"std_guide": "Plain-language guide",
+	"std_templates": "Templates",
+	"std_all_layer_templates": "All Layer {n} templates",
+	"std_stress_tests": "Stress tests",
+	"std_sev_high": "High",
+	"std_sev_medium": "Medium",
+	"std_also_involves": "Also involves Layer {n}",
+	"std_check_community": "Check your community",
+	"std_glossary_source": "App. A",
+	"std_kw_must": "Required. A community that does not do this is not compliant.",
+	"std_kw_must_not": "Forbidden. A community that does this is not compliant.",
+	"std_kw_should": "Recommended. Deviate only for a stated reason.",
+	"std_kw_should_not": "Discouraged. Do it only for a stated reason.",
+	"std_kw_may": "Optional. Allowed, but not required."
 }

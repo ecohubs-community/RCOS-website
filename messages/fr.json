@@ -305,5 +305,20 @@
 	"std_not_translated": "Cette page n'est pas encore traduite ; elle s'affiche en anglais.",
 	"std_layer_templates": "Modèles de la Couche {n}",
 	"std_plain_language": "Lire en langage simple",
-	"std_propose_change": "Proposer une modification"
+	"std_propose_change": "Proposer une modification",
+	"std_related_to": "En lien avec la Couche {n}",
+	"std_guide": "Guide en langage clair",
+	"std_templates": "Modèles",
+	"std_all_layer_templates": "Tous les modèles de la Couche {n}",
+	"std_stress_tests": "Tests de résistance",
+	"std_sev_high": "Élevée",
+	"std_sev_medium": "Moyenne",
+	"std_also_involves": "Concerne aussi la Couche {n}",
+	"std_check_community": "Évaluez votre communauté",
+	"std_glossary_source": "Ann. A",
+	"std_kw_must": "Obligatoire. Une communauté qui ne le fait pas n’est pas conforme.",
+	"std_kw_must_not": "Interdit. Une communauté qui le fait n’est pas conforme.",
+	"std_kw_should": "Recommandé. Ne s’en écarter que pour une raison énoncée.",
+	"std_kw_should_not": "Déconseillé. Seulement pour une raison énoncée.",
+	"std_kw_may": "Facultatif. Permis, mais pas exigé."
 }

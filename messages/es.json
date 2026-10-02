@@ -305,5 +305,20 @@
 	"std_not_translated": "Esta página aún no está traducida; se muestra en inglés.",
 	"std_layer_templates": "Plantillas de la Capa {n}",
 	"std_plain_language": "Leer en lenguaje sencillo",
-	"std_propose_change": "Proponer un cambio"
+	"std_propose_change": "Proponer un cambio",
+	"std_related_to": "Relacionado con la Capa {n}",
+	"std_guide": "Guía en lenguaje sencillo",
+	"std_templates": "Plantillas",
+	"std_all_layer_templates": "Todas las plantillas de la Capa {n}",
+	"std_stress_tests": "Pruebas de estrés",
+	"std_sev_high": "Alta",
+	"std_sev_medium": "Media",
+	"std_also_involves": "También afecta a la Capa {n}",
+	"std_check_community": "Evalúa tu comunidad",
+	"std_glossary_source": "Ap. A",
+	"std_kw_must": "Obligatorio. Una comunidad que no lo cumple no es conforme.",
+	"std_kw_must_not": "Prohibido. Una comunidad que lo hace no es conforme.",
+	"std_kw_should": "Recomendado. Solo se aparta con una razón explícita.",
+	"std_kw_should_not": "Desaconsejado. Solo con una razón explícita.",
+	"std_kw_may": "Opcional. Permitido, pero no exigido."
 }

@@ -3,6 +3,10 @@
 	import { Dialog } from 'bits-ui';
 	import { m } from '$lib/paraglide/messages.js';
 	import ContentsRail from '$lib/components/standard/ContentsRail.svelte';
+	import IconRail from '$lib/components/standard/IconRail.svelte';
+	import { spy } from '$lib/components/standard/spy.svelte';
+	import { onRailKey, toggleRail } from '$lib/components/standard/rail';
+	import IconCollapse from '~icons/tabler/layout-sidebar-left-collapse';
 	import IconListTree from '~icons/tabler/list-tree';
 	import IconChevronDown from '~icons/tabler/chevron-down';
 	import IconX from '~icons/tabler/x';
@@ -14,16 +18,39 @@
 	const pageTitle = $derived((page.data as { page?: { title: string } }).page?.title ?? '');
 </script>
 
+<svelte:window onkeydown={onRailKey} />
+
 <!-- Inside the standard: the contents column on desktop, a drawer on small
      screens. Sticky offsets come from --header-h (see theme.css). -->
 <div
-	class="mx-auto grid w-full max-w-360 flex-1 grid-cols-1 gap-x-12 px-4 [--scroll-offset:calc(var(--header-h)+1.25rem)] sm:px-6 lg:grid-cols-[16.5rem_minmax(0,1fr)] lg:px-8 max-lg:[--scroll-offset:calc(var(--header-h)+4.25rem)]"
+	class="mx-auto grid w-full max-w-360 flex-1 grid-cols-1 gap-x-12 px-4 [--scroll-offset:calc(var(--header-h)+1.25rem)] sm:px-6 lg:grid-cols-[16.5rem_minmax(0,1fr)] lg:px-8 lg:[.rail-collapsed_&]:grid-cols-[3.5rem_minmax(0,1fr)] max-lg:[--scroll-offset:calc(var(--header-h)+4.25rem)]"
 >
 	<aside
 		aria-label={m.std_contents()}
-		class="sticky top-(--header-h) hidden max-h-[calc(100dvh-var(--header-h))] overflow-y-auto border-r border-line-soft py-7 pr-4 lg:block"
+		class="sticky top-(--header-h) hidden max-h-[calc(100dvh-var(--header-h))] overflow-y-auto border-r border-line-soft py-7 pr-4 lg:block [.rail-collapsed_&]:pr-0"
 	>
-		<ContentsRail nav={data.nav} {current} />
+		<div class="flex flex-col gap-3 [.rail-collapsed_&]:hidden">
+			<div class="-mb-1 flex items-center justify-between">
+				<span
+					class="pl-0.5 font-ui text-[11px] font-semibold tracking-[0.08em] text-ink-faint uppercase"
+					>{m.std_contents()}</span
+				>
+				<button
+					type="button"
+					onclick={toggleRail}
+					aria-expanded="true"
+					aria-label={m.std_collapse()}
+					title="{m.std_collapse()}  ["
+					class="inline-flex size-8 items-center justify-center rounded-lg text-ink-muted hover:bg-hover hover:text-heading"
+				>
+					<IconCollapse class="size-4.5" />
+				</button>
+			</div>
+			<ContentsRail nav={data.nav} {current} active={spy.active} />
+		</div>
+		<div class="hidden [.rail-collapsed_&]:block">
+			<IconRail nav={data.nav} {current} />
+		</div>
 	</aside>
 
 	<div

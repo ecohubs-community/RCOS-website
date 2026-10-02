@@ -10,15 +10,9 @@
  */
 import { loadDocuments } from '$lib/content/load.js';
 import { standardRoute } from '$lib/content/routes.js';
+import { articleUrl } from '$lib/content/refs.js';
 
 let map: Promise<Map<string, string>> | undefined;
-
-/** "rcos-core/v0-1/02-layer-0-identity-scope" → "/articles/rcos-core/v0-1/layer-0-identity-scope" */
-const articleUrl = (legacyPath: string) =>
-	`/articles/${legacyPath
-		.split('/')
-		.map((s) => s.replace(/^\d\d-/, ''))
-		.join('/')}`;
 
 export function redirects(): Promise<Map<string, string>> {
 	map ??= loadDocuments().then((docs) => {

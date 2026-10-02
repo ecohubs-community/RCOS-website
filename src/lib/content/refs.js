@@ -51,7 +51,7 @@ export function refTargets(docs) {
 }
 
 /** Article URL path for a legacy path: numeric chapter prefixes are not part of slugs. */
-const articleUrl = (/** @type {string} */ legacyPath) =>
+export const articleUrl = (/** @type {string} */ legacyPath) =>
 	`/articles/${legacyPath
 		.split('/')
 		.map((s) => s.replace(/^\d\d-/, ''))

@@ -305,5 +305,20 @@
 	"std_not_translated": "Diese Seite ist noch nicht übersetzt und wird auf Englisch angezeigt.",
 	"std_layer_templates": "Vorlagen für Schicht {n}",
 	"std_plain_language": "In einfacher Sprache lesen",
-	"std_propose_change": "Änderung vorschlagen"
+	"std_propose_change": "Änderung vorschlagen",
+	"std_related_to": "Bezüge zu Schicht {n}",
+	"std_guide": "Leitfaden in einfacher Sprache",
+	"std_templates": "Vorlagen",
+	"std_all_layer_templates": "Alle Vorlagen für Schicht {n}",
+	"std_stress_tests": "Stresstests",
+	"std_sev_high": "Hoch",
+	"std_sev_medium": "Mittel",
+	"std_also_involves": "Betrifft auch Schicht {n}",
+	"std_check_community": "Prüft eure Gemeinschaft",
+	"std_glossary_source": "Anh. A",
+	"std_kw_must": "Pflicht. Eine Gemeinschaft, die das nicht tut, ist nicht konform.",
+	"std_kw_must_not": "Verboten. Eine Gemeinschaft, die das tut, ist nicht konform.",
+	"std_kw_should": "Empfohlen. Abweichen nur mit genanntem Grund.",
+	"std_kw_should_not": "Nicht empfohlen. Nur mit genanntem Grund.",
+	"std_kw_may": "Optional. Erlaubt, aber nicht verlangt."
 }

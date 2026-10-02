@@ -7,7 +7,7 @@
  */
 import { loadDocuments } from '$lib/content/load.js';
 import { merge } from '$lib/content/overlay.js';
-import { refTargets, resolveAll } from '$lib/content/refs.js';
+import { articleUrl, refTargets, refsIn, resolveAll } from '$lib/content/refs.js';
 import { standardRoute } from '$lib/content/routes.js';
 import { tokenize, termForms, type Part } from '$lib/content/tokenize.js';
 import { renderBlock, renderInline } from '$lib/content/render.js';
@@ -42,6 +42,17 @@ export type SectionView = {
 
 export type PageLink = { path: string; title: string; number: string | null };
 
+/** The right rail of a layer chapter: where the layer is explained, applied and tested. */
+export type RelatedView = {
+	layer: number;
+	guide: { href: string; question: string } | null;
+	templates: { href: string; title: string; ref: string | null }[];
+	templatesHref: string | null;
+	/** level: the test's severity when it is mainly about this layer, else "other" */
+	tests: { href: string; title: string; level: 'high' | 'medium' | 'other' }[];
+	selfCheckHref: string;
+};
+
 export type StandardPage = {
 	path: string;
 	kind: 'chapter' | 'glossary';
@@ -58,6 +69,11 @@ export type StandardPage = {
 	glossary: { key: string; term: string; definitionHtml: string }[];
 	/** Glossary terms marked on this page */
 	terms: Record<string, { term: string; definitionHtml: string }>;
+	/** Layer number → title, for the tooltips of Layer links */
+	layerTitles: Record<number, string>;
+	/** Path of the glossary page, for "Open glossary" */
+	glossaryPath: string | null;
+	related: RelatedView | null;
 	prev: PageLink | null;
 	next: PageLink | null;
 	/** The page has no translation for the requested locale and shows English */
@@ -174,10 +190,14 @@ export async function standardPage(path: string, locale: string): Promise<Standa
 	const forms = termForms(glossary.terms, locale);
 
 	const layerPaths = new Map<number, string>();
+	const layerTitles: Record<number, string> = {};
 	for (const [p, x] of pages) {
 		const n = layerOf(x);
-		if (n !== null) layerPaths.set(n, p);
+		if (n === null) continue;
+		layerPaths.set(n, p);
+		layerTitles[n] = shortTitle(localized(x, locale).doc.title, x);
 	}
+	const glossaryPath = [...pages].find(([, x]) => x.en.kind === 'glossary')?.[0] ?? null;
 	const layerHref = (n: number) => layerPaths.get(n) ?? '/standard/core/0.1';
 
 	const used = new Set<string>();
@@ -241,9 +261,58 @@ export async function standardPage(path: string, locale: string): Promise<Standa
 					}))
 				: [],
 		terms,
+		layerTitles,
+		glossaryPath: glossaryPath && localizePath(glossaryPath, locale),
+		related: layerOf(d) === null ? null : related(layerOf(d)!, all, locale),
 		prev: at > 0 ? link(order[at - 1]) : null,
 		next: at >= 0 && at < order.length - 1 ? link(order[at + 1]) : null,
 		fallback
+	};
+}
+
+/** Guide, templates and stress tests of a layer (still article pages until phase 5). */
+function related(layer: number, all: Loaded[], locale: string): RelatedView {
+	const href = (legacyPath: string) => localizePath(articleUrl(legacyPath), locale);
+	const text = (d: Loaded) => localized(d, locale).doc;
+	const under = (prefix: string) => all.filter((d) => d.en.legacyPath.startsWith(prefix));
+
+	const guide = under('rcos-layers/').find((d) =>
+		d.en.legacyPath.startsWith(`rcos-layers/layer-${layer}-`)
+	);
+	const templates = under(`rcos-templates/layer-${layer}/`)
+		.filter((d) => d.en.kind === 'template')
+		.sort((a, b) => a.en.order - b.en.order)
+		.map((d) => ({
+			href: href(d.en.legacyPath),
+			title: text(d).title,
+			ref: refsIn(d.en.preamble ?? '').find((r: string) => r.startsWith('§')) ?? null
+		}));
+	const index = all.find((d) => d.en.legacyPath === `rcos-templates/layer-${layer}`);
+
+	const rank = { high: 0, medium: 1, other: 2 };
+	const tests = under('rcos-stress-tests/')
+		.filter((d) => d.en.layers?.includes(layer))
+		.map((d) => ({
+			href: href(d.en.legacyPath),
+			title: text(d).title,
+			level: (d.en.layers[0] === layer
+				? d.en.severity
+				: 'other') as RelatedView['tests'][number]['level']
+		}))
+		.sort((a, b) => rank[a.level] - rank[b.level] || a.title.localeCompare(b.title, locale));
+
+	return {
+		layer,
+		guide: guide
+			? {
+					href: href(guide.en.legacyPath),
+					question: String(text(guide).head ?? '').replace(/\*\*/g, '')
+				}
+			: null,
+		templates,
+		templatesHref: index ? href(index.en.legacyPath) : null,
+		tests,
+		selfCheckHref: href('rcos-stress-tests/self-assessment')
 	};
 }
 

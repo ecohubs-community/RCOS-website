@@ -305,5 +305,20 @@
 	"std_not_translated": "Esta página ainda não foi traduzida; ela aparece em inglês.",
 	"std_layer_templates": "Modelos da Camada {n}",
 	"std_plain_language": "Ler em linguagem simples",
-	"std_propose_change": "Propor uma mudança"
+	"std_propose_change": "Propor uma mudança",
+	"std_related_to": "Relacionado à Camada {n}",
+	"std_guide": "Guia em linguagem simples",
+	"std_templates": "Modelos",
+	"std_all_layer_templates": "Todos os modelos da Camada {n}",
+	"std_stress_tests": "Testes de estresse",
+	"std_sev_high": "Alta",
+	"std_sev_medium": "Média",
+	"std_also_involves": "Também envolve a Camada {n}",
+	"std_check_community": "Avalie sua comunidade",
+	"std_glossary_source": "Ap. A",
+	"std_kw_must": "Obrigatório. Uma comunidade que não faz isso não está em conformidade.",
+	"std_kw_must_not": "Proibido. Uma comunidade que faz isso não está em conformidade.",
+	"std_kw_should": "Recomendado. Desvie apenas por um motivo declarado.",
+	"std_kw_should_not": "Desaconselhado. Apenas por um motivo declarado.",
+	"std_kw_may": "Opcional. Permitido, mas não exigido."
 }

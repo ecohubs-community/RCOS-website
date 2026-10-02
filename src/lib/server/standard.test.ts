@@ -1,6 +1,8 @@
 import { describe, expect, it } from 'vitest';
 import { standardNav, standardPage, standardPaths } from './standard';
 
+const order = { high: 0, medium: 1, other: 2 };
+
 describe('standard pages', () => {
 	it('lists every page of the standard', async () => {
 		const paths = await standardPaths();
@@ -45,6 +47,24 @@ describe('standard pages', () => {
 		expect(clause.parts).toContainEqual({ t: 'kw', text: 'MUSS', kind: 'must' });
 		expect(page.next?.path).toBe('/de/standard/core/0.1/layer-1-membership-system');
 		expect(page.sections[0].legacyAnchors).toContain('21-zweckdefinition');
+	});
+
+	it('relates a layer to its guide, templates and stress tests', async () => {
+		const page = (await standardPage('/standard/core/0.1/layer-0-identity-scope', 'de'))!;
+		const r = page.related!;
+		expect(r.layer).toBe(0);
+		expect(r.guide?.href).toBe('/de/articles/rcos-layers/layer-0-identity-scope');
+		expect(r.templates.map((t) => t.ref)).toEqual(['§2.1', '§2.2', '§2.3', '§2.4']);
+		expect(r.templates[0].href).toBe('/de/articles/rcos-templates/layer-0/purpose-charter');
+		expect(r.templatesHref).toBe('/de/articles/rcos-templates/layer-0');
+		// Tests mainly about Layer 0 first, by severity; tests that also touch it last.
+		const levels = r.tests.map((t) => t.level);
+		expect(levels).toEqual([...levels].sort((a, b) => order[a] - order[b]));
+		expect(r.tests.find((t) => t.href.endsWith('/founder-informal-veto'))?.level).toBe('other');
+		expect(page.layerTitles[2]).toBe('Governance & Entscheidungslogik');
+		expect(page.glossaryPath).toBe('/de/standard/core/0.1/glossary');
+		// Chapters that are not layers have no related card.
+		expect((await standardPage('/standard/core/0.1/glossary', 'en'))!.related).toBeNull();
 	});
 
 	it('builds the contents navigation and the clause index', async () => {

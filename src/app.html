@@ -28,6 +28,11 @@
 					} catch (e) {}
 				}
 				if (chosen) document.documentElement.classList.add('consent-known');
+				// The standard's contents rail, collapsed by the reader (see components/standard/rail.ts).
+				try {
+					if (localStorage.getItem('rcos-rail') === 'collapsed')
+						document.documentElement.classList.add('rail-collapsed');
+				} catch (e) {}
 			})();
 		</script>
 		%sveltekit.head%

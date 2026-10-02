@@ -1,11 +1,14 @@
 <script lang="ts">
-	import { setContext } from 'svelte';
 	import { m } from '$lib/paraglide/messages.js';
 	import SEO from '$lib/components/seo/SEO.svelte';
 	import LocaleFallbackBanner from '$lib/components/i18n/LocaleFallbackBanner.svelte';
 	import Prose from '$lib/components/ui/Prose.svelte';
 	import LayerChip from '$lib/components/ui/LayerChip.svelte';
 	import Clause from '$lib/components/standard/Clause.svelte';
+	import OnThisPage from '$lib/components/standard/OnThisPage.svelte';
+	import RelatedRail from '$lib/components/standard/RelatedRail.svelte';
+	import { setStandardContext } from '$lib/components/standard/context';
+	import { scrollSpy } from '$lib/components/standard/spy.svelte';
 	import IconArrowLeft from '~icons/tabler/arrow-left';
 	import IconArrowRight from '~icons/tabler/arrow-right';
 	import IconChevronRight from '~icons/tabler/chevron-right';
@@ -13,8 +16,8 @@
 	let { data } = $props();
 	const p = $derived(data.page);
 
-	// Term popovers read the definitions of the terms used on this page.
-	setContext('standard-terms', () => p.terms);
+	// Rule text reads term definitions and layer names from the page.
+	setStandardContext(() => p);
 
 	const description = $derived(
 		p.introHtml
@@ -40,7 +43,7 @@
 />
 
 <div class="grid grid-cols-1 gap-x-12 xl:grid-cols-[minmax(0,1fr)_16rem]">
-	<article class="mx-auto w-full max-w-190 min-w-0 pt-6 pb-20 lg:pt-10">
+	<article class="mx-auto w-full max-w-190 min-w-0 pt-6 pb-20 lg:pt-10" {@attach scrollSpy(p.path)}>
 		{#if p.fallback}
 			<div class="mb-6"><LocaleFallbackBanner servedLang="en" requestedLang={data.locale} /></div>
 		{/if}
@@ -94,7 +97,11 @@
 		</header>
 
 		{#each p.sections as section (section.id)}
-			<section id={section.id} class="scroll-mt-(--scroll-offset) pt-11">
+			<section
+				id={section.id}
+				data-spy={section.ref ? '' : undefined}
+				class="scroll-mt-(--scroll-offset) pt-11"
+			>
 				{#each section.legacyAnchors as legacy (legacy)}
 					<!-- Heading id of the markdown era, so old links still land here. -->
 					<span id={legacy} class="block scroll-mt-(--scroll-offset)"></span>
@@ -146,6 +153,11 @@
 			</div>
 		{/if}
 
+		{#if p.related}
+			<!-- The right rail is hidden below xl; the same card closes the page there. -->
+			<RelatedRail related={p.related} class="mt-11 xl:hidden" />
+		{/if}
+
 		{#if p.prev || p.next}
 			<nav aria-label={m.std_contents()} class="mt-6 grid grid-cols-1 gap-3 sm:grid-cols-2">
 				{#if p.prev}
@@ -174,25 +186,16 @@
 		{/if}
 	</article>
 
-	{#if p.sections.some((s) => s.ref)}
+	{#if p.related || p.sections.some((s) => s.ref)}
 		<aside
-			aria-label={m.std_on_this_page()}
-			class="sticky top-(--header-h) hidden max-h-[calc(100dvh-var(--header-h))] overflow-y-auto py-10 xl:block"
+			class="sticky top-(--header-h) hidden max-h-[calc(100dvh-var(--header-h))] flex-col gap-7 overflow-y-auto py-10 xl:flex"
 		>
-			<p class="pb-2 font-ui text-[11px] font-semibold tracking-[0.08em] text-ink-faint uppercase">
-				{m.std_on_this_page()}
-			</p>
-			<nav class="flex flex-col gap-0.5">
-				{#each p.sections.filter((s) => s.ref) as s (s.id)}
-					<a
-						href="#{s.id}"
-						class="flex gap-2 border-l-2 border-transparent py-1 pl-3 text-[13.5px] leading-snug text-ink-muted hover:text-heading"
-					>
-						<span class="w-6 shrink-0 pt-px font-mono text-[11.5px] text-forest-600">{s.ref}</span
-						>{s.title}
-					</a>
-				{/each}
-			</nav>
+			{#if p.sections.some((s) => s.ref)}
+				<OnThisPage sections={p.sections.filter((s) => s.ref)} />
+			{/if}
+			{#if p.related}
+				<RelatedRail related={p.related} />
+			{/if}
 		</aside>
 	{/if}
 </div>
