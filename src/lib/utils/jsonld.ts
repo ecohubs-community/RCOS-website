@@ -100,10 +100,16 @@ export function buildArticleSchema(
 }
 
 /** Breadcrumb trail Home → Articles → …crumbs, with names and URLs in the page's locale. */
-export function buildBreadcrumbSchema(breadcrumbs: Crumb[], locale: string): Record<string, unknown> {
+export function buildBreadcrumbSchema(
+	breadcrumbs: Crumb[],
+	locale: string
+): Record<string, unknown> {
 	const items = [
 		{ name: t(locale, 'nav.home'), url: localeUrl(SITE_URL, '/', locale) },
-		{ name: t(locale, 'breadcrumb.segment.articles'), url: localeUrl(SITE_URL, '/articles', locale) },
+		{
+			name: t(locale, 'breadcrumb.segment.articles'),
+			url: localeUrl(SITE_URL, '/articles', locale)
+		},
 		...breadcrumbs.map((crumb) => ({
 			name: crumb.title,
 			url: localeUrl(SITE_URL, `/articles/${crumb.slug}`, locale)

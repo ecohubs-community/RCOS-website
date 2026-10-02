@@ -10,20 +10,20 @@ export type AssessmentSeverity = 'low' | 'medium' | 'high';
 export type TemplateRef = { slug: string; title: string };
 
 export type AssessmentTest = {
-  slug: string;
-  title: string;
-  severity: AssessmentSeverity;
-  symptoms: string[];
-  preventsWith: TemplateRef[];
+	slug: string;
+	title: string;
+	severity: AssessmentSeverity;
+	symptoms: string[];
+	preventsWith: TemplateRef[];
 };
 
 export type AssessmentCategory = {
-  key: string;
-  title: string;
-  tests: AssessmentTest[];
+	key: string;
+	title: string;
+	tests: AssessmentTest[];
 };
 
 export type Assessment = {
-  categories: AssessmentCategory[];
-  totalTests: number;
+	categories: AssessmentCategory[];
+	totalTests: number;
 };

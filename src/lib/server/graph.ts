@@ -14,28 +14,28 @@ import { DEFAULT_LOCALE } from '$lib/i18n/languages';
  *                       positions and the German sidebar would shuffle visibly.
  */
 export type Article = {
-  id: string;
-  slug: string;
-  title: string;
-  summary?: string;
-  icon?: string;
-  parentId?: string | null;
-  order?: number;
-  children: Article[];
-  tags?: string[];
-  attachments?: { file: string; caption?: string }[];
-  lang: string;
-  availableLocales: string[];
-  isFallback: boolean;
-  sortKey: string;
+	id: string;
+	slug: string;
+	title: string;
+	summary?: string;
+	icon?: string;
+	parentId?: string | null;
+	order?: number;
+	children: Article[];
+	tags?: string[];
+	attachments?: { file: string; caption?: string }[];
+	lang: string;
+	availableLocales: string[];
+	isFallback: boolean;
+	sortKey: string;
 };
 
 export type ArticleTree = Article[];
 
 export type Graph = {
-  articles: Article[];
-  articleTree: ArticleTree;
-  locale: string;
+	articles: Article[];
+	articleTree: ArticleTree;
+	locale: string;
 };
 
 /**
@@ -51,94 +51,94 @@ export type Graph = {
  * present, so the language switcher can dim locales without translations.
  */
 export async function buildGraph(locale: string = DEFAULT_LOCALE): Promise<Graph> {
-  const rawArticles = await readArticleMeta();
+	const rawArticles = await readArticleMeta();
 
-  // Group entries by id. Each group has up to one entry per locale.
-  const groups = new Map<string, Map<string, ArticleMeta>>();
-  for (const entry of rawArticles) {
-    const id = (entry.id as string) || entry.slug;
-    if (!groups.has(id)) groups.set(id, new Map());
-    groups.get(id)!.set(entry.lang ?? DEFAULT_LOCALE, entry);
-  }
+	// Group entries by id. Each group has up to one entry per locale.
+	const groups = new Map<string, Map<string, ArticleMeta>>();
+	for (const entry of rawArticles) {
+		const id = (entry.id as string) || entry.slug;
+		if (!groups.has(id)) groups.set(id, new Map());
+		groups.get(id)!.set(entry.lang ?? DEFAULT_LOCALE, entry);
+	}
 
-  // Resolve each group to an Article in the requested locale (with fallback).
-  const articleMap = new Map<string, Article>();
-  for (const [id, byLang] of groups) {
-    const source = byLang.get(DEFAULT_LOCALE);
-    if (!source) {
-      // No default-locale source — use whichever exists. This shouldn't normally
-      // happen (translations require a source) but we degrade gracefully.
-      const first = byLang.values().next().value;
-      if (!first) continue;
-      const fallbackSortKey = coerceTitle(first.title, first.slug);
-      articleMap.set(id, toArticle(first, [...byLang.keys()], false, fallbackSortKey));
-      continue;
-    }
+	// Resolve each group to an Article in the requested locale (with fallback).
+	const articleMap = new Map<string, Article>();
+	for (const [id, byLang] of groups) {
+		const source = byLang.get(DEFAULT_LOCALE);
+		if (!source) {
+			// No default-locale source — use whichever exists. This shouldn't normally
+			// happen (translations require a source) but we degrade gracefully.
+			const first = byLang.values().next().value;
+			if (!first) continue;
+			const fallbackSortKey = coerceTitle(first.title, first.slug);
+			articleMap.set(id, toArticle(first, [...byLang.keys()], false, fallbackSortKey));
+			continue;
+		}
 
-    const requested = byLang.get(locale);
-    const chosen = requested ?? source;
-    const isFallback = !requested && locale !== DEFAULT_LOCALE;
+		const requested = byLang.get(locale);
+		const chosen = requested ?? source;
+		const isFallback = !requested && locale !== DEFAULT_LOCALE;
 
-    // Translations carry localized title/summary but inherit structural fields
-    // (slug, parentId, order) from the source — that way moving an article in
-    // English moves all translations too.
-    const merged: ArticleMeta = {
-      ...source,
-      title: chosen.title ?? source.title,
-      summary: chosen.summary ?? source.summary,
-      lang: chosen.lang ?? DEFAULT_LOCALE,
-      filePath: chosen.filePath
-    };
+		// Translations carry localized title/summary but inherit structural fields
+		// (slug, parentId, order) from the source — that way moving an article in
+		// English moves all translations too.
+		const merged: ArticleMeta = {
+			...source,
+			title: chosen.title ?? source.title,
+			summary: chosen.summary ?? source.summary,
+			lang: chosen.lang ?? DEFAULT_LOCALE,
+			filePath: chosen.filePath
+		};
 
-    // Sort key always comes from the default-locale source — never from `chosen`.
-    // That keeps the sidebar/menu order identical between /foo and /de/foo even
-    // when localized titles would shuffle alphabetically (e.g. "Topics" vs "Themen").
-    const sortKey = coerceTitle(source.title, source.slug);
-    articleMap.set(id, toArticle(merged, [...byLang.keys()].sort(), isFallback, sortKey));
-  }
+		// Sort key always comes from the default-locale source — never from `chosen`.
+		// That keeps the sidebar/menu order identical between /foo and /de/foo even
+		// when localized titles would shuffle alphabetically (e.g. "Topics" vs "Themen").
+		const sortKey = coerceTitle(source.title, source.slug);
+		articleMap.set(id, toArticle(merged, [...byLang.keys()].sort(), isFallback, sortKey));
+	}
 
-  const articleTree = buildTree(articleMap);
-  const articles = flattenArticleTree(articleTree);
+	const articleTree = buildTree(articleMap);
+	const articles = flattenArticleTree(articleTree);
 
-  return { articles, articleTree, locale };
+	return { articles, articleTree, locale };
 }
 
 function toArticle(
-  entry: ArticleMeta,
-  availableLocales: string[],
-  isFallback: boolean,
-  sortKey: string
+	entry: ArticleMeta,
+	availableLocales: string[],
+	isFallback: boolean,
+	sortKey: string
 ): Article {
-  return {
-    id: (entry.id as string) || entry.slug,
-    slug: entry.slug,
-    title: coerceTitle(entry.title, entry.slug),
-    summary: coerceOptionalString(entry.summary),
-    icon: coerceOptionalString(entry.icon),
-    parentId: entry.parentId as string | null | undefined,
-    order: coerceOptionalNumber(entry.order),
-    children: [],
-    tags: normalizeList(entry.tags),
-    attachments: Array.isArray(entry.attachments) ? entry.attachments : undefined,
-    lang: entry.lang ?? DEFAULT_LOCALE,
-    availableLocales,
-    isFallback,
-    sortKey
-  };
+	return {
+		id: (entry.id as string) || entry.slug,
+		slug: entry.slug,
+		title: coerceTitle(entry.title, entry.slug),
+		summary: coerceOptionalString(entry.summary),
+		icon: coerceOptionalString(entry.icon),
+		parentId: entry.parentId as string | null | undefined,
+		order: coerceOptionalNumber(entry.order),
+		children: [],
+		tags: normalizeList(entry.tags),
+		attachments: Array.isArray(entry.attachments) ? entry.attachments : undefined,
+		lang: entry.lang ?? DEFAULT_LOCALE,
+		availableLocales,
+		isFallback,
+		sortKey
+	};
 }
 
 function buildTree(articleMap: Map<string, Article>): ArticleTree {
-  const rootArticles: Article[] = [];
-  articleMap.forEach((article) => {
-    if (article.parentId && articleMap.has(article.parentId)) {
-      const parent = articleMap.get(article.parentId)!;
-      parent.children.push(article);
-    } else {
-      rootArticles.push(article);
-    }
-  });
-  sortArticles(rootArticles);
-  return rootArticles;
+	const rootArticles: Article[] = [];
+	articleMap.forEach((article) => {
+		if (article.parentId && articleMap.has(article.parentId)) {
+			const parent = articleMap.get(article.parentId)!;
+			parent.children.push(article);
+		} else {
+			rootArticles.push(article);
+		}
+	});
+	sortArticles(rootArticles);
+	return rootArticles;
 }
 
 /**
@@ -146,26 +146,26 @@ function buildTree(articleMap: Map<string, Article>): ArticleTree {
  * that don't need the flat list).
  */
 export async function buildArticleTree(locale: string = DEFAULT_LOCALE): Promise<ArticleTree> {
-  return (await buildGraph(locale)).articleTree;
+	return (await buildGraph(locale)).articleTree;
 }
 
 /**
  * Flatten article tree into a flat array
  */
 function flattenArticleTree(tree: ArticleTree): Article[] {
-  const result: Article[] = [];
+	const result: Article[] = [];
 
-  function traverse(articles: Article[]) {
-    for (const article of articles) {
-      result.push(article);
-      if (article.children.length > 0) {
-        traverse(article.children);
-      }
-    }
-  }
+	function traverse(articles: Article[]) {
+		for (const article of articles) {
+			result.push(article);
+			if (article.children.length > 0) {
+				traverse(article.children);
+			}
+		}
+	}
 
-  traverse(tree);
-  return result;
+	traverse(tree);
+	return result;
 }
 
 /**
@@ -176,48 +176,48 @@ function flattenArticleTree(tree: ArticleTree): Article[] {
  * same article.
  */
 function sortArticles(articles: Article[]) {
-  articles.sort((a, b) => {
-    const orderDiff = (a.order ?? 0) - (b.order ?? 0);
-    if (orderDiff !== 0) return orderDiff;
-    return a.sortKey.localeCompare(b.sortKey);
-  });
-  articles.forEach((article) => {
-    if (article.children.length > 0) {
-      sortArticles(article.children);
-    }
-  });
+	articles.sort((a, b) => {
+		const orderDiff = (a.order ?? 0) - (b.order ?? 0);
+		if (orderDiff !== 0) return orderDiff;
+		return a.sortKey.localeCompare(b.sortKey);
+	});
+	articles.forEach((article) => {
+		if (article.children.length > 0) {
+			sortArticles(article.children);
+		}
+	});
 }
 
 // Helper functions
 function coerceTitle(value: unknown, fallback: string) {
-  const str = coerceOptionalString(value) ?? fallback;
-  return str.trim() || fallback;
+	const str = coerceOptionalString(value) ?? fallback;
+	return str.trim() || fallback;
 }
 
 function coerceOptionalString(value: unknown): string | undefined {
-  if (typeof value === 'string') {
-    const trimmed = value.trim();
-    return trimmed ? trimmed : undefined;
-  }
-  return undefined;
+	if (typeof value === 'string') {
+		const trimmed = value.trim();
+		return trimmed ? trimmed : undefined;
+	}
+	return undefined;
 }
 
 function coerceOptionalNumber(value: unknown): number | undefined {
-  if (typeof value === 'number' && Number.isFinite(value)) {
-    return value;
-  }
-  return undefined;
+	if (typeof value === 'number' && Number.isFinite(value)) {
+		return value;
+	}
+	return undefined;
 }
 
 function normalizeList(value: unknown): string[] {
-  if (Array.isArray(value)) {
-    return value
-      .map((item) => (typeof item === 'string' ? item.trim() : ''))
-      .filter((item): item is string => Boolean(item));
-  }
-  if (typeof value === 'string') {
-    const trimmed = value.trim();
-    return trimmed ? [trimmed] : [];
-  }
-  return [];
+	if (Array.isArray(value)) {
+		return value
+			.map((item) => (typeof item === 'string' ? item.trim() : ''))
+			.filter((item): item is string => Boolean(item));
+	}
+	if (typeof value === 'string') {
+		const trimmed = value.trim();
+		return trimmed ? [trimmed] : [];
+	}
+	return [];
 }

@@ -1,5 +1,12 @@
 <script lang="ts">
-	import Icon from '@iconify/svelte';
+	import type { Component } from 'svelte';
+	import IconMarkdown from '~icons/tabler/markdown';
+	import IconFileTypeDoc from '~icons/tabler/file-type-doc';
+	import IconChevronRight from '~icons/tabler/chevron-right';
+	import IconDownload from '~icons/tabler/download';
+	import IconFileDownload from '~icons/tabler/file-download';
+	import IconLanguage from '~icons/tabler/language';
+	import IconPackage from '~icons/tabler/package';
 	import { page } from '$app/state';
 	import type { ArticleDownloads } from '$lib/server/downloads';
 	import { m } from '$lib/i18n';
@@ -11,19 +18,19 @@
 	const locale = $derived((page.data?.locale as string | undefined) ?? DEFAULT_LOCALE);
 
 	// Format metadata is stable; the labels and hints come from the messages.
-	const FORMAT_INFO: Record<string, { icon: string; labelKey: string; hintKey: string }> = {
+	const FORMAT_INFO: Record<string, { icon: Component; labelKey: string; hintKey: string }> = {
 		md: {
-			icon: 'tabler:markdown',
+			icon: IconMarkdown,
 			labelKey: 'downloads.format.md.label',
 			hintKey: 'downloads.format.md.hint'
 		},
 		docx: {
-			icon: 'tabler:file-type-doc',
+			icon: IconFileTypeDoc,
 			labelKey: 'downloads.format.docx.label',
 			hintKey: 'downloads.format.docx.hint'
 		},
 		odt: {
-			icon: 'tabler:file-type-doc',
+			icon: IconFileTypeDoc,
 			labelKey: 'downloads.format.odt.label',
 			hintKey: 'downloads.format.odt.hint'
 		}
@@ -39,7 +46,7 @@
 	>
 		<header class="space-y-2 mb-6">
 			<h2 class="text-2xl font-bold text-text-primary flex items-center gap-2">
-				<Icon icon="tabler:package" class="w-6 h-6 text-primary" />
+				<IconPackage class="w-6 h-6 text-primary" />
 				{m('downloads.heading.all')}
 			</h2>
 			<p class="text-text-secondary text-sm">
@@ -52,14 +59,14 @@
 				<p
 					class="flex items-start gap-2 text-xs text-text-secondary border border-border bg-background rounded-md px-3 py-2"
 				>
-					<Icon icon="tabler:language" class="w-4 h-4 mt-0.5 text-primary shrink-0" />
+					<IconLanguage class="w-4 h-4 mt-0.5 text-primary shrink-0" />
 					<span>{m('downloads.bundle_fallback', { served: servedLocaleName })}</span>
 				</p>
 			{/if}
 		</header>
 
 		<div class="grid gap-3 sm:grid-cols-3">
-			{#each downloads.formats as fmt}
+			{#each downloads.formats as fmt (fmt)}
 				{@const info = FORMAT_INFO[fmt]}
 				<a
 					href={downloads.bundles[fmt]}
@@ -67,12 +74,9 @@
 					class="flex flex-col gap-1 rounded-lg border border-border bg-background hover:border-primary hover:bg-surface transition-colors p-4 group"
 				>
 					<span class="flex items-center gap-2 font-semibold text-text-primary">
-						<Icon icon={info.icon} class="w-5 h-5 text-primary" />
+						<info.icon class="w-5 h-5 text-primary" />
 						{m(info.labelKey)}
-						<Icon
-							icon="tabler:download"
-							class="w-4 h-4 ml-auto text-text-tertiary group-hover:text-primary"
-						/>
+						<IconDownload class="w-4 h-4 ml-auto text-text-tertiary group-hover:text-primary" />
 					</span>
 					<span class="text-xs text-text-tertiary">{m(info.hintKey)}</span>
 					<span class="text-xs text-text-tertiary"
@@ -86,20 +90,17 @@
 			<summary
 				class="cursor-pointer text-sm font-medium text-text-primary hover:text-primary list-none flex items-center gap-2"
 			>
-				<Icon
-					icon="tabler:chevron-right"
-					class="w-4 h-4 transition-transform group-open:rotate-90"
-				/>
+				<IconChevronRight class="w-4 h-4 transition-transform group-open:rotate-90" />
 				{m('downloads.toggle_single')}
 			</summary>
 			<div class="mt-4 space-y-4 pl-2">
-				{#each Array.from(new Set(downloads.templates.map((t) => t.layer))) as layer}
+				{#each [...new Set(downloads.templates.map((t) => t.layer))] as layer (layer)}
 					<div>
 						<h3 class="text-sm font-semibold text-text-primary uppercase tracking-wide mb-2">
 							{m('downloads.layer_label', { layer: layer.replace(/^layer-/, '') })}
 						</h3>
 						<ul class="space-y-1.5">
-							{#each downloads.templates.filter((t) => t.layer === layer) as t}
+							{#each downloads.templates.filter((t) => t.layer === layer) as t (t.id)}
 								<li class="flex flex-wrap items-center gap-x-3 gap-y-1 text-sm">
 									<a
 										href={localized(`/articles/${t.slug}`, locale)}
@@ -116,7 +117,7 @@
 										</span>
 									{/if}
 									<span class="flex items-center gap-2 text-xs text-text-tertiary">
-										{#each downloads.formats as fmt}
+										{#each downloads.formats as fmt (fmt)}
 											<a
 												href={t.files[fmt]}
 												download
@@ -142,7 +143,7 @@
 	>
 		<div class="space-y-1">
 			<h2 class="text-base font-semibold text-text-primary flex items-center gap-2">
-				<Icon icon="tabler:download" class="w-5 h-5 text-primary" />
+				<IconDownload class="w-5 h-5 text-primary" />
 				{m('downloads.heading.single')}
 			</h2>
 			<p class="text-xs text-text-tertiary">
@@ -161,7 +162,7 @@
 			{/if}
 		</div>
 		<div class="flex flex-wrap gap-2">
-			{#each downloads.formats as fmt}
+			{#each downloads.formats as fmt (fmt)}
 				{@const info = FORMAT_INFO[fmt]}
 				<a
 					href={downloads.files[fmt]}
@@ -169,7 +170,7 @@
 					title={m(info.hintKey)}
 					class="inline-flex items-center gap-1.5 rounded-md border border-border bg-background hover:border-primary hover:bg-surface transition-colors px-3 py-1.5 text-sm font-medium text-text-primary"
 				>
-					<Icon icon={info.icon} class="w-4 h-4 text-primary" />
+					<info.icon class="w-4 h-4 text-primary" />
 					{m(info.labelKey)}
 				</a>
 			{/each}
@@ -181,7 +182,7 @@
 	>
 		<div class="space-y-1">
 			<h2 class="text-base font-semibold text-text-primary flex items-center gap-2">
-				<Icon icon="tabler:file-download" class="w-5 h-5 text-primary" />
+				<IconFileDownload class="w-5 h-5 text-primary" />
 				{m('downloads.heading.spec')}
 			</h2>
 			<p class="text-xs text-text-tertiary">
@@ -194,7 +195,7 @@
 			{/if}
 		</div>
 		<div class="flex flex-wrap gap-2">
-			{#each downloads.formats as fmt}
+			{#each downloads.formats as fmt (fmt)}
 				{@const info = FORMAT_INFO[fmt]}
 				<a
 					href={downloads.files[fmt]}
@@ -202,7 +203,7 @@
 					title={m(info.hintKey)}
 					class="inline-flex items-center gap-1.5 rounded-md border border-border bg-background hover:border-primary hover:bg-surface transition-colors px-3 py-1.5 text-sm font-medium text-text-primary"
 				>
-					<Icon icon={info.icon} class="w-4 h-4 text-primary" />
+					<info.icon class="w-4 h-4 text-primary" />
 					{m(info.labelKey)}
 				</a>
 			{/each}

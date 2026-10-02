@@ -114,7 +114,7 @@ async function buildCoreV01ForLocale(locale) {
 				title: s.aboutCore,
 				body: absolutizeLinks(aboutChosen.body.trim(), locale),
 				isFallback: !aboutAll[locale] && locale !== DEFAULT_LOCALE
-		  }
+			}
 		: null;
 
 	// Per-section files (00-introduction.md, 01-...). Group by base name.
@@ -225,11 +225,9 @@ async function main() {
 						generated: today,
 						formats: ['md'],
 						files: Object.fromEntries(entries.map((e) => [e.locale, e.files])),
-						availableLocales: entries
-							.filter((e) => e.hasAnyRealTranslation)
-							.map((e) => e.locale)
+						availableLocales: entries.filter((e) => e.hasAnyRealTranslation).map((e) => e.locale)
 					}
-			  ]
+				]
 			: []
 	};
 	await writeFile(manifestPath, JSON.stringify(manifest, null, 2));

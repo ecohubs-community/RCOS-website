@@ -3,11 +3,12 @@ You are able to use the Svelte MCP server, where you have access to comprehensiv
 ## Project Description
 
 ### Frontend
+
 Please read the `FRONTEND.md` file for information about the frontend.
 
 ### Backend
-Please read the `BACKEND.md` file for information about the backend.
 
+Please read the `BACKEND.md` file for information about the backend.
 
 ## Available MCP Tools:
 

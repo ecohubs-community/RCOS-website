@@ -27,7 +27,10 @@ export function rewriteArticleLinks(
 			const resolved = slugById.get(params.get('id') ?? '');
 			params.delete('id');
 
-			const target = localizePath(resolved ? `/articles/${resolved}` : `/articles${slugPath}`, locale);
+			const target = localizePath(
+				resolved ? `/articles/${resolved}` : `/articles${slugPath}`,
+				locale
+			);
 			const rest = params.toString().replace(/&/g, '&amp;');
 			return `href="${target}${rest ? `?${rest}` : ''}${hash}"`;
 		}

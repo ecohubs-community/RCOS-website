@@ -264,7 +264,7 @@ Rules:
      - **French**: → **Couche N**. Always "Couche", never "Niveau" or "Layer". Examples: "Layer 0" → "Couche 0", "Layer 2 governance" → "gouvernance à la Couche 2".
      - **Brazilian Portuguese**: → **Camada N**. Always "Camada", never "Nível" or "Layer". Examples: "Layer 0" → "Camada 0", "Layer 2 governance" → "governança na Camada 2".
    - Applies in titles, prose, and inside backticks. For other languages, pick the natural translation of "layer" used in protocol-stack contexts and apply it consistently.`;
-   
+
 function buildUserPrompt(job) {
 	const language = LANGUAGE_NAMES[args.locale] ?? args.locale;
 	return `Translate the following markdown article to ${language}. Output ONLY the translated markdown — frontmatter first, then a blank line, then the body — with no commentary or wrapping code fence.
@@ -561,8 +561,12 @@ async function main() {
 	console.log(`Plan:     ${jobs.length} article${jobs.length === 1 ? '' : 's'} to translate`);
 	if (jobs.length === 0) {
 		console.log('\nNothing to translate. Reasons sources were skipped:');
-		console.log(`  ${skipped.upToDate}   already up-to-date in ${args.locale} (use --force to re-translate)`);
-		console.log(`  ${skipped.emptyBody}   body is empty / frontmatter-only (use --include-empty to translate the title anyway)`);
+		console.log(
+			`  ${skipped.upToDate}   already up-to-date in ${args.locale} (use --force to re-translate)`
+		);
+		console.log(
+			`  ${skipped.emptyBody}   body is empty / frontmatter-only (use --include-empty to translate the title anyway)`
+		);
 		console.log(`  ${skipped.filtered}   excluded by --only "${args.only ?? ''}"`);
 		console.log(`  ${skipped.missingId}   no \`id\` in frontmatter (orphan source)`);
 		process.exit(0);

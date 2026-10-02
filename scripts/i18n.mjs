@@ -20,7 +20,8 @@ export const DOWNLOADS_I18N = {
 		generated: 'Generated',
 		source: 'Source (latest version)',
 		allTemplates: 'All RCOS templates',
-		translatedFromEnglish: 'This article is not yet translated to English — showing the English source.',
+		translatedFromEnglish:
+			'This article is not yet translated to English — showing the English source.',
 		// Section labels in the combined core spec
 		toc: 'Table of Contents',
 		aboutCore: 'About RCOS Core',
@@ -75,12 +76,12 @@ export const DOWNLOADS_I18N = {
 		bundleSectionHeading: 'Plantillas'
 	},
 	fr: {
-		siteName: 'RCOS — Système d\'Exploitation de Communauté Régénérative',
+		siteName: "RCOS — Système d'Exploitation de Communauté Régénérative",
 		generated: 'Généré',
 		source: 'Source (version la plus récente)',
 		allTemplates: 'Tous les modèles RCOS',
 		translatedFromEnglish:
-			'Ce contenu n\'est pas encore traduit en français ; la source en anglais est affichée.',
+			"Ce contenu n'est pas encore traduit en français ; la source en anglais est affichée.",
 		toc: 'Table des matières',
 		aboutCore: 'À propos de RCOS Core',
 		coreSpecTitle: 'Spécification RCOS Core — v0.1',

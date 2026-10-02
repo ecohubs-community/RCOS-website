@@ -1,6 +1,6 @@
 /**
  * Unified Article Type System
- * 
+ *
  * All content is now an "article" with hierarchical parent-child relationships.
  * This replaces the previous domain/topic/module/article separation.
  */

@@ -30,7 +30,10 @@ let cache: Promise<Map<string, FileDates>> | undefined;
 
 export function getFileDates(): Promise<Map<string, FileDates>> {
 	cache ??= readGitDates().catch((error) => {
-		console.warn('[dates] git history unavailable, pages will carry no dates:', error?.message ?? error);
+		console.warn(
+			'[dates] git history unavailable, pages will carry no dates:',
+			error?.message ?? error
+		);
 		return new Map();
 	});
 	return cache;

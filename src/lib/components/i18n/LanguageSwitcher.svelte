@@ -1,13 +1,10 @@
 <script lang="ts">
 	import { page } from '$app/state';
 	import { browser } from '$app/environment';
-	import Icon from '@iconify/svelte';
-	import {
-		LOCALES,
-		DEFAULT_LOCALE,
-		getLocale,
-		type Locale
-	} from '$lib/i18n/languages';
+	import IconCheck from '~icons/tabler/check';
+	import IconChevronDown from '~icons/tabler/chevron-down';
+	import IconWorld from '~icons/tabler/world';
+	import { LOCALES, DEFAULT_LOCALE, getLocale, type Locale } from '$lib/i18n/languages';
 	import { localizePath } from '$lib/i18n/path';
 	import { m } from '$lib/i18n';
 
@@ -77,9 +74,9 @@
 			aria-label={m('language_switcher.aria_label', { language: current.englishName })}
 			onclick={() => (open = !open)}
 		>
-			<Icon icon="tabler:world" class="w-4 h-4" />
+			<IconWorld class="w-4 h-4" />
 			<span class="font-medium uppercase tracking-wide text-xs">{current.code}</span>
-			<Icon icon="tabler:chevron-down" class="w-3 h-3 opacity-60" />
+			<IconChevronDown class="w-3 h-3 opacity-60" />
 		</button>
 
 		<!--
@@ -94,36 +91,32 @@
 				: 'hidden'}"
 		>
 			{#each LOCALES as locale (locale.code)}
-					{@const isCurrent = locale.code === currentLocale}
-					{@const translated = hasTranslation(locale.code)}
-					<li role="option" aria-selected={isCurrent}>
-						<a
-							href={targetUrl(locale)}
-							onclick={() => onSelect(locale)}
-							class="flex items-center justify-between gap-3 px-3 py-2 text-sm hover:bg-surface
+				{@const isCurrent = locale.code === currentLocale}
+				{@const translated = hasTranslation(locale.code)}
+				<li role="option" aria-selected={isCurrent}>
+					<a
+						href={targetUrl(locale)}
+						onclick={() => onSelect(locale)}
+						class="flex items-center justify-between gap-3 px-3 py-2 text-sm hover:bg-surface
 							{isCurrent ? 'font-semibold text-primary' : 'text-text-primary'}
 							{!translated && !isCurrent ? 'opacity-60' : ''}"
-							title={!translated && !isCurrent
-								? m('language_switcher.fallback_tooltip')
-								: undefined}
-						>
-							<span class="flex flex-col items-start">
-								<span>{locale.nativeName}</span>
-								{#if locale.nativeName !== locale.englishName}
-									<span class="text-xs text-text-tertiary">{locale.englishName}</span>
-								{/if}
-							</span>
-							{#if isCurrent}
-								<Icon icon="tabler:check" class="w-4 h-4 text-primary shrink-0" />
-							{:else if !translated}
-								<span
-									class="text-[10px] uppercase tracking-wide text-text-tertiary shrink-0"
-								>
-									{m('language_switcher.fallback_badge')}
-								</span>
+						title={!translated && !isCurrent ? m('language_switcher.fallback_tooltip') : undefined}
+					>
+						<span class="flex flex-col items-start">
+							<span>{locale.nativeName}</span>
+							{#if locale.nativeName !== locale.englishName}
+								<span class="text-xs text-text-tertiary">{locale.englishName}</span>
 							{/if}
-						</a>
-					</li>
+						</span>
+						{#if isCurrent}
+							<IconCheck class="w-4 h-4 text-primary shrink-0" />
+						{:else if !translated}
+							<span class="text-[10px] uppercase tracking-wide text-text-tertiary shrink-0">
+								{m('language_switcher.fallback_badge')}
+							</span>
+						{/if}
+					</a>
+				</li>
 			{/each}
 		</ul>
 	</div>

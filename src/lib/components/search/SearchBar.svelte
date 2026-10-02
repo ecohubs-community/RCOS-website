@@ -1,7 +1,7 @@
 <script lang="ts">
 	import { goto } from '$app/navigation';
 	import { page } from '$app/state';
-	import Icon from '@iconify/svelte';
+	import IconSearch from '~icons/tabler/search';
 	import { m } from '$lib/i18n';
 	import { localized } from '$lib/i18n/path';
 	import { DEFAULT_LOCALE } from '$lib/i18n/languages';
@@ -39,6 +39,6 @@
 		aria-label={m('nav.search_button')}
 		class="absolute right-2 top-1/2 -translate-y-1/2 p-1 rounded-sm hover:bg-surface-elevated"
 	>
-		<Icon icon="tabler:search" class="w-5 h-5 text-text-secondary" />
+		<IconSearch class="w-5 h-5 text-text-secondary" />
 	</button>
 </div>

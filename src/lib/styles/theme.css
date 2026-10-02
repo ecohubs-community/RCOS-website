@@ -1,5 +1,17 @@
-/* Import Google Fonts - must be before other imports */
-@import url('https://fonts.googleapis.com/css2?family=Ledger&family=Pridi:wght@200;300;400;500;600;700&family=Stack+Sans+Headline:wght@200..700&display=swap');
+/* Fonts are self-hosted (bundled and cache-busted by Vite): no third-party
+   request, no render-blocking stylesheet. Only the Latin subsets, which cover
+   en/de/es/fr/pt-br; latin-ext loads only when a page uses such a character.
+   The two most-used files are preloaded in +layout.svelte. */
+@import '@fontsource/pridi/latin-400.css';
+@import '@fontsource/pridi/latin-500.css';
+@import '@fontsource/pridi/latin-600.css';
+@import '@fontsource/pridi/latin-700.css';
+@import '@fontsource/pridi/latin-ext-400.css';
+@import '@fontsource/pridi/latin-ext-500.css';
+@import '@fontsource/pridi/latin-ext-600.css';
+@import '@fontsource/pridi/latin-ext-700.css';
+@import '@fontsource-variable/stack-sans-text/wght.css';
+@import '@fontsource-variable/stack-sans-headline/wght.css';
 
 @import 'tailwindcss';
 @plugin '@tailwindcss/forms';
@@ -10,415 +22,523 @@
 
 /* Tailwind v4 Theme Configuration */
 @theme {
-  /* Color Palette - Forest Greens (Primary) */
-  --color-forest-900: #1a3009;
-  --color-forest-800: #2d5016;
-  --color-forest-700: #4a7c2a;
-  --color-forest-600: #6b9f3d;
-  --color-forest-500: #7fb84a;
-  --color-forest-400: #9ac966;
-  --color-forest-300: #b5da82;
-  --color-forest-200: #d0eb9e;
-  --color-forest-100: #ebfcba;
-  --color-forest-50: #f5fde5;
+	/* Color Palette - Forest Greens (Primary) */
+	--color-forest-900: #1a3009;
+	--color-forest-800: #2d5016;
+	--color-forest-700: #4a7c2a;
+	--color-forest-600: #6b9f3d;
+	--color-forest-500: #7fb84a;
+	--color-forest-400: #9ac966;
+	--color-forest-300: #b5da82;
+	--color-forest-200: #d0eb9e;
+	--color-forest-100: #ebfcba;
+	--color-forest-50: #f5fde5;
 
-  /* Color Palette - Soil Browns (Secondary) */
-  --color-soil-900: #4a3d2a;
-  --color-soil-800: #5d4d35;
-  --color-soil-700: #8b6f47;
-  --color-soil-600: #a0826d;
-  --color-soil-500: #b8957d;
-  --color-soil-400: #c4a484;
-  --color-soil-300: #d1b39a;
-  --color-soil-200: #dec2b0;
-  --color-soil-100: #ebd1c6;
-  --color-soil-50: #f8e0dc;
+	/* Color Palette - Soil Browns (Secondary) */
+	--color-soil-900: #4a3d2a;
+	--color-soil-800: #5d4d35;
+	--color-soil-700: #8b6f47;
+	--color-soil-600: #a0826d;
+	--color-soil-500: #b8957d;
+	--color-soil-400: #c4a484;
+	--color-soil-300: #d1b39a;
+	--color-soil-200: #dec2b0;
+	--color-soil-100: #ebd1c6;
+	--color-soil-50: #f8e0dc;
 
-  /* Color Palette - Soft Blues/Turquoise (Accent) */
-  --color-blue-900: #1e3a47;
-  --color-blue-800: #2d4f5c;
-  --color-blue-700: #4a90a4;
-  --color-blue-600: #6bb3c7;
-  --color-blue-500: #7cc5d9;
-  --color-blue-400: #8dd4e8;
-  --color-blue-300: #a3dff0;
-  --color-blue-200: #b9eaf8;
-  --color-blue-100: #cff5ff;
-  --color-blue-50: #e5faff;
+	/* Color Palette - Soft Blues/Turquoise (Accent) */
+	--color-blue-900: #1e3a47;
+	--color-blue-800: #2d4f5c;
+	--color-blue-700: #4a90a4;
+	--color-blue-600: #6bb3c7;
+	--color-blue-500: #7cc5d9;
+	--color-blue-400: #8dd4e8;
+	--color-blue-300: #a3dff0;
+	--color-blue-200: #b9eaf8;
+	--color-blue-100: #cff5ff;
+	--color-blue-50: #e5faff;
 
-  /* Color Palette - Warm Amber (Highlight) */
-  --color-amber-900: #8b5a2a;
-  --color-amber-800: #a66b3a;
-  --color-amber-700: #c47d4a;
-  --color-amber-600: #d4a574;
-  --color-amber-500: #e0b586;
-  --color-amber-400: #e8b886;
-  --color-amber-300: #f0c99a;
-  --color-amber-200: #f5d4ae;
-  --color-amber-100: #fae0c2;
-  --color-amber-50: #ffecd6;
+	/* Color Palette - Warm Amber (Highlight) */
+	--color-amber-900: #8b5a2a;
+	--color-amber-800: #a66b3a;
+	--color-amber-700: #c47d4a;
+	--color-amber-600: #d4a574;
+	--color-amber-500: #e0b586;
+	--color-amber-400: #e8b886;
+	--color-amber-300: #f0c99a;
+	--color-amber-200: #f5d4ae;
+	--color-amber-100: #fae0c2;
+	--color-amber-50: #ffecd6;
 
-  /* Semantic Colors - Light Mode */
-  --color-primary: #6b9f3d;
-  --color-primary-dark: #4a7c2a;
-  --color-primary-light: #7fb84a;
-  --color-secondary: var(--color-soil-700);
-  --color-secondary-dark: var(--color-soil-800);
-  --color-secondary-light: var(--color-soil-600);
-  --color-accent: var(--color-blue-600);
-  --color-accent-dark: var(--color-blue-700);
-  --color-accent-light: var(--color-blue-500);
-  --color-highlight: var(--color-amber-500);
-  --color-highlight-dark: var(--color-amber-600);
-  --color-highlight-light: var(--color-amber-400);
+	/* Semantic Colors - Light Mode */
+	--color-primary: #6b9f3d;
+	--color-primary-dark: #4a7c2a;
+	--color-primary-light: #7fb84a;
+	--color-secondary: var(--color-soil-700);
+	--color-secondary-dark: var(--color-soil-800);
+	--color-secondary-light: var(--color-soil-600);
+	--color-accent: var(--color-blue-600);
+	--color-accent-dark: var(--color-blue-700);
+	--color-accent-light: var(--color-blue-500);
+	--color-highlight: var(--color-amber-500);
+	--color-highlight-dark: var(--color-amber-600);
+	--color-highlight-light: var(--color-amber-400);
 
-  /* Background Colors - Light Mode */
-  --color-background: #ffffff;
-  --color-surface: #fafafa;
-  --color-surface-elevated: #ffffff;
-  --color-border: #e5e7eb;
+	/* Background Colors - Light Mode */
+	--color-background: #ffffff;
+	--color-surface: #fafafa;
+	--color-surface-elevated: #ffffff;
+	--color-border: #e5e7eb;
 
-  /* Text Colors - Light Mode */
-  --color-text-primary: #1f2937;
-  --color-text-secondary: #6b7280;
-  --color-text-tertiary: #9ca3af;
+	/* Text Colors - Light Mode */
+	--color-text-primary: #1f2937;
+	--color-text-secondary: #6b7280;
+	--color-text-tertiary: #9ca3af;
 
-  /* Max Width */
-  --max-width-sm: 24rem;    /* 384px */
-  --max-width-md: 28rem;    /* 448px */
-  --max-width-lg: 32rem;    /* 512px */
-  --max-width-xl: 36rem;    /* 576px */
-  --max-width-2xl: 42rem;   /* 672px */
-  --max-width-3xl: 48rem;   /* 768px */
-  --max-width-4xl: 56rem;   /* 896px */
-  --max-width-5xl: 64rem;   /* 1024px */
-  --max-width-6xl: 72rem;   /* 1152px */
-  --max-width-7xl: 80rem;   /* 1280px */
-  --max-width-full: 100%;
+	/* Max Width */
+	--max-width-sm: 24rem; /* 384px */
+	--max-width-md: 28rem; /* 448px */
+	--max-width-lg: 32rem; /* 512px */
+	--max-width-xl: 36rem; /* 576px */
+	--max-width-2xl: 42rem; /* 672px */
+	--max-width-3xl: 48rem; /* 768px */
+	--max-width-4xl: 56rem; /* 896px */
+	--max-width-5xl: 64rem; /* 1024px */
+	--max-width-6xl: 72rem; /* 1152px */
+	--max-width-7xl: 80rem; /* 1280px */
+	--max-width-full: 100%;
 
-  /* Typography */
-  --font-serif: 'Pridi', serif;
-  --font-sans: 'Stack Sans Headline', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-  
-  /* EcoHubs Colors */
-  --color-ecohubs-base: #fbfbf9;
-  --color-ecohubs-text: #1c1917;
-  --color-ecohubs-primary: #059669;
-  --color-ecohubs-dark: #064e3b;
-  --color-ecohubs-accent: #d97706;
-  --color-ecohubs-light: #a7f3d0;
+	/* Typography: Pridi for display and headings, Stack Sans Text for reading,
+	   Stack Sans Headline for UI (navigation, labels, badges, buttons). */
+	--font-serif: 'Pridi', Georgia, serif;
+	--font-sans:
+		'Stack Sans Text Variable', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+	--font-ui:
+		'Stack Sans Headline Variable', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+		sans-serif;
+	--font-mono: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
 
-  /* Spacing Scale */
-  --spacing-xs: 0.5rem;
-  --spacing-sm: 0.75rem;
-  --spacing-md: 1rem;
-  --spacing-lg: 1.5rem;
-  --spacing-xl: 2rem;
-  --spacing-2xl: 3rem;
-  --spacing-3xl: 4rem;
-  --spacing-4xl: 6rem;
+	/* ---- Redesign tokens (2026) -------------------------------------------
+	   New components use only these. The older semantic tokens above stay until
+	   the components that use them are replaced, then they are removed.
 
-  /* Border Radius */
-  --radius-sm: 0.25rem;
-  --radius-md: 0.5rem;
-  --radius-lg: 0.75rem;
-  --radius-xl: 1rem;
-  --radius-2xl: 1.5rem;
-  --radius-full: 9999px;
+	   Visual language: forest = normative (the rules); clay = guidance and
+	   optional parts (modules, MAY). The forest-* scale above already holds the
+	   design's greens. */
 
-  /* Shadows */
-  --shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.05);
-  --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
-  --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
-  --shadow-xl: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
+	/* Clay: guidance, optional, MAY */
+	--color-clay-950: #5d4d35;
+	--color-clay-900: #8b5a2a;
+	--color-clay-800: #a66b3a;
+	--color-clay-700: #8b6f47;
+	--color-clay-600: #c47d4a;
+	--color-clay-500: #d4a574;
+	--color-clay-400: #e0b586;
+	--color-clay-300: #e8c9a0;
+	--color-clay-200: #ffecd6;
+	--color-clay-100: #f5efe4;
+	--color-clay-50: #fffaf3;
+
+	/* Surfaces and text, by role: light-dark(light, dark). The active scheme comes
+	   from `color-scheme` on <html> (set from the theme choice, or the system
+	   setting), so one definition covers both modes and the no-JS fallback. */
+	--color-paper: light-dark(#fbfbf9, #0e1409); /* page background */
+	--color-paper-2: light-dark(#f1f1ee, #182112); /* inset fields, search, segmented controls */
+	--color-card: light-dark(#ffffff, #141c0e); /* cards, panels, menus */
+	--color-line: light-dark(#e5e7eb, #2b3622); /* borders */
+	--color-line-soft: light-dark(#eef0ea, #212b19); /* separators inside cards */
+	--color-ink: light-dark(#1f2937, #eef2e8); /* body text */
+	--color-ink-2: light-dark(#374151, #d5dccb); /* secondary text */
+	--color-ink-muted: light-dark(#4b5563, #b4bea8); /* descriptions */
+	--color-ink-faint: light-dark(
+		#6b7280,
+		#949e88
+	); /* labels, meta; 4.6:1 on paper (design's #9ca3af failed AA) */
+	--color-brand: light-dark(#1a3009, #22400e); /* dark green surfaces: CTA, footer, intro cards */
+	--color-brand-ink: light-dark(#f5fde5, #f5fde5); /* text on brand */
+	--color-brand-accent: light-dark(#b5da82, #b5da82); /* accents on brand */
+	--color-link: light-dark(#2d5016, #b5da82);
+	--color-link-line: light-dark(#b5da82, #4a7c2a); /* link underline */
+	--color-hover: light-dark(#f5fde5, #1b2614); /* row hover */
+	--color-selected: light-dark(#eef4e4, #22301a); /* open menu trigger, current nav item */
+	--color-focus: light-dark(#4a7c2a, #9ac966);
+
+	/* Guidance (non-normative) surfaces */
+	--color-guide: light-dark(#fffaf3, #1d1710);
+	--color-guide-panel: light-dark(#fffdf9, #191410);
+	--color-guide-line: light-dark(#eadfcd, #3f3324);
+	--color-guide-ink: light-dark(#5d4d35, #e9dcc6);
+	--color-guide-accent: light-dark(#8b5a2a, #e0b586);
+	--color-guide-chip: light-dark(#ffecd6, #3a2b1a);
+
+	/* RFC keyword chips */
+	--color-kw-must: light-dark(#ebfcba, #2b4a12);
+	--color-kw-must-ink: light-dark(#2d5016, #d0eb9e);
+	--color-kw-may: light-dark(#ffecd6, #4a3216);
+	--color-kw-may-ink: light-dark(#8b5a2a, #f0c99a);
+
+	/* Layer 0 (darkest) to 6 (lightest), with the text color that reads on each */
+	--color-layer-0: #1a3009;
+	--color-layer-1: #2d5016;
+	--color-layer-2: #4a7c2a;
+	--color-layer-3: #6b9f3d;
+	--color-layer-4: #9ac966;
+	--color-layer-5: #b5da82;
+	--color-layer-6: #d0eb9e;
+	--color-layer-ink-0: #ffffff;
+	--color-layer-ink-1: #ffffff;
+	--color-layer-ink-2: #ffffff;
+	--color-layer-ink-3: #1a3009;
+	--color-layer-ink-4: #1a3009;
+	--color-layer-ink-5: #1a3009;
+	--color-layer-ink-6: #1a3009;
+
+	/* Stress-test severity */
+	--color-severity-high: #c2410c;
+	--color-severity-medium: #e0b586;
+	--color-severity-low: light-dark(#d1d5db, #4b5563);
+
+	/* Shadows from the design */
+	--shadow-panel: 0 24px 40px -24px rgb(26 48 9 / 0.25); /* mega menu */
+	--shadow-sheet: -24px 0 48px -24px rgb(93 77 53 / 0.35); /* guide sheet */
+	--shadow-pop: 0 20px 40px -16px rgb(26 48 9 / 0.35); /* popovers */
+
+	/* EcoHubs Colors */
+	--color-ecohubs-base: #fbfbf9;
+	--color-ecohubs-text: #1c1917;
+	--color-ecohubs-primary: #059669;
+	--color-ecohubs-dark: #064e3b;
+	--color-ecohubs-accent: #d97706;
+	--color-ecohubs-light: #a7f3d0;
+
+	/* Spacing Scale */
+	--spacing-xs: 0.5rem;
+	--spacing-sm: 0.75rem;
+	--spacing-md: 1rem;
+	--spacing-lg: 1.5rem;
+	--spacing-xl: 2rem;
+	--spacing-2xl: 3rem;
+	--spacing-3xl: 4rem;
+	--spacing-4xl: 6rem;
+
+	/* Border Radius */
+	--radius-sm: 0.25rem;
+	--radius-md: 0.5rem;
+	--radius-lg: 0.75rem;
+	--radius-xl: 1rem;
+	--radius-2xl: 1.5rem;
+	--radius-full: 9999px;
+
+	/* Shadows */
+	--shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+	--shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+	--shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+	--shadow-xl: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
 }
-
 
 .prose.prose-article {
-  --tw-prose-quotes: var(--color-text-primary);
-  --tw-prose-quote-borders: var(--color-secondary);
-  --tw-prose-body: var(--color-text-primary);
-  --tw-prose-headings: var(--color-primary);
-  --tw-prose-strong: var(--color-text-primary);
-  --tw-prose-bold: var(--color-text-primary);
-  --tw-prose-links: var(--color-secondary);
-  --tw-prose-em: var(--color-text-primary);
-  --tw-prose-hr: var(--color-gray-300);
-  --tw-prose-code: var(--color-gray-400);
+	--tw-prose-quotes: var(--color-text-primary);
+	--tw-prose-quote-borders: var(--color-secondary);
+	--tw-prose-body: var(--color-text-primary);
+	--tw-prose-headings: var(--color-primary);
+	--tw-prose-strong: var(--color-text-primary);
+	--tw-prose-bold: var(--color-text-primary);
+	--tw-prose-links: var(--color-secondary);
+	--tw-prose-em: var(--color-text-primary);
+	--tw-prose-hr: var(--color-gray-300);
+	--tw-prose-code: var(--color-gray-400);
 
-  & :is(h1, h2, h3, h4, h5, h6) {
-    scroll-margin-top: 5rem;
-  }
+	& :is(h1, h2, h3, h4, h5, h6) {
+		scroll-margin-top: 5rem;
+	}
 
-  & details {
-    margin: 1rem 0;
-    padding: 0.25rem 1rem;
-    background: var(--color-surface-elevated);
-    border-left: 3px solid var(--color-primary-light);
-    border-radius: 0.375rem;
-  }
+	& details {
+		margin: 1rem 0;
+		padding: 0.25rem 1rem;
+		background: var(--color-surface-elevated);
+		border-left: 3px solid var(--color-primary-light);
+		border-radius: 0.375rem;
+	}
 
-  & details[open] {
-    padding-bottom: 0.75rem;
-  }
+	& details[open] {
+		padding-bottom: 0.75rem;
+	}
 
-  & details > summary {
-    cursor: pointer;
-    font-weight: 500;
-    color: var(--color-text-primary);
-    list-style: none;
-    padding: 0.5rem 0;
-    user-select: none;
-    transition: color 0.15s ease;
-  }
+	& details > summary {
+		cursor: pointer;
+		font-weight: 500;
+		color: var(--color-text-primary);
+		list-style: none;
+		padding: 0.5rem 0;
+		user-select: none;
+		transition: color 0.15s ease;
+	}
 
-  & details > summary::-webkit-details-marker {
-    display: none;
-  }
+	& details > summary::-webkit-details-marker {
+		display: none;
+	}
 
-  & details > summary::before {
-    content: '▸';
-    display: inline-block;
-    margin-right: 0.5rem;
-    color: var(--color-primary);
-    transition: transform 0.15s ease;
-  }
+	& details > summary::before {
+		content: '▸';
+		display: inline-block;
+		margin-right: 0.5rem;
+		color: var(--color-primary);
+		transition: transform 0.15s ease;
+	}
 
-  & details[open] > summary::before {
-    transform: rotate(90deg);
-  }
+	& details[open] > summary::before {
+		transform: rotate(90deg);
+	}
 
-  & details > summary:hover {
-    color: var(--color-primary);
-  }
+	& details > summary:hover {
+		color: var(--color-primary);
+	}
 
-  & details > *:not(summary) {
-    margin-top: 0;
-  }
+	& details > *:not(summary) {
+		margin-top: 0;
+	}
 }
 
+/* Stacking order. Use as z-(--z-header) etc. One scale for the whole site:
+   the header (with its mega menus) sits above every in-page layer, and
+   dialogs sit above the header. */
+:root {
+	--z-sticky: 10; /* in-page sticky bars, rails */
+	--z-header: 30; /* site header including mega menus */
+	--z-overlay: 40; /* backdrops */
+	--z-drawer: 50; /* drawers, guide sheet, search dialog */
+	--z-popover: 60; /* term popovers, menus, toasts */
+	--header-h: 4.25rem; /* measured and overwritten by the header */
+}
 
 /* Dark Mode Overrides - Class-based */
 :root.dark,
 html.dark {
-  /* Semantic Colors - Dark Mode */
-  --color-primary: var(--color-forest-400);
-  --color-primary-dark: var(--color-forest-500);
-  --color-primary-light: var(--color-forest-300);
-  --color-secondary: var(--color-soil-500);
-  --color-secondary-dark: var(--color-soil-600);
-  --color-secondary-light: var(--color-soil-400);
-  --color-accent: var(--color-blue-500);
-  --color-accent-dark: var(--color-blue-600);
-  --color-accent-light: var(--color-blue-400);
-  --color-highlight: var(--color-amber-400);
-  --color-highlight-dark: var(--color-amber-500);
-  --color-highlight-light: var(--color-amber-300);
+	/* Semantic Colors - Dark Mode */
+	--color-primary: var(--color-forest-400);
+	--color-primary-dark: var(--color-forest-500);
+	--color-primary-light: var(--color-forest-300);
+	--color-secondary: var(--color-soil-500);
+	--color-secondary-dark: var(--color-soil-600);
+	--color-secondary-light: var(--color-soil-400);
+	--color-accent: var(--color-blue-500);
+	--color-accent-dark: var(--color-blue-600);
+	--color-accent-light: var(--color-blue-400);
+	--color-highlight: var(--color-amber-400);
+	--color-highlight-dark: var(--color-amber-500);
+	--color-highlight-light: var(--color-amber-300);
 
-  /* Background Colors - Dark Mode */
-  --color-background: #0f1419;
-  --color-surface: #1a1f26;
-  --color-surface-elevated: #252b33;
-  --color-border: #374151;
+	/* Background Colors - Dark Mode */
+	--color-background: #0f1419;
+	--color-surface: #1a1f26;
+	--color-surface-elevated: #252b33;
+	--color-border: #374151;
 
-  /* Text Colors - Dark Mode */
-  --color-text-primary: #f9fafb;
-  --color-text-secondary: #d1d5db;
-  --color-text-tertiary: #9ca3af;
+	/* Text Colors - Dark Mode */
+	--color-text-primary: #f9fafb;
+	--color-text-secondary: #d1d5db;
+	--color-text-tertiary: #9ca3af;
 }
 
 /* System preference fallback */
 @media (prefers-color-scheme: dark) {
-  :root:not(.light):not(.dark),
-  html:not(.light):not(.dark) {
-    /* Semantic Colors - Dark Mode */
-    --color-primary: var(--color-forest-400);
-    --color-primary-dark: var(--color-forest-500);
-    --color-primary-light: var(--color-forest-300);
-    --color-secondary: var(--color-soil-500);
-    --color-secondary-dark: var(--color-soil-600);
-    --color-secondary-light: var(--color-soil-400);
-    --color-accent: var(--color-blue-500);
-    --color-accent-dark: var(--color-blue-600);
-    --color-accent-light: var(--color-blue-400);
-    --color-highlight: var(--color-amber-400);
-    --color-highlight-dark: var(--color-amber-500);
-    --color-highlight-light: var(--color-amber-300);
+	:root:not(.light):not(.dark),
+	html:not(.light):not(.dark) {
+		/* Semantic Colors - Dark Mode */
+		--color-primary: var(--color-forest-400);
+		--color-primary-dark: var(--color-forest-500);
+		--color-primary-light: var(--color-forest-300);
+		--color-secondary: var(--color-soil-500);
+		--color-secondary-dark: var(--color-soil-600);
+		--color-secondary-light: var(--color-soil-400);
+		--color-accent: var(--color-blue-500);
+		--color-accent-dark: var(--color-blue-600);
+		--color-accent-light: var(--color-blue-400);
+		--color-highlight: var(--color-amber-400);
+		--color-highlight-dark: var(--color-amber-500);
+		--color-highlight-light: var(--color-amber-300);
 
-    /* Background Colors - Dark Mode */
-    --color-background: #0f1419;
-    --color-surface: #1a1f26;
-    --color-surface-elevated: #252b33;
-    --color-border: #374151;
+		/* Background Colors - Dark Mode */
+		--color-background: #0f1419;
+		--color-surface: #1a1f26;
+		--color-surface-elevated: #252b33;
+		--color-border: #374151;
 
-    /* Text Colors - Dark Mode */
-    --color-text-primary: #f9fafb;
-    --color-text-secondary: #d1d5db;
-    --color-text-tertiary: #9ca3af;
-  }
+		/* Text Colors - Dark Mode */
+		--color-text-primary: #f9fafb;
+		--color-text-secondary: #d1d5db;
+		--color-text-tertiary: #9ca3af;
+	}
 }
 
 /* Base Styles */
 :root {
-  color-scheme: light dark;
+	color-scheme: light dark;
 }
 
 /* A saved theme choice also overrides native UI (scrollbars, form controls) */
 html.light {
-  color-scheme: light;
+	color-scheme: light;
 }
 
 html.dark {
-  color-scheme: dark;
+	color-scheme: dark;
 }
 
 html {
-  font-family: var(--font-sans);
-  line-height: 1.6;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+	font-family: var(--font-sans);
+	line-height: 1.6;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
 }
-
 
 body {
-  background-color: #fbfbf9;
-  color: var(--color-text-primary);
-  transition: background-color 0.3s ease, color 0.3s ease;
-  overflow-x: hidden;
+	background-color: #fbfbf9;
+	color: var(--color-text-primary);
+	transition:
+		background-color 0.3s ease,
+		color 0.3s ease;
+	overflow-x: hidden;
 }
-
 
 /* Focus Styles for Accessibility */
 :focus-visible {
-  outline: 2px solid var(--color-accent);
-  outline-offset: 2px;
+	outline: 2px solid var(--color-accent);
+	outline-offset: 2px;
 }
 
 /* Smooth Scrolling */
 html {
-  scroll-behavior: smooth;
+	scroll-behavior: smooth;
 }
 
 /* Reduced Motion Support */
 @media (prefers-reduced-motion: reduce) {
-  *,
-  *::before,
-  *::after {
-    animation-duration: 0.01ms !important;
-    animation-iteration-count: 1 !important;
-    transition-duration: 0.01ms !important;
-  }
-  
-  html {
-    scroll-behavior: auto;
-  }
+	*,
+	*::before,
+	*::after {
+		animation-duration: 0.01ms !important;
+		animation-iteration-count: 1 !important;
+		transition-duration: 0.01ms !important;
+	}
+
+	html {
+		scroll-behavior: auto;
+	}
 }
 
 /* Custom Scrollbar */
 ::-webkit-scrollbar {
-  width: 8px;
+	width: 8px;
 }
 ::-webkit-scrollbar-track {
-  background: #f0fdf4;
+	background: #f0fdf4;
 }
 ::-webkit-scrollbar-thumb {
-  background: #059669;
-  border-radius: 4px;
+	background: #059669;
+	border-radius: 4px;
 }
 
 /* Organic Glassmorphism (Light) */
 .glass-panel {
-  background: rgba(255, 255, 255, 0.7);
-  backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
-  border-bottom: 1px solid rgba(5, 150, 105, 0.1);
+	background: rgba(255, 255, 255, 0.7);
+	backdrop-filter: blur(12px);
+	-webkit-backdrop-filter: blur(12px);
+	border-bottom: 1px solid rgba(5, 150, 105, 0.1);
 }
 
 .glass-card {
-  background: rgba(255, 255, 255, 0.7);
-  backdrop-filter: blur(8px);
-  border: 1px solid rgba(5, 150, 105, 0.1);
-  box-shadow: 0 4px 20px -5px rgba(0, 0, 0, 0.08);
-  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+	background: rgba(255, 255, 255, 0.7);
+	backdrop-filter: blur(8px);
+	border: 1px solid rgba(5, 150, 105, 0.1);
+	box-shadow: 0 4px 20px -5px rgba(0, 0, 0, 0.08);
+	transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
 }
 .dark .glass-card {
-  background: rgba(50, 50, 50, 0.7);
+	background: rgba(50, 50, 50, 0.7);
 }
 
 .glass-card:hover {
-  background: rgba(255, 255, 255, 0.95);
-  border-color: rgba(5, 150, 105, 0.3);
-  transform: translateY(-5px);
-  box-shadow: 0 15px 30px -10px rgba(5, 150, 105, 0.2);
+	background: rgba(255, 255, 255, 0.95);
+	border-color: rgba(5, 150, 105, 0.3);
+	transform: translateY(-5px);
+	box-shadow: 0 15px 30px -10px rgba(5, 150, 105, 0.2);
 }
 .dark .glass-card:hover {
-  background: rgba(50, 50, 50, 0.95);
+	background: rgba(50, 50, 50, 0.95);
 }
 
 /* Organic Text Gradient */
 .text-gradient {
-  background: linear-gradient(135deg, #059669 0%, #0d9488 50%, #d97706 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
+	background: linear-gradient(135deg, #059669 0%, #0d9488 50%, #d97706 100%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	background-clip: text;
 }
 
 /* Image Masks for Organic Feel */
 .organic-shape {
-  border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
-  overflow: hidden;
-  transition: border-radius 1s ease;
+	border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+	overflow: hidden;
+	transition: border-radius 1s ease;
 }
 .organic-shape:hover {
-  border-radius: 40% 60% 70% 30% / 40% 50% 60% 50%;
+	border-radius: 40% 60% 70% 30% / 40% 50% 60% 50%;
 }
 
 /* Subtle Leaf Float Animation */
 .floating-leaf {
-  animation: float 6s ease-in-out infinite;
+	animation: float 6s ease-in-out infinite;
 }
 
 .floating-leaf-delay-2000 {
-  animation-delay: 2000ms;
+	animation-delay: 2000ms;
 }
 .floating-leaf-delay-1000 {
-  animation-delay: 1000ms;
+	animation-delay: 1000ms;
 }
-
 
 @keyframes float {
-  0% { transform: translateY(0px) rotate(0deg); }
-  50% { transform: translateY(-15px) rotate(5deg); }
-  100% { transform: translateY(0px) rotate(0deg); }
+	0% {
+		transform: translateY(0px) rotate(0deg);
+	}
+	50% {
+		transform: translateY(-15px) rotate(5deg);
+	}
+	100% {
+		transform: translateY(0px) rotate(0deg);
+	}
 }
 
-
 .animate-spin-slow-80 {
-  animation: spin-slow 80s linear infinite;
+	animation: spin-slow 80s linear infinite;
 }
 
 /* Spin Slow Animation */
 @keyframes spin-slow {
-  0% { transform: rotate(0deg); }
-  100% { transform: rotate(360deg); }
+	0% {
+		transform: rotate(0deg);
+	}
+	100% {
+		transform: rotate(360deg);
+	}
 }
 
 /* Button Micro-interactions */
 button {
-  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-  cursor: pointer;
+	transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+	cursor: pointer;
 }
 
 button:hover {
-  transform: translateY(-2px);
+	transform: translateY(-2px);
 }
 
 button:active {
-  transform: scale(0.98);
+	transform: scale(0.98);
 }
 
 /* Tailwind Transition Utilities */
 .transition-all-smooth {
-  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+	transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
 }
-

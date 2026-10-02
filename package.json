@@ -68,7 +68,9 @@
 		]
 	},
 	"dependencies": {
-		"@iconify/svelte": "^5.1.0",
+		"@fontsource-variable/stack-sans-headline": "^5.3.0",
+		"@fontsource-variable/stack-sans-text": "^5.3.0",
+		"@fontsource/pridi": "^5.3.0",
 		"gray-matter": "^4.0.3",
 		"js-yaml": "^4.1.1"
 	}

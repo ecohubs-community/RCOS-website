@@ -11,7 +11,7 @@
 		<p class="text-text-secondary">{m('search.no_results')}</p>
 	{:else if $filteredResults.length > 0}
 		<div class="space-y-4">
-			{#each $filteredResults as result}
+			{#each $filteredResults as result (result.id)}
 				<SearchResultCard {result} />
 			{/each}
 		</div>
