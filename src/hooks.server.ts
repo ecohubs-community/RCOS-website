@@ -5,6 +5,7 @@ import {
 	isLocale
 } from '$lib/i18n/languages';
 import { extractLocale } from '$lib/i18n/path';
+import { paraglideMiddleware } from '$lib/paraglide/server';
 
 /**
  * Locale negotiation order (per docs/translation-plan.md §0.4):
@@ -64,8 +65,11 @@ function resolveLocale(event: Parameters<Handle>[0]['event']): string {
 export const handle: Handle = async ({ event, resolve }) => {
 	event.locals.locale = resolveLocale(event);
 
-	return resolve(event, {
-		transformPageChunk: ({ html }) =>
-			html.replace('%lang%', event.locals.locale)
-	});
+	// Paraglide reads the locale from the URL (see vite.config.ts) and keeps it
+	// for this request, so `m.*()` in server-rendered components use it.
+	return paraglideMiddleware(event.request, () =>
+		resolve(event, {
+			transformPageChunk: ({ html }) => html.replace('%lang%', event.locals.locale)
+		})
+	);
 };
