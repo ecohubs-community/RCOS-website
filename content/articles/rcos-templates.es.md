@@ -9,7 +9,7 @@ sourceHash: 9daa7180
 
 ## Qué son las Plantillas RCOS
 
-Las Plantillas RCOS convierten la especificación abstracta del [Núcleo RCOS](/articles/rcos-core?id=fdd280ae) en documentos funcionales que una comunidad puede realmente completar. Están organizadas por **capa** (Capa 0 a Capa 6) y divididas en los **artefactos** concretos que requiere cada capa — por ejemplo, una *Carta de Propósito*, una *Declaración de Alcance*, un *Registro de Invariantes* o una *Matriz de Decisiones*.
+Las Plantillas RCOS convierten la especificación abstracta del [Núcleo RCOS](/standard) en documentos funcionales que una comunidad puede realmente completar. Están organizadas por **capa** (Capa 0 a Capa 6) y divididas en los **artefactos** concretos que requiere cada capa — por ejemplo, una *Carta de Propósito*, una *Declaración de Alcance*, un *Registro de Invariantes* o una *Matriz de Decisiones*.
 
 Cada plantilla:
 

@@ -20,11 +20,63 @@
  * @type {Record<string, Array<[string, string]>>}
  */
 const KEYWORDS = {
-	en: [['MUST NOT', 'must-not'], ['SHOULD NOT', 'should-not'], ['MUST', 'must'], ['SHOULD', 'should'], ['MAY', 'may']],
-	de: [['DARF NICHT', 'must-not'], ['DÜRFEN NICHT', 'must-not'], ['SOLLTE NICHT', 'should-not'], ['SOLLTEN NICHT', 'should-not'], ['MUSS', 'must'], ['MÜSSEN', 'must'], ['SOLLTE', 'should'], ['SOLLTEN', 'should'], ['KANN', 'may'], ['KÖNNEN', 'may']],
-	es: [['NO DEBE', 'must-not'], ['NO DEBEN', 'must-not'], ['NO DEBERÍA', 'should-not'], ['NO DEBERÍAN', 'should-not'], ['DEBE', 'must'], ['DEBEN', 'must'], ['DEBERÍA', 'should'], ['DEBERÍAN', 'should'], ['PUEDE', 'may'], ['PUEDEN', 'may']],
-	fr: [['NE DOIT PAS', 'must-not'], ['NE DOIVENT PAS', 'must-not'], ['NE DEVRAIT PAS', 'should-not'], ['NE DEVRAIENT PAS', 'should-not'], ['DOIT PAS', 'must-not'], ['DOIVENT PAS', 'must-not'], ['DOIT', 'must'], ['DOIVENT', 'must'], ['DEVRAIT', 'should'], ['DEVRAIENT', 'should'], ['PEUT', 'may'], ['PEUVENT', 'may']],
-	'pt-br': [['NÃO DEVE', 'must-not'], ['NÃO DEVEM', 'must-not'], ['NÃO DEVERIA', 'should-not'], ['NÃO DEVERIAM', 'should-not'], ['DEVE', 'must'], ['DEVEM', 'must'], ['DEVERIA', 'should'], ['DEVERIAM', 'should'], ['PODE', 'may'], ['PODEM', 'may']]
+	en: [
+		['MUST NOT', 'must-not'],
+		['SHOULD NOT', 'should-not'],
+		['MUST', 'must'],
+		['SHOULD', 'should'],
+		['MAY', 'may']
+	],
+	de: [
+		['DARF NICHT', 'must-not'],
+		['DÜRFEN NICHT', 'must-not'],
+		['SOLLTE NICHT', 'should-not'],
+		['SOLLTEN NICHT', 'should-not'],
+		['MUSS', 'must'],
+		['MÜSSEN', 'must'],
+		['SOLLTE', 'should'],
+		['SOLLTEN', 'should'],
+		['KANN', 'may'],
+		['KÖNNEN', 'may']
+	],
+	es: [
+		['NO DEBE', 'must-not'],
+		['NO DEBEN', 'must-not'],
+		['NO DEBERÍA', 'should-not'],
+		['NO DEBERÍAN', 'should-not'],
+		['DEBE', 'must'],
+		['DEBEN', 'must'],
+		['DEBERÍA', 'should'],
+		['DEBERÍAN', 'should'],
+		['PUEDE', 'may'],
+		['PUEDEN', 'may']
+	],
+	fr: [
+		['NE DOIT PAS', 'must-not'],
+		['NE DOIVENT PAS', 'must-not'],
+		['NE DEVRAIT PAS', 'should-not'],
+		['NE DEVRAIENT PAS', 'should-not'],
+		['DOIT PAS', 'must-not'],
+		['DOIVENT PAS', 'must-not'],
+		['DOIT', 'must'],
+		['DOIVENT', 'must'],
+		['DEVRAIT', 'should'],
+		['DEVRAIENT', 'should'],
+		['PEUT', 'may'],
+		['PEUVENT', 'may']
+	],
+	'pt-br': [
+		['NÃO DEVE', 'must-not'],
+		['NÃO DEVEM', 'must-not'],
+		['NÃO DEVERIA', 'should-not'],
+		['NÃO DEVERIAM', 'should-not'],
+		['DEVE', 'must'],
+		['DEVEM', 'must'],
+		['DEVERIA', 'should'],
+		['DEVERIAM', 'should'],
+		['PODE', 'may'],
+		['PODEM', 'may']
+	]
 };
 
 /** "Layer" in each language (as the translated standard writes it). */
@@ -82,7 +134,8 @@ function matcher(locale, terms) {
 			.map(escape);
 		// Keywords are case-sensitive (they are capitals on purpose); terms are not.
 		re = new RegExp(
-			`(?<kw>${word(`(?:${kws.join('|')})`)})|(?<layer>${word(layer)})` + (forms.length ? `|(?<term>(?i:${word(`(?:${forms.join('|')})`)}))` : ''),
+			`(?<kw>${word(`(?:${kws.join('|')})`)})|(?<layer>${word(layer)})` +
+				(forms.length ? `|(?<term>(?i:${word(`(?:${forms.join('|')})`)}))` : ''),
 			'gu'
 		);
 		cache.set(id, re);
@@ -118,7 +171,12 @@ export function tokenize(text, { locale, terms, seen }) {
 			if (at > last) parts.push({ t: 'text', text: plain.slice(last, at) });
 			if (g.kw) parts.push({ t: 'kw', text: g.kw, kind: /** @type {string} */ (kinds.get(g.kw)) });
 			else if (g.layer) parts.push({ t: 'layer', text: g.layer, n: Number(g.layer.slice(-1)) });
-			else if (g.term) parts.push({ t: 'term', text: g.term, key: /** @type {string} */ (byForm.get(g.term.toLowerCase())) });
+			else if (g.term)
+				parts.push({
+					t: 'term',
+					text: g.term,
+					key: /** @type {string} */ (byForm.get(g.term.toLowerCase()))
+				});
 			last = at + m[0].length;
 		}
 		if (last < plain.length) parts.push({ t: 'text', text: plain.slice(last) });

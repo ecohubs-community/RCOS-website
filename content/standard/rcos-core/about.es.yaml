@@ -1,5 +1,5 @@
 lang: es
-sourceHash: '138621ab'
+sourceHash: '2af05666'
 title: Núcleo RCOS
 intro: ''
 sections:
@@ -294,4 +294,4 @@ sections:
     title: Registro de cambios
     blocks:
       b1:
-        md: '- [v0.1](/articles/rcos-core/v0-1?id=e6de7a5d) — Versión inicial'
+        md: '- [v0.1](/standard/core/0.1) — Versión inicial'

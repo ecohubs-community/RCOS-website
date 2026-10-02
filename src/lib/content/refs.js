@@ -108,7 +108,7 @@ export function resolveAll(value, t) {
 export const refsIn = (/** @type {string} */ text) => [...text.matchAll(LINK)].map((m) => m[1]);
 
 /**
- * The reverse of resolveRefs: turn hard-coded article links into `rcos:` refs.
+ * The reverse of resolveRefs: turn hard-coded site links into `rcos:` refs.
  * A link is only rewritten when resolving the new ref gives back exactly the
  * same URL, so linkify never changes where a link goes.
  * @param {string} text
@@ -117,16 +117,19 @@ export const refsIn = (/** @type {string} */ text) => [...text.matchAll(LINK)].m
  */
 export function linkify(text, t) {
 	const byUrl = inverse(t);
-	return text.replace(/\[([^\]]*)\]\((\/(?:articles|standard)\/[^)\s?]+)\)/g, (whole, label, url) => {
-		const [base, fragment] = url.split('#');
-		/** @type {string | undefined} */
-		let ref = byUrl.anchors.get(url);
-		if (!ref) {
-			const doc = byUrl.docs.get(base);
-			if (doc) ref = fragment ? `${doc}#${fragment}` : doc;
+	return text.replace(
+		/\[([^\]]*)\]\((\/(?:articles|standard)\/[^)\s?]+)\)/g,
+		(whole, label, url) => {
+			const [base, fragment] = url.split('#');
+			/** @type {string | undefined} */
+			let ref = byUrl.anchors.get(url);
+			if (!ref) {
+				const doc = byUrl.docs.get(base);
+				if (doc) ref = fragment ? `${doc}#${fragment}` : doc;
+			}
+			return ref && resolveRef(ref, t) === url ? `[${label}](rcos:${ref})` : whole;
 		}
-		return ref && resolveRef(ref, t) === url ? `[${label}](rcos:${ref})` : whole;
-	});
+	);
 }
 
 /** @type {WeakMap<RefTargets, { anchors: Map<string, string>, docs: Map<string, string> }>} */
@@ -152,7 +155,7 @@ function inverse(t) {
  */
 export function linkifyAll(value, t) {
 	if (typeof value === 'string')
-		return /** @type {T} */ (value.includes('](/articles/') ? linkify(value, t) : value);
+		return /** @type {T} */ (/\]\(\/(articles|standard)\//.test(value) ? linkify(value, t) : value);
 	if (Array.isArray(value)) return /** @type {T} */ (value.map((v) => linkifyAll(v, t)));
 	if (value && typeof value === 'object')
 		return /** @type {T} */ (

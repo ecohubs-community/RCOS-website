@@ -31,7 +31,6 @@ async function walk(dir) {
 	return out;
 }
 
-
 /**
  * @typedef {Record<string, any> & { kind: string, legacyPath: string }} EnDoc
  * @typedef {{ file: string, en: EnDoc, overlays: Record<string, { file: string, data: Record<string, any> }> }} LoadedDoc
@@ -53,7 +52,9 @@ export async function loadDocuments(contentDir = DEFAULT_CONTENT) {
 		if (!en?.kind) {
 			// Data about the standard, not an article.
 			if (DATA_FILES.has(path.basename(file))) continue;
-			throw new Error(`${path.relative(contentDir, file)}: no \`kind\` (and not a known data file)`);
+			throw new Error(
+				`${path.relative(contentDir, file)}: no \`kind\` (and not a known data file)`
+			);
 		}
 		/** @type {LoadedDoc['overlays']} */
 		const overlays = {};
@@ -70,4 +71,3 @@ export async function loadDocuments(contentDir = DEFAULT_CONTENT) {
 	}
 	return docs;
 }
-

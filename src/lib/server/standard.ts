@@ -14,6 +14,8 @@ import { renderBlock, renderInline } from '$lib/content/render.js';
 import { headingSlug } from '$lib/content/markdown.js';
 import { DEFAULT_LOCALE } from '$lib/i18n/languages';
 
+// YAML documents are checked by the content schema, not by TypeScript.
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
 type Doc = Record<string, any>;
 type Loaded = Awaited<ReturnType<typeof loadDocuments>>[number];
 
@@ -107,7 +109,11 @@ function localized(d: Loaded, locale: string): { doc: Doc; fallback: boolean } {
 
 // --- Chapter identity -------------------------------------------------------------------
 
-const fileName = (d: Loaded) => d.file.split('/').pop()!.replace(/\.yaml$/, '');
+const fileName = (d: Loaded) =>
+	d.file
+		.split('/')
+		.pop()!
+		.replace(/\.yaml$/, '');
 
 /** "02-layer-0-…" → "2"; "appendix-a-…" → "A"; anything else → null. */
 function chapterNumber(d: Loaded): string | null {
@@ -142,7 +148,11 @@ function localizeLinks(md: string, locale: string): string {
 const localizePath = (path: string, locale: string) =>
 	locale === DEFAULT_LOCALE ? path : `/${locale}${path}`;
 
-function renderParts(parts: Part[], locale: string, layerHref: (n: number) => string): RenderedPart[] {
+function renderParts(
+	parts: Part[],
+	locale: string,
+	layerHref: (n: number) => string
+): RenderedPart[] {
 	return parts.map((p): RenderedPart => {
 		if (p.t === 'md') return { t: 'html', html: renderInline(localizeLinks(p.md, locale)) };
 		if (p.t === 'layer') return { ...p, href: localizePath(layerHref(p.n), locale) };
@@ -201,7 +211,8 @@ export async function standardPage(path: string, locale: string): Promise<Standa
 
 	const terms: StandardPage['terms'] = {};
 	for (const t of glossary.terms as Doc[]) {
-		if (used.has(t.key)) terms[t.key] = { term: t.term, definitionHtml: renderInline(t.definition) };
+		if (used.has(t.key))
+			terms[t.key] = { term: t.term, definitionHtml: renderInline(t.definition) };
 	}
 
 	const order = await chapterOrder();
@@ -282,8 +293,21 @@ export async function standardNav(locale: string): Promise<StandardNav> {
 		for (const s of d.en.sections ?? []) {
 			if (!s.ref) continue;
 			nav.anchors[s.ref] = localizePath(path, locale);
-			for (const b of s.blocks) if (b.kind === 'clause') nav.anchors[b.ref] = localizePath(path, locale);
+			for (const b of s.blocks)
+				if (b.kind === 'clause') nav.anchors[b.ref] = localizePath(path, locale);
 		}
 	}
 	return nav;
+}
+
+/** Every page with the locales it exists in and its source file per locale (for the sitemap). */
+export async function standardSitemap(): Promise<
+	{ path: string; locales: string[]; files: Record<string, string> }[]
+> {
+	const { pages } = await load();
+	return [...pages.entries()].map(([path, d]) => {
+		const files: Record<string, string> = { [DEFAULT_LOCALE]: d.file };
+		for (const [locale, o] of Object.entries(d.overlays)) files[locale] = o.file;
+		return { path, locales: Object.keys(files), files };
+	});
 }

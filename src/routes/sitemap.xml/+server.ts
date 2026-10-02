@@ -1,5 +1,6 @@
 import { buildGraph } from '$lib/server/graph';
 import { readArticleMeta } from '$lib/server/content';
+import { standardSitemap } from '$lib/server/standard';
 import { getFileDates } from '$lib/server/dates';
 import { SITE_URL } from '$lib/config/site';
 import { LOCALES, DEFAULT_LOCALE } from '$lib/i18n/languages';
@@ -74,7 +75,21 @@ export const GET: RequestHandler = async () => {
 		lastmod: lastmodBySlug.get(article.slug)
 	}));
 
-	const allEntries = [...staticEntries, ...articleEntries];
+	// The standard, served from its YAML (one source file per locale).
+	const standardEntries: Entry[] = (await standardSitemap()).map(({ path, locales, files }) => ({
+		path,
+		availableLocales: locales,
+		changefreq: 'weekly',
+		priority: path === '/standard' || /^\/standard\/core\/[^/]+\/[^/]+$/.test(path) ? '0.8' : '0.6',
+		lastmod: Object.fromEntries(
+			Object.entries(files).flatMap(([loc, file]) => {
+				const modified = fileDates.get(file)?.modified;
+				return modified ? [[loc, modified]] : [];
+			})
+		)
+	}));
+
+	const allEntries = [...staticEntries, ...standardEntries, ...articleEntries];
 
 	const renderUrl = (entry: Entry, loc: string) => {
 		const alternates =

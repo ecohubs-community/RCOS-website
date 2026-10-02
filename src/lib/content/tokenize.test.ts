@@ -36,7 +36,11 @@ describe('tokenize', () => {
 	});
 
 	it('keeps inline markdown whole and does not match inside it', () => {
-		const parts = tokenize('See [Layer 2](rcos:§4.1) and **MUST**.', { locale: 'en', terms, seen: new Set() });
+		const parts = tokenize('See [Layer 2](rcos:§4.1) and **MUST**.', {
+			locale: 'en',
+			terms,
+			seen: new Set()
+		});
 		expect(parts).toEqual([
 			{ t: 'text', text: 'See ' },
 			{ t: 'md', md: '[Layer 2](rcos:§4.1)' },
@@ -47,18 +51,33 @@ describe('tokenize', () => {
 	});
 
 	it('knows the translated keywords and layer word', () => {
-		const de = tokenize('Eine Gemeinschaft DARF NICHT … gemäß Schicht 2; sie MUSS …', { locale: 'de', terms: [], seen: new Set() });
+		const de = tokenize('Eine Gemeinschaft DARF NICHT … gemäß Schicht 2; sie MUSS …', {
+			locale: 'de',
+			terms: [],
+			seen: new Set()
+		});
 		expect(de.filter((p) => p.t !== 'text')).toEqual([
 			{ t: 'kw', text: 'DARF NICHT', kind: 'must-not' },
 			{ t: 'layer', text: 'Schicht 2', n: 2 },
 			{ t: 'kw', text: 'MUSS', kind: 'must' }
 		]);
-		const fr = tokenize('Elles NE DOIVENT PAS … et DOIVENT …', { locale: 'fr', terms: [], seen: new Set() });
-		expect(fr.filter((p) => p.t === 'kw').map((p) => ('kind' in p ? p.kind : ''))).toEqual(['must-not', 'must']);
+		const fr = tokenize('Elles NE DOIVENT PAS … et DOIVENT …', {
+			locale: 'fr',
+			terms: [],
+			seen: new Set()
+		});
+		expect(fr.filter((p) => p.t === 'kw').map((p) => ('kind' in p ? p.kind : ''))).toEqual([
+			'must-not',
+			'must'
+		]);
 	});
 
 	it('does not match a word inside another word', () => {
-		const parts = tokenize('PODEMOS e DEVERIAMENTE', { locale: 'pt-br', terms: [], seen: new Set() });
+		const parts = tokenize('PODEMOS e DEVERIAMENTE', {
+			locale: 'pt-br',
+			terms: [],
+			seen: new Set()
+		});
 		expect(parts).toEqual([{ t: 'text', text: 'PODEMOS e DEVERIAMENTE' }]);
 	});
 });

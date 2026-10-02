@@ -80,13 +80,13 @@
 				{ num: '3.6.2', text: m.home_clause_3_6_2 },
 				{ num: '3.6.5', text: m.home_clause_3_6_5 }
 			],
-			path: '/articles/rcos-core/v0-1/layer-1-membership-system'
+			path: '/standard/core/0.1/layer-1-membership-system'
 		},
 		{
 			question: m.home_what_example_purpose_question,
 			layer: 0,
 			clauses: [{ num: '2.1.1', text: m.home_clause_2_1_1 }],
-			path: '/articles/rcos-core/v0-1/layer-0-identity-scope'
+			path: '/standard/core/0.1/layer-0-identity-scope'
 		}
 	];
 
@@ -128,7 +128,7 @@
 			name: m.home_parts_core_name,
 			what: m.home_parts_core_what,
 			use: m.home_parts_core_use,
-			path: '/articles/rcos-core/v0-1',
+			path: '/standard/core/0.1',
 			example: `§3.6.1 “${m.home_clause_3_6_1()}”`
 		},
 		{
@@ -146,7 +146,7 @@
 			name: m.home_parts_modules_name,
 			what: m.home_parts_modules_what,
 			use: m.home_parts_modules_use,
-			path: '/articles/rcos-modules',
+			path: '/standard/modules',
 			example: m.home_parts_modules_example()
 		},
 		{
@@ -374,7 +374,7 @@
 					<IconInfoCircle class="w-5 h-5 shrink-0" />
 					<span>{m.home_what_must_note()}</span>
 				</p>
-				<Button variant="ghost" href={href('/articles/rcos-core/v0-1')} class="gap-2 shrink-0">
+				<Button variant="ghost" href={href('/standard/core/0.1')} class="gap-2 shrink-0">
 					{m.home_what_read_core()}
 					<IconArrowRight class="w-4 h-4" />
 				</Button>

@@ -24,7 +24,8 @@ const STANDARD_NAME = { 'rcos-core': 'core' };
  * @returns {string | null} site path, or null when the file is not part of the standard
  */
 export function standardRoute(file, en) {
-	const m = /(?:^|\/)content\/standard\/(.+)\.yaml$/.exec(file) ?? /^standard\/(.+)\.yaml$/.exec(file);
+	const m =
+		/(?:^|\/)content\/standard\/(.+)\.yaml$/.exec(file) ?? /^standard\/(.+)\.yaml$/.exec(file);
 	if (!m) return null;
 	const parts = m[1].split('/');
 	const rest = parts.slice(1);

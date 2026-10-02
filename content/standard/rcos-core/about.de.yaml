@@ -1,5 +1,5 @@
 lang: de
-sourceHash: '138621ab'
+sourceHash: '2af05666'
 title: RCOS-Kern
 intro: ''
 sections:
@@ -294,4 +294,4 @@ sections:
     title: Änderungsprotokoll
     blocks:
       b1:
-        md: '- [v0.1](/articles/rcos-core/v0-1?id=e6de7a5d) — Erste Version'
+        md: '- [v0.1](/standard/core/0.1) — Erste Version'

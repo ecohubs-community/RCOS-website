@@ -14,7 +14,7 @@
  * Runs from the Vite plugin in vite.config.ts (dev and build), or by hand:
  *   node scripts/content/build-articles.mjs
  */
-import { readFile, writeFile, mkdir, readdir, rm, cp } from 'node:fs/promises';
+import { writeFile, mkdir, rm, cp } from 'node:fs/promises';
 import { existsSync } from 'node:fs';
 import path from 'node:path';
 import { toArticle } from '../../src/lib/content/article.js';
