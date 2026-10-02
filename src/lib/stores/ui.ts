@@ -4,10 +4,6 @@ import { writable } from 'svelte/store';
 export const sidebarOpen = writable(false);
 export const theme = writable<'light' | 'dark' | undefined>(undefined);
 
-// Content sidebar navigation state
-export const contentSidebarMode = writable<'main' | 'content'>('main');
-export const contentSidebarVisible = writable(false);
-
 export function toggleSidebar() {
   sidebarOpen.update((v) => !v);
 }
@@ -18,23 +14,6 @@ export function closeSidebar() {
 
 export function openSidebar() {
   sidebarOpen.set(true);
-}
-
-// Content sidebar navigation functions
-export function showContentSidebar() {
-  contentSidebarVisible.set(true);
-}
-
-export function hideContentSidebar() {
-  contentSidebarVisible.set(false);
-}
-
-export function setContentSidebarMode(mode: 'main' | 'content') {
-  contentSidebarMode.set(mode);
-}
-
-export function backToMainMenu() {
-  contentSidebarMode.set('main');
 }
 
 type Theme = 'light' | 'dark';

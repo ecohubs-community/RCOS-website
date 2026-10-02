@@ -5,8 +5,8 @@ import { localizePath } from '$lib/i18n/path';
  *
  *   /articles/old-slug?id=4a376956#part  →  /de/articles/current-slug#part   (on a /de page)
  *
- * - `?id=` is how the admin editor writes links (CrepeEditor): the id survives
- *   renames, the slug does not. Resolve the id to the article's current slug,
+ * - `?id=` links were written by the former admin editor and still appear in
+ *   content: the id survives renames, the slug does not. Resolve the id to the article's current slug,
  *   then drop it, so every article has one URL instead of one per query string.
  * - Prefix the active locale, so a German page links to German pages rather
  *   than sending readers (and crawlers) back to the English URLs.
