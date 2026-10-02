@@ -38,7 +38,8 @@
 	}
 
 	$effect(() => {
-		if (!GA_MEASUREMENT_ID || !consent.value) return;
+		// No choice (yet, or no longer) counts as declined.
+		if (!GA_MEASUREMENT_ID || !consent.ready) return;
 		window.gtag('consent', 'update', {
 			analytics_storage: consent.value === 'accepted' ? 'granted' : 'denied',
 			ad_storage: 'denied',

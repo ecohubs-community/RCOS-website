@@ -40,6 +40,17 @@ function writeCookie(value: Consent) {
 			: '';
 	const secure = location.protocol === 'https:' ? '; Secure' : '';
 	document.cookie = `${CONSENT_COOKIE}=${value}; Path=/; Max-Age=${MAX_AGE_SECONDS}; SameSite=Lax${domain}${secure}`;
+	// Once the cookie is really there, drop any legacy value, so it can never
+	// bring an old choice back after the cookie expires.
+	if (readCookie()) removeLegacy();
+}
+
+function removeLegacy() {
+	try {
+		localStorage.removeItem(LEGACY_KEY);
+	} catch {
+		// Storage blocked: nothing stored there either.
+	}
 }
 
 function readLegacy(): Consent | null {
@@ -51,6 +62,21 @@ function readLegacy(): Consent | null {
 	}
 }
 
+/** The cookie, or a legacy choice migrated into it (once). */
+function readStored(): Consent | null {
+	const stored = readCookie();
+	if (stored) {
+		// The cookie wins (it may have been set on the other site); a legacy value
+		// next to it is stale.
+		removeLegacy();
+		return stored;
+	}
+	const legacy = readLegacy();
+	if (!legacy) return null;
+	writeCookie(legacy);
+	return readCookie() ?? legacy;
+}
+
 class ConsentState {
 	/** null = not decided yet; the banner shows. */
 	value = $state<Consent | null>(null);
@@ -59,13 +85,23 @@ class ConsentState {
 
 	init() {
 		if (!browser || this.ready) return;
-		let stored = readCookie();
-		if (!stored) {
-			stored = readLegacy();
-			if (stored) writeCookie(stored);
-		}
-		this.value = stored;
+		this.value = readStored();
 		this.ready = true;
+	}
+
+	/**
+	 * Re-read the shared cookie. The choice can change on ecohubs.community in
+	 * another tab, and nothing tells this page; call this when it comes back
+	 * into view.
+	 */
+	refresh() {
+		if (!browser || !this.ready) return;
+		const stored = readStored();
+		if (stored === this.value) return;
+		this.value = stored;
+		// The choice is gone (cookie expired or deleted elsewhere): let the banner
+		// show again, which the pre-paint class would otherwise keep hidden.
+		if (stored === null) document.documentElement.classList.remove('consent-known');
 	}
 
 	choose(value: Consent) {
