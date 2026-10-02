@@ -24,9 +24,6 @@
 			{m('articles.fallback_default')}
 		</span>
 	</div>
-	{#if result.snippet}
-		<p class="text-sm text-secondary mb-2">{@html result.snippet}</p>
-	{/if}
 	{#if result.meta}
 		<p class="text-xs text-tertiary">{result.meta}</p>
 	{/if}

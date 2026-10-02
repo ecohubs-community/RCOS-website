@@ -59,7 +59,7 @@
 		</header>
 
 		<div class="grid gap-3 sm:grid-cols-3">
-			{#each downloads.formats as fmt}
+			{#each downloads.formats as fmt (fmt)}
 				{@const info = FORMAT_INFO[fmt]}
 				<a
 					href={downloads.bundles[fmt]}
@@ -93,13 +93,13 @@
 				{m('downloads.toggle_single')}
 			</summary>
 			<div class="mt-4 space-y-4 pl-2">
-				{#each Array.from(new Set(downloads.templates.map((t) => t.layer))) as layer}
+				{#each [...new Set(downloads.templates.map((t) => t.layer))] as layer (layer)}
 					<div>
 						<h3 class="text-sm font-semibold text-text-primary uppercase tracking-wide mb-2">
 							{m('downloads.layer_label', { layer: layer.replace(/^layer-/, '') })}
 						</h3>
 						<ul class="space-y-1.5">
-							{#each downloads.templates.filter((t) => t.layer === layer) as t}
+							{#each downloads.templates.filter((t) => t.layer === layer) as t (t.id)}
 								<li class="flex flex-wrap items-center gap-x-3 gap-y-1 text-sm">
 									<a
 										href={localized(`/articles/${t.slug}`, locale)}
@@ -116,7 +116,7 @@
 										</span>
 									{/if}
 									<span class="flex items-center gap-2 text-xs text-text-tertiary">
-										{#each downloads.formats as fmt}
+										{#each downloads.formats as fmt (fmt)}
 											<a
 												href={t.files[fmt]}
 												download
@@ -161,7 +161,7 @@
 			{/if}
 		</div>
 		<div class="flex flex-wrap gap-2">
-			{#each downloads.formats as fmt}
+			{#each downloads.formats as fmt (fmt)}
 				{@const info = FORMAT_INFO[fmt]}
 				<a
 					href={downloads.files[fmt]}
@@ -194,7 +194,7 @@
 			{/if}
 		</div>
 		<div class="flex flex-wrap gap-2">
-			{#each downloads.formats as fmt}
+			{#each downloads.formats as fmt (fmt)}
 				{@const info = FORMAT_INFO[fmt]}
 				<a
 					href={downloads.files[fmt]}

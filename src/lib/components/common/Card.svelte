@@ -3,7 +3,7 @@
 		href?: string;
 		class?: string;
 		children?: import('svelte').Snippet;
-		[key: string]: any;
+		[key: string]: unknown;
 	}
 
 	let { href, class: className = '', children, ...rest }: Props = $props();

@@ -4,6 +4,7 @@
 	import Icon from '@iconify/svelte';
 	import type { Article } from '$lib/server/graph';
 	import { untrack } from 'svelte';
+	import { SvelteSet } from 'svelte/reactivity';
 	import { m } from '$lib/i18n';
 	import { localized, stripLocale } from '$lib/i18n/path';
 	import { DEFAULT_LOCALE } from '$lib/i18n/languages';
@@ -22,7 +23,7 @@
 	const maxDepth = $derived(props.maxDepth ?? 4);
 
 	// Track expanded state for each article
-	let expandedIds = $state<Set<string>>(new Set());
+	const expandedIds = new SvelteSet<string>();
 
 	// Auto-expand parents when the active article changes
 	$effect(() => {
@@ -33,18 +34,7 @@
 			const slug = currentPath.replace('/articles/', '');
 			untrack(() => {
 				const parentIds = getParentIds(tree, slug);
-				if (parentIds) {
-					let changed = false;
-					parentIds.forEach((id) => {
-						if (!expandedIds.has(id)) {
-							expandedIds.add(id);
-							changed = true;
-						}
-					});
-					if (changed) {
-						expandedIds = new Set(expandedIds);
-					}
-				}
+				parentIds?.forEach((id) => expandedIds.add(id));
 			});
 		}
 	});
@@ -67,30 +57,24 @@
 	}
 
 	function toggleExpanded(id: string) {
-		if (expandedIds.has(id)) {
-			expandedIds.delete(id);
-		} else {
-			expandedIds.add(id);
-		}
-		expandedIds = new Set(expandedIds);
+		if (expandedIds.has(id)) expandedIds.delete(id);
+		else expandedIds.add(id);
 	}
 
 	function expandAll() {
-		const allIds = new Set<string>();
 		function collect(nodes: Article[]) {
 			for (const node of nodes) {
 				if (node.children.length > 0) {
-					allIds.add(node.id);
+					expandedIds.add(node.id);
 					collect(node.children);
 				}
 			}
 		}
 		collect($articleTree);
-		expandedIds = allIds;
 	}
 
 	function collapseAll() {
-		expandedIds = new Set();
+		expandedIds.clear();
 	}
 
 	function isActive(slug: string): boolean {
@@ -134,7 +118,7 @@
 
 	{#if $articleTree.length > 0}
 		<div class="space-y-0.5">
-			{#each $articleTree as article}
+			{#each $articleTree as article (article.id)}
 				{@render NavItem({ node: article, level: 0 })}
 			{/each}
 		</div>
@@ -177,7 +161,7 @@
 
 		{#if hasChildren && isExpanded && level < maxDepth}
 			<div class="ml-2 pl-4 border-l border-border mt-0.5 space-y-0.5">
-				{#each node.children as child}
+				{#each node.children as child (child.id)}
 					{@render NavItem({ node: child, level: level + 1 })}
 				{/each}
 			</div>

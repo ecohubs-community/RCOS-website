@@ -1,5 +1,5 @@
 <script lang="ts">
-	import type { HTMLButtonAttributes, HTMLAnchorAttributes } from 'svelte/elements';
+	import type { HTMLButtonAttributes } from 'svelte/elements';
 
 	interface Props {
 		variant?: 'primary' | 'secondary' | 'outline' | 'ghost' | 'danger';
@@ -9,7 +9,7 @@
 		disabled?: boolean;
 		type?: HTMLButtonAttributes['type'];
 		children?: import('svelte').Snippet;
-		[key: string]: any;
+		[key: string]: unknown;
 	}
 
 	let {

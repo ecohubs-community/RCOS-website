@@ -50,7 +50,7 @@
 		<!-- Article hierarchy breadcrumbs (no Home / Articles) -->
 		{#if breadcrumbs.length > 1}
 			<nav class="flex items-center gap-2 text-sm text-text-tertiary">
-				{#each breadcrumbs as crumb, i}
+				{#each breadcrumbs as crumb, i (crumb.slug)}
 					{#if i > 0}
 						<Icon icon="tabler:chevron-right" class="w-4 h-4" />
 					{/if}
@@ -83,7 +83,7 @@
 			<!-- Tags -->
 			{#if article.tags?.length}
 				<div class="flex flex-wrap gap-2">
-					{#each article.tags as tag}
+					{#each article.tags as tag (tag)}
 						<span class="px-2 py-1 text-xs rounded-full bg-green-100 text-green-700">{tag}</span>
 					{/each}
 				</div>
@@ -97,6 +97,7 @@
 		<!-- Article Content -->
 		<article class="prose prose-article prose-lg max-w-none" lang={data.bodyLang}>
 			{#if data.body}
+				<!-- eslint-disable-next-line svelte/no-at-html-tags -- our own markdown, compiled at build time -->
 				{@html data.body}
 			{:else}
 				<p class="text-text-tertiary italic">{m('articles.no_content')}</p>
@@ -119,7 +120,7 @@
 					{m('articles.sub_articles')}
 				</h2>
 				<div class="grid gap-4 sm:grid-cols-2">
-					{#each article.children as child}
+					{#each article.children as child (child.id)}
 						<Card href={localized(`/articles/${child.slug}`, locale)} class="flex flex-col">
 							<h3
 								class="text-lg font-semibold text-text-primary group-hover:text-primary transition-colors"

@@ -1,11 +1,10 @@
-import { writable, derived } from 'svelte/store';
+import { writable } from 'svelte/store';
 import MiniSearch from 'minisearch';
 
 export type SearchResult = {
 	id: string;
 	slug: string;
 	title: string;
-	snippet?: string;
 	meta?: string;
 	parentId?: string | null;
 };
@@ -48,7 +47,6 @@ function runSearch() {
 		id: doc.id,
 		slug: doc.slug,
 		title: doc.title,
-		snippet: doc.snippet,
 		meta: doc.meta,
 		parentId: doc.parentId
 	}));

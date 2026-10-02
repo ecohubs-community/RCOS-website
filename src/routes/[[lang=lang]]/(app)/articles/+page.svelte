@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { articles, rootArticles, articleTree } from '$lib/stores/graph';
+	import { articles, rootArticles } from '$lib/stores/graph';
 	import Card from '$lib/components/common/Card.svelte';
 	import Icon from '@iconify/svelte';
 	import type { Article } from '$lib/server/graph';
@@ -44,7 +44,7 @@
 
 	<!-- Root Level Articles -->
 	<div class="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-		{#each $rootArticles as article}
+		{#each $rootArticles as article (article.id)}
 			{@const totalChildren = getChildCount(article)}
 
 			<Card href={localized(`/articles/${article.slug}`, locale)} class="h-full flex flex-col">

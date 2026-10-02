@@ -1,4 +1,4 @@
-import type { Graph, Article, ArticleTree } from '$lib/server/graph';
+import type { Graph, Article } from '$lib/server/graph';
 import { writable, derived } from 'svelte/store';
 
 // Main graph store

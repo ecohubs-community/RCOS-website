@@ -58,8 +58,13 @@
 	};
 	const ogLocale = (code: string) => OG_LOCALES[code] ?? code.replace('-', '_');
 
-	const jsonLdScript = $derived(
-		jsonLd ? JSON.stringify(Array.isArray(jsonLd) ? jsonLd : jsonLd) : undefined
+	// `<` is escaped so no string inside the data can close the script element.
+	// The closing tag is split so it doesn't end this component's own <script>.
+	const jsonLdTag = $derived(
+		jsonLd
+			? `<script type="application/ld+json">${JSON.stringify(jsonLd).replace(/</g, '\\u003c')}</` +
+					'script>'
+			: undefined
 	);
 
 	// Locales we will emit <link rel="alternate" hreflang="..."> for.
@@ -119,7 +124,8 @@
 		<meta name="robots" content="noindex, nofollow" />
 	{/if}
 
-	{#if jsonLdScript}
-		{@html `<script type="application/ld+json">${jsonLdScript}</script>`}
+	{#if jsonLdTag}
+		<!-- eslint-disable-next-line svelte/no-at-html-tags -- JSON-LD built from our own data, `<` escaped above -->
+		{@html jsonLdTag}
 	{/if}
 </svelte:head>
