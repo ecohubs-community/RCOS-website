@@ -42,12 +42,14 @@ function writeCookie(value: Consent) {
 	document.cookie = `${CONSENT_COOKIE}=${value}; Path=/; Max-Age=${MAX_AGE_SECONDS}; SameSite=Lax${domain}${secure}`;
 	// Once the cookie is really there, drop any legacy value, so it can never
 	// bring an old choice back after the cookie expires.
-	if (readCookie()) {
-		try {
-			localStorage.removeItem(LEGACY_KEY);
-		} catch {
-			// Storage blocked: nothing stored there either.
-		}
+	if (readCookie()) removeLegacy();
+}
+
+function removeLegacy() {
+	try {
+		localStorage.removeItem(LEGACY_KEY);
+	} catch {
+		// Storage blocked: nothing stored there either.
 	}
 }
 
@@ -63,7 +65,12 @@ function readLegacy(): Consent | null {
 /** The cookie, or a legacy choice migrated into it (once). */
 function readStored(): Consent | null {
 	const stored = readCookie();
-	if (stored) return stored;
+	if (stored) {
+		// The cookie wins (it may have been set on the other site); a legacy value
+		// next to it is stale.
+		removeLegacy();
+		return stored;
+	}
 	const legacy = readLegacy();
 	if (!legacy) return null;
 	writeCookie(legacy);
@@ -90,7 +97,11 @@ class ConsentState {
 	refresh() {
 		if (!browser || !this.ready) return;
 		const stored = readStored();
-		if (stored !== this.value) this.value = stored;
+		if (stored === this.value) return;
+		this.value = stored;
+		// The choice is gone (cookie expired or deleted elsewhere): let the banner
+		// show again, which the pre-paint class would otherwise keep hidden.
+		if (stored === null) document.documentElement.classList.remove('consent-known');
 	}
 
 	choose(value: Consent) {
