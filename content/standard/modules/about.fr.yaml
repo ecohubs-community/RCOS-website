@@ -1,0 +1,125 @@
+lang: fr
+sourceHash: 7c0821e2
+title: Modules RCOS
+intro: ''
+sections:
+  s1:
+    title: Modules
+    blocks:
+      b1:
+        md: Les modules sont des extensions optionnelles et spécifiques à un domaine du RCOS Core. Ils permettent aux communautés d'ajouter de la structure là où c'est nécessaire, sans surcharger le système central ni imposer une uniformité entre différents contextes.
+      b2:
+        md: Le RCOS est intentionnellement minimal en son cœur. Les modules existent pour soutenir la diversité des objectifs, d'échelle, d'écologie, de culture et de pratique, tout en préservant un socle structurel commun.
+      b3:
+        md: '### Ce que sont les modules'
+      b4:
+        md: |-
+          Les modules sont :
+          - Des extensions optionnelles du RCOS Core
+          - Explicitement adoptés et documentés
+          - Limités à des domaines ou pratiques spécifiques
+          - Compatibles avec la conformité RCOS
+          - Conçus pour être composables et supprimables
+      b5:
+        md: |-
+          Un module peut introduire :
+          - Des règles ou contraintes supplémentaires
+          - De nouveaux artefacts ou registres
+          - Des rôles spécialisés ou des domaines de décision
+          - Des garanties ou invariants supplémentaires dans son périmètre
+      b6:
+        md: '### Ce que les modules ne sont pas'
+      b7:
+        md: |-
+          Les modules ne sont pas :
+          - Requis pour la conformité au RCOS Core
+          - Des attentes ou normes implicites
+          - Des couches de gouvernance cachées
+          - Des bonnes pratiques universelles
+          - Des substituts aux couches du RCOS Core
+      b8:
+        md: Si un module n'est pas explicitement adopté, il NE DOIT PAS être considéré comme applicable.
+      b9:
+        md: '### Relation avec le RCOS Core'
+      b10:
+        md: |-
+          Les modules :
+          - NE DOIVENT PAS contredire l'objectif, le périmètre ou les invariants de la Couche 0
+          - DOIVENT respecter les contraintes de gouvernance définies dans la Couche 2
+          - DOIVENT s'intégrer aux artefacts et mécanismes de décision existants
+          - PEUVENT étendre ou spécialiser les règles des Couches 3 à 6 dans leur périmètre déclaré
+      b11:
+        md: Les modules ne peuvent pas outrepasser les invariants fondamentaux. Lorsqu'un module introduit des règles plus strictes, ces règles ne s'appliquent que dans le domaine déclaré du module.
+      b12:
+        md: '### À qui s''adressent les modules'
+      b13:
+        md: |-
+          Les modules sont destinés aux :
+          - Communautés ayant des besoins opérationnels ou écologiques spécifiques
+          - Projets nécessitant une structure supplémentaire dans un domaine
+          - Communautés à différents stades de maturité
+          - Groupes expérimentant dans des conditions sûres et délimitées
+      b14:
+        md: |-
+          Les modules permettent :
+          - Aux petites communautés de rester simples
+          - Aux communautés complexes d'ajouter de la structure progressivement
+          - Aux communautés diverses de rester interopérables
+      b15:
+        md: '### Quand appliquer des modules'
+      b16:
+        md: |-
+          Un module DEVRAIT être envisagé quand :
+          - Un domaine devient critique pour la survie ou l'identité de la communauté
+          - Des pratiques informelles commencent à créer de l'ambiguïté ou un déséquilibre de pouvoir
+          - Des conflits récurrents émergent dans un domaine spécifique
+          - Des systèmes externes (juridiques, écologiques, financiers) introduisent des risques
+          - La communauté acquiert la capacité et la stabilité nécessaires pour supporter davantage de structure
+      b17:
+        md: |-
+          Un module NE DEVRAIT PAS être appliqué :
+          - Pour compenser des défaillances de gouvernance fondamentale non résolues
+          - Pour imposer des valeurs sans consentement explicite
+          - Comme substitut à la résolution de conflits
+          - Quand la communauté n'a pas la capacité de le maintenir
+      b18:
+        md: '### Comment les modules sont appliqués'
+      b19:
+        md: |-
+          Pour appliquer un module, une communauté DOIT :
+          - Adopter explicitement le module par une décision autorisée
+          - Déclarer le périmètre et les interfaces du module
+          - Créer ou adopter les artefacts requis
+          - Attribuer la responsabilité de propriété et de maintenance
+          - Documenter comment le module interagit avec les règles existantes
+      b20:
+        md: |-
+          Les modules PEUVENT être :
+          - Limités dans le temps
+          - Expérimentaux
+          - Adoptés progressivement
+          - Partiellement mis en œuvre, si cela est explicitement défini
+      b21:
+        md: '### Cycle de vie des modules'
+      b22:
+        md: |-
+          Les modules suivent les mêmes règles d'évolution que le cœur du système :
+          - Adoption par la gouvernance formelle
+          - Versionnage et documentation
+          - Revue périodique
+          - Modification ou suppression par des processus de changement définis
+      b23:
+        md: |-
+          Un module PEUT être supprimé si :
+          - Son domaine n'est plus pertinent
+          - Il introduit une charge disproportionnée
+          - Il entre en conflit avec des règles fondamentales mises à jour
+          - La communauté choisit explicitement de simplifier
+      b24:
+        md: '### Principe de conception'
+      b25:
+        md: 'Les modules existent pour répondre à une seule question :'
+      b26:
+        md: '> « Où avons-nous besoin de plus de structure que ce que le cœur fournit — et pourquoi ? »'
+      b27:
+        md: Ils permettent aux communautés de croître **en capacité sans croître dans le chaos**, tout en maintenant le RCOS Core stable, minimal et interopérable.

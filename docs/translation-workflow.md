@@ -7,7 +7,17 @@ runbook — designed to be followed by either a human contributor or an AI
 agent.
 
 Replace `<locale>` with the target locale code (`de`, `es`, …) and `<scope>`
-with a path filter (e.g. `rcos-core/v0-1`).
+with a path filter (e.g. `rcos-core/0.1`).
+
+**Where translations live (since phase 2 of the redesign).** The standard,
+the templates, the layer guides and the stress tests are YAML under
+`content/standard`, `content/templates`, `content/layers` and
+`content/stress-tests`. Each English `<name>.yaml` has one overlay per locale,
+`<name>.<locale>.yaml`, holding only the translated text (keyed by section,
+clause or block id) plus `lang` and `sourceHash`. `pnpm run translate` handles
+both these and the remaining markdown articles in `content/articles`. For YAML
+it translates the document as a markdown article and stores the result as an
+overlay, and it rejects a translation whose structure differs from English.
 
 ---
 
@@ -87,17 +97,13 @@ Optional flags:
 
 ```bash
 # 1. Spot-check 1–2 outputs by hand
-$EDITOR content/articles/<scope>/...<locale>.md
+$EDITOR content/<scope>/...<locale>.yaml        # or content/articles/…<locale>.md
 
-# 2. Normalize term/keyword consistency (safety net — both scripts are idempotent)
-pnpm run normalize:rfc-keywords -- --locale <locale>
-pnpm run normalize:terms        -- --locale <locale>
-
-# 3. Verify drift detector reports clean
+# 2. Verify drift detector reports clean
 pnpm run check:translations -- --locale <locale>
 
-# 4. Commit
-git add 'content/articles/**/*.<locale>.md'
+# 3. Commit
+git add 'content/**/*.<locale>.yaml' 'content/articles/**/*.<locale>.md'
 git commit -m "Translate <scope> to <Language>"
 ```
 
@@ -129,8 +135,6 @@ After deploy, verify in the browser:
 pnpm run check:translations -- --locale <locale>                       # see what's needed
 pnpm run translate -- --locale <locale> --only <scope> --dry-run       # preview
 pnpm run translate -- --locale <locale> --only <scope>                 # execute
-pnpm run normalize:rfc-keywords -- --locale <locale>                   # safety pass
-pnpm run normalize:terms        -- --locale <locale>                   # safety pass
 ```
 
 ---

@@ -1,0 +1,123 @@
+kind: glossary
+legacyPath: rcos-core/v0-1/appendix-a-glossary
+id: c0516132
+title: Appendix A — Glossary
+parentId: e6de7a5d
+order: 120
+intro: |-
+  This glossary provides **informative definitions** for key terms used throughout the RCOS specification.  
+  Glossary entries do not introduce new requirements and do not override normative sections.
+terms:
+  - key: accountability
+    term: Accountability
+    definition: The expectation that roles and members can be asked to explain actions, outcomes, and adherence to agreed rules, with defined review and correction mechanisms.
+  - key: accountability-protocol
+    term: Accountability Protocol
+    definition: An artifact defining how violations, harms, or repeated failures are reviewed, documented, and addressed, including due process, safeguards, and escalation paths.
+  - key: artifact
+    term: Artifact
+    definition: A documented, versioned object (e.g. protocol, registry, charter) adopted through an authorized process and used to operationalize RCOS layers.
+  - key: authority-boundary
+    term: Authority Boundary
+    definition: The explicit limits within which a role, circle, or body may make decisions or act.
+  - key: change-protocol
+    term: Change Protocol
+    definition: An artifact defining how changes are proposed, reviewed, adopted, published, and rolled back, including decision type classification and emergency provisions.
+  - key: commons
+    term: Commons
+    definition: Resources governed collectively under explicit stewardship, access, and decision rules.
+  - key: community
+    term: Community
+    definition: A group of people who voluntarily coordinate around a shared purpose within a defined scope and governance system.
+  - key: compliance
+    term: Compliance
+    definition: The state of meeting all mandatory requirements of RCOS-Core across Layers 0–6.
+  - key: conflict-resolution-ladder
+    term: Conflict Resolution Ladder
+    definition: A staged conflict process defining minimum resolution steps and escalation thresholds, from low-intensity repair to governance review and, if necessary, separation.
+  - key: constitutional-decision
+    term: Constitutional Decision
+    definition: A decision that modifies Layer 0 purpose, scope, invariants, or identity constraints, or the governance system itself.
+  - key: decision-matrix
+    term: Decision Matrix
+    definition: A governance artifact mapping decision types and domains to authorized roles, mechanisms, thresholds, and escalation paths.
+  - key: decision-type
+    term: Decision Type
+    definition: A classification of decisions (Operational, Strategic, Constitutional) used to determine authority and process.
+  - key: due-process
+    term: Due Process
+    definition: The minimum fairness guarantees required before restricting rights, applying sanctions, or triggering separation, including notice, review, and appeal pathways as defined.
+  - key: emergency-change
+    term: Emergency Change
+    definition: A time-bounded change enacted under explicitly defined emergency conditions, requiring post-hoc review and ratification or rollback.
+  - key: explicit
+    term: Explicit
+    definition: |-
+      Written, adopted, accessible, and reviewable.  
+      Anything not explicit is treated as non-existent under RCOS.
+  - key: explicitness-rule
+    term: Explicitness Rule
+    definition: The principle that mechanisms allocating power, risk, responsibility, or exit conditions must be written, adopted, and reviewable.
+  - key: experiment
+    term: Experiment
+    definition: A time-bounded, reversible change adopted for learning and evaluation.
+  - key: exit-separation-protocol
+    term: Exit & Separation Protocol
+    definition: An artifact defining voluntary exit, forced exit due process, and separation of assets, roles, access, and obligations.
+  - key: governance-protocol
+    term: Governance Protocol
+    definition: An artifact defining the decision lifecycle (proposal, deliberation, adoption, documentation, review) and how governance conflicts are resolved.
+  - key: in-scope-out-of-scope
+    term: In-Scope / Out-of-Scope
+    definition: In-scope refers to people, assets, domains, and activities explicitly governed by the community. Out-of-scope refers to everything explicitly excluded or not declared in scope.
+  - key: internal-economy-protocol
+    term: Internal Economy Protocol
+    definition: An artifact defining contribution recognition and any internal exchange mechanisms, including accumulation constraints and dispute correction.
+  - key: invariant
+    term: Invariant
+    definition: A non-negotiable constraint that cannot be overridden while it is in force.
+  - key: layer
+    term: Layer
+    definition: A functional domain of RCOS that defines a specific aspect of community operation.
+  - key: learning-log
+    term: Learning Log
+    definition: An artifact capturing major failures, adaptations, reversals, and lessons learned, including triggers, affected artifacts, and outcomes.
+  - key: member
+    term: Member
+    definition: A person who has explicitly entered the community through the defined membership process.
+  - key: optional-module
+    term: Optional Module
+    definition: A domain-specific extension that builds on RCOS-Core without altering its mandatory layers.
+  - key: registry
+    term: Registry
+    definition: An artifact that records a set of authoritative entries (e.g., roles, resources, membership states) with clear ownership, update rules, and version history.
+  - key: reference-implementation
+    term: Reference Implementation
+    definition: A real-world community that publicly documents its application of RCOS-Core.
+  - key: role
+    term: Role
+    definition: An explicitly defined bundle of responsibilities, authority, and accountability, independent of the person holding it.
+  - key: safety-critical
+    term: Safety-Critical
+    definition: A condition where physical, psychological, or child safety is at risk, requiring elevated safeguards and potentially immediate protective action.
+  - key: sanction
+    term: Sanction
+    definition: A defined, documented restriction or corrective action applied through authorized process, proportionate to a violation and subject to review.
+  - key: scope
+    term: Scope
+    definition: The explicitly declared domains, assets, and activities over which the community exercises authority.
+  - key: stewardship
+    term: Stewardship
+    definition: Responsibility for care, maintenance, and governance of a resource within defined boundaries.
+  - key: treasury
+    term: Treasury
+    definition: The set of shared resources, balances, obligations, and commitments held under collective rules.
+  - key: treasury-ruleset
+    term: Treasury Ruleset
+    definition: An artifact defining how treasury resources are held, spent, reported, audited, and constrained, including thresholds and conflict-of-interest rules.
+  - key: transparency-exception
+    term: Transparency Exception
+    definition: An explicitly defined, justified, time-bounded limitation on information access that still permits compliance auditing.
+  - key: version-history
+    term: Version History
+    definition: An artifact recording which version is in force and documenting adopted changes, effective dates, and decision references.

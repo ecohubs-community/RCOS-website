@@ -1,0 +1,57 @@
+kind: doc
+legacyPath: rcos-layers/layer-0-identity-scope
+headingLevel: 3
+id: 4a376956
+title: Layer 0 - Identity & Scope
+parentId: a7759be1
+order: 0
+head: '**What problem does this community exist to solve?**'
+sections:
+  - id: purpose
+    title: '**Purpose**'
+    md: |-
+      * **Primary purpose (singular)**
+      * **Secondary purposes (bounded)**
+  - id: scope
+    title: '**Scope**'
+    md: |-
+      Defines what the community governs and is responsible for.
+      Purpose: prevent silent scope creep and power confusion.
+
+      * **Physical assets (land, buildings)**
+      * **Shared infrastructure**
+      * **Economic activities**
+      * **Legal entities**
+      * **Geographic or digital boundaries**
+  - id: invariants
+    title: '**Invariants**'
+    md: "Explicitly defined non-negotiables.\nPurpose: create hard limits that even consensus cannot override casually.\n\n* **What\_*cannot*\_be changed without dissolution or reboot**\n\n#### Examples\n\n* “Land cannot be sold”\n* “This community is non-speculative”\n* “Children’s safety rules override all other decisions”"
+  - id: artifacts
+    title: '**Artifacts**'
+    md: |-
+      * Purpose Charter
+        * Primary purpose (1 sentence)
+        * Secondary purposes (bounded list)
+        * Conditions for changing purpose
+      * Scope Declaration
+        * What is inside governance
+        * What is outside governance
+        * Interfaces with the external world
+  - id: layer-invariants
+    title: '**Layer Invariants**'
+    md: "* **Invariant 0.1: Single primary purpose**\n  A community must have exactly one primary purpose at any given time.\n* **Invariant 0.2: Explicit governed scope**\n  All assets, domains, and responsibilities under community governance must be explicitly declared.\n* **Invariant 0.3: Declared non-governed space**\n  Anything not listed as “in scope” is explicitly\_*out of scope*\_and not subject to community authority.\n* **Invariant 0.4: Protected invariants**\n  Declared invariants cannot be changed without following the highest constitutional threshold or dissolution.\n\n## Explicitness Rules"
+  - id: must-be-explicit
+    title: MUST be explicit
+    md: "* Primary purpose\n* Governed scope (assets, domains, authority)\n* Declared invariants\n* Conditions for purpose change\n\n**Why:**\_ambiguity here creates silent power grabs."
+  - id: may-be-explicit
+    title: MAY be explicit
+    md: |-
+      * Secondary purposes
+      * External affiliations
+      * Long-term vision statements
+  - id: must-remain-optional
+    title: MUST remain optional
+    md: |-
+      * Ideology
+      * Spiritual framing
+      * Cultural narratives

@@ -17,6 +17,7 @@ import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 import matter from 'gray-matter';
 import { getStrings, SUPPORTED_LOCALES } from './i18n.mjs';
+import { buildArticles } from './content/build-articles.mjs';
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const ROOT = path.resolve(__dirname, '..');
@@ -87,9 +88,9 @@ const slugify = (s) =>
 		.replace(/\s+/g, '-');
 
 async function buildCoreV01ForLocale(locale) {
-	const v01Dir = path.join(ROOT, 'content/articles/rcos-core/v0-1');
-	const corePath = path.join(ROOT, 'content/articles');
-	const v01ParentDir = path.join(ROOT, 'content/articles/rcos-core');
+	const v01Dir = path.join(ROOT, '.content-build/articles/rcos-core/v0-1');
+	const corePath = path.join(ROOT, '.content-build/articles');
+	const v01ParentDir = path.join(ROOT, '.content-build/articles/rcos-core');
 
 	if (!existsSync(v01Dir) || !existsSync(path.join(v01ParentDir, 'v0-1.md'))) {
 		console.warn(`[build-core] rcos-core/v0-1 content not found, skipping locale ${locale}`);
@@ -190,6 +191,8 @@ async function buildCoreV01ForLocale(locale) {
 }
 
 async function main() {
+	// The articles are generated from content/**.yaml; make sure they are current.
+	await buildArticles({ quiet: true });
 	console.log('Building RCOS Core v0.1 spec, per-locale ...');
 
 	// Clean old per-locale spec outputs (without nuking template artifacts).

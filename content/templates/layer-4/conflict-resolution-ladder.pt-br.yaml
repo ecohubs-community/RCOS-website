@@ -1,0 +1,133 @@
+lang: pt-br
+sourceHash: f6582746
+title: Escada de Resolução de Conflitos
+preamble: |-
+  - **Camada:** 4 — Conflito, Reparação e Responsabilização
+  - **Status:** Modelo — adapte para sua comunidade
+  - **Referência RCOS:** [§6.1](rcos:§6.1), [§6.2](rcos:§6.2), [§6.3](rcos:§6.3), [§6.5](rcos:§6.5)
+
+  ---
+sections:
+  conflict-classification:
+    title: Classificação de Conflitos
+    blocks:
+      rationale:
+        summary: Por que classificar conflitos?
+        body: Sem classes nomeadas, toda disputa acaba tratada da mesma forma — ou, pior, tratada de forma diferente dependendo de quem está envolvido. Classes explícitas definem o ponto de entrada, o prazo de resposta e o ônus de documentação desde o início, de modo que questões críticas de segurança não possam ser silenciosamente encaminhadas por meio de uma conversa amigável e atritos menores não possam ser instrumentalizados em uma revisão formal.
+      instructions:
+        summary: Como preencher
+        body: Para cada classe, defina os critérios de entrada, o passo inicial na escada, o prazo de resposta inicial e o ônus de documentação.
+      m1:
+        md: |-
+          | Classe | Critérios de entrada | Ponto de entrada | Prazo de resposta inicial | Documentação |
+          |---|---|---|---|---|
+          | _<Interpessoal>_ | _<atrito entre membros>_ | _<Passo 1>_ | _<prazo>_ | _<a partir de qual passo>_ |
+          | _<Baseado em papéis>_ | _<disputa sobre desempenho de papel>_ | _<...>_ | _<...>_ | _<...>_ |
+          | _<Estrutural>_ | _<disputa sobre processo de governança>_ | _<...>_ | _<...>_ | _<...>_ |
+          | _<Ética / violação de obrigação>_ | _<...>_ | _<...>_ | _<...>_ | _<...>_ |
+          | _<Crítico de segurança>_ | _<risco de segurança crível, coerção, abuso ou ameaças>_ | _<contorna passos anteriores>_ | _<prazo curto>_ | _<desde a abertura; ação imediata permitida>_ |
+      m2:
+        md: '> Conflitos críticos de segurança prevalecem sobre direitos de participação, continuidade de papéis e conveniência operacional.'
+  resolution-ladder-steps:
+    title: Passos da Escada de Resolução
+    blocks:
+      rationale:
+        summary: Por que uma escada em etapas em vez de um único processo?
+        body: A maior parte dos conflitos é de baixo impacto e é melhor resolvida entre as pessoas envolvidas; forçar tudo para uma revisão formal destruiria a confiança e sobrecarregaria o sistema de governança. Uma escada ajusta o peso do processo ao peso da disputa — conversa privada primeiro, diálogo facilitado em seguida, registro escrito apenas quando necessário, votação de governança somente quando tudo mais falhar. Isso também torna a escalada um direito estrutural, e não um favor concedido por quem detém poder social.
+      instructions:
+        summary: Como preencher
+        body: 'Defina cada passo da escada: quem está envolvido, o que acontece, o prazo e a regra de escalada. Mantenha os primeiros passos leves e confidenciais; reserve a revisão formal para passos posteriores.'
+      m1:
+        md: |-
+          1. **Conversa direta** — _<as partes tentam resolver em privado; prazo; regras de resultado.>_
+          2. **Diálogo facilitado** — _<facilitador conduz a conversa; confidencialidade; prazo; regras de resultado.>_
+          3. **Abertura de responsabilização** — _<registro formal escrito aberto; submissões; prazo; regras de resultado.>_
+          4. **Revisão de responsabilização** — _<revisão estruturada; ambas as partes presentes; recomendação escrita; prazo; regras de resultado.>_
+          5. **Decisão de governança** — _<divulgação mínima necessária aos Membros Plenos; período de deliberação; mecanismo de votação e limiar.>_
+          6. **Processo de separação** — _<coordenado com o Protocolo de Saída e Separação; bloqueio mínimo para reaplicação.>_
+  non-response-withdrawal-and-deadlock:
+    title: Não-Resposta, Retirada e Impasse
+    blocks:
+      rationale:
+        summary: O que impede que um processo seja morto pelo silêncio?
+        body: A maneira mais fácil de derrotar qualquer processo de responsabilização é ignorá-lo. Se a não-resposta, a retirada ou o impasse deixam o assunto congelado, é a parte que sofre o dano que arca com o custo da inação. Regras explícitas para cada modo de falha convertem o silêncio em um gatilho documentado de escalada, em vez de um veto.
+      instructions:
+        summary: Como preencher
+        body: Defina como a não-resposta, a retirada no meio do processo, o impasse e a falha procedimental são tratados. Cada um deve ter um caminho de escalada documentado.
+      m1:
+        md: |-
+          **Se uma parte não responder dentro do prazo definido:**
+          - _<Aviso de acompanhamento; período de tolerância adicional; tratamento do silêncio continuado como não-resolução; regra de escalada.>_
+      m2:
+        md: |-
+          **Se uma parte se retirar no meio do processo:**
+          - _<Notificação da retirada; opção para a outra parte encerrar ou solicitar um resumo escrito; regra de escalada para questões de responsabilização pendentes.>_
+      m3:
+        md: |-
+          **Impasse (todas as tentativas de resolução esgotadas):**
+          - _<Documentação do impasse; escalada para decisão de governança.>_
+      m4:
+        md: |-
+          **Revisão de falha procedimental:**
+          - _<Como objeções procedimentais são levantadas; onde são registradas; gatilho para revisão deste artefato sob o Protocolo de Mudança.>_
+      m5:
+        md: '---'
+  facilitator-selection-and-replacement:
+    title: Seleção e Substituição de Facilitador
+    blocks:
+      rationale:
+        summary: Por que definir como o Facilitador é escolhido ou substituído?
+        body: Um facilitador implicado no conflito — ou socialmente alinhado a uma das partes — não consegue conduzir o processo de forma justa, por melhores que sejam suas intenções. Definir regras de seleção e substituição com antecedência significa que a parte afetada não precisa lutar por uma escuta neutra enquanto já está sob estresse.
+      instructions:
+        summary: Como preencher
+        body: Indique o papel padrão do facilitador, a regra quando o facilitador é uma das partes, o direito de recusa e qualquer previsão de facilitação externa.
+      m1:
+        md: |-
+          - _<Papel padrão do facilitador conforme o Registro de Papéis.>_
+          - _<Regra quando o facilitador é uma das partes — seleção de um substituto neutro.>_
+          - _<Direito de qualquer das partes de recusar um facilitador com conflito de interesse declarado.>_
+          - _<Facilitação externa opcional mediante acordo mútuo.>_
+  privacy-and-information-access-boundaries:
+    title: Limites de Privacidade e Acesso à Informação
+    blocks:
+      rationale:
+        summary: Por que delimitar o fluxo de informação de forma tão estrita?
+        body: Os registros de conflito contêm o material mais sensível que a comunidade guarda. Vazamentos, fofocas ou divulgações casuais causam danos de segunda ordem e desencorajam relatos futuros. Limites explícitos — o que permanece com as partes, o que chega aos Membros Plenos e quando os registros são destruídos — tornam a confidencialidade exigível, e não meramente aspiracional.
+      instructions:
+        summary: Como preencher
+        body: Indique quais passos são totalmente confidenciais, qual a informação mínima que pode ser divulgada na etapa de governança, o período de retenção e a obrigação de não divulgação.
+      m1:
+        md: |-
+          - _<Passos 1–4: totalmente confidenciais; apenas as partes e o Facilitador podem acessar os registros.>_
+          - _<Passos 5–6: informação mínima necessária divulgada aos Membros Plenos; partes notificadas antes da divulgação. Defina o que significa "mínima necessária".>_
+          - _<Retenção de registros: quem guarda os registros, por quanto tempo, e quando são destruídos.>_
+          - _<Não divulgação: nenhum participante pode compartilhar informações sobre o processo fora dos participantes definidos sem o consentimento escrito de todas as partes.>_
+  safeguards:
+    title: Salvaguardas
+    blocks:
+      rationale:
+        summary: Por que existem salvaguardas além da escada?
+        body: Processo, por si só, não protege a parte com menos poder. Retaliação, denúncias de má-fé, facilitadores em conflito de interesse e riscos de segurança não revisados podem neutralizar até mesmo um bom procedimento. As salvaguardas são as redes de proteção que mantêm a escada funcional quando os incentivos atuam contra o relato honesto.
+      instructions:
+        summary: Como preencher
+        body: Para cada salvaguarda, indique a regra e a consequência quando ela é violada. Casos com diferencial de poder precisam de seu próprio canal de abertura.
+      m1:
+        md: |-
+          - **Antirretaliação:** _<retaliação contra um membro que levanta um conflito de boa-fé é, em si, motivo para um processo de responsabilização.>_
+          - **Denúncias de má-fé:** _<denúncias deliberadamente falsas podem desencadear um processo de responsabilização contra o denunciante.>_
+          - **Conflito de interesse do facilitador:** _<ver Seleção e Substituição de Facilitador.>_
+          - **Pausa do processo:** _<qualquer das partes pode pausar uma vez por até X dias mediante aviso escrito.>_
+          - **Ação imediata em caso crítico de segurança:** _<o facilitador pode recomendar uma restrição temporária de acesso aguardando revisão; prazo de revisão.>_
+          - **Diferencial de poder — canal de abertura separado:** _<quando há um diferencial de poder, o membro afetado pode submeter a abertura diretamente a um órgão diferente do Facilitador padrão.>_
+          - **Suspensão de papel durante a revisão:** _<os Membros Plenos podem suspender temporariamente a autoridade delegada de um detentor de papel durante a revisão, sem que isso constitua saída forçada.>_
+      m2:
+        md: '---'
+  ratification-record:
+    title: Registro de Ratificação
+    blocks:
+      m1:
+        md: |-
+          - **Adotado:** <AAAA-MM-DD>
+          - **Tipo de decisão:** Estratégica
+          - **Versão:** <versão>
+          - **Registro de decisão:** <link para o registro de decisão>

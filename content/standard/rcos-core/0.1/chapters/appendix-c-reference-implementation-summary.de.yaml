@@ -1,0 +1,109 @@
+lang: de
+sourceHash: e8263459
+title: Anhang C — Zusammenfassung der Referenzimplementierung
+intro: Dieser Anhang definiert eine **empfohlene Dokumentationsstruktur** für Gemeinschaften, die sich als RCOS-Referenzimplementierungen präsentieren möchten. Ziel ist es, die Übernahme überprüfbar, vergleichbar und lernbar zu machen, ohne eine Befürwortung zu implizieren.
+sections:
+  s1:
+    title: C.1 Gemeinschaftskontext
+    blocks:
+      b1:
+        md: |-
+          - Name und Standort
+          - Größe und Umfang (z. B. 12 Mitglieder; 3 Haushalte; 25 Hektar)
+          - Hauptzweck (Schicht 0)
+          - Gründungsdatum und Datum der RCOS-Übernahme (falls abweichend)
+          - Relevante Rechtsform(en) (falls vorhanden)
+          - Öffentliche Kontaktstelle
+  s2:
+    title: C.2 Überblick zur RCOS-Übernahme
+    blocks:
+      b1:
+        md: |-
+          - Verwendete RCOS-Core-Version
+          - Referenz zum Übernahme-Entscheidungsprotokoll (Autorität, Mechanismus, Datum)
+          - Zusammenfassung der übernommenen optionalen Module (falls vorhanden), einschließlich:
+            - Modulname und Geltungsbereich
+            - Übernahmedatum
+            - Link zur Modulspezifikation
+            - Deklarierte Layer-Abhängigkeiten
+  s3:
+    title: C.3 Layer-für-Layer-Zusammenfassung
+    blocks:
+      b1:
+        md: |-
+          Für jeden Layer (0–6):
+          - Implementierte Artefakte (mit Links)
+          - Abweichungen oder Anpassungen (mit Links)
+          - Bekannte Herausforderungen und aufgetretene Fehlermodi
+      b2:
+        md: 'Empfohlenes Format:'
+      b3:
+        md: |-
+          | Layer | Implementierte Pflichtartefakte | Öffentliche(r) Link(s) | Version/Datum | Anmerkungen |
+          |---:|---|---|---|---|
+          | 0 | Zweckcharta; Geltungsbereichserklärung; Invariantenregister | [Platzhalter] | v0.3 / 2026-01-01 | Zweck stabil; Invarianten werden vierteljährlich überprüft |
+          | 1 | Mitgliedschaftsvereinbarung; Onboarding-Protokoll; Austritts- & Trennungsprotokoll; Mitgliedschaftsstatus-Register | [Platzhalter] | v1.1 / 2026-02-15 | Probezeit beträgt 3 Monate |
+          | 2 | Entscheidungsmatrix; Governance-Protokoll; Autoritätenregister | [Platzhalter] | v0.8 / 2026-03-10 | Konsent für operative, Abstimmung für strategische Entscheidungen |
+          | 3 | Protokoll für die interne Wirtschaft; Kassensatzung | [Platzhalter] | v0.5 / 2026-03-20 | Monatliche Kassenberichte werden veröffentlicht |
+          | 4 | Konfliktlösungsleiter; Rechenschaftsprotokoll | [Platzhalter] | v0.6 / 2026-04-01 | Anti-Vergeltungsrichtlinie enthalten |
+          | 5 | Betriebshandbuch; Rollenverzeichnis; Sitzungsvorlagen | [Platzhalter] | v0.4 / 2026-04-15 | Sitzungsbelastung auf 4 Std./Woche begrenzt |
+          | 6 | Änderungsprotokoll; Versionshistorie; Lernprotokoll | [Platzhalter] | v0.2 / 2026-05-01 | Experimente verfallen, wenn nicht erneuert |
+  s4:
+    title: C.4 Governance und Weiterentwicklung
+    blocks:
+      b1:
+        md: |-
+          - Verwendete Entscheidungsmechanismen (mit Auszug aus der Entscheidungsmatrix oder Link)
+          - Änderungs- und Experimentverlauf (mit Links zu Änderungsprotokollen)
+          - Wichtige Erkenntnisse und Fehlschläge (mit Links zu Learning-Log-Einträgen)
+          - Abweichungsregister (empfohlen):
+      b2:
+        md: |-
+          | Gegenstand | Layer | Typ | Status | Beginn | Überprüfung/Ende | Link |
+          |---|---|---|---|---|---|---|
+          | Versuch mit rotierender Moderation | 5 | Experiment | Aktiv | 2026-06-01 | 2026-08-01 | [Platzhalter] |
+          | Ausnahme bei Kassentransparenz (Sicherheit) | 3/4 | Permanent | Aktiv | 2026-04-10 | Jährliche Überprüfung | [Platzhalter] |
+  s5:
+    title: C.5 Compliance-Erklärung
+    blocks:
+      b1:
+        md: |-
+          - Aktueller Compliance-Status: Konform / Nicht konform / Unbekannt
+          - Datum des letzten Selbst-Audits oder externen Audits
+          - Audit-Methode (Selbst-Audit vs. extern)
+          - Bekannte Zeiträume der Nicht-Konformität (falls vorhanden) und Zusammenfassung der Abhilfemaßnahmen
+          - Nachweislinks (empfohlen):
+      b2:
+        md: |-
+          | Nachweis | Datum | Link |
+          |---|---:|---|
+          | Layer-für-Layer-Checklisten-Ergebnis | 2026-07-01 | [Platzhalter] |
+          | Audit-Notizen / Feststellungen | 2026-07-01 | [Platzhalter] |
+          | Abhilfemaßnahmen-Protokoll | 2026-07-15 | [Platzhalter] |
+          - Bekannte Zeiträume der Nicht-Konformität (falls vorhanden)  
+  s6:
+    title: C.6 Öffentliche Transparenz
+    blocks:
+      b1:
+        md: '- Öffentlicher Artefakt-Index (empfohlen):'
+      b2:
+        md: |-
+          | Artefakt | Layer | Öffentlicher Link | Version/Datum | Anmerkungen |
+          |---|---:|---|---:|---|
+          | Zweckcharta | 0 | [Platzhalter] | 2026-01-01 | |
+          | Entscheidungsmatrix | 2 | [Platzhalter] | 2026-03-10 | |
+          | Kassenberichte | 3 | [Platzhalter] | 2026-06-30 | monatlich |
+          | Lernprotokoll | 6 | [Platzhalter] | 2026-06-15 | Schwärzungen vermerkt |
+      b3:
+        md: |-
+          - Kontakt- oder Anfragekanal
+          - Ausdrückliche Erklärung, was privat vs. öffentlich ist und warum
+          - Link zur aktuell verwendeten RCOS-Core-Version und zum Änderungsprotokoll
+          - Kontakt- oder Anfragekanal  
+      b4:
+        md: '---'
+  s7:
+    title: Informationshinweis
+    blocks:
+      b1:
+        md: Referenzimplementierungen sind Lerninstrumente, keine Befürwortungen.

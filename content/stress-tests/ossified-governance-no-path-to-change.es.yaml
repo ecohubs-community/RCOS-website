@@ -1,0 +1,100 @@
+lang: es
+sourceHash: 982aaa1f
+title: Gobernanza osificada sin un camino para cambiar
+summary: Cuando nada puede cambiar, el cambio ocurre marchándose.
+tags:
+  - 'Capa 6: Evolución'
+  - Severidad media
+symptoms:
+  - Las reglas originales se tratan como fijas; no hay un proceso legítimo para revisarlas.
+  - '"Así lo establecieron los fundadores" cierra la mayoría de las conversaciones de reforma.'
+  - Las personas frustradas presionan por el cambio amenazando con irse, o simplemente se van.
+  - Las propuestas para adaptarse mueren por falta de cualquier mecanismo para considerarlas.
+  - La comunidad está visiblemente desfasada respecto a sus propias necesidades actuales.
+cascade:
+  rcos-stress-tests/conflict-accountability/conflict-avoidance-normalization:
+    note: Sin un camino legítimo para el cambio, la frustración no tiene a dónde ir más que a la clandestinidad.
+  rcos-stress-tests/change-emergencies/emergency-rule-bypass-precedent:
+    note: Cuando el cambio normal es imposible, la gente espera a que una crisis fuerce lo que no pudo proponer.
+head: |-
+  > **Severidad:** Media — declive lento más que colapso: la comunidad se calcifica y pierde miembros.
+  > **Dónde golpea:** La etapa madura, a menudo tras un período inicial de rotación que las personas fundadoras sobrecompensaron.
+  > **¿Ya estás viviendo esto?** Salta a [Si ya está sucediendo](#si-ya-está-sucediendo).
+sections:
+  sound-familiar:
+    title: ¿Te suena familiar?
+    md: 'La comunidad estableció sus reglas hace años, y ahora son sagradas. Cuando alguien sugiere que la estructura ya no encaja — el formato de las reuniones, los niveles de membresía, cómo funciona el dinero — la conversación choca contra un muro: "así lo establecieron los fundadores". No existe un proceso real para proponer un cambio, así que la presión no tiene a dónde ir. Las personas que quieren que la comunidad evolucione no tienen oportunidad de defender su postura; simplemente se van en silencio, o amenazan con hacerlo, y el lugar se desfasa cada vez más de quienes realmente lo habitan.'
+  signs-this-is-happening-to-you:
+    title: Señales de que esto te está pasando
+    md: |-
+      - Las reglas originales se tratan como fijas; no hay un proceso legítimo para revisarlas.
+      - "Así lo establecieron los fundadores" cierra la mayoría de las conversaciones de reforma.
+      - Las personas frustradas presionan por el cambio amenazando con irse, o simplemente se van.
+      - Las propuestas para adaptarse mueren por falta de cualquier mecanismo para considerarlas.
+      - La comunidad está visiblemente desfasada respecto a sus propias necesidades actuales.
+
+      **Esto _no_ es lo mismo que** proteger deliberadamente los invariantes centrales (eso es saludable — ver [Invariantes centrales desprotegidos](rcos:test/unprotected-core-invariants) para el fallo *opuesto*). La señal es que *todo* está congelado, sin un camino restringido para cambiar nada — de modo que la adaptación legítima se vuelve imposible.
+  why-it-happens:
+    title: Por qué ocurre
+    md: |-
+      Tras un período temprano de rotación, las comunidades a menudo sobrecompensan hacia la rigidez — la estabilidad se siente segura, y reabrir las reglas se siente peligroso. Pero un sistema sin un mecanismo legítimo de cambio no puede adaptarse a nuevos miembros, nuevas condiciones, ni a sus propios errores. La presión por el cambio no desaparece; se enruta alrededor del sistema en forma de salidas, bifurcaciones e incumplimiento silencioso de las reglas.
+
+      <details data-kind="rationale">
+      <summary>La prueba de estrés formal (para auditores)</summary>
+
+      **Modo de fallo** — No existe un mecanismo legítimo y restringido para cambiar las reglas.
+
+      **Capas implicadas** — Capa 6 (Evolución)
+
+      **Invariantes relevantes**
+
+      * 6.1 El cambio es posible pero restringido
+      * 6.2 Los cambios están versionados
+
+      **Condición de prueba** — Los miembros no pueden proponer ni adoptar cambios en las reglas a través de ningún proceso definido.
+
+      **Comportamiento esperado de RCOS** — Un mecanismo de cambio restringido permite que las reglas se propongan, revisen, modifiquen y versionen.
+
+      **Criterios de aprobación** — El sistema puede adaptarse mediante un proceso legítimo.
+
+      **Criterios de fallo** — El cambio sólo ocurre por salida, bifurcación o incumplimiento de las reglas.
+
+      </details>
+  how-mature-is-your-community-on-this:
+    title: ¿Qué tan madura está tu comunidad en esto?
+    md: |-
+      Aprobado/reprobado es demasiado tosco para la vida real — la mayoría de las comunidades están a medio camino. Encuentra tu peldaño, y luego apunta al siguiente.
+
+      | Nivel | Cómo se ve |
+      |---|---|
+      | **L0 — Implícito** | No hay un camino legítimo para el cambio; las reglas están congeladas y la reforma ocurre por salida. |
+      | **L1 — Nombrado** | El grupo admite que no puede adaptarse pero no ha construido un mecanismo de cambio. |
+      | **L2 — Documentado** | Un [Protocolo de Cambio](rcos:template/change-protocol) define cómo se pueden proponer, revisar y modificar las reglas — posible pero restringido. |
+      | **L3 — Aplicado y ensayado** | El cambio ocurre a través del proceso; el sistema se ha adaptado al menos una vez sin crisis ni cisma. |
+
+      La mayoría de las comunidades que se reconocen aquí están en **L0 o L1**. La meta no es la perfección — es subir un peldaño.
+  how-rcos-prevents-this:
+    title: Cómo lo previene RCOS
+    md: |-
+      RCOS hace que el cambio sea posible *y* acotado — ni congelado ni caótico:
+
+      - **[Protocolo de Cambio](rcos:template/change-protocol)** — define un camino restringido y legítimo para proponer y adoptar cambios.
+      - **[Historial de versiones](rcos:template/version-history)** — rastrea cómo evolucionan las reglas, de modo que el cambio sea visible y acotado en lugar de temido.
+
+      Ver también la especificación: [Capa 6 — Mecanismos de cambio](rcos:§8.1) y [Versionado y autoridad](rcos:§8.2).
+  if-it-s-already-happening:
+    title: Si ya está sucediendo
+    md: |-
+      Si las reglas están congeladas, abre un canal seguro antes de que más personas se vayan:
+
+      1. **Abre un canal para el cambio** — un proceso de propuestas, aunque sea mínimo.
+      2. **Haz pasar por él una adaptación pendiente** como prueba de concepto.
+      3. **Distingue los invariantes protegidos** (deliberadamente difíciles de cambiar) de todo lo demás (modificable mediante proceso), para que "eso no se puede cambiar" deje de aplicarse a todo.
+  what-this-failure-tends-to-trigger:
+    title: Qué tiende a desencadenar este fallo
+    md: |-
+      - **[Normalización de la evitación de conflictos](rcos:test/conflict-avoidance-normalization)** — sin un camino legítimo para el cambio, la frustración pasa a la clandestinidad.
+      - **[Precedente de elusión de reglas por emergencia](rcos:test/emergency-rule-bypass-precedent)** — cuando el cambio normal es imposible, la gente espera a que una crisis lo fuerce.
+  related-stress-tests:
+    title: Pruebas de estrés relacionadas
+    md: '- **[Invariantes centrales desprotegidos](rcos:test/unprotected-core-invariants)** — el desequilibrio opuesto: aquí nada puede cambiar; allí todo puede, incluso los cimientos.'

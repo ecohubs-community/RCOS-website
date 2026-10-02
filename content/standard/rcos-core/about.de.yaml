@@ -1,0 +1,297 @@
+lang: de
+sourceHash: 146272cf
+title: RCOS-Kern
+intro: ''
+sections:
+  s1:
+    title: Was RCOS ist
+    blocks:
+      b1:
+        md: Das **Regenerative Community Operating System (RCOS)** ist eine formale, schichtenbasierte Spezifikation für das Entwerfen, Betreiben und Weiterentwickeln intentionaler Gemeinschaften – ohne auf Charisma, Ideologie oder informelle Macht angewiesen zu sein.
+      b2:
+        md: 'RCOS behandelt eine Gemeinschaft als ein **gesteuertes System**, nicht als soziales Experiment. Es definiert die minimalen strukturellen Anforderungen, damit eine Gemeinschaft:'
+      b3:
+        md: |-
+          - unter Belastung kohärent bleibt,
+          - bei Machtasymmetrien fair bleibt,
+          - sich anpassen kann, ohne zu kollabieren,
+          - und sich über die Zeit hinweg regeneriert.
+      b4:
+        md: 'RCOS ist kein Lebensstil, kein Glaubenssystem und keine kulturelle Identität. Es ist ein **Betriebssystem**: ein Satz expliziter Regeln, Schnittstellen, Invarianten und Testfälle, die das Gemeinschaftsleben lesbar, überprüfbar und überlebensfähig machen.'
+      b5:
+        md: '---'
+  s2:
+    title: Welches Problem RCOS löst
+    blocks:
+      b1:
+        md: Die meisten Gemeinschaften scheitern nicht an schlechten Absichten. Sie scheitern an **impliziter Struktur**.
+      b2:
+        md: 'Häufige Fehlermuster sind:'
+      b3:
+        md: |-
+          - informelle Anführer:innen, die formale Prozesse aushebeln,
+          - unausgesprochene Normen, die wie Regeln durchgesetzt werden,
+          - unsichtbare Arbeit, die zu Burnout führt,
+          - Wohlstand oder Charisma, die sich in Macht verwandeln,
+          - Konflikte, die vermieden werden, bis sie existenziell werden,
+          - Notfallentscheidungen, die zu dauerhaften Ausnahmen werden.
+      b4:
+        md: RCOS existiert, um diese Fehlermodi **strukturell unmöglich oder explizit adressierbar** zu machen.
+      b5:
+        md: '---'
+  s3:
+    title: Was RCOS nicht ist
+    blocks:
+      b1:
+        md: 'RCOS schreibt ausdrücklich **nicht** vor:'
+      b2:
+        md: |-
+          - eine bestimmte Kultur, einen Glauben oder eine Spiritualität,
+          - eine politische oder wirtschaftliche Ideologie,
+          - eine Governance-Methode (z. B. Konsens vs. Soziokratie),
+          - oder wie Menschen zusammenleben _sollten_.
+      b3:
+        md: Stattdessen beschränkt RCOS, _wie Entscheidungen getroffen werden_, _wie Macht begrenzt wird_ und _wie Veränderung stattfindet_ – unabhängig von Werten.
+      b4:
+        md: '---'
+  s4:
+    title: Designprinzipien (nicht verhandelbar)
+    blocks:
+      b1:
+        md: '> **Nichts Wesentliches darf implizit bleiben.**'
+      b2:
+        md: |-
+          - **Regelbasiert, nicht wertebasiert** — Definiert Regeln und Grenzen, statt Überzeugungen vorzuschreiben. Werte variieren; Beschränkungen halten Systeme unter Belastung funktionsfähig.
+          - **Vorab-Festlegung statt Improvisation** — Kritische Entscheidungen (Konflikt, Macht, Geld) werden vereinbart, bevor Emotionen, Knappheit oder Machtkämpfe entstehen.
+          - **Modular von Grund auf** — Der Kern bleibt stabil, während optionale Domänenmodule hinzugefügt, ersetzt oder entfernt werden können, ohne das System zu beschädigen.
+          - **Auf menschliche Größenordnung ausgelegt (≈ 5–150 Personen)** — Optimiert für Gruppen, die klein genug sind, um Vertrauen, Verantwortlichkeit und geteilten Kontext ohne Bürokratie aufrechtzuerhalten.
+          - **Fehlertolerant, nicht fehlerblind** — Geht davon aus, dass Konflikte, Burnout und Fehler passieren werden, und bietet explizite Wiederherstellungswege.
+      b3:
+        md: 'Alles, was Folgendes betrifft, muss explizit deklariert, versioniert und überprüfbar sein:'
+      b4:
+        md: |-
+          - Autorität
+          - Mitgliedschaft
+          - Ressourcen
+          - Konflikte
+          - Systemevolution
+      b5:
+        md: |-
+          - Schweigen wird niemals als Zustimmung gewertet.
+          - Tradition wird niemals als Autorität gewertet.
+          - Dringlichkeit wird niemals als Rechtfertigung gewertet.
+      b6:
+        md: '---'
+  s5:
+    title: 'Zur Gruppengröße: Warum ~150?'
+    blocks:
+      b1:
+        md: '**150** ≈ Dunbar''s Number: kognitive Obergrenze für stabile soziale Beziehungen.'
+      b2:
+        md: |-
+          - **Minimal lebensfähige Gemeinschaft (5–7 Personen):**
+            Darunter brechen Rollentrennung und Konfliktlösung zusammen.
+          - **Optimaler horizontaler Bereich (8–40 Personen):**
+            Hohes Vertrauen, wenig Bürokratie, direkte Beteiligung möglich.
+          - **Maximale unsegmentierte Größe (120–150 Personen):**
+            Darüber hinaus versagt informelle Governance.
+      b3:
+        md: Der RCOS-Kern gilt für jede Größe, aber ab ~150 Personen sind obligatorische Unterstrukturen (Kreise, Domänen, Nachbarschaften) erforderlich.
+      b4:
+        md: '---'
+  s6:
+    title: Warum die RCOS-Kernstruktur wichtig ist
+    blocks:
+      b1:
+        md: |-
+          - Verhindert Gründerdominanz
+          - Macht Macht explizit
+          - Reduziert versteckte Normen
+          - Übersteht Konflikte
+          - Ermöglicht Replikation
+          - Integriert sich nahtlos mit DAO-Tooling, _ohne davon abhängig zu sein_
+      b2:
+        md: '---'
+  s7:
+    title: Was bewusst nicht im RCOS-Kern enthalten ist
+    blocks:
+      b1:
+        md: 'Diese Themen gehören zu **optionalen Modulen**, nicht zum Kern:'
+      b2:
+        md: |-
+          - Permakulturdesign
+          - Bildungsphilosophie
+          - Spirituelle oder kulturelle Praktiken
+          - Politische Ideologie
+          - Ästhetische oder Lebensstil-Entscheidungen
+      b3:
+        md: Der Kern regelt, wie Entscheidungen getroffen werden – nicht, welche Entscheidungen getroffen werden müssen.
+      b4:
+        md: '---'
+  s8:
+    title: Invarianten (gelten für alle Schichten)
+    blocks:
+      b1:
+        md: '### Explizit schlägt Implizit'
+      b2:
+        md: Wenn es nicht geschrieben, vereinbart und versioniert ist, **existiert es nicht**.
+      b3:
+        md: '### Warum das wichtig ist'
+      b4:
+        md: Die Schicht-Invarianten stellen sicher, dass kein noch so großer guter Wille, kein Charisma, keine Dringlichkeit und kein Konsens das System stillschweigend aushöhlen kann.
+      b5:
+        md: '---'
+  s9:
+    title: Die RCOS-Explizitätsregel (Kernprinzip)
+    blocks:
+      b1:
+        md: '**Alles, was Macht, Risiko, Verantwortung oder Austrittskonditionen zuweist, muss explizit sein.**'
+      b2:
+        md: Alles, was Präferenzen, Stil oder lokale Optimierung ausdrückt, kann optional sein.
+      b3:
+        md: '### Explizit vs. Optional nach Schicht'
+      b4:
+        md: 'Wir verwenden drei Kategorien:'
+      b5:
+        md: |-
+          - **MUSS be explicit** → erforderlich für RCOS-Konformität
+          - **KANN be explicit** → empfohlen, aber kontextabhängig
+          - **MUSS remain optional** → wird niemals vom Kern erzwungen
+      b6:
+        md: '### Schichtübergreifende Invariante zur Explizitheit'
+      b7:
+        md: '**Wenn etwas:**'
+      b8:
+        md: |-
+          - Jemandem Rechte entziehen kann
+          - Jemandes Zeit oder Arbeitskraft binden kann
+          - Gemeinsame Ressourcen kontrollieren kann
+          - Widerspruch unterdrücken kann
+          - Einen Austritt verhindern kann
+      b9:
+        md: '**Dann muss es explizit, dokumentiert und überprüfbar sein.**'
+      b10:
+        md: Keine Ausnahmen.
+      b11:
+        md: 'Dieser Ansatz stellt sicher, dass:'
+      b12:
+        md: |-
+          - RCOS **nicht** bürokratisch wird
+          - Gemeinschaften kulturelle Freiheit behalten
+          - Nur _strukturelles Risiko_ reguliert wird
+          - Optionale Module leistungsfähig bleiben, nicht eingeschränkt werden
+      b13:
+        md: '---'
+  s10:
+    title: Stresstest-getriebenes Design
+    blocks:
+      b1:
+        md: RCOS wird nicht durch Absichten validiert, sondern durch **Widerstandsfähigkeit gegen Versagen**.
+      b2:
+        md: 'Die Spezifikation umfasst eine wachsende Sammlung von **Stresstests**, die aus realen Zusammenbrüchen von Gemeinschaften abgeleitet sind, wie etwa:'
+      b3:
+        md: |-
+          - Dominanz in Versammlungen
+          - Vetorecht der Gründer:innen
+          - Privatisierung von Gemeingütern
+          - Kulturen der Konfliktvermeidung
+          - Charismatische spirituelle Autorität
+          - Umgehung von Regeln im Notfall
+      b4:
+        md: Eine Gemeinschaft gilt nur dann als RCOS-konform, wenn sie **diesen Szenarien ohne informelle Behelfslösungen standhalten kann**.
+      b5:
+        md: 'Fast jedes Scheitern passiert, weil:'
+      b6:
+        md: '**Etwas Mächtiges implizit bleiben durfte.**'
+      b7:
+        md: 'RCOS verwandelt:'
+      b8:
+        md: |-
+          - Implizite Macht → explizite Rollen
+          - Implizite Werte → begrenzte Regeln
+          - Implizite Bestrafung → ordentliches Verfahren
+          - Implizites Eigentum → deklarierte Rechte
+      b9:
+        md: '### Bekannte Fehlermodi, die RCOS verhindern soll'
+      b10:
+        md: Siehe [RCOS-Stresstests](/articles/rcos-stress-tests?id=6acbe9a7)
+  s11:
+    title: Referenzimplementierungen
+    blocks:
+      b1:
+        md: 'RCOS ermutigt kleine, reale **Referenzgemeinschaften**, die:'
+      b2:
+        md: |-
+          - die Kernschichten explizit umsetzen,
+          - Abweichungen und Fehler dokumentieren,
+          - und Erkenntnisse in den Standard zurückspeisen.
+      b3:
+        md: Das Ziel ist nicht Perfektion, sondern **Evolution durch Transparenz**.
+      b4:
+        md: '---'
+  s12:
+    title: Warum „Regenerativ"
+    blocks:
+      b1:
+        md: RCOS verwendet den Begriff _regenerativ_ bewusst.
+      b2:
+        md: 'Ein regeneratives System:'
+      b3:
+        md: |-
+          - ist nicht auf ständiges Wachstum angewiesen,
+          - brennt seine Mitglieder nicht aus,
+          - repariert Schäden, statt sie zu verstecken,
+          - und wird stärker, indem es Fehler integriert.
+      b4:
+        md: RCOS ist so gestaltet, dass **Belastung Lernen erzeugt**, nicht Zusammenbruch.
+      b5:
+        md: '---'
+  s13:
+    title: Für wen RCOS gedacht ist
+    blocks:
+      b1:
+        md: 'RCOS richtet sich an:'
+      b2:
+        md: |-
+          - intentionale Gemeinschaften,
+          - Ökodörfer und Wohnprojekte,
+          - Genossenschaften und Commons-basierte Organisationen,
+          - langfristige kollektive Wohnexperimente,
+          - und jede Gruppe, die ihren eigenen Erfolg überleben will.
+      b3:
+        md: RCOS ist besonders nützlich für Gruppen, die bereits starke Werte teilen – und sicherstellen wollen, dass diese Werte nicht zu Werkzeugen des Zwangs werden.
+      b4:
+        md: '---'
+  s14:
+    title: Wie du RCOS nutzen kannst
+    blocks:
+      b1:
+        md: 'RCOS kann genutzt werden als:'
+      b2:
+        md: |-
+          - ein **Entwurfsplan** vor der Gründung einer Gemeinschaft,
+          - ein **Audit-Rahmenwerk** für bestehende Gruppen,
+          - ein **Stresstest-Werkzeug** während Konflikten,
+          - oder eine **gemeinsame Sprache** für schwierige strukturelle Gespräche.
+      b3:
+        md: Die Einführung kann schrittweise erfolgen. Die Konformität kann partiell sein. Was zählt, ist **Explizitheit, nicht Reinheit**.
+      b4:
+        md: '---'
+  s15:
+    title: Die Kernthese
+    blocks:
+      b1:
+        md: |-
+          > Gemeinschaften scheitern nicht, weil Menschen fehlerhaft sind.
+          > Sie scheitern, weil Systeme vage sind.
+      b2:
+        md: |-
+          RCOS existiert, um Vagheit durch Struktur zu ersetzen –
+          damit Fürsorge, Autonomie und Regeneration etwas Solides haben, worauf sie stehen können.
+      b3:
+        md: '---'
+  s16:
+    title: Änderungsprotokoll
+    blocks:
+      b1:
+        md: '- [v0.1](/articles/rcos-core/v0-1?id=e6de7a5d) — Erste Version'

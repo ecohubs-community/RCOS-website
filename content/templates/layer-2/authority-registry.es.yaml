@@ -1,0 +1,46 @@
+lang: es
+sourceHash: 24c47a1f
+title: Registro de Autoridades
+preamble: |-
+  - **Capa:** 2 — Gobernanza y Lógica de Decisión
+  - **Estado:** Plantilla — adaptar para tu comunidad
+  - **Referencia RCOS:** [§4.3](rcos:§4.3), [§4.7](rcos:§4.7)
+
+  > Enumera todos los roles, círculos u órganos que poseen autoridad de toma de decisiones, junto con su alcance explícito, límites y duración del mandato.
+
+  ---
+sections:
+  registered-authorities:
+    title: Autoridades Registradas
+    blocks:
+      rationale:
+        summary: ¿Por qué documentar cada autoridad por escrito?
+        body: La autoridad que no se registra explícitamente se llena por defecto — por quien lleva más tiempo, habla más fuerte o controla las llaves. Un registro único que nombre cada rol, delimite su alcance, establezca sus límites y vincule su base a un acto de delegación hace que la acción no autorizada sea detectable e impide que la autoridad se derive del carisma, la antigüedad o la propiedad.
+      instructions:
+        summary: Cómo rellenar esto
+        body: Para cada rol, órgano o círculo que posea autoridad, enumera el alcance de autoridad, los límites estrictos, la duración del mandato y la base (estado de membresía, acto de delegación, etc.). El cuerpo colectivo de Miembros Plenos es en sí mismo una autoridad y pertenece a esta tabla.
+      m1:
+        md: |-
+          | Rol / Órgano | Alcance de autoridad | Límites | Duración del mandato | Base |
+          |---|---|---|---|---|
+          | _<p. ej. Miembros Plenos (colectivo)>_ | _<alcance>_ | _<límites — no puede anular invariantes; no puede actuar fuera de la Matriz de Decisiones>_ | _<duración>_ | _<base — estado de membresía>_ |
+          | _<p. ej. Administración de Membresía>_ | _<alcance>_ | _<límites>_ | _<duración>_ | _<base — delegada por los Miembros Plenos>_ |
+          | _<p. ej. Responsable de Finanzas>_ | _<alcance>_ | _<límites — tope de gasto>_ | _<duración>_ | _<base>_ |
+          | _<...>_ | _<...>_ | _<...>_ | _<...>_ | _<...>_ |
+      m2:
+        md: '> **Recusación por conflicto de intereses:** Un titular de rol no PUEDE ejercer su autoridad delegada en ninguna decisión en la que tenga un interés personal directo. En tales casos, la decisión se escala a través del proceso de gobernanza.'
+      m3:
+        md: |-
+          > La autoridad NO DEBE derivarse del carisma, la antigüedad, la propiedad o la influencia informal.
+          > La autoridad temporal o de emergencia DEBE definirse explícitamente, estar acotada en el tiempo y estar sujeta a revisión.
+      m4:
+        md: '---'
+  ratification-record:
+    title: Registro de Ratificación
+    blocks:
+      m1:
+        md: |-
+          - **Adoptado:** <AAAA-MM-DD>
+          - **Tipo de decisión:** Constitucional
+          - **Versión:** <versión>
+          - **Registro de decisión:** <enlace al registro de decisión>

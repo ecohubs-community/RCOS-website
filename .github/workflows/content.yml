@@ -1,0 +1,65 @@
+# Content checks: the YAML in content/ is valid, the content tests pass, and
+# the committed downloads that are generated from it are current.
+#
+# Locally: pnpm content:check && pnpm test:unit
+name: Content
+
+on:
+  pull_request:
+    paths:
+      - 'content/**'
+      - 'scripts/**'
+      - 'src/lib/content/**'
+      - 'static/downloads/**'
+      - 'package.json'
+      - 'pnpm-lock.yaml'
+      - '.github/workflows/content.yml'
+  push:
+    branches: [main]
+
+permissions:
+  contents: read
+
+concurrency:
+  group: content-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: pnpm/action-setup@v4
+        with:
+          version: 10
+          run_install: false
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+          cache: pnpm
+
+      - name: Install dependencies
+        run: pnpm install --frozen-lockfile
+
+      - name: Validate content
+        run: pnpm content:check
+
+      - name: Unit tests
+        run: pnpm test:unit
+
+      # The standard data (what RCOS-compass consumes) and the core markdown
+      # download must match the content. Their date lines ("Generated: …" in
+      # each language, `generated:`) change on every run, so they are ignored; the docx/odt files need pandoc and carry
+      # timestamps, so they are not checked here.
+      - name: Generated downloads are current
+        run: |
+          node scripts/build-core.mjs
+          node scripts/build-standard-data.mjs
+          git diff --exit-code \
+            -I '^- \*\*[^*]+:\*\* [0-9]{4}-[0-9]{2}-[0-9]{2}$' -I '^generated:' -I '"generated"' \
+            -- 'static/downloads/*/rcos-core-v0-1.md' static/downloads/standard \
+            ':(exclude)static/downloads/standard/manifest-standard.json' \
+            || { echo "::error::Committed downloads are stale. Run pnpm build:downloads and commit the result."; exit 1; }

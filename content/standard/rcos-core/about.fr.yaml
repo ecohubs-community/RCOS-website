@@ -1,0 +1,297 @@
+lang: fr
+sourceHash: 146272cf
+title: Noyau RCOS
+intro: ''
+sections:
+  s1:
+    title: Ce qu'est RCOS
+    blocks:
+      b1:
+        md: Le **Regenerative Community Operating System (RCOS)** est une spécification formelle et stratifiée pour concevoir, exploiter et faire évoluer des communautés intentionnelles sans dépendre du charisme, de l'idéologie ou du pouvoir informel.
+      b2:
+        md: 'RCOS traite une communauté comme un **système gouverné**, et non comme une expérience sociale. Il définit les exigences structurelles minimales nécessaires pour qu''une communauté reste :'
+      b3:
+        md: |-
+          - cohérente sous tension,
+          - équitable face aux asymétries de pouvoir,
+          - adaptable sans s'effondrer,
+          - et régénérative dans le temps.
+      b4:
+        md: 'RCOS n''est ni un mode de vie, ni un système de croyances, ni une identité culturelle. C''est un **système d''exploitation** : un ensemble de règles explicites, d''interfaces, d''invariants et de cas de test qui rendent la vie communautaire lisible, auditable et viable.'
+      b5:
+        md: '---'
+  s2:
+    title: Quel problème RCOS résout
+    blocks:
+      b1:
+        md: La plupart des communautés n'échouent pas à cause de mauvaises intentions. Elles échouent à cause d'une **structure implicite**.
+      b2:
+        md: 'Les schémas d''échec courants comprennent :'
+      b3:
+        md: |-
+          - des leaders informels qui contournent les processus formels,
+          - des normes tacites appliquées comme des règles,
+          - un travail invisible menant à l'épuisement,
+          - la richesse ou le charisme se transformant en pouvoir,
+          - les conflits évités jusqu'à ce qu'ils deviennent existentiels,
+          - les décisions d'urgence devenant des exceptions permanentes.
+      b4:
+        md: RCOS existe pour rendre ces modes d'échec **structurellement impossibles ou explicitement traitables**.
+      b5:
+        md: '---'
+  s3:
+    title: Ce que RCOS n'est pas
+    blocks:
+      b1:
+        md: 'RCOS ne prescrit explicitement **pas** :'
+      b2:
+        md: |-
+          - une culture, une croyance ou une spiritualité spécifique,
+          - une idéologie politique ou économique,
+          - une méthode de gouvernance (par ex. consensus vs sociocratie),
+          - ni la façon dont les gens _devraient_ vivre ensemble.
+      b3:
+        md: Au lieu de cela, RCOS contraint _la manière dont les choix sont faits_, _la manière dont le pouvoir est encadré_ et _la manière dont le changement se produit_, indépendamment des valeurs.
+      b4:
+        md: '---'
+  s4:
+    title: Principes de conception (non négociables)
+    blocks:
+      b1:
+        md: '> **Rien d''essentiel ne PEUT rester implicite.**'
+      b2:
+        md: |-
+          - **Basé sur les contraintes, pas sur les valeurs** — Définit des règles et des limites au lieu de prescrire des croyances. Les valeurs varient ; les contraintes maintiennent les systèmes fonctionnels sous tension.
+          - **Pré-engagement plutôt qu'improvisation** — Les décisions critiques (conflit, pouvoir, argent) sont convenues avant que les émotions, la rareté ou les luttes de pouvoir ne surviennent.
+          - **Modulaire par défaut** — Le noyau reste stable tandis que des modules de domaine optionnels peuvent être ajoutés, remplacés ou supprimés sans casser le système.
+          - **À échelle humaine (≈ 5–150 personnes)** — Optimisé pour des groupes suffisamment petits pour maintenir la confiance, la responsabilité et un contexte partagé sans bureaucratie.
+          - **Tolérant aux défaillances, pas aveugle aux défaillances** — Suppose que les conflits, l'épuisement et les erreurs surviendront et fournit des chemins de récupération explicites.
+      b3:
+        md: 'Tout ce qui affecte les éléments suivants DOIT être explicitement déclaré, versionné et révisable :'
+      b4:
+        md: |-
+          - l'autorité
+          - l'adhésion
+          - les ressources
+          - les conflits
+          - l'évolution du système
+      b5:
+        md: |-
+          - Le silence n'est jamais traité comme un consentement.
+          - La tradition n'est jamais traitée comme une autorité.
+          - L'urgence n'est jamais traitée comme une justification.
+      b6:
+        md: '---'
+  s5:
+    title: 'Sur la taille du groupe : pourquoi ~150 ?'
+    blocks:
+      b1:
+        md: '**150** ≈ Nombre de Dunbar : limite cognitive pour des relations sociales stables.'
+      b2:
+        md: |-
+          - **Communauté minimale viable (5–7 personnes) :**
+            En dessous, la séparation des rôles et la résolution des conflits s'effondrent.
+          - **Plage horizontale optimale (8–40 personnes) :**
+            Confiance élevée, faible bureaucratie, participation directe possible.
+          - **Taille maximale non segmentée (120–150 personnes) :**
+            Au-delà, la gouvernance informelle échoue.
+      b3:
+        md: Le Noyau RCOS s'applique à toute taille, mais au-delà d'environ 150 personnes, des sous-structures obligatoires (cercles, domaines, quartiers) sont REQUISES.
+      b4:
+        md: '---'
+  s6:
+    title: Pourquoi la structure du Noyau RCOS est importante
+    blocks:
+      b1:
+        md: |-
+          - Empêche la dominance des fondateurs
+          - Rend le pouvoir explicite
+          - Réduit les normes cachées
+          - Survit aux conflits
+          - Permet la réplication
+          - S'intègre proprement avec les outils DAO, _sans en dépendre_
+      b2:
+        md: '---'
+  s7:
+    title: Ce qui n'est délibérément pas dans le Noyau RCOS
+    blocks:
+      b1:
+        md: 'Ces éléments appartiennent à des **modules optionnels**, pas au noyau :'
+      b2:
+        md: |-
+          - Design en permaculture
+          - Philosophie éducative
+          - Pratiques spirituelles ou culturelles
+          - Idéologie politique
+          - Choix esthétiques ou de mode de vie
+      b3:
+        md: Le noyau gouverne la manière dont les décisions sont prises, pas quelles décisions doivent être prises.
+      b4:
+        md: '---'
+  s8:
+    title: Invariants (s'appliquent à toutes les Couches)
+    blocks:
+      b1:
+        md: '### L''explicite l''emporte sur l''implicite'
+      b2:
+        md: Si ce n'est pas écrit, convenu et versionné, **cela n'existe pas**.
+      b3:
+        md: '### Pourquoi c''est important'
+      b4:
+        md: Les invariants de Couche garantissent qu'aucune dose de bonne volonté, de charisme, d'urgence ou de consensus ne peut silencieusement éroder le système.
+      b5:
+        md: '---'
+  s9:
+    title: La règle d'explicité RCOS (principe fondamental)
+    blocks:
+      b1:
+        md: '**Tout ce qui alloue du pouvoir, du risque, de la responsabilité ou des conditions de sortie DOIT être explicite.**'
+      b2:
+        md: Tout ce qui exprime une préférence, un style ou une optimisation locale PEUT être optionnel.
+      b3:
+        md: '### Explicite vs Optionnel par Couche'
+      b4:
+        md: 'Nous utilisons trois catégories :'
+      b5:
+        md: |-
+          - **DOIT être explicite** → requis pour la conformité RCOS
+          - **PEUT être explicite** → recommandé mais dépendant du contexte
+          - **DOIT rester optionnel** → jamais imposé par le noyau
+      b6:
+        md: '### Invariant inter-couches sur l''explicité'
+      b7:
+        md: '**Si quelque chose peut :**'
+      b8:
+        md: |-
+          - Retirer les droits de quelqu'un
+          - Engager le temps ou le travail de quelqu'un
+          - Contrôler des ressources partagées
+          - Réduire au silence la dissidence
+          - Empêcher la sortie
+      b9:
+        md: '**Alors cela DOIT être explicite, documenté et révisable.**'
+      b10:
+        md: Aucune exception.
+      b11:
+        md: 'Cette approche garantit que :'
+      b12:
+        md: |-
+          - RCOS ne **devient pas** bureaucratique
+          - Les communautés conservent leur liberté culturelle
+          - Seul le _risque structurel_ est régulé
+          - Les modules optionnels restent puissants, pas contraints
+      b13:
+        md: '---'
+  s10:
+    title: Conception pilotée par les tests de résistance
+    blocks:
+      b1:
+        md: RCOS est validé non par l'intention mais par la **résistance aux défaillances**.
+      b2:
+        md: 'La spécification inclut une suite croissante de **tests de résistance** dérivés d''effondrements communautaires réels, tels que :'
+      b3:
+        md: |-
+          - la domination en réunion
+          - le droit de veto du fondateur
+          - la privatisation des biens communs
+          - les cultures d'évitement des conflits
+          - l'autorité spirituelle charismatique
+          - les contournements de règles d'urgence
+      b4:
+        md: Une communauté est considérée alignée RCOS uniquement si elle peut **résister à ces scénarios sans recours à des solutions informelles**.
+      b5:
+        md: 'Presque chaque échec survient parce que :'
+      b6:
+        md: '**Quelque chose de puissant a été autorisé à rester implicite.**'
+      b7:
+        md: 'RCOS transforme :'
+      b8:
+        md: |-
+          - Le pouvoir implicite → des rôles explicites
+          - Les valeurs implicites → des règles délimitées
+          - La punition implicite → une procédure régulière
+          - La propriété implicite → des droits déclarés
+      b9:
+        md: '### Modes d''échec connus que RCOS est conçu pour prévenir'
+      b10:
+        md: Voir [Tests de résistance RCOS](/articles/rcos-stress-tests?id=6acbe9a7)
+  s11:
+    title: Implémentations de référence
+    blocks:
+      b1:
+        md: 'RCOS encourage de petites **communautés de référence** concrètes qui :'
+      b2:
+        md: |-
+          - implémentent explicitement les couches fondamentales,
+          - documentent les écarts et les échecs,
+          - et publient les enseignements pour enrichir le standard.
+      b3:
+        md: L'objectif n'est pas la perfection, mais l'**évolution par la transparence**.
+      b4:
+        md: '---'
+  s12:
+    title: Pourquoi « Régénératif »
+    blocks:
+      b1:
+        md: RCOS utilise le terme _régénératif_ délibérément.
+      b2:
+        md: 'Un système régénératif :'
+      b3:
+        md: |-
+          - ne repose pas sur une croissance constante,
+          - n'épuise pas ses membres,
+          - répare les dommages au lieu de les dissimuler,
+          - et se renforce en intégrant les échecs.
+      b4:
+        md: RCOS est conçu pour que **la tension produise de l'apprentissage**, pas de l'effondrement.
+      b5:
+        md: '---'
+  s13:
+    title: À qui RCOS s'adresse
+    blocks:
+      b1:
+        md: 'RCOS est destiné aux :'
+      b2:
+        md: |-
+          - communautés intentionnelles,
+          - écovillages et projets d'habitat partagé,
+          - coopératives et organisations basées sur les communs,
+          - expériences de vie collective à long terme,
+          - et tout groupe qui veut survivre à son propre succès.
+      b3:
+        md: RCOS est particulièrement utile pour les groupes qui partagent déjà des valeurs fortes — et veulent s'assurer que ces valeurs ne deviennent pas des outils de coercition.
+      b4:
+        md: '---'
+  s14:
+    title: Comment utiliser RCOS
+    blocks:
+      b1:
+        md: 'RCOS peut être utilisé comme :'
+      b2:
+        md: |-
+          - un **plan de conception** avant de fonder une communauté,
+          - un **cadre d'audit** pour les groupes existants,
+          - un **outil de test de résistance** en cas de conflit,
+          - ou un **langage commun** pour les conversations structurelles difficiles.
+      b3:
+        md: L'adoption peut être progressive. La conformité peut être partielle. Ce qui compte, c'est l'**explicité, pas la pureté**.
+      b4:
+        md: '---'
+  s15:
+    title: L'affirmation fondamentale
+    blocks:
+      b1:
+        md: |-
+          > Les communautés n'échouent pas parce que les gens sont imparfaits.
+          > Elles échouent parce que les systèmes sont vagues.
+      b2:
+        md: |-
+          RCOS existe pour remplacer le vague par la structure —
+          afin que le soin, l'autonomie et la régénération aient quelque chose de solide sur quoi s'appuyer.
+      b3:
+        md: '---'
+  s16:
+    title: Journal des modifications
+    blocks:
+      b1:
+        md: '- [v0.1](/articles/rcos-core/v0-1?id=e6de7a5d) — Version initiale'

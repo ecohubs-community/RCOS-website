@@ -1,0 +1,101 @@
+lang: fr
+sourceHash: 23c439c7
+title: Invariants fondamentaux non protégés
+summary: Quand les promesses fondatrices peuvent être annulées par un seul vote ordinaire.
+tags:
+  - 'Couche 0 : Périmètre'
+  - Sévérité élevée
+symptoms:
+  - Les engagements fondateurs de la communauté (la terre reste un commun, pas de leader unique) peuvent être modifiés par une majorité simple ordinaire.
+  - Il n'y a aucune distinction entre les règles quotidiennes et les règles constitutionnelles.
+  - Une majorité passagère pourrait réécrire le cœur de la communauté en une seule réunion.
+  - Il n'existe aucune liste des choses censées être immuables.
+  - Les gens supposent que les principes fondateurs sont sûrs, mais rien ne les protège structurellement.
+cascade:
+  rcos-stress-tests/economy-resources/commons-privatization-through-land-sales:
+    note: Si la protection des communs est amendable comme n'importe quelle règle, elle peut être supprimée par vote sous pression.
+  rcos-stress-tests/governance-power/founder-informal-veto:
+    note: Une structure non protégée permet à une autorité informelle de remodeler les règles à sa convenance.
+head: |-
+  > **Gravité :** Élevée — une majorité passagère peut démanteler en une seule réunion ce sur quoi la communauté a été fondée.
+  > **Là où ça mord :** Phases de croissance et de maturité, à mesure que les membres se renouvellent et que le consensus des fondateurs s'estompe.
+  > **Tu vis déjà cela ?** Saute à [Si cela arrive déjà](#si-cela-arrive-déjà).
+sections:
+  sound-familiar:
+    title: Ça te dit quelque chose ?
+    md: La communauté a été bâtie sur quelques non-négociables — la terre est détenue en commun, il n'y a pas de chef unique, le lieu existe pour X et non pour le profit. Tout le monde était d'accord, donc personne n'a jamais pris la peine de rendre ces engagements *plus difficiles à modifier* que le calendrier des réunions. Les années passent, les membres se renouvellent, une saison stressante arrive — et un soir, par la même majorité simple utilisée pour choisir une couleur de peinture, la fondation elle-même est sur la table. Rien ne l'arrête structurellement. Les promesses « permanentes » s'avèrent exactement aussi durables que le prochain vote.
+  signs-this-is-happening-to-you:
+    title: Signes que cela t'arrive
+    md: |-
+      - Les engagements fondateurs peuvent être modifiés par une majorité simple ordinaire.
+      - Il n'y a aucune distinction entre les règles quotidiennes et les règles constitutionnelles.
+      - Une majorité passagère pourrait réécrire le cœur de la communauté en une seule réunion.
+      - Il n'existe aucune liste des choses censées être immuables.
+      - Les gens supposent que les principes fondateurs sont sûrs, mais rien ne les protège structurellement.
+
+      **Ce n'est _pas_ la même chose que** d'avoir une voie d'amendement délibérée et exigeante pour les invariants fondamentaux — un seuil très élevé est sain. Le signe révélateur est que *les engagements fondateurs n'ont aucune protection particulière* : ils sont amendables exactement comme l'horaire d'une réunion.
+  why-it-happens:
+    title: Pourquoi cela arrive
+    md: |-
+      Au début, tout le monde est d'accord sur le cœur, donc le protéger semble inutile — pourquoi garder ce que personne ne toucherait ? Mais les membres changent, les humeurs évoluent, et une future majorité sous pression peut discrètement éventrer la fondation qui a fait de la communauté ce qu'elle est. Sans invariants protégés, « permanent » n'est qu'un sentiment, et les engagements les plus importants sont les moins défendus.
+
+      <details data-kind="rationale">
+      <summary>Le test de résistance formel (pour les auditeurs)</summary>
+
+      **Mode de défaillance** — Les invariants fondateurs sont amendables par un processus ordinaire.
+
+      **Couches concernées** — Couche 0 (Identité et portée), Couche 6 (Évolution)
+
+      **Invariants pertinents**
+
+      * 0.4 Invariants protégés
+      * 6.1 Le changement est possible mais contraint
+
+      **Condition du test** — Les engagements fondamentaux peuvent être modifiés par le même mécanisme que les décisions quotidiennes.
+
+      **Comportement RCOS attendu** — Les invariants protégés sont nommés et portent un seuil d'amendement élevé et explicite, distinct des règles ordinaires.
+
+      **Critères de réussite** — Les invariants fondamentaux ne peuvent pas être modifiés par un processus ordinaire.
+
+      **Critères d'échec** — Une majorité passagère peut réécrire la fondation.
+
+      </details>
+  how-mature-is-your-community-on-this:
+    title: Quel est le degré de maturité de ta communauté sur ce point ?
+    md: |-
+      Le réussite/échec est trop tranché pour la vraie vie — la plupart des communautés sont à mi-chemin. Trouve ton échelon, puis vise le suivant.
+
+      | Niveau | À quoi cela ressemble |
+      |---|---|
+      | **L0 — Implicite** | Les règles fondamentales et quotidiennes sont également amendables ; la fondation n'est pas protégée. |
+      | **L1 — Nommé** | Le groupe sait que certaines règles devraient être plus difficiles à modifier mais ne les a pas séparées. |
+      | **L2 — Documenté** | Un [Registre des invariants](rcos:template/invariants-register) nomme les invariants protégés avec un seuil d'amendement élevé et explicite. |
+      | **L3 — Appliqué et éprouvé** | Les invariants fondamentaux ne peuvent pas être modifiés par un processus ordinaire ; la protection a tenu face à une tentative réelle de la contourner. |
+
+      La plupart des communautés qui se reconnaissent ici sont à **L0 ou L1**. L'objectif n'est pas la perfection — c'est de monter d'un échelon.
+  how-rcos-prevents-this:
+    title: Comment RCOS prévient cela
+    md: |-
+      RCOS sépare le changement constitutionnel des décisions quotidiennes :
+
+      - **[Registre des invariants](rcos:template/invariants-register)** — nomme les invariants protégés et le seuil élevé requis pour les modifier.
+      - **[Protocole de changement](rcos:template/change-protocol)** — définit une voie distincte et plus exigeante pour les changements constitutionnels.
+      - **[Protocole de gouvernance](rcos:template/governance-protocol)** — maintient les règles constitutionnelles au-dessus des décisions ordinaires.
+
+      Voir aussi la spécification : [Couche 0 — Invariants](rcos:§2.3) et [Couche 6 — Versionnage et autorité](rcos:§8.2).
+  if-it-s-already-happening:
+    title: Si cela arrive déjà
+    md: |-
+      Si ta fondation n'est pas protégée, protège-la avant qu'elle ne soit mise à l'épreuve :
+
+      1. **Liste les choses qui ne doivent jamais changer discrètement** — la véritable fondation.
+      2. **Fixe un seuil d'amendement élevé** pour elles — supermajorité, délai d'attente, examen — distinct des règles quotidiennes.
+      3. **Ratifie le registre** afin que la protection elle-même soit consignée et ne puisse être discrètement supprimée.
+  what-this-failure-tends-to-trigger:
+    title: Ce que cette défaillance tend à déclencher
+    md: |-
+      - **[Privatisation des communs par la vente de terres](rcos:test/commons-privatization-through-land-sales)** — si la protection des communs est amendable, elle peut être supprimée par vote sous pression.
+      - **[Veto informel des fondateurs](rcos:test/founder-informal-veto)** — une structure non protégée permet à une autorité informelle de remodeler les règles.
+  related-stress-tests:
+    title: Tests de résistance liés
+    md: '- **[Précédent de contournement des règles en urgence](rcos:test/emergency-rule-bypass-precedent)** — l''autre manière dont la constitution s''érode : non pas amendée ouvertement, mais contournée sous l''urgence.'

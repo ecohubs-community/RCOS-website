@@ -1,0 +1,22 @@
+lang: pt-br
+sourceHash: 167e07ac
+title: 1. Modelo de Conformidade do RCOS
+intro: ''
+sections:
+  '1.1':
+    title: Níveis de Conformidade
+    blocks:
+      b1:
+        md: |-
+          - Conforme com RCOS-Core
+          - RCOS-Core + módulos (não normativo)
+  '1.2':
+    title: Exigência de Explicitude
+    blocks:
+      b1:
+        md: Qualquer mecanismo que afete poder, recursos, obrigações ou saída `DEVE` ser explícito, documentado e revisável.
+  '1.3':
+    title: Meta-Invariante
+    blocks:
+      b1:
+        md: Se não estiver escrito e adotado, não existe.

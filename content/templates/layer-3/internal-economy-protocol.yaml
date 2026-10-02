@@ -1,0 +1,207 @@
+kind: template
+legacyPath: rcos-templates/layer-3/internal-economy-protocol
+id: 1496e7ff
+title: Internal Economy Protocol
+parentId: 7fcb6634
+order: 0
+preamble: |-
+  - **Layer:** 3 — Economic & Resource System
+  - **Status:** Template — adapt for your community
+  - **RCOS reference:** [§5.1](rcos:§5.1), [§5.2](rcos:§5.2), [§5.4](rcos:§5.4), [§5.5](rcos:§5.5)
+
+  ---
+sections:
+  - id: commons-vs-private-classification
+    title: Commons vs. Private Classification
+    blocks:
+      - id: clauses
+        kind: clauses
+        refs:
+          - 5.1.1
+          - 5.1.2
+          - 5.1.3
+          - 5.1.4
+          - 5.1.5
+          - 5.6.2
+      - id: rationale
+        kind: rationale
+        summary: Why classify every resource?
+        body: Unclassified resources are where quiet privatization happens — someone starts treating a shared asset as personal, or a private asset gets quietly absorbed into community obligations, and by the time anyone notices the norm has shifted. Explicit classification, with stewards and transfer rules named up front, makes any change to that status a visible governance act rather than a creeping fact.
+      - id: instructions
+        kind: instructions
+        summary: How to fill this in
+        body: For each resource the community holds, declare classification (Commons / Private), name a steward, define access rules, and state transfer constraints. Unclassified resources must not be allocated, encumbered, monetized, or transferred until classified.
+      - id: m1
+        kind: md
+        md: |-
+          | Resource | Classification | Steward | Access rules | Transfer constraints |
+          |---|---|---|---|---|
+          | _<e.g. RCOS specification and artifacts>_ | _<Commons / Private>_ | _<steward role>_ | _<who reads / writes>_ | _<transfer constraints>_ |
+          | _<e.g. Shared treasury>_ | _<...>_ | _<...>_ | _<...>_ | _<...>_ |
+          | _<e.g. Community website / domains>_ | _<...>_ | _<...>_ | _<...>_ | _<...>_ |
+          | _<e.g. Brand and social accounts>_ | _<...>_ | _<...>_ | _<...>_ | _<...>_ |
+          | _<e.g. Land or physical infrastructure>_ | _<...>_ | _<...>_ | _<...>_ | _<...>_ |
+      - id: m2
+        kind: md
+        md: '> Any unclassified resource must not be allocated, encumbered, monetized, or transferred until classification is completed.'
+  - id: recognized-contribution-categories
+    title: Recognized Contribution Categories
+    blocks:
+      - id: clauses
+        kind: clauses
+        refs:
+          - 5.2.1
+          - 5.2.3
+          - 5.6.3
+      - id: rationale
+        kind: rationale
+        summary: Why name the kinds of work that count?
+        body: If the community never says out loud which kinds of work it depends on, the invisible work — care, facilitation, moderation, stewardship — stays invisible, and the people doing it burn out or leave. Enumerating categories converts "someone just does this" into recognized labour the system has to account for.
+      - id: instructions
+        kind: instructions
+        summary: How to fill this in
+        body: List the categories of contribution your community recognizes. Care, facilitation, stewardship, and informal participation are commonly under-recognized — name them explicitly if they apply.
+      - id: m1
+        kind: md
+        md: |-
+          | Category | Examples |
+          |---|---|
+          | _<e.g. Knowledge & Research>_ | _<examples>_ |
+          | _<e.g. Technical Development>_ | _<examples>_ |
+          | _<e.g. Governance & Coordination>_ | _<examples>_ |
+          | _<e.g. Community Building>_ | _<examples>_ |
+          | _<e.g. Care & Support>_ | _<examples>_ |
+          | _<e.g. Stewardship>_ | _<examples>_ |
+          | _<e.g. Informal Participation>_ | _<examples>_ |
+  - id: contribution-recognition-mechanism
+    title: Contribution Recognition Mechanism
+    blocks:
+      - id: clauses
+        kind: clauses
+        refs:
+          - 5.2.2
+          - 5.2.5
+      - id: rationale
+        kind: rationale
+        summary: Why pin down how recognition actually works?
+        body: Without a defined mechanism, "who gets credit" becomes a matter of who is loudest or closest to whoever decides. Specifying what qualifies, how it's recorded, who validates, and how to dispute it turns recognition into something a member can actually rely on — and blocks recognition from silently mutating into governance influence.
+      - id: instructions
+        kind: instructions
+        summary: How to fill this in
+        body: State what qualifies, how recognitions are recorded, who validates, what they unlock (or do not unlock), and how members dispute a record.
+      - id: m1
+        kind: md
+        md: |-
+          - **What qualifies:** _<which activities count, and at whose declaration.>_
+          - **How contributions are recorded:** _<structured channel; informal/self-reported channel.>_
+          - **Who validates:** _<automatic / role holder / nomination process.>_
+          - **Effect on access/privileges:** _<recognition affects internal-unit balance only; does not grant additional governance rights beyond the membership state.>_
+          - **Dispute:** _<window and process for contesting a record.>_
+  - id: internal-units
+    title: Internal Units
+    blocks:
+      - id: clauses
+        kind: clauses
+        refs:
+          - 5.2.4
+          - 5.2.5
+      - id: rationale
+        kind: rationale
+        summary: Why define internal units this precisely?
+        body: Internal units tend to grow powers no one voted for — decay, caps, transferability, governance weight — unless each property is nailed down in writing. Listing issuance, transfer rules, privacy, and explicit non-governance status makes the units tools of recognition rather than quiet shadow currencies.
+      - id: instructions
+        kind: instructions
+        summary: How to fill this in
+        body: If your community uses internal units (XP, ECO, credits, etc.), define each unit's purpose, issuance, transferability, decay, cap, fraud prevention, and privacy. Explicitly state that units do not grant governance rights beyond the membership state.
+      - id: m1
+        kind: md
+        md: |-
+          | Property | _<Unit A>_ | _<Unit B>_ |
+          |---|---|---|
+          | **Purpose** | _<...>_ | _<...>_ |
+          | **Issuance** | _<...>_ | _<...>_ |
+          | **Transferability** | _<...>_ | _<...>_ |
+          | **Expiration / decay** | _<...>_ | _<...>_ |
+          | **Hard cap** | _<...>_ | _<...>_ |
+          | **Fraud prevention** | _<...>_ | _<...>_ |
+          | **Privacy** | _<...>_ | _<...>_ |
+      - id: m2
+        kind: md
+        md: '> Internal units do not grant governance rights beyond what the membership state defines.'
+  - id: accumulation-constraints
+    title: Accumulation Constraints
+    blocks:
+      - id: clauses
+        kind: clauses
+        refs:
+          - 5.4.1
+          - 5.4.2
+          - 5.4.3
+          - 5.4.4
+          - 5.6.4
+      - id: rationale
+        kind: rationale
+        summary: Why constrain accumulation at all?
+        body: Any internal unit that can pile up without limit eventually becomes leverage — a few members with large balances gain informal sway the governance system never granted them. Stating accumulation rules explicitly, even when the current rule is "none yet," keeps the question open and forces a visible decision before concentration becomes a structural problem.
+      - id: instructions
+        kind: instructions
+        summary: How to fill this in
+        body: State the current accumulation rule (cap, decay, none) and the rule that no internal unit may be converted into governance authority.
+      - id: m1
+        kind: md
+        md: |-
+          - _<Hard cap on internal units, if any.>_
+          - _<Decay rule, if any.>_
+          - _<Internal units cannot be converted into governance authority or used to bypass the Decision Matrix.>_
+  - id: external-income-interfaces
+    title: External Income Interfaces
+    blocks:
+      - id: clauses
+        kind: clauses
+        refs:
+          - 5.3.2
+      - id: rationale
+        kind: rationale
+        summary: Why require approval before money arrives?
+        body: Once funds are in hand, the conversation shifts from "should we accept this?" to "what do we do with it?" — and the conditions attached to the income (grant terms, partnership obligations, service commitments) are often already locked in. Requiring a Strategic decision before any new income channel opens keeps the community in control of what it takes on.
+      - id: instructions
+        kind: instructions
+        summary: How to fill this in
+        body: List current declared income channels, name potential future channels, and require Strategic approval before any new channel is opened.
+      - id: m1
+        kind: md
+        md: |-
+          - _<Current income channels.>_
+          - _<Potential future income channels.>_
+          - _<Rule: any new external income interface must be declared and approved via a Strategic decision before funds are received or commitments made.>_
+  - id: dispute-resolution-for-economic-records
+    title: Dispute Resolution for Economic Records
+    blocks:
+      - id: clauses
+        kind: clauses
+        refs:
+          - 5.5.3
+      - id: rationale
+        kind: rationale
+        summary: Why time-box economic disputes?
+        body: Contribution and balance records accumulate fast; if disputes could be raised indefinitely, the ledger would never settle and every historical credit would stay contestable. A defined window with a named resolver and an appeal path gives members a real chance to correct errors without leaving the whole economic history perpetually unstable.
+      - id: instructions
+        kind: instructions
+        summary: How to fill this in
+        body: State the dispute window, named resolver, and appeal path. Reference the Contribution Recognition Mechanism for the full process.
+      - id: m1
+        kind: md
+        md: _<Window for contesting a contribution record or balance; named resolver; appeal path to Full Members via the governance process.>_
+      - id: m2
+        kind: md
+        md: '---'
+  - id: ratification-record
+    title: Ratification Record
+    blocks:
+      - id: m1
+        kind: md
+        md: |-
+          - **Adopted:** <YYYY-MM-DD>
+          - **Decision type:** Strategic
+          - **Version:** <version>
+          - **Decision record:** <link to decision record>

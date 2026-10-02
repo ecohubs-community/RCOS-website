@@ -1,0 +1,59 @@
+kind: template
+legacyPath: rcos-templates/layer-1/membership-state-registry
+id: b6d4e7f9
+title: Membership State Registry
+parentId: 2c750c19
+order: 3
+preamble: |-
+  - **Layer:** 1 — Membership System
+  - **Status:** Template — adapt for your community
+  - **RCOS reference:** [§3.1](rcos:§3.1)
+
+  ---
+sections:
+  - id: defined-membership-states
+    title: Defined Membership States
+    blocks:
+      - id: clauses
+        kind: clauses
+        refs:
+          - 3.1.1
+          - 3.1.2
+          - 3.1.3
+          - 3.1.4
+          - 3.1.5
+      - id: rationale
+        kind: rationale
+        summary: Why a single table of states?
+        body: Rights and obligations scattered across documents drift apart. Collecting every state, its rights, its obligations, and its transitions into one table makes the membership system auditable at a glance — you can see every door into and out of the community, and what each one grants. If two documents ever disagree, this registry is the tiebreaker.
+      - id: instructions
+        kind: instructions
+        summary: How to fill this in
+        body: Define every membership state your community recognizes (e.g. Applicant, Trial Member, Full Member, Exited Member). For each, list rights, obligations, entry condition, and exit condition. Keep states mutually exclusive — no individual may hold two states simultaneously.
+      - id: m1
+        kind: md
+        md: |-
+          | State | Rights | Obligations | Entry condition | Exit condition |
+          |---|---|---|---|---|
+          | _<State 1, e.g. Applicant>_ | _<rights>_ | _<obligations>_ | _<entry>_ | _<exit>_ |
+          | _<State 2, e.g. Trial Member>_ | _<rights>_ | _<obligations>_ | _<entry>_ | _<exit>_ |
+          | _<State 3, e.g. Full Member>_ | _<rights>_ | _<obligations>_ | _<entry>_ | _<exit>_ |
+          | _<State 4, e.g. Exited Member>_ | _<rights>_ | _<obligations>_ | _<entry>_ | _<exit>_ |
+      - id: m2
+        kind: md
+        md: |-
+          > No individual may hold multiple membership states simultaneously.
+          > No rights or obligations may be assumed outside of the individual's current membership state.
+      - id: m3
+        kind: md
+        md: '---'
+  - id: ratification-record
+    title: Ratification Record
+    blocks:
+      - id: m1
+        kind: md
+        md: |-
+          - **Adopted:** <YYYY-MM-DD>
+          - **Decision type:** Strategic
+          - **Version:** <version>
+          - **Decision record:** <link to decision record>

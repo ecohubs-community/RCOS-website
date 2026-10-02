@@ -2,7 +2,7 @@
 
 # Especificación RCOS Core — v0.1
 
-- **Generado:** 2026-08-31
+- **Generado:** 2026-10-02
 - **Fuente (versión más reciente):** [https://rcos.ecohubs.community/es/articles/rcos-core/v0-1](https://rcos.ecohubs.community/es/articles/rcos-core/v0-1)
 
 - Estado: Borrador
@@ -1750,8 +1750,8 @@ Formato recomendado:
 | Prueba de facilitación rotativa | 5 | Experimento | Activo | 2026-06-01 | 2026-08-01 | [placeholder] |
 | Excepción de transparencia de tesorería (seguridad) | 3/4 | Permanente | Activo | 2026-04-10 | Revisión anual | [placeholder] |
 
-
 ## C.5 Declaración de cumplimiento
+
 - Estado de cumplimiento actual: Cumple / No cumple / Desconocido
 - Fecha de la última autoauditoría o auditoría externa
 - Método de auditoría (autoauditoría vs. externa)
@@ -1766,6 +1766,7 @@ Formato recomendado:
 - Períodos conocidos de incumplimiento (si los hay)  
 
 ## C.6 Transparencia pública
+
 - Índice de artefactos públicos (recomendado):
 
 | Artefacto | Capa | Enlace público | Versión/fecha | Notas |

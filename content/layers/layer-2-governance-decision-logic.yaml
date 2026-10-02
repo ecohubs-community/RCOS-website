@@ -1,0 +1,33 @@
+kind: doc
+legacyPath: rcos-layers/layer-2-governance-decision-logic
+headingLevel: 3
+id: a145ff34
+title: Layer 2 - Governance & Decision Logic
+parentId: a7759be1
+order: 0
+head: '**How decisions are made, changed, and enforced.**'
+sections:
+  - id: decision-types
+    title: '**Decision types**'
+    md: |-
+      * **Operational**
+        Day-to-day decisions; reversible; low risk.
+      * **Strategic**
+        Medium-term direction; resource allocation; partially reversible.
+      * **Constitutional**
+        Changes to core rules, purpose, or invariants; high threshold.
+  - id: mechanisms
+    title: '**Mechanisms**'
+    md: "How a decision is made.\n**Purpose:**\_match decision risk to decision method.\n\n* Consent (no reasoned objection)\n* Vote (majority / supermajority)\n* Delegation (role-based authority)\n* Proposal + review + adoption"
+  - id: authority-boundaries
+    title: '**Authority boundaries**'
+    md: "Who can decide.\n**Purpose:**\_avoid decision paralysis and power leakage.\n\n* **Individual**\_– autonomy within role\n* **Role**\_– defined responsibilities\n* **Circle / Domain**\_– scoped authority\n* **Whole community**\_– constitutional matters"
+  - id: artifacts
+    title: '**Artifacts**'
+    md: "* Decision Matrix\n  * Prevents arguments about\_*how*\_to decide\n  * Makes authority explicit\n  * Reduces emotional escalation\n* Governance Protocol (short law document)\n  * Decision types & thresholds\n  * Roles and domains\n  * Proposal lifecycle\n  * Escalation and appeal paths\n  * Emergency powers (if any)"
+  - id: layer-invariants
+    title: '**Layer Invariants**'
+    md: "* **Invariant 2.1: Decision type precedes decision content**\n  How a decision is made must be agreed\_*before*\_what is decided.\n* **Invariant 2.2: Authority must be explicit**\n  No one may exercise decision power without a defined role, mandate, or consent.\n* **Invariant 2.3: Constitutional rules outrank all others**\n  Operational or strategic decisions cannot override constitutional agreements.\n* **Invariant 2.4: Decisions are reviewable**\n  All decisions must be traceable to their authority, method, and record."
+  - id: explicitness-rules
+    title: '**Explicitness Rules**'
+    md: "#### **MUST be explicit**\n\n* Decision types (operational / strategic / constitutional)\n* Who decides what (authority boundaries)\n* Decision mechanisms and thresholds\n* Escalation paths\n\n**Why:**\_governance ambiguity equals informal hierarchy.\n\n#### **MAY be explicit**\n\n* Meeting facilitation style\n* Proposal templates\n* Emergency procedures\n\n#### **MUST remain optional**\n\n* Governance philosophy (consensus vs sociocracy, etc.)\n* Emotional tone of meetings"

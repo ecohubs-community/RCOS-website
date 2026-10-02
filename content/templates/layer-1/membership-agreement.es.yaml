@@ -1,0 +1,109 @@
+lang: es
+sourceHash: c0fd1050
+title: Acuerdo de Membresía
+preamble: |-
+  - **Capa:** 1 — Sistema de Membresía
+  - **Estado:** Plantilla — adaptar para tu comunidad
+  - **Referencia RCOS:** [§3.4](rcos:§3.4), [§3.5](rcos:§3.5), [§3.8](rcos:§3.8)
+
+  > Firmado (o reconocido explícitamente) por cada miembro en el momento de su admisión. Define los derechos y obligaciones de cada estado de membresía.
+
+  ---
+sections:
+  membership-state-on-signing:
+    title: Estado de Membresía al Firmar
+    blocks:
+      rationale:
+        summary: ¿Por qué declarar el estado al firmar?
+        body: La membresía no es un simple binario. Una persona que se incorpora debe saber exactamente en qué estado está entrando — Prueba o Pleno — porque el estado determina lo que puede hacer y lo que se espera de ella. Nombrarlo en el momento del consentimiento evita ambigüedades posteriores sobre lo que realmente aceptó.
+      instructions:
+        summary: Cómo completar esta sección
+        body: Indica qué estado(s) de membresía recibe un nuevo miembro al firmar (p. ej., Miembro en Prueba, Miembro Pleno, o cualquier estado personalizado definido en tu Registro de Estados de Membresía).
+      m1:
+        md: _<Estado de membresía asignado al firmar — p. ej., Miembro en Prueba tras la aprobación de la solicitud; Miembro Pleno tras completar la incorporación.>_
+  member-rights:
+    title: Derechos del Miembro
+    blocks:
+      rationale:
+        summary: ¿Por qué enumerar los derechos explícitamente?
+        body: Los derechos que no están escritos son derechos que pueden retirarse en silencio. Enumerarlos hace que los compromisos de la comunidad sean legibles, exigibles y simétricos con las obligaciones que se pide a los miembros que asuman. Sin esta lista, las obligaciones se convierten en demandas abiertas sin protección recíproca.
+      instructions:
+        summary: Cómo completar esta sección
+        body: Enumera los derechos concretos otorgados a cada estado de membresía. Consulta la Matriz de Decisiones (Capa 2) para los derechos de voto, el Registro de Roles (Capa 5) para la elegibilidad de roles, y la Capa 4 para las garantías de debido proceso.
+      m1:
+        md: |-
+          1. _<Derecho 1, p. ej., el derecho a votar en todas las decisiones según lo definido en la Matriz de Decisiones.>_
+          2. _<Derecho 2, p. ej., el derecho a acceder a todos los canales, llamadas y registros exclusivos para miembros.>_
+          3. _<Derecho 3, p. ej., el derecho a ocupar roles según lo definido en el Registro de Roles.>_
+          4. _<Derecho 4, p. ej., el derecho a obtener reconocimiento a través de contribuciones reconocidas.>_
+          5. _<Derecho 5, p. ej., el derecho a proponer cambios a través del proceso de gobernanza.>_
+          6. _<Derecho 6, p. ej., el derecho a plantear un conflicto a través de la Escalera de Resolución de Conflictos sin represalias.>_
+          7. _<Derecho 7, p. ej., el derecho a salir de la comunidad voluntariamente en cualquier momento.>_
+          8. _<Derecho 8, p. ej., el derecho al debido proceso antes de cualquier salida forzada, suspensión o restricción de acceso.>_
+  member-obligations:
+    title: Obligaciones del Miembro
+    blocks:
+      rationale:
+        summary: ¿Por qué acotar las obligaciones estrictamente?
+        body: Las obligaciones abiertas son la vía por la que las comunidades caen en la explotación — "contribuye más", "estate disponible", "preséntate" sin límite definido. Enumerar las obligaciones de forma discreta, y vincular cada una a un derecho correspondiente, mantiene lo que se pide acotado e impugnable. Un miembro siempre debe poder saber si está cumpliendo el acuerdo o si se le está pidiendo algo que lo excede.
+      instructions:
+        summary: Cómo completar esta sección
+        body: 'Enumera obligaciones concretas y acotadas. Cada obligación debe ser verificable: un miembro debe poder saber si la está cumpliendo. Evita deberes vagos.'
+      m1:
+        md: |-
+          1. _<Obligación 1, p. ej., cumplir en todo momento con todas las restricciones de identidad e invariantes de la Capa 0.>_
+          2. _<Obligación 2, p. ej., contribuir a la comunidad en al menos una categoría reconocida por período definido.>_
+          3. _<Obligación 3, p. ej., participar en los procesos de resolución de conflictos cuando sea nombrado como parte o solicitado como testigo.>_
+          4. _<Obligación 4, p. ej., completar la incorporación antes de ejercer los derechos de Miembro Pleno.>_
+          5. _<Obligación 5, p. ej., notificar a la comunidad antes de una ausencia prolongada.>_
+          6. _<Obligación 6, p. ej., no tergiversar a la comunidad, sus miembros o su gobernanza ante el exterior.>_
+          7. _<Obligación 7, p. ej., no ejercer autoridad más allá de lo explícitamente asignado a través del sistema de gobernanza.>_
+  participation-and-contribution-expectations:
+    title: Expectativas de Participación y Contribución
+    blocks:
+      rationale:
+        summary: ¿Por qué definir la participación con números?
+        body: '"Miembro activo" no significa nada sin un umbral. Un mínimo definido — en tiempo, categoría y cadencia — convierte la participación de una sensación en un hecho, de modo que nadie tenga que adivinar si está al día y nadie pueda ser acusado de alejarse sin evidencia. También hace visible la línea entre una ausencia genuina y un abandono silencioso lo suficientemente pronto como para actuar.'
+      instructions:
+        summary: Cómo completar esta sección
+        body: Establece un mínimo medible (frecuencia × categoría), reglas de sustitución y ausencia, y el detonante que mueve a un miembro no participante a un proceso de la Capa 4.
+      m1:
+        md: |-
+          - **Contribución mínima:** _<p. ej., al menos una contribución reconocida cada 6 meses, en cualquier categoría reconocida.>_
+          - **Categorías reconocidas:** _<hacer referencia al Protocolo de Economía Interna (Capa 3).>_
+          - **Sustitución:** _<p. ej., un miembro puede delegar una tarea específica pero sigue siendo responsable de cumplir las expectativas generales de contribución.>_
+          - **Ausencia prolongada:** _<p. ej., se requiere notificación antes de ausencias superiores a X meses; las expectativas se pausan durante el período notificado hasta un máximo.>_
+          - **Detonante de no participación:** _<p. ej., la ausencia de contribución reconocida durante X meses consecutivos sin aviso previo activa una verificación de rendición de cuentas (Capa 4).>_
+  due-process-reference:
+    title: Referencia al Debido Proceso
+    blocks:
+      rationale:
+        summary: ¿Por qué reiterar el debido proceso aquí?
+        body: El Acuerdo de Membresía es el único documento que cada miembro realmente lee y al que da su consentimiento. Nombrar el debido proceso aquí — no solo en la Capa 4 — garantiza que ningún miembro pueda ser expulsado o restringido bajo una regla que no le fue mostrada cuando se incorporó. Cierra la brecha entre lo que la comunidad promete y lo que puede hacer.
+      instructions:
+        summary: Cómo completar esta sección
+        body: Haz referencia a la Escalera de Resolución de Conflictos (Capa 4) y al Protocolo de Salida y Separación para que cualquier miembro que lea el Acuerdo de Membresía sepa dónde residen las protecciones procedimentales.
+      m1:
+        md: Cualquier salida forzada, suspensión o restricción de acceso sigue el debido proceso de la Capa 4 y el Protocolo de Salida y Separación.
+  consent-acknowledgment:
+    title: Reconocimiento de Consentimiento
+    blocks:
+      rationale:
+        summary: ¿Por qué exigir consentimiento explícito?
+        body: El consentimiento que se asume es consentimiento que puede negarse después. Exigir un acto explícito — firmar, hacer clic, reconocer — en un momento conocido vincula al miembro con las versiones específicas de los artefactos vigentes ese día, y da a la comunidad un registro defendible de que el acuerdo fue celebrado libre y conscientemente.
+      instructions:
+        summary: Cómo completar esta sección
+        body: Describe el acto de consentimiento (firma, reconocimiento en la aplicación, etc.) y a qué versiones de los artefactos está consintiendo el miembro en ese momento.
+      m1:
+        md: Al ingresar a la comunidad a través del proceso de incorporación definido, el miembro consiente explícitamente los términos de este acuerdo y los artefactos de la Capa 0 vigentes en el momento de la admisión.
+      m2:
+        md: '---'
+  ratification-record:
+    title: Registro de Ratificación
+    blocks:
+      m1:
+        md: |-
+          - **Adoptado:** <AAAA-MM-DD>
+          - **Tipo de decisión:** Estratégica
+          - **Versión:** <versión>
+          - **Registro de decisión:** <enlace al registro de decisión>

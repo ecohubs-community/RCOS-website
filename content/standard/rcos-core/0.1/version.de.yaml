@@ -1,0 +1,14 @@
+lang: de
+sourceHash: 92c67acf
+title: v0.1
+intro: '# Regeneratives Gemeinschafts-Betriebssystem (RCOS)'
+sections:
+  s1:
+    title: Kernspezifikation
+    blocks:
+      b1:
+        md: |-
+          - Status: Entwurf
+          - Version: RCOS-Core v0.1
+          - Zielgruppe: Gemeinschaftsgründer\*innen, Praktiker\*innen, Prüfer\*innen, Umsetzer\*innen
+          - Normative Schlüsselwörter: `MUSS`, `DARF NICHT`, `SOLLTE`, `KANN` (RFC-Stil)

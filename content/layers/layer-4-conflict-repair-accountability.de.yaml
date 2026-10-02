@@ -1,0 +1,66 @@
+lang: de
+sourceHash: 398eaeff
+title: Schicht 4 – Konflikt, Wiederherstellung & Verantwortlichkeit
+head: '**Was passiert, wenn etwas kaputtgeht.**'
+sections:
+  conflict-classification:
+    title: Konfliktklassifikation
+    md: |-
+      * Zwischenmenschlich  
+      * Rollenbasiert  
+      * Strukturell  
+      * Ethische Grenzverletzungen
+  repair-mechanisms:
+    title: Reparaturmechanismen
+    md: |-
+      * Mediation  
+      * Restaurative Prozesse  
+      * Sanktionen  
+      * Trennung
+  protection:
+    title: Schutz
+    md: |-
+      * Schutzmaßnahmen gegen Machtmissbrauch  
+      * Minderheitenschutz  
+      * Burnout-Prävention
+  artifacts:
+    title: Artefakte
+    md: |-
+      * Conflict Resolution Ladder  
+      * Accountability Protocol
+  layer-invariants:
+    title: Layer-Invarianten
+    md: |-
+      * **Invariante 4.1: Konflikte werden bearbeitet, nicht vermieden**  
+        Alle Konflikte müssen einen definierten Lösungsweg haben; Konflikte zu ignorieren ist ein Verstoß.
+
+      * **Invariante 4.2: Machtasymmetrie wird anerkannt**  
+        Konflikte, die Machtunterschiede beinhalten, erfordern erhöhte Schutzmaßnahmen.
+
+      * **Invariante 4.3: Wiederherstellung geht vor Bestrafung**  
+        Restaurative Prozesse müssen vor Sanktionen versucht werden, außer in sicherheitskritischen Fällen.
+
+      * **Invariante 4.4: Sicherheit hat Vorrang vor Teilnahme**  
+        Physische, psychische und Kindersicherheit haben Vorrang vor allen Teilnahmerechten.
+  explicitness-rules:
+    title: Explizitätsregeln
+    md: |-
+      #### **MUSS explizit sein**
+
+      * Konfliktklassifikation  
+      * Minimaler Reparaturprozess  
+      * Schutzmechanismen  
+      * Trennungsschwellen
+
+      **Warum:** Konfliktvermeidung ist keine Neutralität – sie ist strukturelles Versagen.
+
+      #### **KANN explizit sein**
+
+      * Mediationsstile  
+      * Auswahl der Moderation  
+      * Restaurative Praktiken
+
+      #### **MUSS optional bleiben**
+
+      * Normen für emotionalen Ausdruck  
+      * Therapeutische oder spirituelle Rahmung

@@ -1,0 +1,300 @@
+lang: de
+sourceHash: c5e601a8
+title: v0.1
+intro: ''
+sections:
+  s1:
+    title: Permakultur-Modul (nicht-normativ)
+    blocks:
+      b1:
+        md: Dieses Modul definiert, wie eine Gemeinschaft Permakultur-Prinzipien und -Praktiken KANN in eine RCOS-konforme Struktur integrieren kann.
+      b2:
+        md: |-
+          Das Permakultur-Modul regelt **Struktur, Autorität und Rechenschaftspflicht** rund um ökologische Systeme.  
+          Es schreibt KEINE Glaubenssysteme, Lebensstile, moralischen Hierarchien oder landwirtschaftlichen Techniken vor.
+      b3:
+        md: Dieses Modul ist optional und DARF NICHT die RCOS-Kern-Invarianten außer Kraft setzen.
+      b4:
+        md: '---'
+  s2:
+    title: Zweck & Geltungsbereich
+    blocks:
+      b1:
+        md: '### Zweck'
+      b2:
+        md: |-
+          Regenerative Landnutzung und Ernährungssysteme zu ermöglichen und gleichzeitig Folgendes zu verhindern:
+          - informellen Landbesitz durch Pflegetätigkeit,
+          - verdeckte oder erzwungene ökologische Arbeit,
+          - ideologische Vereinnahmung der Governance durch „ökologische Korrektheit",
+          - irreversible strukturelle Festlegungen, die als Nachhaltigkeit getarnt sind.
+      b3:
+        md: '### Geltungsbereich'
+      b4:
+        md: |-
+          Dieses Modul gilt ausschließlich für:
+          - Landnutzung und Landpflege,
+          - Nahrungsmittel- und Materialproduktionssysteme,
+          - ökologische Infrastruktur,
+          - zugehörige Arbeit, Rollen und Entscheidungsbefugnisse.
+      b5:
+        md: |-
+          Es regelt ausdrücklich NICHT:
+          - persönliche Ernährungsentscheidungen,
+          - spirituelle oder ethische Glaubenssysteme,
+          - informelles Gärtnern oder Hobbyaktivitäten außerhalb des geregelten Geltungsbereichs.
+      b6:
+        md: '---'
+  s3:
+    title: Nicht-Ziele (explizit)
+    blocks:
+      b1:
+        md: |-
+          Dieses Modul tut NICHT Folgendes:
+          - Permakultur-Ideologie durchsetzen,
+          - „korrekte" ökologische Methoden definieren,
+          - moralische Autorität an ökologische Expertise vergeben,
+          - ökologische Teilnahme als Identitätsvalidierung verlangen.
+      b2:
+        md: Ökologie wird als **Infrastruktur** behandelt, nicht als Glaube.
+      b3:
+        md: '---'
+  s4:
+    title: Designbeschränkungen (hart)
+    blocks:
+      b1:
+        md: 'Wenn dieses Modul aktiv ist:'
+      b2:
+        md: |-
+          - Ökologische Autorität MUSS überprüfbar sein.
+          - Ökologische Arbeit MUSS nachvollziehbar sein.
+          - Ökologische Systeme MUSS ausstiegsfähig bleiben.
+          - Ökologische Expertise DARF NICHT in Governance-Macht umgewandelt werden.
+      b3:
+        md: Die Nichteinhaltung dieser Beschränkungen stellt einen strukturellen Verstoß dar.
+      b4:
+        md: '---'
+  s5:
+    title: Land- & Ressourcenklassifikation
+    blocks:
+      b1:
+        md: '### Geregelter ökologischer Geltungsbereich'
+      b2:
+        md: Die Gemeinschaft MUSS explizit festlegen, welches Land und welche Systeme unter dieses Modul fallen.
+      b3:
+        md: |-
+          Für jeden geregelten ökologischen Bereich oder jedes System MUSS Folgendes deklariert werden:
+          - Klassifikation (Allmende, verwaltete Allmende, privat),
+          - erlaubte und verbotene Aktivitäten,
+          - Entscheidungsbefugnis,
+          - Überprüfungs- und Reklassifizierungsmechanismus.
+      b4:
+        md: Nicht klassifiziertes Land oder nicht klassifizierte Systeme DARF NICHT durch dieses Modul geregelt werden.
+      b5:
+        md: '---'
+      b6:
+        md: '### Allmendeschutz'
+      b7:
+        md: |-
+          Land oder Systeme, die als Allmende klassifiziert sind:
+          - DARF NICHT durch Nutzung, Pflege oder Investition privatisiert werden,
+          - DARF NICHT unbefristet von Einzelpersonen oder Familien kontrolliert werden,
+          - MUSS explizite Austritts- und Neuzuweisungsregeln haben.
+      b8:
+        md: Kein Maß an Arbeit, Expertise oder historischem Beitrag gewährt standardmäßig Eigentum.
+      b9:
+        md: '---'
+  s6:
+    title: Verwaltungsrollen
+    blocks:
+      b1:
+        md: '### Rollendefinition'
+      b2:
+        md: Alle laufenden ökologischen Verantwortlichkeiten MUSS expliziten Rollen zugewiesen werden.
+      b3:
+        md: |-
+          Jede Verwaltungsrolle MUSS Folgendes definieren:
+          - Umfang und Grenzen der Befugnis,
+          - Entscheidungsschnittstellen mit Layer-2-Governance,
+          - Amtsdauer und Überprüfungsrhythmus,
+          - Übergabe- und Nachfolgeprozess,
+          - Versagens- und Abberufungsbedingungen.
+      b4:
+        md: Keine ökologische Verantwortung KANN außerhalb einer Rolle existieren.
+      b5:
+        md: '---'
+      b6:
+        md: '### Anti-Vereinnahmungs-Beschränkung'
+      b7:
+        md: |-
+          Eine Verwaltungsrolle:
+          - DARF NICHT gleichzeitig ökologische Systeme UND Governance-Befugnis kontrollieren,
+          - DARF NICHT ungeprüften Zuständigkeitsbereich ansammeln,
+          - DARF NICHT durch undokumentiertes Wissen unersetzlich werden.
+      b8:
+        md: Ein Verstoß löst eine verpflichtende Überprüfung aus.
+      b9:
+        md: '---'
+  s7:
+    title: Entscheidungsbefugnis & Expertise
+    blocks:
+      b1:
+        md: '### Befugniszuordnung'
+      b2:
+        md: |-
+          Ökologische Entscheidungen MUSS auf RCOS-Entscheidungstypen abgebildet werden:
+          - operativ (Tagesgeschäft),
+          - politisch (Regeln und Einschränkungen),
+          - konstitutionell (Geltungsbereich, Allmende-Grenzen).
+      b3:
+        md: |-
+          Expertise KANN Entscheidungen informieren, DARF NICHT aber Folgendes außer Kraft setzen:
+          - Entscheidungsschwellen,
+          - Moderationsregeln,
+          - Überprüfungs- und Einspruchsverfahren.
+      b4:
+        md: Ökologische Expertise verleiht **Input**, nicht Autorität.
+      b5:
+        md: '---'
+  s8:
+    title: Arbeit, Beitrag & Fürsorge
+    blocks:
+      b1:
+        md: '### Beitragsanerkennung'
+      b2:
+        md: Ökologische Arbeit MUSS explizit anerkannt werden.
+      b3:
+        md: |-
+          Die Gemeinschaft SOLLTE Folgendes definieren:
+          - was als ökologische Arbeit zählt,
+          - wie Intensität, Saisonalität und Fürsorgearbeit erfasst werden,
+          - wie Beitrag sich auf Zugang und Leistungen bezieht (oder nicht bezieht).
+      b4:
+        md: Unsichtbare ökologische Arbeit wird als struktureller Mangel behandelt.
+      b5:
+        md: '---'
+      b6:
+        md: '### Auslagerung & Substitution'
+      b7:
+        md: |-
+          Wenn ökologische Arbeit ausgelagert werden darf:
+          - Äquivalenzregeln MUSS explizit sein,
+          - finanzielle Substitution DARF NICHT Teilnahmeanforderungen umgehen, es sei denn, dies ist ausdrücklich erlaubt,
+          - Auslagerung DARF NICHT Abhängigkeit von Kapital statt Beitrag erzeugen.
+      b8:
+        md: '---'
+  s9:
+    title: Ertrag, Verteilung & Überschuss
+    blocks:
+      b1:
+        md: |-
+          Das Modul SOLLTE Folgendes definieren:
+          - Ertragseignerschaft und Zuteilungsregeln,
+          - Zugangsprioritäten (falls vorhanden),
+          - Überschusshandhabung und -entsorgung.
+      b2:
+        md: Ertragszugang DARF NICHT stillschweigend Mitgliedschafts- oder Beitragspflichten ersetzen.
+      b3:
+        md: Ernährungssysteme DARF NICHT als Druckmittel gegen Teilnahme oder Widerspruch eingesetzt werden.
+      b4:
+        md: '---'
+  s10:
+    title: Infrastruktur & Investition
+    blocks:
+      b1:
+        md: |-
+          Ökologische Infrastruktur MUSS Folgendes aufweisen:
+          - explizite Eigentümerklassifikation,
+          - Wartungsverantwortung,
+          - Finanzierungs- und Abschreibungsregeln,
+          - Stilllegungs- oder Übertragungsbedingungen.
+      b2:
+        md: Private Investitionen in Allmende-Infrastruktur DARF NICHT Kontrollrechte gewähren, es sei denn, dies ist ausdrücklich genehmigt.
+      b3:
+        md: '---'
+  s11:
+    title: Konflikt, Schaden & Wiedergutmachung
+    blocks:
+      b1:
+        md: Ökologische Konflikte MUSS Layer-4-Prozesse nutzen.
+      b2:
+        md: |-
+          Die Gemeinschaft SOLLTE unterscheiden zwischen:
+          - Methodendisagreement,
+          - Verwaltungsversagen,
+          - Grenz- oder Befugnisverstoß,
+          - ökologischem Schaden, der Wiedergutmachung erfordert.
+      b3:
+        md: Wiedergutmachungspflichten MUSS im Voraus definiert werden und MUSS verhältnismäßig sein.
+      b4:
+        md: '---'
+  s12:
+    title: Artefakte
+    blocks:
+      b1:
+        md: |-
+          Bei Einführung werden folgende Artefakte EMPFOHLEN:
+          - Land- & Ökologie-Geltungsbereichsdefinition
+          - Landnutzungskarte und Klassifikation
+          - Verwaltungsrollen-Register
+          - Ökologisches Beitragsrahmenwerk
+          - Ertragszuteilungsregeln
+          - Ökologisches Infrastruktur-Register
+      b2:
+        md: Artefakte MUSS versioniert und überprüfbar sein.
+      b3:
+        md: '---'
+  s13:
+    title: Bekannte Fehlermodi (informativ)
+    blocks:
+      b1:
+        md: |-
+          Dieses Modul ist darauf ausgelegt, Folgendem zu widerstehen:
+          - Landvereinnahmung durch „wer am meisten pflegt, entscheidet",
+          - Burnout durch unsichtbare Fürsorgearbeit,
+          - Ökologische Ideologie wird zwanghaft,
+          - Expertendominanz ersetzt Governance,
+          - irreversible Landbindungen ohne Ausstiegsmöglichkeit.
+      b2:
+        md: '---'
+  s14:
+    title: Austritt, Rücknahme & Deaktivierung
+    blocks:
+      b1:
+        md: |-
+          Wenn dieses Modul geändert oder entfernt wird:
+          - Verwaltungsrollen MUSS sauber abgewickelt werden,
+          - ökologische Befugnis MUSS an die Kern-Governance zurückfallen,
+          - keine dauerhaften Kontrollansprüche KANN fortbestehen.
+      b2:
+        md: |-
+          Ökologische Systeme KANN weiterbestehen.
+          Ökologische Macht DARF NICHT.
+      b3:
+        md: '---'
+  s15:
+    title: Kompatibilität mit dem RCOS-Kern
+    blocks:
+      b1:
+        md: |-
+          Dieses Modul:
+          - MUSS Layer-0-Geltungsbereich und -Invarianten respektieren,
+          - MUSS über Layer-2-Governance operieren,
+          - MUSS mit Layer-3-Wirtschaftsregeln übereinstimmen,
+          - MUSS Layer-4-Konfliktpfade nutzen,
+          - MUSS über Schicht 5 dokumentiert sein,
+          - KANN sich über Layer-6-Änderungsmechanismen weiterentwickeln.
+      b2:
+        md: Ein Versagen dieses Moduls DARF NICHT den RCOS-Kern destabilisieren.
+      b3:
+        md: '---'
+  s16:
+    title: Nicht-normativer Hinweis
+    blocks:
+      b1:
+        md: Permakultur-Methoden sind absichtlich ausgenommen.
+      b2:
+        md: |-
+          RCOS regelt:
+          **wer entscheidet, wer pflegt, wer Kosten trägt, wer profitiert und wie Macht begrenzt wird** —
+          nicht Pflanztechniken oder ökologische Philosophie.

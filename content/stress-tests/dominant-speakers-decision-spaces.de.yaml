@@ -1,0 +1,103 @@
+lang: de
+sourceHash: 842252b2
+title: Dominante Sprecher in Entscheidungsräumen
+summary: Wenn die lauteste Stimme entscheidet, nicht der vereinbarte Prozess.
+tags:
+  - 'Schicht 2: Governance'
+  - Hoher Schweregrad
+symptoms:
+  - Dieselben ein oder zwei Stimmen prägen fast jede Entscheidung.
+  - Stillere Mitglieder bringen sich in Treffen nicht mehr ein — oder kommen gar nicht mehr.
+  - Ergebnisse folgen dem, wer am längsten geredet hat, nicht dem, was tatsächlich vereinbart wurde.
+  - '"So sind sie halt" ist die stehende Erklärung für eine wiederkehrende Treffen-Dynamik.'
+  - Es gibt keine Moderation, oder die Moderation hat keine Befugnis einzugreifen.
+cascade:
+  rcos-stress-tests/governance-power/informal-clique-decision-making:
+    note: Ungebremste verbale Dominanz verhärtet sich zu einer faktischen In-Group, die Dinge regelt, bevor der Raum es tut.
+  rcos-stress-tests/conflict-accountability/conflict-avoidance-normalization:
+    note: Mitglieder, über die wiederholt hinweggeredet wird, sprechen Dinge irgendwann gar nicht mehr an.
+head: |-
+  > **Schweregrad:** Hoch — entrechtet leise den Großteil der Gemeinschaft, während es nach ganz normalen Treffen aussieht.
+  > **Wo es weh tut:** In jeder Phase; es schleicht sich früh ein und verhärtet sich.
+  > **Schon mittendrin?** Spring zu [Wenn es bereits passiert](#wenn-es-bereits-passiert).
+sections:
+  sound-familiar:
+    title: Kommt dir das bekannt vor?
+    md: Das Treffen ist für alle offen, und auf dem Papier hat jede:r dasselbe Mitspracherecht. In der Praxis reden dieselben zwei Personen zuerst, am meisten und zuletzt — und irgendwie landet die Entscheidung immer dort, wo sie sie haben wollten. Die stilleren Mitglieder nicken mit, sparen sich ihre eigentliche Meinung für den Heimweg auf und kommen nach und nach nicht mehr. Niemand wird absichtlich zum Schweigen gebracht. Die Struktur belohnt einfach diejenigen, denen es am leichtesten fällt, den Raum zu halten.
+  signs-this-is-happening-to-you:
+    title: Anzeichen, dass dir das passiert
+    md: |-
+      - Dieselben ein oder zwei Stimmen prägen fast jede Entscheidung.
+      - Stillere Mitglieder bringen sich in Treffen nicht mehr ein — oder kommen gar nicht mehr.
+      - Ergebnisse folgen dem, wer am längsten geredet hat, nicht dem, was tatsächlich vereinbart wurde.
+      - "So sind sie halt" ist die stehende Erklärung für eine wiederkehrende Dynamik.
+      - Es gibt keine Moderation, oder die Moderation hat keine Befugnis einzugreifen.
+
+      **Das ist _nicht_ dasselbe wie** wenn eine Person einfach besser vorbereitet oder zu einem Thema kompetenter ist. Das Erkennungszeichen ist, dass *Redezeit die Ergebnisse bestimmt, unabhängig vom vereinbarten Entscheidungsmechanismus* — und dass stillere Mitglieder Treffen für Treffen faktisch entrechtet werden.
+  why-it-happens:
+    title: Warum es passiert
+    md: |-
+      Ein Treffen ohne befugte Moderation fällt automatisch an diejenigen, denen das Reden am leichtesten fällt. Weil verbale Dominanz wie ein Persönlichkeitsmerkmal aussieht, behandelt die Gruppe sie als nicht-handhabbar ("das ist halt die Dana") — statt als das, was sie strukturell ist: eine unerklärte Außerkraftsetzung des Entscheidungsprozesses. Einfluss, der durch einen vereinbarten Mechanismus fließen sollte, fließt stattdessen über Redezeit — und diejenigen mit der geringsten Redezeit verlieren leise ihren Anteil.
+
+      <details data-kind="rationale">
+      <summary>Der formale Stresstest (für Auditor:innen)</summary>
+
+      **Fehlermodus** — Ein oder zwei Personen reden konsequent über andere hinweg und dominieren die Treffen.
+
+      **Beteiligte Schichten** — Schicht 2 (Governance), Schicht 5 (Operationen), Schicht 4 (Konflikt)
+
+      **Relevante Invarianten**
+
+      * 2.2 Autorität MUSS explizit sein
+      * 5.1 Rollen MÜSSEN definiert sein
+      * 4.1 Konflikt MUSS behandelt werden
+
+      **Testbedingung** — Treffen finden statt, in denen Redezeit-Dominanz wiederholt die Ergebnisse prägt, und es existiert keine formale Moderationsrolle oder Durchsetzungsmechanismus.
+
+      **Erwartetes RCOS-Verhalten** — Moderation wird als Rolle mit definierter Befugnis zugewiesen; Redezeit-Dominanz wird als Governance-/Prozessverletzung behandelt, nicht als Persönlichkeitsfrage; ein Eskalationspfad greift, wenn das Verhalten anhält.
+
+      **Bestehenskriterien** — Entscheidungen sind auf vereinbarte Mechanismen rückführbar, nicht auf Redezeit; Dominanz ist über definierte Rollen oder das Konfliktprotokoll adressierbar.
+
+      **Durchfallkriterien** — Einfluss bleibt informell und nicht rechenschaftspflichtig.
+
+      </details>
+  how-mature-is-your-community-on-this:
+    title: Wie reif ist deine Gemeinschaft hier?
+    md: |-
+      Bestanden/Nicht bestanden ist für das echte Leben zu grob — die meisten Gemeinschaften sind irgendwo dazwischen. Finde deine Sprosse und ziele auf die nächste.
+
+      | Stufe | Wie es aussieht |
+      |---|---|
+      | **L0 — Implizit** | Ein paar Stimmen dominieren; es wird als Persönlichkeit gelesen, nicht als Prozess. |
+      | **L1 — Benannt** | Die Gruppe erkennt das Ungleichgewicht an, hat aber keine Moderationsrolle oder Regel, um damit umzugehen. |
+      | **L2 — Dokumentiert** | Treffen haben eine definierte [Moderationsrolle](rcos:template/role-registry) und eine [Entscheidungsmatrix](rcos:template/decision-matrix); Entscheidungen lassen sich auf einen Mechanismus zurückführen, nicht auf Redezeit. |
+      | **L3 — Durchgesetzt & eingeübt** | Moderation gleicht aktiv die Beteiligung aus; Dominanz wird als Prozessverletzung benannt und eskaliert, wenn sie anhält. |
+
+      Die meisten Gemeinschaften, die sich hier wiedererkennen, sitzen auf **L0 oder L1**. Das Ziel ist nicht Perfektion — es ist, eine Sprosse höher zu kommen.
+  how-rcos-prevents-this:
+    title: Wie RCOS dem vorbeugt
+    md: |-
+      RCOS leitet Einfluss durch vereinbarte Strukturen statt durch Redezeit:
+
+      - **[Meeting-Vorlagen](rcos:template/meeting-templates)** — strukturierte Agenden, Redenrunden und Zeitboxen, die Redezeit per Design verteilen.
+      - **[Rollenregister](rcos:template/role-registry)** — eine Moderationsrolle mit expliziter Befugnis, einzugreifen und auszubalancieren.
+      - **[Entscheidungsmatrix](rcos:template/decision-matrix)** — Entscheidungen werden über einen vereinbarten Mechanismus aufgelöst, sodass Redezeit für das Ergebnis irrelevant wird.
+
+      Siehe auch die Spezifikation: [Schicht 5 — Meeting-System](rcos:§7.2) und [Schicht 2 — Entscheidungsmatrix](rcos:§4.4).
+  if-it-s-already-happening:
+    title: Wenn es bereits passiert
+    md: |-
+      Wenn ein paar Stimmen den Raum bereits dominieren, ändere das Format, nicht die Menschen:
+
+      1. **Bestimme jetzt eine Moderation** — idealerweise eine rotierende Rolle oder eine neutrale Person von außen für die nächsten Treffen.
+      2. **Wechsle zu Runden-basierten Formaten** — alle sprechen einmal, bevor irgendjemand zweimal spricht. Das bricht das Dominanzmuster sofort auf.
+      3. **Benenne es als Prozess, nicht als Persönlichkeit** — "wir ändern, wie wir Treffen führen", niemals "du redest zu viel".
+      4. **Leite Anhaltendes durch den Konfliktpfad**, statt es als Charakter zu tolerieren.
+  what-this-failure-tends-to-trigger:
+    title: Was dieses Versagen typischerweise auslöst
+    md: |-
+      - **[Informelle Cliquen-Entscheidungen](rcos:test/informal-clique-decision-making)** — ungebremste Dominanz verhärtet sich zu einer faktischen In-Group, die Dinge entscheidet, bevor der Raum es tut.
+      - **[Normalisierung der Konfliktvermeidung](rcos:test/conflict-avoidance-normalization)** — Mitglieder, über die wiederholt hinweggeredet wird, sprechen Dinge irgendwann gar nicht mehr an.
+  related-stress-tests:
+    title: Verwandte Stresstests
+    md: '- **[Informelles Veto der Gründer:innen](rcos:test/founder-informal-veto)** — oft ist die dominante Stimme die der Gründer:in, und Dominanz geht in ein ungeschriebenes Veto über.'

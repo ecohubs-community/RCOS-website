@@ -1,0 +1,381 @@
+kind: chapter
+legacyPath: rcos-core
+id: fdd280ae
+title: RCOS Core
+parentId: null
+order: 1
+intro: ''
+sections:
+  - id: s1
+    title: What RCOS Is
+    blocks:
+      - id: b1
+        kind: md
+        md: The **Regenerative Community Operating System (RCOS)** is a formal, layered specification for designing, operating, and evolving intentional communities without relying on charisma, ideology, or informal power.
+      - id: b2
+        kind: md
+        md: 'RCOS treats a community as a **governed system**, not a social experiment. It defines the minimum structural requirements needed for a community to remain:'
+      - id: b3
+        kind: md
+        md: |-
+          - coherent under stress,
+          - fair under power asymmetries,
+          - adaptable without collapse,
+          - and regenerative over time.
+      - id: b4
+        kind: md
+        md: 'RCOS is not a lifestyle, belief system, or cultural identity. It is an **operating system**: a set of explicit rules, interfaces, invariants, and test cases that make community life legible, auditable, and survivable.'
+      - id: b5
+        kind: md
+        md: '---'
+  - id: s2
+    title: What Problem RCOS Solves
+    blocks:
+      - id: b1
+        kind: md
+        md: Most communities do not fail because of bad intentions. They fail because of **implicit structure**.
+      - id: b2
+        kind: md
+        md: 'Common failure patterns include:'
+      - id: b3
+        kind: md
+        md: |-
+          - informal leaders overriding formal processes,
+          - unspoken norms enforced as rules,
+          - invisible labor leading to burnout,
+          - wealth or charisma turning into power,
+          - conflict being avoided until it becomes existential,
+          - emergency decisions becoming permanent exceptions.
+      - id: b4
+        kind: md
+        md: RCOS exists to make these failure modes **structurally impossible or explicitly addressable**.
+      - id: b5
+        kind: md
+        md: '---'
+  - id: s3
+    title: What RCOS Is Not
+    blocks:
+      - id: b1
+        kind: md
+        md: 'RCOS explicitly does **not** prescribe:'
+      - id: b2
+        kind: md
+        md: |-
+          - a specific culture, belief, or spirituality,
+          - a political or economic ideology,
+          - a governance method (e.g. consensus vs sociocracy),
+          - or how people _should_ live together.
+      - id: b3
+        kind: md
+        md: Instead, RCOS constrains _how choices are made_, _how power is bounded_, and _how change occurs_, regardless of values.
+      - id: b4
+        kind: md
+        md: '---'
+  - id: s4
+    title: Design Principles (Non-negotiable)
+    blocks:
+      - id: b1
+        kind: md
+        md: '> **Nothing essential may remain implicit.**'
+      - id: b2
+        kind: md
+        md: |-
+          - **Constraint-based, not value-based** — Defines rules and boundaries instead of prescribing beliefs. Values vary; constraints keep systems functional under stress.
+          - **Pre-commitment over improvisation** — Critical decisions (conflict, power, money) are agreed before emotions, scarcity, or power struggles arise.
+          - **Modular by default** — The core remains stable while optional domain modules can be added, replaced, or removed without breaking the system.
+          - **Human-scale (≈ 5–150 people)** — Optimized for groups small enough to maintain trust, accountability, and shared context without bureaucracy.
+          - **Failure-tolerant, not failure-blind** — Assumes conflict, burnout, and mistakes will happen and provides explicit recovery paths.
+      - id: b3
+        kind: md
+        md: 'Anything that affects the following must be explicitly declared, versioned, and reviewable:'
+      - id: b4
+        kind: md
+        md: |-
+          - authority
+          - membership
+          - resources
+          - conflict
+          - system evolution
+      - id: b5
+        kind: md
+        md: |-
+          - Silence is never treated as consent.
+          - Tradition is never treated as authority.
+          - Urgency is never treated as justification.
+      - id: b6
+        kind: md
+        md: '---'
+  - id: s5
+    title: 'On Group Size: Why ~150?'
+    blocks:
+      - id: b1
+        kind: md
+        md: '**150** ≈ Dunbar’s Number: cognitive limit for stable social relationships.'
+      - id: b2
+        kind: md
+        md: |-
+          - **Minimum viable community (5–7 people):**
+            Below this, role separation and conflict resolution collapse.
+          - **Optimal horizontal range (8–40 people):**
+            High trust, low bureaucracy, direct participation possible.
+          - **Maximum unsegmented size (120–150 people):**
+            Beyond this, informal governance fails.
+      - id: b3
+        kind: md
+        md: RCOS Core applies to any size, but above ~150 people, mandatory sub-structures (circles, domains, neighborhoods) are required.
+      - id: b4
+        kind: md
+        md: '---'
+  - id: s6
+    title: Why the RCOS Core Structure Matters
+    blocks:
+      - id: b1
+        kind: md
+        md: |-
+          - Prevents founder dominance
+          - Makes power explicit
+          - Reduces hidden norms
+          - Survives conflict
+          - Enables replication
+          - Integrates cleanly with DAO tooling, _without being dependent on it_
+      - id: b2
+        kind: md
+        md: '---'
+  - id: s7
+    title: What Is Deliberately Not in the RCOS Core
+    blocks:
+      - id: b1
+        kind: md
+        md: 'These belong to **optional modules**, not the core:'
+      - id: b2
+        kind: md
+        md: |-
+          - Permaculture design
+          - Education philosophy
+          - Spiritual or cultural practices
+          - Political ideology
+          - Aesthetic or lifestyle choices
+      - id: b3
+        kind: md
+        md: The core governs how decisions are made, not what decisions must be made.
+      - id: b4
+        kind: md
+        md: '---'
+  - id: s8
+    title: Invariants (Applies to All Layers)
+    blocks:
+      - id: b1
+        kind: md
+        md: '### Explicit Beats Implicit'
+      - id: b2
+        kind: md
+        md: If it is not written, agreed, and versioned, **it does not exist**.
+      - id: b3
+        kind: md
+        md: '### Why This Matters'
+      - id: b4
+        kind: md
+        md: The Layer-Invariants ensure that no amount of goodwill, charisma, urgency, or consensus can quietly erode the system.
+      - id: b5
+        kind: md
+        md: '---'
+  - id: s9
+    title: The RCOS Explicitness Rule (Core Principle)
+    blocks:
+      - id: b1
+        kind: md
+        md: '**Anything that allocates power, risk, responsibility, or exit conditions must be explicit.**'
+      - id: b2
+        kind: md
+        md: Anything that expresses preference, style, or local optimization may be optional.
+      - id: b3
+        kind: md
+        md: '### Explicit vs Optional by Layer'
+      - id: b4
+        kind: md
+        md: 'We use three categories:'
+      - id: b5
+        kind: md
+        md: |-
+          - **MUST be explicit** → required for RCOS compliance
+          - **MAY be explicit** → recommended but context-dependent
+          - **MUST remain optional** → never enforced by the core
+      - id: b6
+        kind: md
+        md: '### Cross-layer Invariant on Explicitness'
+      - id: b7
+        kind: md
+        md: '**If something can:**'
+      - id: b8
+        kind: md
+        md: |-
+          - Remove someone’s rights
+          - Bind someone’s time or labor
+          - Control shared resources
+          - Silence dissent
+          - Prevent exit
+      - id: b9
+        kind: md
+        md: '**Then it must be explicit, documented, and reviewable.**'
+      - id: b10
+        kind: md
+        md: No exceptions.
+      - id: b11
+        kind: md
+        md: 'This approach ensures:'
+      - id: b12
+        kind: md
+        md: |-
+          - RCOS does **not** become bureaucratic
+          - Communities retain cultural freedom
+          - Only _structural risk_ is regulated
+          - Optional modules stay powerful, not constrained
+      - id: b13
+        kind: md
+        md: '---'
+  - id: s10
+    title: Stress-Test Driven Design
+    blocks:
+      - id: b1
+        kind: md
+        md: RCOS is validated not by intention but by **failure resistance**.
+      - id: b2
+        kind: md
+        md: |-
+          The specification includes a growing suite of **stress tests** derived from real community
+          collapses, such as:
+      - id: b3
+        kind: md
+        md: |-
+          - dominance in meetings
+          - founder veto power
+          - privatization of commons
+          - conflict avoidance cultures
+          - charismatic spiritual authority
+          - emergency rule bypasses
+      - id: b4
+        kind: md
+        md: A community is considered RCOS-aligned only if it can **withstand these scenarios without informal fixes**.
+      - id: b5
+        kind: md
+        md: 'Almost every failure happens because:'
+      - id: b6
+        kind: md
+        md: '**Something powerful was allowed to remain implicit.**'
+      - id: b7
+        kind: md
+        md: 'RCOS turns:'
+      - id: b8
+        kind: md
+        md: |-
+          - Implicit power → explicit roles
+          - Implicit values → scoped rules
+          - Implicit punishment → due process
+          - Implicit ownership → declared rights
+      - id: b9
+        kind: md
+        md: '### Known Failure Modes RCOS Is Designed to Prevent'
+      - id: b10
+        kind: md
+        md: See [RCOS Stress Tests](/articles/rcos-stress-tests?id=6acbe9a7)
+  - id: s11
+    title: Reference Implementations
+    blocks:
+      - id: b1
+        kind: md
+        md: 'RCOS encourages small, real-world **reference communities** that:'
+      - id: b2
+        kind: md
+        md: |-
+          - implement the core layers explicitly,
+          - document deviations and failures,
+          - and publish learnings back into the standard.
+      - id: b3
+        kind: md
+        md: The goal is not perfection, but **evolution through transparency**.
+      - id: b4
+        kind: md
+        md: '---'
+  - id: s12
+    title: Why “Regenerative”
+    blocks:
+      - id: b1
+        kind: md
+        md: RCOS uses the term _regenerative_ deliberately.
+      - id: b2
+        kind: md
+        md: 'A regenerative system:'
+      - id: b3
+        kind: md
+        md: |-
+          - does not rely on constant growth,
+          - does not burn out its members,
+          - repairs damage instead of hiding it,
+          - and becomes stronger by integrating failure.
+      - id: b4
+        kind: md
+        md: RCOS is designed so that **stress produces learning**, not collapse.
+      - id: b5
+        kind: md
+        md: '---'
+  - id: s13
+    title: Who RCOS Is For
+    blocks:
+      - id: b1
+        kind: md
+        md: 'RCOS is intended for:'
+      - id: b2
+        kind: md
+        md: |-
+          - intentional communities,
+          - eco-villages and co-housing projects,
+          - cooperatives and commons-based organizations,
+          - long-term collective living experiments,
+          - and any group that wants to survive its own success.
+      - id: b3
+        kind: md
+        md: RCOS is especially useful for groups that already share strong values — and want to ensure those values do not become tools of coercion.
+      - id: b4
+        kind: md
+        md: '---'
+  - id: s14
+    title: How to Use RCOS
+    blocks:
+      - id: b1
+        kind: md
+        md: 'RCOS can be used as:'
+      - id: b2
+        kind: md
+        md: |-
+          - a **design blueprint** before founding a community,
+          - an **audit framework** for existing groups,
+          - a **stress-testing tool** during conflict,
+          - or a **shared language** for difficult structural conversations.
+      - id: b3
+        kind: md
+        md: Adoption can be incremental. Compliance can be partial. What matters is **explicitness, not purity**.
+      - id: b4
+        kind: md
+        md: '---'
+  - id: s15
+    title: The Core Claim
+    blocks:
+      - id: b1
+        kind: md
+        md: |-
+          > Communities do not fail because people are flawed.  
+          > They fail because systems are vague.
+      - id: b2
+        kind: md
+        md: |-
+          RCOS exists to replace vagueness with structure —  
+          so that care, autonomy, and regeneration have something solid to stand on.
+      - id: b3
+        kind: md
+        md: '---'
+  - id: s16
+    title: Change Log
+    blocks:
+      - id: b1
+        kind: md
+        md: '- [v0.1](/articles/rcos-core/v0-1?id=e6de7a5d) — Initial version'

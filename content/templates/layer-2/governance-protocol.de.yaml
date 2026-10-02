@@ -1,0 +1,128 @@
+lang: de
+sourceHash: 05eab494
+title: Governance-Protokoll
+preamble: |-
+  - **Layer:** 2 — Governance & Entscheidungslogik
+  - **Status:** Vorlage — an deine Gemeinschaft anpassen
+  - **RCOS-Referenz:** [§4.5](rcos:§4.5), [§4.6](rcos:§4.6), [§4.7](rcos:§4.7)
+
+  > Definiert den vollständigen Lebenszyklus einer kollektiven Entscheidung — von der Antragseinreichung bis zur Dokumentation und zum Einspruch.
+
+  ---
+sections:
+  proposal-submission:
+    title: Antragseinreichung
+    blocks:
+      rationale:
+        summary: Warum formalisieren, wie Anträge ins System gelangen?
+        body: Ein Entscheidungsprozess, der Anträge informell annimmt — eine Nachricht, ein mündlicher Vorschlag, eine Idee der Gründer:innen — hat keine verlässliche Möglichkeit festzustellen, was tatsächlich zur Abstimmung steht. Ein standardisiertes Einreichungsformat, ein festgelegter Ablageort und verbindliche Inhaltsfelder bedeuten, dass jeder Antrag mit denselben Informationen eingeht, für alle sichtbar und von Tag eins an nachvollziehbar.
+      instructions:
+        summary: Wie du das ausfüllst
+        body: Lege fest, wer Anträge stellen darf, wo Anträge eingereicht werden, welche Inhaltsfelder verpflichtend sind und wie der Entscheidungstyp bestimmt und angefochten wird.
+      m1:
+        md: |-
+          - _<Operative Entscheidungen — werden von der zuständigen Rolleninhaber:in gemäß dem Rollenregister bearbeitet; kein Antrag erforderlich.>_
+          - _<Strategische und Verfassungsentscheidungen — wer einreichen darf und auf welcher Plattform.>_
+          - _<Pflichtfelder im Antrag: Zusammenfassung, betroffene Layer und Artefakte, Entscheidungstyp, Begründung, Risiken und Gegenmaßnahmen, Rücknahmeplan, vorgeschlagenes Wirksamkeitsdatum.>_
+          - _<Der Entscheidungstyp wird von der antragstellenden Person angegeben; im Zweifelsfall gilt der höhere Wirkungstyp.>_
+          - _<Rücknahmeregeln — wann ein Antrag zurückgezogen werden kann und wie.>_
+  review-and-deliberation:
+    title: Prüfung und Beratung
+    blocks:
+      rationale:
+        summary: Warum eine Mindestberatungsfrist vorschreiben?
+        body: Überhastete Abstimmungen bevorzugen diejenigen, die ohnehin schon aufmerksam sind, und benachteiligen alle anderen. Eine verpflichtende Beratungsfrist, abgestimmt auf die Tragweite der Entscheidung, gibt den Mitgliedern Zeit zum Lesen, Reagieren und Einbringen von Bedenken, bevor die Abstimmung beginnt — sodass die Abstimmung eine durchdachte Beurteilung widerspiegelt, keine Reaktionsgeschwindigkeit.
+      instructions:
+        summary: Wie du das ausfüllst
+        body: Benenne die Beratungsorte und die Mindestfristen für strategische und Verfassungsentscheidungen, bevor eine Abstimmung eröffnet werden darf.
+      m1:
+        md: |-
+          - _<Wo die Beratung stattfindet (Forum, Chat, Treffen).>_
+          - _<Mindestberatungsfrist vor Eröffnung einer Abstimmung — strategisch.>_
+          - _<Mindestberatungsfrist vor Eröffnung einer Abstimmung — Verfassung.>_
+          - _<Erwartung, dass Mitglieder Bedenken während der Beratung äußern, um erneute Abstimmungen zu vermeiden.>_
+  decision-execution:
+    title: Entscheidungsumsetzung
+    blocks:
+      rationale:
+        summary: Warum die Umsetzung an die Dokumentation binden?
+        body: Ein angenommener Antrag, der nie im betroffenen Artefakt ankommt, ist eine Entscheidung nur dem Namen nach — die geltenden Regeln sagen immer noch dasselbe wie vorher. Die Umsetzung an eine konkrete Artefakt-Aktualisierung und einen Versionshistorie-Eintrag zu knüpfen, schließt die Lücke zwischen dem, was entschieden wurde, und dem, was tatsächlich gilt.
+      instructions:
+        summary: Wie du das ausfüllst
+        body: Lege fest, was passiert, wenn ein Antrag angenommen wird (Artefakt-Aktualisierungen, Versionshistorie) und wenn er abgelehnt wird (Archivierung). Definiere eine Frist für beides.
+      m1:
+        md: |-
+          - _<Bei Annahme: wie der Antrag abgelegt wird; betroffene Artefakte aktualisiert werden; Eintrag in der Versionshistorie erstellt wird.>_
+          - _<Bei Ablehnung: wo der Antrag archiviert wird.>_
+          - _<Frist für die Umsetzung nach Abschluss einer Abstimmung.>_
+  documentation-and-publication:
+    title: Dokumentation und Veröffentlichung
+    blocks:
+      rationale:
+        summary: Warum jedes Ergebnis dokumentieren, einschließlich Ablehnungen?
+        body: Wenn nur die angenommenen Entscheidungen aufbewahrt werden, geht die Begründungsgeschichte verloren — Mitglieder verlieren den Überblick darüber, was bereits geprüft und abgelehnt wurde, und dieselben Debatten werden endlos wieder aufgerollt. Sowohl angenommene als auch abgelehnte Anträge zu archivieren, mit einer Frist und einem überprüfbaren Entscheidungsprotokoll, bewahrt das institutionelle Gedächtnis und macht das Governance-System prüfbar.
+      instructions:
+        summary: Wie du das ausfüllst
+        body: Lege Aufbewahrungsregeln für angenommene und abgelehnte Anträge fest, was als Entscheidungsprotokoll gilt und die Pflicht zur Aktualisierung der Versionshistorie.
+      m1:
+        md: |-
+          - _<Alle angenommenen und abgelehnten Anträge werden innerhalb von X Tagen nach Abstimmungsende abgelegt.>_
+          - _<Das Abstimmungsartefakt (z. B. Snapshot-Link) dient als Entscheidungsprotokoll.>_
+          - _<Versionshistorie (Schicht 6) wird bei jedem angenommenen Antrag aktualisiert.>_
+  appeal-and-review:
+    title: Einspruch und Überprüfung
+    blocks:
+      rationale:
+        summary: Warum erneute Abstimmungen ermöglichen, aber begrenzen?
+        body: Ein Governance-System ohne Einspruchsmöglichkeit zementiert Fehler zu dauerhaften Regeln; eines mit unbegrenzten informellen Einspruchswegen bringt nichts zum Abschluss. Jedem Vollmitglied die Möglichkeit zu geben, eine erneute Abstimmung auszulösen — aber nur mit einem schriftlichen, begründeten Einwand, der etwas noch nicht Behandeltes aufwirft — hält das System selbstkorrigierend, ohne dass jede Entscheidung zu einem Dauerreferendum wird.
+      instructions:
+        summary: Wie du das ausfüllst
+        body: Definiere die Bedingungen für eine erneute Abstimmung, das Format des Einwands und den Schwellenwert/Mechanismus für die erneute Abstimmung selbst.
+      m1:
+        md: |-
+          - _<Wer eine erneute Abstimmung auslösen darf und wie.>_
+          - _<Anforderung eines begründeten Einwands — ein Aspekt, der in der ursprünglichen Beratung nicht behandelt wurde.>_
+          - _<Die erneute Abstimmung verwendet denselben Mechanismus und Schwellenwert wie die ursprüngliche.>_
+          - _<Umgang mit wiederholten nichtigen Anträgen auf erneute Abstimmung.>_
+  conflict-between-decisions:
+    title: Konflikte zwischen Entscheidungen
+    blocks:
+      rationale:
+        summary: Warum die Konfliktlösung vorab festlegen?
+        body: Wenn zwei Entscheidungen in unterschiedliche Richtungen weisen, muss jemand bestimmen, welche gilt — und wenn diese Wahl ad hoc getroffen wird, läuft es darauf hinaus, wer die Autorität oder Energie hat, seine Auslegung durchzusetzen. Eine feste Vorrangegel (höherer Typ gewinnt; neuere gewinnt bei gleichem Typ) löst Konflikte mechanisch, ohne eine Ermessensentscheidung.
+      instructions:
+        summary: Wie du das ausfüllst
+        body: 'Lege die Vorrangregel fest (typischerweise: höherer Entscheidungstyp hat Vorrang; neuere gewinnt bei gleichem Typ, sofern nicht ausdrücklich gesperrt).'
+      m1:
+        md: |-
+          - _<Vorrang: Verfassung > Strategisch > Operativ.>_
+          - _<Konflikte gleichen Typs: neuere hat Vorrang, es sei denn, die ältere hat zukünftige Änderungen ausdrücklich gesperrt.>_
+          - _<Wo Konflikte aufgedeckt werden und wie sie gelöst werden.>_
+  safeguards-and-failure-modes:
+    title: Schutzmaßnahmen und Fehlermodi
+    blocks:
+      rationale:
+        summary: Warum Governance-Versagen von Anfang an einplanen?
+        body: Jedes Governance-System versagt irgendwo — vereinnahmt von einer Untergruppe, blockiert durch informelle Vetos, verwässert von einer Rolleninhaber:in, die ihren Zuständigkeitsbereich still und leise ausgeweitet hat. Die spezifischen Fehlermodi im Voraus zu benennen, Anfechtungswege einzubauen, die nicht mit Vergeltung beantwortet werden können, und eine formale Überprüfung zu verlangen, wenn sich Fehler häufen — das ist es, was verhindert, dass Governance sich langsam aushöhlt, während niemand hinschaut.
+      instructions:
+        summary: Wie du das ausfüllst
+        body: Benenne für jeden Fehlermodus die entsprechende Schutzmaßnahme. Füge einen Auslöser hinzu, der eine Verfassungsüberprüfung erzwingt, wenn sich Fehler häufen.
+      m1:
+        md: |-
+          - **Machtkonzentration:** _<wie das Protokoll einseitige Autorität über den operativen Rahmen hinaus verhindert.>_
+          - **Informelle Vetos:** _<Regel, dass nur schriftliche, begründete Einwände, die über den definierten Prozess eingereicht werden, Gewicht haben.>_
+          - **Entscheidungsvereinnahmung:** _<Regel zu Beschlussfähigkeit und Offenheit der Abstimmung.>_
+          - **Gründer-/Rollenverfestigung:** _<Regel, dass keine Rolle dauerhafte Autorität verleiht; Gründer:innen haben keine besondere Governance-Autorität über ihren Mitgliedschaftsstatus hinaus.>_
+          - **Anfechtung ohne Vergeltung:** _<Verweis auf die Anti-Vergeltungsbestimmungen in Schicht 4.>_
+          - **Auslöser bei anhaltendem Versagen:** _<z. B. drei oder mehr Governance-Fehler innerhalb von X Monaten lösen eine Verfassungsüberprüfung aus.>_
+      m2:
+        md: '---'
+  ratification-record:
+    title: Ratifizierungsprotokoll
+    blocks:
+      m1:
+        md: |-
+          - **Angenommen:** <JJJJ-MM-TT>
+          - **Entscheidungstyp:** Verfassung
+          - **Version:** <Version>
+          - **Entscheidungsprotokoll:** <Link zum Entscheidungsprotokoll>

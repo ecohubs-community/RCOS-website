@@ -2,7 +2,7 @@
 
 # RCOS-Kernspezifikation — v0.1
 
-- **Generiert:** 2026-08-31
+- **Generiert:** 2026-10-02
 - **Quelle (aktuelle Version):** [https://rcos.ecohubs.community/de/articles/rcos-core/v0-1](https://rcos.ecohubs.community/de/articles/rcos-core/v0-1)
 
 - Status: Entwurf
@@ -1750,8 +1750,8 @@ Empfohlenes Format:
 | Versuch mit rotierender Moderation | 5 | Experiment | Aktiv | 2026-06-01 | 2026-08-01 | [Platzhalter] |
 | Ausnahme bei Kassentransparenz (Sicherheit) | 3/4 | Permanent | Aktiv | 2026-04-10 | Jährliche Überprüfung | [Platzhalter] |
 
-
 ## C.5 Compliance-Erklärung
+
 - Aktueller Compliance-Status: Konform / Nicht konform / Unbekannt
 - Datum des letzten Selbst-Audits oder externen Audits
 - Audit-Methode (Selbst-Audit vs. extern)
@@ -1766,6 +1766,7 @@ Empfohlenes Format:
 - Bekannte Zeiträume der Nicht-Konformität (falls vorhanden)  
 
 ## C.6 Öffentliche Transparenz
+
 - Öffentlicher Artefakt-Index (empfohlen):
 
 | Artefakt | Layer | Öffentlicher Link | Version/Datum | Anmerkungen |

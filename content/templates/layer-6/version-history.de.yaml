@@ -1,0 +1,54 @@
+lang: de
+sourceHash: ecfe9629
+title: Versionshistorie
+preamble: |-
+  - **Schicht:** 6 — Evolution & Anpassung
+  - **Status:** Vorlage — an eure Gemeinschaft anpassen; wird bei jeder übernommenen Änderung aktualisiert
+  - **RCOS-Referenz:** [§8.2](rcos:§8.2), [§8.6](rcos:§8.6)
+
+  > Das maßgebliche, menschenlesbare Protokoll aller übernommenen Änderungen an der RCOS-Implementierung eurer Gemeinschaft. Die aktuell gültige Version ist der neueste Eintrag am Anfang dieser Datei. Abgelöste Regeln bleiben über die Versionskontrolle zugänglich.
+
+  ---
+sections:
+  entry-format:
+    title: Eintragsformat
+    blocks:
+      rationale:
+        summary: Warum jede übernommene Änderung festhalten?
+        body: Governance, die nicht auf „was hat sich wann und warum geändert" verweisen kann, ist nicht von Governance durch diejenigen zu unterscheiden, die am lautesten reden. Ein einziges, nur fortschreibbares Protokoll übernommener Änderungen — wobei die abgelösten Versionen in der Versionskontrolle erhalten bleiben — macht den aktuellen Stand der Regeln eindeutig und gibt Mitgliedern, Prüfenden und zukünftigen Verantwortlichen die Möglichkeit, den Weg nachzuvollziehen, der uns hierhergeführt hat.
+      instructions:
+        summary: Wie ihr das ausfüllt
+        body: Nutzt die Eintragsvorlage unten für jede übernommene Änderung. Neue Einträge werden über dem jeweils neuesten eingefügt. Ändert keine historischen Einträge — Korrekturen werden als neue Einträge erfasst.
+      m1:
+        md: |-
+          ```markdown
+          ## <Version> — <Kurztitel>
+
+          - **Gültig ab:** <JJJJ-MM-TT>
+          - **Entscheidungsprotokoll:** <Link zum Entscheidungsprotokoll>
+          - **Entscheidungstyp:** <Operativ / Strategisch / Konstitutionell>
+          - **Mechanismus:** <Abstimmungsverfahren / delegierte Befugnis>
+          - **Zusammenfassung:** <Ein bis drei Sätze, die beschreiben, was sich geändert hat.>
+          - **Betroffene Schichten:** <z. B. Schicht 2, Schicht 5>
+          - **Geänderte Artefakte:** <Liste der Artefakte>
+          - **Migrationshinweise:** <etwaige Übergangsregeln; „keine", wenn nicht zutreffend>
+          ```
+      m2:
+        md: '---'
+  current-version-v0-0-repository-initialized:
+    title: 'Aktuelle Version: v0.0 — Repository initialisiert'
+    blocks:
+      m1:
+        md: |-
+          - **Gültig ab:** <JJJJ-MM-TT>
+          - **Entscheidungsprotokoll:** Entfällt — initiales Grundgerüst
+          - **Entscheidungstyp:** Entfällt
+          - **Mechanismus:** Entfällt
+          - **Zusammenfassung:** Vorlagen initialisiert. Alle Artefakte sind Vorlagen — es wurden noch keine Regeln übernommen.
+          - **Betroffene Schichten:** Alle (nur Grundgerüst)
+          - **Geänderte Artefakte:** Alle Dateien als Vorlagen erstellt
+          - **Migrationshinweise:** Keine — Ausgangszustand
+      m2:
+        md: '---'
+      m3:
+        md: _Neue Einträge werden oberhalb dieser Zeile eingefügt._

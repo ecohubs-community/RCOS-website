@@ -1,0 +1,63 @@
+lang: es
+sourceHash: 223fb323
+title: 10. Cumplimiento y Auditoría
+intro: Este capítulo define cómo se evalúa y mantiene el cumplimiento de RCOS-Core.
+sections:
+  '10.1':
+    title: Lista de Verificación de Cumplimiento
+    blocks:
+      10.1.1:
+        text: 'El cumplimiento de RCOS-Core es binario: una comunidad es conforme o no conforme.'
+      10.1.2:
+        text: El cumplimiento DEBE evaluarse por capa (Capas 0–6).
+      10.1.3:
+        text: 'Para cada capa, la Lista de Verificación de Cumplimiento DEBE comprobar:'
+        items:
+          - 'Presencia de artefactos obligatorios  '
+          - 'Explicitud y accesibilidad de las reglas requeridas  '
+          - 'Adopción a través de procesos de gobernanza autorizados  '
+      10.1.4:
+        text: El cumplimiento parcial o la "intención de cumplir" NO DEBE considerarse conforme.
+      10.1.5:
+        text: Los Módulos Opcionales NO DEBEN incluirse en la evaluación de cumplimiento de RCOS-Core.
+  '10.2':
+    title: Casos de Prueba
+    blocks:
+      10.2.1:
+        text: Los Casos de Prueba son escenarios estructurados que se utilizan para validar si los mecanismos de RCOS funcionan según lo previsto.
+      10.2.2:
+        text: 'Los Casos de Prueba PUEDEN ser:'
+        items:
+          - 'Escenarios hipotéticos  '
+          - 'Fracasos históricos de comunidades  '
+          - 'Pruebas de estrés simuladas  '
+      10.2.3:
+        text: 'Los Casos de Prueba DEBERÍAN cubrir, como mínimo:'
+        items:
+          - 'Intentos de concentración de poder  '
+          - 'Escenarios de salida y separación  '
+          - 'Bloqueo de gobernanza  '
+          - 'Intentos de captura económica  '
+          - 'Conflictos críticos para la seguridad  '
+      10.2.4:
+        text: Los Casos de Prueba son informativos, pero DEBERÍAN utilizarse durante auditorías, procesos de incorporación y revisiones periódicas.
+  '10.3':
+    title: Incumplimiento
+    blocks:
+      10.3.1:
+        text: 'Una comunidad DEBE considerarse no conforme si:'
+        items:
+          - 'Falta algún artefacto obligatorio  '
+          - 'Se violan los invariantes de la Capa 0  '
+          - 'Las decisiones se toman repetidamente fuera de las estructuras de gobernanza autorizadas  '
+          - 'La salida está bloqueada o restringida de manera informal  '
+      10.3.2:
+        text: El incumplimiento DEBE reconocerse explícitamente una vez detectado.
+      10.3.3:
+        text: 'Una comunidad PUEDE recuperar el cumplimiento únicamente mediante:'
+        items:
+          - 'Acción correctiva  '
+          - 'Adopción formal de los artefactos faltantes o corregidos  '
+          - 'Documentación de la remediación  '
+      10.3.4:
+        text: Las declaraciones de cumplimiento de RCOS DEBEN retirarse durante los períodos de incumplimiento conocido.

@@ -1,0 +1,91 @@
+lang: es
+sourceHash: 66baacc7
+title: Permacultura Mínima
+intro: ''
+sections:
+  s1:
+    title: Módulo de Permacultura Mínima
+    blocks:
+      b1:
+        md: El Módulo de Permacultura Mínima es un módulo opcional y ligero diseñado para **comunidades pequeñas o en etapas tempranas** que desean una base ecológica sin la complejidad, la intensidad de trabajo o los requisitos de experiencia de los sistemas de permacultura completos.
+      b2:
+        md: |-
+          Prioriza:
+          - Simplicidad sobre optimización
+          - Facilidad de aprendizaje sobre completitud
+          - Baja sobrecarga de coordinación
+          - Beneficios inmediatos de resiliencia
+      b3:
+        md: '### Qué es este módulo'
+      b4:
+        md: |-
+          Este módulo proporciona:
+          - Una base ecológica compartida mínima
+          - Límites claros entre el uso personal y colectivo de la tierra
+          - Reglas sencillas de custodia para suelo, agua y biomasa
+          - Suficiente estructura para prevenir la degradación ecológica
+      b5:
+        md: Intencionalmente **no es un sistema completo de diseño en permacultura**.
+      b6:
+        md: '### Qué no es este módulo'
+      b7:
+        md: |-
+          Este módulo no es:
+          - Un estándar de certificación
+          - Un sistema alimentario completo
+          - Un sustituto del diseño profesional de permacultura
+          - Un marco de maximización de productividad
+      b8:
+        md: |-
+          No presupone:
+          - Grandes extensiones de tierra
+          - Agricultores a tiempo completo
+          - Altos rendimientos
+          - Conocimiento técnico profundo
+      b9:
+        md: '### Cuándo usar el Módulo de Permacultura Mínima'
+      b10:
+        md: |-
+          Este módulo es adecuado cuando:
+          - La comunidad tiene menos de ~20 personas
+          - El área de tierra es pequeña o fragmentada
+          - Los miembros tienen tiempo o experiencia limitados
+          - La comunidad aún está estabilizando su gobernanza y operaciones
+          - La producción de alimentos es parcial, no primaria
+      b11:
+        md: |-
+          Es especialmente útil para:
+          - Nuevas comunidades intencionales
+          - Proyectos urbanos o periurbanos
+          - Comunidades transitorias o experimentales
+          - Comunidades que alquilan o arriendan tierra
+      b12:
+        md: '### Para quién está diseñado este módulo'
+      b13:
+        md: |-
+          Este módulo está diseñado para:
+          - Comunidades que desean alineación ecológica sin sentirse abrumadas
+          - Grupos que priorizan primero la estabilidad social
+          - Comunidades con niveles de habilidad variados
+          - Proyectos donde la tierra es compartida pero gestionada de forma ligera
+      b14:
+        md: '### Áreas de enfoque principales'
+      b15:
+        md: |-
+          Las áreas de enfoque típicas incluyen:
+          - Protección del suelo (sin uso exclusivamente extractivo)
+          - Compostaje básico o ciclo de biomasa
+          - Conciencia y conservación del agua
+          - Responsabilidad clara de custodia
+          - Evitar la deuda ecológica
+      b16:
+        md: '### Relación con RCOS'
+      b17:
+        md: |-
+          Este módulo:
+          - Extiende la Capa 3 de RCOS (Comunes y Recursos)
+          - Se conecta con la Capa 5 (Operaciones)
+          - Puede introducir roles opcionales de custodia
+          - No altera el propósito de la Capa 0 a menos que se adopte explícitamente
+      b18:
+        md: Las comunidades pueden migrar posteriormente de este módulo a un Módulo de Permacultura completo sin conflictos estructurales.

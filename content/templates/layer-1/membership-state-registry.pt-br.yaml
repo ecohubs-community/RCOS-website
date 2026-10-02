@@ -1,0 +1,42 @@
+lang: pt-br
+sourceHash: 9b7a2f68
+title: Registro de Estados de Associação
+preamble: |-
+  - **Camada:** 1 — Sistema de Associação
+  - **Status:** Modelo — adapte para sua comunidade
+  - **Referência RCOS:** [§3.1](rcos:§3.1)
+
+  ---
+sections:
+  defined-membership-states:
+    title: Estados de Associação Definidos
+    blocks:
+      rationale:
+        summary: Por que uma única tabela de estados?
+        body: Direitos e obrigações espalhados por vários documentos acabam divergindo. Reunir cada estado, seus direitos, suas obrigações e suas transições em uma única tabela torna o sistema de associação auditável de relance — você consegue ver cada porta de entrada e de saída da comunidade, e o que cada uma concede. Se dois documentos algum dia discordarem, este registro é o desempate.
+      instructions:
+        summary: Como preencher
+        body: Defina cada estado de associação que sua comunidade reconhece (por exemplo, Candidato, Membro em Período de Experiência, Membro Pleno, Membro Egresso). Para cada um, liste direitos, obrigações, condição de entrada e condição de saída. Mantenha os estados mutuamente exclusivos — nenhuma pessoa pode estar em dois estados ao mesmo tempo.
+      m1:
+        md: |-
+          | Estado | Direitos | Obrigações | Condição de entrada | Condição de saída |
+          |---|---|---|---|---|
+          | _<Estado 1, por exemplo, Candidato>_ | _<direitos>_ | _<obrigações>_ | _<entrada>_ | _<saída>_ |
+          | _<Estado 2, por exemplo, Membro em Período de Experiência>_ | _<direitos>_ | _<obrigações>_ | _<entrada>_ | _<saída>_ |
+          | _<Estado 3, por exemplo, Membro Pleno>_ | _<direitos>_ | _<obrigações>_ | _<entrada>_ | _<saída>_ |
+          | _<Estado 4, por exemplo, Membro Egresso>_ | _<direitos>_ | _<obrigações>_ | _<entrada>_ | _<saída>_ |
+      m2:
+        md: |-
+          > Nenhuma pessoa pode estar em múltiplos estados de associação ao mesmo tempo.
+          > Nenhum direito ou obrigação pode ser assumido fora do estado de associação atual da pessoa.
+      m3:
+        md: '---'
+  ratification-record:
+    title: Registro de Ratificação
+    blocks:
+      m1:
+        md: |-
+          - **Adotado em:** <AAAA-MM-DD>
+          - **Tipo de decisão:** Estratégica
+          - **Versão:** <versão>
+          - **Registro da decisão:** <link para o registro da decisão>

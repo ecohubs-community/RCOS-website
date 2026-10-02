@@ -1,0 +1,194 @@
+kind: chapter
+legacyPath: rcos-core/v0-1/03-layer-1-membership-system
+id: d34d3f9c
+title: 3. Layer 1 — Membership System
+parentId: e6de7a5d
+order: 30
+intro: Layer 1 defines how individuals enter, participate in, and exit the community. It establishes the explicit relationship between the individual and the collective, including rights, obligations, and due process. No person may be treated as a member without passing through the mechanisms defined in this layer.
+sections:
+  - id: '3.1'
+    ref: '3.1'
+    title: Membership States
+    blocks:
+      - id: 3.1.1
+        kind: clause
+        ref: 3.1.1
+        text: The community MUST define explicit membership states.
+      - id: 3.1.2
+        kind: clause
+        ref: 3.1.2
+        text: 'At minimum, the following membership states MUST exist:'
+        items:
+          - Applicant
+          - Trial / Probationary Member
+          - Full Member
+          - Exited Member
+      - id: 3.1.3
+        kind: clause
+        ref: 3.1.3
+        text: Each membership state MUST have clearly defined rights, obligations, and limitations.
+      - id: 3.1.4
+        kind: clause
+        ref: 3.1.4
+        text: No individual MAY hold multiple membership states simultaneously.
+      - id: 3.1.5
+        kind: clause
+        ref: 3.1.5
+        text: No rights or obligations MAY be assumed outside of the individual’s current membership state.
+  - id: '3.2'
+    ref: '3.2'
+    title: Entry and Onboarding
+    blocks:
+      - id: 3.2.1
+        kind: clause
+        ref: 3.2.1
+        text: Entry into the community MUST follow an explicit onboarding process.
+      - id: 3.2.2
+        kind: clause
+        ref: 3.2.2
+        text: 'The onboarding process MUST include:'
+        items:
+          - Review of all RCOS-Core artifacts
+          - Explicit consent to Layer 0 and Layer 1 rules
+          - Declaration of initial membership state
+      - id: 3.2.3
+        kind: clause
+        ref: 3.2.3
+        text: Admission criteria MUST be explicit and documented.
+      - id: 3.2.4
+        kind: clause
+        ref: 3.2.4
+        text: Informal, implicit, or retroactive membership MUST NOT be permitted.
+  - id: '3.3'
+    ref: '3.3'
+    title: Trial and Evaluation
+    blocks:
+      - id: 3.3.1
+        kind: clause
+        ref: 3.3.1
+        text: The community MUST define a probationary period for new members.
+      - id: 3.3.2
+        kind: clause
+        ref: 3.3.2
+        text: 'The probationary period MUST have:'
+        items:
+          - A defined duration
+          - Explicit evaluation criteria
+          - A clear transition decision process
+      - id: 3.3.3
+        kind: clause
+        ref: 3.3.3
+        text: During probation, rights MAY be limited but obligations MUST be explicit.
+      - id: 3.3.4
+        kind: clause
+        ref: 3.3.4
+        text: Failure to transition from probation MUST trigger a defined exit or extension process.
+  - id: '3.4'
+    ref: '3.4'
+    title: Rights and Obligations
+    blocks:
+      - id: 3.4.1
+        kind: clause
+        ref: 3.4.1
+        text: The community MUST explicitly define member rights.
+      - id: 3.4.2
+        kind: clause
+        ref: 3.4.2
+        text: The community MUST explicitly define member obligations.
+      - id: 3.4.3
+        kind: clause
+        ref: 3.4.3
+        text: Rights and obligations MUST be symmetrical and proportionate to membership state.
+      - id: 3.4.4
+        kind: clause
+        ref: 3.4.4
+        text: No obligation MAY be enforced without a corresponding, documented right.
+      - id: 3.4.5
+        kind: clause
+        ref: 3.4.5
+        text: Obligations MUST NOT be open-ended or undefined.
+  - id: '3.5'
+    ref: '3.5'
+    title: Participation and Contribution
+    blocks:
+      - id: 3.5.1
+        kind: clause
+        ref: 3.5.1
+        text: Participation expectations MUST be explicitly defined.
+      - id: 3.5.2
+        kind: clause
+        ref: 3.5.2
+        text: Acceptable forms of contribution MUST be listed.
+      - id: 3.5.3
+        kind: clause
+        ref: 3.5.3
+        text: Substitution of participation (e.g., outsourcing labor) MUST be explicitly governed.
+      - id: 3.5.4
+        kind: clause
+        ref: 3.5.4
+        text: Persistent non-participation MUST trigger an accountability process as defined in Layer 4.
+  - id: '3.6'
+    ref: '3.6'
+    title: Exit and Separation
+    blocks:
+      - id: 3.6.1
+        kind: clause
+        ref: 3.6.1
+        text: Voluntary exit MUST be possible at all times.
+      - id: 3.6.2
+        kind: clause
+        ref: 3.6.2
+        text: Exit procedures MUST be explicit, documented, and non-punitive.
+      - id: 3.6.3
+        kind: clause
+        ref: 3.6.3
+        text: Forced exit MUST follow due process and be handled through Layer 4 mechanisms.
+      - id: 3.6.4
+        kind: clause
+        ref: 3.6.4
+        text: Exit MUST NOT result in loss of rights beyond those explicitly tied to membership.
+      - id: 3.6.5
+        kind: clause
+        ref: 3.6.5
+        text: Asset, role, and responsibility separation MUST be defined prior to exit.
+  - id: '3.7'
+    ref: '3.7'
+    title: Suspension and Temporary Status
+    blocks:
+      - id: 3.7.1
+        kind: clause
+        ref: 3.7.1
+        text: The community MAY define temporary suspension states.
+      - id: 3.7.2
+        kind: clause
+        ref: 3.7.2
+        text: Suspension conditions MUST be explicit, time-bounded, and reviewable.
+      - id: 3.7.3
+        kind: clause
+        ref: 3.7.3
+        text: Suspension MUST NOT be used as an indefinite or punitive substitute for exit.
+  - id: '3.8'
+    ref: '3.8'
+    title: Artifacts
+    blocks:
+      - id: 3.8.1
+        kind: clause
+        ref: 3.8.1
+        text: 'The following artifacts are mandatory for Layer 1 compliance:'
+        items:
+          - Membership Agreement
+          - Onboarding Protocol
+          - Exit & Separation Protocol
+          - Membership State Registry
+      - id: 3.8.2
+        kind: clause
+        ref: 3.8.2
+        text: 'Layer 1 artifacts MUST be:'
+        items:
+          - Explicit and unambiguous
+          - Versioned
+          - Accessible to all members
+      - id: 3.8.3
+        kind: clause
+        ref: 3.8.3
+        text: Absence, ambiguity, or systematic violation of Layer 1 artifacts MUST result in loss of RCOS-Core compliance.

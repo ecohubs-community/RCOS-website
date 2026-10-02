@@ -2,7 +2,7 @@
 
 # Spécification RCOS Core — v0.1
 
-- **Généré:** 2026-08-31
+- **Généré:** 2026-10-02
 - **Source (version la plus récente):** [https://rcos.ecohubs.community/fr/articles/rcos-core/v0-1](https://rcos.ecohubs.community/fr/articles/rcos-core/v0-1)
 
 - Statut : Brouillon
@@ -1750,8 +1750,8 @@ Format recommandé :
 | Essai de facilitation tournante | 5 | Expérimentation | Actif | 2026-06-01 | 2026-08-01 | [placeholder] |
 | Exception de transparence de trésorerie (sécurité) | 3/4 | Permanent | Actif | 2026-04-10 | Révision annuelle | [placeholder] |
 
-
 ## C.5 Déclaration de conformité
+
 - Statut de conformité actuel : Conforme / Non conforme / Inconnu
 - Date du dernier auto-audit ou audit externe
 - Méthode d'audit (auto-audit vs externe)
@@ -1766,6 +1766,7 @@ Format recommandé :
 - Périodes de non-conformité connues (le cas échéant)  
 
 ## C.6 Transparence publique
+
 - Index des artefacts publics (recommandé) :
 
 | Artefact | Couche | Lien public | Version/date | Notes |

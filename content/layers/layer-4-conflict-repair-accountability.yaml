@@ -1,0 +1,70 @@
+kind: doc
+legacyPath: rcos-layers/layer-4-conflict-repair-accountability
+headingLevel: 3
+id: 8d62d921
+title: Layer 4 - Conflict, Repair & Accountability
+parentId: a7759be1
+order: 0
+head: '**What happens when things break.**'
+sections:
+  - id: conflict-classification
+    title: Conflict classification
+    md: |-
+      * Interpersonal  
+      * Role-based  
+      * Structural  
+      * Ethical boundary violations
+  - id: repair-mechanisms
+    title: Repair mechanisms
+    md: |-
+      * Mediation  
+      * Restorative processes  
+      * Sanctions  
+      * Separation
+  - id: protection
+    title: Protection
+    md: |-
+      * Power abuse safeguards  
+      * Minority protection  
+      * Burnout prevention
+  - id: artifacts
+    title: Artifacts
+    md: |-
+      * Conflict Resolution Ladder  
+      * Accountability Protocol
+  - id: layer-invariants
+    title: Layer Invariants
+    md: |-
+      * **Invariant 4.1: Conflict is handled, not avoided**  
+        All conflicts must have a defined resolution path; ignoring conflict is a violation.
+
+      * **Invariant 4.2: Power asymmetry is acknowledged**  
+        Conflicts involving power differences require elevated safeguards.
+
+      * **Invariant 4.3: Repair precedes punishment**  
+        Restorative processes must be attempted before sanctions, except in safety-critical cases.
+
+      * **Invariant 4.4: Safety overrides participation**  
+        Physical, psychological, and child safety override all participation rights.
+  - id: explicitness-rules
+    title: Explicitness Rules
+    md: |-
+      #### **MUST be explicit**
+
+      * Conflict classification  
+      * Minimum repair process  
+      * Protection mechanisms  
+      * Separation thresholds
+
+      **Why:** conflict avoidance is not neutrality; it’s structural failure.
+
+      #### **MAY be explicit**
+
+      * Mediation styles  
+      * Facilitator selection  
+      * Restorative practices
+
+      #### **MUST remain optional**
+
+      * Emotional expression norms  
+      * Therapeutic or spiritual framing

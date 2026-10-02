@@ -1,0 +1,247 @@
+kind: chapter
+legacyPath: rcos-core/v0-1/08-layer-6-evolution-adaptation
+id: 4ffa600f
+title: 8. Layer 6 — Evolution & Adaptation
+parentId: e6de7a5d
+order: 80
+intro: |-
+  Layer 6 defines how the system evolves without collapsing.  
+  Its purpose is to ensure that change is deliberate, constrained, reversible where appropriate, and produces learnings rather than hidden damage. Evolution under RCOS is treated as a governed process, not as improvisation.
+sections:
+  - id: '8.1'
+    ref: '8.1'
+    title: Change Mechanisms
+    blocks:
+      - id: 8.1.1
+        kind: clause
+        ref: 8.1.1
+        text: The community MUST define explicit change mechanisms for modifying, adding, suspending, or removing rules, roles, artifacts, or decision structures.
+      - id: 8.1.2
+        kind: clause
+        ref: 8.1.2
+        text: 'Change mechanisms MUST explicitly distinguish between:'
+        items:
+          - 'Permanent rule changes  '
+          - 'Time-bounded experiments as defined in Section 8.3  '
+      - id: 8.1.3
+        kind: clause
+        ref: 8.1.3
+        text: 'Every proposed change MUST specify, at minimum:'
+        items:
+          - 'The artifact(s), layer(s), and section(s) affected  '
+          - 'The decision type and authorized decision path as defined in Layer 2  '
+          - 'The intended effect, scope, and known risks  '
+          - 'The effective date and any transition period  '
+          - 'Migration requirements for existing roles, agreements, or records  '
+      - id: 8.1.4
+        kind: clause
+        ref: 8.1.4
+        text: Changes affecting Layer 0 purpose, scope, invariants, or identity constraints MUST be classified as constitutional changes and MUST follow the constitutional decision mechanism.
+      - id: 8.1.5
+        kind: clause
+        ref: 8.1.5
+        text: The community MUST define explicit review mechanisms for adopted changes, including how changes are evaluated, revised, or reverted when they produce harm, instability, or unintended concentration of power.
+  - id: '8.2'
+    ref: '8.2'
+    title: Versioning and Authority
+    blocks:
+      - id: 8.2.1
+        kind: clause
+        ref: 8.2.1
+        text: All adopted changes MUST be versioned and traceable.
+      - id: 8.2.2
+        kind: clause
+        ref: 8.2.2
+        text: 'The community MUST maintain a **Version History** that records, at minimum:'
+        items:
+          - 'Version identifier  '
+          - 'Adoption date and effective date  '
+          - 'Decision record reference (authority, mechanism, threshold)  '
+          - 'Summary of changes  '
+          - 'Migration notes and compatibility constraints (if any)  '
+      - id: 8.2.3
+        kind: clause
+        ref: 8.2.3
+        text: 'At any point in time, the community MUST be able to unambiguously determine:'
+        items:
+          - 'Which version is currently in force  '
+          - 'Which artifacts are authoritative for compliance  '
+      - id: 8.2.4
+        kind: clause
+        ref: 8.2.4
+        text: Superseded rules MUST remain accessible for auditability, learning, and dispute resolution, together with the dates during which they were in force.
+      - id: 8.2.5
+        kind: clause
+        ref: 8.2.5
+        text: No informal, undocumented, or “understood” rule changes MAY be considered valid.
+  - id: '8.3'
+    ref: '8.3'
+    title: Experiments
+    blocks:
+      - id: 8.3.1
+        kind: clause
+        ref: 8.3.1
+        text: The community MAY adopt experiments as explicitly time-bounded and reversible deviations, extensions, or pilots intended for learning.
+      - id: 8.3.2
+        kind: clause
+        ref: 8.3.2
+        text: 'Every experiment MUST define, at minimum:'
+        items:
+          - 'Scope (what is changed and what is explicitly not changed)  '
+          - 'Duration and review checkpoints  '
+          - 'Success and failure criteria  '
+          - 'Rollback conditions and rollback process  '
+          - 'Authorized decision path for starting, extending, modifying, or terminating the experiment  '
+      - id: 8.3.3
+        kind: clause
+        ref: 8.3.3
+        text: Experiments MUST NOT override Layer 0 invariants and MUST NOT bypass governance constraints defined in Layer 2.
+      - id: 8.3.4
+        kind: clause
+        ref: 8.3.4
+        text: Experiments MUST be explicitly labeled as experimental in all affected artifacts and MUST include a non-extendable expiration date unless renewed through an authorized decision.
+      - id: 8.3.5
+        kind: clause
+        ref: 8.3.5
+        text: If an experiment introduces safety risk, coercion, or sustained harm, the community MUST suspend or terminate the experiment immediately through a protective action, followed by post-hoc review.
+  - id: '8.4'
+    ref: '8.4'
+    title: Learning and Feedback Capture
+    blocks:
+      - id: 8.4.1
+        kind: clause
+        ref: 8.4.1
+        text: Major failures, adaptations, reversals, and systemic learnings MUST be documented.
+      - id: 8.4.2
+        kind: clause
+        ref: 8.4.2
+        text: 'Learning capture MUST include, at minimum:'
+        items:
+          - 'What occurred and why it mattered  '
+          - 'Which layers, rules, or artifacts were implicated  '
+          - 'What was changed, attempted, or stopped  '
+          - 'What signals, evidence, or thresholds triggered action  '
+      - id: 8.4.3
+        kind: clause
+        ref: 8.4.3
+        text: Learning records MUST be accessible according to Layer 5 information access rules.
+      - id: 8.4.4
+        kind: clause
+        ref: 8.4.4
+        text: Repeated failure patterns MUST trigger structural review rather than individual blame.
+  - id: '8.5'
+    ref: '8.5'
+    title: Change Safety and Reversibility
+    blocks:
+      - id: 8.5.1
+        kind: clause
+        ref: 8.5.1
+        text: The system MUST prefer reversible changes over irreversible ones where possible.
+      - id: 8.5.2
+        kind: clause
+        ref: 8.5.2
+        text: 'Irreversible or high-impact changes MUST include:'
+        items:
+          - 'Extended deliberation or review periods  '
+          - 'Higher decision thresholds where appropriate  '
+          - 'Explicit risk acknowledgment  '
+      - id: 8.5.3
+        kind: clause
+        ref: 8.5.3
+        text: Emergency changes MAY be permitted only where explicitly defined, MUST be time-bounded, MUST NOT override Layer 0 invariants, and MUST undergo mandatory post-hoc review and ratification or rollback.
+  - id: '8.6'
+    ref: '8.6'
+    title: Artifacts
+    blocks:
+      - id: 8.6.1
+        kind: clause
+        ref: 8.6.1
+        text: 'The following artifacts are mandatory for Layer 6 compliance:'
+        items:
+          - 'Change Protocol  '
+          - 'Version History  '
+          - 'Learning Log  '
+      - id: 8.6.2
+        kind: clause
+        ref: 8.6.2
+        text: 'Layer 6 artifacts MUST be:'
+        items:
+          - 'Explicit and unambiguous  '
+          - 'Versioned  '
+          - 'Accessible to all members, with clearly bounded privacy protections  '
+          - 'Adopted through an authorized governance process  '
+      - id: 8.6.3
+        kind: clause
+        ref: 8.6.3
+        text: 'The Change Protocol MUST define, at minimum:'
+        items:
+          - 'How changes are proposed, reviewed, adopted, published, and rejected  '
+          - 'How proposals are classified by decision type  '
+          - 'Required contents of change proposals  '
+          - 'Transition, migration, and deprecation expectations  '
+          - 'Review, revision, and rollback mechanisms  '
+          - 'Emergency change provisions, including strict time bounds and mandatory review  '
+      - id: 8.6.4
+        kind: clause
+        ref: 8.6.4
+        text: 'The Version History MUST define:'
+        items:
+          - 'The authoritative structure for version identifiers and change logs  '
+          - 'How superseded versions are retained and accessed  '
+          - 'How the currently active version is determined  '
+      - id: 8.6.5
+        kind: clause
+        ref: 8.6.5
+        text: 'The Learning Log MUST define:'
+        items:
+          - 'What constitutes a learnable event  '
+          - 'Documentation format and ownership  '
+          - 'Review and synthesis cadence  '
+  - id: '8.7'
+    ref: '8.7'
+    title: Layer Invariants
+    blocks:
+      - id: 8.7.1
+        kind: clause
+        ref: 8.7.1
+        text: Change MUST be possible but constrained; no change MAY be instantaneous, implicit, or unreviewable.
+      - id: 8.7.2
+        kind: clause
+        ref: 8.7.2
+        text: All adopted changes MUST be versioned, documented, and traceable.
+      - id: 8.7.3
+        kind: clause
+        ref: 8.7.3
+        text: Experiments MUST be time-bounded, explicitly labeled, and reversible.
+      - id: 8.7.4
+        kind: clause
+        ref: 8.7.4
+        text: Major failures and adaptations MUST be captured as shared learning, not erased or hidden.
+  - id: '8.8'
+    ref: '8.8'
+    title: Explicitness Rules
+    blocks:
+      - id: 8.8.1
+        kind: clause
+        ref: 8.8.1
+        text: 'The following MUST be explicit:'
+        items:
+          - 'How rules change and who decides  '
+          - 'Versioning, authority, and review processes  '
+          - 'Experiment scope, duration, and rollback conditions  '
+          - 'Emergency change conditions and limits  '
+      - id: 8.8.2
+        kind: clause
+        ref: 8.8.2
+        text: 'The following MAY be explicit:'
+        items:
+          - 'Review frequency and cadence  '
+          - 'Sunset clauses  '
+          - 'Feedback and sensing methods  '
+      - id: 8.8.3
+        kind: clause
+        ref: 8.8.3
+        text: 'The following MUST remain optional and out of scope:'
+        items:
+          - 'Pace of innovation  '
+          - Cultural attitudes toward risk within defined bounds

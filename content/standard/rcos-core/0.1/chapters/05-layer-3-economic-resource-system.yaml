@@ -1,0 +1,239 @@
+kind: chapter
+legacyPath: rcos-core/v0-1/05-layer-3-economic-resource-system
+id: efe8634e
+title: 5. Layer 3 — Economic & Resource System
+parentId: e6de7a5d
+order: 50
+intro: |-
+  Layer 3 defines how value, resources, and obligations flow inside the community.  
+  Its purpose is to make economic power explicit, bounded, reviewable, and subordinate to governance, preventing hidden accumulation, dependency, or coercion.
+sections:
+  - id: '5.1'
+    ref: '5.1'
+    title: Commons vs Private Resources
+    blocks:
+      - id: 5.1.1
+        kind: clause
+        ref: 5.1.1
+        text: All resources within the declared governed scope MUST be explicitly classified as either **commons** or **private**.
+      - id: 5.1.2
+        kind: clause
+        ref: 5.1.2
+        text: 'The community MUST maintain a single, explicit, and versioned registry of governed resources, including at minimum:'
+        items:
+          - 'Resource name or unique identifier  '
+          - 'Classification (commons or private)  '
+          - 'Steward or owner (as applicable)  '
+          - 'Access and use rules  '
+          - Transfer, sale, or privatization constraints (if any)
+      - id: 5.1.3
+        kind: clause
+        ref: 5.1.3
+        text: Any resource not explicitly classified MUST be treated as **unclassified**, and the community MUST NOT allocate, encumber, monetize, or transfer it until classification is completed through an authorized decision.
+      - id: 5.1.4
+        kind: clause
+        ref: 5.1.4
+        text: 'For commons resources, the community MUST explicitly define:'
+        items:
+          - 'Stewardship responsibilities  '
+          - 'The authorized decision-making body or role  '
+          - 'Maintenance obligations  '
+          - Funding or contribution mechanisms (if any)
+      - id: 5.1.5
+        kind: clause
+        ref: 5.1.5
+        text: For private resources, the community MUST NOT exercise authority beyond what is explicitly declared in the scope, membership agreements, or other governed artifacts.
+  - id: '5.2'
+    ref: '5.2'
+    title: Contribution Recognition
+    blocks:
+      - id: 5.2.1
+        kind: clause
+        ref: 5.2.1
+        text: 'The community MUST explicitly define which contribution categories are recognized. These MAY include, but are not limited to:'
+        items:
+          - 'Labor  '
+          - 'Care and emotional work  '
+          - 'Knowledge and education  '
+          - 'Stewardship and maintenance  '
+          - 'Administrative or coordination work  '
+      - id: 5.2.2
+        kind: clause
+        ref: 5.2.2
+        text: 'The community MUST define a contribution recognition mechanism specifying:'
+        items:
+          - 'What qualifies as a contribution  '
+          - 'How contributions are recorded or acknowledged  '
+          - 'Who may record, validate, or contest contributions  '
+          - 'Whether and how contribution recognition affects access to resources, privileges, or obligations  '
+      - id: 5.2.3
+        kind: clause
+        ref: 5.2.3
+        text: The community MUST NOT structurally depend on unpaid, invisible, or informal labor for system survival without explicitly defining corresponding obligations, recognition, or compensation mechanisms.
+      - id: 5.2.4
+        kind: clause
+        ref: 5.2.4
+        text: 'If internal economic units are used (e.g. time credits, points, tokens), the Internal Economy Protocol MUST define:'
+        items:
+          - 'Issuance rules  '
+          - 'Transferability rules  '
+          - 'Expiration, decay, or cap mechanisms (if any)  '
+          - 'Fraud prevention, dispute handling, and correction mechanisms  '
+          - 'Privacy and transparency rules for balances and transactions  '
+      - id: 5.2.5
+        kind: clause
+        ref: 5.2.5
+        text: Contribution recognition MUST NOT create implicit decision authority, veto power, or governance influence beyond what is defined in Layer 2.
+  - id: '5.3'
+    ref: '5.3'
+    title: Treasury Management
+    blocks:
+      - id: 5.3.1
+        kind: clause
+        ref: 5.3.1
+        text: The community MUST explicitly define which resources are held in the shared treasury and how treasury boundaries interface with private resources.
+      - id: 5.3.2
+        kind: clause
+        ref: 5.3.2
+        text: Income sources and any external income interfaces MUST be explicitly defined.
+      - id: 5.3.3
+        kind: clause
+        ref: 5.3.3
+        text: 'Spending authority MUST be explicitly bounded through:'
+        items:
+          - 'Clear authority assignments  '
+          - 'Thresholds by amount and/or category  '
+          - 'Approval and escalation paths  '
+          - 'Mandatory recordkeeping requirements  '
+      - id: 5.3.4
+        kind: clause
+        ref: 5.3.4
+        text: Transparency MUST be the default for treasury balances, inflows, outflows, obligations, and commitments.
+      - id: 5.3.5
+        kind: clause
+        ref: 5.3.5
+        text: Any exceptions to transparency MUST be explicitly defined, justified, time-bounded, and MUST NOT prevent members from auditing compliance.
+      - id: 5.3.6
+        kind: clause
+        ref: 5.3.6
+        text: 'The community MUST define reserve, risk, and liability policies, including:'
+        items:
+          - 'Limits on debt  '
+          - 'Long-term obligations  '
+          - Contingency reserves (if any)
+  - id: '5.4'
+    ref: '5.4'
+    title: Accumulation Constraints
+    blocks:
+      - id: 5.4.1
+        kind: clause
+        ref: 5.4.1
+        text: Internal economic systems MUST prevent unbounded concentration of internal influence or control through resources, credits, or financial obligations.
+      - id: 5.4.2
+        kind: clause
+        ref: 5.4.2
+        text: 'If internal units exist, the community MUST define one or more accumulation-limiting mechanisms, which MAY include:'
+        items:
+          - 'Caps  '
+          - 'Decay or expiration  '
+          - 'Non-transferability  '
+          - 'Redistribution or taxation mechanisms  '
+          - 'Time-bounded validity  '
+      - id: 5.4.3
+        kind: clause
+        ref: 5.4.3
+        text: Economic mechanisms MUST NOT allow members to bypass governance authority boundaries defined in Layer 2, including through purchasing influence, creating dependency, or converting economic power into informal decision authority.
+      - id: 5.4.4
+        kind: clause
+        ref: 5.4.4
+        text: The community MUST define reviewable indicators of economic concentration risk and an explicit mechanism to adjust constraints when such risks are detected.
+  - id: '5.5'
+    ref: '5.5'
+    title: Artifacts
+    blocks:
+      - id: 5.5.1
+        kind: clause
+        ref: 5.5.1
+        text: 'The following artifacts are mandatory for Layer 3 compliance:'
+        items:
+          - 'Internal Economy Protocol  '
+          - 'Treasury Ruleset  '
+      - id: 5.5.2
+        kind: clause
+        ref: 5.5.2
+        text: 'Layer 3 artifacts MUST be:'
+        items:
+          - 'Explicit and unambiguous  '
+          - 'Versioned  '
+          - 'Accessible to all members (with explicit, bounded exceptions)  '
+          - 'Adopted through an authorized governance process  '
+      - id: 5.5.3
+        kind: clause
+        ref: 5.5.3
+        text: 'The Internal Economy Protocol MUST define, at minimum:'
+        items:
+          - 'Contribution categories and recognition mechanisms  '
+          - 'Commons vs private boundaries and allocation rules  '
+          - 'Internal units (if any) and accumulation constraints  '
+          - 'External income interfaces (if any)  '
+          - 'Dispute resolution and correction mechanisms for economic records  '
+      - id: 5.5.4
+        kind: clause
+        ref: 5.5.4
+        text: 'The Treasury Ruleset MUST define, at minimum:'
+        items:
+          - 'Income sources  '
+          - 'Spending authority thresholds and approval paths  '
+          - 'Transparency and reporting requirements (including any bounded exceptions)  '
+          - 'Reserve, risk, and debt constraints  '
+          - 'Conflict-of-interest rules for spending and procurement  '
+  - id: '5.6'
+    ref: '5.6'
+    title: Layer Invariants
+    blocks:
+      - id: 5.6.1
+        kind: clause
+        ref: 5.6.1
+        text: Shared resources, flows, and obligations MUST be visible to the community by default, with only limited and explicit exceptions.
+      - id: 5.6.2
+        kind: clause
+        ref: 5.6.2
+        text: Resources declared as commons MUST NOT be privatized through informal, implicit, or unilateral action.
+      - id: 5.6.3
+        kind: clause
+        ref: 5.6.3
+        text: Contribution recognition MUST be explicit such that unpaid or invisible labor is not structurally required for system survival.
+      - id: 5.6.4
+        kind: clause
+        ref: 5.6.4
+        text: Economic mechanisms MUST prevent indefinite concentration of internal influence.
+  - id: '5.7'
+    ref: '5.7'
+    title: Explicitness Rules
+    blocks:
+      - id: 5.7.1
+        kind: clause
+        ref: 5.7.1
+        text: 'The following MUST be explicit:'
+        items:
+          - 'Commons vs private classifications  '
+          - 'Allocation and access rules for shared resources  '
+          - 'Spending authority limits  '
+          - 'Transparency rules  '
+          - 'External income interfaces  '
+      - id: 5.7.2
+        kind: clause
+        ref: 5.7.2
+        text: 'The following MAY be explicit:'
+        items:
+          - 'Contribution valuation models  '
+          - 'Internal units (tokens, hours, points)  '
+          - 'Budget categories and internal accounting structures  '
+      - id: 5.7.3
+        kind: clause
+        ref: 5.7.3
+        text: 'The following MUST remain optional and out of scope:'
+        items:
+          - 'Attitudes toward wealth  '
+          - 'Equal vs differentiated outcomes  '
+          - Personal financial choices

@@ -1,0 +1,142 @@
+kind: template
+legacyPath: rcos-templates/layer-1/onboarding-protocol
+id: 8f3a5c21
+title: Onboarding Protocol
+parentId: 2c750c19
+order: 1
+preamble: |-
+  - **Layer:** 1 — Membership System
+  - **Status:** Template — adapt for your community
+  - **RCOS reference:** [§3.2](rcos:§3.2), [§3.3](rcos:§3.3), [§3.8](rcos:§3.8)
+
+  ---
+sections:
+  - id: admission-criteria
+    title: Admission Criteria
+    blocks:
+      - id: clauses
+        kind: clauses
+        refs:
+          - 3.2.3
+          - 3.2.4
+      - id: rationale
+        kind: rationale
+        summary: Why write down who gets in?
+        body: Admission is the moment a stranger becomes bound by — and protected by — the community's rules. If the criteria are informal, the decision collapses into whoever happens to like the applicant. Written criteria make admission a governance act, not a social favor, and make rejection defensible on grounds the community can point to.
+      - id: instructions
+        kind: instructions
+        summary: How to fill this in
+        body: State the explicit conditions under which an applicant may be admitted. Each criterion should be testable from the application itself or from an external check.
+      - id: m1
+        kind: md
+        md: |-
+          1. _<Criterion 1, e.g. alignment with the primary purpose and Layer 0 identity constraints.>_
+          2. _<Criterion 2, e.g. willingness to actively contribute in at least one recognized category.>_
+          3. _<Criterion 3, e.g. no prior forced exit or rejection within the last X months.>_
+          4. _<Criterion 4, e.g. completion of the application form in good faith — no misrepresentation.>_
+  - id: onboarding-steps
+    title: Onboarding Steps
+    blocks:
+      - id: clauses
+        kind: clauses
+        refs:
+          - 3.2.1
+          - 3.2.2
+      - id: rationale
+        kind: rationale
+        summary: Why make the process a fixed sequence?
+        body: Consent to governance only means something if the member has actually seen the governance. A fixed sequence — review, consent, technical setup — ensures every Full Member crossed the same threshold in the same order, so nobody slips into full rights without having encountered the constraints that come with them.
+      - id: instructions
+        kind: instructions
+        summary: How to fill this in
+        body: List the ordered steps every new member must complete to move from applicant to Full Member. Include explicit consent steps and any tooling/access provisioning required.
+      - id: m1
+        kind: md
+        md: |-
+          1. _<Step 1, e.g. review all Layer 0–6 artifacts and this onboarding protocol.>_
+          2. _<Step 2, e.g. explicitly consent to the Membership Agreement and Layer 0 identity constraints.>_
+          3. _<Step 3, e.g. set up required tooling (wallet, accounts, identity).>_
+          4. _<Step 4, e.g. join member-only communication channels.>_
+          5. _<Step 5, e.g. be granted any required permissions for governance participation.>_
+          6. _<Step 6, e.g. onboarding completion recorded — membership state transitions to Full Member.>_
+  - id: initial-membership-state
+    title: Initial Membership State
+    blocks:
+      - id: clauses
+        kind: clauses
+        refs:
+          - 3.1.2
+          - 3.1.4
+      - id: rationale
+        kind: rationale
+        summary: Why assign a state at the end of onboarding?
+        body: Between "applicant approved" and "fully integrated" there is a real gap — permissions, access, and expectations all change. Declaring the exact state a new member holds at each step removes ambiguity about what they can do right now, and prevents unintentional grants of rights before onboarding is complete.
+      - id: instructions
+        kind: instructions
+        summary: How to fill this in
+        body: State the membership states a member transitions through during onboarding, and what triggers each transition. Reference the Membership State Registry.
+      - id: m1
+        kind: md
+        md: |-
+          - On approval: _<e.g. Trial Member.>_
+          - On onboarding completion: _<e.g. Full Member (automatic upon completion).>_
+  - id: trial-and-evaluation
+    title: Trial and Evaluation
+    blocks:
+      - id: clauses
+        kind: clauses
+        refs:
+          - 3.3.1
+          - 3.3.2
+          - 3.3.3
+          - 3.3.4
+      - id: rationale
+        kind: rationale
+        summary: Why bound the trial period?
+        body: 'An unbounded trial is a second-class membership that never ends — all obligations, fewer rights. Fixing the duration, the criteria, and the failure path forces a decision point: either the new member transitions into full standing or a defined exit runs. It prevents the trial state from becoming a permanent holding pen.'
+      - id: instructions
+        kind: instructions
+        summary: How to fill this in
+        body: Define the duration, evaluation criteria, transition decision, grace period, failure path, and any extension rules. Trial rights are defined in the Membership State Registry.
+      - id: m1
+        kind: md
+        md: |-
+          - **Duration:** _<e.g. 30 days from approval.>_
+          - **Evaluation criteria:** _<e.g. all onboarding steps completed and recorded.>_
+          - **Transition decision:** _<e.g. automatic on completion; or vote-based.>_
+          - **Grace period:** _<e.g. additional X days if onboarding not complete on time.>_
+          - **Failure to complete:** _<e.g. exit process triggered automatically after total period elapses.>_
+          - **Extension:** _<e.g. one-time X-day extension on request.>_
+          - **Rights during trial:** _<reference Membership State Registry.>_
+          - **Re-application block:** _<e.g. members exited due to incomplete onboarding may not reapply for X months.>_
+  - id: completion-record
+    title: Completion Record
+    blocks:
+      - id: clauses
+        kind: clauses
+        refs:
+          - 3.8.2
+      - id: rationale
+        kind: rationale
+        summary: Why keep the record permanent?
+        body: The completion record is the evidence that a member consented to a specific version of the rules on a specific date. Losing or editing it would make it impossible to answer, months or years later, "what exactly did they agree to?" — which is the only question that matters when a dispute arrives.
+      - id: instructions
+        kind: instructions
+        summary: How to fill this in
+        body: State where the completion record is kept, what it captures (timestamp, artifact versions consented to), and the retention rule.
+      - id: m1
+        kind: md
+        md: _<Description of the onboarding completion record — where it lives, what it captures, and that it is retained permanently after exit.>_
+      - id: m2
+        kind: md
+        md: '---'
+  - id: ratification-record
+    title: Ratification Record
+    blocks:
+      - id: m1
+        kind: md
+        md: |-
+          - **Adopted:** <YYYY-MM-DD>
+          - **Decision type:** Strategic
+          - **Version:** <version>
+          - **Decision record:** <link to decision record>

@@ -1,0 +1,81 @@
+lang: de
+sourceHash: d9d4b019
+title: Geltungsbereichserklärung
+preamble: |-
+  - **Layer:** 0 — Identität & Geltungsbereich
+  - **Status:** Vorlage — an eure Gemeinschaft anpassen
+  - **RCOS-Referenz:** [§2.2](rcos:§2.2), [§2.5](rcos:§2.5)
+
+  ---
+sections:
+  in-scope-assets:
+    title: Erfasste Vermögenswerte
+    blocks:
+      rationale:
+        summary: Warum jeden verwalteten Vermögenswert aufzählen?
+        body: Wenn die Gemeinschaft einen Vermögenswert nicht ausdrücklich als erfasst benannt hat, ist er es nicht — Punkt. Vermögenswerte namentlich aufzulisten schließt die Lücke, in der informelle Autoritätsansprüche über nicht deklarierte Ressourcen wachsen, und gibt Mitgliedern eine konkrete Checkliste, um zu überprüfen, was die Gemeinschaft tatsächlich kontrolliert.
+      instructions:
+        summary: Wie du das ausfüllst
+        body: 'Liste jeden Vermögenswert auf, den die Gemeinschaft gemeinsam verwaltet: gemeinsame Kassen, Treasuries, Land, Immobilien, Software, Websites, Social-Media-Konten, Marke, geistiges Eigentum, physische Infrastruktur usw. Sei konkret — benenne Konten, Wallets, Domains.'
+      m1:
+        md: |-
+          1. _<Vermögenswert 1, z. B. die gemeinsame Kasse in einer bestimmten Multi-Sig-Wallet.>_
+          2. _<Vermögenswert 2, z. B. die Gemeinschaftswebsite und ihre Domain.>_
+          3. _<Vermögenswert 3, z. B. gemeinsame physische Infrastruktur oder Land.>_
+          4. _<Vermögenswert 4.>_
+  in-scope-decision-domains:
+    title: Erfasste Entscheidungsbereiche
+    blocks:
+      rationale:
+        summary: Warum Entscheidungsbereiche benennen, nicht nur Vermögenswerte?
+        body: Beim Geltungsbereich geht es nicht nur um Dinge — es geht darum, welche Arten von Fragen die Gemeinschaft gemeinsam beantworten darf. Entscheidungsbereiche zu benennen macht unmissverständlich, wo kollektive Autorität gilt und wo eine Einzelperson oder eine externe Partei weiterhin entscheidet, und verhindert die stille Übernahme von Entscheidungsgebieten.
+      instructions:
+        summary: Wie du das ausfüllst
+        body: Liste die Kategorien von Entscheidungen auf, über die die Gemeinschaft Autorität hat. Diese entsprechen späteren Layern (Governance, Mitgliedschaft, Kasse usw.) — benenne sie auf einem Niveau, das klarmacht, welche Arten von Fragen die Gemeinschaft gemeinsam entscheidet.
+      m1:
+        md: |-
+          1. _<Entscheidungsbereich 1, z. B. Governance-Regeln und Entscheidungsprozesse (Schicht 2).>_
+          2. _<Entscheidungsbereich 2, z. B. Mitgliedschaftsregeln und Aufnahme (Schicht 1).>_
+          3. _<Entscheidungsbereich 3, z. B. Kasse und Verteilung gemeinsamer Ressourcen (Schicht 3).>_
+          4. _<Entscheidungsbereich 4.>_
+  in-scope-activities-and-responsibilities:
+    title: Erfasste Aktivitäten und Verantwortlichkeiten
+    blocks:
+      rationale:
+        summary: Warum die Arbeit deklarieren, die der Gemeinschaft gehört?
+        body: Autorität ohne übernommene Verantwortung erzeugt Stillstand; Verantwortung ohne erklärte Autorität erzeugt Burnout und Schuldzuweisungen. Die Aktivitäten aufzulisten, die die Gemeinschaft gemeinsam steuert, macht die Arbeit sichtbar, zuweisbar und rechenschaftspflichtig — und macht offensichtlich, wenn etwas Wichtiges keinen Verantwortlichen hat.
+      instructions:
+        summary: Wie du das ausfüllst
+        body: 'Liste die laufenden Aktivitäten auf, für die die Gemeinschaft verantwortlich ist: Pflege gemeinsamer Infrastruktur, Aufnahme von Mitgliedern, Berichterstattung über Ressourcen, Pflege der Marke usw. Das sind die Dinge, die über Schicht 5 einen Verantwortlichen brauchen.'
+      m1:
+        md: |-
+          1. _<Aktivität 1.>_
+          2. _<Aktivität 2.>_
+          3. _<Aktivität 3.>_
+          4. _<Aktivität 4.>_
+  explicitly-out-of-scope:
+    title: Ausdrücklich nicht erfasst
+    blocks:
+      rationale:
+        summary: Warum benennen, was die Gemeinschaft nicht anfassen darf?
+        body: Eine unausgesprochene Grenze ist überhaupt keine Grenze. Explizit nicht erfasste Punkte schützen Mitglieder davor, dass die Gemeinschaft in ihr Privatleben und ihre Finanzen eingreift, und schützen externe Parteien davor, dass die Gemeinschaft Autorität über ihre Angelegenheiten beansprucht. Wenn etwas hier nicht benannt ist, gilt die Standardregel „nicht erfasst bedeutet außerhalb des Geltungsbereichs" weiterhin — aber die großen Punkte zu benennen, beseitigt jeden Raum für Diskussionen.
+      instructions:
+        summary: Wie du das ausfüllst
+        body: 'Liste die wichtigsten Grenzen auf: Dinge, von denen Leute annehmen könnten, dass sie erfasst sind, es aber nicht sind. Persönliche Finanzen, private Beziehungen, Infrastruktur Dritter, externe Projekte usw.'
+      m1:
+        md: |-
+          1. _<Nicht erfasster Punkt 1, z. B. persönliches Einkommen und private Finanzen der Mitglieder.>_
+          2. _<Nicht erfasster Punkt 2, z. B. private Beziehungen und persönliche Wohnsituationen (außer wenn sicherheitskritische Bedingungen aus Schicht 4 gelten).>_
+          3. _<Nicht erfasster Punkt 3, z. B. zugrundeliegende Serverinfrastruktur und Verträge mit Drittanbietern.>_
+          4. _<Nicht erfasster Punkt 4.>_
+      m2:
+        md: '---'
+  ratification-record:
+    title: Ratifizierungsprotokoll
+    blocks:
+      m1:
+        md: |-
+          - **Angenommen:** <JJJJ-MM-TT>
+          - **Entscheidungstyp:** Verfassungsgebend
+          - **Version:** <Version>
+          - **Entscheidungsprotokoll:** <Link zum Entscheidungsprotokoll>

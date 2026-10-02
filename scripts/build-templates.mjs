@@ -29,6 +29,7 @@ import { fileURLToPath } from 'node:url';
 import matter from 'gray-matter';
 import { getStrings, SUPPORTED_LOCALES } from './i18n.mjs';
 import { escapeTemplatePlaceholders } from '../src/lib/server/template-markdown.js';
+import { buildArticles } from './content/build-articles.mjs';
 
 function run(cmd, args, { input, cwd } = {}) {
 	return new Promise((resolve, reject) => {
@@ -48,7 +49,7 @@ function run(cmd, args, { input, cwd } = {}) {
 }
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const ROOT = path.resolve(__dirname, '..');
-const TEMPLATES_DIR = path.join(ROOT, 'content/articles/rcos-templates');
+const TEMPLATES_DIR = path.join(ROOT, '.content-build/articles/rcos-templates');
 const OUT_DIR = path.join(ROOT, 'static/downloads');
 const LOGO_PNG = path.join(__dirname, 'logo.png');
 
@@ -364,6 +365,8 @@ async function zipFormat(locale, format) {
 /** ---- main ---- */
 
 async function main() {
+	// The articles are generated from content/**.yaml; make sure they are current.
+	await buildArticles({ quiet: true });
 	await ensurePandoc();
 	if (!existsSync(LOGO_PNG)) {
 		throw new Error(`Logo missing at ${LOGO_PNG}. Run sips conversion first.`);

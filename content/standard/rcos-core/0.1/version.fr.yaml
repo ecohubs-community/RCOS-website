@@ -1,0 +1,14 @@
+lang: fr
+sourceHash: 92c67acf
+title: v0.1
+intro: '# Système d''exploitation communautaire régénératif (RCOS)'
+sections:
+  s1:
+    title: Spécification principale
+    blocks:
+      b1:
+        md: |-
+          - Statut : Brouillon
+          - Version : RCOS-Core v0.1
+          - Public visé : Fondateurs de communautés, praticiens, auditeurs, implémenteurs
+          - Mots-clés normatifs : `DOIT`, `NE DOIT PAS`, `DEVRAIT`, `PEUT` (style RFC)

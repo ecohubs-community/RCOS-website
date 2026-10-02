@@ -2,7 +2,8 @@
 /**
  * Translation drift detector.
  *
- * Walks content/articles, joins each source `<base>.md` to its translations
+ * Walks content/articles (and the YAML under content/standard, templates,
+ * layers, stress-tests), joins each source to its translations
  * `<base>.<lang>.md` by frontmatter `id`, and reports per locale:
  *
  *   ✓ UP-TO-DATE       sourceHash matches current source
@@ -64,6 +65,24 @@ function parseArgs(argv) {
 	if (!['text', 'json', 'markdown'].includes(out.format)) {
 		console.error(`error: invalid --format "${out.format}" (use text|json|markdown)`);
 		process.exit(1);
+	}
+	return out;
+}
+
+const YAML_DIRS = ['standard', 'templates', 'layers', 'stress-tests'];
+
+async function walkYaml(dir) {
+	const out = [];
+	let names = [];
+	try {
+		names = await readdir(dir);
+	} catch {
+		return out;
+	}
+	for (const name of names) {
+		const full = path.join(dir, name);
+		if ((await stat(full)).isDirectory()) out.push(...(await walkYaml(full)));
+		else if (name.endsWith('.yaml')) out.push(full);
 	}
 	return out;
 }
@@ -131,6 +150,26 @@ async function buildIndex() {
 				hashStored: typeof fm.data.sourceHash === 'string' ? fm.data.sourceHash : null,
 				data: fm.data
 			};
+		}
+	}
+
+	// Content authored as YAML (content/standard, templates, layers,
+	// stress-tests): the English file is the source, each `<name>.<lang>.yaml`
+	// overlay stores the hash of the English file it was translated from.
+	for (const dir of YAML_DIRS) {
+		for (const filePath of await walkYaml(path.join(ROOT, 'content', dir))) {
+			const m = /^(.*)\.(de|es|fr|pt-br)\.yaml$/.exec(filePath);
+			const sourcePath = m ? `${m[1]}.yaml` : filePath;
+			if (path.basename(sourcePath) === 'ownership.yaml') continue;
+			const raw = await readFile(filePath, 'utf8');
+			if (!groups.has(sourcePath)) groups.set(sourcePath, { source: null, translations: {} });
+			const entry = groups.get(sourcePath);
+			if (!m) {
+				entry.source = { path: filePath, raw, hashCurrent: md5short(raw) };
+			} else {
+				const hash = /^sourceHash: '?([^'\n]+)'?$/m.exec(raw)?.[1] ?? null;
+				entry.translations[m[2]] = { path: filePath, hashStored: hash };
+			}
 		}
 	}
 

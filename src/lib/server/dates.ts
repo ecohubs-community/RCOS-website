@@ -1,4 +1,5 @@
 import { execFile } from 'node:child_process';
+import { readFileSync } from 'node:fs';
 import { readFile } from 'node:fs/promises';
 import path from 'node:path';
 import { promisify } from 'node:util';
@@ -68,7 +69,36 @@ async function readGitDates(): Promise<Map<string, FileDates>> {
 			entry.published = trusted ? date : undefined;
 		}
 	}
+	addGeneratedArticles(dates, root);
 	return dates;
+}
+
+/**
+ * Generated articles (.content-build/articles, written from YAML) have no git
+ * history of their own. Give each one the dates of the files it came from:
+ * published = the earliest (usually the markdown it replaced), modified = the
+ * latest (usually the YAML).
+ */
+function addGeneratedArticles(dates: Map<string, FileDates>, root: string) {
+	let sources: Record<string, string[]>;
+	try {
+		sources = JSON.parse(readFileSync(path.join(root, '.content-build/sources.json'), 'utf8'));
+	} catch {
+		return;
+	}
+	for (const [generated, from] of Object.entries(sources)) {
+		const known = from.map((f) => dates.get(path.join(root, f))).filter((d) => d !== undefined);
+		const published = known
+			.map((d) => d.published)
+			.filter(Boolean)
+			.sort()[0];
+		const modified = known
+			.map((d) => d.modified)
+			.filter(Boolean)
+			.sort()
+			.at(-1);
+		dates.set(path.join(root, generated), { published, modified });
+	}
 }
 
 /** Commits at the edge of a shallow clone, listed in .git/shallow (empty for full clones). */

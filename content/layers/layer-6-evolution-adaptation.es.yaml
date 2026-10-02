@@ -1,0 +1,59 @@
+lang: es
+sourceHash: 621d2b56
+title: Capa 6 - Evolución & Adaptación
+head: '**Cómo cambia el sistema sin colapsar.**'
+sections:
+  change-mechanisms:
+    title: '**Mecanismos de cambio**'
+    md: |-
+      * Propuestas
+      * Experimentos
+      * Ciclos de revisión
+  versioning:
+    title: '**Versionado**'
+    md: |-
+      * Versiones de protocolo
+      * Rutas de migración
+  learning-capture:
+    title: '**Captura de aprendizaje**'
+    md: |-
+      * Retrospectivas
+      * Documentación de fallos
+  artifacts:
+    title: '**Artefactos**'
+    md: |-
+      * Protocolo de cambios
+      * Historial de versiones
+  layer-invariants:
+    title: '**Invariantes de la Capa**'
+    md: |-
+      * **Invariante 6.1: El cambio es posible pero restringido**
+        Ningún componente del sistema está congelado para siempre, pero ningún cambio es instantáneo.
+      * **Invariante 6.2: Los cambios están versionados**
+        Los cambios de reglas DEBEN estar documentados, fechados y ser trazables.
+      * **Invariante 6.3: Los experimentos son reversibles**
+        Todos los experimentos DEBEN definir alcance, duración y condiciones de reversión.
+      * **Invariante 6.4: El aprendizaje se captura**
+        Los fallos importantes y las adaptaciones DEBEN ser registrados y accesibles.
+  explicitness-rules:
+    title: '**Reglas de explicitud**'
+    md: |-
+      #### **DEBE ser explícito**
+
+      * Cómo cambian las reglas
+      * Proceso de versionado y revisión
+      * Límites de los experimentos
+      * Mecanismos de reversión
+
+      **Por qué:** los sistemas que no pueden cambiar se pudren o explotan.
+
+      #### **PUEDE ser explícito**
+
+      * Frecuencia de revisión
+      * Cláusulas de caducidad
+      * Métodos de recolección de retroalimentación
+
+      #### **DEBE permanecer opcional**
+
+      * Ritmo de innovación
+      * Apetito de riesgo (dentro de los límites)

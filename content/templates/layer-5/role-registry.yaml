@@ -1,0 +1,173 @@
+kind: template
+legacyPath: rcos-templates/layer-5/role-registry
+id: 6de5caef
+title: Role Registry
+parentId: 2bd4d877
+order: 1
+preamble: |-
+  - **Layer:** 5 — Operations & Coordination
+  - **Status:** Template — adapt for your community
+  - **RCOS reference:** [§7.1](rcos:§7.1), [§7.6](rcos:§7.6)
+
+  ---
+sections:
+  - id: overview
+    title: Overview
+    blocks:
+      - id: clauses
+        kind: clauses
+        refs:
+          - 7.1.1
+          - 7.1.2
+          - 7.1.4
+          - 7.7.1
+      - id: rationale
+        kind: rationale
+        summary: Why require every responsibility to have a named role?
+        body: Ongoing responsibilities without explicit roles become invisible labor — done by whoever notices, resented silently, and impossible to hand over. Making every ongoing responsibility a named, accountable role is what prevents the community from running on the unpaid goodwill of a few members.
+      - id: instructions
+        kind: instructions
+        summary: How to fill this in
+        body: Distinguish operational roles (carrying delegated authority per the Decision Matrix) from functional roles (contribution-scoped, no special governance authority). State the "in good standing" definition you will use for eligibility.
+      - id: m1
+        kind: md
+        md: This registry defines all recognized roles within the community. Roles are either **operational** (carrying delegated authority per the Decision Matrix) or **functional** (contribution-scoped, no special governance authority beyond Full Member rights).
+      - id: m2
+        kind: md
+        md: '> **"In good standing"** means a Full Member who has met their participation expectations in the last _<period>_ and is not currently subject to an active accountability process or conflict review under Layer 4.'
+      - id: m3
+        kind: md
+        md: '---'
+  - id: summary-table
+    title: Summary Table
+    blocks:
+      - id: m1
+        kind: md
+        md: |-
+          | Role | Type | Current Holder |
+          |---|---|---|
+          | _<Role name>_ | _<Operational / Functional>_ | _<holder or "Vacant">_ |
+          | _<...>_ | _<...>_ | _<...>_ |
+      - id: m2
+        kind: md
+        md: '---'
+  - id: operational-roles
+    title: Operational Roles
+    blocks:
+      - id: clauses
+        kind: clauses
+        refs:
+          - 7.1.2
+          - 7.1.3
+      - id: rationale
+        kind: rationale
+        summary: Why define accountability for delegated authority?
+        body: 'Operational roles carry real power — they can act without a community vote within their scope. That power only stays safe if each role has a clear accountability mechanism: who can raise concerns, how review happens, and how a role can be reassigned when trust breaks.'
+      - id: instructions
+        kind: instructions
+        summary: How to fill this in
+        body: For each operational role, fill in the template below with concrete scope, decision authority, interfaces, eligibility, term, appointment, review/removal, and handover requirements.
+      - id: m1
+        kind: md
+        md: Operational roles carry delegated authority to act within explicitly defined limits without a Full Member vote, as defined in the Decision Matrix (Layer 2). All operational role holders are accountable to Full Members collectively. Any Full Member may raise a concern about how a role is being performed; reassignment requires a Strategic vote.
+      - id: m2
+        kind: md
+        md: '---'
+      - id: m3
+        kind: md
+        md: '### _<Operational Role Name, e.g. Membership Admin>_'
+      - id: m4
+        kind: md
+        md: |-
+          - **Purpose:** _<one-sentence purpose.>_
+          - **Scope of responsibility:** _<concrete responsibilities.>_
+          - **Decision authority:** _<which decisions in the Decision Matrix this role executes; explicit limits.>_
+          - **Interfaces:** _<other roles this role hands off to or receives from.>_
+          - **Eligibility criteria:** _<Full Member in good standing; any additional criteria.>_
+          - **Term / rotation:** _<ongoing / rotating / fixed term.>_
+          - **Appointment process:** _<how the role is assigned.>_
+          - **Review and removal:** _<how concerns are raised; reassignment via Strategic vote.>_
+          - **Handover:** _<what must be transferred before vacating.>_
+      - id: m5
+        kind: md
+        md: '---'
+      - id: m6
+        kind: md
+        md: '### _<Operational Role Name, e.g. Finance Steward>_'
+      - id: m7
+        kind: md
+        md: |-
+          - **Purpose:** _<purpose.>_
+          - **Scope of responsibility:** _<responsibilities.>_
+          - **Decision authority:** _<Decision Matrix scope; spending limit.>_
+          - **Interfaces:** _<other roles.>_
+          - **Eligibility criteria:** _<Full Member in good standing.>_
+          - **Term / rotation:** _<...>_
+          - **Appointment process:** _<...>_
+          - **Review and removal:** _<...>_
+          - **Handover:** _<...>_
+      - id: m8
+        kind: md
+        md: '---'
+      - id: m9
+        kind: md
+        md: '### _<Add additional operational roles as needed (e.g. Infrastructure Steward, Communications Steward).>_'
+      - id: m10
+        kind: md
+        md: '---'
+  - id: functional-roles
+    title: Functional Roles
+    blocks:
+      - id: clauses
+        kind: clauses
+        refs:
+          - 7.1.1
+          - 7.1.2
+      - id: rationale
+        kind: rationale
+        summary: Why separate functional from operational roles?
+        body: Not every contribution needs delegated authority — most work is about doing, not deciding. Functional roles name contribution scopes without bundling in governance power, so members can opt into work without an authority transfer, and so the governance system stays clear about who can act on behalf of the community.
+      - id: instructions
+        kind: instructions
+        summary: How to fill this in
+        body: For each functional role, define purpose, scope, interfaces, eligibility, and handover. Functional roles do not require a vote to assume — declaration is sufficient.
+      - id: m1
+        kind: md
+        md: Functional roles define a member's contribution scope. They carry no delegated governance authority beyond Full Member rights. Any Full Member may take on a functional role by declaring it; no vote is required. Roles may be vacated at any time by notification.
+      - id: m2
+        kind: md
+        md: '---'
+      - id: m3
+        kind: md
+        md: '### _<Functional Role Name, e.g. Facilitator>_'
+      - id: m4
+        kind: md
+        md: |-
+          - **Purpose:** _<purpose.>_
+          - **Scope of responsibility:** _<responsibilities.>_
+          - **Decision authority:** _<Full Member rights only.>_
+          - **Interfaces:** _<other roles.>_
+          - **Eligibility criteria:** _<Full Member; any additional preferences.>_
+          - **Term / rotation:** _<ongoing until vacated.>_
+          - **Appointment process:** _<self-declaration.>_
+          - **Review and removal:** _<may be vacated at any time; conflict-of-interest substitution per Layer 4 if relevant.>_
+          - **Handover:** _<active commitments to brief in.>_
+      - id: m5
+        kind: md
+        md: '---'
+      - id: m6
+        kind: md
+        md: '### _<Add additional functional roles as needed.>_'
+      - id: m7
+        kind: md
+        md: '---'
+  - id: ratification-record
+    title: Ratification Record
+    blocks:
+      - id: m1
+        kind: md
+        md: |-
+          - **Adopted:** <YYYY-MM-DD>
+          - **Decision type:** Strategic
+          - **Version:** <version>
+          - **Decision record:** <link to decision record>

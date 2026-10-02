@@ -1,0 +1,83 @@
+lang: es
+sourceHash: fff21d92
+title: 2. Capa 0 — Identidad y Alcance
+intro: La Capa 0 define la identidad constitucional de la comunidad. Establece lo que la comunidad *es*, lo que *no es*, y las restricciones innegociables bajo las cuales operan todas las demás capas. Ninguna regla, decisión o práctica en capas superiores puede contradecir la Capa 0.
+sections:
+  '2.1':
+    title: Definición de Propósito
+    blocks:
+      2.1.1:
+        text: Una comunidad DEBE definir exactamente un propósito primario.
+      2.1.2:
+        text: El propósito primario DEBE describir la razón perdurable de la existencia de la comunidad y NO DEBE ser un objetivo, proyecto o estrategia a corto plazo.
+      2.1.3:
+        text: El propósito primario DEBE ser estable a lo largo del tiempo y solo DEBE ser modificado mediante una decisión constitucional tal como se define en la Capa 2 y ejecutada a través del proceso de cambio definido en la Capa 6.
+      2.1.4:
+        text: Se PUEDEN definir propósitos secundarios, pero NO DEBEN entrar en conflicto con el propósito primario ni anularlo.
+      2.1.5:
+        text: Ninguna acción, decisión o asignación de recursos PUEDE contradecir materialmente el propósito primario declarado.
+  '2.2':
+    title: Declaración de Alcance
+    blocks:
+      2.2.1:
+        text: La comunidad DEBE declarar explícitamente el alcance de lo que gobierna.
+      2.2.2:
+        text: 'La declaración de alcance DEBE incluir, como mínimo:'
+        items:
+          - Activos gobernados por la comunidad
+          - Dominios de autoridad en la toma de decisiones
+          - Actividades y responsabilidades bajo control colectivo
+      2.2.3:
+        text: La declaración de alcance DEBE listar explícitamente lo que queda fuera de alcance.
+      2.2.4:
+        text: Todo lo que no esté explícitamente declarado como dentro del alcance DEBE tratarse como fuera de alcance.
+      2.2.5:
+        text: La comunidad NO DEBE ejercer autoridad sobre personas, activos o dominios que estén declarados fuera de alcance.
+  '2.3':
+    title: Invariantes
+    blocks:
+      2.3.1:
+        text: Las invariantes son restricciones que definen lo que NO DEBE ser violado mientras estén vigentes.
+      2.3.2:
+        text: Las invariantes DEBEN estar explícitamente listadas y documentadas.
+      2.3.3:
+        text: Las invariantes DEBEN aplicarse a todas las capas de RCOS.
+      2.3.4:
+        text: Ninguna decisión, rol, proceso o medida de emergencia PUEDE anular una invariante.
+      2.3.5:
+        text: Si surge un conflicto entre una invariante y cualquier otra regla, la invariante DEBE prevalecer.
+      2.3.6:
+        text: Las invariantes solo PUEDEN ser modificadas o eliminadas mediante un proceso de cambio constitucional tal como se define en la Capa 2 y la Capa 6.
+  '2.4':
+    title: Restricciones de Identidad
+    blocks:
+      2.4.1:
+        text: La comunidad DEBE declarar cualquier restricción a nivel de identidad que afecte materialmente la participación, el comportamiento o la gobernanza.
+      2.4.2:
+        text: 'Las restricciones de identidad PUEDEN incluir, entre otras:'
+        items:
+          - Límites éticos o de comportamiento
+          - Requisitos previos de participación
+          - Restricciones culturales o ecológicas innegociables
+      2.4.3:
+        text: Las restricciones de identidad DEBEN ser verificables y aplicables mediante procesos definidos.
+      2.4.4:
+        text: Las restricciones de identidad NO DEBEN aplicarse de manera implícita o informal.
+  '2.5':
+    title: Artefactos
+    blocks:
+      2.5.1:
+        text: 'Los siguientes artefactos son obligatorios para el cumplimiento de la Capa 0:'
+        items:
+          - Carta de Propósito
+          - Declaración de Alcance
+          - Registro de Invariantes
+          - Registro de Restricciones de Identidad
+      2.5.2:
+        text: 'Los artefactos de la Capa 0 DEBEN:'
+        items:
+          - Ser accesibles públicamente para todos los miembros
+          - Estar versionados
+          - Ser adoptados mediante un proceso formal de ratificación
+      2.5.3:
+        text: Si los artefactos de la Capa 0 están ausentes, son ambiguos o internamente contradictorios, la comunidad DEBE considerarse no conforme con RCOS-Core.

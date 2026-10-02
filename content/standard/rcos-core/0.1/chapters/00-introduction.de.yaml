@@ -1,0 +1,39 @@
+lang: de
+sourceHash: 1f19c526
+title: 0. Einführung
+intro: ''
+sections:
+  '0.1':
+    title: Zweck von RCOS
+    blocks:
+      b1:
+        md: Definiert ein standardisiertes, modulares Betriebssystem für kleine, intentionale Gemeinschaften mit Fokus auf Resilienz, Fairness und Regeneration.
+  '0.2':
+    title: Geltungsbereich des Kerns
+    blocks:
+      b1:
+        md: Diese Spezifikation legt die **verpflichtenden Kern-Ebenen** fest, die für RCOS-Konformität erforderlich sind. Domänenspezifische Praktiken sind ausgeschlossen und werden über optionale Module abgedeckt.
+  '0.3':
+    title: Designprinzipien
+    blocks:
+      b1:
+        md: |-
+          - Constraint-basiert, nicht werte-basiert
+          - Vorabfestlegung statt Improvisation
+          - Modular per Default
+          - Menschliche Größenordnung
+          - Fehlertolerant
+  '0.4':
+    title: Definitionen und Terminologie
+    blocks:
+      b1:
+        md: |-
+          - Gemeinschaft (Community)
+          - Mitglied (Member)
+          - Rolle (Role)
+          - Domäne (Domain)
+          - Commons
+          - Invariante (Invariant)
+          - Entscheidungstyp (Decision Type)
+          - Konformität (Compliance)
+summary: Zweck, Geltungsbereich und Designprinzipien des RCOS-Kerns.

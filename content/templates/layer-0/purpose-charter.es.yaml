@@ -1,0 +1,71 @@
+lang: es
+sourceHash: f85baff8
+title: Carta de Propósito
+preamble: |-
+  - **Capa:** 0 — Identidad y Alcance
+  - **Estado:** Plantilla — adaptar para tu comunidad
+  - **Referencia RCOS:** [§2.1](rcos:§2.1), [§2.5](rcos:§2.5)
+
+  ---
+sections:
+  primary-purpose:
+    title: Propósito Principal
+    blocks:
+      rationale:
+        summary: ¿Por qué un único propósito perdurable?
+        body: 'Cada decisión, rol y asignación de recursos en niveles posteriores tiene que mantenerse consistente con una sola cosa: el propósito principal de la comunidad. Si se desvía, cambia con las tendencias o se reescribe para justificar el último proyecto, no queda nada a lo que anclar la gobernanza. Un propósito principal único y estable es la estrella polar constitucional: las estrategias cambian, el propósito no.'
+      instructions:
+        summary: Cómo completar esta sección
+        body: Indica exactamente un propósito principal. DEBE describir la razón perdurable por la que tu comunidad existe — no un proyecto, estrategia u objetivo a corto plazo. Una o dos oraciones.
+      m1:
+        md: _<El propósito principal de tu comunidad, en una o dos oraciones.>_
+  secondary-purposes:
+    title: Propósitos Secundarios
+    blocks:
+      rationale:
+        summary: ¿Por qué permitir propósitos secundarios?
+        body: Una comunidad rara vez hace solo una cosa. Los propósitos secundarios dan espacio para los otros resultados concretos que la comunidad persigue — pero están subordinados. Si un propósito secundario alguna vez entra en conflicto con el principal, el principal prevalece. Declararlos explícitamente evita que la expansión del alcance se disfrace de trabajo esencial.
+      instructions:
+        summary: Cómo completar esta sección
+        body: Enumera los resultados secundarios concretos que la comunidad persigue. NO DEBEN entrar en conflicto con ni anular el propósito principal. Elimina esta sección por completo si no tienes ninguno.
+      m1:
+        md: |-
+          1. _<Propósito secundario 1.>_
+          2. _<Propósito secundario 2.>_
+          3. _<Propósito secundario 3.>_
+  non-goals-and-exclusions:
+    title: No-Objetivos y Exclusiones
+    blocks:
+      rationale:
+        summary: ¿Por qué declarar lo que la comunidad no es?
+        body: Las comunidades derivan por acumulación — una suposición no cuestionada a la vez. Nombrar lo que la comunidad explícitamente *no es* hace visibles las violaciones de límites desde el principio, y da a cualquiera una base clara para objetar antes de que una actividad se normalice. El silencio aquí se interpreta como consentimiento.
+      instructions:
+        summary: Cómo completar esta sección
+        body: Nombra las cosas que tu comunidad explícitamente NO es, especialmente identidades o roles que otros podrían asumir por defecto (partido político, vehículo de inversión, grupo religioso, etc.).
+      m1:
+        md: |-
+          1. _<No-objetivo 1.>_
+          2. _<No-objetivo 2.>_
+          3. _<No-objetivo 3.>_
+  conditions-for-purpose-change:
+    title: Condiciones para Cambiar el Propósito
+    blocks:
+      rationale:
+        summary: ¿Por qué hacer difícil cambiar el propósito?
+        body: El propósito es lo único de lo que depende todo lo demás. Si fuera fácil de cambiar, nada por encima en la pila — membresía, gobernanza, invariantes — podría confiarse en que significa lo mismo de un año al siguiente. Los umbrales de nivel constitucional y un periodo de ratificación obligan a un acto deliberado y visible, no a una deriva silenciosa.
+      instructions:
+        summary: Cómo completar esta sección
+        body: 'Describe el procedimiento de cambio. Como mínimo: el tipo de decisión requerido para el propósito principal (Constitucional, según la Capa 2), el umbral, el periodo de ratificación y dónde se registra el cambio (historial de versiones de la Capa 6). Los propósitos secundarios típicamente necesitan un umbral menor.'
+      m1:
+        md: El propósito principal solo PUEDE cambiarse mediante una decisión Constitucional según lo definido en la Matriz de Decisiones (Capa 2), requiriendo _<umbral, p. ej. supermayoría de Miembros Plenos ≥⅔ de los votos emitidos>_, seguido de un periodo de ratificación de no menos de _<duración, p. ej. 30 días>_. Los propósitos secundarios PUEDEN cambiarse mediante una decisión Estratégica. Cualquier cambio DEBE registrarse en el Historial de Versiones (Capa 6).
+      m2:
+        md: '---'
+  ratification-record:
+    title: Registro de Ratificación
+    blocks:
+      m1:
+        md: |-
+          - **Adoptada:** <AAAA-MM-DD>
+          - **Tipo de decisión:** Constitucional
+          - **Versión:** <versión>
+          - **Registro de decisión:** <enlace al registro de decisión>

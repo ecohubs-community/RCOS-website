@@ -1,0 +1,375 @@
+kind: chapter
+legacyPath: rcos-modules/permaculture/v0-1
+id: 6ag11c15
+title: v0.1
+parentId: 5634a58d
+order: 0
+intro: ''
+sections:
+  - id: s1
+    title: Permaculture Module (Non-Normative)
+    blocks:
+      - id: b1
+        kind: md
+        md: This module defines how a community MAY integrate permaculture principles and practices into an RCOS-aligned structure.
+      - id: b2
+        kind: md
+        md: |-
+          The Permaculture Module governs **structure, authority, and accountability** around ecological systems.  
+          It does NOT prescribe belief systems, lifestyles, moral hierarchies, or agricultural techniques.
+      - id: b3
+        kind: md
+        md: This module is optional and MUST NOT override RCOS Core invariants.
+      - id: b4
+        kind: md
+        md: '---'
+  - id: s2
+    title: Purpose & Scope
+    blocks:
+      - id: b1
+        kind: md
+        md: '### Purpose'
+      - id: b2
+        kind: md
+        md: |-
+          To enable regenerative land use and food systems while preventing:
+          - informal land ownership through caretaking,
+          - hidden or coerced ecological labor,
+          - ideological capture of governance via “ecological correctness,”
+          - irreversible structural commitments disguised as sustainability.
+      - id: b3
+        kind: md
+        md: '### Scope'
+      - id: b4
+        kind: md
+        md: |-
+          This module applies only to:
+          - land use and stewardship,
+          - food and material production systems,
+          - ecological infrastructure,
+          - associated labor, roles, and decision authority.
+      - id: b5
+        kind: md
+        md: |-
+          It explicitly does NOT govern:
+          - personal dietary choices,
+          - spiritual or ethical belief systems,
+          - informal gardening or hobby activity outside governed scope.
+      - id: b6
+        kind: md
+        md: '---'
+  - id: s3
+    title: Non-Goals (Explicit)
+    blocks:
+      - id: b1
+        kind: md
+        md: |-
+          This module does NOT:
+          - enforce permaculture ideology,
+          - define “correct” ecological methods,
+          - grant moral authority to ecological expertise,
+          - require ecological participation as identity validation.
+      - id: b2
+        kind: md
+        md: Ecology is treated as **infrastructure**, not belief.
+      - id: b3
+        kind: md
+        md: '---'
+  - id: s4
+    title: Design Constraints (Hard)
+    blocks:
+      - id: b1
+        kind: md
+        md: 'When this module is active:'
+      - id: b2
+        kind: md
+        md: |-
+          - Ecological authority MUST be reviewable.
+          - Ecological labor MUST be legible.
+          - Ecological systems MUST remain exitable.
+          - Ecological expertise MUST NOT convert into governance power.
+      - id: b3
+        kind: md
+        md: Failure to uphold these constraints constitutes a structural violation.
+      - id: b4
+        kind: md
+        md: '---'
+  - id: s5
+    title: Land & Resource Classification
+    blocks:
+      - id: b1
+        kind: md
+        md: '### Governed Ecological Scope'
+      - id: b2
+        kind: md
+        md: The community MUST explicitly define which land and systems fall under this module.
+      - id: b3
+        kind: md
+        md: |-
+          For each governed ecological area or system, the following MUST be declared:
+          - classification (commons, stewarded commons, private),
+          - allowed and prohibited activities,
+          - decision authority,
+          - review and reclassification mechanism.
+      - id: b4
+        kind: md
+        md: Unclassified land or systems MUST NOT be governed by this module.
+      - id: b5
+        kind: md
+        md: '---'
+      - id: b6
+        kind: md
+        md: '### Commons Protection'
+      - id: b7
+        kind: md
+        md: |-
+          Land or systems classified as commons:
+          - MUST NOT be privatized through use, care, or investment,
+          - MUST NOT be controlled indefinitely by individuals or families,
+          - MUST have explicit exit and reassignment rules.
+      - id: b8
+        kind: md
+        md: No amount of labor, expertise, or historical contribution grants ownership by default.
+      - id: b9
+        kind: md
+        md: '---'
+  - id: s6
+    title: Stewardship Roles
+    blocks:
+      - id: b1
+        kind: md
+        md: '### Role Definition'
+      - id: b2
+        kind: md
+        md: All ongoing ecological responsibilities MUST be assigned to explicit roles.
+      - id: b3
+        kind: md
+        md: |-
+          Each stewardship role MUST define:
+          - scope and limits of authority,
+          - decision interfaces with Layer 2 governance,
+          - term length and review cadence,
+          - handover and succession process,
+          - failure and removal conditions.
+      - id: b4
+        kind: md
+        md: No ecological responsibility MAY exist outside a role.
+      - id: b5
+        kind: md
+        md: '---'
+      - id: b6
+        kind: md
+        md: '### Anti-Capture Constraint'
+      - id: b7
+        kind: md
+        md: |-
+          A stewardship role:
+          - MUST NOT control both ecological systems AND governance authority,
+          - MUST NOT accumulate unreviewed scope,
+          - MUST NOT become irreplaceable through undocumented knowledge.
+      - id: b8
+        kind: md
+        md: Violation triggers mandatory review.
+      - id: b9
+        kind: md
+        md: '---'
+  - id: s7
+    title: Decision Authority & Expertise
+    blocks:
+      - id: b1
+        kind: md
+        md: '### Authority Mapping'
+      - id: b2
+        kind: md
+        md: |-
+          Ecological decisions MUST be mapped to RCOS decision types:
+          - operational (day-to-day),
+          - policy (rules and constraints),
+          - constitutional (scope, commons boundaries).
+      - id: b3
+        kind: md
+        md: |-
+          Expertise MAY inform decisions but MUST NOT override:
+          - decision thresholds,
+          - facilitation rules,
+          - review and appeal processes.
+      - id: b4
+        kind: md
+        md: Ecological expertise confers **input**, not authority.
+      - id: b5
+        kind: md
+        md: '---'
+  - id: s8
+    title: Labor, Contribution & Care
+    blocks:
+      - id: b1
+        kind: md
+        md: '### Contribution Recognition'
+      - id: b2
+        kind: md
+        md: Ecological labor MUST be explicitly recognized.
+      - id: b3
+        kind: md
+        md: |-
+          The community SHOULD define:
+          - what counts as ecological work,
+          - how intensity, seasonality, and care labor are recorded,
+          - how contribution relates (or does not relate) to access and benefits.
+      - id: b4
+        kind: md
+        md: Invisible ecological labor is treated as a structural defect.
+      - id: b5
+        kind: md
+        md: '---'
+      - id: b6
+        kind: md
+        md: '### Outsourcing & Substitution'
+      - id: b7
+        kind: md
+        md: |-
+          If ecological labor may be outsourced:
+          - equivalence rules MUST be explicit,
+          - financial substitution MUST NOT bypass participation requirements unless explicitly allowed,
+          - outsourcing MUST NOT create dependency on capital over contribution.
+      - id: b8
+        kind: md
+        md: '---'
+  - id: s9
+    title: Yield, Distribution & Surplus
+    blocks:
+      - id: b1
+        kind: md
+        md: |-
+          The module SHOULD define:
+          - yield ownership and allocation rules,
+          - access priorities (if any),
+          - surplus handling and disposal.
+      - id: b2
+        kind: md
+        md: Yield access MUST NOT silently replace membership or contribution obligations.
+      - id: b3
+        kind: md
+        md: Food systems MUST NOT be used as leverage over participation or dissent.
+      - id: b4
+        kind: md
+        md: '---'
+  - id: s10
+    title: Infrastructure & Investment
+    blocks:
+      - id: b1
+        kind: md
+        md: |-
+          Ecological infrastructure MUST have:
+          - explicit ownership classification,
+          - maintenance responsibility,
+          - funding and depreciation rules,
+          - decommissioning or transfer conditions.
+      - id: b2
+        kind: md
+        md: Private investment into commons infrastructure MUST NOT grant control rights unless explicitly authorized.
+      - id: b3
+        kind: md
+        md: '---'
+  - id: s11
+    title: Conflict, Harm & Repair
+    blocks:
+      - id: b1
+        kind: md
+        md: Ecological conflicts MUST use Layer 4 processes.
+      - id: b2
+        kind: md
+        md: |-
+          The community SHOULD distinguish between:
+          - method disagreement,
+          - stewardship failure,
+          - boundary or authority violation,
+          - ecological harm requiring repair.
+      - id: b3
+        kind: md
+        md: Repair obligations MUST be defined in advance and MUST be proportional.
+      - id: b4
+        kind: md
+        md: '---'
+  - id: s12
+    title: Artifacts
+    blocks:
+      - id: b1
+        kind: md
+        md: |-
+          When adopted, the following artifacts are RECOMMENDED:
+          - Land & Ecology Scope Definition
+          - Land Use Map and Classification
+          - Stewardship Role Registry
+          - Ecological Contribution Framework
+          - Yield Allocation Rules
+          - Ecological Infrastructure Registry
+      - id: b2
+        kind: md
+        md: Artifacts MUST be versioned and reviewable.
+      - id: b3
+        kind: md
+        md: '---'
+  - id: s13
+    title: Known Failure Modes (Informative)
+    blocks:
+      - id: b1
+        kind: md
+        md: |-
+          This module is designed to resist:
+          - land capture through “those who care most decide,”
+          - burnout via invisible care work,
+          - ecological ideology becoming coercive,
+          - expert dominance replacing governance,
+          - irreversible land commitments without exit.
+      - id: b2
+        kind: md
+        md: '---'
+  - id: s14
+    title: Exit, Reversal & Deactivation
+    blocks:
+      - id: b1
+        kind: md
+        md: |-
+          If this module is modified or removed:
+          - stewardship roles MUST unwind cleanly,
+          - ecological authority MUST revert to core governance,
+          - no permanent control claims MAY persist.
+      - id: b2
+        kind: md
+        md: |-
+          Ecological systems MAY continue.
+          Ecological power MUST NOT.
+      - id: b3
+        kind: md
+        md: '---'
+  - id: s15
+    title: Compatibility with RCOS Core
+    blocks:
+      - id: b1
+        kind: md
+        md: |-
+          This module:
+          - MUST respect Layer 0 scope and invariants,
+          - MUST operate through Layer 2 governance,
+          - MUST align with Layer 3 economic rules,
+          - MUST use Layer 4 conflict pathways,
+          - MUST be documented via Layer 5,
+          - MAY evolve via Layer 6 change mechanisms.
+      - id: b2
+        kind: md
+        md: Failure of this module MUST NOT destabilize RCOS Core.
+      - id: b3
+        kind: md
+        md: '---'
+  - id: s16
+    title: Non-Normative Note
+    blocks:
+      - id: b1
+        kind: md
+        md: Permaculture methods are intentionally excluded.
+      - id: b2
+        kind: md
+        md: |-
+          RCOS governs:
+          **who decides, who cares, who bears cost, who benefits, and how power is bounded** —
+          not planting techniques or ecological philosophy.

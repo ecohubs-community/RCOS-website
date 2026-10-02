@@ -20,7 +20,9 @@ name: Translation status
 on:
   pull_request:
     paths:
-      - 'content/articles/**'
+      - 'content/**'
+      - 'scripts/content/**'
+      - 'src/lib/content/**'
       - 'src/lib/i18n/messages/**'
       - 'src/lib/i18n/languages.ts'
       - 'scripts/check-translations.mjs'

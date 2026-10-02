@@ -30,8 +30,19 @@ export default defineConfig(
 			// resolve() only matters when the app is served under a base path, and
 			// this one is not. Internal links go through `localized()`, which adds
 			// the locale prefix.
-			'svelte/no-navigation-without-resolve': 'off'
+			'svelte/no-navigation-without-resolve': 'off',
+			// `_name` marks a value that is deliberately unused, e.g. a field
+			// removed from an object with a rest destructure.
+			'@typescript-eslint/no-unused-vars': [
+				'error',
+				{ argsIgnorePattern: '^_', varsIgnorePattern: '^_', ignoreRestSiblings: true }
+			]
 		}
+	},
+	{
+		// Tests read YAML of many shapes; typing every fixture is not worth it.
+		files: ['**/*.test.ts'],
+		rules: { '@typescript-eslint/no-explicit-any': 'off' }
 	},
 	{
 		files: ['**/*.svelte', '**/*.svelte.ts', '**/*.svelte.js'],

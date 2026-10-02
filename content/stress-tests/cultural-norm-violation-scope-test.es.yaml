@@ -1,0 +1,99 @@
+lang: es
+sourceHash: c7abf2ff
+title: Prueba de alcance de violación de norma cultural
+summary: Cuando una norma no escrita se castiga como si fuera una regla escrita.
+tags:
+  - 'Capa 0: Alcance'
+  - Severidad media
+symptoms:
+  - Un miembro rompe una norma fuerte no escrita (p. ej. comer carne en una comunidad identificada como vegana) y la respuesta es emocional e improvisada.
+  - No está claro si la norma es una regla vinculante o una preferencia compartida.
+  - La intensidad de la aplicación depende de quién esté molesto, no de ninguna regla escrita.
+  - La gente asume que "todos saben" la norma, pero nunca se declaró como condición de pertenencia.
+  - Las reacciones van desde la exclusión hasta la presión para irse, sin debido proceso.
+cascade:
+  rcos-stress-tests/conflict-accountability/conflict-avoidance-normalization:
+    note: La aplicación arbitraria y emocional enseña a los miembros a ocultar comportamientos en lugar de sacarlos a la luz.
+head: |-
+  > **Severidad:** Media — rara vez es fatal, pero produce los conflictos más duros y personales.
+  > **Dónde golpea:** Cualquier etapa; más fuerte en comunidades con una identidad compartida poderosa.
+  > **¿Ya lo estás viviendo?** Salta a [Si ya está ocurriendo](#si-ya-está-ocurriendo).
+sections:
+  sound-familiar:
+    title: ¿Te suena familiar?
+    md: 'La comunidad tiene una identidad fuerte — vegana, sobria, en silencio antes del mediodía, lo que sea — y todos "simplemente saben" la norma. Entonces alguien la rompe. De repente hay una intensidad en el aire difícil de nombrar: ¿es esto una violación de regla, o solo algo que molestó a la gente? La respuesta es rápida y emocional, las consecuencias varían según quién esté más ofendido, y nadie puede señalar dónde, exactamente, esta norma fue alguna vez escrita como condición para estar aquí.'
+  signs-this-is-happening-to-you:
+    title: Señales de que esto te está pasando
+    md: |-
+      - Un miembro rompe una norma fuerte no escrita y la respuesta es emocional e improvisada.
+      - No está claro si la norma es una regla vinculante o una preferencia compartida.
+      - La intensidad de la aplicación depende de quién esté molesto, no de ninguna regla escrita.
+      - La gente asume que "todos saben" la norma, pero nunca se declaró como condición de pertenencia.
+      - Las reacciones van desde la exclusión hasta la presión para irse, sin debido proceso.
+
+      **Esto _no_ es lo mismo que** aplicar un invariante o condición de pertenencia explícitamente declarada. La señal reveladora es *la aplicación de una norma que nunca fue escrita como gobernada* — castigo sin una base de regla explícita.
+  why-it-happens:
+    title: Por qué ocurre
+    md: |-
+      Las culturas compartidas fuertes generan normas no escritas poderosas. Cuando algo se siente obviamente mal, el grupo lo aplica como si fuera ley — pero si la norma nunca se declaró como invariante central o condición de pertenencia, esa aplicación es no gobernada: arbitraria, impulsada emocionalmente e imposible de apelar. El daño no es la norma en sí; es castigar a la gente por reglas que no existen formalmente.
+
+      <details data-kind="rationale">
+      <summary>La prueba de estrés formal (para auditores)</summary>
+
+      **Modo de falla** — Un miembro viola una norma cultural fuerte (p. ej. comer carne en una comunidad vegana).
+
+      **Capas involucradas** — Capa 0 (Propósito y Alcance), Capa 1 (Pertenencia), Capa 4 (Conflicto)
+
+      **Invariantes relevantes**
+
+      * 0.2 Alcance gobernado explícito
+      * 1.1 Sin reglas implícitas de pertenencia
+      * 4.4 La seguridad anula la participación
+
+      **Condición de prueba** — Ocurre una violación de norma y la respuesta de aplicación es poco clara o impulsada emocionalmente.
+
+      **Comportamiento esperado de RCOS** — Determinar si la regla es un invariante central, una condición de pertenencia o una preferencia fuera de alcance; aplicar debido proceso solo si está explícitamente gobernada.
+
+      **Criterios de aprobación** — La respuesta se alinea estrictamente con el alcance declarado y las reglas de pertenencia.
+
+      **Criterios de falla** — Castigo o exclusión sin una base de regla explícita.
+
+      </details>
+  how-mature-is-your-community-on-this:
+    title: ¿Qué tan madura es tu comunidad en esto?
+    md: |-
+      Aprobado/reprobado es demasiado tajante para la vida real — la mayoría de las comunidades están a medio camino. Encuentra tu peldaño, luego apunta al siguiente.
+
+      | Nivel | Cómo se ve |
+      |---|---|
+      | **L0 — Implícito** | Las normas fuertes se aplican por sentimiento; nadie ha declarado qué se gobierna realmente. |
+      | **L1 — Nombrado** | El grupo se da cuenta de que algunas normas no están escritas, pero no ha separado regla de preferencia. |
+      | **L2 — Documentado** | Una [Declaración de Alcance](rcos:template/scope-declaration) distingue invariantes centrales, condiciones de pertenencia y preferencias fuera de alcance; el debido proceso se aplica solo a reglas gobernadas. |
+      | **L3 — Aplicado y ensayado** | Las respuestas siguen el alcance declarado; una preferencia no escrita no puede desencadenar castigo; esto ha sido probado en una violación real. |
+
+      La mayoría de las comunidades que se reconocen aquí están en **L0 o L1**. La meta no es la perfección — es subir un peldaño.
+  how-rcos-prevents-this:
+    title: Cómo RCOS previene esto
+    md: |-
+      RCOS hace que la comunidad decida *qué gobierna realmente* antes de aplicar:
+
+      - **[Declaración de Alcance](rcos:template/scope-declaration)** — clasifica cada norma importante como invariante central, condición de pertenencia o preferencia fuera de alcance.
+      - **[Acuerdo de Pertenencia](rcos:template/membership-agreement)** — haz explícitas las condiciones conductuales vinculantes al ingreso, para que nadie sea castigado por sorpresa.
+      - **[Registro de Restricciones de Identidad](rcos:template/identity-constraints-register)** — declara qué gobierna y qué no gobierna la identidad de la comunidad.
+
+      Ver también la especificación: [Capa 0 — Declaración de Alcance](rcos:§2.2) y [Capa 1 — Derechos y Obligaciones](rcos:§3.4).
+  if-it-s-already-happening:
+    title: Si ya está ocurriendo
+    md: |-
+      Acaba de ocurrir una violación y la respuesta está caldeada. Frénala:
+
+      1. **Pausa la aplicación.** Separa "estamos molestos" de "se rompió una regla gobernada".
+      2. **Clasifica la norma.** ¿Es un invariante declarado, una condición de pertenencia o una preferencia no declarada?
+      3. **Aplica debido proceso solo si está gobernada.** Si no lo está, la lección es *declararla de aquí en adelante* (o no), nunca castigar retroactivamente.
+      4. **Decide hacia adelante.** Si la comunidad quiere que esta norma sea vinculante, escríbela como una condición de pertenencia explícita.
+  what-this-failure-tends-to-trigger:
+    title: Qué tiende a desencadenar esta falla
+    md: '- **[Normalización de la Evitación de Conflictos](rcos:test/conflict-avoidance-normalization)** — la aplicación arbitraria y emocional enseña a los miembros a ocultar comportamientos en lugar de sacarlos a la luz.'
+  related-stress-tests:
+    title: Pruebas de estrés relacionadas
+    md: '- **[Autoridad Espiritual Carismática](rcos:test/charismatic-spiritual-authority)** — las figuras veneradas suelen ser aquellas cuyas preferencias se aplican como normas no declaradas.'
