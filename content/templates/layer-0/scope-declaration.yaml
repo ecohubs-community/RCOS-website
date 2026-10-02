@@ -1,0 +1,120 @@
+kind: template
+legacyPath: rcos-templates/layer-0/scope-declaration
+id: 5bfa1b3e
+title: Scope Declaration
+parentId: 622cbd20
+order: 1
+preamble: |-
+  - **Layer:** 0 — Identity & Scope
+  - **Status:** Template — adapt for your community
+  - **RCOS reference:** [§2.2](/articles/rcos-core/v0-1/layer-0-identity-scope#22-scope-declaration), [§2.5](/articles/rcos-core/v0-1/layer-0-identity-scope#25-artifacts)
+
+  ---
+sections:
+  - id: in-scope-assets
+    title: In-Scope Assets
+    blocks:
+      - id: clauses
+        kind: clauses
+        refs:
+          - 2.2.1
+          - 2.2.2
+          - 2.2.4
+      - id: rationale
+        kind: rationale
+        summary: Why enumerate every governed asset?
+        body: If the community has not explicitly named an asset as in-scope, it isn't — full stop. Listing assets by name closes the gap where informal claims of authority grow over undeclared resources, and gives members a concrete checklist to verify what the community actually controls.
+      - id: instructions
+        kind: instructions
+        summary: How to fill this in
+        body: 'List every asset the community collectively governs: shared funds, treasuries, land, real estate, software, websites, social accounts, brand, intellectual property, physical infrastructure, etc. Be specific — name accounts, wallets, domains.'
+      - id: m1
+        kind: md
+        md: |-
+          1. _<Asset 1, e.g. the shared treasury held in a specific multi-sig wallet.>_
+          2. _<Asset 2, e.g. the community website and its domain.>_
+          3. _<Asset 3, e.g. shared physical infrastructure or land.>_
+          4. _<Asset 4.>_
+  - id: in-scope-decision-domains
+    title: In-Scope Decision Domains
+    blocks:
+      - id: clauses
+        kind: clauses
+        refs:
+          - 2.2.1
+          - 2.2.2
+      - id: rationale
+        kind: rationale
+        summary: Why name decision domains, not just assets?
+        body: Scope isn't only about stuff — it's about which kinds of questions the community gets to answer collectively. Naming decision domains makes it unambiguous where collective authority applies and where an individual or external party still decides, preventing quiet capture of decision territory.
+      - id: instructions
+        kind: instructions
+        summary: How to fill this in
+        body: List the categories of decisions the community has authority over. These map to later layers (governance, membership, treasury, etc.) — name them at a level that makes it clear what kinds of questions the community decides together.
+      - id: m1
+        kind: md
+        md: |-
+          1. _<Decision domain 1, e.g. governance rules and decision processes (Layer 2).>_
+          2. _<Decision domain 2, e.g. membership rules and admission (Layer 1).>_
+          3. _<Decision domain 3, e.g. treasury and shared resource allocation (Layer 3).>_
+          4. _<Decision domain 4.>_
+  - id: in-scope-activities-and-responsibilities
+    title: In-Scope Activities and Responsibilities
+    blocks:
+      - id: clauses
+        kind: clauses
+        refs:
+          - 2.2.1
+          - 2.2.2
+      - id: rationale
+        kind: rationale
+        summary: Why declare the work the community owns?
+        body: Authority without owned responsibility produces paralysis; responsibility without declared authority produces burnout and blame. Listing the activities the community collectively governs makes the work visible, assignable, and accountable — and makes it obvious when something important has no owner.
+      - id: instructions
+        kind: instructions
+        summary: How to fill this in
+        body: 'List the ongoing activities the community is responsible for: maintaining shared infrastructure, admitting members, reporting on resources, stewarding the brand, etc. These are the things that need an owner via Layer 5.'
+      - id: m1
+        kind: md
+        md: |-
+          1. _<Activity 1.>_
+          2. _<Activity 2.>_
+          3. _<Activity 3.>_
+          4. _<Activity 4.>_
+  - id: explicitly-out-of-scope
+    title: Explicitly Out of Scope
+    blocks:
+      - id: clauses
+        kind: clauses
+        refs:
+          - 2.2.3
+          - 2.2.4
+          - 2.2.5
+      - id: rationale
+        kind: rationale
+        summary: Why name what the community must not touch?
+        body: An unstated boundary is no boundary at all. Explicit out-of-scope items protect members from the community reaching into their private lives and finances, and protect external parties from the community presuming authority over their affairs. If it isn't named here, the default rule of "not in-scope means out of scope" still applies — but naming the big ones removes any room for argument.
+      - id: instructions
+        kind: instructions
+        summary: How to fill this in
+        body: 'List the most important boundaries: things people might assume are in scope but aren''t. Personal finances, private relationships, third-party infrastructure, external projects, etc.'
+      - id: m1
+        kind: md
+        md: |-
+          1. _<Out-of-scope item 1, e.g. personal income and private finances of members.>_
+          2. _<Out-of-scope item 2, e.g. private relationships and personal living arrangements (except where Layer 4 safety-critical conditions apply).>_
+          3. _<Out-of-scope item 3, e.g. underlying server infrastructure and third-party service contracts.>_
+          4. _<Out-of-scope item 4.>_
+      - id: m2
+        kind: md
+        md: '---'
+  - id: ratification-record
+    title: Ratification Record
+    blocks:
+      - id: m1
+        kind: md
+        md: |-
+          - **Adopted:** <YYYY-MM-DD>
+          - **Decision type:** Constitutional
+          - **Version:** <version>
+          - **Decision record:** <link to decision record>

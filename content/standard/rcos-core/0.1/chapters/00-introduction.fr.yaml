@@ -1,0 +1,38 @@
+lang: fr
+sourceHash: 1f19c526
+title: 0. Introduction
+intro: ''
+sections:
+  '0.1':
+    title: Objectif du RCOS
+    blocks:
+      b1:
+        md: Définit un système d'exploitation standardisé et modulaire pour les petites communautés intentionnelles, axé sur la résilience, l'équité et la régénération.
+  '0.2':
+    title: Portée du noyau
+    blocks:
+      b1:
+        md: Cette spécification définit les **couches fondamentales obligatoires** requises pour la conformité au RCOS. Les pratiques spécifiques à un domaine sont exclues et traitées via des modules optionnels.
+  '0.3':
+    title: Principes de conception
+    blocks:
+      b1:
+        md: |-
+          - Basé sur les contraintes, pas sur les valeurs
+          - Pré-engagement plutôt qu'improvisation
+          - Modulaire par défaut
+          - À échelle humaine
+          - Tolérant aux défaillances
+  '0.4':
+    title: Définitions et terminologie
+    blocks:
+      b1:
+        md: |-
+          - Communauté
+          - Membre
+          - Rôle
+          - Domaine
+          - Communs
+          - Invariant
+          - Type de décision
+          - Conformité

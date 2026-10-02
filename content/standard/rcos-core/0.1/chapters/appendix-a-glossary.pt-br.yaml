@@ -1,0 +1,120 @@
+lang: pt-br
+sourceHash: d84efb12
+title: Apêndice A — Glossário
+intro: |-
+  Este glossário fornece **definições informativas** para termos-chave usados ao longo da especificação RCOS.
+  As entradas do glossário não introduzem novos requisitos e não substituem seções normativas.
+terms:
+  accountability:
+    term: Prestação de Contas (Accountability)
+    definition: A expectativa de que papéis e membros possam ser solicitados a explicar ações, resultados e a aderência às regras acordadas, com mecanismos definidos de revisão e correção.
+  accountability-protocol:
+    term: Protocolo de Prestação de Contas
+    definition: Um artefato que define como violações, danos ou falhas repetidas são revisados, documentados e tratados, incluindo devido processo, salvaguardas e caminhos de escalonamento.
+  artifact:
+    term: Artefato
+    definition: 'Um objeto documentado e versionado (ex.: protocolo, registro, carta) adotado por meio de um processo autorizado e usado para operacionalizar as Camadas do RCOS.'
+  authority-boundary:
+    term: Limite de Autoridade
+    definition: Os limites explícitos dentro dos quais um papel, círculo ou corpo pode tomar decisões ou agir.
+  change-protocol:
+    term: Protocolo de Mudança
+    definition: Um artefato que define como as mudanças são propostas, revisadas, adotadas, publicadas e revertidas, incluindo classificação do tipo de decisão e disposições para emergências.
+  commons:
+    term: Bens Comuns (Commons)
+    definition: Recursos governados coletivamente sob regras explícitas de zeladoria, acesso e decisão.
+  community:
+    term: Comunidade
+    definition: Um grupo de pessoas que se coordenam voluntariamente em torno de um propósito compartilhado dentro de um escopo e sistema de governança definidos.
+  compliance:
+    term: Conformidade
+    definition: O estado de atender a todos os requisitos obrigatórios do RCOS-Core nas Camadas 0–6.
+  conflict-resolution-ladder:
+    term: Escada de Resolução de Conflitos
+    definition: Um processo escalonado de conflitos que define etapas mínimas de resolução e limiares de escalonamento, desde a reparação de baixa intensidade até a revisão pela governança e, se necessário, a separação.
+  constitutional-decision:
+    term: Decisão Constitucional
+    definition: Uma decisão que modifica o propósito, escopo, invariantes ou restrições de identidade da Camada 0, ou o próprio sistema de governança.
+  decision-matrix:
+    term: Matriz de Decisões
+    definition: Um artefato de governança que mapeia tipos e domínios de decisão para papéis autorizados, mecanismos, limiares e caminhos de escalonamento.
+  decision-type:
+    term: Tipo de Decisão
+    definition: Uma classificação de decisões (Operacionais, Estratégicas, Constitucionais) usada para determinar autoridade e processo.
+  due-process:
+    term: Devido Processo
+    definition: As garantias mínimas de justiça exigidas antes de restringir direitos, aplicar sanções ou acionar separação, incluindo notificação, revisão e caminhos de apelação conforme definido.
+  emergency-change:
+    term: Mudança de Emergência
+    definition: Uma mudança com prazo determinado, decretada sob condições de emergência explicitamente definidas, exigindo revisão posterior e ratificação ou reversão.
+  explicit:
+    term: Explícito
+    definition: |-
+      Escrito, adotado, acessível e revisável.
+      Qualquer coisa que não seja explícita é tratada como inexistente sob o RCOS.
+  explicitness-rule:
+    term: Regra da Explicitude
+    definition: O princípio de que os mecanismos que alocam poder, risco, responsabilidade ou condições de saída devem ser escritos, adotados e revisáveis.
+  experiment:
+    term: Experimento
+    definition: Uma mudança com prazo determinado e reversível adotada para aprendizado e avaliação.
+  exit-separation-protocol:
+    term: Protocolo de Saída e Separação
+    definition: Um artefato que define saída voluntária, devido processo para saída forçada e separação de ativos, papéis, acessos e obrigações.
+  governance-protocol:
+    term: Protocolo de Governança
+    definition: Um artefato que define o ciclo de vida das decisões (proposta, deliberação, adoção, documentação, revisão) e como os conflitos de governança são resolvidos.
+  in-scope-out-of-scope:
+    term: Dentro do Escopo / Fora do Escopo
+    definition: Dentro do escopo refere-se a pessoas, ativos, domínios e atividades explicitamente governados pela comunidade. Fora do escopo refere-se a tudo que é explicitamente excluído ou não declarado dentro do escopo.
+  internal-economy-protocol:
+    term: Protocolo de Economia Interna
+    definition: Um artefato que define o reconhecimento de contribuições e quaisquer mecanismos internos de troca, incluindo restrições de acumulação e correção de disputas.
+  invariant:
+    term: Invariante
+    definition: Uma restrição inegociável que não pode ser substituída enquanto estiver em vigor.
+  layer:
+    term: Camada
+    definition: Um domínio funcional do RCOS que define um aspecto específico da operação da comunidade.
+  learning-log:
+    term: Registro de Aprendizado (Learning Log)
+    definition: Um artefato que captura grandes falhas, adaptações, reversões e lições aprendidas, incluindo gatilhos, artefatos afetados e resultados.
+  member:
+    term: Membro
+    definition: Uma pessoa que entrou explicitamente na comunidade por meio do processo de associação definido.
+  optional-module:
+    term: Módulo Opcional
+    definition: Uma extensão específica de domínio que se baseia no RCOS-Core sem alterar suas camadas obrigatórias.
+  registry:
+    term: Registro (Registry)
+    definition: 'Um artefato que mantém um conjunto de entradas autoritativas (ex.: papéis, recursos, estados de associação) com clareza sobre propriedade, regras de atualização e histórico de versões.'
+  reference-implementation:
+    term: Implementação de Referência
+    definition: Uma comunidade do mundo real que documenta publicamente sua aplicação do RCOS-Core.
+  role:
+    term: Papel
+    definition: Um conjunto explicitamente definido de responsabilidades, autoridade e prestação de contas, independente da pessoa que o ocupa.
+  safety-critical:
+    term: Crítico para a Segurança (Safety-Critical)
+    definition: Uma condição em que a segurança física, psicológica ou infantil está em risco, exigindo salvaguardas elevadas e potencialmente ação protetiva imediata.
+  sanction:
+    term: Sanção
+    definition: Uma restrição ou ação corretiva definida e documentada, aplicada por meio de processo autorizado, proporcional a uma violação e sujeita a revisão.
+  scope:
+    term: Escopo
+    definition: Os domínios, ativos e atividades explicitamente declarados sobre os quais a comunidade exerce autoridade.
+  stewardship:
+    term: Zeladoria (Stewardship)
+    definition: Responsabilidade pelo cuidado, manutenção e governança de um recurso dentro de limites definidos.
+  treasury:
+    term: Tesouro (Treasury)
+    definition: O conjunto de recursos compartilhados, saldos, obrigações e compromissos mantidos sob regras coletivas.
+  treasury-ruleset:
+    term: Conjunto de Regras do Tesouro
+    definition: Um artefato que define como os recursos do tesouro são mantidos, gastos, reportados, auditados e restringidos, incluindo limiares e regras de conflito de interesses.
+  transparency-exception:
+    term: Exceção de Transparência
+    definition: Uma limitação ao acesso à informação, explicitamente definida, justificada e com prazo determinado, que ainda permite auditoria de conformidade.
+  version-history:
+    term: Histórico de Versões
+    definition: Um artefato que registra qual versão está em vigor e documenta mudanças adotadas, datas de vigência e referências de decisão.

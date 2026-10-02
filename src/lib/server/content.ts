@@ -20,6 +20,12 @@ async function renderMarkdown(markdown: string) {
 }
 
 const CONTENT_ROOT = 'content';
+/**
+ * Articles are read from the generated folder: markdown emitted from the YAML
+ * in content/ plus the articles still authored as markdown (see
+ * scripts/content/build-articles.mjs, run by the Vite plugin).
+ */
+const ARTICLES_ROOT = '.content-build/articles';
 
 type JsonValue = Record<string, unknown>;
 
@@ -126,7 +132,7 @@ function parseArticleFilename(entry: string): { base: string; lang: string } | n
  * `lang: <lang>`. Callers downstream group by `id` to pick the right locale.
  */
 export async function readArticleMeta(): Promise<ArticleMeta[]> {
-	const articlesDir = resolvePath('articles');
+	const articlesDir = path.join(process.cwd(), ARTICLES_ROOT);
 	const items: ArticleMeta[] = [];
 
 	// Map to track folder articles by their path for parent resolution.

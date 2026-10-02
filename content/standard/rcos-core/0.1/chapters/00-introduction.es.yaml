@@ -1,0 +1,38 @@
+lang: es
+sourceHash: 1f19c526
+title: 0. Introducción
+intro: ''
+sections:
+  '0.1':
+    title: Propósito de RCOS
+    blocks:
+      b1:
+        md: Define un sistema operativo estandarizado y modular para comunidades pequeñas e intencionales, centrado en la resiliencia, la equidad y la regeneración.
+  '0.2':
+    title: Alcance del núcleo
+    blocks:
+      b1:
+        md: Esta especificación define las **capas centrales obligatorias** requeridas para el cumplimiento de RCOS. Las prácticas específicas de dominio quedan excluidas y se abordan mediante módulos opcionales.
+  '0.3':
+    title: Principios de diseño
+    blocks:
+      b1:
+        md: |-
+          - Basado en restricciones, no en valores
+          - Precompromiso por encima de la improvisación
+          - Modular por defecto
+          - A escala humana
+          - Tolerante a fallos
+  '0.4':
+    title: Definiciones y terminología
+    blocks:
+      b1:
+        md: |-
+          - Comunidad
+          - Miembro
+          - Rol
+          - Dominio
+          - Bienes comunes
+          - Invariante
+          - Tipo de decisión
+          - Cumplimiento

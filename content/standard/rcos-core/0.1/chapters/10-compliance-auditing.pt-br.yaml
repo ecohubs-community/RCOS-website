@@ -1,0 +1,63 @@
+lang: pt-br
+sourceHash: 223fb323
+title: 10. Conformidade e Auditoria
+intro: Este capítulo define como a conformidade com o RCOS-Core é avaliada e mantida.
+sections:
+  '10.1':
+    title: Lista de Verificação de Conformidade
+    blocks:
+      10.1.1:
+        text: 'A conformidade com o RCOS-Core é binária: uma comunidade está em conformidade ou em não conformidade.'
+      10.1.2:
+        text: A conformidade DEVE ser avaliada por camada (Camadas 0–6).
+      10.1.3:
+        text: 'Para cada camada, a Lista de Verificação de Conformidade DEVE verificar:'
+        items:
+          - Presença de artefatos obrigatórios
+          - Explicitude e acessibilidade das regras requeridas
+          - Adoção por meio de processos de governança autorizados
+      10.1.4:
+        text: Conformidade parcial ou "intenção de conformidade" NÃO DEVE ser considerada conformidade.
+      10.1.5:
+        text: Módulos Opcionais NÃO DEVEM ser incluídos na avaliação de conformidade com o RCOS-Core.
+  '10.2':
+    title: Casos de Teste
+    blocks:
+      10.2.1:
+        text: Casos de Teste são cenários estruturados usados para validar se os mecanismos do RCOS se comportam conforme o pretendido.
+      10.2.2:
+        text: 'Casos de Teste PODEM ser:'
+        items:
+          - Cenários hipotéticos
+          - Falhas históricas de comunidades
+          - Testes de estresse simulados
+      10.2.3:
+        text: 'Casos de Teste DEVERIAM cobrir, no mínimo:'
+        items:
+          - Tentativas de concentração de poder
+          - Cenários de saída e separação
+          - Impasse de governança
+          - Tentativas de captura econômica
+          - Conflitos críticos para a segurança
+      10.2.4:
+        text: Casos de Teste são informativos, mas DEVERIAM ser usados durante auditorias, integração de novos membros e revisões periódicas.
+  '10.3':
+    title: Não Conformidade
+    blocks:
+      10.3.1:
+        text: 'Uma comunidade DEVE ser considerada em não conformidade se:'
+        items:
+          - Qualquer artefato obrigatório estiver faltando
+          - As invariantes da Camada 0 forem violadas
+          - Decisões forem tomadas repetidamente fora das estruturas de governança autorizadas
+          - A saída estiver bloqueada ou restringida informalmente
+      10.3.2:
+        text: A não conformidade DEVE ser explicitamente reconhecida assim que detectada.
+      10.3.3:
+        text: 'Uma comunidade PODE recuperar a conformidade somente por meio de:'
+        items:
+          - Ação corretiva
+          - Adoção formal de artefatos faltantes ou corrigidos
+          - Documentação da remediação
+      10.3.4:
+        text: Alegações de conformidade com o RCOS DEVEM ser retiradas durante períodos de não conformidade conhecida.

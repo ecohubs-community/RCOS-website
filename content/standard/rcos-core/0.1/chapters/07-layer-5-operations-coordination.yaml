@@ -1,0 +1,246 @@
+kind: chapter
+legacyPath: rcos-core/v0-1/07-layer-5-operations-coordination
+id: 488558d6
+title: 7. Layer 5 — Operations & Coordination
+parentId: e6de7a5d
+order: 70
+intro: |-
+  Layer 5 defines how daily work, coordination, and information flow function in practice.  
+  Its purpose is to ensure that operations remain legible, sustainable, and transferable, and do not collapse into informal hierarchy, dependency, or burnout.
+sections:
+  - id: '7.1'
+    ref: '7.1'
+    title: Roles and Responsibilities
+    blocks:
+      - id: 7.1.1
+        kind: clause
+        ref: 7.1.1
+        text: All ongoing responsibilities MUST be assigned to explicit, named roles rather than implicit expectations or informal agreements.
+      - id: 7.1.2
+        kind: clause
+        ref: 7.1.2
+        text: 'The community MUST maintain a **Role Registry** that includes, at minimum:'
+        items:
+          - 'Role name and purpose  '
+          - 'Scope of responsibility and decision authority  '
+          - 'Explicit boundaries and interfaces with other roles, circles, or domains  '
+          - 'Eligibility criteria (if any)  '
+          - 'Term length, rotation, or review conditions (if any)  '
+          - 'Appointment, review, and removal process  '
+      - id: 7.1.3
+        kind: clause
+        ref: 7.1.3
+        text: 'Each role MUST include an explicit accountability mechanism defining:'
+        items:
+          - 'How role performance is reviewed  '
+          - 'How underperformance, overload, or role failure is handled  '
+          - 'How handover and knowledge transfer occur  '
+      - id: 7.1.4
+        kind: clause
+        ref: 7.1.4
+        text: No ongoing responsibility MAY exist without an explicit role, and no person MAY be held accountable for responsibilities not formally assigned to a role.
+      - id: 7.1.5
+        kind: clause
+        ref: 7.1.5
+        text: Temporary or ad-hoc responsibilities MUST be explicitly time-bounded and MUST NOT become ongoing without formal role definition.
+  - id: '7.2'
+    ref: '7.2'
+    title: Meeting System
+    blocks:
+      - id: 7.2.1
+        kind: clause
+        ref: 7.2.1
+        text: 'The community MUST define explicit meeting types sufficient to support:'
+        items:
+          - 'Operations  '
+          - 'Governance  '
+          - 'Coordination and alignment  '
+          - 'Reflection and learning  '
+          - Conflict handling (as required by Layer 4)
+      - id: 7.2.2
+        kind: clause
+        ref: 7.2.2
+        text: 'Each meeting type MUST define, at minimum:'
+        items:
+          - 'Purpose and decision scope  '
+          - 'Required vs optional participants  '
+          - 'Cadence and duration boundaries  '
+          - 'Facilitation role and selection or rotation process  '
+          - 'Agenda structure  '
+          - 'Documentation and publication requirements  '
+          - 'Decision capture requirements where decisions are made  '
+      - id: 7.2.3
+        kind: clause
+        ref: 7.2.3
+        text: Meetings MUST NOT exceed their declared decision scope or bypass authority boundaries defined in Layer 2.
+      - id: 7.2.4
+        kind: clause
+        ref: 7.2.4
+        text: Meeting load MUST be bounded, monitored, and reviewable as defined in Section 7.4.
+  - id: '7.3'
+    ref: '7.3'
+    title: Documentation and Information Flow
+    blocks:
+      - id: 7.3.1
+        kind: clause
+        ref: 7.3.1
+        text: The community MUST define explicit documentation rules for decisions, roles, operations, and shared obligations.
+      - id: 7.3.2
+        kind: clause
+        ref: 7.3.2
+        text: 'Documentation rules MUST specify, at minimum:'
+        items:
+          - 'What information MUST be recorded  '
+          - 'Where records are stored  '
+          - 'Who has access to which records  '
+          - 'Publication or notification timelines (if any)  '
+          - 'Privacy boundaries and conditions for restricted access  '
+      - id: 7.3.3
+        kind: clause
+        ref: 7.3.3
+        text: 'All decisions MUST be traceable to:'
+        items:
+          - 'Decision type and domain  '
+          - 'Authorized role or body  '
+          - 'Decision mechanism and threshold  '
+          - 'Recorded outcome and effective date  '
+      - id: 7.3.4
+        kind: clause
+        ref: 7.3.4
+        text: Critical operational processes MUST be documented such that continuity does not depend on tacit knowledge held by specific individuals.
+      - id: 7.3.5
+        kind: clause
+        ref: 7.3.5
+        text: Information flow MUST be designed to prevent gatekeeping, bottlenecks, or dependency on informal intermediaries.
+  - id: '7.4'
+    ref: '7.4'
+    title: Workload and Capacity Boundaries
+    blocks:
+      - id: 7.4.1
+        kind: clause
+        ref: 7.4.1
+        text: Time, attention, coordination capacity, and emotional labor MUST be treated as finite and limited resources.
+      - id: 7.4.2
+        kind: clause
+        ref: 7.4.2
+        text: 'The community MUST define explicit workload boundaries, including:'
+        items:
+          - 'Limits on meeting load (frequency, duration, or total time)  '
+          - 'Limits on role load (number of roles, scope, or expected hours)  '
+          - 'Expectations for response times and availability (if any)  '
+          - 'Mechanisms for renegotiation, relief, substitution, or redistribution  '
+      - id: 7.4.3
+        kind: clause
+        ref: 7.4.3
+        text: Workload boundaries MUST be reviewable and adjustable through an authorized governance process.
+      - id: 7.4.4
+        kind: clause
+        ref: 7.4.4
+        text: Persistent overload, burnout risk, chronic non-participation, or dependency on over-functioning individuals MUST trigger review or repair processes as defined in Layer 4.
+  - id: '7.5'
+    ref: '7.5'
+    title: Operational Continuity
+    blocks:
+      - id: 7.5.1
+        kind: clause
+        ref: 7.5.1
+        text: The community MUST ensure that no single individual is a critical single point of failure for core operations.
+      - id: 7.5.2
+        kind: clause
+        ref: 7.5.2
+        text: 'Core operational roles and processes MUST include:'
+        items:
+          - 'Documented procedures  '
+          - 'Clear handover mechanisms  '
+          - 'Backup or redundancy arrangements where feasible  '
+      - id: 7.5.3
+        kind: clause
+        ref: 7.5.3
+        text: Operational continuity planning MUST be reviewed periodically.
+  - id: '7.6'
+    ref: '7.6'
+    title: Artifacts
+    blocks:
+      - id: 7.6.1
+        kind: clause
+        ref: 7.6.1
+        text: 'The following artifacts are mandatory for Layer 5 compliance:'
+        items:
+          - 'Operations Manual  '
+          - 'Role Registry  '
+          - 'Meeting Templates  '
+      - id: 7.6.2
+        kind: clause
+        ref: 7.6.2
+        text: 'Layer 5 artifacts MUST be:'
+        items:
+          - 'Explicit and unambiguous  '
+          - 'Versioned  '
+          - 'Accessible to all members, with clearly bounded privacy protections  '
+          - 'Maintained as living documents with defined ownership and review cycles  '
+      - id: 7.6.3
+        kind: clause
+        ref: 7.6.3
+        text: 'The Operations Manual MUST define, at minimum:'
+        items:
+          - 'Core operational processes relied upon by the community  '
+          - 'Interfaces between roles, domains, and meeting types  '
+          - 'Documentation locations and update procedures  '
+      - id: 7.6.4
+        kind: clause
+        ref: 7.6.4
+        text: 'Meeting Templates MUST define, at minimum:'
+        items:
+          - 'Agenda structure  '
+          - 'Notes and record format  '
+          - 'Decision capture format where applicable  '
+  - id: '7.7'
+    ref: '7.7'
+    title: Layer Invariants
+    blocks:
+      - id: 7.7.1
+        kind: clause
+        ref: 7.7.1
+        text: Ongoing responsibilities MUST NOT exist without an explicit role.
+      - id: 7.7.2
+        kind: clause
+        ref: 7.7.2
+        text: Critical operational processes MUST NOT rely solely on individual memory, goodwill, or informal transmission.
+      - id: 7.7.3
+        kind: clause
+        ref: 7.7.3
+        text: Meeting load, coordination burden, and unpaid or invisible labor MUST be bounded and reviewable.
+      - id: 7.7.4
+        kind: clause
+        ref: 7.7.4
+        text: Information access rules MUST be explicit and enforceable.
+  - id: '7.8'
+    ref: '7.8'
+    title: Explicitness Rules
+    blocks:
+      - id: 7.8.1
+        kind: clause
+        ref: 7.8.1
+        text: 'The following MUST be explicit:'
+        items:
+          - 'Roles and responsibilities  '
+          - 'Operational authority boundaries and interfaces  '
+          - 'Meeting types and scopes  '
+          - 'Decision documentation rules  '
+          - 'Information access and privacy boundaries  '
+      - id: 7.8.2
+        kind: clause
+        ref: 7.8.2
+        text: 'The following MAY be explicit:'
+        items:
+          - 'Detailed meeting cadence beyond minimum constraints  '
+          - 'Tooling choices for documentation and coordination  '
+          - 'Role rotation or succession schedules  '
+      - id: 7.8.3
+        kind: clause
+        ref: 7.8.3
+        text: 'The following MUST remain optional and out of scope:'
+        items:
+          - 'Personal work styles  '
+          - 'Aesthetic or cultural preferences  '
+          - Informal social coordination

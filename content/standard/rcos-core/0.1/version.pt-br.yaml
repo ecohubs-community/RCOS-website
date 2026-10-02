@@ -1,0 +1,14 @@
+lang: pt-br
+sourceHash: 92c67acf
+title: v0.1
+intro: '# Sistema Operacional de Comunidade Regenerativa (RCOS)'
+sections:
+  s1:
+    title: Especificação Central
+    blocks:
+      b1:
+        md: |-
+          - Status: Rascunho
+          - Versão: RCOS-Core v0.1
+          - Público: fundadores de comunidades, praticantes, auditores, implementadores
+          - Palavras-chave normativas: `DEVE`, `NÃO DEVE`, `DEVERIA`, `PODE` (estilo RFC)

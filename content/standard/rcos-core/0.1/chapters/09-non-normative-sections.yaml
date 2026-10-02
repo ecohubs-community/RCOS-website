@@ -1,0 +1,125 @@
+kind: chapter
+legacyPath: rcos-core/v0-1/09-non-normative-sections
+id: f12d5320
+title: 9. Non-Normative Sections
+parentId: e6de7a5d
+order: 90
+intro: |-
+  The sections in this chapter are **informative**, not normative.  
+  They do not define compliance requirements but provide guidance, context, examples, and learning support for communities, implementers, auditors, and standard stewards.
+
+  Nothing in this section may override or weaken requirements defined in Layers 0–6.
+sections:
+  - id: '9.1'
+    ref: '9.1'
+    title: Optional Modules
+    blocks:
+      - id: 9.1.1
+        kind: clause
+        ref: 9.1.1
+        text: Optional Modules are domain-specific extensions that build on top of RCOS-Core without modifying its mandatory layers.
+      - id: 9.1.2
+        kind: clause
+        ref: 9.1.2
+        text: 'Optional Modules MUST:'
+        items:
+          - 'Declare which RCOS layers they extend or depend on  '
+          - 'Explicitly state any additional roles, rules, or artifacts they introduce  '
+          - 'NOT override or contradict Layer 0 invariants or RCOS-Core requirements  '
+      - id: 9.1.3
+        kind: clause
+        ref: 9.1.3
+        text: 'Optional Modules MAY define:'
+        items:
+          - 'Domain-specific practices  '
+          - 'Additional constraints or standards  '
+          - 'Specialized governance or operational patterns  '
+      - id: 9.1.4
+        kind: clause
+        ref: 9.1.4
+        text: 'Typical Optional Module domains MAY include, but are not limited to:'
+        items:
+          - 'Permaculture and regenerative land stewardship  '
+          - 'Alternative or community-based education systems  '
+          - 'Health, care, and well-being practices  '
+          - 'Cultural or spiritual practices  '
+          - 'Economic specializations (e.g. cooperatives, land trusts, mutual credit)  '
+      - id: 9.1.5
+        kind: clause
+        ref: 9.1.5
+        text: Adoption of Optional Modules MUST follow the change mechanisms defined in Layer 6.
+      - id: 9.1.6
+        kind: clause
+        ref: 9.1.6
+        text: A community MAY be RCOS-Core compliant without adopting any Optional Modules.
+  - id: '9.2'
+    ref: '9.2'
+    title: Reference Implementations
+    blocks:
+      - id: 9.2.1
+        kind: clause
+        ref: 9.2.1
+        text: A Reference Implementation is a real-world community that publicly documents how it applies RCOS-Core.
+      - id: 9.2.2
+        kind: clause
+        ref: 9.2.2
+        text: |-
+          Reference Implementations are **descriptive**, not prescriptive.  
+          They illustrate how RCOS can be instantiated, not how it must be instantiated.
+      - id: 9.2.3
+        kind: clause
+        ref: 9.2.3
+        text: 'A community MAY claim to be an RCOS Reference Implementation only if it:'
+        items:
+          - 'Is RCOS-Core compliant  '
+          - 'Publicly documents its Layer 0–6 artifacts  '
+          - 'Clearly indicates deviations, experiments, or extensions  '
+      - id: 9.2.4
+        kind: clause
+        ref: 9.2.4
+        text: 'Reference Implementation documentation SHOULD include:'
+        items:
+          - 'Context and scale (size, location, purpose)  '
+          - 'Which Optional Modules are adopted  '
+          - 'Known challenges and failures  '
+          - 'Evolution history and major adaptations  '
+      - id: 9.2.5
+        kind: clause
+        ref: 9.2.5
+        text: Reference Implementations MUST NOT be treated as authoritative interpretations of the standard.
+  - id: '9.3'
+    ref: '9.3'
+    title: Known Failure Modes
+    blocks:
+      - id: 9.3.1
+        kind: clause
+        ref: 9.3.1
+        text: Known Failure Modes document recurring breakdown patterns observed in real communities.
+      - id: 9.3.2
+        kind: clause
+        ref: 9.3.2
+        text: Failure Modes are **informative signals**, not compliance criteria.
+      - id: 9.3.3
+        kind: clause
+        ref: 9.3.3
+        text: 'Failure Modes MAY include, but are not limited to:'
+        items:
+          - 'Informal power accumulation  '
+          - 'Founder or land-owner dominance  '
+          - 'Invisible or gendered labor dependency  '
+          - 'Governance paralysis or meeting overload  '
+          - 'Exit blockage or soft coercion  '
+          - 'Economic capture through debt or asset control  '
+          - 'Conflict avoidance leading to silent fragmentation  '
+      - id: 9.3.4
+        kind: clause
+        ref: 9.3.4
+        text: 'The purpose of documenting Failure Modes is to:'
+        items:
+          - 'Support stress-testing of RCOS structures  '
+          - 'Improve design decisions  '
+          - 'Enable early detection in live communities  '
+      - id: 9.3.5
+        kind: clause
+        ref: 9.3.5
+        text: Failure Mode documentation SHOULD reference which RCOS layers are intended to mitigate the pattern.

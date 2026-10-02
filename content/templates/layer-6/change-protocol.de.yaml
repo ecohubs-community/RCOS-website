@@ -1,0 +1,172 @@
+lang: de
+sourceHash: 4f9d01f6
+title: Änderungsprotokoll
+preamble: |-
+  - **Schicht:** 6 — Evolution & Anpassung
+  - **Status:** Vorlage — an eure Gemeinschaft anpassen
+  - **RCOS-Referenz:** [§8.1](/articles/rcos-core/v0-1/layer-6-evolution-adaptation#81-change-mechanisms), [§8.5](/articles/rcos-core/v0-1/layer-6-evolution-adaptation#85-change-safety-and-reversibility), [§8.6](/articles/rcos-core/v0-1/layer-6-evolution-adaptation#86-artifacts)
+
+  ---
+sections:
+  how-changes-are-proposed:
+    title: Wie Änderungen vorgeschlagen werden
+    blocks:
+      rationale:
+        summary: Warum ein strukturierter Vorschlag?
+        body: Eine Änderung, die als vage Idee im Chat auftaucht, kann nicht bewertet, angefochten oder später zurückgenommen werden. Indem jeder Vorschlag durch dieselbe Mindestform geleitet wird — betroffene Artefakte, Begründung, Risiken, Rücknahmeplan — wird eine Meinung zu einem überprüfbaren Artefakt, und es wird unmöglich, eine Regeländerung versehentlich an der Gemeinschaft vorbeizuschleusen.
+      instructions:
+        summary: Wie ihr das ausfüllt
+        body: Legt fest, wer vorschlagen darf, wo Vorschläge eingereicht werden und welche Pflichtfelder sie enthalten müssen. Verknüpft dies mit dem Governance-Protokoll (Schicht 2).
+      m1:
+        md: '_<Jedes Vollmitglied darf eine Änderung an jedem RCOS-Artefakt vorschlagen. Gebt den Einreichungskanal an.>_ Jeder Vorschlag muss enthalten:'
+      m2:
+        md: |-
+          - _<Zusammenfassung der Änderung.>_
+          - _<Betroffene Schichten und Artefakte (mit Links).>_
+          - _<Entscheidungstyp (Operativ / Strategisch / Konstitutionell).>_
+          - _<Begründung.>_
+          - _<Risiken und Gegenmaßnahmen.>_
+          - _<Rücknahmeplan.>_
+          - _<Vorgeschlagenes Inkrafttreten.>_
+  how-proposals-are-classified:
+    title: Wie Vorschläge klassifiziert werden
+    blocks:
+      rationale:
+        summary: Warum nach Auswirkung klassifizieren?
+        body: Nicht jede Änderung verdient denselben Aufwand. Tippfehlerkorrekturen sollten keine Supermehrheit erfordern; verfassungsändernde Eingriffe sollten nicht still und leise durchgehen. Indem Vorschläge Entscheidungstypen zugeordnet werden — und unklare Fälle standardmäßig nach oben gestuft werden — wird der Aufwand einer Änderung proportional zu ihrem Wirkungsradius, und Schicht 0 wird davor geschützt, durch kleine Schritte ausgehöhlt zu werden.
+      instructions:
+        summary: Wie ihr das ausfüllt
+        body: Definiert, was unter jeden Entscheidungstyp fällt. Legt die Regel fest, dass unklare Fälle in die höhere Kategorie eingestuft werden.
+      m1:
+        md: |-
+          - **Operativ:** _<Formulierungskorrekturen, Formatierung, kleinere inhaltliche Aktualisierungen; keine Abstimmung erforderlich; wird von der zuständigen Rolle im Rahmen delegierter Befugnisse umgesetzt.>_
+          - **Strategisch:** _<Änderungen an Inhalten der Schichten 1–5, die Mitgliedsrechte, Prozesse oder Strukturen betreffen.>_
+          - **Konstitutionell:** _<Änderungen an Schicht 0 (Zweck, Geltungsbereich, Invarianten) oder am Governance-System selbst (Schicht 2).>_
+      m2:
+        md: '> Wenn die Klassifikation unklar ist, wird standardmäßig der höhere Auswirkungstyp angenommen.'
+  review-and-deliberation:
+    title: Prüfung und Beratung
+    blocks:
+      rationale:
+        summary: Warum Mindestberatungsfristen vorschreiben?
+        body: Ohne eine Mindestberatungszeit kann jede Änderung an einem ruhigen Tag durchgepeitscht werden, wenn nur wenige Mitglieder aufpassen. Verbindliche Mindestfristen — länger bei größerer Tragweite — garantieren, dass Mitglieder, die verreist, krank oder einfach beschäftigt sind, eine echte Chance bekommen, zu lesen, Einwände zu erheben oder teilzunehmen.
+      instructions:
+        summary: Wie ihr das ausfüllt
+        body: Legt Mindestberatungsfristen für jeden Entscheidungstyp fest sowie eine Ratifizierungsfrist für konstitutionelle Änderungen.
+      m1:
+        md: |-
+          - **Operativ:** _<Keine Beratung erforderlich.>_
+          - **Strategisch:** _<Mindestens X Tage Beratung; Beratungsort.>_
+          - **Konstitutionell:** _<Mindestens Y Tage Beratung; Z Tage Ratifizierungsfrist nach erfolgreicher Abstimmung.>_
+  adoption-and-publication:
+    title: Annahme und Veröffentlichung
+    blocks:
+      rationale:
+        summary: Warum feste Veröffentlichungsschritte?
+        body: Eine Abstimmung, die bestanden wird, aber nie schriftlich festgehalten wird, ist so gut wie keine Abstimmung — und schlimmer noch, sie schafft eine Lücke, in der derjenige, der sich an das Ergebnis erinnert, es definieren darf. Strikte, geordnete Veröffentlichungsschritte schließen diese Lücke und machen „was wurde beschlossen" zu einer Frage der Akten, nicht des Gedächtnisses.
+      instructions:
+        summary: Wie ihr das ausfüllt
+        body: Legt die geordneten Schritte fest, die nach Annahme eines Vorschlags durchlaufen werden müssen. Gebt Fristen und die Versionsverlaufspflicht an.
+      m1:
+        md: 'Wenn ein Vorschlag angenommen wird:'
+      m2:
+        md: |-
+          1. _<Vorschlagsdatei wird innerhalb von X Tagen ins Archiv für angenommene Vorschläge verschoben.>_
+          2. _<Betroffene Artefakte werden innerhalb von X Tagen aktualisiert.>_
+          3. _<Eintrag im Versionsverlauf wird hinzugefügt.>_
+          4. _<Statusfelder der betroffenen Artefakte werden aktualisiert.>_
+  rejection:
+    title: Ablehnung
+    blocks:
+      rationale:
+        summary: Warum abgelehnte Vorschläge archivieren?
+        body: Abgelehnte Ideen sind ebenso aufschlussreich wie angenommene — sie zeigen, was die Gemeinschaft in Betracht gezogen und verworfen hat. Das Aufbewahren und Zugänglichmachen von Ablehnungen verhindert, dass derselbe Vorschlag alle sechs Monate unter neuem Namen wieder auftaucht, und gibt zukünftigen Mitgliedern einen Blick auf die nicht eingeschlagenen Wege.
+      instructions:
+        summary: Wie ihr das ausfüllt
+        body: Gebt den Archivort für abgelehnte Vorschläge und die Bedingungen für eine erneute Abstimmung an.
+      m1:
+        md: 'Wenn ein Vorschlag abgelehnt wird:'
+      m2:
+        md: |-
+          1. _<Vorschlagsdatei wird innerhalb von X Tagen ins Archiv für abgelehnte Vorschläge verschoben.>_
+          2. _<Keine Artefaktänderungen werden vorgenommen.>_
+          3. _<Mechanismus zur erneuten Abstimmung greift, wenn neue Informationen vorliegen (gemäß der Entscheidungsmatrix, Schicht 2).>_
+  transition-and-migration:
+    title: Übergang und Migration
+    blocks:
+      rationale:
+        summary: Warum bestehende Rechte während Übergängen schützen?
+        body: Wenn neue Regeln bestehende Vereinbarungen stillschweigend umschreiben könnten, wäre die Mitgliedschaft bedeutungslos — das, wofür ihr euch angemeldet habt, könnte unter euren Füßen geändert werden. Explizite Übergangsregeln garantieren, dass Rechte nicht rückwirkend eingeschränkt werden und dass Personen, die unter den alten Regeln arbeiten, Zeit und Vorankündigung erhalten, bevor sich die Grundlage ändert.
+      instructions:
+        summary: Wie ihr das ausfüllt
+        body: Legt die Regeln fest, die bestehende Rolleninhaber, Mitglieder und Aufzeichnungen schützen, wenn eine Regeländerung in Kraft tritt.
+      m1:
+        md: 'Wenn eine Regeländerung bestehende Rollen, Vereinbarungen oder Aufzeichnungen betrifft:'
+      m2:
+        md: |-
+          - _<Bestehende Rolleninhaber werden vor Inkrafttreten der Änderung benachrichtigt.>_
+          - _<Bestehende Mitgliedsrechte dürfen nicht ohne Zustimmung oder eine konstitutionelle Abstimmung eingeschränkt werden.>_
+          - _<Aufzeichnungen, die vor der Änderung entstanden sind, werden nicht rückwirkend geändert, es sei denn, dies ist ausdrücklich Teil des Vorschlags.>_
+          - _<Eine Übergangsfrist kann im Vorschlag selbst festgelegt werden.>_
+  rollback:
+    title: Rücknahme
+    blocks:
+      rationale:
+        summary: Warum soll die Rücknahme symmetrisch zur Annahme sein?
+        body: Eine Änderung, die nicht auf demselben Weg rückgängig gemacht werden kann, auf dem sie entstanden ist, ist eine Falle. Indem die Rücknahme denselben Entscheidungstyp verwenden muss, bleibt die Tür für Korrekturen offen, ohne dass ein einzelnes Mitglied eine Entscheidung auf Gemeinschaftsebene stillschweigend rückgängig machen kann, indem es sie als „Korrektur" bezeichnet.
+      instructions:
+        summary: Wie ihr das ausfüllt
+        body: Legt fest, dass die Rücknahme denselben Entscheidungstyp und denselben Prozess wie die ursprüngliche Annahme verwendet.
+      m1:
+        md: _<Jede angenommene Entscheidung kann über denselben Prozess wie die ursprüngliche rückgängig gemacht werden. Jedes Vollmitglied kann eine erneute Abstimmung auslösen, indem es einen schriftlichen begründeten Einwand einreicht, der in der ursprünglichen Beratung nicht berücksichtigt wurde. Die Rücknahme verwendet denselben Entscheidungstyp wie das Original.>_
+  emergency-changes:
+    title: Notfalländerungen
+    blocks:
+      rationale:
+        summary: Warum überhaupt Notfalländerungen zulassen?
+        body: Manche Schäden entfalten sich schneller, als eine Abstimmung einberufen werden kann. Ein enger, gut abgesicherter Notfallpfad ermöglicht es der Gemeinschaft, auf echte Sicherheitsrisiken oder Plattformausfälle zu reagieren, ohne jemandem einen allgemeinen Überstimmungsmechanismus in die Hand zu geben. Der verpflichtende Zyklus aus Bericht, Prüfung und Ratifizierung-oder-Rücknahme verhindert, dass Notfallbefugnisse zu gewöhnlichen Befugnissen werden.
+      instructions:
+        summary: Wie ihr das ausfüllt
+        body: Definiert die Bedingungen, unter denen eine Notfalländerung vorgenommen werden darf, wer sie durchführen darf, und den verpflichtenden Zyklus aus Bericht-Prüfung-Ratifizierung-oder-Rücknahme.
+      m1:
+        md: 'Eine operative Notfalländerung darf von _<Rolle>_ nur vorgenommen werden, wenn alle folgenden Bedingungen erfüllt sind:'
+      m2:
+        md: |-
+          1. _<Sofortiges Handeln ist erforderlich, um Sicherheitsschäden oder Plattformausfälle zu verhindern.>_
+          2. _<Eine Abstimmung der Vollmitglieder kann nicht rechtzeitig einberufen werden.>_
+          3. _<Die Änderung setzt keine Invariante der Schicht 0 außer Kraft.>_
+      m3:
+        md: 'Notfalländerungen müssen:'
+      m4:
+        md: |-
+          - _<Allen Vollmitgliedern innerhalb von X Stunden gemeldet werden.>_
+          - _<Beim nächsten Gemeinschaftstreffen geprüft werden.>_
+          - _<Über den entsprechenden Entscheidungstyp innerhalb von Y Tagen ratifiziert werden, oder sie werden automatisch zurückgenommen.>_
+  experiments:
+    title: Experimente
+    blocks:
+      rationale:
+        summary: Warum Experimente als eigenständigen Mechanismus behandeln?
+        body: Die Gemeinschaft braucht eine Möglichkeit, Neues auszuprobieren, ohne es dauerhaft übernehmen zu müssen, um es zu testen. Experimente schaffen diesen Raum — aber nur, wenn sie zeitlich begrenzt, gekennzeichnet und automatisch ablaufend sind. Ohne diese Leitplanken wird ein „Experiment" zum schnellsten Weg, eine dauerhafte Regel ohne echte Beratung einzuführen.
+      instructions:
+        summary: Wie ihr das ausfüllt
+        body: Definiert die Regeln, die jedes Experiment erfüllen muss. Verweist auf die Experimentvorlage für die vollständige Einreichungsform.
+      m1:
+        md: _<Jedes Vollmitglied darf ein zeitlich begrenztes Experiment per strategischer Entscheidung vorschlagen. Siehe die Experimentvorlage für die erforderlichen Felder.>_
+      m2:
+        md: |-
+          - _<Experimente laufen automatisch am Ende ihrer festgelegten Dauer ab, sofern sie nicht ausdrücklich durch einen neuen Vorschlag verlängert werden.>_
+          - _<Alle von einem Experiment betroffenen Artefakte müssen für die Dauer ausdrücklich als experimentell gekennzeichnet sein.>_
+          - _<Sicherheitsaussetzung: Wenn ein Experiment ein glaubhaftes Sicherheitsrisiko, Zwang oder anhaltenden Schaden verursacht, kann eine Notfallaussetzung gemäß den obigen Notfalländerungen eingeleitet werden.>_
+          - _<Ergebnisse und Erkenntnisse werden im Lernprotokoll festgehalten.>_
+      m3:
+        md: '---'
+  ratification-record:
+    title: Ratifizierungsprotokoll
+    blocks:
+      m1:
+        md: |-
+          - **Angenommen:** <JJJJ-MM-TT>
+          - **Entscheidungstyp:** Konstitutionell
+          - **Version:** <Version>
+          - **Entscheidungsprotokoll:** <Link zum Entscheidungsprotokoll>

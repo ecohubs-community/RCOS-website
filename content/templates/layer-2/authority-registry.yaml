@@ -1,0 +1,64 @@
+kind: template
+legacyPath: rcos-templates/layer-2/authority-registry
+id: 2e9c4a18
+title: Authority Registry
+parentId: b7e62f01
+order: 2
+preamble: |-
+  - **Layer:** 2 — Governance & Decision Logic
+  - **Status:** Template — adapt for your community
+  - **RCOS reference:** [§4.3](/articles/rcos-core/v0-1/layer-2-governance-decision-logic#43-authority-boundaries), [§4.7](/articles/rcos-core/v0-1/layer-2-governance-decision-logic#47-artifacts)
+
+  > Lists all roles, circles, or bodies that hold decision-making authority, along with their explicit scope, limits, and term.
+
+  ---
+sections:
+  - id: registered-authorities
+    title: Registered Authorities
+    blocks:
+      - id: clauses
+        kind: clauses
+        refs:
+          - 4.3.1
+          - 4.3.2
+          - 4.3.3
+          - 4.3.4
+          - 4.3.5
+      - id: rationale
+        kind: rationale
+        summary: Why write every authority down?
+        body: Authority that is not explicitly registered gets filled in by default — by whoever has been around longest, speaks loudest, or controls the keys. A single registry that names every role, bounds its scope, caps its limits, and ties its basis to a delegation act makes unauthorized action detectable and prevents authority from being derived from charisma, seniority, or ownership.
+      - id: instructions
+        kind: instructions
+        summary: How to fill this in
+        body: For each role, body, or circle that holds authority, list the scope of authority, hard limits, term/duration, and the basis (membership state, delegation act, etc.). The collective body of Full Members is itself an authority and belongs in this table.
+      - id: m1
+        kind: md
+        md: |-
+          | Role / Body | Scope of authority | Limits | Term / Duration | Basis |
+          |---|---|---|---|---|
+          | _<e.g. Full Members (collective)>_ | _<scope>_ | _<limits — cannot override invariants; cannot act outside Decision Matrix>_ | _<duration>_ | _<basis — membership state>_ |
+          | _<e.g. Membership Admin>_ | _<scope>_ | _<limits>_ | _<duration>_ | _<basis — delegated by Full Members>_ |
+          | _<e.g. Finance Steward>_ | _<scope>_ | _<limits — spending cap>_ | _<duration>_ | _<basis>_ |
+          | _<...>_ | _<...>_ | _<...>_ | _<...>_ | _<...>_ |
+      - id: m2
+        kind: md
+        md: '> **Conflict-of-interest recusal:** A role holder may not exercise their delegated authority in any decision where they have a direct personal interest. In such cases, the decision is escalated through the governance process.'
+      - id: m3
+        kind: md
+        md: |-
+          > Authority must not be derived from charisma, seniority, ownership, or informal influence.
+          > Temporary or emergency authority must be explicitly defined, time-bounded, and subject to review.
+      - id: m4
+        kind: md
+        md: '---'
+  - id: ratification-record
+    title: Ratification Record
+    blocks:
+      - id: m1
+        kind: md
+        md: |-
+          - **Adopted:** <YYYY-MM-DD>
+          - **Decision type:** Constitutional
+          - **Version:** <version>
+          - **Decision record:** <link to decision record>

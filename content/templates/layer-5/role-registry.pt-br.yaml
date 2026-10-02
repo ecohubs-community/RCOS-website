@@ -1,0 +1,124 @@
+lang: pt-br
+sourceHash: dc14fb69
+title: Registro de Papéis
+preamble: |-
+  - **Camada:** 5 — Operações e Coordenação
+  - **Status:** Modelo — adapte para sua comunidade
+  - **Referência RCOS:** [§7.1](/articles/rcos-core/v0-1/layer-5-operations-coordination#71-roles-and-responsibilities), [§7.6](/articles/rcos-core/v0-1/layer-5-operations-coordination#76-artifacts)
+
+  ---
+sections:
+  overview:
+    title: Visão Geral
+    blocks:
+      rationale:
+        summary: Por que exigir que toda responsabilidade tenha um papel nomeado?
+        body: Responsabilidades contínuas sem papéis explícitos viram trabalho invisível — feitas por quem percebe, ressentidas silenciosamente e impossíveis de transferir. Tornar cada responsabilidade contínua um papel nomeado e responsabilizável é o que impede que a comunidade funcione à custa da boa vontade não remunerada de alguns membros.
+      instructions:
+        summary: Como preencher
+        body: Distinga papéis operacionais (que carregam autoridade delegada conforme a Matriz de Decisão) de papéis funcionais (com escopo de contribuição, sem autoridade especial de governança). Defina o que você usará como "em situação regular" para fins de elegibilidade.
+      m1:
+        md: Este registro define todos os papéis reconhecidos dentro da comunidade. Os papéis são **operacionais** (carregam autoridade delegada conforme a Matriz de Decisão) ou **funcionais** (com escopo de contribuição, sem autoridade especial de governança além dos direitos de Membro Pleno).
+      m2:
+        md: '> **"Em situação regular"** significa um Membro Pleno que cumpriu suas expectativas de participação no último _<período>_ e não está atualmente sujeito a um processo ativo de responsabilização ou revisão de conflito sob a Camada 4.'
+      m3:
+        md: '---'
+  summary-table:
+    title: Tabela Resumo
+    blocks:
+      m1:
+        md: |-
+          | Papel | Tipo | Detentor Atual |
+          |---|---|---|
+          | _<Nome do papel>_ | _<Operacional / Funcional>_ | _<detentor ou "Vago">_ |
+          | _<...>_ | _<...>_ | _<...>_ |
+      m2:
+        md: '---'
+  operational-roles:
+    title: Papéis Operacionais
+    blocks:
+      rationale:
+        summary: Por que definir responsabilização para autoridade delegada?
+        body: 'Papéis operacionais carregam poder real — podem agir sem uma votação da comunidade dentro do seu escopo. Esse poder só permanece seguro se cada papel tiver um mecanismo claro de responsabilização: quem pode levantar preocupações, como acontece a revisão e como um papel pode ser reatribuído quando a confiança é quebrada.'
+      instructions:
+        summary: Como preencher
+        body: Para cada papel operacional, preencha o modelo abaixo com escopo concreto, autoridade decisória, interfaces, elegibilidade, mandato, nomeação, revisão/remoção e requisitos de transição.
+      m1:
+        md: Papéis operacionais carregam autoridade delegada para agir dentro de limites explicitamente definidos sem uma votação de Membros Plenos, conforme definido na Matriz de Decisão (Camada 2). Todos os detentores de papéis operacionais são responsáveis perante os Membros Plenos coletivamente. Qualquer Membro Pleno PODE levantar uma preocupação sobre como um papel está sendo desempenhado; a reatribuição requer uma votação Estratégica.
+      m2:
+        md: '---'
+      m3:
+        md: '### _<Nome do Papel Operacional, ex.: Administrador(a) de Membros>_'
+      m4:
+        md: |-
+          - **Propósito:** _<propósito em uma frase.>_
+          - **Escopo de responsabilidade:** _<responsabilidades concretas.>_
+          - **Autoridade decisória:** _<quais decisões da Matriz de Decisão este papel executa; limites explícitos.>_
+          - **Interfaces:** _<outros papéis para os quais este papel transfere ou dos quais recebe.>_
+          - **Critérios de elegibilidade:** _<Membro Pleno em situação regular; quaisquer critérios adicionais.>_
+          - **Mandato / rotação:** _<contínuo / rotativo / mandato fixo.>_
+          - **Processo de nomeação:** _<como o papel é atribuído.>_
+          - **Revisão e remoção:** _<como preocupações são levantadas; reatribuição via votação Estratégica.>_
+          - **Transição:** _<o que DEVE ser transferido antes de deixar o cargo.>_
+      m5:
+        md: '---'
+      m6:
+        md: '### _<Nome do Papel Operacional, ex.: Guardião(ã) das Finanças>_'
+      m7:
+        md: |-
+          - **Propósito:** _<propósito.>_
+          - **Escopo de responsabilidade:** _<responsabilidades.>_
+          - **Autoridade decisória:** _<escopo na Matriz de Decisão; limite de gastos.>_
+          - **Interfaces:** _<outros papéis.>_
+          - **Critérios de elegibilidade:** _<Membro Pleno em situação regular.>_
+          - **Mandato / rotação:** _<...>_
+          - **Processo de nomeação:** _<...>_
+          - **Revisão e remoção:** _<...>_
+          - **Transição:** _<...>_
+      m8:
+        md: '---'
+      m9:
+        md: '### _<Adicione papéis operacionais adicionais conforme necessário (ex.: Guardião(ã) de Infraestrutura, Guardião(ã) de Comunicação).>_'
+      m10:
+        md: '---'
+  functional-roles:
+    title: Papéis Funcionais
+    blocks:
+      rationale:
+        summary: Por que separar papéis funcionais dos operacionais?
+        body: Nem toda contribuição precisa de autoridade delegada — a maior parte do trabalho é sobre fazer, não decidir. Papéis funcionais nomeiam escopos de contribuição sem agregar poder de governança, para que os membros possam aderir ao trabalho sem uma transferência de autoridade e para que o sistema de governança permaneça claro sobre quem pode agir em nome da comunidade.
+      instructions:
+        summary: Como preencher
+        body: Para cada papel funcional, defina propósito, escopo, interfaces, elegibilidade e transição. Papéis funcionais não requerem votação para serem assumidos — a declaração é suficiente.
+      m1:
+        md: Papéis funcionais definem o escopo de contribuição de um membro. Eles não carregam autoridade delegada de governança além dos direitos de Membro Pleno. Qualquer Membro Pleno PODE assumir um papel funcional ao declará-lo; nenhuma votação é exigida. Os papéis podem ser deixados a qualquer momento mediante notificação.
+      m2:
+        md: '---'
+      m3:
+        md: '### _<Nome do Papel Funcional, ex.: Facilitador(a)>_'
+      m4:
+        md: |-
+          - **Propósito:** _<propósito.>_
+          - **Escopo de responsabilidade:** _<responsabilidades.>_
+          - **Autoridade decisória:** _<apenas direitos de Membro Pleno.>_
+          - **Interfaces:** _<outros papéis.>_
+          - **Critérios de elegibilidade:** _<Membro Pleno; quaisquer preferências adicionais.>_
+          - **Mandato / rotação:** _<contínuo até ser deixado.>_
+          - **Processo de nomeação:** _<autodeclaração.>_
+          - **Revisão e remoção:** _<PODE ser deixado a qualquer momento; substituição por conflito de interesse conforme a Camada 4, se relevante.>_
+          - **Transição:** _<compromissos ativos a serem informados.>_
+      m5:
+        md: '---'
+      m6:
+        md: '### _<Adicione papéis funcionais adicionais conforme necessário.>_'
+      m7:
+        md: '---'
+  ratification-record:
+    title: Registro de Ratificação
+    blocks:
+      m1:
+        md: |-
+          - **Adotado em:** <AAAA-MM-DD>
+          - **Tipo de decisão:** Estratégica
+          - **Versão:** <versão>
+          - **Registro da decisão:** <link para o registro da decisão>

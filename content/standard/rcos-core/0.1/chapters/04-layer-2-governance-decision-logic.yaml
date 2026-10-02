@@ -1,0 +1,193 @@
+kind: chapter
+legacyPath: rcos-core/v0-1/04-layer-2-governance-decision-logic
+id: 4563b1af
+title: 4. Layer 2 — Governance & Decision Logic
+parentId: e6de7a5d
+order: 40
+intro: Layer 2 defines how collective decisions are made, who is authorized to make them, and how authority is constrained. Governance under RCOS is designed to make power explicit, bounded, reviewable, and reversible.
+sections:
+  - id: '4.1'
+    ref: '4.1'
+    title: Decision Types
+    blocks:
+      - id: 4.1.1
+        kind: clause
+        ref: 4.1.1
+        text: 'All collective decisions MUST be classified into exactly one of the following decision types:'
+        items:
+          - Operational Decisions
+          - Strategic Decisions
+          - Constitutional Decisions
+      - id: 4.1.2
+        kind: clause
+        ref: 4.1.2
+        text: Operational Decisions concern day-to-day functioning and execution within existing rules.
+      - id: 4.1.3
+        kind: clause
+        ref: 4.1.3
+        text: Strategic Decisions concern long-term direction, allocation of significant resources, or creation/removal of major structures.
+      - id: 4.1.4
+        kind: clause
+        ref: 4.1.4
+        text: Constitutional Decisions concern changes to Layer 0 invariants, purpose, scope, or the governance system itself.
+      - id: 4.1.5
+        kind: clause
+        ref: 4.1.5
+        text: If a decision cannot be clearly classified, it MUST default to the higher-impact decision type.
+  - id: '4.2'
+    ref: '4.2'
+    title: Decision Mechanisms
+    blocks:
+      - id: 4.2.1
+        kind: clause
+        ref: 4.2.1
+        text: Each decision type MUST have an explicitly defined decision-making mechanism.
+      - id: 4.2.2
+        kind: clause
+        ref: 4.2.2
+        text: 'Decision mechanisms MAY include, but are not limited to:'
+        items:
+          - Consent-based decision-making
+          - Majority vote
+          - Supermajority vote
+          - Delegated authority
+          - Randomized or rotational assignment
+      - id: 4.2.3
+        kind: clause
+        ref: 4.2.3
+        text: 'Decision mechanisms MUST specify:'
+        items:
+          - Eligible participants
+          - Decision thresholds
+          - Blocking or veto conditions, if any
+          - Time constraints
+      - id: 4.2.4
+        kind: clause
+        ref: 4.2.4
+        text: No informal or ad hoc decision mechanism MAY be used for collective decisions.
+  - id: '4.3'
+    ref: '4.3'
+    title: Authority Boundaries
+    blocks:
+      - id: 4.3.1
+        kind: clause
+        ref: 4.3.1
+        text: All authority MUST be assigned to explicitly defined roles, circles, or bodies.
+      - id: 4.3.2
+        kind: clause
+        ref: 4.3.2
+        text: 'Authority assignments MUST include:'
+        items:
+          - Scope of authority
+          - Limits of authority
+          - Duration or term, if applicable
+      - id: 4.3.3
+        kind: clause
+        ref: 4.3.3
+        text: No individual or body MAY exercise authority outside its explicitly assigned scope.
+      - id: 4.3.4
+        kind: clause
+        ref: 4.3.4
+        text: Authority MUST NOT be derived from charisma, seniority, ownership, or informal influence.
+      - id: 4.3.5
+        kind: clause
+        ref: 4.3.5
+        text: Temporary or emergency authority MUST be explicitly defined, time-bounded, and subject to review.
+  - id: '4.4'
+    ref: '4.4'
+    title: Decision Matrix
+    blocks:
+      - id: 4.4.1
+        kind: clause
+        ref: 4.4.1
+        text: The community MUST maintain a Decision Matrix as a core governance artifact.
+      - id: 4.4.2
+        kind: clause
+        ref: 4.4.2
+        text: 'The Decision Matrix MUST map, at minimum:'
+        items:
+          - Decision type
+          - Decision domain
+          - Authorized role or body
+          - Decision mechanism
+          - Approval threshold
+          - Escalation path
+      - id: 4.4.3
+        kind: clause
+        ref: 4.4.3
+        text: The Decision Matrix MUST be publicly accessible to all members.
+      - id: 4.4.4
+        kind: clause
+        ref: 4.4.4
+        text: Decisions made outside the Decision Matrix MUST be considered invalid.
+  - id: '4.5'
+    ref: '4.5'
+    title: Governance Protocol
+    blocks:
+      - id: 4.5.1
+        kind: clause
+        ref: 4.5.1
+        text: The community MUST define a Governance Protocol describing the full lifecycle of a decision.
+      - id: 4.5.2
+        kind: clause
+        ref: 4.5.2
+        text: 'The Governance Protocol MUST include:'
+        items:
+          - Proposal submission requirements
+          - Review and deliberation process
+          - Decision execution
+          - Documentation and publication
+          - Appeal and review mechanisms
+      - id: 4.5.3
+        kind: clause
+        ref: 4.5.3
+        text: The Governance Protocol MUST define how conflicts between decisions are resolved.
+      - id: 4.5.4
+        kind: clause
+        ref: 4.5.4
+        text: All governance actions MUST be documented according to Layer 5 documentation rules.
+  - id: '4.6'
+    ref: '4.6'
+    title: Safeguards and Failure Modes
+    blocks:
+      - id: 4.6.1
+        kind: clause
+        ref: 4.6.1
+        text: 'The governance system MUST include safeguards against:'
+        items:
+          - Concentration of decision power
+          - Informal vetoes
+          - Decision capture by subgroups
+          - Founder or role entrenchment
+      - id: 4.6.2
+        kind: clause
+        ref: 4.6.2
+        text: Governance mechanisms MUST allow for challenge and review without retaliation.
+      - id: 4.6.3
+        kind: clause
+        ref: 4.6.3
+        text: Persistent governance failures MUST trigger a formal review or constitutional process.
+  - id: '4.7'
+    ref: '4.7'
+    title: Artifacts
+    blocks:
+      - id: 4.7.1
+        kind: clause
+        ref: 4.7.1
+        text: 'The following artifacts are mandatory for Layer 2 compliance:'
+        items:
+          - Decision Matrix
+          - Governance Protocol
+          - Authority Registry
+      - id: 4.7.2
+        kind: clause
+        ref: 4.7.2
+        text: 'Layer 2 artifacts MUST be:'
+        items:
+          - Explicit and unambiguous
+          - Versioned
+          - Accessible to all members
+      - id: 4.7.3
+        kind: clause
+        ref: 4.7.3
+        text: Absence, ambiguity, or systematic violation of Layer 2 artifacts MUST result in loss of RCOS-Core compliance.

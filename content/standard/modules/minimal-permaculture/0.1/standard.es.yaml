@@ -1,0 +1,155 @@
+lang: es
+sourceHash: 585dcc63
+title: v0.1
+intro: ''
+sections:
+  s1:
+    title: Módulo Mínimo de Permacultura (No Normativo)
+    blocks:
+      b1:
+        md: Este módulo define la estructura mínima necesaria para integrar el cuidado ecológico y la producción de alimentos en una comunidad muy pequeña alineada con RCOS (normalmente de 3 a 15 miembros).
+      b2:
+        md: Su propósito es permitir el cuidado de la tierra **sin crear propiedad oculta, trabajo invisible o poder informal**.
+      b3:
+        md: Este módulo es intencionalmente mínimo.
+      b4:
+        md: '---'
+  s2:
+    title: Aplicabilidad
+    blocks:
+      b1:
+        md: |-
+          Este módulo es adecuado cuando:
+          - la comunidad tiene menos de ~15 miembros,
+          - los sistemas ecológicos son de pequeña escala,
+          - la gobernanza y las operaciones son ligeras,
+          - la especialización formal es limitada.
+      b2:
+        md: Si los sistemas ecológicos se vuelven críticos para el sistema o crecen significativamente, este módulo DEBERÍA ser reemplazado por el Módulo de Permacultura completo.
+      b3:
+        md: '---'
+  s3:
+    title: Principios Fundamentales
+    blocks:
+      b1:
+        md: |-
+          - La ecología es infraestructura, no identidad.
+          - Cuidar no implica controlar.
+          - Ninguna tierra o sistema se convierte en "de alguien" por defecto.
+          - La prevención del agotamiento es más importante que la optimización.
+      b2:
+        md: '---'
+  s4:
+    title: Alcance Gobernado
+    blocks:
+      b1:
+        md: |-
+          La comunidad DEBE declarar explícitamente:
+          - qué tierras o sistemas están gobernados (p. ej., huerto, compost, agua),
+          - cuáles son informales o personales.
+      b2:
+        md: Todo lo que no esté explícitamente gobernado queda fuera del alcance.
+      b3:
+        md: '---'
+  s5:
+    title: Asignación de Custodia
+    blocks:
+      b1:
+        md: |-
+          El cuidado ecológico PUEDE asignarse mediante:
+          - un único rol de custodio rotativo, o
+          - un acuerdo de cuidado compartido.
+      b2:
+        md: |-
+          Como mínimo, la comunidad DEBE definir:
+          - quién es actualmente responsable,
+          - cuánto dura la responsabilidad,
+          - cómo se puede traspasar la responsabilidad.
+      b3:
+        md: Ninguna responsabilidad ecológica puede existir indefinidamente sin revisión.
+      b4:
+        md: '---'
+  s6:
+    title: Trabajo y Contribución
+    blocks:
+      b1:
+        md: |-
+          La comunidad DEBE responder, de forma explícita pero sencilla:
+          - ¿El trabajo ecológico se espera de todos los miembros, es opcional o está basado en roles?
+          - ¿Se permite la sustitución (dinero, externalización)?
+      b2:
+        md: |-
+          Si se espera trabajo, el trabajo de cuidado DEBE ser:
+          - visible,
+          - discutible,
+          - renegociable.
+      b3:
+        md: El trabajo invisible o moralmente coercitivo es una violación.
+      b4:
+        md: '---'
+  s7:
+    title: Autoridad de Decisión
+    blocks:
+      b1:
+        md: Las decisiones ecológicas del día a día PUEDEN ser tomadas por el/los custodio(s) actual(es).
+      b2:
+        md: |-
+          Las decisiones estructurales (p. ej., ampliar huertos, talar árboles, fijar el uso de la tierra) DEBEN:
+          - seguir las reglas de decisión de la Capa 2 de RCOS,
+          - ser revisables,
+          - ser reversibles cuando sea posible.
+      b3:
+        md: La experiencia informa las decisiones, pero no anula el proceso.
+      b4:
+        md: '---'
+  s8:
+    title: Protección de los Comunes (Mínima)
+    blocks:
+      b1:
+        md: |-
+          Las tierras o sistemas utilizados por la comunidad:
+          - NO DEBEN ser privatizados a través del cuidado o la inversión,
+          - DEBEN permanecer recuperables por la comunidad,
+          - DEBEN tener una vía de salida tanto para cuidadores como para no cuidadores.
+      b2:
+        md: Si existe propiedad, los derechos de uso DEBEN ser explícitos.
+      b3:
+        md: '---'
+  s9:
+    title: Disparadores de Fallo
+    blocks:
+      b1:
+        md: |-
+          Las siguientes condiciones REQUIEREN revisión o escalamiento:
+          - una persona se vuelve indispensable para los sistemas ecológicos,
+          - el trabajo de cuidado causa agotamiento recurrente,
+          - las decisiones sobre el uso de la tierra se vuelven emocional o moralmente coercitivas,
+          - abandonar la custodia se siente inseguro o castigado.
+      b2:
+        md: '---'
+  s10:
+    title: Artefactos (Mínimos)
+    blocks:
+      b1:
+        md: |-
+          Lo siguiente PUEDE ser suficiente:
+          - una breve Nota de Alcance Ecológico,
+          - un Registro de Custodia (incluso informal),
+          - un acuerdo de trabajo sencillo.
+      b2:
+        md: Se desaconseja la documentación excesiva.
+      b3:
+        md: '---'
+  s11:
+    title: Compatibilidad
+    blocks:
+      b1:
+        md: |-
+          Este módulo NO DEBE anular:
+          - los invariantes de la Capa 0 de RCOS,
+          - las reglas de gobernanza,
+          - los derechos de salida.
+      b2:
+        md: |-
+          La ecología puede evolucionar.
+          El poder no debe hacerlo.

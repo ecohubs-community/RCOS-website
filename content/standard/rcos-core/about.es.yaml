@@ -1,0 +1,297 @@
+lang: es
+sourceHash: 146272cf
+title: Núcleo RCOS
+intro: ''
+sections:
+  s1:
+    title: Qué es RCOS
+    blocks:
+      b1:
+        md: El **Sistema Operativo Comunitario Regenerativo (RCOS)** es una especificación formal y por capas para diseñar, operar y evolucionar comunidades intencionales sin depender del carisma, la ideología o el poder informal.
+      b2:
+        md: 'RCOS trata a una comunidad como un **sistema gobernado**, no como un experimento social. Define los requisitos estructurales mínimos necesarios para que una comunidad se mantenga:'
+      b3:
+        md: |-
+          - coherente bajo estrés,
+          - justa ante asimetrías de poder,
+          - adaptable sin colapsar,
+          - y regenerativa a lo largo del tiempo.
+      b4:
+        md: 'RCOS no es un estilo de vida, un sistema de creencias ni una identidad cultural. Es un **sistema operativo**: un conjunto de reglas explícitas, interfaces, invariantes y casos de prueba que hacen la vida comunitaria legible, auditable y sostenible.'
+      b5:
+        md: '---'
+  s2:
+    title: Qué problema resuelve RCOS
+    blocks:
+      b1:
+        md: La mayoría de las comunidades no fracasan por malas intenciones. Fracasan por **estructura implícita**.
+      b2:
+        md: 'Los patrones de fracaso más comunes incluyen:'
+      b3:
+        md: |-
+          - líderes informales que anulan los procesos formales,
+          - normas tácitas aplicadas como reglas,
+          - trabajo invisible que lleva al agotamiento,
+          - riqueza o carisma convertidos en poder,
+          - conflictos evitados hasta volverse existenciales,
+          - decisiones de emergencia que se convierten en excepciones permanentes.
+      b4:
+        md: RCOS existe para hacer que estos modos de fallo sean **estructuralmente imposibles o explícitamente abordables**.
+      b5:
+        md: '---'
+  s3:
+    title: Qué NO es RCOS
+    blocks:
+      b1:
+        md: 'RCOS explícitamente **no** prescribe:'
+      b2:
+        md: |-
+          - una cultura, creencia o espiritualidad específica,
+          - una ideología política o económica,
+          - un método de gobernanza (p. ej., consenso vs sociocracia),
+          - ni cómo las personas _deberían_ vivir juntas.
+      b3:
+        md: En su lugar, RCOS restringe _cómo se toman las decisiones_, _cómo se limita el poder_ y _cómo ocurre el cambio_, independientemente de los valores.
+      b4:
+        md: '---'
+  s4:
+    title: Principios de diseño (no negociables)
+    blocks:
+      b1:
+        md: '> **Nada esencial puede permanecer implícito.**'
+      b2:
+        md: |-
+          - **Basado en restricciones, no en valores** — Define reglas y límites en lugar de prescribir creencias. Los valores varían; las restricciones mantienen los sistemas funcionales bajo estrés.
+          - **Pre-compromiso sobre improvisación** — Las decisiones críticas (conflicto, poder, dinero) se acuerdan antes de que surjan emociones, escasez o luchas de poder.
+          - **Modular por defecto** — El núcleo permanece estable mientras los módulos de dominio opcionales pueden añadirse, reemplazarse o eliminarse sin romper el sistema.
+          - **Escala humana (≈ 5–150 personas)** — Optimizado para grupos lo suficientemente pequeños como para mantener confianza, rendición de cuentas y contexto compartido sin burocracia.
+          - **Tolerante al fallo, no ciego al fallo** — Asume que el conflicto, el agotamiento y los errores ocurrirán, y proporciona caminos de recuperación explícitos.
+      b3:
+        md: 'Todo lo que afecte a lo siguiente DEBE ser explícitamente declarado, versionado y revisable:'
+      b4:
+        md: |-
+          - autoridad
+          - membresía
+          - recursos
+          - conflicto
+          - evolución del sistema
+      b5:
+        md: |-
+          - El silencio nunca se trata como consentimiento.
+          - La tradición nunca se trata como autoridad.
+          - La urgencia nunca se trata como justificación.
+      b6:
+        md: '---'
+  s5:
+    title: 'Sobre el tamaño del grupo: ¿por qué ~150?'
+    blocks:
+      b1:
+        md: '**150** ≈ Número de Dunbar: límite cognitivo para relaciones sociales estables.'
+      b2:
+        md: |-
+          - **Comunidad mínima viable (5–7 personas):**
+            Por debajo de esto, la separación de roles y la resolución de conflictos colapsan.
+          - **Rango horizontal óptimo (8–40 personas):**
+            Alta confianza, baja burocracia, participación directa posible.
+          - **Tamaño máximo no segmentado (120–150 personas):**
+            Más allá de esto, la gobernanza informal falla.
+      b3:
+        md: El Núcleo RCOS se aplica a cualquier tamaño, pero por encima de ~150 personas, se REQUIEREN subestructuras obligatorias (círculos, dominios, vecindarios).
+      b4:
+        md: '---'
+  s6:
+    title: Por qué importa la estructura del Núcleo RCOS
+    blocks:
+      b1:
+        md: |-
+          - Previene la dominancia del fundador
+          - Hace explícito el poder
+          - Reduce las normas ocultas
+          - Sobrevive al conflicto
+          - Permite la replicación
+          - Se integra limpiamente con herramientas DAO, _sin depender de ellas_
+      b2:
+        md: '---'
+  s7:
+    title: Qué deliberadamente NO está en el Núcleo RCOS
+    blocks:
+      b1:
+        md: 'Estos pertenecen a **módulos opcionales**, no al núcleo:'
+      b2:
+        md: |-
+          - Diseño de permacultura
+          - Filosofía educativa
+          - Prácticas espirituales o culturales
+          - Ideología política
+          - Elecciones estéticas o de estilo de vida
+      b3:
+        md: El núcleo gobierna cómo se toman las decisiones, no qué decisiones deben tomarse.
+      b4:
+        md: '---'
+  s8:
+    title: Invariantes (se aplican a todas las Capas)
+    blocks:
+      b1:
+        md: '### Lo explícito supera a lo implícito'
+      b2:
+        md: Si no está escrito, acordado y versionado, **no existe**.
+      b3:
+        md: '### Por qué esto importa'
+      b4:
+        md: Las invariantes de Capa aseguran que ninguna cantidad de buena voluntad, carisma, urgencia o consenso pueda erosionar silenciosamente el sistema.
+      b5:
+        md: '---'
+  s9:
+    title: La regla de explicitud de RCOS (principio fundamental)
+    blocks:
+      b1:
+        md: '**Todo lo que asigne poder, riesgo, responsabilidad o condiciones de salida DEBE ser explícito.**'
+      b2:
+        md: Todo lo que exprese preferencia, estilo u optimización local PUEDE ser opcional.
+      b3:
+        md: '### Explícito vs opcional por Capa'
+      b4:
+        md: 'Usamos tres categorías:'
+      b5:
+        md: |-
+          - **DEBE ser explícito** → requerido para el cumplimiento de RCOS
+          - **PUEDE ser explícito** → recomendado pero dependiente del contexto
+          - **DEBE permanecer opcional** → nunca impuesto por el núcleo
+      b6:
+        md: '### Invariante transversal sobre la explicitud'
+      b7:
+        md: '**Si algo puede:**'
+      b8:
+        md: |-
+          - Eliminar los derechos de alguien
+          - Vincular el tiempo o trabajo de alguien
+          - Controlar recursos compartidos
+          - Silenciar la disidencia
+          - Impedir la salida
+      b9:
+        md: '**Entonces DEBE ser explícito, documentado y revisable.**'
+      b10:
+        md: Sin excepciones.
+      b11:
+        md: 'Este enfoque asegura que:'
+      b12:
+        md: |-
+          - RCOS **no** se vuelva burocrático
+          - Las comunidades conserven su libertad cultural
+          - Solo el _riesgo estructural_ sea regulado
+          - Los módulos opcionales sigan siendo poderosos, no restringidos
+      b13:
+        md: '---'
+  s10:
+    title: Diseño dirigido por pruebas de estrés
+    blocks:
+      b1:
+        md: RCOS se valida no por intención sino por **resistencia al fallo**.
+      b2:
+        md: 'La especificación incluye un conjunto creciente de **pruebas de estrés** derivadas de colapsos reales de comunidades, tales como:'
+      b3:
+        md: |-
+          - dominancia en reuniones
+          - poder de veto del fundador
+          - privatización de los comunes
+          - culturas de evitación del conflicto
+          - autoridad espiritual carismática
+          - elusión de reglas en emergencias
+      b4:
+        md: Una comunidad se considera alineada con RCOS solo si puede **resistir estos escenarios sin soluciones informales**.
+      b5:
+        md: 'Casi todos los fracasos ocurren porque:'
+      b6:
+        md: '**Se permitió que algo poderoso permaneciera implícito.**'
+      b7:
+        md: 'RCOS transforma:'
+      b8:
+        md: |-
+          - Poder implícito → roles explícitos
+          - Valores implícitos → reglas acotadas
+          - Castigo implícito → debido proceso
+          - Propiedad implícita → derechos declarados
+      b9:
+        md: '### Modos de fallo conocidos que RCOS está diseñado para prevenir'
+      b10:
+        md: Ver [Pruebas de estrés de RCOS](/articles/rcos-stress-tests?id=6acbe9a7)
+  s11:
+    title: Implementaciones de referencia
+    blocks:
+      b1:
+        md: 'RCOS fomenta pequeñas **comunidades de referencia** del mundo real que:'
+      b2:
+        md: |-
+          - implementan las capas del núcleo explícitamente,
+          - documentan desviaciones y fracasos,
+          - y publican los aprendizajes de vuelta al estándar.
+      b3:
+        md: El objetivo no es la perfección, sino la **evolución a través de la transparencia**.
+      b4:
+        md: '---'
+  s12:
+    title: Por qué "Regenerativo"
+    blocks:
+      b1:
+        md: RCOS usa el término _regenerativo_ deliberadamente.
+      b2:
+        md: 'Un sistema regenerativo:'
+      b3:
+        md: |-
+          - no depende del crecimiento constante,
+          - no agota a sus miembros,
+          - repara el daño en lugar de ocultarlo,
+          - y se fortalece al integrar el fracaso.
+      b4:
+        md: RCOS está diseñado para que **el estrés produzca aprendizaje**, no colapso.
+      b5:
+        md: '---'
+  s13:
+    title: Para quién es RCOS
+    blocks:
+      b1:
+        md: 'RCOS está dirigido a:'
+      b2:
+        md: |-
+          - comunidades intencionales,
+          - ecoaldeas y proyectos de covivienda,
+          - cooperativas y organizaciones basadas en los comunes,
+          - experimentos de vida colectiva a largo plazo,
+          - y cualquier grupo que quiera sobrevivir a su propio éxito.
+      b3:
+        md: RCOS es especialmente útil para grupos que ya comparten valores fuertes — y quieren asegurarse de que esos valores no se conviertan en herramientas de coerción.
+      b4:
+        md: '---'
+  s14:
+    title: Cómo usar RCOS
+    blocks:
+      b1:
+        md: 'RCOS puede usarse como:'
+      b2:
+        md: |-
+          - un **plano de diseño** antes de fundar una comunidad,
+          - un **marco de auditoría** para grupos existentes,
+          - una **herramienta de prueba de estrés** durante conflictos,
+          - o un **lenguaje compartido** para conversaciones estructurales difíciles.
+      b3:
+        md: La adopción puede ser incremental. El cumplimiento puede ser parcial. Lo que importa es **la explicitud, no la pureza**.
+      b4:
+        md: '---'
+  s15:
+    title: La afirmación central
+    blocks:
+      b1:
+        md: |-
+          > Las comunidades no fracasan porque las personas sean imperfectas.
+          > Fracasan porque los sistemas son vagos.
+      b2:
+        md: |-
+          RCOS existe para reemplazar la vaguedad con estructura —
+          para que el cuidado, la autonomía y la regeneración tengan algo sólido sobre lo cual sostenerse.
+      b3:
+        md: '---'
+  s16:
+    title: Registro de cambios
+    blocks:
+      b1:
+        md: '- [v0.1](/articles/rcos-core/v0-1?id=e6de7a5d) — Versión inicial'

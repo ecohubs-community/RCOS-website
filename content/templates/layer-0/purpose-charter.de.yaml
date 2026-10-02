@@ -1,0 +1,71 @@
+lang: de
+sourceHash: 35f04330
+title: Zweckcharta
+preamble: |-
+  - **Schicht:** 0 — Identität & Geltungsbereich
+  - **Status:** Vorlage — an eure Gemeinschaft anpassen
+  - **RCOS-Referenz:** [§2.1](/articles/rcos-core/v0-1/layer-0-identity-scope#21-purpose-definition), [§2.5](/articles/rcos-core/v0-1/layer-0-identity-scope#25-artifacts)
+
+  ---
+sections:
+  primary-purpose:
+    title: Primärer Zweck
+    blocks:
+      rationale:
+        summary: Warum ein einzelner dauerhafter Zweck?
+        body: 'Jede Entscheidung, jede Rolle und jede Ressourcenzuteilung muss mit einer Sache im Einklang bleiben — dem primären Zweck der Gemeinschaft. Wenn er abdriftet, sich Trends anpasst oder umgeschrieben wird, um das neueste Projekt zu rechtfertigen, gibt es nichts mehr, woran sich die Governance verankern lässt. Ein einzelner, stabiler primärer Zweck ist der konstitutionelle Nordstern: Strategien ändern sich, der Zweck nicht.'
+      instructions:
+        summary: Wie ihr das ausfüllt
+        body: Formuliert genau einen primären Zweck. Er muss den dauerhaften Grund beschreiben, warum eure Gemeinschaft existiert — kein Projekt, keine Strategie und kein kurzfristiges Ziel. Ein bis zwei Sätze.
+      m1:
+        md: _<Der primäre Zweck eurer Gemeinschaft, in ein bis zwei Sätzen.>_
+  secondary-purposes:
+    title: Sekundäre Zwecke
+    blocks:
+      rationale:
+        summary: Warum sekundäre Zwecke zulassen?
+        body: Eine Gemeinschaft tut selten nur eine Sache. Sekundäre Zwecke schaffen Raum für die anderen konkreten Ergebnisse, die die Gemeinschaft verfolgt — aber sie sind nachrangig. Wenn ein sekundärer Zweck jemals mit dem primären in Konflikt gerät, hat der primäre Vorrang. Indem ihr sie explizit benennt, verhindert ihr, dass schleichende Ausweitung sich als Kernarbeit tarnt.
+      instructions:
+        summary: Wie ihr das ausfüllt
+        body: Listet konkrete sekundäre Ergebnisse auf, die die Gemeinschaft verfolgt. Sie dürfen nicht im Widerspruch zum primären Zweck stehen oder diesen überlagern. Entfernt diesen Abschnitt vollständig, wenn ihr keine habt.
+      m1:
+        md: |-
+          1. _<Sekundärer Zweck 1.>_
+          2. _<Sekundärer Zweck 2.>_
+          3. _<Sekundärer Zweck 3.>_
+  non-goals-and-exclusions:
+    title: Nicht-Ziele und Ausschlüsse
+    blocks:
+      rationale:
+        summary: Warum festhalten, was die Gemeinschaft nicht ist?
+        body: Gemeinschaften driften durch Anhäufung ab — eine unwidersprochen gebliebene Annahme nach der anderen. Zu benennen, was die Gemeinschaft ausdrücklich *nicht* ist, macht Grenzüberschreitungen frühzeitig sichtbar und gibt allen eine klare Grundlage, Einspruch zu erheben, bevor eine Aktivität zur Normalität wird. Schweigen wird hier als Zustimmung gelesen.
+      instructions:
+        summary: Wie ihr das ausfüllt
+        body: Benennt die Dinge, die eure Gemeinschaft ausdrücklich NICHT ist, insbesondere Identitäten oder Rollen, die andere möglicherweise standardmäßig annehmen könnten (politische Partei, Investmentvehikel, religiöse Gruppe usw.).
+      m1:
+        md: |-
+          1. _<Nicht-Ziel 1.>_
+          2. _<Nicht-Ziel 2.>_
+          3. _<Nicht-Ziel 3.>_
+  conditions-for-purpose-change:
+    title: Bedingungen für eine Zweckänderung
+    blocks:
+      rationale:
+        summary: Warum soll eine Zweckänderung schwierig sein?
+        body: Der Zweck ist das eine Element, von dem alles andere abhängt. Wäre er leicht zu ändern, könnte nichts, was darauf aufbaut — Mitgliedschaft, Governance, Invarianten — darauf vertrauen, von einem Jahr zum nächsten dasselbe zu bedeuten. Konstitutionelle Schwellenwerte und eine Ratifizierungsfrist erzwingen einen bewussten, sichtbaren Akt statt eines stillen Abdriftens.
+      instructions:
+        summary: Wie ihr das ausfüllt
+        body: 'Beschreibt das Änderungsverfahren. Mindestens: den erforderlichen Entscheidungstyp für den primären Zweck (Konstitutionell, gemäß Schicht 2), den Schwellenwert, die Ratifizierungsfrist und wo die Änderung festgehalten wird (Versionshistorie in Schicht 6). Sekundäre Zwecke erfordern typischerweise eine niedrigere Hürde.'
+      m1:
+        md: Der primäre Zweck darf nur durch eine konstitutionelle Entscheidung gemäß der Entscheidungsmatrix (Schicht 2) geändert werden, die _<Schwellenwert, z. B. qualifizierte Mehrheit der Vollmitglieder ≥⅔ der abgegebenen Stimmen>_ erfordert, gefolgt von einer Ratifizierungsfrist von mindestens _<Dauer, z. B. 30 Tagen>_. Sekundäre Zwecke können durch eine strategische Entscheidung geändert werden. Jede Änderung muss in der Versionshistorie (Schicht 6) festgehalten werden.
+      m2:
+        md: '---'
+  ratification-record:
+    title: Ratifizierungsprotokoll
+    blocks:
+      m1:
+        md: |-
+          - **Angenommen:** <JJJJ-MM-TT>
+          - **Entscheidungstyp:** Konstitutionell
+          - **Version:** <Version>
+          - **Entscheidungsprotokoll:** <Link zum Entscheidungsprotokoll>

@@ -1,0 +1,120 @@
+lang: es
+sourceHash: d84efb12
+title: Apéndice A — Glosario
+intro: |-
+  Este glosario proporciona **definiciones informativas** para los términos clave utilizados a lo largo de la especificación RCOS.  
+  Las entradas del glosario no introducen nuevos requisitos y no prevalecen sobre las secciones normativas.
+terms:
+  accountability:
+    term: Rendición de cuentas (Accountability)
+    definition: La expectativa de que los roles y los miembros puedan ser llamados a explicar acciones, resultados y cumplimiento de las reglas acordadas, con mecanismos definidos de revisión y corrección.
+  accountability-protocol:
+    term: Protocolo de rendición de cuentas (Accountability Protocol)
+    definition: Un artefacto que define cómo se revisan, documentan y abordan las violaciones, daños o fallos reiterados, incluyendo el debido proceso, salvaguardas y vías de escalamiento.
+  artifact:
+    term: Artefacto
+    definition: Un objeto documentado y versionado (p. ej., protocolo, registro, carta fundacional) adoptado mediante un proceso autorizado y utilizado para operativizar las capas de RCOS.
+  authority-boundary:
+    term: Límite de autoridad (Authority Boundary)
+    definition: Los límites explícitos dentro de los cuales un rol, círculo u órgano puede tomar decisiones o actuar.
+  change-protocol:
+    term: Protocolo de cambios (Change Protocol)
+    definition: Un artefacto que define cómo se proponen, revisan, adoptan, publican y revierten los cambios, incluyendo la clasificación del tipo de decisión y las disposiciones de emergencia.
+  commons:
+    term: Bienes comunes (Commons)
+    definition: Recursos gobernados colectivamente bajo reglas explícitas de custodia, acceso y toma de decisiones.
+  community:
+    term: Comunidad
+    definition: Un grupo de personas que se coordinan voluntariamente en torno a un propósito compartido dentro de un ámbito y sistema de gobernanza definidos.
+  compliance:
+    term: Cumplimiento (Compliance)
+    definition: El estado de satisfacer todos los requisitos obligatorios de RCOS-Core a lo largo de las Capas 0–6.
+  conflict-resolution-ladder:
+    term: Escalera de resolución de conflictos (Conflict Resolution Ladder)
+    definition: Un proceso de conflicto por etapas que define los pasos mínimos de resolución y los umbrales de escalamiento, desde la reparación de baja intensidad hasta la revisión de gobernanza y, si es necesario, la separación.
+  constitutional-decision:
+    term: Decisión constitucional
+    definition: Una decisión que modifica el propósito, ámbito, invariantes o restricciones de identidad de la Capa 0, o el propio sistema de gobernanza.
+  decision-matrix:
+    term: Matriz de decisiones (Decision Matrix)
+    definition: Un artefacto de gobernanza que asocia tipos de decisiones y dominios con roles autorizados, mecanismos, umbrales y vías de escalamiento.
+  decision-type:
+    term: Tipo de decisión
+    definition: Una clasificación de decisiones (Operativa, Estratégica, Constitucional) utilizada para determinar la autoridad y el proceso.
+  due-process:
+    term: Debido proceso (Due Process)
+    definition: Las garantías mínimas de equidad requeridas antes de restringir derechos, aplicar sanciones o iniciar una separación, incluyendo notificación, revisión y vías de apelación según lo definido.
+  emergency-change:
+    term: Cambio de emergencia
+    definition: Un cambio con duración limitada promulgado bajo condiciones de emergencia explícitamente definidas, que requiere revisión posterior y ratificación o reversión.
+  explicit:
+    term: Explícito
+    definition: |-
+      Escrito, adoptado, accesible y revisable.  
+      Todo lo que no sea explícito se considera inexistente bajo RCOS.
+  explicitness-rule:
+    term: Regla de explicitud (Explicitness Rule)
+    definition: El principio de que los mecanismos que asignan poder, riesgo, responsabilidad o condiciones de salida DEBEN estar escritos, adoptados y ser revisables.
+  experiment:
+    term: Experimento
+    definition: Un cambio con duración limitada y reversible, adoptado con fines de aprendizaje y evaluación.
+  exit-separation-protocol:
+    term: Protocolo de salida y separación (Exit & Separation Protocol)
+    definition: Un artefacto que define la salida voluntaria, el debido proceso para la salida forzosa, y la separación de activos, roles, acceso y obligaciones.
+  governance-protocol:
+    term: Protocolo de gobernanza (Governance Protocol)
+    definition: Un artefacto que define el ciclo de vida de las decisiones (propuesta, deliberación, adopción, documentación, revisión) y cómo se resuelven los conflictos de gobernanza.
+  in-scope-out-of-scope:
+    term: Dentro del ámbito / Fuera del ámbito (In-Scope / Out-of-Scope)
+    definition: Dentro del ámbito se refiere a las personas, activos, dominios y actividades explícitamente gobernados por la comunidad. Fuera del ámbito se refiere a todo lo explícitamente excluido o no declarado dentro del ámbito.
+  internal-economy-protocol:
+    term: Protocolo de economía interna (Internal Economy Protocol)
+    definition: Un artefacto que define el reconocimiento de contribuciones y cualquier mecanismo de intercambio interno, incluyendo restricciones de acumulación y corrección de disputas.
+  invariant:
+    term: Invariante
+    definition: Una restricción no negociable que no puede ser anulada mientras esté en vigor.
+  layer:
+    term: Capa (Layer)
+    definition: Un dominio funcional de RCOS que define un aspecto específico del funcionamiento de la comunidad.
+  learning-log:
+    term: Registro de aprendizaje (Learning Log)
+    definition: Un artefacto que captura los fallos importantes, adaptaciones, reversiones y lecciones aprendidas, incluyendo desencadenantes, artefactos afectados y resultados.
+  member:
+    term: Miembro
+    definition: Una persona que ha ingresado explícitamente a la comunidad a través del proceso de membresía definido.
+  optional-module:
+    term: Módulo opcional
+    definition: Una extensión específica de dominio que se basa en RCOS-Core sin alterar sus capas obligatorias.
+  registry:
+    term: Registro (Registry)
+    definition: Un artefacto que registra un conjunto de entradas autoritativas (p. ej., roles, recursos, estados de membresía) con titularidad clara, reglas de actualización e historial de versiones.
+  reference-implementation:
+    term: Implementación de referencia
+    definition: Una comunidad del mundo real que documenta públicamente su aplicación de RCOS-Core.
+  role:
+    term: Rol
+    definition: Un conjunto explícitamente definido de responsabilidades, autoridad y rendición de cuentas, independiente de la persona que lo ocupa.
+  safety-critical:
+    term: Crítico para la seguridad (Safety-Critical)
+    definition: Una condición en la que la seguridad física, psicológica o de menores está en riesgo, que requiere salvaguardas reforzadas y, potencialmente, acción protectora inmediata.
+  sanction:
+    term: Sanción
+    definition: Una restricción o acción correctiva definida y documentada, aplicada a través de un proceso autorizado, proporcional a la infracción y sujeta a revisión.
+  scope:
+    term: Ámbito (Scope)
+    definition: Los dominios, activos y actividades explícitamente declarados sobre los cuales la comunidad ejerce autoridad.
+  stewardship:
+    term: Custodia (Stewardship)
+    definition: La responsabilidad del cuidado, mantenimiento y gobernanza de un recurso dentro de límites definidos.
+  treasury:
+    term: Tesorería (Treasury)
+    definition: El conjunto de recursos compartidos, saldos, obligaciones y compromisos gestionados bajo reglas colectivas.
+  treasury-ruleset:
+    term: Conjunto de reglas de tesorería (Treasury Ruleset)
+    definition: Un artefacto que define cómo se mantienen, gastan, reportan, auditan y limitan los recursos de la tesorería, incluyendo umbrales y reglas de conflicto de intereses.
+  transparency-exception:
+    term: Excepción de transparencia (Transparency Exception)
+    definition: Una limitación explícitamente definida, justificada y con duración limitada al acceso a la información, que aún permite la auditoría de cumplimiento.
+  version-history:
+    term: Historial de versiones (Version History)
+    definition: Un artefacto que registra qué versión está en vigor y documenta los cambios adoptados, las fechas de entrada en vigencia y las referencias a las decisiones.

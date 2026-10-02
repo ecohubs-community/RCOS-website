@@ -1,0 +1,241 @@
+kind: chapter
+legacyPath: rcos-core/v0-1/06-layer-4-conflict-repair-accountability
+id: c3b0445f
+title: 6. Layer 4 — Conflict, Repair & Accountability
+parentId: e6de7a5d
+order: 60
+intro: |-
+  Layer 4 defines how the community responds when trust, coordination, or safety breaks down.  
+  Its purpose is to ensure conflicts are handled explicitly, fairly, and safely, while preventing abuse of power, normalization of harm, or silent exclusion.
+sections:
+  - id: '6.1'
+    ref: '6.1'
+    title: Conflict Classification
+    blocks:
+      - id: 6.1.1
+        kind: clause
+        ref: 6.1.1
+        text: The community MUST define an explicit conflict classification system that is known, accessible, and usable by all members.
+      - id: 6.1.2
+        kind: clause
+        ref: 6.1.2
+        text: 'At minimum, the classification system MUST include the following classes:'
+        items:
+          - Interpersonal conflicts (between individuals)
+          - Role-based conflicts (authority, responsibility, or mandate disputes)
+          - Structural conflicts (systemic incentives, rules, or resource allocation issues)
+          - Ethical or boundary violations (violations of declared norms, scope, or safety boundaries)
+      - id: 6.1.3
+        kind: clause
+        ref: 6.1.3
+        text: 'Each conflict class MUST explicitly define:'
+        items:
+          - Entry criteria (how a situation is classified into this class)
+          - Expected response priority and timelines (if any)
+          - Permitted and required resolution pathways
+          - Documentation requirements and privacy boundaries
+      - id: 6.1.4
+        kind: clause
+        ref: 6.1.4
+        text: Conflicts involving credible safety risks, coercion, abuse, or threats MUST be classified as **safety-critical** and MUST trigger elevated safeguards as defined in Section 6.3.
+      - id: 6.1.5
+        kind: clause
+        ref: 6.1.5
+        text: Misclassification or avoidance of classification MUST be treated as a process failure subject to review.
+  - id: '6.2'
+    ref: '6.2'
+    title: Resolution Pathways
+    blocks:
+      - id: 6.2.1
+        kind: clause
+        ref: 6.2.1
+        text: The community MUST define a minimum conflict resolution process applicable to all conflict classes.
+      - id: 6.2.2
+        kind: clause
+        ref: 6.2.2
+        text: The resolution process MUST include a clearly defined **resolution ladder** with explicit escalation steps.
+      - id: 6.2.3
+        kind: clause
+        ref: 6.2.3
+        text: 'The resolution ladder MUST define, at minimum:'
+        items:
+          - How a conflict is raised, logged, and acknowledged
+          - How involved parties are notified and invited to participate
+          - How refusal, non-response, or withdrawal is handled
+          - How mediators or facilitators are selected, replaced, or declined
+          - Time-bounded expectations for each stage (where applicable)
+          - Documentation requirements and access rules
+          - A process for reviewing procedural failures or deadlock
+      - id: 6.2.4
+        kind: clause
+        ref: 6.2.4
+        text: The resolution process MUST be accessible without requiring social status, seniority, charisma, or informal proximity to decision-makers.
+      - id: 6.2.5
+        kind: clause
+        ref: 6.2.5
+        text: Unresolved conflicts MUST escalate through defined governance pathways without bypassing the Decision Matrix defined in Layer 2.
+  - id: '6.3'
+    ref: '6.3'
+    title: Safeguards
+    blocks:
+      - id: 6.3.1
+        kind: clause
+        ref: 6.3.1
+        text: The community MUST define explicit safeguards for conflicts involving power asymmetries, dependency relationships, or safety risks.
+      - id: 6.3.2
+        kind: clause
+        ref: 6.3.2
+        text: 'Safeguards MUST include protections against retaliation for:'
+        items:
+          - Raising a concern
+          - Requesting mediation
+          - Providing testimony or evidence
+          - Participating in a review or appeal
+      - id: 6.3.3
+        kind: clause
+        ref: 6.3.3
+        text: 'Where a power differential exists between parties, elevated safeguards MUST be applied, which MAY include:'
+        items:
+          - Independent or external facilitation
+          - Separate intake, documentation, or communication channels
+          - Temporary suspension or limitation of role authority
+          - Additional evidence and review thresholds prior to sanctions
+      - id: 6.3.4
+        kind: clause
+        ref: 6.3.4
+        text: 'For safety-critical conflicts, the community MUST define immediate protective actions that may be taken prior to full process completion, which MAY include:'
+        items:
+          - Temporary separation measures
+          - Restricted access to shared spaces or resources
+          - Temporary role suspension
+          - Emergency escalation timelines
+      - id: 6.3.5
+        kind: clause
+        ref: 6.3.5
+        text: Safety safeguards MUST override participation rights, role continuity, and operational convenience.
+  - id: '6.4'
+    ref: '6.4'
+    title: Sanctions, Repair, and Separation
+    blocks:
+      - id: 6.4.1
+        kind: clause
+        ref: 6.4.1
+        text: The community MUST define an explicit sanctions and repair framework.
+      - id: 6.4.2
+        kind: clause
+        ref: 6.4.2
+        text: 'Sanctions and repair actions MUST be:'
+        items:
+          - Proportional to the violation
+          - Explicitly documented
+          - Time-bounded where applicable
+          - Reviewable and appealable
+      - id: 6.4.3
+        kind: clause
+        ref: 6.4.3
+        text: 'The framework MUST define, at minimum:'
+        items:
+          - Available sanction and repair types
+          - Preconditions and evidence standards
+          - Authorized roles or bodies for application
+          - Review and appeal mechanisms
+          - Conditions for restoring rights, roles, or participation
+      - id: 6.4.4
+        kind: clause
+        ref: 6.4.4
+        text: Separation, suspension, or removal actions MUST follow due process and MUST align with exit and separation rules defined in Layer 1.
+      - id: 6.4.5
+        kind: clause
+        ref: 6.4.5
+        text: Sanctions MUST NOT be applied through informal exclusion, social pressure, silence, or implicit withdrawal of rights.
+      - id: 6.4.6
+        kind: clause
+        ref: 6.4.6
+        text: Repair-oriented actions MUST be prioritized over punitive actions except in safety-critical cases.
+  - id: '6.5'
+    ref: '6.5'
+    title: Artifacts
+    blocks:
+      - id: 6.5.1
+        kind: clause
+        ref: 6.5.1
+        text: 'The following artifacts are mandatory for Layer 4 compliance:'
+        items:
+          - Conflict Resolution Ladder
+          - Accountability Protocol
+      - id: 6.5.2
+        kind: clause
+        ref: 6.5.2
+        text: 'Layer 4 artifacts MUST be:'
+        items:
+          - Explicit and unambiguous
+          - Versioned
+          - Accessible to all members, with clearly bounded privacy protections
+          - Adopted through an authorized governance process
+      - id: 6.5.3
+        kind: clause
+        ref: 6.5.3
+        text: 'The Conflict Resolution Ladder MUST define, at minimum:'
+        items:
+          - Conflict classification inputs and escalation thresholds
+          - Resolution stages and facilitator selection rules
+          - Documentation and information access boundaries
+          - Safety-critical exceptions and immediate safeguards
+      - id: 6.5.4
+        kind: clause
+        ref: 6.5.4
+        text: 'The Accountability Protocol MUST define, at minimum:'
+        items:
+          - Investigation, review, and decision mechanisms
+          - Due process guarantees and anti-retaliation protections
+          - Sanction and repair options with proportionality rules
+          - Appeals, oversight, and escalation paths
+          - Coordination with Layer 1 exit and separation processes
+  - id: '6.6'
+    ref: '6.6'
+    title: Layer Invariants
+    blocks:
+      - id: 6.6.1
+        kind: clause
+        ref: 6.6.1
+        text: Conflict MUST be treated as a handled condition with defined pathways; ignoring, suppressing, or normalizing unresolved conflict MUST be considered a system violation.
+      - id: 6.6.2
+        kind: clause
+        ref: 6.6.2
+        text: Conflicts involving power asymmetries MUST trigger elevated safeguards.
+      - id: 6.6.3
+        kind: clause
+        ref: 6.6.3
+        text: Repair and restoration MUST precede punishment except where immediate safety is at risk.
+      - id: 6.6.4
+        kind: clause
+        ref: 6.6.4
+        text: Physical, psychological, and child safety MUST override participation rights, role continuity, and reputational concerns.
+  - id: '6.7'
+    ref: '6.7'
+    title: Explicitness Rules
+    blocks:
+      - id: 6.7.1
+        kind: clause
+        ref: 6.7.1
+        text: 'The following MUST be explicit:'
+        items:
+          - Conflict classification system
+          - Minimum resolution and escalation process
+          - Safeguards and anti-retaliation protections
+          - Sanction, repair, and separation thresholds
+      - id: 6.7.2
+        kind: clause
+        ref: 6.7.2
+        text: 'The following MAY be explicit:'
+        items:
+          - Mediation styles or methodologies
+          - Facilitator selection preferences beyond minimum safeguards
+          - Restorative or reparative practices
+      - id: 6.7.3
+        kind: clause
+        ref: 6.7.3
+        text: 'The following MUST remain optional and out of scope:'
+        items:
+          - Emotional expression norms
+          - Therapeutic, spiritual, or ideological framing of conflict

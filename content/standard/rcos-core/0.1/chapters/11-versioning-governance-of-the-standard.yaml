@@ -1,0 +1,66 @@
+kind: chapter
+legacyPath: rcos-core/v0-1/11-versioning-governance-of-the-standard
+id: 436df8ef
+title: 11. Versioning & Governance of the Standard
+parentId: e6de7a5d
+order: 110
+intro: This chapter defines how RCOS itself evolves as a standard.
+sections:
+  - id: '11.1'
+    ref: '11.1'
+    title: Standard Stewardship
+    blocks:
+      - id: 11.1.1
+        kind: clause
+        ref: 11.1.1
+        text: RCOS MUST have an identifiable stewarding body or process.
+      - id: 11.1.2
+        kind: clause
+        ref: 11.1.2
+        text: 'The steward’s responsibilities MUST include:'
+        items:
+          - 'Maintaining the canonical specification  '
+          - 'Managing version releases  '
+          - 'Curating reference materials and learning  '
+          - 'Protecting Layer 0 invariants of the standard itself  '
+      - id: 11.1.3
+        kind: clause
+        ref: 11.1.3
+        text: The steward MUST NOT act as an enforcement authority over communities.
+      - id: 11.1.4
+        kind: clause
+        ref: 11.1.4
+        text: RCOS stewardship MUST prioritize clarity, stability, and real-world learnings over ideological purity.
+  - id: '11.2'
+    ref: '11.2'
+    title: Change Process
+    blocks:
+      - id: 11.2.1
+        kind: clause
+        ref: 11.2.1
+        text: Changes to RCOS-Core MUST follow a defined change process.
+      - id: 11.2.2
+        kind: clause
+        ref: 11.2.2
+        text: 'The change process MUST include:'
+        items:
+          - 'Proposal submission  '
+          - 'Public review and feedback period  '
+          - 'Decision mechanism and authority  '
+          - 'Versioning and publication  '
+      - id: 11.2.3
+        kind: clause
+        ref: 11.2.3
+        text: Backward compatibility SHOULD be preserved where possible.
+      - id: 11.2.4
+        kind: clause
+        ref: 11.2.4
+        text: Breaking changes MUST be clearly marked and justified.
+      - id: 11.2.5
+        kind: clause
+        ref: 11.2.5
+        text: Superseded versions of RCOS MUST remain publicly accessible.
+      - id: 11.2.6
+        kind: clause
+        ref: 11.2.6
+        text: 'RCOS itself MUST model the same principles it requires of communities: explicitness, bounded authority, reversibility, and learning.'

@@ -1,0 +1,57 @@
+kind: doc
+legacyPath: rcos-layers/layer-5-operations-coordination
+headingLevel: 3
+id: 6933a217
+title: Layer 5 - Operations & Coordination
+parentId: a7759be1
+order: 0
+head: '**How daily life and work actually function.**'
+sections:
+  - id: meeting-system
+    title: '**Meeting system**'
+    md: |-
+      * Types
+        * Operational (coordination)
+        * Governance (decisions)
+        * Reflection / retro
+        * Conflict / mediation
+      * Cadence
+        * How often each meeting happens
+        * Duration limits
+        * Who is required vs optional
+      * Documentation rules
+        * What must be recorded
+        * Where it is stored
+        * Who can access it
+        * What is private vs public
+  - id: roles-responsibilities
+    title: '**Roles & responsibilities**'
+    md: |-
+      * Role definition
+      * Term limits
+      * Rotation rules
+  - id: information-flow
+    title: '**Information flow**'
+    md: |-
+      * Transparency defaults
+      * Privacy boundaries
+  - id: artifacts
+    title: '**Artifacts**'
+    md: |-
+      * Operations Manual (how things run day to day)
+      * Role Registry (who holds which role, for how long)
+      * Meeting Templates (agenda, notes, decision records)
+  - id: layer-invariants
+    title: '**Layer Invariants**'
+    md: |-
+      * **Invariant 5.1: Roles must be defined**
+        Ongoing responsibilities cannot exist without a named role.
+      * **Invariant 5.2: Operational knowledge is documented**
+        Critical operational processes must not live only in people’s heads.
+      * **Invariant 5.3: Time and attention are finite resources**
+        Meeting load, coordination burden, and unpaid labor must be bounded.
+      * **Invariant 5.4: Information access rules are explicit**
+        What is transparent and what is private must be clearly defined.
+  - id: explicitness-rules
+    title: '**Explicitness Rules**'
+    md: "#### **MUST be explicit**\n\n* Roles and responsibilities\n* Decision documentation rules\n* Information access rules\n* Operational authority\n\n**Why:**\_undocumented operations concentrate power invisibly.\n\n#### **MAY be explicit**\n\n* Meeting cadence\n* Tooling (Notion, Git, etc.)\n* Role rotation schedules\n\n#### **MUST remain optional**\n\n* Work styles\n* Aesthetic preferences\n* Informal social coordination"

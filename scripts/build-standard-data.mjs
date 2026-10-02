@@ -16,7 +16,7 @@
  * nothing extra and is what makes RCOS buildable-on rather than only readable.
  *
  * The script is deliberately pure extraction. Two things cannot be extracted and
- * are authored instead, in content/standard-data/<standard>-<version>/ownership.yaml:
+ * are authored instead, in content/standard/<standard>/<version>/ownership.yaml:
  *
  *   - which template section OWNS a clause, where several reference it;
  *   - the DISPOSITION of clauses no community answers (a rule about artifacts
@@ -37,6 +37,7 @@ import { fileURLToPath } from 'node:url';
 import matter from 'gray-matter';
 import yaml from 'js-yaml';
 import { SUPPORTED_LOCALES } from './i18n.mjs';
+import { buildArticles } from './content/build-articles.mjs';
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const ROOT = path.resolve(__dirname, '..');
@@ -44,9 +45,9 @@ const DEFAULT_LOCALE = 'en';
 
 const STANDARD_ID = 'rcos-core';
 const VERSION = '0.1';
-const CORE_DIR = path.join(ROOT, 'content/articles/rcos-core/v0-1');
-const TEMPLATES_DIR = path.join(ROOT, 'content/articles/rcos-templates');
-const AUTHORED = path.join(ROOT, `content/standard-data/${STANDARD_ID}-${VERSION}/ownership.yaml`);
+const CORE_DIR = path.join(ROOT, '.content-build/articles/rcos-core/v0-1');
+const TEMPLATES_DIR = path.join(ROOT, '.content-build/articles/rcos-templates');
+const AUTHORED = path.join(ROOT, `content/standard/${STANDARD_ID}/${VERSION}/ownership.yaml`);
 const OUT_DIR = path.join(ROOT, 'static/downloads/standard');
 
 const LICENCE = 'CC BY 4.0 — https://creativecommons.org/licenses/by/4.0/';
@@ -602,6 +603,8 @@ async function writeYaml(dir, name, data) {
 }
 
 async function main() {
+	// The articles are generated from content/**.yaml; make sure they are current.
+	await buildArticles({ quiet: true });
 	const strict = !process.argv.includes('--allow-incomplete');
 
 	const [clauses, artifacts, glossary, mandatoryNames, authored] = await Promise.all([

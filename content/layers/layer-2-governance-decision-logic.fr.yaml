@@ -1,0 +1,80 @@
+lang: fr
+sourceHash: e17698ba
+title: Couche 2 – Gouvernance & Logique de décision
+head: '**Comment les décisions sont prises, modifiées et appliquées.**'
+sections:
+  decision-types:
+    title: '**Types de décisions**'
+    md: |-
+      * **Opérationnelle**
+        Décisions du quotidien ; réversibles ; faible risque.
+      * **Stratégique**
+        Direction à moyen terme ; allocation des ressources ; partiellement réversible.
+      * **Constitutionnelle**
+        Modifications des règles fondamentales, de la raison d'être ou des invariants ; seuil élevé.
+  mechanisms:
+    title: '**Mécanismes**'
+    md: |-
+      Comment une décision est prise.
+      **Objectif :** faire correspondre le risque de la décision à la méthode de décision.
+
+      * Consentement (pas d'objection argumentée)
+      * Vote (majorité / supermajorité)
+      * Délégation (autorité liée au rôle)
+      * Proposition + examen + adoption
+  authority-boundaries:
+    title: '**Limites d''autorité**'
+    md: |-
+      Qui peut décider.
+      **Objectif :** éviter la paralysie décisionnelle et la fuite de pouvoir.
+
+      * **Individu** – autonomie dans le cadre du rôle
+      * **Rôle** – responsabilités définies
+      * **Cercle / Domaine** – autorité délimitée
+      * **Communauté entière** – questions constitutionnelles
+  artifacts:
+    title: '**Artefacts**'
+    md: |-
+      * Matrice de décision
+        * Prévient les débats sur *comment* décider
+        * Rend l'autorité explicite
+        * Réduit l'escalade émotionnelle
+      * Protocole de gouvernance (document juridique court)
+        * Types de décisions & seuils
+        * Rôles et domaines
+        * Cycle de vie des propositions
+        * Voies d'escalade et d'appel
+        * Pouvoirs d'urgence (le cas échéant)
+  layer-invariants:
+    title: '**Invariants de la Couche**'
+    md: |-
+      * **Invariant 2.1 : Le type de décision précède le contenu de la décision**
+        La manière dont une décision est prise DOIT être convenue *avant* ce qui est décidé.
+      * **Invariant 2.2 : L'autorité DOIT être explicite**
+        Nul ne PEUT exercer un pouvoir de décision sans un rôle défini, un mandat ou un consentement.
+      * **Invariant 2.3 : Les règles constitutionnelles prévalent sur toutes les autres**
+        Les décisions opérationnelles ou stratégiques ne peuvent pas supplanter les accords constitutionnels.
+      * **Invariant 2.4 : Les décisions sont réexaminables**
+        Toutes les décisions DOIVENT être traçables jusqu'à leur autorité, leur méthode et leur enregistrement.
+  explicitness-rules:
+    title: '**Règles d''explicitation**'
+    md: |-
+      #### **DOIT être explicite**
+
+      * Types de décisions (opérationnelle / stratégique / constitutionnelle)
+      * Qui décide quoi (limites d'autorité)
+      * Mécanismes de décision et seuils
+      * Voies d'escalade
+
+      **Pourquoi :** l'ambiguïté en matière de gouvernance équivaut à une hiérarchie informelle.
+
+      #### **PEUT être explicite**
+
+      * Style de facilitation des réunions
+      * Modèles de propositions
+      * Procédures d'urgence
+
+      #### **DOIT rester OPTIONNEL**
+
+      * Philosophie de gouvernance (consensus vs sociocratie, etc.)
+      * Tonalité émotionnelle des réunions

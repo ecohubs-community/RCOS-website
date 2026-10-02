@@ -1,0 +1,117 @@
+lang: de
+sourceHash: 4f41980e
+title: 3. Schicht 1 — Mitgliedschaftssystem
+intro: Schicht 1 definiert, wie Einzelpersonen der Gemeinschaft beitreten, an ihr teilnehmen und sie verlassen. Er legt die explizite Beziehung zwischen dem Individuum und dem Kollektiv fest, einschließlich Rechte, Pflichten und ordnungsgemäße Verfahren. Keine Person darf als Mitglied behandelt werden, ohne die in diesem Layer definierten Mechanismen durchlaufen zu haben.
+sections:
+  '3.1':
+    title: Mitgliedschaftsstatus
+    blocks:
+      3.1.1:
+        text: Die Gemeinschaft MUSS explizite Mitgliedschaftsstatus definieren.
+      3.1.2:
+        text: 'Mindestens die folgenden Mitgliedschaftsstatus MUSS existieren:'
+        items:
+          - Bewerber:in
+          - Probe- / Übergangsmitglied
+          - Vollmitglied
+          - Ausgetretenes Mitglied
+      3.1.3:
+        text: Jeder Mitgliedschaftsstatus MUSS klar definierte Rechte, Pflichten und Einschränkungen haben.
+      3.1.4:
+        text: Keine Einzelperson KANN gleichzeitig mehrere Mitgliedschaftsstatus innehaben.
+      3.1.5:
+        text: Keine Rechte oder Pflichten KANN außerhalb des aktuellen Mitgliedschaftsstatus der Einzelperson angenommen werden.
+  '3.2':
+    title: Beitritt und Onboarding
+    blocks:
+      3.2.1:
+        text: Der Beitritt zur Gemeinschaft MUSS einem expliziten Onboarding-Prozess folgen.
+      3.2.2:
+        text: 'Der Onboarding-Prozess MUSS beinhalten:'
+        items:
+          - Prüfung aller RCOS-Core-Artefakte
+          - Explizite Zustimmung zu den Regeln von Schicht 0 und Schicht 1
+          - Festlegung des anfänglichen Mitgliedschaftsstatus
+      3.2.3:
+        text: Aufnahmekriterien MUSS explizit und dokumentiert sein.
+      3.2.4:
+        text: Informelle, implizite oder rückwirkende Mitgliedschaft DARF NICHT gestattet werden.
+  '3.3':
+    title: Probezeit und Bewertung
+    blocks:
+      3.3.1:
+        text: Die Gemeinschaft MUSS eine Probezeit für neue Mitglieder festlegen.
+      3.3.2:
+        text: 'Die Probezeit MUSS folgendes beinhalten:'
+        items:
+          - Eine festgelegte Dauer
+          - Explizite Bewertungskriterien
+          - Einen klaren Entscheidungsprozess für den Übergang
+      3.3.3:
+        text: Während der Probezeit KANN Rechte eingeschränkt werden, aber Pflichten MUSS explizit sein.
+      3.3.4:
+        text: Ein Scheitern des Übergangs aus der Probezeit MUSS einen definierten Austritts- oder Verlängerungsprozess auslösen.
+  '3.4':
+    title: Rechte und Pflichten
+    blocks:
+      3.4.1:
+        text: Die Gemeinschaft MUSS Mitgliedsrechte explizit definieren.
+      3.4.2:
+        text: Die Gemeinschaft MUSS Mitgliedspflichten explizit definieren.
+      3.4.3:
+        text: Rechte und Pflichten MUSS symmetrisch und proportional zum Mitgliedschaftsstatus sein.
+      3.4.4:
+        text: Keine Pflicht KANN ohne ein entsprechendes, dokumentiertes Recht durchgesetzt werden.
+      3.4.5:
+        text: Pflichten DARF NICHT unbefristet oder undefiniert sein.
+  '3.5':
+    title: Teilnahme und Beitrag
+    blocks:
+      3.5.1:
+        text: Erwartungen an die Teilnahme MUSS explizit definiert werden.
+      3.5.2:
+        text: Akzeptable Formen des Beitrags MUSS aufgelistet werden.
+      3.5.3:
+        text: Stellvertretende Teilnahme (z. B. Auslagerung von Arbeit) MUSS explizit geregelt sein.
+      3.5.4:
+        text: Anhaltende Nicht-Teilnahme MUSS einen Rechenschaftsprozess auslösen, wie in Schicht 4 definiert.
+  '3.6':
+    title: Austritt und Trennung
+    blocks:
+      3.6.1:
+        text: Freiwilliger Austritt MUSS jederzeit möglich sein.
+      3.6.2:
+        text: Austrittsverfahren MUSS explizit, dokumentiert und nicht strafend sein.
+      3.6.3:
+        text: Erzwungener Austritt MUSS einem ordnungsgemäßen Verfahren folgen und über die Mechanismen von Schicht 4 abgewickelt werden.
+      3.6.4:
+        text: Ein Austritt DARF NICHT zum Verlust von Rechten führen, die über die explizit an die Mitgliedschaft gebundenen hinausgehen.
+      3.6.5:
+        text: Die Trennung von Vermögenswerten, Rollen und Verantwortlichkeiten MUSS vor dem Austritt definiert werden.
+  '3.7':
+    title: Suspendierung und temporärer Status
+    blocks:
+      3.7.1:
+        text: Die Gemeinschaft KANN temporäre Suspendierungszustände definieren.
+      3.7.2:
+        text: Suspendierungsbedingungen MUSS explizit, zeitlich begrenzt und überprüfbar sein.
+      3.7.3:
+        text: Suspendierung DARF NICHT als unbefristeter oder strafender Ersatz für einen Austritt verwendet werden.
+  '3.8':
+    title: Artefakte
+    blocks:
+      3.8.1:
+        text: 'Die folgenden Artefakte sind für die Layer-1-Konformität verpflichtend:'
+        items:
+          - Mitgliedschaftsvereinbarung
+          - Onboarding-Protokoll
+          - Austritts- und Trennungsprotokoll
+          - Mitgliedschaftsstatus-Register
+      3.8.2:
+        text: 'Layer-1-Artefakte MUSS:'
+        items:
+          - Explizit und eindeutig sein
+          - Versioniert sein
+          - Allen Mitgliedern zugänglich sein
+      3.8.3:
+        text: Das Fehlen, die Mehrdeutigkeit oder die systematische Verletzung von Layer-1-Artefakten MUSS zum Verlust der RCOS-Core-Konformität führen.

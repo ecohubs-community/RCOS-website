@@ -1,0 +1,155 @@
+lang: fr
+sourceHash: 585dcc63
+title: v0.1
+intro: ''
+sections:
+  s1:
+    title: Module Minimal de Permaculture (Non Normatif)
+    blocks:
+      b1:
+        md: Ce module définit la structure minimale requise pour intégrer le soin écologique et la production alimentaire dans une très petite communauté alignée sur le RCOS (généralement 3 à 15 membres).
+      b2:
+        md: Son objectif est de permettre l'entretien des terres **sans créer de propriété cachée, de travail invisible ou de pouvoir informel**.
+      b3:
+        md: Ce module est intentionnellement minimal.
+      b4:
+        md: '---'
+  s2:
+    title: Applicabilité
+    blocks:
+      b1:
+        md: |-
+          Ce module est adapté lorsque :
+          - la communauté compte moins d'environ 15 membres,
+          - les systèmes écologiques sont à petite échelle,
+          - la gouvernance et les opérations sont légères,
+          - la spécialisation formelle est limitée.
+      b2:
+        md: Si les systèmes écologiques deviennent critiques pour le fonctionnement ou prennent une ampleur significative, ce module DEVRAIT être remplacé par le Module Permaculture complet.
+      b3:
+        md: '---'
+  s3:
+    title: Principes fondamentaux
+    blocks:
+      b1:
+        md: |-
+          - L'écologie est une infrastructure, pas une identité.
+          - Le soin n'implique pas le contrôle.
+          - Aucune terre ni aucun système ne devient « celui de quelqu'un » par défaut.
+          - La prévention de l'épuisement est plus importante que l'optimisation.
+      b2:
+        md: '---'
+  s4:
+    title: Périmètre gouverné
+    blocks:
+      b1:
+        md: |-
+          La communauté DOIT explicitement déclarer :
+          - quelles terres ou quels systèmes sont gouvernés (ex. jardin, compost, eau),
+          - lesquels sont informels ou personnels.
+      b2:
+        md: Tout ce qui n'est pas explicitement gouverné est hors périmètre.
+      b3:
+        md: '---'
+  s5:
+    title: Attribution de l'intendance
+    blocks:
+      b1:
+        md: |-
+          Le soin écologique PEUT être attribué via :
+          - un rôle unique d'intendant·e tournant, ou
+          - un accord de prise en charge partagée.
+      b2:
+        md: |-
+          Au minimum, la communauté DOIT définir :
+          - qui est actuellement responsable,
+          - combien de temps dure la responsabilité,
+          - comment la responsabilité peut être transmise.
+      b3:
+        md: Aucune responsabilité écologique ne peut exister indéfiniment sans révision.
+      b4:
+        md: '---'
+  s6:
+    title: Travail et contribution
+    blocks:
+      b1:
+        md: |-
+          La communauté DOIT répondre, explicitement mais simplement :
+          - Le travail écologique est-il attendu de tous les membres, optionnel ou lié à un rôle ?
+          - La substitution (argent, externalisation) est-elle autorisée ?
+      b2:
+        md: |-
+          Si le travail est attendu, le travail de soin DOIT être :
+          - visible,
+          - discutable,
+          - renégociable.
+      b3:
+        md: Le travail invisible ou moralement contraint constitue une violation.
+      b4:
+        md: '---'
+  s7:
+    title: Autorité décisionnelle
+    blocks:
+      b1:
+        md: Les décisions écologiques du quotidien PEUVENT être prises par le ou les intendant·e·s en fonction.
+      b2:
+        md: |-
+          Les décisions structurelles (ex. agrandir les jardins, abattre des arbres, figer l'usage des terres) DOIVENT :
+          - suivre les règles de décision de la Couche 2 du RCOS,
+          - être révisables,
+          - être réversibles dans la mesure du possible.
+      b3:
+        md: L'expertise éclaire les décisions mais ne supplante pas le processus.
+      b4:
+        md: '---'
+  s8:
+    title: Protection des communs (minimale)
+    blocks:
+      b1:
+        md: |-
+          Les terres ou systèmes utilisés par la communauté :
+          - NE DOIVENT PAS être privatisés par le soin ou l'investissement,
+          - DOIVENT rester récupérables par la communauté,
+          - DOIVENT prévoir une voie de sortie tant pour les intendant·e·s que pour les non-intendant·e·s.
+      b2:
+        md: Si une propriété existe, les droits d'usage DOIVENT être explicites.
+      b3:
+        md: '---'
+  s9:
+    title: Déclencheurs de défaillance
+    blocks:
+      b1:
+        md: |-
+          Les conditions suivantes REQUIÈRENT une révision ou une escalade :
+          - une personne devient indispensable pour les systèmes écologiques,
+          - le travail de soin provoque un épuisement récurrent,
+          - les décisions d'usage des terres deviennent émotionnellement ou moralement coercitives,
+          - quitter l'intendance semble risqué ou sanctionné.
+      b2:
+        md: '---'
+  s10:
+    title: Artefacts (minimaux)
+    blocks:
+      b1:
+        md: |-
+          Les éléments suivants PEUVENT suffire :
+          - une courte Note de périmètre écologique,
+          - un Journal d'intendance (même informel),
+          - un accord de travail simple.
+      b2:
+        md: La documentation excessive est déconseillée.
+      b3:
+        md: '---'
+  s11:
+    title: Compatibilité
+    blocks:
+      b1:
+        md: |-
+          Ce module NE DOIT PAS supplanter :
+          - les invariants de la Couche 0 du RCOS,
+          - les règles de gouvernance,
+          - les droits de sortie.
+      b2:
+        md: |-
+          L'écologie peut évoluer.
+          Le pouvoir ne le doit pas.

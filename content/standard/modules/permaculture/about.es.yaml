@@ -1,0 +1,100 @@
+lang: es
+sourceHash: '87138645'
+title: Permacultura
+intro: ''
+sections:
+  s1:
+    title: Módulo de Permacultura
+    blocks:
+      b1:
+        md: El Módulo de Permacultura es un módulo opcional y completo para comunidades que pretenden **diseñar, cuidar y regenerar activamente la tierra como función central de la comunidad**.
+      b2:
+        md: Integra el diseño ecológico con la gobernanza, la economía y la gestión a largo plazo.
+      b3:
+        md: '### Qué es este módulo'
+      b4:
+        md: |-
+          Este módulo proporciona:
+          - Un marco estructurado para el uso regenerativo de la tierra
+          - Principios de gestión a largo plazo
+          - Integración de sistemas de alimentos, agua, suelo y hábitat
+          - Interfaces claras de gobernanza para decisiones ecológicas
+      b5:
+        md: |-
+          Asume que la tierra es:
+          - Central para el propósito de la comunidad, o
+          - Un bien común a largo plazo que requiere protección y regeneración
+      b6:
+        md: '### Qué no es este módulo'
+      b7:
+        md: |-
+          Este módulo no es:
+          - Una plantilla de diseño fija
+          - Un mandato de productividad
+          - Un reemplazo del conocimiento ecológico local
+          - Un sistema espiritual o ideológico
+      b8:
+        md: |-
+          No impone:
+          - Cultivos o técnicas específicas
+          - Preferencias estéticas
+          - Niveles uniformes de intensidad o escala
+      b9:
+        md: '### Cuándo usar el Módulo de Permacultura'
+      b10:
+        md: |-
+          Este módulo es apropiado cuando:
+          - La gestión de la tierra es crítica para la misión
+          - La comunidad posee tierra a largo plazo
+          - Los alimentos, el agua o los servicios ecosistémicos son objetivos centrales
+          - Existe capacidad para diseño, mantenimiento y aprendizaje
+          - Un fallo ecológico amenazaría la supervivencia de la comunidad
+      b11:
+        md: |-
+          Es especialmente relevante para:
+          - Comunidades rurales
+          - Ecoaldeas
+          - Granjas regenerativas
+          - Bienes comunes basados en la tierra
+          - Proyectos multigeneracionales
+      b12:
+        md: '### Para quién está diseñado este módulo'
+      b13:
+        md: |-
+          Este módulo está diseñado para:
+          - Comunidades con gestores de tierra comprometidos
+          - Grupos dispuestos a invertir en aprendizaje ecológico
+          - Comunidades que coordinan el uso compartido de la tierra
+          - Proyectos que priorizan la resiliencia a largo plazo sobre la conveniencia a corto plazo
+      b14:
+        md: '### Componentes típicos'
+      b15:
+        md: |-
+          Un módulo de permacultura completo puede incluir:
+          - Zonificación del uso de la tierra y reglas de acceso
+          - Estrategias de regeneración del suelo
+          - Sistemas de captación y almacenamiento de agua
+          - Protección de la biodiversidad y el hábitat
+          - Integración con la economía comunitaria
+          - Roles claros de mantenimiento y gestión
+      b16:
+        md: '### Relación con RCOS'
+      b17:
+        md: |-
+          Este módulo:
+          - Extiende la Capa 3 (Sistema Económico y de Recursos)
+          - Introduce roles de gestión en la Capa 5
+          - Puede requerir salvaguardas (p. ej., anti-privatización de la tierra)
+          - DEBE respetar los invariantes de la Capa 0 y la gobernanza de la Capa 2
+      b18:
+        md: Adoptar este módulo implica un **compromiso a largo plazo** y DEBERÍA ir acompañado de salvaguardas y reglas de salida apropiadas.
+      b19:
+        md: '### Migración y escalado'
+      b20:
+        md: |-
+          Las comunidades PUEDEN:
+          - Comenzar con un Módulo Mínimo de Permacultura
+          - Adoptar gradualmente este módulo completo
+          - Ajustar el alcance a medida que el uso de la tierra y la capacidad evolucionen
+      b21:
+        md: El módulo está diseñado para escalar tanto con el tamaño de la tierra como con la madurez de la comunidad.

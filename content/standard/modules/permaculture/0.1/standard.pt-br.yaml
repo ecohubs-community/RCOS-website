@@ -1,0 +1,300 @@
+lang: pt-br
+sourceHash: c5e601a8
+title: v0.1
+intro: ''
+sections:
+  s1:
+    title: Módulo de Permacultura (Não Normativo)
+    blocks:
+      b1:
+        md: Este módulo define como uma comunidade PODE integrar princípios e práticas de permacultura em uma estrutura alinhada ao RCOS.
+      b2:
+        md: |-
+          O Módulo de Permacultura governa **estrutura, autoridade e responsabilização** em torno de sistemas ecológicos.  
+          Ele NÃO prescreve sistemas de crenças, estilos de vida, hierarquias morais ou técnicas agrícolas.
+      b3:
+        md: Este módulo é opcional e NÃO DEVE sobrepor-se aos invariantes do RCOS Core.
+      b4:
+        md: '---'
+  s2:
+    title: Propósito e Escopo
+    blocks:
+      b1:
+        md: '### Propósito'
+      b2:
+        md: |-
+          Possibilitar o uso regenerativo da terra e sistemas alimentares, evitando:
+          - propriedade informal da terra por meio do cuidado,
+          - trabalho ecológico oculto ou coagido,
+          - captura ideológica da governança via "correção ecológica",
+          - compromissos estruturais irreversíveis disfarçados de sustentabilidade.
+      b3:
+        md: '### Escopo'
+      b4:
+        md: |-
+          Este módulo se aplica apenas a:
+          - uso e cuidado da terra,
+          - sistemas de produção de alimentos e materiais,
+          - infraestrutura ecológica,
+          - trabalho, papéis e autoridade decisória associados.
+      b5:
+        md: |-
+          Ele explicitamente NÃO governa:
+          - escolhas alimentares pessoais,
+          - sistemas de crenças espirituais ou éticas,
+          - jardinagem informal ou atividade de hobby fora do escopo governado.
+      b6:
+        md: '---'
+  s3:
+    title: Não-Objetivos (Explícitos)
+    blocks:
+      b1:
+        md: |-
+          Este módulo NÃO:
+          - impõe a ideologia da permacultura,
+          - define métodos ecológicos "corretos",
+          - concede autoridade moral à expertise ecológica,
+          - exige participação ecológica como validação de identidade.
+      b2:
+        md: A ecologia é tratada como **infraestrutura**, não como crença.
+      b3:
+        md: '---'
+  s4:
+    title: Restrições de Design (Rígidas)
+    blocks:
+      b1:
+        md: 'Quando este módulo está ativo:'
+      b2:
+        md: |-
+          - A autoridade ecológica DEVE ser revisável.
+          - O trabalho ecológico DEVE ser visível.
+          - Os sistemas ecológicos DEVEM permanecer com saída possível.
+          - A expertise ecológica NÃO DEVE se converter em poder de governança.
+      b3:
+        md: A falha em sustentar essas restrições constitui uma violação estrutural.
+      b4:
+        md: '---'
+  s5:
+    title: Classificação de Terra e Recursos
+    blocks:
+      b1:
+        md: '### Escopo Ecológico Governado'
+      b2:
+        md: A comunidade DEVE definir explicitamente quais terras e sistemas estão sob este módulo.
+      b3:
+        md: |-
+          Para cada área ou sistema ecológico governado, o seguinte DEVE ser declarado:
+          - classificação (comum, comum cuidado, privado),
+          - atividades permitidas e proibidas,
+          - autoridade decisória,
+          - mecanismo de revisão e reclassificação.
+      b4:
+        md: Terras ou sistemas não classificados NÃO DEVEM ser governados por este módulo.
+      b5:
+        md: '---'
+      b6:
+        md: '### Proteção dos Bens Comuns'
+      b7:
+        md: |-
+          Terras ou sistemas classificados como bens comuns:
+          - NÃO DEVEM ser privatizados por meio de uso, cuidado ou investimento,
+          - NÃO DEVEM ser controlados indefinidamente por indivíduos ou famílias,
+          - DEVEM ter regras explícitas de saída e reatribuição.
+      b8:
+        md: Nenhuma quantidade de trabalho, expertise ou contribuição histórica concede propriedade por padrão.
+      b9:
+        md: '---'
+  s6:
+    title: Papéis de Cuidado (Stewardship)
+    blocks:
+      b1:
+        md: '### Definição de Papéis'
+      b2:
+        md: Todas as responsabilidades ecológicas contínuas DEVEM ser atribuídas a papéis explícitos.
+      b3:
+        md: |-
+          Cada papel de cuidado DEVE definir:
+          - escopo e limites da autoridade,
+          - interfaces de decisão com a governança da Camada 2,
+          - duração do mandato e cadência de revisão,
+          - processo de transição e sucessão,
+          - condições de falha e remoção.
+      b4:
+        md: Nenhuma responsabilidade ecológica PODE existir fora de um papel.
+      b5:
+        md: '---'
+      b6:
+        md: '### Restrição Anticaptura'
+      b7:
+        md: |-
+          Um papel de cuidado:
+          - NÃO DEVE controlar simultaneamente sistemas ecológicos E autoridade de governança,
+          - NÃO DEVE acumular escopo não revisado,
+          - NÃO DEVE se tornar insubstituível por meio de conhecimento não documentado.
+      b8:
+        md: A violação aciona revisão obrigatória.
+      b9:
+        md: '---'
+  s7:
+    title: Autoridade Decisória e Expertise
+    blocks:
+      b1:
+        md: '### Mapeamento de Autoridade'
+      b2:
+        md: |-
+          As decisões ecológicas DEVEM ser mapeadas para os tipos de decisão do RCOS:
+          - operacional (dia a dia),
+          - política (regras e restrições),
+          - constitucional (escopo, fronteiras dos bens comuns).
+      b3:
+        md: |-
+          A expertise PODE informar decisões, mas NÃO DEVE sobrepor-se a:
+          - limiares de decisão,
+          - regras de facilitação,
+          - processos de revisão e recurso.
+      b4:
+        md: A expertise ecológica confere **contribuição**, não autoridade.
+      b5:
+        md: '---'
+  s8:
+    title: Trabalho, Contribuição e Cuidado
+    blocks:
+      b1:
+        md: '### Reconhecimento da Contribuição'
+      b2:
+        md: O trabalho ecológico DEVE ser explicitamente reconhecido.
+      b3:
+        md: |-
+          A comunidade DEVERIA definir:
+          - o que conta como trabalho ecológico,
+          - como intensidade, sazonalidade e trabalho de cuidado são registrados,
+          - como a contribuição se relaciona (ou não se relaciona) com acesso e benefícios.
+      b4:
+        md: Trabalho ecológico invisível é tratado como um defeito estrutural.
+      b5:
+        md: '---'
+      b6:
+        md: '### Terceirização e Substituição'
+      b7:
+        md: |-
+          Se o trabalho ecológico puder ser terceirizado:
+          - as regras de equivalência DEVEM ser explícitas,
+          - a substituição financeira NÃO DEVE contornar requisitos de participação, salvo se explicitamente permitido,
+          - a terceirização NÃO DEVE criar dependência do capital sobre a contribuição.
+      b8:
+        md: '---'
+  s9:
+    title: Colheita, Distribuição e Excedente
+    blocks:
+      b1:
+        md: |-
+          O módulo DEVERIA definir:
+          - regras de propriedade e alocação da colheita,
+          - prioridades de acesso (se houver),
+          - manejo e descarte de excedentes.
+      b2:
+        md: O acesso à colheita NÃO DEVE substituir silenciosamente as obrigações de associação ou contribuição.
+      b3:
+        md: Sistemas alimentares NÃO DEVEM ser usados como alavanca sobre participação ou dissidência.
+      b4:
+        md: '---'
+  s10:
+    title: Infraestrutura e Investimento
+    blocks:
+      b1:
+        md: |-
+          A infraestrutura ecológica DEVE ter:
+          - classificação de propriedade explícita,
+          - responsabilidade de manutenção,
+          - regras de financiamento e depreciação,
+          - condições de descomissionamento ou transferência.
+      b2:
+        md: Investimentos privados em infraestrutura de bens comuns NÃO DEVEM conceder direitos de controle, salvo se explicitamente autorizados.
+      b3:
+        md: '---'
+  s11:
+    title: Conflito, Dano e Reparação
+    blocks:
+      b1:
+        md: Conflitos ecológicos DEVEM usar os processos da Camada 4.
+      b2:
+        md: |-
+          A comunidade DEVERIA distinguir entre:
+          - discordância de método,
+          - falha no cuidado,
+          - violação de limite ou autoridade,
+          - dano ecológico que exige reparação.
+      b3:
+        md: As obrigações de reparação DEVEM ser definidas com antecedência e DEVEM ser proporcionais.
+      b4:
+        md: '---'
+  s12:
+    title: Artefatos
+    blocks:
+      b1:
+        md: |-
+          Quando adotados, os seguintes artefatos são RECOMENDADOS:
+          - Definição de Escopo de Terra e Ecologia
+          - Mapa de Uso da Terra e Classificação
+          - Registro de Papéis de Cuidado
+          - Estrutura de Contribuição Ecológica
+          - Regras de Alocação da Colheita
+          - Registro de Infraestrutura Ecológica
+      b2:
+        md: Os artefatos DEVEM ser versionados e revisáveis.
+      b3:
+        md: '---'
+  s13:
+    title: Modos de Falha Conhecidos (Informativo)
+    blocks:
+      b1:
+        md: |-
+          Este módulo foi projetado para resistir a:
+          - captura de terra por meio de "quem cuida mais decide",
+          - esgotamento por meio de trabalho de cuidado invisível,
+          - ideologia ecológica tornando-se coercitiva,
+          - domínio de especialistas substituindo a governança,
+          - compromissos irreversíveis com a terra sem saída.
+      b2:
+        md: '---'
+  s14:
+    title: Saída, Reversão e Desativação
+    blocks:
+      b1:
+        md: |-
+          Se este módulo for modificado ou removido:
+          - os papéis de cuidado DEVEM ser desfeitos de forma limpa,
+          - a autoridade ecológica DEVE retornar à governança central,
+          - nenhuma reivindicação permanente de controle PODE persistir.
+      b2:
+        md: |-
+          Os sistemas ecológicos PODEM continuar.
+          O poder ecológico NÃO DEVE.
+      b3:
+        md: '---'
+  s15:
+    title: Compatibilidade com o RCOS Core
+    blocks:
+      b1:
+        md: |-
+          Este módulo:
+          - DEVE respeitar o escopo e os invariantes da Camada 0,
+          - DEVE operar por meio da governança da Camada 2,
+          - DEVE estar alinhado com as regras econômicas da Camada 3,
+          - DEVE usar os caminhos de conflito da Camada 4,
+          - DEVE ser documentado via Camada 5,
+          - PODE evoluir por meio dos mecanismos de mudança da Camada 6.
+      b2:
+        md: A falha deste módulo NÃO DEVE desestabilizar o RCOS Core.
+      b3:
+        md: '---'
+  s16:
+    title: Nota Não Normativa
+    blocks:
+      b1:
+        md: Os métodos de permacultura são intencionalmente excluídos.
+      b2:
+        md: |-
+          O RCOS governa:
+          **quem decide, quem cuida, quem arca com o custo, quem se beneficia e como o poder é limitado** —
+          não técnicas de plantio ou filosofia ecológica.

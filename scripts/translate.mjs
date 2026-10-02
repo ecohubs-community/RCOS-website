@@ -2,7 +2,8 @@
 /**
  * AI-assisted bulk translation, provider-agnostic.
  *
- * Walks content/articles, finds articles missing or outdated for a target locale,
+ * Walks content/articles and the YAML documents (content/standard, templates,
+ * layers, stress-tests), finds those missing or outdated for a target locale,
  * and produces `<base>.<lang>.md` translations using a configurable LLM backend.
  * Idempotent — skips up-to-date translations whose stored `sourceHash` already
  * matches the current source.
@@ -46,6 +47,9 @@ import { spawn } from 'node:child_process';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 import matter from 'gray-matter';
+import yaml from 'js-yaml';
+import { loadDocuments, clauseLinks } from './content/build-articles.mjs';
+import { toArticle, fromArticle } from '../src/lib/content/article.js';
 import { SUPPORTED_LOCALES } from './i18n.mjs';
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
@@ -214,7 +218,56 @@ async function buildJobs() {
 		});
 	}
 
+	await addYamlJobs(jobs, skipped);
 	return { jobs, skipped };
+}
+
+/**
+ * Documents authored as YAML (content/standard, templates, layers,
+ * stress-tests). They go through the same markdown prompt: the English document
+ * is written out as its article, the model translates that, and the reply is
+ * parsed back against the English structure and stored as an overlay
+ * (`<name>.<lang>.yaml`). A reply whose structure differs from English (a
+ * missing clause, a reordered section) is rejected rather than written.
+ */
+async function addYamlJobs(jobs, skipped) {
+	const docs = await loadDocuments();
+	const href = clauseLinks(docs);
+	for (const { file, en, overlays } of docs) {
+		if (en.kind === 'index' && !args.includeEmpty) {
+			skipped.emptyBody++;
+			continue;
+		}
+		const sourceRel = path.relative(ROOT, file);
+		if (args.only && !sourceRel.includes(args.only)) {
+			skipped.filtered++;
+			continue;
+		}
+		const sourceRaw = await readFile(file, 'utf8');
+		const sourceHash = md5short(sourceRaw);
+		const existing = overlays[args.locale];
+		const status = !existing
+			? 'missing'
+			: existing.data.sourceHash === sourceHash
+				? 'up-to-date'
+				: 'outdated';
+		if (status === 'up-to-date' && !args.force) {
+			skipped.upToDate++;
+			continue;
+		}
+		const targetPath = file.replace(/\.yaml$/, `.${args.locale}.yaml`);
+		jobs.push({
+			yaml: { en, href },
+			sourcePath: file,
+			sourceRel,
+			sourceRaw: toArticle(en, undefined, 'en', href),
+			sourceData: en,
+			sourceHash,
+			targetPath,
+			targetRel: path.relative(ROOT, targetPath),
+			status
+		});
+	}
 }
 
 /* ---------------- prompts ---------------- */
@@ -227,7 +280,7 @@ Rules:
 
 1. **Frontmatter**
    - Keep YAML frontmatter keys in English (\`id\`, \`title\`, \`summary\`, \`parentId\`, \`order\`, etc.).
-   - Translate ONLY the *values* of \`title\` and \`summary\` (if present). Quote string values that contain colons or other YAML metacharacters.
+   - Translate ONLY the *values* of \`title\` and \`summary\` (if present), and, where present, the entries of \`symptoms\` and \`tags\` and each \`note\` inside \`cascade\`. Quote string values that contain colons or other YAML metacharacters.
    - Leave \`id\`, \`parentId\`, \`order\`, and any other structural fields exactly as in the source.
    - The caller will add or update \`lang\` and \`sourceHash\` after you respond — you can omit them.
 
@@ -514,6 +567,24 @@ function finalizeOutput(translatedRaw, job) {
 	return matter.stringify(fm.content, fm.data);
 }
 
+/** A translated article (for a YAML document) → the overlay file. */
+function finalizeYaml(translatedRaw, job) {
+	const cleaned = trimPreamble(stripCodeFence(translatedRaw.trim()));
+	if (hasLeakMarkers(cleaned)) {
+		throw new Error(
+			'provider returned reasoning text — refusing to write a broken file. Re-run translation.'
+		);
+	}
+	const overlay = fromArticle(job.yaml.en, cleaned, args.locale, job.yaml.href);
+	if (!overlay.title?.trim()) {
+		throw new Error('provider returned no translated `title` — refusing to write a broken file');
+	}
+	return yaml.dump(
+		{ lang: args.locale, sourceHash: job.sourceHash, ...overlay },
+		{ lineWidth: -1, noRefs: true, quotingType: "'" }
+	);
+}
+
 /* ---------------- cost tracking ---------------- */
 
 // Pricing per 1M tokens in USD. Used only for an end-of-run cost estimate;
@@ -614,7 +685,7 @@ async function main() {
 				throw new Error('provider returned empty text');
 			}
 
-			const out = finalizeOutput(text, job);
+			const out = job.yaml ? finalizeYaml(text, job) : finalizeOutput(text, job);
 			await writeFile(job.targetPath, out, 'utf8');
 
 			let costStr = '';

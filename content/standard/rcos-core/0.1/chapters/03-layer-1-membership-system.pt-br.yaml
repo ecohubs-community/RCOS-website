@@ -1,0 +1,117 @@
+lang: pt-br
+sourceHash: 4f41980e
+title: 3. Camada 1 — Sistema de Filiação
+intro: A Camada 1 define como os indivíduos entram, participam e saem da comunidade. Ela estabelece a relação explícita entre o indivíduo e o coletivo, incluindo direitos, obrigações e devido processo. Nenhuma pessoa pode ser tratada como membro sem passar pelos mecanismos definidos nesta camada.
+sections:
+  '3.1':
+    title: Estados de Filiação
+    blocks:
+      3.1.1:
+        text: A comunidade DEVE definir estados explícitos de filiação.
+      3.1.2:
+        text: 'No mínimo, os seguintes estados de filiação DEVEM existir:'
+        items:
+          - Candidato
+          - Membro em Período de Experiência / Probatório
+          - Membro Pleno
+          - Membro Desligado
+      3.1.3:
+        text: Cada estado de filiação DEVE ter direitos, obrigações e limitações claramente definidos.
+      3.1.4:
+        text: Nenhum indivíduo PODE manter múltiplos estados de filiação simultaneamente.
+      3.1.5:
+        text: Nenhum direito ou obrigação PODE ser presumido fora do estado de filiação atual do indivíduo.
+  '3.2':
+    title: Entrada e Integração
+    blocks:
+      3.2.1:
+        text: A entrada na comunidade DEVE seguir um processo explícito de integração.
+      3.2.2:
+        text: 'O processo de integração DEVE incluir:'
+        items:
+          - Revisão de todos os artefatos do RCOS-Core
+          - Consentimento explícito às regras da Camada 0 e da Camada 1
+          - Declaração do estado inicial de filiação
+      3.2.3:
+        text: Os critérios de admissão DEVEM ser explícitos e documentados.
+      3.2.4:
+        text: Filiação informal, implícita ou retroativa NÃO DEVE ser permitida.
+  '3.3':
+    title: Período de Experiência e Avaliação
+    blocks:
+      3.3.1:
+        text: A comunidade DEVE definir um período probatório para novos membros.
+      3.3.2:
+        text: 'O período probatório DEVE ter:'
+        items:
+          - Uma duração definida
+          - Critérios explícitos de avaliação
+          - Um processo claro de decisão sobre a transição
+      3.3.3:
+        text: Durante o período probatório, os direitos PODEM ser limitados, mas as obrigações DEVEM ser explícitas.
+      3.3.4:
+        text: A falha na transição do período probatório DEVE acionar um processo definido de saída ou extensão.
+  '3.4':
+    title: Direitos e Obrigações
+    blocks:
+      3.4.1:
+        text: A comunidade DEVE definir explicitamente os direitos dos membros.
+      3.4.2:
+        text: A comunidade DEVE definir explicitamente as obrigações dos membros.
+      3.4.3:
+        text: Direitos e obrigações DEVEM ser simétricos e proporcionais ao estado de filiação.
+      3.4.4:
+        text: Nenhuma obrigação PODE ser aplicada sem um direito correspondente e documentado.
+      3.4.5:
+        text: As obrigações NÃO DEVEM ser abertas ou indefinidas.
+  '3.5':
+    title: Participação e Contribuição
+    blocks:
+      3.5.1:
+        text: As expectativas de participação DEVEM ser explicitamente definidas.
+      3.5.2:
+        text: As formas aceitáveis de contribuição DEVEM ser listadas.
+      3.5.3:
+        text: A substituição da participação (por exemplo, terceirização de trabalho) DEVE ser explicitamente regulamentada.
+      3.5.4:
+        text: A não-participação persistente DEVE acionar um processo de responsabilização conforme definido na Camada 4.
+  '3.6':
+    title: Saída e Separação
+    blocks:
+      3.6.1:
+        text: A saída voluntária DEVE ser possível a qualquer momento.
+      3.6.2:
+        text: Os procedimentos de saída DEVEM ser explícitos, documentados e não punitivos.
+      3.6.3:
+        text: A saída forçada DEVE seguir o devido processo e ser conduzida por meio dos mecanismos da Camada 4.
+      3.6.4:
+        text: A saída NÃO DEVE resultar em perda de direitos além daqueles explicitamente vinculados à filiação.
+      3.6.5:
+        text: A separação de bens, papéis e responsabilidades DEVE ser definida antes da saída.
+  '3.7':
+    title: Suspensão e Status Temporário
+    blocks:
+      3.7.1:
+        text: A comunidade PODE definir estados de suspensão temporária.
+      3.7.2:
+        text: As condições de suspensão DEVEM ser explícitas, com prazo definido e revisáveis.
+      3.7.3:
+        text: A suspensão NÃO DEVE ser usada como substituto indefinido ou punitivo para a saída.
+  '3.8':
+    title: Artefatos
+    blocks:
+      3.8.1:
+        text: 'Os seguintes artefatos são obrigatórios para a conformidade com a Camada 1:'
+        items:
+          - Acordo de Filiação
+          - Protocolo de Integração
+          - Protocolo de Saída e Separação
+          - Registro de Estados de Filiação
+      3.8.2:
+        text: 'Os artefatos da Camada 1 DEVEM ser:'
+        items:
+          - Explícitos e inequívocos
+          - Versionados
+          - Acessíveis a todos os membros
+      3.8.3:
+        text: A ausência, ambiguidade ou violação sistemática dos artefatos da Camada 1 DEVE resultar na perda de conformidade com o RCOS-Core.

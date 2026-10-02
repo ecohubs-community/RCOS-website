@@ -1,0 +1,192 @@
+kind: chapter
+legacyPath: rcos-modules/minimal-permaculture/v0-1
+id: 7f9e3c2a4
+title: v0.1
+parentId: 25d7hbg9d
+order: 0
+intro: ''
+sections:
+  - id: s1
+    title: Minimal Permaculture Module (Non-Normative)
+    blocks:
+      - id: b1
+        kind: md
+        md: This module defines the minimum structure required to integrate ecological care and food production into a very small RCOS-aligned community (typically 3–15 members).
+      - id: b2
+        kind: md
+        md: Its purpose is to enable land care **without creating hidden ownership, invisible labor, or informal power**.
+      - id: b3
+        kind: md
+        md: This module is intentionally minimal.
+      - id: b4
+        kind: md
+        md: '---'
+  - id: s2
+    title: Applicability
+    blocks:
+      - id: b1
+        kind: md
+        md: |-
+          This module is suitable when:
+          - the community has fewer than ~15 members,
+          - ecological systems are small-scale,
+          - governance and operations are lightweight,
+          - formal specialization is limited.
+      - id: b2
+        kind: md
+        md: If ecological systems become system-critical or scale significantly, this module SHOULD be replaced by the full Permaculture Module.
+      - id: b3
+        kind: md
+        md: '---'
+  - id: s3
+    title: Core Principles
+    blocks:
+      - id: b1
+        kind: md
+        md: |-
+          - Ecology is infrastructure, not identity.
+          - Care does not imply control.
+          - No land or system becomes “someone’s” by default.
+          - Burnout prevention is more important than optimization.
+      - id: b2
+        kind: md
+        md: '---'
+  - id: s4
+    title: Governed Scope
+    blocks:
+      - id: b1
+        kind: md
+        md: |-
+          The community MUST explicitly state:
+          - which land or systems are governed (e.g. garden, compost, water),
+          - which are informal or personal.
+      - id: b2
+        kind: md
+        md: Anything not explicitly governed is out of scope.
+      - id: b3
+        kind: md
+        md: '---'
+  - id: s5
+    title: Stewardship Assignment
+    blocks:
+      - id: b1
+        kind: md
+        md: |-
+          Ecological care MAY be assigned via:
+          - a single rotating steward role, or
+          - a shared caretaker agreement.
+      - id: b2
+        kind: md
+        md: |-
+          At minimum, the community MUST define:
+          - who is currently responsible,
+          - how long the responsibility lasts,
+          - how responsibility can be handed over.
+      - id: b3
+        kind: md
+        md: No ecological responsibility may exist indefinitely without review.
+      - id: b4
+        kind: md
+        md: '---'
+  - id: s6
+    title: Labor & Contribution
+    blocks:
+      - id: b1
+        kind: md
+        md: |-
+          The community MUST answer, explicitly but simply:
+          - Is ecological work expected of all members, optional, or role-based?
+          - Is substitution (money, outsourcing) allowed?
+      - id: b2
+        kind: md
+        md: |-
+          If labor is expected, care work MUST be:
+          - visible,
+          - discussable,
+          - renegotiable.
+      - id: b3
+        kind: md
+        md: Invisible or morally coerced labor is a violation.
+      - id: b4
+        kind: md
+        md: '---'
+  - id: s7
+    title: Decision Authority
+    blocks:
+      - id: b1
+        kind: md
+        md: Day-to-day ecological decisions MAY be made by the current steward(s).
+      - id: b2
+        kind: md
+        md: |-
+          Structural decisions (e.g. expanding gardens, removing trees, locking land use) MUST:
+          - follow RCOS Layer 2 decision rules,
+          - be reviewable,
+          - be reversible where possible.
+      - id: b3
+        kind: md
+        md: Expertise informs decisions but does not override process.
+      - id: b4
+        kind: md
+        md: '---'
+  - id: s8
+    title: Commons Protection (Minimal)
+    blocks:
+      - id: b1
+        kind: md
+        md: |-
+          Land or systems used by the community:
+          - MUST NOT be privatized through care or investment,
+          - MUST remain reclaimable by the community,
+          - MUST have an exit path for both caretakers and non-caretakers.
+      - id: b2
+        kind: md
+        md: If ownership exists, usage rights MUST be explicit.
+      - id: b3
+        kind: md
+        md: '---'
+  - id: s9
+    title: Failure Triggers
+    blocks:
+      - id: b1
+        kind: md
+        md: |-
+          The following conditions REQUIRE review or escalation:
+          - one person becomes indispensable for ecological systems,
+          - care work causes recurring burnout,
+          - land use decisions become emotionally or morally coercive,
+          - exit from stewardship feels unsafe or punished.
+      - id: b2
+        kind: md
+        md: '---'
+  - id: s10
+    title: Artifacts (Minimal)
+    blocks:
+      - id: b1
+        kind: md
+        md: |-
+          The following MAY be sufficient:
+          - a short Ecology Scope Note,
+          - a Stewardship Log (even informal),
+          - a simple labor agreement.
+      - id: b2
+        kind: md
+        md: Excess documentation is discouraged.
+      - id: b3
+        kind: md
+        md: '---'
+  - id: s11
+    title: Compatibility
+    blocks:
+      - id: b1
+        kind: md
+        md: |-
+          This module MUST NOT override:
+          - RCOS Layer 0 invariants,
+          - governance rules,
+          - exit rights.
+      - id: b2
+        kind: md
+        md: |-
+          Ecology may evolve.
+          Power must not.

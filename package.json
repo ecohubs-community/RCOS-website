@@ -7,12 +7,10 @@
 		"dev": "vite dev --port 5175",
 		"build:templates": "node scripts/build-templates.mjs",
 		"build:core": "node scripts/build-core.mjs",
-		"build:downloads": "pnpm run build:templates && pnpm run build:core",
+		"build:downloads": "pnpm run build:templates && pnpm run build:core && pnpm run build:standard-data",
 		"check:i18n": "node scripts/check-i18n-keys.mjs",
 		"check:translations": "node scripts/check-translations.mjs",
 		"translate": "node scripts/translate.mjs",
-		"normalize:rfc-keywords": "node scripts/normalize-rfc-keywords.mjs",
-		"normalize:terms": "node scripts/normalize-terms.mjs",
 		"build": "vite build",
 		"preview": "vite preview",
 		"prepare": "svelte-kit sync || echo ''",
@@ -23,7 +21,9 @@
 		"test:unit": "vitest run",
 		"test:e2e": "playwright test",
 		"test": "vitest run && playwright test",
-		"paraglide:compile": "paraglide-js compile --project ./project.inlang --outdir ./src/lib/paraglide --strategy url baseLocale"
+		"paraglide:compile": "paraglide-js compile --project ./project.inlang --outdir ./src/lib/paraglide --strategy url baseLocale",
+		"build:standard-data": "node scripts/build-standard-data.mjs",
+		"content:articles": "node scripts/content/build-articles.mjs"
 	},
 	"devDependencies": {
 		"@anthropic-ai/sdk": "^0.91.1",
@@ -41,6 +41,7 @@
 		"@tailwindcss/forms": "^0.5.10",
 		"@tailwindcss/typography": "^0.5.19",
 		"@tailwindcss/vite": "^4.1.17",
+		"@types/js-yaml": "^4.0.9",
 		"@types/node": "^22",
 		"bits-ui": "^2.19.4",
 		"eslint": "^9.39.1",

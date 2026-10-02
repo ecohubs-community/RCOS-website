@@ -1,0 +1,66 @@
+lang: pt-br
+sourceHash: 398eaeff
+title: Camada 4 - Conflito, Reparação e Responsabilização
+head: '**O que acontece quando as coisas quebram.**'
+sections:
+  conflict-classification:
+    title: Classificação de conflitos
+    md: |-
+      * Interpessoal
+      * Baseado em papéis
+      * Estrutural
+      * Violações de limites éticos
+  repair-mechanisms:
+    title: Mecanismos de reparação
+    md: |-
+      * Mediação
+      * Processos restaurativos
+      * Sanções
+      * Separação
+  protection:
+    title: Proteção
+    md: |-
+      * Salvaguardas contra abuso de poder
+      * Proteção de minorias
+      * Prevenção de esgotamento
+  artifacts:
+    title: Artefatos
+    md: |-
+      * Escada de Resolução de Conflitos
+      * Protocolo de Responsabilização
+  layer-invariants:
+    title: Invariantes da Camada
+    md: |-
+      * **Invariante 4.1: Conflito é tratado, não evitado**
+        Todos os conflitos devem ter um caminho de resolução definido; ignorar um conflito é uma violação.
+
+      * **Invariante 4.2: Assimetria de poder é reconhecida**
+        Conflitos que envolvem diferenças de poder exigem salvaguardas elevadas.
+
+      * **Invariante 4.3: Reparação precede punição**
+        Processos restaurativos devem ser tentados antes de sanções, exceto em casos críticos de segurança.
+
+      * **Invariante 4.4: Segurança sobrepõe-se à participação**
+        Segurança física, psicológica e infantil sobrepõe-se a todos os direitos de participação.
+  explicitness-rules:
+    title: Regras de Explicitude
+    md: |-
+      #### **DEVE ser explícito**
+
+      * Classificação de conflitos
+      * Processo mínimo de reparação
+      * Mecanismos de proteção
+      * Limiares de separação
+
+      **Por quê:** evitar conflitos não é neutralidade; é falha estrutural.
+
+      #### **PODE ser explícito**
+
+      * Estilos de mediação
+      * Seleção de facilitadores
+      * Práticas restaurativas
+
+      #### **DEVE permanecer opcional**
+
+      * Normas de expressão emocional
+      * Enquadramento terapêutico ou espiritual

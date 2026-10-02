@@ -9,7 +9,7 @@
  * The canonical invariant list below is the authoritative set of all 28
  * invariants — it has to be independent of the tests, because that's the only
  * way to surface invariants that NO test covers yet (the coverage gaps). Keep
- * it in sync with the Layer Invariants in content/articles/rcos-layers/*.md.
+ * it in sync with the Layer Invariants in content/layers/*.yaml.
  */
 import { readArticleMeta, type ArticleMeta } from './content';
 import { DEFAULT_LOCALE } from '$lib/i18n/languages';

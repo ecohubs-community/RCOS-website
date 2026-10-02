@@ -1,0 +1,59 @@
+lang: fr
+sourceHash: 621d2b56
+title: Couche 6 - Évolution & Adaptation
+head: '**Comment le système change sans s''effondrer.**'
+sections:
+  change-mechanisms:
+    title: '**Mécanismes de changement**'
+    md: |-
+      * Propositions
+      * Expérimentations
+      * Cycles de revue
+  versioning:
+    title: '**Versionnage**'
+    md: |-
+      * Versions du protocole
+      * Chemins de migration
+  learning-capture:
+    title: '**Capture des apprentissages**'
+    md: |-
+      * Rétrospectives
+      * Documentation des échecs
+  artifacts:
+    title: '**Artefacts**'
+    md: |-
+      * Protocole de changement
+      * Historique des versions
+  layer-invariants:
+    title: '**Invariants de la Couche**'
+    md: |-
+      * **Invariant 6.1 : Le changement est possible mais encadré**
+        Aucun composant du système n'est figé pour toujours, mais aucun changement n'est instantané.
+      * **Invariant 6.2 : Les changements sont versionnés**
+        Les modifications de règles DOIVENT être documentées, datées et traçables.
+      * **Invariant 6.3 : Les expérimentations sont réversibles**
+        Toutes les expérimentations DOIVENT définir leur périmètre, leur durée et leurs conditions de retour en arrière.
+      * **Invariant 6.4 : Les apprentissages sont capturés**
+        Les échecs majeurs et les adaptations DOIVENT être enregistrés et accessibles.
+  explicitness-rules:
+    title: '**Règles d''explicitation**'
+    md: |-
+      #### **DOIT être explicite**
+
+      * Comment les règles changent
+      * Processus de versionnage et de revue
+      * Périmètre des expérimentations
+      * Mécanismes de retour en arrière
+
+      **Pourquoi :** les systèmes qui ne peuvent pas changer finissent par se dégrader ou exploser.
+
+      #### **PEUT être explicite**
+
+      * Fréquence des revues
+      * Clauses d'extinction
+      * Méthodes de collecte de retours
+
+      #### **DOIT rester optionnel**
+
+      * Rythme d'innovation
+      * Appétit pour le risque (dans certaines limites)

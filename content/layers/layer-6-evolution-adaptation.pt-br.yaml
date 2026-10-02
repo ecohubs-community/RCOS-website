@@ -1,0 +1,59 @@
+lang: pt-br
+sourceHash: 621d2b56
+title: Camada 6 - Evolução e Adaptação
+head: '**Como o sistema muda sem entrar em colapso.**'
+sections:
+  change-mechanisms:
+    title: '**Mecanismos de mudança**'
+    md: |-
+      * Propostas
+      * Experimentos
+      * Ciclos de revisão
+  versioning:
+    title: '**Versionamento**'
+    md: |-
+      * Versões do protocolo
+      * Caminhos de migração
+  learning-capture:
+    title: '**Captura de aprendizados**'
+    md: |-
+      * Retrospectivas
+      * Documentação de falhas
+  artifacts:
+    title: '**Artefatos**'
+    md: |-
+      * Protocolo de Mudança
+      * Histórico de Versões
+  layer-invariants:
+    title: '**Invariantes da Camada**'
+    md: |-
+      * **Invariante 6.1: A mudança é possível, mas restrita**
+        Nenhum componente do sistema fica congelado para sempre, mas nenhuma mudança é instantânea.
+      * **Invariante 6.2: As mudanças são versionadas**
+        Alterações de regras devem ser documentadas, datadas e rastreáveis.
+      * **Invariante 6.3: Os experimentos são reversíveis**
+        Todos os experimentos devem definir escopo, duração e condições de reversão.
+      * **Invariante 6.4: O aprendizado é capturado**
+        Falhas e adaptações significativas devem ser registradas e acessíveis.
+  explicitness-rules:
+    title: '**Regras de Explicitude**'
+    md: |-
+      #### **DEVE ser explícito**
+
+      * Como as regras mudam
+      * Processo de versionamento e revisão
+      * Limites dos experimentos
+      * Mecanismos de reversão
+
+      **Por quê:** sistemas que não conseguem mudar ou apodrecem ou explodem.
+
+      #### **PODE ser explícito**
+
+      * Frequência de revisão
+      * Cláusulas de encerramento
+      * Métodos de coleta de feedback
+
+      #### **DEVE permanecer opcional**
+
+      * Ritmo de inovação
+      * Apetite ao risco (dentro dos limites)

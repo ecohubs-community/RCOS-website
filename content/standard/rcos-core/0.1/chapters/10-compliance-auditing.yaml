@@ -1,0 +1,95 @@
+kind: chapter
+legacyPath: rcos-core/v0-1/10-compliance-auditing
+id: 69b4c289
+title: 10. Compliance & Auditing
+parentId: e6de7a5d
+order: 100
+intro: This chapter defines how RCOS-Core compliance is assessed and maintained.
+sections:
+  - id: '10.1'
+    ref: '10.1'
+    title: Compliance Checklist
+    blocks:
+      - id: 10.1.1
+        kind: clause
+        ref: 10.1.1
+        text: 'RCOS-Core compliance is binary: a community is either compliant or non-compliant.'
+      - id: 10.1.2
+        kind: clause
+        ref: 10.1.2
+        text: Compliance MUST be evaluated per layer (Layers 0–6).
+      - id: 10.1.3
+        kind: clause
+        ref: 10.1.3
+        text: 'For each layer, the Compliance Checklist MUST verify:'
+        items:
+          - 'Presence of mandatory artifacts  '
+          - 'Explicitness and accessibility of required rules  '
+          - 'Adoption through authorized governance processes  '
+      - id: 10.1.4
+        kind: clause
+        ref: 10.1.4
+        text: Partial compliance or “intent to comply” MUST NOT be considered compliant.
+      - id: 10.1.5
+        kind: clause
+        ref: 10.1.5
+        text: Optional Modules MUST NOT be included in RCOS-Core compliance evaluation.
+  - id: '10.2'
+    ref: '10.2'
+    title: Test Cases
+    blocks:
+      - id: 10.2.1
+        kind: clause
+        ref: 10.2.1
+        text: Test Cases are structured scenarios used to validate whether RCOS mechanisms behave as intended.
+      - id: 10.2.2
+        kind: clause
+        ref: 10.2.2
+        text: 'Test Cases MAY be:'
+        items:
+          - 'Hypothetical scenarios  '
+          - 'Historical community failures  '
+          - 'Simulated stress tests  '
+      - id: 10.2.3
+        kind: clause
+        ref: 10.2.3
+        text: 'Test Cases SHOULD cover, at minimum:'
+        items:
+          - 'Power concentration attempts  '
+          - 'Exit and separation scenarios  '
+          - 'Governance deadlock  '
+          - 'Economic capture attempts  '
+          - 'Safety-critical conflicts  '
+      - id: 10.2.4
+        kind: clause
+        ref: 10.2.4
+        text: Test Cases are informative but SHOULD be used during audits, onboarding, and periodic reviews.
+  - id: '10.3'
+    ref: '10.3'
+    title: Non-Compliance
+    blocks:
+      - id: 10.3.1
+        kind: clause
+        ref: 10.3.1
+        text: 'A community MUST be considered non-compliant if:'
+        items:
+          - 'Any mandatory artifact is missing  '
+          - 'Layer 0 invariants are violated  '
+          - 'Decisions are repeatedly made outside authorized governance structures  '
+          - 'Exit is blocked or informally constrained  '
+      - id: 10.3.2
+        kind: clause
+        ref: 10.3.2
+        text: Non-compliance MUST be explicitly acknowledged once detected.
+      - id: 10.3.3
+        kind: clause
+        ref: 10.3.3
+        text: 'A community MAY regain compliance only through:'
+        items:
+          - 'Corrective action  '
+          - 'Formal adoption of missing or corrected artifacts  '
+          - 'Documentation of remediation  '
+      - id: 10.3.4
+        kind: clause
+        ref: 10.3.4
+        text: Claims of RCOS compliance MUST be withdrawn during periods of known non-compliance.
