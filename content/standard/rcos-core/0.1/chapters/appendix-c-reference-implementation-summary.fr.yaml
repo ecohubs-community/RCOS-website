@@ -1,5 +1,5 @@
 lang: fr
-sourceHash: e8263459
+sourceHash: 'bbc04224'
 title: Annexe C — Résumé de l'implémentation de référence
 intro: Cette annexe définit une **structure de documentation recommandée** pour les communautés qui souhaitent se présenter comme des implémentations de référence RCOS. L'objectif est de rendre l'adoption auditable, comparable et instructive sans impliquer une approbation.
 sections:

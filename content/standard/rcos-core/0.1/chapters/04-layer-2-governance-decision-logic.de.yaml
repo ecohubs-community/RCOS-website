@@ -1,5 +1,5 @@
 lang: de
-sourceHash: 1d9dfee7
+sourceHash: '21857953'
 title: 4. Schicht 2 — Governance & Entscheidungslogik
 intro: Schicht 2 definiert, wie kollektive Entscheidungen getroffen werden, wer befugt ist, sie zu treffen, und wie Autorität begrenzt wird. Governance unter RCOS ist so gestaltet, dass Macht explizit, begrenzt, überprüfbar und reversibel ist.
 sections:

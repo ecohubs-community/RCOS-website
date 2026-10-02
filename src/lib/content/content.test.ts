@@ -154,3 +154,13 @@ describe('translation round trip (article.js)', () => {
 		expect(checked).toBe(336);
 	});
 });
+
+describe('sourceHashOf', () => {
+	it('changes with the text, not with structure-only fields', async () => {
+		const { sourceHashOf } = await import('./hash.js');
+		const doc = { kind: 'chapter', legacyPath: 'x', id: 'abcdef12', order: 1, title: 'T', sections: [{ id: '1.1', ref: '1.1', title: 'A', blocks: [] }] };
+		const base = sourceHashOf(doc);
+		expect(sourceHashOf({ ...doc, order: 2, slug: 'new-slug' })).toBe(base);
+		expect(sourceHashOf({ ...doc, title: 'T2' })).not.toBe(base);
+	});
+});
