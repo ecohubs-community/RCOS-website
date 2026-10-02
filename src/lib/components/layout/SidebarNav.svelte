@@ -1,7 +1,9 @@
 <script lang="ts">
 	import { page } from '$app/state';
 	import { articleTree } from '$lib/stores/graph';
-	import Icon from '@iconify/svelte';
+	import IconChevronRight from '~icons/tabler/chevron-right';
+	import IconFileText from '~icons/tabler/file-text';
+	import IconHome from '~icons/tabler/home';
 	import type { Article } from '$lib/server/graph';
 	import { untrack } from 'svelte';
 	import { SvelteSet } from 'svelte/reactivity';
@@ -91,7 +93,7 @@
 				? 'bg-primary/10 text-primary'
 				: 'text-text-secondary hover:bg-surface-hover hover:text-text-primary'}"
 		>
-			<Icon icon="tabler:home" class="w-4 h-4" />
+			<IconHome class="w-4 h-4" />
 			{m('nav.all_articles')}
 		</a>
 
@@ -141,9 +143,8 @@
 					class="p-1 rounded hover:bg-surface-hover text-text-tertiary"
 					aria-label={isExpanded ? m('nav.collapse') : m('nav.expand')}
 				>
-					<Icon
-						icon={isExpanded ? 'tabler:chevron-down' : 'tabler:chevron-right'}
-						class="w-4 h-4 transition-transform -ml-1"
+					<IconChevronRight
+						class={['w-4 h-4 transition-transform -ml-1', isExpanded && 'rotate-90']}
 					/>
 				</button>
 			{:else}
@@ -154,7 +155,7 @@
 				href={localized(`/articles/${node.slug}`, locale)}
 				class={`flex-1 min-w-0 flex items-center gap-2 px-2 ${level === 0 ? 'py-1.5' : 'py-1'} text-sm rounded-lg transition-colors ${isActive(node.slug) ? 'bg-primary/10 text-primary font-medium' : 'text-text-secondary hover:bg-surface-hover hover:text-text-primary'}`}
 			>
-				<Icon icon={node.icon || 'tabler:file-text'} class="w-4 h-4 min-w-4 max-w-4" />
+				<IconFileText class="w-4 h-4 min-w-4 max-w-4" />
 				<span class="truncate">{node.title}</span>
 			</a>
 		</div>

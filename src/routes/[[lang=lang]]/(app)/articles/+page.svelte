@@ -1,7 +1,8 @@
 <script lang="ts">
 	import { articles, rootArticles } from '$lib/stores/graph';
 	import Card from '$lib/components/common/Card.svelte';
-	import Icon from '@iconify/svelte';
+	import IconFileText from '~icons/tabler/file-text';
+	import IconHierarchy from '~icons/tabler/hierarchy';
 	import type { Article } from '$lib/server/graph';
 	import SEO from '$lib/components/seo/SEO.svelte';
 	import { buildBreadcrumbSchema } from '$lib/utils/jsonld';
@@ -68,7 +69,7 @@
 					<div
 						class="pt-4 mt-auto border-t border-border flex items-center gap-2 text-xs font-medium text-text-tertiary"
 					>
-						<Icon icon="tabler:hierarchy" class="w-4 h-4" />
+						<IconHierarchy class="w-4 h-4" />
 						<span
 							>{m(
 								totalChildren === 1
@@ -86,7 +87,7 @@
 	{#if $rootArticles.length === 0}
 		<div class="text-center py-16">
 			<div class="w-16 h-16 mx-auto mb-4 rounded-full bg-gray-100 flex items-center justify-center">
-				<Icon icon="tabler:file-text" class="w-8 h-8 text-gray-400" />
+				<IconFileText class="w-8 h-8 text-gray-400" />
 			</div>
 			<h2 class="text-xl font-semibold text-gray-900 mb-2">{m('articles.empty.title')}</h2>
 			<p class="text-gray-500">{m('articles.empty.body')}</p>

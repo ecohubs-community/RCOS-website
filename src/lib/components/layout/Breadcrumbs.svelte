@@ -1,6 +1,6 @@
 <script lang="ts">
 	import { page } from '$app/state';
-	import Icon from '@iconify/svelte';
+	import IconChevronRight from '~icons/tabler/chevron-right';
 	import { m } from '$lib/i18n';
 	import { localized, stripLocale } from '$lib/i18n/path';
 	import { DEFAULT_LOCALE } from '$lib/i18n/languages';
@@ -59,7 +59,7 @@
 	<nav aria-label="Breadcrumb" class="flex items-center gap-1 text-sm text-text-tertiary">
 		{#each breadcrumbs() as crumb, i (i)}
 			{#if i > 0}
-				<Icon icon="tabler:chevron-right" class="w-4 h-4 text-text-tertiary/50" />
+				<IconChevronRight class="w-4 h-4 text-text-tertiary/50" />
 			{/if}
 
 			{#if crumb.href}

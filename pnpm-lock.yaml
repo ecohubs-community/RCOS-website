@@ -8,9 +8,15 @@ importers:
 
   .:
     dependencies:
-      '@iconify/svelte':
-        specifier: ^5.1.0
-        version: 5.1.0(svelte@5.45.5)
+      '@fontsource-variable/stack-sans-headline':
+        specifier: ^5.3.0
+        version: 5.3.0
+      '@fontsource-variable/stack-sans-text':
+        specifier: ^5.3.0
+        version: 5.3.0
+      '@fontsource/pridi':
+        specifier: ^5.3.0
+        version: 5.3.0
       gray-matter:
         specifier: ^4.0.3
         version: 4.0.3
@@ -104,7 +110,7 @@ importers:
         version: 5.45.5
       svelte-check:
         specifier: ^4.3.4
-        version: 4.3.4(picomatch@4.0.3)(svelte@5.45.5)(typescript@5.9.3)
+        version: 4.3.4(picomatch@4.0.7)(svelte@5.45.5)(typescript@5.9.3)
       tailwindcss:
         specifier: ^4.1.17
         version: 4.1.17
@@ -434,6 +440,15 @@ packages:
   '@floating-ui/utils@0.2.12':
     resolution: {integrity: sha512-HpCo8tmWzLVad5s2d19EhAz5zqrrQ6s69qd6moPMQvkOuSwDT1YgRfWSVuc4ennqrgv3OHppiOGMQ7oC13yIww==}
 
+  '@fontsource-variable/stack-sans-headline@5.3.0':
+    resolution: {integrity: sha512-mSV8UnGWs8yMWa2Dv4t3YO4sADopi7BEs5QUNflDfwSk6Wat7pJWpIN9/bAwG32wvRd20Ry/ippjTI24xu0gRw==}
+
+  '@fontsource-variable/stack-sans-text@5.3.0':
+    resolution: {integrity: sha512-XGBpqu2xfQKbnLRhcaUldEs1a42HQ+nh4kBrIwsHiTilwqLak0uhpxxKhKTjSr9glvbhC6Jyq3oRc5YtGWpkyA==}
+
+  '@fontsource/pridi@5.3.0':
+    resolution: {integrity: sha512-E41xVeLif6FNd7tZ/ue6shuUAXek54TtwpMl2XiA0a1Pnwjz3xak0BJZlNT7hbTjLtejPodVGDPKN8Xj0yjgXQ==}
+
   '@google/genai@1.50.1':
     resolution: {integrity: sha512-YbkX7H9+1Pt8wOt7DDREy8XSoiL6fRDzZQRyaVBarFf8MR3zHGqVdvM4cLbDXqPhxqvegZShgfxb8kw9C7YhAQ==}
     engines: {node: '>=20.0.0'}
@@ -461,11 +476,6 @@ packages:
 
   '@iconify-json/tabler@1.2.41':
     resolution: {integrity: sha512-GHg+H/cnr0anaCoV383JONiOMxZQOdojWYNLgL3x0fRE07YW7c+AHiYmIhXet//oq26T830qitdP7l43ojiCXw==}
-
-  '@iconify/svelte@5.1.0':
-    resolution: {integrity: sha512-I14nSqo0pNXO5OKsT61ZO3XIPF4yRHA2ErgPsaZ1sPJdKXn80o7o8jOe1xpWphbb9FihdX6by9zlKKBss61mFw==}
-    peerDependencies:
-      svelte: '>4.0.0'
 
   '@iconify/types@2.0.0':
     resolution: {integrity: sha512-+wluvCrRhXrhyOmRDJ3q8mux9JkKy5SJ/v8ol2tu4FVjyYvtEzkc/3pK15ET6RKg4b4w4BmTk1+gsCUhf21Ykg==}
@@ -2760,6 +2770,12 @@ snapshots:
 
   '@floating-ui/utils@0.2.12': {}
 
+  '@fontsource-variable/stack-sans-headline@5.3.0': {}
+
+  '@fontsource-variable/stack-sans-text@5.3.0': {}
+
+  '@fontsource/pridi@5.3.0': {}
+
   '@google/genai@1.50.1':
     dependencies:
       google-auth-library: 10.6.2
@@ -2785,11 +2801,6 @@ snapshots:
   '@iconify-json/tabler@1.2.41':
     dependencies:
       '@iconify/types': 2.0.0
-
-  '@iconify/svelte@5.1.0(svelte@5.45.5)':
-    dependencies:
-      '@iconify/types': 2.0.0
-      svelte: 5.45.5
 
   '@iconify/types@2.0.0': {}
 
@@ -4346,11 +4357,11 @@ snapshots:
 
   supports-preserve-symlinks-flag@1.0.0: {}
 
-  svelte-check@4.3.4(picomatch@4.0.3)(svelte@5.45.5)(typescript@5.9.3):
+  svelte-check@4.3.4(picomatch@4.0.7)(svelte@5.45.5)(typescript@5.9.3):
     dependencies:
       '@jridgewell/trace-mapping': 0.3.31
       chokidar: 4.0.3
-      fdir: 6.5.0(picomatch@4.0.3)
+      fdir: 6.5.0(picomatch@4.0.7)
       picocolors: 1.1.1
       sade: 1.8.1
       svelte: 5.45.5

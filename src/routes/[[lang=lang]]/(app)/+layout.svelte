@@ -4,6 +4,9 @@
 	import { graph } from '$lib/stores/graph';
 	import { sidebarOpen, initTheme } from '$lib/stores/ui';
 	import AppShell from '$lib/components/layout/AppShell.svelte';
+	// The two font files nearly every page needs: body text and headings.
+	import textFont from '@fontsource-variable/stack-sans-text/files/stack-sans-text-latin-wght-normal.woff2?url';
+	import pridiBold from '@fontsource/pridi/files/pridi-latin-700-normal.woff2?url';
 
 	let { children, data } = $props();
 
@@ -28,6 +31,11 @@
 		}
 	});
 </script>
+
+<svelte:head>
+	<link rel="preload" href={textFont} as="font" type="font/woff2" crossorigin="anonymous" />
+	<link rel="preload" href={pridiBold} as="font" type="font/woff2" crossorigin="anonymous" />
+</svelte:head>
 
 <AppShell>
 	{@render children()}

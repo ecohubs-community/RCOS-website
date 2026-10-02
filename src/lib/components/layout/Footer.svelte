@@ -1,5 +1,5 @@
 <script lang="ts">
-	import Icon from '@iconify/svelte';
+	import IconArrowUpRight from '~icons/tabler/arrow-up-right';
 	import { m } from '$lib/i18n';
 
 	const year = new Date().getFullYear();
@@ -32,7 +32,7 @@
 							class="hover:text-text-primary transition-colors flex items-center gap-1"
 						>
 							{m('footer.link.about_us')}
-							<Icon icon="tabler:arrow-up-right" class="w-4 h-4" />
+							<IconArrowUpRight class="w-4 h-4" />
 						</a>
 					</li>
 					<li>
@@ -41,7 +41,7 @@
 							class="hover:text-text-primary transition-colors flex items-center gap-1"
 						>
 							{m('footer.link.join_us')}
-							<Icon icon="tabler:arrow-up-right" class="w-4 h-4" />
+							<IconArrowUpRight class="w-4 h-4" />
 						</a>
 					</li>
 				</ul>
@@ -59,7 +59,7 @@
 							class="hover:text-text-primary transition-colors flex items-center gap-1"
 						>
 							{m('footer.link.github')}
-							<Icon icon="tabler:arrow-up-right" class="w-4 h-4" />
+							<IconArrowUpRight class="w-4 h-4" />
 						</a>
 					</li>
 				</ul>
@@ -79,7 +79,7 @@
 					target="_blank"
 				>
 					{m('footer.link.privacy')}
-					<Icon icon="tabler:arrow-up-right" class="w-4 h-4" />
+					<IconArrowUpRight class="w-4 h-4" />
 				</a>
 				<a
 					href="https://ecohubs.community/terms"
@@ -87,7 +87,7 @@
 					target="_blank"
 				>
 					{m('footer.link.terms')}
-					<Icon icon="tabler:arrow-up-right" class="w-4 h-4" />
+					<IconArrowUpRight class="w-4 h-4" />
 				</a>
 			</div>
 		</div>

@@ -2,7 +2,8 @@
 	import { m } from '$lib/i18n';
 	import { localized } from '$lib/i18n/path';
 	import { DEFAULT_LOCALE } from '$lib/i18n/languages';
-	import Icon from '@iconify/svelte';
+	import IconChevronRight from '~icons/tabler/chevron-right';
+	import IconRotate from '~icons/tabler/rotate';
 	import type { Assessment, AssessmentTest } from '$lib/types/assessment';
 
 	let { assessment, locale = DEFAULT_LOCALE }: { assessment: Assessment; locale?: string } =
@@ -62,9 +63,11 @@
 				aria-expanded={resultsOpen}
 				aria-controls="assessment-results-list"
 			>
-				<Icon
-					icon={resultsOpen ? 'tabler:chevron-down' : 'tabler:chevron-right'}
-					class="h-4 w-4 shrink-0 text-text-tertiary"
+				<IconChevronRight
+					class={[
+						'h-4 w-4 shrink-0 text-text-tertiary transition-transform',
+						resultsOpen && 'rotate-90'
+					]}
 				/>
 				<span id="assessment-results-heading" class="font-bold text-text-primary">
 					{m('self_assessment.results_title')}
@@ -79,7 +82,7 @@
 					onclick={clearAll}
 					class="inline-flex shrink-0 items-center gap-1 rounded-md px-2 py-1 text-sm text-text-tertiary hover:text-primary"
 				>
-					<Icon icon="tabler:rotate" class="h-4 w-4" />
+					<IconRotate class="h-4 w-4" />
 					{m('self_assessment.clear')}
 				</button>
 			{/if}

@@ -1,5 +1,5 @@
 <script lang="ts">
-	import Icon from '@iconify/svelte';
+	import IconLanguage from '~icons/tabler/language';
 	import { m } from '$lib/i18n';
 	import { getLocale } from '$lib/i18n/languages';
 
@@ -20,7 +20,7 @@
 	role="status"
 	class="not-prose flex items-start gap-3 rounded-lg border border-border bg-surface/60 px-4 py-3 text-sm text-text-secondary"
 >
-	<Icon icon="tabler:language" class="w-5 h-5 text-primary shrink-0 mt-0.5" />
+	<IconLanguage class="w-5 h-5 text-primary shrink-0 mt-0.5" />
 	<div class="space-y-0.5">
 		<p>
 			{m('article.fallback.body', { served: servedName, requested: requestedName })}

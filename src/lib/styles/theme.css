@@ -1,5 +1,17 @@
-/* Import Google Fonts - must be before other imports */
-@import url('https://fonts.googleapis.com/css2?family=Ledger&family=Pridi:wght@200;300;400;500;600;700&family=Stack+Sans+Headline:wght@200..700&display=swap');
+/* Fonts are self-hosted (bundled and cache-busted by Vite): no third-party
+   request, no render-blocking stylesheet. Only the Latin subsets, which cover
+   en/de/es/fr/pt-br; latin-ext loads only when a page uses such a character.
+   The two most-used files are preloaded in +layout.svelte. */
+@import '@fontsource/pridi/latin-400.css';
+@import '@fontsource/pridi/latin-500.css';
+@import '@fontsource/pridi/latin-600.css';
+@import '@fontsource/pridi/latin-700.css';
+@import '@fontsource/pridi/latin-ext-400.css';
+@import '@fontsource/pridi/latin-ext-500.css';
+@import '@fontsource/pridi/latin-ext-600.css';
+@import '@fontsource/pridi/latin-ext-700.css';
+@import '@fontsource-variable/stack-sans-text/wght.css';
+@import '@fontsource-variable/stack-sans-headline/wght.css';
 
 @import 'tailwindcss';
 @plugin '@tailwindcss/forms';
@@ -96,10 +108,100 @@
 	--max-width-7xl: 80rem; /* 1280px */
 	--max-width-full: 100%;
 
-	/* Typography */
-	--font-serif: 'Pridi', serif;
+	/* Typography: Pridi for display and headings, Stack Sans Text for reading,
+	   Stack Sans Headline for UI (navigation, labels, badges, buttons). */
+	--font-serif: 'Pridi', Georgia, serif;
 	--font-sans:
-		'Stack Sans Headline', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+		'Stack Sans Text Variable', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+	--font-ui:
+		'Stack Sans Headline Variable', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+		sans-serif;
+	--font-mono: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+
+	/* ---- Redesign tokens (2026) -------------------------------------------
+	   New components use only these. The older semantic tokens above stay until
+	   the components that use them are replaced, then they are removed.
+
+	   Visual language: forest = normative (the rules); clay = guidance and
+	   optional parts (modules, MAY). The forest-* scale above already holds the
+	   design's greens. */
+
+	/* Clay: guidance, optional, MAY */
+	--color-clay-950: #5d4d35;
+	--color-clay-900: #8b5a2a;
+	--color-clay-800: #a66b3a;
+	--color-clay-700: #8b6f47;
+	--color-clay-600: #c47d4a;
+	--color-clay-500: #d4a574;
+	--color-clay-400: #e0b586;
+	--color-clay-300: #e8c9a0;
+	--color-clay-200: #ffecd6;
+	--color-clay-100: #f5efe4;
+	--color-clay-50: #fffaf3;
+
+	/* Surfaces and text, by role: light-dark(light, dark). The active scheme comes
+	   from `color-scheme` on <html> (set from the theme choice, or the system
+	   setting), so one definition covers both modes and the no-JS fallback. */
+	--color-paper: light-dark(#fbfbf9, #0e1409); /* page background */
+	--color-paper-2: light-dark(#f1f1ee, #182112); /* inset fields, search, segmented controls */
+	--color-card: light-dark(#ffffff, #141c0e); /* cards, panels, menus */
+	--color-line: light-dark(#e5e7eb, #2b3622); /* borders */
+	--color-line-soft: light-dark(#eef0ea, #212b19); /* separators inside cards */
+	--color-ink: light-dark(#1f2937, #eef2e8); /* body text */
+	--color-ink-2: light-dark(#374151, #d5dccb); /* secondary text */
+	--color-ink-muted: light-dark(#4b5563, #b4bea8); /* descriptions */
+	--color-ink-faint: light-dark(
+		#6b7280,
+		#949e88
+	); /* labels, meta; 4.6:1 on paper (design's #9ca3af failed AA) */
+	--color-brand: light-dark(#1a3009, #22400e); /* dark green surfaces: CTA, footer, intro cards */
+	--color-brand-ink: light-dark(#f5fde5, #f5fde5); /* text on brand */
+	--color-brand-accent: light-dark(#b5da82, #b5da82); /* accents on brand */
+	--color-link: light-dark(#2d5016, #b5da82);
+	--color-link-line: light-dark(#b5da82, #4a7c2a); /* link underline */
+	--color-hover: light-dark(#f5fde5, #1b2614); /* row hover */
+	--color-selected: light-dark(#eef4e4, #22301a); /* open menu trigger, current nav item */
+	--color-focus: light-dark(#4a7c2a, #9ac966);
+
+	/* Guidance (non-normative) surfaces */
+	--color-guide: light-dark(#fffaf3, #1d1710);
+	--color-guide-panel: light-dark(#fffdf9, #191410);
+	--color-guide-line: light-dark(#eadfcd, #3f3324);
+	--color-guide-ink: light-dark(#5d4d35, #e9dcc6);
+	--color-guide-accent: light-dark(#8b5a2a, #e0b586);
+	--color-guide-chip: light-dark(#ffecd6, #3a2b1a);
+
+	/* RFC keyword chips */
+	--color-kw-must: light-dark(#ebfcba, #2b4a12);
+	--color-kw-must-ink: light-dark(#2d5016, #d0eb9e);
+	--color-kw-may: light-dark(#ffecd6, #4a3216);
+	--color-kw-may-ink: light-dark(#8b5a2a, #f0c99a);
+
+	/* Layer 0 (darkest) to 6 (lightest), with the text color that reads on each */
+	--color-layer-0: #1a3009;
+	--color-layer-1: #2d5016;
+	--color-layer-2: #4a7c2a;
+	--color-layer-3: #6b9f3d;
+	--color-layer-4: #9ac966;
+	--color-layer-5: #b5da82;
+	--color-layer-6: #d0eb9e;
+	--color-layer-ink-0: #ffffff;
+	--color-layer-ink-1: #ffffff;
+	--color-layer-ink-2: #ffffff;
+	--color-layer-ink-3: #1a3009;
+	--color-layer-ink-4: #1a3009;
+	--color-layer-ink-5: #1a3009;
+	--color-layer-ink-6: #1a3009;
+
+	/* Stress-test severity */
+	--color-severity-high: #c2410c;
+	--color-severity-medium: #e0b586;
+	--color-severity-low: light-dark(#d1d5db, #4b5563);
+
+	/* Shadows from the design */
+	--shadow-panel: 0 24px 40px -24px rgb(26 48 9 / 0.25); /* mega menu */
+	--shadow-sheet: -24px 0 48px -24px rgb(93 77 53 / 0.35); /* guide sheet */
+	--shadow-pop: 0 20px 40px -16px rgb(26 48 9 / 0.35); /* popovers */
 
 	/* EcoHubs Colors */
 	--color-ecohubs-base: #fbfbf9;
@@ -195,6 +297,18 @@
 	& details > *:not(summary) {
 		margin-top: 0;
 	}
+}
+
+/* Stacking order. Use as z-(--z-header) etc. One scale for the whole site:
+   the header (with its mega menus) sits above every in-page layer, and
+   dialogs sit above the header. */
+:root {
+	--z-sticky: 10; /* in-page sticky bars, rails */
+	--z-header: 30; /* site header including mega menus */
+	--z-overlay: 40; /* backdrops */
+	--z-drawer: 50; /* drawers, guide sheet, search dialog */
+	--z-popover: 60; /* term popovers, menus, toasts */
+	--header-h: 4.25rem; /* measured and overwritten by the header */
 }
 
 /* Dark Mode Overrides - Class-based */

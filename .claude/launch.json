@@ -6,6 +6,12 @@
 			"runtimeExecutable": "pnpm",
 			"runtimeArgs": ["run", "dev"],
 			"port": 5175
+		},
+		{
+			"name": "dev-alt",
+			"runtimeExecutable": "/Users/el_stefano/.nvm/versions/node/v24.15.0/bin/node",
+			"runtimeArgs": ["./node_modules/vite/bin/vite.js", "dev", "--port", "5180", "--strictPort"],
+			"port": 5180
 		}
 	]
 }

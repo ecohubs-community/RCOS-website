@@ -1,7 +1,9 @@
 <script lang="ts">
 	import { page } from '$app/state';
 	import { browser } from '$app/environment';
-	import Icon from '@iconify/svelte';
+	import IconCheck from '~icons/tabler/check';
+	import IconChevronDown from '~icons/tabler/chevron-down';
+	import IconWorld from '~icons/tabler/world';
 	import { LOCALES, DEFAULT_LOCALE, getLocale, type Locale } from '$lib/i18n/languages';
 	import { localizePath } from '$lib/i18n/path';
 	import { m } from '$lib/i18n';
@@ -72,9 +74,9 @@
 			aria-label={m('language_switcher.aria_label', { language: current.englishName })}
 			onclick={() => (open = !open)}
 		>
-			<Icon icon="tabler:world" class="w-4 h-4" />
+			<IconWorld class="w-4 h-4" />
 			<span class="font-medium uppercase tracking-wide text-xs">{current.code}</span>
-			<Icon icon="tabler:chevron-down" class="w-3 h-3 opacity-60" />
+			<IconChevronDown class="w-3 h-3 opacity-60" />
 		</button>
 
 		<!--
@@ -107,7 +109,7 @@
 							{/if}
 						</span>
 						{#if isCurrent}
-							<Icon icon="tabler:check" class="w-4 h-4 text-primary shrink-0" />
+							<IconCheck class="w-4 h-4 text-primary shrink-0" />
 						{:else if !translated}
 							<span class="text-[10px] uppercase tracking-wide text-text-tertiary shrink-0">
 								{m('language_switcher.fallback_badge')}

@@ -2,7 +2,26 @@
 	import { articleBySlug, rootArticles } from '$lib/stores/graph';
 	import Card from '$lib/components/common/Card.svelte';
 	import Button from '$lib/components/common/Button.svelte';
-	import Icon from '@iconify/svelte';
+	import IconBolt from '~icons/tabler/bolt';
+	import IconBook2 from '~icons/tabler/book-2';
+	import IconClockExclamation from '~icons/tabler/clock-exclamation';
+	import IconCode from '~icons/tabler/code';
+	import IconDoorExit from '~icons/tabler/door-exit';
+	import IconFilePencil from '~icons/tabler/file-pencil';
+	import IconHelpHexagon from '~icons/tabler/help-hexagon';
+	import IconHomeHeart from '~icons/tabler/home-heart';
+	import IconMessages from '~icons/tabler/messages';
+	import IconPuzzle from '~icons/tabler/puzzle';
+	import IconSeedling from '~icons/tabler/seedling';
+	import IconShieldCheck from '~icons/tabler/shield-check';
+	import IconStack2 from '~icons/tabler/stack-2';
+	import IconWriting from '~icons/tabler/writing';
+	import IconArrowDown from '~icons/tabler/arrow-down';
+	import IconArrowRight from '~icons/tabler/arrow-right';
+	import IconArrowUpRight from '~icons/tabler/arrow-up-right';
+	import IconBookmark from '~icons/tabler/bookmark';
+	import IconDownload from '~icons/tabler/download';
+	import IconInfoCircle from '~icons/tabler/info-circle';
 	import SEO from '$lib/components/seo/SEO.svelte';
 	import { buildHomeSchema } from '$lib/utils/jsonld';
 	import { m } from '$lib/i18n';
@@ -16,11 +35,11 @@
 
 	// The story, one beat per step. Icons carry the mood so the text can stay short.
 	const storySteps = [
-		{ key: 'step1', icon: 'tabler:door-exit' },
-		{ key: 'step2', icon: 'tabler:clock-exclamation' },
-		{ key: 'step3', icon: 'tabler:bolt' },
-		{ key: 'step4', icon: 'tabler:writing' },
-		{ key: 'step5', icon: 'tabler:help-hexagon' }
+		{ key: 'step1', icon: IconDoorExit },
+		{ key: 'step2', icon: IconClockExclamation },
+		{ key: 'step3', icon: IconBolt },
+		{ key: 'step4', icon: IconWriting },
+		{ key: 'step5', icon: IconHelpHexagon }
 	];
 
 	// Real clauses from RCOS Core v0.1. Numbers stay in code; wording is per-locale
@@ -68,41 +87,41 @@
 	const parts = $derived([
 		{
 			key: 'core',
-			icon: 'tabler:book-2',
+			icon: IconBook2,
 			path: '/articles/rcos-core/v0-1',
 			example: `§3.6.1 “${m('home.clause.3_6_1')}”`
 		},
 		{
 			key: 'layers',
-			icon: 'tabler:stack-2',
+			icon: IconStack2,
 			path: '/articles/rcos-layers',
 			example: m('home.parts.layers.example')
 		},
 		{
 			key: 'modules',
-			icon: 'tabler:puzzle',
+			icon: IconPuzzle,
 			path: '/articles/rcos-modules',
 			example: m('home.parts.modules.example')
 		},
 		{
 			key: 'templates',
-			icon: 'tabler:file-pencil',
+			icon: IconFilePencil,
 			path: '/articles/rcos-templates',
 			example: m('home.parts.templates.example')
 		},
 		{
 			key: 'stress_tests',
-			icon: 'tabler:shield-check',
+			icon: IconShieldCheck,
 			path: '/articles/rcos-stress-tests',
 			example: m('home.parts.stress_tests.example')
 		}
 	]);
 
 	const audiences = [
-		{ key: 'founders', icon: 'tabler:seedling' },
-		{ key: 'existing', icon: 'tabler:home-heart' },
-		{ key: 'facilitators', icon: 'tabler:messages' },
-		{ key: 'builders', icon: 'tabler:code' }
+		{ key: 'founders', icon: IconSeedling },
+		{ key: 'existing', icon: IconHomeHeart },
+		{ key: 'facilitators', icon: IconMessages },
+		{ key: 'builders', icon: IconCode }
 	];
 
 	const startSteps = [
@@ -169,7 +188,7 @@
 			<div class="flex flex-wrap justify-center gap-4">
 				<Button variant="primary" size="lg" href="#story" class="gap-2">
 					{m('home.cta.how_it_works')}
-					<Icon icon="tabler:arrow-down" class="w-4 h-4" />
+					<IconArrowDown class="w-4 h-4" />
 				</Button>
 				<Button
 					variant="secondary"
@@ -177,7 +196,7 @@
 					href={href('/articles/rcos-templates#downloads')}
 					class="gap-2"
 				>
-					<Icon icon="tabler:download" class="w-4 h-4" />
+					<IconDownload class="w-4 h-4" />
 					{m('home.cta.download_templates')}
 				</Button>
 				<Button variant="outline" size="lg" href={href('/articles')}
@@ -203,7 +222,7 @@
 								: 'bg-surface-elevated text-text-secondary'}"
 						aria-hidden="true"
 					>
-						<Icon icon={step.icon} class="w-5 h-5" />
+						<step.icon class="w-5 h-5" />
 					</span>
 					<h3 class="text-xl font-bold text-text-primary mb-1 pt-1.5">
 						{m(`home.story.${step.key}.title`)}
@@ -240,7 +259,7 @@
 						<p
 							class="text-xs font-semibold uppercase tracking-wider text-primary mb-3 flex items-center gap-2"
 						>
-							<Icon icon="tabler:arrow-down" class="w-4 h-4" />
+							<IconArrowDown class="w-4 h-4" />
 							{m('home.what.rule_label')} · {layers[ex.layer].title}
 						</p>
 						<ul class="space-y-2">
@@ -260,12 +279,12 @@
 
 		<div class="mt-6 flex flex-col sm:flex-row sm:items-center gap-4 justify-between max-w-full">
 			<p class="text-sm text-text-tertiary flex gap-2 max-w-2xl">
-				<Icon icon="tabler:info-circle" class="w-5 h-5 shrink-0" />
+				<IconInfoCircle class="w-5 h-5 shrink-0" />
 				<span>{m('home.what.must_note')}</span>
 			</p>
 			<Button variant="ghost" href={href('/articles/rcos-core/v0-1')} class="gap-2 shrink-0">
 				{m('home.what.read_core')}
-				<Icon icon="tabler:arrow-right" class="w-4 h-4" />
+				<IconArrowRight class="w-4 h-4" />
 			</Button>
 		</div>
 	</section>
@@ -304,7 +323,7 @@
 							<span
 								class="hidden sm:inline-flex items-center gap-1 text-xs font-semibold text-highlight-dark dark:text-highlight shrink-0"
 							>
-								<Icon icon="tabler:bookmark" class="w-4 h-4" />
+								<IconBookmark class="w-4 h-4" />
 								{m('home.layers.in_story')}
 							</span>
 						{/if}
@@ -321,15 +340,12 @@
 
 		<div class="mt-6 flex flex-col sm:flex-row sm:items-center gap-4 justify-between max-w-4xl">
 			<p class="text-sm text-text-secondary flex gap-2 max-w-2xl">
-				<Icon
-					icon="tabler:bookmark"
-					class="w-5 h-5 shrink-0 text-highlight-dark dark:text-highlight"
-				/>
+				<IconBookmark class="w-5 h-5 shrink-0 text-highlight-dark dark:text-highlight" />
 				<span>{m('home.layers.story_note')}</span>
 			</p>
 			<Button variant="ghost" href={href('/articles/rcos-layers')} class="gap-2 shrink-0">
 				{m('home.layers.read_more')}
-				<Icon icon="tabler:arrow-right" class="w-4 h-4" />
+				<IconArrowRight class="w-4 h-4" />
 			</Button>
 		</div>
 	</section>
@@ -353,7 +369,7 @@
 						<span
 							class="inline-flex items-center justify-center w-10 h-10 rounded-lg bg-primary-light/20 text-primary-dark dark:text-primary"
 						>
-							<Icon icon={part.icon} class="w-5 h-5" />
+							<part.icon class="w-5 h-5" />
 						</span>
 						<h3
 							class="text-xl font-bold text-text-primary group-hover:text-primary transition-colors"
@@ -381,7 +397,7 @@
 		<div class="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
 			{#each audiences as a (a.key)}
 				<div class="rounded-xl border border-border bg-surface p-lg">
-					<Icon icon={a.icon} class="w-7 h-7 text-primary mb-3" />
+					<a.icon class="w-7 h-7 text-primary mb-3" />
 					<h3 class="font-bold text-text-primary mb-2">{m(`home.who.${a.key}.title`)}</h3>
 					<p class="text-sm text-text-secondary">{m(`home.who.${a.key}.body`)}</p>
 				</div>
@@ -412,7 +428,7 @@
 						class="gap-2 self-start"
 					>
 						{m(`home.start.${step.key}.cta`)}
-						<Icon icon="tabler:arrow-right" class="w-4 h-4" />
+						<IconArrowRight class="w-4 h-4" />
 					</Button>
 				</li>
 			{/each}
@@ -462,7 +478,7 @@
 					class="gap-2"
 				>
 					{m('home.cta.learn_more')}
-					<Icon icon="tabler:arrow-up-right" class="w-4 h-4" />
+					<IconArrowUpRight class="w-4 h-4" />
 				</Button>
 			</div>
 		</div>

@@ -2,7 +2,10 @@
 	import { page } from '$app/stores';
 	import Card from '$lib/components/common/Card.svelte';
 	import Button from '$lib/components/common/Button.svelte';
-	import Icon from '@iconify/svelte';
+	import IconArrowLeft from '~icons/tabler/arrow-left';
+	import IconChevronRight from '~icons/tabler/chevron-right';
+	import IconFileOff from '~icons/tabler/file-off';
+	import IconHierarchy from '~icons/tabler/hierarchy';
 	import SEO from '$lib/components/seo/SEO.svelte';
 	import { buildArticleSchema, buildBreadcrumbSchema } from '$lib/utils/jsonld';
 	import TemplateDownloads from '$lib/components/templates/TemplateDownloads.svelte';
@@ -52,7 +55,7 @@
 			<nav class="flex items-center gap-2 text-sm text-text-tertiary">
 				{#each breadcrumbs as crumb, i (crumb.slug)}
 					{#if i > 0}
-						<Icon icon="tabler:chevron-right" class="w-4 h-4" />
+						<IconChevronRight class="w-4 h-4" />
 					{/if}
 
 					{#if i < breadcrumbs.length - 1}
@@ -116,7 +119,7 @@
 		{#if article.children.length > 0}
 			<section class="pt-8 border-t border-border">
 				<h2 class="text-2xl font-bold text-text-primary mb-6 flex items-center gap-2">
-					<Icon icon="tabler:hierarchy" class="w-6 h-6" />
+					<IconHierarchy class="w-6 h-6" />
 					{m('articles.sub_articles')}
 				</h2>
 				<div class="grid gap-4 sm:grid-cols-2">
@@ -157,12 +160,12 @@
 		<nav class="pt-8 border-t border-border flex justify-between">
 			{#if parent}
 				<Button variant="outline" href={localized(`/articles/${parent.slug}`, locale)}>
-					<Icon icon="tabler:arrow-left" class="w-4 h-4 mr-2" />
+					<IconArrowLeft class="w-4 h-4 mr-2" />
 					{parent.title}
 				</Button>
 			{:else}
 				<Button variant="outline" href={localized('/articles', locale)}>
-					<Icon icon="tabler:arrow-left" class="w-4 h-4 mr-2" />
+					<IconArrowLeft class="w-4 h-4 mr-2" />
 					{m('nav.all_articles')}
 				</Button>
 			{/if}
@@ -171,7 +174,7 @@
 {:else}
 	<div class="text-center py-16">
 		<div class="w-16 h-16 mx-auto mb-4 rounded-full bg-gray-100 flex items-center justify-center">
-			<Icon icon="tabler:file-off" class="w-8 h-8 text-gray-400" />
+			<IconFileOff class="w-8 h-8 text-gray-400" />
 		</div>
 		<h2 class="text-xl font-semibold text-text-primary mb-2">{m('articles.not_found.title')}</h2>
 		<p class="text-gray-500 mb-4">{m('articles.not_found.body')}</p>

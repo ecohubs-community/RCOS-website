@@ -2,7 +2,11 @@
 	import { sidebarOpen, theme, toggleTheme } from '$lib/stores/ui';
 	import SearchBar from '$lib/components/search/SearchBar.svelte';
 	import Button from '$lib/components/common/Button.svelte';
-	import Icon from '@iconify/svelte';
+	import IconSun from '~icons/tabler/sun';
+	import IconMoon from '~icons/tabler/moon';
+	import IconSunMoon from '~icons/tabler/sun-moon';
+	import IconArrowUpRight from '~icons/tabler/arrow-up-right';
+	import IconMenu2 from '~icons/tabler/menu-2';
 	import { resolve } from '$app/paths';
 	import logo from '$lib/assets/logo.webp';
 	import LanguageSwitcher from '$lib/components/i18n/LanguageSwitcher.svelte';
@@ -27,7 +31,7 @@
 				onclick={() => sidebarOpen.update((v) => !v)}
 				aria-label={m('nav.toggle_navigation')}
 			>
-				<Icon icon="tabler:menu-2" class="w-6 h-6" />
+				<IconMenu2 class="w-6 h-6" />
 			</Button>
 
 			<a href={localized(resolve('/'), locale)} class="flex items-center gap-2 group">
@@ -51,21 +55,20 @@
 		<div class="flex items-center gap-2">
 			<Button variant="ghost" size="icon" onclick={toggleTheme} aria-label={m('nav.toggle_theme')}>
 				<!-- Shows what a click switches to; neutral icon until the theme is known -->
-				<Icon
-					icon={$theme === 'dark'
-						? 'tabler:sun'
-						: $theme === 'light'
-							? 'tabler:moon'
-							: 'tabler:sun-moon'}
-					class="w-5 h-5"
-				/>
+				{#if $theme === 'dark'}
+					<IconSun class="w-5 h-5" />
+				{:else if $theme === 'light'}
+					<IconMoon class="w-5 h-5" />
+				{:else}
+					<IconSunMoon class="w-5 h-5" />
+				{/if}
 			</Button>
 
 			<LanguageSwitcher {availableLocales} />
 
 			<div class="hidden md:flex gap-2">
 				<Button variant="ghost" href="https://ecohubs.community" target="_blank"
-					>{m('nav.about')} <Icon icon="tabler:arrow-up-right" class="w-4 h-4" /></Button
+					>{m('nav.about')} <IconArrowUpRight class="w-4 h-4" /></Button
 				>
 			</div>
 		</div>

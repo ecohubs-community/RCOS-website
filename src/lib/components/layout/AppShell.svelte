@@ -4,7 +4,7 @@
 	import Breadcrumbs from './Breadcrumbs.svelte';
 	import Footer from './Footer.svelte';
 	import { sidebarOpen } from '$lib/stores/ui';
-	import Icon from '@iconify/svelte';
+	import IconX from '~icons/tabler/x';
 	import { page } from '$app/state';
 	import ResizableSidebar from '$lib/components/layout/ResizableSidebar.svelte';
 	import { m } from '$lib/i18n';
@@ -61,7 +61,7 @@
 							aria-label={m('nav.close_sidebar')}
 							class="p-2 rounded-md hover:bg-border"
 						>
-							<Icon icon="tabler:x" class="w-5 h-5" />
+							<IconX class="w-5 h-5" />
 						</button>
 					</div>
 					<SidebarNav />
