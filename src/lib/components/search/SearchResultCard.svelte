@@ -1,7 +1,7 @@
 <script lang="ts">
 	import type { SearchResult } from '$lib/stores/search';
 	import { page } from '$app/state';
-	import { m } from '$lib/i18n';
+	import { m } from '$lib/paraglide/messages.js';
 	import { localized } from '$lib/i18n/path';
 	import { DEFAULT_LOCALE } from '$lib/i18n/languages';
 
@@ -21,7 +21,7 @@
 	<div class="flex items-start justify-between mb-2">
 		<h3 class="text-lg font-semibold text-primary">{result.title}</h3>
 		<span class="text-xs px-2 py-1 rounded-full bg-surface text-tertiary">
-			{m('articles.fallback_default')}
+			{m.articles_fallback_default()}
 		</span>
 	</div>
 	{#if result.meta}

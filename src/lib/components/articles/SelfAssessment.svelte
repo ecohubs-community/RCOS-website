@@ -1,7 +1,23 @@
 <script lang="ts">
-	import { m } from '$lib/i18n';
+	import { m } from '$lib/paraglide/messages.js';
 	import { localized } from '$lib/i18n/path';
 	import { DEFAULT_LOCALE } from '$lib/i18n/languages';
+
+	const SEVERITY_LABEL = {
+		high: m.self_assessment_severity_high,
+		medium: m.self_assessment_severity_medium,
+		low: m.self_assessment_severity_low
+	};
+	// Category keys come from the content folders.
+	const CATEGORY_LABEL: Record<string, () => string> = {
+		'governance-power': m.self_assessment_category_governance_power,
+		'conflict-accountability': m.self_assessment_category_conflict_accountability,
+		'culture-influence': m.self_assessment_category_culture_influence,
+		'economy-resources': m.self_assessment_category_economy_resources,
+		'membership-boundaries': m.self_assessment_category_membership_boundaries,
+		'operations-coordination': m.self_assessment_category_operations_coordination,
+		'change-emergencies': m.self_assessment_category_change_emergencies
+	};
 	import IconChevronRight from '~icons/tabler/chevron-right';
 	import IconRotate from '~icons/tabler/rotate';
 	import type { Assessment, AssessmentTest } from '$lib/types/assessment';
@@ -70,7 +86,7 @@
 					]}
 				/>
 				<span id="assessment-results-heading" class="font-bold text-text-primary">
-					{m('self_assessment.results_title')}
+					{m.self_assessment_results_title()}
 				</span>
 				{#if results.length > 0}
 					<span class="text-sm font-normal text-text-tertiary">({results.length})</span>
@@ -83,7 +99,7 @@
 					class="inline-flex shrink-0 items-center gap-1 rounded-md px-2 py-1 text-sm text-text-tertiary hover:text-primary"
 				>
 					<IconRotate class="h-4 w-4" />
-					{m('self_assessment.clear')}
+					{m.self_assessment_clear()}
 				</button>
 			{/if}
 		</div>
@@ -92,19 +108,19 @@
 			<!-- Collapsed: one-line live summary (top match), so ticking gives feedback without covering the boxes -->
 			<div class="px-4 pb-3 text-sm">
 				{#if topResult}
-					<span class="text-text-tertiary">{m('self_assessment.top_match')}: </span>
+					<span class="text-text-tertiary">{m.self_assessment_top_match()}: </span>
 					<a
 						class="font-medium text-primary hover:underline"
 						href={localized(`/articles/${topResult.test.slug}`, locale)}>{topResult.test.title}</a
 					>
 					<span class="text-text-tertiary">
-						· {m('self_assessment.signs', {
+						· {m.self_assessment_signs({
 							count: topResult.count,
 							total: topResult.test.symptoms.length
 						})}</span
 					>
 				{:else}
-					<span class="text-text-secondary">{m('self_assessment.empty')}</span>
+					<span class="text-text-secondary">{m.self_assessment_empty()}</span>
 				{/if}
 			</div>
 		{:else}
@@ -114,7 +130,7 @@
 				class="max-h-[55vh] overflow-y-auto border-t border-border px-4 py-3"
 			>
 				{#if results.length === 0}
-					<p class="text-sm text-text-secondary">{m('self_assessment.empty')}</p>
+					<p class="text-sm text-text-secondary">{m.self_assessment_empty()}</p>
 				{:else}
 					<ol class="space-y-2">
 						{#each results as { test, count } (test.slug)}
@@ -127,16 +143,16 @@
 									<span
 										class="rounded-full px-2 py-0.5 text-xs font-medium {severityClass(
 											test.severity
-										)}">{m(`self_assessment.severity.${test.severity}`)}</span
+										)}">{SEVERITY_LABEL[test.severity]()}</span
 									>
 									<span class="text-sm text-text-tertiary"
-										>{m('self_assessment.signs', { count, total: test.symptoms.length })}</span
+										>{m.self_assessment_signs({ count, total: test.symptoms.length })}</span
 									>
 								</div>
 								{#if test.preventsWith.length}
 									<p class="mt-1 text-sm text-text-secondary">
 										<span class="font-medium text-text-tertiary"
-											>{m('self_assessment.prevent_with')}:</span
+											>{m.self_assessment_prevent_with()}:</span
 										>
 										{#each test.preventsWith as tpl, i (tpl.slug)}<a
 												class="text-primary hover:underline"
@@ -159,7 +175,7 @@
 		{#each assessment.categories as cat (cat.key)}
 			<div>
 				<h3 class="mb-3 text-sm font-semibold uppercase tracking-wide text-text-tertiary">
-					{m(`self_assessment.category.${cat.key}`)}
+					{CATEGORY_LABEL[cat.key]?.() ?? cat.key}
 				</h3>
 				<div class="space-y-4">
 					{#each cat.tests as test (test.slug)}

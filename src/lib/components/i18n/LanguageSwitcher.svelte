@@ -6,7 +6,7 @@
 	import IconWorld from '~icons/tabler/world';
 	import { LOCALES, DEFAULT_LOCALE, getLocale, type Locale } from '$lib/i18n/languages';
 	import { localizePath } from '$lib/i18n/path';
-	import { m } from '$lib/i18n';
+	import { m } from '$lib/paraglide/messages.js';
 
 	/**
 	 * Locales for which the current page has a real translation. Items not in this
@@ -71,7 +71,7 @@
 			class="inline-flex items-center gap-1.5 rounded-md px-2 py-1.5 text-sm hover:bg-surface text-text-primary"
 			aria-haspopup="listbox"
 			aria-expanded={open}
-			aria-label={m('language_switcher.aria_label', { language: current.englishName })}
+			aria-label={m.language_switcher_aria_label({ language: current.englishName })}
 			onclick={() => (open = !open)}
 		>
 			<IconWorld class="w-4 h-4" />
@@ -94,13 +94,16 @@
 				{@const isCurrent = locale.code === currentLocale}
 				{@const translated = hasTranslation(locale.code)}
 				<li role="option" aria-selected={isCurrent}>
+					<!-- Full page load: messages are compiled per locale and read the
+					     locale from the URL when the page loads. -->
 					<a
 						href={targetUrl(locale)}
+						data-sveltekit-reload
 						onclick={() => onSelect(locale)}
 						class="flex items-center justify-between gap-3 px-3 py-2 text-sm hover:bg-surface
 							{isCurrent ? 'font-semibold text-primary' : 'text-text-primary'}
 							{!translated && !isCurrent ? 'opacity-60' : ''}"
-						title={!translated && !isCurrent ? m('language_switcher.fallback_tooltip') : undefined}
+						title={!translated && !isCurrent ? m.language_switcher_fallback_tooltip() : undefined}
 					>
 						<span class="flex flex-col items-start">
 							<span>{locale.nativeName}</span>
@@ -112,7 +115,7 @@
 							<IconCheck class="w-4 h-4 text-primary shrink-0" />
 						{:else if !translated}
 							<span class="text-[10px] uppercase tracking-wide text-text-tertiary shrink-0">
-								{m('language_switcher.fallback_badge')}
+								{m.language_switcher_fallback_badge()}
 							</span>
 						{/if}
 					</a>

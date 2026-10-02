@@ -11,6 +11,8 @@ export default defineConfig({
 		// Messages compile to one function per key; a page ships only what it uses.
 		// Locale comes from the URL only: every public page is prerendered, so the
 		// path is the one signal that exists at build time (EN is unprefixed).
+		// Keep `strategy` in sync with the paraglide:compile script in package.json:
+		// both write the same output folder, and whichever runs last wins.
 		paraglideVitePlugin({
 			project: './project.inlang',
 			outdir: './src/lib/paraglide',

@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { m } from '$lib/i18n';
+	import { m } from '$lib/paraglide/messages.js';
 	import { localized } from '$lib/i18n/path';
 	import { DEFAULT_LOCALE } from '$lib/i18n/languages';
 	import type { Coverage } from '$lib/types/coverage';
@@ -12,16 +12,16 @@
 <section class="space-y-6" aria-labelledby="coverage-heading">
 	<header class="space-y-2">
 		<h2 id="coverage-heading" class="text-2xl font-bold text-text-primary">
-			{m('stress_tests.coverage.title')}
+			{m.stress_tests_coverage_title()}
 		</h2>
-		<p class="text-text-secondary">{m('stress_tests.coverage.subtitle')}</p>
+		<p class="text-text-secondary">{m.stress_tests_coverage_subtitle()}</p>
 		<p>
 			<span
 				class="inline-flex items-center gap-2 rounded-full px-3 py-1 text-sm font-medium {fullyCovered
 					? 'bg-green-100 text-green-700'
 					: 'bg-amber-100 text-amber-700'}"
 			>
-				{m('stress_tests.coverage.summary', {
+				{m.stress_tests_coverage_summary({
 					covered: coverage.coveredInvariants,
 					total: coverage.totalInvariants
 				})}
@@ -35,7 +35,7 @@
 				<h3
 					class="bg-black/[0.03] px-4 py-2 text-sm font-semibold text-text-primary dark:bg-white/[0.04]"
 				>
-					{m('stress_tests.coverage.layer', { n: layer.layer })} — {layer.title}
+					{m.stress_tests_coverage_layer({ n: layer.layer })} — {layer.title}
 				</h3>
 				<ul class="divide-y divide-border">
 					{#each layer.invariants as inv (inv.code)}
@@ -54,7 +54,7 @@
 											</span>{/if}{/each}
 								{:else}
 									<span class="italic text-text-tertiary"
-										>{m('stress_tests.coverage.uncovered')}</span
+										>{m.stress_tests_coverage_uncovered()}</span
 									>
 								{/if}
 							</div>

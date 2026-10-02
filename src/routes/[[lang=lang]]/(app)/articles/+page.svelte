@@ -6,7 +6,7 @@
 	import type { Article } from '$lib/server/graph';
 	import SEO from '$lib/components/seo/SEO.svelte';
 	import { buildBreadcrumbSchema } from '$lib/utils/jsonld';
-	import { m } from '$lib/i18n';
+	import { m } from '$lib/paraglide/messages.js';
 	import { localized } from '$lib/i18n/path';
 	import { DEFAULT_LOCALE } from '$lib/i18n/languages';
 
@@ -25,8 +25,8 @@
 </script>
 
 <SEO
-	title={m('articles.title')}
-	description={m('articles.seo_description')}
+	title={m.articles_title()}
+	description={m.articles_seo_description()}
 	url="/articles"
 	jsonLd={buildBreadcrumbSchema([], locale)}
 	locale={data.locale}
@@ -35,11 +35,11 @@
 <div class="space-y-8 pb-12">
 	<div class="flex items-center justify-between">
 		<div>
-			<h1 class="text-3xl font-bold text-text-primary">{m('articles.title')}</h1>
-			<p class="text-text-secondary mt-2">{m('articles.subtitle')}</p>
+			<h1 class="text-3xl font-bold text-text-primary">{m.articles_title()}</h1>
+			<p class="text-text-secondary mt-2">{m.articles_subtitle()}</p>
 		</div>
 		<div class="text-sm text-text-tertiary">
-			{m('articles.count_total', { count: $articles.length })}
+			{m.articles_count_total({ count: $articles.length })}
 		</div>
 	</div>
 
@@ -71,12 +71,9 @@
 					>
 						<IconHierarchy class="w-4 h-4" />
 						<span
-							>{m(
-								totalChildren === 1
-									? 'articles.sub_article_count_one'
-									: 'articles.sub_article_count_other',
-								{ count: totalChildren }
-							)}</span
+							>{(totalChildren === 1
+								? m.articles_sub_article_count_one
+								: m.articles_sub_article_count_other)({ count: totalChildren })}</span
 						>
 					</div>
 				{/if}
@@ -89,8 +86,8 @@
 			<div class="w-16 h-16 mx-auto mb-4 rounded-full bg-gray-100 flex items-center justify-center">
 				<IconFileText class="w-8 h-8 text-gray-400" />
 			</div>
-			<h2 class="text-xl font-semibold text-gray-900 mb-2">{m('articles.empty.title')}</h2>
-			<p class="text-gray-500">{m('articles.empty.body')}</p>
+			<h2 class="text-xl font-semibold text-gray-900 mb-2">{m.articles_empty_title()}</h2>
+			<p class="text-gray-500">{m.articles_empty_body()}</p>
 		</div>
 	{/if}
 </div>

@@ -1,7 +1,7 @@
 /**
  * Shared i18n table for the downloads pipeline.
  *
- * The runtime UI uses src/lib/i18n/messages/{en,de}.json — those keys describe
+ * The runtime UI uses messages/<locale>.json (Paraglide) — those keys describe
  * the website chrome (buttons, labels, headings). The build scripts produce
  * **artifacts** (md/docx/odt files) whose preambles, anchor labels, and
  * blockquote markers need to be in the same language as the bundle the user

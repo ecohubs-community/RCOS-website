@@ -23,7 +23,7 @@
 		"test:unit": "vitest run",
 		"test:e2e": "playwright test",
 		"test": "vitest run && playwright test",
-		"paraglide:compile": "paraglide-js compile --project ./project.inlang --outdir ./src/lib/paraglide"
+		"paraglide:compile": "paraglide-js compile --project ./project.inlang --outdir ./src/lib/paraglide --strategy url baseLocale"
 	},
 	"devDependencies": {
 		"@anthropic-ai/sdk": "^0.91.1",
