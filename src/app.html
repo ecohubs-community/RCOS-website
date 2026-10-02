@@ -23,7 +23,8 @@
 				var chosen = /(?:^|; )ecohubs_consent=(accepted|declined)/.test(document.cookie);
 				if (!chosen) {
 					try {
-						chosen = !!localStorage.getItem('cookie_consent');
+						var legacy = localStorage.getItem('cookie_consent');
+						chosen = legacy === 'accepted' || legacy === 'declined';
 					} catch (e) {}
 				}
 				if (chosen) document.documentElement.classList.add('consent-known');

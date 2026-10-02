@@ -12,8 +12,16 @@
 	 */
 	onMount(() => consent.init());
 
+	// The choice may have changed on ecohubs.community in another tab.
+	function onvisibilitychange() {
+		if (document.visibilityState === 'visible') consent.refresh();
+	}
+
 	const show = $derived(!!GA_MEASUREMENT_ID && (!consent.ready || consent.value === null));
 </script>
+
+<svelte:document {onvisibilitychange} />
+<svelte:window onfocus={() => consent.refresh()} />
 
 {#if show}
 	<div
