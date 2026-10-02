@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import { standardNav, standardPage, standardPaths } from './standard';
+import { standardNav, standardPage, standardPaths, standardPrint } from './standard';
 
 const order = { high: 0, medium: 1, other: 2 };
 
@@ -65,6 +65,23 @@ describe('standard pages', () => {
 		expect(page.glossaryPath).toBe('/de/standard/core/0.1/glossary');
 		// Chapters that are not layers have no related card.
 		expect((await standardPage('/standard/core/0.1/glossary', 'en'))!.related).toBeNull();
+	});
+
+	it('puts the whole core on one print page with links inside the document', async () => {
+		const doc = (await standardPrint('de'))!;
+		expect(doc.chapters.map((c) => c.number)).toEqual([
+			...['0', '1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11'],
+			...['A', 'B', 'C']
+		]);
+		const json = JSON.stringify(doc);
+		// Every site link is either inside the document or absolute.
+		expect(json).not.toMatch(/href(=\\"|":")\//);
+		const layer0 = doc.chapters.find((c) => c.layer === 0)!;
+		const clause = layer0.sections[0].blocks[2];
+		if (clause.kind !== 'clause') throw new Error('expected a clause');
+		expect(clause.parts).toContainEqual(
+			expect.objectContaining({ t: 'layer', href: '#ch-layer-2-governance-decision-logic' })
+		);
 	});
 
 	it('builds the contents navigation and the clause index', async () => {

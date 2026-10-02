@@ -320,5 +320,13 @@
 	"std_kw_must_not": "Forbidden. A community that does this is not compliant.",
 	"std_kw_should": "Recommended. Deviate only for a stated reason.",
 	"std_kw_should_not": "Discouraged. Do it only for a stated reason.",
-	"std_kw_may": "Optional. Allowed, but not required."
+	"std_kw_may": "Optional. Allowed, but not required.",
+	"std_print_online": "Online: {url}",
+	"std_print_license": "Licensed under CC BY 4.0.",
+	"std_print_date": "Generated on {date}",
+	"std_print_partly_english": "Parts of this document are not translated yet and appear in English.",
+	"std_download": "Download the standard",
+	"std_download_pdf": "PDF",
+	"std_download_md": "Markdown",
+	"std_print_version": "Print version"
 }

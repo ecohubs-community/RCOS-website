@@ -287,7 +287,7 @@ para que el cuidado, la autonomía y la regeneración tengan algo sólido sobre 
 
 ## Registro de cambios
 
-- [v0.1](https://rcos.ecohubs.community/es/articles/rcos-core/v0-1?id=e6de7a5d) — Versión inicial
+- [v0.1](https://rcos.ecohubs.community/es/standard/core/0.1) — Versión inicial
 
 
 ---

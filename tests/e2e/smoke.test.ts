@@ -30,6 +30,14 @@ test('jump to a clause by its number', async ({ page }) => {
 	await expect(page.locator('[id="4.2.1"]')).toBeInViewport();
 });
 
+test('the print version is the whole core, without app JavaScript', async ({ request }) => {
+	const html = await (await request.get('/de/standard/core/0.1/print')).text();
+	expect(html).toContain('id="ch-layer-0-identity-scope"');
+	expect(html).toContain('id="ch-glossary"');
+	expect(html).toContain('name="robots" content="noindex"');
+	expect(html).not.toContain('_app/immutable/entry');
+});
+
 for (const path of ['/admin', '/api/auth/debug']) {
 	test(`${path} is gone`, async ({ request }) => {
 		expect((await request.get(path)).status()).toBe(404);

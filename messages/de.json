@@ -320,5 +320,13 @@
 	"std_kw_must_not": "Verboten. Eine Gemeinschaft, die das tut, ist nicht konform.",
 	"std_kw_should": "Empfohlen. Abweichen nur mit genanntem Grund.",
 	"std_kw_should_not": "Nicht empfohlen. Nur mit genanntem Grund.",
-	"std_kw_may": "Optional. Erlaubt, aber nicht verlangt."
+	"std_kw_may": "Optional. Erlaubt, aber nicht verlangt.",
+	"std_print_online": "Online: {url}",
+	"std_print_license": "Lizenziert unter CC BY 4.0.",
+	"std_print_date": "Erstellt am {date}",
+	"std_print_partly_english": "Teile dieses Dokuments sind noch nicht übersetzt und erscheinen auf Englisch.",
+	"std_download": "Den Standard herunterladen",
+	"std_download_pdf": "PDF",
+	"std_download_md": "Markdown",
+	"std_print_version": "Druckversion"
 }

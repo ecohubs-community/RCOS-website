@@ -13,6 +13,7 @@ import { tokenize, termForms, type Part } from '$lib/content/tokenize.js';
 import { renderBlock, renderInline } from '$lib/content/render.js';
 import { headingSlug } from '$lib/content/markdown.js';
 import { DEFAULT_LOCALE } from '$lib/i18n/languages';
+import { PUBLIC_SITE_URL } from '$lib/config/site';
 
 // YAML documents are checked by the content schema, not by TypeScript.
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
@@ -367,6 +368,55 @@ export async function standardNav(locale: string): Promise<StandardNav> {
 		}
 	}
 	return nav;
+}
+
+// --- Print ------------------------------------------------------------------------------------
+
+export type PrintChapter = StandardPage & { anchor: string };
+
+export type StandardPrint = {
+	/** The version page (title and status list), for the cover */
+	cover: StandardPage;
+	chapters: PrintChapter[];
+	fallback: boolean;
+};
+
+/**
+ * The whole core on one page, for printing and the PDF. Links between
+ * chapters become links inside the document; every other site link becomes
+ * absolute, so it still works from a downloaded file.
+ */
+export async function standardPrint(locale: string): Promise<StandardPrint | null> {
+	const cover = await standardPage('/standard/core/0.1', locale);
+	if (!cover) return null;
+	const order = await chapterOrder();
+	const chapters: PrintChapter[] = [];
+	for (const { path } of order) {
+		const page = await standardPage(path, locale);
+		if (page) chapters.push({ ...page, anchor: `ch-${path.split('/').pop()}` });
+	}
+	const anchors = new Map(chapters.map((c) => [c.path, c.anchor]));
+	const href = (url: string) => {
+		const m = /^(?:\/[a-z]{2}(?:-[a-z]{2})?)?(\/standard\/[^#?]*)(?:#(.*))?$/.exec(url);
+		const chapter = m && anchors.get(m[1]);
+		if (chapter) return m[2] ? `#${m[2]}` : `#${chapter}`;
+		return url.startsWith('/') ? PUBLIC_SITE_URL + url : url;
+	};
+	const fix = <T>(value: T): T => {
+		if (typeof value === 'string')
+			return value.replace(/href="([^"]*)"/g, (_m, u) => `href="${href(u)}"`) as T;
+		if (Array.isArray(value)) return value.map(fix) as T;
+		if (value && typeof value === 'object')
+			return Object.fromEntries(
+				Object.entries(value).map(([k, v]) => [k, k === 'href' ? href(String(v)) : fix(v)])
+			) as T;
+		return value;
+	};
+	return {
+		cover: fix(cover),
+		chapters: fix(chapters),
+		fallback: cover.fallback || chapters.some((c) => c.fallback)
+	};
 }
 
 /** Every page with the locales it exists in and its source file per locale (for the sitemap). */

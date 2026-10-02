@@ -4,6 +4,7 @@
 	import { m } from '$lib/paraglide/messages.js';
 	import ContentsRail from '$lib/components/standard/ContentsRail.svelte';
 	import IconRail from '$lib/components/standard/IconRail.svelte';
+	import StandardDownloads from '$lib/components/standard/StandardDownloads.svelte';
 	import { spy } from '$lib/components/standard/spy.svelte';
 	import { onRailKey, toggleRail } from '$lib/components/standard/rail';
 	import IconCollapse from '~icons/tabler/layout-sidebar-left-collapse';
@@ -47,6 +48,9 @@
 				</button>
 			</div>
 			<ContentsRail nav={data.nav} {current} active={spy.active} />
+			<div class="mt-2 border-t border-line-soft pt-4">
+				<StandardDownloads downloads={data.downloads} />
+			</div>
 		</div>
 		<div class="hidden [.rail-collapsed_&]:block">
 			<IconRail nav={data.nav} {current} />
@@ -83,6 +87,9 @@
 						</Dialog.Close>
 					</div>
 					<ContentsRail nav={data.nav} {current} onnavigate={() => (drawerOpen = false)} />
+					<div class="mt-5 border-t border-line-soft pt-4">
+						<StandardDownloads downloads={data.downloads} />
+					</div>
 				</Dialog.Content>
 			</Dialog.Portal>
 		</Dialog.Root>
