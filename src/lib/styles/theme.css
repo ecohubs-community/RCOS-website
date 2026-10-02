@@ -159,6 +159,10 @@
 	--color-brand-accent: light-dark(#b5da82, #b5da82); /* accents on brand */
 	--color-link: light-dark(#2d5016, #b5da82);
 	--color-link-line: light-dark(#b5da82, #4a7c2a); /* link underline */
+	--color-heading: light-dark(#1a3009, #d0eb9e); /* serif headings in brand green */
+	--color-accent-ink: light-dark(#4a7c2a, #b5da82); /* green text links and actions */
+	--color-tile: light-dark(#ebfcba, #22301a); /* icon tiles */
+	--color-tile-ink: light-dark(#2d5016, #d0eb9e);
 	--color-hover: light-dark(#f5fde5, #1b2614); /* row hover */
 	--color-selected: light-dark(#eef4e4, #22301a); /* open menu trigger, current nav item */
 	--color-focus: light-dark(#4a7c2a, #9ac966);
@@ -192,6 +196,9 @@
 	--color-layer-ink-4: #1a3009;
 	--color-layer-ink-5: #1a3009;
 	--color-layer-ink-6: #1a3009;
+
+	/* Outline around layer chips: none in light mode, visible in dark mode */
+	--color-chip-ring: light-dark(transparent, #3d4a31);
 
 	/* Stress-test severity */
 	--color-severity-high: #c2410c;
@@ -299,11 +306,19 @@
 	}
 }
 
+/* The dotted texture on dark brand surfaces (hero, intro cards, footer).
+   Combine with an opacity utility and bg-size-[…] when the spacing differs. */
+@utility dot-grid {
+	background-image: radial-gradient(var(--color-forest-400) 1px, transparent 1px);
+	background-size: 18px 18px;
+}
+
 /* Stacking order. Use as z-(--z-header) etc. One scale for the whole site:
    the header (with its mega menus) sits above every in-page layer, and
    dialogs sit above the header. */
 :root {
 	--z-sticky: 10; /* in-page sticky bars, rails */
+	--z-backdrop: 20; /* dims the page under an open mega menu, below the header */
 	--z-header: 30; /* site header including mega menus */
 	--z-overlay: 40; /* backdrops */
 	--z-drawer: 50; /* drawers, guide sheet, search dialog */
@@ -403,7 +418,7 @@ body {
 
 /* Focus Styles for Accessibility */
 :focus-visible {
-	outline: 2px solid var(--color-accent);
+	outline: 2px solid var(--color-focus);
 	outline-offset: 2px;
 }
 

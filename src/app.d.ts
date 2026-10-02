@@ -12,6 +12,12 @@ declare global {
 		// interface PageState {}
 		// interface Platform {}
 	}
+
+	interface Window {
+		/** Google Analytics (see components/consent/Analytics.svelte) */
+		dataLayer: unknown[];
+		gtag: (...args: unknown[]) => void;
+	}
 }
 
 export {};

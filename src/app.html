@@ -18,6 +18,15 @@
 					t = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
 				}
 				document.documentElement.classList.add(t);
+				// Hide the consent banner before first paint for visitors who already
+				// chose (cookie shared with ecohubs.community; see consent.svelte.ts).
+				var chosen = /(?:^|; )ecohubs_consent=(accepted|declined)/.test(document.cookie);
+				if (!chosen) {
+					try {
+						chosen = !!localStorage.getItem('cookie_consent');
+					} catch (e) {}
+				}
+				if (chosen) document.documentElement.classList.add('consent-known');
 			})();
 		</script>
 		%sveltekit.head%

@@ -1,20 +1,6 @@
 import { writable } from 'svelte/store';
 
-// Main sidebar state
-export const sidebarOpen = writable(false);
 export const theme = writable<'light' | 'dark' | undefined>(undefined);
-
-export function toggleSidebar() {
-	sidebarOpen.update((v) => !v);
-}
-
-export function closeSidebar() {
-	sidebarOpen.set(false);
-}
-
-export function openSidebar() {
-	sidebarOpen.set(true);
-}
 
 type Theme = 'light' | 'dark';
 
