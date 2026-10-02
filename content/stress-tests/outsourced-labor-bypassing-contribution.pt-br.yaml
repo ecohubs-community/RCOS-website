@@ -1,10 +1,10 @@
 lang: pt-br
-sourceHash: e9e2b044
+sourceHash: f3be7389
 title: Trabalho Terceirizado Contornando a Contribuição
 summary: Quando o dinheiro silenciosamente compra uma saída da vida comunitária.
 tags:
-  - 'Layer 3: Economy'
-  - Medium severity
+  - 'Camada 3: Economia'
+  - Severidade média
 symptoms:
   - Um membro mais abastado paga terceiros para cobrir sua parte do trabalho comunitário.
   - Existem exigências de contribuição, mas são silenciosamente satisfeitas com dinheiro.
@@ -68,7 +68,7 @@ sections:
       |---|---|
       | **L0 — Implícito** | Não está definido se dinheiro pode substituir a participação; as pessoas silenciosamente compram sua saída. |
       | **L1 — Nomeado** | A tensão é reconhecida, mas não existe regra de equivalência ou caminho de responsabilização. |
-      | **L2 — Documentado** | O [Protocolo de Economia Interna](/articles/rcos-templates/layer-3/internal-economy-protocol) declara se e como o dinheiro substitui o trabalho; o [Acordo de Participação](/articles/rcos-templates/layer-1/membership-agreement) vincula obrigações a direitos. |
+      | **L2 — Documentado** | O [Protocolo de Economia Interna](rcos:template/internal-economy-protocol) declara se e como o dinheiro substitui o trabalho; o [Acordo de Participação](rcos:template/membership-agreement) vincula obrigações a direitos. |
       | **L3 — Aplicado e ensaiado** | A lógica de contribuição é aplicada consistentemente; um desvio aciona a regra de equivalência acordada ou um processo de responsabilização — e já acionou. |
 
       A maioria das comunidades que se reconhece aqui está em **L0 ou L1**. O objetivo não é a perfeição — é subir um degrau.
@@ -77,11 +77,11 @@ sections:
     md: |-
       O RCOS força a comunidade a *decidir* a relação entre dinheiro e trabalho em vez de deixá-la no modo padrão:
 
-      - **[Protocolo de Economia Interna](/articles/rcos-templates/layer-3/internal-economy-protocol)** — decida explicitamente se o dinheiro pode substituir o trabalho e em que equivalência.
-      - **[Acordo de Participação](/articles/rcos-templates/layer-1/membership-agreement)** — vincule as obrigações de contribuição aos direitos de participação, para que participar não seja opcional-por-riqueza.
-      - **[Protocolo de Responsabilização](/articles/rcos-templates/layer-4/accountability-protocol)** — um caminho definido para quando as expectativas são contornadas.
+      - **[Protocolo de Economia Interna](rcos:template/internal-economy-protocol)** — decida explicitamente se o dinheiro pode substituir o trabalho e em que equivalência.
+      - **[Acordo de Participação](rcos:template/membership-agreement)** — vincule as obrigações de contribuição aos direitos de participação, para que participar não seja opcional-por-riqueza.
+      - **[Protocolo de Responsabilização](rcos:template/accountability-protocol)** — um caminho definido para quando as expectativas são contornadas.
 
-      Veja também a especificação: [Camada 3 — Reconhecimento da Contribuição](/articles/rcos-core/v0-1/layer-3-economic-resource-system#52-contribution-recognition) e [Camada 1 — Direitos e Obrigações](/articles/rcos-core/v0-1/layer-1-membership-system#34-rights-and-obligations).
+      Veja também a especificação: [Camada 3 — Reconhecimento da Contribuição](rcos:§5.2) e [Camada 1 — Direitos e Obrigações](rcos:§3.4).
   if-it-s-already-happening:
     title: Se já está acontecendo
     md: |-
@@ -92,9 +92,9 @@ sections:
       3. **Aborde o ressentimento diretamente** pelo caminho da responsabilização ou do conflito antes que endureça.
   what-this-failure-tends-to-trigger:
     title: O que essa falha tende a desencadear
-    md: '- **[Normalização da Evitação de Conflitos](/articles/rcos-stress-tests/conflict-accountability/conflict-avoidance-normalization)** — o ressentimento entre participação e pagamento é exatamente o tipo de conflito que um grupo evita até virar algo estrutural.'
+    md: '- **[Normalização da Evitação de Conflitos](rcos:test/conflict-avoidance-normalization)** — o ressentimento entre participação e pagamento é exatamente o tipo de conflito que um grupo evita até virar algo estrutural.'
   related-stress-tests:
     title: Testes de estresse relacionados
     md: |-
-      - **[Autossuficiência Sem Contribuição Coletiva](/articles/rcos-stress-tests/operations-coordination/self-sufficiency-without-collective-contribution)** — o primo do desengajamento: aqui as pessoas compram sua saída da contribuição, lá elas simplesmente optam por não participar.
-      - **[Privatização dos Bens Comuns por Meio de Vendas de Terras](/articles/rcos-stress-tests/economy-resources/commons-privatization-through-land-sales)** — o mesmo desacoplamento entre riqueza e obrigação compartilhada, no nível da terra.
+      - **[Autossuficiência Sem Contribuição Coletiva](rcos:test/self-sufficiency-without-collective-contribution)** — o primo do desengajamento: aqui as pessoas compram sua saída da contribuição, lá elas simplesmente optam por não participar.
+      - **[Privatização dos Bens Comuns por Meio de Vendas de Terras](rcos:test/commons-privatization-through-land-sales)** — o mesmo desacoplamento entre riqueza e obrigação compartilhada, no nível da terra.

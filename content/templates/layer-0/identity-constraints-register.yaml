@@ -7,7 +7,7 @@ order: 3
 preamble: |-
   - **Layer:** 0 — Identity & Scope
   - **Status:** Template — adapt for your community
-  - **RCOS reference:** [§2.4](/articles/rcos-core/v0-1/layer-0-identity-scope#24-identity-constraints), [§2.5](/articles/rcos-core/v0-1/layer-0-identity-scope#25-artifacts)
+  - **RCOS reference:** [§2.4](rcos:§2.4), [§2.5](rcos:§2.5)
 
   > Identity constraints are the non-negotiable behavioural, ethical, and structural boundaries that shape who the community is. Unlike invariants (which protect the system itself), identity constraints define how members and the community relate to people, ecosystems, and ideologies.
 

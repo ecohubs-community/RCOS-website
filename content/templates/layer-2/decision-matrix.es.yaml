@@ -1,10 +1,10 @@
 lang: es
-sourceHash: 1b1c0db9
+sourceHash: 154fced2
 title: Matriz de Decisiones
 preamble: |-
   - **Capa:** 2 — Gobernanza y Lógica de Decisión
   - **Estado:** Plantilla — adaptar para tu comunidad
-  - **Referencia RCOS:** [§4.2](/articles/rcos-core/v0-1/layer-2-governance-decision-logic#42-decision-mechanisms), [§4.4](/articles/rcos-core/v0-1/layer-2-governance-decision-logic#44-decision-matrix), [§4.7](/articles/rcos-core/v0-1/layer-2-governance-decision-logic#47-artifacts)
+  - **Referencia RCOS:** [§4.2](rcos:§4.2), [§4.4](rcos:§4.4), [§4.7](rcos:§4.7)
 
   > Asigna cada tipo de decisión y dominio a un rol o cuerpo autorizado, mecanismo, umbral y vía de escalamiento. Las decisiones tomadas fuera de esta matriz se consideran inválidas.
 

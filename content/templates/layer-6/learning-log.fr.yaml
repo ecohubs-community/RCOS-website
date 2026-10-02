@@ -1,10 +1,10 @@
 lang: fr
-sourceHash: 66c7d7c7
+sourceHash: 6e7bc1d4
 title: Journal d'apprentissage
 preamble: |-
   - **Couche :** 6 — Évolution et adaptation
   - **Statut :** Modèle — à adapter pour ta communauté ; mis à jour lorsque des événements apprenants surviennent
-  - **Référence RCOS :** [§8.4](/articles/rcos-core/v0-1/layer-6-evolution-adaptation#84-learning-and-feedback-capture), [§8.6](/articles/rcos-core/v0-1/layer-6-evolution-adaptation#86-artifacts)
+  - **Référence RCOS :** [§8.4](rcos:§8.4), [§8.6](rcos:§8.6)
 
   > Consigne les échecs majeurs, les adaptations, les retours en arrière et les apprentissages systémiques. Les schémas d'échec récurrents DOIVENT déclencher une revue structurelle, pas une mise en cause individuelle. Les entrées sont ajoutées en tête de liste (la plus récente en premier).
 

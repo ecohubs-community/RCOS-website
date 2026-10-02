@@ -1,10 +1,10 @@
 lang: de
-sourceHash: 68af1e15
+sourceHash: 9b7a2f68
 title: Mitgliedschaftsstatus-Register
 preamble: |-
   - **Ebene:** 1 — Mitgliedschaftssystem
   - **Status:** Vorlage — an eure Gemeinschaft anpassen
-  - **RCOS-Referenz:** [§3.1](/articles/rcos-core/v0-1/layer-1-membership-system#31-membership-states)
+  - **RCOS-Referenz:** [§3.1](rcos:§3.1)
 
   ---
 sections:

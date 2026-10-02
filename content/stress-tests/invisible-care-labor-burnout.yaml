@@ -89,7 +89,7 @@ sections:
       |---|---|
       | **L0 — Implicit** | Care labor is invisible, unnamed, and carried by a few by default. |
       | **L1 — Named** | The group recognizes certain people are overloaded but hasn't recognized or redistributed the work. |
-      | **L2 — Documented** | Care responsibilities are named [roles](/articles/rcos-templates/layer-5/role-registry), recognized as contribution, and bounded by workload limits. |
+      | **L2 — Documented** | Care responsibilities are named [roles](rcos:template/role-registry), recognized as contribution, and bounded by workload limits. |
       | **L3 — Enforced & rehearsed** | No structural reliance on invisible labor; care work is recognized, bounded, and rotated; capacity limits are respected. |
 
       Most communities that recognise themselves here sit at **L0 or L1**. The goal isn't perfection — it's moving up one rung.
@@ -98,11 +98,11 @@ sections:
     md: |-
       RCOS makes invisible labor visible, bounded, and shared:
 
-      - **[Role Registry](/articles/rcos-templates/layer-5/role-registry)** — name care and relational responsibilities as real roles, with rotation and limits.
-      - **[Internal Economy Protocol](/articles/rcos-templates/layer-3/internal-economy-protocol)** — recognize care as contribution, so it's visible and valued rather than assumed.
-      - **[Operations Manual](/articles/rcos-templates/layer-5/operations-manual)** — bound workload so essential labor doesn't silently land on one person.
+      - **[Role Registry](rcos:template/role-registry)** — name care and relational responsibilities as real roles, with rotation and limits.
+      - **[Internal Economy Protocol](rcos:template/internal-economy-protocol)** — recognize care as contribution, so it's visible and valued rather than assumed.
+      - **[Operations Manual](rcos:template/operations-manual)** — bound workload so essential labor doesn't silently land on one person.
 
-      See also the spec: [Layer 5 — Workload and Capacity Boundaries](/articles/rcos-core/v0-1/layer-5-operations-coordination#74-workload-and-capacity-boundaries) and [Layer 3 — Contribution Recognition](/articles/rcos-core/v0-1/layer-3-economic-resource-system#52-contribution-recognition).
+      See also the spec: [Layer 5 — Workload and Capacity Boundaries](rcos:§7.4) and [Layer 3 — Contribution Recognition](rcos:§5.2).
   - id: if-it-s-already-happening
     title: If it's already happening
     md: |-
@@ -114,7 +114,7 @@ sections:
       4. **Watch the cascade** — the indispensable carer is also accumulating invisible power and a burnout-driven exit.
   - id: what-this-failure-tends-to-trigger
     title: What this failure tends to trigger
-    md: '- **[Invisible Power via Responsibilities](/articles/rcos-stress-tests/operations-coordination/invisible-power-via-responsibilities)** — the person the community can''t function without becomes structurally indispensable and unaccountable.'
+    md: '- **[Invisible Power via Responsibilities](rcos:test/invisible-power-via-responsibilities)** — the person the community can''t function without becomes structurally indispensable and unaccountable.'
   - id: related-stress-tests
     title: Related stress tests
-    md: '- **[Self-Sufficiency Without Collective Contribution](/articles/rcos-stress-tests/operations-coordination/self-sufficiency-without-collective-contribution)** — the mirror image: when most members disengage, the few who do engage are the ones who burn out.'
+    md: '- **[Self-Sufficiency Without Collective Contribution](rcos:test/self-sufficiency-without-collective-contribution)** — the mirror image: when most members disengage, the few who do engage are the ones who burn out.'

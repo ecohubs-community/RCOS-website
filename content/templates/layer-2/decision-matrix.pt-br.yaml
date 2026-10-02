@@ -1,10 +1,10 @@
 lang: pt-br
-sourceHash: 1b1c0db9
+sourceHash: 154fced2
 title: Matriz de Decisão
 preamble: |-
   - **Camada:** 2 — Governança e Lógica de Decisão
   - **Status:** Modelo — adapte para sua comunidade
-  - **Referência RCOS:** [§4.2](/articles/rcos-core/v0-1/layer-2-governance-decision-logic#42-decision-mechanisms), [§4.4](/articles/rcos-core/v0-1/layer-2-governance-decision-logic#44-decision-matrix), [§4.7](/articles/rcos-core/v0-1/layer-2-governance-decision-logic#47-artifacts)
+  - **Referência RCOS:** [§4.2](rcos:§4.2), [§4.4](rcos:§4.4), [§4.7](rcos:§4.7)
 
   > Mapeia cada tipo e domínio de decisão para um papel ou órgão autorizado, mecanismo, limiar e caminho de escalonamento. Decisões tomadas fora desta matriz são consideradas inválidas.
 

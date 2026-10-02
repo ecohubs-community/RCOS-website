@@ -1,10 +1,10 @@
 lang: pt-br
-sourceHash: 26dcb485
+sourceHash: 163b1fae
 title: Autoridade Espiritual Carismática
 summary: Quando a reverência por uma pessoa silenciosamente se torna o direito dela de decidir.
 tags:
-  - 'Layer 2: Governance'
-  - High severity
+  - 'Camada 2: Governança'
+  - Severidade alta
 symptoms:
   - Os desejos de um(a) professor(a), ancião(ã) ou fundador(a) respeitado(a) acabam decidindo as questões na prática.
   - Discordar dessa pessoa parece discordar dos valores ou do espírito da comunidade.
@@ -71,7 +71,7 @@ sections:
       |---|---|
       | **L0 — Implícito** | Posição espiritual equivale silenciosamente a poder de governança; divergir parece proibido. |
       | **L1 — Nomeado** | O grupo nota a deferência, mas ainda não separou influência de autoridade. |
-      | **L2 — Documentado** | Papéis espirituais/morais são explicitamente desacoplados da autoridade de governança, que vive em um [Registro de Autoridade](/articles/rcos-templates/layer-2/authority-registry). |
+      | **L2 — Documentado** | Papéis espirituais/morais são explicitamente desacoplados da autoridade de governança, que vive em um [Registro de Autoridade](rcos:template/authority-registry). |
       | **L3 — Aplicado e ensaiado** | A influência informa, mas não decide; a assimetria de poder é reconhecida e protegida; as pessoas podem — e de fato — divergir sem sofrer sanções. |
 
       A maioria das comunidades que se reconhecem aqui está em **L0 ou L1**. O objetivo não é a perfeição — é subir um degrau.
@@ -80,11 +80,11 @@ sections:
     md: |-
       O RCOS separa ser reverenciado de estar no comando:
 
-      - **[Registro de Autoridade](/articles/rcos-templates/layer-2/authority-registry)** — torne explícita a autoridade de governança, para que a reverência nunca seja confundida com um mandato.
-      - **[Protocolo de Governança](/articles/rcos-templates/layer-2/governance-protocol)** — as decisões seguem um processo, não a convicção pessoal.
-      - **[Registro de Invariantes](/articles/rcos-templates/layer-0/invariants-register)** — proteja o direito de divergir e a separação entre crença e regra.
+      - **[Registro de Autoridade](rcos:template/authority-registry)** — torne explícita a autoridade de governança, para que a reverência nunca seja confundida com um mandato.
+      - **[Protocolo de Governança](rcos:template/governance-protocol)** — as decisões seguem um processo, não a convicção pessoal.
+      - **[Registro de Invariantes](rcos:template/invariants-register)** — proteja o direito de divergir e a separação entre crença e regra.
 
-      Veja também a especificação: [Camada 2 — Limites de Autoridade](/articles/rcos-core/v0-1/layer-2-governance-decision-logic#43-authority-boundaries) e [Camada 4 — Salvaguardas](/articles/rcos-core/v0-1/layer-4-conflict-repair-accountability#63-safeguards).
+      Veja também a especificação: [Camada 2 — Limites de Autoridade](rcos:§4.3) e [Camada 4 — Salvaguardas](rcos:§6.3).
   if-it-s-already-happening:
     title: Se já está acontecendo
     md: |-
@@ -97,9 +97,9 @@ sections:
   what-this-failure-tends-to-trigger:
     title: O que essa falha tende a desencadear
     md: |-
-      - **[Teste de Escopo de Violação de Norma Cultural](/articles/rcos-stress-tests/membership-boundaries/cultural-norm-violation-scope-test)** — as preferências de uma figura reverenciada são aplicadas como se fossem regras declaradas.
-      - **[Precedente de Exceção Emergencial às Regras](/articles/rcos-stress-tests/change-emergencies/emergency-rule-bypass-precedent)** — o carisma fornece a justificativa para contornar o processo "só desta vez".
-      - **[Normalização da Evitação de Conflito](/articles/rcos-stress-tests/conflict-accountability/conflict-avoidance-normalization)** — a divergência é suprimida para preservar a reverência.
+      - **[Teste de Escopo de Violação de Norma Cultural](rcos:test/cultural-norm-violation-scope-test)** — as preferências de uma figura reverenciada são aplicadas como se fossem regras declaradas.
+      - **[Precedente de Exceção Emergencial às Regras](rcos:test/emergency-rule-bypass-precedent)** — o carisma fornece a justificativa para contornar o processo "só desta vez".
+      - **[Normalização da Evitação de Conflito](rcos:test/conflict-avoidance-normalization)** — a divergência é suprimida para preservar a reverência.
   related-stress-tests:
     title: Testes de estresse relacionados
-    md: '- **[Veto Informal do Fundador](/articles/rcos-stress-tests/governance-power/founder-informal-veto)** — o primo secular: autoridade não escrita que se sobrepõe ao processo.'
+    md: '- **[Veto Informal do Fundador](rcos:test/founder-informal-veto)** — o primo secular: autoridade não escrita que se sobrepõe ao processo.'

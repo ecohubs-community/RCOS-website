@@ -1,10 +1,10 @@
 lang: pt-br
-sourceHash: 35f04330
+sourceHash: f85baff8
 title: Carta de Propósito
 preamble: |-
   - **Camada:** 0 — Identidade e Escopo
   - **Status:** Modelo — adapte para sua comunidade
-  - **Referência RCOS:** [§2.1](/articles/rcos-core/v0-1/layer-0-identity-scope#21-purpose-definition), [§2.5](/articles/rcos-core/v0-1/layer-0-identity-scope#25-artifacts)
+  - **Referência RCOS:** [§2.1](rcos:§2.1), [§2.5](rcos:§2.5)
 
   ---
 sections:

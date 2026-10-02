@@ -1,10 +1,10 @@
 lang: es
-sourceHash: 194ee1f4
+sourceHash: b423991e
 title: La gobernanza se cuela en la vida privada
 summary: Cuando la comunidad no declara una esfera privada, termina gobernándolo todo.
 tags:
-  - 'Layer 0: Scope'
-  - Medium severity
+  - 'Capa 0: Alcance'
+  - Severidad media
 symptoms:
   - Las normas comunitarias alcanzan decisiones personales — dieta, relaciones, crianza, creencias, tiempo libre.
   - No hay una línea declarada entre lo que la comunidad gobierna y lo que no le incumbe a nadie.
@@ -69,7 +69,7 @@ sections:
       |---|---|
       | **L0 — Implícito** | No hay esfera privada declarada; las normas se expanden hacia la vida personal sin control. |
       | **L1 — Nombrado** | El grupo nota el exceso pero no ha trazado un límite no gobernado. |
-      | **L2 — Documentado** | Una [Declaración de Alcance](/articles/rcos-templates/layer-0/scope-declaration) nombra explícitamente lo que está fuera del alcance — la esfera privada protegida. |
+      | **L2 — Documentado** | Una [Declaración de Alcance](rcos:template/scope-declaration) nombra explícitamente lo que está fuera del alcance — la esfera privada protegida. |
       | **L3 — Aplicado y ensayado** | La gobernanza se mantiene dentro del alcance declarado; los asuntos personales fuera de él no pueden desencadenar sanción; esto se ha sostenido en un caso real. |
 
       La mayoría de las comunidades que se reconocen aquí están en **L0 o L1**. La meta no es la perfección — es subir un peldaño.
@@ -78,11 +78,11 @@ sections:
     md: |-
       RCOS exige declarar lo que la comunidad *no* gobierna:
 
-      - **[Declaración de Alcance](/articles/rcos-templates/layer-0/scope-declaration)** — declara explícitamente lo que la comunidad NO gobierna (invariante 0.3).
-      - **[Registro de Restricciones de Identidad](/articles/rcos-templates/layer-0/identity-constraints-register)** — acota el alcance de la comunidad sobre la vida de las personas miembro.
-      - **[Acuerdo de Membresía](/articles/rcos-templates/layer-1/membership-agreement)** — explicita la práctica compartida en la que se entró, y todo lo demás queda privado por defecto.
+      - **[Declaración de Alcance](rcos:template/scope-declaration)** — declara explícitamente lo que la comunidad NO gobierna (invariante 0.3).
+      - **[Registro de Restricciones de Identidad](rcos:template/identity-constraints-register)** — acota el alcance de la comunidad sobre la vida de las personas miembro.
+      - **[Acuerdo de Membresía](rcos:template/membership-agreement)** — explicita la práctica compartida en la que se entró, y todo lo demás queda privado por defecto.
 
-      Consulta también la especificación: [Capa 0 — Declaración de Alcance](/articles/rcos-core/v0-1/layer-0-identity-scope#22-scope-declaration) e [Restricciones de Identidad](/articles/rcos-core/v0-1/layer-0-identity-scope#24-identity-constraints).
+      Consulta también la especificación: [Capa 0 — Declaración de Alcance](rcos:§2.2) e [Restricciones de Identidad](rcos:§2.4).
   if-it-s-already-happening:
     title: Si ya está pasando
     md: |-
@@ -94,8 +94,8 @@ sections:
   what-this-failure-tends-to-trigger:
     title: Qué tiende a desencadenar este fallo
     md: |-
-      - **[Prueba de alcance ante violación de normas culturales](/articles/rcos-stress-tests/membership-boundaries/cultural-norm-violation-scope-test)** — sin una esfera fuera del alcance, cualquier decisión personal puede convertirse en una norma exigible.
-      - **[Autoridad espiritual carismática](/articles/rcos-stress-tests/culture-influence/charismatic-spiritual-authority)** — una comunidad totalizante es terreno fértil para una autoridad moral incuestionable.
+      - **[Prueba de alcance ante violación de normas culturales](rcos:test/cultural-norm-violation-scope-test)** — sin una esfera fuera del alcance, cualquier decisión personal puede convertirse en una norma exigible.
+      - **[Autoridad espiritual carismática](rcos:test/charismatic-spiritual-authority)** — una comunidad totalizante es terreno fértil para una autoridad moral incuestionable.
   related-stress-tests:
     title: Pruebas de estrés relacionadas
-    md: '- **[Prueba de alcance ante violación de normas culturales](/articles/rcos-stress-tests/membership-boundaries/cultural-norm-violation-scope-test)** — el evento de aplicación; esta prueba es el límite ausente que lo hace posible.'
+    md: '- **[Prueba de alcance ante violación de normas culturales](rcos:test/cultural-norm-violation-scope-test)** — el evento de aplicación; esta prueba es el límite ausente que lo hace posible.'

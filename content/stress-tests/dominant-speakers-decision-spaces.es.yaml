@@ -1,10 +1,10 @@
 lang: es
-sourceHash: aedbeb8a
+sourceHash: 842252b2
 title: Voces dominantes en espacios de decisión
 summary: Cuando la voz más alta, no el proceso acordado, decide.
 tags:
-  - 'Layer 2: Governance'
-  - High severity
+  - 'Capa 2: Gobernanza'
+  - Severidad alta
 symptoms:
   - Las mismas una o dos voces moldean casi todas las decisiones.
   - Las personas más calladas han dejado de contribuir en las reuniones — o han dejado de asistir.
@@ -70,7 +70,7 @@ sections:
       |---|---|
       | **L0 — Implícito** | Un par de voces dominan; se lee como personalidad, no como proceso. |
       | **L1 — Nombrado** | El grupo reconoce el desequilibrio pero no tiene rol de facilitación ni regla para abordarlo. |
-      | **L2 — Documentado** | Las reuniones tienen un [rol de facilitador](/articles/rcos-templates/layer-5/role-registry) definido y una [matriz de decisiones](/articles/rcos-templates/layer-2/decision-matrix); las decisiones se trazan a un mecanismo, no al tiempo de palabra. |
+      | **L2 — Documentado** | Las reuniones tienen un [rol de facilitador](rcos:template/role-registry) definido y una [matriz de decisiones](rcos:template/decision-matrix); las decisiones se trazan a un mecanismo, no al tiempo de palabra. |
       | **L3 — Aplicado y ensayado** | La facilitación equilibra activamente la participación; el dominio se nombra como una violación del proceso y se escala si persiste. |
 
       La mayoría de las comunidades que se reconocen aquí están en **L0 o L1**. La meta no es la perfección — es subir un escalón.
@@ -79,11 +79,11 @@ sections:
     md: |-
       RCOS canaliza la influencia a través de una estructura acordada en lugar del tiempo de palabra:
 
-      - **[Plantillas de reunión](/articles/rcos-templates/layer-5/meeting-templates)** — agendas estructuradas, rondas de palabra y limitación de tiempo que distribuyen el tiempo de palabra por diseño.
-      - **[Registro de roles](/articles/rcos-templates/layer-5/role-registry)** — un rol de facilitador con autoridad explícita para intervenir y reequilibrar.
-      - **[Matriz de decisiones](/articles/rcos-templates/layer-2/decision-matrix)** — las decisiones se resuelven mediante un mecanismo acordado, lo que hace que el tiempo de palabra sea irrelevante para el resultado.
+      - **[Plantillas de reunión](rcos:template/meeting-templates)** — agendas estructuradas, rondas de palabra y limitación de tiempo que distribuyen el tiempo de palabra por diseño.
+      - **[Registro de roles](rcos:template/role-registry)** — un rol de facilitador con autoridad explícita para intervenir y reequilibrar.
+      - **[Matriz de decisiones](rcos:template/decision-matrix)** — las decisiones se resuelven mediante un mecanismo acordado, lo que hace que el tiempo de palabra sea irrelevante para el resultado.
 
-      Véase también la especificación: [Capa 5 — Sistema de Reuniones](/articles/rcos-core/v0-1/layer-5-operations-coordination#72-meeting-system) y [Capa 2 — Matriz de Decisiones](/articles/rcos-core/v0-1/layer-2-governance-decision-logic#44-decision-matrix).
+      Véase también la especificación: [Capa 5 — Sistema de Reuniones](rcos:§7.2) y [Capa 2 — Matriz de Decisiones](rcos:§4.4).
   if-it-s-already-happening:
     title: Si ya está ocurriendo
     md: |-
@@ -96,8 +96,8 @@ sections:
   what-this-failure-tends-to-trigger:
     title: Qué tiende a desencadenar este fallo
     md: |-
-      - **[Toma de decisiones por camarilla informal](/articles/rcos-stress-tests/governance-power/informal-clique-decision-making)** — el dominio sin control se endurece hasta convertirse en un grupo interno de facto que decide las cosas antes que la sala.
-      - **[Normalización de la evitación del conflicto](/articles/rcos-stress-tests/conflict-accountability/conflict-avoidance-normalization)** — las personas a las que se les pasa por encima repetidamente dejan de plantear cosas por completo.
+      - **[Toma de decisiones por camarilla informal](rcos:test/informal-clique-decision-making)** — el dominio sin control se endurece hasta convertirse en un grupo interno de facto que decide las cosas antes que la sala.
+      - **[Normalización de la evitación del conflicto](rcos:test/conflict-avoidance-normalization)** — las personas a las que se les pasa por encima repetidamente dejan de plantear cosas por completo.
   related-stress-tests:
     title: Pruebas de estrés relacionadas
-    md: '- **[Veto informal del fundador](/articles/rcos-stress-tests/governance-power/founder-informal-veto)** — a menudo el hablante dominante es el fundador, y el dominio se transforma en un veto no escrito.'
+    md: '- **[Veto informal del fundador](rcos:test/founder-informal-veto)** — a menudo el hablante dominante es el fundador, y el dominio se transforma en un veto no escrito.'

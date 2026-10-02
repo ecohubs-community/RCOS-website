@@ -1,10 +1,10 @@
 lang: de
-sourceHash: a487b3ce
+sourceHash: a1b9d585
 title: Schnelles Wachstum ohne Onboarding
 summary: Wenn die Gemeinschaft schneller wächst, als sie irgendjemanden integrieren kann.
 tags:
-  - 'Layer 1: Membership'
-  - High severity
+  - 'Schicht 1: Mitgliedschaft'
+  - Hoher Schweregrad
 symptoms:
   - Die Gemeinschaft wächst schneller, als sie Menschen integrieren kann.
   - Neue Mitglieder erhalten Zugang und Rechte ohne klaren Eintrittsprozess oder Probezeit.
@@ -69,7 +69,7 @@ sections:
       |---|---|
       | **L0 — Implizit** | Menschen werden Mitglied, indem sie auftauchen; kein Eintrittsprozess, kein Onboarding. |
       | **L1 — Benannt** | Die Gruppe spürt die Verdünnung, hat aber keine Eintritts-/Probezeit-Pipeline aufgebaut. |
-      | **L2 — Dokumentiert** | Ein definierter [Onboarding- und Probezeit-Prozess](/articles/rcos-templates/layer-1/onboarding-protocol) regelt die Mitgliedschaft; Zustände werden in einem [Register](/articles/rcos-templates/layer-1/membership-state-registry) erfasst. |
+      | **L2 — Dokumentiert** | Ein definierter [Onboarding- und Probezeit-Prozess](rcos:template/onboarding-protocol) regelt die Mitgliedschaft; Zustände werden in einem [Register](rcos:template/membership-state-registry) erfasst. |
       | **L3 — Durchgesetzt & geübt** | Mitgliedschaftsstatus ist jederzeit explizit; jede:r Neuankömmling durchläuft Onboarding; das Wachstumstempo wird an die Integrationskapazität angepasst. |
 
       Die meisten Gemeinschaften, die sich hier wiedererkennen, sitzen auf **L0 oder L1**. Das Ziel ist nicht Perfektion — es ist eine Stufe nach oben.
@@ -78,11 +78,11 @@ sections:
     md: |-
       RCOS sorgt dafür, dass Rechte der Integration folgen, nicht der Ankunft:
 
-      - **[Onboarding-Protokoll](/articles/rcos-templates/layer-1/onboarding-protocol)** — ein verpflichtender Eintritts- und Probezeitpfad, damit Kultur und Wissen tatsächlich weitergegeben werden.
-      - **[Mitgliedschaftsvereinbarung](/articles/rcos-templates/layer-1/membership-agreement)** — die Bedingungen der Mitgliedschaft beim Eintritt explizit machen.
-      - **[Mitgliedschaftszustands-Register](/articles/rcos-templates/layer-1/membership-state-registry)** — jederzeit wissen, wer in Probezeit, vollwertig oder ausgetreten ist.
+      - **[Onboarding-Protokoll](rcos:template/onboarding-protocol)** — ein verpflichtender Eintritts- und Probezeitpfad, damit Kultur und Wissen tatsächlich weitergegeben werden.
+      - **[Mitgliedschaftsvereinbarung](rcos:template/membership-agreement)** — die Bedingungen der Mitgliedschaft beim Eintritt explizit machen.
+      - **[Mitgliedschaftszustands-Register](rcos:template/membership-state-registry)** — jederzeit wissen, wer in Probezeit, vollwertig oder ausgetreten ist.
 
-      Siehe auch die Spezifikation: [Schicht 1 — Eintritt und Onboarding](/articles/rcos-core/v0-1/layer-1-membership-system#32-entry-and-onboarding) und [Mitgliedschaftszustände](/articles/rcos-core/v0-1/layer-1-membership-system#31-membership-states).
+      Siehe auch die Spezifikation: [Schicht 1 — Eintritt und Onboarding](rcos:§3.2) und [Mitgliedschaftszustände](rcos:§3.1).
   if-it-s-already-happening:
     title: Wenn es bereits passiert
     md: |-
@@ -95,8 +95,8 @@ sections:
   what-this-failure-tends-to-trigger:
     title: Was dieses Versagen typischerweise auslöst
     md: |-
-      - **[Kultureller Normbruch — Reichweitentest](/articles/rcos-stress-tests/membership-boundaries/cultural-norm-violation-scope-test)** — Neuankömmlinge, die die Normen nie gelernt haben, kollidieren mit ihnen.
-      - **[Unsichtbare Macht über Verantwortlichkeiten](/articles/rcos-stress-tests/operations-coordination/invisible-power-via-responsibilities)** — im Chaos halten ein paar wenige Menschen alles informell zusammen.
+      - **[Kultureller Normbruch — Reichweitentest](rcos:test/cultural-norm-violation-scope-test)** — Neuankömmlinge, die die Normen nie gelernt haben, kollidieren mit ihnen.
+      - **[Unsichtbare Macht über Verantwortlichkeiten](rcos:test/invisible-power-via-responsibilities)** — im Chaos halten ein paar wenige Menschen alles informell zusammen.
   related-stress-tests:
     title: Verwandte Stresstests
-    md: '- **[Selbstversorgung ohne kollektiven Beitrag](/articles/rcos-stress-tests/operations-coordination/self-sufficiency-without-collective-contribution)** — nicht-onboardete Mitglieder lernen nie, dass die Allmende auch ihnen zur Pflege anvertraut ist.'
+    md: '- **[Selbstversorgung ohne kollektiven Beitrag](rcos:test/self-sufficiency-without-collective-contribution)** — nicht-onboardete Mitglieder lernen nie, dass die Allmende auch ihnen zur Pflege anvertraut ist.'

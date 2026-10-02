@@ -1,10 +1,10 @@
 lang: es
-sourceHash: d0ef4e06
+sourceHash: 23c439c7
 title: Invariantes centrales desprotegidas
 summary: Cuando las promesas fundacionales pueden deshacerse con una sola votación ordinaria.
 tags:
-  - 'Layer 0: Scope'
-  - High severity
+  - 'Capa 0: Alcance'
+  - Severidad alta
 symptoms:
   - Los compromisos fundacionales de la comunidad (la tierra permanece como bien común, sin un líder único) pueden cambiarse por mayoría simple.
   - No existe distinción entre reglas cotidianas y reglas constitucionales.
@@ -69,7 +69,7 @@ sections:
       |---|---|
       | **L0 — Implícito** | Las reglas centrales y las cotidianas son igualmente modificables; los cimientos no están protegidos. |
       | **L1 — Nombrado** | El grupo sabe que algunas reglas deberían ser más difíciles de cambiar, pero no las ha separado. |
-      | **L2 — Documentado** | Un [Registro de Invariantes](/articles/rcos-templates/layer-0/invariants-register) nombra las invariantes protegidas con un listón de enmienda alto y explícito. |
+      | **L2 — Documentado** | Un [Registro de Invariantes](rcos:template/invariants-register) nombra las invariantes protegidas con un listón de enmienda alto y explícito. |
       | **L3 — Aplicado y ensayado** | Las invariantes centrales no pueden cambiarse mediante un proceso ordinario; la protección ha resistido un intento real de eludirla. |
 
       La mayoría de las comunidades que se reconocen aquí están en **L0 o L1**. El objetivo no es la perfección — es subir un peldaño.
@@ -78,11 +78,11 @@ sections:
     md: |-
       RCOS separa el cambio constitucional de las decisiones cotidianas:
 
-      - **[Registro de Invariantes](/articles/rcos-templates/layer-0/invariants-register)** — nombra las invariantes protegidas y el listón alto necesario para cambiarlas.
-      - **[Protocolo de Cambio](/articles/rcos-templates/layer-6/change-protocol)** — define una vía distinta y más exigente para los cambios constitucionales.
-      - **[Protocolo de Gobernanza](/articles/rcos-templates/layer-2/governance-protocol)** — mantén las reglas constitucionales por encima de las decisiones ordinarias.
+      - **[Registro de Invariantes](rcos:template/invariants-register)** — nombra las invariantes protegidas y el listón alto necesario para cambiarlas.
+      - **[Protocolo de Cambio](rcos:template/change-protocol)** — define una vía distinta y más exigente para los cambios constitucionales.
+      - **[Protocolo de Gobernanza](rcos:template/governance-protocol)** — mantén las reglas constitucionales por encima de las decisiones ordinarias.
 
-      Consulta también la especificación: [Capa 0 — Invariantes](/articles/rcos-core/v0-1/layer-0-identity-scope#23-invariants) y [Capa 6 — Versionado y Autoridad](/articles/rcos-core/v0-1/layer-6-evolution-adaptation#82-versioning-and-authority).
+      Consulta también la especificación: [Capa 0 — Invariantes](rcos:§2.3) y [Capa 6 — Versionado y Autoridad](rcos:§8.2).
   if-it-s-already-happening:
     title: Si ya está ocurriendo
     md: |-
@@ -94,8 +94,8 @@ sections:
   what-this-failure-tends-to-trigger:
     title: Qué tiende a desencadenar este fallo
     md: |-
-      - **[Privatización de los bienes comunes mediante venta de tierras](/articles/rcos-stress-tests/economy-resources/commons-privatization-through-land-sales)** — si la protección de los bienes comunes es modificable, puede eliminarse por votación bajo presión.
-      - **[Veto informal de quienes fundaron](/articles/rcos-stress-tests/governance-power/founder-informal-veto)** — una estructura desprotegida permite que una autoridad informal remodele las reglas.
+      - **[Privatización de los bienes comunes mediante venta de tierras](rcos:test/commons-privatization-through-land-sales)** — si la protección de los bienes comunes es modificable, puede eliminarse por votación bajo presión.
+      - **[Veto informal de quienes fundaron](rcos:test/founder-informal-veto)** — una estructura desprotegida permite que una autoridad informal remodele las reglas.
   related-stress-tests:
     title: Pruebas de estrés relacionadas
-    md: '- **[Precedente de eludir reglas en emergencias](/articles/rcos-stress-tests/change-emergencies/emergency-rule-bypass-precedent)** — la otra forma en que se erosiona la constitución: no se enmienda abiertamente, sino que se elude bajo urgencia.'
+    md: '- **[Precedente de eludir reglas en emergencias](rcos:test/emergency-rule-bypass-precedent)** — la otra forma en que se erosiona la constitución: no se enmienda abiertamente, sino que se elude bajo urgencia.'

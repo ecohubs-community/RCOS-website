@@ -1,10 +1,10 @@
 lang: fr
-sourceHash: ced41791
+sourceHash: 0d2e26c5
 title: Précédent de contournement des règles en cas d'urgence
 summary: Quand une exception temporaire en temps de crise devient discrètement la règle permanente.
 tags:
-  - 'Layer 2: Governance'
-  - High severity
+  - 'Couche 2 : Gouvernance'
+  - Sévérité élevée
 symptoms:
   - Pendant une crise, le processus normal a été suspendu « juste pour l'instant » — et n'a jamais été pleinement rétabli.
   - Une décision prise dans l'urgence est devenue discrètement la nouvelle structure permanente.
@@ -78,11 +78,11 @@ sections:
     md: |-
       RCOS te permet d'agir vite en cas de crise *sans* perdre la constitution :
 
-      - **[Protocole de Changement](/articles/rcos-templates/layer-6/change-protocol)** — définis les pouvoirs d'urgence à l'avance : leur portée, qui les détient, et une clause de caducité obligatoire.
-      - **[Protocole de Gouvernance](/articles/rcos-templates/layer-2/governance-protocol)** — maintiens la primauté des règles constitutionnelles sur l'urgence.
-      - **[Registre des Invariants](/articles/rcos-templates/layer-0/invariants-register)** — marque les règles qui ne peuvent jamais être contournées, même en cas de crise.
+      - **[Protocole de Changement](rcos:template/change-protocol)** — définis les pouvoirs d'urgence à l'avance : leur portée, qui les détient, et une clause de caducité obligatoire.
+      - **[Protocole de Gouvernance](rcos:template/governance-protocol)** — maintiens la primauté des règles constitutionnelles sur l'urgence.
+      - **[Registre des Invariants](rcos:template/invariants-register)** — marque les règles qui ne peuvent jamais être contournées, même en cas de crise.
 
-      Voir aussi la spécification : [Couche 6 — Sécurité et Réversibilité des Changements](/articles/rcos-core/v0-1/layer-6-evolution-adaptation#85-change-safety-and-reversibility) et [Couche 2 — Garde-fous et Modes de Défaillance](/articles/rcos-core/v0-1/layer-2-governance-decision-logic#46-safeguards-and-failure-modes).
+      Voir aussi la spécification : [Couche 6 — Sécurité et Réversibilité des Changements](rcos:§8.5) et [Couche 2 — Garde-fous et Modes de Défaillance](rcos:§4.6).
   if-it-s-already-happening:
     title: Si cela se produit déjà
     md: |-
@@ -95,8 +95,8 @@ sections:
   what-this-failure-tends-to-trigger:
     title: Ce que cette défaillance tend à déclencher
     md: |-
-      - **[Veto Informel du Fondateur](/articles/rcos-stress-tests/governance-power/founder-informal-veto)** — celui ou celle qui exerce le pouvoir d'urgence de manière informelle a tendance à le consolider.
-      - **[Privatisation des Biens Communs par la Vente de Terres](/articles/rcos-stress-tests/economy-resources/commons-privatization-through-land-sales)** — une crise financière « urgente » est la couverture classique pour une vente précipitée et irréversible.
+      - **[Veto Informel du Fondateur](rcos:test/founder-informal-veto)** — celui ou celle qui exerce le pouvoir d'urgence de manière informelle a tendance à le consolider.
+      - **[Privatisation des Biens Communs par la Vente de Terres](rcos:test/commons-privatization-through-land-sales)** — une crise financière « urgente » est la couverture classique pour une vente précipitée et irréversible.
   related-stress-tests:
     title: Tests de résistance liés
-    md: '- **[Veto Informel du Fondateur](/articles/rcos-stress-tests/governance-power/founder-informal-veto)** — la version « pouvoir établi » de la même érosion constitutionnelle.'
+    md: '- **[Veto Informel du Fondateur](rcos:test/founder-informal-veto)** — la version « pouvoir établi » de la même érosion constitutionnelle.'

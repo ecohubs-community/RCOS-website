@@ -1,10 +1,10 @@
 lang: es
-sourceHash: b91787ca
+sourceHash: 35df6347
 title: Poder invisible mediante responsabilidades
 summary: Cuando una persona indispensable se convierte en un punto único de fallo — y de poder informal.
 tags:
-  - 'Layer 5: Operations'
-  - High severity
+  - 'Capa 5: Operaciones'
+  - Severidad alta
 symptoms:
   - Una persona "simplemente se encarga" de algo crítico (las finanzas, el sitio web, las llaves, las relaciones) y nadie más sabe cómo hacerlo.
   - Las tareas y los accesos se le han ido acumulando informalmente a lo largo de los años.
@@ -70,7 +70,7 @@ sections:
       |---|---|
       | **L0 — Implícito** | Las funciones críticas están ligadas a una persona y no documentadas; alguien es silenciosamente indispensable. |
       | **L1 — Nombrado** | El grupo sabe que depende demasiado de una persona, pero no ha formalizado ni documentado el rol. |
-      | **L2 — Documentado** | Las responsabilidades son [roles](/articles/rcos-templates/layer-5/role-registry) con nombre, con alcance, mandato y sucesión; el conocimiento operativo está por escrito. |
+      | **L2 — Documentado** | Las responsabilidades son [roles](rcos:template/role-registry) con nombre, con alcance, mandato y sucesión; el conocimiento operativo está por escrito. |
       | **L3 — Aplicado y ensayado** | Ninguna persona individual ostenta poder crítico para el sistema sin documentar; los roles rotan y se han traspasado con éxito al menos una vez. |
 
       La mayoría de las comunidades que se reconocen aquí están en **L0 o L1**. La meta no es la perfección — es subir un peldaño.
@@ -79,11 +79,11 @@ sections:
     md: |-
       El RCOS separa hacer el trabajo de ostentar el poder, y saca ambas cosas de la cabeza de una sola persona:
 
-      - **[Registro de Roles](/articles/rcos-templates/layer-5/role-registry)** — convierte las responsabilidades acumuladas en roles con nombre, con alcance, límites de mandato y sucesión.
-      - **[Registro de Autoridad](/articles/rcos-templates/layer-2/authority-registry)** — separa "hace el trabajo" de "ostenta la autoridad", para que la indispensabilidad no se convierta silenciosamente en poder.
-      - **[Manual de Operaciones](/articles/rcos-templates/layer-5/operations-manual)** — documenta los procesos críticos para que ninguna función viva solo en una cabeza.
+      - **[Registro de Roles](rcos:template/role-registry)** — convierte las responsabilidades acumuladas en roles con nombre, con alcance, límites de mandato y sucesión.
+      - **[Registro de Autoridad](rcos:template/authority-registry)** — separa "hace el trabajo" de "ostenta la autoridad", para que la indispensabilidad no se convierta silenciosamente en poder.
+      - **[Manual de Operaciones](rcos:template/operations-manual)** — documenta los procesos críticos para que ninguna función viva solo en una cabeza.
 
-      Véase también la especificación: [Capa 5 — Roles y Responsabilidades](/articles/rcos-core/v0-1/layer-5-operations-coordination#71-roles-and-responsibilities) y [Capa 3 — Restricciones de Acumulación](/articles/rcos-core/v0-1/layer-3-economic-resource-system#54-accumulation-constraints).
+      Véase también la especificación: [Capa 5 — Roles y Responsabilidades](rcos:§7.1) y [Capa 3 — Restricciones de Acumulación](rcos:§5.4).
   if-it-s-already-happening:
     title: Si ya está pasando
     md: |-
@@ -96,10 +96,10 @@ sections:
   what-this-failure-tends-to-trigger:
     title: Qué tiende a desencadenar este fallo
     md: |-
-      - **[Veto Informal de la Fundadora](/articles/rcos-stress-tests/governance-power/founder-informal-veto)** — la indispensabilidad no documentada se convierte en un veto tácito.
-      - **[Toma de Decisiones por Grupo Cerrado Informal](/articles/rcos-stress-tests/governance-power/informal-clique-decision-making)** — las pocas personas que "se encargan de todo" se convierten en quienes deciden de hecho.
+      - **[Veto Informal de la Fundadora](rcos:test/founder-informal-veto)** — la indispensabilidad no documentada se convierte en un veto tácito.
+      - **[Toma de Decisiones por Grupo Cerrado Informal](rcos:test/informal-clique-decision-making)** — las pocas personas que "se encargan de todo" se convierten en quienes deciden de hecho.
   related-stress-tests:
     title: Pruebas de estrés relacionadas
     md: |-
-      - **[Agotamiento por Trabajo de Cuidados Invisible](/articles/rcos-stress-tests/operations-coordination/invisible-care-labor-burnout)** — la misma acumulación, en el ámbito relacional y emocional.
-      - **[Autosuficiencia sin Contribución Colectiva](/articles/rcos-stress-tests/operations-coordination/self-sufficiency-without-collective-contribution)** ��� el compromiso colectivo débil es lo que canaliza todo hacia las pocas personas indispensables.
+      - **[Agotamiento por Trabajo de Cuidados Invisible](rcos:test/invisible-care-labor-burnout)** — la misma acumulación, en el ámbito relacional y emocional.
+      - **[Autosuficiencia sin Contribución Colectiva](rcos:test/self-sufficiency-without-collective-contribution)** ��� el compromiso colectivo débil es lo que canaliza todo hacia las pocas personas indispensables.

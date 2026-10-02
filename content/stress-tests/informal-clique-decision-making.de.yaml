@@ -1,5 +1,5 @@
 lang: de
-sourceHash: 5b35a698
+sourceHash: '78485152'
 title: Informelle Cliquen treffen Entscheidungen
 summary: Wenn die echten Entscheidungen schon vor dem Treffen fallen — immer unter denselben paar Leuten.
 tags:
@@ -69,7 +69,7 @@ sections:
       |---|---|
       | **L0 — Implizit** | Echte Entscheidungen fallen in informellen Untergruppen; der formelle Prozess bestätigt sie nachträglich. |
       | **L1 — Benannt** | Die Gruppe spürt eine Cliquendynamik, hat aber noch nicht verlangt, dass Entscheidungen auf dem Protokoll stehen. |
-      | **L2 — Dokumentiert** | Eine [Entscheidungsmatrix](/articles/rcos-templates/layer-2/decision-matrix) definiert, was über formelle, protokollierte Kanäle entschieden werden muss; Ergebnisse außerhalb der Kanäle sind ungültig. |
+      | **L2 — Dokumentiert** | Eine [Entscheidungsmatrix](rcos:template/decision-matrix) definiert, was über formelle, protokollierte Kanäle entschieden werden muss; Ergebnisse außerhalb der Kanäle sind ungültig. |
       | **L3 — Durchgesetzt & geübt** | Entscheidungen sind lesbar und überprüfbar; informelle Klärungen werden routinemäßig zurück ins Protokoll geholt. |
 
       Die meisten Gemeinschaften, die sich hier wiedererkennen, stehen auf **L0 oder L1**. Das Ziel ist nicht Perfektion — es geht darum, eine Stufe weiterzukommen.
@@ -78,11 +78,11 @@ sections:
     md: |-
       RCOS hält Autorität lesbar, indem es verlangt, dass Entscheidungen auf dem Protokoll stehen:
 
-      - **[Entscheidungsmatrix](/articles/rcos-templates/layer-2/decision-matrix)** — definiere, welche Entscheidungen einen formellen, protokollierten Prozess erfordern.
-      - **[Governance-Protokoll](/articles/rcos-templates/layer-2/governance-protocol)** — mache Entscheidungen außerhalb formeller Kanäle explizit ungültig.
-      - **[Meeting-Vorlagen](/articles/rcos-templates/layer-5/meeting-templates)** — protokolliere Entscheidungen, damit Autorität überprüfbar bleibt und nicht aus dem Gedächtnis rekonstruiert werden muss.
+      - **[Entscheidungsmatrix](rcos:template/decision-matrix)** — definiere, welche Entscheidungen einen formellen, protokollierten Prozess erfordern.
+      - **[Governance-Protokoll](rcos:template/governance-protocol)** — mache Entscheidungen außerhalb formeller Kanäle explizit ungültig.
+      - **[Meeting-Vorlagen](rcos:template/meeting-templates)** — protokolliere Entscheidungen, damit Autorität überprüfbar bleibt und nicht aus dem Gedächtnis rekonstruiert werden muss.
 
-      Siehe auch die Spezifikation: [Schicht 2 — Entscheidungsmatrix](/articles/rcos-core/v0-1/layer-2-governance-decision-logic#44-decision-matrix) und [Schicht 5 — Dokumentation & Informationsfluss](/articles/rcos-core/v0-1/layer-5-operations-coordination#73-documentation-and-information-flow).
+      Siehe auch die Spezifikation: [Schicht 2 — Entscheidungsmatrix](rcos:§4.4) und [Schicht 5 — Dokumentation & Informationsfluss](rcos:§7.3).
   if-it-s-already-happening:
     title: Wenn es schon passiert
     md: |-
@@ -95,8 +95,8 @@ sections:
   what-this-failure-tends-to-trigger:
     title: Was dieser Fehler tendenziell auslöst
     md: |-
-      - **[Normalisierung von Konfliktvermeidung](/articles/rcos-stress-tests/conflict-accountability/conflict-avoidance-normalization)** — eine Out-Group lernt schnell, die In-Group nicht in Frage zu stellen.
-      - **[Informelles Veto der Gründer:innen](/articles/rcos-stress-tests/governance-power/founder-informal-veto)** — die Clique formiert sich typischerweise um eine informelle Autorität und setzt deren Präferenzen um.
+      - **[Normalisierung von Konfliktvermeidung](rcos:test/conflict-avoidance-normalization)** — eine Out-Group lernt schnell, die In-Group nicht in Frage zu stellen.
+      - **[Informelles Veto der Gründer:innen](rcos:test/founder-informal-veto)** — die Clique formiert sich typischerweise um eine informelle Autorität und setzt deren Präferenzen um.
   related-stress-tests:
     title: Verwandte Stresstests
-    md: '- **[Dominante Stimmen in Entscheidungsräumen](/articles/rcos-stress-tests/governance-power/dominant-speakers-decision-spaces)** — die In-Meeting-Variante derselben Abwanderung von Autorität weg von vereinbarten Mechanismen.'
+    md: '- **[Dominante Stimmen in Entscheidungsräumen](rcos:test/dominant-speakers-decision-spaces)** — die In-Meeting-Variante derselben Abwanderung von Autorität weg von vereinbarten Mechanismen.'

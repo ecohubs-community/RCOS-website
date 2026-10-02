@@ -93,7 +93,7 @@ sections:
       |---|---|
       | **L0 — Implicit** | Strong norms are enforced on feeling; no one has declared what is actually governed. |
       | **L1 — Named** | The group realizes some norms are unwritten but hasn't sorted rule from preference. |
-      | **L2 — Documented** | A [Scope Declaration](/articles/rcos-templates/layer-0/scope-declaration) distinguishes core invariants, membership conditions, and out-of-scope preferences; due process applies only to governed rules. |
+      | **L2 — Documented** | A [Scope Declaration](rcos:template/scope-declaration) distinguishes core invariants, membership conditions, and out-of-scope preferences; due process applies only to governed rules. |
       | **L3 — Enforced & rehearsed** | Responses track declared scope; an unwritten preference can't trigger punishment; this has been tested on a real violation. |
 
       Most communities that recognise themselves here sit at **L0 or L1**. The goal isn't perfection — it's moving up one rung.
@@ -102,11 +102,11 @@ sections:
     md: |-
       RCOS makes the community decide *what it actually governs* before it enforces:
 
-      - **[Scope Declaration](/articles/rcos-templates/layer-0/scope-declaration)** — sort every important norm into core invariant, membership condition, or out-of-scope preference.
-      - **[Membership Agreement](/articles/rcos-templates/layer-1/membership-agreement)** — make binding behavioral conditions explicit at entry, so no one is punished by surprise.
-      - **[Identity Constraints Register](/articles/rcos-templates/layer-0/identity-constraints-register)** — declare what the community's identity does and doesn't govern.
+      - **[Scope Declaration](rcos:template/scope-declaration)** — sort every important norm into core invariant, membership condition, or out-of-scope preference.
+      - **[Membership Agreement](rcos:template/membership-agreement)** — make binding behavioral conditions explicit at entry, so no one is punished by surprise.
+      - **[Identity Constraints Register](rcos:template/identity-constraints-register)** — declare what the community's identity does and doesn't govern.
 
-      See also the spec: [Layer 0 — Scope Declaration](/articles/rcos-core/v0-1/layer-0-identity-scope#22-scope-declaration) and [Layer 1 — Rights and Obligations](/articles/rcos-core/v0-1/layer-1-membership-system#34-rights-and-obligations).
+      See also the spec: [Layer 0 — Scope Declaration](rcos:§2.2) and [Layer 1 — Rights and Obligations](rcos:§3.4).
   - id: if-it-s-already-happening
     title: If it's already happening
     md: |-
@@ -118,7 +118,7 @@ sections:
       4. **Decide forward.** If the community wants this norm to be binding, write it in as an explicit membership condition.
   - id: what-this-failure-tends-to-trigger
     title: What this failure tends to trigger
-    md: '- **[Conflict Avoidance Normalization](/articles/rcos-stress-tests/conflict-accountability/conflict-avoidance-normalization)** — arbitrary, emotional enforcement teaches members to hide behavior rather than surface it.'
+    md: '- **[Conflict Avoidance Normalization](rcos:test/conflict-avoidance-normalization)** — arbitrary, emotional enforcement teaches members to hide behavior rather than surface it.'
   - id: related-stress-tests
     title: Related stress tests
-    md: '- **[Charismatic Spiritual Authority](/articles/rcos-stress-tests/culture-influence/charismatic-spiritual-authority)** — revered figures are often the ones whose preferences get enforced as undeclared norms.'
+    md: '- **[Charismatic Spiritual Authority](rcos:test/charismatic-spiritual-authority)** — revered figures are often the ones whose preferences get enforced as undeclared norms.'

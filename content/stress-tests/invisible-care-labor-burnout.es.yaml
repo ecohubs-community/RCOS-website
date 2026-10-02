@@ -1,5 +1,5 @@
 lang: es
-sourceHash: 9597ffd3
+sourceHash: cc1622a7
 title: Agotamiento por trabajo de cuidado invisible
 summary: Cuando la comunidad funciona gracias al cuidado no remunerado de unas pocas personas silenciosamente agotadas.
 tags:
@@ -67,7 +67,7 @@ sections:
       |---|---|
       | **L0 — Implícito** | El trabajo de cuidado es invisible, no nombrado, y lo cargan unas pocas personas por defecto. |
       | **L1 — Nombrado** | El grupo reconoce que ciertas personas están sobrecargadas pero no ha reconocido ni redistribuido el trabajo. |
-      | **L2 — Documentado** | Las responsabilidades de cuidado son [roles](/articles/rcos-templates/layer-5/role-registry) nombrados, reconocidos como contribución, y delimitados por límites de carga. |
+      | **L2 — Documentado** | Las responsabilidades de cuidado son [roles](rcos:template/role-registry) nombrados, reconocidos como contribución, y delimitados por límites de carga. |
       | **L3 — Aplicado y ensayado** | Sin dependencia estructural del trabajo invisible; el trabajo de cuidado se reconoce, se delimita y se rota; los límites de capacidad se respetan. |
 
       La mayoría de comunidades que se reconocen aquí están en **L0 o L1**. El objetivo no es la perfección — es subir un peldaño.
@@ -76,11 +76,11 @@ sections:
     md: |-
       RCOS hace que el trabajo invisible sea visible, delimitado y compartido:
 
-      - **[Registro de roles](/articles/rcos-templates/layer-5/role-registry)** — nombra las responsabilidades de cuidado y relacionales como roles reales, con rotación y límites.
-      - **[Protocolo de economía interna](/articles/rcos-templates/layer-3/internal-economy-protocol)** — reconoce el cuidado como contribución, para que sea visible y valorado en lugar de darse por supuesto.
-      - **[Manual de operaciones](/articles/rcos-templates/layer-5/operations-manual)** — delimita la carga de trabajo para que el trabajo esencial no recaiga silenciosamente sobre una sola persona.
+      - **[Registro de roles](rcos:template/role-registry)** — nombra las responsabilidades de cuidado y relacionales como roles reales, con rotación y límites.
+      - **[Protocolo de economía interna](rcos:template/internal-economy-protocol)** — reconoce el cuidado como contribución, para que sea visible y valorado en lugar de darse por supuesto.
+      - **[Manual de operaciones](rcos:template/operations-manual)** — delimita la carga de trabajo para que el trabajo esencial no recaiga silenciosamente sobre una sola persona.
 
-      Consulta también la especificación: [Capa 5 — Límites de carga de trabajo y capacidad](/articles/rcos-core/v0-1/layer-5-operations-coordination#74-workload-and-capacity-boundaries) y [Capa 3 — Reconocimiento de la contribución](/articles/rcos-core/v0-1/layer-3-economic-resource-system#52-contribution-recognition).
+      Consulta también la especificación: [Capa 5 — Límites de carga de trabajo y capacidad](rcos:§7.4) y [Capa 3 — Reconocimiento de la contribución](rcos:§5.2).
   if-it-s-already-happening:
     title: Si ya está ocurriendo
     md: |-
@@ -92,7 +92,7 @@ sections:
       4. **Vigila la cascada** — la persona cuidadora indispensable también está acumulando poder invisible y una salida impulsada por el agotamiento.
   what-this-failure-tends-to-trigger:
     title: Qué tiende a desencadenar este fallo
-    md: '- **[Poder invisible vía responsabilidades](/articles/rcos-stress-tests/operations-coordination/invisible-power-via-responsibilities)** — la persona sin la que la comunidad no puede funcionar se vuelve estructuralmente indispensable e incuestionable.'
+    md: '- **[Poder invisible vía responsabilidades](rcos:test/invisible-power-via-responsibilities)** — la persona sin la que la comunidad no puede funcionar se vuelve estructuralmente indispensable e incuestionable.'
   related-stress-tests:
     title: Tests de estrés relacionados
-    md: '- **[Autosuficiencia sin contribución colectiva](/articles/rcos-stress-tests/operations-coordination/self-sufficiency-without-collective-contribution)** — la imagen especular: cuando la mayoría de miembros se desconectan, las pocas que sí se implican son las que se queman.'
+    md: '- **[Autosuficiencia sin contribución colectiva](rcos:test/self-sufficiency-without-collective-contribution)** — la imagen especular: cuando la mayoría de miembros se desconectan, las pocas que sí se implican son las que se queman.'

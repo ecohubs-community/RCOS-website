@@ -7,7 +7,7 @@ order: 0
 preamble: |-
   - **Layer:** 2 — Governance & Decision Logic
   - **Status:** Template — adapt for your community
-  - **RCOS reference:** [§4.2](/articles/rcos-core/v0-1/layer-2-governance-decision-logic#42-decision-mechanisms), [§4.4](/articles/rcos-core/v0-1/layer-2-governance-decision-logic#44-decision-matrix), [§4.7](/articles/rcos-core/v0-1/layer-2-governance-decision-logic#47-artifacts)
+  - **RCOS reference:** [§4.2](rcos:§4.2), [§4.4](rcos:§4.4), [§4.7](rcos:§4.7)
 
   > Maps every decision type and domain to an authorized role or body, mechanism, threshold, and escalation path. Decisions made outside this matrix are considered invalid.
 

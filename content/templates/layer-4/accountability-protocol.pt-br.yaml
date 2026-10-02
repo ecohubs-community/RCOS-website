@@ -1,10 +1,10 @@
 lang: pt-br
-sourceHash: 3dc4c638
+sourceHash: 1eaf3e41
 title: Protocolo de Responsabilização
 preamble: |-
   - **Camada:** 4 — Conflito, Reparação e Responsabilização
   - **Status:** Modelo — adapte para a sua comunidade
-  - **Referência RCOS:** [§6.4](/articles/rcos-core/v0-1/layer-4-conflict-repair-accountability#64-sanctions-repair-and-separation), [§6.5](/articles/rcos-core/v0-1/layer-4-conflict-repair-accountability#65-artifacts)
+  - **Referência RCOS:** [§6.4](rcos:§6.4), [§6.5](rcos:§6.5)
 
   ---
 sections:

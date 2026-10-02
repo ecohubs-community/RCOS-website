@@ -96,7 +96,7 @@ sections:
       |---|---|
       | **L0 — Implicit** | Contribution is assumed to "happen naturally." No one states what's expected, and a quiet few carry the rest. |
       | **L1 — Named** | The group openly admits engagement is uneven and talks about it, but expectations stay informal and unenforced. |
-      | **L2 — Documented** | Contribution expectations are written into the [Membership Agreement](/articles/rcos-templates/layer-1/membership-agreement), and recurring collective work exists as named roles. Members know what they signed up for. |
+      | **L2 — Documented** | Contribution expectations are written into the [Membership Agreement](rcos:template/membership-agreement), and recurring collective work exists as named roles. Members know what they signed up for. |
       | **L3 — Enforced & rehearsed** | Contribution is tracked and recognized; the load is visibly shared and rebalanced over time; persistent non-contribution triggers a defined review rather than silent resentment. |
 
       Most communities that recognise themselves in this test sit at **L0 or L1**. The goal isn't perfection — it's moving up one rung.
@@ -105,27 +105,27 @@ sections:
     md: |-
       RCOS replaces "we hope people pitch in" with explicit, symmetrical commitment. Build these **before** disengagement becomes the norm:
 
-      - **[Membership Agreement](/articles/rcos-templates/layer-1/membership-agreement)** — bind concrete contribution expectations to membership rights, so enjoying the commons and maintaining it are part of the same deal (Invariant 1.3, [rights & obligations](/articles/rcos-core/v0-1/layer-1-membership-system#34-rights-and-obligations)).
-      - **[Role Registry](/articles/rcos-templates/layer-5/role-registry)** — turn recurring collective work into named, owned roles instead of leaving it to whoever notices.
-      - **[Internal Economy Protocol](/articles/rcos-templates/layer-3/internal-economy-protocol)** — define what counts as contribution and recognize it (credits, reputation), so participation is visible and valued ([contribution recognition](/articles/rcos-core/v0-1/layer-3-economic-resource-system#52-contribution-recognition)).
-      - **[Onboarding Protocol](/articles/rcos-templates/layer-1/onboarding-protocol)** — set the contribution norm at entry, before the pattern of disengagement has a chance to form.
+      - **[Membership Agreement](rcos:template/membership-agreement)** — bind concrete contribution expectations to membership rights, so enjoying the commons and maintaining it are part of the same deal (Invariant 1.3, [rights & obligations](rcos:§3.4)).
+      - **[Role Registry](rcos:template/role-registry)** — turn recurring collective work into named, owned roles instead of leaving it to whoever notices.
+      - **[Internal Economy Protocol](rcos:template/internal-economy-protocol)** — define what counts as contribution and recognize it (credits, reputation), so participation is visible and valued ([contribution recognition](rcos:§5.2)).
+      - **[Onboarding Protocol](rcos:template/onboarding-protocol)** — set the contribution norm at entry, before the pattern of disengagement has a chance to form.
   - id: if-it-s-already-happening
     title: If it's already happening
     md: |-
       If the commons is already running on a shrinking core, you can't "prevent" this — you rebalance it. Triage, in order:
 
       1. **Make the load visible.** Do a quick contribution audit: who is actually carrying the collective work right now? The point isn't blame — it's shared data that ends the polite fiction that everyone pitches in equally.
-      2. **Convert fragile dependencies into roles.** Start with whatever breaks if one person leaves, and give it a named [role](/articles/rcos-templates/layer-5/role-registry) with a backup.
-      3. **Renegotiate expectations openly, with consent.** Add explicit contribution expectations to the [Membership Agreement](/articles/rcos-templates/layer-1/membership-agreement) going forward — a transparent agreement beats quiet resentment.
-      4. **Recognize existing contribution loudly.** People re-engage when effort is *seen*; an [Internal Economy Protocol](/articles/rcos-templates/layer-3/internal-economy-protocol) makes that recognition systematic rather than dependent on gratitude.
+      2. **Convert fragile dependencies into roles.** Start with whatever breaks if one person leaves, and give it a named [role](rcos:template/role-registry) with a backup.
+      3. **Renegotiate expectations openly, with consent.** Add explicit contribution expectations to the [Membership Agreement](rcos:template/membership-agreement) going forward — a transparent agreement beats quiet resentment.
+      4. **Recognize existing contribution loudly.** People re-engage when effort is *seen*; an [Internal Economy Protocol](rcos:template/internal-economy-protocol) makes that recognition systematic rather than dependent on gratitude.
       5. **Watch the cascade** (below) — your committed core is already on the path to burnout and to accidental informal power.
   - id: what-this-failure-tends-to-trigger
     title: What this failure tends to trigger
     md: |-
       Weak collective engagement rarely stays contained. It quietly produces two downstream failures:
 
-      - **[Invisible Power via Responsibilities](/articles/rcos-stress-tests/operations-coordination/invisible-power-via-responsibilities)** — when only a committed few run the collective work, they accumulate informal, unaccountable influence over how the community operates.
-      - **[Invisible Care Labor Burnout](/articles/rcos-stress-tests/operations-coordination/invisible-care-labor-burnout)** — the mirror image of this test: too few engaged means the shrinking core absorbs ever more uncompensated labor until it burns out.
+      - **[Invisible Power via Responsibilities](rcos:test/invisible-power-via-responsibilities)** — when only a committed few run the collective work, they accumulate informal, unaccountable influence over how the community operates.
+      - **[Invisible Care Labor Burnout](rcos:test/invisible-care-labor-burnout)** — the mirror image of this test: too few engaged means the shrinking core absorbs ever more uncompensated labor until it burns out.
   - id: related-stress-tests
     title: Related stress tests
-    md: '- **[Outsourced Labor Bypassing Contribution](/articles/rcos-stress-tests/economy-resources/outsourced-labor-bypassing-contribution)** — the money-based cousin: contribution expectations exist but are bypassed by hiring out, where here they''re bypassed by disengaging. Same broken link between benefit and contribution.'
+    md: '- **[Outsourced Labor Bypassing Contribution](rcos:test/outsourced-labor-bypassing-contribution)** — the money-based cousin: contribution expectations exist but are bypassed by hiring out, where here they''re bypassed by disengaging. Same broken link between benefit and contribution.'

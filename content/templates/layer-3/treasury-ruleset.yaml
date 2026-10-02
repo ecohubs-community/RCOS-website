@@ -7,7 +7,7 @@ order: 1
 preamble: |-
   - **Layer:** 3 — Economic & Resource System
   - **Status:** Template — adapt for your community
-  - **RCOS reference:** [§5.3](/articles/rcos-core/v0-1/layer-3-economic-resource-system#53-treasury-management), [§5.5](/articles/rcos-core/v0-1/layer-3-economic-resource-system#55-artifacts)
+  - **RCOS reference:** [§5.3](rcos:§5.3), [§5.5](rcos:§5.5)
 
   ---
 sections:

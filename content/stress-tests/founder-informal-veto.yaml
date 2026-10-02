@@ -96,7 +96,7 @@ sections:
       |---|---|
       | **L0 — Implicit** | The founder's informal veto is real and unspoken; process is theatre around it. |
       | **L1 — Named** | The group admits the founder has outsized power but hasn't bounded it. |
-      | **L2 — Documented** | The founder's authority is written into an [Authority Registry](/articles/rcos-templates/layer-2/authority-registry) and [Decision Matrix](/articles/rcos-templates/layer-2/decision-matrix) — explicit scope, explicit limits. |
+      | **L2 — Documented** | The founder's authority is written into an [Authority Registry](rcos:template/authority-registry) and [Decision Matrix](rcos:template/decision-matrix) — explicit scope, explicit limits. |
       | **L3 — Enforced & rehearsed** | Decisions follow the matrix; the founder's role is bounded and reviewable, and has held against a decision they disagreed with. |
 
       Most communities that recognise themselves here sit at **L0 or L1**. The goal isn't perfection — it's moving up one rung.
@@ -105,11 +105,11 @@ sections:
     md: |-
       RCOS makes every authority explicit, including the founder's:
 
-      - **[Authority Registry](/articles/rcos-templates/layer-2/authority-registry)** — write down exactly what authority each role (including the founder) holds, and what it doesn't.
-      - **[Decision Matrix](/articles/rcos-templates/layer-2/decision-matrix)** — bind decisions to an agreed mechanism so no one informally overrides them.
-      - **[Governance Protocol](/articles/rcos-templates/layer-2/governance-protocol)** — establish that constitutional rules outrank any individual.
+      - **[Authority Registry](rcos:template/authority-registry)** — write down exactly what authority each role (including the founder) holds, and what it doesn't.
+      - **[Decision Matrix](rcos:template/decision-matrix)** — bind decisions to an agreed mechanism so no one informally overrides them.
+      - **[Governance Protocol](rcos:template/governance-protocol)** — establish that constitutional rules outrank any individual.
 
-      See also the spec: [Layer 2 — Authority Boundaries](/articles/rcos-core/v0-1/layer-2-governance-decision-logic#43-authority-boundaries).
+      See also the spec: [Layer 2 — Authority Boundaries](rcos:§4.3).
   - id: if-it-s-already-happening
     title: If it's already happening
     md: |-
@@ -122,9 +122,9 @@ sections:
   - id: what-this-failure-tends-to-trigger
     title: What this failure tends to trigger
     md: |-
-      - **[Charismatic Spiritual Authority](/articles/rcos-stress-tests/culture-influence/charismatic-spiritual-authority)** — unbounded founder influence shades into charisma standing in for governance.
-      - **[Emergency Rule Bypass Precedent](/articles/rcos-stress-tests/change-emergencies/emergency-rule-bypass-precedent)** — an informal authority is exactly who "temporarily" bypasses the rules in a crisis.
-      - **[Informal Clique Decision Making](/articles/rcos-stress-tests/governance-power/informal-clique-decision-making)** — the founder's inner circle becomes the real decision body.
+      - **[Charismatic Spiritual Authority](rcos:test/charismatic-spiritual-authority)** — unbounded founder influence shades into charisma standing in for governance.
+      - **[Emergency Rule Bypass Precedent](rcos:test/emergency-rule-bypass-precedent)** — an informal authority is exactly who "temporarily" bypasses the rules in a crisis.
+      - **[Informal Clique Decision Making](rcos:test/informal-clique-decision-making)** — the founder's inner circle becomes the real decision body.
   - id: related-stress-tests
     title: Related stress tests
-    md: '- **[Dominant Speakers in Decision Spaces](/articles/rcos-stress-tests/governance-power/dominant-speakers-decision-spaces)** — the same unwritten influence, expressed through airtime in meetings.'
+    md: '- **[Dominant Speakers in Decision Spaces](rcos:test/dominant-speakers-decision-spaces)** — the same unwritten influence, expressed through airtime in meetings.'

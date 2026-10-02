@@ -92,7 +92,7 @@ sections:
       |---|---|
       | **L0 — Implicit** | Real decisions happen in informal subgroups; formal process ratifies them after the fact. |
       | **L1 — Named** | The group senses a clique dynamic but hasn't required decisions to be on-record. |
-      | **L2 — Documented** | A [decision matrix](/articles/rcos-templates/layer-2/decision-matrix) defines what must be decided through formal, recorded channels; off-channel outcomes are invalid. |
+      | **L2 — Documented** | A [decision matrix](rcos:template/decision-matrix) defines what must be decided through formal, recorded channels; off-channel outcomes are invalid. |
       | **L3 — Enforced & rehearsed** | Decisions are legible and reviewable; informal resolutions are routinely brought back into the record. |
 
       Most communities that recognise themselves here sit at **L0 or L1**. The goal isn't perfection — it's moving up one rung.
@@ -101,11 +101,11 @@ sections:
     md: |-
       RCOS keeps authority legible by requiring decisions to be on-record:
 
-      - **[Decision Matrix](/articles/rcos-templates/layer-2/decision-matrix)** — define which decisions require a formal, recorded process.
-      - **[Governance Protocol](/articles/rcos-templates/layer-2/governance-protocol)** — make decisions outside formal channels explicitly invalid.
-      - **[Meeting Templates](/articles/rcos-templates/layer-5/meeting-templates)** — record decisions so authority stays reviewable, not remembered.
+      - **[Decision Matrix](rcos:template/decision-matrix)** — define which decisions require a formal, recorded process.
+      - **[Governance Protocol](rcos:template/governance-protocol)** — make decisions outside formal channels explicitly invalid.
+      - **[Meeting Templates](rcos:template/meeting-templates)** — record decisions so authority stays reviewable, not remembered.
 
-      See also the spec: [Layer 2 — Decision Matrix](/articles/rcos-core/v0-1/layer-2-governance-decision-logic#44-decision-matrix) and [Layer 5 — Documentation & Information Flow](/articles/rcos-core/v0-1/layer-5-operations-coordination#73-documentation-and-information-flow).
+      See also the spec: [Layer 2 — Decision Matrix](rcos:§4.4) and [Layer 5 — Documentation & Information Flow](rcos:§7.3).
   - id: if-it-s-already-happening
     title: If it's already happening
     md: |-
@@ -118,8 +118,8 @@ sections:
   - id: what-this-failure-tends-to-trigger
     title: What this failure tends to trigger
     md: |-
-      - **[Conflict Avoidance Normalization](/articles/rcos-stress-tests/conflict-accountability/conflict-avoidance-normalization)** — an out-group quickly learns not to challenge the in-group.
-      - **[Founder Informal Veto](/articles/rcos-stress-tests/governance-power/founder-informal-veto)** — the clique typically forms around, and executes the preferences of, an informal authority.
+      - **[Conflict Avoidance Normalization](rcos:test/conflict-avoidance-normalization)** — an out-group quickly learns not to challenge the in-group.
+      - **[Founder Informal Veto](rcos:test/founder-informal-veto)** — the clique typically forms around, and executes the preferences of, an informal authority.
   - id: related-stress-tests
     title: Related stress tests
-    md: '- **[Dominant Speakers in Decision Spaces](/articles/rcos-stress-tests/governance-power/dominant-speakers-decision-spaces)** — the in-meeting version of the same drift of authority away from agreed mechanisms.'
+    md: '- **[Dominant Speakers in Decision Spaces](rcos:test/dominant-speakers-decision-spaces)** — the in-meeting version of the same drift of authority away from agreed mechanisms.'

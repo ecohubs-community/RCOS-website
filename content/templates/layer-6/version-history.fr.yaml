@@ -1,10 +1,10 @@
 lang: fr
-sourceHash: 9c10bd3a
+sourceHash: ecfe9629
 title: Historique des versions
 preamble: |-
   - **Couche :** 6 — Évolution et adaptation
   - **Statut :** Modèle — à adapter pour ta communauté ; mis à jour à chaque changement adopté
-  - **Référence RCOS :** [§8.2](/articles/rcos-core/v0-1/layer-6-evolution-adaptation#82-versioning-and-authority), [§8.6](/articles/rcos-core/v0-1/layer-6-evolution-adaptation#86-artifacts)
+  - **Référence RCOS :** [§8.2](rcos:§8.2), [§8.6](rcos:§8.6)
 
   > Le registre officiel lisible par les humains de tous les changements adoptés dans l'implémentation RCOS de ta communauté. La version actuellement active est l'entrée la plus récente en haut de ce fichier. Les règles remplacées restent accessibles via le contrôle de version.
 

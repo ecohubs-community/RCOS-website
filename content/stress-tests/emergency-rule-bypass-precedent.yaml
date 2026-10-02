@@ -101,11 +101,11 @@ sections:
     md: |-
       RCOS lets you move fast in a crisis *without* losing the constitution:
 
-      - **[Change Protocol](/articles/rcos-templates/layer-6/change-protocol)** — define emergency powers in advance: their scope, who holds them, and a mandatory sunset.
-      - **[Governance Protocol](/articles/rcos-templates/layer-2/governance-protocol)** — keep constitutional rules outranking urgency.
-      - **[Invariants Register](/articles/rcos-templates/layer-0/invariants-register)** — mark which rules can never be bypassed, even in a crisis.
+      - **[Change Protocol](rcos:template/change-protocol)** — define emergency powers in advance: their scope, who holds them, and a mandatory sunset.
+      - **[Governance Protocol](rcos:template/governance-protocol)** — keep constitutional rules outranking urgency.
+      - **[Invariants Register](rcos:template/invariants-register)** — mark which rules can never be bypassed, even in a crisis.
 
-      See also the spec: [Layer 6 — Change Safety and Reversibility](/articles/rcos-core/v0-1/layer-6-evolution-adaptation#85-change-safety-and-reversibility) and [Layer 2 — Safeguards and Failure Modes](/articles/rcos-core/v0-1/layer-2-governance-decision-logic#46-safeguards-and-failure-modes).
+      See also the spec: [Layer 6 — Change Safety and Reversibility](rcos:§8.5) and [Layer 2 — Safeguards and Failure Modes](rcos:§4.6).
   - id: if-it-s-already-happening
     title: If it's already happening
     md: |-
@@ -118,8 +118,8 @@ sections:
   - id: what-this-failure-tends-to-trigger
     title: What this failure tends to trigger
     md: |-
-      - **[Founder Informal Veto](/articles/rcos-stress-tests/governance-power/founder-informal-veto)** — whoever wields emergency power informally tends to entrench it.
-      - **[Commons Privatization through Land Sales](/articles/rcos-stress-tests/economy-resources/commons-privatization-through-land-sales)** — an "urgent" financial crisis is the classic cover for a rushed, irreversible sale.
+      - **[Founder Informal Veto](rcos:test/founder-informal-veto)** — whoever wields emergency power informally tends to entrench it.
+      - **[Commons Privatization through Land Sales](rcos:test/commons-privatization-through-land-sales)** — an "urgent" financial crisis is the classic cover for a rushed, irreversible sale.
   - id: related-stress-tests
     title: Related stress tests
-    md: '- **[Founder Informal Veto](/articles/rcos-stress-tests/governance-power/founder-informal-veto)** — the standing-power version of the same constitutional erosion.'
+    md: '- **[Founder Informal Veto](rcos:test/founder-informal-veto)** — the standing-power version of the same constitutional erosion.'

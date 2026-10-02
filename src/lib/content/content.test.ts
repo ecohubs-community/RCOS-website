@@ -137,6 +137,8 @@ describe('overlay', () => {
 describe('translation round trip (article.js)', () => {
 	it('every overlay → article → overlay is unchanged', async () => {
 		const { toArticle, fromArticle } = await import('./article.js');
+		const { refTargets } = await import('./refs.js');
+		const targets = refTargets(english.map(({ file, doc }) => ({ file, en: doc })));
 		let checked = 0;
 		for (const { file, doc } of english) {
 			for (const locale of ['de', 'es', 'fr', 'pt-br']) {
@@ -144,8 +146,8 @@ describe('translation round trip (article.js)', () => {
 					readFileSync(file.replace(/\.yaml$/, `.${locale}.yaml`), 'utf8')
 				) as Doc;
 				const { lang: _l, sourceHash: _h, ...overlay } = raw;
-				const article = toArticle(doc, overlay, locale, href);
-				expect(fromArticle(doc, article, locale, href)).toEqual(overlay);
+				const article = toArticle(doc, overlay, locale, targets);
+				expect(fromArticle(doc, article, locale, targets)).toEqual(overlay);
 				checked++;
 			}
 		}

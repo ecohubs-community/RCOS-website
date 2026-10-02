@@ -91,7 +91,7 @@ sections:
       |---|---|
       | **L0 — Implicit** | Decision type is improvised each time; the framing decides the outcome. |
       | **L1 — Named** | The group notices the confusion but hasn't mapped decision types to mechanisms. |
-      | **L2 — Documented** | A [Decision Matrix](/articles/rcos-templates/layer-2/decision-matrix) assigns each class of decision a type, a mechanism, and who decides — settled before content. |
+      | **L2 — Documented** | A [Decision Matrix](rcos:template/decision-matrix) assigns each class of decision a type, a mechanism, and who decides — settled before content. |
       | **L3 — Enforced & rehearsed** | Every significant decision names its type up front; decisions are final and not silently re-opened. |
 
       Most communities that recognise themselves here sit at **L0 or L1**. The goal isn't perfection — it's moving up one rung.
@@ -100,10 +100,10 @@ sections:
     md: |-
       RCOS forces type before content:
 
-      - **[Decision Matrix](/articles/rcos-templates/layer-2/decision-matrix)** — map classes of decision to their mechanism and authority, so type is pre-decided.
-      - **[Governance Protocol](/articles/rcos-templates/layer-2/governance-protocol)** — make "name the decision type first" a standing rule of how the group works.
+      - **[Decision Matrix](rcos:template/decision-matrix)** — map classes of decision to their mechanism and authority, so type is pre-decided.
+      - **[Governance Protocol](rcos:template/governance-protocol)** — make "name the decision type first" a standing rule of how the group works.
 
-      See also the spec: [Layer 2 — Decision Types](/articles/rcos-core/v0-1/layer-2-governance-decision-logic#41-decision-types) and [Decision Matrix](/articles/rcos-core/v0-1/layer-2-governance-decision-logic#44-decision-matrix).
+      See also the spec: [Layer 2 — Decision Types](rcos:§4.1) and [Decision Matrix](rcos:§4.4).
   - id: if-it-s-already-happening
     title: If it's already happening
     md: |-
@@ -115,8 +115,8 @@ sections:
   - id: what-this-failure-tends-to-trigger
     title: What this failure tends to trigger
     md: |-
-      - **[Dominant Speakers in Decision Spaces](/articles/rcos-stress-tests/governance-power/dominant-speakers-decision-spaces)** — with no agreed mechanism, airtime and framing decide outcomes.
-      - **[Informal Clique Decision Making](/articles/rcos-stress-tests/governance-power/informal-clique-decision-making)** — undefined type lets decisions drift to whoever framed them first.
+      - **[Dominant Speakers in Decision Spaces](rcos:test/dominant-speakers-decision-spaces)** — with no agreed mechanism, airtime and framing decide outcomes.
+      - **[Informal Clique Decision Making](rcos:test/informal-clique-decision-making)** — undefined type lets decisions drift to whoever framed them first.
   - id: related-stress-tests
     title: Related stress tests
-    md: '- **[Dominant Speakers in Decision Spaces](/articles/rcos-stress-tests/governance-power/dominant-speakers-decision-spaces)** — the same missing mechanism, expressed as who-talks-most rather than who-frames-first.'
+    md: '- **[Dominant Speakers in Decision Spaces](rcos:test/dominant-speakers-decision-spaces)** — the same missing mechanism, expressed as who-talks-most rather than who-frames-first.'

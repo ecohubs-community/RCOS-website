@@ -7,7 +7,7 @@ order: 2
 preamble: |-
   - **Layer:** 0 — Identity & Scope
   - **Status:** Template — adapt for your community
-  - **RCOS reference:** [§2.3](/articles/rcos-core/v0-1/layer-0-identity-scope#23-invariants), [§2.5](/articles/rcos-core/v0-1/layer-0-identity-scope#25-artifacts)
+  - **RCOS reference:** [§2.3](rcos:§2.3), [§2.5](rcos:§2.5)
 
   > Invariants are constraints that MUST NOT be violated while they are in force. No decision, role, process, or emergency measure may override an invariant. If a conflict arises between an invariant and any other rule, the invariant prevails.
 

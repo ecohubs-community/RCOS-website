@@ -7,7 +7,7 @@ order: 2
 preamble: |-
   - **Layer:** 6 — Evolution & Adaptation
   - **Status:** Template — adapt for your community; updated when learnable events occur
-  - **RCOS reference:** [§8.4](/articles/rcos-core/v0-1/layer-6-evolution-adaptation#84-learning-and-feedback-capture), [§8.6](/articles/rcos-core/v0-1/layer-6-evolution-adaptation#86-artifacts)
+  - **RCOS reference:** [§8.4](rcos:§8.4), [§8.6](rcos:§8.6)
 
   > Records major failures, adaptations, reversals, and systemic learnings. Repeated failure patterns must trigger structural review, not individual blame. Entries are prepended (most recent first).
 

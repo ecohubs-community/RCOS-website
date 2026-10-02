@@ -1,10 +1,10 @@
 lang: es
-sourceHash: 5c145cd4
+sourceHash: 40c2675e
 title: Plantilla de Experimento
 preamble: |-
   - **Capa:** 6 — Evolución y Adaptación
   - **Estado:** Plantilla — úsala para proponer un experimento acotado en el tiempo
-  - **Referencia RCOS:** [§8.3](/articles/rcos-core/v0-1/layer-6-evolution-adaptation#83-experiments), [§8.7](/articles/rcos-core/v0-1/layer-6-evolution-adaptation#87-layer-invariants)
+  - **Referencia RCOS:** [§8.3](rcos:§8.3), [§8.7](rcos:§8.7)
 
   > Los experimentos permiten que la comunidad pruebe un cambio sin adoptarlo de forma permanente. Para mantener la seguridad, cada experimento DEBE estar acotado en el tiempo, etiquetado y con expiración automática — y DEBE registrar sus resultados en el Registro de Aprendizajes.
 

@@ -7,7 +7,7 @@ order: 2
 preamble: |-
   - **Layer:** 2 — Governance & Decision Logic
   - **Status:** Template — adapt for your community
-  - **RCOS reference:** [§4.3](/articles/rcos-core/v0-1/layer-2-governance-decision-logic#43-authority-boundaries), [§4.7](/articles/rcos-core/v0-1/layer-2-governance-decision-logic#47-artifacts)
+  - **RCOS reference:** [§4.3](rcos:§4.3), [§4.7](rcos:§4.7)
 
   > Lists all roles, circles, or bodies that hold decision-making authority, along with their explicit scope, limits, and term.
 

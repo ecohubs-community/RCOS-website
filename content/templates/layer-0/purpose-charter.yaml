@@ -7,7 +7,7 @@ order: 0
 preamble: |-
   - **Layer:** 0 — Identity & Scope
   - **Status:** Template — adapt for your community
-  - **RCOS reference:** [§2.1](/articles/rcos-core/v0-1/layer-0-identity-scope#21-purpose-definition), [§2.5](/articles/rcos-core/v0-1/layer-0-identity-scope#25-artifacts)
+  - **RCOS reference:** [§2.1](rcos:§2.1), [§2.5](rcos:§2.5)
 
   ---
 sections:

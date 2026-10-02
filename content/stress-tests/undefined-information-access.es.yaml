@@ -1,10 +1,10 @@
 lang: es
-sourceHash: 09879ed0
+sourceHash: ba6691ba
 title: Acceso a la Información Indefinido
 summary: Cuando quién-puede-ver-qué lo decide a quién conoces, no una regla.
 tags:
-  - 'Layer 5: Operations'
-  - Medium severity
+  - 'Capa 5: Operaciones'
+  - Severidad media
 symptoms:
   - Algunos miembros están "al tanto" de decisiones, finanzas o planes; otros se enteran tarde o nunca.
   - No hay regla sobre qué es abierto para los miembros, qué es privado y quién puede acceder a qué.
@@ -69,7 +69,7 @@ sections:
       |---|---|
       | **L0 — Implícito** | El acceso es informal y desigual; estar "al tanto" depende de relaciones. |
       | **L1 — Nombrado** | El grupo percibe la asimetría pero no ha definido reglas de acceso. |
-      | **L2 — Documentado** | Un [Manual de Operaciones](/articles/rcos-templates/layer-5/operations-manual) define los valores predeterminados de transparencia, los límites de privacidad y quién puede acceder a qué. |
+      | **L2 — Documentado** | Un [Manual de Operaciones](rcos:template/operations-manual) define los valores predeterminados de transparencia, los límites de privacidad y quién puede acceder a qué. |
       | **L3 — Aplicado y ensayado** | El acceso sigue reglas declaradas; los registros son localizables; los límites de privacidad son explícitos y respetados. |
 
       La mayoría de las comunidades que se reconocen aquí están en **L0 o L1**. La meta no es la perfección — es subir un peldaño.
@@ -78,10 +78,10 @@ sections:
     md: |-
       RCOS convierte el acceso a la información en una regla declarada, no en un hecho social:
 
-      - **[Manual de Operaciones](/articles/rcos-templates/layer-5/operations-manual)** — define los valores predeterminados de transparencia, los límites de privacidad y el acceso por rol.
-      - **[Plantillas de Reuniones](/articles/rcos-templates/layer-5/meeting-templates)** — registra las decisiones donde todos los miembros puedan encontrarlas, no en canales privados.
+      - **[Manual de Operaciones](rcos:template/operations-manual)** — define los valores predeterminados de transparencia, los límites de privacidad y el acceso por rol.
+      - **[Plantillas de Reuniones](rcos:template/meeting-templates)** — registra las decisiones donde todos los miembros puedan encontrarlas, no en canales privados.
 
-      Consulta también la especificación: [Capa 5 — Documentación y Flujo de Información](/articles/rcos-core/v0-1/layer-5-operations-coordination#73-documentation-and-information-flow).
+      Consulta también la especificación: [Capa 5 — Documentación y Flujo de Información](rcos:§7.3).
   if-it-s-already-happening:
     title: Si ya está ocurriendo
     md: |-
@@ -94,8 +94,8 @@ sections:
   what-this-failure-tends-to-trigger:
     title: Qué tiende a desencadenar este fallo
     md: |-
-      - **[Toma de Decisiones por Grupos Informales](/articles/rcos-stress-tests/governance-power/informal-clique-decision-making)** — la asimetría de información es el sustrato de un grupo cerrado.
-      - **[Poder Invisible vía Responsabilidades](/articles/rcos-stress-tests/operations-coordination/invisible-power-via-responsibilities)** — quien posee los registros posee poder silencioso.
+      - **[Toma de Decisiones por Grupos Informales](rcos:test/informal-clique-decision-making)** — la asimetría de información es el sustrato de un grupo cerrado.
+      - **[Poder Invisible vía Responsabilidades](rcos:test/invisible-power-via-responsibilities)** — quien posee los registros posee poder silencioso.
   related-stress-tests:
     title: Pruebas de estrés relacionadas
-    md: '- **[Poder Invisible vía Responsabilidades](/articles/rcos-stress-tests/operations-coordination/invisible-power-via-responsibilities)** — el conocimiento no documentado y el acceso indefinido son dos caras de la misma concentración.'
+    md: '- **[Poder Invisible vía Responsabilidades](rcos:test/invisible-power-via-responsibilities)** — el conocimiento no documentado y el acceso indefinido son dos caras de la misma concentración.'

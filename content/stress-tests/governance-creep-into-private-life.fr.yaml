@@ -1,10 +1,10 @@
 lang: fr
-sourceHash: 194ee1f4
+sourceHash: b423991e
 title: Dérive de la gouvernance vers la vie privée
 summary: Quand la communauté n'a pas de sphère privée déclarée, elle gouverne donc tout.
 tags:
-  - 'Layer 0: Scope'
-  - Medium severity
+  - 'Couche 0 : Périmètre'
+  - Sévérité moyenne
 symptoms:
   - Les normes communautaires s'étendent aux choix personnels — alimentation, relations, parentalité, croyances, temps libre.
   - Il n'existe aucune ligne déclarée entre ce que la communauté gouverne et ce qui ne regarde personne.
@@ -69,7 +69,7 @@ sections:
       |---|---|
       | **L0 — Implicite** | Aucune sphère privée déclarée ; les normes s'étendent à la vie personnelle sans contrôle. |
       | **L1 — Nommé** | Le groupe remarque le débordement mais n'a pas tracé de frontière non gouvernée. |
-      | **L2 — Documenté** | Une [Déclaration de périmètre](/articles/rcos-templates/layer-0/scope-declaration) nomme explicitement ce qui est hors-champ — la sphère privée protégée. |
+      | **L2 — Documenté** | Une [Déclaration de périmètre](rcos:template/scope-declaration) nomme explicitement ce qui est hors-champ — la sphère privée protégée. |
       | **L3 — Appliqué & éprouvé** | La gouvernance reste dans le périmètre déclaré ; les questions personnelles en dehors ne peuvent déclencher de sanction ; cela a tenu dans un cas réel. |
 
       La plupart des communautés qui se reconnaissent ici sont au **L0 ou L1**. L'objectif n'est pas la perfection — c'est de monter d'un barreau.
@@ -78,11 +78,11 @@ sections:
     md: |-
       RCOS exige de déclarer ce que la communauté ne gouverne *pas* :
 
-      - **[Déclaration de périmètre](/articles/rcos-templates/layer-0/scope-declaration)** — déclarer explicitement ce que la communauté NE gouverne PAS (invariant 0.3).
-      - **[Registre des contraintes identitaires](/articles/rcos-templates/layer-0/identity-constraints-register)** — borner l'emprise de la communauté sur la vie des membres.
-      - **[Accord d'adhésion](/articles/rcos-templates/layer-1/membership-agreement)** — rendre explicite la pratique partagée à laquelle on adhère, et tout le reste privé par défaut.
+      - **[Déclaration de périmètre](rcos:template/scope-declaration)** — déclarer explicitement ce que la communauté NE gouverne PAS (invariant 0.3).
+      - **[Registre des contraintes identitaires](rcos:template/identity-constraints-register)** — borner l'emprise de la communauté sur la vie des membres.
+      - **[Accord d'adhésion](rcos:template/membership-agreement)** — rendre explicite la pratique partagée à laquelle on adhère, et tout le reste privé par défaut.
 
-      Voir aussi la spécification : [Couche 0 — Déclaration de périmètre](/articles/rcos-core/v0-1/layer-0-identity-scope#22-scope-declaration) et [Contraintes identitaires](/articles/rcos-core/v0-1/layer-0-identity-scope#24-identity-constraints).
+      Voir aussi la spécification : [Couche 0 — Déclaration de périmètre](rcos:§2.2) et [Contraintes identitaires](rcos:§2.4).
   if-it-s-already-happening:
     title: Si c'est déjà en train d'arriver
     md: |-
@@ -94,8 +94,8 @@ sections:
   what-this-failure-tends-to-trigger:
     title: Ce que cette défaillance tend à déclencher
     md: |-
-      - **[Test de portée de la violation des normes culturelles](/articles/rcos-stress-tests/membership-boundaries/cultural-norm-violation-scope-test)** — sans sphère hors-champ, n'importe quel choix personnel peut devenir une norme applicable.
-      - **[Autorité spirituelle charismatique](/articles/rcos-stress-tests/culture-influence/charismatic-spiritual-authority)** — une communauté totalisante est un terrain fertile pour une autorité morale incontestable.
+      - **[Test de portée de la violation des normes culturelles](rcos:test/cultural-norm-violation-scope-test)** — sans sphère hors-champ, n'importe quel choix personnel peut devenir une norme applicable.
+      - **[Autorité spirituelle charismatique](rcos:test/charismatic-spiritual-authority)** — une communauté totalisante est un terrain fertile pour une autorité morale incontestable.
   related-stress-tests:
     title: Tests de résistance liés
-    md: '- **[Test de portée de la violation des normes culturelles](/articles/rcos-stress-tests/membership-boundaries/cultural-norm-violation-scope-test)** — l''événement d''application ; ce test-ci est la frontière manquante qui le rend possible.'
+    md: '- **[Test de portée de la violation des normes culturelles](rcos:test/cultural-norm-violation-scope-test)** — l''événement d''application ; ce test-ci est la frontière manquante qui le rend possible.'

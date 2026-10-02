@@ -1,10 +1,10 @@
 lang: de
-sourceHash: 1f860456
+sourceHash: 05eab494
 title: Governance-Protokoll
 preamble: |-
   - **Layer:** 2 — Governance & Entscheidungslogik
   - **Status:** Vorlage — an deine Gemeinschaft anpassen
-  - **RCOS-Referenz:** [§4.5](/articles/rcos-core/v0-1/layer-2-governance-decision-logic#45-governance-protocol), [§4.6](/articles/rcos-core/v0-1/layer-2-governance-decision-logic#46-safeguards-and-failure-modes), [§4.7](/articles/rcos-core/v0-1/layer-2-governance-decision-logic#47-artifacts)
+  - **RCOS-Referenz:** [§4.5](rcos:§4.5), [§4.6](rcos:§4.6), [§4.7](rcos:§4.7)
 
   > Definiert den vollständigen Lebenszyklus einer kollektiven Entscheidung — von der Antragseinreichung bis zur Dokumentation und zum Einspruch.
 

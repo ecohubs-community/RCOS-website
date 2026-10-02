@@ -1,10 +1,10 @@
 lang: de
-sourceHash: bfddaf88
+sourceHash: 9b778b06
 title: Mission Drift durch konkurrierende Zwecke
 summary: Wenn die Gemeinschaft alles sein will und nichts mehr priorisieren kann.
 tags:
-  - 'Layer 0: Scope'
-  - Medium severity
+  - 'Schicht 0: Geltungsbereich'
+  - Mittlerer Schweregrad
 symptoms:
   - Mitglieder würden ehrlich unterschiedliche Antworten auf die Frage geben, „wofür diese Gemeinschaft in erster Linie da ist".
   - Neue Projekte und Richtungen kommen ständig hinzu; keine werden aufgegeben.
@@ -69,7 +69,7 @@ sections:
       |---|---|
       | **L0 — Implizit** | Mehrere Zwecke koexistieren ungeordnet; Konflikte haben keine prinzipiengeleitete Lösung. |
       | **L1 — Benannt** | Die Gruppe sieht die Drift, hat aber noch keinen Hauptzweck erklärt. |
-      | **L2 — Dokumentiert** | Eine [Zweck-Charta](/articles/rcos-templates/layer-0/purpose-charter) benennt einen einzigen Hauptzweck; andere Ziele sind ausdrücklich nachrangig. |
+      | **L2 — Dokumentiert** | Eine [Zweck-Charta](rcos:template/purpose-charter) benennt einen einzigen Hauptzweck; andere Ziele sind ausdrücklich nachrangig. |
       | **L3 — Durchgesetzt & geübt** | Abwägungen werden unter Bezugnahme auf den Hauptzweck gelöst; neue Richtungen werden daran geprüft. |
 
       Die meisten Gemeinschaften, die sich hier wiedererkennen, stehen auf **L0 oder L1**. Das Ziel ist nicht Perfektion — es geht darum, eine Stufe nach oben zu kommen.
@@ -78,11 +78,11 @@ sections:
     md: |-
       RCOS verlangt einen einzigen Hauptzweck, der Pattsituationen auflösen kann:
 
-      - **[Zweck-Charta](/articles/rcos-templates/layer-0/purpose-charter)** — erklärt den einzigen Hauptzweck, der alle anderen ordnet.
-      - **[Scope-Deklaration](/articles/rcos-templates/layer-0/scope-declaration)** — legt fest, was im und außerhalb des Scopes liegt, damit Erweiterungen bewusst geschehen.
-      - **[Identitäts-Constraints-Register](/articles/rcos-templates/layer-0/identity-constraints-register)** — definiert, was die Gemeinschaft ist und was nicht.
+      - **[Zweck-Charta](rcos:template/purpose-charter)** — erklärt den einzigen Hauptzweck, der alle anderen ordnet.
+      - **[Scope-Deklaration](rcos:template/scope-declaration)** — legt fest, was im und außerhalb des Scopes liegt, damit Erweiterungen bewusst geschehen.
+      - **[Identitäts-Constraints-Register](rcos:template/identity-constraints-register)** — definiert, was die Gemeinschaft ist und was nicht.
 
-      Siehe auch die Spezifikation: [Schicht 0 — Zweckdefinition](/articles/rcos-core/v0-1/layer-0-identity-scope#21-purpose-definition) und [Scope-Deklaration](/articles/rcos-core/v0-1/layer-0-identity-scope#22-scope-declaration).
+      Siehe auch die Spezifikation: [Schicht 0 — Zweckdefinition](rcos:§2.1) und [Scope-Deklaration](rcos:§2.2).
   if-it-s-already-happening:
     title: Wenn es schon passiert
     md: |-
@@ -94,8 +94,8 @@ sections:
   what-this-failure-tends-to-trigger:
     title: Was dieses Versagen typischerweise auslöst
     md: |-
-      - **[Normalisierung von Konfliktvermeidung](/articles/rcos-stress-tests/conflict-accountability/conflict-avoidance-normalization)** — unversöhnliche Zweckkonflikte sind zu groß, um angesprochen zu werden, also werden sie vermieden.
-      - **[Informelle Clique-Entscheidungsfindung](/articles/rcos-stress-tests/governance-power/informal-clique-decision-making)** — Fraktionen bilden sich um konkurrierende Visionen.
+      - **[Normalisierung von Konfliktvermeidung](rcos:test/conflict-avoidance-normalization)** — unversöhnliche Zweckkonflikte sind zu groß, um angesprochen zu werden, also werden sie vermieden.
+      - **[Informelle Clique-Entscheidungsfindung](rcos:test/informal-clique-decision-making)** — Fraktionen bilden sich um konkurrierende Visionen.
   related-stress-tests:
     title: Verwandte Stresstests
-    md: '- **[Scope-Test bei Verletzung kultureller Normen](/articles/rcos-stress-tests/membership-boundaries/cultural-norm-violation-scope-test)** — beides sind Scope-Versagen: unklarer Zweck und unklarer geregelter Scope treten gemeinsam auf.'
+    md: '- **[Scope-Test bei Verletzung kultureller Normen](rcos:test/cultural-norm-violation-scope-test)** — beides sind Scope-Versagen: unklarer Zweck und unklarer geregelter Scope treten gemeinsam auf.'

@@ -1,10 +1,10 @@
 lang: pt-br
-sourceHash: 5c145cd4
+sourceHash: 40c2675e
 title: Modelo de Experimento
 preamble: |-
   - **Camada:** 6 — Evolução e Adaptação
   - **Status:** Modelo — use para propor um experimento com prazo definido
-  - **Referência RCOS:** [§8.3](/articles/rcos-core/v0-1/layer-6-evolution-adaptation#83-experiments), [§8.7](/articles/rcos-core/v0-1/layer-6-evolution-adaptation#87-layer-invariants)
+  - **Referência RCOS:** [§8.3](rcos:§8.3), [§8.7](rcos:§8.7)
 
   > Experimentos permitem que a comunidade teste uma mudança sem adotá-la permanentemente. Para serem seguros, todos os experimentos devem ter prazo definido, estar rotulados e expirar automaticamente — e devem registrar seus resultados no Registro de Aprendizados (Learning Log).
 

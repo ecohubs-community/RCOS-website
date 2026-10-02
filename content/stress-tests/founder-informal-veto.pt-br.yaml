@@ -1,5 +1,5 @@
 lang: pt-br
-sourceHash: 81e4810e
+sourceHash: d8d8e3e5
 title: Veto Informal do Fundador
 summary: Quando o "não" silencioso do fundador ainda manda, mesmo sem nada no papel que lhe conceda esse poder.
 tags:
@@ -71,7 +71,7 @@ sections:
       |---|---|
       | **L0 — Implícito** | O veto informal do fundador é real e não dito; o processo é teatro em torno dele. |
       | **L1 — Nomeado** | O grupo admite que o fundador tem um poder desproporcional, mas ainda não o delimitou. |
-      | **L2 — Documentado** | A autoridade do fundador está escrita em um [Registro de Autoridade](/articles/rcos-templates/layer-2/authority-registry) e em uma [Matriz de Decisão](/articles/rcos-templates/layer-2/decision-matrix) — escopo explícito, limites explícitos. |
+      | **L2 — Documentado** | A autoridade do fundador está escrita em um [Registro de Autoridade](rcos:template/authority-registry) e em uma [Matriz de Decisão](rcos:template/decision-matrix) — escopo explícito, limites explícitos. |
       | **L3 — Aplicado e ensaiado** | As decisões seguem a matriz; o papel do fundador é delimitado e revisável, e já se manteve firme diante de uma decisão da qual ele discordou. |
 
       A maioria das comunidades que se reconhece aqui está em **L0 ou L1**. O objetivo não é a perfeição — é subir um degrau.
@@ -80,11 +80,11 @@ sections:
     md: |-
       O RCOS torna explícita toda autoridade, incluindo a do fundador:
 
-      - **[Registro de Autoridade](/articles/rcos-templates/layer-2/authority-registry)** — registre por escrito exatamente qual autoridade cada papel (incluindo o fundador) detém e qual não detém.
-      - **[Matriz de Decisão](/articles/rcos-templates/layer-2/decision-matrix)** — vincule as decisões a um mecanismo acordado, para que ninguém as sobreponha informalmente.
-      - **[Protocolo de Governança](/articles/rcos-templates/layer-2/governance-protocol)** — estabeleça que as regras constitucionais prevalecem sobre qualquer indivíduo.
+      - **[Registro de Autoridade](rcos:template/authority-registry)** — registre por escrito exatamente qual autoridade cada papel (incluindo o fundador) detém e qual não detém.
+      - **[Matriz de Decisão](rcos:template/decision-matrix)** — vincule as decisões a um mecanismo acordado, para que ninguém as sobreponha informalmente.
+      - **[Protocolo de Governança](rcos:template/governance-protocol)** — estabeleça que as regras constitucionais prevalecem sobre qualquer indivíduo.
 
-      Veja também a especificação: [Camada 2 — Limites de Autoridade](/articles/rcos-core/v0-1/layer-2-governance-decision-logic#43-authority-boundaries).
+      Veja também a especificação: [Camada 2 — Limites de Autoridade](rcos:§4.3).
   if-it-s-already-happening:
     title: Se já está acontecendo
     md: |-
@@ -97,9 +97,9 @@ sections:
   what-this-failure-tends-to-trigger:
     title: O que esta falha tende a desencadear
     md: |-
-      - **[Autoridade Espiritual Carismática](/articles/rcos-stress-tests/culture-influence/charismatic-spiritual-authority)** — a influência ilimitada do fundador desliza para o carisma assumindo o lugar da governança.
-      - **[Precedente de Contorno das Regras em Emergências](/articles/rcos-stress-tests/change-emergencies/emergency-rule-bypass-precedent)** — uma autoridade informal é exatamente quem "temporariamente" contorna as regras em uma crise.
-      - **[Tomada de Decisão por Panelinha Informal](/articles/rcos-stress-tests/governance-power/informal-clique-decision-making)** — o círculo íntimo do fundador se torna o verdadeiro corpo decisor.
+      - **[Autoridade Espiritual Carismática](rcos:test/charismatic-spiritual-authority)** — a influência ilimitada do fundador desliza para o carisma assumindo o lugar da governança.
+      - **[Precedente de Contorno das Regras em Emergências](rcos:test/emergency-rule-bypass-precedent)** — uma autoridade informal é exatamente quem "temporariamente" contorna as regras em uma crise.
+      - **[Tomada de Decisão por Panelinha Informal](rcos:test/informal-clique-decision-making)** — o círculo íntimo do fundador se torna o verdadeiro corpo decisor.
   related-stress-tests:
     title: Testes de estresse relacionados
-    md: '- **[Falantes Dominantes em Espaços de Decisão](/articles/rcos-stress-tests/governance-power/dominant-speakers-decision-spaces)** — a mesma influência não escrita, expressa pelo tempo de fala nas reuniões.'
+    md: '- **[Falantes Dominantes em Espaços de Decisão](rcos:test/dominant-speakers-decision-spaces)** — a mesma influência não escrita, expressa pelo tempo de fala nas reuniões.'

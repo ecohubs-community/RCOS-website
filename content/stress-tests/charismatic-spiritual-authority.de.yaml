@@ -1,10 +1,10 @@
 lang: de
-sourceHash: 26dcb485
+sourceHash: 163b1fae
 title: Charismatische spirituelle Autorität
 summary: Wenn Verehrung für eine Person leise zu ihrem Recht wird, zu entscheiden.
 tags:
-  - 'Layer 2: Governance'
-  - High severity
+  - 'Schicht 2: Governance'
+  - Hoher Schweregrad
 symptoms:
   - Die Wünsche eines geschätzten Lehrers, einer Ältesten oder einer Gründerin entscheiden faktisch.
   - Dieser Person zu widersprechen fühlt sich an wie ein Widerspruch zu den Werten oder zum Geist der Gemeinschaft.
@@ -71,7 +71,7 @@ sections:
       |---|---|
       | **L0 — Implizit** | Spirituelle Stellung ist still gleichbedeutend mit Governance-Macht; Widerspruch fühlt sich verboten an. |
       | **L1 — Benannt** | Die Gruppe bemerkt die Ehrerbietung, hat aber Einfluss und Autorität noch nicht getrennt. |
-      | **L2 — Dokumentiert** | Spirituelle/moralische Rollen sind ausdrücklich von Governance-Autorität entkoppelt, die in einem [Authority Registry](/articles/rcos-templates/layer-2/authority-registry) lebt. |
+      | **L2 — Dokumentiert** | Spirituelle/moralische Rollen sind ausdrücklich von Governance-Autorität entkoppelt, die in einem [Authority Registry](rcos:template/authority-registry) lebt. |
       | **L3 — Durchgesetzt & geübt** | Einfluss informiert, entscheidet aber nicht; das Machtgefälle wird anerkannt und abgesichert; Menschen können — und tun es — ohne Sanktion widersprechen. |
 
       Die meisten Gemeinschaften, die sich hier wiedererkennen, stehen auf **L0 oder L1**. Das Ziel ist nicht Perfektion — es ist, eine Sprosse höher zu kommen.
@@ -80,11 +80,11 @@ sections:
     md: |-
       RCOS trennt Verehrtsein vom In-der-Verantwortung-Sein:
 
-      - **[Authority Registry](/articles/rcos-templates/layer-2/authority-registry)** — macht Governance-Autorität explizit, sodass Verehrung nie mit einem Mandat verwechselt wird.
-      - **[Governance Protocol](/articles/rcos-templates/layer-2/governance-protocol)** — Entscheidungen folgen dem Prozess, nicht persönlicher Überzeugung.
-      - **[Invariants Register](/articles/rcos-templates/layer-0/invariants-register)** — schützt das Recht zu widersprechen und die Trennung von Glauben und Herrschaft.
+      - **[Authority Registry](rcos:template/authority-registry)** — macht Governance-Autorität explizit, sodass Verehrung nie mit einem Mandat verwechselt wird.
+      - **[Governance Protocol](rcos:template/governance-protocol)** — Entscheidungen folgen dem Prozess, nicht persönlicher Überzeugung.
+      - **[Invariants Register](rcos:template/invariants-register)** — schützt das Recht zu widersprechen und die Trennung von Glauben und Herrschaft.
 
-      Siehe auch die Spezifikation: [Schicht 2 — Autoritätsgrenzen](/articles/rcos-core/v0-1/layer-2-governance-decision-logic#43-authority-boundaries) und [Schicht 4 — Schutzmaßnahmen](/articles/rcos-core/v0-1/layer-4-conflict-repair-accountability#63-safeguards).
+      Siehe auch die Spezifikation: [Schicht 2 — Autoritätsgrenzen](rcos:§4.3) und [Schicht 4 — Schutzmaßnahmen](rcos:§6.3).
   if-it-s-already-happening:
     title: Wenn es schon passiert
     md: |-
@@ -97,9 +97,9 @@ sections:
   what-this-failure-tends-to-trigger:
     title: Was dieser Versagensmodus gerne auslöst
     md: |-
-      - **[Cultural Norm Violation Scope Test](/articles/rcos-stress-tests/membership-boundaries/cultural-norm-violation-scope-test)** — die Vorlieben einer verehrten Person werden durchgesetzt, als wären sie erklärte Regeln.
-      - **[Emergency Rule Bypass Precedent](/articles/rcos-stress-tests/change-emergencies/emergency-rule-bypass-precedent)** — Charisma liefert die Rechtfertigung dafür, den Prozess „nur dieses eine Mal" zu umgehen.
-      - **[Conflict Avoidance Normalization](/articles/rcos-stress-tests/conflict-accountability/conflict-avoidance-normalization)** — Widerspruch wird unterdrückt, um die Verehrung zu bewahren.
+      - **[Cultural Norm Violation Scope Test](rcos:test/cultural-norm-violation-scope-test)** — die Vorlieben einer verehrten Person werden durchgesetzt, als wären sie erklärte Regeln.
+      - **[Emergency Rule Bypass Precedent](rcos:test/emergency-rule-bypass-precedent)** — Charisma liefert die Rechtfertigung dafür, den Prozess „nur dieses eine Mal" zu umgehen.
+      - **[Conflict Avoidance Normalization](rcos:test/conflict-avoidance-normalization)** — Widerspruch wird unterdrückt, um die Verehrung zu bewahren.
   related-stress-tests:
     title: Verwandte Stresstests
-    md: '- **[Founder Informal Veto](/articles/rcos-stress-tests/governance-power/founder-informal-veto)** — der säkulare Cousin: ungeschriebene Autorität, die den Prozess überstimmt.'
+    md: '- **[Founder Informal Veto](rcos:test/founder-informal-veto)** — der säkulare Cousin: ungeschriebene Autorität, die den Prozess überstimmt.'

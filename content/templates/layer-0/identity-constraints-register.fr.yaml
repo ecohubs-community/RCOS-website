@@ -1,10 +1,10 @@
 lang: fr
-sourceHash: 31e038ff
+sourceHash: eef36555
 title: Registre des contraintes d'identité
 preamble: |-
   - **Couche :** 0 — Identité et portée
   - **Statut :** Modèle — à adapter pour ta communauté
-  - **Référence RCOS :** [§2.4](/articles/rcos-core/v0-1/layer-0-identity-scope#24-identity-constraints), [§2.5](/articles/rcos-core/v0-1/layer-0-identity-scope#25-artifacts)
+  - **Référence RCOS :** [§2.4](rcos:§2.4), [§2.5](rcos:§2.5)
 
   > Les contraintes d'identité sont les limites comportementales, éthiques et structurelles non négociables qui définissent ce qu'est la communauté. Contrairement aux invariants (qui protègent le système lui-même), les contraintes d'identité définissent la manière dont les membres et la communauté se rapportent aux personnes, aux écosystèmes et aux idéologies.
 

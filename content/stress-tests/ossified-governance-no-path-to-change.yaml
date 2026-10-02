@@ -53,7 +53,7 @@ sections:
       - Proposals to adapt die for lack of any mechanism to consider them.
       - The community is visibly out of step with its own current needs.
 
-      **This is _not_ the same as** deliberately protecting core invariants (that's healthy — see [Unprotected Core Invariants](/articles/rcos-stress-tests/change-emergencies/unprotected-core-invariants) for the *opposite* failure). The tell is that *everything* is frozen, with no constrained path to change anything — so legitimate adaptation is impossible.
+      **This is _not_ the same as** deliberately protecting core invariants (that's healthy — see [Unprotected Core Invariants](rcos:test/unprotected-core-invariants) for the *opposite* failure). The tell is that *everything* is frozen, with no constrained path to change anything — so legitimate adaptation is impossible.
   - id: why-it-happens
     title: Why it happens
     md: |-
@@ -89,7 +89,7 @@ sections:
       |---|---|
       | **L0 — Implicit** | No legitimate path to change; rules are frozen and reform happens by exit. |
       | **L1 — Named** | The group admits it can't adapt but hasn't built a change mechanism. |
-      | **L2 — Documented** | A [Change Protocol](/articles/rcos-templates/layer-6/change-protocol) defines how rules can be proposed, reviewed, and revised — possible but constrained. |
+      | **L2 — Documented** | A [Change Protocol](rcos:template/change-protocol) defines how rules can be proposed, reviewed, and revised — possible but constrained. |
       | **L3 — Enforced & rehearsed** | Change happens through the process; the system has adapted at least once without a crisis or schism. |
 
       Most communities that recognise themselves here sit at **L0 or L1**. The goal isn't perfection — it's moving up one rung.
@@ -98,10 +98,10 @@ sections:
     md: |-
       RCOS makes change possible *and* bounded — neither frozen nor chaotic:
 
-      - **[Change Protocol](/articles/rcos-templates/layer-6/change-protocol)** — define a constrained, legitimate path to propose and adopt changes.
-      - **[Version History](/articles/rcos-templates/layer-6/version-history)** — track how the rules evolve, so change is visible and bounded rather than feared.
+      - **[Change Protocol](rcos:template/change-protocol)** — define a constrained, legitimate path to propose and adopt changes.
+      - **[Version History](rcos:template/version-history)** — track how the rules evolve, so change is visible and bounded rather than feared.
 
-      See also the spec: [Layer 6 — Change Mechanisms](/articles/rcos-core/v0-1/layer-6-evolution-adaptation#81-change-mechanisms) and [Versioning and Authority](/articles/rcos-core/v0-1/layer-6-evolution-adaptation#82-versioning-and-authority).
+      See also the spec: [Layer 6 — Change Mechanisms](rcos:§8.1) and [Versioning and Authority](rcos:§8.2).
   - id: if-it-s-already-happening
     title: If it's already happening
     md: |-
@@ -113,8 +113,8 @@ sections:
   - id: what-this-failure-tends-to-trigger
     title: What this failure tends to trigger
     md: |-
-      - **[Conflict Avoidance Normalization](/articles/rcos-stress-tests/conflict-accountability/conflict-avoidance-normalization)** — with no legitimate path to change, frustration goes underground.
-      - **[Emergency Rule Bypass Precedent](/articles/rcos-stress-tests/change-emergencies/emergency-rule-bypass-precedent)** — when normal change is impossible, people wait for a crisis to force it.
+      - **[Conflict Avoidance Normalization](rcos:test/conflict-avoidance-normalization)** — with no legitimate path to change, frustration goes underground.
+      - **[Emergency Rule Bypass Precedent](rcos:test/emergency-rule-bypass-precedent)** — when normal change is impossible, people wait for a crisis to force it.
   - id: related-stress-tests
     title: Related stress tests
-    md: '- **[Unprotected Core Invariants](/articles/rcos-stress-tests/change-emergencies/unprotected-core-invariants)** — the opposite imbalance: here nothing can change; there, everything can, including the foundation.'
+    md: '- **[Unprotected Core Invariants](rcos:test/unprotected-core-invariants)** — the opposite imbalance: here nothing can change; there, everything can, including the foundation.'

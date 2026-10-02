@@ -1,10 +1,10 @@
 lang: de
-sourceHash: bbf3d0e6
+sourceHash: d9d4b019
 title: Geltungsbereichserklärung
 preamble: |-
   - **Layer:** 0 — Identität & Geltungsbereich
   - **Status:** Vorlage — an eure Gemeinschaft anpassen
-  - **RCOS-Referenz:** [§2.2](/articles/rcos-core/v0-1/layer-0-identity-scope#22-scope-declaration), [§2.5](/articles/rcos-core/v0-1/layer-0-identity-scope#25-artifacts)
+  - **RCOS-Referenz:** [§2.2](rcos:§2.2), [§2.5](rcos:§2.5)
 
   ---
 sections:

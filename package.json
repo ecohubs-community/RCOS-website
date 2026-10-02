@@ -23,7 +23,8 @@
 		"test": "vitest run && playwright test",
 		"paraglide:compile": "paraglide-js compile --project ./project.inlang --outdir ./src/lib/paraglide --strategy url baseLocale",
 		"build:standard-data": "node scripts/build-standard-data.mjs",
-		"content:articles": "node scripts/content/build-articles.mjs"
+		"content:articles": "node scripts/content/build-articles.mjs",
+		"content:check": "node scripts/content/check.mjs"
 	},
 	"devDependencies": {
 		"@anthropic-ai/sdk": "^0.91.1",
@@ -61,7 +62,8 @@
 		"typescript-eslint": "^8.47.0",
 		"unplugin-icons": "^24.0.0",
 		"vite": "^7.2.2",
-		"vitest": "^5.0.3"
+		"vitest": "^5.0.3",
+		"zod": "^4.6.5"
 	},
 	"pnpm": {
 		"onlyBuiltDependencies": [

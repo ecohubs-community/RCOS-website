@@ -1,10 +1,10 @@
 lang: fr
-sourceHash: 68af1e15
+sourceHash: 9b7a2f68
 title: Registre des états de membre
 preamble: |-
   - **Couche :** 1 — Système de membres
   - **Statut :** Modèle — à adapter pour ta communauté
-  - **Référence RCOS :** [§3.1](/articles/rcos-core/v0-1/layer-1-membership-system#31-membership-states)
+  - **Référence RCOS :** [§3.1](rcos:§3.1)
 
   ---
 sections:

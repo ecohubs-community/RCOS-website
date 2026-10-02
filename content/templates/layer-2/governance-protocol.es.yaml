@@ -1,10 +1,10 @@
 lang: es
-sourceHash: 1f860456
+sourceHash: 05eab494
 title: Protocolo de Gobernanza
 preamble: |-
   - **Capa:** 2 — Gobernanza y Lógica de Decisión
   - **Estado:** Plantilla — adaptar para tu comunidad
-  - **Referencia RCOS:** [§4.5](/articles/rcos-core/v0-1/layer-2-governance-decision-logic#45-governance-protocol), [§4.6](/articles/rcos-core/v0-1/layer-2-governance-decision-logic#46-safeguards-and-failure-modes), [§4.7](/articles/rcos-core/v0-1/layer-2-governance-decision-logic#47-artifacts)
+  - **Referencia RCOS:** [§4.5](rcos:§4.5), [§4.6](rcos:§4.6), [§4.7](rcos:§4.7)
 
   > Define el ciclo de vida completo de una decisión colectiva — desde la presentación de la propuesta hasta la documentación y la apelación.
 

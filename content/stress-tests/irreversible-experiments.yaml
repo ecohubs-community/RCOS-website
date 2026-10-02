@@ -89,7 +89,7 @@ sections:
       |---|---|
       | **L0 — Implicit** | "Experiments" are adopted with no criteria, time box, or rollback. |
       | **L1 — Named** | The group wants to experiment safely but hasn't defined how. |
-      | **L2 — Documented** | An [Experiment Template](/articles/rcos-templates/layer-6/experiment-template) requires success criteria, a time box, and a rollback plan. |
+      | **L2 — Documented** | An [Experiment Template](rcos:template/experiment-template) requires success criteria, a time box, and a rollback plan. |
       | **L3 — Enforced & rehearsed** | Experiments are genuinely reversible and time-boxed; at least one has been run, reviewed, and either rolled back or adopted on evidence. |
 
       Most communities that recognise themselves here sit at **L0 or L1**. The goal isn't perfection — it's moving up one rung.
@@ -98,11 +98,11 @@ sections:
     md: |-
       RCOS keeps "experiment" honest — and keeps irreversible moves out of that category:
 
-      - **[Experiment Template](/articles/rcos-templates/layer-6/experiment-template)** — require criteria, a time box, and a rollback plan before trying.
-      - **[Change Protocol](/articles/rcos-templates/layer-6/change-protocol)** — route irreversible changes through the full process, not the experiment lane.
-      - **[Learning Log](/articles/rcos-templates/layer-6/learning-log)** — capture what was tried and what happened, so the experiment teaches something.
+      - **[Experiment Template](rcos:template/experiment-template)** — require criteria, a time box, and a rollback plan before trying.
+      - **[Change Protocol](rcos:template/change-protocol)** — route irreversible changes through the full process, not the experiment lane.
+      - **[Learning Log](rcos:template/learning-log)** — capture what was tried and what happened, so the experiment teaches something.
 
-      See also the spec: [Layer 6 — Experiments](/articles/rcos-core/v0-1/layer-6-evolution-adaptation#83-experiments) and [Change Safety and Reversibility](/articles/rcos-core/v0-1/layer-6-evolution-adaptation#85-change-safety-and-reversibility).
+      See also the spec: [Layer 6 — Experiments](rcos:§8.3) and [Change Safety and Reversibility](rcos:§8.5).
   - id: if-it-s-already-happening
     title: If it's already happening
     md: |-
@@ -113,9 +113,9 @@ sections:
       3. **Stop calling irreversible moves experiments** — run them through the full change process so they get the scrutiny they deserve.
   - id: what-this-failure-tends-to-trigger
     title: What this failure tends to trigger
-    md: '- **[Commons Privatization through Land Sales](/articles/rcos-stress-tests/economy-resources/commons-privatization-through-land-sales)** — selling land "as an experiment" is the costliest irreversible move of all.'
+    md: '- **[Commons Privatization through Land Sales](rcos:test/commons-privatization-through-land-sales)** — selling land "as an experiment" is the costliest irreversible move of all.'
   - id: related-stress-tests
     title: Related stress tests
     md: |-
-      - **[Institutional Amnesia](/articles/rcos-stress-tests/change-emergencies/institutional-amnesia)** — without captured learning, even a reversible experiment teaches nothing.
-      - **[Emergency Rule Bypass Precedent](/articles/rcos-stress-tests/change-emergencies/emergency-rule-bypass-precedent)** — both let big changes slip through under a reassuring label.
+      - **[Institutional Amnesia](rcos:test/institutional-amnesia)** — without captured learning, even a reversible experiment teaches nothing.
+      - **[Emergency Rule Bypass Precedent](rcos:test/emergency-rule-bypass-precedent)** — both let big changes slip through under a reassuring label.

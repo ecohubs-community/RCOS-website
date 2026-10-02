@@ -1,10 +1,10 @@
 lang: es
-sourceHash: '07501381'
+sourceHash: c9649562
 title: Manual de Operaciones
 preamble: |-
   - **Capa:** 5 — Operaciones y Coordinación
   - **Estado:** Plantilla — adaptar para tu comunidad
-  - **Referencia RCOS:** [§7.1](/articles/rcos-core/v0-1/layer-5-operations-coordination#71-roles-and-responsibilities), [§7.3](/articles/rcos-core/v0-1/layer-5-operations-coordination#73-documentation-and-information-flow), [§7.4](/articles/rcos-core/v0-1/layer-5-operations-coordination#74-workload-and-capacity-boundaries), [§7.5](/articles/rcos-core/v0-1/layer-5-operations-coordination#75-operational-continuity), [§7.6](/articles/rcos-core/v0-1/layer-5-operations-coordination#76-artifacts)
+  - **Referencia RCOS:** [§7.1](rcos:§7.1), [§7.3](rcos:§7.3), [§7.4](rcos:§7.4), [§7.5](rcos:§7.5), [§7.6](rcos:§7.6)
 
   ---
 sections:

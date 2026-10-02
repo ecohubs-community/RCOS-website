@@ -1,10 +1,10 @@
 lang: de
-sourceHash: ebdd7ed1
+sourceHash: 6082a2d2
 title: Ausschluss ohne rechtsstaatliches Verfahren
 summary: Wenn ein Mitglied ohne Verfahren, ohne Berufung und ohne Protokoll hinausgedrängt werden kann.
 tags:
-  - 'Layer 1: Membership'
-  - High severity
+  - 'Schicht 1: Mitgliedschaft'
+  - Hoher Schweregrad
 symptoms:
   - Ein Mitglied wurde ohne definiertes Verfahren entfernt (oder zum Gehen gedrängt).
   - Die Entfernung geschah durch informellen Konsens, eine plötzliche Abstimmung oder sozialen Druck — nicht durch ein schriftliches Verfahren.
@@ -68,7 +68,7 @@ sections:
       |---|---|
       | **L0 — Implizit** | Entfernung ist möglich, aber undefiniert; sie geschieht durch Druck oder eine plötzliche Abstimmung. |
       | **L1 — Benannt** | Die Gruppe weiß, dass sie kein Ausschlussverfahren hat, hat aber keines aufgebaut. |
-      | **L2 — Dokumentiert** | Ein Zwangsausschluss-Verfahren existiert — Gründe, Benachrichtigung, eine Anhörung und Berufung — in einem [Exit-Protokoll](/articles/rcos-templates/layer-1/exit-protocol). |
+      | **L2 — Dokumentiert** | Ein Zwangsausschluss-Verfahren existiert — Gründe, Benachrichtigung, eine Anhörung und Berufung — in einem [Exit-Protokoll](rcos:template/exit-protocol). |
       | **L3 — Durchgesetzt & geübt** | Jede Entfernung folgt einem rechtsstaatlichen Verfahren; es wurde mindestens einmal fair angewandt, einschließlich einer echten Gelegenheit zur Stellungnahme. |
 
       Die meisten Gemeinschaften, die sich hier wiedererkennen, stehen bei **L0 oder L1**. Das Ziel ist nicht Perfektion — es ist, eine Stufe nach oben zu kommen.
@@ -77,11 +77,11 @@ sections:
     md: |-
       RCOS verlangt, dass die schwerste Mitgliedschaftsentscheidung die am stärksten verfahrensgebundene ist:
 
-      - **[Exit-Protokoll](/articles/rcos-templates/layer-1/exit-protocol)** — definiert Gründe, Benachrichtigung, eine Anhörung und Berufung für Zwangsausschluss, *bevor* ihr sie braucht.
-      - **[Accountability-Protokoll](/articles/rcos-templates/layer-4/accountability-protocol)** — ein Reparatur-zuerst-Weg, damit Entfernung der letzte Ausweg ist, nicht der erste Reflex.
-      - **[Mitgliedschaftszustands-Register](/articles/rcos-templates/layer-1/membership-state-registry)** — macht aus Suspendierung oder Entfernung eine explizite, protokollierte Zustandsänderung, nicht eine Stimmung.
+      - **[Exit-Protokoll](rcos:template/exit-protocol)** — definiert Gründe, Benachrichtigung, eine Anhörung und Berufung für Zwangsausschluss, *bevor* ihr sie braucht.
+      - **[Accountability-Protokoll](rcos:template/accountability-protocol)** — ein Reparatur-zuerst-Weg, damit Entfernung der letzte Ausweg ist, nicht der erste Reflex.
+      - **[Mitgliedschaftszustands-Register](rcos:template/membership-state-registry)** — macht aus Suspendierung oder Entfernung eine explizite, protokollierte Zustandsänderung, nicht eine Stimmung.
 
-      Siehe auch die Spezifikation: [Schicht 1 — Austritt und Trennung](/articles/rcos-core/v0-1/layer-1-membership-system#36-exit-and-separation) und [Schicht 4 — Sanktionen, Reparatur und Trennung](/articles/rcos-core/v0-1/layer-4-conflict-repair-accountability#64-sanctions-repair-and-separation).
+      Siehe auch die Spezifikation: [Schicht 1 — Austritt und Trennung](rcos:§3.6) und [Schicht 4 — Sanktionen, Reparatur und Trennung](rcos:§6.4).
   if-it-s-already-happening:
     title: Wenn es bereits passiert
     md: |-
@@ -93,9 +93,9 @@ sections:
       4. **Achtet auf die Kaskade** — willkürlicher Ausschluss bringt der ganzen Gemeinschaft bei, sich selbst zu zensieren.
   what-this-failure-tends-to-trigger:
     title: Was diese Schwachstelle typischerweise auslöst
-    md: '- **[Normalisierung von Konfliktvermeidung](/articles/rcos-stress-tests/conflict-accountability/conflict-avoidance-normalization)** — wenn das Wort zu erheben dazu führen kann, dass man entfernt wird, hören die Leute auf, das Wort zu erheben.'
+    md: '- **[Normalisierung von Konfliktvermeidung](rcos:test/conflict-avoidance-normalization)** — wenn das Wort zu erheben dazu führen kann, dass man entfernt wird, hören die Leute auf, das Wort zu erheben.'
   related-stress-tests:
     title: Verwandte Stresstests
     md: |-
-      - **[Bestrafung vor Reparatur](/articles/rcos-stress-tests/conflict-accountability/punishment-before-repair)** — der strafende Reflex, der Accountability überhaupt erst in Ausschluss verwandelt.
-      - **[Geltungsbereichstest für Verstöße gegen kulturelle Normen](/articles/rcos-stress-tests/membership-boundaries/cultural-norm-violation-scope-test)** — ein Bruch einer unausgesprochenen Norm ist oft das, was die Eile zum Ausschluss auslöst.
+      - **[Bestrafung vor Reparatur](rcos:test/punishment-before-repair)** — der strafende Reflex, der Accountability überhaupt erst in Ausschluss verwandelt.
+      - **[Geltungsbereichstest für Verstöße gegen kulturelle Normen](rcos:test/cultural-norm-violation-scope-test)** — ein Bruch einer unausgesprochenen Norm ist oft das, was die Eile zum Ausschluss auslöst.

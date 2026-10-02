@@ -1,10 +1,10 @@
 lang: es
-sourceHash: 23fac515
+sourceHash: 982aaa1f
 title: Gobernanza osificada sin un camino para cambiar
 summary: Cuando nada puede cambiar, el cambio ocurre marchándose.
 tags:
-  - 'Layer 6: Evolution'
-  - Medium severity
+  - 'Capa 6: Evolución'
+  - Severidad media
 symptoms:
   - Las reglas originales se tratan como fijas; no hay un proceso legítimo para revisarlas.
   - '"Así lo establecieron los fundadores" cierra la mayoría de las conversaciones de reforma.'
@@ -33,7 +33,7 @@ sections:
       - Las propuestas para adaptarse mueren por falta de cualquier mecanismo para considerarlas.
       - La comunidad está visiblemente desfasada respecto a sus propias necesidades actuales.
 
-      **Esto _no_ es lo mismo que** proteger deliberadamente los invariantes centrales (eso es saludable — ver [Invariantes centrales desprotegidos](/articles/rcos-stress-tests/change-emergencies/unprotected-core-invariants) para el fallo *opuesto*). La señal es que *todo* está congelado, sin un camino restringido para cambiar nada — de modo que la adaptación legítima se vuelve imposible.
+      **Esto _no_ es lo mismo que** proteger deliberadamente los invariantes centrales (eso es saludable — ver [Invariantes centrales desprotegidos](rcos:test/unprotected-core-invariants) para el fallo *opuesto*). La señal es que *todo* está congelado, sin un camino restringido para cambiar nada — de modo que la adaptación legítima se vuelve imposible.
   why-it-happens:
     title: Por qué ocurre
     md: |-
@@ -69,7 +69,7 @@ sections:
       |---|---|
       | **L0 — Implícito** | No hay un camino legítimo para el cambio; las reglas están congeladas y la reforma ocurre por salida. |
       | **L1 — Nombrado** | El grupo admite que no puede adaptarse pero no ha construido un mecanismo de cambio. |
-      | **L2 — Documentado** | Un [Protocolo de Cambio](/articles/rcos-templates/layer-6/change-protocol) define cómo se pueden proponer, revisar y modificar las reglas — posible pero restringido. |
+      | **L2 — Documentado** | Un [Protocolo de Cambio](rcos:template/change-protocol) define cómo se pueden proponer, revisar y modificar las reglas — posible pero restringido. |
       | **L3 — Aplicado y ensayado** | El cambio ocurre a través del proceso; el sistema se ha adaptado al menos una vez sin crisis ni cisma. |
 
       La mayoría de las comunidades que se reconocen aquí están en **L0 o L1**. La meta no es la perfección — es subir un peldaño.
@@ -78,10 +78,10 @@ sections:
     md: |-
       RCOS hace que el cambio sea posible *y* acotado — ni congelado ni caótico:
 
-      - **[Protocolo de Cambio](/articles/rcos-templates/layer-6/change-protocol)** — define un camino restringido y legítimo para proponer y adoptar cambios.
-      - **[Historial de versiones](/articles/rcos-templates/layer-6/version-history)** — rastrea cómo evolucionan las reglas, de modo que el cambio sea visible y acotado en lugar de temido.
+      - **[Protocolo de Cambio](rcos:template/change-protocol)** — define un camino restringido y legítimo para proponer y adoptar cambios.
+      - **[Historial de versiones](rcos:template/version-history)** — rastrea cómo evolucionan las reglas, de modo que el cambio sea visible y acotado en lugar de temido.
 
-      Ver también la especificación: [Capa 6 — Mecanismos de cambio](/articles/rcos-core/v0-1/layer-6-evolution-adaptation#81-change-mechanisms) y [Versionado y autoridad](/articles/rcos-core/v0-1/layer-6-evolution-adaptation#82-versioning-and-authority).
+      Ver también la especificación: [Capa 6 — Mecanismos de cambio](rcos:§8.1) y [Versionado y autoridad](rcos:§8.2).
   if-it-s-already-happening:
     title: Si ya está sucediendo
     md: |-
@@ -93,8 +93,8 @@ sections:
   what-this-failure-tends-to-trigger:
     title: Qué tiende a desencadenar este fallo
     md: |-
-      - **[Normalización de la evitación de conflictos](/articles/rcos-stress-tests/conflict-accountability/conflict-avoidance-normalization)** — sin un camino legítimo para el cambio, la frustración pasa a la clandestinidad.
-      - **[Precedente de elusión de reglas por emergencia](/articles/rcos-stress-tests/change-emergencies/emergency-rule-bypass-precedent)** — cuando el cambio normal es imposible, la gente espera a que una crisis lo fuerce.
+      - **[Normalización de la evitación de conflictos](rcos:test/conflict-avoidance-normalization)** — sin un camino legítimo para el cambio, la frustración pasa a la clandestinidad.
+      - **[Precedente de elusión de reglas por emergencia](rcos:test/emergency-rule-bypass-precedent)** — cuando el cambio normal es imposible, la gente espera a que una crisis lo fuerce.
   related-stress-tests:
     title: Pruebas de estrés relacionadas
-    md: '- **[Invariantes centrales desprotegidos](/articles/rcos-stress-tests/change-emergencies/unprotected-core-invariants)** — el desequilibrio opuesto: aquí nada puede cambiar; allí todo puede, incluso los cimientos.'
+    md: '- **[Invariantes centrales desprotegidos](rcos:test/unprotected-core-invariants)** — el desequilibrio opuesto: aquí nada puede cambiar; allí todo puede, incluso los cimientos.'

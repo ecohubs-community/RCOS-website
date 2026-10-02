@@ -1,10 +1,10 @@
 lang: de
-sourceHash: 31e038ff
+sourceHash: eef36555
 title: Register der Identitätsbeschränkungen
 preamble: |-
   - **Ebene:** 0 — Identität & Geltungsbereich
   - **Status:** Vorlage — an deine Gemeinschaft anpassen
-  - **RCOS-Referenz:** [§2.4](/articles/rcos-core/v0-1/layer-0-identity-scope#24-identity-constraints), [§2.5](/articles/rcos-core/v0-1/layer-0-identity-scope#25-artifacts)
+  - **RCOS-Referenz:** [§2.4](rcos:§2.4), [§2.5](rcos:§2.5)
 
   > Identitätsbeschränkungen sind die nicht verhandelbaren verhaltensbezogenen, ethischen und strukturellen Grenzen, die bestimmen, wer die Gemeinschaft ist. Anders als Invarianten (die das System selbst schützen) definieren Identitätsbeschränkungen, wie Mitglieder und die Gemeinschaft sich zu Menschen, Ökosystemen und Ideologien verhalten.
 

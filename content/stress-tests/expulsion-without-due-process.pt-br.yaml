@@ -1,9 +1,9 @@
 lang: pt-br
-sourceHash: ebdd7ed1
+sourceHash: 6082a2d2
 title: Expulsão Sem Devido Processo
 summary: Quando um membro pode ser expulso sem processo, sem recurso e sem registro.
 tags:
-  - 'Camada 1: Membresia'
+  - 'Camada 1: Filiação'
   - Severidade alta
 symptoms:
   - Um membro foi removido (ou pressionado a sair) sem nenhum processo definido.
@@ -68,7 +68,7 @@ sections:
       |---|---|
       | **L0 — Implícito** | A remoção é possível, mas indefinida; acontece por pressão ou votação súbita. |
       | **L1 — Nomeado** | O grupo sabe que não tem processo de expulsão, mas ainda não construiu um. |
-      | **L2 — Documentado** | Existe um processo de saída forçada — fundamentos, notificação, audiência e recurso — em um [Protocolo de Saída](/articles/rcos-templates/layer-1/exit-protocol). |
+      | **L2 — Documentado** | Existe um processo de saída forçada — fundamentos, notificação, audiência e recurso — em um [Protocolo de Saída](rcos:template/exit-protocol). |
       | **L3 — Aplicado e ensaiado** | Qualquer remoção segue o devido processo; foi aplicado de forma justa pelo menos uma vez, incluindo uma chance real de resposta. |
 
       A maioria das comunidades que se reconhece aqui está em **L0 ou L1**. O objetivo não é a perfeição — é subir um degrau.
@@ -77,11 +77,11 @@ sections:
     md: |-
       O RCOS exige que a decisão mais difícil de membresia seja a mais procedimental:
 
-      - **[Protocolo de Saída](/articles/rcos-templates/layer-1/exit-protocol)** — defina fundamentos, notificação, audiência e recurso para saída forçada *antes* de precisar.
-      - **[Protocolo de Accountability](/articles/rcos-templates/layer-4/accountability-protocol)** — um caminho que prioriza a reparação, para que a remoção seja o último recurso, não o primeiro reflexo.
-      - **[Registro de Estado de Membresia](/articles/rcos-templates/layer-1/membership-state-registry)** — torne a suspensão ou remoção uma mudança de estado explícita e registrada, não um humor.
+      - **[Protocolo de Saída](rcos:template/exit-protocol)** — defina fundamentos, notificação, audiência e recurso para saída forçada *antes* de precisar.
+      - **[Protocolo de Accountability](rcos:template/accountability-protocol)** — um caminho que prioriza a reparação, para que a remoção seja o último recurso, não o primeiro reflexo.
+      - **[Registro de Estado de Membresia](rcos:template/membership-state-registry)** — torne a suspensão ou remoção uma mudança de estado explícita e registrada, não um humor.
 
-      Veja também a especificação: [Camada 1 — Saída e Separação](/articles/rcos-core/v0-1/layer-1-membership-system#36-exit-and-separation) e [Camada 4 — Sanções, Reparação e Separação](/articles/rcos-core/v0-1/layer-4-conflict-repair-accountability#64-sanctions-repair-and-separation).
+      Veja também a especificação: [Camada 1 — Saída e Separação](rcos:§3.6) e [Camada 4 — Sanções, Reparação e Separação](rcos:§6.4).
   if-it-s-already-happening:
     title: Se já está acontecendo
     md: |-
@@ -93,9 +93,9 @@ sections:
       4. **Observe a cascata** — a expulsão arbitrária ensina a comunidade inteira a se autocensurar.
   what-this-failure-tends-to-trigger:
     title: O que essa falha tende a desencadear
-    md: '- **[Normalização da Evitação de Conflitos](/articles/rcos-stress-tests/conflict-accountability/conflict-avoidance-normalization)** — se falar pode te tirar do grupo, as pessoas param de falar.'
+    md: '- **[Normalização da Evitação de Conflitos](rcos:test/conflict-avoidance-normalization)** — se falar pode te tirar do grupo, as pessoas param de falar.'
   related-stress-tests:
     title: Testes de estresse relacionados
     md: |-
-      - **[Punição Antes da Reparação](/articles/rcos-stress-tests/conflict-accountability/punishment-before-repair)** — o reflexo punitivo que transforma a accountability em expulsão, para começar.
-      - **[Teste de Escopo de Violação de Norma Cultural](/articles/rcos-stress-tests/membership-boundaries/cultural-norm-violation-scope-test)** — uma quebra de norma não declarada é frequentemente o que desencadeia a pressa em expulsar.
+      - **[Punição Antes da Reparação](rcos:test/punishment-before-repair)** — o reflexo punitivo que transforma a accountability em expulsão, para começar.
+      - **[Teste de Escopo de Violação de Norma Cultural](rcos:test/cultural-norm-violation-scope-test)** — uma quebra de norma não declarada é frequentemente o que desencadeia a pressa em expulsar.

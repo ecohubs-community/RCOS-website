@@ -1,10 +1,10 @@
 lang: de
-sourceHash: b9f3f463
+sourceHash: 72af84fd
 title: Unumkehrbare Experimente
 summary: Wenn "lass es uns einfach probieren" keinen Rückweg hat, falls es schiefgeht.
 tags:
-  - 'Layer 6: Evolution'
-  - Medium severity
+  - 'Schicht 6: Evolution'
+  - Mittlerer Schweregrad
 symptoms:
   - Eine große Veränderung wurde als "Experiment" beschlossen, aber es gibt keinen definierten Rückweg.
   - '"Lass es uns versuchen und schauen" war der gesamte Plan; niemand hat Erfolgskriterien oder ein Enddatum festgelegt.'
@@ -67,7 +67,7 @@ sections:
       |---|---|
       | **L0 — Implizit** | "Experimente" werden ohne Kriterien, Zeitrahmen oder Rückbau beschlossen. |
       | **L1 — Benannt** | Die Gruppe möchte sicher experimentieren, hat aber noch nicht definiert, wie. |
-      | **L2 — Dokumentiert** | Eine [Experiment-Vorlage](/articles/rcos-templates/layer-6/experiment-template) verlangt Erfolgskriterien, einen Zeitrahmen und einen Rückbau-Plan. |
+      | **L2 — Dokumentiert** | Eine [Experiment-Vorlage](rcos:template/experiment-template) verlangt Erfolgskriterien, einen Zeitrahmen und einen Rückbau-Plan. |
       | **L3 — Durchgesetzt & geübt** | Experimente sind tatsächlich umkehrbar und zeitlich begrenzt; mindestens eines wurde durchgeführt, ausgewertet und entweder zurückgebaut oder evidenzbasiert übernommen. |
 
       Die meisten Gemeinschaften, die sich hier wiedererkennen, befinden sich auf **L0 oder L1**. Das Ziel ist nicht Perfektion — es geht darum, eine Stufe weiterzukommen.
@@ -76,11 +76,11 @@ sections:
     md: |-
       RCOS hält "Experiment" ehrlich — und unumkehrbare Schritte aus dieser Kategorie heraus:
 
-      - **[Experiment-Vorlage](/articles/rcos-templates/layer-6/experiment-template)** — Kriterien, Zeitrahmen und Rückbau-Plan einfordern, bevor losgelegt wird.
-      - **[Veränderungsprotokoll](/articles/rcos-templates/layer-6/change-protocol)** — unumkehrbare Veränderungen durch den vollständigen Prozess leiten, nicht über die Experiment-Spur.
-      - **[Lern-Log](/articles/rcos-templates/layer-6/learning-log)** — festhalten, was ausprobiert wurde und was passiert ist, damit das Experiment etwas lehrt.
+      - **[Experiment-Vorlage](rcos:template/experiment-template)** — Kriterien, Zeitrahmen und Rückbau-Plan einfordern, bevor losgelegt wird.
+      - **[Veränderungsprotokoll](rcos:template/change-protocol)** — unumkehrbare Veränderungen durch den vollständigen Prozess leiten, nicht über die Experiment-Spur.
+      - **[Lern-Log](rcos:template/learning-log)** — festhalten, was ausprobiert wurde und was passiert ist, damit das Experiment etwas lehrt.
 
-      Siehe auch die Spezifikation: [Schicht 6 — Experimente](/articles/rcos-core/v0-1/layer-6-evolution-adaptation#83-experiments) und [Veränderungssicherheit und Umkehrbarkeit](/articles/rcos-core/v0-1/layer-6-evolution-adaptation#85-change-safety-and-reversibility).
+      Siehe auch die Spezifikation: [Schicht 6 — Experimente](rcos:§8.3) und [Veränderungssicherheit und Umkehrbarkeit](rcos:§8.5).
   if-it-s-already-happening:
     title: Wenn es bereits passiert
     md: |-
@@ -91,9 +91,9 @@ sections:
       3. **Hört auf, unumkehrbare Schritte Experimente zu nennen** — schickt sie durch den vollständigen Veränderungsprozess, damit sie die Prüfung bekommen, die sie verdienen.
   what-this-failure-tends-to-trigger:
     title: Was dieses Versagen typischerweise auslöst
-    md: '- **[Privatisierung der Allmende durch Landverkäufe](/articles/rcos-stress-tests/economy-resources/commons-privatization-through-land-sales)** — Land "als Experiment" zu verkaufen ist der teuerste unumkehrbare Schritt überhaupt.'
+    md: '- **[Privatisierung der Allmende durch Landverkäufe](rcos:test/commons-privatization-through-land-sales)** — Land "als Experiment" zu verkaufen ist der teuerste unumkehrbare Schritt überhaupt.'
   related-stress-tests:
     title: Verwandte Stresstests
     md: |-
-      - **[Institutionelle Amnesie](/articles/rcos-stress-tests/change-emergencies/institutional-amnesia)** — ohne festgehaltenes Lernen lehrt selbst ein umkehrbares Experiment nichts.
-      - **[Präzedenz der Notfall-Regelumgehung](/articles/rcos-stress-tests/change-emergencies/emergency-rule-bypass-precedent)** — beide lassen große Veränderungen unter einem beruhigenden Etikett durchrutschen.
+      - **[Institutionelle Amnesie](rcos:test/institutional-amnesia)** — ohne festgehaltenes Lernen lehrt selbst ein umkehrbares Experiment nichts.
+      - **[Präzedenz der Notfall-Regelumgehung](rcos:test/emergency-rule-bypass-precedent)** — beide lassen große Veränderungen unter einem beruhigenden Etikett durchrutschen.

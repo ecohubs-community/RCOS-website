@@ -1,10 +1,10 @@
 lang: es
-sourceHash: e31fff12
+sourceHash: 35259dbb
 title: Reglamento de Tesorería
 preamble: |-
   - **Capa:** 3 — Sistema Económico y de Recursos
   - **Estado:** Plantilla — adaptar para tu comunidad
-  - **Referencia RCOS:** [§5.3](/articles/rcos-core/v0-1/layer-3-economic-resource-system#53-treasury-management), [§5.5](/articles/rcos-core/v0-1/layer-3-economic-resource-system#55-artifacts)
+  - **Referencia RCOS:** [§5.3](rcos:§5.3), [§5.5](rcos:§5.5)
 
   ---
 sections:

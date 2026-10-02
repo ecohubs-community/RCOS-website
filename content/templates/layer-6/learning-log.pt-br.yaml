@@ -1,10 +1,10 @@
 lang: pt-br
-sourceHash: 66c7d7c7
+sourceHash: 6e7bc1d4
 title: Registro de Aprendizado
 preamble: |-
   - **Camada:** 6 — Evolução e Adaptação
   - **Status:** Modelo — adapte para a sua comunidade; atualizado quando ocorrerem eventos que gerem aprendizado
-  - **Referência RCOS:** [§8.4](/articles/rcos-core/v0-1/layer-6-evolution-adaptation#84-learning-and-feedback-capture), [§8.6](/articles/rcos-core/v0-1/layer-6-evolution-adaptation#86-artifacts)
+  - **Referência RCOS:** [§8.4](rcos:§8.4), [§8.6](rcos:§8.6)
 
   > Registra falhas importantes, adaptações, reversões e aprendizados sistêmicos. Padrões recorrentes de falha devem desencadear uma revisão estrutural, não a culpabilização individual. As entradas são adicionadas no topo (mais recentes primeiro).
 

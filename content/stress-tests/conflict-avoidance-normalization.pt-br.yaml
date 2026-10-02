@@ -1,5 +1,5 @@
 lang: pt-br
-sourceHash: b4b26ed1
+sourceHash: eca463d0
 title: Normalização da Evitação de Conflitos
 summary: Quando manter a paz silenciosamente se torna aquilo que quebra a comunidade.
 tags:
@@ -66,7 +66,7 @@ sections:
       |---|---|
       | **L0 — Implícito** | O conflito é evitado e ninguém nomeia a evitação. "Somos só um grupo harmonioso." |
       | **L1 — Nomeado** | O grupo admite abertamente que evita conflito, mas não tem uma forma acordada de lidar com ele quando aparece. |
-      | **L2 — Documentado** | Um caminho de conflito está escrito e é conhecido pelos membros — por exemplo, uma [Escada de Resolução de Conflitos](/articles/rcos-templates/layer-4/conflict-resolution-ladder) foi adotada. |
+      | **L2 — Documentado** | Um caminho de conflito está escrito e é conhecido pelos membros — por exemplo, uma [Escada de Resolução de Conflitos](rcos:template/conflict-resolution-ladder) foi adotada. |
       | **L3 — Aplicado e ensaiado** | O caminho é de fato usado. Levantar uma questão é normal, não corajoso. Já foi rodado em pelo menos um conflito real e revisado depois. |
 
       A maioria das comunidades que se reconhece neste teste está em **L0 ou L1**. O objetivo não é perfeição — é subir um degrau.
@@ -75,11 +75,11 @@ sections:
     md: |-
       O RCOS faz do tratamento de conflitos uma *obrigação estrutural*, não um ato de coragem individual. Construa esses recursos **antes** de precisar deles — o pré-compromisso é exatamente o ponto:
 
-      - **[Escada de Resolução de Conflitos](/articles/rcos-templates/layer-4/conflict-resolution-ladder)** — um caminho de escalonamento pré-acordado para que levantar uma questão seja o movimento esperado e de baixo drama, em vez de uma confrontação.
-      - **[Protocolo de Responsabilização](/articles/rcos-templates/layer-4/accountability-protocol)** — o que acontece quando reparação, e não apenas resolução, é necessária.
-      - **[Registro de Papéis](/articles/rcos-templates/layer-5/role-registry)** — nomeie um papel de facilitador para que alguém seja explicitamente responsável por trazer a tensão à tona, em vez de depender de quem se sente corajoso naquele dia.
+      - **[Escada de Resolução de Conflitos](rcos:template/conflict-resolution-ladder)** — um caminho de escalonamento pré-acordado para que levantar uma questão seja o movimento esperado e de baixo drama, em vez de uma confrontação.
+      - **[Protocolo de Responsabilização](rcos:template/accountability-protocol)** — o que acontece quando reparação, e não apenas resolução, é necessária.
+      - **[Registro de Papéis](rcos:template/role-registry)** — nomeie um papel de facilitador para que alguém seja explicitamente responsável por trazer a tensão à tona, em vez de depender de quem se sente corajoso naquele dia.
 
-      Veja também a especificação: [Camada 4 — Caminhos de Resolução](/articles/rcos-core/v0-1/layer-4-conflict-repair-accountability#62-resolution-pathways).
+      Veja também a especificação: [Camada 4 — Caminhos de Resolução](rcos:§6.2).
   if-it-s-already-happening:
     title: Se já está acontecendo
     md: |-
@@ -87,16 +87,16 @@ sections:
 
       1. **Nomeie um conflito concreto, não a cultura inteira.** "Somos avessos a conflito" é grande demais para agir. Escolha uma única questão real e não resolvida e torne *essa* discutível primeiro.
       2. **Traga neutralidade.** Use um facilitador ou terceira parte para que a primeira conversa difícil não seja arbitrada pelas pessoas dentro dela (mediação da Camada 4).
-      3. **Rode pela Escada retroativamente.** Conduza o conflito nomeado pela [Escada de Resolução de Conflitos](/articles/rcos-templates/layer-4/conflict-resolution-ladder) e, então, **capture o aprendizado** para que o padrão não se reinicie em silêncio.
+      3. **Rode pela Escada retroativamente.** Conduza o conflito nomeado pela [Escada de Resolução de Conflitos](rcos:template/conflict-resolution-ladder) e, então, **capture o aprendizado** para que o padrão não se reinicie em silêncio.
       4. **Observe a cascata** (abaixo) — a evitação raramente fica contida.
   what-this-failure-tends-to-trigger:
     title: O que essa falha tende a desencadear
     md: |-
       A evitação não tratada raramente fica isolada. É uma falha a montante que silenciosamente permite outras:
 
-      - **[Veto Informal do Fundador](/articles/rcos-stress-tests/governance-power/founder-informal-veto)** — o conflito não dito permite que a autoridade informal se enrijeça, porque ninguém a desafia abertamente.
-      - **[Esgotamento por Trabalho de Cuidado Invisível](/articles/rcos-stress-tests/operations-coordination/invisible-care-labor-burnout)** — alguns poucos membros absorvem silenciosamente a tensão não resolvida e o trabalho emocional.
-      - **[Autoridade Espiritual Carismática](/articles/rcos-stress-tests/culture-influence/charismatic-spiritual-authority)** — a dissidência reprimida concentra influência em quem consegue definir a "harmonia".
+      - **[Veto Informal do Fundador](rcos:test/founder-informal-veto)** — o conflito não dito permite que a autoridade informal se enrijeça, porque ninguém a desafia abertamente.
+      - **[Esgotamento por Trabalho de Cuidado Invisível](rcos:test/invisible-care-labor-burnout)** — alguns poucos membros absorvem silenciosamente a tensão não resolvida e o trabalho emocional.
+      - **[Autoridade Espiritual Carismática](rcos:test/charismatic-spiritual-authority)** — a dissidência reprimida concentra influência em quem consegue definir a "harmonia".
   related-stress-tests:
     title: Testes de estresse relacionados
-    md: '- **[Falantes Dominantes em Espaços de Decisão](/articles/rcos-stress-tests/governance-power/dominant-speakers-decision-spaces)** — a mesma questão de raiz (violações de processo tratadas como personalidade) aparecendo em reuniões em vez de em conflito.'
+    md: '- **[Falantes Dominantes em Espaços de Decisão](rcos:test/dominant-speakers-decision-spaces)** — a mesma questão de raiz (violações de processo tratadas como personalidade) aparecendo em reuniões em vez de em conflito.'

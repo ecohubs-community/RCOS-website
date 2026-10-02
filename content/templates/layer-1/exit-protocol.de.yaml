@@ -1,10 +1,10 @@
 lang: de
-sourceHash: 73efb5de
+sourceHash: 13ed4fc4
 title: Austritts- & Trennungsprotokoll
 preamble: |-
   - **Schicht:** 1 — Mitgliedschaftssystem
   - **Status:** Vorlage — an deine Gemeinschaft anpassen
-  - **RCOS-Referenz:** [§3.6](/articles/rcos-core/v0-1/layer-1-membership-system#36-exit-and-separation), [§3.7](/articles/rcos-core/v0-1/layer-1-membership-system#37-suspension-and-temporary-status), [§3.8](/articles/rcos-core/v0-1/layer-1-membership-system#38-artifacts)
+  - **RCOS-Referenz:** [§3.6](rcos:§3.6), [§3.7](rcos:§3.7), [§3.8](rcos:§3.8)
 
   ---
 sections:

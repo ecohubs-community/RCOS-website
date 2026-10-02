@@ -93,7 +93,7 @@ sections:
       |---|---|
       | **L0 — Implicit** | Whether money can replace participation is undefined; people quietly buy out. |
       | **L1 — Named** | The tension is acknowledged but no equivalence rule or accountability path exists. |
-      | **L2 — Documented** | The [Internal Economy Protocol](/articles/rcos-templates/layer-3/internal-economy-protocol) states whether and how money substitutes for labor; the [Membership Agreement](/articles/rcos-templates/layer-1/membership-agreement) ties obligations to rights. |
+      | **L2 — Documented** | The [Internal Economy Protocol](rcos:template/internal-economy-protocol) states whether and how money substitutes for labor; the [Membership Agreement](rcos:template/membership-agreement) ties obligations to rights. |
       | **L3 — Enforced & rehearsed** | Contribution logic is applied consistently; a bypass triggers the agreed equivalence rule or an accountability process — and has. |
 
       Most communities that recognise themselves here sit at **L0 or L1**. The goal isn't perfection — it's moving up one rung.
@@ -102,11 +102,11 @@ sections:
     md: |-
       RCOS forces the community to *decide* the money–labor relationship instead of letting it default:
 
-      - **[Internal Economy Protocol](/articles/rcos-templates/layer-3/internal-economy-protocol)** — decide explicitly whether money can substitute for labor, and at what equivalence.
-      - **[Membership Agreement](/articles/rcos-templates/layer-1/membership-agreement)** — bind contribution obligations to membership rights, so participation isn't optional-by-wealth.
-      - **[Accountability Protocol](/articles/rcos-templates/layer-4/accountability-protocol)** — a defined path for when expectations are bypassed.
+      - **[Internal Economy Protocol](rcos:template/internal-economy-protocol)** — decide explicitly whether money can substitute for labor, and at what equivalence.
+      - **[Membership Agreement](rcos:template/membership-agreement)** — bind contribution obligations to membership rights, so participation isn't optional-by-wealth.
+      - **[Accountability Protocol](rcos:template/accountability-protocol)** — a defined path for when expectations are bypassed.
 
-      See also the spec: [Layer 3 — Contribution Recognition](/articles/rcos-core/v0-1/layer-3-economic-resource-system#52-contribution-recognition) and [Layer 1 — Rights and Obligations](/articles/rcos-core/v0-1/layer-1-membership-system#34-rights-and-obligations).
+      See also the spec: [Layer 3 — Contribution Recognition](rcos:§5.2) and [Layer 1 — Rights and Obligations](rcos:§3.4).
   - id: if-it-s-already-happening
     title: If it's already happening
     md: |-
@@ -117,9 +117,9 @@ sections:
       3. **Address the resentment directly** via the accountability or conflict path before it hardens.
   - id: what-this-failure-tends-to-trigger
     title: What this failure tends to trigger
-    md: '- **[Conflict Avoidance Normalization](/articles/rcos-stress-tests/conflict-accountability/conflict-avoidance-normalization)** — the participation-versus-payment resentment is exactly the kind of conflict a group avoids until it''s structural.'
+    md: '- **[Conflict Avoidance Normalization](rcos:test/conflict-avoidance-normalization)** — the participation-versus-payment resentment is exactly the kind of conflict a group avoids until it''s structural.'
   - id: related-stress-tests
     title: Related stress tests
     md: |-
-      - **[Self-Sufficiency Without Collective Contribution](/articles/rcos-stress-tests/operations-coordination/self-sufficiency-without-collective-contribution)** — the disengagement cousin: here people buy out of contribution, there they simply opt out.
-      - **[Commons Privatization through Land Sales](/articles/rcos-stress-tests/economy-resources/commons-privatization-through-land-sales)** — the same decoupling of wealth from shared obligation, at the level of land.
+      - **[Self-Sufficiency Without Collective Contribution](rcos:test/self-sufficiency-without-collective-contribution)** — the disengagement cousin: here people buy out of contribution, there they simply opt out.
+      - **[Commons Privatization through Land Sales](rcos:test/commons-privatization-through-land-sales)** — the same decoupling of wealth from shared obligation, at the level of land.

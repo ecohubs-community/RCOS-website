@@ -1,10 +1,10 @@
 lang: de
-sourceHash: 703e533c
+sourceHash: 24c47a1f
 title: Autoritätenregister
 preamble: |-
   - **Schicht:** 2 — Governance & Entscheidungslogik
   - **Status:** Vorlage — an deine Gemeinschaft anpassen
-  - **RCOS-Referenz:** [§4.3](/articles/rcos-core/v0-1/layer-2-governance-decision-logic#43-authority-boundaries), [§4.7](/articles/rcos-core/v0-1/layer-2-governance-decision-logic#47-artifacts)
+  - **RCOS-Referenz:** [§4.3](rcos:§4.3), [§4.7](rcos:§4.7)
 
   > Listet alle Rollen, Kreise oder Gremien auf, die Entscheidungsbefugnis besitzen, zusammen mit ihrem expliziten Geltungsbereich, ihren Grenzen und ihrer Amtszeit.
 

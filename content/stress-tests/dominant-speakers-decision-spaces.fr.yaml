@@ -1,10 +1,10 @@
 lang: fr
-sourceHash: aedbeb8a
+sourceHash: 842252b2
 title: Voix dominantes dans les espaces de décision
 summary: Quand c'est la voix la plus forte, et non le processus convenu, qui décide.
 tags:
-  - 'Layer 2: Governance'
-  - High severity
+  - 'Couche 2 : Gouvernance'
+  - Sévérité élevée
 symptoms:
   - Les mêmes une ou deux voix façonnent presque toutes les décisions.
   - Les membres plus discrets ont cessé de contribuer en réunion — ou ont cessé de venir.
@@ -70,7 +70,7 @@ sections:
       |---|---|
       | **N0 — Implicite** | Quelques voix dominent ; c'est lu comme de la personnalité, pas du processus. |
       | **N1 — Nommé** | Le groupe reconnaît le déséquilibre mais n'a pas de rôle de facilitation ni de règle pour l'adresser. |
-      | **N2 — Documenté** | Les réunions ont un [rôle de facilitateur·rice](/articles/rcos-templates/layer-5/role-registry) défini et une [matrice de décision](/articles/rcos-templates/layer-2/decision-matrix) ; les décisions remontent à un mécanisme, pas au temps d'antenne. |
+      | **N2 — Documenté** | Les réunions ont un [rôle de facilitateur·rice](rcos:template/role-registry) défini et une [matrice de décision](rcos:template/decision-matrix) ; les décisions remontent à un mécanisme, pas au temps d'antenne. |
       | **N3 — Appliqué et rodé** | La facilitation équilibre activement la participation ; la dominance est nommée comme une violation de processus et escaladée si elle persiste. |
 
       La plupart des communautés qui se reconnaissent ici se situent au **N0 ou N1**. L'objectif n'est pas la perfection — c'est de monter d'un barreau.
@@ -79,11 +79,11 @@ sections:
     md: |-
       RCOS fait passer l'influence par une structure convenue plutôt que par le temps d'antenne :
 
-      - **[Modèles de réunion](/articles/rcos-templates/layer-5/meeting-templates)** — ordres du jour structurés, tours de parole et limites de temps qui répartissent le temps d'antenne par conception.
-      - **[Registre des rôles](/articles/rcos-templates/layer-5/role-registry)** — un rôle de facilitateur·rice avec une autorité explicite pour intervenir et rééquilibrer.
-      - **[Matrice de décision](/articles/rcos-templates/layer-2/decision-matrix)** — les décisions se résolvent via un mécanisme convenu, rendant le temps de parole sans incidence sur le résultat.
+      - **[Modèles de réunion](rcos:template/meeting-templates)** — ordres du jour structurés, tours de parole et limites de temps qui répartissent le temps d'antenne par conception.
+      - **[Registre des rôles](rcos:template/role-registry)** — un rôle de facilitateur·rice avec une autorité explicite pour intervenir et rééquilibrer.
+      - **[Matrice de décision](rcos:template/decision-matrix)** — les décisions se résolvent via un mécanisme convenu, rendant le temps de parole sans incidence sur le résultat.
 
-      Voir aussi la spécification : [Couche 5 — Système de réunion](/articles/rcos-core/v0-1/layer-5-operations-coordination#72-meeting-system) et [Couche 2 — Matrice de décision](/articles/rcos-core/v0-1/layer-2-governance-decision-logic#44-decision-matrix).
+      Voir aussi la spécification : [Couche 5 — Système de réunion](rcos:§7.2) et [Couche 2 — Matrice de décision](rcos:§4.4).
   if-it-s-already-happening:
     title: Si c'est déjà en train d'arriver
     md: |-
@@ -96,8 +96,8 @@ sections:
   what-this-failure-tends-to-trigger:
     title: Ce que cette défaillance a tendance à déclencher
     md: |-
-      - **[Prise de décision par clique informelle](/articles/rcos-stress-tests/governance-power/informal-clique-decision-making)** — une dominance non régulée se durcit en un groupe restreint de fait qui décide des choses avant que la salle ne le fasse.
-      - **[Normalisation de l'évitement du conflit](/articles/rcos-stress-tests/conflict-accountability/conflict-avoidance-normalization)** — les membres à qui l'on coupe la parole à répétition cessent tout simplement de soulever des sujets.
+      - **[Prise de décision par clique informelle](rcos:test/informal-clique-decision-making)** — une dominance non régulée se durcit en un groupe restreint de fait qui décide des choses avant que la salle ne le fasse.
+      - **[Normalisation de l'évitement du conflit](rcos:test/conflict-avoidance-normalization)** — les membres à qui l'on coupe la parole à répétition cessent tout simplement de soulever des sujets.
   related-stress-tests:
     title: Tests de résistance liés
-    md: '- **[Veto informel du·de la fondateur·rice](/articles/rcos-stress-tests/governance-power/founder-informal-veto)** — souvent, la voix dominante est celle du·de la fondateur·rice, et la dominance glisse vers un veto non écrit.'
+    md: '- **[Veto informel du·de la fondateur·rice](rcos:test/founder-informal-veto)** — souvent, la voix dominante est celle du·de la fondateur·rice, et la dominance glisse vers un veto non écrit.'

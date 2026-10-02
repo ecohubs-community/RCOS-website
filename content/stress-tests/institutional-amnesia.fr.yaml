@@ -1,10 +1,10 @@
 lang: fr
-sourceHash: '37675487'
+sourceHash: 3167226e
 title: Amnésie institutionnelle
 summary: Quand la communauté n'arrête pas de réapprendre les mêmes leçons à la dure.
 tags:
-  - 'Layer 6: Evolution'
-  - Medium severity
+  - 'Couche 6 : Évolution'
+  - Sévérité moyenne
 symptoms:
   - Les mêmes conflits, projets ratés ou problèmes d'intégration reviennent sans cesse.
   - Les raisons des décisions passées sont perdues ; personne ne peut reconstruire le raisonnement.
@@ -69,7 +69,7 @@ sections:
       |---|---|
       | **L0 — Implicite** | Rien n'est capté ; la mémoire est orale et vit dans quelques têtes. |
       | **L1 — Nommé** | Le groupe sait qu'il répète des erreurs mais n'a pas commencé à les enregistrer. |
-      | **L2 — Documenté** | Un [Journal d'apprentissage](/articles/rcos-templates/layer-6/learning-log) et des registres de décisions captent les décisions, conflits et résultats significatifs. |
+      | **L2 — Documenté** | Un [Journal d'apprentissage](rcos:template/learning-log) et des registres de décisions captent les décisions, conflits et résultats significatifs. |
       | **L3 — Appliqué et rodé** | Les apprentissages sont régulièrement captés *et réellement consultés* ; une leçon passée a démontrablement empêché une répétition. |
 
       La plupart des communautés qui se reconnaissent ici sont à **L0 ou L1**. L'objectif n'est pas la perfection — c'est de monter d'un barreau.
@@ -78,11 +78,11 @@ sections:
     md: |-
       RCOS donne à la communauté une mémoire qui survit à ses membres :
 
-      - **[Journal d'apprentissage](/articles/rcos-templates/layer-6/learning-log)** — capter les décisions, expériences, conflits, et ce qui a été appris.
-      - **[Historique des versions](/articles/rcos-templates/layer-6/version-history)** — enregistrer comment et pourquoi les règles ont changé au fil du temps.
-      - **[Manuel des opérations](/articles/rcos-templates/layer-5/operations-manual)** — empêcher que le savoir opérationnel reste dans les têtes individuelles.
+      - **[Journal d'apprentissage](rcos:template/learning-log)** — capter les décisions, expériences, conflits, et ce qui a été appris.
+      - **[Historique des versions](rcos:template/version-history)** — enregistrer comment et pourquoi les règles ont changé au fil du temps.
+      - **[Manuel des opérations](rcos:template/operations-manual)** — empêcher que le savoir opérationnel reste dans les têtes individuelles.
 
-      Voir aussi la spécification : [Couche 6 — Captation des apprentissages et retours](/articles/rcos-core/v0-1/layer-6-evolution-adaptation#84-learning-and-feedback-capture) et [Couche 5 — Documentation et circulation de l'information](/articles/rcos-core/v0-1/layer-5-operations-coordination#73-documentation-and-information-flow).
+      Voir aussi la spécification : [Couche 6 — Captation des apprentissages et retours](rcos:§8.4) et [Couche 5 — Documentation et circulation de l'information](rcos:§7.3).
   if-it-s-already-happening:
     title: Si c'est déjà en train de se produire
     md: |-
@@ -94,8 +94,8 @@ sections:
   what-this-failure-tends-to-trigger:
     title: Ce que cette défaillance tend à déclencher
     md: |-
-      - **[Croissance rapide sans intégration](/articles/rcos-stress-tests/operations-coordination/rapid-growth-without-onboarding)** — sans savoir capté, les nouveaux arrivants ne peuvent pas être mis à niveau.
-      - **[Pouvoir invisible par les responsabilités](/articles/rcos-stress-tests/operations-coordination/invisible-power-via-responsibilities)** — quand le savoir ne vit que dans les têtes, ces têtes deviennent indispensables.
+      - **[Croissance rapide sans intégration](rcos:test/rapid-growth-without-onboarding)** — sans savoir capté, les nouveaux arrivants ne peuvent pas être mis à niveau.
+      - **[Pouvoir invisible par les responsabilités](rcos:test/invisible-power-via-responsibilities)** — quand le savoir ne vit que dans les têtes, ces têtes deviennent indispensables.
   related-stress-tests:
     title: Tests de résistance liés
-    md: '- **[Expériences irréversibles](/articles/rcos-stress-tests/change-emergencies/irreversible-experiments)** — un apprentissage non capté est ce qui fait que les expériences — réversibles ou non — n''enseignent rien.'
+    md: '- **[Expériences irréversibles](rcos:test/irreversible-experiments)** — un apprentissage non capté est ce qui fait que les expériences — réversibles ou non — n''enseignent rien.'

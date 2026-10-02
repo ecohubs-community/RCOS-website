@@ -1,10 +1,10 @@
 lang: pt-br
-sourceHash: d0ef4e06
+sourceHash: 23c439c7
 title: Invariantes Centrais Desprotegidas
 summary: Quando as promessas fundadoras podem ser desfeitas por uma única votação comum.
 tags:
-  - 'Layer 0: Scope'
-  - High severity
+  - 'Camada 0: Escopo'
+  - Severidade alta
 symptoms:
   - Os compromissos fundadores da comunidade (a terra permanece como bem comum, sem líder único) podem ser alterados por uma maioria simples comum.
   - Não há distinção entre regras do dia a dia e regras constitucionais.
@@ -69,7 +69,7 @@ sections:
       |---|---|
       | **L0 — Implícito** | As regras centrais e cotidianas são igualmente emendáveis; a fundação não está protegida. |
       | **L1 — Nomeado** | O grupo sabe que algumas regras deveriam ser mais difíceis de mudar, mas ainda não as separou. |
-      | **L2 — Documentado** | Um [Registro de Invariantes](/articles/rcos-templates/layer-0/invariants-register) nomeia as invariantes protegidas com uma barreira de emenda alta e explícita. |
+      | **L2 — Documentado** | Um [Registro de Invariantes](rcos:template/invariants-register) nomeia as invariantes protegidas com uma barreira de emenda alta e explícita. |
       | **L3 — Aplicado e ensaiado** | As invariantes centrais não podem ser alteradas por processo comum; a proteção resistiu a uma tentativa real de contorná-la. |
 
       A maioria das comunidades que se reconhece aqui está em **L0 ou L1**. O objetivo não é a perfeição — é subir um degrau.
@@ -78,11 +78,11 @@ sections:
     md: |-
       O RCOS separa a mudança constitucional das decisões cotidianas:
 
-      - **[Registro de Invariantes](/articles/rcos-templates/layer-0/invariants-register)** — nomeie as invariantes protegidas e a barreira alta exigida para mudá-las.
-      - **[Protocolo de Mudança](/articles/rcos-templates/layer-6/change-protocol)** — defina um caminho distinto e mais difícil para mudanças constitucionais.
-      - **[Protocolo de Governança](/articles/rcos-templates/layer-2/governance-protocol)** — mantenha as regras constitucionais acima das decisões comuns.
+      - **[Registro de Invariantes](rcos:template/invariants-register)** — nomeie as invariantes protegidas e a barreira alta exigida para mudá-las.
+      - **[Protocolo de Mudança](rcos:template/change-protocol)** — defina um caminho distinto e mais difícil para mudanças constitucionais.
+      - **[Protocolo de Governança](rcos:template/governance-protocol)** — mantenha as regras constitucionais acima das decisões comuns.
 
-      Veja também a especificação: [Camada 0 — Invariantes](/articles/rcos-core/v0-1/layer-0-identity-scope#23-invariants) e [Camada 6 — Versionamento e Autoridade](/articles/rcos-core/v0-1/layer-6-evolution-adaptation#82-versioning-and-authority).
+      Veja também a especificação: [Camada 0 — Invariantes](rcos:§2.3) e [Camada 6 — Versionamento e Autoridade](rcos:§8.2).
   if-it-s-already-happening:
     title: Se já está acontecendo
     md: |-
@@ -94,8 +94,8 @@ sections:
   what-this-failure-tends-to-trigger:
     title: O que essa falha tende a desencadear
     md: |-
-      - **[Privatização dos Bens Comuns por Meio da Venda de Terras](/articles/rcos-stress-tests/economy-resources/commons-privatization-through-land-sales)** — se a proteção dos bens comuns for emendável, ela pode ser votada para fora sob pressão.
-      - **[Veto Informal do Fundador](/articles/rcos-stress-tests/governance-power/founder-informal-veto)** — uma estrutura desprotegida permite que uma autoridade informal remodele as regras.
+      - **[Privatização dos Bens Comuns por Meio da Venda de Terras](rcos:test/commons-privatization-through-land-sales)** — se a proteção dos bens comuns for emendável, ela pode ser votada para fora sob pressão.
+      - **[Veto Informal do Fundador](rcos:test/founder-informal-veto)** — uma estrutura desprotegida permite que uma autoridade informal remodele as regras.
   related-stress-tests:
     title: Testes de estresse relacionados
-    md: '- **[Precedente de Contorno de Regra em Emergência](/articles/rcos-stress-tests/change-emergencies/emergency-rule-bypass-precedent)** — a outra forma pela qual a constituição se erode: não emendada abertamente, mas contornada sob urgência.'
+    md: '- **[Precedente de Contorno de Regra em Emergência](rcos:test/emergency-rule-bypass-precedent)** — a outra forma pela qual a constituição se erode: não emendada abertamente, mas contornada sob urgência.'

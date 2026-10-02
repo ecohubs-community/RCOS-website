@@ -1,10 +1,10 @@
 lang: de
-sourceHash: 2677784a
+sourceHash: c7abf2ff
 title: Geltungsbereichs-Test für Verstöße gegen kulturelle Normen
 summary: Wenn eine ungeschriebene Norm so bestraft wird, als wäre sie eine schriftliche Regel.
 tags:
-  - 'Layer 0: Scope'
-  - Medium severity
+  - 'Schicht 0: Geltungsbereich'
+  - Mittlerer Schweregrad
 symptoms:
   - Ein Mitglied bricht eine starke ungeschriebene Norm (z.B. Fleisch essen in einer als vegan identifizierten Gemeinschaft), und die Reaktion ist emotional und improvisiert.
   - Es ist unklar, ob die Norm eine verbindliche Regel oder eine geteilte Präferenz ist.
@@ -68,7 +68,7 @@ sections:
       |---|---|
       | **L0 — Implizit** | Starke Normen werden nach Gefühl durchgesetzt; niemand hat erklärt, was tatsächlich geregelt ist. |
       | **L1 — Benannt** | Die Gruppe erkennt, dass einige Normen ungeschrieben sind, hat aber Regel und Präferenz noch nicht sortiert. |
-      | **L2 — Dokumentiert** | Eine [Geltungsbereichserklärung](/articles/rcos-templates/layer-0/scope-declaration) unterscheidet Kerninvarianten, Mitgliedschaftsbedingungen und außerhalb des Geltungsbereichs liegende Präferenzen; ein faires Verfahren gilt nur für geregelte Regeln. |
+      | **L2 — Dokumentiert** | Eine [Geltungsbereichserklärung](rcos:template/scope-declaration) unterscheidet Kerninvarianten, Mitgliedschaftsbedingungen und außerhalb des Geltungsbereichs liegende Präferenzen; ein faires Verfahren gilt nur für geregelte Regeln. |
       | **L3 — Durchgesetzt & geübt** | Reaktionen folgen dem erklärten Geltungsbereich; eine ungeschriebene Präferenz kann keine Bestrafung auslösen; das wurde an einem echten Verstoß getestet. |
 
       Die meisten Gemeinschaften, die sich hier wiedererkennen, stehen auf **L0 oder L1**. Das Ziel ist nicht Perfektion — es ist, eine Sprosse höher zu kommen.
@@ -77,11 +77,11 @@ sections:
     md: |-
       RCOS lässt die Gemeinschaft entscheiden, *was sie tatsächlich regelt*, bevor sie durchsetzt:
 
-      - **[Geltungsbereichserklärung](/articles/rcos-templates/layer-0/scope-declaration)** — sortiere jede wichtige Norm in Kerninvariante, Mitgliedschaftsbedingung oder außerhalb des Geltungsbereichs liegende Präferenz.
-      - **[Mitgliedschaftsvereinbarung](/articles/rcos-templates/layer-1/membership-agreement)** — mache verbindliche Verhaltensbedingungen beim Eintritt explizit, damit niemand überraschend bestraft wird.
-      - **[Register der Identitätsbedingungen](/articles/rcos-templates/layer-0/identity-constraints-register)** — erkläre, was die Identität der Gemeinschaft regelt und was nicht.
+      - **[Geltungsbereichserklärung](rcos:template/scope-declaration)** — sortiere jede wichtige Norm in Kerninvariante, Mitgliedschaftsbedingung oder außerhalb des Geltungsbereichs liegende Präferenz.
+      - **[Mitgliedschaftsvereinbarung](rcos:template/membership-agreement)** — mache verbindliche Verhaltensbedingungen beim Eintritt explizit, damit niemand überraschend bestraft wird.
+      - **[Register der Identitätsbedingungen](rcos:template/identity-constraints-register)** — erkläre, was die Identität der Gemeinschaft regelt und was nicht.
 
-      Siehe auch die Spezifikation: [Schicht 0 — Geltungsbereichserklärung](/articles/rcos-core/v0-1/layer-0-identity-scope#22-scope-declaration) und [Schicht 1 — Rechte und Pflichten](/articles/rcos-core/v0-1/layer-1-membership-system#34-rights-and-obligations).
+      Siehe auch die Spezifikation: [Schicht 0 — Geltungsbereichserklärung](rcos:§2.2) und [Schicht 1 — Rechte und Pflichten](rcos:§3.4).
   if-it-s-already-happening:
     title: Wenn es schon passiert
     md: |-
@@ -93,7 +93,7 @@ sections:
       4. **Entscheidet vorwärts.** Wenn die Gemeinschaft will, dass diese Norm verbindlich ist, schreibt sie als explizite Mitgliedschaftsbedingung fest.
   what-this-failure-tends-to-trigger:
     title: Was dieses Versagen typischerweise auslöst
-    md: '- **[Normalisierung von Konfliktvermeidung](/articles/rcos-stress-tests/conflict-accountability/conflict-avoidance-normalization)** — willkürliche, emotionale Durchsetzung bringt Mitgliedern bei, Verhalten zu verbergen statt offenzulegen.'
+    md: '- **[Normalisierung von Konfliktvermeidung](rcos:test/conflict-avoidance-normalization)** — willkürliche, emotionale Durchsetzung bringt Mitgliedern bei, Verhalten zu verbergen statt offenzulegen.'
   related-stress-tests:
     title: Verwandte Stresstests
-    md: '- **[Charismatische spirituelle Autorität](/articles/rcos-stress-tests/culture-influence/charismatic-spiritual-authority)** — verehrte Figuren sind oft diejenigen, deren Präferenzen als nicht erklärte Normen durchgesetzt werden.'
+    md: '- **[Charismatische spirituelle Autorität](rcos:test/charismatic-spiritual-authority)** — verehrte Figuren sind oft diejenigen, deren Präferenzen als nicht erklärte Normen durchgesetzt werden.'

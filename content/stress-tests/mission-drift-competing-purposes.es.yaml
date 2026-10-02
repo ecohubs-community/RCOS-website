@@ -1,10 +1,10 @@
 lang: es
-sourceHash: bfddaf88
+sourceHash: 9b778b06
 title: Deriva de misión por propósitos en competencia
 summary: Cuando la comunidad intenta ser todo y ya no puede priorizar nada.
 tags:
-  - 'Layer 0: Scope'
-  - Medium severity
+  - 'Capa 0: Alcance'
+  - Severidad media
 symptoms:
   - Las personas miembro darían respuestas genuinamente distintas a "¿para qué sirve principalmente esta comunidad?"
   - Se siguen añadiendo nuevos proyectos y direcciones; ninguno se abandona.
@@ -69,7 +69,7 @@ sections:
       |---|---|
       | **L0 — Implícito** | Múltiples propósitos coexisten sin orden; los conflictos no tienen resolución basada en principios. |
       | **L1 — Nombrado** | El grupo ve la deriva pero no ha declarado un propósito primario. |
-      | **L2 — Documentado** | Una [Carta de Propósito](/articles/rcos-templates/layer-0/purpose-charter) nombra un único propósito primario; las demás metas son explícitamente secundarias. |
+      | **L2 — Documentado** | Una [Carta de Propósito](rcos:template/purpose-charter) nombra un único propósito primario; las demás metas son explícitamente secundarias. |
       | **L3 — Aplicado y ensayado** | Las disyuntivas se resuelven por referencia al propósito primario; las nuevas direcciones se contrastan con él. |
 
       La mayoría de comunidades que se reconocen aquí están en **L0 o L1**. El objetivo no es la perfección — es subir un peldaño.
@@ -78,11 +78,11 @@ sections:
     md: |-
       RCOS requiere un único propósito primario que pueda desempatar:
 
-      - **[Carta de Propósito](/articles/rcos-templates/layer-0/purpose-charter)** — declara el único propósito primario que ordena a todos los demás.
-      - **[Declaración de Alcance](/articles/rcos-templates/layer-0/scope-declaration)** — establece qué está dentro y fuera del alcance, para que las incorporaciones sean deliberadas.
-      - **[Registro de Restricciones de Identidad](/articles/rcos-templates/layer-0/identity-constraints-register)** — define qué es y qué no es la comunidad.
+      - **[Carta de Propósito](rcos:template/purpose-charter)** — declara el único propósito primario que ordena a todos los demás.
+      - **[Declaración de Alcance](rcos:template/scope-declaration)** — establece qué está dentro y fuera del alcance, para que las incorporaciones sean deliberadas.
+      - **[Registro de Restricciones de Identidad](rcos:template/identity-constraints-register)** — define qué es y qué no es la comunidad.
 
-      Consulta también la especificación: [Capa 0 — Definición de Propósito](/articles/rcos-core/v0-1/layer-0-identity-scope#21-purpose-definition) y [Declaración de Alcance](/articles/rcos-core/v0-1/layer-0-identity-scope#22-scope-declaration).
+      Consulta también la especificación: [Capa 0 — Definición de Propósito](rcos:§2.1) y [Declaración de Alcance](rcos:§2.2).
   if-it-s-already-happening:
     title: Si ya está ocurriendo
     md: |-
@@ -94,8 +94,8 @@ sections:
   what-this-failure-tends-to-trigger:
     title: Qué tiende a desencadenar este fallo
     md: |-
-      - **[Normalización de la evitación del conflicto](/articles/rcos-stress-tests/conflict-accountability/conflict-avoidance-normalization)** — los conflictos irreconciliables de propósito son demasiado grandes para plantearse, así que se evitan.
-      - **[Toma de decisiones por camarillas informales](/articles/rcos-stress-tests/governance-power/informal-clique-decision-making)** — se forman facciones en torno a visiones en competencia.
+      - **[Normalización de la evitación del conflicto](rcos:test/conflict-avoidance-normalization)** — los conflictos irreconciliables de propósito son demasiado grandes para plantearse, así que se evitan.
+      - **[Toma de decisiones por camarillas informales](rcos:test/informal-clique-decision-making)** — se forman facciones en torno a visiones en competencia.
   related-stress-tests:
     title: Pruebas de estrés relacionadas
-    md: '- **[Prueba de alcance ante violaciones de normas culturales](/articles/rcos-stress-tests/membership-boundaries/cultural-norm-violation-scope-test)** — ambas son fallos de alcance: el propósito poco claro y el alcance gobernado poco claro viajan juntos.'
+    md: '- **[Prueba de alcance ante violaciones de normas culturales](rcos:test/cultural-norm-violation-scope-test)** — ambas son fallos de alcance: el propósito poco claro y el alcance gobernado poco claro viajan juntos.'

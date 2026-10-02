@@ -1,10 +1,10 @@
 lang: pt-br
-sourceHash: '37675487'
+sourceHash: 3167226e
 title: Amnésia Institucional
 summary: Quando a comunidade fica reaprendendo as mesmas lições do jeito difícil.
 tags:
-  - 'Layer 6: Evolution'
-  - Medium severity
+  - 'Camada 6: Evolução'
+  - Severidade média
 symptoms:
   - Os mesmos conflitos, projetos fracassados ou problemas de integração continuam se repetindo.
   - O motivo das decisões passadas se perdeu; ninguém consegue reconstruir o raciocínio.
@@ -69,7 +69,7 @@ sections:
       |---|---|
       | **L0 — Implícito** | Nada é registrado; a memória é oral e vive na cabeça de algumas pessoas. |
       | **L1 — Nomeado** | O grupo sabe que repete erros, mas ainda não começou a registrar. |
-      | **L2 — Documentado** | Um [Registro de Aprendizados](/articles/rcos-templates/layer-6/learning-log) e registros de decisão capturam decisões, conflitos e resultados significativos. |
+      | **L2 — Documentado** | Um [Registro de Aprendizados](rcos:template/learning-log) e registros de decisão capturam decisões, conflitos e resultados significativos. |
       | **L3 — Aplicado e ensaiado** | O aprendizado é registrado rotineiramente *e realmente consultado*; uma lição passada comprovadamente evitou uma repetição. |
 
       A maioria das comunidades que se reconhece aqui está em **L0 ou L1**. A meta não é a perfeição — é subir um degrau.
@@ -78,11 +78,11 @@ sections:
     md: |-
       O RCOS dá à comunidade uma memória que sobrevive aos seus membros:
 
-      - **[Registro de Aprendizados](/articles/rcos-templates/layer-6/learning-log)** — registre decisões, experimentos, conflitos e o que foi aprendido.
-      - **[Histórico de Versões](/articles/rcos-templates/layer-6/version-history)** — registre como e por que as regras mudaram ao longo do tempo.
-      - **[Manual de Operações](/articles/rcos-templates/layer-5/operations-manual)** — mantenha o conhecimento operacional fora das cabeças individuais.
+      - **[Registro de Aprendizados](rcos:template/learning-log)** — registre decisões, experimentos, conflitos e o que foi aprendido.
+      - **[Histórico de Versões](rcos:template/version-history)** — registre como e por que as regras mudaram ao longo do tempo.
+      - **[Manual de Operações](rcos:template/operations-manual)** — mantenha o conhecimento operacional fora das cabeças individuais.
 
-      Veja também a especificação: [Camada 6 — Captura de Aprendizado e Feedback](/articles/rcos-core/v0-1/layer-6-evolution-adaptation#84-learning-and-feedback-capture) e [Camada 5 — Documentação e Fluxo de Informação](/articles/rcos-core/v0-1/layer-5-operations-coordination#73-documentation-and-information-flow).
+      Veja também a especificação: [Camada 6 — Captura de Aprendizado e Feedback](rcos:§8.4) e [Camada 5 — Documentação e Fluxo de Informação](rcos:§7.3).
   if-it-s-already-happening:
     title: Se já está acontecendo
     md: |-
@@ -94,8 +94,8 @@ sections:
   what-this-failure-tends-to-trigger:
     title: O que essa falha tende a desencadear
     md: |-
-      - **[Crescimento Rápido sem Integração](/articles/rcos-stress-tests/operations-coordination/rapid-growth-without-onboarding)** — sem conhecimento registrado, as pessoas recém-chegadas não conseguem ser colocadas a par.
-      - **[Poder Invisível via Responsabilidades](/articles/rcos-stress-tests/operations-coordination/invisible-power-via-responsibilities)** — quando o conhecimento vive só na cabeça das pessoas, essas pessoas se tornam indispensáveis.
+      - **[Crescimento Rápido sem Integração](rcos:test/rapid-growth-without-onboarding)** — sem conhecimento registrado, as pessoas recém-chegadas não conseguem ser colocadas a par.
+      - **[Poder Invisível via Responsabilidades](rcos:test/invisible-power-via-responsibilities)** — quando o conhecimento vive só na cabeça das pessoas, essas pessoas se tornam indispensáveis.
   related-stress-tests:
     title: Testes de estresse relacionados
-    md: '- **[Experimentos Irreversíveis](/articles/rcos-stress-tests/change-emergencies/irreversible-experiments)** — aprendizado não registrado é o que faz com que experimentos — reversíveis ou não — não ensinem nada.'
+    md: '- **[Experimentos Irreversíveis](rcos:test/irreversible-experiments)** — aprendizado não registrado é o que faz com que experimentos — reversíveis ou não — não ensinem nada.'

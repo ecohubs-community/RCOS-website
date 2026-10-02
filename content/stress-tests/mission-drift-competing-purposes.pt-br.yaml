@@ -1,10 +1,10 @@
 lang: pt-br
-sourceHash: bfddaf88
+sourceHash: 9b778b06
 title: Desvio de Missão por Propósitos Concorrentes
 summary: Quando a comunidade tenta ser tudo e já não consegue priorizar nada.
 tags:
-  - 'Layer 0: Scope'
-  - Medium severity
+  - 'Camada 0: Escopo'
+  - Severidade média
 symptoms:
   - Membros dariam respostas genuinamente diferentes para "para que serve esta comunidade, principalmente?"
   - Novos projetos e direções continuam sendo adicionados; nenhum é descartado.
@@ -69,7 +69,7 @@ sections:
       |---|---|
       | **L0 — Implícito** | Múltiplos propósitos coexistem sem classificação; conflitos não têm resolução baseada em princípios. |
       | **L1 — Nomeado** | O grupo vê o desvio mas não declarou um propósito primário. |
-      | **L2 — Documentado** | Uma [Carta de Propósito](/articles/rcos-templates/layer-0/purpose-charter) nomeia um único propósito primário; outros objetivos são explicitamente secundários. |
+      | **L2 — Documentado** | Uma [Carta de Propósito](rcos:template/purpose-charter) nomeia um único propósito primário; outros objetivos são explicitamente secundários. |
       | **L3 — Aplicado e ensaiado** | Trade-offs são resolvidos por referência ao propósito primário; novas direções são testadas em relação a ele. |
 
       A maioria das comunidades que se reconhece aqui está em **L0 ou L1**. O objetivo não é a perfeição — é subir um degrau.
@@ -78,11 +78,11 @@ sections:
     md: |-
       O RCOS exige um único propósito primário que possa desempatar:
 
-      - **[Carta de Propósito](/articles/rcos-templates/layer-0/purpose-charter)** — declare o único propósito primário que classifica todos os outros.
-      - **[Declaração de Escopo](/articles/rcos-templates/layer-0/scope-declaration)** — declare o que está dentro e fora de escopo, para que adições sejam deliberadas.
-      - **[Registro de Restrições de Identidade](/articles/rcos-templates/layer-0/identity-constraints-register)** — defina o que a comunidade é e o que não é.
+      - **[Carta de Propósito](rcos:template/purpose-charter)** — declare o único propósito primário que classifica todos os outros.
+      - **[Declaração de Escopo](rcos:template/scope-declaration)** — declare o que está dentro e fora de escopo, para que adições sejam deliberadas.
+      - **[Registro de Restrições de Identidade](rcos:template/identity-constraints-register)** — defina o que a comunidade é e o que não é.
 
-      Veja também a especificação: [Camada 0 — Definição de Propósito](/articles/rcos-core/v0-1/layer-0-identity-scope#21-purpose-definition) e [Declaração de Escopo](/articles/rcos-core/v0-1/layer-0-identity-scope#22-scope-declaration).
+      Veja também a especificação: [Camada 0 — Definição de Propósito](rcos:§2.1) e [Declaração de Escopo](rcos:§2.2).
   if-it-s-already-happening:
     title: Se já está acontecendo
     md: |-
@@ -94,8 +94,8 @@ sections:
   what-this-failure-tends-to-trigger:
     title: O que essa falha tende a desencadear
     md: |-
-      - **[Normalização da Evitação de Conflito](/articles/rcos-stress-tests/conflict-accountability/conflict-avoidance-normalization)** — conflitos de propósito irreconciliáveis são grandes demais para serem levantados, então são evitados.
-      - **[Tomada de Decisão por Panelinha Informal](/articles/rcos-stress-tests/governance-power/informal-clique-decision-making)** — facções se formam em torno de visões concorrentes.
+      - **[Normalização da Evitação de Conflito](rcos:test/conflict-avoidance-normalization)** — conflitos de propósito irreconciliáveis são grandes demais para serem levantados, então são evitados.
+      - **[Tomada de Decisão por Panelinha Informal](rcos:test/informal-clique-decision-making)** — facções se formam em torno de visões concorrentes.
   related-stress-tests:
     title: Stress tests relacionados
-    md: '- **[Teste de Escopo de Violação de Norma Cultural](/articles/rcos-stress-tests/membership-boundaries/cultural-norm-violation-scope-test)** — ambos são falhas de escopo: propósito pouco claro e escopo governado pouco claro andam juntos.'
+    md: '- **[Teste de Escopo de Violação de Norma Cultural](rcos:test/cultural-norm-violation-scope-test)** — ambos são falhas de escopo: propósito pouco claro e escopo governado pouco claro andam juntos.'

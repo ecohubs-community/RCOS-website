@@ -1,10 +1,10 @@
 lang: es
-sourceHash: 81e4810e
+sourceHash: d8d8e3e5
 title: Veto informal del fundador
 summary: Cuando el "no" silencioso del fundador sigue mandando, aunque nada en el papel se lo otorgue.
 tags:
-  - 'Layer 2: Governance'
-  - High severity
+  - 'Capa 2: Gobernanza'
+  - Severidad alta
 symptoms:
   - Técnicamente las decisiones las toma el grupo, pero nada avanza si el fundador no lo aprueba.
   - La gente consulta las ideas con el fundador antes de plantearlas formalmente.
@@ -71,7 +71,7 @@ sections:
       |---|---|
       | **L0 — Implícito** | El veto informal del fundador es real y tácito; el proceso es teatro a su alrededor. |
       | **L1 — Nombrado** | El grupo admite que el fundador tiene un poder desmedido, pero no lo ha acotado. |
-      | **L2 — Documentado** | La autoridad del fundador está escrita en un [Registro de Autoridad](/articles/rcos-templates/layer-2/authority-registry) y una [Matriz de Decisión](/articles/rcos-templates/layer-2/decision-matrix) — alcance explícito, límites explícitos. |
+      | **L2 — Documentado** | La autoridad del fundador está escrita en un [Registro de Autoridad](rcos:template/authority-registry) y una [Matriz de Decisión](rcos:template/decision-matrix) — alcance explícito, límites explícitos. |
       | **L3 — Aplicado y ensayado** | Las decisiones siguen la matriz; el rol del fundador está acotado y es revisable, y ha resistido frente a una decisión con la que no estaba de acuerdo. |
 
       La mayoría de las comunidades que se reconocen aquí están en **L0 o L1**. La meta no es la perfección — es subir un peldaño.
@@ -80,11 +80,11 @@ sections:
     md: |-
       RCOS hace explícita toda autoridad, incluida la del fundador:
 
-      - **[Registro de Autoridad](/articles/rcos-templates/layer-2/authority-registry)** — escribe exactamente qué autoridad tiene cada rol (incluido el fundador) y qué no tiene.
-      - **[Matriz de Decisión](/articles/rcos-templates/layer-2/decision-matrix)** — vincula las decisiones a un mecanismo acordado para que nadie las anule informalmente.
-      - **[Protocolo de Gobernanza](/articles/rcos-templates/layer-2/governance-protocol)** — establece que las reglas constitucionales prevalecen sobre cualquier individuo.
+      - **[Registro de Autoridad](rcos:template/authority-registry)** — escribe exactamente qué autoridad tiene cada rol (incluido el fundador) y qué no tiene.
+      - **[Matriz de Decisión](rcos:template/decision-matrix)** — vincula las decisiones a un mecanismo acordado para que nadie las anule informalmente.
+      - **[Protocolo de Gobernanza](rcos:template/governance-protocol)** — establece que las reglas constitucionales prevalecen sobre cualquier individuo.
 
-      Consulta también la especificación: [Capa 2 — Límites de Autoridad](/articles/rcos-core/v0-1/layer-2-governance-decision-logic#43-authority-boundaries).
+      Consulta también la especificación: [Capa 2 — Límites de Autoridad](rcos:§4.3).
   if-it-s-already-happening:
     title: Si ya está ocurriendo
     md: |-
@@ -97,9 +97,9 @@ sections:
   what-this-failure-tends-to-trigger:
     title: Qué tiende a desencadenar este fallo
     md: |-
-      - **[Autoridad Espiritual Carismática](/articles/rcos-stress-tests/culture-influence/charismatic-spiritual-authority)** — la influencia ilimitada del fundador deriva en carisma que sustituye a la gobernanza.
-      - **[Precedente de Bypass de Reglas en Emergencias](/articles/rcos-stress-tests/change-emergencies/emergency-rule-bypass-precedent)** — una autoridad informal es justamente quien "temporalmente" salta las reglas en una crisis.
-      - **[Toma de Decisiones por Camarilla Informal](/articles/rcos-stress-tests/governance-power/informal-clique-decision-making)** — el círculo íntimo del fundador se convierte en el verdadero órgano de decisión.
+      - **[Autoridad Espiritual Carismática](rcos:test/charismatic-spiritual-authority)** — la influencia ilimitada del fundador deriva en carisma que sustituye a la gobernanza.
+      - **[Precedente de Bypass de Reglas en Emergencias](rcos:test/emergency-rule-bypass-precedent)** — una autoridad informal es justamente quien "temporalmente" salta las reglas en una crisis.
+      - **[Toma de Decisiones por Camarilla Informal](rcos:test/informal-clique-decision-making)** — el círculo íntimo del fundador se convierte en el verdadero órgano de decisión.
   related-stress-tests:
     title: Pruebas de estrés relacionadas
-    md: '- **[Voces Dominantes en los Espacios de Decisión](/articles/rcos-stress-tests/governance-power/dominant-speakers-decision-spaces)** — la misma influencia no escrita, expresada a través del tiempo de palabra en las reuniones.'
+    md: '- **[Voces Dominantes en los Espacios de Decisión](rcos:test/dominant-speakers-decision-spaces)** — la misma influencia no escrita, expresada a través del tiempo de palabra en las reuniones.'

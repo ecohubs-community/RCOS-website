@@ -90,7 +90,7 @@ sections:
       |---|---|
       | **L0 — Implicit** | Finances live with one or two people; no shared visibility. |
       | **L1 — Named** | The group knows finances are opaque but hasn't set transparency rules. |
-      | **L2 — Documented** | A [Treasury Ruleset](/articles/rcos-templates/layer-3/treasury-ruleset) defines transparency requirements, spending authority, and reporting cadence. |
+      | **L2 — Documented** | A [Treasury Ruleset](rcos:template/treasury-ruleset) defines transparency requirements, spending authority, and reporting cadence. |
       | **L3 — Enforced & rehearsed** | Financial flows are visible by default; regular reports are actually read; exceptions are explicit and few. |
 
       Most communities that recognise themselves here sit at **L0 or L1**. The goal isn't perfection — it's moving up one rung.
@@ -99,10 +99,10 @@ sections:
     md: |-
       RCOS makes transparency the financial default, not a favour:
 
-      - **[Treasury Ruleset](/articles/rcos-templates/layer-3/treasury-ruleset)** — transparency requirements, spending authority by amount, and reserve and reporting rules.
-      - **[Internal Economy Protocol](/articles/rcos-templates/layer-3/internal-economy-protocol)** — make flows and obligations visible as a default state.
+      - **[Treasury Ruleset](rcos:template/treasury-ruleset)** — transparency requirements, spending authority by amount, and reserve and reporting rules.
+      - **[Internal Economy Protocol](rcos:template/internal-economy-protocol)** — make flows and obligations visible as a default state.
 
-      See also the spec: [Layer 3 — Treasury Management](/articles/rcos-core/v0-1/layer-3-economic-resource-system#53-treasury-management) and [Commons vs Private Resources](/articles/rcos-core/v0-1/layer-3-economic-resource-system#51-commons-vs-private-resources).
+      See also the spec: [Layer 3 — Treasury Management](rcos:§5.3) and [Commons vs Private Resources](rcos:§5.1).
   - id: if-it-s-already-happening
     title: If it's already happening
     md: |-
@@ -115,8 +115,8 @@ sections:
   - id: what-this-failure-tends-to-trigger
     title: What this failure tends to trigger
     md: |-
-      - **[Invisible Power via Responsibilities](/articles/rcos-stress-tests/operations-coordination/invisible-power-via-responsibilities)** — the person who "handles the money" becomes indispensable and powerful.
-      - **[Conflict Avoidance Normalization](/articles/rcos-stress-tests/conflict-accountability/conflict-avoidance-normalization)** — money suspicion festers because it's awkward to raise.
+      - **[Invisible Power via Responsibilities](rcos:test/invisible-power-via-responsibilities)** — the person who "handles the money" becomes indispensable and powerful.
+      - **[Conflict Avoidance Normalization](rcos:test/conflict-avoidance-normalization)** — money suspicion festers because it's awkward to raise.
   - id: related-stress-tests
     title: Related stress tests
-    md: '- **[Commons Privatization through Land Sales](/articles/rcos-stress-tests/economy-resources/commons-privatization-through-land-sales)** — opacity is what lets the biggest asset decisions happen without scrutiny.'
+    md: '- **[Commons Privatization through Land Sales](rcos:test/commons-privatization-through-land-sales)** — opacity is what lets the biggest asset decisions happen without scrutiny.'

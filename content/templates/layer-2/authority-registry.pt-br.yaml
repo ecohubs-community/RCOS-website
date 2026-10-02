@@ -1,10 +1,10 @@
 lang: pt-br
-sourceHash: 703e533c
+sourceHash: 24c47a1f
 title: Registro de Autoridades
 preamble: |-
   - **Camada:** 2 — Governança e Lógica de Decisão
   - **Status:** Modelo — adapte para sua comunidade
-  - **Referência RCOS:** [§4.3](/articles/rcos-core/v0-1/layer-2-governance-decision-logic#43-authority-boundaries), [§4.7](/articles/rcos-core/v0-1/layer-2-governance-decision-logic#47-artifacts)
+  - **Referência RCOS:** [§4.3](rcos:§4.3), [§4.7](rcos:§4.7)
 
   > Lista todos os papéis, círculos ou órgãos que detêm autoridade decisória, junto com seu escopo explícito, limites e duração.
 

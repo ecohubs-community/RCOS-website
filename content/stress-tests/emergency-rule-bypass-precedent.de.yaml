@@ -1,10 +1,10 @@
 lang: de
-sourceHash: ced41791
+sourceHash: 0d2e26c5
 title: Präzedenzfall Notfall-Regelumgehung
 summary: Wenn eine vorübergehende Krisenausnahme heimlich zur Dauerregel wird.
 tags:
-  - 'Layer 2: Governance'
-  - High severity
+  - 'Schicht 2: Governance'
+  - Hoher Schweregrad
 symptoms:
   - Während einer Krise wurde der normale Prozess „nur für jetzt" ausgesetzt — und nie vollständig wieder aufgenommen.
   - Eine unter Zeitdruck getroffene Entscheidung wurde still und leise zur neuen dauerhaften Struktur.
@@ -78,11 +78,11 @@ sections:
     md: |-
       RCOS lässt euch in einer Krise schnell handeln, *ohne* die Verfassung zu verlieren:
 
-      - **[Change Protocol](/articles/rcos-templates/layer-6/change-protocol)** — definiert Notfallbefugnisse im Voraus: ihren Umfang, wer sie innehat, und ein verpflichtendes Ablaufdatum.
-      - **[Governance Protocol](/articles/rcos-templates/layer-2/governance-protocol)** — sorgt dafür, dass Verfassungsregeln über Dringlichkeit stehen.
-      - **[Invariants Register](/articles/rcos-templates/layer-0/invariants-register)** — markiert, welche Regeln nie umgangen werden dürfen, auch nicht in einer Krise.
+      - **[Change Protocol](rcos:template/change-protocol)** — definiert Notfallbefugnisse im Voraus: ihren Umfang, wer sie innehat, und ein verpflichtendes Ablaufdatum.
+      - **[Governance Protocol](rcos:template/governance-protocol)** — sorgt dafür, dass Verfassungsregeln über Dringlichkeit stehen.
+      - **[Invariants Register](rcos:template/invariants-register)** — markiert, welche Regeln nie umgangen werden dürfen, auch nicht in einer Krise.
 
-      Siehe auch die Spezifikation: [Schicht 6 — Änderungssicherheit und Reversibilität](/articles/rcos-core/v0-1/layer-6-evolution-adaptation#85-change-safety-and-reversibility) und [Schicht 2 — Schutzmechanismen und Fehlermodi](/articles/rcos-core/v0-1/layer-2-governance-decision-logic#46-safeguards-and-failure-modes).
+      Siehe auch die Spezifikation: [Schicht 6 — Änderungssicherheit und Reversibilität](rcos:§8.5) und [Schicht 2 — Schutzmechanismen und Fehlermodi](rcos:§4.6).
   if-it-s-already-happening:
     title: Wenn es schon passiert
     md: |-
@@ -95,8 +95,8 @@ sections:
   what-this-failure-tends-to-trigger:
     title: Was dieser Fehler typischerweise auslöst
     md: |-
-      - **[Informelles Veto der Gründer:innen](/articles/rcos-stress-tests/governance-power/founder-informal-veto)** — wer Notfallmacht ausübt, neigt dazu, sie informell zu verfestigen.
-      - **[Privatisierung der Gemeingüter durch Landverkäufe](/articles/rcos-stress-tests/economy-resources/commons-privatization-through-land-sales)** — eine „dringende" Finanzkrise ist der klassische Deckmantel für einen überstürzten, unumkehrbaren Verkauf.
+      - **[Informelles Veto der Gründer:innen](rcos:test/founder-informal-veto)** — wer Notfallmacht ausübt, neigt dazu, sie informell zu verfestigen.
+      - **[Privatisierung der Gemeingüter durch Landverkäufe](rcos:test/commons-privatization-through-land-sales)** — eine „dringende" Finanzkrise ist der klassische Deckmantel für einen überstürzten, unumkehrbaren Verkauf.
   related-stress-tests:
     title: Verwandte Stresstests
-    md: '- **[Informelles Veto der Gründer:innen](/articles/rcos-stress-tests/governance-power/founder-informal-veto)** — die Variante derselben verfassungsmäßigen Erosion mit dauerhafter Macht.'
+    md: '- **[Informelles Veto der Gründer:innen](rcos:test/founder-informal-veto)** — die Variante derselben verfassungsmäßigen Erosion mit dauerhafter Macht.'

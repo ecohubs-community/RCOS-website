@@ -1,10 +1,10 @@
 lang: fr
-sourceHash: 703e533c
+sourceHash: 24c47a1f
 title: Registre des autorités
 preamble: |-
   - **Couche :** 2 — Gouvernance et logique de décision
   - **Statut :** Modèle — à adapter pour ta communauté
-  - **Référence RCOS :** [§4.3](/articles/rcos-core/v0-1/layer-2-governance-decision-logic#43-authority-boundaries), [§4.7](/articles/rcos-core/v0-1/layer-2-governance-decision-logic#47-artifacts)
+  - **Référence RCOS :** [§4.3](rcos:§4.3), [§4.7](rcos:§4.7)
 
   > Répertorie tous les rôles, cercles ou organes détenant une autorité décisionnelle, ainsi que leur périmètre explicite, leurs limites et leur durée de mandat.
 

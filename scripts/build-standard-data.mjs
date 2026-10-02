@@ -7,6 +7,7 @@
  *   static/downloads/standard/<standard>/<version>/artifacts.yaml     (+ .<locale>)
  *   static/downloads/standard/<standard>/<version>/glossary.yaml      (+ .<locale>)
  *   static/downloads/standard/<standard>/<version>/meta.yaml
+ *   static/downloads/standard/<standard>/<version>/schema.json  ← JSON Schema of the files above
  *   static/downloads/standard/manifest-standard.json   ← sha256 per file
  *
  * Why this exists: the specification and its 22 templates are the authoritative
@@ -38,6 +39,7 @@ import matter from 'gray-matter';
 import yaml from 'js-yaml';
 import { SUPPORTED_LOCALES } from './i18n.mjs';
 import { buildArticles } from './content/build-articles.mjs';
+import { PUBLISHED, publishedJsonSchema } from '../src/lib/content/published-schema.js';
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const ROOT = path.resolve(__dirname, '..');
@@ -704,6 +706,22 @@ async function main() {
 			counts
 		})
 	);
+
+	// The published files are a contract (RCOS-compass and others build on them):
+	// refuse to write data that breaks it, and publish the schema next to it.
+	for (const file of written) {
+		const name = path.basename(file);
+		const result = PUBLISHED[name].safeParse(yaml.load(await readFile(file, 'utf8')));
+		if (!result.success) {
+			const issues = result.error.issues
+				.slice(0, 5)
+				.map((i) => `${i.path.join('.')}: ${i.message}`);
+			throw new Error(`${name} does not match its published schema:\n  ${issues.join('\n  ')}`);
+		}
+	}
+	const schemaFile = path.join(outDir, 'schema.json');
+	await writeFile(schemaFile, JSON.stringify(publishedJsonSchema(), null, '\t') + '\n');
+	written.push(schemaFile);
 
 	const files = {};
 	for (const file of written) {

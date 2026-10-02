@@ -2,7 +2,7 @@
 
 # RCOS Core Specification — v0.1
 
-- **Generated:** 2026-08-31
+- **Generated:** 2026-10-02
 - **Source (latest version):** [https://rcos.ecohubs.community/articles/rcos-core/v0-1](https://rcos.ecohubs.community/articles/rcos-core/v0-1)
 
 - Status: Draft
@@ -1751,8 +1751,8 @@ Recommended format:
 | Rotating facilitation trial | 5 | Experiment | Active | 2026-06-01 | 2026-08-01 | [placeholder] |
 | Treasury transparency exception (safety) | 3/4 | Permanent | Active | 2026-04-10 | Annual review | [placeholder] |
 
-
 ## C.5 Compliance Statement
+
 - Current compliance status: Compliant / Non-compliant / Unknown
 - Date of last self-audit or external audit
 - Audit method (self-audit vs external)
@@ -1767,6 +1767,7 @@ Recommended format:
 - Known non-compliance periods (if any)  
 
 ## C.6 Public Transparency
+
 - Public artifact index (recommended):
 
 | Artifact | Layer | Public link | Version/date | Notes |

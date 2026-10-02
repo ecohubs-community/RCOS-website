@@ -48,7 +48,8 @@ import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 import matter from 'gray-matter';
 import yaml from 'js-yaml';
-import { loadDocuments, clauseLinks } from './content/build-articles.mjs';
+import { loadDocuments } from './content/build-articles.mjs';
+import { refTargets } from '../src/lib/content/refs.js';
 import { toArticle, fromArticle } from '../src/lib/content/article.js';
 import { SUPPORTED_LOCALES } from './i18n.mjs';
 
@@ -232,7 +233,7 @@ async function buildJobs() {
  */
 async function addYamlJobs(jobs, skipped) {
 	const docs = await loadDocuments();
-	const href = clauseLinks(docs);
+	const targets = refTargets(docs);
 	for (const { file, en, overlays } of docs) {
 		if (en.kind === 'index' && !args.includeEmpty) {
 			skipped.emptyBody++;
@@ -257,10 +258,10 @@ async function addYamlJobs(jobs, skipped) {
 		}
 		const targetPath = file.replace(/\.yaml$/, `.${args.locale}.yaml`);
 		jobs.push({
-			yaml: { en, href },
+			yaml: { en, targets },
 			sourcePath: file,
 			sourceRel,
-			sourceRaw: toArticle(en, undefined, 'en', href),
+			sourceRaw: toArticle(en, undefined, 'en', targets),
 			sourceData: en,
 			sourceHash,
 			targetPath,
@@ -575,7 +576,7 @@ function finalizeYaml(translatedRaw, job) {
 			'provider returned reasoning text — refusing to write a broken file. Re-run translation.'
 		);
 	}
-	const overlay = fromArticle(job.yaml.en, cleaned, args.locale, job.yaml.href);
+	const overlay = fromArticle(job.yaml.en, cleaned, args.locale, job.yaml.targets);
 	if (!overlay.title?.trim()) {
 		throw new Error('provider returned no translated `title` — refusing to write a broken file');
 	}

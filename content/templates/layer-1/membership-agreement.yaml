@@ -7,7 +7,7 @@ order: 0
 preamble: |-
   - **Layer:** 1 — Membership System
   - **Status:** Template — adapt for your community
-  - **RCOS reference:** [§3.4](/articles/rcos-core/v0-1/layer-1-membership-system#34-rights-and-obligations), [§3.5](/articles/rcos-core/v0-1/layer-1-membership-system#35-participation-and-contribution), [§3.8](/articles/rcos-core/v0-1/layer-1-membership-system#38-artifacts)
+  - **RCOS reference:** [§3.4](rcos:§3.4), [§3.5](rcos:§3.5), [§3.8](rcos:§3.8)
 
   > Signed (or explicitly acknowledged) by every member at the time of admission. Defines the rights and obligations of each membership state.
 

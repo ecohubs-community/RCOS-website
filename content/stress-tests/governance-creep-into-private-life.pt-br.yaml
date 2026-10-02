@@ -1,10 +1,10 @@
 lang: pt-br
-sourceHash: 194ee1f4
+sourceHash: b423991e
 title: Expansão da Governança para a Vida Privada
 summary: Quando a comunidade não tem uma esfera privada declarada, ela governa tudo.
 tags:
-  - 'Layer 0: Scope'
-  - Medium severity
+  - 'Camada 0: Escopo'
+  - Severidade média
 symptoms:
   - As normas da comunidade alcançam escolhas pessoais — dieta, relacionamentos, criação dos filhos, crenças, tempo livre.
   - Não existe uma linha declarada entre o que a comunidade governa e o que não é da conta de ninguém.
@@ -69,7 +69,7 @@ sections:
       |---|---|
       | **L0 — Implícito** | Nenhuma esfera privada declarada; as normas se expandem para a vida pessoal sem freios. |
       | **L1 — Nomeado** | O grupo percebe o excesso de alcance, mas não traçou uma fronteira não-governada. |
-      | **L2 — Documentado** | Uma [Declaração de Escopo](/articles/rcos-templates/layer-0/scope-declaration) nomeia explicitamente o que está fora de escopo — a esfera privada protegida. |
+      | **L2 — Documentado** | Uma [Declaração de Escopo](rcos:template/scope-declaration) nomeia explicitamente o que está fora de escopo — a esfera privada protegida. |
       | **L3 — Aplicado e ensaiado** | A governança permanece dentro do escopo declarado; assuntos pessoais fora dele não podem desencadear sanção; isso se sustentou em um caso real. |
 
       A maioria das comunidades que se reconhece aqui está em **L0 ou L1**. O objetivo não é perfeição — é subir um degrau.
@@ -78,11 +78,11 @@ sections:
     md: |-
       O RCOS exige declarar o que a comunidade *não* governa:
 
-      - **[Declaração de Escopo](/articles/rcos-templates/layer-0/scope-declaration)** — declare explicitamente o que a comunidade NÃO governa (invariante 0.3).
-      - **[Registro de Restrições de Identidade](/articles/rcos-templates/layer-0/identity-constraints-register)** — delimite o alcance da comunidade sobre a vida dos membros.
-      - **[Acordo de Filiação](/articles/rcos-templates/layer-1/membership-agreement)** — torne explícita a prática compartilhada na qual se optou por entrar, e tudo o mais privado por padrão.
+      - **[Declaração de Escopo](rcos:template/scope-declaration)** — declare explicitamente o que a comunidade NÃO governa (invariante 0.3).
+      - **[Registro de Restrições de Identidade](rcos:template/identity-constraints-register)** — delimite o alcance da comunidade sobre a vida dos membros.
+      - **[Acordo de Filiação](rcos:template/membership-agreement)** — torne explícita a prática compartilhada na qual se optou por entrar, e tudo o mais privado por padrão.
 
-      Veja também a especificação: [Camada 0 — Declaração de Escopo](/articles/rcos-core/v0-1/layer-0-identity-scope#22-scope-declaration) e [Restrições de Identidade](/articles/rcos-core/v0-1/layer-0-identity-scope#24-identity-constraints).
+      Veja também a especificação: [Camada 0 — Declaração de Escopo](rcos:§2.2) e [Restrições de Identidade](rcos:§2.4).
   if-it-s-already-happening:
     title: Se isso já está acontecendo
     md: |-
@@ -94,8 +94,8 @@ sections:
   what-this-failure-tends-to-trigger:
     title: O que essa falha tende a desencadear
     md: |-
-      - **[Teste de Escopo de Violação de Norma Cultural](/articles/rcos-stress-tests/membership-boundaries/cultural-norm-violation-scope-test)** — sem uma esfera fora de escopo, qualquer escolha pessoal pode se tornar uma norma exigível.
-      - **[Autoridade Espiritual Carismática](/articles/rcos-stress-tests/culture-influence/charismatic-spiritual-authority)** — uma comunidade totalizante é terreno fértil para uma autoridade moral inquestionável.
+      - **[Teste de Escopo de Violação de Norma Cultural](rcos:test/cultural-norm-violation-scope-test)** — sem uma esfera fora de escopo, qualquer escolha pessoal pode se tornar uma norma exigível.
+      - **[Autoridade Espiritual Carismática](rcos:test/charismatic-spiritual-authority)** — uma comunidade totalizante é terreno fértil para uma autoridade moral inquestionável.
   related-stress-tests:
     title: Testes de estresse relacionados
-    md: '- **[Teste de Escopo de Violação de Norma Cultural](/articles/rcos-stress-tests/membership-boundaries/cultural-norm-violation-scope-test)** — o evento de aplicação; este teste é a fronteira ausente que o torna possível.'
+    md: '- **[Teste de Escopo de Violação de Norma Cultural](rcos:test/cultural-norm-violation-scope-test)** — o evento de aplicação; este teste é a fronteira ausente que o torna possível.'

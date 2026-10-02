@@ -1,10 +1,10 @@
 lang: fr
-sourceHash: 5c145cd4
+sourceHash: 40c2675e
 title: Modèle d'expérimentation
 preamble: |-
   - **Couche :** 6 — Évolution et adaptation
   - **Statut :** Modèle — à utiliser pour proposer une expérimentation limitée dans le temps
-  - **Référence RCOS :** [§8.3](/articles/rcos-core/v0-1/layer-6-evolution-adaptation#83-experiments), [§8.7](/articles/rcos-core/v0-1/layer-6-evolution-adaptation#87-layer-invariants)
+  - **Référence RCOS :** [§8.3](rcos:§8.3), [§8.7](rcos:§8.7)
 
   > Les expérimentations permettent à la communauté d'essayer un changement sans l'adopter définitivement. Pour rester sûre, chaque expérimentation DOIT être limitée dans le temps, étiquetée et à expiration automatique — et DOIT consigner ses résultats dans le Journal d'apprentissage.
 

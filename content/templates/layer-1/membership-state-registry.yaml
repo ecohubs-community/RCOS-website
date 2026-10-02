@@ -7,7 +7,7 @@ order: 3
 preamble: |-
   - **Layer:** 1 — Membership System
   - **Status:** Template — adapt for your community
-  - **RCOS reference:** [§3.1](/articles/rcos-core/v0-1/layer-1-membership-system#31-membership-states)
+  - **RCOS reference:** [§3.1](rcos:§3.1)
 
   ---
 sections:

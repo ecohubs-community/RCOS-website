@@ -1,10 +1,10 @@
 lang: es
-sourceHash: 73efb5de
+sourceHash: 13ed4fc4
 title: Protocolo de Salida y Separación
 preamble: |-
   - **Capa:** 1 — Sistema de Membresía
   - **Estado:** Plantilla — adaptar para tu comunidad
-  - **Referencia RCOS:** [§3.6](/articles/rcos-core/v0-1/layer-1-membership-system#36-exit-and-separation), [§3.7](/articles/rcos-core/v0-1/layer-1-membership-system#37-suspension-and-temporary-status), [§3.8](/articles/rcos-core/v0-1/layer-1-membership-system#38-artifacts)
+  - **Referencia RCOS:** [§3.6](rcos:§3.6), [§3.7](rcos:§3.7), [§3.8](rcos:§3.8)
 
   ---
 sections:

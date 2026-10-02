@@ -1,10 +1,10 @@
 lang: de
-sourceHash: '43533949'
+sourceHash: 1da32db3
 title: Onboarding-Protokoll
 preamble: |-
   - **Schicht:** 1 — Mitgliedschaftssystem
   - **Status:** Vorlage — an deine Gemeinschaft anpassen
-  - **RCOS-Referenz:** [§3.2](/articles/rcos-core/v0-1/layer-1-membership-system#32-entry-and-onboarding), [§3.3](/articles/rcos-core/v0-1/layer-1-membership-system#33-trial-and-evaluation), [§3.8](/articles/rcos-core/v0-1/layer-1-membership-system#38-artifacts)
+  - **RCOS-Referenz:** [§3.2](rcos:§3.2), [§3.3](rcos:§3.3), [§3.8](rcos:§3.8)
 
   ---
 sections:

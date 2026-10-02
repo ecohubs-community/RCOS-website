@@ -1,10 +1,10 @@
 lang: de
-sourceHash: 7c2a4167
+sourceHash: 811085fd
 title: Sitzungsvorlagen
 preamble: |-
   - **Schicht:** 5 — Betrieb & Koordination
   - **Status:** Vorlage — an eure Gemeinschaft anpassen
-  - **RCOS-Referenz:** [§7.2](/articles/rcos-core/v0-1/layer-5-operations-coordination#72-meeting-system), [§7.6](/articles/rcos-core/v0-1/layer-5-operations-coordination#76-artifacts)
+  - **RCOS-Referenz:** [§7.2](rcos:§7.2), [§7.6](rcos:§7.6)
 
   > Sitzungsvorlagen legen Zweck, Entscheidungsbereich, Beschlussfähigkeit und Struktur jedes Sitzungstyps fest. Eine Sitzung ohne festgelegte Vorlage wird mit der Zeit Befugnisse ansammeln, die sie nicht haben sollte. Passt diese Vorlagen an und fügt Sitzungstypen hinzu oder entfernt sie, wie es eure Gemeinschaft braucht.
 
@@ -187,7 +187,7 @@ sections:
     title: 'Sitzungstyp: Konfliktbearbeitung'
     blocks:
       clauses:
-        note: ; siehe auch Schicht 4 — [Konfliktlösungsleiter](/articles/rcos-core/v0-1/layer-4-conflict-repair-accountability#62-resolution-pathways)
+        note: ; siehe auch Schicht 4 — [Konfliktlösungsleiter](rcos:§6.2)
       rationale:
         summary: Warum ein eigener Sitzungstyp für Konflikte?
         body: 'Konfliktarbeit hat Regeln, die andere Sitzungen nicht haben: Vertraulichkeit, Moderator:innen-Auswahl, die die Parteipräferenzen umgeht, Schutz vor Vergeltung und eingeschränkte Protokollierung. Die operative Vorlage für eine Konfliktsitzung zu verwenden, würde stillschweigend all diese Regeln verletzen. Eine eigene Vorlage macht den unterschiedlichen Rahmen ab der ersten Minute sichtbar.'

@@ -1,10 +1,10 @@
 lang: pt-br
-sourceHash: aedbeb8a
+sourceHash: 842252b2
 title: Vozes Dominantes em Espaços de Decisão
 summary: Quando a voz mais alta, e não o processo acordado, decide.
 tags:
-  - 'Layer 2: Governance'
-  - High severity
+  - 'Camada 2: Governança'
+  - Severidade alta
 symptoms:
   - As mesmas uma ou duas vozes moldam quase todas as decisões.
   - Membros mais quietos pararam de contribuir nas reuniões — ou pararam de aparecer.
@@ -70,7 +70,7 @@ sections:
       |---|---|
       | **L0 — Implícito** | Algumas vozes dominam; isso é lido como personalidade, não como processo. |
       | **L1 — Nomeado** | O grupo reconhece o desequilíbrio, mas não tem papel de facilitação nem regra para lidar com isso. |
-      | **L2 — Documentado** | As reuniões têm um [papel de facilitador](/articles/rcos-templates/layer-5/role-registry) definido e uma [matriz de decisão](/articles/rcos-templates/layer-2/decision-matrix); as decisões são rastreáveis a um mecanismo, não ao tempo de fala. |
+      | **L2 — Documentado** | As reuniões têm um [papel de facilitador](rcos:template/role-registry) definido e uma [matriz de decisão](rcos:template/decision-matrix); as decisões são rastreáveis a um mecanismo, não ao tempo de fala. |
       | **L3 — Aplicado e ensaiado** | A facilitação equilibra ativamente a participação; a dominância é nomeada como violação de processo e escalonada se persistir. |
 
       A maioria das comunidades que se reconhecem aqui está em **L0 ou L1**. O objetivo não é a perfeição — é subir um degrau.
@@ -79,11 +79,11 @@ sections:
     md: |-
       O RCOS direciona a influência por meio de estrutura acordada, em vez do tempo de fala:
 
-      - **[Modelos de Reunião](/articles/rcos-templates/layer-5/meeting-templates)** — pautas estruturadas, rodadas de fala e timeboxing que distribuem o tempo de fala por design.
-      - **[Registro de Papéis](/articles/rcos-templates/layer-5/role-registry)** — um papel de facilitador com autoridade explícita para intervir e reequilibrar.
-      - **[Matriz de Decisão](/articles/rcos-templates/layer-2/decision-matrix)** — as decisões se resolvem por meio de um mecanismo acordado, tornando o tempo de fala irrelevante para o resultado.
+      - **[Modelos de Reunião](rcos:template/meeting-templates)** — pautas estruturadas, rodadas de fala e timeboxing que distribuem o tempo de fala por design.
+      - **[Registro de Papéis](rcos:template/role-registry)** — um papel de facilitador com autoridade explícita para intervir e reequilibrar.
+      - **[Matriz de Decisão](rcos:template/decision-matrix)** — as decisões se resolvem por meio de um mecanismo acordado, tornando o tempo de fala irrelevante para o resultado.
 
-      Veja também a especificação: [Camada 5 — Sistema de Reuniões](/articles/rcos-core/v0-1/layer-5-operations-coordination#72-meeting-system) e [Camada 2 — Matriz de Decisão](/articles/rcos-core/v0-1/layer-2-governance-decision-logic#44-decision-matrix).
+      Veja também a especificação: [Camada 5 — Sistema de Reuniões](rcos:§7.2) e [Camada 2 — Matriz de Decisão](rcos:§4.4).
   if-it-s-already-happening:
     title: Se já está acontecendo
     md: |-
@@ -96,8 +96,8 @@ sections:
   what-this-failure-tends-to-trigger:
     title: O que essa falha tende a desencadear
     md: |-
-      - **[Tomada de Decisão por Grupinho Informal](/articles/rcos-stress-tests/governance-power/informal-clique-decision-making)** — a dominância não controlada se solidifica em um grupo de fato que decide as coisas antes da sala decidir.
-      - **[Normalização da Esquiva de Conflitos](/articles/rcos-stress-tests/conflict-accountability/conflict-avoidance-normalization)** — membros que são repetidamente atropelados na fala param de levantar questões.
+      - **[Tomada de Decisão por Grupinho Informal](rcos:test/informal-clique-decision-making)** — a dominância não controlada se solidifica em um grupo de fato que decide as coisas antes da sala decidir.
+      - **[Normalização da Esquiva de Conflitos](rcos:test/conflict-avoidance-normalization)** — membros que são repetidamente atropelados na fala param de levantar questões.
   related-stress-tests:
     title: Testes de estresse relacionados
-    md: '- **[Veto Informal do Fundador](/articles/rcos-stress-tests/governance-power/founder-informal-veto)** — frequentemente a voz dominante é a do fundador, e a dominância vira um veto não escrito.'
+    md: '- **[Veto Informal do Fundador](rcos:test/founder-informal-veto)** — frequentemente a voz dominante é a do fundador, e a dominância vira um veto não escrito.'

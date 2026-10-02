@@ -1,5 +1,5 @@
 lang: pt-br
-sourceHash: ced41791
+sourceHash: 0d2e26c5
 title: Precedente de Bypass de Regras em Emergência
 summary: Quando uma exceção temporária de crise silenciosamente se torna a regra permanente.
 tags:
@@ -78,11 +78,11 @@ sections:
     md: |-
       O RCOS permite que você se mova rápido em uma crise *sem* perder a constituição:
 
-      - **[Protocolo de Mudança](/articles/rcos-templates/layer-6/change-protocol)** — defina os poderes de emergência com antecedência: seu escopo, quem os detém e um prazo de validade obrigatório.
-      - **[Protocolo de Governança](/articles/rcos-templates/layer-2/governance-protocol)** — mantenha as regras constitucionais acima da urgência.
-      - **[Registro de Invariantes](/articles/rcos-templates/layer-0/invariants-register)** — marque quais regras nunca podem ser contornadas, nem mesmo em uma crise.
+      - **[Protocolo de Mudança](rcos:template/change-protocol)** — defina os poderes de emergência com antecedência: seu escopo, quem os detém e um prazo de validade obrigatório.
+      - **[Protocolo de Governança](rcos:template/governance-protocol)** — mantenha as regras constitucionais acima da urgência.
+      - **[Registro de Invariantes](rcos:template/invariants-register)** — marque quais regras nunca podem ser contornadas, nem mesmo em uma crise.
 
-      Veja também a especificação: [Camada 6 — Segurança e Reversibilidade de Mudanças](/articles/rcos-core/v0-1/layer-6-evolution-adaptation#85-change-safety-and-reversibility) e [Camada 2 — Salvaguardas e Modos de Falha](/articles/rcos-core/v0-1/layer-2-governance-decision-logic#46-safeguards-and-failure-modes).
+      Veja também a especificação: [Camada 6 — Segurança e Reversibilidade de Mudanças](rcos:§8.5) e [Camada 2 — Salvaguardas e Modos de Falha](rcos:§4.6).
   if-it-s-already-happening:
     title: Se já está acontecendo
     md: |-
@@ -95,8 +95,8 @@ sections:
   what-this-failure-tends-to-trigger:
     title: O que essa falha tende a desencadear
     md: |-
-      - **[Veto Informal do Fundador](/articles/rcos-stress-tests/governance-power/founder-informal-veto)** — quem exerce poder de emergência informalmente tende a entrincheirá-lo.
-      - **[Privatização do Bem Comum através de Vendas de Terra](/articles/rcos-stress-tests/economy-resources/commons-privatization-through-land-sales)** — uma crise financeira "urgente" é o disfarce clássico para uma venda apressada e irreversível.
+      - **[Veto Informal do Fundador](rcos:test/founder-informal-veto)** — quem exerce poder de emergência informalmente tende a entrincheirá-lo.
+      - **[Privatização do Bem Comum através de Vendas de Terra](rcos:test/commons-privatization-through-land-sales)** — uma crise financeira "urgente" é o disfarce clássico para uma venda apressada e irreversível.
   related-stress-tests:
     title: Testes de estresse relacionados
-    md: '- **[Veto Informal do Fundador](/articles/rcos-stress-tests/governance-power/founder-informal-veto)** — a versão de poder permanente da mesma erosão constitucional.'
+    md: '- **[Veto Informal do Fundador](rcos:test/founder-informal-veto)** — a versão de poder permanente da mesma erosão constitucional.'

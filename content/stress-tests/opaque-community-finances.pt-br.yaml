@@ -1,5 +1,5 @@
 lang: pt-br
-sourceHash: d4107256
+sourceHash: 9a9f9a8e
 title: Finanças Opacas da Comunidade
 summary: Quando só algumas pessoas realmente sabem para onde o dinheiro vai.
 tags:
@@ -69,7 +69,7 @@ sections:
       |---|---|
       | **L0 — Implícito** | As finanças ficam com uma ou duas pessoas; sem visibilidade compartilhada. |
       | **L1 — Nomeado** | O grupo sabe que as finanças são opacas, mas ainda não estabeleceu regras de transparência. |
-      | **L2 — Documentado** | Um [Conjunto de Regras de Tesouraria](/articles/rcos-templates/layer-3/treasury-ruleset) define requisitos de transparência, autoridade de gastos e cadência de relatórios. |
+      | **L2 — Documentado** | Um [Conjunto de Regras de Tesouraria](rcos:template/treasury-ruleset) define requisitos de transparência, autoridade de gastos e cadência de relatórios. |
       | **L3 — Aplicado e ensaiado** | Os fluxos financeiros são visíveis por padrão; os relatórios regulares são de fato lidos; as exceções são explícitas e poucas. |
 
       A maioria das comunidades que se reconhecem aqui está em **L0 ou L1**. O objetivo não é a perfeição — é subir um degrau.
@@ -78,10 +78,10 @@ sections:
     md: |-
       O RCOS torna a transparência o padrão financeiro, não um favor:
 
-      - **[Conjunto de Regras de Tesouraria](/articles/rcos-templates/layer-3/treasury-ruleset)** — requisitos de transparência, autoridade de gastos por valor, e regras de reserva e de relatórios.
-      - **[Protocolo de Economia Interna](/articles/rcos-templates/layer-3/internal-economy-protocol)** — torne os fluxos e obrigações visíveis como estado padrão.
+      - **[Conjunto de Regras de Tesouraria](rcos:template/treasury-ruleset)** — requisitos de transparência, autoridade de gastos por valor, e regras de reserva e de relatórios.
+      - **[Protocolo de Economia Interna](rcos:template/internal-economy-protocol)** — torne os fluxos e obrigações visíveis como estado padrão.
 
-      Veja também a especificação: [Camada 3 — Gestão da Tesouraria](/articles/rcos-core/v0-1/layer-3-economic-resource-system#53-treasury-management) e [Bens Comuns vs Recursos Privados](/articles/rcos-core/v0-1/layer-3-economic-resource-system#51-commons-vs-private-resources).
+      Veja também a especificação: [Camada 3 — Gestão da Tesouraria](rcos:§5.3) e [Bens Comuns vs Recursos Privados](rcos:§5.1).
   if-it-s-already-happening:
     title: Se já está acontecendo
     md: |-
@@ -94,8 +94,8 @@ sections:
   what-this-failure-tends-to-trigger:
     title: O que esta falha tende a desencadear
     md: |-
-      - **[Poder Invisível via Responsabilidades](/articles/rcos-stress-tests/operations-coordination/invisible-power-via-responsibilities)** — a pessoa que "cuida do dinheiro" se torna indispensável e poderosa.
-      - **[Normalização da Evitação de Conflitos](/articles/rcos-stress-tests/conflict-accountability/conflict-avoidance-normalization)** — a suspeita em torno do dinheiro apodrece porque é constrangedor levantá-la.
+      - **[Poder Invisível via Responsabilidades](rcos:test/invisible-power-via-responsibilities)** — a pessoa que "cuida do dinheiro" se torna indispensável e poderosa.
+      - **[Normalização da Evitação de Conflitos](rcos:test/conflict-avoidance-normalization)** — a suspeita em torno do dinheiro apodrece porque é constrangedor levantá-la.
   related-stress-tests:
     title: Testes de estresse relacionados
-    md: '- **[Privatização dos Bens Comuns por Vendas de Terras](/articles/rcos-stress-tests/economy-resources/commons-privatization-through-land-sales)** — a opacidade é o que permite que as maiores decisões sobre ativos aconteçam sem escrutínio.'
+    md: '- **[Privatização dos Bens Comuns por Vendas de Terras](rcos:test/commons-privatization-through-land-sales)** — a opacidade é o que permite que as maiores decisões sobre ativos aconteçam sem escrutínio.'

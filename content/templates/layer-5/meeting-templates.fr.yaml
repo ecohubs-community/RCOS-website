@@ -1,10 +1,10 @@
 lang: fr
-sourceHash: 7c2a4167
+sourceHash: 811085fd
 title: Modèles de réunion
 preamble: |-
   - **Couche :** 5 — Opérations & Coordination
   - **Statut :** Modèle — à adapter pour ta communauté
-  - **Référence RCOS :** [§7.2](/articles/rcos-core/v0-1/layer-5-operations-coordination#72-meeting-system), [§7.6](/articles/rcos-core/v0-1/layer-5-operations-coordination#76-artifacts)
+  - **Référence RCOS :** [§7.2](rcos:§7.2), [§7.6](rcos:§7.6)
 
   > Les modèles de réunion déclarent l'objectif, le périmètre de décision, le quorum et la structure de chaque type de réunion. Une réunion sans modèle déclaré finira, avec le temps, par accumuler une autorité qu'elle ne devrait pas avoir. Adapte ces modèles et ajoute ou supprime des types de réunion selon les besoins de ta communauté.
 
@@ -187,7 +187,7 @@ sections:
     title: 'Type de réunion : Traitement des conflits'
     blocks:
       clauses:
-        note: ' ; voir aussi Couche 4 — [Échelle de résolution des conflits](/articles/rcos-core/v0-1/layer-4-conflict-repair-accountability#62-resolution-pathways)'
+        note: ' ; voir aussi Couche 4 — [Échelle de résolution des conflits](rcos:§6.2)'
       rationale:
         summary: Pourquoi un type de réunion distinct pour les conflits ?
         body: 'Le travail sur les conflits obéit à des règles que les autres réunions n''ont pas : confidentialité, sélection du·de la facilitateur·rice qui contourne les préférences des parties, protections contre les représailles et registres restreints. Utiliser le modèle Opérations pour une session de conflit violerait discrètement toutes ces règles. Un modèle dédié rend le cadre différent visible dès la première minute.'

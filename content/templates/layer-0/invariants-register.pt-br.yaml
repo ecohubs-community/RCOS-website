@@ -1,10 +1,10 @@
 lang: pt-br
-sourceHash: f187885c
+sourceHash: c83291b8
 title: Registro de Invariantes
 preamble: |-
   - **Camada:** 0 — Identidade e Escopo
   - **Status:** Modelo — adapte para a sua comunidade
-  - **Referência RCOS:** [§2.3](/articles/rcos-core/v0-1/layer-0-identity-scope#23-invariants), [§2.5](/articles/rcos-core/v0-1/layer-0-identity-scope#25-artifacts)
+  - **Referência RCOS:** [§2.3](rcos:§2.3), [§2.5](rcos:§2.5)
 
   > Invariantes são restrições que NÃO DEVEM ser violadas enquanto estiverem em vigor. Nenhuma decisão, papel, processo ou medida emergencial pode sobrepor um invariante. Se surgir um conflito entre um invariante e qualquer outra regra, o invariante prevalece.
 

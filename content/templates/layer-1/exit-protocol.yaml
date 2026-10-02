@@ -7,7 +7,7 @@ order: 2
 preamble: |-
   - **Layer:** 1 — Membership System
   - **Status:** Template — adapt for your community
-  - **RCOS reference:** [§3.6](/articles/rcos-core/v0-1/layer-1-membership-system#36-exit-and-separation), [§3.7](/articles/rcos-core/v0-1/layer-1-membership-system#37-suspension-and-temporary-status), [§3.8](/articles/rcos-core/v0-1/layer-1-membership-system#38-artifacts)
+  - **RCOS reference:** [§3.6](rcos:§3.6), [§3.7](rcos:§3.7), [§3.8](rcos:§3.8)
 
   ---
 sections:

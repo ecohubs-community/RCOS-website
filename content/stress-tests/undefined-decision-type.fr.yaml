@@ -1,10 +1,10 @@
 lang: fr
-sourceHash: 248a53cf
+sourceHash: f08845a4
 title: Type de décision indéfini
 summary: Quand le groupe débat de ce qu'il faut décider avant de s'accorder sur comment décider.
 tags:
-  - 'Layer 2: Governance'
-  - Medium severity
+  - 'Couche 2 : Gouvernance'
+  - Sévérité moyenne
 symptoms:
   - Les discussions s'enlisent parce que personne ne s'est mis d'accord pour savoir s'il s'agit d'un consensus, d'un vote ou d'une décision déléguée.
   - La même décision est rouverte parce qu'il n'a jamais été clair qu'elle avait réellement été prise.
@@ -69,7 +69,7 @@ sections:
       |---|---|
       | **L0 — Implicite** | Le type de décision est improvisé à chaque fois ; le cadrage détermine le résultat. |
       | **L1 — Nommé** | Le groupe remarque la confusion mais n'a pas cartographié les types de décisions vers des mécanismes. |
-      | **L2 — Documenté** | Une [Matrice de décision](/articles/rcos-templates/layer-2/decision-matrix) attribue à chaque classe de décision un type, un mécanisme et qui décide — réglé avant le contenu. |
+      | **L2 — Documenté** | Une [Matrice de décision](rcos:template/decision-matrix) attribue à chaque classe de décision un type, un mécanisme et qui décide — réglé avant le contenu. |
       | **L3 — Appliqué et répété** | Chaque décision significative nomme son type en amont ; les décisions sont définitives et ne sont pas silencieusement rouvertes. |
 
       La plupart des communautés qui se reconnaissent ici sont en **L0 ou L1**. L'objectif n'est pas la perfection — c'est de monter d'un échelon.
@@ -78,10 +78,10 @@ sections:
     md: |-
       RCOS impose le type avant le contenu :
 
-      - **[Matrice de décision](/articles/rcos-templates/layer-2/decision-matrix)** — cartographie les classes de décisions vers leur mécanisme et leur autorité, pour que le type soit pré-décidé.
-      - **[Protocole de gouvernance](/articles/rcos-templates/layer-2/governance-protocol)** — fais de « nommer d'abord le type de décision » une règle permanente du fonctionnement du groupe.
+      - **[Matrice de décision](rcos:template/decision-matrix)** — cartographie les classes de décisions vers leur mécanisme et leur autorité, pour que le type soit pré-décidé.
+      - **[Protocole de gouvernance](rcos:template/governance-protocol)** — fais de « nommer d'abord le type de décision » une règle permanente du fonctionnement du groupe.
 
-      Voir aussi la spec : [Couche 2 — Types de décisions](/articles/rcos-core/v0-1/layer-2-governance-decision-logic#41-decision-types) et [Matrice de décision](/articles/rcos-core/v0-1/layer-2-governance-decision-logic#44-decision-matrix).
+      Voir aussi la spec : [Couche 2 — Types de décisions](rcos:§4.1) et [Matrice de décision](rcos:§4.4).
   if-it-s-already-happening:
     title: Si c'est déjà en train d'arriver
     md: |-
@@ -93,8 +93,8 @@ sections:
   what-this-failure-tends-to-trigger:
     title: Ce que cette défaillance a tendance à déclencher
     md: |-
-      - **[Locuteurs dominants dans les espaces de décision](/articles/rcos-stress-tests/governance-power/dominant-speakers-decision-spaces)** — sans mécanisme convenu, le temps de parole et le cadrage déterminent les résultats.
-      - **[Prise de décision par clique informelle](/articles/rcos-stress-tests/governance-power/informal-clique-decision-making)** — un type indéfini laisse les décisions dériver vers celui qui les a cadrées en premier.
+      - **[Locuteurs dominants dans les espaces de décision](rcos:test/dominant-speakers-decision-spaces)** — sans mécanisme convenu, le temps de parole et le cadrage déterminent les résultats.
+      - **[Prise de décision par clique informelle](rcos:test/informal-clique-decision-making)** — un type indéfini laisse les décisions dériver vers celui qui les a cadrées en premier.
   related-stress-tests:
     title: Stress tests liés
-    md: '- **[Locuteurs dominants dans les espaces de décision](/articles/rcos-stress-tests/governance-power/dominant-speakers-decision-spaces)** — le même mécanisme manquant, exprimé comme qui-parle-le-plus plutôt que qui-cadre-en-premier.'
+    md: '- **[Locuteurs dominants dans les espaces de décision](rcos:test/dominant-speakers-decision-spaces)** — le même mécanisme manquant, exprimé comme qui-parle-le-plus plutôt que qui-cadre-en-premier.'

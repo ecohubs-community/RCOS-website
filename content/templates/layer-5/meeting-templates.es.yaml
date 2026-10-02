@@ -1,10 +1,10 @@
 lang: es
-sourceHash: 7c2a4167
+sourceHash: 811085fd
 title: Plantillas de Reuniones
 preamble: |-
   - **Capa:** 5 — Operaciones y Coordinación
   - **Estado:** Plantilla — adaptar para tu comunidad
-  - **Referencia RCOS:** [§7.2](/articles/rcos-core/v0-1/layer-5-operations-coordination#72-meeting-system), [§7.6](/articles/rcos-core/v0-1/layer-5-operations-coordination#76-artifacts)
+  - **Referencia RCOS:** [§7.2](rcos:§7.2), [§7.6](rcos:§7.6)
 
   > Las plantillas de reuniones declaran el propósito, el alcance de decisión, el quórum y la estructura de cada tipo de reunión. Una reunión sin una plantilla declarada, dado el tiempo suficiente, acumulará autoridad que no debería tener. Adapta estas plantillas y añade o elimina tipos de reunión según las necesidades de tu comunidad.
 
@@ -187,7 +187,7 @@ sections:
     title: 'Tipo de Reunión: Gestión de Conflictos'
     blocks:
       clauses:
-        note: ; ver también Capa 4 — [Escalera de Resolución de Conflictos](/articles/rcos-core/v0-1/layer-4-conflict-repair-accountability#62-resolution-pathways)
+        note: ; ver también Capa 4 — [Escalera de Resolución de Conflictos](rcos:§6.2)
       rationale:
         summary: ¿Por qué un tipo de reunión distinto para conflictos?
         body: 'El trabajo con conflictos tiene reglas que otras reuniones no tienen: confidencialidad, selección de Facilitador/a que no depende de la preferencia de las partes, protecciones contra represalias y registros restringidos. Usar la plantilla de Operaciones para una sesión de conflicto violaría silenciosamente todas estas reglas. Una plantilla dedicada hace visible el contenedor diferente desde el primer minuto.'

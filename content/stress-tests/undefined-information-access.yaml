@@ -90,7 +90,7 @@ sections:
       |---|---|
       | **L0 — Implicit** | Access is informal and uneven; being "in the loop" depends on relationships. |
       | **L1 — Named** | The group senses the asymmetry but hasn't defined access rules. |
-      | **L2 — Documented** | An [Operations Manual](/articles/rcos-templates/layer-5/operations-manual) defines transparency defaults, privacy boundaries, and who can access what. |
+      | **L2 — Documented** | An [Operations Manual](rcos:template/operations-manual) defines transparency defaults, privacy boundaries, and who can access what. |
       | **L3 — Enforced & rehearsed** | Access follows declared rules; records are findable; privacy boundaries are explicit and respected. |
 
       Most communities that recognise themselves here sit at **L0 or L1**. The goal isn't perfection — it's moving up one rung.
@@ -99,10 +99,10 @@ sections:
     md: |-
       RCOS makes information access a declared rule, not a social fact:
 
-      - **[Operations Manual](/articles/rcos-templates/layer-5/operations-manual)** — define transparency defaults, privacy boundaries, and access by role.
-      - **[Meeting Templates](/articles/rcos-templates/layer-5/meeting-templates)** — record decisions where all members can find them, not in private channels.
+      - **[Operations Manual](rcos:template/operations-manual)** — define transparency defaults, privacy boundaries, and access by role.
+      - **[Meeting Templates](rcos:template/meeting-templates)** — record decisions where all members can find them, not in private channels.
 
-      See also the spec: [Layer 5 — Documentation and Information Flow](/articles/rcos-core/v0-1/layer-5-operations-coordination#73-documentation-and-information-flow).
+      See also the spec: [Layer 5 — Documentation and Information Flow](rcos:§7.3).
   - id: if-it-s-already-happening
     title: If it's already happening
     md: |-
@@ -115,8 +115,8 @@ sections:
   - id: what-this-failure-tends-to-trigger
     title: What this failure tends to trigger
     md: |-
-      - **[Informal Clique Decision Making](/articles/rcos-stress-tests/governance-power/informal-clique-decision-making)** — information asymmetry is the substrate of an in-group.
-      - **[Invisible Power via Responsibilities](/articles/rcos-stress-tests/operations-coordination/invisible-power-via-responsibilities)** — whoever holds the records holds quiet power.
+      - **[Informal Clique Decision Making](rcos:test/informal-clique-decision-making)** — information asymmetry is the substrate of an in-group.
+      - **[Invisible Power via Responsibilities](rcos:test/invisible-power-via-responsibilities)** — whoever holds the records holds quiet power.
   - id: related-stress-tests
     title: Related stress tests
-    md: '- **[Invisible Power via Responsibilities](/articles/rcos-stress-tests/operations-coordination/invisible-power-via-responsibilities)** — undocumented knowledge and undefined access are two faces of the same concentration.'
+    md: '- **[Invisible Power via Responsibilities](rcos:test/invisible-power-via-responsibilities)** — undocumented knowledge and undefined access are two faces of the same concentration.'

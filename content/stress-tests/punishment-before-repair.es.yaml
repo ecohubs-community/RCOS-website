@@ -1,10 +1,10 @@
 lang: es
-sourceHash: ec1d1fab
+sourceHash: a2d8b763
 title: Castigo antes que reparación
 summary: Cuando el primer instinto de la comunidad ante un daño es castigar, no reparar.
 tags:
-  - 'Layer 4: Conflict'
-  - High severity
+  - 'Capa 4: Conflicto'
+  - Severidad alta
 symptoms:
   - Cuando alguien causa daño, el reflejo es la exclusión, la vergüenza pública o las sanciones — no una conversación de reparación.
   - No existe un camino restaurativo; rendir cuentas significa consecuencias, y punto.
@@ -69,7 +69,7 @@ sections:
       |---|---|
       | **N0 — Implícito** | El daño se enfrenta con castigo o exclusión; no existe un camino de reparación. |
       | **N1 — Nombrado** | El grupo quiere ser restaurativo pero no ha construido un proceso centrado en la reparación. |
-      | **N2 — Documentado** | Un [Protocolo de Rendición de Cuentas](/articles/rcos-templates/layer-4/accountability-protocol) hace de la reparación el primer paso; las sanciones sólo llegan si la reparación fracasa o es rechazada. |
+      | **N2 — Documentado** | Un [Protocolo de Rendición de Cuentas](rcos:template/accountability-protocol) hace de la reparación el primer paso; las sanciones sólo llegan si la reparación fracasa o es rechazada. |
       | **N3 — Aplicado y ensayado** | La reparación se intenta de verdad primero; las sanciones son un último recurso acotado; un daño real se ha reparado sin que nadie tuviera que irse. |
 
       La mayoría de las comunidades que se reconocen aquí están en **N0 o N1**. La meta no es la perfección — es subir un peldaño.
@@ -78,10 +78,10 @@ sections:
     md: |-
       RCOS convierte la reparación en el valor por defecto estructural, con el castigo como respaldo acotado:
 
-      - **[Protocolo de Rendición de Cuentas](/articles/rcos-templates/layer-4/accountability-protocol)** — haz de la reparación el primer paso esperado, con las sanciones como un último recurso definido.
-      - **[Escalera de Resolución de Conflictos](/articles/rcos-templates/layer-4/conflict-resolution-ladder)** — un escalamiento que arranca en el peldaño más bajo y más restaurativo, y sólo sube según haga falta.
+      - **[Protocolo de Rendición de Cuentas](rcos:template/accountability-protocol)** — haz de la reparación el primer paso esperado, con las sanciones como un último recurso definido.
+      - **[Escalera de Resolución de Conflictos](rcos:template/conflict-resolution-ladder)** — un escalamiento que arranca en el peldaño más bajo y más restaurativo, y sólo sube según haga falta.
 
-      Consulta también la especificación: [Capa 4 — Sanciones, Reparación y Separación](/articles/rcos-core/v0-1/layer-4-conflict-repair-accountability#64-sanctions-repair-and-separation) y [Vías de Resolución](/articles/rcos-core/v0-1/layer-4-conflict-repair-accountability#62-resolution-pathways).
+      Consulta también la especificación: [Capa 4 — Sanciones, Reparación y Separación](rcos:§6.4) y [Vías de Resolución](rcos:§6.2).
   if-it-s-already-happening:
     title: Si ya está ocurriendo
     md: |-
@@ -93,8 +93,8 @@ sections:
   what-this-failure-tends-to-trigger:
     title: Qué tiende a desencadenar este fallo
     md: |-
-      - **[Expulsión sin Debido Proceso](/articles/rcos-stress-tests/membership-boundaries/expulsion-without-due-process)** — un reflejo punitivo convierte la rendición de cuentas en expulsión.
-      - **[Normalización de la Evitación del Conflicto](/articles/rcos-stress-tests/conflict-accountability/conflict-avoidance-normalization)** — si asumir un error te trae castigo, la gente deja de sacar nada a la luz.
+      - **[Expulsión sin Debido Proceso](rcos:test/expulsion-without-due-process)** — un reflejo punitivo convierte la rendición de cuentas en expulsión.
+      - **[Normalización de la Evitación del Conflicto](rcos:test/conflict-avoidance-normalization)** — si asumir un error te trae castigo, la gente deja de sacar nada a la luz.
   related-stress-tests:
     title: Tests de estrés relacionados
-    md: '- **[Test de Alcance de Violación de Normas Culturales](/articles/rcos-stress-tests/membership-boundaries/cultural-norm-violation-scope-test)** — los reflejos punitivos son más fuertes cuando se rompe una norma cargada emocionalmente.'
+    md: '- **[Test de Alcance de Violación de Normas Culturales](rcos:test/cultural-norm-violation-scope-test)** — los reflejos punitivos son más fuertes cuando se rompe una norma cargada emocionalmente.'

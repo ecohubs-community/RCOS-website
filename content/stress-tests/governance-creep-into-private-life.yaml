@@ -92,7 +92,7 @@ sections:
       |---|---|
       | **L0 — Implicit** | No declared private sphere; norms expand into personal life unchecked. |
       | **L1 — Named** | The group notices the overreach but hasn't drawn a non-governed boundary. |
-      | **L2 — Documented** | A [Scope Declaration](/articles/rcos-templates/layer-0/scope-declaration) explicitly names what's out of scope — the protected private sphere. |
+      | **L2 — Documented** | A [Scope Declaration](rcos:template/scope-declaration) explicitly names what's out of scope — the protected private sphere. |
       | **L3 — Enforced & rehearsed** | Governance stays within declared scope; personal matters outside it can't trigger sanction; this has held in a real case. |
 
       Most communities that recognise themselves here sit at **L0 or L1**. The goal isn't perfection — it's moving up one rung.
@@ -101,11 +101,11 @@ sections:
     md: |-
       RCOS requires declaring what the community does *not* govern:
 
-      - **[Scope Declaration](/articles/rcos-templates/layer-0/scope-declaration)** — declare explicitly what the community does NOT govern (invariant 0.3).
-      - **[Identity Constraints Register](/articles/rcos-templates/layer-0/identity-constraints-register)** — bound the community's reach over members' lives.
-      - **[Membership Agreement](/articles/rcos-templates/layer-1/membership-agreement)** — make the opted-into shared practice explicit, and everything else private by default.
+      - **[Scope Declaration](rcos:template/scope-declaration)** — declare explicitly what the community does NOT govern (invariant 0.3).
+      - **[Identity Constraints Register](rcos:template/identity-constraints-register)** — bound the community's reach over members' lives.
+      - **[Membership Agreement](rcos:template/membership-agreement)** — make the opted-into shared practice explicit, and everything else private by default.
 
-      See also the spec: [Layer 0 — Scope Declaration](/articles/rcos-core/v0-1/layer-0-identity-scope#22-scope-declaration) and [Identity Constraints](/articles/rcos-core/v0-1/layer-0-identity-scope#24-identity-constraints).
+      See also the spec: [Layer 0 — Scope Declaration](rcos:§2.2) and [Identity Constraints](rcos:§2.4).
   - id: if-it-s-already-happening
     title: If it's already happening
     md: |-
@@ -117,8 +117,8 @@ sections:
   - id: what-this-failure-tends-to-trigger
     title: What this failure tends to trigger
     md: |-
-      - **[Cultural Norm Violation Scope Test](/articles/rcos-stress-tests/membership-boundaries/cultural-norm-violation-scope-test)** — with no out-of-scope sphere, any personal choice can become an enforceable norm.
-      - **[Charismatic Spiritual Authority](/articles/rcos-stress-tests/culture-influence/charismatic-spiritual-authority)** — a totalizing community is fertile ground for an unchallengeable moral authority.
+      - **[Cultural Norm Violation Scope Test](rcos:test/cultural-norm-violation-scope-test)** — with no out-of-scope sphere, any personal choice can become an enforceable norm.
+      - **[Charismatic Spiritual Authority](rcos:test/charismatic-spiritual-authority)** — a totalizing community is fertile ground for an unchallengeable moral authority.
   - id: related-stress-tests
     title: Related stress tests
-    md: '- **[Cultural Norm Violation Scope Test](/articles/rcos-stress-tests/membership-boundaries/cultural-norm-violation-scope-test)** — the enforcement event; this test is the missing boundary that makes it possible.'
+    md: '- **[Cultural Norm Violation Scope Test](rcos:test/cultural-norm-violation-scope-test)** — the enforcement event; this test is the missing boundary that makes it possible.'

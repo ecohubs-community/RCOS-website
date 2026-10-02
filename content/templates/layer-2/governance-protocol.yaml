@@ -7,7 +7,7 @@ order: 1
 preamble: |-
   - **Layer:** 2 — Governance & Decision Logic
   - **Status:** Template — adapt for your community
-  - **RCOS reference:** [§4.5](/articles/rcos-core/v0-1/layer-2-governance-decision-logic#45-governance-protocol), [§4.6](/articles/rcos-core/v0-1/layer-2-governance-decision-logic#46-safeguards-and-failure-modes), [§4.7](/articles/rcos-core/v0-1/layer-2-governance-decision-logic#47-artifacts)
+  - **RCOS reference:** [§4.5](rcos:§4.5), [§4.6](rcos:§4.6), [§4.7](rcos:§4.7)
 
   > Defines the full lifecycle of a collective decision — from proposal submission to documentation and appeal.
 

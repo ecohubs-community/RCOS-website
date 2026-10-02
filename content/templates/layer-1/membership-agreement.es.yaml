@@ -1,10 +1,10 @@
 lang: es
-sourceHash: bef8e999
+sourceHash: c0fd1050
 title: Acuerdo de Membresía
 preamble: |-
   - **Capa:** 1 — Sistema de Membresía
   - **Estado:** Plantilla — adaptar para tu comunidad
-  - **Referencia RCOS:** [§3.4](/articles/rcos-core/v0-1/layer-1-membership-system#34-rights-and-obligations), [§3.5](/articles/rcos-core/v0-1/layer-1-membership-system#35-participation-and-contribution), [§3.8](/articles/rcos-core/v0-1/layer-1-membership-system#38-artifacts)
+  - **Referencia RCOS:** [§3.4](rcos:§3.4), [§3.5](rcos:§3.5), [§3.8](rcos:§3.8)
 
   > Firmado (o reconocido explícitamente) por cada miembro en el momento de su admisión. Define los derechos y obligaciones de cada estado de membresía.
 

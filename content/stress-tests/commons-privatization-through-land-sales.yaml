@@ -102,12 +102,12 @@ sections:
     md: |-
       RCOS protects the commons and exit *before* the pressure arrives:
 
-      - **[Treasury Ruleset](/articles/rcos-templates/layer-3/treasury-ruleset)** + **[Internal Economy Protocol](/articles/rcos-templates/layer-3/internal-economy-protocol)** — declare what is commons vs private and protect the commons from informal privatization.
-      - **[Exit Protocol](/articles/rcos-templates/layer-1/exit-protocol)** — guarantee exit and resale terms exist before anyone transfers anything, so no one is trapped.
-      - **[Invariants Register](/articles/rcos-templates/layer-0/invariants-register)** — register commons protection as a protected invariant that can't be quietly amended.
+      - **[Treasury Ruleset](rcos:template/treasury-ruleset)** + **[Internal Economy Protocol](rcos:template/internal-economy-protocol)** — declare what is commons vs private and protect the commons from informal privatization.
+      - **[Exit Protocol](rcos:template/exit-protocol)** — guarantee exit and resale terms exist before anyone transfers anything, so no one is trapped.
+      - **[Invariants Register](rcos:template/invariants-register)** — register commons protection as a protected invariant that can't be quietly amended.
       - Worked example: the **[Land Commons Anti-Privatization](/articles/safeguards/land-commons-anti-privatization)** safeguard.
 
-      See also the spec: [Layer 3 — Commons vs Private Resources](/articles/rcos-core/v0-1/layer-3-economic-resource-system#51-commons-vs-private-resources) and [Layer 1 — Exit and Separation](/articles/rcos-core/v0-1/layer-1-membership-system#36-exit-and-separation).
+      See also the spec: [Layer 3 — Commons vs Private Resources](rcos:§5.1) and [Layer 1 — Exit and Separation](rcos:§3.6).
   - id: if-it-s-already-happening
     title: If it's already happening
     md: |-
@@ -119,7 +119,7 @@ sections:
       4. **If sales have already happened,** get legal help to reconstruct exitability and ring-fence what commons remains.
   - id: what-this-failure-tends-to-trigger
     title: What this failure tends to trigger
-    md: '- **[Outsourced Labor Bypassing Contribution](/articles/rcos-stress-tests/economy-resources/outsourced-labor-bypassing-contribution)** — once land is privately owned, members can treat shared obligations as optional and buy their way out.'
+    md: '- **[Outsourced Labor Bypassing Contribution](rcos:test/outsourced-labor-bypassing-contribution)** — once land is privately owned, members can treat shared obligations as optional and buy their way out.'
   - id: related-stress-tests
     title: Related stress tests
-    md: '- **[Emergency Rule Bypass Precedent](/articles/rcos-stress-tests/change-emergencies/emergency-rule-bypass-precedent)** — an "urgent" financial crisis is the classic cover for a rushed sale.'
+    md: '- **[Emergency Rule Bypass Precedent](rcos:test/emergency-rule-bypass-precedent)** — an "urgent" financial crisis is the classic cover for a rushed sale.'

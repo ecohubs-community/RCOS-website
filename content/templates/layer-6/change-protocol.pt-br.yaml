@@ -1,10 +1,10 @@
 lang: pt-br
-sourceHash: 4f9d01f6
+sourceHash: d5bb84b2
 title: Protocolo de Mudanças
 preamble: |-
   - **Camada:** 6 — Evolução e Adaptação
   - **Status:** Modelo — adapte para a sua comunidade
-  - **Referência RCOS:** [§8.1](/articles/rcos-core/v0-1/layer-6-evolution-adaptation#81-change-mechanisms), [§8.5](/articles/rcos-core/v0-1/layer-6-evolution-adaptation#85-change-safety-and-reversibility), [§8.6](/articles/rcos-core/v0-1/layer-6-evolution-adaptation#86-artifacts)
+  - **Referência RCOS:** [§8.1](rcos:§8.1), [§8.5](rcos:§8.5), [§8.6](rcos:§8.6)
 
   ---
 sections:

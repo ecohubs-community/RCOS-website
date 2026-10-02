@@ -91,7 +91,7 @@ sections:
       |---|---|
       | **L0 — Implicit** | Multiple purposes coexist unranked; conflicts have no principled resolution. |
       | **L1 — Named** | The group sees the drift but hasn't declared a primary purpose. |
-      | **L2 — Documented** | A [Purpose Charter](/articles/rcos-templates/layer-0/purpose-charter) names a single primary purpose; other goals are explicitly secondary. |
+      | **L2 — Documented** | A [Purpose Charter](rcos:template/purpose-charter) names a single primary purpose; other goals are explicitly secondary. |
       | **L3 — Enforced & rehearsed** | Trade-offs are resolved by reference to the primary purpose; new directions are tested against it. |
 
       Most communities that recognise themselves here sit at **L0 or L1**. The goal isn't perfection — it's moving up one rung.
@@ -100,11 +100,11 @@ sections:
     md: |-
       RCOS requires a single primary purpose that can break ties:
 
-      - **[Purpose Charter](/articles/rcos-templates/layer-0/purpose-charter)** — declare the single primary purpose that ranks all the others.
-      - **[Scope Declaration](/articles/rcos-templates/layer-0/scope-declaration)** — state what's in and out of scope, so additions are deliberate.
-      - **[Identity Constraints Register](/articles/rcos-templates/layer-0/identity-constraints-register)** — define what the community is and isn't.
+      - **[Purpose Charter](rcos:template/purpose-charter)** — declare the single primary purpose that ranks all the others.
+      - **[Scope Declaration](rcos:template/scope-declaration)** — state what's in and out of scope, so additions are deliberate.
+      - **[Identity Constraints Register](rcos:template/identity-constraints-register)** — define what the community is and isn't.
 
-      See also the spec: [Layer 0 — Purpose Definition](/articles/rcos-core/v0-1/layer-0-identity-scope#21-purpose-definition) and [Scope Declaration](/articles/rcos-core/v0-1/layer-0-identity-scope#22-scope-declaration).
+      See also the spec: [Layer 0 — Purpose Definition](rcos:§2.1) and [Scope Declaration](rcos:§2.2).
   - id: if-it-s-already-happening
     title: If it's already happening
     md: |-
@@ -116,8 +116,8 @@ sections:
   - id: what-this-failure-tends-to-trigger
     title: What this failure tends to trigger
     md: |-
-      - **[Conflict Avoidance Normalization](/articles/rcos-stress-tests/conflict-accountability/conflict-avoidance-normalization)** — irreconcilable purpose conflicts are too big to raise, so they're avoided.
-      - **[Informal Clique Decision Making](/articles/rcos-stress-tests/governance-power/informal-clique-decision-making)** — factions form around competing visions.
+      - **[Conflict Avoidance Normalization](rcos:test/conflict-avoidance-normalization)** — irreconcilable purpose conflicts are too big to raise, so they're avoided.
+      - **[Informal Clique Decision Making](rcos:test/informal-clique-decision-making)** — factions form around competing visions.
   - id: related-stress-tests
     title: Related stress tests
-    md: '- **[Cultural Norm Violation Scope Test](/articles/rcos-stress-tests/membership-boundaries/cultural-norm-violation-scope-test)** — both are scope failures: unclear purpose and unclear governed scope travel together.'
+    md: '- **[Cultural Norm Violation Scope Test](rcos:test/cultural-norm-violation-scope-test)** — both are scope failures: unclear purpose and unclear governed scope travel together.'

@@ -1,10 +1,10 @@
 lang: es
-sourceHash: 5b35a698
+sourceHash: '78485152'
 title: Toma de decisiones por camarilla informal
 summary: Cuando las decisiones reales ocurren antes de la reunión, entre las mismas pocas personas.
 tags:
-  - 'Layer 2: Governance'
-  - High severity
+  - 'Capa 2: Gobernanza'
+  - Severidad alta
 symptoms:
   - Las decisiones parecen "ya tomadas" cuando llegan al grupo entero.
   - Un subgrupo recurrente (la mesa de la cocina, un hilo de chat, los "originales") da forma a los resultados.
@@ -69,7 +69,7 @@ sections:
       |---|---|
       | **L0 — Implícito** | Las decisiones reales ocurren en subgrupos informales; el proceso formal las ratifica después de los hechos. |
       | **L1 — Nombrado** | El grupo percibe una dinámica de camarilla pero no ha exigido que las decisiones queden en el registro. |
-      | **L2 — Documentado** | Una [matriz de decisiones](/articles/rcos-templates/layer-2/decision-matrix) define qué debe decidirse por canales formales y registrados; los resultados fuera de canal son inválidos. |
+      | **L2 — Documentado** | Una [matriz de decisiones](rcos:template/decision-matrix) define qué debe decidirse por canales formales y registrados; los resultados fuera de canal son inválidos. |
       | **L3 — Aplicado y ensayado** | Las decisiones son legibles y revisables; las resoluciones informales se traen rutinariamente de vuelta al registro. |
 
       La mayoría de las comunidades que se reconocen aquí están en **L0 o L1**. El objetivo no es la perfección — es subir un peldaño.
@@ -78,11 +78,11 @@ sections:
     md: |-
       RCOS mantiene la autoridad legible exigiendo que las decisiones queden en el registro:
 
-      - **[Matriz de Decisiones](/articles/rcos-templates/layer-2/decision-matrix)** — define qué decisiones requieren un proceso formal y registrado.
-      - **[Protocolo de Gobernanza](/articles/rcos-templates/layer-2/governance-protocol)** — declara explícitamente inválidas las decisiones tomadas fuera de los canales formales.
-      - **[Plantillas de Reuniones](/articles/rcos-templates/layer-5/meeting-templates)** — registra las decisiones para que la autoridad siga siendo revisable, no recordada.
+      - **[Matriz de Decisiones](rcos:template/decision-matrix)** — define qué decisiones requieren un proceso formal y registrado.
+      - **[Protocolo de Gobernanza](rcos:template/governance-protocol)** — declara explícitamente inválidas las decisiones tomadas fuera de los canales formales.
+      - **[Plantillas de Reuniones](rcos:template/meeting-templates)** — registra las decisiones para que la autoridad siga siendo revisable, no recordada.
 
-      Ver también la especificación: [Capa 2 — Matriz de Decisiones](/articles/rcos-core/v0-1/layer-2-governance-decision-logic#44-decision-matrix) y [Capa 5 — Documentación y Flujo de Información](/articles/rcos-core/v0-1/layer-5-operations-coordination#73-documentation-and-information-flow).
+      Ver también la especificación: [Capa 2 — Matriz de Decisiones](rcos:§4.4) y [Capa 5 — Documentación y Flujo de Información](rcos:§7.3).
   if-it-s-already-happening:
     title: Si ya está ocurriendo
     md: |-
@@ -95,8 +95,8 @@ sections:
   what-this-failure-tends-to-trigger:
     title: Qué tiende a desencadenar este fallo
     md: |-
-      - **[Normalización de la evitación del conflicto](/articles/rcos-stress-tests/conflict-accountability/conflict-avoidance-normalization)** — un grupo externo aprende rápido a no desafiar al grupo interno.
-      - **[Veto informal del fundador](/articles/rcos-stress-tests/governance-power/founder-informal-veto)** — la camarilla suele formarse en torno a, y ejecutar las preferencias de, una autoridad informal.
+      - **[Normalización de la evitación del conflicto](rcos:test/conflict-avoidance-normalization)** — un grupo externo aprende rápido a no desafiar al grupo interno.
+      - **[Veto informal del fundador](rcos:test/founder-informal-veto)** — la camarilla suele formarse en torno a, y ejecutar las preferencias de, una autoridad informal.
   related-stress-tests:
     title: Pruebas de estrés relacionadas
-    md: '- **[Oradores dominantes en los espacios de decisión](/articles/rcos-stress-tests/governance-power/dominant-speakers-decision-spaces)** — la versión dentro de la reunión de la misma deriva de la autoridad fuera de los mecanismos acordados.'
+    md: '- **[Oradores dominantes en los espacios de decisión](rcos:test/dominant-speakers-decision-spaces)** — la versión dentro de la reunión de la misma deriva de la autoridad fuera de los mecanismos acordados.'

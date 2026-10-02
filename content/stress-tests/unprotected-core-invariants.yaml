@@ -92,7 +92,7 @@ sections:
       |---|---|
       | **L0 — Implicit** | Core and everyday rules are equally amendable; the foundation isn't protected. |
       | **L1 — Named** | The group knows some rules should be harder to change but hasn't separated them. |
-      | **L2 — Documented** | An [Invariants Register](/articles/rcos-templates/layer-0/invariants-register) names protected invariants with a high, explicit amendment bar. |
+      | **L2 — Documented** | An [Invariants Register](rcos:template/invariants-register) names protected invariants with a high, explicit amendment bar. |
       | **L3 — Enforced & rehearsed** | Core invariants can't be changed by ordinary process; the protection has held against a real attempt to bypass it. |
 
       Most communities that recognise themselves here sit at **L0 or L1**. The goal isn't perfection — it's moving up one rung.
@@ -101,11 +101,11 @@ sections:
     md: |-
       RCOS separates constitutional change from everyday decisions:
 
-      - **[Invariants Register](/articles/rcos-templates/layer-0/invariants-register)** — name the protected invariants and the high bar required to change them.
-      - **[Change Protocol](/articles/rcos-templates/layer-6/change-protocol)** — define a distinct, harder path for constitutional changes.
-      - **[Governance Protocol](/articles/rcos-templates/layer-2/governance-protocol)** — keep constitutional rules outranking ordinary decisions.
+      - **[Invariants Register](rcos:template/invariants-register)** — name the protected invariants and the high bar required to change them.
+      - **[Change Protocol](rcos:template/change-protocol)** — define a distinct, harder path for constitutional changes.
+      - **[Governance Protocol](rcos:template/governance-protocol)** — keep constitutional rules outranking ordinary decisions.
 
-      See also the spec: [Layer 0 — Invariants](/articles/rcos-core/v0-1/layer-0-identity-scope#23-invariants) and [Layer 6 — Versioning and Authority](/articles/rcos-core/v0-1/layer-6-evolution-adaptation#82-versioning-and-authority).
+      See also the spec: [Layer 0 — Invariants](rcos:§2.3) and [Layer 6 — Versioning and Authority](rcos:§8.2).
   - id: if-it-s-already-happening
     title: If it's already happening
     md: |-
@@ -117,8 +117,8 @@ sections:
   - id: what-this-failure-tends-to-trigger
     title: What this failure tends to trigger
     md: |-
-      - **[Commons Privatization through Land Sales](/articles/rcos-stress-tests/economy-resources/commons-privatization-through-land-sales)** — if commons protection is amendable, it can be voted away under pressure.
-      - **[Founder Informal Veto](/articles/rcos-stress-tests/governance-power/founder-informal-veto)** — unprotected structure lets an informal authority reshape the rules.
+      - **[Commons Privatization through Land Sales](rcos:test/commons-privatization-through-land-sales)** — if commons protection is amendable, it can be voted away under pressure.
+      - **[Founder Informal Veto](rcos:test/founder-informal-veto)** — unprotected structure lets an informal authority reshape the rules.
   - id: related-stress-tests
     title: Related stress tests
-    md: '- **[Emergency Rule Bypass Precedent](/articles/rcos-stress-tests/change-emergencies/emergency-rule-bypass-precedent)** — the other way the constitution erodes: not amended openly, but bypassed under urgency.'
+    md: '- **[Emergency Rule Bypass Precedent](rcos:test/emergency-rule-bypass-precedent)** — the other way the constitution erodes: not amended openly, but bypassed under urgency.'

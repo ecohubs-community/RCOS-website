@@ -1,10 +1,10 @@
 lang: de
-sourceHash: 067f10fa
+sourceHash: f6582746
 title: Konfliktlösungsleiter
 preamble: |-
   - **Schicht:** 4 — Konflikt, Wiedergutmachung & Rechenschaftspflicht
   - **Status:** Vorlage — an deine Gemeinschaft anpassen
-  - **RCOS-Referenz:** [§6.1](/articles/rcos-core/v0-1/layer-4-conflict-repair-accountability#61-conflict-classification), [§6.2](/articles/rcos-core/v0-1/layer-4-conflict-repair-accountability#62-resolution-pathways), [§6.3](/articles/rcos-core/v0-1/layer-4-conflict-repair-accountability#63-safeguards), [§6.5](/articles/rcos-core/v0-1/layer-4-conflict-repair-accountability#65-artifacts)
+  - **RCOS-Referenz:** [§6.1](rcos:§6.1), [§6.2](rcos:§6.2), [§6.3](rcos:§6.3), [§6.5](rcos:§6.5)
 
   ---
 sections:

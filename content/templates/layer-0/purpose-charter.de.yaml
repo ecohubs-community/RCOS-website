@@ -1,10 +1,10 @@
 lang: de
-sourceHash: 35f04330
+sourceHash: f85baff8
 title: Zweckcharta
 preamble: |-
   - **Schicht:** 0 — Identität & Geltungsbereich
   - **Status:** Vorlage — an eure Gemeinschaft anpassen
-  - **RCOS-Referenz:** [§2.1](/articles/rcos-core/v0-1/layer-0-identity-scope#21-purpose-definition), [§2.5](/articles/rcos-core/v0-1/layer-0-identity-scope#25-artifacts)
+  - **RCOS-Referenz:** [§2.1](rcos:§2.1), [§2.5](rcos:§2.5)
 
   ---
 sections:

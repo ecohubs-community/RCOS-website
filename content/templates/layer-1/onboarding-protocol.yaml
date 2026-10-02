@@ -7,7 +7,7 @@ order: 1
 preamble: |-
   - **Layer:** 1 — Membership System
   - **Status:** Template — adapt for your community
-  - **RCOS reference:** [§3.2](/articles/rcos-core/v0-1/layer-1-membership-system#32-entry-and-onboarding), [§3.3](/articles/rcos-core/v0-1/layer-1-membership-system#33-trial-and-evaluation), [§3.8](/articles/rcos-core/v0-1/layer-1-membership-system#38-artifacts)
+  - **RCOS reference:** [§3.2](rcos:§3.2), [§3.3](rcos:§3.3), [§3.8](rcos:§3.8)
 
   ---
 sections:

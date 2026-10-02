@@ -7,7 +7,7 @@ order: 3
 preamble: |-
   - **Layer:** 6 — Evolution & Adaptation
   - **Status:** Template — use to propose a time-bounded experiment
-  - **RCOS reference:** [§8.3](/articles/rcos-core/v0-1/layer-6-evolution-adaptation#83-experiments), [§8.7](/articles/rcos-core/v0-1/layer-6-evolution-adaptation#87-layer-invariants)
+  - **RCOS reference:** [§8.3](rcos:§8.3), [§8.7](rcos:§8.7)
 
   > Experiments let the community try a change without permanently adopting it. To stay safe, every experiment must be time-bounded, labeled, and auto-expiring — and must record its results in the Learning Log.
 

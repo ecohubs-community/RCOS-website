@@ -1,10 +1,10 @@
 lang: es
-sourceHash: b9f3f463
+sourceHash: 72af84fd
 title: Experimentos Irreversibles
 summary: Cuando "probémoslo y ya" no tiene vuelta atrás si fracasa.
 tags:
-  - 'Layer 6: Evolution'
-  - Medium severity
+  - 'Capa 6: Evolución'
+  - Severidad media
 symptoms:
   - Se adoptó un cambio grande como "experimento" pero no tiene reversión definida.
   - '"Probémoslo y veamos" era todo el plan; nadie estableció criterios de éxito ni fecha final.'
@@ -67,7 +67,7 @@ sections:
       |---|---|
       | **L0 — Implícito** | Los "experimentos" se adoptan sin criterios, plazo ni reversión. |
       | **L1 — Nombrado** | El grupo quiere experimentar de forma segura pero no ha definido cómo. |
-      | **L2 — Documentado** | Una [Plantilla de Experimento](/articles/rcos-templates/layer-6/experiment-template) requiere criterios de éxito, un plazo y un plan de reversión. |
+      | **L2 — Documentado** | Una [Plantilla de Experimento](rcos:template/experiment-template) requiere criterios de éxito, un plazo y un plan de reversión. |
       | **L3 — Aplicado y ensayado** | Los experimentos son genuinamente reversibles y tienen plazos; al menos uno se ha ejecutado, revisado y o bien revertido o bien adoptado con base en evidencia. |
 
       La mayoría de las comunidades que se reconocen aquí están en **L0 o L1**. La meta no es la perfección — es subir un peldaño.
@@ -76,11 +76,11 @@ sections:
     md: |-
       RCOS mantiene honesto al "experimento" — y deja los movimientos irreversibles fuera de esa categoría:
 
-      - **[Plantilla de Experimento](/articles/rcos-templates/layer-6/experiment-template)** — exige criterios, un plazo y un plan de reversión antes de probar.
-      - **[Protocolo de Cambio](/articles/rcos-templates/layer-6/change-protocol)** — encamina los cambios irreversibles por el proceso completo, no por el carril de experimento.
-      - **[Registro de Aprendizajes](/articles/rcos-templates/layer-6/learning-log)** — captura lo que se probó y qué pasó, para que el experimento enseñe algo.
+      - **[Plantilla de Experimento](rcos:template/experiment-template)** — exige criterios, un plazo y un plan de reversión antes de probar.
+      - **[Protocolo de Cambio](rcos:template/change-protocol)** — encamina los cambios irreversibles por el proceso completo, no por el carril de experimento.
+      - **[Registro de Aprendizajes](rcos:template/learning-log)** — captura lo que se probó y qué pasó, para que el experimento enseñe algo.
 
-      Consulta también la especificación: [Capa 6 — Experimentos](/articles/rcos-core/v0-1/layer-6-evolution-adaptation#83-experiments) y [Seguridad y Reversibilidad del Cambio](/articles/rcos-core/v0-1/layer-6-evolution-adaptation#85-change-safety-and-reversibility).
+      Consulta también la especificación: [Capa 6 — Experimentos](rcos:§8.3) y [Seguridad y Reversibilidad del Cambio](rcos:§8.5).
   if-it-s-already-happening:
     title: Si ya está pasando
     md: |-
@@ -91,9 +91,9 @@ sections:
       3. **Deja de llamar experimentos a los movimientos irreversibles** — pásalos por el proceso completo de cambio para que reciban el escrutinio que merecen.
   what-this-failure-tends-to-trigger:
     title: Qué tiende a desencadenar este fallo
-    md: '- **[Privatización del Común mediante Ventas de Tierra](/articles/rcos-stress-tests/economy-resources/commons-privatization-through-land-sales)** — vender tierra "como experimento" es el movimiento irreversible más costoso de todos.'
+    md: '- **[Privatización del Común mediante Ventas de Tierra](rcos:test/commons-privatization-through-land-sales)** — vender tierra "como experimento" es el movimiento irreversible más costoso de todos.'
   related-stress-tests:
     title: Pruebas de estrés relacionadas
     md: |-
-      - **[Amnesia Institucional](/articles/rcos-stress-tests/change-emergencies/institutional-amnesia)** — sin aprendizajes capturados, incluso un experimento reversible no enseña nada.
-      - **[Precedente de Saltarse Reglas en Emergencias](/articles/rcos-stress-tests/change-emergencies/emergency-rule-bypass-precedent)** — ambos dejan pasar cambios grandes bajo una etiqueta tranquilizadora.
+      - **[Amnesia Institucional](rcos:test/institutional-amnesia)** — sin aprendizajes capturados, incluso un experimento reversible no enseña nada.
+      - **[Precedente de Saltarse Reglas en Emergencias](rcos:test/emergency-rule-bypass-precedent)** — ambos dejan pasar cambios grandes bajo una etiqueta tranquilizadora.

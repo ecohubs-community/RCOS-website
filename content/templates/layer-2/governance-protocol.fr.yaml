@@ -1,10 +1,10 @@
 lang: fr
-sourceHash: 1f860456
+sourceHash: 05eab494
 title: Protocole de gouvernance
 preamble: |-
   - **Couche :** 2 — Gouvernance et logique décisionnelle
   - **Statut :** Modèle — à adapter pour ta communauté
-  - **Référence RCOS :** [§4.5](/articles/rcos-core/v0-1/layer-2-governance-decision-logic#45-governance-protocol), [§4.6](/articles/rcos-core/v0-1/layer-2-governance-decision-logic#46-safeguards-and-failure-modes), [§4.7](/articles/rcos-core/v0-1/layer-2-governance-decision-logic#47-artifacts)
+  - **Référence RCOS :** [§4.5](rcos:§4.5), [§4.6](rcos:§4.6), [§4.7](rcos:§4.7)
 
   > Définit le cycle de vie complet d'une décision collective — de la soumission de proposition à la documentation et à l'appel.
 

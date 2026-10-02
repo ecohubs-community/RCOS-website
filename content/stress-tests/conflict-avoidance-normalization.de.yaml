@@ -1,10 +1,10 @@
 lang: de
-sourceHash: b4b26ed1
+sourceHash: eca463d0
 title: Normalisierung von Konfliktvermeidung
 summary: Wenn das stille Bewahren des Friedens zu dem wird, was die Gemeinschaft zerbricht.
 tags:
   - 'Schicht 4: Konflikt'
-  - Hohe Schwere
+  - Hoher Schweregrad
 symptoms:
   - Meinungsverschiedenheiten werden in Nebengesprächen ausgetragen, nie in der Gruppe.
   - Ein Problem anzusprechen wird als "Drama machen" behandelt.
@@ -66,7 +66,7 @@ sections:
       |---|---|
       | **L0 — Implizit** | Konflikte werden vermieden und niemand benennt die Vermeidung. „Wir sind einfach eine harmonische Gruppe." |
       | **L1 — Benannt** | Die Gruppe gibt offen zu, dass sie Konflikte vermeidet, hat aber keinen vereinbarten Umgang damit, wenn sie auftauchen. |
-      | **L2 — Dokumentiert** | Ein Konfliktpfad ist schriftlich festgehalten und den Mitgliedern bekannt — z. B. wurde eine [Konfliktlösungsleiter](/articles/rcos-templates/layer-4/conflict-resolution-ladder) eingeführt. |
+      | **L2 — Dokumentiert** | Ein Konfliktpfad ist schriftlich festgehalten und den Mitgliedern bekannt — z. B. wurde eine [Konfliktlösungsleiter](rcos:template/conflict-resolution-ladder) eingeführt. |
       | **L3 — Verbindlich & geübt** | Der Pfad wird tatsächlich genutzt. Ein Problem anzusprechen ist normal, nicht mutig. Er wurde an mindestens einem echten Konflikt erprobt und danach reflektiert. |
 
       Die meisten Gemeinschaften, die sich in diesem Test wiedererkennen, stehen auf **L0 oder L1**. Das Ziel ist nicht Perfektion — sondern eine Stufe nach oben.
@@ -75,11 +75,11 @@ sections:
     md: |-
       RCOS macht Konfliktbearbeitung zu einer *strukturellen Verpflichtung*, nicht zu einem Akt individuellen Mutes. Baue diese auf, **bevor** du sie brauchst — Vorab-Verpflichtung ist der ganze Sinn:
 
-      - **[Konfliktlösungsleiter](/articles/rcos-templates/layer-4/conflict-resolution-ladder)** — ein vorab vereinbarter Eskalationspfad, sodass das Ansprechen eines Problems der erwartete, drama-arme Schritt wird statt einer Konfrontation.
-      - **[Rechenschaftsprotokoll](/articles/rcos-templates/layer-4/accountability-protocol)** — was passiert, wenn nicht nur Lösung, sondern Wiedergutmachung nötig ist.
-      - **[Rollenregister](/articles/rcos-templates/layer-5/role-registry)** — benenne eine Moderationsrolle, sodass jemand ausdrücklich dafür verantwortlich ist, Spannungen sichtbar zu machen, statt dass es davon abhängt, wer sich an diesem Tag gerade mutig fühlt.
+      - **[Konfliktlösungsleiter](rcos:template/conflict-resolution-ladder)** — ein vorab vereinbarter Eskalationspfad, sodass das Ansprechen eines Problems der erwartete, drama-arme Schritt wird statt einer Konfrontation.
+      - **[Rechenschaftsprotokoll](rcos:template/accountability-protocol)** — was passiert, wenn nicht nur Lösung, sondern Wiedergutmachung nötig ist.
+      - **[Rollenregister](rcos:template/role-registry)** — benenne eine Moderationsrolle, sodass jemand ausdrücklich dafür verantwortlich ist, Spannungen sichtbar zu machen, statt dass es davon abhängt, wer sich an diesem Tag gerade mutig fühlt.
 
-      Siehe auch die Spezifikation: [Schicht 4 — Lösungspfade](/articles/rcos-core/v0-1/layer-4-conflict-repair-accountability#62-resolution-pathways).
+      Siehe auch die Spezifikation: [Schicht 4 — Lösungspfade](rcos:§6.2).
   if-it-s-already-happening:
     title: Wenn es schon passiert
     md: |-
@@ -87,16 +87,16 @@ sections:
 
       1. **Benenne einen konkreten Konflikt, nicht die ganze Kultur.** „Wir sind konfliktscheu" ist zu groß, um danach zu handeln. Wähle ein einzelnes echtes, ungelöstes Problem und mache *das* zuerst besprechbar.
       2. **Bring Neutralität ins Spiel.** Nutze eine moderierende Person oder eine dritte Partei, sodass das erste schwierige Gespräch nicht von denen geleitet wird, die mittendrin stecken (Mediation auf Schicht 4).
-      3. **Lass es rückwirkend durch die Leiter laufen.** Geh den benannten Konflikt durch die [Konfliktlösungsleiter](/articles/rcos-templates/layer-4/conflict-resolution-ladder) und **halte das Gelernte fest**, damit sich das Muster nicht still wieder zurücksetzt.
+      3. **Lass es rückwirkend durch die Leiter laufen.** Geh den benannten Konflikt durch die [Konfliktlösungsleiter](rcos:template/conflict-resolution-ladder) und **halte das Gelernte fest**, damit sich das Muster nicht still wieder zurücksetzt.
       4. **Achte auf die Kaskade** (unten) — Vermeidung bleibt selten isoliert.
   what-this-failure-tends-to-trigger:
     title: Was dieser Fehler oft auslöst
     md: |-
       Unbehandelte Vermeidung ist selten isoliert. Sie ist ein vorgelagerter Fehler, der still andere ermöglicht:
 
-      - **[Informelles Veto der Gründer:innen](/articles/rcos-stress-tests/governance-power/founder-informal-veto)** — unausgesprochener Konflikt lässt informelle Autorität verhärten, weil niemand sie offen in Frage stellt.
-      - **[Burnout durch unsichtbare Fürsorgearbeit](/articles/rcos-stress-tests/operations-coordination/invisible-care-labor-burnout)** — wenige Mitglieder absorbieren still die unbearbeitete Spannung und emotionale Arbeit.
-      - **[Charismatisch-spirituelle Autorität](/articles/rcos-stress-tests/culture-influence/charismatic-spiritual-authority)** — unterdrückter Widerspruch konzentriert Einfluss bei denjenigen, die „Harmonie" definieren dürfen.
+      - **[Informelles Veto der Gründer:innen](rcos:test/founder-informal-veto)** — unausgesprochener Konflikt lässt informelle Autorität verhärten, weil niemand sie offen in Frage stellt.
+      - **[Burnout durch unsichtbare Fürsorgearbeit](rcos:test/invisible-care-labor-burnout)** — wenige Mitglieder absorbieren still die unbearbeitete Spannung und emotionale Arbeit.
+      - **[Charismatisch-spirituelle Autorität](rcos:test/charismatic-spiritual-authority)** — unterdrückter Widerspruch konzentriert Einfluss bei denjenigen, die „Harmonie" definieren dürfen.
   related-stress-tests:
     title: Verwandte Stresstests
-    md: '- **[Dominante Sprecher:innen in Entscheidungsräumen](/articles/rcos-stress-tests/governance-power/dominant-speakers-decision-spaces)** — dasselbe Grundproblem (Prozessverletzungen werden als Persönlichkeit behandelt), das sich in Meetings zeigt statt im Konflikt.'
+    md: '- **[Dominante Sprecher:innen in Entscheidungsräumen](rcos:test/dominant-speakers-decision-spaces)** — dasselbe Grundproblem (Prozessverletzungen werden als Persönlichkeit behandelt), das sich in Meetings zeigt statt im Konflikt.'

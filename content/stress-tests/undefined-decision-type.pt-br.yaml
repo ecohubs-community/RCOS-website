@@ -1,10 +1,10 @@
 lang: pt-br
-sourceHash: 248a53cf
+sourceHash: f08845a4
 title: Tipo de Decisão Indefinido
 summary: Quando o grupo discute o que decidir antes de combinar como decidir.
 tags:
-  - 'Layer 2: Governance'
-  - Medium severity
+  - 'Camada 2: Governança'
+  - Severidade média
 symptoms:
   - As discussões empacam porque ninguém combinou se isso é um consenso, uma votação ou uma decisão delegada.
   - A mesma decisão é reaberta porque nunca ficou claro que ela tinha sido realmente decidida.
@@ -69,7 +69,7 @@ sections:
       |---|---|
       | **L0 — Implícito** | O tipo de decisão é improvisado toda vez; o enquadramento decide o resultado. |
       | **L1 — Nomeado** | O grupo percebe a confusão, mas ainda não mapeou os tipos de decisão para mecanismos. |
-      | **L2 — Documentado** | Uma [Matriz de Decisão](/articles/rcos-templates/layer-2/decision-matrix) atribui a cada classe de decisão um tipo, um mecanismo e quem decide — resolvido antes do conteúdo. |
+      | **L2 — Documentado** | Uma [Matriz de Decisão](rcos:template/decision-matrix) atribui a cada classe de decisão um tipo, um mecanismo e quem decide — resolvido antes do conteúdo. |
       | **L3 — Aplicado e ensaiado** | Toda decisão significativa nomeia seu tipo de antemão; as decisões são definitivas e não são silenciosamente reabertas. |
 
       A maioria das comunidades que se reconhece aqui está em **L0 ou L1**. O objetivo não é perfeição — é subir um degrau.
@@ -78,10 +78,10 @@ sections:
     md: |-
       O RCOS força o tipo antes do conteúdo:
 
-      - **[Matriz de Decisão](/articles/rcos-templates/layer-2/decision-matrix)** — mapeie classes de decisão para seu mecanismo e autoridade, de modo que o tipo seja pré-decidido.
-      - **[Protocolo de Governança](/articles/rcos-templates/layer-2/governance-protocol)** — torne "nomear o tipo de decisão primeiro" uma regra permanente de como o grupo funciona.
+      - **[Matriz de Decisão](rcos:template/decision-matrix)** — mapeie classes de decisão para seu mecanismo e autoridade, de modo que o tipo seja pré-decidido.
+      - **[Protocolo de Governança](rcos:template/governance-protocol)** — torne "nomear o tipo de decisão primeiro" uma regra permanente de como o grupo funciona.
 
-      Veja também a especificação: [Camada 2 — Tipos de Decisão](/articles/rcos-core/v0-1/layer-2-governance-decision-logic#41-decision-types) e [Matriz de Decisão](/articles/rcos-core/v0-1/layer-2-governance-decision-logic#44-decision-matrix).
+      Veja também a especificação: [Camada 2 — Tipos de Decisão](rcos:§4.1) e [Matriz de Decisão](rcos:§4.4).
   if-it-s-already-happening:
     title: Se já está acontecendo
     md: |-
@@ -93,8 +93,8 @@ sections:
   what-this-failure-tends-to-trigger:
     title: O que essa falha tende a desencadear
     md: |-
-      - **[Falantes Dominantes em Espaços de Decisão](/articles/rcos-stress-tests/governance-power/dominant-speakers-decision-spaces)** — sem um mecanismo combinado, tempo de fala e enquadramento decidem os resultados.
-      - **[Tomada de Decisão por Panelinha Informal](/articles/rcos-stress-tests/governance-power/informal-clique-decision-making)** — tipo indefinido deixa as decisões derivarem para quem as enquadrou primeiro.
+      - **[Falantes Dominantes em Espaços de Decisão](rcos:test/dominant-speakers-decision-spaces)** — sem um mecanismo combinado, tempo de fala e enquadramento decidem os resultados.
+      - **[Tomada de Decisão por Panelinha Informal](rcos:test/informal-clique-decision-making)** — tipo indefinido deixa as decisões derivarem para quem as enquadrou primeiro.
   related-stress-tests:
     title: Testes de estresse relacionados
-    md: '- **[Falantes Dominantes em Espaços de Decisão](/articles/rcos-stress-tests/governance-power/dominant-speakers-decision-spaces)** — o mesmo mecanismo ausente, expresso como quem-fala-mais em vez de quem-enquadra-primeiro.'
+    md: '- **[Falantes Dominantes em Espaços de Decisão](rcos:test/dominant-speakers-decision-spaces)** — o mesmo mecanismo ausente, expresso como quem-fala-mais em vez de quem-enquadra-primeiro.'

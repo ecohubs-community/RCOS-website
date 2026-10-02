@@ -1,10 +1,10 @@
 lang: es
-sourceHash: 2677784a
+sourceHash: c7abf2ff
 title: Prueba de alcance de violación de norma cultural
 summary: Cuando una norma no escrita se castiga como si fuera una regla escrita.
 tags:
-  - 'Layer 0: Scope'
-  - Medium severity
+  - 'Capa 0: Alcance'
+  - Severidad media
 symptoms:
   - Un miembro rompe una norma fuerte no escrita (p. ej. comer carne en una comunidad identificada como vegana) y la respuesta es emocional e improvisada.
   - No está claro si la norma es una regla vinculante o una preferencia compartida.
@@ -68,7 +68,7 @@ sections:
       |---|---|
       | **L0 — Implícito** | Las normas fuertes se aplican por sentimiento; nadie ha declarado qué se gobierna realmente. |
       | **L1 — Nombrado** | El grupo se da cuenta de que algunas normas no están escritas, pero no ha separado regla de preferencia. |
-      | **L2 — Documentado** | Una [Declaración de Alcance](/articles/rcos-templates/layer-0/scope-declaration) distingue invariantes centrales, condiciones de pertenencia y preferencias fuera de alcance; el debido proceso se aplica solo a reglas gobernadas. |
+      | **L2 — Documentado** | Una [Declaración de Alcance](rcos:template/scope-declaration) distingue invariantes centrales, condiciones de pertenencia y preferencias fuera de alcance; el debido proceso se aplica solo a reglas gobernadas. |
       | **L3 — Aplicado y ensayado** | Las respuestas siguen el alcance declarado; una preferencia no escrita no puede desencadenar castigo; esto ha sido probado en una violación real. |
 
       La mayoría de las comunidades que se reconocen aquí están en **L0 o L1**. La meta no es la perfección — es subir un peldaño.
@@ -77,11 +77,11 @@ sections:
     md: |-
       RCOS hace que la comunidad decida *qué gobierna realmente* antes de aplicar:
 
-      - **[Declaración de Alcance](/articles/rcos-templates/layer-0/scope-declaration)** — clasifica cada norma importante como invariante central, condición de pertenencia o preferencia fuera de alcance.
-      - **[Acuerdo de Pertenencia](/articles/rcos-templates/layer-1/membership-agreement)** — haz explícitas las condiciones conductuales vinculantes al ingreso, para que nadie sea castigado por sorpresa.
-      - **[Registro de Restricciones de Identidad](/articles/rcos-templates/layer-0/identity-constraints-register)** — declara qué gobierna y qué no gobierna la identidad de la comunidad.
+      - **[Declaración de Alcance](rcos:template/scope-declaration)** — clasifica cada norma importante como invariante central, condición de pertenencia o preferencia fuera de alcance.
+      - **[Acuerdo de Pertenencia](rcos:template/membership-agreement)** — haz explícitas las condiciones conductuales vinculantes al ingreso, para que nadie sea castigado por sorpresa.
+      - **[Registro de Restricciones de Identidad](rcos:template/identity-constraints-register)** — declara qué gobierna y qué no gobierna la identidad de la comunidad.
 
-      Ver también la especificación: [Capa 0 — Declaración de Alcance](/articles/rcos-core/v0-1/layer-0-identity-scope#22-scope-declaration) y [Capa 1 — Derechos y Obligaciones](/articles/rcos-core/v0-1/layer-1-membership-system#34-rights-and-obligations).
+      Ver también la especificación: [Capa 0 — Declaración de Alcance](rcos:§2.2) y [Capa 1 — Derechos y Obligaciones](rcos:§3.4).
   if-it-s-already-happening:
     title: Si ya está ocurriendo
     md: |-
@@ -93,7 +93,7 @@ sections:
       4. **Decide hacia adelante.** Si la comunidad quiere que esta norma sea vinculante, escríbela como una condición de pertenencia explícita.
   what-this-failure-tends-to-trigger:
     title: Qué tiende a desencadenar esta falla
-    md: '- **[Normalización de la Evitación de Conflictos](/articles/rcos-stress-tests/conflict-accountability/conflict-avoidance-normalization)** — la aplicación arbitraria y emocional enseña a los miembros a ocultar comportamientos en lugar de sacarlos a la luz.'
+    md: '- **[Normalización de la Evitación de Conflictos](rcos:test/conflict-avoidance-normalization)** — la aplicación arbitraria y emocional enseña a los miembros a ocultar comportamientos en lugar de sacarlos a la luz.'
   related-stress-tests:
     title: Pruebas de estrés relacionadas
-    md: '- **[Autoridad Espiritual Carismática](/articles/rcos-stress-tests/culture-influence/charismatic-spiritual-authority)** — las figuras veneradas suelen ser aquellas cuyas preferencias se aplican como normas no declaradas.'
+    md: '- **[Autoridad Espiritual Carismática](rcos:test/charismatic-spiritual-authority)** — las figuras veneradas suelen ser aquellas cuyas preferencias se aplican como normas no declaradas.'

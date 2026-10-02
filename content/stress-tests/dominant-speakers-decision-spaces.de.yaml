@@ -1,10 +1,10 @@
 lang: de
-sourceHash: aedbeb8a
+sourceHash: 842252b2
 title: Dominante Sprecher in Entscheidungsräumen
 summary: Wenn die lauteste Stimme entscheidet, nicht der vereinbarte Prozess.
 tags:
-  - 'Layer 2: Governance'
-  - High severity
+  - 'Schicht 2: Governance'
+  - Hoher Schweregrad
 symptoms:
   - Dieselben ein oder zwei Stimmen prägen fast jede Entscheidung.
   - Stillere Mitglieder bringen sich in Treffen nicht mehr ein — oder kommen gar nicht mehr.
@@ -70,7 +70,7 @@ sections:
       |---|---|
       | **L0 — Implizit** | Ein paar Stimmen dominieren; es wird als Persönlichkeit gelesen, nicht als Prozess. |
       | **L1 — Benannt** | Die Gruppe erkennt das Ungleichgewicht an, hat aber keine Moderationsrolle oder Regel, um damit umzugehen. |
-      | **L2 — Dokumentiert** | Treffen haben eine definierte [Moderationsrolle](/articles/rcos-templates/layer-5/role-registry) und eine [Entscheidungsmatrix](/articles/rcos-templates/layer-2/decision-matrix); Entscheidungen lassen sich auf einen Mechanismus zurückführen, nicht auf Redezeit. |
+      | **L2 — Dokumentiert** | Treffen haben eine definierte [Moderationsrolle](rcos:template/role-registry) und eine [Entscheidungsmatrix](rcos:template/decision-matrix); Entscheidungen lassen sich auf einen Mechanismus zurückführen, nicht auf Redezeit. |
       | **L3 — Durchgesetzt & eingeübt** | Moderation gleicht aktiv die Beteiligung aus; Dominanz wird als Prozessverletzung benannt und eskaliert, wenn sie anhält. |
 
       Die meisten Gemeinschaften, die sich hier wiedererkennen, sitzen auf **L0 oder L1**. Das Ziel ist nicht Perfektion — es ist, eine Sprosse höher zu kommen.
@@ -79,11 +79,11 @@ sections:
     md: |-
       RCOS leitet Einfluss durch vereinbarte Strukturen statt durch Redezeit:
 
-      - **[Meeting-Vorlagen](/articles/rcos-templates/layer-5/meeting-templates)** — strukturierte Agenden, Redenrunden und Zeitboxen, die Redezeit per Design verteilen.
-      - **[Rollenregister](/articles/rcos-templates/layer-5/role-registry)** — eine Moderationsrolle mit expliziter Befugnis, einzugreifen und auszubalancieren.
-      - **[Entscheidungsmatrix](/articles/rcos-templates/layer-2/decision-matrix)** — Entscheidungen werden über einen vereinbarten Mechanismus aufgelöst, sodass Redezeit für das Ergebnis irrelevant wird.
+      - **[Meeting-Vorlagen](rcos:template/meeting-templates)** — strukturierte Agenden, Redenrunden und Zeitboxen, die Redezeit per Design verteilen.
+      - **[Rollenregister](rcos:template/role-registry)** — eine Moderationsrolle mit expliziter Befugnis, einzugreifen und auszubalancieren.
+      - **[Entscheidungsmatrix](rcos:template/decision-matrix)** — Entscheidungen werden über einen vereinbarten Mechanismus aufgelöst, sodass Redezeit für das Ergebnis irrelevant wird.
 
-      Siehe auch die Spezifikation: [Schicht 5 — Meeting-System](/articles/rcos-core/v0-1/layer-5-operations-coordination#72-meeting-system) und [Schicht 2 — Entscheidungsmatrix](/articles/rcos-core/v0-1/layer-2-governance-decision-logic#44-decision-matrix).
+      Siehe auch die Spezifikation: [Schicht 5 — Meeting-System](rcos:§7.2) und [Schicht 2 — Entscheidungsmatrix](rcos:§4.4).
   if-it-s-already-happening:
     title: Wenn es bereits passiert
     md: |-
@@ -96,8 +96,8 @@ sections:
   what-this-failure-tends-to-trigger:
     title: Was dieses Versagen typischerweise auslöst
     md: |-
-      - **[Informelle Cliquen-Entscheidungen](/articles/rcos-stress-tests/governance-power/informal-clique-decision-making)** — ungebremste Dominanz verhärtet sich zu einer faktischen In-Group, die Dinge entscheidet, bevor der Raum es tut.
-      - **[Normalisierung der Konfliktvermeidung](/articles/rcos-stress-tests/conflict-accountability/conflict-avoidance-normalization)** — Mitglieder, über die wiederholt hinweggeredet wird, sprechen Dinge irgendwann gar nicht mehr an.
+      - **[Informelle Cliquen-Entscheidungen](rcos:test/informal-clique-decision-making)** — ungebremste Dominanz verhärtet sich zu einer faktischen In-Group, die Dinge entscheidet, bevor der Raum es tut.
+      - **[Normalisierung der Konfliktvermeidung](rcos:test/conflict-avoidance-normalization)** — Mitglieder, über die wiederholt hinweggeredet wird, sprechen Dinge irgendwann gar nicht mehr an.
   related-stress-tests:
     title: Verwandte Stresstests
-    md: '- **[Informelles Veto der Gründer:innen](/articles/rcos-stress-tests/governance-power/founder-informal-veto)** — oft ist die dominante Stimme die der Gründer:in, und Dominanz geht in ein ungeschriebenes Veto über.'
+    md: '- **[Informelles Veto der Gründer:innen](rcos:test/founder-informal-veto)** — oft ist die dominante Stimme die der Gründer:in, und Dominanz geht in ein ungeschriebenes Veto über.'

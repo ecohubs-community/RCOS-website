@@ -1,10 +1,10 @@
 lang: fr
-sourceHash: a487b3ce
+sourceHash: a1b9d585
 title: Croissance rapide sans intégration
 summary: Quand la communauté grandit plus vite qu'elle ne peut intégrer qui que ce soit.
 tags:
-  - 'Layer 1: Membership'
-  - High severity
+  - 'Couche 1 : Adhésion'
+  - Sévérité élevée
 symptoms:
   - La communauté grandit plus vite qu'elle ne peut intégrer les gens.
   - Les nouveaux membres obtiennent accès et droits sans processus d'entrée ni période d'essai clairs.
@@ -69,7 +69,7 @@ sections:
       |---|---|
       | **L0 — Implicite** | Les gens deviennent membres simplement en se présentant ; pas de processus d'entrée, pas d'intégration. |
       | **L1 — Nommé** | Le groupe ressent la dilution mais n'a pas construit de pipeline d'entrée / période d'essai. |
-      | **L2 — Documenté** | Un processus défini d'[intégration et de période d'essai](/articles/rcos-templates/layer-1/onboarding-protocol) conditionne l'appartenance ; les états sont suivis dans un [registre](/articles/rcos-templates/layer-1/membership-state-registry). |
+      | **L2 — Documenté** | Un processus défini d'[intégration et de période d'essai](rcos:template/onboarding-protocol) conditionne l'appartenance ; les états sont suivis dans un [registre](rcos:template/membership-state-registry). |
       | **L3 — Appliqué et répété** | Le statut d'appartenance est explicite à tout moment ; chaque nouveau venu passe par l'intégration ; le rythme de croissance est ajusté à la capacité d'intégration. |
 
       La plupart des communautés qui se reconnaissent ici se situent en **L0 ou L1**. L'objectif n'est pas la perfection — c'est de monter d'un échelon.
@@ -78,11 +78,11 @@ sections:
     md: |-
       RCOS fait en sorte que les droits suivent l'intégration, pas l'arrivée :
 
-      - **[Protocole d'intégration](/articles/rcos-templates/layer-1/onboarding-protocol)** — un parcours d'entrée et de période d'essai obligatoire pour que la culture et les connaissances se transmettent réellement.
-      - **[Accord d'adhésion](/articles/rcos-templates/layer-1/membership-agreement)** — rendre explicites les conditions d'appartenance dès l'entrée.
-      - **[Registre des états d'appartenance](/articles/rcos-templates/layer-1/membership-state-registry)** — savoir à tout moment qui est en période d'essai, membre à part entière, ou sorti.
+      - **[Protocole d'intégration](rcos:template/onboarding-protocol)** — un parcours d'entrée et de période d'essai obligatoire pour que la culture et les connaissances se transmettent réellement.
+      - **[Accord d'adhésion](rcos:template/membership-agreement)** — rendre explicites les conditions d'appartenance dès l'entrée.
+      - **[Registre des états d'appartenance](rcos:template/membership-state-registry)** — savoir à tout moment qui est en période d'essai, membre à part entière, ou sorti.
 
-      Voir aussi la spécification : [Couche 1 — Entrée et intégration](/articles/rcos-core/v0-1/layer-1-membership-system#32-entry-and-onboarding) et [États d'appartenance](/articles/rcos-core/v0-1/layer-1-membership-system#31-membership-states).
+      Voir aussi la spécification : [Couche 1 — Entrée et intégration](rcos:§3.2) et [États d'appartenance](rcos:§3.1).
   if-it-s-already-happening:
     title: Si c'est déjà en train d'arriver
     md: |-
@@ -95,8 +95,8 @@ sections:
   what-this-failure-tends-to-trigger:
     title: Ce que cette défaillance tend à déclencher
     md: |-
-      - **[Test de portée des violations de normes culturelles](/articles/rcos-stress-tests/membership-boundaries/cultural-norm-violation-scope-test)** — les nouveaux venus qui n'ont jamais appris les normes entrent en collision avec elles.
-      - **[Pouvoir invisible via les responsabilités](/articles/rcos-stress-tests/operations-coordination/invisible-power-via-responsibilities)** — dans le chaos, quelques personnes maintiennent tout en place de manière informelle.
+      - **[Test de portée des violations de normes culturelles](rcos:test/cultural-norm-violation-scope-test)** — les nouveaux venus qui n'ont jamais appris les normes entrent en collision avec elles.
+      - **[Pouvoir invisible via les responsabilités](rcos:test/invisible-power-via-responsibilities)** — dans le chaos, quelques personnes maintiennent tout en place de manière informelle.
   related-stress-tests:
     title: Tests de résistance liés
-    md: '- **[Auto-suffisance sans contribution collective](/articles/rcos-stress-tests/operations-coordination/self-sufficiency-without-collective-contribution)** — les membres non intégrés n''apprennent jamais que les communs sont aussi à eux d''entretenir.'
+    md: '- **[Auto-suffisance sans contribution collective](rcos:test/self-sufficiency-without-collective-contribution)** — les membres non intégrés n''apprennent jamais que les communs sont aussi à eux d''entretenir.'

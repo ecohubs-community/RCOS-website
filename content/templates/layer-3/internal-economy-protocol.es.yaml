@@ -1,10 +1,10 @@
 lang: es
-sourceHash: 66dfe58c
+sourceHash: 3a557ad2
 title: Protocolo de Economía Interna
 preamble: |-
   - **Capa:** 3 — Sistema Económico y de Recursos
   - **Estado:** Plantilla — adaptar para tu comunidad
-  - **Referencia RCOS:** [§5.1](/articles/rcos-core/v0-1/layer-3-economic-resource-system#51-commons-vs-private-resources), [§5.2](/articles/rcos-core/v0-1/layer-3-economic-resource-system#52-contribution-recognition), [§5.4](/articles/rcos-core/v0-1/layer-3-economic-resource-system#54-accumulation-constraints), [§5.5](/articles/rcos-core/v0-1/layer-3-economic-resource-system#55-artifacts)
+  - **Referencia RCOS:** [§5.1](rcos:§5.1), [§5.2](rcos:§5.2), [§5.4](rcos:§5.4), [§5.5](rcos:§5.5)
 
   ---
 sections:

@@ -1,10 +1,10 @@
 lang: de
-sourceHash: 23fac515
+sourceHash: 982aaa1f
 title: Verknöcherte Governance ohne Weg zur Veränderung
 summary: Wenn nichts sich ändern kann, geschieht Veränderung stattdessen durch Weggehen.
 tags:
-  - 'Layer 6: Evolution'
-  - Medium severity
+  - 'Schicht 6: Evolution'
+  - Mittlerer Schweregrad
 symptoms:
   - Die ursprünglichen Regeln gelten als unveränderlich; es gibt keinen legitimen Prozess, sie zu überarbeiten.
   - '"So haben es die Gründer:innen aufgesetzt" beendet die meisten Reformgespräche.'
@@ -33,7 +33,7 @@ sections:
       - Vorschläge zur Anpassung sterben, weil es keinen Mechanismus gibt, sie zu prüfen.
       - Die Gemeinschaft passt sichtbar nicht mehr zu ihren eigenen aktuellen Bedürfnissen.
 
-      **Das ist _nicht_ dasselbe wie** der bewusste Schutz von Kern-Invarianten (das ist gesund — siehe [Ungeschützte Kern-Invarianten](/articles/rcos-stress-tests/change-emergencies/unprotected-core-invariants) für das *entgegengesetzte* Versagen). Der verräterische Punkt ist, dass *alles* eingefroren ist, ohne einen geregelten Weg, irgendetwas zu ändern — sodass legitime Anpassung unmöglich wird.
+      **Das ist _nicht_ dasselbe wie** der bewusste Schutz von Kern-Invarianten (das ist gesund — siehe [Ungeschützte Kern-Invarianten](rcos:test/unprotected-core-invariants) für das *entgegengesetzte* Versagen). Der verräterische Punkt ist, dass *alles* eingefroren ist, ohne einen geregelten Weg, irgendetwas zu ändern — sodass legitime Anpassung unmöglich wird.
   why-it-happens:
     title: Warum es passiert
     md: |-
@@ -69,7 +69,7 @@ sections:
       |---|---|
       | **L0 — Implizit** | Kein legitimer Weg zur Veränderung; Regeln sind eingefroren und Reform passiert durch Austritt. |
       | **L1 — Benannt** | Die Gruppe gibt zu, dass sie sich nicht anpassen kann, hat aber keinen Veränderungsmechanismus aufgebaut. |
-      | **L2 — Dokumentiert** | Ein [Change-Protokoll](/articles/rcos-templates/layer-6/change-protocol) definiert, wie Regeln vorgeschlagen, geprüft und überarbeitet werden können — möglich, aber geregelt. |
+      | **L2 — Dokumentiert** | Ein [Change-Protokoll](rcos:template/change-protocol) definiert, wie Regeln vorgeschlagen, geprüft und überarbeitet werden können — möglich, aber geregelt. |
       | **L3 — Durchgesetzt & geübt** | Veränderung passiert durch den Prozess; das System hat sich mindestens einmal ohne Krise oder Schisma angepasst. |
 
       Die meisten Gemeinschaften, die sich hier wiedererkennen, sitzen bei **L0 oder L1**. Das Ziel ist nicht Perfektion — es geht darum, eine Stufe weiterzukommen.
@@ -78,10 +78,10 @@ sections:
     md: |-
       RCOS macht Veränderung möglich *und* begrenzt — weder eingefroren noch chaotisch:
 
-      - **[Change-Protokoll](/articles/rcos-templates/layer-6/change-protocol)** — definiert einen geregelten, legitimen Weg, Änderungen vorzuschlagen und anzunehmen.
-      - **[Versionshistorie](/articles/rcos-templates/layer-6/version-history)** — verfolgt, wie sich die Regeln entwickeln, sodass Veränderung sichtbar und begrenzt wird, statt gefürchtet.
+      - **[Change-Protokoll](rcos:template/change-protocol)** — definiert einen geregelten, legitimen Weg, Änderungen vorzuschlagen und anzunehmen.
+      - **[Versionshistorie](rcos:template/version-history)** — verfolgt, wie sich die Regeln entwickeln, sodass Veränderung sichtbar und begrenzt wird, statt gefürchtet.
 
-      Siehe auch die Spezifikation: [Schicht 6 — Veränderungsmechanismen](/articles/rcos-core/v0-1/layer-6-evolution-adaptation#81-change-mechanisms) und [Versionierung und Autorität](/articles/rcos-core/v0-1/layer-6-evolution-adaptation#82-versioning-and-authority).
+      Siehe auch die Spezifikation: [Schicht 6 — Veränderungsmechanismen](rcos:§8.1) und [Versionierung und Autorität](rcos:§8.2).
   if-it-s-already-happening:
     title: Wenn es schon passiert
     md: |-
@@ -93,8 +93,8 @@ sections:
   what-this-failure-tends-to-trigger:
     title: Was dieses Versagen typischerweise auslöst
     md: |-
-      - **[Normalisierung von Konfliktvermeidung](/articles/rcos-stress-tests/conflict-accountability/conflict-avoidance-normalization)** — ohne legitimen Weg zur Veränderung geht Frustration in den Untergrund.
-      - **[Präzedenzfall Notfall-Regelumgehung](/articles/rcos-stress-tests/change-emergencies/emergency-rule-bypass-precedent)** — wenn normale Veränderung unmöglich ist, warten Menschen auf eine Krise, um sie zu erzwingen.
+      - **[Normalisierung von Konfliktvermeidung](rcos:test/conflict-avoidance-normalization)** — ohne legitimen Weg zur Veränderung geht Frustration in den Untergrund.
+      - **[Präzedenzfall Notfall-Regelumgehung](rcos:test/emergency-rule-bypass-precedent)** — wenn normale Veränderung unmöglich ist, warten Menschen auf eine Krise, um sie zu erzwingen.
   related-stress-tests:
     title: Verwandte Stresstests
-    md: '- **[Ungeschützte Kern-Invarianten](/articles/rcos-stress-tests/change-emergencies/unprotected-core-invariants)** — das entgegengesetzte Ungleichgewicht: Hier kann sich nichts ändern; dort kann sich alles ändern, auch das Fundament.'
+    md: '- **[Ungeschützte Kern-Invarianten](rcos:test/unprotected-core-invariants)** — das entgegengesetzte Ungleichgewicht: Hier kann sich nichts ändern; dort kann sich alles ändern, auch das Fundament.'

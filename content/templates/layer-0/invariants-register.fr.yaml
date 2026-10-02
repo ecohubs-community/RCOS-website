@@ -1,10 +1,10 @@
 lang: fr
-sourceHash: f187885c
+sourceHash: c83291b8
 title: Registre des invariants
 preamble: |-
   - **Couche :** 0 — Identité et périmètre
   - **Statut :** Modèle — à adapter pour ta communauté
-  - **Référence RCOS :** [§2.3](/articles/rcos-core/v0-1/layer-0-identity-scope#23-invariants), [§2.5](/articles/rcos-core/v0-1/layer-0-identity-scope#25-artifacts)
+  - **Référence RCOS :** [§2.3](rcos:§2.3), [§2.5](rcos:§2.5)
 
   > Les invariants sont des contraintes qui NE DOIVENT PAS être violées tant qu'ils sont en vigueur. Aucune décision, aucun rôle, processus ou mesure d'urgence ne PEUT outrepasser un invariant. En cas de conflit entre un invariant et toute autre règle, l'invariant prévaut.
 

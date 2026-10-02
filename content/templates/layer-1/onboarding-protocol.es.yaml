@@ -1,10 +1,10 @@
 lang: es
-sourceHash: '43533949'
+sourceHash: 1da32db3
 title: Protocolo de Incorporación
 preamble: |-
   - **Capa:** 1 — Sistema de Membresía
   - **Estado:** Plantilla — adaptar para tu comunidad
-  - **Referencia RCOS:** [§3.2](/articles/rcos-core/v0-1/layer-1-membership-system#32-entry-and-onboarding), [§3.3](/articles/rcos-core/v0-1/layer-1-membership-system#33-trial-and-evaluation), [§3.8](/articles/rcos-core/v0-1/layer-1-membership-system#38-artifacts)
+  - **Referencia RCOS:** [§3.2](rcos:§3.2), [§3.3](rcos:§3.3), [§3.8](rcos:§3.8)
 
   ---
 sections:

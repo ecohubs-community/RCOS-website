@@ -1,10 +1,10 @@
 lang: fr
-sourceHash: 1b1c0db9
+sourceHash: 154fced2
 title: Matrice de décision
 preamble: |-
   - **Couche :** 2 — Gouvernance et logique de décision
   - **Statut :** Modèle — à adapter pour ta communauté
-  - **Référence RCOS :** [§4.2](/articles/rcos-core/v0-1/layer-2-governance-decision-logic#42-decision-mechanisms), [§4.4](/articles/rcos-core/v0-1/layer-2-governance-decision-logic#44-decision-matrix), [§4.7](/articles/rcos-core/v0-1/layer-2-governance-decision-logic#47-artifacts)
+  - **Référence RCOS :** [§4.2](rcos:§4.2), [§4.4](rcos:§4.4), [§4.7](rcos:§4.7)
 
   > Associe chaque type et domaine de décision à un rôle ou organe autorisé, un mécanisme, un seuil et un chemin d'escalade. Toute décision prise en dehors de cette matrice est considérée comme invalide.
 

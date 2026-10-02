@@ -1,10 +1,10 @@
 lang: es
-sourceHash: dc14fb69
+sourceHash: e8e18914
 title: Registro de Roles
 preamble: |-
   - **Capa:** 5 — Operaciones y Coordinación
   - **Estado:** Plantilla — adapta para tu comunidad
-  - **Referencia RCOS:** [§7.1](/articles/rcos-core/v0-1/layer-5-operations-coordination#71-roles-and-responsibilities), [§7.6](/articles/rcos-core/v0-1/layer-5-operations-coordination#76-artifacts)
+  - **Referencia RCOS:** [§7.1](rcos:§7.1), [§7.6](rcos:§7.6)
 
   ---
 sections:

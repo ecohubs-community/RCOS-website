@@ -1,10 +1,10 @@
 lang: es
-sourceHash: 66c7d7c7
+sourceHash: 6e7bc1d4
 title: Registro de Aprendizajes
 preamble: |-
   - **Capa:** 6 — Evolución y Adaptación
   - **Estado:** Plantilla — adapta para tu comunidad; se actualiza cuando ocurren eventos de aprendizaje
-  - **Referencia RCOS:** [§8.4](/articles/rcos-core/v0-1/layer-6-evolution-adaptation#84-learning-and-feedback-capture), [§8.6](/articles/rcos-core/v0-1/layer-6-evolution-adaptation#86-artifacts)
+  - **Referencia RCOS:** [§8.4](rcos:§8.4), [§8.6](rcos:§8.6)
 
   > Registra fallos importantes, adaptaciones, reversiones y aprendizajes sistémicos. Los patrones de fallo recurrentes DEBEN activar una revisión estructural, no culpa individual. Las entradas se añaden al inicio (las más recientes primero).
 

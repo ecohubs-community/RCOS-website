@@ -92,7 +92,7 @@ sections:
       |---|---|
       | **L0 — Implicit** | Removal is possible but undefined; it happens by pressure or a sudden vote. |
       | **L1 — Named** | The group knows it has no expulsion process but hasn't built one. |
-      | **L2 — Documented** | A forced-exit process exists — grounds, notice, a hearing, and appeal — in an [Exit Protocol](/articles/rcos-templates/layer-1/exit-protocol). |
+      | **L2 — Documented** | A forced-exit process exists — grounds, notice, a hearing, and appeal — in an [Exit Protocol](rcos:template/exit-protocol). |
       | **L3 — Enforced & rehearsed** | Any removal follows due process; it has been applied fairly at least once, including a real chance to respond. |
 
       Most communities that recognise themselves here sit at **L0 or L1**. The goal isn't perfection — it's moving up one rung.
@@ -101,11 +101,11 @@ sections:
     md: |-
       RCOS requires the hardest membership decision to be the most procedural:
 
-      - **[Exit Protocol](/articles/rcos-templates/layer-1/exit-protocol)** — define grounds, notice, a hearing, and appeal for forced exit *before* you need it.
-      - **[Accountability Protocol](/articles/rcos-templates/layer-4/accountability-protocol)** — a repair-first path so removal is the last resort, not the first reflex.
-      - **[Membership State Registry](/articles/rcos-templates/layer-1/membership-state-registry)** — make suspension or removal an explicit, logged change of state, not a mood.
+      - **[Exit Protocol](rcos:template/exit-protocol)** — define grounds, notice, a hearing, and appeal for forced exit *before* you need it.
+      - **[Accountability Protocol](rcos:template/accountability-protocol)** — a repair-first path so removal is the last resort, not the first reflex.
+      - **[Membership State Registry](rcos:template/membership-state-registry)** — make suspension or removal an explicit, logged change of state, not a mood.
 
-      See also the spec: [Layer 1 — Exit and Separation](/articles/rcos-core/v0-1/layer-1-membership-system#36-exit-and-separation) and [Layer 4 — Sanctions, Repair and Separation](/articles/rcos-core/v0-1/layer-4-conflict-repair-accountability#64-sanctions-repair-and-separation).
+      See also the spec: [Layer 1 — Exit and Separation](rcos:§3.6) and [Layer 4 — Sanctions, Repair and Separation](rcos:§6.4).
   - id: if-it-s-already-happening
     title: If it's already happening
     md: |-
@@ -117,9 +117,9 @@ sections:
       4. **Watch the cascade** — arbitrary expulsion teaches the whole community to self-censor.
   - id: what-this-failure-tends-to-trigger
     title: What this failure tends to trigger
-    md: '- **[Conflict Avoidance Normalization](/articles/rcos-stress-tests/conflict-accountability/conflict-avoidance-normalization)** — if speaking up can get you removed, people stop speaking up.'
+    md: '- **[Conflict Avoidance Normalization](rcos:test/conflict-avoidance-normalization)** — if speaking up can get you removed, people stop speaking up.'
   - id: related-stress-tests
     title: Related stress tests
     md: |-
-      - **[Punishment Before Repair](/articles/rcos-stress-tests/conflict-accountability/punishment-before-repair)** — the punitive reflex that turns accountability into expulsion in the first place.
-      - **[Cultural Norm Violation Scope Test](/articles/rcos-stress-tests/membership-boundaries/cultural-norm-violation-scope-test)** — an undeclared-norm breach is often what triggers the rush to expel.
+      - **[Punishment Before Repair](rcos:test/punishment-before-repair)** — the punitive reflex that turns accountability into expulsion in the first place.
+      - **[Cultural Norm Violation Scope Test](rcos:test/cultural-norm-violation-scope-test)** — an undeclared-norm breach is often what triggers the rush to expel.

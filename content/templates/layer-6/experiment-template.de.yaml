@@ -1,10 +1,10 @@
 lang: de
-sourceHash: 5c145cd4
+sourceHash: 40c2675e
 title: Experiment-Vorlage
 preamble: |-
   - **Schicht:** 6 — Evolution & Anpassung
   - **Status:** Vorlage — verwende sie, um ein zeitlich begrenztes Experiment vorzuschlagen
-  - **RCOS-Referenz:** [§8.3](/articles/rcos-core/v0-1/layer-6-evolution-adaptation#83-experiments), [§8.7](/articles/rcos-core/v0-1/layer-6-evolution-adaptation#87-layer-invariants)
+  - **RCOS-Referenz:** [§8.3](rcos:§8.3), [§8.7](rcos:§8.7)
 
   > Experimente erlauben es der Gemeinschaft, eine Änderung auszuprobieren, ohne sie dauerhaft zu übernehmen. Damit das sicher bleibt, muss jedes Experiment zeitlich begrenzt, gekennzeichnet und automatisch ablaufend sein — und seine Ergebnisse im Lernprotokoll festhalten.
 

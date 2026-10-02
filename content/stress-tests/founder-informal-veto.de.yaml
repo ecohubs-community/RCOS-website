@@ -1,10 +1,10 @@
 lang: de
-sourceHash: 81e4810e
+sourceHash: d8d8e3e5
 title: Informelles Veto der Gründerin
 summary: Wenn das leise Nein der Gründerin immer noch entscheidet, obwohl ihr nichts auf dem Papier dieses Recht gibt.
 tags:
-  - 'Layer 2: Governance'
-  - High severity
+  - 'Schicht 2: Governance'
+  - Hoher Schweregrad
 symptoms:
   - Entscheidungen werden formal von der Gruppe getroffen, aber nichts geht voran, wenn die Gründerin nicht zustimmt.
   - Menschen klären Ideen vorab mit der Gründerin ab, bevor sie diese formal einbringen.
@@ -71,7 +71,7 @@ sections:
       |---|---|
       | **L0 — Implizit** | Das informelle Veto der Gründerin ist real und unausgesprochen; der Prozess ist Theater drumherum. |
       | **L1 — Benannt** | Die Gruppe gibt zu, dass die Gründerin überproportionale Macht hat, hat sie aber nicht begrenzt. |
-      | **L2 — Dokumentiert** | Die Autorität der Gründerin ist in einem [Autoritätsregister](/articles/rcos-templates/layer-2/authority-registry) und einer [Entscheidungsmatrix](/articles/rcos-templates/layer-2/decision-matrix) festgehalten — expliziter Geltungsbereich, explizite Grenzen. |
+      | **L2 — Dokumentiert** | Die Autorität der Gründerin ist in einem [Autoritätsregister](rcos:template/authority-registry) und einer [Entscheidungsmatrix](rcos:template/decision-matrix) festgehalten — expliziter Geltungsbereich, explizite Grenzen. |
       | **L3 — Durchgesetzt & geprobt** | Entscheidungen folgen der Matrix; die Rolle der Gründerin ist begrenzt und überprüfbar und hat sich auch gegen eine Entscheidung gehalten, der sie nicht zustimmte. |
 
       Die meisten Gemeinschaften, die sich hier wiedererkennen, stehen auf **L0 oder L1**. Das Ziel ist nicht Perfektion — sondern eine Stufe weiter zu kommen.
@@ -80,11 +80,11 @@ sections:
     md: |-
       RCOS macht jede Autorität explizit, auch die der Gründerin:
 
-      - **[Autoritätsregister](/articles/rcos-templates/layer-2/authority-registry)** — schreibt genau auf, welche Autorität jede Rolle (einschließlich der Gründerin) hat und welche nicht.
-      - **[Entscheidungsmatrix](/articles/rcos-templates/layer-2/decision-matrix)** — bindet Entscheidungen an einen vereinbarten Mechanismus, sodass niemand sie informell außer Kraft setzt.
-      - **[Governance-Protokoll](/articles/rcos-templates/layer-2/governance-protocol)** — legt fest, dass Verfassungsregeln über jeder Einzelperson stehen.
+      - **[Autoritätsregister](rcos:template/authority-registry)** — schreibt genau auf, welche Autorität jede Rolle (einschließlich der Gründerin) hat und welche nicht.
+      - **[Entscheidungsmatrix](rcos:template/decision-matrix)** — bindet Entscheidungen an einen vereinbarten Mechanismus, sodass niemand sie informell außer Kraft setzt.
+      - **[Governance-Protokoll](rcos:template/governance-protocol)** — legt fest, dass Verfassungsregeln über jeder Einzelperson stehen.
 
-      Siehe auch die Spezifikation: [Schicht 2 — Autoritätsgrenzen](/articles/rcos-core/v0-1/layer-2-governance-decision-logic#43-authority-boundaries).
+      Siehe auch die Spezifikation: [Schicht 2 — Autoritätsgrenzen](rcos:§4.3).
   if-it-s-already-happening:
     title: Wenn es bereits passiert
     md: |-
@@ -97,9 +97,9 @@ sections:
   what-this-failure-tends-to-trigger:
     title: Was dieses Versagen typischerweise auslöst
     md: |-
-      - **[Charismatische spirituelle Autorität](/articles/rcos-stress-tests/culture-influence/charismatic-spiritual-authority)** — unbegrenzter Einfluss der Gründerin verschwimmt mit Charisma, das an die Stelle von Governance tritt.
-      - **[Präzedenzfall Regelumgehung im Notfall](/articles/rcos-stress-tests/change-emergencies/emergency-rule-bypass-precedent)** — eine informelle Autorität ist genau diejenige, die in einer Krise „vorübergehend" die Regeln umgeht.
-      - **[Entscheidungsfindung durch informelle Clique](/articles/rcos-stress-tests/governance-power/informal-clique-decision-making)** — der innere Kreis der Gründerin wird zum eigentlichen Entscheidungsgremium.
+      - **[Charismatische spirituelle Autorität](rcos:test/charismatic-spiritual-authority)** — unbegrenzter Einfluss der Gründerin verschwimmt mit Charisma, das an die Stelle von Governance tritt.
+      - **[Präzedenzfall Regelumgehung im Notfall](rcos:test/emergency-rule-bypass-precedent)** — eine informelle Autorität ist genau diejenige, die in einer Krise „vorübergehend" die Regeln umgeht.
+      - **[Entscheidungsfindung durch informelle Clique](rcos:test/informal-clique-decision-making)** — der innere Kreis der Gründerin wird zum eigentlichen Entscheidungsgremium.
   related-stress-tests:
     title: Verwandte Stresstests
-    md: '- **[Dominante Stimmen in Entscheidungsräumen](/articles/rcos-stress-tests/governance-power/dominant-speakers-decision-spaces)** — derselbe ungeschriebene Einfluss, ausgedrückt durch Redezeit in Meetings.'
+    md: '- **[Dominante Stimmen in Entscheidungsräumen](rcos:test/dominant-speakers-decision-spaces)** — derselbe ungeschriebene Einfluss, ausgedrückt durch Redezeit in Meetings.'

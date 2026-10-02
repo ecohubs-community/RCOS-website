@@ -1,10 +1,10 @@
 lang: pt-br
-sourceHash: 68af1e15
+sourceHash: 9b7a2f68
 title: Registro de Estados de Associação
 preamble: |-
   - **Camada:** 1 — Sistema de Associação
   - **Status:** Modelo — adapte para sua comunidade
-  - **Referência RCOS:** [§3.1](/articles/rcos-core/v0-1/layer-1-membership-system#31-membership-states)
+  - **Referência RCOS:** [§3.1](rcos:§3.1)
 
   ---
 sections:

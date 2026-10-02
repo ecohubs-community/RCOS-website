@@ -7,7 +7,7 @@ order: 1
 preamble: |-
   - **Layer:** 4 — Conflict, Repair & Accountability
   - **Status:** Template — adapt for your community
-  - **RCOS reference:** [§6.4](/articles/rcos-core/v0-1/layer-4-conflict-repair-accountability#64-sanctions-repair-and-separation), [§6.5](/articles/rcos-core/v0-1/layer-4-conflict-repair-accountability#65-artifacts)
+  - **RCOS reference:** [§6.4](rcos:§6.4), [§6.5](rcos:§6.5)
 
   ---
 sections:

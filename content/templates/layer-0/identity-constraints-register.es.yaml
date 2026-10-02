@@ -1,10 +1,10 @@
 lang: es
-sourceHash: 31e038ff
+sourceHash: eef36555
 title: Registro de Restricciones de Identidad
 preamble: |-
   - **Capa:** 0 — Identidad y Alcance
   - **Estado:** Plantilla — adaptar para tu comunidad
-  - **Referencia RCOS:** [§2.4](/articles/rcos-core/v0-1/layer-0-identity-scope#24-identity-constraints), [§2.5](/articles/rcos-core/v0-1/layer-0-identity-scope#25-artifacts)
+  - **Referencia RCOS:** [§2.4](rcos:§2.4), [§2.5](rcos:§2.5)
 
   > Las restricciones de identidad son los límites conductuales, éticos y estructurales no negociables que definen quién es la comunidad. A diferencia de los invariantes (que protegen el sistema en sí), las restricciones de identidad definen cómo los miembros y la comunidad se relacionan con las personas, los ecosistemas y las ideologías.
 

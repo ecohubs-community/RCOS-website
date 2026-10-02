@@ -7,7 +7,7 @@ order: 0
 preamble: |-
   - **Layer:** 4 — Conflict, Repair & Accountability
   - **Status:** Template — adapt for your community
-  - **RCOS reference:** [§6.1](/articles/rcos-core/v0-1/layer-4-conflict-repair-accountability#61-conflict-classification), [§6.2](/articles/rcos-core/v0-1/layer-4-conflict-repair-accountability#62-resolution-pathways), [§6.3](/articles/rcos-core/v0-1/layer-4-conflict-repair-accountability#63-safeguards), [§6.5](/articles/rcos-core/v0-1/layer-4-conflict-repair-accountability#65-artifacts)
+  - **RCOS reference:** [§6.1](rcos:§6.1), [§6.2](rcos:§6.2), [§6.3](rcos:§6.3), [§6.5](rcos:§6.5)
 
   ---
 sections:

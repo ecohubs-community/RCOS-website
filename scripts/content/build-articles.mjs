@@ -18,8 +18,8 @@ import { readFile, writeFile, mkdir, readdir, rm, cp } from 'node:fs/promises';
 import { existsSync } from 'node:fs';
 import path from 'node:path';
 import yaml from 'js-yaml';
-import { headingSlug } from '../../src/lib/content/markdown.js';
 import { toArticle } from '../../src/lib/content/article.js';
+import { refTargets } from '../../src/lib/content/refs.js';
 
 const ROOT = path.resolve(import.meta.dirname, '../..');
 const CONTENT = path.join(ROOT, 'content');
@@ -56,10 +56,11 @@ const rel = (p) => path.relative(ROOT, p);
 
 /**
  * Load every English document with its overlays.
+ * @param {string} [contentDir] the content folder (tests pass a copy)
  * @returns {Promise<LoadedDoc[]>}
  */
-export async function loadDocuments() {
-	const files = (await Promise.all(YAML_DIRS.map((d) => walk(path.join(CONTENT, d)))))
+export async function loadDocuments(contentDir = CONTENT) {
+	const files = (await Promise.all(YAML_DIRS.map((d) => walk(path.join(contentDir, d)))))
 		.flat()
 		.filter((f) => f.endsWith('.yaml'));
 	/** @type {LoadedDoc[]} */
@@ -87,35 +88,10 @@ export async function loadDocuments() {
 	return docs;
 }
 
-/**
- * Clause ref → link path, from the standard's chapters (for template clause lines).
- * @param {LoadedDoc[]} docs
- * @returns {(ref: string) => string}
- */
-export function clauseLinks(docs) {
-	const hrefs = new Map();
-	for (const { en } of docs) {
-		if (en.kind !== 'chapter' || !/^rcos-core\/v0-1\/0[2-8]-/.test(en.legacyPath)) continue;
-		const slug = path.basename(en.legacyPath).replace(/^\d\d-/, '');
-		for (const s of en.sections ?? [])
-			for (const b of s.blocks)
-				if (b.kind === 'clause')
-					hrefs.set(
-						b.ref,
-						`/articles/rcos-core/v0-1/${slug}#${headingSlug(`${s.ref} ${s.title}`)}`
-					);
-	}
-	return (ref) => {
-		const href = hrefs.get(ref);
-		if (!href) throw new Error(`Unknown clause ${ref}`);
-		return href;
-	};
-}
-
 /** @param {{ quiet?: boolean }} [options] */
 export async function buildArticles({ quiet = false } = {}) {
 	const docs = await loadDocuments();
-	const href = clauseLinks(docs);
+	const targets = refTargets(docs);
 	await rm(OUT_ARTICLES, { recursive: true, force: true });
 	await mkdir(OUT_ARTICLES, { recursive: true });
 
@@ -140,11 +116,14 @@ export async function buildArticles({ quiet = false } = {}) {
 	};
 
 	for (const { file, en, overlays } of docs) {
-		await write(en.legacyPath, 'en', toArticle(en, undefined, 'en', href), [rel(file)]);
+		await write(en.legacyPath, 'en', toArticle(en, undefined, 'en', targets), [rel(file)]);
 		for (const [locale, { file: f, data }] of Object.entries(overlays)) {
 			// lang and sourceHash describe the translation file, not the article text.
 			const { lang: _lang, sourceHash: _hash, ...overlay } = data;
-			await write(en.legacyPath, locale, toArticle(en, overlay, locale, href), [rel(f), rel(file)]);
+			await write(en.legacyPath, locale, toArticle(en, overlay, locale, targets), [
+				rel(f),
+				rel(file)
+			]);
 		}
 	}
 	await writeFile(path.join(OUT, 'sources.json'), JSON.stringify(sources, null, '\t'));

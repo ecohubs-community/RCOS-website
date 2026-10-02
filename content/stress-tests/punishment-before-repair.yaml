@@ -90,7 +90,7 @@ sections:
       |---|---|
       | **L0 — Implicit** | Harm is met with punishment or exclusion; no repair path exists. |
       | **L1 — Named** | The group wants to be restorative but hasn't built a repair-first process. |
-      | **L2 — Documented** | An [Accountability Protocol](/articles/rcos-templates/layer-4/accountability-protocol) makes repair the first step; sanctions follow only if repair fails or is refused. |
+      | **L2 — Documented** | An [Accountability Protocol](rcos:template/accountability-protocol) makes repair the first step; sanctions follow only if repair fails or is refused. |
       | **L3 — Enforced & rehearsed** | Repair is genuinely attempted first; sanctions are a bounded last resort; a real harm has been repaired without an exit. |
 
       Most communities that recognise themselves here sit at **L0 or L1**. The goal isn't perfection — it's moving up one rung.
@@ -99,10 +99,10 @@ sections:
     md: |-
       RCOS makes repair the structural default, with punishment as a bounded fallback:
 
-      - **[Accountability Protocol](/articles/rcos-templates/layer-4/accountability-protocol)** — make repair the first, expected step, with sanctions as a defined last resort.
-      - **[Conflict Resolution Ladder](/articles/rcos-templates/layer-4/conflict-resolution-ladder)** — escalation that starts at the lowest, most restorative rung and climbs only as needed.
+      - **[Accountability Protocol](rcos:template/accountability-protocol)** — make repair the first, expected step, with sanctions as a defined last resort.
+      - **[Conflict Resolution Ladder](rcos:template/conflict-resolution-ladder)** — escalation that starts at the lowest, most restorative rung and climbs only as needed.
 
-      See also the spec: [Layer 4 — Sanctions, Repair and Separation](/articles/rcos-core/v0-1/layer-4-conflict-repair-accountability#64-sanctions-repair-and-separation) and [Resolution Pathways](/articles/rcos-core/v0-1/layer-4-conflict-repair-accountability#62-resolution-pathways).
+      See also the spec: [Layer 4 — Sanctions, Repair and Separation](rcos:§6.4) and [Resolution Pathways](rcos:§6.2).
   - id: if-it-s-already-happening
     title: If it's already happening
     md: |-
@@ -114,8 +114,8 @@ sections:
   - id: what-this-failure-tends-to-trigger
     title: What this failure tends to trigger
     md: |-
-      - **[Expulsion Without Due Process](/articles/rcos-stress-tests/membership-boundaries/expulsion-without-due-process)** — a punitive default turns accountability into expulsion.
-      - **[Conflict Avoidance Normalization](/articles/rcos-stress-tests/conflict-accountability/conflict-avoidance-normalization)** — if owning a mistake gets you punished, people stop surfacing anything.
+      - **[Expulsion Without Due Process](rcos:test/expulsion-without-due-process)** — a punitive default turns accountability into expulsion.
+      - **[Conflict Avoidance Normalization](rcos:test/conflict-avoidance-normalization)** — if owning a mistake gets you punished, people stop surfacing anything.
   - id: related-stress-tests
     title: Related stress tests
-    md: '- **[Cultural Norm Violation Scope Test](/articles/rcos-stress-tests/membership-boundaries/cultural-norm-violation-scope-test)** — punitive reflexes are strongest when an emotionally charged norm is broken.'
+    md: '- **[Cultural Norm Violation Scope Test](rcos:test/cultural-norm-violation-scope-test)** — punitive reflexes are strongest when an emotionally charged norm is broken.'

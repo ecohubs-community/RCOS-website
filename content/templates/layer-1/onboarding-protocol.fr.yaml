@@ -1,10 +1,10 @@
 lang: fr
-sourceHash: '43533949'
+sourceHash: 1da32db3
 title: Protocole d'intégration
 preamble: |-
   - **Couche :** 1 — Système d'adhésion
   - **Statut :** Modèle — à adapter pour ta communauté
-  - **Référence RCOS :** [§3.2](/articles/rcos-core/v0-1/layer-1-membership-system#32-entry-and-onboarding), [§3.3](/articles/rcos-core/v0-1/layer-1-membership-system#33-trial-and-evaluation), [§3.8](/articles/rcos-core/v0-1/layer-1-membership-system#38-artifacts)
+  - **Référence RCOS :** [§3.2](rcos:§3.2), [§3.3](rcos:§3.3), [§3.8](rcos:§3.8)
 
   ---
 sections:

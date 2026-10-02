@@ -1,5 +1,5 @@
 lang: es
-sourceHash: ee8ed8cf
+sourceHash: 98997d62
 title: Autosuficiencia sin contribución colectiva
 summary: Cuando todos disfrutan de los bienes comunes pero casi nadie los mantiene.
 tags:
@@ -70,7 +70,7 @@ sections:
       |---|---|
       | **L0 — Implícito** | Se asume que la contribución "ocurrirá de forma natural". Nadie declara lo que se espera, y unas pocas personas calladas cargan con el resto. |
       | **L1 — Nombrado** | El grupo admite abiertamente que el compromiso es desigual y habla de ello, pero las expectativas siguen siendo informales y sin aplicación. |
-      | **L2 — Documentado** | Las expectativas de contribución están escritas en el [Acuerdo de Membresía](/articles/rcos-templates/layer-1/membership-agreement), y el trabajo colectivo recurrente existe como roles con nombre. Las personas miembras saben a qué se han comprometido. |
+      | **L2 — Documentado** | Las expectativas de contribución están escritas en el [Acuerdo de Membresía](rcos:template/membership-agreement), y el trabajo colectivo recurrente existe como roles con nombre. Las personas miembras saben a qué se han comprometido. |
       | **L3 — Aplicado y ensayado** | La contribución se sigue y se reconoce; la carga se comparte y se reequilibra visiblemente a lo largo del tiempo; la falta de contribución persistente activa una revisión definida en lugar de un resentimiento silencioso. |
 
       La mayoría de las comunidades que se reconocen en esta prueba están en **L0 o L1**. El objetivo no es la perfección — es subir un peldaño.
@@ -79,27 +79,27 @@ sections:
     md: |-
       El RCOS sustituye el "esperamos que la gente arrime el hombro" por un compromiso explícito y simétrico. Construye estas piezas **antes** de que el desentendimiento se convierta en norma:
 
-      - **[Acuerdo de Membresía](/articles/rcos-templates/layer-1/membership-agreement)** — vincula expectativas concretas de contribución a los derechos de membresía, para que disfrutar de los bienes comunes y mantenerlos formen parte del mismo trato (Invariante 1.3, [derechos y obligaciones](/articles/rcos-core/v0-1/layer-1-membership-system#34-rights-and-obligations)).
-      - **[Registro de Roles](/articles/rcos-templates/layer-5/role-registry)** — convierte el trabajo colectivo recurrente en roles con nombre y dueña, en lugar de dejarlo en manos de quien se dé cuenta.
-      - **[Protocolo de Economía Interna](/articles/rcos-templates/layer-3/internal-economy-protocol)** — define qué cuenta como contribución y reconócelo (créditos, reputación), para que la participación sea visible y valorada ([reconocimiento de la contribución](/articles/rcos-core/v0-1/layer-3-economic-resource-system#52-contribution-recognition)).
-      - **[Protocolo de Acogida](/articles/rcos-templates/layer-1/onboarding-protocol)** — establece la norma de contribución desde la entrada, antes de que el patrón de desentendimiento tenga ocasión de formarse.
+      - **[Acuerdo de Membresía](rcos:template/membership-agreement)** — vincula expectativas concretas de contribución a los derechos de membresía, para que disfrutar de los bienes comunes y mantenerlos formen parte del mismo trato (Invariante 1.3, [derechos y obligaciones](rcos:§3.4)).
+      - **[Registro de Roles](rcos:template/role-registry)** — convierte el trabajo colectivo recurrente en roles con nombre y dueña, en lugar de dejarlo en manos de quien se dé cuenta.
+      - **[Protocolo de Economía Interna](rcos:template/internal-economy-protocol)** — define qué cuenta como contribución y reconócelo (créditos, reputación), para que la participación sea visible y valorada ([reconocimiento de la contribución](rcos:§5.2)).
+      - **[Protocolo de Acogida](rcos:template/onboarding-protocol)** — establece la norma de contribución desde la entrada, antes de que el patrón de desentendimiento tenga ocasión de formarse.
   if-it-s-already-happening:
     title: Si ya está ocurriendo
     md: |-
       Si los bienes comunes ya funcionan sobre un núcleo cada vez más pequeño, no puedes "prevenir" esto — tienes que reequilibrarlo. Triaje, en este orden:
 
       1. **Haz visible la carga.** Haz una auditoría rápida de contribución: ¿quién está sosteniendo realmente el trabajo colectivo ahora mismo? El objetivo no es señalar culpas — son datos compartidos que terminan con la cortés ficción de que todo el mundo arrima el hombro por igual.
-      2. **Convierte las dependencias frágiles en roles.** Empieza por lo que se rompería si una persona se va, y dale un [rol](/articles/rcos-templates/layer-5/role-registry) con nombre y suplencia.
-      3. **Renegocia las expectativas abiertamente, con consentimiento.** Añade expectativas explícitas de contribución al [Acuerdo de Membresía](/articles/rcos-templates/layer-1/membership-agreement) de cara al futuro — un acuerdo transparente es mejor que el resentimiento silencioso.
-      4. **Reconoce en voz alta la contribución existente.** Las personas vuelven a implicarse cuando el esfuerzo es *visto*; un [Protocolo de Economía Interna](/articles/rcos-templates/layer-3/internal-economy-protocol) hace ese reconocimiento sistemático en lugar de depender del agradecimiento.
+      2. **Convierte las dependencias frágiles en roles.** Empieza por lo que se rompería si una persona se va, y dale un [rol](rcos:template/role-registry) con nombre y suplencia.
+      3. **Renegocia las expectativas abiertamente, con consentimiento.** Añade expectativas explícitas de contribución al [Acuerdo de Membresía](rcos:template/membership-agreement) de cara al futuro — un acuerdo transparente es mejor que el resentimiento silencioso.
+      4. **Reconoce en voz alta la contribución existente.** Las personas vuelven a implicarse cuando el esfuerzo es *visto*; un [Protocolo de Economía Interna](rcos:template/internal-economy-protocol) hace ese reconocimiento sistemático en lugar de depender del agradecimiento.
       5. **Vigila la cascada** (más abajo) — tu núcleo comprometido ya va camino del agotamiento y del poder informal accidental.
   what-this-failure-tends-to-trigger:
     title: Qué tiende a desencadenar este fallo
     md: |-
       El compromiso colectivo débil rara vez se queda contenido. Produce silenciosamente dos fallos derivados:
 
-      - **[Poder invisible mediante responsabilidades](/articles/rcos-stress-tests/operations-coordination/invisible-power-via-responsibilities)** — cuando solo unas pocas personas comprometidas sostienen el trabajo colectivo, acumulan una influencia informal y sin rendición de cuentas sobre cómo opera la comunidad.
-      - **[Agotamiento por trabajo de cuidados invisible](/articles/rcos-stress-tests/operations-coordination/invisible-care-labor-burnout)** — la imagen espejo de esta prueba: si hay muy pocas personas implicadas, el núcleo cada vez más pequeño absorbe cada vez más trabajo no compensado hasta agotarse.
+      - **[Poder invisible mediante responsabilidades](rcos:test/invisible-power-via-responsibilities)** — cuando solo unas pocas personas comprometidas sostienen el trabajo colectivo, acumulan una influencia informal y sin rendición de cuentas sobre cómo opera la comunidad.
+      - **[Agotamiento por trabajo de cuidados invisible](rcos:test/invisible-care-labor-burnout)** — la imagen espejo de esta prueba: si hay muy pocas personas implicadas, el núcleo cada vez más pequeño absorbe cada vez más trabajo no compensado hasta agotarse.
   related-stress-tests:
     title: Pruebas de estrés relacionadas
-    md: '- **[Trabajo externalizado eludiendo la contribución](/articles/rcos-stress-tests/economy-resources/outsourced-labor-bypassing-contribution)** — la prima monetaria: las expectativas de contribución existen, pero se eluden contratando fuera, mientras que aquí se eluden desentendiéndose. El mismo eslabón roto entre beneficio y contribución.'
+    md: '- **[Trabajo externalizado eludiendo la contribución](rcos:test/outsourced-labor-bypassing-contribution)** — la prima monetaria: las expectativas de contribución existen, pero se eluden contratando fuera, mientras que aquí se eluden desentendiéndose. El mismo eslabón roto entre beneficio y contribución.'

@@ -1,10 +1,10 @@
 lang: fr
-sourceHash: b9f3f463
+sourceHash: 72af84fd
 title: Expériences irréversibles
 summary: Quand "essayons juste" n'a aucun retour en arrière possible en cas d'échec.
 tags:
-  - 'Layer 6: Evolution'
-  - Medium severity
+  - 'Couche 6 : Évolution'
+  - Sévérité moyenne
 symptoms:
   - Un changement majeur a été adopté comme "expérience" mais n'a pas de retour en arrière défini.
   - '"Essayons et voyons" était tout le plan ; personne n''a fixé de critères de succès ni de date de fin.'
@@ -67,7 +67,7 @@ sections:
       |---|---|
       | **L0 — Implicite** | Les "expériences" sont adoptées sans critères, sans durée limitée, sans retour en arrière. |
       | **L1 — Nommé** | Le groupe veut expérimenter en toute sécurité mais n'a pas défini comment. |
-      | **L2 — Documenté** | Un [Modèle d'expérience](/articles/rcos-templates/layer-6/experiment-template) exige des critères de succès, une durée limitée et un plan de retour en arrière. |
+      | **L2 — Documenté** | Un [Modèle d'expérience](rcos:template/experiment-template) exige des critères de succès, une durée limitée et un plan de retour en arrière. |
       | **L3 — Appliqué & répété** | Les expériences sont véritablement réversibles et limitées dans le temps ; au moins une a été menée, examinée, puis annulée ou adoptée sur la base de preuves. |
 
       La plupart des communautés qui se reconnaissent ici se situent à **L0 ou L1**. Le but n'est pas la perfection — c'est de monter d'un échelon.
@@ -76,11 +76,11 @@ sections:
     md: |-
       RCOS garde le mot "expérience" honnête — et garde les gestes irréversibles hors de cette catégorie :
 
-      - **[Modèle d'expérience](/articles/rcos-templates/layer-6/experiment-template)** — exige des critères, une durée limitée et un plan de retour en arrière avant d'essayer.
-      - **[Protocole de changement](/articles/rcos-templates/layer-6/change-protocol)** — fait passer les changements irréversibles par le processus complet, pas par la voie expérimentale.
-      - **[Journal d'apprentissage](/articles/rcos-templates/layer-6/learning-log)** — capture ce qui a été essayé et ce qui s'est passé, pour que l'expérience enseigne quelque chose.
+      - **[Modèle d'expérience](rcos:template/experiment-template)** — exige des critères, une durée limitée et un plan de retour en arrière avant d'essayer.
+      - **[Protocole de changement](rcos:template/change-protocol)** — fait passer les changements irréversibles par le processus complet, pas par la voie expérimentale.
+      - **[Journal d'apprentissage](rcos:template/learning-log)** — capture ce qui a été essayé et ce qui s'est passé, pour que l'expérience enseigne quelque chose.
 
-      Voir aussi la spécification : [Couche 6 — Expériences](/articles/rcos-core/v0-1/layer-6-evolution-adaptation#83-experiments) et [Sécurité et réversibilité du changement](/articles/rcos-core/v0-1/layer-6-evolution-adaptation#85-change-safety-and-reversibility).
+      Voir aussi la spécification : [Couche 6 — Expériences](rcos:§8.3) et [Sécurité et réversibilité du changement](rcos:§8.5).
   if-it-s-already-happening:
     title: Si c'est déjà en train d'arriver
     md: |-
@@ -91,9 +91,9 @@ sections:
       3. **Arrête d'appeler les gestes irréversibles des expériences** — fais-les passer par le processus de changement complet pour qu'ils reçoivent l'examen qu'ils méritent.
   what-this-failure-tends-to-trigger:
     title: Ce que cette défaillance tend à déclencher
-    md: '- **[Privatisation des communs par la vente de terres](/articles/rcos-stress-tests/economy-resources/commons-privatization-through-land-sales)** — vendre des terres "comme expérience" est le geste irréversible le plus coûteux qui soit.'
+    md: '- **[Privatisation des communs par la vente de terres](rcos:test/commons-privatization-through-land-sales)** — vendre des terres "comme expérience" est le geste irréversible le plus coûteux qui soit.'
   related-stress-tests:
     title: Tests de résistance liés
     md: |-
-      - **[Amnésie institutionnelle](/articles/rcos-stress-tests/change-emergencies/institutional-amnesia)** — sans apprentissage capturé, même une expérience réversible n'enseigne rien.
-      - **[Précédent de contournement des règles en urgence](/articles/rcos-stress-tests/change-emergencies/emergency-rule-bypass-precedent)** — les deux laissent passer de grands changements sous une étiquette rassurante.
+      - **[Amnésie institutionnelle](rcos:test/institutional-amnesia)** — sans apprentissage capturé, même une expérience réversible n'enseigne rien.
+      - **[Précédent de contournement des règles en urgence](rcos:test/emergency-rule-bypass-precedent)** — les deux laissent passer de grands changements sous une étiquette rassurante.

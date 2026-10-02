@@ -91,7 +91,7 @@ sections:
       |---|---|
       | **L0 — Implicit** | People become members by showing up; no entry process, no onboarding. |
       | **L1 — Named** | The group feels the dilution but hasn't built an entry / probation pipeline. |
-      | **L2 — Documented** | A defined [onboarding and probation](/articles/rcos-templates/layer-1/onboarding-protocol) process gates membership; states are tracked in a [registry](/articles/rcos-templates/layer-1/membership-state-registry). |
+      | **L2 — Documented** | A defined [onboarding and probation](rcos:template/onboarding-protocol) process gates membership; states are tracked in a [registry](rcos:template/membership-state-registry). |
       | **L3 — Enforced & rehearsed** | Membership status is explicit at all times; every newcomer goes through onboarding; growth rate is matched to integration capacity. |
 
       Most communities that recognise themselves here sit at **L0 or L1**. The goal isn't perfection — it's moving up one rung.
@@ -100,11 +100,11 @@ sections:
     md: |-
       RCOS makes rights follow integration, not arrival:
 
-      - **[Onboarding Protocol](/articles/rcos-templates/layer-1/onboarding-protocol)** — a mandatory entry and probation path so culture and knowledge actually transfer.
-      - **[Membership Agreement](/articles/rcos-templates/layer-1/membership-agreement)** — make the terms of membership explicit at entry.
-      - **[Membership State Registry](/articles/rcos-templates/layer-1/membership-state-registry)** — always know who is trial, full, or exited.
+      - **[Onboarding Protocol](rcos:template/onboarding-protocol)** — a mandatory entry and probation path so culture and knowledge actually transfer.
+      - **[Membership Agreement](rcos:template/membership-agreement)** — make the terms of membership explicit at entry.
+      - **[Membership State Registry](rcos:template/membership-state-registry)** — always know who is trial, full, or exited.
 
-      See also the spec: [Layer 1 — Entry and Onboarding](/articles/rcos-core/v0-1/layer-1-membership-system#32-entry-and-onboarding) and [Membership States](/articles/rcos-core/v0-1/layer-1-membership-system#31-membership-states).
+      See also the spec: [Layer 1 — Entry and Onboarding](rcos:§3.2) and [Membership States](rcos:§3.1).
   - id: if-it-s-already-happening
     title: If it's already happening
     md: |-
@@ -117,8 +117,8 @@ sections:
   - id: what-this-failure-tends-to-trigger
     title: What this failure tends to trigger
     md: |-
-      - **[Cultural Norm Violation Scope Test](/articles/rcos-stress-tests/membership-boundaries/cultural-norm-violation-scope-test)** — newcomers who never learned the norms collide with them.
-      - **[Invisible Power via Responsibilities](/articles/rcos-stress-tests/operations-coordination/invisible-power-via-responsibilities)** — in the chaos, a few people hold everything together informally.
+      - **[Cultural Norm Violation Scope Test](rcos:test/cultural-norm-violation-scope-test)** — newcomers who never learned the norms collide with them.
+      - **[Invisible Power via Responsibilities](rcos:test/invisible-power-via-responsibilities)** — in the chaos, a few people hold everything together informally.
   - id: related-stress-tests
     title: Related stress tests
-    md: '- **[Self-Sufficiency Without Collective Contribution](/articles/rcos-stress-tests/operations-coordination/self-sufficiency-without-collective-contribution)** — un-onboarded members never learn that the commons is theirs to maintain.'
+    md: '- **[Self-Sufficiency Without Collective Contribution](rcos:test/self-sufficiency-without-collective-contribution)** — un-onboarded members never learn that the commons is theirs to maintain.'

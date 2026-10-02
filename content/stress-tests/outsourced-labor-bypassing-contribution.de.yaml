@@ -1,10 +1,10 @@
 lang: de
-sourceHash: e9e2b044
+sourceHash: f3be7389
 title: Ausgelagerte Arbeit umgeht den Beitrag
 summary: Wenn Geld stillschweigend einen Ausweg aus dem Gemeinschaftsleben erkauft.
 tags:
-  - 'Layer 3: Economy'
-  - Medium severity
+  - 'Schicht 3: Ökonomie'
+  - Mittlerer Schweregrad
 symptoms:
   - Ein wohlhabenderes Mitglied bezahlt Außenstehende, um seinen Anteil an der gemeinschaftlichen Arbeit zu übernehmen.
   - Beitragsanforderungen existieren, werden aber stillschweigend mit Geld erfüllt.
@@ -68,7 +68,7 @@ sections:
       |---|---|
       | **L0 — Implizit** | Ob Geld Teilnahme ersetzen kann, ist undefiniert; Leute kaufen sich stillschweigend frei. |
       | **L1 — Benannt** | Die Spannung wird anerkannt, aber es gibt weder eine Äquivalenzregel noch einen Rechenschaftsweg. |
-      | **L2 — Dokumentiert** | Das [Protokoll der internen Ökonomie](/articles/rcos-templates/layer-3/internal-economy-protocol) legt fest, ob und wie Geld Arbeit ersetzt; die [Mitgliedschaftsvereinbarung](/articles/rcos-templates/layer-1/membership-agreement) bindet Pflichten an Rechte. |
+      | **L2 — Dokumentiert** | Das [Protokoll der internen Ökonomie](rcos:template/internal-economy-protocol) legt fest, ob und wie Geld Arbeit ersetzt; die [Mitgliedschaftsvereinbarung](rcos:template/membership-agreement) bindet Pflichten an Rechte. |
       | **L3 — Durchgesetzt & geübt** | Die Beitragslogik wird konsistent angewendet; eine Umgehung löst die vereinbarte Äquivalenzregel oder einen Rechenschaftsprozess aus — und hat es bereits getan. |
 
       Die meisten Gemeinschaften, die sich hier wiedererkennen, sitzen auf **L0 oder L1**. Das Ziel ist nicht Perfektion — es ist, eine Stufe weiterzukommen.
@@ -77,11 +77,11 @@ sections:
     md: |-
       RCOS zwingt die Gemeinschaft, das Verhältnis von Geld und Arbeit zu *entscheiden*, statt es per Default zu lassen:
 
-      - **[Protokoll der internen Ökonomie](/articles/rcos-templates/layer-3/internal-economy-protocol)** — entscheidet ausdrücklich, ob Geld Arbeit ersetzen kann und zu welcher Äquivalenz.
-      - **[Mitgliedschaftsvereinbarung](/articles/rcos-templates/layer-1/membership-agreement)** — bindet Beitragspflichten an Mitgliedschaftsrechte, damit Teilnahme nicht durch Vermögen optional wird.
-      - **[Rechenschaftsprotokoll](/articles/rcos-templates/layer-4/accountability-protocol)** — ein definierter Weg, wenn Erwartungen umgangen werden.
+      - **[Protokoll der internen Ökonomie](rcos:template/internal-economy-protocol)** — entscheidet ausdrücklich, ob Geld Arbeit ersetzen kann und zu welcher Äquivalenz.
+      - **[Mitgliedschaftsvereinbarung](rcos:template/membership-agreement)** — bindet Beitragspflichten an Mitgliedschaftsrechte, damit Teilnahme nicht durch Vermögen optional wird.
+      - **[Rechenschaftsprotokoll](rcos:template/accountability-protocol)** — ein definierter Weg, wenn Erwartungen umgangen werden.
 
-      Siehe auch die Spezifikation: [Schicht 3 — Beitragsanerkennung](/articles/rcos-core/v0-1/layer-3-economic-resource-system#52-contribution-recognition) und [Schicht 1 — Rechte und Pflichten](/articles/rcos-core/v0-1/layer-1-membership-system#34-rights-and-obligations).
+      Siehe auch die Spezifikation: [Schicht 3 — Beitragsanerkennung](rcos:§5.2) und [Schicht 1 — Rechte und Pflichten](rcos:§3.4).
   if-it-s-already-happening:
     title: Wenn es schon passiert
     md: |-
@@ -92,9 +92,9 @@ sections:
       3. **Sprecht den Groll direkt an** über den Rechenschafts- oder Konfliktweg, bevor er sich verhärtet.
   what-this-failure-tends-to-trigger:
     title: Was dieses Versagen typischerweise auslöst
-    md: '- **[Normalisierung von Konfliktvermeidung](/articles/rcos-stress-tests/conflict-accountability/conflict-avoidance-normalization)** — der Groll zwischen Teilnahme und Bezahlung ist genau die Art von Konflikt, der von einer Gruppe vermieden wird, bis er strukturell geworden ist.'
+    md: '- **[Normalisierung von Konfliktvermeidung](rcos:test/conflict-avoidance-normalization)** — der Groll zwischen Teilnahme und Bezahlung ist genau die Art von Konflikt, der von einer Gruppe vermieden wird, bis er strukturell geworden ist.'
   related-stress-tests:
     title: Verwandte Stresstests
     md: |-
-      - **[Selbstversorgung ohne kollektiven Beitrag](/articles/rcos-stress-tests/operations-coordination/self-sufficiency-without-collective-contribution)** — der Rückzugs-Verwandte: hier kaufen sich Leute aus dem Beitrag frei, dort steigen sie einfach aus.
-      - **[Privatisierung der Allmende durch Landverkäufe](/articles/rcos-stress-tests/economy-resources/commons-privatization-through-land-sales)** — dieselbe Entkopplung von Vermögen und gemeinsamer Pflicht, auf der Ebene des Landes.
+      - **[Selbstversorgung ohne kollektiven Beitrag](rcos:test/self-sufficiency-without-collective-contribution)** — der Rückzugs-Verwandte: hier kaufen sich Leute aus dem Beitrag frei, dort steigen sie einfach aus.
+      - **[Privatisierung der Allmende durch Landverkäufe](rcos:test/commons-privatization-through-land-sales)** — dieselbe Entkopplung von Vermögen und gemeinsamer Pflicht, auf der Ebene des Landes.

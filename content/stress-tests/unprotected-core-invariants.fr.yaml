@@ -1,10 +1,10 @@
 lang: fr
-sourceHash: d0ef4e06
+sourceHash: 23c439c7
 title: Invariants fondamentaux non protégés
 summary: Quand les promesses fondatrices peuvent être annulées par un seul vote ordinaire.
 tags:
-  - 'Layer 0: Scope'
-  - High severity
+  - 'Couche 0 : Périmètre'
+  - Sévérité élevée
 symptoms:
   - Les engagements fondateurs de la communauté (la terre reste un commun, pas de leader unique) peuvent être modifiés par une majorité simple ordinaire.
   - Il n'y a aucune distinction entre les règles quotidiennes et les règles constitutionnelles.
@@ -69,7 +69,7 @@ sections:
       |---|---|
       | **L0 — Implicite** | Les règles fondamentales et quotidiennes sont également amendables ; la fondation n'est pas protégée. |
       | **L1 — Nommé** | Le groupe sait que certaines règles devraient être plus difficiles à modifier mais ne les a pas séparées. |
-      | **L2 — Documenté** | Un [Registre des invariants](/articles/rcos-templates/layer-0/invariants-register) nomme les invariants protégés avec un seuil d'amendement élevé et explicite. |
+      | **L2 — Documenté** | Un [Registre des invariants](rcos:template/invariants-register) nomme les invariants protégés avec un seuil d'amendement élevé et explicite. |
       | **L3 — Appliqué et éprouvé** | Les invariants fondamentaux ne peuvent pas être modifiés par un processus ordinaire ; la protection a tenu face à une tentative réelle de la contourner. |
 
       La plupart des communautés qui se reconnaissent ici sont à **L0 ou L1**. L'objectif n'est pas la perfection — c'est de monter d'un échelon.
@@ -78,11 +78,11 @@ sections:
     md: |-
       RCOS sépare le changement constitutionnel des décisions quotidiennes :
 
-      - **[Registre des invariants](/articles/rcos-templates/layer-0/invariants-register)** — nomme les invariants protégés et le seuil élevé requis pour les modifier.
-      - **[Protocole de changement](/articles/rcos-templates/layer-6/change-protocol)** — définit une voie distincte et plus exigeante pour les changements constitutionnels.
-      - **[Protocole de gouvernance](/articles/rcos-templates/layer-2/governance-protocol)** — maintient les règles constitutionnelles au-dessus des décisions ordinaires.
+      - **[Registre des invariants](rcos:template/invariants-register)** — nomme les invariants protégés et le seuil élevé requis pour les modifier.
+      - **[Protocole de changement](rcos:template/change-protocol)** — définit une voie distincte et plus exigeante pour les changements constitutionnels.
+      - **[Protocole de gouvernance](rcos:template/governance-protocol)** — maintient les règles constitutionnelles au-dessus des décisions ordinaires.
 
-      Voir aussi la spécification : [Couche 0 — Invariants](/articles/rcos-core/v0-1/layer-0-identity-scope#23-invariants) et [Couche 6 — Versionnage et autorité](/articles/rcos-core/v0-1/layer-6-evolution-adaptation#82-versioning-and-authority).
+      Voir aussi la spécification : [Couche 0 — Invariants](rcos:§2.3) et [Couche 6 — Versionnage et autorité](rcos:§8.2).
   if-it-s-already-happening:
     title: Si cela arrive déjà
     md: |-
@@ -94,8 +94,8 @@ sections:
   what-this-failure-tends-to-trigger:
     title: Ce que cette défaillance tend à déclencher
     md: |-
-      - **[Privatisation des communs par la vente de terres](/articles/rcos-stress-tests/economy-resources/commons-privatization-through-land-sales)** — si la protection des communs est amendable, elle peut être supprimée par vote sous pression.
-      - **[Veto informel des fondateurs](/articles/rcos-stress-tests/governance-power/founder-informal-veto)** — une structure non protégée permet à une autorité informelle de remodeler les règles.
+      - **[Privatisation des communs par la vente de terres](rcos:test/commons-privatization-through-land-sales)** — si la protection des communs est amendable, elle peut être supprimée par vote sous pression.
+      - **[Veto informel des fondateurs](rcos:test/founder-informal-veto)** — une structure non protégée permet à une autorité informelle de remodeler les règles.
   related-stress-tests:
     title: Tests de résistance liés
-    md: '- **[Précédent de contournement des règles en urgence](/articles/rcos-stress-tests/change-emergencies/emergency-rule-bypass-precedent)** — l''autre manière dont la constitution s''érode : non pas amendée ouvertement, mais contournée sous l''urgence.'
+    md: '- **[Précédent de contournement des règles en urgence](rcos:test/emergency-rule-bypass-precedent)** — l''autre manière dont la constitution s''érode : non pas amendée ouvertement, mais contournée sous l''urgence.'

@@ -96,7 +96,7 @@ sections:
       |---|---|
       | **L0 — Implicit** | Spiritual standing silently equals governance power; dissent feels forbidden. |
       | **L1 — Named** | The group notices the deference but hasn't separated influence from authority. |
-      | **L2 — Documented** | Spiritual/moral roles are explicitly decoupled from governance authority, which lives in an [Authority Registry](/articles/rcos-templates/layer-2/authority-registry). |
+      | **L2 — Documented** | Spiritual/moral roles are explicitly decoupled from governance authority, which lives in an [Authority Registry](rcos:template/authority-registry). |
       | **L3 — Enforced & rehearsed** | Influence informs but doesn't decide; the power asymmetry is acknowledged and safeguarded; people can — and do — dissent without sanction. |
 
       Most communities that recognise themselves here sit at **L0 or L1**. The goal isn't perfection — it's moving up one rung.
@@ -105,11 +105,11 @@ sections:
     md: |-
       RCOS separates being revered from being in charge:
 
-      - **[Authority Registry](/articles/rcos-templates/layer-2/authority-registry)** — make governance authority explicit, so reverence is never mistaken for a mandate.
-      - **[Governance Protocol](/articles/rcos-templates/layer-2/governance-protocol)** — decisions follow process, not personal conviction.
-      - **[Invariants Register](/articles/rcos-templates/layer-0/invariants-register)** — protect the right to dissent and the separation of belief from rule.
+      - **[Authority Registry](rcos:template/authority-registry)** — make governance authority explicit, so reverence is never mistaken for a mandate.
+      - **[Governance Protocol](rcos:template/governance-protocol)** — decisions follow process, not personal conviction.
+      - **[Invariants Register](rcos:template/invariants-register)** — protect the right to dissent and the separation of belief from rule.
 
-      See also the spec: [Layer 2 — Authority Boundaries](/articles/rcos-core/v0-1/layer-2-governance-decision-logic#43-authority-boundaries) and [Layer 4 — Safeguards](/articles/rcos-core/v0-1/layer-4-conflict-repair-accountability#63-safeguards).
+      See also the spec: [Layer 2 — Authority Boundaries](rcos:§4.3) and [Layer 4 — Safeguards](rcos:§6.3).
   - id: if-it-s-already-happening
     title: If it's already happening
     md: |-
@@ -122,9 +122,9 @@ sections:
   - id: what-this-failure-tends-to-trigger
     title: What this failure tends to trigger
     md: |-
-      - **[Cultural Norm Violation Scope Test](/articles/rcos-stress-tests/membership-boundaries/cultural-norm-violation-scope-test)** — a revered figure's preferences get enforced as if they were declared rules.
-      - **[Emergency Rule Bypass Precedent](/articles/rcos-stress-tests/change-emergencies/emergency-rule-bypass-precedent)** — charisma supplies the justification for bypassing process "just this once."
-      - **[Conflict Avoidance Normalization](/articles/rcos-stress-tests/conflict-accountability/conflict-avoidance-normalization)** — dissent is suppressed to preserve reverence.
+      - **[Cultural Norm Violation Scope Test](rcos:test/cultural-norm-violation-scope-test)** — a revered figure's preferences get enforced as if they were declared rules.
+      - **[Emergency Rule Bypass Precedent](rcos:test/emergency-rule-bypass-precedent)** — charisma supplies the justification for bypassing process "just this once."
+      - **[Conflict Avoidance Normalization](rcos:test/conflict-avoidance-normalization)** — dissent is suppressed to preserve reverence.
   - id: related-stress-tests
     title: Related stress tests
-    md: '- **[Founder Informal Veto](/articles/rcos-stress-tests/governance-power/founder-informal-veto)** — the secular cousin: unwritten authority that outranks the process.'
+    md: '- **[Founder Informal Veto](rcos:test/founder-informal-veto)** — the secular cousin: unwritten authority that outranks the process.'

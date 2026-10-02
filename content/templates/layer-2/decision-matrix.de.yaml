@@ -1,10 +1,10 @@
 lang: de
-sourceHash: 1b1c0db9
+sourceHash: 154fced2
 title: Entscheidungsmatrix
 preamble: |-
   - **Layer:** 2 — Governance & Entscheidungslogik
   - **Status:** Vorlage — an deine Gemeinschaft anpassen
-  - **RCOS-Referenz:** [§4.2](/articles/rcos-core/v0-1/layer-2-governance-decision-logic#42-decision-mechanisms), [§4.4](/articles/rcos-core/v0-1/layer-2-governance-decision-logic#44-decision-matrix), [§4.7](/articles/rcos-core/v0-1/layer-2-governance-decision-logic#47-artifacts)
+  - **RCOS-Referenz:** [§4.2](rcos:§4.2), [§4.4](rcos:§4.4), [§4.7](rcos:§4.7)
 
   > Ordnet jeden Entscheidungstyp und -bereich einer autorisierten Rolle oder einem Gremium, einem Mechanismus, einer Schwelle und einem Eskalationspfad zu. Entscheidungen, die außerhalb dieser Matrix getroffen werden, gelten als ungültig.
 

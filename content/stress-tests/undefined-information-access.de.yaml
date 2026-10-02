@@ -1,10 +1,10 @@
 lang: de
-sourceHash: 09879ed0
+sourceHash: ba6691ba
 title: Unklarer Informationszugang
 summary: Wenn wer-was-sehen-darf davon abhängt, wen du kennst – nicht von einer Regel.
 tags:
-  - 'Layer 5: Operations'
-  - Medium severity
+  - 'Schicht 5: Betrieb'
+  - Mittlerer Schweregrad
 symptoms:
   - Manche Mitglieder sind bei Entscheidungen, Finanzen oder Plänen "im Bilde"; andere erfahren davon spät oder nie.
   - Es gibt keine Regel dafür, was für Mitglieder offen ist, was privat ist und wer worauf zugreifen darf.
@@ -69,7 +69,7 @@ sections:
       |---|---|
       | **L0 — Implizit** | Zugang ist informell und ungleich; "im Bilde sein" hängt von Beziehungen ab. |
       | **L1 — Benannt** | Die Gruppe spürt die Asymmetrie, hat aber keine Zugangsregeln definiert. |
-      | **L2 — Dokumentiert** | Ein [Operations-Handbuch](/articles/rcos-templates/layer-5/operations-manual) definiert Transparenz-Standards, Privatsphärengrenzen und wer worauf zugreifen darf. |
+      | **L2 — Dokumentiert** | Ein [Operations-Handbuch](rcos:template/operations-manual) definiert Transparenz-Standards, Privatsphärengrenzen und wer worauf zugreifen darf. |
       | **L3 — Durchgesetzt & geübt** | Zugang folgt deklarierten Regeln; Aufzeichnungen sind auffindbar; Privatsphärengrenzen sind explizit und werden respektiert. |
 
       Die meisten Gemeinschaften, die sich hier wiedererkennen, stehen bei **L0 oder L1**. Das Ziel ist nicht Perfektion — es ist, eine Stufe weiterzukommen.
@@ -78,10 +78,10 @@ sections:
     md: |-
       RCOS macht Informationszugang zu einer deklarierten Regel, nicht zu einer sozialen Tatsache:
 
-      - **[Operations-Handbuch](/articles/rcos-templates/layer-5/operations-manual)** — definiere Transparenz-Standards, Privatsphärengrenzen und rollenbasierten Zugang.
-      - **[Meeting-Vorlagen](/articles/rcos-templates/layer-5/meeting-templates)** — halte Entscheidungen dort fest, wo alle Mitglieder sie finden können, nicht in privaten Kanälen.
+      - **[Operations-Handbuch](rcos:template/operations-manual)** — definiere Transparenz-Standards, Privatsphärengrenzen und rollenbasierten Zugang.
+      - **[Meeting-Vorlagen](rcos:template/meeting-templates)** — halte Entscheidungen dort fest, wo alle Mitglieder sie finden können, nicht in privaten Kanälen.
 
-      Siehe auch die Spezifikation: [Schicht 5 — Dokumentation und Informationsfluss](/articles/rcos-core/v0-1/layer-5-operations-coordination#73-documentation-and-information-flow).
+      Siehe auch die Spezifikation: [Schicht 5 — Dokumentation und Informationsfluss](rcos:§7.3).
   if-it-s-already-happening:
     title: Wenn es schon passiert
     md: |-
@@ -94,8 +94,8 @@ sections:
   what-this-failure-tends-to-trigger:
     title: Was dieser Fehler tendenziell auslöst
     md: |-
-      - **[Informelle Cliquen-Entscheidungsfindung](/articles/rcos-stress-tests/governance-power/informal-clique-decision-making)** — Informationsasymmetrie ist der Nährboden einer In-Group.
-      - **[Unsichtbare Macht durch Verantwortlichkeiten](/articles/rcos-stress-tests/operations-coordination/invisible-power-via-responsibilities)** — wer die Aufzeichnungen hat, hat stille Macht.
+      - **[Informelle Cliquen-Entscheidungsfindung](rcos:test/informal-clique-decision-making)** — Informationsasymmetrie ist der Nährboden einer In-Group.
+      - **[Unsichtbare Macht durch Verantwortlichkeiten](rcos:test/invisible-power-via-responsibilities)** — wer die Aufzeichnungen hat, hat stille Macht.
   related-stress-tests:
     title: Verwandte Stresstests
-    md: '- **[Unsichtbare Macht durch Verantwortlichkeiten](/articles/rcos-stress-tests/operations-coordination/invisible-power-via-responsibilities)** — undokumentiertes Wissen und undefinierter Zugang sind zwei Gesichter derselben Konzentration.'
+    md: '- **[Unsichtbare Macht durch Verantwortlichkeiten](rcos:test/invisible-power-via-responsibilities)** — undokumentiertes Wissen und undefinierter Zugang sind zwei Gesichter derselben Konzentration.'

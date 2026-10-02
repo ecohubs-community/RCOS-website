@@ -1,5 +1,5 @@
 lang: fr
-sourceHash: b4b26ed1
+sourceHash: eca463d0
 title: Normalisation de l'évitement des conflits
 summary: Quand préserver la paix en silence devient ce qui finit par briser la communauté.
 tags:
@@ -66,7 +66,7 @@ sections:
       |---|---|
       | **N0 — Implicite** | Le conflit est évité et personne ne nomme cet évitement. « On est juste un groupe harmonieux. » |
       | **N1 — Nommé** | Le groupe admet ouvertement qu'il évite le conflit, mais n'a pas de façon convenue de le gérer quand il fait surface. |
-      | **N2 — Documenté** | Un chemin de gestion du conflit est écrit et connu des membres — par exemple, une [Échelle de résolution des conflits](/articles/rcos-templates/layer-4/conflict-resolution-ladder) a été adoptée. |
+      | **N2 — Documenté** | Un chemin de gestion du conflit est écrit et connu des membres — par exemple, une [Échelle de résolution des conflits](rcos:template/conflict-resolution-ladder) a été adoptée. |
       | **N3 — Appliqué et répété** | Le chemin est réellement utilisé. Soulever un problème est normal, pas courageux. Il a été éprouvé sur au moins un conflit réel et débriefé ensuite. |
 
       La plupart des communautés qui se reconnaissent dans ce test se trouvent à **N0 ou N1**. Le but n'est pas la perfection — c'est de monter d'un barreau.
@@ -75,11 +75,11 @@ sections:
     md: |-
       RCOS fait de la gestion du conflit une *obligation structurelle*, pas un acte de courage individuel. Construis ces éléments **avant** d'en avoir besoin — le pré-engagement est tout l'enjeu :
 
-      - **[Échelle de résolution des conflits](/articles/rcos-templates/layer-4/conflict-resolution-ladder)** — un chemin d'escalade pré-convenu pour que soulever un problème soit le geste attendu et sans drame, plutôt qu'une confrontation.
-      - **[Protocole de responsabilisation](/articles/rcos-templates/layer-4/accountability-protocol)** — ce qui se passe quand la réparation, et pas seulement la résolution, est nécessaire.
-      - **[Registre des rôles](/articles/rcos-templates/layer-5/role-registry)** — nomme un rôle de facilitateur·rice pour que quelqu'un soit explicitement responsable de faire émerger la tension, au lieu que ça dépende de qui se sent courageux ce jour-là.
+      - **[Échelle de résolution des conflits](rcos:template/conflict-resolution-ladder)** — un chemin d'escalade pré-convenu pour que soulever un problème soit le geste attendu et sans drame, plutôt qu'une confrontation.
+      - **[Protocole de responsabilisation](rcos:template/accountability-protocol)** — ce qui se passe quand la réparation, et pas seulement la résolution, est nécessaire.
+      - **[Registre des rôles](rcos:template/role-registry)** — nomme un rôle de facilitateur·rice pour que quelqu'un soit explicitement responsable de faire émerger la tension, au lieu que ça dépende de qui se sent courageux ce jour-là.
 
-      Voir aussi la spec : [Couche 4 — Chemins de résolution](/articles/rcos-core/v0-1/layer-4-conflict-repair-accountability#62-resolution-pathways).
+      Voir aussi la spec : [Couche 4 — Chemins de résolution](rcos:§6.2).
   if-it-s-already-happening:
     title: Si c'est déjà en train d'arriver
     md: |-
@@ -87,16 +87,16 @@ sections:
 
       1. **Nomme un conflit concret, pas toute la culture.** « On est évitants face au conflit » est trop vaste pour qu'on puisse agir dessus. Choisis une seule question réelle, non résolue, et rends *celle-là* discutable en premier.
       2. **Fais entrer de la neutralité.** Utilise un·e facilitateur·rice ou un tiers pour que la première conversation difficile ne soit pas arbitrée par les personnes qui sont dedans (médiation Couche 4).
-      3. **Fais-le passer dans l'Échelle, rétroactivement.** Fais cheminer le conflit nommé à travers l'[Échelle de résolution des conflits](/articles/rcos-templates/layer-4/conflict-resolution-ladder), puis **capture les enseignements** pour que le schéma ne se réinitialise pas silencieusement.
+      3. **Fais-le passer dans l'Échelle, rétroactivement.** Fais cheminer le conflit nommé à travers l'[Échelle de résolution des conflits](rcos:template/conflict-resolution-ladder), puis **capture les enseignements** pour que le schéma ne se réinitialise pas silencieusement.
       4. **Surveille la cascade** (ci-dessous) — l'évitement reste rarement contenu.
   what-this-failure-tends-to-trigger:
     title: Ce que cette défaillance tend à déclencher
     md: |-
       L'évitement non traité est rarement isolé. C'est une défaillance en amont qui en rend d'autres possibles, en silence :
 
-      - **[Veto informel du fondateur](/articles/rcos-stress-tests/governance-power/founder-informal-veto)** — le conflit non dit laisse l'autorité informelle se durcir, parce que personne ne la conteste ouvertement.
-      - **[Épuisement du travail de soin invisible](/articles/rcos-stress-tests/operations-coordination/invisible-care-labor-burnout)** — quelques membres absorbent en silence la tension non traitée et le travail émotionnel.
-      - **[Autorité charismatique/spirituelle](/articles/rcos-stress-tests/culture-influence/charismatic-spiritual-authority)** — la dissidence étouffée concentre l'influence sur celui ou celle qui peut définir « l'harmonie ».
+      - **[Veto informel du fondateur](rcos:test/founder-informal-veto)** — le conflit non dit laisse l'autorité informelle se durcir, parce que personne ne la conteste ouvertement.
+      - **[Épuisement du travail de soin invisible](rcos:test/invisible-care-labor-burnout)** — quelques membres absorbent en silence la tension non traitée et le travail émotionnel.
+      - **[Autorité charismatique/spirituelle](rcos:test/charismatic-spiritual-authority)** — la dissidence étouffée concentre l'influence sur celui ou celle qui peut définir « l'harmonie ».
   related-stress-tests:
     title: Tests de résistance liés
-    md: '- **[Voix dominantes dans les espaces de décision](/articles/rcos-stress-tests/governance-power/dominant-speakers-decision-spaces)** — le même problème de fond (les violations de processus traitées comme une question de personnalité) apparaissant en réunion plutôt que dans le conflit.'
+    md: '- **[Voix dominantes dans les espaces de décision](rcos:test/dominant-speakers-decision-spaces)** — le même problème de fond (les violations de processus traitées comme une question de personnalité) apparaissant en réunion plutôt que dans le conflit.'

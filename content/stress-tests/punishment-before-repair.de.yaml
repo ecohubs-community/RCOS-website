@@ -1,5 +1,5 @@
 lang: de
-sourceHash: ec1d1fab
+sourceHash: a2d8b763
 title: Bestrafung vor Reparatur
 summary: Wenn der erste Reflex der Gemeinschaft nach einem Schaden ist, zu bestrafen statt zu reparieren.
 tags:
@@ -69,7 +69,7 @@ sections:
       |---|---|
       | **L0 — Implizit** | Schaden wird mit Bestrafung oder Ausschluss begegnet; kein Reparaturweg existiert. |
       | **L1 — Benannt** | Die Gruppe möchte restaurativ sein, hat aber keinen Reparatur-zuerst-Prozess gebaut. |
-      | **L2 — Dokumentiert** | Ein [Verantwortungsprotokoll](/articles/rcos-templates/layer-4/accountability-protocol) macht Reparatur zum ersten Schritt; Sanktionen folgen nur, wenn Reparatur scheitert oder abgelehnt wird. |
+      | **L2 — Dokumentiert** | Ein [Verantwortungsprotokoll](rcos:template/accountability-protocol) macht Reparatur zum ersten Schritt; Sanktionen folgen nur, wenn Reparatur scheitert oder abgelehnt wird. |
       | **L3 — Durchgesetzt & geübt** | Reparatur wird wirklich zuerst versucht; Sanktionen sind ein begrenztes letztes Mittel; ein echter Schaden wurde ohne Austritt repariert. |
 
       Die meisten Gemeinschaften, die sich hier wiedererkennen, sitzen bei **L0 oder L1**. Das Ziel ist nicht Perfektion — es ist eine Stufe nach oben zu klettern.
@@ -78,10 +78,10 @@ sections:
     md: |-
       RCOS macht Reparatur zum strukturellen Default, mit Bestrafung als begrenztem Rückfall:
 
-      - **[Verantwortungsprotokoll](/articles/rcos-templates/layer-4/accountability-protocol)** — mache Reparatur zum ersten, erwarteten Schritt, mit Sanktionen als definiertem letzten Mittel.
-      - **[Konfliktlösungsleiter](/articles/rcos-templates/layer-4/conflict-resolution-ladder)** — Eskalation, die auf der niedrigsten, restaurativsten Stufe beginnt und nur nach Bedarf hochklettert.
+      - **[Verantwortungsprotokoll](rcos:template/accountability-protocol)** — mache Reparatur zum ersten, erwarteten Schritt, mit Sanktionen als definiertem letzten Mittel.
+      - **[Konfliktlösungsleiter](rcos:template/conflict-resolution-ladder)** — Eskalation, die auf der niedrigsten, restaurativsten Stufe beginnt und nur nach Bedarf hochklettert.
 
-      Siehe auch die Spezifikation: [Schicht 4 — Sanktionen, Reparatur und Trennung](/articles/rcos-core/v0-1/layer-4-conflict-repair-accountability#64-sanctions-repair-and-separation) und [Lösungspfade](/articles/rcos-core/v0-1/layer-4-conflict-repair-accountability#62-resolution-pathways).
+      Siehe auch die Spezifikation: [Schicht 4 — Sanktionen, Reparatur und Trennung](rcos:§6.4) und [Lösungspfade](rcos:§6.2).
   if-it-s-already-happening:
     title: Wenn es schon passiert
     md: |-
@@ -93,8 +93,8 @@ sections:
   what-this-failure-tends-to-trigger:
     title: Was dieses Versagen tendenziell auslöst
     md: |-
-      - **[Ausschluss ohne ordentliches Verfahren](/articles/rcos-stress-tests/membership-boundaries/expulsion-without-due-process)** — ein punitiver Default verwandelt Verantwortung in Ausschluss.
-      - **[Normalisierung von Konfliktvermeidung](/articles/rcos-stress-tests/conflict-accountability/conflict-avoidance-normalization)** — wenn das Eingestehen eines Fehlers bestraft wird, hören Menschen auf, irgendetwas sichtbar zu machen.
+      - **[Ausschluss ohne ordentliches Verfahren](rcos:test/expulsion-without-due-process)** — ein punitiver Default verwandelt Verantwortung in Ausschluss.
+      - **[Normalisierung von Konfliktvermeidung](rcos:test/conflict-avoidance-normalization)** — wenn das Eingestehen eines Fehlers bestraft wird, hören Menschen auf, irgendetwas sichtbar zu machen.
   related-stress-tests:
     title: Verwandte Stresstests
-    md: '- **[Geltungsbereichstest für Verletzungen kultureller Normen](/articles/rcos-stress-tests/membership-boundaries/cultural-norm-violation-scope-test)** — punitive Reflexe sind am stärksten, wenn eine emotional aufgeladene Norm gebrochen wird.'
+    md: '- **[Geltungsbereichstest für Verletzungen kultureller Normen](rcos:test/cultural-norm-violation-scope-test)** — punitive Reflexe sind am stärksten, wenn eine emotional aufgeladene Norm gebrochen wird.'

@@ -7,7 +7,7 @@ order: 2
 preamble: |-
   - **Layer:** 5 — Operations & Coordination
   - **Status:** Template — adapt for your community
-  - **RCOS reference:** [§7.2](/articles/rcos-core/v0-1/layer-5-operations-coordination#72-meeting-system), [§7.6](/articles/rcos-core/v0-1/layer-5-operations-coordination#76-artifacts)
+  - **RCOS reference:** [§7.2](rcos:§7.2), [§7.6](rcos:§7.6)
 
   > Meeting templates declare the purpose, decision scope, quorum, and structure of each meeting type. A meeting without a declared template will, given enough time, accumulate authority it should not have. Adapt these templates and add or remove meeting types as your community needs.
 
@@ -261,7 +261,7 @@ sections:
           - 7.2.2
           - 7.2.3
           - 7.6.4
-        note: ; see also Layer 4 — [Conflict Resolution Ladder](/articles/rcos-core/v0-1/layer-4-conflict-repair-accountability#62-resolution-pathways)
+        note: ; see also Layer 4 — [Conflict Resolution Ladder](rcos:§6.2)
       - id: rationale
         kind: rationale
         summary: Why a distinct meeting type for conflict?

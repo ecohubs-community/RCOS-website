@@ -1,10 +1,10 @@
 lang: de
-sourceHash: b91787ca
+sourceHash: 35df6347
 title: Unsichtbare Macht durch Zuständigkeiten
 summary: Wenn eine unverzichtbare Person zum Single Point of Failure wird — und zur informellen Macht.
 tags:
-  - 'Layer 5: Operations'
-  - High severity
+  - 'Schicht 5: Betrieb'
+  - Hoher Schweregrad
 symptoms:
   - Eine Person "kümmert sich einfach" um etwas Kritisches (die Finanzen, die Website, die Schlüssel, die Beziehungen) und niemand sonst weiß, wie es geht.
   - Aufgaben und Zugänge haben sich über Jahre informell bei ihr angesammelt.
@@ -70,7 +70,7 @@ sections:
       |---|---|
       | **L0 — Implizit** | Kritische Funktionen sind personengebunden und undokumentiert; eine Person ist stillschweigend unverzichtbar. |
       | **L1 — Benannt** | Die Gruppe weiß, dass sie sich zu sehr auf jemanden verlässt, hat die Rolle aber weder formalisiert noch dokumentiert. |
-      | **L2 — Dokumentiert** | Zuständigkeiten sind benannte [Rollen](/articles/rcos-templates/layer-5/role-registry) mit Umfang, Amtszeit und Nachfolge; operatives Wissen ist niedergeschrieben. |
+      | **L2 — Dokumentiert** | Zuständigkeiten sind benannte [Rollen](rcos:template/role-registry) mit Umfang, Amtszeit und Nachfolge; operatives Wissen ist niedergeschrieben. |
       | **L3 — Durchgesetzt & geübt** | Keine einzelne Person hält undokumentierte systemkritische Macht; Rollen rotieren und wurden mindestens einmal erfolgreich übergeben. |
 
       Die meisten Gemeinschaften, die sich hier wiedererkennen, stehen auf **L0 oder L1**. Das Ziel ist nicht Perfektion — es ist, eine Stufe weiterzukommen.
@@ -79,11 +79,11 @@ sections:
     md: |-
       RCOS trennt das Tun der Arbeit vom Halten der Macht und holt beides aus dem Kopf einer einzelnen Person heraus:
 
-      - **[Rollenregister](/articles/rcos-templates/layer-5/role-registry)** — angesammelte Zuständigkeiten in benannte Rollen mit Umfang, Amtszeitbegrenzung und Nachfolge überführen.
-      - **[Autoritätsregister](/articles/rcos-templates/layer-2/authority-registry)** — "macht die Arbeit" von "hält Autorität" trennen, damit Unverzichtbarkeit nicht stillschweigend zu Macht wird.
-      - **[Operations-Handbuch](/articles/rcos-templates/layer-5/operations-manual)** — kritische Prozesse dokumentieren, damit keine Funktion nur in einem Kopf lebt.
+      - **[Rollenregister](rcos:template/role-registry)** — angesammelte Zuständigkeiten in benannte Rollen mit Umfang, Amtszeitbegrenzung und Nachfolge überführen.
+      - **[Autoritätsregister](rcos:template/authority-registry)** — "macht die Arbeit" von "hält Autorität" trennen, damit Unverzichtbarkeit nicht stillschweigend zu Macht wird.
+      - **[Operations-Handbuch](rcos:template/operations-manual)** — kritische Prozesse dokumentieren, damit keine Funktion nur in einem Kopf lebt.
 
-      Siehe auch die Spezifikation: [Schicht 5 — Rollen und Verantwortlichkeiten](/articles/rcos-core/v0-1/layer-5-operations-coordination#71-roles-and-responsibilities) und [Schicht 3 — Akkumulationsbeschränkungen](/articles/rcos-core/v0-1/layer-3-economic-resource-system#54-accumulation-constraints).
+      Siehe auch die Spezifikation: [Schicht 5 — Rollen und Verantwortlichkeiten](rcos:§7.1) und [Schicht 3 — Akkumulationsbeschränkungen](rcos:§5.4).
   if-it-s-already-happening:
     title: Wenn es bereits passiert
     md: |-
@@ -96,10 +96,10 @@ sections:
   what-this-failure-tends-to-trigger:
     title: Was dieser Fehler typischerweise auslöst
     md: |-
-      - **[Informelles Gründer-Veto](/articles/rcos-stress-tests/governance-power/founder-informal-veto)** — undokumentierte Unverzichtbarkeit wird zum ungeschriebenen Veto.
-      - **[Informelle Cliquen-Entscheidungsfindung](/articles/rcos-stress-tests/governance-power/informal-clique-decision-making)** — die wenigen, die "alles erledigen", werden zu den faktischen Entscheidern.
+      - **[Informelles Gründer-Veto](rcos:test/founder-informal-veto)** — undokumentierte Unverzichtbarkeit wird zum ungeschriebenen Veto.
+      - **[Informelle Cliquen-Entscheidungsfindung](rcos:test/informal-clique-decision-making)** — die wenigen, die "alles erledigen", werden zu den faktischen Entscheidern.
   related-stress-tests:
     title: Verwandte Stresstests
     md: |-
-      - **[Burnout durch unsichtbare Care-Arbeit](/articles/rcos-stress-tests/operations-coordination/invisible-care-labor-burnout)** — dieselbe Anhäufung, im beziehungs- und gefühlsbezogenen Bereich.
-      - **[Selbstgenügsamkeit ohne kollektiven Beitrag](/articles/rcos-stress-tests/operations-coordination/self-sufficiency-without-collective-contribution)** — schwaches kollektives Engagement ist es, was alles auf die unverzichtbaren wenigen leitet.
+      - **[Burnout durch unsichtbare Care-Arbeit](rcos:test/invisible-care-labor-burnout)** — dieselbe Anhäufung, im beziehungs- und gefühlsbezogenen Bereich.
+      - **[Selbstgenügsamkeit ohne kollektiven Beitrag](rcos:test/self-sufficiency-without-collective-contribution)** — schwaches kollektives Engagement ist es, was alles auf die unverzichtbaren wenigen leitet.

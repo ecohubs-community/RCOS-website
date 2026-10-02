@@ -1,10 +1,10 @@
 lang: de
-sourceHash: 194ee1f4
+sourceHash: b423991e
 title: Governance dringt in das Privatleben ein
 summary: Wenn die Gemeinschaft keine erklärte Privatsphäre hat und deshalb alles regiert.
 tags:
-  - 'Layer 0: Scope'
-  - Medium severity
+  - 'Schicht 0: Geltungsbereich'
+  - Mittlerer Schweregrad
 symptoms:
   - Gemeinschaftsnormen greifen in persönliche Entscheidungen ein — Ernährung, Beziehungen, Erziehung, Überzeugungen, Freizeit.
   - Es gibt keine erklärte Grenze zwischen dem, was die Gemeinschaft regiert, und dem, was niemanden etwas angeht.
@@ -69,7 +69,7 @@ sections:
       |---|---|
       | **L0 — Implizit** | Keine erklärte Privatsphäre; Normen dehnen sich ungebremst ins Privatleben aus. |
       | **L1 — Benannt** | Die Gruppe bemerkt das Übergreifen, hat aber keine nicht-regierte Grenze gezogen. |
-      | **L2 — Dokumentiert** | Eine [Scope Declaration](/articles/rcos-templates/layer-0/scope-declaration) benennt ausdrücklich, was außerhalb des Geltungsbereichs liegt — die geschützte Privatsphäre. |
+      | **L2 — Dokumentiert** | Eine [Scope Declaration](rcos:template/scope-declaration) benennt ausdrücklich, was außerhalb des Geltungsbereichs liegt — die geschützte Privatsphäre. |
       | **L3 — Durchgesetzt & geprobt** | Governance bleibt innerhalb des erklärten Geltungsbereichs; persönliche Angelegenheiten außerhalb können keine Sanktionen auslösen; das hat sich in einem realen Fall bewährt. |
 
       Die meisten Gemeinschaften, die sich hier wiedererkennen, stehen auf **L0 oder L1**. Das Ziel ist nicht Perfektion — sondern eine Sprosse höher zu kommen.
@@ -78,11 +78,11 @@ sections:
     md: |-
       RCOS verlangt, zu erklären, was die Gemeinschaft *nicht* regiert:
 
-      - **[Scope Declaration](/articles/rcos-templates/layer-0/scope-declaration)** — erkläre ausdrücklich, was die Gemeinschaft NICHT regiert (Invariante 0.3).
-      - **[Identity Constraints Register](/articles/rcos-templates/layer-0/identity-constraints-register)** — begrenze die Reichweite der Gemeinschaft in das Leben der Mitglieder.
-      - **[Membership Agreement](/articles/rcos-templates/layer-1/membership-agreement)** — mache die eingewilligte geteilte Praxis explizit, und alles andere standardmäßig privat.
+      - **[Scope Declaration](rcos:template/scope-declaration)** — erkläre ausdrücklich, was die Gemeinschaft NICHT regiert (Invariante 0.3).
+      - **[Identity Constraints Register](rcos:template/identity-constraints-register)** — begrenze die Reichweite der Gemeinschaft in das Leben der Mitglieder.
+      - **[Membership Agreement](rcos:template/membership-agreement)** — mache die eingewilligte geteilte Praxis explizit, und alles andere standardmäßig privat.
 
-      Siehe auch die Spezifikation: [Schicht 0 — Scope Declaration](/articles/rcos-core/v0-1/layer-0-identity-scope#22-scope-declaration) und [Identity Constraints](/articles/rcos-core/v0-1/layer-0-identity-scope#24-identity-constraints).
+      Siehe auch die Spezifikation: [Schicht 0 — Scope Declaration](rcos:§2.2) und [Identity Constraints](rcos:§2.4).
   if-it-s-already-happening:
     title: Wenn es bereits passiert
     md: |-
@@ -94,8 +94,8 @@ sections:
   what-this-failure-tends-to-trigger:
     title: Was dieser Fehler typischerweise auslöst
     md: |-
-      - **[Cultural Norm Violation Scope Test](/articles/rcos-stress-tests/membership-boundaries/cultural-norm-violation-scope-test)** — ohne einen nicht-regierten Bereich kann jede persönliche Entscheidung zu einer durchsetzbaren Norm werden.
-      - **[Charismatic Spiritual Authority](/articles/rcos-stress-tests/culture-influence/charismatic-spiritual-authority)** — eine totalisierende Gemeinschaft ist fruchtbarer Boden für eine unanfechtbare moralische Autorität.
+      - **[Cultural Norm Violation Scope Test](rcos:test/cultural-norm-violation-scope-test)** — ohne einen nicht-regierten Bereich kann jede persönliche Entscheidung zu einer durchsetzbaren Norm werden.
+      - **[Charismatic Spiritual Authority](rcos:test/charismatic-spiritual-authority)** — eine totalisierende Gemeinschaft ist fruchtbarer Boden für eine unanfechtbare moralische Autorität.
   related-stress-tests:
     title: Verwandte Stresstests
-    md: '- **[Cultural Norm Violation Scope Test](/articles/rcos-stress-tests/membership-boundaries/cultural-norm-violation-scope-test)** — das Durchsetzungsereignis; dieser Test ist die fehlende Grenze, die es überhaupt erst möglich macht.'
+    md: '- **[Cultural Norm Violation Scope Test](rcos:test/cultural-norm-violation-scope-test)** — das Durchsetzungsereignis; dieser Test ist die fehlende Grenze, die es überhaupt erst möglich macht.'

@@ -1,10 +1,10 @@
 lang: fr
-sourceHash: 2677784a
+sourceHash: c7abf2ff
 title: Test de portée des violations de normes culturelles
 summary: Quand une norme non écrite est punie comme s'il s'agissait d'une règle écrite.
 tags:
-  - 'Layer 0: Scope'
-  - Medium severity
+  - 'Couche 0 : Périmètre'
+  - Sévérité moyenne
 symptoms:
   - Un membre transgresse une norme forte non écrite (par exemple manger de la viande dans une communauté qui s'identifie comme végane) et la réaction est émotionnelle et improvisée.
   - On ne sait pas clairement si la norme est une règle contraignante ou une préférence partagée.
@@ -68,7 +68,7 @@ sections:
       |---|---|
       | **L0 — Implicite** | Les normes fortes sont appliquées au feeling ; personne n'a déclaré ce qui est réellement gouverné. |
       | **L1 — Nommé** | Le groupe réalise que certaines normes ne sont pas écrites mais n'a pas trié règle et préférence. |
-      | **L2 — Documenté** | Une [Déclaration de Portée](/articles/rcos-templates/layer-0/scope-declaration) distingue les invariants centraux, les conditions d'adhésion et les préférences hors portée ; la procédure équitable ne s'applique qu'aux règles gouvernées. |
+      | **L2 — Documenté** | Une [Déclaration de Portée](rcos:template/scope-declaration) distingue les invariants centraux, les conditions d'adhésion et les préférences hors portée ; la procédure équitable ne s'applique qu'aux règles gouvernées. |
       | **L3 — Appliqué et répété** | Les réponses suivent la portée déclarée ; une préférence non écrite ne peut pas déclencher de punition ; cela a été testé sur une vraie violation. |
 
       La plupart des communautés qui se reconnaissent ici se situent à **L0 ou L1**. L'objectif n'est pas la perfection — c'est de monter d'un échelon.
@@ -77,11 +77,11 @@ sections:
     md: |-
       RCOS oblige la communauté à décider *ce qu'elle gouverne réellement* avant d'appliquer :
 
-      - **[Déclaration de Portée](/articles/rcos-templates/layer-0/scope-declaration)** — trier chaque norme importante en invariant central, condition d'adhésion ou préférence hors portée.
-      - **[Accord d'Adhésion](/articles/rcos-templates/layer-1/membership-agreement)** — rendre les conditions comportementales contraignantes explicites à l'entrée, pour que personne ne soit puni par surprise.
-      - **[Registre des Contraintes Identitaires](/articles/rcos-templates/layer-0/identity-constraints-register)** — déclarer ce que l'identité de la communauté gouverne et ne gouverne pas.
+      - **[Déclaration de Portée](rcos:template/scope-declaration)** — trier chaque norme importante en invariant central, condition d'adhésion ou préférence hors portée.
+      - **[Accord d'Adhésion](rcos:template/membership-agreement)** — rendre les conditions comportementales contraignantes explicites à l'entrée, pour que personne ne soit puni par surprise.
+      - **[Registre des Contraintes Identitaires](rcos:template/identity-constraints-register)** — déclarer ce que l'identité de la communauté gouverne et ne gouverne pas.
 
-      Voir aussi la spec : [Couche 0 — Déclaration de Portée](/articles/rcos-core/v0-1/layer-0-identity-scope#22-scope-declaration) et [Couche 1 — Droits et Obligations](/articles/rcos-core/v0-1/layer-1-membership-system#34-rights-and-obligations).
+      Voir aussi la spec : [Couche 0 — Déclaration de Portée](rcos:§2.2) et [Couche 1 — Droits et Obligations](rcos:§3.4).
   if-it-s-already-happening:
     title: Si ça arrive déjà
     md: |-
@@ -93,7 +93,7 @@ sections:
       4. **Décide pour la suite.** Si la communauté veut que cette norme soit contraignante, écris-la comme une condition d'adhésion explicite.
   what-this-failure-tends-to-trigger:
     title: Ce que cet échec a tendance à déclencher
-    md: '- **[Normalisation de l''évitement des conflits](/articles/rcos-stress-tests/conflict-accountability/conflict-avoidance-normalization)** — une application arbitraire et émotionnelle apprend aux membres à dissimuler leur comportement plutôt qu''à le révéler.'
+    md: '- **[Normalisation de l''évitement des conflits](rcos:test/conflict-avoidance-normalization)** — une application arbitraire et émotionnelle apprend aux membres à dissimuler leur comportement plutôt qu''à le révéler.'
   related-stress-tests:
     title: Tests de résistance liés
-    md: '- **[Autorité spirituelle charismatique](/articles/rcos-stress-tests/culture-influence/charismatic-spiritual-authority)** — les figures vénérées sont souvent celles dont les préférences sont appliquées comme des normes non déclarées.'
+    md: '- **[Autorité spirituelle charismatique](rcos:test/charismatic-spiritual-authority)** — les figures vénérées sont souvent celles dont les préférences sont appliquées comme des normes non déclarées.'

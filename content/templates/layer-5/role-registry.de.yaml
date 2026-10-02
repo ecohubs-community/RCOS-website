@@ -1,10 +1,10 @@
 lang: de
-sourceHash: dc14fb69
+sourceHash: e8e18914
 title: Rollenverzeichnis
 preamble: |-
   - **Ebene:** 5 — Betrieb & Koordination
   - **Status:** Vorlage — an eure Gemeinschaft anpassen
-  - **RCOS-Referenz:** [§7.1](/articles/rcos-core/v0-1/layer-5-operations-coordination#71-roles-and-responsibilities), [§7.6](/articles/rcos-core/v0-1/layer-5-operations-coordination#76-artifacts)
+  - **RCOS-Referenz:** [§7.1](rcos:§7.1), [§7.6](rcos:§7.6)
 
   ---
 sections:

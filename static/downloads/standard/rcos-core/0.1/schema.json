@@ -1,0 +1,713 @@
+{
+	"$schema": "https://json-schema.org/draft/2020-12/schema",
+	"title": "RCOS standard data",
+	"description": "Schemas for the files published under /downloads/standard/<standard>/<version>/. Licence of the data: CC BY 4.0.",
+	"$defs": {
+		"clauses": {
+			"$schema": "https://json-schema.org/draft/2020-12/schema",
+			"type": "array",
+			"items": {
+				"type": "object",
+				"properties": {
+					"ref": {
+						"type": "string",
+						"pattern": "^\\d+\\.\\d+\\.\\d+$",
+						"description": "Number as written in the standard, e.g. 2.1.1. Can change between versions."
+					},
+					"layer": {
+						"type": "integer",
+						"minimum": 0,
+						"maximum": 6
+					},
+					"specSection": {
+						"anyOf": [
+							{
+								"type": "object",
+								"properties": {
+									"ref": {
+										"type": "string"
+									},
+									"title": {
+										"type": "string"
+									}
+								},
+								"required": [
+									"ref",
+									"title"
+								],
+								"additionalProperties": false
+							},
+							{
+								"type": "null"
+							}
+						]
+					},
+					"normativity": {
+						"type": "string",
+						"enum": [
+							"MUST",
+							"SHOULD",
+							"MAY",
+							"INFORMATIVE"
+						]
+					},
+					"key": {
+						"type": "string",
+						"description": "Stable identifier, e.g. l0.purpose-definition.1. Use this to link to a clause."
+					},
+					"i18n": {
+						"type": "object",
+						"properties": {
+							"en": {
+								"type": "string"
+							},
+							"de": {
+								"type": "string"
+							},
+							"es": {
+								"type": "string"
+							},
+							"fr": {
+								"type": "string"
+							},
+							"pt-br": {
+								"type": "string"
+							}
+						},
+						"required": [
+							"en"
+						],
+						"additionalProperties": false
+					},
+					"disposition": {
+						"type": "string",
+						"enum": [
+							"defined_by_section",
+							"satisfied_by_platform",
+							"not_a_definition"
+						]
+					},
+					"dispositionNote": {
+						"type": "string"
+					},
+					"referencedBy": {
+						"type": "array",
+						"items": {
+							"type": "string",
+							"pattern": "^[a-z0-9-]+\\.[a-z0-9-]+$"
+						}
+					},
+					"owner": {
+						"anyOf": [
+							{
+								"type": "string",
+								"pattern": "^[a-z0-9-]+\\.[a-z0-9-]+$"
+							},
+							{
+								"type": "null"
+							}
+						],
+						"description": "The one template section that answers this clause."
+					}
+				},
+				"required": [
+					"ref",
+					"layer",
+					"specSection",
+					"normativity",
+					"key",
+					"i18n",
+					"disposition",
+					"referencedBy",
+					"owner"
+				],
+				"additionalProperties": false,
+				"description": "A numbered rule of the standard"
+			}
+		},
+		"sections": {
+			"$schema": "https://json-schema.org/draft/2020-12/schema",
+			"type": "array",
+			"items": {
+				"type": "object",
+				"properties": {
+					"key": {
+						"type": "string",
+						"pattern": "^[a-z0-9-]+\\.[a-z0-9-]+$",
+						"description": "<artifact>.<section>"
+					},
+					"artifact": {
+						"type": "string"
+					},
+					"order": {
+						"type": "integer",
+						"minimum": -9007199254740991,
+						"maximum": 9007199254740991
+					},
+					"clauseRefs": {
+						"type": "array",
+						"items": {
+							"type": "string",
+							"pattern": "^\\d+\\.\\d+\\.\\d+$"
+						}
+					},
+					"i18n": {
+						"type": "object",
+						"properties": {
+							"en": {
+								"type": "object",
+								"properties": {
+									"title": {
+										"type": "string"
+									},
+									"whyItMatters": {
+										"type": [
+											"string",
+											"null"
+										]
+									},
+									"whatToDefine": {
+										"type": [
+											"string",
+											"null"
+										]
+									},
+									"placeholders": {
+										"type": "array",
+										"items": {
+											"type": "string"
+										}
+									}
+								},
+								"required": [
+									"title",
+									"whyItMatters",
+									"whatToDefine",
+									"placeholders"
+								],
+								"additionalProperties": false
+							},
+							"de": {
+								"type": "object",
+								"properties": {
+									"title": {
+										"type": "string"
+									},
+									"whyItMatters": {
+										"type": [
+											"string",
+											"null"
+										]
+									},
+									"whatToDefine": {
+										"type": [
+											"string",
+											"null"
+										]
+									},
+									"placeholders": {
+										"type": "array",
+										"items": {
+											"type": "string"
+										}
+									}
+								},
+								"required": [
+									"title",
+									"whyItMatters",
+									"whatToDefine",
+									"placeholders"
+								],
+								"additionalProperties": false
+							},
+							"es": {
+								"type": "object",
+								"properties": {
+									"title": {
+										"type": "string"
+									},
+									"whyItMatters": {
+										"type": [
+											"string",
+											"null"
+										]
+									},
+									"whatToDefine": {
+										"type": [
+											"string",
+											"null"
+										]
+									},
+									"placeholders": {
+										"type": "array",
+										"items": {
+											"type": "string"
+										}
+									}
+								},
+								"required": [
+									"title",
+									"whyItMatters",
+									"whatToDefine",
+									"placeholders"
+								],
+								"additionalProperties": false
+							},
+							"fr": {
+								"type": "object",
+								"properties": {
+									"title": {
+										"type": "string"
+									},
+									"whyItMatters": {
+										"type": [
+											"string",
+											"null"
+										]
+									},
+									"whatToDefine": {
+										"type": [
+											"string",
+											"null"
+										]
+									},
+									"placeholders": {
+										"type": "array",
+										"items": {
+											"type": "string"
+										}
+									}
+								},
+								"required": [
+									"title",
+									"whyItMatters",
+									"whatToDefine",
+									"placeholders"
+								],
+								"additionalProperties": false
+							},
+							"pt-br": {
+								"type": "object",
+								"properties": {
+									"title": {
+										"type": "string"
+									},
+									"whyItMatters": {
+										"type": [
+											"string",
+											"null"
+										]
+									},
+									"whatToDefine": {
+										"type": [
+											"string",
+											"null"
+										]
+									},
+									"placeholders": {
+										"type": "array",
+										"items": {
+											"type": "string"
+										}
+									}
+								},
+								"required": [
+									"title",
+									"whyItMatters",
+									"whatToDefine",
+									"placeholders"
+								],
+								"additionalProperties": false
+							}
+						},
+						"required": [
+							"en"
+						],
+						"additionalProperties": false
+					},
+					"disposition": {
+						"type": "string",
+						"enum": [
+							"authored",
+							"filled_from_decision",
+							"derived",
+							"instance_record"
+						]
+					},
+					"dispositionNote": {
+						"type": [
+							"string",
+							"null"
+						]
+					},
+					"ownsClauses": {
+						"type": "array",
+						"items": {
+							"type": "string",
+							"pattern": "^\\d+\\.\\d+\\.\\d+$"
+						}
+					}
+				},
+				"required": [
+					"key",
+					"artifact",
+					"order",
+					"clauseRefs",
+					"i18n",
+					"disposition",
+					"dispositionNote",
+					"ownsClauses"
+				],
+				"additionalProperties": false,
+				"description": "A section of a template (artifact): one thing a community writes down"
+			}
+		},
+		"artifacts": {
+			"$schema": "https://json-schema.org/draft/2020-12/schema",
+			"type": "array",
+			"items": {
+				"type": "object",
+				"properties": {
+					"key": {
+						"type": "string"
+					},
+					"sourceId": {
+						"type": "string"
+					},
+					"layer": {
+						"type": "integer",
+						"minimum": 0,
+						"maximum": 6
+					},
+					"order": {
+						"type": "integer",
+						"minimum": -9007199254740991,
+						"maximum": 9007199254740991
+					},
+					"i18n": {
+						"type": "object",
+						"properties": {
+							"en": {
+								"type": "object",
+								"properties": {
+									"title": {
+										"type": "string"
+									},
+									"summary": {
+										"type": [
+											"string",
+											"null"
+										]
+									}
+								},
+								"required": [
+									"title",
+									"summary"
+								],
+								"additionalProperties": false
+							},
+							"de": {
+								"type": "object",
+								"properties": {
+									"title": {
+										"type": "string"
+									},
+									"summary": {
+										"type": [
+											"string",
+											"null"
+										]
+									}
+								},
+								"required": [
+									"title",
+									"summary"
+								],
+								"additionalProperties": false
+							},
+							"es": {
+								"type": "object",
+								"properties": {
+									"title": {
+										"type": "string"
+									},
+									"summary": {
+										"type": [
+											"string",
+											"null"
+										]
+									}
+								},
+								"required": [
+									"title",
+									"summary"
+								],
+								"additionalProperties": false
+							},
+							"fr": {
+								"type": "object",
+								"properties": {
+									"title": {
+										"type": "string"
+									},
+									"summary": {
+										"type": [
+											"string",
+											"null"
+										]
+									}
+								},
+								"required": [
+									"title",
+									"summary"
+								],
+								"additionalProperties": false
+							},
+							"pt-br": {
+								"type": "object",
+								"properties": {
+									"title": {
+										"type": "string"
+									},
+									"summary": {
+										"type": [
+											"string",
+											"null"
+										]
+									}
+								},
+								"required": [
+									"title",
+									"summary"
+								],
+								"additionalProperties": false
+							}
+						},
+						"required": [
+							"en"
+						],
+						"additionalProperties": false
+					},
+					"mandatory": {
+						"type": "boolean"
+					},
+					"sectionKeys": {
+						"type": "array",
+						"items": {
+							"type": "string",
+							"pattern": "^[a-z0-9-]+\\.[a-z0-9-]+$"
+						}
+					}
+				},
+				"required": [
+					"key",
+					"sourceId",
+					"layer",
+					"order",
+					"i18n",
+					"mandatory",
+					"sectionKeys"
+				],
+				"additionalProperties": false,
+				"description": "A template a community fills in"
+			}
+		},
+		"glossary": {
+			"$schema": "https://json-schema.org/draft/2020-12/schema",
+			"type": "array",
+			"items": {
+				"type": "object",
+				"properties": {
+					"key": {
+						"type": "string"
+					},
+					"i18n": {
+						"type": "object",
+						"properties": {
+							"en": {
+								"type": "object",
+								"properties": {
+									"term": {
+										"type": "string"
+									},
+									"definition": {
+										"type": "string"
+									}
+								},
+								"required": [
+									"term",
+									"definition"
+								],
+								"additionalProperties": false
+							},
+							"de": {
+								"type": "object",
+								"properties": {
+									"term": {
+										"type": "string"
+									},
+									"definition": {
+										"type": "string"
+									}
+								},
+								"required": [
+									"term",
+									"definition"
+								],
+								"additionalProperties": false
+							},
+							"es": {
+								"type": "object",
+								"properties": {
+									"term": {
+										"type": "string"
+									},
+									"definition": {
+										"type": "string"
+									}
+								},
+								"required": [
+									"term",
+									"definition"
+								],
+								"additionalProperties": false
+							},
+							"fr": {
+								"type": "object",
+								"properties": {
+									"term": {
+										"type": "string"
+									},
+									"definition": {
+										"type": "string"
+									}
+								},
+								"required": [
+									"term",
+									"definition"
+								],
+								"additionalProperties": false
+							},
+							"pt-br": {
+								"type": "object",
+								"properties": {
+									"term": {
+										"type": "string"
+									},
+									"definition": {
+										"type": "string"
+									}
+								},
+								"required": [
+									"term",
+									"definition"
+								],
+								"additionalProperties": false
+							}
+						},
+						"required": [
+							"en"
+						],
+						"additionalProperties": false
+					},
+					"definedBy": {
+						"type": "string",
+						"pattern": "^[a-z0-9-]+\\.[a-z0-9-]+$"
+					}
+				},
+				"required": [
+					"key",
+					"i18n"
+				],
+				"additionalProperties": false
+			}
+		},
+		"meta": {
+			"$schema": "https://json-schema.org/draft/2020-12/schema",
+			"type": "object",
+			"properties": {
+				"standard": {
+					"type": "string"
+				},
+				"version": {
+					"type": "string"
+				},
+				"generated": {
+					"type": "string"
+				},
+				"licence": {
+					"type": "string"
+				},
+				"attribution": {
+					"type": "string"
+				},
+				"source": {
+					"type": "string",
+					"format": "uri"
+				},
+				"defaultLocale": {
+					"type": "string",
+					"const": "en"
+				},
+				"locales": {
+					"type": "array",
+					"items": {
+						"type": "string",
+						"enum": [
+							"en",
+							"de",
+							"es",
+							"fr",
+							"pt-br"
+						]
+					}
+				},
+				"layers": {
+					"type": "array",
+					"items": {
+						"type": "object",
+						"properties": {
+							"n": {
+								"type": "integer",
+								"minimum": -9007199254740991,
+								"maximum": 9007199254740991
+							},
+							"name": {
+								"type": "string"
+							}
+						},
+						"required": [
+							"n",
+							"name"
+						],
+						"additionalProperties": false
+					}
+				},
+				"counts": {
+					"type": "object",
+					"propertyNames": {
+						"type": "string"
+					},
+					"additionalProperties": {
+						"type": "integer",
+						"minimum": -9007199254740991,
+						"maximum": 9007199254740991
+					}
+				}
+			},
+			"required": [
+				"standard",
+				"version",
+				"generated",
+				"licence",
+				"attribution",
+				"source",
+				"defaultLocale",
+				"locales",
+				"layers",
+				"counts"
+			],
+			"additionalProperties": false
+		}
+	}
+}

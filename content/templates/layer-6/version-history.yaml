@@ -7,7 +7,7 @@ order: 1
 preamble: |-
   - **Layer:** 6 — Evolution & Adaptation
   - **Status:** Template — adapt for your community; updated with each adopted change
-  - **RCOS reference:** [§8.2](/articles/rcos-core/v0-1/layer-6-evolution-adaptation#82-versioning-and-authority), [§8.6](/articles/rcos-core/v0-1/layer-6-evolution-adaptation#86-artifacts)
+  - **RCOS reference:** [§8.2](rcos:§8.2), [§8.6](rcos:§8.6)
 
   > The authoritative human-readable record of all adopted changes to your community's RCOS implementation. The currently active version is the most recent entry at the top of this file. Superseded rules remain accessible via version control.
 

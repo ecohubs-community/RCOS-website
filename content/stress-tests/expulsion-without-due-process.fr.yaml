@@ -1,10 +1,10 @@
 lang: fr
-sourceHash: ebdd7ed1
+sourceHash: 6082a2d2
 title: Expulsion sans procédure équitable
 summary: Quand un membre peut être évincé sans procédure, sans recours et sans trace.
 tags:
-  - 'Layer 1: Membership'
-  - High severity
+  - 'Couche 1 : Adhésion'
+  - Sévérité élevée
 symptoms:
   - Un membre a été exclu (ou poussé à partir) sans procédure définie.
   - L'exclusion s'est faite par consensus informel, par un vote soudain ou par pression sociale — pas par une procédure écrite.
@@ -68,7 +68,7 @@ sections:
       |---|---|
       | **L0 — Implicite** | L'exclusion est possible mais non définie ; elle se fait par pression ou par un vote soudain. |
       | **L1 — Nommé** | Le groupe sait qu'il n'a pas de procédure d'expulsion mais n'en a pas construit. |
-      | **L2 — Documenté** | Une procédure d'exclusion forcée existe — motifs, préavis, audience et recours — dans un [Protocole de sortie](/articles/rcos-templates/layer-1/exit-protocol). |
+      | **L2 — Documenté** | Une procédure d'exclusion forcée existe — motifs, préavis, audience et recours — dans un [Protocole de sortie](rcos:template/exit-protocol). |
       | **L3 — Appliqué et éprouvé** | Toute exclusion suit une procédure équitable ; elle a été appliquée équitablement au moins une fois, y compris avec une vraie occasion de répondre. |
 
       La plupart des communautés qui se reconnaissent ici se situent à **L0 ou L1**. L'objectif n'est pas la perfection — c'est de monter d'un barreau.
@@ -77,11 +77,11 @@ sections:
     md: |-
       RCOS exige que la décision d'adhésion la plus difficile soit la plus procédurale :
 
-      - **[Protocole de sortie](/articles/rcos-templates/layer-1/exit-protocol)** — définis les motifs, le préavis, l'audience et le recours pour l'exclusion forcée *avant* d'en avoir besoin.
-      - **[Protocole de responsabilité](/articles/rcos-templates/layer-4/accountability-protocol)** — une voie axée sur la réparation pour que l'exclusion soit le dernier recours, pas le premier réflexe.
-      - **[Registre d'état d'adhésion](/articles/rcos-templates/layer-1/membership-state-registry)** — fais de la suspension ou de l'exclusion un changement d'état explicite et consigné, pas une humeur.
+      - **[Protocole de sortie](rcos:template/exit-protocol)** — définis les motifs, le préavis, l'audience et le recours pour l'exclusion forcée *avant* d'en avoir besoin.
+      - **[Protocole de responsabilité](rcos:template/accountability-protocol)** — une voie axée sur la réparation pour que l'exclusion soit le dernier recours, pas le premier réflexe.
+      - **[Registre d'état d'adhésion](rcos:template/membership-state-registry)** — fais de la suspension ou de l'exclusion un changement d'état explicite et consigné, pas une humeur.
 
-      Voir aussi la spécification : [Couche 1 — Sortie et séparation](/articles/rcos-core/v0-1/layer-1-membership-system#36-exit-and-separation) et [Couche 4 — Sanctions, réparation et séparation](/articles/rcos-core/v0-1/layer-4-conflict-repair-accountability#64-sanctions-repair-and-separation).
+      Voir aussi la spécification : [Couche 1 — Sortie et séparation](rcos:§3.6) et [Couche 4 — Sanctions, réparation et séparation](rcos:§6.4).
   if-it-s-already-happening:
     title: Si ça se produit déjà
     md: |-
@@ -93,9 +93,9 @@ sections:
       4. **Surveille la cascade** — l'expulsion arbitraire apprend à toute la communauté à s'auto-censurer.
   what-this-failure-tends-to-trigger:
     title: Ce que cette défaillance tend à déclencher
-    md: '- **[Normalisation de l''évitement du conflit](/articles/rcos-stress-tests/conflict-accountability/conflict-avoidance-normalization)** — si prendre la parole peut te faire exclure, les gens cessent de prendre la parole.'
+    md: '- **[Normalisation de l''évitement du conflit](rcos:test/conflict-avoidance-normalization)** — si prendre la parole peut te faire exclure, les gens cessent de prendre la parole.'
   related-stress-tests:
     title: Stress tests apparentés
     md: |-
-      - **[Sanction avant réparation](/articles/rcos-stress-tests/conflict-accountability/punishment-before-repair)** — le réflexe punitif qui transforme la responsabilité en expulsion en premier lieu.
-      - **[Test de portée des violations de normes culturelles](/articles/rcos-stress-tests/membership-boundaries/cultural-norm-violation-scope-test)** — une violation de norme non déclarée est souvent ce qui déclenche la ruée vers l'expulsion.
+      - **[Sanction avant réparation](rcos:test/punishment-before-repair)** — le réflexe punitif qui transforme la responsabilité en expulsion en premier lieu.
+      - **[Test de portée des violations de normes culturelles](rcos:test/cultural-norm-violation-scope-test)** — une violation de norme non déclarée est souvent ce qui déclenche la ruée vers l'expulsion.

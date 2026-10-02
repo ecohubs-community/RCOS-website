@@ -1,10 +1,10 @@
 lang: pt-br
-sourceHash: 067f10fa
+sourceHash: f6582746
 title: Escada de Resolução de Conflitos
 preamble: |-
   - **Camada:** 4 — Conflito, Reparação e Responsabilização
   - **Status:** Modelo — adapte para sua comunidade
-  - **Referência RCOS:** [§6.1](/articles/rcos-core/v0-1/layer-4-conflict-repair-accountability#61-conflict-classification), [§6.2](/articles/rcos-core/v0-1/layer-4-conflict-repair-accountability#62-resolution-pathways), [§6.3](/articles/rcos-core/v0-1/layer-4-conflict-repair-accountability#63-safeguards), [§6.5](/articles/rcos-core/v0-1/layer-4-conflict-repair-accountability#65-artifacts)
+  - **Referência RCOS:** [§6.1](rcos:§6.1), [§6.2](rcos:§6.2), [§6.3](rcos:§6.3), [§6.5](rcos:§6.5)
 
   ---
 sections:

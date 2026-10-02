@@ -1,10 +1,10 @@
 lang: de
-sourceHash: 66c7d7c7
+sourceHash: 6e7bc1d4
 title: Lernprotokoll
 preamble: |-
   - **Schicht:** 6 — Evolution & Anpassung
   - **Status:** Vorlage — an deine Gemeinschaft anpassen; wird aktualisiert, wenn lernrelevante Ereignisse eintreten
-  - **RCOS-Referenz:** [§8.4](/articles/rcos-core/v0-1/layer-6-evolution-adaptation#84-learning-and-feedback-capture), [§8.6](/articles/rcos-core/v0-1/layer-6-evolution-adaptation#86-artifacts)
+  - **RCOS-Referenz:** [§8.4](rcos:§8.4), [§8.6](rcos:§8.6)
 
   > Dokumentiert größere Fehler, Anpassungen, Rücknahmen und systemische Erkenntnisse. Wiederkehrende Fehlermuster müssen eine strukturelle Überprüfung auslösen, keine individuelle Schuldzuweisung. Einträge werden vorangestellt (neueste zuerst).
 

@@ -1,10 +1,10 @@
 lang: fr
-sourceHash: 5b35a698
+sourceHash: '78485152'
 title: Prise de décision par cliques informelles
 summary: Quand les vraies décisions se prennent avant la réunion, parmi les mêmes quelques personnes.
 tags:
-  - 'Layer 2: Governance'
-  - High severity
+  - 'Couche 2 : Gouvernance'
+  - Sévérité élevée
 symptoms:
   - Les décisions semblent « déjà prises » au moment où elles arrivent devant le groupe entier.
   - Un sous-groupe récurrent (la table de cuisine, un fil de discussion, les « originaux ») façonne les résultats.
@@ -69,7 +69,7 @@ sections:
       |---|---|
       | **L0 — Implicite** | Les vraies décisions se prennent dans des sous-groupes informels ; le processus formel les ratifie après coup. |
       | **L1 — Nommé** | Le groupe ressent une dynamique de clique mais n'a pas exigé que les décisions soient consignées. |
-      | **L2 — Documenté** | Une [matrice de décision](/articles/rcos-templates/layer-2/decision-matrix) définit ce qui DOIT être décidé par des canaux formels et tracés ; les résultats hors-canal sont invalides. |
+      | **L2 — Documenté** | Une [matrice de décision](rcos:template/decision-matrix) définit ce qui DOIT être décidé par des canaux formels et tracés ; les résultats hors-canal sont invalides. |
       | **L3 — Appliqué et rodé** | Les décisions sont lisibles et examinables ; les résolutions informelles sont systématiquement ramenées au registre. |
 
       La plupart des communautés qui se reconnaissent ici se trouvent à **L0 ou L1**. L'objectif n'est pas la perfection — c'est de monter d'un barreau.
@@ -78,11 +78,11 @@ sections:
     md: |-
       RCOS garde l'autorité lisible en exigeant que les décisions soient consignées :
 
-      - **[Matrice de décision](/articles/rcos-templates/layer-2/decision-matrix)** — définit quelles décisions requièrent un processus formel et tracé.
-      - **[Protocole de gouvernance](/articles/rcos-templates/layer-2/governance-protocol)** — rend explicitement invalides les décisions prises en dehors des canaux formels.
-      - **[Modèles de réunion](/articles/rcos-templates/layer-5/meeting-templates)** — consignent les décisions pour que l'autorité reste examinable, pas seulement mémorisée.
+      - **[Matrice de décision](rcos:template/decision-matrix)** — définit quelles décisions requièrent un processus formel et tracé.
+      - **[Protocole de gouvernance](rcos:template/governance-protocol)** — rend explicitement invalides les décisions prises en dehors des canaux formels.
+      - **[Modèles de réunion](rcos:template/meeting-templates)** — consignent les décisions pour que l'autorité reste examinable, pas seulement mémorisée.
 
-      Voir aussi la spécification : [Couche 2 — Matrice de décision](/articles/rcos-core/v0-1/layer-2-governance-decision-logic#44-decision-matrix) et [Couche 5 — Documentation et flux d'information](/articles/rcos-core/v0-1/layer-5-operations-coordination#73-documentation-and-information-flow).
+      Voir aussi la spécification : [Couche 2 — Matrice de décision](rcos:§4.4) et [Couche 5 — Documentation et flux d'information](rcos:§7.3).
   if-it-s-already-happening:
     title: Si c'est déjà en train d'arriver
     md: |-
@@ -95,8 +95,8 @@ sections:
   what-this-failure-tends-to-trigger:
     title: Ce que cette défaillance tend à déclencher
     md: |-
-      - **[Normalisation de l'évitement des conflits](/articles/rcos-stress-tests/conflict-accountability/conflict-avoidance-normalization)** — un groupe d'exclus apprend rapidement à ne pas défier le groupe d'initiés.
-      - **[Veto informel du fondateur](/articles/rcos-stress-tests/governance-power/founder-informal-veto)** — la clique se forme typiquement autour d'une autorité informelle et exécute ses préférences.
+      - **[Normalisation de l'évitement des conflits](rcos:test/conflict-avoidance-normalization)** — un groupe d'exclus apprend rapidement à ne pas défier le groupe d'initiés.
+      - **[Veto informel du fondateur](rcos:test/founder-informal-veto)** — la clique se forme typiquement autour d'une autorité informelle et exécute ses préférences.
   related-stress-tests:
     title: Tests de résistance liés
-    md: '- **[Locuteurs dominants dans les espaces décisionnels](/articles/rcos-stress-tests/governance-power/dominant-speakers-decision-spaces)** — la version en réunion de la même dérive de l''autorité loin des mécanismes convenus.'
+    md: '- **[Locuteurs dominants dans les espaces décisionnels](rcos:test/dominant-speakers-decision-spaces)** — la version en réunion de la même dérive de l''autorité loin des mécanismes convenus.'

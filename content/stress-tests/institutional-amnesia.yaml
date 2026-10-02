@@ -92,7 +92,7 @@ sections:
       |---|---|
       | **L0 — Implicit** | Nothing is captured; memory is oral and lives in a few heads. |
       | **L1 — Named** | The group knows it repeats mistakes but hasn't started recording. |
-      | **L2 — Documented** | A [Learning Log](/articles/rcos-templates/layer-6/learning-log) and decision records capture significant decisions, conflicts, and outcomes. |
+      | **L2 — Documented** | A [Learning Log](rcos:template/learning-log) and decision records capture significant decisions, conflicts, and outcomes. |
       | **L3 — Enforced & rehearsed** | Learning is routinely captured *and actually consulted*; a past lesson has demonstrably prevented a repeat. |
 
       Most communities that recognise themselves here sit at **L0 or L1**. The goal isn't perfection — it's moving up one rung.
@@ -101,11 +101,11 @@ sections:
     md: |-
       RCOS gives the community a memory that outlives its members:
 
-      - **[Learning Log](/articles/rcos-templates/layer-6/learning-log)** — capture decisions, experiments, conflicts, and what was learned.
-      - **[Version History](/articles/rcos-templates/layer-6/version-history)** — record how and why the rules changed over time.
-      - **[Operations Manual](/articles/rcos-templates/layer-5/operations-manual)** — keep operational knowledge out of individual heads.
+      - **[Learning Log](rcos:template/learning-log)** — capture decisions, experiments, conflicts, and what was learned.
+      - **[Version History](rcos:template/version-history)** — record how and why the rules changed over time.
+      - **[Operations Manual](rcos:template/operations-manual)** — keep operational knowledge out of individual heads.
 
-      See also the spec: [Layer 6 — Learning and Feedback Capture](/articles/rcos-core/v0-1/layer-6-evolution-adaptation#84-learning-and-feedback-capture) and [Layer 5 — Documentation and Information Flow](/articles/rcos-core/v0-1/layer-5-operations-coordination#73-documentation-and-information-flow).
+      See also the spec: [Layer 6 — Learning and Feedback Capture](rcos:§8.4) and [Layer 5 — Documentation and Information Flow](rcos:§7.3).
   - id: if-it-s-already-happening
     title: If it's already happening
     md: |-
@@ -117,8 +117,8 @@ sections:
   - id: what-this-failure-tends-to-trigger
     title: What this failure tends to trigger
     md: |-
-      - **[Rapid Growth without Onboarding](/articles/rcos-stress-tests/operations-coordination/rapid-growth-without-onboarding)** — with no captured knowledge, newcomers can't be brought up to speed.
-      - **[Invisible Power via Responsibilities](/articles/rcos-stress-tests/operations-coordination/invisible-power-via-responsibilities)** — when knowledge lives only in heads, those heads become indispensable.
+      - **[Rapid Growth without Onboarding](rcos:test/rapid-growth-without-onboarding)** — with no captured knowledge, newcomers can't be brought up to speed.
+      - **[Invisible Power via Responsibilities](rcos:test/invisible-power-via-responsibilities)** — when knowledge lives only in heads, those heads become indispensable.
   - id: related-stress-tests
     title: Related stress tests
-    md: '- **[Irreversible Experiments](/articles/rcos-stress-tests/change-emergencies/irreversible-experiments)** — uncaptured learning is what makes experiments — reversible or not — teach nothing.'
+    md: '- **[Irreversible Experiments](rcos:test/irreversible-experiments)** — uncaptured learning is what makes experiments — reversible or not — teach nothing.'

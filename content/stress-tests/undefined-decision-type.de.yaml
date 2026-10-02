@@ -1,10 +1,10 @@
 lang: de
-sourceHash: 248a53cf
+sourceHash: f08845a4
 title: Undefinierter Entscheidungstyp
 summary: Wenn die Gruppe darüber streitet, was zu entscheiden ist, bevor sie sich einig ist, wie entschieden wird.
 tags:
-  - 'Layer 2: Governance'
-  - Medium severity
+  - 'Schicht 2: Governance'
+  - Mittlerer Schweregrad
 symptoms:
   - Diskussionen kommen ins Stocken, weil sich niemand darauf geeinigt hat, ob es sich um einen Konsens, eine Abstimmung oder eine delegierte Entscheidung handelt.
   - Dieselbe Entscheidung wird wieder aufgemacht, weil nie klar war, dass sie tatsächlich getroffen wurde.
@@ -69,7 +69,7 @@ sections:
       |---|---|
       | **L0 — Implizit** | Der Entscheidungstyp wird jedes Mal improvisiert; das Framing entscheidet das Ergebnis. |
       | **L1 — Benannt** | Die Gruppe bemerkt die Verwirrung, hat aber Entscheidungstypen noch nicht Mechanismen zugeordnet. |
-      | **L2 — Dokumentiert** | Eine [Entscheidungsmatrix](/articles/rcos-templates/layer-2/decision-matrix) ordnet jeder Klasse von Entscheidung einen Typ, einen Mechanismus und Verantwortliche zu — geklärt vor dem Inhalt. |
+      | **L2 — Dokumentiert** | Eine [Entscheidungsmatrix](rcos:template/decision-matrix) ordnet jeder Klasse von Entscheidung einen Typ, einen Mechanismus und Verantwortliche zu — geklärt vor dem Inhalt. |
       | **L3 — Durchgesetzt & eingeübt** | Jede bedeutende Entscheidung benennt ihren Typ vorab; Entscheidungen sind endgültig und werden nicht stillschweigend wieder aufgemacht. |
 
       Die meisten Gemeinschaften, die sich hier wiedererkennen, sitzen auf **L0 oder L1**. Das Ziel ist nicht Perfektion — es ist, eine Stufe weiterzukommen.
@@ -78,10 +78,10 @@ sections:
     md: |-
       RCOS erzwingt Typ vor Inhalt:
 
-      - **[Entscheidungsmatrix](/articles/rcos-templates/layer-2/decision-matrix)** — ordne Klassen von Entscheidungen ihrem Mechanismus und ihrer Befugnis zu, damit der Typ vorab festgelegt ist.
-      - **[Governance-Protokoll](/articles/rcos-templates/layer-2/governance-protocol)** — mache "den Entscheidungstyp zuerst benennen" zu einer stehenden Regel der Arbeitsweise der Gruppe.
+      - **[Entscheidungsmatrix](rcos:template/decision-matrix)** — ordne Klassen von Entscheidungen ihrem Mechanismus und ihrer Befugnis zu, damit der Typ vorab festgelegt ist.
+      - **[Governance-Protokoll](rcos:template/governance-protocol)** — mache "den Entscheidungstyp zuerst benennen" zu einer stehenden Regel der Arbeitsweise der Gruppe.
 
-      Siehe auch die Spezifikation: [Schicht 2 — Entscheidungstypen](/articles/rcos-core/v0-1/layer-2-governance-decision-logic#41-decision-types) und [Entscheidungsmatrix](/articles/rcos-core/v0-1/layer-2-governance-decision-logic#44-decision-matrix).
+      Siehe auch die Spezifikation: [Schicht 2 — Entscheidungstypen](rcos:§4.1) und [Entscheidungsmatrix](rcos:§4.4).
   if-it-s-already-happening:
     title: Wenn es bereits passiert
     md: |-
@@ -93,8 +93,8 @@ sections:
   what-this-failure-tends-to-trigger:
     title: Was dieser Fehler typischerweise auslöst
     md: |-
-      - **[Dominante Sprecher:innen in Entscheidungsräumen](/articles/rcos-stress-tests/governance-power/dominant-speakers-decision-spaces)** — ohne vereinbarten Mechanismus entscheiden Redezeit und Framing über die Ergebnisse.
-      - **[Informelle Cliquen-Entscheidungsfindung](/articles/rcos-stress-tests/governance-power/informal-clique-decision-making)** — ein undefinierter Typ lässt Entscheidungen zu denjenigen abdriften, die sie zuerst formuliert haben.
+      - **[Dominante Sprecher:innen in Entscheidungsräumen](rcos:test/dominant-speakers-decision-spaces)** — ohne vereinbarten Mechanismus entscheiden Redezeit und Framing über die Ergebnisse.
+      - **[Informelle Cliquen-Entscheidungsfindung](rcos:test/informal-clique-decision-making)** — ein undefinierter Typ lässt Entscheidungen zu denjenigen abdriften, die sie zuerst formuliert haben.
   related-stress-tests:
     title: Verwandte Stresstests
-    md: '- **[Dominante Sprecher:innen in Entscheidungsräumen](/articles/rcos-stress-tests/governance-power/dominant-speakers-decision-spaces)** — derselbe fehlende Mechanismus, ausgedrückt darin, wer am meisten redet, statt wer zuerst formuliert.'
+    md: '- **[Dominante Sprecher:innen in Entscheidungsräumen](rcos:test/dominant-speakers-decision-spaces)** — derselbe fehlende Mechanismus, ausgedrückt darin, wer am meisten redet, statt wer zuerst formuliert.'

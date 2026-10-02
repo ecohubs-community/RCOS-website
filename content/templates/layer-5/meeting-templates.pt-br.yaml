@@ -1,10 +1,10 @@
 lang: pt-br
-sourceHash: 7c2a4167
+sourceHash: 811085fd
 title: Modelos de Reunião
 preamble: |-
   - **Camada:** 5 — Operações e Coordenação
   - **Status:** Modelo — adapte para sua comunidade
-  - **Referência RCOS:** [§7.2](/articles/rcos-core/v0-1/layer-5-operations-coordination#72-meeting-system), [§7.6](/articles/rcos-core/v0-1/layer-5-operations-coordination#76-artifacts)
+  - **Referência RCOS:** [§7.2](rcos:§7.2), [§7.6](rcos:§7.6)
 
   > Os modelos de reunião declaram o propósito, o escopo de decisão, o quórum e a estrutura de cada tipo de reunião. Uma reunião sem um modelo declarado, com tempo suficiente, acumulará autoridade que não deveria ter. Adapte estes modelos e adicione ou remova tipos de reunião conforme sua comunidade precisar.
 
@@ -187,7 +187,7 @@ sections:
     title: 'Tipo de Reunião: Tratamento de Conflitos'
     blocks:
       clauses:
-        note: ; ver também Camada 4 — [Escada de Resolução de Conflitos](/articles/rcos-core/v0-1/layer-4-conflict-repair-accountability#62-resolution-pathways)
+        note: ; ver também Camada 4 — [Escada de Resolução de Conflitos](rcos:§6.2)
       rationale:
         summary: Por que um tipo de reunião distinto para conflito?
         body: 'O trabalho com conflitos tem regras que outras reuniões não têm: confidencialidade, seleção do(a) Facilitador(a) que ignora a preferência das partes, proteções contra retaliação e registros restritos. Usar o modelo de Operações para uma sessão de conflito violaria silenciosamente todas elas. Um modelo dedicado torna o container diferente visível desde o primeiro minuto.'

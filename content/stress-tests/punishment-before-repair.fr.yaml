@@ -1,10 +1,10 @@
 lang: fr
-sourceHash: ec1d1fab
+sourceHash: a2d8b763
 title: Punir avant de réparer
 summary: Quand le premier réflexe de la communauté après un préjudice est de punir, pas de réparer.
 tags:
-  - 'Layer 4: Conflict'
-  - High severity
+  - 'Couche 4 : Conflit'
+  - Sévérité élevée
 symptoms:
   - Quand quelqu'un cause un préjudice, le réflexe est l'exclusion, la honte ou des sanctions — pas une conversation de réparation.
   - Il n'y a pas de voie restauratrice ; la responsabilité signifie des conséquences, point final.
@@ -69,7 +69,7 @@ sections:
       |---|---|
       | **N0 — Implicite** | Le préjudice est traité par la punition ou l'exclusion ; aucune voie de réparation n'existe. |
       | **N1 — Nommé** | Le groupe veut être restauratif mais n'a pas construit de processus axé réparation d'abord. |
-      | **N2 — Documenté** | Un [Protocole de responsabilité](/articles/rcos-templates/layer-4/accountability-protocol) fait de la réparation la première étape ; les sanctions ne suivent que si la réparation échoue ou est refusée. |
+      | **N2 — Documenté** | Un [Protocole de responsabilité](rcos:template/accountability-protocol) fait de la réparation la première étape ; les sanctions ne suivent que si la réparation échoue ou est refusée. |
       | **N3 — Appliqué et répété** | La réparation est véritablement tentée en premier ; les sanctions sont un dernier recours encadré ; un véritable préjudice a été réparé sans sortie. |
 
       La plupart des communautés qui se reconnaissent ici se situent au **N0 ou N1**. L'objectif n'est pas la perfection — c'est de monter d'un échelon.
@@ -78,10 +78,10 @@ sections:
     md: |-
       RCOS fait de la réparation le défaut structurel, avec la punition comme recours encadré :
 
-      - **[Protocole de responsabilité](/articles/rcos-templates/layer-4/accountability-protocol)** — faire de la réparation la première étape attendue, avec des sanctions comme dernier recours défini.
-      - **[Échelle de résolution des conflits](/articles/rcos-templates/layer-4/conflict-resolution-ladder)** — escalade qui commence au barreau le plus bas et le plus restauratif, et ne monte qu'au besoin.
+      - **[Protocole de responsabilité](rcos:template/accountability-protocol)** — faire de la réparation la première étape attendue, avec des sanctions comme dernier recours défini.
+      - **[Échelle de résolution des conflits](rcos:template/conflict-resolution-ladder)** — escalade qui commence au barreau le plus bas et le plus restauratif, et ne monte qu'au besoin.
 
-      Voir aussi la spécification : [Couche 4 — Sanctions, réparation et séparation](/articles/rcos-core/v0-1/layer-4-conflict-repair-accountability#64-sanctions-repair-and-separation) et [Voies de résolution](/articles/rcos-core/v0-1/layer-4-conflict-repair-accountability#62-resolution-pathways).
+      Voir aussi la spécification : [Couche 4 — Sanctions, réparation et séparation](rcos:§6.4) et [Voies de résolution](rcos:§6.2).
   if-it-s-already-happening:
     title: Si c'est déjà en train d'arriver
     md: |-
@@ -93,8 +93,8 @@ sections:
   what-this-failure-tends-to-trigger:
     title: Ce que cette défaillance tend à déclencher
     md: |-
-      - **[Expulsion sans procédure équitable](/articles/rcos-stress-tests/membership-boundaries/expulsion-without-due-process)** — un réflexe punitif transforme la responsabilité en expulsion.
-      - **[Normalisation de l'évitement des conflits](/articles/rcos-stress-tests/conflict-accountability/conflict-avoidance-normalization)** — si assumer une erreur te vaut une punition, les gens cessent de faire émerger quoi que ce soit.
+      - **[Expulsion sans procédure équitable](rcos:test/expulsion-without-due-process)** — un réflexe punitif transforme la responsabilité en expulsion.
+      - **[Normalisation de l'évitement des conflits](rcos:test/conflict-avoidance-normalization)** — si assumer une erreur te vaut une punition, les gens cessent de faire émerger quoi que ce soit.
   related-stress-tests:
     title: Stress tests liés
-    md: '- **[Test de portée pour la violation de normes culturelles](/articles/rcos-stress-tests/membership-boundaries/cultural-norm-violation-scope-test)** — les réflexes punitifs sont les plus forts quand une norme émotionnellement chargée est enfreinte.'
+    md: '- **[Test de portée pour la violation de normes culturelles](rcos:test/cultural-norm-violation-scope-test)** — les réflexes punitifs sont les plus forts quand une norme émotionnellement chargée est enfreinte.'

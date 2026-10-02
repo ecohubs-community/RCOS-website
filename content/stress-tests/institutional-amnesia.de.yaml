@@ -1,10 +1,10 @@
 lang: de
-sourceHash: '37675487'
+sourceHash: 3167226e
 title: Institutionelle Amnesie
 summary: Wenn die Gemeinschaft dieselben Lektionen immer wieder auf die harte Tour neu lernt.
 tags:
-  - 'Layer 6: Evolution'
-  - Medium severity
+  - 'Schicht 6: Evolution'
+  - Mittlerer Schweregrad
 symptoms:
   - Dieselben Konflikte, gescheiterten Projekte oder Onboarding-Probleme treten immer wieder auf.
   - Warum frühere Entscheidungen getroffen wurden, ist verloren; niemand kann die Begründung rekonstruieren.
@@ -69,7 +69,7 @@ sections:
       |---|---|
       | **L0 — Implizit** | Nichts wird festgehalten; das Gedächtnis ist mündlich und lebt in wenigen Köpfen. |
       | **L1 — Benannt** | Die Gruppe weiß, dass sie Fehler wiederholt, hat aber noch nicht begonnen, aufzuzeichnen. |
-      | **L2 — Dokumentiert** | Ein [Learning Log](/articles/rcos-templates/layer-6/learning-log) und Entscheidungsprotokolle halten bedeutsame Entscheidungen, Konflikte und Ergebnisse fest. |
+      | **L2 — Dokumentiert** | Ein [Learning Log](rcos:template/learning-log) und Entscheidungsprotokolle halten bedeutsame Entscheidungen, Konflikte und Ergebnisse fest. |
       | **L3 — Verbindlich & eingeübt** | Lernen wird routinemäßig festgehalten *und tatsächlich konsultiert*; eine vergangene Lektion hat nachweislich eine Wiederholung verhindert. |
 
       Die meisten Gemeinschaften, die sich hier wiedererkennen, stehen bei **L0 oder L1**. Das Ziel ist nicht Perfektion — es geht darum, eine Sprosse höher zu kommen.
@@ -78,11 +78,11 @@ sections:
     md: |-
       RCOS gibt der Gemeinschaft ein Gedächtnis, das ihre Mitglieder überdauert:
 
-      - **[Learning Log](/articles/rcos-templates/layer-6/learning-log)** — halte Entscheidungen, Experimente, Konflikte und das, was gelernt wurde, fest.
-      - **[Version History](/articles/rcos-templates/layer-6/version-history)** — zeichne auf, wie und warum sich die Regeln im Laufe der Zeit geändert haben.
-      - **[Operations Manual](/articles/rcos-templates/layer-5/operations-manual)** — halte operatives Wissen aus einzelnen Köpfen heraus.
+      - **[Learning Log](rcos:template/learning-log)** — halte Entscheidungen, Experimente, Konflikte und das, was gelernt wurde, fest.
+      - **[Version History](rcos:template/version-history)** — zeichne auf, wie und warum sich die Regeln im Laufe der Zeit geändert haben.
+      - **[Operations Manual](rcos:template/operations-manual)** — halte operatives Wissen aus einzelnen Köpfen heraus.
 
-      Siehe auch die Spezifikation: [Schicht 6 — Lern- und Feedback-Erfassung](/articles/rcos-core/v0-1/layer-6-evolution-adaptation#84-learning-and-feedback-capture) und [Schicht 5 — Dokumentation und Informationsfluss](/articles/rcos-core/v0-1/layer-5-operations-coordination#73-documentation-and-information-flow).
+      Siehe auch die Spezifikation: [Schicht 6 — Lern- und Feedback-Erfassung](rcos:§8.4) und [Schicht 5 — Dokumentation und Informationsfluss](rcos:§7.3).
   if-it-s-already-happening:
     title: Wenn es bereits passiert
     md: |-
@@ -94,8 +94,8 @@ sections:
   what-this-failure-tends-to-trigger:
     title: Was dieser Fehler oft auslöst
     md: |-
-      - **[Rapid Growth without Onboarding](/articles/rcos-stress-tests/operations-coordination/rapid-growth-without-onboarding)** — ohne festgehaltenes Wissen können Neulinge nicht auf den Stand gebracht werden.
-      - **[Invisible Power via Responsibilities](/articles/rcos-stress-tests/operations-coordination/invisible-power-via-responsibilities)** — wenn Wissen nur in Köpfen lebt, werden diese Köpfe unverzichtbar.
+      - **[Rapid Growth without Onboarding](rcos:test/rapid-growth-without-onboarding)** — ohne festgehaltenes Wissen können Neulinge nicht auf den Stand gebracht werden.
+      - **[Invisible Power via Responsibilities](rcos:test/invisible-power-via-responsibilities)** — wenn Wissen nur in Köpfen lebt, werden diese Köpfe unverzichtbar.
   related-stress-tests:
     title: Verwandte Stresstests
-    md: '- **[Irreversible Experiments](/articles/rcos-stress-tests/change-emergencies/irreversible-experiments)** — nicht festgehaltenes Lernen ist das, was Experimente — ob reversibel oder nicht — nichts lehren lässt.'
+    md: '- **[Irreversible Experiments](rcos:test/irreversible-experiments)** — nicht festgehaltenes Lernen ist das, was Experimente — ob reversibel oder nicht — nichts lehren lässt.'

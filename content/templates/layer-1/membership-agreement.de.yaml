@@ -1,10 +1,10 @@
 lang: de
-sourceHash: bef8e999
+sourceHash: c0fd1050
 title: Mitgliedschaftsvereinbarung
 preamble: |-
   - **Ebene:** 1 — Mitgliedschaftssystem
   - **Status:** Vorlage — an deine Gemeinschaft anpassen
-  - **RCOS-Referenz:** [§3.4](/articles/rcos-core/v0-1/layer-1-membership-system#34-rights-and-obligations), [§3.5](/articles/rcos-core/v0-1/layer-1-membership-system#35-participation-and-contribution), [§3.8](/articles/rcos-core/v0-1/layer-1-membership-system#38-artifacts)
+  - **RCOS-Referenz:** [§3.4](rcos:§3.4), [§3.5](rcos:§3.5), [§3.8](rcos:§3.8)
 
   > Wird von jedem Mitglied zum Zeitpunkt der Aufnahme unterschrieben (oder ausdrücklich bestätigt). Definiert die Rechte und Pflichten jedes Mitgliedschaftsstatus.
 

@@ -1,5 +1,5 @@
 lang: fr
-sourceHash: 23fac515
+sourceHash: 982aaa1f
 title: Gouvernance ossifiée sans voie de changement
 summary: Quand rien ne peut changer, le changement se fait en partant.
 tags:
@@ -33,7 +33,7 @@ sections:
       - Les propositions d'adaptation meurent faute de tout mécanisme pour les examiner.
       - La communauté est visiblement en décalage avec ses propres besoins actuels.
 
-      **Ce n'est _pas_ la même chose que** protéger délibérément les invariants fondamentaux (ça, c'est sain — voir [Invariants fondamentaux non protégés](/articles/rcos-stress-tests/change-emergencies/unprotected-core-invariants) pour la défaillance *opposée*). Le signe distinctif est que *tout* est gelé, sans aucune voie contrainte pour changer quoi que ce soit — l'adaptation légitime devient donc impossible.
+      **Ce n'est _pas_ la même chose que** protéger délibérément les invariants fondamentaux (ça, c'est sain — voir [Invariants fondamentaux non protégés](rcos:test/unprotected-core-invariants) pour la défaillance *opposée*). Le signe distinctif est que *tout* est gelé, sans aucune voie contrainte pour changer quoi que ce soit — l'adaptation légitime devient donc impossible.
   why-it-happens:
     title: Pourquoi ça arrive
     md: |-
@@ -69,7 +69,7 @@ sections:
       |---|---|
       | **L0 — Implicite** | Aucune voie de changement légitime ; les règles sont gelées et les réformes se font par départ. |
       | **L1 — Nommé** | Le groupe admet qu'il ne peut pas s'adapter mais n'a pas construit de mécanisme de changement. |
-      | **L2 — Documenté** | Un [Protocole de changement](/articles/rcos-templates/layer-6/change-protocol) définit comment les règles peuvent être proposées, examinées et révisées — possible mais contraint. |
+      | **L2 — Documenté** | Un [Protocole de changement](rcos:template/change-protocol) définit comment les règles peuvent être proposées, examinées et révisées — possible mais contraint. |
       | **L3 — Appliqué et répété** | Le changement passe par le processus ; le système s'est adapté au moins une fois sans crise ni schisme. |
 
       La plupart des communautés qui se reconnaissent ici se situent à **L0 ou L1**. L'objectif n'est pas la perfection — c'est de monter d'un barreau.
@@ -78,10 +78,10 @@ sections:
     md: |-
       RCOS rend le changement possible *et* borné — ni gelé ni chaotique :
 
-      - **[Protocole de changement](/articles/rcos-templates/layer-6/change-protocol)** — définir une voie légitime et contrainte pour proposer et adopter des changements.
-      - **[Historique des versions](/articles/rcos-templates/layer-6/version-history)** — suivre comment les règles évoluent, pour que le changement soit visible et borné plutôt que redouté.
+      - **[Protocole de changement](rcos:template/change-protocol)** — définir une voie légitime et contrainte pour proposer et adopter des changements.
+      - **[Historique des versions](rcos:template/version-history)** — suivre comment les règles évoluent, pour que le changement soit visible et borné plutôt que redouté.
 
-      Voir aussi la spécification : [Couche 6 — Mécanismes de changement](/articles/rcos-core/v0-1/layer-6-evolution-adaptation#81-change-mechanisms) et [Versionnage et autorité](/articles/rcos-core/v0-1/layer-6-evolution-adaptation#82-versioning-and-authority).
+      Voir aussi la spécification : [Couche 6 — Mécanismes de changement](rcos:§8.1) et [Versionnage et autorité](rcos:§8.2).
   if-it-s-already-happening:
     title: Si c'est déjà en train d'arriver
     md: |-
@@ -93,8 +93,8 @@ sections:
   what-this-failure-tends-to-trigger:
     title: Ce que cette défaillance tend à déclencher
     md: |-
-      - **[Normalisation de l'évitement des conflits](/articles/rcos-stress-tests/conflict-accountability/conflict-avoidance-normalization)** — sans voie de changement légitime, la frustration passe dans la clandestinité.
-      - **[Précédent de contournement des règles en urgence](/articles/rcos-stress-tests/change-emergencies/emergency-rule-bypass-precedent)** — quand le changement normal est impossible, les gens attendent une crise pour l'imposer.
+      - **[Normalisation de l'évitement des conflits](rcos:test/conflict-avoidance-normalization)** — sans voie de changement légitime, la frustration passe dans la clandestinité.
+      - **[Précédent de contournement des règles en urgence](rcos:test/emergency-rule-bypass-precedent)** — quand le changement normal est impossible, les gens attendent une crise pour l'imposer.
   related-stress-tests:
     title: Tests de résistance connexes
-    md: '- **[Invariants fondamentaux non protégés](/articles/rcos-stress-tests/change-emergencies/unprotected-core-invariants)** — le déséquilibre inverse : ici, rien ne peut changer ; là-bas, tout peut changer, y compris les fondations.'
+    md: '- **[Invariants fondamentaux non protégés](rcos:test/unprotected-core-invariants)** — le déséquilibre inverse : ici, rien ne peut changer ; là-bas, tout peut changer, y compris les fondations.'
