@@ -11,7 +11,7 @@
 	import logo from '$lib/assets/logo.webp';
 	import LanguageSwitcher from '$lib/components/i18n/LanguageSwitcher.svelte';
 	import { page } from '$app/state';
-	import { m } from '$lib/i18n';
+	import { m } from '$lib/paraglide/messages.js';
 	import { localized } from '$lib/i18n/path';
 	import { DEFAULT_LOCALE } from '$lib/i18n/languages';
 
@@ -29,19 +29,19 @@
 				size="icon"
 				class="md:hidden"
 				onclick={() => sidebarOpen.update((v) => !v)}
-				aria-label={m('nav.toggle_navigation')}
+				aria-label={m.nav_toggle_navigation()}
 			>
 				<IconMenu2 class="w-6 h-6" />
 			</Button>
 
 			<a href={localized(resolve('/'), locale)} class="flex items-center gap-2 group">
-				<img src={logo} alt={`${m('site.brand')} Logo`} class="w-10 h-10" />
+				<img src={logo} alt={`${m.site_brand()} Logo`} class="w-10 h-10" />
 				<div class="flex flex-col">
 					<span
 						class="text-xl font-bold tracking-tight group-hover:text-primary transition-colors leading-5 font-serif"
-						>{m('site.brand')}</span
+						>{m.site_brand()}</span
 					>
-					<span class="text-xs font-bold text-gray-500 transition-colors">{m('site.tagline')}</span>
+					<span class="text-xs font-bold text-gray-500 transition-colors">{m.site_tagline()}</span>
 				</div>
 			</a>
 		</div>
@@ -53,7 +53,7 @@
 
 		<!-- Right: Actions -->
 		<div class="flex items-center gap-2">
-			<Button variant="ghost" size="icon" onclick={toggleTheme} aria-label={m('nav.toggle_theme')}>
+			<Button variant="ghost" size="icon" onclick={toggleTheme} aria-label={m.nav_toggle_theme()}>
 				<!-- Shows what a click switches to; neutral icon until the theme is known -->
 				{#if $theme === 'dark'}
 					<IconSun class="w-5 h-5" />
@@ -68,7 +68,7 @@
 
 			<div class="hidden md:flex gap-2">
 				<Button variant="ghost" href="https://ecohubs.community" target="_blank"
-					>{m('nav.about')} <IconArrowUpRight class="w-4 h-4" /></Button
+					>{m.nav_about()} <IconArrowUpRight class="w-4 h-4" /></Button
 				>
 			</div>
 		</div>

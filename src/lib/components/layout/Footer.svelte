@@ -1,6 +1,6 @@
 <script lang="ts">
 	import IconArrowUpRight from '~icons/tabler/arrow-up-right';
-	import { m } from '$lib/i18n';
+	import { m } from '$lib/paraglide/messages.js';
 
 	const year = new Date().getFullYear();
 </script>
@@ -11,27 +11,27 @@
 			<!-- Brand -->
 			<div class="space-y-4">
 				<h3 class="text-lg font-bold text-gradient">
-					{m('footer.brand_prefix')}
+					{m.footer_brand_prefix()}
 					<a
 						href="https://rcos.ecohubs.community"
-						class="hover:text-text-primary transition-colors underline">{m('site.brand')}</a
+						class="hover:text-text-primary transition-colors underline">{m.site_brand()}</a
 					>
 				</h3>
 				<p class="text-sm text-text-secondary max-w-full">
-					{m('footer.tagline')}
+					{m.footer_tagline()}
 				</p>
 			</div>
 
 			<!-- Links -->
 			<div class="space-y-4">
-				<h4 class="font-semibold text-primary">{m('footer.section.resources')}</h4>
+				<h4 class="font-semibold text-primary">{m.footer_section_resources()}</h4>
 				<ul class="space-y-2 text-sm text-text-secondary">
 					<li>
 						<a
 							href="https://ecohubs.community"
 							class="hover:text-text-primary transition-colors flex items-center gap-1"
 						>
-							{m('footer.link.about_us')}
+							{m.footer_link_about_us()}
 							<IconArrowUpRight class="w-4 h-4" />
 						</a>
 					</li>
@@ -40,7 +40,7 @@
 							href="https://ecohubs.community/membership"
 							class="hover:text-text-primary transition-colors flex items-center gap-1"
 						>
-							{m('footer.link.join_us')}
+							{m.footer_link_join_us()}
 							<IconArrowUpRight class="w-4 h-4" />
 						</a>
 					</li>
@@ -49,7 +49,7 @@
 
 			<!-- Contact/Social -->
 			<div class="space-y-4">
-				<h4 class="font-semibold text-primary">{m('footer.section.connect')}</h4>
+				<h4 class="font-semibold text-primary">{m.footer_section_connect()}</h4>
 				<ul class="space-y-2 text-sm text-text-secondary">
 					<li>
 						<a
@@ -58,7 +58,7 @@
 							rel="noreferrer"
 							class="hover:text-text-primary transition-colors flex items-center gap-1"
 						>
-							{m('footer.link.github')}
+							{m.footer_link_github()}
 							<IconArrowUpRight class="w-4 h-4" />
 						</a>
 					</li>
@@ -70,7 +70,7 @@
 			class="pt-8 border-t border-border flex flex-col md:flex-row justify-between items-center gap-4"
 		>
 			<p class="text-xs text-text-tertiary">
-				{m('footer.copyright', { year })}
+				{m.footer_copyright({ year })}
 			</p>
 			<div class="flex gap-4 text-xs text-text-tertiary">
 				<a
@@ -78,7 +78,7 @@
 					class="hover:text-text-primary transition-colors flex items-center gap-1"
 					target="_blank"
 				>
-					{m('footer.link.privacy')}
+					{m.footer_link_privacy()}
 					<IconArrowUpRight class="w-4 h-4" />
 				</a>
 				<a
@@ -86,7 +86,7 @@
 					class="hover:text-text-primary transition-colors flex items-center gap-1"
 					target="_blank"
 				>
-					{m('footer.link.terms')}
+					{m.footer_link_terms()}
 					<IconArrowUpRight class="w-4 h-4" />
 				</a>
 			</div>

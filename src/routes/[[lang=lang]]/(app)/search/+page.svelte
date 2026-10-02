@@ -7,7 +7,7 @@
 	import type { SearchResult } from '$lib/stores/search';
 	import SearchResults from '$lib/components/search/SearchResults.svelte';
 	import SEO from '$lib/components/seo/SEO.svelte';
-	import { m } from '$lib/i18n';
+	import { m } from '$lib/paraglide/messages.js';
 
 	let { data } = $props();
 
@@ -31,13 +31,13 @@
 	});
 </script>
 
-<SEO title={m('search.title')} url="/search" noindex={true} locale={data.locale} />
+<SEO title={m.search_title()} url="/search" noindex={true} locale={data.locale} />
 
 <section class="space-y-6">
 	<header>
-		<h1 class="text-3xl font-bold text-gradient">{m('search.title')}</h1>
+		<h1 class="text-3xl font-bold text-gradient">{m.search_title()}</h1>
 		<p class="text-text-secondary">
-			{m('search.results_for')} <strong>{$query || m('search.empty_query')}</strong>
+			{m.search_results_for()} <strong>{$query || m.search_empty_query()}</strong>
 		</p>
 	</header>
 

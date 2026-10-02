@@ -2,7 +2,8 @@
 	import { SITE_URL, DEFAULT_OG_IMAGE, DEFAULT_OG_IMAGE_SIZE } from '$lib/config/site';
 	import { DEFAULT_LOCALE, LOCALES } from '$lib/i18n/languages';
 	import { localeUrl } from '$lib/i18n/path';
-	import { t } from '$lib/i18n';
+	import { m } from '$lib/paraglide/messages.js';
+	import type { Locale } from '$lib/paraglide/runtime.js';
 
 	type Props = {
 		title: string;
@@ -37,8 +38,8 @@
 	// Locale-aware title:
 	// - On the home page, `title` matches the localized site name → no suffix.
 	// - Otherwise, append the localized short name (e.g. " - RCOS").
-	const siteName = $derived(t(locale, 'site.name'));
-	const shortName = $derived(t(locale, 'site.short_name'));
+	const siteName = $derived(m.site_name({}, { locale: locale as Locale }));
+	const shortName = $derived(m.site_short_name({}, { locale: locale as Locale }));
 	const fullTitle = $derived(title === siteName ? title : `${title} - ${shortName}`);
 
 	// Canonical = the URL for THIS page in its CURRENT locale (with prefix if non-default).

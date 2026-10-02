@@ -1,6 +1,7 @@
 import { SITE_URL, SITE_NAME } from '$lib/config/site';
 import { localeUrl } from '$lib/i18n/path';
-import { t } from '$lib/i18n';
+import { m } from '$lib/paraglide/messages.js';
+import type { Locale } from '$lib/paraglide/runtime.js';
 
 export function buildWebSiteSchema(): Record<string, unknown> {
 	return {
@@ -105,9 +106,9 @@ export function buildBreadcrumbSchema(
 	locale: string
 ): Record<string, unknown> {
 	const items = [
-		{ name: t(locale, 'nav.home'), url: localeUrl(SITE_URL, '/', locale) },
+		{ name: m.nav_home({}, { locale: locale as Locale }), url: localeUrl(SITE_URL, '/', locale) },
 		{
-			name: t(locale, 'breadcrumb.segment.articles'),
+			name: m.breadcrumb_segment_articles({}, { locale: locale as Locale }),
 			url: localeUrl(SITE_URL, '/articles', locale)
 		},
 		...breadcrumbs.map((crumb) => ({

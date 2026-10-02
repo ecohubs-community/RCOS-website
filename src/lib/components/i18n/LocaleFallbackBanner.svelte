@@ -1,6 +1,6 @@
 <script lang="ts">
 	import IconLanguage from '~icons/tabler/language';
-	import { m } from '$lib/i18n';
+	import { m } from '$lib/paraglide/messages.js';
 	import { getLocale } from '$lib/i18n/languages';
 
 	/**
@@ -23,7 +23,7 @@
 	<IconLanguage class="w-5 h-5 text-primary shrink-0 mt-0.5" />
 	<div class="space-y-0.5">
 		<p>
-			{m('article.fallback.body', { served: servedName, requested: requestedName })}
+			{m.article_fallback_body({ served: servedName, requested: requestedName })}
 		</p>
 	</div>
 </aside>

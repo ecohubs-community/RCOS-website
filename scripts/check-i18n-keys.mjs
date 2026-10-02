@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 /**
- * Compare keys in src/lib/i18n/messages/en.json against every other locale's bundle.
+ * Compare keys in messages/en.json against every other locale's bundle.
  * Reports keys that are missing or extra per locale, plus keys whose values still
  * equal the English source (a strong hint they were copy-pasted but not translated).
  *
@@ -18,7 +18,7 @@ import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
-const MESSAGES_DIR = path.resolve(__dirname, '..', 'src/lib/i18n/messages');
+const MESSAGES_DIR = path.resolve(__dirname, '..', 'messages');
 const SOURCE = 'en';
 
 async function loadBundle(code) {

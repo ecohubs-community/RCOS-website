@@ -2,7 +2,7 @@
 	import { goto } from '$app/navigation';
 	import { page } from '$app/state';
 	import IconSearch from '~icons/tabler/search';
-	import { m } from '$lib/i18n';
+	import { m } from '$lib/paraglide/messages.js';
 	import { localized } from '$lib/i18n/path';
 	import { DEFAULT_LOCALE } from '$lib/i18n/languages';
 
@@ -30,13 +30,13 @@
 		bind:this={inputEl}
 		bind:value={query}
 		type="search"
-		placeholder={m('nav.search_placeholder')}
+		placeholder={m.nav_search_placeholder()}
 		class="w-full px-4 py-2 rounded-full bg-surface text-text-primary placeholder-text-tertiary focus:outline-none focus-visible:ring-2 focus-visible:ring-accent border-0"
 		onkeydown={handleKeydown}
 	/>
 	<button
 		onclick={handleSearch}
-		aria-label={m('nav.search_button')}
+		aria-label={m.nav_search_button()}
 		class="absolute right-2 top-1/2 -translate-y-1/2 p-1 rounded-sm hover:bg-surface-elevated"
 	>
 		<IconSearch class="w-5 h-5 text-text-secondary" />

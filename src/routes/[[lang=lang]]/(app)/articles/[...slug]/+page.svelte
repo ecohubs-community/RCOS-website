@@ -12,7 +12,7 @@
 	import CoverageMatrix from '$lib/components/articles/CoverageMatrix.svelte';
 	import SelfAssessment from '$lib/components/articles/SelfAssessment.svelte';
 	import LocaleFallbackBanner from '$lib/components/i18n/LocaleFallbackBanner.svelte';
-	import { m } from '$lib/i18n';
+	import { m } from '$lib/paraglide/messages.js';
 	import { localized } from '$lib/i18n/path';
 	import { DEFAULT_LOCALE } from '$lib/i18n/languages';
 
@@ -29,7 +29,7 @@
 </script>
 
 <SEO
-	title={article?.title || m('articles.fallback_default')}
+	title={article?.title || m.articles_fallback_default()}
 	description={article?.summary || ''}
 	url={`/articles/${slug}`}
 	type="article"
@@ -103,7 +103,7 @@
 				<!-- eslint-disable-next-line svelte/no-at-html-tags -- our own markdown, compiled at build time -->
 				{@html data.body}
 			{:else}
-				<p class="text-text-tertiary italic">{m('articles.no_content')}</p>
+				<p class="text-text-tertiary italic">{m.articles_no_content()}</p>
 			{/if}
 		</article>
 
@@ -120,7 +120,7 @@
 			<section class="pt-8 border-t border-border">
 				<h2 class="text-2xl font-bold text-text-primary mb-6 flex items-center gap-2">
 					<IconHierarchy class="w-6 h-6" />
-					{m('articles.sub_articles')}
+					{m.articles_sub_articles()}
 				</h2>
 				<div class="grid gap-4 sm:grid-cols-2">
 					{#each article.children as child (child.id)}
@@ -135,12 +135,9 @@
 							{/if}
 							{#if child.children.length > 0}
 								<p class="text-xs text-text-tertiary mt-2">
-									{m(
-										child.children.length === 1
-											? 'articles.sub_article_count_one'
-											: 'articles.sub_article_count_other',
-										{ count: child.children.length }
-									)}
+									{(child.children.length === 1
+										? m.articles_sub_article_count_one
+										: m.articles_sub_article_count_other)({ count: child.children.length })}
 								</p>
 							{/if}
 						</Card>
@@ -166,7 +163,7 @@
 			{:else}
 				<Button variant="outline" href={localized('/articles', locale)}>
 					<IconArrowLeft class="w-4 h-4 mr-2" />
-					{m('nav.all_articles')}
+					{m.nav_all_articles()}
 				</Button>
 			{/if}
 		</nav>
@@ -176,8 +173,8 @@
 		<div class="w-16 h-16 mx-auto mb-4 rounded-full bg-gray-100 flex items-center justify-center">
 			<IconFileOff class="w-8 h-8 text-gray-400" />
 		</div>
-		<h2 class="text-xl font-semibold text-text-primary mb-2">{m('articles.not_found.title')}</h2>
-		<p class="text-gray-500 mb-4">{m('articles.not_found.body')}</p>
-		<Button href={localized('/articles', locale)}>{m('articles.not_found.cta')}</Button>
+		<h2 class="text-xl font-semibold text-text-primary mb-2">{m.articles_not_found_title()}</h2>
+		<p class="text-gray-500 mb-4">{m.articles_not_found_body()}</p>
+		<Button href={localized('/articles', locale)}>{m.articles_not_found_cta()}</Button>
 	</div>
 {/if}

@@ -7,7 +7,7 @@
 	import IconX from '~icons/tabler/x';
 	import { page } from '$app/state';
 	import ResizableSidebar from '$lib/components/layout/ResizableSidebar.svelte';
-	import { m } from '$lib/i18n';
+	import { m } from '$lib/paraglide/messages.js';
 	import { stripLocale } from '$lib/i18n/path';
 
 	let { children } = $props();
@@ -50,7 +50,7 @@
 					onkeydown={(e) => e.key === 'Escape' && sidebarOpen.set(false)}
 					role="button"
 					tabindex="0"
-					aria-label={m('nav.close_sidebar')}
+					aria-label={m.nav_close_sidebar()}
 				></div>
 				<aside
 					class="fixed left-0 top-0 h-full w-72 bg-surface border-r border-border z-50 shadow-2xl p-4 overflow-y-auto"
@@ -58,7 +58,7 @@
 					<div class="flex justify-end mb-4">
 						<button
 							onclick={() => sidebarOpen.set(false)}
-							aria-label={m('nav.close_sidebar')}
+							aria-label={m.nav_close_sidebar()}
 							class="p-2 rounded-md hover:bg-border"
 						>
 							<IconX class="w-5 h-5" />

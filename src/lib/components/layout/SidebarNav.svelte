@@ -7,7 +7,7 @@
 	import type { Article } from '$lib/server/graph';
 	import { untrack } from 'svelte';
 	import { SvelteSet } from 'svelte/reactivity';
-	import { m } from '$lib/i18n';
+	import { m } from '$lib/paraglide/messages.js';
 	import { localized, stripLocale } from '$lib/i18n/path';
 	import { DEFAULT_LOCALE } from '$lib/i18n/languages';
 
@@ -94,7 +94,7 @@
 				: 'text-text-secondary hover:bg-surface-hover hover:text-text-primary'}"
 		>
 			<IconHome class="w-4 h-4" />
-			{m('nav.all_articles')}
+			{m.nav_all_articles()}
 		</a>
 
 		{#if $articleTree.length > 0}
@@ -104,7 +104,7 @@
 					onclick={expandAll}
 					class="text-text-tertiary hover:text-text-secondary transition-colors"
 				>
-					{m('nav.expand_all')}
+					{m.nav_expand_all()}
 				</button>
 				<span class="text-border">|</span>
 				<button
@@ -112,7 +112,7 @@
 					onclick={collapseAll}
 					class="text-text-tertiary hover:text-text-secondary transition-colors"
 				>
-					{m('nav.collapse_all')}
+					{m.nav_collapse_all()}
 				</button>
 			</div>
 		{/if}
@@ -126,7 +126,7 @@
 		</div>
 	{:else}
 		<div class="px-3 py-4 text-sm text-text-tertiary text-center">
-			{m('nav.no_articles')}
+			{m.nav_no_articles()}
 		</div>
 	{/if}
 </nav>
@@ -141,7 +141,7 @@
 				<button
 					onclick={() => toggleExpanded(node.id)}
 					class="p-1 rounded hover:bg-surface-hover text-text-tertiary"
-					aria-label={isExpanded ? m('nav.collapse') : m('nav.expand')}
+					aria-label={isExpanded ? m.nav_collapse() : m.nav_expand()}
 				>
 					<IconChevronRight
 						class={['w-4 h-4 transition-transform -ml-1', isExpanded && 'rotate-90']}
