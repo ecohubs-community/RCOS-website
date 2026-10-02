@@ -17,3 +17,11 @@ for (const path of ['/admin', '/api/auth/debug']) {
 		expect((await request.get(path)).status()).toBe(404);
 	});
 }
+
+// Checks the server-rendered HTML, not the hydrated page: the locale must come
+// from the URL at render time, or crawlers see English on every locale.
+test('/de is rendered in German on the server', async ({ request }) => {
+	const html = await (await request.get('/de')).text();
+	expect(html).toContain('lang="de"');
+	expect(html).toContain('Über uns');
+});
