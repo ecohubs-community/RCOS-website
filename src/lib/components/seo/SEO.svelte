@@ -65,11 +65,7 @@
 	// Locales we will emit <link rel="alternate" hreflang="..."> for.
 	// If availableLocales isn't provided, treat every registered locale as available.
 	const alternates = $derived(
-		url
-			? LOCALES.filter((l) =>
-					availableLocales ? availableLocales.includes(l.code) : true
-				)
-			: []
+		url ? LOCALES.filter((l) => (availableLocales ? availableLocales.includes(l.code) : true)) : []
 	);
 </script>
 

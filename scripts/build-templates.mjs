@@ -205,7 +205,8 @@ function absolutizeLinks(body, locale) {
 // depend on English summary text. See scripts/migrate-template-details.mjs.
 function flattenDetails(body, locale) {
 	const s = getStrings(locale);
-	const re = /<details(?:\s+data-kind="(rationale|instructions)")?[^>]*>\s*<summary>([\s\S]*?)<\/summary>([\s\S]*?)<\/details>/g;
+	const re =
+		/<details(?:\s+data-kind="(rationale|instructions)")?[^>]*>\s*<summary>([\s\S]*?)<\/summary>([\s\S]*?)<\/details>/g;
 	return body.replace(re, (_m, dataKind, summaryRaw, contentRaw) => {
 		const summary = summaryRaw.trim();
 		const kind = dataKind ?? (/^\s*how\b/i.test(summary) ? 'instructions' : 'rationale');

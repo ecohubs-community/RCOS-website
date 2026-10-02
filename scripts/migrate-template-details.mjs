@@ -66,7 +66,9 @@ async function main() {
 			console.log(`  ${path.relative(ROOT, f)} — ${n} block${n === 1 ? '' : 's'} stamped`);
 		}
 	}
-	console.log(`\nMigrated ${total} <details> block${total === 1 ? '' : 's'} across ${touched} file${touched === 1 ? '' : 's'}.`);
+	console.log(
+		`\nMigrated ${total} <details> block${total === 1 ? '' : 's'} across ${touched} file${touched === 1 ? '' : 's'}.`
+	);
 }
 
 main().catch((err) => {

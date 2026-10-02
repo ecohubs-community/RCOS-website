@@ -50,7 +50,8 @@ function parseArgs(argv) {
 		if (a === '--locale') out.locale = argv[++i];
 		else if (a === '--only') out.only = argv[++i];
 		else if (a === '--format') out.format = argv[++i];
-		else if (a === '--json') out.format = 'json'; // legacy alias
+		else if (a === '--json')
+			out.format = 'json'; // legacy alias
 		else if (a === '--include-empty') out.includeEmpty = true;
 		else if (a === '-h' || a === '--help') {
 			console.log(
@@ -193,7 +194,9 @@ async function main() {
 	}
 
 	// Plain text — grouped by locale, every row listed
-	console.log(`\nTranslation status — ${rows.length} (article × locale) pairs\n${'='.repeat(48)}\n`);
+	console.log(
+		`\nTranslation status — ${rows.length} (article × locale) pairs\n${'='.repeat(48)}\n`
+	);
 	for (const [locale, list] of byLocale) {
 		const counts = countByStatus(list);
 		const total = list.length;
@@ -235,7 +238,8 @@ function renderMarkdown(byLocale) {
 	for (const [locale, list] of byLocale) {
 		const counts = countByStatus(list);
 		const total = list.length;
-		const coverage = total === 0 ? '—' : `${(((total - counts.missing) / total) * 100).toFixed(0)}%`;
+		const coverage =
+			total === 0 ? '—' : `${(((total - counts.missing) / total) * 100).toFixed(0)}%`;
 		out.push(
 			`| \`${locale}\` | ${coverage} | ${counts['up-to-date']} | ${counts.outdated} | ${counts.missing} |`
 		);
@@ -269,7 +273,9 @@ function renderMarkdown(byLocale) {
 		}
 	}
 
-	out.push(`_Run \`pnpm run translate -- --locale <code>\` to fill gaps. Generated ${new Date().toISOString()}._`);
+	out.push(
+		`_Run \`pnpm run translate -- --locale <code>\` to fill gaps. Generated ${new Date().toISOString()}._`
+	);
 	return out.join('\n');
 }
 

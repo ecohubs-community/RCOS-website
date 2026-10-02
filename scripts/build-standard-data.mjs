@@ -230,7 +230,9 @@ function parseTemplate(body) {
 		const rest = part.slice(title.length);
 
 		const refLine = /\*RCOS clauses?:([^\n]*)\*/.exec(rest);
-		const refs = refLine ? [...refLine[1].matchAll(/\[(\d+\.\d+(?:\.\d+)?)\]/g)].map((m) => m[1]) : [];
+		const refs = refLine
+			? [...refLine[1].matchAll(/\[(\d+\.\d+(?:\.\d+)?)\]/g)].map((m) => m[1])
+			: [];
 
 		const rationale = DETAILS('rationale').exec(rest);
 		const instructions = DETAILS('instructions').exec(rest);
@@ -348,9 +350,10 @@ async function loadMandatoryArtifactNames() {
 
 		const section = /##\s+\d+\.\d+\s+Artifacts\n([\s\S]*?)(?=\n##\s|\n#\s|$)/.exec(body);
 		if (!section) continue;
-		const mandatory = /mandatory for Layer \d+ compliance:\s*\n([\s\S]*?)(?=\n\s*\d+\.\d+\.\d+|\n##|$)/.exec(
-			section[1]
-		);
+		const mandatory =
+			/mandatory for Layer \d+ compliance:\s*\n([\s\S]*?)(?=\n\s*\d+\.\d+\.\d+|\n##|$)/.exec(
+				section[1]
+			);
 		if (!mandatory) continue;
 		for (const m of mandatory[1].matchAll(/^\s*[-*]\s+(.+?)\s*$/gm)) names.add(slug(m[1]));
 	}
@@ -506,7 +509,8 @@ function applySectionDispositions(artifacts, authored) {
 	}
 
 	for (const key of Object.keys(authoredSections)) {
-		if (!known.has(key)) problems.push(`section disposition names "${key}", which is not a section`);
+		if (!known.has(key))
+			problems.push(`section disposition names "${key}", which is not a section`);
 	}
 
 	return problems;

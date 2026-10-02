@@ -60,7 +60,9 @@ async function main() {
 	let hardFail = false;
 	let softWarn = false;
 
-	console.log(`\nChecking ${targets.length} locale${targets.length === 1 ? '' : 's'} against ${SOURCE}.json (${sourceKeys.size} keys)\n`);
+	console.log(
+		`\nChecking ${targets.length} locale${targets.length === 1 ? '' : 's'} against ${SOURCE}.json (${sourceKeys.size} keys)\n`
+	);
 
 	for (const code of targets) {
 		const bundle = await loadBundle(code);

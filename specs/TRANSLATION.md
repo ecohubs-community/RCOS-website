@@ -233,8 +233,8 @@ import de from './de.json';
 const TABLES: Record<string, Record<string, string>> = { en, de };
 
 export function t(locale: string, key: string, vars?: Record<string, string>): string {
-  const raw = TABLES[locale]?.[key] ?? TABLES.en[key] ?? key;
-  return vars ? raw.replace(/\{(\w+)\}/g, (_, k) => vars[k] ?? '') : raw;
+	const raw = TABLES[locale]?.[key] ?? TABLES.en[key] ?? key;
+	return vars ? raw.replace(/\{(\w+)\}/g, (_, k) => vars[k] ?? '') : raw;
 }
 ```
 
@@ -247,20 +247,20 @@ With 5–10 locales planned, hard-code the list once and import it everywhere (s
 ```typescript
 // src/lib/i18n/languages.ts
 export type Locale = {
-  code: string;          // BCP-47, used in URL prefix and hreflang
-  englishName: string;   // for tooltips, accessibility
-  nativeName: string;    // shown in the switcher
-  flag?: string;         // optional emoji or icon ref; flags are politically fraught — prefer text
-  default?: boolean;     // exactly one entry has this true
+	code: string; // BCP-47, used in URL prefix and hreflang
+	englishName: string; // for tooltips, accessibility
+	nativeName: string; // shown in the switcher
+	flag?: string; // optional emoji or icon ref; flags are politically fraught — prefer text
+	default?: boolean; // exactly one entry has this true
 };
 
 export const LOCALES: Locale[] = [
-  { code: 'en', englishName: 'English',    nativeName: 'English',     default: true },
-  { code: 'de', englishName: 'German',     nativeName: 'Deutsch'     },
-  { code: 'es', englishName: 'Spanish',    nativeName: 'Español'     },
-  { code: 'pt', englishName: 'Portuguese', nativeName: 'Português'   },
-  { code: 'fr', englishName: 'French',     nativeName: 'Français'    },
-  // add as translations land
+	{ code: 'en', englishName: 'English', nativeName: 'English', default: true },
+	{ code: 'de', englishName: 'German', nativeName: 'Deutsch' },
+	{ code: 'es', englishName: 'Spanish', nativeName: 'Español' },
+	{ code: 'pt', englishName: 'Portuguese', nativeName: 'Português' },
+	{ code: 'fr', englishName: 'French', nativeName: 'Français' }
+	// add as translations land
 ];
 
 export const DEFAULT_LOCALE = LOCALES.find((l) => l.default)!.code;
@@ -276,7 +276,7 @@ The route matcher (`src/params/lang.ts`) imports this:
 import type { ParamMatcher } from '@sveltejs/kit';
 import { LOCALE_CODES, DEFAULT_LOCALE } from '$lib/i18n/languages';
 export const match: ParamMatcher = (param) =>
-  LOCALE_CODES.includes(param) && param !== DEFAULT_LOCALE;
+	LOCALE_CODES.includes(param) && param !== DEFAULT_LOCALE;
 ```
 
 (Excluding the default locale prevents `/en/articles/...` from being valid; only the unprefixed form is canonical.)
@@ -288,48 +288,53 @@ A dropdown menu suits 5–10 languages well — toggle buttons clutter the heade
 ```svelte
 <!-- src/lib/components/i18n/LanguageSwitcher.svelte -->
 <script lang="ts">
-  import { page } from '$app/stores';
-  import Icon from '@iconify/svelte';
-  import { LOCALES, DEFAULT_LOCALE, type Locale } from '$lib/i18n/languages';
-  import { localizePath } from '$lib/i18n/path';
+	import { page } from '$app/stores';
+	import Icon from '@iconify/svelte';
+	import { LOCALES, DEFAULT_LOCALE, type Locale } from '$lib/i18n/languages';
+	import { localizePath } from '$lib/i18n/path';
 
-  /**
-   * Optional: locales for which the *current article* has a real translation.
-   * Locales not in this list still navigate (with fallback banner) but render dimmed.
-   * Pass from layout/page data; omit on non-article pages to render all enabled.
-   */
-  let { availableLocales }: { availableLocales?: string[] } = $props();
+	/**
+	 * Optional: locales for which the *current article* has a real translation.
+	 * Locales not in this list still navigate (with fallback banner) but render dimmed.
+	 * Pass from layout/page data; omit on non-article pages to render all enabled.
+	 */
+	let { availableLocales }: { availableLocales?: string[] } = $props();
 
-  let open = $state(false);
-  let buttonEl: HTMLButtonElement | undefined = $state();
+	let open = $state(false);
+	let buttonEl: HTMLButtonElement | undefined = $state();
 
-  const currentLocale = $derived($page.data.locale ?? DEFAULT_LOCALE);
-  const current = $derived(LOCALES.find((l) => l.code === currentLocale) ?? LOCALES[0]);
+	const currentLocale = $derived($page.data.locale ?? DEFAULT_LOCALE);
+	const current = $derived(LOCALES.find((l) => l.code === currentLocale) ?? LOCALES[0]);
 
-  function targetUrl(target: Locale): string {
-    return localizePath($page.url.pathname, currentLocale, target.code)
-      + $page.url.search
-      + $page.url.hash;
-  }
+	function targetUrl(target: Locale): string {
+		return (
+			localizePath($page.url.pathname, currentLocale, target.code) +
+			$page.url.search +
+			$page.url.hash
+		);
+	}
 
-  function hasTranslation(code: string): boolean {
-    if (!availableLocales) return true;
-    return availableLocales.includes(code);
-  }
+	function hasTranslation(code: string): boolean {
+		if (!availableLocales) return true;
+		return availableLocales.includes(code);
+	}
 
-  function onSelect(target: Locale) {
-    document.cookie = `lang=${target.code}; path=/; max-age=31536000; samesite=lax`;
-    open = false;
-    // Let the <a> handle navigation; we only set the cookie here.
-  }
+	function onSelect(target: Locale) {
+		document.cookie = `lang=${target.code}; path=/; max-age=31536000; samesite=lax`;
+		open = false;
+		// Let the <a> handle navigation; we only set the cookie here.
+	}
 
-  // Close on Escape or outside click.
-  function onKeydown(e: KeyboardEvent) {
-    if (e.key === 'Escape') { open = false; buttonEl?.focus(); }
-  }
-  function onDocClick(e: MouseEvent) {
-    if (!(e.target as HTMLElement).closest('[data-lang-switcher]')) open = false;
-  }
+	// Close on Escape or outside click.
+	function onKeydown(e: KeyboardEvent) {
+		if (e.key === 'Escape') {
+			open = false;
+			buttonEl?.focus();
+		}
+	}
+	function onDocClick(e: MouseEvent) {
+		if (!(e.target as HTMLElement).closest('[data-lang-switcher]')) open = false;
+	}
 </script>
 
 <svelte:window on:keydown={onKeydown} on:click={onDocClick} />
@@ -392,17 +397,17 @@ import { LOCALE_CODES, DEFAULT_LOCALE } from './languages';
 
 /** Strip a locale prefix from a pathname, returning the canonical (default-locale) path. */
 export function stripLocale(pathname: string): string {
-  const m = pathname.match(/^\/([^/]+)(\/.*|$)/);
-  if (m && LOCALE_CODES.includes(m[1]) && m[1] !== DEFAULT_LOCALE) {
-    return m[2] || '/';
-  }
-  return pathname;
+	const m = pathname.match(/^\/([^/]+)(\/.*|$)/);
+	if (m && LOCALE_CODES.includes(m[1]) && m[1] !== DEFAULT_LOCALE) {
+		return m[2] || '/';
+	}
+	return pathname;
 }
 
 /** Rewrite a pathname for a target locale (no prefix for default). */
 export function localizePath(pathname: string, _from: string, to: string): string {
-  const canonical = stripLocale(pathname);
-  return to === DEFAULT_LOCALE ? canonical : `/${to}${canonical}`;
+	const canonical = stripLocale(pathname);
+	return to === DEFAULT_LOCALE ? canonical : `/${to}${canonical}`;
 }
 ```
 
@@ -411,12 +416,12 @@ The layout passes `availableLocales` to the page so the switcher can dim non-tra
 ```typescript
 // src/routes/[[lang=lang]]/(app)/articles/[...slug]/+page.server.ts (excerpt)
 export const load = async ({ params }) => {
-  const article = await getArticle(params.slug, params.lang ?? 'en');
-  return {
-    locale: params.lang ?? 'en',
-    availableLocales: article?.availableLocales ?? ['en'],
-    // …
-  };
+	const article = await getArticle(params.slug, params.lang ?? 'en');
+	return {
+		locale: params.lang ?? 'en',
+		availableLocales: article?.availableLocales ?? ['en']
+		// …
+	};
 };
 ```
 
@@ -512,17 +517,17 @@ Move these into a small `scripts/i18n.mjs` table:
 
 ```js
 export const STRINGS = {
-  en: {
-    siteName: 'RCOS — Regenerative Community Operating System',
-    generated: 'Generated',
-    source: 'Source (latest version)',
-    allTemplates: 'All RCOS templates',
-    rationale: 'Rationale',
-    instructions: 'Instructions',
-    toc: 'Table of Contents',
-    aboutCore: 'About RCOS Core'
-  },
-  de: { siteName: 'RCOS — …', generated: 'Generiert', /* … */ }
+	en: {
+		siteName: 'RCOS — Regenerative Community Operating System',
+		generated: 'Generated',
+		source: 'Source (latest version)',
+		allTemplates: 'All RCOS templates',
+		rationale: 'Rationale',
+		instructions: 'Instructions',
+		toc: 'Table of Contents',
+		aboutCore: 'About RCOS Core'
+	},
+	de: { siteName: 'RCOS — …', generated: 'Generiert' /* … */ }
 };
 ```
 
@@ -534,11 +539,12 @@ With `data-kind="rationale"` (§1.3) the `flattenDetails()` regex becomes locale
 
 ```js
 function flattenDetails(body, locale) {
-  const re = /<details(?:\s+data-kind="(rationale|instructions)")?>\s*<summary>([\s\S]*?)<\/summary>([\s\S]*?)<\/details>/g;
-  return body.replace(re, (_, kind, summary, content) => {
-    const label = STRINGS[locale][kind ?? 'instructions'];
-    // …
-  });
+	const re =
+		/<details(?:\s+data-kind="(rationale|instructions)")?>\s*<summary>([\s\S]*?)<\/summary>([\s\S]*?)<\/details>/g;
+	return body.replace(re, (_, kind, summary, content) => {
+		const label = STRINGS[locale][kind ?? 'instructions'];
+		// …
+	});
 }
 ```
 
@@ -582,66 +588,76 @@ import type { RequestHandler } from './$types';
 export const prerender = true;
 
 function localeUrl(path: string, locale: string): string {
-  return `${SITE_URL}${locale === DEFAULT_LOCALE ? '' : `/${locale}`}${path}`;
+	return `${SITE_URL}${locale === DEFAULT_LOCALE ? '' : `/${locale}`}${path}`;
 }
 
 export const GET: RequestHandler = async () => {
-  // Build one graph per locale so we know per-article availability.
-  const graphs = Object.fromEntries(
-    await Promise.all(LOCALES.map(async (l) => [l.code, await buildGraph(l.code)] as const))
-  );
+	// Build one graph per locale so we know per-article availability.
+	const graphs = Object.fromEntries(
+		await Promise.all(LOCALES.map(async (l) => [l.code, await buildGraph(l.code)] as const))
+	);
 
-  type Entry = { path: string; availableLocales: string[]; changefreq: string; priority: string };
+	type Entry = { path: string; availableLocales: string[]; changefreq: string; priority: string };
 
-  const staticEntries: Entry[] = [
-    { path: '/',         availableLocales: LOCALES.map((l) => l.code), changefreq: 'monthly', priority: '1.0' },
-    { path: '/articles', availableLocales: LOCALES.map((l) => l.code), changefreq: 'weekly',  priority: '0.8' }
-  ];
+	const staticEntries: Entry[] = [
+		{
+			path: '/',
+			availableLocales: LOCALES.map((l) => l.code),
+			changefreq: 'monthly',
+			priority: '1.0'
+		},
+		{
+			path: '/articles',
+			availableLocales: LOCALES.map((l) => l.code),
+			changefreq: 'weekly',
+			priority: '0.8'
+		}
+	];
 
-  // Articles: a locale is "available" if the article has a real translation in it.
-  // The graph builder marks articles with availableLocales (set during scan).
-  const articleEntries: Entry[] = graphs[DEFAULT_LOCALE].articles.map((article) => ({
-    path: `/articles/${article.slug}`,
-    availableLocales: article.availableLocales ?? [DEFAULT_LOCALE],
-    changefreq: 'weekly',
-    priority: '0.6'
-  }));
+	// Articles: a locale is "available" if the article has a real translation in it.
+	// The graph builder marks articles with availableLocales (set during scan).
+	const articleEntries: Entry[] = graphs[DEFAULT_LOCALE].articles.map((article) => ({
+		path: `/articles/${article.slug}`,
+		availableLocales: article.availableLocales ?? [DEFAULT_LOCALE],
+		changefreq: 'weekly',
+		priority: '0.6'
+	}));
 
-  const allEntries = [...staticEntries, ...articleEntries];
+	const allEntries = [...staticEntries, ...articleEntries];
 
-  // For each entry, emit one <url> per available locale; each <url> lists all alternates.
-  const urls = allEntries.flatMap((e) =>
-    e.availableLocales.map((loc) => {
-      const alternates = e.availableLocales
-        .map(
-          (alt) =>
-            `    <xhtml:link rel="alternate" hreflang="${alt}" href="${localeUrl(e.path, alt)}" />`
-        )
-        .join('\n');
-      const xDefault = `    <xhtml:link rel="alternate" hreflang="x-default" href="${localeUrl(e.path, DEFAULT_LOCALE)}" />`;
+	// For each entry, emit one <url> per available locale; each <url> lists all alternates.
+	const urls = allEntries.flatMap((e) =>
+		e.availableLocales.map((loc) => {
+			const alternates = e.availableLocales
+				.map(
+					(alt) =>
+						`    <xhtml:link rel="alternate" hreflang="${alt}" href="${localeUrl(e.path, alt)}" />`
+				)
+				.join('\n');
+			const xDefault = `    <xhtml:link rel="alternate" hreflang="x-default" href="${localeUrl(e.path, DEFAULT_LOCALE)}" />`;
 
-      return `  <url>
+			return `  <url>
     <loc>${localeUrl(e.path, loc)}</loc>
     <changefreq>${e.changefreq}</changefreq>
     <priority>${e.priority}</priority>
 ${alternates}
 ${xDefault}
   </url>`;
-    })
-  );
+		})
+	);
 
-  const xml = `<?xml version="1.0" encoding="UTF-8"?>
+	const xml = `<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:xhtml="http://www.w3.org/1999/xhtml">
 ${urls.join('\n')}
 </urlset>`;
 
-  return new Response(xml.trim(), {
-    headers: {
-      'Content-Type': 'application/xml',
-      'Cache-Control': 'max-age=0, s-maxage=3600'
-    }
-  });
+	return new Response(xml.trim(), {
+		headers: {
+			'Content-Type': 'application/xml',
+			'Cache-Control': 'max-age=0, s-maxage=3600'
+		}
+	});
 };
 ```
 
@@ -732,7 +748,7 @@ The previous plan proposed articles → UI → tooling. **Inverted recommendatio
 
 `✓` shipped · `→` in progress · _(blank)_ not started
 
-### Phase 1 — Plumbing (1–2 days)  ✓
+### Phase 1 — Plumbing (1–2 days) ✓
 
 1. Lock the cross-cutting decisions in §0.
 2. Create `src/lib/i18n/languages.ts` registry (§2.4) and `src/lib/i18n/path.ts` helpers.
@@ -744,7 +760,7 @@ The previous plan proposed articles → UI → tooling. **Inverted recommendatio
 
 **Exit criteria:** `/de/articles/rcos-core` renders the English content under `/de/...` URLs with correct `<html lang="de">` and a "this is a fallback" indicator.
 
-### Phase 2 — UI strings (2–3 days)  ✓
+### Phase 2 — UI strings (2–3 days) ✓
 
 1. ✓ Plain JSON + `m()` helper (Paraglide deferred — see decision below).
 2. ✓ Extracted ~80 keys to `src/lib/i18n/messages/{en,de}.json`.
@@ -757,7 +773,7 @@ The previous plan proposed articles → UI → tooling. **Inverted recommendatio
 
 **Exit criteria:** ✓ every visible UI string switches between English and German based on URL prefix; verified in prerendered output (`<html lang>`, hreflang, og:locale, button labels, footer, search, downloads UI).
 
-### Phase 3 — Articles infrastructure (2–3 days)  ✓
+### Phase 3 — Articles infrastructure (2–3 days) ✓
 
 1. ✓ `lang` and `sourceHash` added to `ArticleMeta`; `readArticleMeta` parses `<base>.<lang>.md` filenames.
 2. ✓ `buildGraph(locale)` groups entries by `id`, picks the requested locale, falls back to default; structural fields (slug, parentId, order) come from the source so the tree shape is locale-stable.
@@ -770,7 +786,7 @@ The previous plan proposed articles → UI → tooling. **Inverted recommendatio
 
 **Exit criteria:** ✓ the smoke-test article serves at `/de/articles/rcos-core/v0-1/introduction` with full German content; untranslated articles serve under the `/de/` URL with the canonical English body and a German-language fallback banner; sitemap emits bidirectional hreflang only for translated articles. Verified in prerendered output for both prefixes.
 
-### Phase 4 — Downloads pipeline (1–2 days)  ✓
+### Phase 4 — Downloads pipeline (1–2 days) ✓
 
 1. ✓ `build-templates.mjs` and `build-core.mjs` now iterate over every registered locale and emit to `static/downloads/<locale>/...`.
 2. ✓ Preamble strings (`Generated`/`Generiert`, `Source`/`Quelle`, `Rationale`/`Begründung`, etc.) live in `scripts/i18n.mjs`, shared with `flattenDetails()` so blockquote markers also localize.
@@ -781,7 +797,7 @@ The previous plan proposed articles → UI → tooling. **Inverted recommendatio
 
 **Exit criteria:** ✓ `/de/articles/rcos-templates` shows the bundle download UI in German with a fallback banner ("Für diese Sprache sind noch keine Übersetzungen verfügbar"), all 22 templates display the EN-Fallback badge with German tooltips, and bundle URLs gracefully resolve to `/downloads/en/*` until German template translations land. The smoke-test core spec at `/de/articles/rcos-core/v0-1` correctly serves `/downloads/de/rcos-core-v0-1.md` (with German preamble + German "0. Einführung" section + English fallback for the rest, with inline notices on each fallback section).
 
-### Phase 5 — Bulk translation + drift detection (ongoing)  ✓ scripts in place
+### Phase 5 — Bulk translation + drift detection (ongoing) ✓ scripts in place
 
 The two scripts the rest of the phase depends on are shipped. The remaining items are operational decisions and human review work, not engineering.
 
@@ -790,8 +806,9 @@ The two scripts the rest of the phase depends on are shipped. The remaining item
    - **`claude-cli`** (default fallback): spawns `claude -p` as a subprocess, using your Claude Code subscription. No API key required. Counts against Claude Code usage limits — for large runs, batch with `--only`.
    - **`anthropic-api`**: direct Anthropic SDK call with Claude Opus 4.7, adaptive thinking, and prompt-caching on the system block (subsequent calls in a run cost ~10% of the first). Requires `ANTHROPIC_API_KEY`.
    - **`gemini`**: Google Gemini 2.5 Flash via `@google/genai`. Requires `GEMINI_API_KEY` (free at [aistudio.google.com/apikey](https://aistudio.google.com/apikey)) — generous free quota, strong on multilingual translation, recommended for long-term replicable runs.
-   
+
    Auto-selects between them based on env vars: `anthropic-api` if `ANTHROPIC_API_KEY` is set, else `gemini` if `GEMINI_API_KEY` is set, else `claude-cli`. Override with `--provider <name>`. Idempotent — skips up-to-date files unless `--force`. Frontmatter post-processing is owned by the script: `lang`, `sourceHash`, and structural fields (`id`, `parentId`, `order`) are stamped/restored regardless of what the model returns. Supports `--dry-run`, `--only <substring>`, `--provider <name>`, `--model <id>`. Run via `pnpm run translate -- --locale de`.
+
 3. **Operational, not code**: run the translator over the tree once a target locale's UI is in place. Cost rough order of magnitude is well under $10 for ~80 articles at Opus 4.7 pricing with caching; verify the first few outputs before letting it run unattended.
 4. **Human review pass**: prioritize highest-traffic articles (`rcos-core/v0-1/*`, the templates index, top-level entries). Skim AI translations for tone, technical-term consistency, and frontmatter integrity. Touch up where the model picked an awkward phrasing.
 5. **CI integration**: wire `pnpm run check:translations --json` into a GitHub Action that posts a sticky comment on PRs touching `content/`. Non-blocking — coverage drift is informational, not a merge gate.
@@ -801,30 +818,30 @@ The two scripts the rest of the phase depends on are shipped. The remaining item
 
 ## 7. Files to touch (concrete checklist)
 
-| File                                                    | Change                                                           |
-| ------------------------------------------------------- | ---------------------------------------------------------------- |
-| `src/lib/i18n/languages.ts`                             | New — single-source-of-truth locales registry                    |
-| `src/lib/i18n/path.ts`                                  | New — `stripLocale` / `localizePath` helpers                     |
-| `src/lib/components/i18n/LanguageSwitcher.svelte`       | New — dropdown switcher (§2.5)                                   |
-| `src/routes/sitemap.xml/+server.ts`                     | Emit per-locale entries with `<xhtml:link rel="alternate">`      |
-| `src/params/lang.ts`                                    | New — locale matcher whitelist                                   |
-| `src/routes/[[lang=lang]]/...`                          | Move existing `(app)` group under optional lang                  |
-| `src/lib/server/content.ts`                             | Parse `lang` suffix; carry `lang` on `ArticleMeta`               |
-| `src/lib/server/graph.ts`                               | `buildGraph(locale)`; fallback resolution                        |
-| `src/lib/server/downloads.ts`                           | `getTemplateDownloads(slug, locale)`; new manifest shape         |
-| `src/lib/types/article.ts`                              | Add `lang`, `sourceHash`, `availableLocales`                     |
-| `src/routes/(app)/+layout.server.ts`                    | Resolve locale; pass to graph                                    |
-| `src/lib/components/seo/SEO.svelte`                     | `hreflang`, `inLanguage`                                         |
-| `src/lib/components/templates/TemplateDownloads.svelte` | Replace hardcoded strings; locale fallback chips                 |
-| `src/app.html`                                          | `<html lang="%lang%">` placeholder                               |
-| `scripts/build-templates.mjs`                           | `--locale` arg; per-locale output dir                            |
-| `scripts/build-core.mjs`                                | Same                                                             |
-| `scripts/i18n.mjs`                                      | New — preamble strings table                                     |
-| `scripts/check-translations.mjs`                        | New                                                              |
-| `scripts/translate.mjs`                                 | New                                                              |
-| `messages/{en,de}.json` (or Paraglide equiv)            | New — UI strings                                                 |
-| `.github/workflows/check-translations.yml`              | New — non-blocking PR comment with translation drift status     |
-| `.gitignore`                                            | Already un-ignores `static/downloads/`; nothing to change        |
+| File                                                    | Change                                                      |
+| ------------------------------------------------------- | ----------------------------------------------------------- |
+| `src/lib/i18n/languages.ts`                             | New — single-source-of-truth locales registry               |
+| `src/lib/i18n/path.ts`                                  | New — `stripLocale` / `localizePath` helpers                |
+| `src/lib/components/i18n/LanguageSwitcher.svelte`       | New — dropdown switcher (§2.5)                              |
+| `src/routes/sitemap.xml/+server.ts`                     | Emit per-locale entries with `<xhtml:link rel="alternate">` |
+| `src/params/lang.ts`                                    | New — locale matcher whitelist                              |
+| `src/routes/[[lang=lang]]/...`                          | Move existing `(app)` group under optional lang             |
+| `src/lib/server/content.ts`                             | Parse `lang` suffix; carry `lang` on `ArticleMeta`          |
+| `src/lib/server/graph.ts`                               | `buildGraph(locale)`; fallback resolution                   |
+| `src/lib/server/downloads.ts`                           | `getTemplateDownloads(slug, locale)`; new manifest shape    |
+| `src/lib/types/article.ts`                              | Add `lang`, `sourceHash`, `availableLocales`                |
+| `src/routes/(app)/+layout.server.ts`                    | Resolve locale; pass to graph                               |
+| `src/lib/components/seo/SEO.svelte`                     | `hreflang`, `inLanguage`                                    |
+| `src/lib/components/templates/TemplateDownloads.svelte` | Replace hardcoded strings; locale fallback chips            |
+| `src/app.html`                                          | `<html lang="%lang%">` placeholder                          |
+| `scripts/build-templates.mjs`                           | `--locale` arg; per-locale output dir                       |
+| `scripts/build-core.mjs`                                | Same                                                        |
+| `scripts/i18n.mjs`                                      | New — preamble strings table                                |
+| `scripts/check-translations.mjs`                        | New                                                         |
+| `scripts/translate.mjs`                                 | New                                                         |
+| `messages/{en,de}.json` (or Paraglide equiv)            | New — UI strings                                            |
+| `.github/workflows/check-translations.yml`              | New — non-blocking PR comment with translation drift status |
+| `.gitignore`                                            | Already un-ignores `static/downloads/`; nothing to change   |
 
 ---
 

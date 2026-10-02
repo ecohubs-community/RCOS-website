@@ -54,11 +54,7 @@ function interpolate(template: string, vars: Record<string, string | number>): s
  * Translate a key for an explicit locale. Falls back to the default locale, then to
  * the key itself (so missing keys stay visible in dev rather than rendering empty).
  */
-export function t(
-	locale: string,
-	key: string,
-	vars?: Record<string, string | number>
-): string {
+export function t(locale: string, key: string, vars?: Record<string, string | number>): string {
 	const raw = MESSAGES[locale]?.[key] ?? MESSAGES[DEFAULT_LOCALE]?.[key] ?? key;
 	return vars ? interpolate(raw, vars) : raw;
 }

@@ -7,3 +7,11 @@ bun.lockb
 
 # Miscellaneous
 /static/
+
+# Content is authored text; formatting it would change rendering and
+# invalidate translation sourceHashes.
+/content/
+/design_files/
+# Generated
+/src/lib/paraglide/
+/project.inlang/cache/

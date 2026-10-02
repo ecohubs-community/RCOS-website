@@ -1,9 +1,5 @@
 import type { Handle } from '@sveltejs/kit';
-import {
-	DEFAULT_LOCALE,
-	LOCALE_CODES,
-	isLocale
-} from '$lib/i18n/languages';
+import { DEFAULT_LOCALE, LOCALE_CODES, isLocale } from '$lib/i18n/languages';
 import { extractLocale } from '$lib/i18n/path';
 import { paraglideMiddleware } from '$lib/paraglide/server';
 

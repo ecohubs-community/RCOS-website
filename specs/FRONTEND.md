@@ -1,4 +1,3 @@
-
 # EcoHubs Knowledge Platform – Frontend Implementation Plan (SvelteKit 5 + Tailwind v4)
 
 _This document is structured so an AI coding agent or developer can implement the frontend feature-by-feature, starting from the graph refactor and app layout, then layering navigation, search, scalability, and the optional AI workbench._
@@ -630,7 +629,6 @@ When an AI coding agent starts implementing this frontend, it should:
 
 Following this order ensures a stable, graph-backed core before layering navigation UX, search, and AI tooling.
 
-
 ---
 
 ## Implementation Progress
@@ -648,4 +646,3 @@ Following this order ensures a stable, graph-backed core before layering navigat
    - Integrated full-text search with MiniSearch and faceted filters on client and server.
 
 All lint and type errors resolved. Ready for next phases: AI workbench, authoring tools, and advanced features.
-

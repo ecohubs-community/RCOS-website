@@ -10,10 +10,7 @@
 	 * and uses the requested-locale UI strings even though the body that follows
 	 * is in the served (fallback) locale.
 	 */
-	let {
-		servedLang,
-		requestedLang
-	}: { servedLang: string; requestedLang: string } = $props();
+	let { servedLang, requestedLang }: { servedLang: string; requestedLang: string } = $props();
 
 	const servedName = $derived(getLocale(servedLang).englishName);
 	const requestedName = $derived(getLocale(requestedLang).englishName);

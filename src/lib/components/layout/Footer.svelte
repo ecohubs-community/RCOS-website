@@ -7,12 +7,15 @@
 
 <footer class="border-t border-border bg-surface mt-auto">
 	<div class="max-w-7xl mx-auto px-lg py-2xl">
-		<div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8 ">
+		<div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
 			<!-- Brand -->
 			<div class="space-y-4">
 				<h3 class="text-lg font-bold text-gradient">
 					{m('footer.brand_prefix')}
-					<a href="https://rcos.ecohubs.community" class="hover:text-text-primary transition-colors underline">{m('site.brand')}</a>
+					<a
+						href="https://rcos.ecohubs.community"
+						class="hover:text-text-primary transition-colors underline">{m('site.brand')}</a
+					>
 				</h3>
 				<p class="text-sm text-text-secondary max-w-full">
 					{m('footer.tagline')}
@@ -63,7 +66,9 @@
 			</div>
 		</div>
 
-		<div class="pt-8 border-t border-border flex flex-col md:flex-row justify-between items-center gap-4">
+		<div
+			class="pt-8 border-t border-border flex flex-col md:flex-row justify-between items-center gap-4"
+		>
 			<p class="text-xs text-text-tertiary">
 				{m('footer.copyright', { year })}
 			</p>

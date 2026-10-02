@@ -7,19 +7,19 @@
 export type CoverageTestRef = { title: string; slug: string };
 
 export type CoverageInvariant = {
-  code: string; // e.g. "3.1"
-  name: string; // e.g. "Economic transparency by default"
-  tests: CoverageTestRef[];
+	code: string; // e.g. "3.1"
+	name: string; // e.g. "Economic transparency by default"
+	tests: CoverageTestRef[];
 };
 
 export type CoverageLayer = {
-  layer: number;
-  title: string; // e.g. "Economic & Resource System"
-  invariants: CoverageInvariant[];
+	layer: number;
+	title: string; // e.g. "Economic & Resource System"
+	invariants: CoverageInvariant[];
 };
 
 export type Coverage = {
-  layers: CoverageLayer[];
-  totalInvariants: number;
-  coveredInvariants: number;
+	layers: CoverageLayer[];
+	totalInvariants: number;
+	coveredInvariants: number;
 };

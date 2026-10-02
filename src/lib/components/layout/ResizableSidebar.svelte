@@ -1,5 +1,4 @@
 <script lang="ts">
-
 	interface Props {
 		minWidth?: number;
 		maxWidth?: number;
@@ -54,7 +53,7 @@
 			document.body.style.userSelect = '';
 			document.removeEventListener('mousemove', onMouseMove);
 			document.removeEventListener('mouseup', onMouseUp);
-			
+
 			// Save to localStorage
 			localStorage.setItem(storageKey, width.toString());
 		}
@@ -64,7 +63,7 @@
 	}
 </script>
 
-<div 
+<div
 	bind:this={sidebarRef}
 	class="relative flex h-full"
 	style="width: {width}px; min-width: {minWidth}px; max-width: {maxWidth}px;"
@@ -99,7 +98,9 @@
 		}}
 	>
 		<!-- Visual indicator on hover -->
-		<div class="absolute inset-y-0 -left-0.5 -right-0.5 group-hover:bg-blue-400/20 transition-colors"></div>
+		<div
+			class="absolute inset-y-0 -left-0.5 -right-0.5 group-hover:bg-blue-400/20 transition-colors"
+		></div>
 	</div>
 </div>
 
