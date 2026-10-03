@@ -1,30 +1,24 @@
 <script lang="ts">
 	import type { SearchResult } from '$lib/stores/search';
-	import { page } from '$app/state';
 	import { m } from '$lib/paraglide/messages.js';
-	import { localized } from '$lib/i18n/path';
-	import { DEFAULT_LOCALE } from '$lib/i18n/languages';
 
-	let { result } = $props();
+	let { result }: { result: SearchResult } = $props();
 
-	const locale = $derived((page.data?.locale as string | undefined) ?? DEFAULT_LOCALE);
-
-	function hrefForResult(r: SearchResult) {
-		return localized(`/articles/${r.slug}`, locale);
-	}
+	const KIND: Record<SearchResult['kind'], () => string> = {
+		standard: m.nav_standard,
+		template: m.mega_templates,
+		guide: m.nav_layers,
+		test: m.mega_stress_tests,
+		page: m.nav_toolkit
+	};
 </script>
 
 <a
-	href={hrefForResult(result)}
-	class="block glass-card p-lg rounded-xl transition-all hover:translate-y-[-2px] hover:shadow-lg"
+	href={result.url}
+	class="flex items-start justify-between gap-3 rounded-xl border border-line bg-card px-4.5 py-3.5 hover:border-forest-300"
 >
-	<div class="flex items-start justify-between mb-2">
-		<h3 class="text-lg font-semibold text-primary">{result.title}</h3>
-		<span class="text-xs px-2 py-1 rounded-full bg-surface text-tertiary">
-			{m.articles_fallback_default()}
-		</span>
-	</div>
-	{#if result.meta}
-		<p class="text-xs text-tertiary">{result.meta}</p>
-	{/if}
+	<span class="font-ui text-[15.5px] font-semibold text-heading">{result.title}</span>
+	<span class="shrink-0 rounded-full bg-paper-2 px-2 py-0.5 font-ui text-xs text-ink-muted"
+		>{KIND[result.kind]()}</span
+	>
 </a>

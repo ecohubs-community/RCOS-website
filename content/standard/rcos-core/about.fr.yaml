@@ -1,5 +1,5 @@
 lang: fr
-sourceHash: '2af05666'
+sourceHash: '1d8b3e41'
 title: Noyau RCOS
 intro: ''
 sections:
@@ -214,7 +214,7 @@ sections:
       b9:
         md: '### Modes d''échec connus que RCOS est conçu pour prévenir'
       b10:
-        md: Voir [Tests de résistance RCOS](/articles/rcos-stress-tests?id=6acbe9a7)
+        md: Voir [Tests de résistance RCOS](/stress-tests)
   s11:
     title: Implémentations de référence
     blocks:

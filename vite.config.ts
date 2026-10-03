@@ -17,7 +17,7 @@ function contentArticles(): Plugin {
 			await buildArticles({ quiet: true });
 		},
 		configureServer(server) {
-			server.watcher.add(['content/**/*.yaml', 'content/articles/**/*.md']);
+			server.watcher.add(['content/**/*.yaml', 'content/pages/**/*.md']);
 			server.watcher.on('all', async (_event, file) => {
 				if (!/\/content\/.*\.(yaml|md)$/.test(file)) return;
 				try {

@@ -1,8 +1,7 @@
 /**
  * Every link in the site header, mobile drawer and footer, in one place.
  *
- * Paths are locale-neutral (`localized()` adds the prefix). The standard lives
- * under /standard (phase 3); the other pages still use /articles/… until phase 5.
+ * Paths are locale-neutral (`localized()` adds the prefix).
  *
  * Labels are message functions, not strings, so they are evaluated in the
  * active locale at render time and each page ships only the messages it uses.
@@ -83,9 +82,9 @@ export const LAYERS: NavLayer[] = LAYER_SLUGS.map((slug, n) => ({
 	n,
 	name: LAYER_NAMES[n],
 	question: LAYER_QUESTIONS[n],
-	guide: `/articles/rcos-layers/${slug}`,
+	guide: `/layers/${slug.replace(/^layer-/, '')}`,
 	rules: `${CORE}/${slug}`,
-	templates: `/articles/rcos-templates/layer-${n}`,
+	templates: `/templates/layer-${n}`,
 	sec: `§${n + 2}`
 }));
 
@@ -136,7 +135,7 @@ export const REFERENCE: NavLink[] = [
 	}
 ];
 
-export const LAYERS_INTRO_HREF = '/articles/rcos-layers';
+export const LAYERS_INTRO_HREF = '/layers';
 
 export interface NavGroup {
 	title: Msg;
@@ -151,13 +150,13 @@ export const TOOLKIT: NavGroup[] = [
 				icon: IconFilePencil,
 				label: m.mega_templates,
 				desc: m.mega_templates_desc,
-				href: '/articles/rcos-templates#downloads'
+				href: '/templates#downloads'
 			},
 			{
 				icon: IconMessages,
 				label: m.mega_facilitation,
 				desc: m.mega_facilitation_desc,
-				href: '/articles/rcos-stress-tests/facilitation-worksheet'
+				href: '/toolkit/facilitation-worksheet'
 			}
 		]
 	},
@@ -168,13 +167,13 @@ export const TOOLKIT: NavGroup[] = [
 				icon: IconChecklist,
 				label: m.mega_self_assessment,
 				desc: m.mega_self_assessment_desc,
-				href: '/articles/rcos-stress-tests/self-assessment'
+				href: '/toolkit/self-assessment'
 			},
 			{
 				icon: IconShieldCheck,
 				label: m.mega_stress_tests,
 				desc: m.mega_stress_tests_desc,
-				href: '/articles/rcos-stress-tests'
+				href: '/stress-tests'
 			}
 		]
 	},
@@ -185,19 +184,19 @@ export const TOOLKIT: NavGroup[] = [
 				icon: IconShieldLock,
 				label: m.mega_safeguards,
 				desc: m.mega_safeguards_desc,
-				href: '/articles/safeguards'
+				href: '/safeguards'
 			},
 			{
 				icon: IconBuildingCommunity,
 				label: m.mega_refimpl,
 				desc: m.mega_refimpl_desc,
-				href: '/articles/reference-implementations'
+				href: '/reference-implementations'
 			},
 			{
 				icon: IconBooks,
 				label: m.mega_all_articles,
 				desc: m.mega_all_articles_desc,
-				href: '/articles'
+				href: '/library'
 			}
 		]
 	}
@@ -212,10 +211,10 @@ export const FOOTER_STANDARD: NavLink[] = [
 ];
 
 export const FOOTER_TOOLKIT: NavLink[] = [
-	{ label: m.mega_templates, href: '/articles/rcos-templates#downloads' },
-	{ label: m.mega_self_assessment, href: '/articles/rcos-stress-tests/self-assessment' },
-	{ label: m.mega_stress_tests, href: '/articles/rcos-stress-tests' },
-	{ label: m.mega_safeguards, href: '/articles/safeguards' }
+	{ label: m.mega_templates, href: '/templates#downloads' },
+	{ label: m.mega_self_assessment, href: '/toolkit/self-assessment' },
+	{ label: m.mega_stress_tests, href: '/stress-tests' },
+	{ label: m.mega_safeguards, href: '/safeguards' }
 ];
 
 export const FOOTER_ECOHUBS: NavLink[] = [

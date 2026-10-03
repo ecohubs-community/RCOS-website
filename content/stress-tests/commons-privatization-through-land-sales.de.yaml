@@ -1,5 +1,5 @@
 lang: de
-sourceHash: '9a017ccb'
+sourceHash: 'cd8af28f'
 title: Privatisierung der Allmende durch Landverkäufe
 summary: Wenn der Verkauf von Land an Mitglieder die Gemeinschaft heimlich unmöglich macht, fair zu verlassen.
 tags:
@@ -80,7 +80,7 @@ sections:
       - **[Treasury Ruleset](rcos:template/treasury-ruleset)** + **[Internal Economy Protocol](rcos:template/internal-economy-protocol)** — erklärt, was Allmende und was privat ist, und schützt die Allmende vor informeller Privatisierung.
       - **[Exit Protocol](rcos:template/exit-protocol)** — garantiert, dass Austritts- und Wiederverkaufsbedingungen existieren, bevor jemand etwas überträgt, damit niemand gefangen ist.
       - **[Invariants Register](rcos:template/invariants-register)** — registriert den Schutz der Allmende als geschützte Invariante, die nicht heimlich geändert werden kann.
-      - Ausgearbeitetes Beispiel: die Schutzmaßnahme **[Land Commons Anti-Privatization](/articles/safeguards/land-commons-anti-privatization)**.
+      - Ausgearbeitetes Beispiel: die Schutzmaßnahme **[Land Commons Anti-Privatization](/safeguards/land-commons-anti-privatization)**.
 
       Siehe auch die Spezifikation: [Schicht 3 — Allmende vs. Private Ressourcen](rcos:§5.1) und [Schicht 1 — Austritt und Trennung](rcos:§3.6).
   if-it-s-already-happening:

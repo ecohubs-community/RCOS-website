@@ -1,119 +1,57 @@
 /**
- * Builds the data for the stress-test self-assessment instrument: every leaf
- * test's symptom checklist, severity, and remedy templates, grouped by category.
- *
- * Derived live from frontmatter (symptoms / severity / preventsWith) via
- * readArticleMeta(), so it stays in sync as tests change. Mirrors the approach
- * in coverage.ts.
+ * The stress-test self-assessment: every test's warning signs, severity and
+ * the templates that prevent it, grouped by primary layer (the first entry of
+ * `layers`, as on the stress-tests hub). Read from the YAML, so it never goes
+ * stale as tests change.
  */
-import { readArticleMeta, type ArticleMeta } from './content';
+import { siteRoute } from '$lib/content/routes.js';
 import { DEFAULT_LOCALE } from '$lib/i18n/languages';
-import type {
-	Assessment,
-	AssessmentCategory,
-	AssessmentSeverity,
-	AssessmentTest,
-	TemplateRef
-} from '$lib/types/assessment';
+import { loadStore, localized, localizePath } from './docs';
+import type { Assessment, AssessmentSeverity, AssessmentTest } from '$lib/types/assessment';
 
-export type { Assessment, AssessmentCategory, AssessmentTest, TemplateRef };
-
-// Category folder -> display title and order. Matches the names used on the
-// Stress Tests index page.
-const CATEGORY_ORDER: { key: string; title: string }[] = [
-	{ key: 'governance-power', title: 'Governance & Power' },
-	{ key: 'conflict-accountability', title: 'Conflict & Accountability' },
-	{ key: 'culture-influence', title: 'Culture & Influence' },
-	{ key: 'economy-resources', title: 'Economy & Resources' },
-	{ key: 'membership-boundaries', title: 'Membership & Boundaries' },
-	{ key: 'operations-coordination', title: 'Operations & Coordination' },
-	{ key: 'change-emergencies', title: 'Change & Emergencies' }
-];
+export type { Assessment };
 
 const SEVERITIES: AssessmentSeverity[] = ['low', 'medium', 'high'];
 
-function prettifySlug(slug: string): string {
-	const last = slug.split('/').pop() ?? slug;
-	return last.replace(/-/g, ' ').replace(/\b\w/g, (c) => c.toUpperCase());
-}
-
-function stringList(value: unknown): string[] {
-	return Array.isArray(value) ? value.map((v) => String(v).trim()).filter((v) => v.length > 0) : [];
-}
-
 export async function buildAssessment(locale: string = DEFAULT_LOCALE): Promise<Assessment> {
-	const meta = await readArticleMeta();
+	const store = await loadStore();
+	const route = (file: string) => localizePath(siteRoute(file) ?? '/', locale);
+	const byLegacy = new Map(store.all.map((d) => [d.en.legacyPath as string, d]));
+	const guides = store.all.filter((d) => siteRoute(d.file)?.startsWith('/layers/'));
 
-	// Group by slug (unique per article, identical across locales) so titles
-	// resolve to the requested locale while structural fields (symptoms,
-	// severity) come from the default-locale source. NB: grouping by `id` would
-	// be wrong — some tests share a frontmatter id, collapsing distinct tests.
-	const bySlug = new Map<string, { source?: ArticleMeta; localized?: ArticleMeta }>();
-	for (const a of meta) {
-		const g = bySlug.get(a.slug) ?? {};
-		if ((a.lang ?? DEFAULT_LOCALE) === DEFAULT_LOCALE) g.source = a;
-		if (a.lang === locale) g.localized = a;
-		bySlug.set(a.slug, g);
-	}
-
-	const titleOf = (g: { source?: ArticleMeta; localized?: ArticleMeta }): string => {
-		const loc = typeof g.localized?.title === 'string' ? g.localized.title.trim() : '';
-		const src = typeof g.source?.title === 'string' ? g.source.title.trim() : '';
-		return loc || src || (g.source?.slug ?? '');
-	};
-
-	// slug -> resolved title, for naming remedy templates.
-	const titleBySlug = new Map<string, string>();
-	for (const g of bySlug.values()) {
-		if (g.source) titleBySlug.set(g.source.slug, titleOf(g));
-	}
-
-	const testsByCat = new Map<string, AssessmentTest[]>();
-	for (const g of bySlug.values()) {
-		const source = g.source;
-		if (!source) continue;
-		const parts = source.slug.split('/');
-		// Leaf tests only: rcos-stress-tests/<category>/<test>.
-		if (parts[0] !== 'rcos-stress-tests' || parts.length !== 3) continue;
-
-		// Symptoms (the checkbox labels) must come from the localized entry so they
-		// render in the requested locale; fall back to the source if untranslated.
-		const localizedSymptoms = stringList(g.localized?.symptoms);
-		const symptoms = localizedSymptoms.length ? localizedSymptoms : stringList(source.symptoms);
-		if (symptoms.length === 0) continue;
-
-		const category = parts[1];
-		const severity = (
-			SEVERITIES.includes(String(source.severity) as AssessmentSeverity)
-				? source.severity
-				: 'medium'
-		) as AssessmentSeverity;
-
-		const preventsWith: TemplateRef[] = stringList(source.preventsWith).map((slug) => ({
-			slug,
-			title: titleBySlug.get(slug) ?? prettifySlug(slug)
-		}));
-
+	const groups = new Map<number, AssessmentTest[]>();
+	for (const d of store.all) {
+		if (!siteRoute(d.file)?.startsWith('/stress-tests/')) continue;
+		const { doc } = localized(d, locale);
+		const symptoms: string[] = doc.symptoms ?? [];
+		if (!symptoms.length) continue;
+		const layer: number = d.en.layers?.[0] ?? 0;
 		const test: AssessmentTest = {
-			slug: source.slug,
-			title: titleOf(g),
-			severity,
+			slug: d.en.legacyPath,
+			href: route(d.file),
+			title: doc.title,
+			severity: SEVERITIES.includes(d.en.severity) ? d.en.severity : 'medium',
 			symptoms,
-			preventsWith
+			preventsWith: (d.en.preventsWith ?? []).flatMap((p: string) => {
+				const t = byLegacy.get(p);
+				return t ? [{ slug: p, href: route(t.file), title: localized(t, locale).doc.title }] : [];
+			})
 		};
-
-		if (!testsByCat.has(category)) testsByCat.set(category, []);
-		testsByCat.get(category)!.push(test);
+		groups.set(layer, [...(groups.get(layer) ?? []), test]);
 	}
 
-	const categories: AssessmentCategory[] = CATEGORY_ORDER.filter((c) => testsByCat.has(c.key)).map(
-		(c) => ({
-			key: c.key,
-			title: c.title,
-			tests: testsByCat.get(c.key)!.sort((a, b) => a.title.localeCompare(b.title))
-		})
-	);
-
-	const totalTests = categories.reduce((n, c) => n + c.tests.length, 0);
-	return { categories, totalTests };
+	const categories = [...groups.entries()]
+		.sort(([a], [b]) => a - b)
+		.map(([n, tests]) => {
+			const guide = guides.find((g) => siteRoute(g.file)?.startsWith(`/layers/${n}-`));
+			return {
+				key: `layer-${n}`,
+				layer: n,
+				title: guide
+					? String(localized(guide, locale).doc.title).replace(/\*\*/g, '')
+					: `Layer ${n}`,
+				tests: tests.sort((a, b) => a.title.localeCompare(b.title, locale))
+			};
+		});
+	return { categories, totalTests: categories.reduce((n, c) => n + c.tests.length, 0) };
 }

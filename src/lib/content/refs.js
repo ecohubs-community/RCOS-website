@@ -12,13 +12,13 @@
  * When pages move (phase 3: the standard; phase 5: flat stress-test URLs), only
  * this resolver changes, never the content.
  */
-import { standardRoute } from './routes.js';
+import { siteRoute, standardRoute } from './routes.js';
 
 /**
  * @typedef {{
  *   anchors: Map<string, string>,
  *   docs: Map<string, string>
- * }} RefTargets  anchors: "2.1" or "2.1.3" → URL with anchor; docs: "template/x" etc. → legacyPath
+ * }} RefTargets  anchors: "2.1" or "2.1.3" → URL with anchor; docs: "template/x" etc. → page path
  */
 
 /**
@@ -35,9 +35,10 @@ export function refTargets(docs) {
 				.split('/')
 				.pop()
 				?.replace(/\.yaml$/, '') ?? '';
-		if (en.kind === 'template') t.docs.set(`template/${name}`, en.legacyPath);
-		if (en.legacyPath.startsWith('rcos-stress-tests/')) t.docs.set(`test/${name}`, en.legacyPath);
-		if (en.legacyPath.startsWith('rcos-layers/')) t.docs.set(`guide/${name}`, en.legacyPath);
+		const route = siteRoute(file);
+		if (route && en.kind === 'template') t.docs.set(`template/${name}`, route);
+		if (route?.startsWith('/stress-tests/')) t.docs.set(`test/${name}`, route);
+		if (route?.startsWith('/layers/')) t.docs.set(`guide/${name}`, route);
 		const page = en.kind === 'chapter' ? standardRoute(file, en) : null;
 		if (!page) continue;
 		// Sections and clauses are addressed by their number: #2.1, #2.1.3.
@@ -65,9 +66,9 @@ export const articleUrl = (/** @type {string} */ legacyPath) =>
 export function resolveRef(ref, t) {
 	const [target, fragment] = ref.split('#');
 	if (target.startsWith('§')) return t.anchors.get(target.slice(1)) ?? null;
-	const legacy = t.docs.get(target);
-	if (!legacy) return null;
-	return articleUrl(legacy) + (fragment ? `#${fragment}` : '');
+	const route = t.docs.get(target);
+	if (!route) return null;
+	return route + (fragment ? `#${fragment}` : '');
 }
 
 const LINK = /\]\(rcos:([^)\s]+)\)/g;
@@ -118,7 +119,7 @@ export const refsIn = (/** @type {string} */ text) => [...text.matchAll(LINK)].m
 export function linkify(text, t) {
 	const byUrl = inverse(t);
 	return text.replace(
-		/\[([^\]]*)\]\((\/(?:articles|standard)\/[^)\s?]+)\)/g,
+		/\[([^\]]*)\]\((\/(?:standard|templates|layers|stress-tests)\/[^)\s?]+)\)/g,
 		(whole, label, url) => {
 			const [base, fragment] = url.split('#');
 			/** @type {string | undefined} */
@@ -140,7 +141,7 @@ function inverse(t) {
 	if (!inv) {
 		inv = { anchors: new Map(), docs: new Map() };
 		for (const [ref, url] of t.anchors) inv.anchors.set(url, `§${ref}`);
-		for (const [ref, legacy] of t.docs) inv.docs.set(articleUrl(legacy), ref);
+		for (const [ref, route] of t.docs) inv.docs.set(route, ref);
 		inverses.set(t, inv);
 	}
 	return inv;
@@ -155,7 +156,9 @@ function inverse(t) {
  */
 export function linkifyAll(value, t) {
 	if (typeof value === 'string')
-		return /** @type {T} */ (/\]\(\/(articles|standard)\//.test(value) ? linkify(value, t) : value);
+		return /** @type {T} */ (
+			/\]\(\/(standard|templates|layers|stress-tests)\//.test(value) ? linkify(value, t) : value
+		);
 	if (Array.isArray(value)) return /** @type {T} */ (value.map((v) => linkifyAll(v, t)));
 	if (value && typeof value === 'object')
 		return /** @type {T} */ (

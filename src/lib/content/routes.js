@@ -42,3 +42,58 @@ export function standardRoute(file, en) {
 	const page = last === 'version' ? [] : [segment];
 	return ['/standard', name, ...version, ...page].join('/');
 }
+
+/**
+ * Where the other content documents live on the site:
+ *
+ *   templates/layer-0/index.yaml               /templates/layer-0
+ *   templates/layer-0/purpose-charter.yaml     /templates/layer-0/purpose-charter
+ *   layers/layer-0-identity-scope.yaml         /layers/0-identity-scope
+ *   stress-tests/founder-informal-veto.yaml    /stress-tests/founder-informal-veto
+ *
+ * Stress tests are flat: their group (the primary layer) is not in the URL, so
+ * regrouping never breaks a link.
+ * @param {string} file
+ * @returns {string | null}
+ */
+export function siteRoute(file) {
+	const m = /(?:^|\/)(?:content\/)?(templates|layers|stress-tests)\/(.+)\.yaml$/.exec(file);
+	if (!m) return null;
+	const [, dir, rest] = m;
+	if (dir === 'templates') return `/templates/${rest.replace(/\/index$/, '')}`;
+	if (dir === 'layers') return `/layers/${rest.replace(/^layer-/, '')}`;
+	return `/stress-tests/${rest}`;
+}
+
+/** Stress-test categories of the markdown era → the layer group that replaced them. */
+export const CATEGORY_LAYER = {
+	'governance-power': 2,
+	'conflict-accountability': 4,
+	'culture-influence': 2,
+	'economy-resources': 3,
+	'membership-boundaries': 1,
+	'operations-coordination': 5,
+	'change-emergencies': 6
+};
+
+/**
+ * Pages of the markdown era that are not YAML documents: old article slug → new path.
+ * Their copy lives in content/pages/ (see src/lib/server/pages.ts).
+ */
+export const PAGE_ROUTES = {
+	'': '/library',
+	'rcos-layers': '/layers',
+	'rcos-templates': '/templates',
+	'rcos-stress-tests': '/stress-tests',
+	'rcos-stress-tests/self-assessment': '/toolkit/self-assessment',
+	'rcos-stress-tests/facilitation-worksheet': '/toolkit/facilitation-worksheet',
+	safeguards: '/safeguards',
+	'safeguards/land-commons-anti-privatization': '/safeguards/land-commons-anti-privatization',
+	'reference-implementations': '/reference-implementations',
+	...Object.fromEntries(
+		Object.entries(CATEGORY_LAYER).map(([c, n]) => [
+			`rcos-stress-tests/${c}`,
+			`/stress-tests#layer-${n}`
+		])
+	)
+};

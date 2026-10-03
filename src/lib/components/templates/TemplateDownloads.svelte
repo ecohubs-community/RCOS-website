@@ -104,7 +104,10 @@
 							{#each downloads.templates.filter((t) => t.layer === layer) as t (t.id)}
 								<li class="flex flex-wrap items-center gap-x-3 gap-y-1 text-sm">
 									<a
-										href={localized(`/articles/${t.slug}`, locale)}
+										href={localized(
+											`/templates/${t.slug.replace(/^rcos-templates\//, '')}`,
+											locale
+										)}
 										class="text-text-primary hover:text-primary font-medium"
 									>
 										{t.title}
@@ -149,10 +152,7 @@
 			</h2>
 			<p class="text-xs text-text-tertiary">
 				{m.downloads_generated_inline({ date: downloads.generated })}
-				<a
-					href={localized('/articles/rcos-templates#downloads', locale)}
-					class="text-primary hover:underline"
-				>
+				<a href={localized('/templates#downloads', locale)} class="text-primary hover:underline">
 					{m.downloads_all_link()}
 				</a>
 			</p>

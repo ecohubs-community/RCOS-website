@@ -53,10 +53,10 @@ describe('standard pages', () => {
 		const page = (await standardPage('/standard/core/0.1/layer-0-identity-scope', 'de'))!;
 		const r = page.related!;
 		expect(r.layer).toBe(0);
-		expect(r.guide?.href).toBe('/de/articles/rcos-layers/layer-0-identity-scope');
+		expect(r.guide?.href).toBe('/de/layers/0-identity-scope');
 		expect(r.templates.map((t) => t.ref)).toEqual(['§2.1', '§2.2', '§2.3', '§2.4']);
-		expect(r.templates[0].href).toBe('/de/articles/rcos-templates/layer-0/purpose-charter');
-		expect(r.templatesHref).toBe('/de/articles/rcos-templates/layer-0');
+		expect(r.templates[0].href).toBe('/de/templates/layer-0/purpose-charter');
+		expect(r.templatesHref).toBe('/de/templates/layer-0');
 		// Tests mainly about Layer 0 first, by severity; tests that also touch it last.
 		const levels = r.tests.map((t) => t.level);
 		expect(levels).toEqual([...levels].sort((a, b) => order[a] - order[b]));
@@ -96,10 +96,10 @@ describe('standard pages', () => {
 		const clause = invariants.blocks.find((b) => b.kind === 'clause' && b.ref === '2.3.4');
 		expect(clause?.kind === 'clause' && clause.question).toBe('emergency');
 		expect(invariants.practice[0].href).toBe(
-			'/de/articles/rcos-templates/layer-0/invariants-register#aktive-invarianten'
+			'/de/templates/layer-0/invariants-register#active-invariants'
 		);
 		expect(invariants.testedBy.map((t) => t.href)).toContain(
-			'/de/articles/rcos-stress-tests/change-emergencies/unprotected-core-invariants'
+			'/de/stress-tests/unprotected-core-invariants'
 		);
 		// Every numbered section of every layer has guidance.
 		for (const n of [0, 1, 2, 3, 4, 5, 6]) {

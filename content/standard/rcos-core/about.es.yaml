@@ -1,5 +1,5 @@
 lang: es
-sourceHash: '2af05666'
+sourceHash: '1d8b3e41'
 title: Núcleo RCOS
 intro: ''
 sections:
@@ -214,7 +214,7 @@ sections:
       b9:
         md: '### Modos de fallo conocidos que RCOS está diseñado para prevenir'
       b10:
-        md: Ver [Pruebas de estrés de RCOS](/articles/rcos-stress-tests?id=6acbe9a7)
+        md: Ver [Pruebas de estrés de RCOS](/stress-tests)
   s11:
     title: Implementaciones de referencia
     blocks:

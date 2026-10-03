@@ -2,7 +2,7 @@
 /**
  * AI-assisted bulk translation, provider-agnostic.
  *
- * Walks content/articles and the YAML documents (content/standard, templates,
+ * Walks content/pages and the YAML documents (content/standard, templates,
  * layers, stress-tests), finds those missing or outdated for a target locale,
  * and produces `<base>.<lang>.md` translations using a configurable LLM backend.
  * Idempotent — skips up-to-date translations whose stored `sourceHash` already
@@ -56,7 +56,7 @@ import { SUPPORTED_LOCALES } from './i18n.mjs';
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const ROOT = path.resolve(__dirname, '..');
-const ARTICLES_DIR = path.join(ROOT, 'content/articles');
+const ARTICLES_DIR = path.join(ROOT, 'content/pages');
 const DEFAULT_LOCALE = 'en';
 
 // Human-readable language names for the translation prompt. Keep in sync with

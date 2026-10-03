@@ -5,24 +5,23 @@
  * rendered, links are resolved and localized, and the page receives finished
  * data. Nothing matches or parses in the browser.
  */
-import { readFile } from 'node:fs/promises';
-import path from 'node:path';
-import yaml from 'js-yaml';
-import { loadDocuments, loadGuidance } from '$lib/content/load.js';
-import { clauseOwners } from '$lib/content/ownership.js';
-import { merge } from '$lib/content/overlay.js';
-import { articleUrl, refTargets, refsIn, resolveAll } from '$lib/content/refs.js';
-import { standardRoute } from '$lib/content/routes.js';
+import {
+	fileName,
+	loadStore,
+	localized,
+	localizeLinks,
+	localizePath,
+	type Doc,
+	type Loaded,
+	type Store as DocStore
+} from './docs';
+import { refTargets, refsIn, resolveAll } from '$lib/content/refs.js';
+import { siteRoute, standardRoute } from '$lib/content/routes.js';
 import { tokenize, termForms, type Part } from '$lib/content/tokenize.js';
 import { renderBlock, renderInline } from '$lib/content/render.js';
 import { headingSlug } from '$lib/content/markdown.js';
 import { DEFAULT_LOCALE } from '$lib/i18n/languages';
 import { PUBLIC_SITE_URL } from '$lib/config/site';
-
-// YAML documents are checked by the content schema, not by TypeScript.
-// eslint-disable-next-line @typescript-eslint/no-explicit-any
-type Doc = Record<string, any>;
-type Loaded = Awaited<ReturnType<typeof loadDocuments>>[number];
 
 export type RenderedPart =
 	| { t: 'text'; text: string }
@@ -127,33 +126,18 @@ export type StandardNav = {
 
 // --- Loading -----------------------------------------------------------------------
 
-type Store = {
-	pages: Map<string, Loaded>;
-	all: Loaded[];
-	/** Guidance per layer */
-	guides: Map<number, Loaded>;
-	/** Clause ref → owning template section key */
-	owners: Map<string, string>;
-};
+type Store = DocStore & { pages: Map<string, Loaded> };
 let loaded: Promise<Store> | undefined;
 
 function load() {
-	loaded ??= (async () => {
-		const [all, guidance, ownership] = await Promise.all([
-			loadDocuments(),
-			loadGuidance(),
-			readFile(path.resolve('content/standard/rcos-core/0.1/ownership.yaml'), 'utf8').then(
-				(raw) => yaml.load(raw) as Doc
-			)
-		]);
+	loaded ??= loadStore().then((store) => {
 		const pages = new Map<string, Loaded>();
-		for (const d of all) {
+		for (const d of store.all) {
 			const route = standardRoute(d.file, d.en);
 			if (route) pages.set(route, d);
 		}
-		const guides = new Map(guidance.map((g) => [g.en.layer as number, g]));
-		return { pages, all, guides, owners: clauseOwners(all, ownership) };
-	})();
+		return { ...store, pages };
+	});
 	return loaded;
 }
 
@@ -162,21 +146,7 @@ export async function standardPaths(): Promise<string[]> {
 	return [...(await load()).pages.keys()];
 }
 
-function localized(d: Loaded, locale: string): { doc: Doc; fallback: boolean } {
-	if (locale === DEFAULT_LOCALE) return { doc: d.en, fallback: false };
-	const overlay = d.overlays[locale];
-	if (!overlay) return { doc: d.en, fallback: true };
-	const { lang: _l, sourceHash: _h, ...text } = overlay.data;
-	return { doc: merge(d.en, text), fallback: false };
-}
-
 // --- Chapter identity -------------------------------------------------------------------
-
-const fileName = (d: Loaded) =>
-	d.file
-		.split('/')
-		.pop()!
-		.replace(/\.yaml$/, '');
 
 /** "02-layer-0-…" → "2"; "appendix-a-…" → "A"; anything else → null. */
 function chapterNumber(d: Loaded): string | null {
@@ -202,15 +172,6 @@ function shortTitle(title: string, d: Loaded): string {
 
 // --- Rendering ------------------------------------------------------------------------------
 
-/** Prefix internal links with the locale (EN is unprefixed). */
-function localizeLinks(md: string, locale: string): string {
-	if (locale === DEFAULT_LOCALE) return md;
-	return md.replace(/\]\(\/(standard|articles)(\/|\))/g, `](/${locale}/$1$2`);
-}
-
-const localizePath = (path: string, locale: string) =>
-	locale === DEFAULT_LOCALE ? path : `/${locale}${path}`;
-
 function renderParts(
 	parts: Part[],
 	locale: string,
@@ -229,7 +190,7 @@ export async function standardPage(path: string, locale: string): Promise<Standa
 	const d = pages.get(path);
 	if (!d) return null;
 	const { doc: raw, fallback } = localized(d, locale);
-	const targets = refTargets(all);
+	const targets = store.targets;
 	const doc = resolveAll(raw, targets);
 
 	// Glossary, for term tooltips (in the page's language).
@@ -334,7 +295,7 @@ export async function standardPage(path: string, locale: string): Promise<Standa
 
 /** Guide, templates and stress tests of a layer (still article pages until phase 5). */
 function related(layer: number, all: Loaded[], locale: string): RelatedView {
-	const href = (legacyPath: string) => localizePath(articleUrl(legacyPath), locale);
+	const href = (d: Loaded) => localizePath(siteRoute(d.file) ?? '/', locale);
 	const text = (d: Loaded) => localized(d, locale).doc;
 	const under = (prefix: string) => all.filter((d) => d.en.legacyPath.startsWith(prefix));
 
@@ -345,7 +306,7 @@ function related(layer: number, all: Loaded[], locale: string): RelatedView {
 		.filter((d) => d.en.kind === 'template')
 		.sort((a, b) => a.en.order - b.en.order)
 		.map((d) => ({
-			href: href(d.en.legacyPath),
+			href: href(d),
 			title: text(d).title,
 			ref: refsIn(d.en.preamble ?? '').find((r: string) => r.startsWith('§')) ?? null
 		}));
@@ -355,7 +316,7 @@ function related(layer: number, all: Loaded[], locale: string): RelatedView {
 	const tests = under('rcos-stress-tests/')
 		.filter((d) => d.en.layers?.includes(layer))
 		.map((d) => ({
-			href: href(d.en.legacyPath),
+			href: href(d),
 			title: text(d).title,
 			level: (d.en.layers[0] === layer
 				? d.en.severity
@@ -367,14 +328,14 @@ function related(layer: number, all: Loaded[], locale: string): RelatedView {
 		layer,
 		guide: guide
 			? {
-					href: href(guide.en.legacyPath),
+					href: href(guide),
 					question: String(text(guide).head ?? '').replace(/\*\*/g, '')
 				}
 			: null,
 		templates,
-		templatesHref: index ? href(index.en.legacyPath) : null,
+		templatesHref: index ? href(index) : null,
 		tests,
-		selfCheckHref: href('rcos-stress-tests/self-assessment')
+		selfCheckHref: localizePath('/toolkit/self-assessment', locale)
 	};
 }
 
@@ -411,7 +372,7 @@ function guidanceFor(
 		for (const section of doc.sections) {
 			templates.set(`${name}.${section.id}`, {
 				link: {
-					href: `${localizePath(articleUrl(t.en.legacyPath), locale)}#${headingSlug(section.title)}`,
+					href: `${localizePath(siteRoute(t.file) ?? '/', locale)}#${section.id}`,
 					template: doc.title,
 					section: section.title
 				},
@@ -439,7 +400,7 @@ function guidanceFor(
 			if (!inLayer(ref)) continue;
 			const list = help.testedBy.get(ref) ?? [];
 			list.push({
-				href: localizePath(articleUrl(t.en.legacyPath), locale),
+				href: localizePath(siteRoute(t.file) ?? '/', locale),
 				title: localized(t, locale).doc.title,
 				severity: t.en.severity ?? null
 			});

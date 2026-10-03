@@ -1,6 +1,5 @@
 <script lang="ts">
 	import ClickToLoad from '$lib/components/embed/ClickToLoad.svelte';
-	import { articleBySlug, rootArticles } from '$lib/stores/graph';
 	import Card from '$lib/components/common/Card.svelte';
 	import Button from '$lib/components/common/Button.svelte';
 	import IconBolt from '~icons/tabler/bolt';
@@ -108,15 +107,23 @@
 		m.home_layers_q5,
 		m.home_layers_q6
 	];
+	const layerNames = [
+		m.layer_name_0,
+		m.layer_name_1,
+		m.layer_name_2,
+		m.layer_name_3,
+		m.layer_name_4,
+		m.layer_name_5,
+		m.layer_name_6
+	];
 	// Layers the story touches: leaving (1), the fight (4), fixing the rule (6).
 	const storyLayers = new Set([1, 4, 6]);
 
 	const layers = $derived(
 		layerSlugs.map((slug, n) => ({
 			n,
-			path: `/articles/rcos-layers/${slug}`,
-			// Localized title from the content graph; the number alone is a safe fallback.
-			title: $articleBySlug.get(`rcos-layers/${slug}`)?.title ?? `Layer ${n}`,
+			path: `/layers/${slug.replace(/^layer-/, '')}`,
+			title: `${m.layer_label({ n })} – ${layerNames[n]()}`,
 			question: layerQuestions[n]()
 		}))
 	);
@@ -137,7 +144,7 @@
 			name: m.home_parts_layers_name,
 			what: m.home_parts_layers_what,
 			use: m.home_parts_layers_use,
-			path: '/articles/rcos-layers',
+			path: '/layers',
 			example: m.home_parts_layers_example()
 		},
 		{
@@ -155,7 +162,7 @@
 			name: m.home_parts_templates_name,
 			what: m.home_parts_templates_what,
 			use: m.home_parts_templates_use,
-			path: '/articles/rcos-templates',
+			path: '/templates',
 			example: m.home_parts_templates_example()
 		},
 		{
@@ -164,7 +171,7 @@
 			name: m.home_parts_stress_tests_name,
 			what: m.home_parts_stress_tests_what,
 			use: m.home_parts_stress_tests_use,
-			path: '/articles/rcos-stress-tests',
+			path: '/stress-tests',
 			example: m.home_parts_stress_tests_example()
 		}
 	]);
@@ -202,33 +209,39 @@
 			title: m.home_start_step1_title,
 			body: m.home_start_step1_body,
 			cta: m.home_start_step1_cta,
-			path: '/articles/rcos-layers'
+			path: '/layers'
 		},
 		{
 			key: 'step2',
 			title: m.home_start_step2_title,
 			body: m.home_start_step2_body,
 			cta: m.home_start_step2_cta,
-			path: '/articles/rcos-stress-tests/self-assessment'
+			path: '/toolkit/self-assessment'
 		},
 		{
 			key: 'step3',
 			title: m.home_start_step3_title,
 			body: m.home_start_step3_body,
 			cta: m.home_start_step3_cta,
-			path: '/articles/rcos-templates#downloads'
+			path: '/templates#downloads'
 		}
 	];
 
-	// Root articles the "five parts" section doesn't already cover.
-	const coveredRoots = new Set([
-		'rcos-core',
-		'rcos-layers',
-		'rcos-modules',
-		'rcos-templates',
-		'rcos-stress-tests'
-	]);
-	const moreArticles = $derived($rootArticles.filter((a) => !coveredRoots.has(a.slug)));
+	// Pages the "five parts" section doesn't already cover.
+	const moreArticles = [
+		{
+			id: 'safeguards',
+			path: '/safeguards',
+			title: m.mega_safeguards,
+			summary: m.mega_safeguards_desc
+		},
+		{
+			id: 'reference-implementations',
+			path: '/reference-implementations',
+			title: m.mega_refimpl,
+			summary: m.mega_refimpl_desc
+		}
+	];
 </script>
 
 <!-- Interim container (was in the old AppShell); the page is rebuilt in phase 5. -->
@@ -282,16 +295,11 @@
 						{m.home_cta_how_it_works()}
 						<IconArrowDown class="w-4 h-4" />
 					</Button>
-					<Button
-						variant="secondary"
-						size="lg"
-						href={href('/articles/rcos-templates#downloads')}
-						class="gap-2"
-					>
+					<Button variant="secondary" size="lg" href={href('/templates#downloads')} class="gap-2">
 						<IconDownload class="w-4 h-4" />
 						{m.home_cta_download_templates()}
 					</Button>
-					<Button variant="outline" size="lg" href={href('/articles')}
+					<Button variant="outline" size="lg" href={href('/library')}
 						>{m.home_cta_explore_articles()}</Button
 					>
 				</div>
@@ -435,7 +443,7 @@
 					<IconBookmark class="w-5 h-5 shrink-0 text-highlight-dark dark:text-highlight" />
 					<span>{m.home_layers_story_note()}</span>
 				</p>
-				<Button variant="ghost" href={href('/articles/rcos-layers')} class="gap-2 shrink-0">
+				<Button variant="ghost" href={href('/layers')} class="gap-2 shrink-0">
 					{m.home_layers_read_more()}
 					<IconArrowRight class="w-4 h-4" />
 				</Button>
@@ -572,11 +580,9 @@
 				</h2>
 				<div class="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
 					{#each moreArticles as article (article.id)}
-						<Card href={href(`/articles/${article.slug}`)} class="h-full flex flex-col">
-							<h3 class="text-lg font-bold text-text-primary mb-2">{article.title}</h3>
-							{#if article.summary}
-								<p class="text-sm text-text-secondary line-clamp-3">{article.summary}</p>
-							{/if}
+						<Card href={href(article.path)} class="h-full flex flex-col">
+							<h3 class="text-lg font-bold text-text-primary mb-2">{article.title()}</h3>
+							<p class="text-sm text-text-secondary line-clamp-3">{article.summary()}</p>
 						</Card>
 					{/each}
 				</div>

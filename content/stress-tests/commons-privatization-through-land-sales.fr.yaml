@@ -1,5 +1,5 @@
 lang: fr
-sourceHash: '9a017ccb'
+sourceHash: 'cd8af28f'
 title: Privatisation des communs par la vente de terres
 summary: Quand vendre la terre aux membres rend discrètement la communauté impossible à quitter équitablement.
 tags:
@@ -80,7 +80,7 @@ sections:
       - **[Règlement de trésorerie](rcos:template/treasury-ruleset)** + **[Protocole d'économie interne](rcos:template/internal-economy-protocol)** — déclarer ce qui est communs vs privé et protéger les communs contre la privatisation informelle.
       - **[Protocole de sortie](rcos:template/exit-protocol)** — garantir que les conditions de sortie et de revente existent avant que quiconque ne transfère quoi que ce soit, afin que personne ne soit piégé.
       - **[Registre des invariants](rcos:template/invariants-register)** — enregistrer la protection des communs comme un invariant protégé qui ne peut pas être discrètement amendé.
-      - Exemple concret : la sauvegarde **[Anti-privatisation des communs fonciers](/articles/safeguards/land-commons-anti-privatization)**.
+      - Exemple concret : la sauvegarde **[Anti-privatisation des communs fonciers](/safeguards/land-commons-anti-privatization)**.
 
       Voir aussi la spécification : [Couche 3 — Ressources communes vs privées](rcos:§5.1) et [Couche 1 — Sortie et séparation](rcos:§3.6).
   if-it-s-already-happening:

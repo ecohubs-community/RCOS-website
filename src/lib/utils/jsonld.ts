@@ -42,81 +42,44 @@ export function buildHomeSchema(locale: string, description: string): Record<str
 	];
 }
 
-type Crumb = { title: string; slug: string };
+export type Crumb = { name: string; path: string };
 
 /**
- * Article schema for one locale's page. `url` must match the page's canonical
- * (locale-prefixed) URL, and `inLanguage` is the language of the body actually
- * served, which is English on a not-yet-translated page.
+ * A content page in one locale. `path` is locale-neutral; `inLanguage` is the
+ * language of the text actually served (English on a not-yet-translated page).
  */
-export function buildArticleSchema(
-	article: Crumb & { summary?: string; tags?: string[] },
-	breadcrumbs: Crumb[],
-	opts: {
-		locale: string;
-		inLanguage: string;
-		datePublished?: string | null;
-		dateModified?: string | null;
-	}
-): Record<string, unknown> {
-	const articleUrl = (slug: string) => localeUrl(SITE_URL, `/articles/${slug}`, opts.locale);
-	const url = articleUrl(article.slug);
-
+export function buildPageSchema(opts: {
+	title: string;
+	description?: string | null;
+	path: string;
+	locale: string;
+	inLanguage: string;
+	datePublished?: string | null;
+	dateModified?: string | null;
+}): Record<string, unknown> {
+	const url = localeUrl(SITE_URL, opts.path, opts.locale);
 	const schema: Record<string, unknown> = {
 		'@context': 'https://schema.org',
 		'@type': 'Article',
-		headline: article.title,
+		headline: opts.title,
 		url,
 		mainEntityOfPage: url,
 		inLanguage: opts.inLanguage,
 		publisher: PUBLISHER,
-		isPartOf: {
-			'@type': 'WebSite',
-			name: SITE_NAME,
-			url: localeUrl(SITE_URL, '/', opts.locale)
-		}
+		isPartOf: { '@type': 'WebSite', name: SITE_NAME, url: localeUrl(SITE_URL, '/', opts.locale) }
 	};
-
+	if (opts.description) schema.description = opts.description;
 	if (opts.datePublished) schema.datePublished = opts.datePublished;
 	if (opts.dateModified) schema.dateModified = opts.dateModified;
-
-	if (article.summary) {
-		schema.description = article.summary;
-	}
-
-	if (article.tags?.length) {
-		schema.keywords = article.tags.join(', ');
-	}
-
-	if (breadcrumbs.length > 1) {
-		const parent = breadcrumbs[breadcrumbs.length - 2];
-		schema.isPartOf = {
-			'@type': 'Article',
-			name: parent.title,
-			url: articleUrl(parent.slug)
-		};
-	}
-
 	return schema;
 }
 
-/** Breadcrumb trail Home → Articles → …crumbs, with names and URLs in the page's locale. */
-export function buildBreadcrumbSchema(
-	breadcrumbs: Crumb[],
-	locale: string
-): Record<string, unknown> {
+/** Breadcrumb trail Home → …crumbs, with names and URLs in the page's locale. */
+export function buildBreadcrumbSchema(crumbs: Crumb[], locale: string): Record<string, unknown> {
 	const items = [
 		{ name: m.nav_home({}, { locale: locale as Locale }), url: localeUrl(SITE_URL, '/', locale) },
-		{
-			name: m.breadcrumb_segment_articles({}, { locale: locale as Locale }),
-			url: localeUrl(SITE_URL, '/articles', locale)
-		},
-		...breadcrumbs.map((crumb) => ({
-			name: crumb.title,
-			url: localeUrl(SITE_URL, `/articles/${crumb.slug}`, locale)
-		}))
+		...crumbs.map((c) => ({ name: c.name, url: localeUrl(SITE_URL, c.path, locale) }))
 	];
-
 	return {
 		'@context': 'https://schema.org',
 		'@type': 'BreadcrumbList',

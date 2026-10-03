@@ -94,7 +94,7 @@ export async function checkContent(contentDir = path.join(ROOT, 'content')) {
 		ids.set(id, rel(file));
 	}
 	// Articles still authored as markdown take part in the tree too.
-	for (const f of await walk(path.join(contentDir, 'articles'))) {
+	for (const f of await walk(path.join(contentDir, 'pages'))) {
 		if (!f.endsWith('.md') || /\.(de|es|fr|pt-br)\.md$/.test(f)) continue;
 		const { data } = matter(await readFile(f, 'utf8'));
 		if (data.id) ids.set(String(data.id), rel(f));
