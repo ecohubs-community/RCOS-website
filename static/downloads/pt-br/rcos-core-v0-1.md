@@ -2,7 +2,7 @@
 
 # Especificação do RCOS Core — v0.1
 
-- **Gerado em:** 2026-10-02
+- **Gerado em:** 2026-10-03
 - **Fonte (versão mais recente):** [https://rcos.ecohubs.community/pt-br/articles/rcos-core/v0-1](https://rcos.ecohubs.community/pt-br/articles/rcos-core/v0-1)
 
 - Status: Rascunho
@@ -219,7 +219,7 @@ O RCOS transforma:
 
 ### Modos de Falha Conhecidos que o RCOS foi Projetado para Prevenir
 
-Veja [Testes de Estresse do RCOS](https://rcos.ecohubs.community/pt-br/articles/rcos-stress-tests?id=6acbe9a7)
+Veja [Testes de Estresse do RCOS](https://rcos.ecohubs.community/pt-br/stress-tests)
 
 ## Implementações de Referência
 

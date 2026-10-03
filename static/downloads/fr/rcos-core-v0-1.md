@@ -2,7 +2,7 @@
 
 # Spécification RCOS Core — v0.1
 
-- **Généré:** 2026-10-02
+- **Généré:** 2026-10-03
 - **Source (version la plus récente):** [https://rcos.ecohubs.community/fr/articles/rcos-core/v0-1](https://rcos.ecohubs.community/fr/articles/rcos-core/v0-1)
 
 - Statut : Brouillon
@@ -219,7 +219,7 @@ RCOS transforme :
 
 ### Modes d'échec connus que RCOS est conçu pour prévenir
 
-Voir [Tests de résistance RCOS](https://rcos.ecohubs.community/fr/articles/rcos-stress-tests?id=6acbe9a7)
+Voir [Tests de résistance RCOS](https://rcos.ecohubs.community/fr/stress-tests)
 
 ## Implémentations de référence
 

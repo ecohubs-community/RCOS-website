@@ -38,6 +38,38 @@ test('the print version is the whole core, without app JavaScript', async ({ req
 	expect(html).not.toContain('_app/immutable/entry');
 });
 
+test('old article URLs reach the new pages', async ({ page }) => {
+	await page.goto('/de/articles/rcos-templates/layer-0/purpose-charter');
+	await expect(page).toHaveURL(/\/de\/templates\/layer-0\/purpose-charter$/);
+	await page.goto('/articles/rcos-stress-tests/culture-influence');
+	await expect(page).toHaveURL(/\/stress-tests#layer-2$/);
+});
+
+for (const path of [
+	'/library',
+	'/templates',
+	'/templates/layer-3/treasury-ruleset',
+	'/layers/4-conflict-repair-accountability',
+	'/stress-tests/founder-informal-veto',
+	'/toolkit/self-assessment',
+	'/safeguards/land-commons-anti-privatization',
+	'/data'
+]) {
+	test(`${path} renders`, async ({ page }) => {
+		const res = await page.goto(path);
+		expect(res?.status()).toBe(200);
+		await expect(page.locator('h1')).toHaveCount(1);
+	});
+}
+
+test('the guide sheet opens from a clause', async ({ page }) => {
+	await page.goto('/standard/core/0.1/layer-0-identity-scope');
+	await page.getByRole('button', { name: 'Common question about clause 2.3.4' }).click();
+	await expect(page.getByRole('dialog')).toContainText(
+		'Can an emergency justify breaking an invariant?'
+	);
+});
+
 for (const path of ['/admin', '/api/auth/debug']) {
 	test(`${path} is gone`, async ({ request }) => {
 		expect((await request.get(path)).status()).toBe(404);

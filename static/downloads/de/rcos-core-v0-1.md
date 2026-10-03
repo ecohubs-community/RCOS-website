@@ -2,7 +2,7 @@
 
 # RCOS-Kernspezifikation — v0.1
 
-- **Generiert:** 2026-10-02
+- **Generiert:** 2026-10-03
 - **Quelle (aktuelle Version):** [https://rcos.ecohubs.community/de/articles/rcos-core/v0-1](https://rcos.ecohubs.community/de/articles/rcos-core/v0-1)
 
 - Status: Entwurf
@@ -219,7 +219,7 @@ RCOS verwandelt:
 
 ### Bekannte Fehlermodi, die RCOS verhindern soll
 
-Siehe [RCOS-Stresstests](https://rcos.ecohubs.community/de/articles/rcos-stress-tests?id=6acbe9a7)
+Siehe [RCOS-Stresstests](https://rcos.ecohubs.community/de/stress-tests)
 
 ## Referenzimplementierungen
 
