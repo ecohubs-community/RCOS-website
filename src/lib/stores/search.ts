@@ -6,7 +6,7 @@ export type SearchResult = {
 	/** Page URL, already in the page's language */
 	url: string;
 	title: string;
-	kind: 'standard' | 'template' | 'guide' | 'test' | 'page';
+	kind: 'standard' | 'template' | 'guide' | 'test' | 'toolkit' | 'library';
 };
 
 export const searchIndex = writable<MiniSearch<SearchResult>>();

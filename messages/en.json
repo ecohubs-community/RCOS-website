@@ -246,6 +246,7 @@
 	"std_stress_tests": "Stress tests",
 	"std_sev_high": "High",
 	"std_sev_medium": "Medium",
+	"std_sev_low": "Low",
 	"std_also_involves": "Also involves Layer {n}",
 	"std_check_community": "Check your community",
 	"std_glossary_source": "App. A",

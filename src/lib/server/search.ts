@@ -8,7 +8,7 @@ import { guidePage, sitePaths, stressTestPage, templatePage } from './site';
 import { PAGE_KEYS, readPage } from './pages';
 import { localizePath } from './docs';
 
-export type SearchKind = 'standard' | 'template' | 'guide' | 'test' | 'page';
+export type SearchKind = 'standard' | 'template' | 'guide' | 'test' | 'toolkit' | 'library';
 export type SearchDocument = {
 	id: string;
 	url: string;
@@ -24,12 +24,17 @@ const text = (html: string) =>
 		.trim()
 		.slice(0, 600);
 
-/** Where each markdown page lives. */
-const PAGE_PATH: Record<string, string> = {
-	layers: '/layers',
-	templates: '/templates',
-	'stress-tests': '/stress-tests'
-};
+/** What each markdown page is, for its label in the results. */
+const PAGE_KIND = (key: string): SearchKind =>
+	key === 'layers'
+		? 'guide'
+		: key === 'templates'
+			? 'template'
+			: key === 'stress-tests'
+				? 'test'
+				: key.startsWith('toolkit/')
+					? 'toolkit'
+					: 'library';
 
 export async function searchDocuments(locale: string): Promise<SearchDocument[]> {
 	const docs: SearchDocument[] = [];
@@ -71,13 +76,13 @@ export async function searchDocuments(locale: string): Promise<SearchDocument[]>
 	for (const key of PAGE_KEYS) {
 		const page = await readPage(key, locale);
 		if (!page) continue;
-		const path = PAGE_PATH[key] ?? `/${key}`;
+		const path = `/${key}`;
 		if (docs.some((d) => d.id === path)) continue;
 		docs.push({
 			id: path,
 			url: localizePath(path, locale),
 			title: page.title,
-			kind: 'page',
+			kind: PAGE_KIND(key),
 			body: text(page.html)
 		});
 	}

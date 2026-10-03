@@ -79,7 +79,7 @@ export type RelatedView = {
 	templates: { href: string; title: string; ref: string | null }[];
 	templatesHref: string | null;
 	/** level: the test's severity when it is mainly about this layer, else "other" */
-	tests: { href: string; title: string; level: 'high' | 'medium' | 'other' }[];
+	tests: { href: string; title: string; level: 'high' | 'medium' | 'low' | 'other' }[];
 	selfCheckHref: string;
 };
 
@@ -312,7 +312,7 @@ function related(layer: number, all: Loaded[], locale: string): RelatedView {
 		}));
 	const index = all.find((d) => d.en.legacyPath === `rcos-templates/layer-${layer}`);
 
-	const rank = { high: 0, medium: 1, other: 2 };
+	const rank = { high: 0, medium: 1, low: 2, other: 3 };
 	const tests = under('rcos-stress-tests/')
 		.filter((d) => d.en.layers?.includes(layer))
 		.map((d) => ({
@@ -353,7 +353,21 @@ type LayerHelp = {
  * that own the section's clauses (ownership.yaml, as in RCOS-compass), the
  * templates to put it into practice, and the stress tests that exercise it.
  */
+const helpCache = new Map<string, LayerHelp>();
+
 function guidanceFor(
+	layer: number,
+	store: Store,
+	locale: string,
+	targets: ReturnType<typeof refTargets>
+): LayerHelp {
+	const key = `${layer}|${locale}`;
+	let help = helpCache.get(key);
+	if (!help) helpCache.set(key, (help = buildHelp(layer, store, locale, targets)));
+	return help;
+}
+
+function buildHelp(
 	layer: number,
 	{ all, guides, owners }: Store,
 	locale: string,

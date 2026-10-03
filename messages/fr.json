@@ -246,6 +246,7 @@
 	"std_stress_tests": "Tests de résistance",
 	"std_sev_high": "Élevée",
 	"std_sev_medium": "Moyenne",
+	"std_sev_low": "Faible",
 	"std_also_involves": "Concerne aussi la Couche {n}",
 	"std_check_community": "Évaluez votre communauté",
 	"std_glossary_source": "Ann. A",

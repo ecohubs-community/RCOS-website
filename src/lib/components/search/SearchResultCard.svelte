@@ -9,7 +9,8 @@
 		template: m.mega_templates,
 		guide: m.nav_layers,
 		test: m.mega_stress_tests,
-		page: m.nav_toolkit
+		toolkit: m.nav_toolkit,
+		library: m.site_library
 	};
 </script>
 

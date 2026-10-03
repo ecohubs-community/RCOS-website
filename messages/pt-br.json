@@ -246,6 +246,7 @@
 	"std_stress_tests": "Testes de estresse",
 	"std_sev_high": "Alta",
 	"std_sev_medium": "Média",
+	"std_sev_low": "Baixa",
 	"std_also_involves": "Também envolve a Camada {n}",
 	"std_check_community": "Avalie sua comunidade",
 	"std_glossary_source": "Ap. A",

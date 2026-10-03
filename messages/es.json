@@ -246,6 +246,7 @@
 	"std_stress_tests": "Pruebas de estrés",
 	"std_sev_high": "Alta",
 	"std_sev_medium": "Media",
+	"std_sev_low": "Baja",
 	"std_also_involves": "También afecta a la Capa {n}",
 	"std_check_community": "Evalúa tu comunidad",
 	"std_glossary_source": "Ap. A",

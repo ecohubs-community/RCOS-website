@@ -234,9 +234,14 @@ export async function templatePage(path: string, locale: string): Promise<Templa
 	};
 }
 
+const clauseTextCache = new Map<string, Map<string, string>>();
+
 /** Clause ref → its text in a language, for the clause lists on template pages. */
 function clauseTexts(store: Store, locale: string): Map<string, string> {
+	const cached = clauseTextCache.get(locale);
+	if (cached) return cached;
 	const out = new Map<string, string>();
+	clauseTextCache.set(locale, out);
 	for (const d of store.all) {
 		if (d.en.kind !== 'chapter') continue;
 		for (const s of localized(d, locale).doc.sections ?? [])

@@ -246,6 +246,7 @@
 	"std_stress_tests": "Stresstests",
 	"std_sev_high": "Hoch",
 	"std_sev_medium": "Mittel",
+	"std_sev_low": "Niedrig",
 	"std_also_involves": "Betrifft auch Schicht {n}",
 	"std_check_community": "Prüft eure Gemeinschaft",
 	"std_glossary_source": "Anh. A",

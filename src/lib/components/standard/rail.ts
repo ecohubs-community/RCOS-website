@@ -17,7 +17,9 @@ export function toggleRail() {
 
 /** `[` toggles the rail, as in the design, unless the reader is typing. */
 export function onRailKey(e: KeyboardEvent) {
-	if (e.key !== '[' || e.metaKey || e.ctrlKey || e.altKey) return;
+	// Some layouts type `[` with Option (macOS) or AltGr (ctrl+alt on Windows), so only
+	// a plain Ctrl or Cmd combination is someone else's shortcut.
+	if (e.key !== '[' || e.metaKey || (e.ctrlKey && !e.altKey)) return;
 	const t = e.target as HTMLElement | null;
 	if (t?.closest('input, textarea, select, [contenteditable]')) return;
 	toggleRail();

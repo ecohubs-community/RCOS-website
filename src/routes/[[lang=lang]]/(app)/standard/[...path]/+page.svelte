@@ -10,7 +10,8 @@
 	import ReadingModeToggle from '$lib/components/standard/ReadingModeToggle.svelte';
 	import SectionFooter from '$lib/components/standard/SectionFooter.svelte';
 	import GuideSheet from '$lib/components/standard/GuideSheet.svelte';
-	import { openGuide } from '$lib/components/standard/guide.svelte';
+	import { closeGuide, openGuide } from '$lib/components/standard/guide.svelte';
+	import { afterNavigate } from '$app/navigation';
 	import IconBulb from '~icons/tabler/bulb';
 	import { setStandardContext } from '$lib/components/standard/context';
 	import { scrollSpy } from '$lib/components/standard/spy.svelte';
@@ -20,6 +21,12 @@
 
 	let { data } = $props();
 	const p = $derived(data.page);
+
+	// The guide belongs to this page: close it when the reader moves to another one
+	// (but not for in-page links such as "See §2.3.4").
+	afterNavigate(({ from, to }) => {
+		if (from?.url.pathname !== to?.url.pathname) closeGuide();
+	});
 
 	// Rule text reads term definitions and layer names from the page.
 	setStandardContext(() => p);

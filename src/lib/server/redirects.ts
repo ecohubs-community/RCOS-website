@@ -9,14 +9,14 @@
  * adapter-vercel serves it as a static route. Old links, bookmarks, downloaded
  * documents and search results keep working for good.
  */
-import { loadDocuments } from '$lib/content/load.js';
+import { loadStore } from './docs';
 import { PAGE_ROUTES, siteRoute, standardRoute } from '$lib/content/routes.js';
 import { articleUrl } from '$lib/content/refs.js';
 
 let map: Promise<Map<string, string>> | undefined;
 
 export function redirects(): Promise<Map<string, string>> {
-	map ??= loadDocuments().then((docs) => {
+	map ??= loadStore().then(({ all: docs }) => {
 		const out = new Map<string, string>();
 		for (const [slug, to] of Object.entries(PAGE_ROUTES))
 			out.set(slug ? `/articles/${slug}` : '/articles', to);

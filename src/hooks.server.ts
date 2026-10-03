@@ -70,8 +70,10 @@ export const handle: Handle = async ({ event, resolve }) => {
 	const prefix = extractLocale(event.url.pathname);
 	const moved = await redirectFor(stripLocale(event.url.pathname));
 	if (moved) {
+		// The query goes before a fragment in the target (/stress-tests#layer-2).
+		const [target, hash] = moved.split('#');
 		const search = building ? '' : event.url.search;
-		redirect(308, `${prefix ? `/${prefix}` : ''}${moved}${search}`);
+		redirect(308, `${prefix ? `/${prefix}` : ''}${target}${search}${hash ? `#${hash}` : ''}`);
 	}
 
 	// Paraglide reads the locale from the URL (see vite.config.ts) and keeps it

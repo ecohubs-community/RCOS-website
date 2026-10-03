@@ -1,7 +1,7 @@
 import { describe, expect, it } from 'vitest';
 import { standardNav, standardPage, standardPaths, standardPrint } from './standard';
 
-const order = { high: 0, medium: 1, other: 2 };
+const order = { high: 0, medium: 1, low: 2, other: 3 };
 
 describe('standard pages', () => {
 	it('lists every page of the standard', async () => {

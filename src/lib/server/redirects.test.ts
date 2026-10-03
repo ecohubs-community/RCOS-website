@@ -27,4 +27,17 @@ describe('redirects', () => {
 			'/toolkit/self-assessment'
 		);
 	});
+
+	it('keeps the query before a fragment in the target', async () => {
+		const { handle } = await import('../../hooks.server');
+		const event = {
+			url: new URL('http://x/de/articles/rcos-stress-tests/culture-influence?utm=1'),
+			cookies: { get: () => undefined },
+			request: new Request('http://x/'),
+			locals: {}
+		};
+		await expect(
+			handle({ event, resolve: () => new Response() } as unknown as Parameters<typeof handle>[0])
+		).rejects.toMatchObject({ status: 308, location: '/de/stress-tests?utm=1#layer-2' });
+	});
 });

@@ -176,6 +176,12 @@ export async function checkContent(contentDir = path.join(ROOT, 'content')) {
 			if (!paths.has(r)) err(rel(file), `related ${r}: no such stress test`);
 		for (const r of en.tests ?? [])
 			if (!sectionRefs.has(r)) err(rel(file), `tests §${r}: no such section`);
+		// The hub, the self-assessment and the related rail group tests by their first layer.
+		if (en.legacyPath.startsWith('rcos-stress-tests/') && en.kind === 'doc') {
+			if (!en.layers?.length)
+				err(rel(file), 'a stress test needs `layers` (the first is its group)');
+			if (!en.severity) err(rel(file), 'a stress test needs a `severity`');
+		}
 	}
 
 	const ownershipFile = path.join(contentDir, 'standard/rcos-core/0.1/ownership.yaml');
