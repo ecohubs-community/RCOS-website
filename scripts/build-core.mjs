@@ -180,12 +180,17 @@ async function buildCoreV01ForLocale(locale) {
 		sections.some((sec) => !sec.isFallback) ||
 		(aboutSection ? !aboutSection.isFallback : false);
 
+	// The PDF is printed from the site by `pnpm content:pdf` (scripts/content/build-pdf.mjs).
+	const files = { md: `/downloads/${locale}/rcos-core-v0-1.md` };
+	if (existsSync(path.join(OUT_DIR, locale, 'rcos-core-v0-1.pdf')))
+		files.pdf = `/downloads/${locale}/rcos-core-v0-1.pdf`;
+
 	return {
 		locale,
 		title: s.coreSpecTitle,
 		generated: today,
-		formats: ['md'],
-		files: { md: `/downloads/${locale}/rcos-core-v0-1.md` },
+		formats: Object.keys(files),
+		files,
 		hasAnyRealTranslation
 	};
 }
@@ -226,7 +231,7 @@ async function main() {
 						slug: 'rcos-core/v0-1',
 						titles: Object.fromEntries(entries.map((e) => [e.locale, e.title])),
 						generated: today,
-						formats: ['md'],
+						formats: [...new Set(entries.flatMap((e) => e.formats))],
 						files: Object.fromEntries(entries.map((e) => [e.locale, e.files])),
 						availableLocales: entries.filter((e) => e.hasAnyRealTranslation).map((e) => e.locale)
 					}

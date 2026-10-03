@@ -5,7 +5,8 @@ import { buildCoverage } from '$lib/server/coverage';
 import { buildAssessment } from '$lib/server/assessment';
 import { getFileDates } from '$lib/server/dates';
 import { rewriteArticleLinks } from '$lib/server/links';
-import { DEFAULT_LOCALE } from '$lib/i18n/languages';
+import { DEFAULT_LOCALE, LOCALE_CODES } from '$lib/i18n/languages';
+import { redirects } from '$lib/server/redirects';
 import type { EntryGenerator, PageServerLoad } from './$types';
 
 /** Slug of the Stress Tests index, which additionally renders an invariant-coverage matrix. */
@@ -18,7 +19,13 @@ export const entries: EntryGenerator = async () => {
 	// routes are reached via crawling from links emitted by LanguageSwitcher,
 	// which the prerender crawler follows automatically.
 	const graph = await buildGraph(DEFAULT_LOCALE);
-	return graph.articles.map((article) => ({ slug: article.slug }));
+	// Pages that moved to /standard: prerendering them records their redirects
+	// (see $lib/server/redirects), in every language.
+	const moved = [...(await redirects()).keys()].flatMap((from) => {
+		const slug = from.replace(/^\/articles\//, '');
+		return LOCALE_CODES.map((code) => (code === DEFAULT_LOCALE ? { slug } : { lang: code, slug }));
+	});
+	return [...graph.articles.map((article) => ({ slug: article.slug })), ...moved];
 };
 
 export const load: PageServerLoad = async ({ params }) => {

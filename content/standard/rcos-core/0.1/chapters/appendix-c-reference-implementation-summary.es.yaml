@@ -1,5 +1,5 @@
 lang: es
-sourceHash: e8263459
+sourceHash: 'bbc04224'
 title: Apéndice C — Resumen de implementación de referencia
 intro: Este apéndice define una **estructura de documentación recomendada** para comunidades que deseen presentarse como Implementaciones de Referencia de RCOS. El objetivo es hacer que la adopción sea auditable, comparable y útil para el aprendizaje, sin implicar un respaldo.
 sections:

@@ -20,23 +20,29 @@
       },
       "generated": "2026-10-02",
       "formats": [
-        "md"
+        "md",
+        "pdf"
       ],
       "files": {
         "en": {
-          "md": "/downloads/en/rcos-core-v0-1.md"
+          "md": "/downloads/en/rcos-core-v0-1.md",
+          "pdf": "/downloads/en/rcos-core-v0-1.pdf"
         },
         "de": {
-          "md": "/downloads/de/rcos-core-v0-1.md"
+          "md": "/downloads/de/rcos-core-v0-1.md",
+          "pdf": "/downloads/de/rcos-core-v0-1.pdf"
         },
         "es": {
-          "md": "/downloads/es/rcos-core-v0-1.md"
+          "md": "/downloads/es/rcos-core-v0-1.md",
+          "pdf": "/downloads/es/rcos-core-v0-1.pdf"
         },
         "fr": {
-          "md": "/downloads/fr/rcos-core-v0-1.md"
+          "md": "/downloads/fr/rcos-core-v0-1.md",
+          "pdf": "/downloads/fr/rcos-core-v0-1.pdf"
         },
         "pt-br": {
-          "md": "/downloads/pt-br/rcos-core-v0-1.md"
+          "md": "/downloads/pt-br/rcos-core-v0-1.md",
+          "pdf": "/downloads/pt-br/rcos-core-v0-1.pdf"
         }
       },
       "availableLocales": [

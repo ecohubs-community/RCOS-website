@@ -1,5 +1,5 @@
 lang: de
-sourceHash: e8263459
+sourceHash: 'bbc04224'
 title: Anhang C — Zusammenfassung der Referenzimplementierung
 intro: Dieser Anhang definiert eine **empfohlene Dokumentationsstruktur** für Gemeinschaften, die sich als RCOS-Referenzimplementierungen präsentieren möchten. Ziel ist es, die Übernahme überprüfbar, vergleichbar und lernbar zu machen, ohne eine Befürwortung zu implizieren.
 sections:

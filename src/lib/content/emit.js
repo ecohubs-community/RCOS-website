@@ -23,7 +23,7 @@ export const BODY_KEYS = /** @type {const} */ ({
 });
 
 /** Not part of the article's frontmatter. */
-const META_KEYS = new Set(['kind', 'legacyPath', 'headingLevel']);
+const META_KEYS = new Set(['kind', 'legacyPath', 'headingLevel', 'slug']);
 
 /**
  * @param {any} doc merged document (English or translated)

@@ -1,7 +1,10 @@
 import type { Handle } from '@sveltejs/kit';
 import { DEFAULT_LOCALE, LOCALE_CODES, isLocale } from '$lib/i18n/languages';
-import { extractLocale } from '$lib/i18n/path';
+import { extractLocale, stripLocale } from '$lib/i18n/path';
 import { paraglideMiddleware } from '$lib/paraglide/server';
+import { redirect } from '@sveltejs/kit';
+import { redirectFor } from '$lib/server/redirects';
+import { building } from '$app/environment';
 
 /**
  * Locale negotiation order (per docs/translation-plan.md §0.4):
@@ -60,6 +63,16 @@ function resolveLocale(event: Parameters<Handle>[0]['event']): string {
 
 export const handle: Handle = async ({ event, resolve }) => {
 	event.locals.locale = resolveLocale(event);
+
+	// Pages that moved (e.g. /articles/rcos-core/… → /standard/…): permanent
+	// redirect, keeping the locale prefix and query (the #anchor stays in the browser).
+	// While prerendering there is no query, and SvelteKit forbids reading it.
+	const prefix = extractLocale(event.url.pathname);
+	const moved = await redirectFor(stripLocale(event.url.pathname));
+	if (moved) {
+		const search = building ? '' : event.url.search;
+		redirect(308, `${prefix ? `/${prefix}` : ''}${moved}${search}`);
+	}
 
 	// Paraglide reads the locale from the URL (see vite.config.ts) and keeps it
 	// for this request, so `m.*()` in server-rendered components use it.

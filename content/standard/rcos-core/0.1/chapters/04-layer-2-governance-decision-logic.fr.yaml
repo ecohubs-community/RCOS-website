@@ -1,5 +1,5 @@
 lang: fr
-sourceHash: 1d9dfee7
+sourceHash: '21857953'
 title: 4. Couche 2 — Gouvernance & logique de décision
 intro: La Couche 2 définit comment les décisions collectives sont prises, qui est autorisé à les prendre et comment l'autorité est encadrée. La gouvernance sous RCOS est conçue pour rendre le pouvoir explicite, limité, révisable et réversible.
 sections:

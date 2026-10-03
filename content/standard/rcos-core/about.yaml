@@ -378,4 +378,4 @@ sections:
     blocks:
       - id: b1
         kind: md
-        md: '- [v0.1](/articles/rcos-core/v0-1?id=e6de7a5d) — Initial version'
+        md: '- [v0.1](/standard/core/0.1) — Initial version'

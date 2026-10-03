@@ -288,7 +288,7 @@ so that care, autonomy, and regeneration have something solid to stand on.
 
 ## Change Log
 
-- [v0.1](https://rcos.ecohubs.community/articles/rcos-core/v0-1?id=e6de7a5d) — Initial version
+- [v0.1](https://rcos.ecohubs.community/standard/core/0.1) — Initial version
 
 
 ---

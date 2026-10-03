@@ -205,6 +205,11 @@ export async function readArticleMeta(): Promise<ArticleMeta[]> {
 					}
 				}
 
+				// The standard (core and modules) is served by /standard from its YAML.
+				// Its articles are still generated (the core download is built from
+				// them) but are not pages of their own any more.
+				if (/^rcos-(core|modules)(\/|$)/.test(slug)) continue;
+
 				const orderFromPrefix = extractNumericPrefix(
 					isIndex ? relativePath.split('/').pop() || '' : parsedName.base
 				);

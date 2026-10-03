@@ -7,7 +7,7 @@ order: 4
 
 ## What the RCOS Templates Are
 
-The RCOS Templates turn the abstract [RCOS Core](/articles/rcos-core?id=fdd280ae) specification into working documents a community can actually fill in. They are organized by **layer** (Layer 0 through Layer 6) and split into the concrete **artifacts** that each layer requires — for example a *Purpose Charter*, a *Scope Declaration*, an *Invariants Register*, or a *Decision Matrix*.
+The RCOS Templates turn the abstract [RCOS Core](/standard) specification into working documents a community can actually fill in. They are organized by **layer** (Layer 0 through Layer 6) and split into the concrete **artifacts** that each layer requires — for example a *Purpose Charter*, a *Scope Declaration*, an *Invariants Register*, or a *Decision Matrix*.
 
 Every template:
 

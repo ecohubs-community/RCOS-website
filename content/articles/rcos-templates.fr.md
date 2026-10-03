@@ -9,7 +9,7 @@ sourceHash: 9daa7180
 
 ## Ce que sont les modèles RCOS
 
-Les modèles RCOS transforment la spécification abstraite du [Noyau RCOS](/articles/rcos-core?id=fdd280ae) en documents concrets qu'une communauté peut réellement remplir. Ils sont organisés par **couche** (Couche 0 à Couche 6) et répartis en **artefacts** concrets que chaque couche requiert — par exemple une *Charte de raison d'être*, une *Déclaration de portée*, un *Registre des invariants* ou une *Matrice de décision*.
+Les modèles RCOS transforment la spécification abstraite du [Noyau RCOS](/standard) en documents concrets qu'une communauté peut réellement remplir. Ils sont organisés par **couche** (Couche 0 à Couche 6) et répartis en **artefacts** concrets que chaque couche requiert — par exemple une *Charte de raison d'être*, une *Déclaration de portée*, un *Registre des invariants* ou une *Matrice de décision*.
 
 Chaque modèle :
 

@@ -24,7 +24,8 @@
 		"paraglide:compile": "paraglide-js compile --project ./project.inlang --outdir ./src/lib/paraglide --strategy url baseLocale",
 		"build:standard-data": "node scripts/build-standard-data.mjs",
 		"content:articles": "node scripts/content/build-articles.mjs",
-		"content:check": "node scripts/content/check.mjs"
+		"content:check": "node scripts/content/check.mjs",
+		"content:pdf": "node scripts/content/build-pdf.mjs"
 	},
 	"devDependencies": {
 		"@anthropic-ai/sdk": "^0.91.1",
@@ -75,6 +76,7 @@
 		"@fontsource-variable/stack-sans-text": "^5.3.0",
 		"@fontsource/pridi": "^5.3.0",
 		"gray-matter": "^4.0.3",
-		"js-yaml": "^4.1.1"
+		"js-yaml": "^4.1.1",
+		"marked": "^18.0.14"
 	}
 }

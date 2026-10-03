@@ -1,5 +1,5 @@
 lang: fr
-sourceHash: 146272cf
+sourceHash: '2af05666'
 title: Noyau RCOS
 intro: ''
 sections:
@@ -294,4 +294,4 @@ sections:
     title: Journal des modifications
     blocks:
       b1:
-        md: '- [v0.1](/articles/rcos-core/v0-1?id=e6de7a5d) — Version initiale'
+        md: '- [v0.1](/standard/core/0.1) — Version initiale'

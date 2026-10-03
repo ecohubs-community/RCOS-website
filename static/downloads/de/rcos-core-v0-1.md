@@ -287,7 +287,7 @@ damit Fürsorge, Autonomie und Regeneration etwas Solides haben, worauf sie steh
 
 ## Änderungsprotokoll
 
-- [v0.1](https://rcos.ecohubs.community/de/articles/rcos-core/v0-1?id=e6de7a5d) — Erste Version
+- [v0.1](https://rcos.ecohubs.community/de/standard/core/0.1) — Erste Version
 
 
 ---

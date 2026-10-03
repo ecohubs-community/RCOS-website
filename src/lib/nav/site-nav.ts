@@ -1,9 +1,8 @@
 /**
  * Every link in the site header, mobile drawer and footer, in one place.
  *
- * Paths are locale-neutral (`localized()` adds the prefix) and still point at
- * today's /articles/… URLs. Phases 3 and 5 move pages to the new URL scheme;
- * only this file changes then.
+ * Paths are locale-neutral (`localized()` adds the prefix). The standard lives
+ * under /standard (phase 3); the other pages still use /articles/… until phase 5.
  *
  * Labels are message functions, not strings, so they are evaluated in the
  * active locale at render time and each page ships only the messages it uses.
@@ -31,7 +30,7 @@ export interface NavLink {
 	icon?: Component;
 }
 
-const CORE = '/articles/rcos-core/v0-1';
+const CORE = '/standard/core/0.1';
 
 export const STANDARD_HREF = CORE;
 export const ABOUT_ECOHUBS_HREF = 'https://ecohubs.community';
@@ -91,7 +90,7 @@ export const LAYERS: NavLayer[] = LAYER_SLUGS.map((slug, n) => ({
 }));
 
 export const START_HERE: NavLink[] = [
-	{ num: '→', label: m.mega_about_core, desc: m.mega_about_core_desc, href: '/articles/rcos-core' },
+	{ num: '→', label: m.mega_about_core, desc: m.mega_about_core_desc, href: '/standard' },
 	{ num: '0', label: m.mega_intro, desc: m.mega_intro_desc, href: `${CORE}/introduction` },
 	{
 		num: '1',
@@ -106,13 +105,13 @@ export const MODULES: NavLink[] = [
 		icon: IconPlant2,
 		label: m.mega_module_permaculture,
 		desc: m.mega_module_permaculture_desc,
-		href: '/articles/rcos-modules/permaculture'
+		href: '/standard/modules/permaculture'
 	},
 	{
 		icon: IconSeedling,
 		label: m.mega_module_minimal,
 		desc: m.mega_module_minimal_desc,
-		href: '/articles/rcos-modules/minimal-permaculture'
+		href: '/standard/modules/minimal-permaculture'
 	}
 ];
 
@@ -124,16 +123,16 @@ export const REFERENCE: NavLink[] = [
 		label: m.mega_ref_versioning,
 		href: `${CORE}/versioning-governance-of-the-standard`
 	},
-	{ num: 'A', label: m.mega_ref_glossary, href: `${CORE}/appendix-a-glossary` },
+	{ num: 'A', label: m.mega_ref_glossary, href: `${CORE}/glossary` },
 	{
 		num: 'B',
 		label: m.mega_ref_examples,
-		href: `${CORE}/appendix-b-example-artifacts-non-normative`
+		href: `${CORE}/example-artifacts`
 	},
 	{
 		num: 'C',
 		label: m.mega_ref_refimpl,
-		href: `${CORE}/appendix-c-reference-implementation-summary`
+		href: `${CORE}/reference-implementation-summary`
 	}
 ];
 
@@ -205,11 +204,11 @@ export const TOOLKIT: NavGroup[] = [
 ];
 
 export const FOOTER_STANDARD: NavLink[] = [
-	{ label: m.mega_about_core, href: '/articles/rcos-core' },
+	{ label: m.mega_about_core, href: '/standard' },
 	{ label: m.footer_core_version, href: CORE },
 	{ label: m.mega_seven_layers, href: LAYERS_INTRO_HREF },
-	{ label: m.mega_modules, href: '/articles/rcos-modules' },
-	{ label: m.mega_ref_glossary, href: `${CORE}/appendix-a-glossary` }
+	{ label: m.mega_modules, href: '/standard/modules' },
+	{ label: m.mega_ref_glossary, href: `${CORE}/glossary` }
 ];
 
 export const FOOTER_TOOLKIT: NavLink[] = [
