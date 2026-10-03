@@ -84,6 +84,31 @@ describe('standard pages', () => {
 		);
 	});
 
+	it('adds guidance, templates and stress tests to each section', async () => {
+		const page = (await standardPage('/standard/core/0.1/layer-0-identity-scope', 'de'))!;
+		const invariants = page.sections.find((s) => s.ref === '2.3')!;
+		const g = invariants.guide!;
+		// Guidance is English until it is translated; the template rationale already is.
+		expect(g.lang).toBe('en');
+		expect(g.why[0].source.template).toBe('Invariantenregister');
+		expect(g.examples.length).toBeGreaterThan(0);
+		expect(g.questions.find((q) => q.id === 'emergency')?.ref).toBe('2.3.4');
+		const clause = invariants.blocks.find((b) => b.kind === 'clause' && b.ref === '2.3.4');
+		expect(clause?.kind === 'clause' && clause.question).toBe('emergency');
+		expect(invariants.practice[0].href).toBe(
+			'/de/articles/rcos-templates/layer-0/invariants-register#aktive-invarianten'
+		);
+		expect(invariants.testedBy.map((t) => t.href)).toContain(
+			'/de/articles/rcos-stress-tests/change-emergencies/unprotected-core-invariants'
+		);
+		// Every numbered section of every layer has guidance.
+		for (const n of [0, 1, 2, 3, 4, 5, 6]) {
+			const nav = await standardNav('en');
+			const layer = (await standardPage(nav.layers[n].path, 'en'))!;
+			for (const s of layer.sections) expect(s.guide, `§${s.ref}`).not.toBeNull();
+		}
+	});
+
 	it('builds the contents navigation and the clause index', async () => {
 		const nav = await standardNav('en');
 		expect(nav.start.map((i) => i.number)).toEqual([null, '0', '1']);

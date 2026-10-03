@@ -32,7 +32,7 @@ async function walk(dir) {
 }
 
 /**
- * @typedef {Record<string, any> & { kind: string, legacyPath: string }} EnDoc
+ * @typedef {Record<string, any> & { kind: string, legacyPath: string }} EnDoc  (guidance documents have no legacyPath)
  * @typedef {{ file: string, en: EnDoc, overlays: Record<string, { file: string, data: Record<string, any> }> }} LoadedDoc
  */
 
@@ -41,8 +41,28 @@ async function walk(dir) {
  * @param {string} [contentDir] the content folder (tests pass a copy)
  * @returns {Promise<LoadedDoc[]>}
  */
-export async function loadDocuments(contentDir = DEFAULT_CONTENT) {
-	const files = (await Promise.all(YAML_DIRS.map((d) => walk(path.join(contentDir, d)))))
+export function loadDocuments(contentDir = DEFAULT_CONTENT) {
+	return loadYaml(YAML_DIRS, contentDir);
+}
+
+/**
+ * Load the guidance (content/guidance/**): plain-language help next to the
+ * standard, kept apart from it so the rules and their downloads never change
+ * when guidance does, and so guidance can be translated on its own schedule.
+ * @param {string} [contentDir]
+ * @returns {Promise<LoadedDoc[]>}
+ */
+export function loadGuidance(contentDir = DEFAULT_CONTENT) {
+	return loadYaml(['guidance'], contentDir);
+}
+
+/**
+ * @param {string[]} dirs
+ * @param {string} contentDir
+ * @returns {Promise<LoadedDoc[]>}
+ */
+async function loadYaml(dirs, contentDir) {
+	const files = (await Promise.all(dirs.map((d) => walk(path.join(contentDir, d)))))
 		.flat()
 		.filter((f) => f.endsWith('.yaml'));
 	/** @type {LoadedDoc[]} */

@@ -1,0 +1,199 @@
+# Guidance for Layer 4 of RCOS-Core 0.1. Non-normative: it explains the
+# rules and never adds to them, so no RFC 2119 keywords in capitals here.
+#
+#   sections   per section of the standard: "In short" and common questions
+#   templates  per template section: the plain-language question it answers,
+#              what to cover (prompts) and examples (not recommendations).
+#              Imported from RCOS-compass annotations.yaml (Compass is to read
+#              them from the published standard data instead).
+kind: guidance
+layer: 4
+sections:
+  - ref: '6.1'
+    inShort: Sort every conflict into a known class, interpersonal, role-based, structural or a boundary violation, so everyone knows what path it takes. Anything involving safety is safety-critical.
+    questions:
+      - id: safety-critical
+        question: When is a conflict safety-critical?
+        answer: When it involves credible safety risks, coercion, abuse or threats. Those trigger the elevated safeguards in 6.3.
+        ref: 6.1.4
+      - id: avoid-classifying
+        question: What if we would rather not label a conflict at all?
+        answer: Avoiding or getting the classification wrong counts as a process failure and is reviewed.
+        ref: 6.1.5
+  - ref: '6.2'
+    inShort: There is one resolution ladder for everyone, with clear steps, time frames, and a way forward when someone won't take part.
+    questions:
+      - id: refuses
+        question: What if the other person refuses to engage?
+        answer: The ladder has to say how refusal, non-response or withdrawal is handled, so a conflict can't be stalled by silence.
+        ref: 6.2.3
+      - id: status-needed
+        question: Do I need to know the right people to raise a conflict?
+        answer: No. The process has to work without social status, seniority, charisma or closeness to decision-makers.
+        ref: 6.2.4
+  - ref: '6.3'
+    inShort: Where there is a power gap, a dependency or a safety risk, extra protection applies, and nobody is punished for speaking up.
+    questions:
+      - id: retaliation
+        question: Am I protected if I raise a concern about someone powerful?
+        answer: Yes. Safeguards protect against retaliation for raising a concern, asking for mediation, giving evidence, or taking part in a review.
+        ref: 6.3.2
+      - id: act-before-process
+        question: Can the community act before the process is finished?
+        answer: In safety-critical conflicts, yes. Protective actions such as temporary separation can be taken right away.
+        ref: 6.3.4
+  - ref: '6.4'
+    inShort: Sanctions and repair are written down, proportionate, time-bounded and appealable. Repair comes before punishment, except when safety is at stake.
+    questions:
+      - id: cold-shoulder
+        question: Is giving someone the cold shoulder a sanction?
+        answer: It is an informal one, and those are not allowed. Sanctions cannot be applied through exclusion, social pressure, silence or quietly withdrawn rights.
+        ref: 6.4.5
+      - id: repair-first
+        question: Why repair before punishment?
+        answer: Repair keeps people and relationships in the community where that is possible. Punitive action comes first only in safety-critical cases.
+        ref: 6.4.6
+  - ref: '6.5'
+    inShort: Layer 4 lives in two documents, the Conflict Resolution Ladder and the Accountability Protocol.
+    questions:
+      - id: which-documents
+        question: Which documents does Layer 4 need?
+        answer: A Conflict Resolution Ladder and an Accountability Protocol.
+        ref: 6.5.1
+  - ref: '6.6'
+    inShort: The hard limits of conflict are that it gets handled, never ignored. Power gaps raise the safeguards, repair comes first, and safety overrides everything else.
+    questions:
+      - id: ignore-conflict
+        question: Is it a problem to let a conflict settle by itself?
+        answer: Leaving a conflict unresolved, suppressed or normalized counts as a system violation. It needs a defined pathway.
+        ref: 6.6.1
+  - ref: '6.7'
+    inShort: The conflict system has to be explicit. How people express feelings, or which spiritual or therapeutic lens they use, stays their own.
+    questions:
+      - id: mediation-style
+        question: Do we have to use a particular mediation method?
+        answer: No. Mediation styles are optional; only the minimum process and safeguards have to be explicit.
+        ref: 6.7.2
+templates:
+  - key: conflict-resolution-ladder.conflict-classification
+    question: What kinds of conflict do we have names for, so nobody invents one mid-argument — and which are safety-critical?
+    prompts:
+      - Which kinds of conflict do we name — at least interpersonal, role-based, structural and ethical?
+      - Which situations are safety-critical, and what changes for them?
+      - 'For each kind: how do we recognise it, how quickly must we respond, and which path does it take?'
+      - 'For each kind: what gets written down? (Who may read it is its own question.)'
+      - What happens when a conflict is put in the wrong kind, or nobody classifies it?
+    examples:
+      - 'We name five kinds of conflict: between people, about a role, about our rules or structures, about a breach of our agreements, and safety-critical. A conflict is safety-critical whenever someone credibly fears for their safety or is being coerced; it skips the early steps and our safety measures apply at once. Everyday conflicts get a reply within 14 days and start with a private conversation; the others start with the conflict coordinator, who records the kind and the reason. A conflict nobody has classified within a week is reviewed as a process failure.'
+  - key: conflict-resolution-ladder.resolution-ladder-steps
+    question: What are the steps from a quiet word to a formal process, and in what order?
+    prompts:
+      - 'For each step, from a private conversation to a governance decision: who is involved, what happens, and how long does it take?'
+      - How is a conflict raised, written down and acknowledged — and how are the other people involved told and invited to take part?
+      - When does a conflict move up to the next step, and can either side ask for that themselves?
+      - When nothing else resolves it, how does it reach a decision through our Decision Matrix — with no shortcut around it?
+      - How do we make sure anyone can use the ladder, whatever their standing, seniority or friendships?
+      - What do we do when a conflict is being ignored or quietly buried? (Non-response and deadlock, choosing a facilitator, and who may read the records are their own questions.)
+    examples:
+      - 'Step 1: the people involved talk privately within two weeks. Step 2: either may ask for a facilitator, who hosts a conversation within three weeks. Step 3: either may open a written case with the Conflict Coordinator, who logs and acknowledges it within 7 days and invites the other side. Step 4: a panel of three members hears both sides and recommends within 30 days. Step 5: the Full Members decide under the Decision Matrix. Any member may start or move up the ladder; leaving a known conflict unaddressed is a breach.'
+  - key: conflict-resolution-ladder.non-response-withdrawal-and-deadlock
+    question: What happens when somebody will not take part, walks out, or we simply get stuck?
+    prompts:
+      - 'If someone does not respond: how many reminders do they get, over how long, before silence counts as non-resolution — and what happens next?'
+      - 'If someone withdraws partway through: how is the other side told, and may they close the matter or ask for a written summary?'
+      - When someone withdraws, what happens to any accountability matter that is still open?
+      - When we are stuck, how is the deadlock written down and taken to a governance decision?
+      - How does someone object that the process itself went wrong, where is that logged, and when does it lead to a review of this ladder?
+    examples:
+      - If someone does not reply within 14 days, the facilitator sends a second notice with 14 more days; continued silence counts as non-resolution and the case moves up a step. If someone withdraws, the other party is told within 7 days and may close the matter or ask for a written summary; any open accountability matter continues. A written-up deadlock goes to the Full Members. Objections to the process go in the conflict log, and three in one year start a review of this ladder.
+  - key: conflict-resolution-ladder.facilitator-selection-and-replacement
+    question: Who facilitates a conflict, and how does either side get them replaced?
+    prompts:
+      - Who facilitates by default — which role in our Role Registry?
+      - When the facilitator is involved in the conflict, or close to one side, who chooses a neutral substitute and how?
+      - How can either side decline a facilitator, and what reason do they have to give?
+      - When may we bring in someone from outside, who has to agree, and who pays?
+    examples:
+      - The Conflict Steward named in the Role Registry facilitates by default. If they are a party, or share a household with one, each party names one member and those two choose a neutral facilitator together. Either party may decline a facilitator by stating a conflict of interest, and a replacement is found within 10 days. If both parties agree, we invite an external mediator, paid from the shared fund.
+  - key: conflict-resolution-ladder.privacy-and-information-access-boundaries
+    question: Who is allowed to know what about a conflict, while it runs and afterwards?
+    prompts:
+      - Which steps are fully confidential, and who may see the records during them?
+      - When a conflict reaches a governance decision, what is the least the Full Members need to know — and are the people involved told before anything is shared?
+      - Who holds the records, for how long, and how are they destroyed?
+      - What may participants tell people outside the process, and whose consent changes that?
+    examples:
+      - 'Steps 1 to 4 are fully confidential: only the parties and the facilitator may see the notes. If a case reaches the Full Members, they receive only what they need to decide — what the conflict is about, which steps were tried, and the options — and the parties see that summary three days before it is shared. The facilitator keeps the records for three years after the case closes, then deletes them. No participant may discuss the case outside the process without the written consent of all parties.'
+  - key: conflict-resolution-ladder.safeguards
+    question: What changes when the people in a conflict do not have equal power — or when someone is not safe?
+    prompts:
+      - What extra protection applies when the people in a conflict do not have equal power — for example independent facilitation, or a separate way to raise it?
+      - When someone is not safe, what may we do at once, before the process ends — and who decides?
+      - How do we make sure safety comes before participation rights, roles and convenience?
+    examples:
+      - When the people in a conflict have unequal power — a role holder and a newer member, say — the less powerful person may raise it with an outside facilitator instead of our conflict steward, and the role holder's authority over them is paused while it runs. If someone credibly reports being unsafe, any two stewards may at once separate the people involved, restrict access to shared spaces or suspend a role for up to 14 days, before the process ends. Safety comes first, even when it costs someone a role or is inconvenient.
+  - key: accountability-protocol.triggers
+    question: What has to happen before the accountability process starts, and who can start it?
+    prompts:
+      - Which conditions start an accountability check — for example a long gap in contributions, a broken Membership Agreement obligation, or acting against one of our founding commitments?
+      - 'For each trigger: how can anyone check that it has happened, from our records or a direct referral?'
+      - Who may start the process, and how — and can a case be referred on from the Conflict Resolution Ladder?
+      - What is not a trigger — how do we stop the process being started because someone is disliked?
+    examples:
+      - 'An accountability check starts only when one of these is on record: a member has made no recorded contribution for four consecutive months; a member has missed a Membership Agreement obligation and not put it right within 30 days of a reminder; a member has acted against one of our founding commitments; or a case is referred from step 3 or higher of the Conflict Resolution Ladder. Any member may make the referral, in writing, to the Accountability Coordinator. Disapproval of someone is not a trigger.'
+  - key: accountability-protocol.investigation-and-review
+    question: Who looks into what happened, and how do they do it without taking sides?
+    prompts:
+      - Which pathways do we use — soft (such as inactivity), medium (a broken obligation) and serious (a breach of our founding commitments or a safety concern) — and what puts a case in each?
+      - 'For each pathway: who makes contact or opens the review, and how long does each stage take?'
+      - 'For each pathway: what are the possible outcomes, and where does the case go if it is not resolved?'
+      - Who may not look into a case — for example someone involved, or close to either side — and who steps in instead?
+      - How is what was found written down before anyone decides what follows? (Which consequences can follow is its own question.)
+    examples:
+      - 'Soft: if a member''s contributions lapse, someone from the care team checks in within two weeks. Medium: a broken Membership Agreement obligation gets a written notice from the Accountability Coordinator; if it is not resolved within 30 days, it goes to a review panel of three members. Serious: a breach of a founding commitment or a credible safety concern goes straight to step 5 of the Conflict Resolution Ladder. Nobody involved in the matter, or sharing a household with either side, may sit on the panel.'
+  - key: accountability-protocol.due-process-guarantees
+    question: What is someone accused of something entitled to, before anything is decided?
+    prompts:
+      - How and when is someone told, in writing, what the concern is — before any review or consequence begins?
+      - What is the shortest time they will have to respond, and can they ask for more?
+      - May they see what the concern is based on, bring a support person, and choose to answer in writing or in person?
+      - Where can any decision be appealed — and can the people who made it also hear the appeal?
+    examples:
+      - Before any review begins, the member receives a written notice stating the concern and the records it rests on. They have at least 30 days to respond, in writing or at a meeting, and may bring a support person of their choice. Any decision may be appealed to the Full Members within 14 days and is settled by a Strategic vote; nobody who made the original decision may chair the appeal.
+  - key: accountability-protocol.anti-retaliation-protections
+    question: How do we protect someone who raises a concern from paying for it later?
+    prompts:
+      - Who is protected — someone who raises a concern, asks for mediation, gives information or evidence, or takes part in a review or appeal?
+      - What counts as retaliation — including quiet forms such as losing a role, being given worse work, or being left out socially?
+      - What happens when someone retaliates — does it start an accountability check of its own?
+      - How long does the protection last after the process has closed?
+    examples:
+      - Nobody may be treated worse for raising a concern, asking for mediation, giving information or evidence, or taking part in a review or appeal. Treated worse includes being removed from a role, losing access to shared resources, or being left out of community events. Retaliation is itself an accountability trigger, and this protection lasts for two years after the process closes.
+  - key: accountability-protocol.sanction-and-repair-options
+    question: What consequences can follow, how are they kept proportionate and open to appeal — and how does repair come before punishment?
+    prompts:
+      - Which consequences can follow a breach — and which repair steps come before any punishment?
+      - 'For each consequence: what has to be shown first, and what evidence is enough?'
+      - 'For each consequence: who may apply it, how long does it last, and how is it appealed?'
+      - How do we make sure nobody is punished informally — by exclusion, silence or social pressure?
+    examples:
+      - 'Our first response is always repair: a conversation, an apology or making good the damage, agreed with the people affected. If that fails, the accountability panel may give a written warning, then restrict access to a shared space or role for up to three months; only the full members may decide a forced exit. Each step needs a written finding, can be appealed within 14 days, and ends on a stated date. Nobody is shut out informally. Only an immediate safety risk lets us skip straight to a restriction.'
+  - key: accountability-protocol.conditions-for-restoring-rights
+    question: How does someone get their standing back once a sanction has run its course?
+    prompts:
+      - 'For each kind of sanction: what is the path back to full rights, and who confirms it has been completed?'
+      - 'After a temporary restriction: what has to be shown, and how soon are rights restored once it has been?'
+      - 'After someone left of their own accord: can they come back, and through which process?'
+      - 'After a forced exit: how long must someone wait before applying again, and which admission process applies then?'
+      - Once the conditions are met, how do we stop someone being kept out informally?
+    examples:
+      - After a temporary restriction, rights return in full once the Accountability Coordinator confirms the agreed repair steps are done; the Coordinator must check within 14 days of the member asking. Someone who left voluntarily may re-apply at any time through the Onboarding Protocol, with no automatic return. After a forced exit, they may re-apply after two years, and the normal admission process applies.
+  - key: accountability-protocol.coordination-with-layer-1
+    question: When accountability leads to someone being suspended or removed, how do we make sure due process came first and the exit protocol's rules apply?
+    prompts:
+      - When an accountability process ends in someone being removed, do we follow the Exit & Separation Protocol — with no separate way out here?
+      - Is a temporary suspension or access restriction an exit? If not, what does it leave untouched?
+      - Which due-process steps must be complete before anyone is suspended or removed, apart from immediate safety measures?
+      - How do the two processes share one record, so an exit is never written down twice or in different ways? (How a forced exit is decided is the exit protocol's question.)
+    examples:
+      - 'Every forced exit and every temporary access restriction follows the Exit & Separation Protocol; this protocol creates no separate way out. A temporary restriction is not an exit: the member keeps their membership and is not subject to the re-application block unless the Full Members later vote for a forced exit. Apart from immediate safety measures, no one is suspended or removed until they have had written notice, the full response window and the chance to appeal.'

@@ -32,6 +32,9 @@
 				try {
 					if (localStorage.getItem('rcos-rail') === 'collapsed')
 						document.documentElement.classList.add('rail-collapsed');
+					// Reading mode "With guidance" (see components/standard/reading.svelte.ts).
+					if (localStorage.getItem('rcos-reading') === 'guided')
+						document.documentElement.classList.add('guided');
 				} catch (e) {}
 			})();
 		</script>

@@ -18,6 +18,10 @@ invariants:
   - '5.1'
   - '5.2'
   - '3.4'
+tests:
+  - '7.1'
+  - '7.3'
+  - '7.5'
 remediationReady: true
 tags:
   - 'Layer 5: Operations'

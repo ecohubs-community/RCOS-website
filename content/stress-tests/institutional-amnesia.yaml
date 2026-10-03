@@ -16,6 +16,10 @@ layers:
 invariants:
   - '6.4'
   - '5.2'
+tests:
+  - '7.3'
+  - '8.2'
+  - '8.4'
 remediationReady: true
 tags:
   - 'Layer 6: Evolution'

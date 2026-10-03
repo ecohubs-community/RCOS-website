@@ -1,0 +1,220 @@
+# Guidance for Layer 6 of RCOS-Core 0.1. Non-normative: it explains the
+# rules and never adds to them, so no RFC 2119 keywords in capitals here.
+#
+#   sections   per section of the standard: "In short" and common questions
+#   templates  per template section: the plain-language question it answers,
+#              what to cover (prompts) and examples (not recommendations).
+#              Imported from RCOS-compass annotations.yaml (Compass is to read
+#              them from the published standard data instead).
+kind: guidance
+layer: 6
+sections:
+  - ref: '8.1'
+    inShort: Changing the rules follows its own written process. Every proposal says what it changes, who decides it, and how it will be reviewed.
+    questions:
+      - id: proposal-contents
+        question: What does a change proposal have to say?
+        answer: What it affects, the decision type and path, its intended effect and risks, when it takes effect, and how existing roles, agreements or records migrate.
+        ref: 8.1.3
+      - id: layer-0-change
+        question: How do we change something in Layer 0?
+        answer: As a constitutional change, through the constitutional decision mechanism.
+        ref: 8.1.4
+  - ref: '8.2'
+    inShort: Every adopted change gets a version, so anyone can tell which rules are in force today and which applied before.
+    questions:
+      - id: understood-change
+        question: Everyone agreed in the kitchen. Does the rule change count?
+        answer: No. Informal, undocumented or "understood" rule changes are not valid.
+        ref: 8.2.5
+      - id: old-rules
+        question: Can we delete rules that no longer apply?
+        answer: Superseded rules stay accessible, with the dates they were in force, for audits, learning and disputes.
+        ref: 8.2.4
+  - ref: '8.3'
+    inShort: Experiments let you try something new for a limited time, with clear success criteria and a way back.
+    questions:
+      - id: experiment-invariant
+        question: Can an experiment suspend an invariant?
+        answer: No. Experiments cannot override Layer 0 invariants or bypass the governance constraints of Layer 2.
+        ref: 8.3.3
+      - id: experiment-harm
+        question: What if an experiment starts causing harm?
+        answer: It is suspended or ended immediately as a protective action, and reviewed afterwards.
+        ref: 8.3.5
+  - ref: '8.4'
+    inShort: Write down what went wrong and what you learned, so the community learns as a whole instead of blaming individuals.
+    questions:
+      - id: repeated-failure
+        question: The same problem keeps happening. What now?
+        answer: Repeated failure patterns trigger a structural review rather than individual blame.
+        ref: 8.4.4
+  - ref: '8.5'
+    inShort: Prefer changes you can undo. Big or irreversible ones get more time, a higher bar and an honest look at the risks.
+    questions:
+      - id: emergency-change
+        question: Can we change rules quickly in an emergency?
+        answer: Only where emergency changes are explicitly defined. They are time-bounded, cannot override invariants, and are reviewed and ratified or rolled back afterwards.
+        ref: 8.5.3
+  - ref: '8.6'
+    inShort: Layer 6 lives in three documents, the Change Protocol, the Version History and the Learning Log.
+    questions:
+      - id: which-documents
+        question: Which documents does Layer 6 need?
+        answer: A Change Protocol, a Version History and a Learning Log.
+        ref: 8.6.1
+  - ref: '8.7'
+    inShort: The hard limits of change are that change is always possible but never instant or invisible, and that failures become shared learning instead of being erased.
+    questions:
+      - id: instant-change
+        question: Why can't a change take effect immediately?
+        answer: No change can be instantaneous, implicit or unreviewable. That is what keeps change possible without making it a tool for capture.
+        ref: 8.7.1
+  - ref: '8.8'
+    inShort: How rules change, how versions work and how experiments end has to be explicit. How fast you innovate is your choice.
+    questions:
+      - id: pace
+        question: Does RCOS expect us to keep changing?
+        answer: No. The pace of innovation stays optional and out of scope; only the way change happens has to be explicit.
+        ref: 8.8.3
+templates:
+  - key: change-protocol.how-changes-are-proposed
+    question: How does somebody propose adding, changing, pausing or removing one of our rules, roles or structures?
+    prompts:
+      - Who may propose adding, changing, pausing or removing a rule, role, document or way of deciding?
+      - Where is a proposal submitted, and who makes sure it reaches everyone?
+      - Which documents and sections does the proposal have to name as affected?
+      - Which decision type and which decision path from our Decision Matrix does the proposal have to name — and so who decides it?
+      - What must every proposal say about its purpose, its reach and its known risks?
+      - What must it say about its effective date, any transition period, what happens to existing roles, agreements and records, and how it would be undone? (How long it is reviewed, and what happens in an emergency, are their own questions.)
+    examples:
+      - Any Full Member may propose adding, changing, pausing or removing a rule, role, document or decision structure by filling in the proposal form in the proposals folder and telling the facilitator. The form names the documents and sections affected, the decision type and path from our Decision Matrix, what the change is meant to do, how far it reaches and its risks, the effective date and any transition period, what happens to existing roles, agreements and records, and how it would be rolled back. Incomplete forms are returned before discussion starts.
+  - key: change-protocol.how-proposals-are-classified
+    question: How do we tell a small adjustment from a change to who we are — and a permanent change from an experiment?
+    prompts:
+      - 'For each decision type (for example Operational, Strategic, Constitutional): what kinds of change fall under it?'
+      - Which changes are always Constitutional — such as anything touching our purpose, our scope, the commitments we said would never change, or how we govern ourselves?
+      - How do we tell a permanent change from a time-limited experiment, and where is that written on the proposal?
+      - When it is unclear which type a proposal is, which type applies, and who settles a disagreement about it?
+    examples:
+      - 'Wording fixes and formatting are Operational: the document keeper makes them and lists them at the next circle. Changes to how members join, decide, share costs or hold roles are Strategic. Anything touching our purpose, our scope, our non-negotiable commitments or the way we govern ourselves is Constitutional and goes through the Constitutional decision process. A proposal with a fixed end date is filed as an experiment; everything else is permanent. If we disagree about the type, the higher one applies.'
+  - key: change-protocol.review-and-deliberation
+    question: How long does a proposed change have to sit before we are allowed to adopt it?
+    prompts:
+      - 'For each decision type: what is the shortest time a proposal must be open for discussion before it can be decided?'
+      - Where does the discussion happen, so that members who are away, ill or busy can still read and respond?
+      - For Constitutional changes, how long is the ratification period after the vote passes, and what can members do during it?
+      - If some small changes need no waiting period, how can members still see them and ask for a proper review afterwards? (Urgent changes are their own question.)
+    examples:
+      - Operational changes need no waiting period but are posted in the changes channel for 7 days, during which any member can ask for a full review. Strategic proposals stay open for at least 14 days, including one general meeting, before a decision. Constitutional proposals need at least 30 days of discussion and, after the vote passes, a 14-day ratification period in which any Full Member may call for a second vote.
+  - key: change-protocol.adoption-and-publication
+    question: When a change is adopted, how does everyone find out, and from when does it apply?
+    prompts:
+      - Once a proposal passes, which steps follow, in what order, and within how many days?
+      - Who is responsible for updating the affected documents and adding the Version History entry? (What the entry contains is its own question.)
+      - How are all members told about the change, and what does the notice include?
+      - From when does an adopted change apply — and can it ever apply before it is published?
+      - What happens if a change was agreed but never written up — does it count?
+    examples:
+      - Within 7 days of a change passing, the secretary updates every affected document, marks the old wording as superseded, adds a Version History entry and moves the proposal to the passed-proposals folder. All members then receive an email with a summary and the effective date. The change applies from the effective date named in the proposal, or from publication if that is later. A change that has not been written up this way is not in force, however clearly people remember agreeing to it.
+  - key: change-protocol.rejection
+    question: What happens to a rejected proposal — can it come back, and how soon?
+    prompts:
+      - Where is a rejected proposal kept, together with its decision record, and within how many days is it filed?
+      - Is the proposer told why it was rejected, and by whom?
+      - Can the same proposal come back — after how long, or only with new information?
+      - Who decides whether a returning proposal is really new, or the same one under a different name?
+    examples:
+      - Within 7 days, a rejected proposal is filed in the rejected-proposals folder with its decision record and a short note of the main reasons given. Nothing in our documents changes. The same proposal may come back after six months, or sooner if the proposer shows new information that was not available during the first discussion; the facilitator decides whether a returning proposal is substantially the same.
+  - key: change-protocol.transition-and-migration
+    question: What extra care does a change that is hard to undo need — and what happens to what is already running under the old rule?
+    prompts:
+      - How do we recognise a change as high-impact or hard to undo, and who decides that it is?
+      - For those changes, how much longer is the discussion, and what higher threshold do they need?
+      - How are the risks written down and acknowledged before the decision?
+      - How much notice do current role holders and members get before a change affects them?
+      - Can a change reduce the rights existing members already have, and if so, what does it take?
+      - What happens to records and agreements made under the old rule — are they left as they were?
+    examples:
+      - A change counts as high-impact if it affects money, housing or membership rights, or cannot easily be undone. Such changes get twice the normal discussion time, need a two-thirds majority instead of a simple one, and include a written risk section that members acknowledge before voting. Affected role holders are told at least 30 days before the change takes effect. Existing members' rights are never reduced without their consent or a Constitutional vote, and records made under the old rule are not altered.
+  - key: change-protocol.rollback
+    question: How do we check whether a change is working — and revise or undo it if it is not?
+    prompts:
+      - How and when do we check whether an adopted change is working as intended?
+      - What signs mean a change needs revising or reversing — such as harm, instability, or decisions gathering in fewer hands?
+      - Who may ask for a change to be revised or reversed, and what do they have to show?
+      - Which decision type and process does a reversal use?
+      - When choosing between ways to solve a problem, how do we favour the one that is easier to undo?
+    examples:
+      - 'Every adopted Strategic or Constitutional change is reviewed six months after it takes effect: the stewardship circle reports whether it caused harm, confusion, or put decisions into fewer hands. Any Full Member can ask for a change to be revised or reversed by giving written reasons that were not considered the first time. A reversal uses the same decision type as the original adoption. When two options would solve the same problem, we choose the one that is easier to undo.'
+  - key: change-protocol.emergency-changes
+    question: What may we decide in a hurry, who may do it, and when does it expire?
+    prompts:
+      - What situations count as an emergency — and what makes waiting for a normal decision impossible?
+      - Who may make an emergency change, alone or together with someone else?
+      - What can never be changed in an emergency, such as our purpose or the commitments we said would never change?
+      - How quickly must an emergency change be reported, and to whom?
+      - When is it reviewed, and by when must it be confirmed through the normal decision type — or does it end automatically?
+    examples:
+      - The two safety coordinators together may make an emergency change only when immediate action is needed to prevent harm to people or loss of the building, and a members' meeting cannot be held in time. An emergency change can never alter our purpose or core commitments. It is reported to all members within 24 hours, discussed at the next meeting, and lapses after 21 days unless members ratify it through the decision type the change would normally need.
+  - key: change-protocol.experiments
+    question: How do we try something for a while without it quietly becoming permanent?
+    prompts:
+      - Who may propose an experiment, and which decision starts, extends, changes or ends one?
+      - What must every experiment state — what changes and what stays the same, how long it runs, its check-in points, and the signs of success or failure?
+      - What triggers a rollback, and how is it carried out?
+      - What may an experiment never touch, such as our core commitments or the way decisions are made?
+      - How is an experiment labelled in every document it affects, and what fixed end date does it carry?
+      - If an experiment causes harm, pressure on people or a safety risk, who may stop it at once, and how is that reviewed afterwards?
+    examples:
+      - Any Full Member may propose an experiment of up to 12 months; starting, extending or changing one takes a Strategic decision. The proposal states what changes and what does not, a midpoint check-in, signs of success and failure, and how to roll back. Every affected document is labelled "Experimental until" its end date. Experiments cannot change our core commitments or skip our decision rules, and they end on their date unless renewed by a new decision. Any two stewards may halt one immediately if it causes harm, with a review within 14 days.
+  - key: version-history.entry-format
+    question: What do we record about each version of our rules, so anybody can trace what changed?
+    prompts:
+      - How are versions numbered, and what makes the number change?
+      - What does every entry record — version, adoption date, effective date, the decision it came from, a summary, and any migration notes?
+      - How can anyone tell which version is in force today, and which documents count as the official ones?
+      - Where are earlier versions kept, and how can someone see the dates each one applied?
+      - How is a mistake in an old entry corrected without editing it?
+    examples:
+      - 'Each version gets a number like 2.3: the first number goes up for Constitutional changes, the second for all others. Every entry records the version, adoption and effective dates, the decision reference with its mechanism and threshold, a short summary and any migration notes, newest first. The top entry is the version in force, and only documents in the "current" folder count. Earlier versions stay in the archive with the dates they applied, and mistakes are corrected with a new entry, never by editing an old one.'
+  - key: learning-log.what-constitutes-a-learnable-event
+    question: What kind of thing going wrong is worth writing down and learning from?
+    prompts:
+      - Which events always require a Learning Log entry — such as a reversed decision, an ended experiment, an escalated conflict, a failure that caused harm, a major change in how we work, or a near-miss?
+      - What does not need an entry?
+      - Who owns the log and makes sure entries are written? (What an entry contains is its own question.)
+      - How often is the log reviewed, and who prepares a summary of patterns?
+      - When the same kind of failure keeps happening, how do we review the structure behind it instead of blaming a person?
+      - How do we make sure uncomfortable failures are recorded and never deleted or hidden later?
+    examples:
+      - An entry is required when a decision is reversed, an experiment ends, a conflict reaches the governance step, a failure causes harm or repeated breakdown, a major change in how we work is adopted, or a near-miss happens. Routine decisions and conflicts settled early do not need one. The learning steward makes sure entries are written and never removed. Each quarter the steward summarises new entries; if the same kind of failure appears twice, we review the structure behind it rather than looking for someone to blame.
+  - key: learning-log.entry-format
+    question: What do we record about something we learned, so it is still useful in three years?
+    prompts:
+      - What happened, and why did it matter?
+      - Which rules, roles or documents were involved?
+      - What signs, evidence or thresholds made us act?
+      - What did we change, try or stop, and what came of it?
+      - Who owns the follow-up, and by when?
+      - Who can read entries under our information access rules, and what is left out to protect the people involved?
+    examples:
+      - Each entry records the date, what happened and why it mattered, which rules or documents were involved, what signs or thresholds made us act, what we changed, tried or stopped, what came of it, and who follows up by when. Entries have the same access level as meeting minutes, so all members can read them; names of the people involved are left out unless they agree.
+  - key: experiment-template.required-fields
+    question: What does somebody have to write down before we agree to try something?
+    prompts:
+      - Which fields does every experiment proposal form contain, and which may never be left blank?
+      - How does the proposer show that the signs of success and of early stopping are things we can actually observe?
+      - Who checks that a form is complete before it goes to a decision, and what happens to an incomplete one?
+      - Where is the filled-in form kept while the experiment runs, so members can check it against what is happening? (What happens when it ends is its own question.)
+    examples:
+      - 'Every experiment uses one form with these fields: name, proposer, what changes and which documents are affected, what stays the same, start and end date, at least one midpoint check-in, observable signs of success, observable signs that mean we stop early, what triggers rollback and how, who may extend or end it, and a line accepting that it may be suspended in an emergency. The facilitator returns any form with an empty field before it is scheduled for a decision.'
+  - key: experiment-template.expiry-and-renewal
+    question: When does an experiment end by itself, and what does it take to keep it going?
+    prompts:
+      - What happens on the end date if nobody has acted?
+      - What does it take to renew an experiment, and how many times may it be renewed?
+      - How does a successful experiment become a permanent rule?
+      - Who records the results in the Learning Log, and by when?
+    examples:
+      - An experiment ends on its end date even if nobody acts, and the previous rule applies again from the next day. Keeping it going takes a new proposal and a new Strategic decision before the end date; it can be renewed once, after which it must be adopted as a permanent change or stopped. Within 30 days of the end, the proposer writes the results and what we learned into the Learning Log.

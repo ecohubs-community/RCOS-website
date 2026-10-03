@@ -16,6 +16,10 @@ layers:
 invariants:
   - '2.3'
   - '6.2'
+tests:
+  - '4.3'
+  - '8.2'
+  - '8.5'
 remediationReady: true
 tags:
   - 'Layer 2: Governance'

@@ -1,0 +1,251 @@
+# Guidance for Layer 1 of RCOS-Core 0.1. Non-normative: it explains the
+# rules and never adds to them, so no RFC 2119 keywords in capitals here.
+#
+#   sections   per section of the standard: "In short" and common questions
+#   templates  per template section: the plain-language question it answers,
+#              what to cover (prompts) and examples (not recommendations).
+#              Imported from RCOS-compass annotations.yaml (Compass is to read
+#              them from the published standard data instead).
+kind: guidance
+layer: 1
+sections:
+  - ref: '3.1'
+    inShort: Everyone connected to the community is in exactly one clearly named state, from applicant to exited member, and each state says what that person can and has to do.
+    questions:
+      - id: minimum-states
+        question: Which membership states do we need at least?
+        answer: Applicant, trial or probationary member, full member, and exited member. You can add more.
+        ref: 3.1.2
+      - id: two-states
+        question: Can someone be a full member in one area and on trial in another?
+        answer: No. Each person holds exactly one membership state at a time.
+        ref: 3.1.4
+  - ref: '3.2'
+    inShort: Joining happens through a written process with written criteria, never by simply showing up for long enough.
+    questions:
+      - id: long-time-guest
+        question: Someone has been around for years. Are they a member?
+        answer: Not unless they went through onboarding. Informal, implicit or retroactive membership is not allowed.
+        ref: 3.2.4
+      - id: what-onboarding-includes
+        question: What does onboarding have to include?
+        answer: A review of the RCOS-Core artifacts, explicit consent to the Layer 0 and Layer 1 rules, and a declared starting membership state.
+        ref: 3.2.2
+  - ref: '3.3'
+    inShort: New members go through a trial period with a set length, clear criteria, and a clear decision at the end.
+    questions:
+      - id: trial-ends-without-decision
+        question: What happens if the trial period ends and nobody decides?
+        answer: The community has to have a defined path for this case, either exit or a defined extension, so nobody stays on trial indefinitely.
+        ref: 3.3.4
+      - id: trial-rights
+        question: Do people on trial have fewer rights?
+        answer: They can, but their obligations have to be just as explicit as everyone else's.
+        ref: 3.3.3
+  - ref: '3.4'
+    inShort: Every obligation comes with a matching right, and both are written down for each membership state.
+    questions:
+      - id: open-ended-obligation
+        question: Can we ask members to "help wherever needed"?
+        answer: Not as an obligation. Obligations cannot be open-ended or undefined; say what is expected and how much.
+        ref: 3.4.5
+      - id: obligation-without-right
+        question: Can we enforce an obligation that has no matching right?
+        answer: No. An obligation can only be enforced when a corresponding, documented right exists.
+        ref: 3.4.4
+  - ref: '3.5'
+    inShort: Say what participation you expect, which kinds of contribution count, and what happens when someone stops taking part.
+    questions:
+      - id: paying-instead
+        question: Can a member pay someone to do their share of the work?
+        answer: Only if your rules explicitly govern that kind of substitution. It cannot just happen informally.
+        ref: 3.5.3
+      - id: non-participation
+        question: What if someone stops participating altogether?
+        answer: Persistent non-participation triggers the accountability process defined in Layer 4, not gossip or quiet exclusion.
+        ref: 3.5.4
+  - ref: '3.6'
+    inShort: Anyone can leave at any time, through a written, non-punitive process, with what happens to their roles and shared things settled beforehand.
+    questions:
+      - id: block-exit
+        question: Can the community make leaving conditional on paying something back?
+        answer: Exit has to stay possible at all times, and leaving cannot cost rights beyond those tied to membership. Any separation of assets or responsibilities is defined in advance, not invented at the door.
+        ref: 3.6.1
+      - id: forced-exit
+        question: Can the community ask someone to leave?
+        answer: Yes, but only through due process, handled with the Layer 4 conflict and accountability mechanisms.
+        ref: 3.6.3
+  - ref: '3.7'
+    inShort: A suspension is a temporary state with written conditions, an end date and a review. It is never a quiet way of pushing someone out.
+    questions:
+      - id: need-suspension
+        question: Do we have to have suspension at all?
+        answer: No, it is optional. If you have it, its conditions have to be explicit, time-bounded and reviewable.
+        ref: 3.7.2
+      - id: indefinite-suspension
+        question: Can a suspension last until further notice?
+        answer: No. Suspension cannot be used as an indefinite or punitive substitute for exit.
+        ref: 3.7.3
+  - ref: '3.8'
+    inShort: Layer 1 lives in four documents that every member can read and that are kept under version control.
+    questions:
+      - id: which-documents
+        question: Which documents does Layer 1 need?
+        answer: A Membership Agreement, an Onboarding Protocol, an Exit & Separation Protocol and a Membership State Registry.
+        ref: 3.8.1
+templates:
+  - key: membership-agreement.membership-state-on-signing
+    question: What is someone agreeing to be, at the moment they sign?
+    prompts:
+      - Which membership state does someone hold the moment they sign this agreement — named exactly as in our Membership State Registry?
+      - Does everyone sign at the same point, or can signing happen at different stages — and which state does each signing give?
+      - How does the person see, before they sign, which state they are agreeing to enter?
+    examples:
+      - Anyone who signs this agreement after their application is approved becomes a Trial Member on the day they sign. They become a Full Member only when their onboarding completion is recorded; signing alone never makes someone a Full Member.
+  - key: membership-agreement.member-rights
+    question: What are each member's rights, in proportion to what we ask of them?
+    prompts:
+      - 'For each membership state: which rights does a member in that state hold?'
+      - Which rights hold for everyone, in every state — such as raising a concern without retaliation, or leaving at any time?
+      - Do the rights of each state match what we ask of that state, so that the more we ask, the more protection and say a member has?
+      - Where a right is set in another document — voting in the Decision Matrix, roles in the Role Registry — do we point to it rather than write it twice?
+    examples:
+      - Every member, in any state, may raise a conflict through the Conflict Resolution Ladder without retaliation, read the community's governance records, and leave at any time. Trial Members may also join all meetings and propose agenda items. Full Members may additionally vote on decisions as set out in the Decision Matrix, hold roles listed in the Role Registry, and propose changes to any agreement. Full Members carry the work rota and shared costs, so they also hold the vote that Trial Members do not.
+  - key: membership-agreement.member-obligations
+    question: What does the community expect of each member — and where does that expectation stop?
+    prompts:
+      - 'For each obligation: what exactly is asked, and how would a member know whether they are meeting it?'
+      - Where does each obligation stop — how much, how often, for how long?
+      - Which documented right does each obligation correspond to? (The rights themselves are their own question.)
+      - Which obligations apply in every membership state, and which only in some?
+      - Is there anything we quietly expect of members that is not written down — and should we write it down or drop it?
+    examples:
+      - Every member keeps to our identity constraints, takes part in a conflict process when named as a party, does not speak for the community in public without a mandate from the general meeting, and does not use community money or accounts beyond the authority a role gives them. Each obligation is matched by a right in this agreement, such as the right to a fair process and to hold roles. Nothing else may be required of a member unless this list is changed by decision.
+  - key: membership-agreement.participation-and-contribution-expectations
+    question: What counts as participation, how much is enough, may someone send a stand-in — and what happens when someone stops?
+    prompts:
+      - Which forms of contribution do we recognise?
+      - How much is enough — how many contributions, of which kinds, over what period?
+      - May someone send a stand-in, or pay someone to do their share — for which tasks, and who stays responsible?
+      - How does someone tell us they will be away, and for how long can expectations be paused?
+      - After how long without participation, and without notice, does an accountability process start — and who starts it? (What that process does is set in the Conflict Resolution Ladder.)
+    examples:
+      - 'We recognise four forms of contribution: work-days on the land, cooking for shared meals, facilitating or taking minutes at meetings, and tasks from the maintenance rota. Each member contributes at least 8 hours a month across any of these. A member may swap a task with another member, but may not pay an outsider to do their share. Expectations pause for up to 3 months if the member tells the membership steward in advance. Two consecutive months below the minimum without notice opens an accountability check.'
+  - key: membership-agreement.due-process-reference
+    question: What protects a member when the community turns against them?
+    prompts:
+      - Which documents protect a member against removal, suspension or restricted access — and does this agreement name each one?
+      - In one or two plain sentences, what do we promise here, so that nobody is removed or restricted under a rule they were never shown?
+      - How does a member reading this agreement find the current version of those documents?
+    examples:
+      - No member can be removed, suspended or have their access restricted except through the processes in our Conflict Resolution Ladder and our Exit & Separation Protocol. Both are linked from this agreement. No rule that is not written in one of those two documents can be used against a member.
+  - key: membership-agreement.consent-acknowledgment
+    question: How does someone show they have read and agreed to all of this?
+    prompts:
+      - What is the act of agreeing — a signature, a confirmation in our tools, or saying so at a meeting and having it minuted?
+      - Which documents, and which versions of them, is someone agreeing to at that moment — and how do they see those exact versions?
+      - How do we make sure the agreement is given freely and knowingly — for example, time to read and ask questions first? (Where the record is kept is its own question.)
+    examples:
+      - A new member agrees by signing the Membership Agreement in our members' app, after a meeting where they could ask questions. The signing screen lists every document they are agreeing to, with its version number and a link to that exact version, and the signature is dated.
+  - key: membership-agreement.ratification-record
+    question: Who adopted this agreement, when, and how was it decided?
+  - key: onboarding-protocol.admission-criteria
+    question: Who can join, on which written criteria, and who decides — so nobody becomes a member just by being around?
+    prompts:
+      - Which criteria must an applicant meet, written so anyone could check them?
+      - Who decides an application? (Name the body the Decision Matrix gives admissions to, rather than a second rule.)
+      - How do we make sure nobody becomes a member informally, or after the fact?
+  - key: onboarding-protocol.onboarding-steps
+    question: What actually happens between "I'd like to join" and "I'm in"?
+    prompts:
+      - What are the steps, in order, from an approved application to full membership?
+      - At which step does someone read all our governance documents, and how do we know they have?
+      - At which step do they explicitly agree to our identity constraints and our membership rules — and how?
+      - At which step is their starting membership state declared, and by whom? (What that state allows is its own question.)
+      - Which accounts, tools and channels are set up, by whom, and at which step?
+    examples:
+      - 1. The applicant reads all our governance documents with a buddy, who answers their questions. 2. They confirm in writing that they consent to our identity constraints and the Membership Agreement, and the membership steward declares them a Trial Member. 3. The admin sets up their member account and adds them to the members' chat. 4. When their trial ends with a positive decision, completion is recorded and they become a Full Member.
+  - key: onboarding-protocol.initial-membership-state
+    question: What is someone on their first day — and what can they do yet?
+    prompts:
+      - Which membership state does someone hold on their first day, named as in our Membership State Registry?
+      - Which states do they pass through during onboarding, and what triggers each move?
+      - What can they do yet on their first day, and what has to wait? (The rights of each state are set in the Membership State Registry.)
+      - How do we make sure no access or right is given before the step that unlocks it?
+    examples:
+      - When their application is approved, a new person becomes a Trial Member, with the rights the Membership State Registry gives that state. They become a Full Member automatically on the day their onboarding completion is recorded. There is no other route to Full Member, and no Full Member access is given before that day.
+  - key: onboarding-protocol.trial-and-evaluation
+    question: How long is someone new on trial, what are they judged on, who decides — and what happens if it does not work out?
+    prompts:
+      - How long does the trial last, and from when is it counted?
+      - What is the new member judged on — written so they can check it themselves?
+      - Who makes the decision at the end of the trial, and how?
+      - During the trial, which obligations apply, and how does the new member know them? (Which rights are limited is set in the Membership State Registry.)
+      - If the trial does not end in full membership, what happens — can it be extended, for how long and how often, and when does exit begin?
+      - After an exit at the end of a trial, how long before someone may apply again?
+    examples:
+      - The trial lasts 6 months from the day the person signs, and every member obligation applies in full. They are judged on having completed every onboarding step and met the participation minimum in at least 5 of the 6 months. At the end, the full members decide by consent at a general meeting. If the criteria are not met, the trial can be extended once by up to 3 months; after that, the exit process begins, and the person may reapply after 12 months.
+  - key: onboarding-protocol.completion-record
+    question: How do we record that someone has finished joining, and what does the record keep?
+    prompts:
+      - Where is the completion record kept, and who writes it?
+      - What does it capture — at least the date, and the exact version of every document the person agreed to?
+      - How long is it kept, including after the person leaves?
+    examples:
+      - The membership steward records completion in the members' register on the day the last onboarding step is done. The entry holds the date, the person's name, their new membership state, and the version number of each document they consented to. Entries are never deleted; after someone leaves, their entry stays, marked with the exit date.
+  - key: onboarding-protocol.ratification-record
+    question: Who adopted this onboarding process, when, and how was it decided?
+  - key: exit-protocol.voluntary-exit
+    question: How can someone leave whenever they choose — without being punished for it, or losing more than their membership?
+    prompts:
+      - How does someone tell us they are leaving — and do they owe anyone a reason or a vote?
+      - When does their access end, and where is the exit recorded?
+      - Which rights end with membership, and which do they keep because they never depended on it?
+    examples:
+      - Any member can leave the community at any time by informing the community in writing. They do not need permission or a vote to leave. The community records the exit date and follows the agreed process for returning personal belongings, settling outstanding payments, and ending membership-related responsibilities. Leaving means giving up rights that exist only because of membership, such as access to shared facilities or participation in governance. It does not remove any rights the person has independently of membership, such as ownership of their personal belongings or money the community owes them.
+  - key: exit-protocol.forced-exit
+    question: What has to be true before the community can ask someone to leave?
+    prompts:
+      - What must have happened before anyone can be removed — which accountability process must have concluded, and what written decision must it have produced?
+      - How is the person told — in writing, with the reasons and the decision reference — and how long after that does their access end?
+      - What do we keep about the removal, and what do we delete?
+      - How long must someone wait before they may apply again, and who sets that wait?
+      - Who may read the decision record, and what stays private?
+    examples:
+      - Nobody can be removed except as the outcome of a concluded accountability process under our Conflict Resolution Ladder, ending in a written decision. The person receives that decision in writing, with the reasons and its reference, at least 48 hours before their access ends. We keep the decision record and remove them from member lists and channels. The decision sets a re-application block of at least 12 months. Only the parties and the stewards who handled the case may read the record.
+  - key: exit-protocol.suspension
+    question: Can someone be paused rather than removed — for how long, reviewed by whom, and never as a punishment in disguise?
+    prompts:
+      - Do we want a formal suspension at all — or do we state plainly that we have none?
+      - If we have one, what exactly can put someone into suspension, and who decides it?
+      - What is the longest a suspension can last, and who reviews it, and when?
+      - What may a suspended member still do, and what is paused?
+      - How does a suspension end — and what stops it from becoming a punishment, or a removal by another name?
+    examples:
+      - We do not have a formal suspension state. If someone's behaviour is serious enough to restrict their membership, it goes through our accountability process, which ends in a decision and never in an open-ended pause.
+      - A member may be suspended only while an accountability process about them is open, by decision of the two stewards handling it, for at most 30 days. During suspension they keep their home, access to community records and the right to respond, but cannot vote or hold roles. The members' circle reviews every suspension on day 14. It ends on day 30 or when the process concludes, whichever comes first, and cannot be renewed for the same matter.
+  - key: exit-protocol.asset-role-and-responsibility-separation
+    question: When someone leaves, what happens to their roles, tasks, access and anything they hold for us — agreed before anyone leaves?
+    prompts:
+      - Does one checklist apply to every exit, whether someone leaves by choice or is removed — and who runs it?
+      - 'For each role someone holds: who marks it vacant in the Role Registry, and who covers it until it is filled?'
+      - How are their ongoing tasks released or handed over, and to whom?
+      - Who removes their access to money — bank accounts, wallets, signing rights — and by when?
+      - Who revokes their admin access to our platforms and shared accounts, and how do we confirm it is done?
+      - How are obligations in either direction settled or transferred before the exit is finalised?
+    examples:
+      - The same checklist runs for every exit, voluntary or not, led by the membership steward. Within 24 hours the platform admin revokes all admin and shared-account access, and the treasurer removes the person as a signatory on the bank account. Within 7 days their roles are marked vacant in the Role Registry and their open tasks are handed over on the task board. Money owed in either direction is settled, or written into a repayment agreement, before the exit is marked complete.
+  - key: exit-protocol.ratification-record
+    question: Who adopted this exit protocol, when, and how was it decided?
+  - key: membership-state-registry.defined-membership-states
+    question: Which membership states do we have — at least applicant, trial, full and exited — and what are their rights, obligations and limitations?
+    prompts:
+      - Which membership states do we have — at least applicant, trial, full and exited — and do we need any others?
+      - 'For each state: which rights, obligations and limitations apply?'
+      - 'For each state: what moves someone into it, and what moves them out?'
+      - How do we make sure nobody holds two states at once?
+      - How do we make sure nobody claims a right, or is held to an obligation, that their current state does not give?
+    examples:
+      - 'Applicant: may attend open meetings; must give honest information; enters by applying, leaves on the admission decision. Trial Member: may join all meetings and speak, cannot vote or hold roles; follows the work rota; enters on signing, leaves on the trial decision. Full Member: votes and holds roles; contributes monthly and shares costs; enters when onboarding is recorded, leaves on exit. Exited Member: keeps access to their own records, has no obligations; may reapply as an Applicant. Each person holds exactly one state at a time.'
+  - key: membership-state-registry.ratification-record
+    question: Who adopted the membership states, when, and how was it decided?

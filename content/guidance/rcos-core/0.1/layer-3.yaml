@@ -1,0 +1,198 @@
+# Guidance for Layer 3 of RCOS-Core 0.1. Non-normative: it explains the
+# rules and never adds to them, so no RFC 2119 keywords in capitals here.
+#
+#   sections   per section of the standard: "In short" and common questions
+#   templates  per template section: the plain-language question it answers,
+#              what to cover (prompts) and examples (not recommendations).
+#              Imported from RCOS-compass annotations.yaml (Compass is to read
+#              them from the published standard data instead).
+kind: guidance
+layer: 3
+sections:
+  - ref: '5.1'
+    inShort: Every resource the community governs is listed and marked as commons or private, with who looks after it and how it may be used or transferred.
+    questions:
+      - id: unclassified
+        question: What about a resource nobody has classified yet?
+        answer: It is unclassified, and the community cannot allocate, encumber, monetize or transfer it until an authorized decision classifies it.
+        ref: 5.1.3
+      - id: private-property
+        question: Can the community decide over members' private property?
+        answer: Only as far as the scope, membership agreements or other governed artifacts explicitly say.
+        ref: 5.1.5
+  - ref: '5.2'
+    inShort: Decide which kinds of contribution count, including care and coordination, and how they are recognized, so nobody's essential work stays invisible.
+    questions:
+      - id: care-work
+        question: Does care work have to count as contribution?
+        answer: You decide which categories are recognized, and care and emotional work is one RCOS names. What you cannot do is depend on unpaid, invisible work without defining how it is recognized.
+        ref: 5.2.3
+      - id: contribution-and-power
+        question: Do people who contribute more get more say?
+        answer: Not through contribution recognition. It cannot create decision authority or influence beyond what Layer 2 defines.
+        ref: 5.2.5
+  - ref: '5.3'
+    inShort: Say what the shared treasury holds, where money comes from, who may spend how much, and make the books open by default.
+    questions:
+      - id: confidential-finances
+        question: Can some finances be kept confidential?
+        answer: Yes, as defined, justified and time-bounded exceptions, and never in a way that stops members from checking compliance.
+        ref: 5.3.5
+      - id: spending-limits
+        question: How do we bound spending authority?
+        answer: With clear authority assignments, thresholds by amount or category, approval and escalation paths, and required records.
+        ref: 5.3.3
+  - ref: '5.4'
+    inShort: Make sure money, credits or debts can't quietly turn into power over the community.
+    questions:
+      - id: buy-influence
+        question: Can a wealthy member fund things in return for more say?
+        answer: No. Economic mechanisms cannot be used to bypass the authority boundaries of Layer 2, whether by buying influence or creating dependency.
+        ref: 5.4.3
+      - id: limit-mechanisms
+        question: How can we limit accumulation of internal credits?
+        answer: With caps, decay or expiration, non-transferability, redistribution, or time-bounded validity, whichever fits your system.
+        ref: 5.4.2
+  - ref: '5.5'
+    inShort: Layer 3 lives in two documents, the Internal Economy Protocol and the Treasury Ruleset.
+    questions:
+      - id: which-documents
+        question: Which documents does Layer 3 need?
+        answer: An Internal Economy Protocol and a Treasury Ruleset.
+        ref: 5.5.1
+  - ref: '5.6'
+    inShort: The economic hard limits are that shared resources stay visible, commons can't be privatized on the quiet, invisible labor is never structurally required, and influence can't pile up indefinitely.
+    questions:
+      - id: sell-commons
+        question: Can a commons resource ever be sold?
+        answer: Not through informal, implicit or unilateral action. Any change goes through an authorized decision.
+        ref: 5.6.2
+  - ref: '5.7'
+    inShort: Some economic matters have to be written down, some can be, and some, like personal attitudes to money, stay outside the standard.
+    questions:
+      - id: equal-outcomes
+        question: Does RCOS expect everyone to have the same income or share?
+        answer: No. Whether outcomes are equal or differentiated stays optional and out of scope.
+        ref: 5.7.3
+templates:
+  - key: internal-economy-protocol.commons-vs-private-classification
+    question: What belongs to all of us, what stays personal, and where is that written down?
+    prompts:
+      - 'For each thing we hold — land, buildings, money, tools, websites, accounts: is it shared by all of us or someone''s own, and who is its steward or owner?'
+      - 'For each shared resource: who may use it and how, who decides about it, who looks after it, and how is its upkeep paid for?'
+      - Can a shared resource ever be sold, lent out or made someone's own — and if so, only through which decision, so it never happens quietly?
+      - Where does our say over someone's private belongings stop?
+      - Where is the list kept, how is each change dated and versioned, and what happens to something nobody has listed yet?
+    examples:
+      - 'Every change to our resource register is a new dated version agreed at a members'' meeting. The land and workshop are shared: any member may use them, and the land group decides about them and keeps them up through monthly work days, with repairs paid from the shared budget. Shared resources may not be sold, lent long-term or made private except by a vote of full members. Members'' homes, vehicles and savings are their own, and we have no say over them beyond the membership agreement. Anything not yet registered stays untouched until classified.'
+  - key: internal-economy-protocol.recognized-contribution-categories
+    question: Which kinds of work do we count as contribution — including the work nobody sees?
+    prompts:
+      - Which kinds of contribution do we recognise — for example practical work, care, teaching, coordination, upkeep?
+      - Which work keeps us running but is rarely noticed or thanked — hosting, listening, cleaning up after meetings, moderating, chasing paperwork?
+      - 'For each kind of work we depend on: is it recognised, shared out as a duty, or paid — so that nothing essential relies on someone quietly doing it for free?'
+      - How would we notice that work we depend on is missing from the list? (How contributions are recorded is its own question.)
+    examples:
+      - 'We recognise six kinds of contribution: writing and research, building and maintaining our tools, coordination and facilitation, welcoming and mentoring new members, moderation and care for people in conflict or distress, and upkeep of shared documents and accounts. Moderation and care rotate between members every three months, so no one carries them indefinitely. At each quarterly review, any work we relied on that is not on this list is either added as a category or turned into a rotating duty.'
+  - key: internal-economy-protocol.contribution-recognition-mechanism
+    question: How do we keep track of and recognise contributions — and what, if anything, does recognition unlock?
+    prompts:
+      - How is a contribution recorded or acknowledged, and by whom?
+      - Who may confirm a record? (Contesting one is its own question.)
+      - Does recognition give any benefits, responsibilities or access to shared resources?
+      - How do we make sure recognition never gives extra say in decisions beyond what the Decision Matrix grants?
+    examples:
+      - Members log their own contributions on the shared sheet within a week, and the task lead or any other member confirms them. Confirmed contributions count towards the monthly participation minimum and give priority when booking the guest room. They never give extra votes, a veto or a stronger voice in any decision.
+  - key: internal-economy-protocol.internal-units
+    question: If we use our own credits or hours, who issues them and what can they be used for?
+    prompts:
+      - Do we use any units of our own (hours, credits, points)? If not, say so — and what would we need to agree before introducing one?
+      - 'For each unit: what is it for, who issues it, for what, and how much?'
+      - Can a unit be given, traded or sold to someone else — and if so, between whom?
+      - Does a unit expire, lose value over time, or stop at a maximum? (Whether that is enough to stop anyone steering everything is its own question.)
+      - How do we prevent fake or mistaken entries, how is a wrong balance corrected, and where does someone go if they disagree with theirs?
+      - Who can see each person's balance and transactions — everyone, only the holder, or a named role?
+    examples:
+      - We use one unit, the work hour. The work-hour coordinator logs one hour for each hour of shared work signed off by that task's lead; hours cannot be given, traded or sold. Hours expire 24 months after they are earned, and no one may hold more than 200. Each member sees their own balance and all transactions without names; the coordinator corrects mistakes within a week, and anyone who disagrees with their balance uses our process for disputed economic records.
+      - We do not use any internal credits, hours or points. Before introducing one, full members must agree what it is for, how it is issued, whether it can be transferred, when it expires, how mistakes are corrected and who can see balances, as an amendment to this protocol.
+  - key: internal-economy-protocol.accumulation-constraints
+    question: What stops one person accumulating enough to steer everything — and how would we notice?
+    prompts:
+      - What limits how much of any unit, resource or claim on the community one person can build up — a cap, expiry, no transfers, redistribution, or a time limit?
+      - How do we make sure no one turns money, credits, loans or favours into extra say — by buying influence, making others depend on them, or going around the Decision Matrix?
+      - What signs would tell us influence is gathering in a few hands, who checks them, and how often?
+      - When a sign shows up, who may tighten the limits, and through which decision?
+    examples:
+      - No member may hold more than 100 credits, and unused credits expire after 18 months. Credits, loans to the community and donations never give anyone extra votes, a veto, or any say beyond what the Decision Matrix grants. Twice a year the finance steward reports the largest single credit balance and the largest amount the community owes any one member. If any member is at the cap or is owed more than €5,000, the next members' meeting reviews these limits and may tighten them by vote.
+  - key: internal-economy-protocol.external-income-interfaces
+    question: How does money from outside reach us, and on what terms?
+    prompts:
+      - Through which channels does money from outside reach us today, and which might we open in future — or refuse outright?
+      - What must be decided before a new channel opens, and may anyone accept money or promise anything before that decision?
+      - What conditions attached to outside money — reports, branding, promises about how we work — must members see before saying yes?
+    examples:
+      - Money from outside reaches us through course fees and one foundation grant; in future we may consider renting out rooms or selling produce, but we will not take money from advertisers. No new income channel may be opened, and no one may accept funds or promise anything to a funder or customer, until full members approve it by a Strategic decision after seeing its full terms, including any reporting duties or conditions on how we work.
+  - key: internal-economy-protocol.dispute-resolution-for-economic-records
+    question: When someone says the record of their contribution is wrong, how is that settled?
+    prompts:
+      - How long after a contribution record or balance is entered can someone contest it?
+      - Who settles a disputed record — and who steps in if that person is involved?
+      - 'How is a correction made: is the original kept and a new entry added, and who is told?'
+      - If someone disagrees with the outcome, where can they appeal, and when is the matter closed?
+    examples:
+      - Any member can contest a contribution record or balance within 60 days of it being entered by writing to the records steward. The records steward, or another steward if the records steward is involved, decides within 21 days and writes down the reasons. Corrections are added as new entries and the original is never deleted. Either side may appeal to the next full members' meeting, whose decision is final.
+  - key: treasury-ruleset.treasury-scope
+    question: What is held in common — and where does the shared purse end and a personal one begin?
+    prompts:
+      - Which accounts, wallets or cash boxes are community money — named one by one?
+      - How is a new treasury account opened, and can money be paid into it before that is decided?
+      - When someone pays a community cost out of their own pocket, does that make it community money — and does the community then owe them?
+      - 'Where shared money and private resources meet — a member''s land we use, or shared money spent near someone''s home: which rule applies?'
+    examples:
+      - 'Our treasury is exactly two accounts: the co-op''s current account and its savings account, both in the co-op''s name. Any new treasury account must be approved by a Strategic decision of full members before money is paid into it. Money a member spends from their own pocket on shared costs is not treasury and creates no debt, unless the spend was approved in advance under our spending rules, in which case it is repaid from the current account. Treasury money is never spent on repairs inside private flats.'
+  - key: treasury-ruleset.income-sources
+    question: Where does our money come from, and what are we relying on?
+    prompts:
+      - What money comes in today — from whom, how often, and for what? If nothing yet, say so.
+      - What does each source expect from us in return, and when does it end?
+      - Which source would hurt most if it stopped?
+      - Who keeps this list up to date when a source ends or its terms change? (Opening a new source is its own question.)
+    examples:
+      - 'Our income comes from three sources: monthly member contributions, fees from the two open courses we run each summer, and a three-year grant from a regional foundation that ends next spring and requires a yearly activity report. We have no loans, sponsors or investors. Losing the grant would hurt most, so we plan each year''s budget without it. The finance steward updates this list whenever a source ends or its terms change.'
+  - key: treasury-ruleset.spending-authority
+    question: Who can spend how much without asking, who approves the rest, and how is every spend recorded?
+    prompts:
+      - 'For each spending tier: up to what amount or for which kind of cost, which type of decision, who approves it, and how?'
+      - Which commitments sit in their own tier whatever the amount — multi-year contracts, loans, anything that binds future members?
+      - What happens when a spend is urgent, or ends up costing more than was approved?
+      - What is recorded for every spend — amount, purpose, who approved it, which decision it rests on — and where?
+    examples:
+      - 'The finance steward may approve any single spend up to €300 within the agreed yearly budget. Anything above €300, or outside the budget, needs a Strategic decision by vote of full members. Multi-year contracts, loans and other long-term obligations need a Constitutional decision: two-thirds of full members, confirmed at a second meeting 14 days later. A spend that will cost more than approved goes to the next tier first. Every spend is logged within a week with amount, purpose, approver and a link to the decision.'
+  - key: treasury-ruleset.transparency-and-reporting
+    question: Who can see the accounts, how often, and what may be held back?
+    prompts:
+      - 'For each treasury account: who can see the balance and every transaction, and is that live or reported later?'
+      - Where an account cannot be shared directly, who reports on it, how often, and in what detail?
+      - How do members see what we owe and what we have promised, not only what we hold?
+      - 'What may be kept private — for example a payment to someone in hardship: who decides, for how long, and why?'
+      - Even where something is kept private, how can members still check that the rules were followed?
+    examples:
+      - 'All full members have read-only access to the community bank account and see every transaction as it happens. The treasurer posts a monthly summary of balances, money in and out, debts and signed commitments to the members'' forum within ten days of the month''s end. The one exception is support paid to a member in hardship: the name stays hidden for up to 12 months, but the amount, date and approving decision are always shown, and two members chosen by lot each year may check the full details.'
+  - key: treasury-ruleset.reserve-risk-and-debt-constraints
+    question: How much may we owe, and how much do we keep aside for a bad year?
+    prompts:
+      - May we borrow money at all — and if so, how much, from whom, and only through which decision?
+      - Which recurring costs or long contracts (leases, subscriptions, paid staff) need a decision before anyone signs?
+      - Do we keep money aside for a bad year — how much, what may it be used for, and who may draw on it? If we have no target yet, say so.
+      - May anyone take out loans, give guarantees or make investments on our behalf outside the treasury accounts?
+    examples:
+      - We do not borrow, give guarantees or make investments unless full members approve it by a Strategic vote, and total debt may never exceed six months of our usual income. Any contract or recurring cost lasting longer than a year also needs a Strategic vote. We aim to keep three months of running costs in a separate reserve account; it may only be used for emergency repairs or lost income, and every withdrawal is reported at the next members' meeting.
+  - key: treasury-ruleset.conflict-of-interest-rules
+    question: What does someone do when a decision about money would benefit them personally?
+    prompts:
+      - Can anyone approve a spend they asked for themselves — and if not, who approves it instead?
+      - What counts as a personal interest — a relative's business, a friend who supplies us, a paid role?
+      - When someone would gain from a payment or purchase, when do they say so, and do they step out of the discussion and the decision?
+      - Where are declarations recorded, and what happens to a decision if an interest was not declared?
+    examples:
+      - No one may approve a spending request they made themselves; it goes to another steward instead. Any member who, or whose partner, family or business, would gain from a spending or purchasing decision must say so before discussion starts, then leaves the discussion and does not vote. Declarations are noted in the minutes. If an undeclared interest comes to light later, the decision is reviewed at the next members' meeting.

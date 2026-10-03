@@ -52,7 +52,16 @@ export const section = z
 				title: z.string(),
 				whyItMatters: z.string().nullable(),
 				whatToDefine: z.string().nullable(),
-				placeholders: z.array(z.string())
+				placeholders: z.array(z.string()),
+				question: z
+					.string()
+					.optional()
+					.describe('The plain-language question this section answers (guidance)'),
+				prompts: z.array(z.string()).optional().describe('What an answer should cover (guidance)'),
+				examples: z
+					.array(z.string())
+					.optional()
+					.describe("Example answers, each one community's rule; not recommendations (guidance)")
 			})
 		),
 		disposition: z.enum(['authored', 'filled_from_decision', 'derived', 'instance_record']),
@@ -72,6 +81,27 @@ export const artifact = z
 		sectionKeys: z.array(z.string().regex(SECTION_KEY))
 	})
 	.describe('A template a community fills in');
+
+export const specSection = z
+	.strictObject({
+		ref: z.string().regex(/^\d+\.\d+$/),
+		layer: z.number().int().min(0).max(6),
+		i18n: perLocale(
+			z.strictObject({
+				title: z.string(),
+				inShort: z.string(),
+				questions: z.array(
+					z.strictObject({
+						id: z.string(),
+						question: z.string(),
+						answer: z.string(),
+						ref: z.string().nullable().describe('The clause or section that answers it')
+					})
+				)
+			})
+		)
+	})
+	.describe('Guidance for a section of the standard. Non-normative: it never adds rules.');
 
 export const glossaryTerm = z.strictObject({
 	key: z.string(),
@@ -98,6 +128,7 @@ export const PUBLISHED = {
 	'sections.yaml': z.array(section),
 	'artifacts.yaml': z.array(artifact),
 	'glossary.yaml': z.array(glossaryTerm),
+	'specSections.yaml': z.array(specSection),
 	'meta.yaml': meta
 };
 

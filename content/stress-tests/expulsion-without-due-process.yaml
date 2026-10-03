@@ -17,6 +17,10 @@ invariants:
   - '1.4'
   - '1.2'
   - '4.3'
+tests:
+  - '3.6'
+  - '6.3'
+  - '6.4'
 remediationReady: true
 tags:
   - 'Layer 1: Membership'

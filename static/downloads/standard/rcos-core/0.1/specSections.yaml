@@ -1,0 +1,916 @@
+- ref: '2.1'
+  layer: 0
+  i18n:
+    en:
+      title: Purpose Definition
+      inShort: Your community needs one reason to exist that every other decision can be checked against.
+      questions:
+        - id: more-than-one-purpose
+          question: Can we have more than one purpose?
+          answer: Yes, as secondary purposes. They just may not conflict with or override the primary one.
+          ref: 2.1.4
+        - id: change-purpose
+          question: How do we change our purpose later?
+          answer: >-
+            Only through a constitutional decision (Layer 2), carried out with the change process in
+            Layer 6. A purpose that changes often is a strategy, not a purpose.
+          ref: 2.1.3
+        - id: goal-as-purpose
+          question: Can our purpose be a project, like building a house?
+          answer: >-
+            No. A project ends when it is done; the primary purpose describes why the community
+            exists at all, and outlasts any single project.
+          ref: 2.1.2
+- ref: '2.2'
+  layer: 0
+  i18n:
+    en:
+      title: Scope Declaration
+      inShort: >-
+        Write down what the community governs, and just as clearly what it does not. Whatever you
+        leave unlisted stays outside your authority.
+      questions:
+        - id: forgot-something
+          question: What if we forget to list something?
+          answer: >-
+            Then it is out of scope until you add it. The community has no authority over things it
+            never declared.
+          ref: 2.2.4
+        - id: private-lives
+          question: Does the community get a say in members' private lives?
+          answer: >-
+            Only where the scope declaration explicitly says so. Persons, assets and domains
+            declared out of scope are beyond the community's authority.
+          ref: 2.2.5
+        - id: what-to-include
+          question: What does a scope declaration have to cover?
+          answer: >-
+            At least the assets you govern, the domains you decide about, and the activities and
+            responsibilities under collective control, plus an explicit out-of-scope list.
+          ref: 2.2.2
+- ref: '2.3'
+  layer: 0
+  i18n:
+    en:
+      title: Invariants
+      inShort: >-
+        Invariants are the few hard limits your community puts out of reach of everyday decisions.
+        Not even a unanimous vote can casually override them.
+      questions:
+        - id: emergency
+          question: Can an emergency justify breaking an invariant?
+          answer: No. No decision, role, process, or emergency measure may override an invariant.
+          ref: 2.3.4
+        - id: change-invariant
+          question: Can we ever change an invariant?
+          answer: Yes, but only through a constitutional change process as defined in Layer 2 and Layer 6.
+          ref: 2.3.6
+        - id: invariant-vs-constraint
+          question: How is an invariant different from an identity constraint?
+          answer: >-
+            An invariant is a hard limit on what must never happen, like selling the land. An
+            identity constraint describes who the community is and what participation requires, like
+            ecological or behavioural boundaries.
+          ref: '2.4'
+        - id: how-many
+          question: How many invariants should we have?
+          answer: >-
+            RCOS doesn't set a number. Fewer, clearer invariants are easier to protect; each one is
+            a promise that can never be broken casually.
+          ref: null
+- ref: '2.4'
+  layer: 0
+  i18n:
+    en:
+      title: Identity Constraints
+      inShort: >-
+        If being part of this community comes with boundaries, such as how people behave or what
+        they commit to, say so openly and say how it is checked.
+      questions:
+        - id: unwritten-norms
+          question: We share values nobody has written down. Is that a problem?
+          answer: >-
+            It is if those values decide who can take part or how people are treated. Identity
+            constraints that matter in practice have to be declared and enforced through defined
+            processes, never informally.
+          ref: 2.4.4
+        - id: testable
+          question: What makes an identity constraint testable?
+          answer: >-
+            Someone else could look at a situation and agree whether the constraint was kept or
+            broken, and there is a defined process for what happens next.
+          ref: 2.4.3
+- ref: '2.5'
+  layer: 0
+  i18n:
+    en:
+      title: Artifacts
+      inShort: >-
+        Layer 0 lives in four short documents. Every member can read them, every version is kept,
+        and each was adopted through a formal ratification.
+      questions:
+        - id: which-documents
+          question: Which documents does Layer 0 need?
+          answer: >-
+            A Purpose Charter, a Scope Declaration, an Invariants Register and an Identity
+            Constraints Register.
+          ref: 2.5.1
+        - id: contradiction
+          question: What if two of these documents contradict each other?
+          answer: Then the community is not compliant with RCOS-Core until the contradiction is resolved.
+          ref: 2.5.3
+- ref: '3.1'
+  layer: 1
+  i18n:
+    en:
+      title: Membership States
+      inShort: >-
+        Everyone connected to the community is in exactly one clearly named state, from applicant to
+        exited member, and each state says what that person can and has to do.
+      questions:
+        - id: minimum-states
+          question: Which membership states do we need at least?
+          answer: >-
+            Applicant, trial or probationary member, full member, and exited member. You can add
+            more.
+          ref: 3.1.2
+        - id: two-states
+          question: Can someone be a full member in one area and on trial in another?
+          answer: No. Each person holds exactly one membership state at a time.
+          ref: 3.1.4
+- ref: '3.2'
+  layer: 1
+  i18n:
+    en:
+      title: Entry and Onboarding
+      inShort: >-
+        Joining happens through a written process with written criteria, never by simply showing up
+        for long enough.
+      questions:
+        - id: long-time-guest
+          question: Someone has been around for years. Are they a member?
+          answer: >-
+            Not unless they went through onboarding. Informal, implicit or retroactive membership is
+            not allowed.
+          ref: 3.2.4
+        - id: what-onboarding-includes
+          question: What does onboarding have to include?
+          answer: >-
+            A review of the RCOS-Core artifacts, explicit consent to the Layer 0 and Layer 1 rules,
+            and a declared starting membership state.
+          ref: 3.2.2
+- ref: '3.3'
+  layer: 1
+  i18n:
+    en:
+      title: Trial and Evaluation
+      inShort: >-
+        New members go through a trial period with a set length, clear criteria, and a clear
+        decision at the end.
+      questions:
+        - id: trial-ends-without-decision
+          question: What happens if the trial period ends and nobody decides?
+          answer: >-
+            The community has to have a defined path for this case, either exit or a defined
+            extension, so nobody stays on trial indefinitely.
+          ref: 3.3.4
+        - id: trial-rights
+          question: Do people on trial have fewer rights?
+          answer: They can, but their obligations have to be just as explicit as everyone else's.
+          ref: 3.3.3
+- ref: '3.4'
+  layer: 1
+  i18n:
+    en:
+      title: Rights and Obligations
+      inShort: >-
+        Every obligation comes with a matching right, and both are written down for each membership
+        state.
+      questions:
+        - id: open-ended-obligation
+          question: Can we ask members to "help wherever needed"?
+          answer: >-
+            Not as an obligation. Obligations cannot be open-ended or undefined; say what is
+            expected and how much.
+          ref: 3.4.5
+        - id: obligation-without-right
+          question: Can we enforce an obligation that has no matching right?
+          answer: No. An obligation can only be enforced when a corresponding, documented right exists.
+          ref: 3.4.4
+- ref: '3.5'
+  layer: 1
+  i18n:
+    en:
+      title: Participation and Contribution
+      inShort: >-
+        Say what participation you expect, which kinds of contribution count, and what happens when
+        someone stops taking part.
+      questions:
+        - id: paying-instead
+          question: Can a member pay someone to do their share of the work?
+          answer: >-
+            Only if your rules explicitly govern that kind of substitution. It cannot just happen
+            informally.
+          ref: 3.5.3
+        - id: non-participation
+          question: What if someone stops participating altogether?
+          answer: >-
+            Persistent non-participation triggers the accountability process defined in Layer 4, not
+            gossip or quiet exclusion.
+          ref: 3.5.4
+- ref: '3.6'
+  layer: 1
+  i18n:
+    en:
+      title: Exit and Separation
+      inShort: >-
+        Anyone can leave at any time, through a written, non-punitive process, with what happens to
+        their roles and shared things settled beforehand.
+      questions:
+        - id: block-exit
+          question: Can the community make leaving conditional on paying something back?
+          answer: >-
+            Exit has to stay possible at all times, and leaving cannot cost rights beyond those tied
+            to membership. Any separation of assets or responsibilities is defined in advance, not
+            invented at the door.
+          ref: 3.6.1
+        - id: forced-exit
+          question: Can the community ask someone to leave?
+          answer: >-
+            Yes, but only through due process, handled with the Layer 4 conflict and accountability
+            mechanisms.
+          ref: 3.6.3
+- ref: '3.7'
+  layer: 1
+  i18n:
+    en:
+      title: Suspension and Temporary Status
+      inShort: >-
+        A suspension is a temporary state with written conditions, an end date and a review. It is
+        never a quiet way of pushing someone out.
+      questions:
+        - id: need-suspension
+          question: Do we have to have suspension at all?
+          answer: >-
+            No, it is optional. If you have it, its conditions have to be explicit, time-bounded and
+            reviewable.
+          ref: 3.7.2
+        - id: indefinite-suspension
+          question: Can a suspension last until further notice?
+          answer: No. Suspension cannot be used as an indefinite or punitive substitute for exit.
+          ref: 3.7.3
+- ref: '3.8'
+  layer: 1
+  i18n:
+    en:
+      title: Artifacts
+      inShort: >-
+        Layer 1 lives in four documents that every member can read and that are kept under version
+        control.
+      questions:
+        - id: which-documents
+          question: Which documents does Layer 1 need?
+          answer: >-
+            A Membership Agreement, an Onboarding Protocol, an Exit & Separation Protocol and a
+            Membership State Registry.
+          ref: 3.8.1
+- ref: '4.1'
+  layer: 2
+  i18n:
+    en:
+      title: Decision Types
+      inShort: >-
+        Every collective decision is operational, strategic or constitutional, and the type decides
+        how it is made.
+      questions:
+        - id: unclear-type
+          question: What if we can't tell which type a decision is?
+          answer: >-
+            Treat it as the higher-impact type. That way a big decision can never slip through as a
+            small one.
+          ref: 4.1.5
+        - id: constitutional-examples
+          question: Which decisions are constitutional?
+          answer: Changes to Layer 0 (purpose, scope, invariants) and to the governance system itself.
+          ref: 4.1.4
+- ref: '4.2'
+  layer: 2
+  i18n:
+    en:
+      title: Decision Mechanisms
+      inShort: >-
+        For each type of decision, write down who decides, how, by what threshold, who can block,
+        and how long it takes.
+      questions:
+        - id: which-method
+          question: Does RCOS prescribe consensus, consent or voting?
+          answer: >-
+            No. You choose the mechanism for each decision type; RCOS only asks that it is explicit
+            and complete.
+          ref: 4.2.2
+        - id: quick-chat
+          question: Can a few people settle something informally to save time?
+          answer: >-
+            Not for collective decisions. If it should be quick, define a quick mechanism, such as
+            delegated authority, and use it openly.
+          ref: 4.2.4
+- ref: '4.3'
+  layer: 2
+  i18n:
+    en:
+      title: Authority Boundaries
+      inShort: >-
+        Authority sits with named roles and bodies, each with a written scope, limits and term. It
+        never comes from charisma, seniority or ownership.
+      questions:
+        - id: founder-authority
+          question: Our founder has always had the last word. Is that allowed?
+          answer: >-
+            Only if it is written down as a role with a defined scope, limits and term. Authority
+            cannot be derived from founding, seniority or informal influence.
+          ref: 4.3.4
+        - id: emergency-authority
+          question: Can someone take charge in an emergency?
+          answer: Yes, if emergency authority is explicitly defined, time-bounded and reviewed afterwards.
+          ref: 4.3.5
+- ref: '4.4'
+  layer: 2
+  i18n:
+    en:
+      title: Decision Matrix
+      inShort: >-
+        The Decision Matrix is the map of who decides what, and how. A decision made outside it is
+        not valid.
+      questions:
+        - id: matrix-contents
+          question: What does the Decision Matrix map?
+          answer: >-
+            For each decision, its type, domain, the authorized role or body, the mechanism, the
+            approval threshold and the escalation path.
+          ref: 4.4.2
+        - id: outside-matrix
+          question: What happens to a decision made outside the matrix?
+          answer: It is considered invalid.
+          ref: 4.4.4
+- ref: '4.5'
+  layer: 2
+  i18n:
+    en:
+      title: Governance Protocol
+      inShort: >-
+        The Governance Protocol describes a decision's whole life, from proposal to deliberation,
+        execution, record and appeal.
+      questions:
+        - id: conflicting-decisions
+          question: What if two decisions contradict each other?
+          answer: >-
+            The Governance Protocol has to say how such conflicts are resolved, so it is not settled
+            by whoever acts first.
+          ref: 4.5.3
+        - id: recording
+          question: Where are governance actions recorded?
+          answer: According to the documentation rules of Layer 5.
+          ref: 4.5.4
+- ref: '4.6'
+  layer: 2
+  i18n:
+    en:
+      title: Safeguards and Failure Modes
+      inShort: >-
+        Build in protection against the ways governance usually goes wrong, such as concentrated
+        power, informal vetoes, capture by a subgroup, and entrenched founders.
+      questions:
+        - id: challenge-safely
+          question: Can members challenge a decision without risking their standing?
+          answer: Yes. Governance mechanisms have to allow challenge and review without retaliation.
+          ref: 4.6.2
+        - id: repeated-failure
+          question: What if governance keeps failing in the same way?
+          answer: >-
+            Persistent failures trigger a formal review or a constitutional process, not just
+            another attempt.
+          ref: 4.6.3
+- ref: '4.7'
+  layer: 2
+  i18n:
+    en:
+      title: Artifacts
+      inShort: >-
+        Layer 2 lives in three documents, the Decision Matrix, the Governance Protocol and the
+        Authority Registry, all explicit, versioned and open to members.
+      questions:
+        - id: which-documents
+          question: Which documents does Layer 2 need?
+          answer: A Decision Matrix, a Governance Protocol and an Authority Registry.
+          ref: 4.7.1
+- ref: '5.1'
+  layer: 3
+  i18n:
+    en:
+      title: Commons vs Private Resources
+      inShort: >-
+        Every resource the community governs is listed and marked as commons or private, with who
+        looks after it and how it may be used or transferred.
+      questions:
+        - id: unclassified
+          question: What about a resource nobody has classified yet?
+          answer: >-
+            It is unclassified, and the community cannot allocate, encumber, monetize or transfer it
+            until an authorized decision classifies it.
+          ref: 5.1.3
+        - id: private-property
+          question: Can the community decide over members' private property?
+          answer: >-
+            Only as far as the scope, membership agreements or other governed artifacts explicitly
+            say.
+          ref: 5.1.5
+- ref: '5.2'
+  layer: 3
+  i18n:
+    en:
+      title: Contribution Recognition
+      inShort: >-
+        Decide which kinds of contribution count, including care and coordination, and how they are
+        recognized, so nobody's essential work stays invisible.
+      questions:
+        - id: care-work
+          question: Does care work have to count as contribution?
+          answer: >-
+            You decide which categories are recognized, and care and emotional work is one RCOS
+            names. What you cannot do is depend on unpaid, invisible work without defining how it is
+            recognized.
+          ref: 5.2.3
+        - id: contribution-and-power
+          question: Do people who contribute more get more say?
+          answer: >-
+            Not through contribution recognition. It cannot create decision authority or influence
+            beyond what Layer 2 defines.
+          ref: 5.2.5
+- ref: '5.3'
+  layer: 3
+  i18n:
+    en:
+      title: Treasury Management
+      inShort: >-
+        Say what the shared treasury holds, where money comes from, who may spend how much, and make
+        the books open by default.
+      questions:
+        - id: confidential-finances
+          question: Can some finances be kept confidential?
+          answer: >-
+            Yes, as defined, justified and time-bounded exceptions, and never in a way that stops
+            members from checking compliance.
+          ref: 5.3.5
+        - id: spending-limits
+          question: How do we bound spending authority?
+          answer: >-
+            With clear authority assignments, thresholds by amount or category, approval and
+            escalation paths, and required records.
+          ref: 5.3.3
+- ref: '5.4'
+  layer: 3
+  i18n:
+    en:
+      title: Accumulation Constraints
+      inShort: Make sure money, credits or debts can't quietly turn into power over the community.
+      questions:
+        - id: buy-influence
+          question: Can a wealthy member fund things in return for more say?
+          answer: >-
+            No. Economic mechanisms cannot be used to bypass the authority boundaries of Layer 2,
+            whether by buying influence or creating dependency.
+          ref: 5.4.3
+        - id: limit-mechanisms
+          question: How can we limit accumulation of internal credits?
+          answer: >-
+            With caps, decay or expiration, non-transferability, redistribution, or time-bounded
+            validity, whichever fits your system.
+          ref: 5.4.2
+- ref: '5.5'
+  layer: 3
+  i18n:
+    en:
+      title: Artifacts
+      inShort: Layer 3 lives in two documents, the Internal Economy Protocol and the Treasury Ruleset.
+      questions:
+        - id: which-documents
+          question: Which documents does Layer 3 need?
+          answer: An Internal Economy Protocol and a Treasury Ruleset.
+          ref: 5.5.1
+- ref: '5.6'
+  layer: 3
+  i18n:
+    en:
+      title: Layer Invariants
+      inShort: >-
+        The economic hard limits are that shared resources stay visible, commons can't be privatized
+        on the quiet, invisible labor is never structurally required, and influence can't pile up
+        indefinitely.
+      questions:
+        - id: sell-commons
+          question: Can a commons resource ever be sold?
+          answer: >-
+            Not through informal, implicit or unilateral action. Any change goes through an
+            authorized decision.
+          ref: 5.6.2
+- ref: '5.7'
+  layer: 3
+  i18n:
+    en:
+      title: Explicitness Rules
+      inShort: >-
+        Some economic matters have to be written down, some can be, and some, like personal
+        attitudes to money, stay outside the standard.
+      questions:
+        - id: equal-outcomes
+          question: Does RCOS expect everyone to have the same income or share?
+          answer: No. Whether outcomes are equal or differentiated stays optional and out of scope.
+          ref: 5.7.3
+- ref: '6.1'
+  layer: 4
+  i18n:
+    en:
+      title: Conflict Classification
+      inShort: >-
+        Sort every conflict into a known class, interpersonal, role-based, structural or a boundary
+        violation, so everyone knows what path it takes. Anything involving safety is
+        safety-critical.
+      questions:
+        - id: safety-critical
+          question: When is a conflict safety-critical?
+          answer: >-
+            When it involves credible safety risks, coercion, abuse or threats. Those trigger the
+            elevated safeguards in 6.3.
+          ref: 6.1.4
+        - id: avoid-classifying
+          question: What if we would rather not label a conflict at all?
+          answer: >-
+            Avoiding or getting the classification wrong counts as a process failure and is
+            reviewed.
+          ref: 6.1.5
+- ref: '6.2'
+  layer: 4
+  i18n:
+    en:
+      title: Resolution Pathways
+      inShort: >-
+        There is one resolution ladder for everyone, with clear steps, time frames, and a way
+        forward when someone won't take part.
+      questions:
+        - id: refuses
+          question: What if the other person refuses to engage?
+          answer: >-
+            The ladder has to say how refusal, non-response or withdrawal is handled, so a conflict
+            can't be stalled by silence.
+          ref: 6.2.3
+        - id: status-needed
+          question: Do I need to know the right people to raise a conflict?
+          answer: >-
+            No. The process has to work without social status, seniority, charisma or closeness to
+            decision-makers.
+          ref: 6.2.4
+- ref: '6.3'
+  layer: 4
+  i18n:
+    en:
+      title: Safeguards
+      inShort: >-
+        Where there is a power gap, a dependency or a safety risk, extra protection applies, and
+        nobody is punished for speaking up.
+      questions:
+        - id: retaliation
+          question: Am I protected if I raise a concern about someone powerful?
+          answer: >-
+            Yes. Safeguards protect against retaliation for raising a concern, asking for mediation,
+            giving evidence, or taking part in a review.
+          ref: 6.3.2
+        - id: act-before-process
+          question: Can the community act before the process is finished?
+          answer: >-
+            In safety-critical conflicts, yes. Protective actions such as temporary separation can
+            be taken right away.
+          ref: 6.3.4
+- ref: '6.4'
+  layer: 4
+  i18n:
+    en:
+      title: Sanctions, Repair, and Separation
+      inShort: >-
+        Sanctions and repair are written down, proportionate, time-bounded and appealable. Repair
+        comes before punishment, except when safety is at stake.
+      questions:
+        - id: cold-shoulder
+          question: Is giving someone the cold shoulder a sanction?
+          answer: >-
+            It is an informal one, and those are not allowed. Sanctions cannot be applied through
+            exclusion, social pressure, silence or quietly withdrawn rights.
+          ref: 6.4.5
+        - id: repair-first
+          question: Why repair before punishment?
+          answer: >-
+            Repair keeps people and relationships in the community where that is possible. Punitive
+            action comes first only in safety-critical cases.
+          ref: 6.4.6
+- ref: '6.5'
+  layer: 4
+  i18n:
+    en:
+      title: Artifacts
+      inShort: >-
+        Layer 4 lives in two documents, the Conflict Resolution Ladder and the Accountability
+        Protocol.
+      questions:
+        - id: which-documents
+          question: Which documents does Layer 4 need?
+          answer: A Conflict Resolution Ladder and an Accountability Protocol.
+          ref: 6.5.1
+- ref: '6.6'
+  layer: 4
+  i18n:
+    en:
+      title: Layer Invariants
+      inShort: >-
+        The hard limits of conflict are that it gets handled, never ignored. Power gaps raise the
+        safeguards, repair comes first, and safety overrides everything else.
+      questions:
+        - id: ignore-conflict
+          question: Is it a problem to let a conflict settle by itself?
+          answer: >-
+            Leaving a conflict unresolved, suppressed or normalized counts as a system violation. It
+            needs a defined pathway.
+          ref: 6.6.1
+- ref: '6.7'
+  layer: 4
+  i18n:
+    en:
+      title: Explicitness Rules
+      inShort: >-
+        The conflict system has to be explicit. How people express feelings, or which spiritual or
+        therapeutic lens they use, stays their own.
+      questions:
+        - id: mediation-style
+          question: Do we have to use a particular mediation method?
+          answer: >-
+            No. Mediation styles are optional; only the minimum process and safeguards have to be
+            explicit.
+          ref: 6.7.2
+- ref: '7.1'
+  layer: 5
+  i18n:
+    en:
+      title: Roles and Responsibilities
+      inShort: >-
+        Every ongoing responsibility belongs to a named role with a written scope, boundaries and a
+        way to review it, so nothing important rests on unspoken expectations.
+      questions:
+        - id: unassigned-task
+          question: Can someone be blamed for a task nobody gave them?
+          answer: No. Nobody can be held accountable for responsibilities not formally assigned to a role.
+          ref: 7.1.4
+        - id: temporary-task
+          question: What about one-off jobs?
+          answer: >-
+            They are fine if they are explicitly time-bounded. If they turn into ongoing work, they
+            need a role.
+          ref: 7.1.5
+- ref: '7.2'
+  layer: 5
+  i18n:
+    en:
+      title: Meeting System
+      inShort: >-
+        Each kind of meeting has a written purpose, decision scope, participants, cadence and
+        facilitation, and stays within the authority it has.
+      questions:
+        - id: meeting-decides
+          question: Can a meeting decide things outside its declared scope?
+          answer: >-
+            No. Meetings cannot exceed their decision scope or bypass the authority boundaries of
+            Layer 2.
+          ref: 7.2.3
+        - id: too-many-meetings
+          question: What if there are simply too many meetings?
+          answer: Meeting load has to be bounded, monitored and reviewable, as set out in 7.4.
+          ref: 7.2.4
+- ref: '7.3'
+  layer: 5
+  i18n:
+    en:
+      title: Documentation and Information Flow
+      inShort: >-
+        Write down where records live and who may see them, and make every decision traceable, so
+        the community doesn't depend on whoever happens to remember.
+      questions:
+        - id: trace-decision
+          question: What makes a decision traceable?
+          answer: >-
+            You can see its type and domain, who decided, by which mechanism and threshold, and what
+            the outcome and effective date were.
+          ref: 7.3.3
+        - id: one-person-knows
+          question: Only one person knows how the water system works. Is that a problem?
+          answer: >-
+            Yes, for a critical process. It has to be documented so continuity doesn't depend on
+            tacit knowledge.
+          ref: 7.3.4
+- ref: '7.4'
+  layer: 5
+  i18n:
+    en:
+      title: Workload and Capacity Boundaries
+      inShort: >-
+        Time, attention and goodwill run out. Set limits on meetings and roles, and act when people
+        are overloaded.
+      questions:
+        - id: burnout
+          question: What should happen when someone is burning out?
+          answer: >-
+            Persistent overload or burnout risk triggers review or repair under Layer 4. It is a
+            system issue, not a personal failing.
+          ref: 7.4.4
+        - id: what-limits
+          question: What kind of limits are meant?
+          answer: >-
+            Limits on meeting load and role load, expectations for response times, and ways to
+            renegotiate or redistribute work.
+          ref: 7.4.2
+- ref: '7.5'
+  layer: 5
+  i18n:
+    en:
+      title: Operational Continuity
+      inShort: No single person may be the only one who can keep core operations running.
+      questions:
+        - id: backup
+          question: What do core roles need for continuity?
+          answer: Documented procedures, clear handover, and backup or redundancy where feasible.
+          ref: 7.5.2
+- ref: '7.6'
+  layer: 5
+  i18n:
+    en:
+      title: Artifacts
+      inShort: >-
+        Layer 5 lives in three living documents, the Operations Manual, the Role Registry and the
+        Meeting Templates.
+      questions:
+        - id: which-documents
+          question: Which documents does Layer 5 need?
+          answer: An Operations Manual, a Role Registry and Meeting Templates.
+          ref: 7.6.1
+- ref: '7.7'
+  layer: 5
+  i18n:
+    en:
+      title: Layer Invariants
+      inShort: >-
+        The operational hard limits are that every responsibility has a role, nothing critical lives
+        only in someone's head, workload is bounded, and information access is clear.
+      questions:
+        - id: goodwill
+          question: Can we rely on a few committed people who just get things done?
+          answer: >-
+            Not for critical processes. They cannot rest solely on individual memory, goodwill or
+            informal handover.
+          ref: 7.7.2
+- ref: '7.8'
+  layer: 5
+  i18n:
+    en:
+      title: Explicitness Rules
+      inShort: >-
+        Roles, meetings and information access have to be explicit. Tools, schedules and personal
+        work styles are up to you.
+      questions:
+        - id: tools
+          question: Does RCOS tell us which tools to use?
+          answer: No. Tooling choices for documentation and coordination are optional.
+          ref: 7.8.2
+- ref: '8.1'
+  layer: 6
+  i18n:
+    en:
+      title: Change Mechanisms
+      inShort: >-
+        Changing the rules follows its own written process. Every proposal says what it changes, who
+        decides it, and how it will be reviewed.
+      questions:
+        - id: proposal-contents
+          question: What does a change proposal have to say?
+          answer: >-
+            What it affects, the decision type and path, its intended effect and risks, when it
+            takes effect, and how existing roles, agreements or records migrate.
+          ref: 8.1.3
+        - id: layer-0-change
+          question: How do we change something in Layer 0?
+          answer: As a constitutional change, through the constitutional decision mechanism.
+          ref: 8.1.4
+- ref: '8.2'
+  layer: 6
+  i18n:
+    en:
+      title: Versioning and Authority
+      inShort: >-
+        Every adopted change gets a version, so anyone can tell which rules are in force today and
+        which applied before.
+      questions:
+        - id: understood-change
+          question: Everyone agreed in the kitchen. Does the rule change count?
+          answer: No. Informal, undocumented or "understood" rule changes are not valid.
+          ref: 8.2.5
+        - id: old-rules
+          question: Can we delete rules that no longer apply?
+          answer: >-
+            Superseded rules stay accessible, with the dates they were in force, for audits,
+            learning and disputes.
+          ref: 8.2.4
+- ref: '8.3'
+  layer: 6
+  i18n:
+    en:
+      title: Experiments
+      inShort: >-
+        Experiments let you try something new for a limited time, with clear success criteria and a
+        way back.
+      questions:
+        - id: experiment-invariant
+          question: Can an experiment suspend an invariant?
+          answer: >-
+            No. Experiments cannot override Layer 0 invariants or bypass the governance constraints
+            of Layer 2.
+          ref: 8.3.3
+        - id: experiment-harm
+          question: What if an experiment starts causing harm?
+          answer: It is suspended or ended immediately as a protective action, and reviewed afterwards.
+          ref: 8.3.5
+- ref: '8.4'
+  layer: 6
+  i18n:
+    en:
+      title: Learning and Feedback Capture
+      inShort: >-
+        Write down what went wrong and what you learned, so the community learns as a whole instead
+        of blaming individuals.
+      questions:
+        - id: repeated-failure
+          question: The same problem keeps happening. What now?
+          answer: Repeated failure patterns trigger a structural review rather than individual blame.
+          ref: 8.4.4
+- ref: '8.5'
+  layer: 6
+  i18n:
+    en:
+      title: Change Safety and Reversibility
+      inShort: >-
+        Prefer changes you can undo. Big or irreversible ones get more time, a higher bar and an
+        honest look at the risks.
+      questions:
+        - id: emergency-change
+          question: Can we change rules quickly in an emergency?
+          answer: >-
+            Only where emergency changes are explicitly defined. They are time-bounded, cannot
+            override invariants, and are reviewed and ratified or rolled back afterwards.
+          ref: 8.5.3
+- ref: '8.6'
+  layer: 6
+  i18n:
+    en:
+      title: Artifacts
+      inShort: >-
+        Layer 6 lives in three documents, the Change Protocol, the Version History and the Learning
+        Log.
+      questions:
+        - id: which-documents
+          question: Which documents does Layer 6 need?
+          answer: A Change Protocol, a Version History and a Learning Log.
+          ref: 8.6.1
+- ref: '8.7'
+  layer: 6
+  i18n:
+    en:
+      title: Layer Invariants
+      inShort: >-
+        The hard limits of change are that change is always possible but never instant or invisible,
+        and that failures become shared learning instead of being erased.
+      questions:
+        - id: instant-change
+          question: Why can't a change take effect immediately?
+          answer: >-
+            No change can be instantaneous, implicit or unreviewable. That is what keeps change
+            possible without making it a tool for capture.
+          ref: 8.7.1
+- ref: '8.8'
+  layer: 6
+  i18n:
+    en:
+      title: Explicitness Rules
+      inShort: >-
+        How rules change, how versions work and how experiments end has to be explicit. How fast you
+        innovate is your choice.
+      questions:
+        - id: pace
+          question: Does RCOS expect us to keep changing?
+          answer: >-
+            No. The pace of innovation stays optional and out of scope; only the way change happens
+            has to be explicit.
+          ref: 8.8.3

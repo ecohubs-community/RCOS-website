@@ -177,6 +177,24 @@
 										"items": {
 											"type": "string"
 										}
+									},
+									"question": {
+										"description": "The plain-language question this section answers (guidance)",
+										"type": "string"
+									},
+									"prompts": {
+										"description": "What an answer should cover (guidance)",
+										"type": "array",
+										"items": {
+											"type": "string"
+										}
+									},
+									"examples": {
+										"description": "Example answers, each one community's rule; not recommendations (guidance)",
+										"type": "array",
+										"items": {
+											"type": "string"
+										}
 									}
 								},
 								"required": [
@@ -206,6 +224,24 @@
 										]
 									},
 									"placeholders": {
+										"type": "array",
+										"items": {
+											"type": "string"
+										}
+									},
+									"question": {
+										"description": "The plain-language question this section answers (guidance)",
+										"type": "string"
+									},
+									"prompts": {
+										"description": "What an answer should cover (guidance)",
+										"type": "array",
+										"items": {
+											"type": "string"
+										}
+									},
+									"examples": {
+										"description": "Example answers, each one community's rule; not recommendations (guidance)",
 										"type": "array",
 										"items": {
 											"type": "string"
@@ -243,6 +279,24 @@
 										"items": {
 											"type": "string"
 										}
+									},
+									"question": {
+										"description": "The plain-language question this section answers (guidance)",
+										"type": "string"
+									},
+									"prompts": {
+										"description": "What an answer should cover (guidance)",
+										"type": "array",
+										"items": {
+											"type": "string"
+										}
+									},
+									"examples": {
+										"description": "Example answers, each one community's rule; not recommendations (guidance)",
+										"type": "array",
+										"items": {
+											"type": "string"
+										}
 									}
 								},
 								"required": [
@@ -276,6 +330,24 @@
 										"items": {
 											"type": "string"
 										}
+									},
+									"question": {
+										"description": "The plain-language question this section answers (guidance)",
+										"type": "string"
+									},
+									"prompts": {
+										"description": "What an answer should cover (guidance)",
+										"type": "array",
+										"items": {
+											"type": "string"
+										}
+									},
+									"examples": {
+										"description": "Example answers, each one community's rule; not recommendations (guidance)",
+										"type": "array",
+										"items": {
+											"type": "string"
+										}
 									}
 								},
 								"required": [
@@ -305,6 +377,24 @@
 										]
 									},
 									"placeholders": {
+										"type": "array",
+										"items": {
+											"type": "string"
+										}
+									},
+									"question": {
+										"description": "The plain-language question this section answers (guidance)",
+										"type": "string"
+									},
+									"prompts": {
+										"description": "What an answer should cover (guidance)",
+										"type": "array",
+										"items": {
+											"type": "string"
+										}
+									},
+									"examples": {
+										"description": "Example answers, each one community's rule; not recommendations (guidance)",
 										"type": "array",
 										"items": {
 											"type": "string"
@@ -620,6 +710,280 @@
 					"i18n"
 				],
 				"additionalProperties": false
+			}
+		},
+		"specSections": {
+			"$schema": "https://json-schema.org/draft/2020-12/schema",
+			"type": "array",
+			"items": {
+				"type": "object",
+				"properties": {
+					"ref": {
+						"type": "string",
+						"pattern": "^\\d+\\.\\d+$"
+					},
+					"layer": {
+						"type": "integer",
+						"minimum": 0,
+						"maximum": 6
+					},
+					"i18n": {
+						"type": "object",
+						"properties": {
+							"en": {
+								"type": "object",
+								"properties": {
+									"title": {
+										"type": "string"
+									},
+									"inShort": {
+										"type": "string"
+									},
+									"questions": {
+										"type": "array",
+										"items": {
+											"type": "object",
+											"properties": {
+												"id": {
+													"type": "string"
+												},
+												"question": {
+													"type": "string"
+												},
+												"answer": {
+													"type": "string"
+												},
+												"ref": {
+													"description": "The clause or section that answers it",
+													"type": [
+														"string",
+														"null"
+													]
+												}
+											},
+											"required": [
+												"id",
+												"question",
+												"answer",
+												"ref"
+											],
+											"additionalProperties": false
+										}
+									}
+								},
+								"required": [
+									"title",
+									"inShort",
+									"questions"
+								],
+								"additionalProperties": false
+							},
+							"de": {
+								"type": "object",
+								"properties": {
+									"title": {
+										"type": "string"
+									},
+									"inShort": {
+										"type": "string"
+									},
+									"questions": {
+										"type": "array",
+										"items": {
+											"type": "object",
+											"properties": {
+												"id": {
+													"type": "string"
+												},
+												"question": {
+													"type": "string"
+												},
+												"answer": {
+													"type": "string"
+												},
+												"ref": {
+													"description": "The clause or section that answers it",
+													"type": [
+														"string",
+														"null"
+													]
+												}
+											},
+											"required": [
+												"id",
+												"question",
+												"answer",
+												"ref"
+											],
+											"additionalProperties": false
+										}
+									}
+								},
+								"required": [
+									"title",
+									"inShort",
+									"questions"
+								],
+								"additionalProperties": false
+							},
+							"es": {
+								"type": "object",
+								"properties": {
+									"title": {
+										"type": "string"
+									},
+									"inShort": {
+										"type": "string"
+									},
+									"questions": {
+										"type": "array",
+										"items": {
+											"type": "object",
+											"properties": {
+												"id": {
+													"type": "string"
+												},
+												"question": {
+													"type": "string"
+												},
+												"answer": {
+													"type": "string"
+												},
+												"ref": {
+													"description": "The clause or section that answers it",
+													"type": [
+														"string",
+														"null"
+													]
+												}
+											},
+											"required": [
+												"id",
+												"question",
+												"answer",
+												"ref"
+											],
+											"additionalProperties": false
+										}
+									}
+								},
+								"required": [
+									"title",
+									"inShort",
+									"questions"
+								],
+								"additionalProperties": false
+							},
+							"fr": {
+								"type": "object",
+								"properties": {
+									"title": {
+										"type": "string"
+									},
+									"inShort": {
+										"type": "string"
+									},
+									"questions": {
+										"type": "array",
+										"items": {
+											"type": "object",
+											"properties": {
+												"id": {
+													"type": "string"
+												},
+												"question": {
+													"type": "string"
+												},
+												"answer": {
+													"type": "string"
+												},
+												"ref": {
+													"description": "The clause or section that answers it",
+													"type": [
+														"string",
+														"null"
+													]
+												}
+											},
+											"required": [
+												"id",
+												"question",
+												"answer",
+												"ref"
+											],
+											"additionalProperties": false
+										}
+									}
+								},
+								"required": [
+									"title",
+									"inShort",
+									"questions"
+								],
+								"additionalProperties": false
+							},
+							"pt-br": {
+								"type": "object",
+								"properties": {
+									"title": {
+										"type": "string"
+									},
+									"inShort": {
+										"type": "string"
+									},
+									"questions": {
+										"type": "array",
+										"items": {
+											"type": "object",
+											"properties": {
+												"id": {
+													"type": "string"
+												},
+												"question": {
+													"type": "string"
+												},
+												"answer": {
+													"type": "string"
+												},
+												"ref": {
+													"description": "The clause or section that answers it",
+													"type": [
+														"string",
+														"null"
+													]
+												}
+											},
+											"required": [
+												"id",
+												"question",
+												"answer",
+												"ref"
+											],
+											"additionalProperties": false
+										}
+									}
+								},
+								"required": [
+									"title",
+									"inShort",
+									"questions"
+								],
+								"additionalProperties": false
+							}
+						},
+						"required": [
+							"en"
+						],
+						"additionalProperties": false
+					}
+				},
+				"required": [
+					"ref",
+					"layer",
+					"i18n"
+				],
+				"additionalProperties": false,
+				"description": "Guidance for a section of the standard. Non-normative: it never adds rules."
 			}
 		},
 		"meta": {

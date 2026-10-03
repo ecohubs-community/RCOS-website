@@ -6,6 +6,7 @@
  *   static/downloads/standard/<standard>/<version>/sections.yaml      (+ .<locale>)
  *   static/downloads/standard/<standard>/<version>/artifacts.yaml     (+ .<locale>)
  *   static/downloads/standard/<standard>/<version>/glossary.yaml      (+ .<locale>)
+ *   static/downloads/standard/<standard>/<version>/specSections.yaml  (guidance per section of the standard)
  *   static/downloads/standard/<standard>/<version>/meta.yaml
  *   static/downloads/standard/<standard>/<version>/schema.json  ← JSON Schema of the files above
  *   static/downloads/standard/manifest-standard.json   ← sha256 per file
@@ -40,6 +41,8 @@ import yaml from 'js-yaml';
 import { SUPPORTED_LOCALES } from './i18n.mjs';
 import { buildArticles } from './content/build-articles.mjs';
 import { PUBLISHED, publishedJsonSchema } from '../src/lib/content/published-schema.js';
+import { loadDocuments, loadGuidance } from '../src/lib/content/load.js';
+import { merge } from '../src/lib/content/overlay.js';
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const ROOT = path.resolve(__dirname, '..');
@@ -597,6 +600,66 @@ function applyAuthored(clauses, artifacts, authored) {
 	return problems;
 }
 
+/**
+ * Guidance (content/guidance): the plain-language question, prompts and
+ * examples go onto the template sections; "In short" and common questions per
+ * section of the standard become specSections.yaml. Each in every locale it is
+ * translated into.
+ */
+async function applyGuidance(sections) {
+	const content = path.join(ROOT, 'content');
+	const [guides, docs] = await Promise.all([loadGuidance(content), loadDocuments(content)]);
+	const byKey = new Map(sections.map((s) => [s.key, s]));
+
+	/** Section ref → its title per locale, from the chapters. */
+	const titles = new Map();
+	for (const { en, overlays } of docs) {
+		if (en.kind !== 'chapter') continue;
+		const versions = [
+			[DEFAULT_LOCALE, en],
+			...Object.entries(overlays).map(([l, o]) => [l, merge(en, o.data)])
+		];
+		for (const [locale, doc] of versions)
+			for (const s of doc.sections ?? [])
+				if (s.ref) titles.set(s.ref, { ...titles.get(s.ref), [locale]: s.title });
+	}
+
+	const specSections = [];
+	for (const { en, overlays } of guides.sort((a, b) => a.en.layer - b.en.layer)) {
+		const versions = [
+			[DEFAULT_LOCALE, en],
+			...Object.entries(overlays).map(([l, o]) => [l, merge(en, o.data)])
+		];
+		for (const [locale, g] of versions) {
+			for (const t of g.templates) {
+				const i18n = byKey.get(t.key)?.i18n[locale];
+				if (!i18n) continue;
+				i18n.question = t.question;
+				if (t.prompts) i18n.prompts = t.prompts;
+				if (t.examples) i18n.examples = t.examples;
+			}
+		}
+		for (const s of en.sections) {
+			const entry = { ref: s.ref, layer: en.layer, i18n: {} };
+			for (const [locale, g] of versions) {
+				const local = g.sections.find((x) => x.ref === s.ref);
+				entry.i18n[locale] = {
+					title: titles.get(s.ref)?.[locale] ?? titles.get(s.ref)?.[DEFAULT_LOCALE],
+					inShort: local.inShort,
+					questions: (local.questions ?? []).map((q) => ({
+						id: q.id,
+						question: q.question,
+						answer: q.answer,
+						ref: q.ref ?? null
+					}))
+				};
+			}
+			specSections.push(entry);
+		}
+	}
+	return specSections;
+}
+
 async function writeYaml(dir, name, data) {
 	const file = path.join(dir, `${name}.yaml`);
 	const body = yaml.dump(data, { lineWidth: 100, noRefs: true, sortKeys: false });
@@ -633,6 +696,8 @@ async function main() {
 			ownsClauses: clauses.filter((c) => c.owner === s.key).map((c) => c.ref)
 		}))
 	);
+
+	const specSections = await applyGuidance(sections);
 
 	// A clause can only be answered by a section someone actually writes. If an
 	// owner were `derived` or `filled_from_decision`, the clause would be counted
@@ -692,6 +757,7 @@ async function main() {
 	written.push(await writeYaml(outDir, 'sections', sections));
 	written.push(await writeYaml(outDir, 'artifacts', artifactsOut));
 	written.push(await writeYaml(outDir, 'glossary', glossary));
+	written.push(await writeYaml(outDir, 'specSections', specSections));
 	written.push(
 		await writeYaml(outDir, 'meta', {
 			standard: STANDARD_ID,
@@ -699,7 +765,7 @@ async function main() {
 			generated: new Date().toISOString().slice(0, 10),
 			licence: LICENCE,
 			attribution: ATTRIBUTION,
-			source: 'https://rcos.ecohubs.community/articles/rcos-core/v0-1',
+			source: 'https://rcos.ecohubs.community/standard/core/0.1',
 			defaultLocale: DEFAULT_LOCALE,
 			locales: SUPPORTED_LOCALES,
 			layers: Object.entries(LAYER_NAMES).map(([n, name]) => ({ n: Number(n), name })),

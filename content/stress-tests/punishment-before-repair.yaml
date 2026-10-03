@@ -15,6 +15,9 @@ layers:
 invariants:
   - '4.3'
   - '4.1'
+tests:
+  - '6.4'
+  - '6.6'
 remediationReady: true
 tags:
   - 'Layer 4: Conflict'

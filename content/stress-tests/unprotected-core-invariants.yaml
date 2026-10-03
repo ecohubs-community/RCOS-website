@@ -16,6 +16,9 @@ layers:
 invariants:
   - '0.4'
   - '6.1'
+tests:
+  - '2.3'
+  - '8.1'
 remediationReady: true
 tags:
   - 'Layer 0: Scope'
