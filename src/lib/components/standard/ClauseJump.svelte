@@ -37,7 +37,7 @@
 	class="flex flex-col gap-1"
 >
 	<label
-		class="flex h-10 items-center gap-2 rounded-xl border border-line bg-card px-3 text-ink-faint focus-within:border-accent-ink"
+		class="flex h-10 items-center gap-2 rounded-xl border border-line bg-card px-3 text-ink-faint focus-within:border-accent-ink focus-within:ring-2 focus-within:ring-(--color-focus)"
 	>
 		<IconHash class="size-4 shrink-0" aria-hidden="true" />
 		<span class="sr-only">{m.std_jump_label()}</span>

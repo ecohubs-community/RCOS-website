@@ -14,7 +14,6 @@
 	import ThemeToggle from './ThemeToggle.svelte';
 	import MobileDrawer from './MobileDrawer.svelte';
 	import IconChevronDown from '~icons/tabler/chevron-down';
-	import IconSearch from '~icons/tabler/search';
 	import IconArrowUpRight from '~icons/tabler/arrow-up-right';
 	import IconBook2 from '~icons/tabler/book-2';
 
@@ -80,13 +79,7 @@
 		<div class="flex-1"></div>
 
 		<div class="hidden 2xl:block"><HeaderSearch /></div>
-		<a
-			href={href('/search')}
-			aria-label={m.nav_search_button()}
-			class="inline-flex size-10 items-center justify-center rounded-lg text-ink hover:bg-selected 2xl:hidden"
-		>
-			<IconSearch class="size-5" />
-		</a>
+		<div class="2xl:hidden"><HeaderSearch variant="icon" /></div>
 
 		<div class="hidden items-center gap-0.5 lg:flex">
 			<ThemeToggle />
