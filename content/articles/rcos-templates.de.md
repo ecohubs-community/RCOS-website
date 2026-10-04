@@ -9,7 +9,7 @@ sourceHash: 9daa7180
 
 ## Was die RCOS-Vorlagen sind
 
-Die RCOS-Vorlagen verwandeln die abstrakte Spezifikation des [RCOS Core](/articles/rcos-core?id=fdd280ae) in funktionierende Dokumente, die eine Gemeinschaft tatsächlich ausfüllen kann. Sie sind nach **Schicht** organisiert (Schicht 0 bis Schicht 6) und in die konkreten **Artefakte** unterteilt, die jede Schicht erfordert — zum Beispiel eine _Zweck-Charta_, eine _Geltungsbereichserklärung_, ein _Invarianten-Register_ oder eine _Entscheidungsmatrix_.
+Die RCOS-Vorlagen verwandeln die abstrakte Spezifikation des [RCOS Core](/standard) in funktionierende Dokumente, die eine Gemeinschaft tatsächlich ausfüllen kann. Sie sind nach **Schicht** organisiert (Schicht 0 bis Schicht 6) und in die konkreten **Artefakte** unterteilt, die jede Schicht erfordert — zum Beispiel eine _Zweck-Charta_, eine _Geltungsbereichserklärung_, ein _Invarianten-Register_ oder eine _Entscheidungsmatrix_.
 
 Jede Vorlage:
 

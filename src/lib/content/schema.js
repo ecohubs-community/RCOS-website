@@ -18,6 +18,8 @@ const slug = z.string().regex(/^[a-z0-9]+(-[a-z0-9]+)*$/, 'lowercase-hyphenated'
 const article = {
 	kind: z.string(),
 	legacyPath: z.string().regex(/^[a-z0-9/-]+$/),
+	/** URL segment when it differs from the file name (e.g. appendix-a-glossary → glossary) */
+	slug: slug.optional(),
 	// Some ids are digits only, and YAML reads those as numbers; ids are compared as strings.
 	id: z.union([z.string().min(6), z.number().int()]),
 	title: text,
@@ -65,7 +67,17 @@ export const glossary = z.strictObject({
 	...article,
 	kind: z.literal('glossary'),
 	intro: z.string(),
-	terms: z.array(z.strictObject({ key: slug, term: text, definition: text })).min(1)
+	terms: z
+		.array(
+			z.strictObject({
+				key: slug,
+				term: text,
+				definition: text,
+				// false: too common to underline in rule text (Community, Member, …)
+				autolink: z.boolean().optional()
+			})
+		)
+		.min(1)
 });
 
 // --- Templates ----------------------------------------------------------------------

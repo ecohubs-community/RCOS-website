@@ -9,7 +9,7 @@ sourceHash: 9daa7180
 
 ## O que são os Modelos RCOS
 
-Os Modelos RCOS transformam a especificação abstrata do [RCOS Core](/articles/rcos-core?id=fdd280ae) em documentos práticos que uma comunidade pode realmente preencher. Eles são organizados por **camada** (Camada 0 até Camada 6) e divididos nos **artefatos** concretos que cada camada exige — por exemplo, uma *Carta de Propósito*, uma *Declaração de Escopo*, um *Registro de Invariantes* ou uma *Matriz de Decisão*.
+Os Modelos RCOS transformam a especificação abstrata do [RCOS Core](/standard) em documentos práticos que uma comunidade pode realmente preencher. Eles são organizados por **camada** (Camada 0 até Camada 6) e divididos nos **artefatos** concretos que cada camada exige — por exemplo, uma *Carta de Propósito*, uma *Declaração de Escopo*, um *Registro de Invariantes* ou uma *Matriz de Decisão*.
 
 Cada modelo:
 

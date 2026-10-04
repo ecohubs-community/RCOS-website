@@ -31,6 +31,8 @@ import { createHash } from 'node:crypto';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 import matter from 'gray-matter';
+import yaml from 'js-yaml';
+import { sourceHashOf } from '../src/lib/content/hash.js';
 import { SUPPORTED_LOCALES } from './i18n.mjs';
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
@@ -165,7 +167,8 @@ async function buildIndex() {
 			if (!groups.has(sourcePath)) groups.set(sourcePath, { source: null, translations: {} });
 			const entry = groups.get(sourcePath);
 			if (!m) {
-				entry.source = { path: filePath, raw, hashCurrent: md5short(raw) };
+				// Only the translatable text counts (see src/lib/content/hash.js).
+				entry.source = { path: filePath, raw, hashCurrent: sourceHashOf(yaml.load(raw)) };
 			} else {
 				const hash = /^sourceHash: '?([^'\n]+)'?$/m.exec(raw)?.[1] ?? null;
 				entry.translations[m[2]] = { path: filePath, hashStored: hash };

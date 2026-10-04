@@ -1,5 +1,6 @@
 kind: glossary
 legacyPath: rcos-core/v0-1/appendix-a-glossary
+slug: glossary
 id: c0516132
 title: Appendix A — Glossary
 parentId: e6de7a5d
@@ -28,9 +29,11 @@ terms:
     definition: Resources governed collectively under explicit stewardship, access, and decision rules.
   - key: community
     term: Community
+    autolink: false
     definition: A group of people who voluntarily coordinate around a shared purpose within a defined scope and governance system.
   - key: compliance
     term: Compliance
+    autolink: false
     definition: The state of meeting all mandatory requirements of RCOS-Core across Layers 0–6.
   - key: conflict-resolution-ladder
     term: Conflict Resolution Ladder
@@ -52,6 +55,7 @@ terms:
     definition: A time-bounded change enacted under explicitly defined emergency conditions, requiring post-hoc review and ratification or rollback.
   - key: explicit
     term: Explicit
+    autolink: false
     definition: |-
       Written, adopted, accessible, and reviewable.  
       Anything not explicit is treated as non-existent under RCOS.
@@ -78,12 +82,14 @@ terms:
     definition: A non-negotiable constraint that cannot be overridden while it is in force.
   - key: layer
     term: Layer
+    autolink: false
     definition: A functional domain of RCOS that defines a specific aspect of community operation.
   - key: learning-log
     term: Learning Log
     definition: An artifact capturing major failures, adaptations, reversals, and lessons learned, including triggers, affected artifacts, and outcomes.
   - key: member
     term: Member
+    autolink: false
     definition: A person who has explicitly entered the community through the defined membership process.
   - key: optional-module
     term: Optional Module
@@ -96,6 +102,7 @@ terms:
     definition: A real-world community that publicly documents its application of RCOS-Core.
   - key: role
     term: Role
+    autolink: false
     definition: An explicitly defined bundle of responsibilities, authority, and accountability, independent of the person holding it.
   - key: safety-critical
     term: Safety-Critical

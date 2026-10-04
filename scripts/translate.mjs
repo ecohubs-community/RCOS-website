@@ -50,6 +50,7 @@ import matter from 'gray-matter';
 import yaml from 'js-yaml';
 import { loadDocuments } from './content/build-articles.mjs';
 import { refTargets } from '../src/lib/content/refs.js';
+import { sourceHashOf } from '../src/lib/content/hash.js';
 import { toArticle, fromArticle } from '../src/lib/content/article.js';
 import { SUPPORTED_LOCALES } from './i18n.mjs';
 
@@ -244,8 +245,7 @@ async function addYamlJobs(jobs, skipped) {
 			skipped.filtered++;
 			continue;
 		}
-		const sourceRaw = await readFile(file, 'utf8');
-		const sourceHash = md5short(sourceRaw);
+		const sourceHash = sourceHashOf(en);
 		const existing = overlays[args.locale];
 		const status = !existing
 			? 'missing'

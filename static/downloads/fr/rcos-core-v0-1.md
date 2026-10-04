@@ -287,7 +287,7 @@ afin que le soin, l'autonomie et la régénération aient quelque chose de solid
 
 ## Journal des modifications
 
-- [v0.1](https://rcos.ecohubs.community/fr/articles/rcos-core/v0-1?id=e6de7a5d) — Version initiale
+- [v0.1](https://rcos.ecohubs.community/fr/standard/core/0.1) — Version initiale
 
 
 ---

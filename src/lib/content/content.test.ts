@@ -66,7 +66,13 @@ function roundTrip(doc: Doc, locale: string, ids?: Doc): Doc {
 
 const body = (doc: Doc) => {
 	const keep = ['intro', 'sections', 'preamble', 'terms', 'head'];
-	return Object.fromEntries(Object.entries(doc).filter(([k]) => keep.includes(k) && doc[k] !== ''));
+	const out = Object.fromEntries(
+		Object.entries(doc).filter(([k]) => keep.includes(k) && doc[k] !== '')
+	);
+	// `autolink` tells the site which terms not to underline; markdown has no
+	// place for it.
+	if (out.terms) out.terms = out.terms.map(({ autolink: _a, ...t }: Doc) => t);
+	return out;
 };
 
 describe('content YAML', () => {
@@ -152,5 +158,22 @@ describe('translation round trip (article.js)', () => {
 			}
 		}
 		expect(checked).toBe(336);
+	});
+});
+
+describe('sourceHashOf', () => {
+	it('changes with the text, not with structure-only fields', async () => {
+		const { sourceHashOf } = await import('./hash.js');
+		const doc = {
+			kind: 'chapter',
+			legacyPath: 'x',
+			id: 'abcdef12',
+			order: 1,
+			title: 'T',
+			sections: [{ id: '1.1', ref: '1.1', title: 'A', blocks: [] }]
+		};
+		const base = sourceHashOf(doc);
+		expect(sourceHashOf({ ...doc, order: 2, slug: 'new-slug' })).toBe(base);
+		expect(sourceHashOf({ ...doc, title: 'T2' })).not.toBe(base);
 	});
 });
