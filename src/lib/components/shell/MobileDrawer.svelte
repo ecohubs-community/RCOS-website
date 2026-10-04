@@ -64,7 +64,7 @@
 			</div>
 
 			<div class="flex flex-col gap-3 p-4">
-				<HeaderSearch variant="drawer" />
+				<HeaderSearch variant="drawer" onopen={() => (open = false)} />
 				<a
 					href={href(STANDARD_HREF)}
 					class="flex h-12 items-center justify-center gap-2 rounded-xl bg-brand font-ui text-[15px] font-semibold text-brand-ink"

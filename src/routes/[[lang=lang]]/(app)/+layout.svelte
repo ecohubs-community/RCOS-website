@@ -6,6 +6,7 @@
 	import SiteFooter from '$lib/components/shell/SiteFooter.svelte';
 	import Analytics from '$lib/components/consent/Analytics.svelte';
 	import ConsentBanner from '$lib/components/consent/ConsentBanner.svelte';
+	import SearchPalette from '$lib/components/search/SearchPalette.svelte';
 	// The two font files nearly every page needs: body text and headings.
 	import textFont from '@fontsource-variable/stack-sans-text/files/stack-sans-text-latin-wght-normal.woff2?url';
 	import pridiBold from '@fontsource/pridi/files/pridi-latin-700-normal.woff2?url';
@@ -29,5 +30,6 @@
 	<SiteFooter />
 </div>
 
+<SearchPalette />
 <Analytics />
 <ConsentBanner />

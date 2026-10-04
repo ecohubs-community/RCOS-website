@@ -416,10 +416,13 @@ body {
 	overflow-x: hidden;
 }
 
-/* Focus Styles for Accessibility */
-:focus-visible {
-	outline: 2px solid var(--color-focus);
-	outline-offset: 2px;
+/* Focus Styles for Accessibility. In the base layer, so a component that draws
+   its own focus state (the search field) can override it with a utility. */
+@layer base {
+	:focus-visible {
+		outline: 2px solid var(--color-focus);
+		outline-offset: 2px;
+	}
 }
 
 /* Smooth Scrolling */
