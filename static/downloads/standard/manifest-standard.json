@@ -1,5 +1,5 @@
 {
-  "generated": "2026-10-02",
+  "generated": "2026-10-03",
   "licence": "CC BY 4.0 — https://creativecommons.org/licenses/by/4.0/",
   "attribution": "RCOS — Regenerative Community Operating System, EcoHubs",
   "standards": [
@@ -25,8 +25,8 @@
       "bytes": 271922
     },
     "rcos-core/0.1/sections.yaml": {
-      "sha256": "01457b6729b739a86c97e9c76fbb20885fd953484afa13dba1e20765a4892405",
-      "bytes": 608764
+      "sha256": "faf5e06c8af68f4bfd530b362ed0eb778258497977748e1d035f0add030e5f43",
+      "bytes": 727706
     },
     "rcos-core/0.1/artifacts.yaml": {
       "sha256": "301be10980b4fb0c4c096e876422b09ac6b52c14b703fea46bbaffc36db457f0",
@@ -36,13 +36,17 @@
       "sha256": "6d63d85757135aab4298484364330ec5266c758e8dd2f78c5e38516d16c2056e",
       "bytes": 42152
     },
+    "rcos-core/0.1/specSections.yaml": {
+      "sha256": "5212ef8bdf59fd9d7693243231b934cf2c1ba0d591fba9ee77ebaafb096cc064",
+      "bytes": 35338
+    },
     "rcos-core/0.1/meta.yaml": {
-      "sha256": "d16426b8a3fe68cefd79a3c39f8b310cc4ddcd6a64194e3be06efdcce5f1df75",
-      "bytes": 734
+      "sha256": "5e73009f61151fe685a90c3818b2dbbe671844f8f3b66ff095ad5df1792134d1",
+      "bytes": 728
     },
     "rcos-core/0.1/schema.json": {
-      "sha256": "51d8b99f9faf3b7cc9268895216b6a01a59541f29c5d72fb81dad378411078a3",
-      "bytes": 13901
+      "sha256": "e504fb1b4b8f63bfdc6f6722bacf8099bbcd788974ec876ec31d63341e94fc06",
+      "bytes": 22694
     }
   }
 }

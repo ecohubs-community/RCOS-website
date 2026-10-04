@@ -4,7 +4,7 @@ headingLevel: 3
 id: d2a7e9f3
 title: Irreversible Experiments
 summary: When "let's just try it" has no way back if it fails.
-parentId: 6acde7a7
+parentId: 6acbe9a7
 order: 3
 severity: medium
 stage:
@@ -15,6 +15,9 @@ layers:
 invariants:
   - '6.3'
   - '6.4'
+tests:
+  - '8.3'
+  - '8.5'
 remediationReady: true
 tags:
   - 'Layer 6: Evolution'

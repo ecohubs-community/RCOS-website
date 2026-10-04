@@ -4,7 +4,7 @@ headingLevel: 3
 id: b3f8a012
 title: Punishment Before Repair
 summary: When the community's first instinct after harm is to punish, not to repair.
-parentId: 5c693112
+parentId: 6acbe9a7
 order: 1
 severity: high
 stage:
@@ -15,6 +15,9 @@ layers:
 invariants:
   - '4.3'
   - '4.1'
+tests:
+  - '6.4'
+  - '6.6'
 remediationReady: true
 tags:
   - 'Layer 4: Conflict'

@@ -1,9 +1,9 @@
 standard: rcos-core
 version: '0.1'
-generated: '2026-10-02'
+generated: '2026-10-03'
 licence: CC BY 4.0 — https://creativecommons.org/licenses/by/4.0/
 attribution: RCOS — Regenerative Community Operating System, EcoHubs
-source: https://rcos.ecohubs.community/articles/rcos-core/v0-1
+source: https://rcos.ecohubs.community/standard/core/0.1
 defaultLocale: en
 locales:
   - en

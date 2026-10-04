@@ -16,15 +16,19 @@
 	const DOT = {
 		high: 'bg-severity-high',
 		medium: 'bg-severity-medium',
+		low: 'bg-clay-300',
 		other: 'bg-severity-low'
 	} as const;
 	const LABEL = $derived({
 		high: m.std_sev_high(),
 		medium: m.std_sev_medium(),
+		low: m.std_sev_low(),
 		other: m.std_also_involves({ n: related.layer })
 	});
 	const levels = $derived(
-		(['high', 'medium', 'other'] as const).filter((l) => related.tests.some((t) => t.level === l))
+		(['high', 'medium', 'low', 'other'] as const).filter((l) =>
+			related.tests.some((t) => t.level === l)
+		)
 	);
 	const groupTitle =
 		'flex justify-between pb-1 font-ui text-[11px] font-semibold tracking-[0.08em] text-ink-faint uppercase';

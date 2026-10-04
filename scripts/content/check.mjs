@@ -12,6 +12,9 @@
  *  4. Completeness: every document has all four translations.
  *  5. Translation rules (formerly normalize-rfc-keywords / normalize-terms): no
  *     English RFC 2119 keyword and no "Layer N" left in translated text.
+ *  6. Guidance (content/guidance): shape, references, one entry per template
+ *     section, and no RFC 2119 keyword in capitals (guidance never adds rules).
+ *     Its translations are optional until they are done (plan phase 8).
  *
  * Exits 1 on any error, printing all of them.
  */
@@ -23,6 +26,7 @@ import matter from 'gray-matter';
 import { isDeepStrictEqual } from 'node:util';
 import {
 	document,
+	guidance as guidanceSchema,
 	overlayFrame,
 	ownership as ownershipSchema
 } from '../../src/lib/content/schema.js';
@@ -30,6 +34,7 @@ import { merge, split } from '../../src/lib/content/overlay.js';
 import { sectionId } from '../../src/lib/content/template.js';
 import { refTargets, refsIn, resolveRef } from '../../src/lib/content/refs.js';
 import { loadDocuments } from './build-articles.mjs';
+import { loadGuidance } from '../../src/lib/content/load.js';
 
 const ROOT = path.resolve(import.meta.dirname, '../..');
 const LOCALES = ['de', 'es', 'fr', 'pt-br'];
@@ -89,7 +94,7 @@ export async function checkContent(contentDir = path.join(ROOT, 'content')) {
 		ids.set(id, rel(file));
 	}
 	// Articles still authored as markdown take part in the tree too.
-	for (const f of await walk(path.join(contentDir, 'articles'))) {
+	for (const f of await walk(path.join(contentDir, 'pages'))) {
 		if (!f.endsWith('.md') || /\.(de|es|fr|pt-br)\.md$/.test(f)) continue;
 		const { data } = matter(await readFile(f, 'utf8'));
 		if (data.id) ids.set(String(data.id), rel(f));
@@ -101,9 +106,12 @@ export async function checkContent(contentDir = path.join(ROOT, 'content')) {
 
 	/** @type {Set<string>} */
 	const clauseRefs = new Set();
+	/** @type {Set<string>} numbered sections of the standard ("2.3") */
+	const sectionRefs = new Set();
 	for (const { file, en } of docs) {
 		if (en.kind !== 'chapter') continue;
 		for (const section of en.sections ?? []) {
+			if (section.ref) sectionRefs.add(section.ref);
 			let expected = 1;
 			for (const block of section.blocks) {
 				if (block.kind !== 'clause') continue;
@@ -122,13 +130,17 @@ export async function checkContent(contentDir = path.join(ROOT, 'content')) {
 	// --- 3. References -----------------------------------------------------------------------
 	/** @type {Set<string>} template section keys, "<template>.<section>" */
 	const sectionKeys = new Set();
+	/** @type {Map<string, number>} the template's own sections (not fenced examples) → layer */
+	const authoredSections = new Map();
 	/** @type {Set<string>} legacy paths of every YAML article */
 	const paths = new Set(docs.map((d) => d.en.legacyPath));
 	for (const { file, en } of docs) {
 		if (en.kind !== 'template') continue;
 		const name = path.basename(file, '.yaml');
+		const layer = Number(/\/layer-(\d)\//.exec(en.legacyPath)?.[1]);
 		for (const s of en.sections) {
 			sectionKeys.add(`${name}.${s.id}`);
+			authoredSections.set(`${name}.${s.id}`, layer);
 			// A fenced example entry (learning log, version history) has its own
 			// `## ` headings. The published data lists each as an instance section
 			// (disposition instance_record), so they are valid targets too.
@@ -162,6 +174,14 @@ export async function checkContent(contentDir = path.join(ROOT, 'content')) {
 			if (!paths.has(c.test)) err(rel(file), `cascade ${c.test}: no such stress test`);
 		for (const r of en.related ?? [])
 			if (!paths.has(r)) err(rel(file), `related ${r}: no such stress test`);
+		for (const r of en.tests ?? [])
+			if (!sectionRefs.has(r)) err(rel(file), `tests §${r}: no such section`);
+		// The hub, the self-assessment and the related rail group tests by their first layer.
+		if (en.legacyPath.startsWith('rcos-stress-tests/') && en.kind === 'doc') {
+			if (!en.layers?.length)
+				err(rel(file), 'a stress test needs `layers` (the first is its group)');
+			if (!en.severity) err(rel(file), 'a stress test needs a `severity`');
+		}
 	}
 
 	const ownershipFile = path.join(contentDir, 'standard/rcos-core/0.1/ownership.yaml');
@@ -212,6 +232,59 @@ export async function checkContent(contentDir = path.join(ROOT, 'content')) {
 			}
 		}
 	}
+
+	// --- 6. Guidance ------------------------------------------------------------------------------
+	const RFC_CAPS = /\b(MUST NOT|MUST|SHOULD NOT|SHOULD|MAY|REQUIRED|RECOMMENDED|SHALL)\b/;
+	const guides = await loadGuidance(contentDir);
+	/** @type {Set<string>} */
+	const guided = new Set();
+	for (const { file, en, overlays } of guides) {
+		const parsed = guidanceSchema.safeParse(en);
+		if (!parsed.success) {
+			for (const issue of parsed.error.issues.slice(0, 5))
+				err(rel(file), `${issue.path.join('.')}: ${issue.message}`);
+			continue;
+		}
+		const g = parsed.data;
+		if (path.basename(file) !== `layer-${g.layer}.yaml`)
+			err(rel(file), `layer ${g.layer} does not match the file name`);
+		for (const s of g.sections) {
+			if (!sectionRefs.has(s.ref)) err(rel(file), `section ${s.ref} does not exist`);
+			else if (Number(s.ref.split('.')[0]) - 2 !== g.layer)
+				err(rel(file), `section ${s.ref} is not in Layer ${g.layer}`);
+			for (const q of s.questions ?? [])
+				if (q.ref && !clauseRefs.has(q.ref) && !sectionRefs.has(q.ref))
+					err(rel(file), `${s.ref}.${q.id}: §${q.ref} does not exist`);
+		}
+		for (const t of g.templates) {
+			if (guided.has(t.key)) err(rel(file), `${t.key} has guidance twice`);
+			guided.add(t.key);
+			if (!authoredSections.has(t.key)) err(rel(file), `${t.key}: no such template section`);
+			else if (authoredSections.get(t.key) !== g.layer)
+				err(rel(file), `${t.key} is not a Layer ${g.layer} template`);
+		}
+		for (const [where, value] of strings(en))
+			if (RFC_CAPS.test(value))
+				err(
+					rel(file),
+					`${where}: "${RFC_CAPS.exec(value)?.[0]}" in guidance (it explains rules, never adds them)`
+				);
+		for (const o of Object.values(overlays)) {
+			const { lang: _l, sourceHash: _h, ...overlay } = o.data;
+			try {
+				if (!isDeepStrictEqual(split(en, merge(en, overlay)) ?? {}, overlay))
+					err(rel(o.file), 'holds text at ids or fields English does not have');
+			} catch (e) {
+				err(rel(o.file), /** @type {Error} */ (e).message);
+			}
+		}
+	}
+	// Every section a community writes has its plain-language question (as RCOS-compass
+	// requires). Sections ownership.yaml marks as not written by hand (ratification
+	// records, summary tables, example entries) may go without.
+	const notWritten = new Set(own.success ? Object.keys(own.data.sections) : []);
+	for (const key of authoredSections.keys())
+		if (!guided.has(key) && !notWritten.has(key)) err('content/guidance', `${key} has no guidance`);
 
 	const summary = `${docs.length} documents, ${docs.length * LOCALES.length} translations, ${clauseRefs.size} clauses, ${sectionKeys.size} template sections`;
 	return { errors, summary };

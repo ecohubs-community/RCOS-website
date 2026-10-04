@@ -1,0 +1,200 @@
+# Guidance for Layer 2 of RCOS-Core 0.1. Non-normative: it explains the
+# rules and never adds to them, so no RFC 2119 keywords in capitals here.
+#
+#   sections   per section of the standard: "In short" and common questions
+#   templates  per template section: the plain-language question it answers,
+#              what to cover (prompts) and examples (not recommendations).
+#              Imported from RCOS-compass annotations.yaml (Compass is to read
+#              them from the published standard data instead).
+kind: guidance
+layer: 2
+sections:
+  - ref: '4.1'
+    inShort: Every collective decision is operational, strategic or constitutional, and the type decides how it is made.
+    questions:
+      - id: unclear-type
+        question: What if we can't tell which type a decision is?
+        answer: Treat it as the higher-impact type. That way a big decision can never slip through as a small one.
+        ref: 4.1.5
+      - id: constitutional-examples
+        question: Which decisions are constitutional?
+        answer: Changes to Layer 0 (purpose, scope, invariants) and to the governance system itself.
+        ref: 4.1.4
+  - ref: '4.2'
+    inShort: For each type of decision, write down who decides, how, by what threshold, who can block, and how long it takes.
+    questions:
+      - id: which-method
+        question: Does RCOS prescribe consensus, consent or voting?
+        answer: No. You choose the mechanism for each decision type; RCOS only asks that it is explicit and complete.
+        ref: 4.2.2
+      - id: quick-chat
+        question: Can a few people settle something informally to save time?
+        answer: Not for collective decisions. If it should be quick, define a quick mechanism, such as delegated authority, and use it openly.
+        ref: 4.2.4
+  - ref: '4.3'
+    inShort: Authority sits with named roles and bodies, each with a written scope, limits and term. It never comes from charisma, seniority or ownership.
+    questions:
+      - id: founder-authority
+        question: Our founder has always had the last word. Is that allowed?
+        answer: Only if it is written down as a role with a defined scope, limits and term. Authority cannot be derived from founding, seniority or informal influence.
+        ref: 4.3.4
+      - id: emergency-authority
+        question: Can someone take charge in an emergency?
+        answer: Yes, if emergency authority is explicitly defined, time-bounded and reviewed afterwards.
+        ref: 4.3.5
+  - ref: '4.4'
+    inShort: The Decision Matrix is the map of who decides what, and how. A decision made outside it is not valid.
+    questions:
+      - id: matrix-contents
+        question: What does the Decision Matrix map?
+        answer: For each decision, its type, domain, the authorized role or body, the mechanism, the approval threshold and the escalation path.
+        ref: 4.4.2
+      - id: outside-matrix
+        question: What happens to a decision made outside the matrix?
+        answer: It is considered invalid.
+        ref: 4.4.4
+  - ref: '4.5'
+    inShort: The Governance Protocol describes a decision's whole life, from proposal to deliberation, execution, record and appeal.
+    questions:
+      - id: conflicting-decisions
+        question: What if two decisions contradict each other?
+        answer: The Governance Protocol has to say how such conflicts are resolved, so it is not settled by whoever acts first.
+        ref: 4.5.3
+      - id: recording
+        question: Where are governance actions recorded?
+        answer: According to the documentation rules of Layer 5.
+        ref: 4.5.4
+  - ref: '4.6'
+    inShort: Build in protection against the ways governance usually goes wrong, such as concentrated power, informal vetoes, capture by a subgroup, and entrenched founders.
+    questions:
+      - id: challenge-safely
+        question: Can members challenge a decision without risking their standing?
+        answer: Yes. Governance mechanisms have to allow challenge and review without retaliation.
+        ref: 4.6.2
+      - id: repeated-failure
+        question: What if governance keeps failing in the same way?
+        answer: Persistent failures trigger a formal review or a constitutional process, not just another attempt.
+        ref: 4.6.3
+  - ref: '4.7'
+    inShort: Layer 2 lives in three documents, the Decision Matrix, the Governance Protocol and the Authority Registry, all explicit, versioned and open to members.
+    questions:
+      - id: which-documents
+        question: Which documents does Layer 2 need?
+        answer: A Decision Matrix, a Governance Protocol and an Authority Registry.
+        ref: 4.7.1
+templates:
+  - key: decision-matrix.voting-principles
+    question: For each kind of decision, who gets a say, what counts as agreement, who can block it, and how long does it stay open?
+    prompts:
+      - 'For each kind of decision: which mechanism do we use — consent, majority vote, supermajority, handing it to a role holder, or rotation or lottery?'
+      - 'For each mechanism: who is eligible to take part, and what counts as agreement — a share of votes, a quorum, or no remaining objections?'
+      - Can anyone block or veto a decision, and on what grounds — or is there no block at all?
+      - How long does each decision stay open, and what happens on a tie or when the time runs out without a result?
+      - Where does the deciding happen — in a meeting, on an online tool, or both?
+      - Up to what amount of money or scope may a role holder decide alone, without a vote?
+    examples:
+      - 'Operational decisions are made by the relevant role holder, who may spend up to €300 per item without a vote. Strategic decisions use consent: every full member may take part, and a proposal passes when no reasoned objection remains after a 14-day round. Only an objection showing how the proposal harms our purpose can block. Constitutional decisions use the same consent process with a 30-day round. If an objection is still open when the round closes, the proposal fails and the current rule stands.'
+      - Strategic decisions are made by majority vote of full members on our voting tool, open for 7 days, with at least half of all full members voting. Constitutional decisions need two thirds of all full members, voting open for 14 days. Nobody holds a veto. A tie, or too few votes, means the proposal fails and nothing changes. Coordinators may spend up to €500 within their area without a vote.
+  - key: decision-matrix.matrix
+    question: Which decisions belong to whom — in one table we can point at mid-argument?
+    prompts:
+      - 'For each area we decide about (membership, money, land and buildings, partnerships, our own rules): which decision type is it, and which role or body decides?'
+      - 'For each row: which mechanism and approval threshold apply?'
+      - 'For each row: where does it go if the deciding role or body cannot agree, has a conflict of interest, or the matter goes beyond its limit?'
+      - Where is the matrix kept so that every member can read it at any time, and how do we tell members when it changes?
+      - What happens to a decision someone made outside the matrix — who can point it out, and how is it undone?
+    examples:
+      - 'Membership admission is Strategic: the members'' circle decides by consent after a 14-day round, escalating to the general meeting if it cannot agree. Spending under €500 is Operational and the treasurer decides alone; above that it is Strategic and needs a two-thirds vote, escalating to the general meeting. Changes to our purpose or governance are Constitutional and need a three-quarters vote after 30 days. The matrix is pinned in the members'' handbook, and a decision made outside it has no effect until it is taken again through the right row.'
+  - key: decision-matrix.decision-type-definitions
+    question: What kinds of decision do we make, and how do we tell a big one from a small one?
+    prompts:
+      - What counts as an Operational decision for us — day-to-day work within rules we already have? Name two or three real ones.
+      - What counts as Strategic — long-term direction, large spending, starting or closing a major group? Where exactly is the line, for example an amount of money?
+      - What counts as Constitutional — changes to our purpose, scope, core commitments, or how we govern ourselves?
+      - 'For each type: who carries the decision out, and does it need a proposal and vote or not? (The exact thresholds are their own question.)'
+      - How do we make sure every collective decision lands in exactly one type — and when it could fit two, that it is treated as the bigger one?
+      - Who settles a dispute about which type a decision is?
+    examples:
+      - Operational decisions keep things running within existing rules — buying seed, scheduling work days, repairing the pump — and the role holder in charge decides alone. Strategic decisions set direction for a year or more, spend over €1,000, or create or close a working group; they need a members' vote after deliberation. Constitutional decisions change our purpose, our core commitments or how we govern; they need a supermajority and a ratification period. If anyone doubts which type a decision is, it is treated as the higher one.
+  - key: governance-protocol.proposal-submission
+    question: How does someone put a proposal in front of us, and what has to be in it?
+    prompts:
+      - Which decisions need a written proposal at all, and which can a role holder simply make?
+      - Who may put forward a proposal, and where is it submitted so that everyone can see it?
+      - What must every proposal contain — for example a summary, the decision type, what it changes, the reasons, the risks, and how to undo it?
+      - Who declares the decision type of a proposal when it is submitted? (How a dispute about the type is settled is its own question.)
+      - When may a proposer withdraw a proposal, and how?
+      - Taken together with the steps that follow, does our process carry a proposal all the way — submission, deliberation, decision, carrying out, record and appeal — with no step missing?
+    examples:
+      - Any full member may submit a Strategic or Constitutional proposal by posting it in the Proposals section of our forum using the shared template. Each proposal states a summary, its decision type, the agreements it changes, the reasons, the risks and how to reverse it, and a proposed start date. The proposer declares the type; any member may ask for a higher one, and doubt is resolved upward. A proposer may withdraw a proposal at any time before voting opens. Operational decisions need no proposal.
+  - key: governance-protocol.review-and-deliberation
+    question: How long do we sit with a proposal before deciding, and who has to be heard first?
+    prompts:
+      - Where does discussion of a proposal happen — a forum thread, a meeting, or both — and how do members who miss a meeting still take part?
+      - How long must a Strategic proposal stay open for discussion before a vote may begin?
+      - How long must a Constitutional proposal stay open before a vote may begin?
+      - Whose views must be heard before a vote opens — for example the people most affected, or whoever would carry the decision out?
+      - Can the proposer change the proposal during discussion, and does a change restart the clock?
+      - How do we encourage members to raise concerns now, rather than after the vote? (Re-opening a decision is its own question.)
+    examples:
+      - Discussion happens in the proposal's forum thread and in at least one general meeting, with notes posted for anyone who could not attend. A Strategic proposal stays open for at least 14 days and a Constitutional one for at least 30 days before voting may begin. The proposer must invite comment from the working group most affected. A substantial change to the proposal restarts the minimum period. Members are expected to raise concerns during this window, not after the vote.
+  - key: governance-protocol.decision-execution
+    question: Once we have decided something, who carries it out and by when?
+    prompts:
+      - Once a proposal passes, who is responsible for carrying it out — the proposer, a named role, or a working group?
+      - Which of our agreements and documents must be changed to match the decision, and who makes those changes?
+      - How long after the vote closes must the decision be in force and the documents updated?
+      - When a proposal is rejected, who closes it and tells the proposer, and by when? (Where records are kept is its own question.)
+      - What happens if the deadline passes and nothing has been done — who notices, and who takes over?
+    examples:
+      - Every passed proposal names one person responsible for carrying it out; if it does not, the coordination circle names someone within 7 days. That person updates every affected agreement and notes the change in the version history within 14 days of the vote closing. Rejected proposals are marked as rejected and closed by the facilitator within 7 days, and the proposer is told why. If a deadline is missed, the facilitator raises it at the next general meeting and a new person is assigned.
+  - key: governance-protocol.documentation-and-publication
+    question: Where does a decision get written down, and who can read it afterwards?
+    prompts:
+      - Which governance actions get recorded — passed and rejected proposals, withdrawn ones, votes, appointments?
+      - What exactly counts as the record of a decision — the closed vote, the minutes, the final proposal text — and what must it show?
+      - Within how many days of a vote closing is the record filed, and by whom?
+      - How do we make sure these records follow our general rules for documentation — the same place, format and naming as our other records?
+      - When is the version history updated, and what does each entry say?
+      - Who can read the decision records afterwards?
+    examples:
+      - Every proposal, passed or rejected, is filed in the Decisions folder of our shared drive within 7 days of the vote closing, by the facilitator who ran the vote. The decision record is the closed vote page with the tally and the final proposal text, linked to the minutes of any meeting where it was discussed. Every passed proposal also gets a version-history entry saying what changed. All members can read the folder; nothing in it is deleted, and corrections are added as new entries.
+  - key: governance-protocol.appeal-and-review
+    question: If someone thinks a decision went wrong, how do they get it looked at again?
+    prompts:
+      - Who may ask for a decision to be looked at again, and within how long after it was made?
+      - What must the request contain — and what counts as a new reason rather than simply disagreeing with the outcome?
+      - Who checks whether a request qualifies, and how quickly?
+      - How is the second decision made — the same mechanism and threshold as the first, or something different?
+      - Does the original decision stay in force while it is being looked at again?
+      - How do we handle repeated requests on the same matter that bring no new reasons?
+    examples:
+      - Any full member may request a re-vote within 30 days of a decision by posting a written objection that names a consideration not raised during discussion; disagreeing with the result is not enough. The facilitators check the objection within 7 days and, if it qualifies, open a re-vote using the same mechanism and threshold as the original. The decision stays in force in the meantime. A further request on the same matter within 12 months needs the written support of five full members.
+  - key: governance-protocol.conflict-between-decisions
+    question: When two of our own decisions contradict each other, which one wins?
+    prompts:
+      - When decisions of different types contradict each other, does the higher type always win?
+      - When two decisions of the same type contradict each other, does the more recent one win — and can an earlier decision protect itself from being overridden, and how?
+      - Who may point out a conflict between decisions, and where do they raise it?
+      - Until the conflict is settled, which decision do we follow — and how is the contradiction removed for good?
+    examples:
+      - 'A higher decision type always prevails: a Constitutional decision over a Strategic one, and a Strategic decision over an Operational one. Between two decisions of the same type, the more recent one prevails, unless the earlier one stated explicitly that it could only be changed by a higher type. Any member can flag a conflict in the governance channel; the facilitators confirm within 7 days which decision applies under this rule, and a proposal to remove the contradiction goes to the next general meeting.'
+  - key: governance-protocol.safeguards-and-failure-modes
+    question: What stops power collecting in a few hands, lets anyone challenge a decision safely, and forces a review when governance keeps failing?
+    prompts:
+      - What stops decision power concentrating in one person or a small group?
+      - What stops an informal veto — someone blocking a decision outside the agreed process?
+      - What stops a subgroup capturing decisions, for example by turning up only when it suits them?
+      - What stops founders or long-standing role holders becoming entrenched?
+      - How can anyone challenge a decision without fear of retaliation?
+      - Which pattern of failures forces a formal review — and who starts it?
+  - key: authority-registry.registered-authorities
+    question: Which roles, circles or bodies hold authority here — and what are the scope, limits and term of each?
+    prompts:
+      - Which roles, circles or bodies may decide anything? (The full members together are one of them.)
+      - 'For each: what may it decide, and where does that stop?'
+      - 'For each: for how long does it hold that authority, and how is it renewed or ended?'
+      - Where does each get its authority from — never seniority, ownership, charisma or being a founder?
+      - Which temporary or emergency authority do we allow, how is it time-bounded, and how is it reviewed afterwards?
+    examples:
+      - The full members together decide what the Decision Matrix gives them, for as long as they are members. The finance steward pays approved bills and may spend up to €300 per item within the budget, for a two-year term, appointed by vote. The membership admin runs onboarding and exits but cannot admit anyone alone. Nobody holds authority because they founded the community or own land here. In an emergency any two stewards may act for up to 72 hours, and the next general meeting reviews what they did.

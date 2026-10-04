@@ -44,6 +44,22 @@
         - >-
           Constraint 8, e.g. Diversity of approaches to regenerative living is a feature, not a
           problem.
+      question: >-
+        Which non-negotiable rules follow from who we are as a community — about behaviour, joining,
+        culture or land?
+      prompts:
+        - Which rules hold for everyone taking part, whatever a majority wants on a given day?
+        - 'For each one: who does it apply to?'
+        - >-
+          What does it mean for them in practice — what may they not do, or what must be true before
+          they can join?
+        - Why is it needed — what would go wrong here without it?
+      examples:
+        - Only people aged 18 or over can become members.
+        - No belief system, religion or political view may be required to join or take part.
+        - >-
+          Nothing the community does may cause lasting harm to the land it stewards; every land and
+          building decision says how it was checked.
     de:
       title: Aktive Identitätsbeschränkungen
       whyItMatters: >-
@@ -233,6 +249,18 @@
         - How violations are detected and reported.
         - Which Layer 4 process handles violations of which class of constraint.
         - Which roles or bodies are responsible for monitoring and review.
+      question: How would anyone check whether a constraint is being met — and what happens if it is not?
+      prompts:
+        - 'For each rule: how would anyone notice that it is not being kept?'
+        - Which written process handles a breach, so it is not left to whoever objects loudest?
+        - Who keeps an eye on it, and how often is that looked at again?
+      examples:
+        - >-
+          Each constraint names how a breach would show up and who keeps an eye on it: the land
+          group checks the ecological constraints on its quarterly walk, and anyone may report a
+          breach of a behavioural constraint to the accountability coordinator. Every reported
+          breach goes through our accountability process — never a private warning or quiet
+          exclusion. We review the whole register at the yearly reflection meeting.
     de:
       title: Durchsetzung und Überprüfbarkeit
       whyItMatters: >-
@@ -314,6 +342,25 @@
       placeholders:
         - threshold
         - duration
+      question: How are our non-negotiables added, changed or removed — and who has to agree?
+      prompts:
+        - >-
+          What kind of decision does it take to add, change or remove one of our non-negotiables —
+          an ordinary one, or one of our highest-level (constitutional) decisions?
+        - >-
+          How many people have to agree, and who counts — everyone, full members only, or those
+          present?
+        - >-
+          How long do we wait between agreeing a change and it taking effect, so anyone affected can
+          raise concerns or prepare?
+        - Does removing a non-negotiable need the same bar as adding or changing one?
+      examples:
+        - >-
+          Adding, changing or removing an identity constraint is a constitutional decision. The
+          proposal must be shared with all full members at least 21 days before the meeting that
+          decides it, and it passes only if at least three quarters of all full members vote in
+          favour. The change takes effect 30 days after the decision, and both the old and new
+          wording stay in the register's history.
     de:
       title: Bedingungen für Änderungen
       whyItMatters: null
@@ -366,6 +413,7 @@
       whyItMatters: null
       whatToDefine: null
       placeholders: []
+      question: Who adopted these constraints, when, and how was it decided?
     de:
       title: Ratifizierungsprotokoll
       whyItMatters: null
@@ -429,6 +477,32 @@
         - >-
           Invariant statement, e.g. Physical, psychological, and child safety always override
           participation rights, role continuity, and reputational concerns.
+      question: What must never happen here, whatever the circumstances or the majority?
+      prompts:
+        - >-
+          What must never happen here, even in an emergency or after a popular vote? Write each as
+          one clear sentence.
+        - 'For each one: how would anyone know, without argument, that it has been broken?'
+        - >-
+          Does each one hold everywhere — in membership, money, roles, safety and how we decide — or
+          have we worded it so it only covers one area?
+        - >-
+          When a decision, a role or any other rule clashes with one of these, do we say plainly
+          that the invariant wins and the other gives way?
+        - >-
+          Is the list short enough that each one is truly absolute — and is anything on it really
+          just a strong preference?
+        - >-
+          Do we agree these can only be changed through our highest-level (constitutional) change
+          process, never by an ordinary decision?
+      examples:
+        - >-
+          No one may be prevented from leaving the community, or punished for leaving. No person or
+          role may use authority that is not written into our governance documents. The physical
+          safety of any person, and above all of a child, comes before anyone's role, reputation or
+          participation. These hold for every rule, role, decision and emergency measure we have;
+          where anything conflicts with them, they prevail, and they change only through our
+          constitutional change process.
     de:
       title: Aktive Invarianten
       whyItMatters: >-
@@ -571,6 +645,7 @@
       whyItMatters: null
       whatToDefine: null
       placeholders: []
+      question: Who adopted these invariants, when, and how was it decided?
     de:
       title: Ratifizierungsprotokoll
       whyItMatters: null
@@ -617,6 +692,18 @@
         exists — not a project, strategy, or short-term goal. One or two sentences.
       placeholders:
         - Your community's primary purpose, in one or two sentences.
+      question: Why does this community exist — in one sentence that will still be true in ten years?
+      prompts:
+        - If we could keep only one reason for existing, what would it be?
+        - Would it still be true in ten years, after our current projects are finished or dropped?
+        - Is it a lasting reason — not a project, a strategy or a goal we could one day tick off?
+        - >-
+          Is it clear enough that we could tell when a decision, or a way of spending our time or
+          money, goes against it?
+      examples:
+        - >-
+          We exist so that the people who live here can share land, homes and daily work in a way
+          that leaves the soil, the water and our neighbours better off than we found them.
     de:
       title: Primärer Zweck
       whyItMatters: >-
@@ -697,6 +784,22 @@
         - Secondary purpose 1.
         - Secondary purpose 2.
         - Secondary purpose 3.
+      question: What secondary purposes do we pursue — without competing with why we exist?
+      prompts:
+        - Besides our primary purpose, what other concrete outcomes do we work towards — if any?
+        - >-
+          For each one: could it ever pull time, money or people away from our primary purpose — and
+          if it could, is it really secondary?
+        - >-
+          Do we say plainly that when a secondary purpose clashes with our primary purpose, the
+          primary purpose wins?
+      examples:
+        - >-
+          Alongside our primary purpose we pursue three secondary purposes: keeping homes affordable
+          for members on modest incomes, running an open tool library for the neighbourhood, and
+          sharing what we learn about living cooperatively at two open days a year. None of these
+          may override our primary purpose; if one conflicts with it, the primary purpose takes
+          precedence and the secondary purpose is scaled back or dropped.
     de:
       title: Sekundäre Zwecke
       whyItMatters: >-
@@ -783,6 +886,23 @@
         - Non-goal 1.
         - Non-goal 2.
         - Non-goal 3.
+      question: What are we deliberately not, however tempting it becomes?
+      prompts:
+        - >-
+          What might outsiders or new members assume we are, that we are not — a political party, a
+          business, a religious group, a charity?
+        - >-
+          Which tempting directions have come up before, or are likely to, that we want to rule out
+          now?
+        - >-
+          For each one: is it worded clearly enough that anyone could point to an activity and say
+          it crosses the line?
+      examples:
+        - >-
+          We are not a political party, and we do not endorse candidates or campaigns as a
+          community. We are not an investment vehicle: no one joins to earn a return, and shared
+          assets are never managed to make a profit for members. We are not a religious or spiritual
+          group, and no belief or practice is expected of anyone who takes part.
     de:
       title: Nicht-Ziele und Ausschlüsse
       whyItMatters: >-
@@ -867,6 +987,24 @@
       placeholders:
         - threshold, e.g. supermajority of Full Members ≥⅔ of votes cast
         - duration, e.g. 30 days
+      question: What would it take to change why we exist — and who would have to agree?
+      prompts:
+        - >-
+          Do we treat changing our primary purpose as one of our highest-level (constitutional)
+          decisions, rather than an ordinary one?
+        - >-
+          How many people have to agree, and who counts — all members, full members only, or those
+          who vote?
+        - How long must we wait between the decision and the change taking effect?
+        - Where is the change recorded, so that the old and the new wording both stay visible?
+        - Do our secondary purposes need the same bar to change, or a lower one?
+      examples:
+        - >-
+          Changing the primary purpose is a constitutional decision. The proposal must be shared 30
+          days before the vote, and it passes only with at least two thirds of the votes cast by
+          full members, with at least half of all full members voting. The change takes effect after
+          a further 30 days and is recorded, together with the previous wording, in our version
+          history. Secondary purposes can be changed by an ordinary community decision.
     de:
       title: Bedingungen für eine Zweckänderung
       whyItMatters: >-
@@ -943,6 +1081,7 @@
       whyItMatters: null
       whatToDefine: null
       placeholders: []
+      question: Who adopted this charter, when, and how was it decided?
     de:
       title: Ratifizierungsprotokoll
       whyItMatters: null
@@ -992,6 +1131,27 @@
         - Asset 2, e.g. the community website and its domain.
         - Asset 3, e.g. shared physical infrastructure or land.
         - Asset 4.
+      question: What does the community own or steward together?
+      prompts:
+        - >-
+          What do we own, hold or look after together — money, land, buildings, equipment, software,
+          websites, accounts, our name and logo?
+        - >-
+          For each one: what exactly is it — which account, which plot, which domain — so no one can
+          argue about what is meant?
+        - >-
+          What do individuals hold on the community's behalf, such as an account or a domain in a
+          member's name — and do we count it as ours?
+        - >-
+          Is anything shared in practice that we have never named? (Which decisions and which work
+          are collective are their own questions.)
+      examples:
+        - >-
+          The collective governs: the shared treasury held in our two-of-three multi-signature
+          wallet; the project website and its domain; the code repositories under the collective's
+          organisation account; our chat server and social media accounts; and the collective's
+          name, logo and published guides. Any account a member registers on the collective's behalf
+          belongs to the collective.
     de:
       title: Erfasste Vermögenswerte
       whyItMatters: >-
@@ -1091,6 +1251,23 @@
         - Decision domain 2, e.g. membership rules and admission (Layer 1).
         - Decision domain 3, e.g. treasury and shared resource allocation (Layer 3).
         - Decision domain 4.
+      question: Which decisions belong to the group rather than to individuals?
+      prompts:
+        - >-
+          What kinds of questions do we decide together — for example how we decide, who can join,
+          how shared money is spent, how shared spaces are used?
+        - >-
+          For each one: where does it stop — what stays with an individual, a household or an
+          outside party?
+        - >-
+          Are any decisions taken by one person today out of habit that we want to name as the
+          group's — or say plainly are not? (How each kind of decision is made is its own question.)
+      examples:
+        - >-
+          We decide together on: our governance rules and how decisions are made; who may join, and
+          on what terms; how the shared budget and reserves are spent; the use and upkeep of the
+          shared house, garden and guest rooms; and any agreement made in the community's name with
+          an outside party. Decisions about each household's own flat stay with that household.
     de:
       title: Erfasste Entscheidungsbereiche
       whyItMatters: >-
@@ -1183,6 +1360,24 @@
         - Activity 2.
         - Activity 3.
         - Activity 4.
+      question: Which work and responsibilities are collective?
+      prompts:
+        - >-
+          What ongoing work are we responsible for as a community — upkeep, welcoming new members,
+          keeping accounts, looking after our name, hosting visitors?
+        - >-
+          For each one: is it done regularly or only when needed, and what goes wrong if no one does
+          it?
+        - >-
+          Is anyone doing work today that nobody formally took on — and should it be collective, or
+          should we say it is not? (Who does each piece of work is decided when roles are assigned.)
+      examples:
+        - >-
+          As a community we are responsible for: maintaining the shared water supply, paths and
+          solar system; running the vegetable garden and orchard; admitting and welcoming new
+          members; keeping the accounts and reporting on them twice a year; and hosting visitors and
+          volunteers. Work on private dwellings and personal gardens is not a collective
+          responsibility.
     de:
       title: Erfasste Aktivitäten und Verantwortlichkeiten
       whyItMatters: >-
@@ -1281,6 +1476,27 @@
           Out-of-scope item 3, e.g. underlying server infrastructure and third-party service
           contracts.
         - Out-of-scope item 4.
+      question: What is none of the community's business — and stays that way?
+      prompts:
+        - >-
+          What might people assume the community has a say in, that it does not — members' money,
+          relationships, jobs, beliefs, or other projects they belong to?
+        - >-
+          Which outside organisations, services or neighbours do we work with but have no authority
+          over?
+        - >-
+          Do we say plainly that anything not named as in scope is out of scope, even if this list
+          does not mention it?
+        - >-
+          What happens to a decision that reaches into something on this list — does it simply have
+          no effect?
+      examples:
+        - >-
+          The following are out of scope: members' personal income, savings and private finances;
+          their private relationships and how they arrange their own homes; their paid work and
+          projects outside the community; and the hosting companies and software services we use,
+          whose terms we accept but do not govern. Anything not declared in scope is out of scope,
+          and a community decision that reaches into these areas has no effect.
     de:
       title: Ausdrücklich nicht erfasst
       whyItMatters: >-
@@ -1386,6 +1602,7 @@
       whyItMatters: null
       whatToDefine: null
       placeholders: []
+      question: Who adopted this scope, when, and how was it decided?
     de:
       title: Ratifizierungsprotokoll
       whyItMatters: null
@@ -1436,6 +1653,24 @@
         - What is retained — contribution history, recognition records — and what is removed.
         - Resulting state transition (e.g. to Exited Member).
         - Where and how the exit is recorded with timestamp.
+      question: >-
+        How can someone leave whenever they choose — without being punished for it, or losing more
+        than their membership?
+      prompts:
+        - How does someone tell us they are leaving — and do they owe anyone a reason or a vote?
+        - When does their access end, and where is the exit recorded?
+        - >-
+          Which rights end with membership, and which do they keep because they never depended on
+          it?
+      examples:
+        - >-
+          Any member can leave the community at any time by informing the community in writing. They
+          do not need permission or a vote to leave. The community records the exit date and follows
+          the agreed process for returning personal belongings, settling outstanding payments, and
+          ending membership-related responsibilities. Leaving means giving up rights that exist only
+          because of membership, such as access to shared facilities or participation in governance.
+          It does not remove any rights the person has independently of membership, such as
+          ownership of their personal belongings or money the community owes them.
     de:
       title: Freiwilliger Austritt
       whyItMatters: >-
@@ -1554,6 +1789,25 @@
           Re-application block (minimum duration, set by accountability decision; reference Layer
           4).
         - Privacy of the decision record (reference Conflict Resolution Ladder privacy rules).
+      question: What has to be true before the community can ask someone to leave?
+      prompts:
+        - >-
+          What must have happened before anyone can be removed — which accountability process must
+          have concluded, and what written decision must it have produced?
+        - >-
+          How is the person told — in writing, with the reasons and the decision reference — and how
+          long after that does their access end?
+        - What do we keep about the removal, and what do we delete?
+        - How long must someone wait before they may apply again, and who sets that wait?
+        - Who may read the decision record, and what stays private?
+      examples:
+        - >-
+          Nobody can be removed except as the outcome of a concluded accountability process under
+          our Conflict Resolution Ladder, ending in a written decision. The person receives that
+          decision in writing, with the reasons and its reference, at least 48 hours before their
+          access ends. We keep the decision record and remove them from member lists and channels.
+          The decision sets a re-application block of at least 12 months. Only the parties and the
+          stewards who handled the case may read the record.
     de:
       title: Erzwungener Austritt
       whyItMatters: >-
@@ -1695,6 +1949,28 @@
           Either: define suspension state with entry conditions, maximum duration, rights during
           suspension, mandatory review mechanism, and exit; or: state that formal suspension is not
           currently defined.
+      question: >-
+        Can someone be paused rather than removed — for how long, reviewed by whom, and never as a
+        punishment in disguise?
+      prompts:
+        - Do we want a formal suspension at all — or do we state plainly that we have none?
+        - If we have one, what exactly can put someone into suspension, and who decides it?
+        - What is the longest a suspension can last, and who reviews it, and when?
+        - What may a suspended member still do, and what is paused?
+        - >-
+          How does a suspension end — and what stops it from becoming a punishment, or a removal by
+          another name?
+      examples:
+        - >-
+          We do not have a formal suspension state. If someone's behaviour is serious enough to
+          restrict their membership, it goes through our accountability process, which ends in a
+          decision and never in an open-ended pause.
+        - >-
+          A member may be suspended only while an accountability process about them is open, by
+          decision of the two stewards handling it, for at most 30 days. During suspension they keep
+          their home, access to community records and the right to respond, but cannot vote or hold
+          roles. The members' circle reviews every suspension on day 14. It ends on day 30 or when
+          the process concludes, whichever comes first, and cannot be renewed for the same matter.
     de:
       title: Suspendierung
       whyItMatters: >-
@@ -1792,6 +2068,32 @@
         - Treasury / wallet / signing access must be removed.
         - All administrative access to platforms must be revoked.
         - Outstanding obligations resolved or transferred before exit is finalised where possible.
+      question: >-
+        When someone leaves, what happens to their roles, tasks, access and anything they hold for
+        us — agreed before anyone leaves?
+      prompts:
+        - >-
+          Does one checklist apply to every exit, whether someone leaves by choice or is removed —
+          and who runs it?
+        - >-
+          For each role someone holds: who marks it vacant in the Role Registry, and who covers it
+          until it is filled?
+        - How are their ongoing tasks released or handed over, and to whom?
+        - Who removes their access to money — bank accounts, wallets, signing rights — and by when?
+        - >-
+          Who revokes their admin access to our platforms and shared accounts, and how do we confirm
+          it is done?
+        - >-
+          How are obligations in either direction settled or transferred before the exit is
+          finalised?
+      examples:
+        - >-
+          The same checklist runs for every exit, voluntary or not, led by the membership steward.
+          Within 24 hours the platform admin revokes all admin and shared-account access, and the
+          treasurer removes the person as a signatory on the bank account. Within 7 days their roles
+          are marked vacant in the Role Registry and their open tasks are handed over on the task
+          board. Money owed in either direction is settled, or written into a repayment agreement,
+          before the exit is marked complete.
     de:
       title: Trennung von Vermögenswerten, Rollen und Verantwortlichkeiten
       whyItMatters: >-
@@ -1889,6 +2191,7 @@
       whyItMatters: null
       whatToDefine: null
       placeholders: []
+      question: Who adopted this exit protocol, when, and how was it decided?
     de:
       title: Ratifizierungsprotokoll
       whyItMatters: null
@@ -1935,6 +2238,20 @@
         - >-
           Membership state assigned at signing — e.g. Trial Member on application approval; Full
           Member on onboarding completion.
+      question: What is someone agreeing to be, at the moment they sign?
+      prompts:
+        - >-
+          Which membership state does someone hold the moment they sign this agreement — named
+          exactly as in our Membership State Registry?
+        - >-
+          Does everyone sign at the same point, or can signing happen at different stages — and
+          which state does each signing give?
+        - How does the person see, before they sign, which state they are agreeing to enter?
+      examples:
+        - >-
+          Anyone who signs this agreement after their application is approved becomes a Trial Member
+          on the day they sign. They become a Full Member only when their onboarding completion is
+          recorded; signing alone never makes someone a Full Member.
     de:
       title: Mitgliedschaftsstatus bei Unterzeichnung
       whyItMatters: >-
@@ -2030,6 +2347,26 @@
         - >-
           Right 8, e.g. the right to due process before any forced exit, suspension, or access
           restriction.
+      question: What are each member's rights, in proportion to what we ask of them?
+      prompts:
+        - 'For each membership state: which rights does a member in that state hold?'
+        - >-
+          Which rights hold for everyone, in every state — such as raising a concern without
+          retaliation, or leaving at any time?
+        - >-
+          Do the rights of each state match what we ask of that state, so that the more we ask, the
+          more protection and say a member has?
+        - >-
+          Where a right is set in another document — voting in the Decision Matrix, roles in the
+          Role Registry — do we point to it rather than write it twice?
+      examples:
+        - >-
+          Every member, in any state, may raise a conflict through the Conflict Resolution Ladder
+          without retaliation, read the community's governance records, and leave at any time. Trial
+          Members may also join all meetings and propose agenda items. Full Members may additionally
+          vote on decisions as set out in the Decision Matrix, hold roles listed in the Role
+          Registry, and propose changes to any agreement. Full Members carry the work rota and
+          shared costs, so they also hold the vote that Trial Members do not.
     de:
       title: Rechte der Mitglieder
       whyItMatters: >-
@@ -2191,6 +2528,27 @@
         - >-
           Obligation 7, e.g. not exercise authority beyond what is explicitly assigned through the
           governance system.
+      question: What does the community expect of each member — and where does that expectation stop?
+      prompts:
+        - >-
+          For each obligation: what exactly is asked, and how would a member know whether they are
+          meeting it?
+        - Where does each obligation stop — how much, how often, for how long?
+        - >-
+          Which documented right does each obligation correspond to? (The rights themselves are
+          their own question.)
+        - Which obligations apply in every membership state, and which only in some?
+        - >-
+          Is there anything we quietly expect of members that is not written down — and should we
+          write it down or drop it?
+      examples:
+        - >-
+          Every member keeps to our identity constraints, takes part in a conflict process when
+          named as a party, does not speak for the community in public without a mandate from the
+          general meeting, and does not use community money or accounts beyond the authority a role
+          gives them. Each obligation is matched by a right in this agreement, such as the right to
+          a fair process and to hold roles. Nothing else may be required of a member unless this
+          list is changed by decision.
     de:
       title: Pflichten der Mitglieder
       whyItMatters: >-
@@ -2351,6 +2709,28 @@
         - >-
           e.g. absence of recognized contribution for X consecutive months without prior notice
           triggers an accountability check (Layer 4).
+      question: >-
+        What counts as participation, how much is enough, may someone send a stand-in — and what
+        happens when someone stops?
+      prompts:
+        - Which forms of contribution do we recognise?
+        - How much is enough — how many contributions, of which kinds, over what period?
+        - >-
+          May someone send a stand-in, or pay someone to do their share — for which tasks, and who
+          stays responsible?
+        - How does someone tell us they will be away, and for how long can expectations be paused?
+        - >-
+          After how long without participation, and without notice, does an accountability process
+          start — and who starts it? (What that process does is set in the Conflict Resolution
+          Ladder.)
+      examples:
+        - >-
+          We recognise four forms of contribution: work-days on the land, cooking for shared meals,
+          facilitating or taking minutes at meetings, and tasks from the maintenance rota. Each
+          member contributes at least 8 hours a month across any of these. A member may swap a task
+          with another member, but may not pay an outsider to do their share. Expectations pause for
+          up to 3 months if the member tells the membership steward in advance. Two consecutive
+          months below the minimum without notice opens an accountability check.
     de:
       title: Erwartungen an Teilnahme und Beitrag
       whyItMatters: >-
@@ -2477,6 +2857,21 @@
         that any member reading the Membership Agreement knows where the procedural protections
         live.
       placeholders: []
+      question: What protects a member when the community turns against them?
+      prompts:
+        - >-
+          Which documents protect a member against removal, suspension or restricted access — and
+          does this agreement name each one?
+        - >-
+          In one or two plain sentences, what do we promise here, so that nobody is removed or
+          restricted under a rule they were never shown?
+        - How does a member reading this agreement find the current version of those documents?
+      examples:
+        - >-
+          No member can be removed, suspended or have their access restricted except through the
+          processes in our Conflict Resolution Ladder and our Exit & Separation Protocol. Both are
+          linked from this agreement. No rule that is not written in one of those two documents can
+          be used against a member.
     de:
       title: Verweis auf ordentliches Verfahren
       whyItMatters: >-
@@ -2547,6 +2942,23 @@
         Describe the act of consent (signature, in-app acknowledgment, etc.), and what artifact
         versions the member is consenting to at that moment.
       placeholders: []
+      question: How does someone show they have read and agreed to all of this?
+      prompts:
+        - >-
+          What is the act of agreeing — a signature, a confirmation in our tools, or saying so at a
+          meeting and having it minuted?
+        - >-
+          Which documents, and which versions of them, is someone agreeing to at that moment — and
+          how do they see those exact versions?
+        - >-
+          How do we make sure the agreement is given freely and knowingly — for example, time to
+          read and ask questions first? (Where the record is kept is its own question.)
+      examples:
+        - >-
+          A new member agrees by signing the Membership Agreement in our members' app, after a
+          meeting where they could ask questions. The signing screen lists every document they are
+          agreeing to, with its version number and a link to that exact version, and the signature
+          is dated.
     de:
       title: Zustimmungserklärung
       whyItMatters: >-
@@ -2605,6 +3017,7 @@
       whyItMatters: null
       whatToDefine: null
       placeholders: []
+      question: Who adopted this agreement, when, and how was it decided?
     de:
       title: Ratifizierungsprotokoll
       whyItMatters: null
@@ -2673,6 +3086,28 @@
         - obligations
         - entry
         - exit
+      question: >-
+        Which membership states do we have — at least applicant, trial, full and exited — and what
+        are their rights, obligations and limitations?
+      prompts:
+        - >-
+          Which membership states do we have — at least applicant, trial, full and exited — and do
+          we need any others?
+        - 'For each state: which rights, obligations and limitations apply?'
+        - 'For each state: what moves someone into it, and what moves them out?'
+        - How do we make sure nobody holds two states at once?
+        - >-
+          How do we make sure nobody claims a right, or is held to an obligation, that their current
+          state does not give?
+      examples:
+        - >-
+          Applicant: may attend open meetings; must give honest information; enters by applying,
+          leaves on the admission decision. Trial Member: may join all meetings and speak, cannot
+          vote or hold roles; follows the work rota; enters on signing, leaves on the trial
+          decision. Full Member: votes and holds roles; contributes monthly and shares costs; enters
+          when onboarding is recorded, leaves on exit. Exited Member: keeps access to their own
+          records, has no obligations; may reapply as an Applicant. Each person holds exactly one
+          state at a time.
     de:
       title: Definierte Mitgliedschaftsstatus
       whyItMatters: >-
@@ -2827,6 +3262,7 @@
       whyItMatters: null
       whatToDefine: null
       placeholders: []
+      question: Who adopted the membership states, when, and how was it decided?
     de:
       title: Ratifizierungsprotokoll
       whyItMatters: null
@@ -2874,6 +3310,15 @@
         - Criterion 2, e.g. willingness to actively contribute in at least one recognized category.
         - Criterion 3, e.g. no prior forced exit or rejection within the last X months.
         - Criterion 4, e.g. completion of the application form in good faith — no misrepresentation.
+      question: >-
+        Who can join, on which written criteria, and who decides — so nobody becomes a member just
+        by being around?
+      prompts:
+        - Which criteria must an applicant meet, written so anyone could check them?
+        - >-
+          Who decides an application? (Name the body the Decision Matrix gives admissions to, rather
+          than a second rule.)
+        - How do we make sure nobody becomes a member informally, or after the fact?
     de:
       title: Aufnahmekriterien
       whyItMatters: >-
@@ -2991,6 +3436,26 @@
         - Step 4, e.g. join member-only communication channels.
         - Step 5, e.g. be granted any required permissions for governance participation.
         - Step 6, e.g. onboarding completion recorded — membership state transitions to Full Member.
+      question: What actually happens between "I'd like to join" and "I'm in"?
+      prompts:
+        - What are the steps, in order, from an approved application to full membership?
+        - >-
+          At which step does someone read all our governance documents, and how do we know they
+          have?
+        - >-
+          At which step do they explicitly agree to our identity constraints and our membership
+          rules — and how?
+        - >-
+          At which step is their starting membership state declared, and by whom? (What that state
+          allows is its own question.)
+        - Which accounts, tools and channels are set up, by whom, and at which step?
+      examples:
+        - >-
+          1. The applicant reads all our governance documents with a buddy, who answers their
+          questions. 2. They confirm in writing that they consent to our identity constraints and
+          the Membership Agreement, and the membership steward declares them a Trial Member. 3. The
+          admin sets up their member account and adds them to the members' chat. 4. When their trial
+          ends with a positive decision, completion is recorded and they become a Full Member.
     de:
       title: Onboarding-Schritte
       whyItMatters: >-
@@ -3114,6 +3579,22 @@
       placeholders:
         - e.g. Trial Member.
         - e.g. Full Member (automatic upon completion).
+      question: What is someone on their first day — and what can they do yet?
+      prompts:
+        - >-
+          Which membership state does someone hold on their first day, named as in our Membership
+          State Registry?
+        - Which states do they pass through during onboarding, and what triggers each move?
+        - >-
+          What can they do yet on their first day, and what has to wait? (The rights of each state
+          are set in the Membership State Registry.)
+        - How do we make sure no access or right is given before the step that unlocks it?
+      examples:
+        - >-
+          When their application is approved, a new person becomes a Trial Member, with the rights
+          the Membership State Registry gives that state. They become a Full Member automatically on
+          the day their onboarding completion is recorded. There is no other route to Full Member,
+          and no Full Member access is given before that day.
     de:
       title: Anfänglicher Mitgliedschaftsstatus
       whyItMatters: >-
@@ -3198,6 +3679,28 @@
         - e.g. one-time X-day extension on request.
         - reference Membership State Registry.
         - e.g. members exited due to incomplete onboarding may not reapply for X months.
+      question: >-
+        How long is someone new on trial, what are they judged on, who decides — and what happens if
+        it does not work out?
+      prompts:
+        - How long does the trial last, and from when is it counted?
+        - What is the new member judged on — written so they can check it themselves?
+        - Who makes the decision at the end of the trial, and how?
+        - >-
+          During the trial, which obligations apply, and how does the new member know them? (Which
+          rights are limited is set in the Membership State Registry.)
+        - >-
+          If the trial does not end in full membership, what happens — can it be extended, for how
+          long and how often, and when does exit begin?
+        - After an exit at the end of a trial, how long before someone may apply again?
+      examples:
+        - >-
+          The trial lasts 6 months from the day the person signs, and every member obligation
+          applies in full. They are judged on having completed every onboarding step and met the
+          participation minimum in at least 5 of the 6 months. At the end, the full members decide
+          by consent at a general meeting. If the criteria are not met, the trial can be extended
+          once by up to 3 months; after that, the exit process begins, and the person may reapply
+          after 12 months.
     de:
       title: Probezeit und Bewertung
       whyItMatters: >-
@@ -3316,6 +3819,19 @@
         - >-
           Description of the onboarding completion record — where it lives, what it captures, and
           that it is retained permanently after exit.
+      question: How do we record that someone has finished joining, and what does the record keep?
+      prompts:
+        - Where is the completion record kept, and who writes it?
+        - >-
+          What does it capture — at least the date, and the exact version of every document the
+          person agreed to?
+        - How long is it kept, including after the person leaves?
+      examples:
+        - >-
+          The membership steward records completion in the members' register on the day the last
+          onboarding step is done. The entry holds the date, the person's name, their new membership
+          state, and the version number of each document they consented to. Entries are never
+          deleted; after someone leaves, their entry stays, marked with the exit date.
     de:
       title: Abschlussnachweis
       whyItMatters: >-
@@ -3386,6 +3902,7 @@
       whyItMatters: null
       whatToDefine: null
       placeholders: []
+      question: Who adopted this onboarding process, when, and how was it decided?
     de:
       title: Ratifizierungsnachweis
       whyItMatters: null
@@ -3454,6 +3971,29 @@
         - ...
         - ...
         - ...
+      question: >-
+        Which roles, circles or bodies hold authority here — and what are the scope, limits and term
+        of each?
+      prompts:
+        - >-
+          Which roles, circles or bodies may decide anything? (The full members together are one of
+          them.)
+        - 'For each: what may it decide, and where does that stop?'
+        - 'For each: for how long does it hold that authority, and how is it renewed or ended?'
+        - >-
+          Where does each get its authority from — never seniority, ownership, charisma or being a
+          founder?
+        - >-
+          Which temporary or emergency authority do we allow, how is it time-bounded, and how is it
+          reviewed afterwards?
+      examples:
+        - >-
+          The full members together decide what the Decision Matrix gives them, for as long as they
+          are members. The finance steward pays approved bills and may spend up to €300 per item
+          within the budget, for a two-year term, appointed by vote. The membership admin runs
+          onboarding and exits but cannot admit anyone alone. Nobody holds authority because they
+          founded the community or own land here. In an emergency any two stewards may act for up to
+          72 hours, and the next general meeting reviews what they did.
     de:
       title: Registrierte Autoritäten
       whyItMatters: >-
@@ -3671,6 +4211,36 @@
           during deliberation; general disagreement does not qualify.
         - e.g. €0; or define a threshold under which delegated spending is allowed.
         - Other voting principles your community wants to declare.
+      question: >-
+        For each kind of decision, who gets a say, what counts as agreement, who can block it, and
+        how long does it stay open?
+      prompts:
+        - >-
+          For each kind of decision: which mechanism do we use — consent, majority vote,
+          supermajority, handing it to a role holder, or rotation or lottery?
+        - >-
+          For each mechanism: who is eligible to take part, and what counts as agreement — a share
+          of votes, a quorum, or no remaining objections?
+        - Can anyone block or veto a decision, and on what grounds — or is there no block at all?
+        - >-
+          How long does each decision stay open, and what happens on a tie or when the time runs out
+          without a result?
+        - Where does the deciding happen — in a meeting, on an online tool, or both?
+        - Up to what amount of money or scope may a role holder decide alone, without a vote?
+      examples:
+        - >-
+          Operational decisions are made by the relevant role holder, who may spend up to €300 per
+          item without a vote. Strategic decisions use consent: every full member may take part, and
+          a proposal passes when no reasoned objection remains after a 14-day round. Only an
+          objection showing how the proposal harms our purpose can block. Constitutional decisions
+          use the same consent process with a 30-day round. If an objection is still open when the
+          round closes, the proposal fails and the current rule stands.
+        - >-
+          Strategic decisions are made by majority vote of full members on our voting tool, open for
+          7 days, with at least half of all full members voting. Constitutional decisions need two
+          thirds of all full members, voting open for 14 days. Nobody holds a veto. A tie, or too
+          few votes, means the proposal fails and nothing changes. Coordinators may spend up to €500
+          within their area without a vote.
     de:
       title: Abstimmungsgrundsätze
       whyItMatters: >-
@@ -3851,6 +4421,30 @@
         - ...
         - ...
         - ...
+      question: Which decisions belong to whom — in one table we can point at mid-argument?
+      prompts:
+        - >-
+          For each area we decide about (membership, money, land and buildings, partnerships, our
+          own rules): which decision type is it, and which role or body decides?
+        - 'For each row: which mechanism and approval threshold apply?'
+        - >-
+          For each row: where does it go if the deciding role or body cannot agree, has a conflict
+          of interest, or the matter goes beyond its limit?
+        - >-
+          Where is the matrix kept so that every member can read it at any time, and how do we tell
+          members when it changes?
+        - >-
+          What happens to a decision someone made outside the matrix — who can point it out, and how
+          is it undone?
+      examples:
+        - >-
+          Membership admission is Strategic: the members' circle decides by consent after a 14-day
+          round, escalating to the general meeting if it cannot agree. Spending under €500 is
+          Operational and the treasurer decides alone; above that it is Strategic and needs a
+          two-thirds vote, escalating to the general meeting. Changes to our purpose or governance
+          are Constitutional and need a three-quarters vote after 30 days. The matrix is pinned in
+          the members' handbook, and a decision made outside it has no effect until it is taken
+          again through the right row.
     de:
       title: Matrix
       whyItMatters: >-
@@ -4099,6 +4693,33 @@
         - >-
           changes to Layer 0 (purpose, scope, invariants) or to the governance system itself;
           requires a Full Member vote, supermajority, and a ratification period.
+      question: What kinds of decision do we make, and how do we tell a big one from a small one?
+      prompts:
+        - >-
+          What counts as an Operational decision for us — day-to-day work within rules we already
+          have? Name two or three real ones.
+        - >-
+          What counts as Strategic — long-term direction, large spending, starting or closing a
+          major group? Where exactly is the line, for example an amount of money?
+        - >-
+          What counts as Constitutional — changes to our purpose, scope, core commitments, or how we
+          govern ourselves?
+        - >-
+          For each type: who carries the decision out, and does it need a proposal and vote or not?
+          (The exact thresholds are their own question.)
+        - >-
+          How do we make sure every collective decision lands in exactly one type — and when it
+          could fit two, that it is treated as the bigger one?
+        - Who settles a dispute about which type a decision is?
+      examples:
+        - >-
+          Operational decisions keep things running within existing rules — buying seed, scheduling
+          work days, repairing the pump — and the role holder in charge decides alone. Strategic
+          decisions set direction for a year or more, spend over €1,000, or create or close a
+          working group; they need a members' vote after deliberation. Constitutional decisions
+          change our purpose, our core commitments or how we govern; they need a supermajority and a
+          ratification period. If anyone doubts which type a decision is, it is treated as the
+          higher one.
     de:
       title: Definitionen der Entscheidungstypen
       whyItMatters: >-
@@ -4257,6 +4878,29 @@
           rationale, risks and mitigations, rollback plan, proposed effective date.
         - Decision type is declared by proposer; defaults to higher-impact type if unclear.
         - Withdrawal rules — when a proposal can be withdrawn and how.
+      question: How does someone put a proposal in front of us, and what has to be in it?
+      prompts:
+        - Which decisions need a written proposal at all, and which can a role holder simply make?
+        - Who may put forward a proposal, and where is it submitted so that everyone can see it?
+        - >-
+          What must every proposal contain — for example a summary, the decision type, what it
+          changes, the reasons, the risks, and how to undo it?
+        - >-
+          Who declares the decision type of a proposal when it is submitted? (How a dispute about
+          the type is settled is its own question.)
+        - When may a proposer withdraw a proposal, and how?
+        - >-
+          Taken together with the steps that follow, does our process carry a proposal all the way —
+          submission, deliberation, decision, carrying out, record and appeal — with no step
+          missing?
+      examples:
+        - >-
+          Any full member may submit a Strategic or Constitutional proposal by posting it in the
+          Proposals section of our forum using the shared template. Each proposal states a summary,
+          its decision type, the agreements it changes, the reasons, the risks and how to reverse
+          it, and a proposed start date. The proposer declares the type; any member may ask for a
+          higher one, and doubt is resolved upward. A proposer may withdraw a proposal at any time
+          before voting opens. Operational decisions need no proposal.
     de:
       title: Antragseinreichung
       whyItMatters: >-
@@ -4385,6 +5029,30 @@
         - >-
           Expectation that members raise concerns during deliberation to avoid the need for
           re-votes.
+      question: How long do we sit with a proposal before deciding, and who has to be heard first?
+      prompts:
+        - >-
+          Where does discussion of a proposal happen — a forum thread, a meeting, or both — and how
+          do members who miss a meeting still take part?
+        - How long must a Strategic proposal stay open for discussion before a vote may begin?
+        - How long must a Constitutional proposal stay open before a vote may begin?
+        - >-
+          Whose views must be heard before a vote opens — for example the people most affected, or
+          whoever would carry the decision out?
+        - >-
+          Can the proposer change the proposal during discussion, and does a change restart the
+          clock?
+        - >-
+          How do we encourage members to raise concerns now, rather than after the vote? (Re-opening
+          a decision is its own question.)
+      examples:
+        - >-
+          Discussion happens in the proposal's forum thread and in at least one general meeting,
+          with notes posted for anyone who could not attend. A Strategic proposal stays open for at
+          least 14 days and a Constitutional one for at least 30 days before voting may begin. The
+          proposer must invite comment from the working group most affected. A substantial change to
+          the proposal restarts the minimum period. Members are expected to raise concerns during
+          this window, not after the vote.
     de:
       title: Prüfung und Beratung
       whyItMatters: >-
@@ -4479,6 +5147,29 @@
         - 'On passing: how proposal is filed; affected artifacts updated; version history entry made.'
         - 'On rejection: where proposal is archived.'
         - Time bound for execution after a vote concludes.
+      question: Once we have decided something, who carries it out and by when?
+      prompts:
+        - >-
+          Once a proposal passes, who is responsible for carrying it out — the proposer, a named
+          role, or a working group?
+        - >-
+          Which of our agreements and documents must be changed to match the decision, and who makes
+          those changes?
+        - How long after the vote closes must the decision be in force and the documents updated?
+        - >-
+          When a proposal is rejected, who closes it and tells the proposer, and by when? (Where
+          records are kept is its own question.)
+        - >-
+          What happens if the deadline passes and nothing has been done — who notices, and who takes
+          over?
+      examples:
+        - >-
+          Every passed proposal names one person responsible for carrying it out; if it does not,
+          the coordination circle names someone within 7 days. That person updates every affected
+          agreement and notes the change in the version history within 14 days of the vote closing.
+          Rejected proposals are marked as rejected and closed by the facilitator within 7 days, and
+          the proposer is told why. If a deadline is missed, the facilitator raises it at the next
+          general meeting and a new person is assigned.
     de:
       title: Entscheidungsumsetzung
       whyItMatters: >-
@@ -4569,6 +5260,28 @@
         - All passed and rejected proposals are filed within X days of the vote closing.
         - The vote artifact (e.g. Snapshot link) serves as the decision record.
         - Version history (Layer 6) updated with every passed proposal.
+      question: Where does a decision get written down, and who can read it afterwards?
+      prompts:
+        - >-
+          Which governance actions get recorded — passed and rejected proposals, withdrawn ones,
+          votes, appointments?
+        - >-
+          What exactly counts as the record of a decision — the closed vote, the minutes, the final
+          proposal text — and what must it show?
+        - Within how many days of a vote closing is the record filed, and by whom?
+        - >-
+          How do we make sure these records follow our general rules for documentation — the same
+          place, format and naming as our other records?
+        - When is the version history updated, and what does each entry say?
+        - Who can read the decision records afterwards?
+      examples:
+        - >-
+          Every proposal, passed or rejected, is filed in the Decisions folder of our shared drive
+          within 7 days of the vote closing, by the facilitator who ran the vote. The decision
+          record is the closed vote page with the tally and the final proposal text, linked to the
+          minutes of any meeting where it was discussed. Every passed proposal also gets a
+          version-history entry saying what changed. All members can read the folder; nothing in it
+          is deleted, and corrections are added as new entries.
     de:
       title: Dokumentation und Veröffentlichung
       whyItMatters: >-
@@ -4666,6 +5379,26 @@
         - Reasoned objection requirement — a consideration not addressed in original deliberation.
         - Re-vote uses the same mechanism and threshold as the original.
         - Treatment of repeated frivolous re-vote requests.
+      question: If someone thinks a decision went wrong, how do they get it looked at again?
+      prompts:
+        - Who may ask for a decision to be looked at again, and within how long after it was made?
+        - >-
+          What must the request contain — and what counts as a new reason rather than simply
+          disagreeing with the outcome?
+        - Who checks whether a request qualifies, and how quickly?
+        - >-
+          How is the second decision made — the same mechanism and threshold as the first, or
+          something different?
+        - Does the original decision stay in force while it is being looked at again?
+        - How do we handle repeated requests on the same matter that bring no new reasons?
+      examples:
+        - >-
+          Any full member may request a re-vote within 30 days of a decision by posting a written
+          objection that names a consideration not raised during discussion; disagreeing with the
+          result is not enough. The facilitators check the objection within 7 days and, if it
+          qualifies, open a re-vote using the same mechanism and threshold as the original. The
+          decision stays in force in the meantime. A further request on the same matter within 12
+          months needs the written support of five full members.
     de:
       title: Einspruch und Überprüfung
       whyItMatters: >-
@@ -4758,6 +5491,24 @@
       placeholders:
         - 'Same-type conflicts: more recent prevails unless earlier explicitly locked future changes.'
         - Where conflicts are surfaced and how they are resolved.
+      question: When two of our own decisions contradict each other, which one wins?
+      prompts:
+        - When decisions of different types contradict each other, does the higher type always win?
+        - >-
+          When two decisions of the same type contradict each other, does the more recent one win —
+          and can an earlier decision protect itself from being overridden, and how?
+        - Who may point out a conflict between decisions, and where do they raise it?
+        - >-
+          Until the conflict is settled, which decision do we follow — and how is the contradiction
+          removed for good?
+      examples:
+        - >-
+          A higher decision type always prevails: a Constitutional decision over a Strategic one,
+          and a Strategic decision over an Operational one. Between two decisions of the same type,
+          the more recent one prevails, unless the earlier one stated explicitly that it could only
+          be changed by a higher type. Any member can flag a conflict in the governance channel; the
+          facilitators confirm within 7 days which decision applies under this rule, and a proposal
+          to remove the contradiction goes to the next general meeting.
     de:
       title: Konflikte zwischen Entscheidungen
       whyItMatters: >-
@@ -4856,6 +5607,18 @@
           authority beyond membership state.
         - reference Layer 4 anti-retaliation provisions.
         - e.g. three or more governance failures within X months trigger a Constitutional review.
+      question: >-
+        What stops power collecting in a few hands, lets anyone challenge a decision safely, and
+        forces a review when governance keeps failing?
+      prompts:
+        - What stops decision power concentrating in one person or a small group?
+        - What stops an informal veto — someone blocking a decision outside the agreed process?
+        - >-
+          What stops a subgroup capturing decisions, for example by turning up only when it suits
+          them?
+        - What stops founders or long-standing role holders becoming entrenched?
+        - How can anyone challenge a decision without fear of retaliation?
+        - Which pattern of failures forces a formal review — and who starts it?
     de:
       title: Schutzmaßnahmen und Fehlermodi
       whyItMatters: >-
@@ -5042,6 +5805,30 @@
         - ...
         - ...
         - ...
+      question: What belongs to all of us, what stays personal, and where is that written down?
+      prompts:
+        - >-
+          For each thing we hold — land, buildings, money, tools, websites, accounts: is it shared
+          by all of us or someone's own, and who is its steward or owner?
+        - >-
+          For each shared resource: who may use it and how, who decides about it, who looks after
+          it, and how is its upkeep paid for?
+        - >-
+          Can a shared resource ever be sold, lent out or made someone's own — and if so, only
+          through which decision, so it never happens quietly?
+        - Where does our say over someone's private belongings stop?
+        - >-
+          Where is the list kept, how is each change dated and versioned, and what happens to
+          something nobody has listed yet?
+      examples:
+        - >-
+          Every change to our resource register is a new dated version agreed at a members' meeting.
+          The land and workshop are shared: any member may use them, and the land group decides
+          about them and keeps them up through monthly work days, with repairs paid from the shared
+          budget. Shared resources may not be sold, lent long-term or made private except by a vote
+          of full members. Members' homes, vehicles and savings are their own, and we have no say
+          over them beyond the membership agreement. Anything not yet registered stays untouched
+          until classified.
     de:
       title: 'Klassifikation: Gemeingut vs. Privateigentum'
       whyItMatters: >-
@@ -5245,6 +6032,28 @@
         - examples
         - e.g. Informal Participation
         - examples
+      question: Which kinds of work do we count as contribution — including the work nobody sees?
+      prompts:
+        - >-
+          Which kinds of contribution do we recognise — for example practical work, care, teaching,
+          coordination, upkeep?
+        - >-
+          Which work keeps us running but is rarely noticed or thanked — hosting, listening,
+          cleaning up after meetings, moderating, chasing paperwork?
+        - >-
+          For each kind of work we depend on: is it recognised, shared out as a duty, or paid — so
+          that nothing essential relies on someone quietly doing it for free?
+        - >-
+          How would we notice that work we depend on is missing from the list? (How contributions
+          are recorded is its own question.)
+      examples:
+        - >-
+          We recognise six kinds of contribution: writing and research, building and maintaining our
+          tools, coordination and facilitation, welcoming and mentoring new members, moderation and
+          care for people in conflict or distress, and upkeep of shared documents and accounts.
+          Moderation and care rotate between members every three months, so no one carries them
+          indefinitely. At each quarterly review, any work we relied on that is not on this list is
+          either added as a category or turned into a rotating duty.
     de:
       title: Anerkannte Beitragskategorien
       whyItMatters: >-
@@ -5382,6 +6191,22 @@
           recognition affects internal-unit balance only; does not grant additional governance
           rights beyond the membership state.
         - window and process for contesting a record.
+      question: >-
+        How do we keep track of and recognise contributions — and what, if anything, does
+        recognition unlock?
+      prompts:
+        - How is a contribution recorded or acknowledged, and by whom?
+        - Who may confirm a record? (Contesting one is its own question.)
+        - Does recognition give any benefits, responsibilities or access to shared resources?
+        - >-
+          How do we make sure recognition never gives extra say in decisions beyond what the
+          Decision Matrix grants?
+      examples:
+        - >-
+          Members log their own contributions on the shared sheet within a week, and the task lead
+          or any other member confirms them. Confirmed contributions count towards the monthly
+          participation minimum and give priority when booking the guest room. They never give extra
+          votes, a veto or a stronger voice in any decision.
     de:
       title: Mechanismus zur Beitragsanerkennung
       whyItMatters: >-
@@ -5499,6 +6324,35 @@
         - ...
         - ...
         - ...
+      question: If we use our own credits or hours, who issues them and what can they be used for?
+      prompts:
+        - >-
+          Do we use any units of our own (hours, credits, points)? If not, say so — and what would
+          we need to agree before introducing one?
+        - 'For each unit: what is it for, who issues it, for what, and how much?'
+        - Can a unit be given, traded or sold to someone else — and if so, between whom?
+        - >-
+          Does a unit expire, lose value over time, or stop at a maximum? (Whether that is enough to
+          stop anyone steering everything is its own question.)
+        - >-
+          How do we prevent fake or mistaken entries, how is a wrong balance corrected, and where
+          does someone go if they disagree with theirs?
+        - >-
+          Who can see each person's balance and transactions — everyone, only the holder, or a named
+          role?
+      examples:
+        - >-
+          We use one unit, the work hour. The work-hour coordinator logs one hour for each hour of
+          shared work signed off by that task's lead; hours cannot be given, traded or sold. Hours
+          expire 24 months after they are earned, and no one may hold more than 200. Each member
+          sees their own balance and all transactions without names; the coordinator corrects
+          mistakes within a week, and anyone who disagrees with their balance uses our process for
+          disputed economic records.
+        - >-
+          We do not use any internal credits, hours or points. Before introducing one, full members
+          must agree what it is for, how it is issued, whether it can be transferred, when it
+          expires, how mistakes are corrected and who can see balances, as an amendment to this
+          protocol.
     de:
       title: Interne Einheiten
       whyItMatters: >-
@@ -5649,6 +6503,26 @@
         - >-
           Internal units cannot be converted into governance authority or used to bypass the
           Decision Matrix.
+      question: What stops one person accumulating enough to steer everything — and how would we notice?
+      prompts:
+        - >-
+          What limits how much of any unit, resource or claim on the community one person can build
+          up — a cap, expiry, no transfers, redistribution, or a time limit?
+        - >-
+          How do we make sure no one turns money, credits, loans or favours into extra say — by
+          buying influence, making others depend on them, or going around the Decision Matrix?
+        - >-
+          What signs would tell us influence is gathering in a few hands, who checks them, and how
+          often?
+        - When a sign shows up, who may tighten the limits, and through which decision?
+      examples:
+        - >-
+          No member may hold more than 100 credits, and unused credits expire after 18 months.
+          Credits, loans to the community and donations never give anyone extra votes, a veto, or
+          any say beyond what the Decision Matrix grants. Twice a year the finance steward reports
+          the largest single credit balance and the largest amount the community owes any one
+          member. If any member is at the cap or is owed more than €5,000, the next members' meeting
+          reviews these limits and may tighten them by vote.
     de:
       title: Akkumulationsbeschränkungen
       whyItMatters: >-
@@ -5749,6 +6623,24 @@
         - >-
           Rule: any new external income interface must be declared and approved via a Strategic
           decision before funds are received or commitments made.
+      question: How does money from outside reach us, and on what terms?
+      prompts:
+        - >-
+          Through which channels does money from outside reach us today, and which might we open in
+          future — or refuse outright?
+        - >-
+          What must be decided before a new channel opens, and may anyone accept money or promise
+          anything before that decision?
+        - >-
+          What conditions attached to outside money — reports, branding, promises about how we work
+          — must members see before saying yes?
+      examples:
+        - >-
+          Money from outside reaches us through course fees and one foundation grant; in future we
+          may consider renting out rooms or selling produce, but we will not take money from
+          advertisers. No new income channel may be opened, and no one may accept funds or promise
+          anything to a funder or customer, until full members approve it by a Strategic decision
+          after seeing its full terms, including any reporting duties or conditions on how we work.
     de:
       title: Externe Einkommensschnittstellen
       whyItMatters: >-
@@ -5842,6 +6734,21 @@
         - >-
           Window for contesting a contribution record or balance; named resolver; appeal path to
           Full Members via the governance process.
+      question: When someone says the record of their contribution is wrong, how is that settled?
+      prompts:
+        - How long after a contribution record or balance is entered can someone contest it?
+        - Who settles a disputed record — and who steps in if that person is involved?
+        - 'How is a correction made: is the original kept and a new entry added, and who is told?'
+        - >-
+          If someone disagrees with the outcome, where can they appeal, and when is the matter
+          closed?
+      examples:
+        - >-
+          Any member can contest a contribution record or balance within 60 days of it being entered
+          by writing to the records steward. The records steward, or another steward if the records
+          steward is involved, decides within 21 days and writes down the reasons. Corrections are
+          added as new entries and the original is never deleted. Either side may appeal to the next
+          full members' meeting, whose decision is final.
     de:
       title: Streitbeilegung für wirtschaftliche Aufzeichnungen
       whyItMatters: >-
@@ -5966,6 +6873,26 @@
           etc. State that any new treasury account must be declared and approved via a Strategic
           decision before funds are received into it. State that personal funds covering operational
           costs are not treasury and carry no community repayment claim.
+      question: What is held in common — and where does the shared purse end and a personal one begin?
+      prompts:
+        - Which accounts, wallets or cash boxes are community money — named one by one?
+        - >-
+          How is a new treasury account opened, and can money be paid into it before that is
+          decided?
+        - >-
+          When someone pays a community cost out of their own pocket, does that make it community
+          money — and does the community then owe them?
+        - >-
+          Where shared money and private resources meet — a member's land we use, or shared money
+          spent near someone's home: which rule applies?
+      examples:
+        - >-
+          Our treasury is exactly two accounts: the co-op's current account and its savings account,
+          both in the co-op's name. Any new treasury account must be approved by a Strategic
+          decision of full members before money is paid into it. Money a member spends from their
+          own pocket on shared costs is not treasury and creates no debt, unless the spend was
+          approved in advance under our spending rules, in which case it is repaid from the current
+          account. Treasury money is never spent on repairs inside private flats.
     de:
       title: Geltungsbereich der Kasse
       whyItMatters: >-
@@ -6067,6 +6994,21 @@
         - >-
           List current income sources, or state that there are none. Reference the External Income
           Interfaces section in the Internal Economy Protocol.
+      question: Where does our money come from, and what are we relying on?
+      prompts:
+        - What money comes in today — from whom, how often, and for what? If nothing yet, say so.
+        - What does each source expect from us in return, and when does it end?
+        - Which source would hurt most if it stopped?
+        - >-
+          Who keeps this list up to date when a source ends or its terms change? (Opening a new
+          source is its own question.)
+      examples:
+        - >-
+          Our income comes from three sources: monthly member contributions, fees from the two open
+          courses we run each summer, and a three-year grant from a regional foundation that ends
+          next spring and requires a yearly activity report. We have no loans, sponsors or
+          investors. Losing the grant would hurt most, so we plan each year's budget without it. The
+          finance steward updates this list whenever a source ends or its terms change.
     de:
       title: Einnahmequellen
       whyItMatters: >-
@@ -6165,6 +7107,28 @@
         - Constitutional
         - Full Members
         - Supermajority + ratification
+      question: >-
+        Who can spend how much without asking, who approves the rest, and how is every spend
+        recorded?
+      prompts:
+        - >-
+          For each spending tier: up to what amount or for which kind of cost, which type of
+          decision, who approves it, and how?
+        - >-
+          Which commitments sit in their own tier whatever the amount — multi-year contracts, loans,
+          anything that binds future members?
+        - What happens when a spend is urgent, or ends up costing more than was approved?
+        - >-
+          What is recorded for every spend — amount, purpose, who approved it, which decision it
+          rests on — and where?
+      examples:
+        - >-
+          The finance steward may approve any single spend up to €300 within the agreed yearly
+          budget. Anything above €300, or outside the budget, needs a Strategic decision by vote of
+          full members. Multi-year contracts, loans and other long-term obligations need a
+          Constitutional decision: two-thirds of full members, confirmed at a second meeting 14 days
+          later. A spend that will cost more than approved goes to the next tier first. Every spend
+          is logged within a week with amount, purpose, approver and a link to the decision.
     de:
       title: Ausgabenbefugnis
       whyItMatters: >-
@@ -6297,6 +7261,29 @@
         - >-
           All spending decisions reference the linked governance record (vote ID or delegated
           decision log).
+      question: Who can see the accounts, how often, and what may be held back?
+      prompts:
+        - >-
+          For each treasury account: who can see the balance and every transaction, and is that live
+          or reported later?
+        - >-
+          Where an account cannot be shared directly, who reports on it, how often, and in what
+          detail?
+        - How do members see what we owe and what we have promised, not only what we hold?
+        - >-
+          What may be kept private — for example a payment to someone in hardship: who decides, for
+          how long, and why?
+        - >-
+          Even where something is kept private, how can members still check that the rules were
+          followed?
+      examples:
+        - >-
+          All full members have read-only access to the community bank account and see every
+          transaction as it happens. The treasurer posts a monthly summary of balances, money in and
+          out, debts and signed commitments to the members' forum within ten days of the month's
+          end. The one exception is support paid to a member in hardship: the name stays hidden for
+          up to 12 months, but the amount, date and approving decision are always shown, and two
+          members chosen by lot each year may check the full details.
     de:
       title: Transparenz und Berichtswesen
       whyItMatters: >-
@@ -6413,6 +7400,28 @@
         - recurring costs / contracts allowed only via Strategic vote.
         - reserve target, or state that one is not yet defined.
         - loans, investments, guarantees only via Strategic vote.
+      question: How much may we owe, and how much do we keep aside for a bad year?
+      prompts:
+        - >-
+          May we borrow money at all — and if so, how much, from whom, and only through which
+          decision?
+        - >-
+          Which recurring costs or long contracts (leases, subscriptions, paid staff) need a
+          decision before anyone signs?
+        - >-
+          Do we keep money aside for a bad year — how much, what may it be used for, and who may
+          draw on it? If we have no target yet, say so.
+        - >-
+          May anyone take out loans, give guarantees or make investments on our behalf outside the
+          treasury accounts?
+      examples:
+        - >-
+          We do not borrow, give guarantees or make investments unless full members approve it by a
+          Strategic vote, and total debt may never exceed six months of our usual income. Any
+          contract or recurring cost lasting longer than a year also needs a Strategic vote. We aim
+          to keep three months of running costs in a separate reserve account; it may only be used
+          for emergency repairs or lost income, and every withdrawal is reported at the next
+          members' meeting.
     de:
       title: Rücklagen-, Risiko- und Schuldenbeschränkungen
       whyItMatters: >-
@@ -6503,6 +7512,27 @@
           Members with a direct financial interest in a spending decision must declare it and
           abstain.
         - Treasury role holders may not authorize unilateral spending beyond the delegated limit.
+      question: What does someone do when a decision about money would benefit them personally?
+      prompts:
+        - >-
+          Can anyone approve a spend they asked for themselves — and if not, who approves it
+          instead?
+        - >-
+          What counts as a personal interest — a relative's business, a friend who supplies us, a
+          paid role?
+        - >-
+          When someone would gain from a payment or purchase, when do they say so, and do they step
+          out of the discussion and the decision?
+        - >-
+          Where are declarations recorded, and what happens to a decision if an interest was not
+          declared?
+      examples:
+        - >-
+          No one may approve a spending request they made themselves; it goes to another steward
+          instead. Any member who, or whose partner, family or business, would gain from a spending
+          or purchasing decision must say so before discussion starts, then leaves the discussion
+          and does not vote. Declarations are noted in the minutes. If an undeclared interest comes
+          to light later, the decision is reviewed at the next members' meeting.
     de:
       title: Interessenkonfliktregeln
       whyItMatters: >-
@@ -6639,6 +7669,29 @@
         - A member has breached a Membership Agreement obligation.
         - A member has violated a Layer 0 identity constraint or invariant.
         - A referral is made from the Conflict Resolution Ladder (Step 3 or above).
+      question: What has to happen before the accountability process starts, and who can start it?
+      prompts:
+        - >-
+          Which conditions start an accountability check — for example a long gap in contributions,
+          a broken Membership Agreement obligation, or acting against one of our founding
+          commitments?
+        - >-
+          For each trigger: how can anyone check that it has happened, from our records or a direct
+          referral?
+        - >-
+          Who may start the process, and how — and can a case be referred on from the Conflict
+          Resolution Ladder?
+        - >-
+          What is not a trigger — how do we stop the process being started because someone is
+          disliked?
+      examples:
+        - >-
+          An accountability check starts only when one of these is on record: a member has made no
+          recorded contribution for four consecutive months; a member has missed a Membership
+          Agreement obligation and not put it right within 30 days of a reminder; a member has acted
+          against one of our founding commitments; or a case is referred from step 3 or higher of
+          the Conflict Resolution Ladder. Any member may make the referral, in writing, to the
+          Accountability Coordinator. Disapproval of someone is not a trigger.
     de:
       title: Auslöser
       whyItMatters: >-
@@ -6742,6 +7795,32 @@
         - who contacts the member; response window; outcome paths.
         - written notice; response window; resolution / escalation paths.
         - direct escalation to the appropriate Conflict Resolution Ladder step.
+      question: Who looks into what happened, and how do they do it without taking sides?
+      prompts:
+        - >-
+          Which pathways do we use — soft (such as inactivity), medium (a broken obligation) and
+          serious (a breach of our founding commitments or a safety concern) — and what puts a case
+          in each?
+        - >-
+          For each pathway: who makes contact or opens the review, and how long does each stage
+          take?
+        - >-
+          For each pathway: what are the possible outcomes, and where does the case go if it is not
+          resolved?
+        - >-
+          Who may not look into a case — for example someone involved, or close to either side — and
+          who steps in instead?
+        - >-
+          How is what was found written down before anyone decides what follows? (Which consequences
+          can follow is its own question.)
+      examples:
+        - >-
+          Soft: if a member's contributions lapse, someone from the care team checks in within two
+          weeks. Medium: a broken Membership Agreement obligation gets a written notice from the
+          Accountability Coordinator; if it is not resolved within 30 days, it goes to a review
+          panel of three members. Serious: a breach of a founding commitment or a credible safety
+          concern goes straight to step 5 of the Conflict Resolution Ladder. Nobody involved in the
+          matter, or sharing a household with either side, may sit on the panel.
     de:
       title: Untersuchung und Überprüfung
       whyItMatters: >-
@@ -6852,6 +7931,23 @@
         - member is notified in writing of the concern before any review or sanction begins.
         - minimum response window — e.g. 30 days.
         - any decision may be appealed via the governance process (Strategic vote).
+      question: What is someone accused of something entitled to, before anything is decided?
+      prompts:
+        - >-
+          How and when is someone told, in writing, what the concern is — before any review or
+          consequence begins?
+        - What is the shortest time they will have to respond, and can they ask for more?
+        - >-
+          May they see what the concern is based on, bring a support person, and choose to answer in
+          writing or in person?
+        - Where can any decision be appealed — and can the people who made it also hear the appeal?
+      examples:
+        - >-
+          Before any review begins, the member receives a written notice stating the concern and the
+          records it rests on. They have at least 30 days to respond, in writing or at a meeting,
+          and may bring a support person of their choice. Any decision may be appealed to the Full
+          Members within 14 days and is settled by a Strategic vote; nobody who made the original
+          decision may chair the appeal.
     de:
       title: Verfahrensgarantien
       whyItMatters: >-
@@ -6945,6 +8041,23 @@
         - >-
           Retaliation against a member for participating in any part of this process is itself an
           accountability trigger.
+      question: How do we protect someone who raises a concern from paying for it later?
+      prompts:
+        - >-
+          Who is protected — someone who raises a concern, asks for mediation, gives information or
+          evidence, or takes part in a review or appeal?
+        - >-
+          What counts as retaliation — including quiet forms such as losing a role, being given
+          worse work, or being left out socially?
+        - What happens when someone retaliates — does it start an accountability check of its own?
+        - How long does the protection last after the process has closed?
+      examples:
+        - >-
+          Nobody may be treated worse for raising a concern, asking for mediation, giving
+          information or evidence, or taking part in a review or appeal. Treated worse includes
+          being removed from a role, losing access to shared resources, or being left out of
+          community events. Retaliation is itself an accountability trigger, and this protection
+          lasts for two years after the process closes.
     de:
       title: Schutz vor Vergeltung
       whyItMatters: >-
@@ -7048,6 +8161,26 @@
         - serious or unresolved breach, or Full Member decision
         - Full Members
         - yes — re-vote
+      question: >-
+        What consequences can follow, how are they kept proportionate and open to appeal — and how
+        does repair come before punishment?
+      prompts:
+        - >-
+          Which consequences can follow a breach — and which repair steps come before any
+          punishment?
+        - 'For each consequence: what has to be shown first, and what evidence is enough?'
+        - 'For each consequence: who may apply it, how long does it last, and how is it appealed?'
+        - >-
+          How do we make sure nobody is punished informally — by exclusion, silence or social
+          pressure?
+      examples:
+        - >-
+          Our first response is always repair: a conversation, an apology or making good the damage,
+          agreed with the people affected. If that fails, the accountability panel may give a
+          written warning, then restrict access to a shared space or role for up to three months;
+          only the full members may decide a forced exit. Each step needs a written finding, can be
+          appealed within 14 days, and ends on a stated date. Nobody is shut out informally. Only an
+          immediate safety risk lets us skip straight to a restriction.
     de:
       title: Sanktions- und Wiedergutmachungsoptionen
       whyItMatters: >-
@@ -7196,6 +8329,26 @@
         - re-application via Onboarding Protocol; no automatic restoration.
         - minimum re-application block; standard admission process applies.
         - rights restored upon confirmation of resolution within review window.
+      question: How does someone get their standing back once a sanction has run its course?
+      prompts:
+        - >-
+          For each kind of sanction: what is the path back to full rights, and who confirms it has
+          been completed?
+        - >-
+          After a temporary restriction: what has to be shown, and how soon are rights restored once
+          it has been?
+        - 'After someone left of their own accord: can they come back, and through which process?'
+        - >-
+          After a forced exit: how long must someone wait before applying again, and which admission
+          process applies then?
+        - Once the conditions are met, how do we stop someone being kept out informally?
+      examples:
+        - >-
+          After a temporary restriction, rights return in full once the Accountability Coordinator
+          confirms the agreed repair steps are done; the Coordinator must check within 14 days of
+          the member asking. Someone who left voluntarily may re-apply at any time through the
+          Onboarding Protocol, with no automatic return. After a forced exit, they may re-apply
+          after two years, and the normal admission process applies.
     de:
       title: Bedingungen für die Wiederherstellung von Rechten
       whyItMatters: >-
@@ -7287,6 +8440,30 @@
           All forced exits and temporary access restrictions follow the Exit & Separation Protocol
           (Layer 1). A temporary access restriction does not constitute exit and does not trigger
           the re-application block unless a forced exit is subsequently voted by Full Members.
+      question: >-
+        When accountability leads to someone being suspended or removed, how do we make sure due
+        process came first and the exit protocol's rules apply?
+      prompts:
+        - >-
+          When an accountability process ends in someone being removed, do we follow the Exit &
+          Separation Protocol — with no separate way out here?
+        - >-
+          Is a temporary suspension or access restriction an exit? If not, what does it leave
+          untouched?
+        - >-
+          Which due-process steps must be complete before anyone is suspended or removed, apart from
+          immediate safety measures?
+        - >-
+          How do the two processes share one record, so an exit is never written down twice or in
+          different ways? (How a forced exit is decided is the exit protocol's question.)
+      examples:
+        - >-
+          Every forced exit and every temporary access restriction follows the Exit & Separation
+          Protocol; this protocol creates no separate way out. A temporary restriction is not an
+          exit: the member keeps their membership and is not subject to the re-application block
+          unless the Full Members later vote for a forced exit. Apart from immediate safety
+          measures, no one is suspended or removed until they have had written notice, the full
+          response window and the chance to appeal.
     de:
       title: Abstimmung mit Schicht 1
       whyItMatters: >-
@@ -7445,6 +8622,28 @@
         - bypasses earlier steps
         - short window
         - from intake; immediate action permitted
+      question: >-
+        What kinds of conflict do we have names for, so nobody invents one mid-argument — and which
+        are safety-critical?
+      prompts:
+        - >-
+          Which kinds of conflict do we name — at least interpersonal, role-based, structural and
+          ethical?
+        - Which situations are safety-critical, and what changes for them?
+        - >-
+          For each kind: how do we recognise it, how quickly must we respond, and which path does it
+          take?
+        - 'For each kind: what gets written down? (Who may read it is its own question.)'
+        - What happens when a conflict is put in the wrong kind, or nobody classifies it?
+      examples:
+        - >-
+          We name five kinds of conflict: between people, about a role, about our rules or
+          structures, about a breach of our agreements, and safety-critical. A conflict is
+          safety-critical whenever someone credibly fears for their safety or is being coerced; it
+          skips the early steps and our safety measures apply at once. Everyday conflicts get a
+          reply within 14 days and start with a private conversation; the others start with the
+          conflict coordinator, who records the kind and the reason. A conflict nobody has
+          classified within a week is reviewed as a process failure.
     de:
       title: Konfliktklassifizierung
       whyItMatters: >-
@@ -7639,6 +8838,34 @@
           minimum-necessary disclosure to Full Members; deliberation period; vote mechanism and
           threshold.
         - coordinated with the Exit & Separation Protocol; minimum re-application block.
+      question: What are the steps from a quiet word to a formal process, and in what order?
+      prompts:
+        - >-
+          For each step, from a private conversation to a governance decision: who is involved, what
+          happens, and how long does it take?
+        - >-
+          How is a conflict raised, written down and acknowledged — and how are the other people
+          involved told and invited to take part?
+        - >-
+          When does a conflict move up to the next step, and can either side ask for that
+          themselves?
+        - >-
+          When nothing else resolves it, how does it reach a decision through our Decision Matrix —
+          with no shortcut around it?
+        - >-
+          How do we make sure anyone can use the ladder, whatever their standing, seniority or
+          friendships?
+        - >-
+          What do we do when a conflict is being ignored or quietly buried? (Non-response and
+          deadlock, choosing a facilitator, and who may read the records are their own questions.)
+      examples:
+        - >-
+          Step 1: the people involved talk privately within two weeks. Step 2: either may ask for a
+          facilitator, who hosts a conversation within three weeks. Step 3: either may open a
+          written case with the Conflict Coordinator, who logs and acknowledges it within 7 days and
+          invites the other side. Step 4: a panel of three members hears both sides and recommends
+          within 30 days. Step 5: the Full Members decide under the Decision Matrix. Any member may
+          start or move up the ladder; leaving a known conflict unaddressed is a breach.
     de:
       title: Stufen der Lösungsleiter
       whyItMatters: >-
@@ -7783,6 +9010,27 @@
         - >-
           How procedural objections are raised; where they are logged; trigger for review of this
           artifact under the Change Protocol.
+      question: What happens when somebody will not take part, walks out, or we simply get stuck?
+      prompts:
+        - >-
+          If someone does not respond: how many reminders do they get, over how long, before silence
+          counts as non-resolution — and what happens next?
+        - >-
+          If someone withdraws partway through: how is the other side told, and may they close the
+          matter or ask for a written summary?
+        - When someone withdraws, what happens to any accountability matter that is still open?
+        - When we are stuck, how is the deadlock written down and taken to a governance decision?
+        - >-
+          How does someone object that the process itself went wrong, where is that logged, and when
+          does it lead to a review of this ladder?
+      examples:
+        - >-
+          If someone does not reply within 14 days, the facilitator sends a second notice with 14
+          more days; continued silence counts as non-resolution and the case moves up a step. If
+          someone withdraws, the other party is told within 7 days and may close the matter or ask
+          for a written summary; any open accountability matter continues. A written-up deadlock
+          goes to the Full Members. Objections to the process go in the conflict log, and three in
+          one year start a review of this ladder.
     de:
       title: Nichtreaktion, Rückzug und Pattsituation
       whyItMatters: >-
@@ -7894,6 +9142,21 @@
         - Rule when the facilitator is a party — selection of a neutral substitute.
         - Right of either party to decline a facilitator with stated conflict of interest.
         - Optional external facilitation by mutual agreement.
+      question: Who facilitates a conflict, and how does either side get them replaced?
+      prompts:
+        - Who facilitates by default — which role in our Role Registry?
+        - >-
+          When the facilitator is involved in the conflict, or close to one side, who chooses a
+          neutral substitute and how?
+        - How can either side decline a facilitator, and what reason do they have to give?
+        - When may we bring in someone from outside, who has to agree, and who pays?
+      examples:
+        - >-
+          The Conflict Steward named in the Role Registry facilitates by default. If they are a
+          party, or share a household with one, each party names one member and those two choose a
+          neutral facilitator together. Either party may decline a facilitator by stating a conflict
+          of interest, and a replacement is found within 10 days. If both parties agree, we invite
+          an external mediator, paid from the shared fund.
     de:
       title: Auswahl und Ersetzung der Moderation
       whyItMatters: >-
@@ -7997,6 +9260,22 @@
         - >-
           Non-disclosure: no participant may share information about the process outside the defined
           participants without written consent of all parties.
+      question: Who is allowed to know what about a conflict, while it runs and afterwards?
+      prompts:
+        - Which steps are fully confidential, and who may see the records during them?
+        - >-
+          When a conflict reaches a governance decision, what is the least the Full Members need to
+          know — and are the people involved told before anything is shared?
+        - Who holds the records, for how long, and how are they destroyed?
+        - What may participants tell people outside the process, and whose consent changes that?
+      examples:
+        - >-
+          Steps 1 to 4 are fully confidential: only the parties and the facilitator may see the
+          notes. If a case reaches the Full Members, they receive only what they need to decide —
+          what the conflict is about, which steps were tried, and the options — and the parties see
+          that summary three days before it is shared. The facilitator keeps the records for three
+          years after the case closes, then deletes them. No participant may discuss the case
+          outside the process without the written consent of all parties.
     de:
       title: Datenschutz und Informationszugangsgrenzen
       whyItMatters: >-
@@ -8135,6 +9414,25 @@
         - >-
           Full Members may temporarily suspend a role holder's delegated authority during review
           without constituting forced exit.
+      question: >-
+        What changes when the people in a conflict do not have equal power — or when someone is not
+        safe?
+      prompts:
+        - >-
+          What extra protection applies when the people in a conflict do not have equal power — for
+          example independent facilitation, or a separate way to raise it?
+        - >-
+          When someone is not safe, what may we do at once, before the process ends — and who
+          decides?
+        - How do we make sure safety comes before participation rights, roles and convenience?
+      examples:
+        - >-
+          When the people in a conflict have unequal power — a role holder and a newer member, say —
+          the less powerful person may raise it with an outside facilitator instead of our conflict
+          steward, and the role holder's authority over them is paused while it runs. If someone
+          credibly reports being unsafe, any two stewards may at once separate the people involved,
+          restrict access to shared spaces or suspend a role for up to 14 days, before the process
+          ends. Safety comes first, even when it costs someone a role or is inconvenient.
     de:
       title: Schutzmassnahmen
       whyItMatters: >-
@@ -8336,6 +9634,32 @@
         - role holder per Decision Matrix
         - what was decided
         - location
+      question: How do we run the meeting where the week's work gets sorted out?
+      prompts:
+        - >-
+          What is this meeting for, and which decisions may it make — and what happens when
+          something bigger than day-to-day work comes up?
+        - Who has to be there, how many make a quorum, and who may join if they wish?
+        - >-
+          How often does it meet, how long may it run, and who facilitates — chosen or rotated how,
+          with what cover if they are away?
+        - What is the fixed agenda, in what order?
+        - >-
+          Who takes notes, in what format, and where and how soon are they published — and how is
+          each decision recorded?
+        - >-
+          Do we have a template like this one for every kind of meeting we hold — operations,
+          governance, coordination, reflection and conflict — and how do we notice when meetings
+          overrun or multiply? (The overall limit on meeting load is its own question.)
+      examples:
+        - >-
+          The Operations meeting reviews active work, clears blockers and makes Operational
+          decisions only; anything Strategic or Constitutional becomes a proposal. All current role
+          holders attend (quorum four); any member may join. It meets weekly for at most 60 minutes,
+          run by a facilitator who rotates monthly. Agenda: check-in, task review, blockers,
+          decisions, actions. Notes go on the shared board within 48 hours, each decision with who
+          made it, the outcome and its start date. If it overruns three weeks running, that goes to
+          the quarterly workload review.
     de:
       title: 'Sitzungstyp: Operativ'
       whyItMatters: >-
@@ -8503,6 +9827,29 @@
         - Strategic / Constitutional
         - vote mechanism + threshold
         - Passed / Rejected / Tabled
+      question: How do we run the meeting where decisions actually get made?
+      prompts:
+        - Who must be invited, must the proposer be present, and who may observe?
+        - When is this meeting held, and how long may it run?
+        - Who facilitates, and how are they chosen?
+        - >-
+          What is the agenda — how long for presenting the proposal, for clarifying questions, for
+          discussion, and for the closing summary?
+        - >-
+          Is anything decided in the room, or does the binding decision happen afterwards so that
+          members who could not attend still take part? (The thresholds themselves are set in the
+          Decision Matrix.)
+        - >-
+          What do the notes record — which proposal, what type of decision, how it will be decided,
+          and the outcome — and where are they published?
+      examples:
+        - >-
+          A Governance meeting is held during the deliberation period of every Strategic or
+          Constitutional proposal. All Full Members are invited, the proposer must attend, and
+          anyone else may observe. It lasts at most 60 minutes: the proposer presents (10 minutes),
+          clarifying questions only (10), open discussion (30), then the facilitator summarises and
+          confirms when voting opens (10). Nothing is decided in the room — the vote runs online for
+          seven days afterwards. Notes link to the proposal and are posted within two days.
     de:
       title: 'Sitzungstyp: Governance'
       whyItMatters: >-
@@ -8646,6 +9993,26 @@
         - duration
         - duration
         - duration
+      question: How do we run the meeting that keeps separate work from drifting apart?
+      prompts:
+        - When do we call this meeting rather than raising things at the regular Operations meeting?
+        - >-
+          Who has to attend — only role holders with active pieces of work that depend on each other
+          — and who else is welcome?
+        - How often does it meet, how long may it run, and who facilitates, with what cover?
+        - What is the agenda — dependencies, handoffs, competing priorities — and in what order?
+        - >-
+          What may it agree, and what happens when a clash of priorities needs a bigger decision
+          than it is allowed to make?
+        - Where are the notes and agreed handoffs recorded, and how soon?
+      examples:
+        - >-
+          Coordination meets online on the first Tuesday of each month for at most 60 minutes, and
+          any two role holders can call one sooner. Only role holders with an active initiative must
+          attend; any member may join. The agenda is dependencies, handoffs, then competing
+          priorities. It may agree Operational changes only — a priority clash that needs a
+          Strategic call is written up as a proposal. Facilitation rotates among attendees, and
+          notes with the agreed handoffs go in the shared channel the same week.
     de:
       title: 'Sitzungstyp: Koordination & Abstimmung'
       whyItMatters: >-
@@ -8766,6 +10133,26 @@
         - duration
         - list or "none"
         - list or "none"
+      question: How do we run the meeting where we look back rather than forward?
+      prompts:
+        - Who is invited, how often do we meet, and how long may it run?
+        - Who facilitates, and how are they chosen?
+        - >-
+          What is the agenda — how do we look back at the period, what worked, what did not — and
+          how do we keep it about patterns rather than blame?
+        - >-
+          What comes out of it — which lessons go into the Learning Log, and which ideas become
+          future proposals?
+        - Can this meeting decide anything itself, or does it only send items on?
+        - What stops it being postponed or dropped whenever we are busy?
+      examples:
+        - >-
+          Every three months all Full Members are invited to a 90-minute Reflection meeting, in
+          person with a call-in link. A facilitator chosen at the previous one runs it: what
+          happened this quarter, what worked, what did not — looking for patterns, not blame — then
+          which lessons go into the Learning Log and which ideas become future proposals. It decides
+          nothing itself. It may be postponed once, never cancelled. The list of outputs, or "none",
+          is published with the notes within a week.
     de:
       title: 'Sitzungstyp: Reflexion & Lernen'
       whyItMatters: >-
@@ -8894,6 +10281,30 @@
         - duration.
         - duration; record per Layer 4 privacy rules.
         - Agreement reached / Escalated to next step / Adjourned
+      question: How do we run a meeting whose subject is a conflict?
+      prompts:
+        - >-
+          Which steps of our conflict process use this meeting format, and when must we not use an
+          ordinary meeting instead?
+        - How long does a session last, and who may extend it?
+        - >-
+          What is said at the start — about consent, confidentiality, protection from retaliation,
+          and anyone's right to pause?
+        - >-
+          What is the agenda — how does each party get to speak uninterrupted and for equal time,
+          and what follows?
+        - >-
+          How can a session end — agreement, moving to the next step, or adjourning — and how is
+          that outcome noted? (Who facilitates and who may see the record are set in the conflict
+          protocol.)
+      examples:
+        - >-
+          This format is used only for facilitated sessions at steps 2 to 4 of our conflict ladder.
+          A session runs up to 90 minutes; the Facilitator may extend it once by 30 minutes if both
+          parties agree. It opens with the ground rules: taking part is voluntary, what is said
+          stays in the room, nobody may be penalised for raising the conflict, and anyone may call a
+          pause. Each party then speaks uninterrupted for equal time, followed by exploring options
+          and agreeing next steps. It ends as agreement reached, escalated, or adjourned.
     de:
       title: 'Sitzungstyp: Konfliktbearbeitung'
       whyItMatters: >-
@@ -9060,6 +10471,32 @@
         - Platform access review
         - infrastructure steward
         - review cadence; access revocation for exited members
+      question: Which things have to keep happening every week — and are they written down anywhere?
+      prompts:
+        - >-
+          Which processes have to keep happening for the community to work — onboarding, exit,
+          publishing proposals, recording contributions, running meetings, managing money, reviewing
+          platform access, and anything else?
+        - 'For each process: which role owns it, and what does it involve in two or three sentences?'
+        - >-
+          For each process: where are the steps written down, so someone new could carry it out
+          without asking the person who usually does it? (Where our documents live in general is its
+          own question.)
+        - >-
+          Which of these still depends on one person's memory or goodwill — and who will write it
+          up, by when?
+        - >-
+          How do we keep each written process up to date when the way we actually do it changes?
+          (Handoffs between roles are their own question.)
+      examples:
+        - >-
+          Our core processes are member onboarding and member exit (Membership Admin, following
+          those protocols), proposal publication (Governance Secretary), contribution recording
+          (Contribution Steward), the weekly meeting (rotating facilitator: agenda, notes, action
+          list), treasury management (Finance Steward) and platform access review (Infrastructure
+          Steward, monthly, removing exited members). Each has a one-page checklist in the shared
+          handbook that a new role holder can follow without help, and the owner updates it within a
+          week of any change in practice.
     de:
       title: Zentrale Betriebsprozesse
       whyItMatters: >-
@@ -9222,6 +10659,25 @@
         - >-
           Maximum duration of any temporary responsibility before it must be formally assigned or
           terminated — e.g. 90 days.
+      question: How do we stop a temporary favour becoming somebody's permanent unpaid job?
+      prompts:
+        - >-
+          When someone takes on a temporary task, how is its end set — a date, or a clear condition
+          that marks it done?
+        - Where is it recorded as temporary at the moment it is handed out, and by whom?
+        - >-
+          What is the longest a temporary responsibility may run, extensions included, before it
+          must become a formal role or stop?
+        - >-
+          Who checks on it before the end date, and how is it either ended or turned into a proper
+          role? (Defining the new role is a Role Registry question.)
+      examples:
+        - >-
+          Every temporary task is given with an end date or a clear "done when" condition and logged
+          as temporary on the task board by whoever assigns it. A week before it ends, the assigner
+          and the person doing it check in: the task either ends, or it is proposed as a new role
+          for the Role Registry. No temporary responsibility may run longer than 90 days in total,
+          extensions included.
     de:
       title: Temporäre und Ad-hoc-Verantwortlichkeiten
       whyItMatters: >-
@@ -9327,6 +10783,27 @@
         - role
         - role
         - ...
+      question: Where does one role's work end and the next one's begin?
+      prompts:
+        - Which roles regularly pass work to each other?
+        - >-
+          For each handoff: what is handed over, in which direction, and how does the receiving role
+          know it has arrived?
+        - >-
+          At what point does the work stop being the first role's responsibility and become the next
+          one's?
+        - >-
+          Where does work pass between a role and a meeting — for example, a decision that a role
+          must then carry out?
+        - When a handoff gets dropped, who notices and who sorts it out?
+      examples:
+        - >-
+          Membership Admin to Infrastructure Steward: when a new member's trial starts, the admin
+          posts their details in the access channel and the steward sets up accounts within three
+          days; on exit the same route removes them. Finance Steward to Contribution Steward: at
+          each month-end the finance steward shares amounts paid in so contribution records can be
+          reconciled. Governance meeting to role holders: each adopted decision is assigned to a
+          named role in the notes, and that role confirms it has picked it up.
     de:
       title: Rollen- und Zuständigkeitsschnittstellen
       whyItMatters: >-
@@ -9426,6 +10903,34 @@
           how persistent overload, burnout risk, chronic non-participation, or dependency on
           over-functioning individuals is detected, and how it is routed into the Layer 4 review or
           repair process.
+      question: >-
+        How much time, meeting and care can we ask of one person — and what happens when someone is
+        overloaded?
+      prompts:
+        - >-
+          How much meeting time can we ask of one person — how often, how long, and what counts as
+          an extra meeting?
+        - >-
+          How many roles or hours a week may one person carry — counting unseen work like hosting,
+          cleaning up or emotional support?
+        - >-
+          What reply times do we expect — for everyday messages, urgent operational matters and
+          safety issues — and when is nobody expected to answer?
+        - >-
+          When someone says they are overloaded, how is their work covered, handed on or shared out
+          — and how quickly?
+        - >-
+          What signs tell us there is a pattern — lasting overload, burnout, members going quiet, or
+          everything resting on a few people — and which review or repair process does that start?
+        - How often do we review these limits, and how are they changed?
+      examples:
+        - >-
+          Recurring meetings take up at most four hours a month per person; an extra meeting needs
+          72 hours' notice. Nobody holds more than two roles or about eight hours a week, care and
+          hosting work included. Messages get a reply within three days, urgent operational ones
+          within a day, safety issues at once. Anyone can say they are overloaded, and their tasks
+          are reshared within two weeks; overload flagged twice in a quarter goes to our
+          review-and-repair process. These limits are reviewed yearly and changed by proposal.
     de:
       title: Belastungsgrenzen
       whyItMatters: >-
@@ -9537,6 +11042,26 @@
           reference handover requirements per role in the Role Registry; handover must be completed
           before a role is vacated.
         - quarterly; ad hoc on role change.
+      question: If any one of us disappeared for a month, what would stop working?
+      prompts:
+        - >-
+          Honestly, who or what is a single point of failure today — a person, account, key or skill
+          that only one of us has?
+        - 'For each one: what is our plan to share it, and by when?'
+        - >-
+          For each core role and process: is the procedure written down, and what must be handed
+          over before the holder leaves?
+        - Who backs up each core role — and where is a backup not yet possible?
+        - >-
+          How often do we review this, and what else triggers a review, such as a role changing
+          hands?
+      examples:
+        - >-
+          Today only one member can access the bank account and only one understands the water
+          system. By March a second bank signatory will be added, and the water system will have a
+          written guide and a trained deputy. Every core role has a named backup and a handover
+          checklist that must be completed before the holder steps down. The Infrastructure Steward
+          reviews this list every quarter and whenever a role changes hands.
     de:
       title: Betriebliche Kontinuität
       whyItMatters: >-
@@ -9644,6 +11169,28 @@
         - >-
           No role or individual may be the sole point of access for information required by other
           role holders.
+      question: How do we make sure nobody has to go through one person to find something out?
+      prompts:
+        - >-
+          Which records can every Full Member open directly, without asking anyone — decisions,
+          meeting notes, roles, membership, contributions? (Restricted and private records are their
+          own question.)
+        - How soon after a meeting must notes and decisions be published?
+        - >-
+          When someone asks for information they are entitled to, who must answer, and within how
+          long?
+        - >-
+          How do we make sure no single person or role is the only way in to information others need
+          — passwords, files, contacts?
+        - What happens when someone holds back information a member is entitled to?
+      examples:
+        - >-
+          Every Full Member can read decisions, meeting notes, role assignments, membership status
+          and contribution records in the shared drive without asking anyone. Meeting notes are
+          posted within 48 hours. Any other request for information a member is entitled to is
+          answered within five days. Every shared account and folder has at least two people with
+          access, and withholding information a member is entitled to is treated as an
+          accountability issue under our conflict process.
     de:
       title: Informationsfluss und Anti-Gatekeeping
       whyItMatters: >-
@@ -9777,6 +11324,37 @@
         - location
         - owner
         - cadence
+      question: >-
+        What do we write down, where, and who may read it — and can every decision be traced to who
+        made it and how?
+      prompts:
+        - >-
+          For each kind of record — our governance documents, member registry, meeting notes,
+          proposals, contribution records: where does the official copy live, who keeps it, and how
+          often is it reviewed?
+        - >-
+          What must be written down about decisions, roles, day-to-day operations and shared
+          obligations — what does each record have to contain at minimum?
+        - >-
+          Who may read which records, and which are restricted for privacy — on what grounds, and
+          who may still see them?
+        - When must a new record be published or announced, and to whom?
+        - >-
+          Does every decision record say what type of decision it was and which area it covers, who
+          had the authority, how it was decided and by what threshold, the outcome, and when it
+          takes effect?
+        - >-
+          Where can anyone find, written down, our roles, who may decide what, our meeting types,
+          and our access and privacy rules?
+      examples:
+        - >-
+          Governance documents, the member registry and proposals live in the shared drive, kept by
+          the Secretary and reviewed yearly; meeting notes and contribution records live on the
+          wiki, kept by each facilitator and the Contribution Steward and reviewed quarterly. Every
+          decision record states its type and area, who decided, the mechanism and threshold, the
+          outcome and its start date, and is announced within three days. Members can read
+          everything except health, safeguarding and conflict records, which only the people
+          involved and two named stewards may see.
     de:
       title: Dokumentationsstandorte und Aktualisierungsverfahren
       whyItMatters: >-
@@ -9963,6 +11541,30 @@
         standing" definition you will use for eligibility.
       placeholders:
         - period
+      question: Which ongoing jobs have a name and a person, rather than being everybody's and nobody's?
+      prompts:
+        - >-
+          Which ongoing responsibilities do we have today, and does each belong to a named role — or
+          is some of it still done by whoever happens to notice?
+        - >-
+          What makes a role operational (it may act for the community within set limits) rather than
+          functional (it does work but carries no special say)?
+        - What does ‘in good standing’ mean for anyone who wants to take on a role?
+        - >-
+          What must every role entry contain — purpose, scope and authority, boundaries with other
+          roles, who is eligible, term, and how holders are appointed, reviewed and removed?
+        - >-
+          How do we make sure nobody is held responsible for work that was never assigned to their
+          role?
+        - How often do we check the registry against the work actually being done, and who does it?
+      examples:
+        - >-
+          Every ongoing task belongs to a role in this registry; if it is not listed, nobody can be
+          held to it, and whoever notices proposes a role for it. Operational roles may act for the
+          community within limits set in the Decision Matrix; functional roles do work but carry no
+          extra say. A member is in good standing if they are up to date on agreed contributions and
+          not suspended. Each entry lists purpose, scope and authority, boundaries, eligibility,
+          term, and appointment, review and removal. Stewards check the registry every six months.
     de:
       title: Überblick
       whyItMatters: >-
@@ -10132,6 +11734,29 @@
         - >-
           Add additional operational roles as needed (e.g. Infrastructure Steward, Communications
           Steward).
+      question: For each role that keeps things running, what is it answerable for and who reviews that?
+      prompts:
+        - >-
+          Which operational roles do we need, and for each: what is it for and what is it
+          responsible for?
+        - >-
+          For each role: which decisions may it take without a community vote, and where are its
+          limits (for example, a spending cap)?
+        - 'For each role: who is eligible, how long is the term, and how is the holder chosen?'
+        - 'For each role: how, how often and by whom is the holder''s work reviewed?'
+        - >-
+          For each role: what happens if the work is not getting done or the holder is overloaded —
+          and how can the role be reassigned?
+        - 'For each role: what must be handed over before the holder leaves it?'
+      examples:
+        - >-
+          Finance Steward: keeps the accounts, pays agreed bills and reports the balance monthly.
+          May approve spending up to €500 per item within the budget; anything more needs a
+          proposal. Any Full Member in good standing may stand for a two-year term, chosen by
+          Strategic vote. The Operations meeting reviews the role every six months, and any member
+          can raise a concern. If the holder is overloaded, the deputy takes over payments;
+          persistent failure leads to reassignment by Strategic vote. Before leaving, the holder
+          hands over bank access, open invoices and the reporting checklist.
     de:
       title: Operative Rollen
       whyItMatters: >-
@@ -10305,6 +11930,24 @@
         - may be vacated at any time; conflict-of-interest substitution per Layer 4 if relevant.
         - active commitments to brief in.
         - Add additional functional roles as needed.
+      question: Which roles exist for a function rather than for daily work, and what are they for?
+      prompts:
+        - >-
+          Which functional roles do we have — for example facilitator, note-taker or welcomer — and
+          what is each for?
+        - 'For each role: what does it do, and which other roles does it work with?'
+        - 'For each role: who may take it on, and is saying ‘I''ll do it’ enough?'
+        - >-
+          For each role: what does it not include — which decisions can it not make on the
+          community's behalf?
+        - 'For each role: how does someone step down, and what must they brief the next person on?'
+      examples:
+        - >-
+          Facilitator: prepares and runs meetings so everyone is heard and the agenda finishes on
+          time. Any Full Member may take it on by announcing it in the members' channel; no vote is
+          needed, and it carries no extra say in decisions. A facilitator who is a party to a
+          conflict on the agenda steps aside for that item. They may step down at any time after
+          briefing the next facilitator on upcoming meetings and open actions.
     de:
       title: Funktionale Rollen
       whyItMatters: >-
@@ -10473,6 +12116,32 @@
         - Risks and mitigations.
         - Rollback plan.
         - Proposed effective date.
+      question: >-
+        How does somebody propose adding, changing, pausing or removing one of our rules, roles or
+        structures?
+      prompts:
+        - >-
+          Who may propose adding, changing, pausing or removing a rule, role, document or way of
+          deciding?
+        - Where is a proposal submitted, and who makes sure it reaches everyone?
+        - Which documents and sections does the proposal have to name as affected?
+        - >-
+          Which decision type and which decision path from our Decision Matrix does the proposal
+          have to name — and so who decides it?
+        - What must every proposal say about its purpose, its reach and its known risks?
+        - >-
+          What must it say about its effective date, any transition period, what happens to existing
+          roles, agreements and records, and how it would be undone? (How long it is reviewed, and
+          what happens in an emergency, are their own questions.)
+      examples:
+        - >-
+          Any Full Member may propose adding, changing, pausing or removing a rule, role, document
+          or decision structure by filling in the proposal form in the proposals folder and telling
+          the facilitator. The form names the documents and sections affected, the decision type and
+          path from our Decision Matrix, what the change is meant to do, how far it reaches and its
+          risks, the effective date and any transition period, what happens to existing roles,
+          agreements and records, and how it would be rolled back. Incomplete forms are returned
+          before discussion starts.
     de:
       title: Wie Änderungen vorgeschlagen werden
       whyItMatters: >-
@@ -10591,6 +12260,30 @@
         - >-
           changes to Layer 0 (purpose, scope, invariants) or to the governance system itself (Layer
           2).
+      question: >-
+        How do we tell a small adjustment from a change to who we are — and a permanent change from
+        an experiment?
+      prompts:
+        - >-
+          For each decision type (for example Operational, Strategic, Constitutional): what kinds of
+          change fall under it?
+        - >-
+          Which changes are always Constitutional — such as anything touching our purpose, our
+          scope, the commitments we said would never change, or how we govern ourselves?
+        - >-
+          How do we tell a permanent change from a time-limited experiment, and where is that
+          written on the proposal?
+        - >-
+          When it is unclear which type a proposal is, which type applies, and who settles a
+          disagreement about it?
+      examples:
+        - >-
+          Wording fixes and formatting are Operational: the document keeper makes them and lists
+          them at the next circle. Changes to how members join, decide, share costs or hold roles
+          are Strategic. Anything touching our purpose, our scope, our non-negotiable commitments or
+          the way we govern ourselves is Constitutional and goes through the Constitutional decision
+          process. A proposal with a fixed end date is filed as an experiment; everything else is
+          permanent. If we disagree about the type, the higher one applies.
     de:
       title: Wie Vorschläge klassifiziert werden
       whyItMatters: >-
@@ -10703,6 +12396,27 @@
         - no deliberation required.
         - minimum X-day deliberation; deliberation venue.
         - minimum Y-day deliberation; Z-day ratification period after the vote passes.
+      question: How long does a proposed change have to sit before we are allowed to adopt it?
+      prompts:
+        - >-
+          For each decision type: what is the shortest time a proposal must be open for discussion
+          before it can be decided?
+        - >-
+          Where does the discussion happen, so that members who are away, ill or busy can still read
+          and respond?
+        - >-
+          For Constitutional changes, how long is the ratification period after the vote passes, and
+          what can members do during it?
+        - >-
+          If some small changes need no waiting period, how can members still see them and ask for a
+          proper review afterwards? (Urgent changes are their own question.)
+      examples:
+        - >-
+          Operational changes need no waiting period but are posted in the changes channel for 7
+          days, during which any member can ask for a full review. Strategic proposals stay open for
+          at least 14 days, including one general meeting, before a decision. Constitutional
+          proposals need at least 30 days of discussion and, after the vote passes, a 14-day
+          ratification period in which any Full Member may call for a second vote.
     de:
       title: Prüfung und Beratung
       whyItMatters: >-
@@ -10795,6 +12509,23 @@
         - Affected artifacts updated within X days.
         - Version history entry added.
         - Status fields updated on affected artifacts.
+      question: When a change is adopted, how does everyone find out, and from when does it apply?
+      prompts:
+        - Once a proposal passes, which steps follow, in what order, and within how many days?
+        - >-
+          Who is responsible for updating the affected documents and adding the Version History
+          entry? (What the entry contains is its own question.)
+        - How are all members told about the change, and what does the notice include?
+        - From when does an adopted change apply — and can it ever apply before it is published?
+        - What happens if a change was agreed but never written up — does it count?
+      examples:
+        - >-
+          Within 7 days of a change passing, the secretary updates every affected document, marks
+          the old wording as superseded, adds a Version History entry and moves the proposal to the
+          passed-proposals folder. All members then receive an email with a summary and the
+          effective date. The change applies from the effective date named in the proposal, or from
+          publication if that is later. A change that has not been written up this way is not in
+          force, however clearly people remember agreeing to it.
     de:
       title: Annahme und Veröffentlichung
       whyItMatters: >-
@@ -10887,6 +12618,23 @@
         - Proposal file moved to the rejected-proposals archive within X days.
         - No artifact changes made.
         - Re-vote mechanism applies if new information emerges (per the Decision Matrix, Layer 2).
+      question: What happens to a rejected proposal — can it come back, and how soon?
+      prompts:
+        - >-
+          Where is a rejected proposal kept, together with its decision record, and within how many
+          days is it filed?
+        - Is the proposer told why it was rejected, and by whom?
+        - Can the same proposal come back — after how long, or only with new information?
+        - >-
+          Who decides whether a returning proposal is really new, or the same one under a different
+          name?
+      examples:
+        - >-
+          Within 7 days, a rejected proposal is filed in the rejected-proposals folder with its
+          decision record and a short note of the main reasons given. Nothing in our documents
+          changes. The same proposal may come back after six months, or sooner if the proposer shows
+          new information that was not available during the first discussion; the facilitator
+          decides whether a returning proposal is substantially the same.
     de:
       title: Ablehnung
       whyItMatters: >-
@@ -10984,6 +12732,30 @@
           Records that predate the change are not retroactively altered unless explicitly part of
           the proposal.
         - A transition period may be defined in the proposal itself.
+      question: >-
+        What extra care does a change that is hard to undo need — and what happens to what is
+        already running under the old rule?
+      prompts:
+        - How do we recognise a change as high-impact or hard to undo, and who decides that it is?
+        - >-
+          For those changes, how much longer is the discussion, and what higher threshold do they
+          need?
+        - How are the risks written down and acknowledged before the decision?
+        - How much notice do current role holders and members get before a change affects them?
+        - >-
+          Can a change reduce the rights existing members already have, and if so, what does it
+          take?
+        - >-
+          What happens to records and agreements made under the old rule — are they left as they
+          were?
+      examples:
+        - >-
+          A change counts as high-impact if it affects money, housing or membership rights, or
+          cannot easily be undone. Such changes get twice the normal discussion time, need a
+          two-thirds majority instead of a simple one, and include a written risk section that
+          members acknowledge before voting. Affected role holders are told at least 30 days before
+          the change takes effect. Existing members' rights are never reduced without their consent
+          or a Constitutional vote, and records made under the old rule are not altered.
     de:
       title: Übergang und Migration
       whyItMatters: >-
@@ -11088,6 +12860,25 @@
           Member may trigger a re-vote by submitting a written reasoned objection that was not
           considered during the original deliberation. Rollback uses the same decision type as the
           original.
+      question: How do we check whether a change is working — and revise or undo it if it is not?
+      prompts:
+        - How and when do we check whether an adopted change is working as intended?
+        - >-
+          What signs mean a change needs revising or reversing — such as harm, instability, or
+          decisions gathering in fewer hands?
+        - Who may ask for a change to be revised or reversed, and what do they have to show?
+        - Which decision type and process does a reversal use?
+        - >-
+          When choosing between ways to solve a problem, how do we favour the one that is easier to
+          undo?
+      examples:
+        - >-
+          Every adopted Strategic or Constitutional change is reviewed six months after it takes
+          effect: the stewardship circle reports whether it caused harm, confusion, or put decisions
+          into fewer hands. Any Full Member can ask for a change to be revised or reversed by giving
+          written reasons that were not considered the first time. A reversal uses the same decision
+          type as the original adoption. When two options would solve the same problem, we choose
+          the one that is easier to undo.
     de:
       title: Rücknahme
       whyItMatters: >-
@@ -11180,6 +12971,27 @@
         - Reported to all Full Members within X hours.
         - Reviewed at the next community meeting.
         - Ratified via the appropriate decision type within Y days, or automatically rolled back.
+      question: What may we decide in a hurry, who may do it, and when does it expire?
+      prompts:
+        - >-
+          What situations count as an emergency — and what makes waiting for a normal decision
+          impossible?
+        - Who may make an emergency change, alone or together with someone else?
+        - >-
+          What can never be changed in an emergency, such as our purpose or the commitments we said
+          would never change?
+        - How quickly must an emergency change be reported, and to whom?
+        - >-
+          When is it reviewed, and by when must it be confirmed through the normal decision type —
+          or does it end automatically?
+      examples:
+        - >-
+          The two safety coordinators together may make an emergency change only when immediate
+          action is needed to prevent harm to people or loss of the building, and a members' meeting
+          cannot be held in time. An emergency change can never alter our purpose or core
+          commitments. It is reported to all members within 24 hours, discussed at the next meeting,
+          and lapses after 21 days unless members ratify it through the decision type the change
+          would normally need.
     de:
       title: Notfalländerungen
       whyItMatters: >-
@@ -11312,6 +13124,31 @@
           Safety suspension: if an experiment introduces a credible safety risk, coercion, or
           sustained harm, an emergency suspension may be invoked per Emergency Changes above.
         - Results and learnings are recorded in the Learning Log.
+      question: How do we try something for a while without it quietly becoming permanent?
+      prompts:
+        - Who may propose an experiment, and which decision starts, extends, changes or ends one?
+        - >-
+          What must every experiment state — what changes and what stays the same, how long it runs,
+          its check-in points, and the signs of success or failure?
+        - What triggers a rollback, and how is it carried out?
+        - >-
+          What may an experiment never touch, such as our core commitments or the way decisions are
+          made?
+        - >-
+          How is an experiment labelled in every document it affects, and what fixed end date does
+          it carry?
+        - >-
+          If an experiment causes harm, pressure on people or a safety risk, who may stop it at
+          once, and how is that reviewed afterwards?
+      examples:
+        - >-
+          Any Full Member may propose an experiment of up to 12 months; starting, extending or
+          changing one takes a Strategic decision. The proposal states what changes and what does
+          not, a midpoint check-in, signs of success and failure, and how to roll back. Every
+          affected document is labelled "Experimental until" its end date. Experiments cannot change
+          our core commitments or skip our decision rules, and they end on their date unless renewed
+          by a new decision. Any two stewards may halt one immediately if it causes harm, with a
+          review within 14 days.
     de:
       title: Experimente
       whyItMatters: >-
@@ -11496,6 +13333,28 @@
         - >-
           acknowledge that an emergency suspension may be invoked under the Change Protocol if a
           credible safety risk emerges.
+      question: What does somebody have to write down before we agree to try something?
+      prompts:
+        - >-
+          Which fields does every experiment proposal form contain, and which may never be left
+          blank?
+        - >-
+          How does the proposer show that the signs of success and of early stopping are things we
+          can actually observe?
+        - >-
+          Who checks that a form is complete before it goes to a decision, and what happens to an
+          incomplete one?
+        - >-
+          Where is the filled-in form kept while the experiment runs, so members can check it
+          against what is happening? (What happens when it ends is its own question.)
+      examples:
+        - >-
+          Every experiment uses one form with these fields: name, proposer, what changes and which
+          documents are affected, what stays the same, start and end date, at least one midpoint
+          check-in, observable signs of success, observable signs that mean we stop early, what
+          triggers rollback and how, who may extend or end it, and a line accepting that it may be
+          suspended in an emergency. The facilitator returns any form with an empty field before it
+          is scheduled for a decision.
     de:
       title: Pflichtfelder
       whyItMatters: >-
@@ -11638,6 +13497,19 @@
           Experiments expire automatically at the end of their defined duration unless explicitly
           renewed via a new proposal. Renewal requires a new Strategic vote.
         - Results and learnings are recorded in the Learning Log.
+      question: When does an experiment end by itself, and what does it take to keep it going?
+      prompts:
+        - What happens on the end date if nobody has acted?
+        - What does it take to renew an experiment, and how many times may it be renewed?
+        - How does a successful experiment become a permanent rule?
+        - Who records the results in the Learning Log, and by when?
+      examples:
+        - >-
+          An experiment ends on its end date even if nobody acts, and the previous rule applies
+          again from the next day. Keeping it going takes a new proposal and a new Strategic
+          decision before the end date; it can be renewed once, after which it must be adopted as a
+          permanent change or stopped. Within 30 days of the end, the proposer writes the results
+          and what we learned into the Learning Log.
     de:
       title: Ablauf und Verlängerung
       whyItMatters: >-
@@ -11811,6 +13683,29 @@
         - >-
           the Learning Log is reviewed at the Reflection & Learning meeting; named role prepares a
           brief synthesis of entries since the last review, noting recurring patterns.
+      question: What kind of thing going wrong is worth writing down and learning from?
+      prompts:
+        - >-
+          Which events always require a Learning Log entry — such as a reversed decision, an ended
+          experiment, an escalated conflict, a failure that caused harm, a major change in how we
+          work, or a near-miss?
+        - What does not need an entry?
+        - >-
+          Who owns the log and makes sure entries are written? (What an entry contains is its own
+          question.)
+        - How often is the log reviewed, and who prepares a summary of patterns?
+        - >-
+          When the same kind of failure keeps happening, how do we review the structure behind it
+          instead of blaming a person?
+        - How do we make sure uncomfortable failures are recorded and never deleted or hidden later?
+      examples:
+        - >-
+          An entry is required when a decision is reversed, an experiment ends, a conflict reaches
+          the governance step, a failure causes harm or repeated breakdown, a major change in how we
+          work is adopted, or a near-miss happens. Routine decisions and conflicts settled early do
+          not need one. The learning steward makes sure entries are written and never removed. Each
+          quarter the steward summarises new entries; if the same kind of failure appears twice, we
+          review the structure behind it rather than looking for someone to blame.
     de:
       title: Was ein lernrelevantes Ereignis ausmacht
       whyItMatters: >-
@@ -11986,6 +13881,23 @@
         Use the template below for every entry. Each field forces a different lens on the event; do
         not skip the follow-up owner.
       placeholders: []
+      question: What do we record about something we learned, so it is still useful in three years?
+      prompts:
+        - What happened, and why did it matter?
+        - Which rules, roles or documents were involved?
+        - What signs, evidence or thresholds made us act?
+        - What did we change, try or stop, and what came of it?
+        - Who owns the follow-up, and by when?
+        - >-
+          Who can read entries under our information access rules, and what is left out to protect
+          the people involved?
+      examples:
+        - >-
+          Each entry records the date, what happened and why it mattered, which rules or documents
+          were involved, what signs or thresholds made us act, what we changed, tried or stopped,
+          what came of it, and who follows up by when. Entries have the same access level as meeting
+          minutes, so all members can read them; names of the people involved are left out unless
+          they agree.
     de:
       title: Eintragsformat
       whyItMatters: >-
@@ -12100,6 +14012,25 @@
         Use the entry template below for every adopted change. New entries are prepended above the
         most recent. Do not edit historical entries — corrections are recorded as new entries.
       placeholders: []
+      question: What do we record about each version of our rules, so anybody can trace what changed?
+      prompts:
+        - How are versions numbered, and what makes the number change?
+        - >-
+          What does every entry record — version, adoption date, effective date, the decision it
+          came from, a summary, and any migration notes?
+        - >-
+          How can anyone tell which version is in force today, and which documents count as the
+          official ones?
+        - Where are earlier versions kept, and how can someone see the dates each one applied?
+        - How is a mistake in an old entry corrected without editing it?
+      examples:
+        - >-
+          Each version gets a number like 2.3: the first number goes up for Constitutional changes,
+          the second for all others. Every entry records the version, adoption and effective dates,
+          the decision reference with its mechanism and threshold, a short summary and any migration
+          notes, newest first. The top entry is the version in force, and only documents in the
+          "current" folder count. Earlier versions stay in the archive with the dates they applied,
+          and mistakes are corrected with a new entry, never by editing an old one.
     de:
       title: Eintragsformat
       whyItMatters: >-

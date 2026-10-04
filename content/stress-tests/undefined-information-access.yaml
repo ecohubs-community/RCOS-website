@@ -4,7 +4,7 @@ headingLevel: 3
 id: e4b2c6a9
 title: Undefined Information Access
 summary: When who-can-see-what is decided by who you know, not by any rule.
-parentId: a9e4c65d
+parentId: 6acbe9a7
 order: 4
 severity: medium
 stage:
@@ -15,6 +15,9 @@ layers:
 invariants:
   - '5.4'
   - '5.2'
+tests:
+  - '7.3'
+  - '7.7'
 remediationReady: true
 tags:
   - 'Layer 5: Operations'

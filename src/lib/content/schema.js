@@ -126,6 +126,8 @@ const stressTest = {
 	stage: z.array(z.enum(['forming', 'growth', 'mature'])).optional(),
 	layers: z.array(z.number().int().min(0).max(6)).min(1).optional(),
 	invariants: z.array(z.string().regex(/^\d\.\d$/)).optional(),
+	/** Sections of the standard this test exercises: "Tested by" on those sections. */
+	tests: z.array(z.string().regex(SECTION_REF)).optional(),
 	remediationReady: z.boolean().optional(),
 	tags: z.array(text).optional(),
 	symptoms: z.array(text).optional(),
@@ -152,6 +154,51 @@ export const doc = z.strictObject({
 });
 
 export const document = z.discriminatedUnion('kind', [chapter, glossary, template, index, doc]);
+
+// --- Guidance (content/guidance) ----------------------------------------------------
+
+/**
+ * Plain-language help for one layer. Non-normative: it explains the rules and
+ * never adds to them, so it may not use RFC 2119 keywords in capitals (check.mjs).
+ */
+export const guidance = z.strictObject({
+	kind: z.literal('guidance'),
+	layer: z.number().int().min(0).max(6),
+	/** Per section of the standard: "In short" and common questions. */
+	sections: z.array(
+		z.strictObject({
+			ref: z.string().regex(SECTION_REF),
+			inShort: text,
+			questions: z
+				.array(
+					z.strictObject({
+						id: slug,
+						question: text,
+						answer: text,
+						/** The clause or section that answers it ("See §2.3.4") */
+						ref: z
+							.string()
+							.regex(/^\d+\.\d+(\.\d+)?$/)
+							.optional()
+					})
+				)
+				.optional()
+		})
+	),
+	/**
+	 * Per template section (`<template>.<section>`): the plain-language question
+	 * it answers, what to cover, and example answers (not recommendations).
+	 * Shared with RCOS-compass.
+	 */
+	templates: z.array(
+		z.strictObject({
+			key: z.string().regex(/^[a-z0-9-]+\.[a-z0-9-]+$/),
+			question: text,
+			prompts: z.array(text).optional(),
+			examples: z.array(text).optional()
+		})
+	)
+});
 
 // --- Overlay frame ------------------------------------------------------------------
 

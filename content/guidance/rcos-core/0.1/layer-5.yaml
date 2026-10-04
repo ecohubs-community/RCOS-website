@@ -1,0 +1,241 @@
+# Guidance for Layer 5 of RCOS-Core 0.1. Non-normative: it explains the
+# rules and never adds to them, so no RFC 2119 keywords in capitals here.
+#
+#   sections   per section of the standard: "In short" and common questions
+#   templates  per template section: the plain-language question it answers,
+#              what to cover (prompts) and examples (not recommendations).
+#              Imported from RCOS-compass annotations.yaml (Compass is to read
+#              them from the published standard data instead).
+kind: guidance
+layer: 5
+sections:
+  - ref: '7.1'
+    inShort: Every ongoing responsibility belongs to a named role with a written scope, boundaries and a way to review it, so nothing important rests on unspoken expectations.
+    questions:
+      - id: unassigned-task
+        question: Can someone be blamed for a task nobody gave them?
+        answer: No. Nobody can be held accountable for responsibilities not formally assigned to a role.
+        ref: 7.1.4
+      - id: temporary-task
+        question: What about one-off jobs?
+        answer: They are fine if they are explicitly time-bounded. If they turn into ongoing work, they need a role.
+        ref: 7.1.5
+  - ref: '7.2'
+    inShort: Each kind of meeting has a written purpose, decision scope, participants, cadence and facilitation, and stays within the authority it has.
+    questions:
+      - id: meeting-decides
+        question: Can a meeting decide things outside its declared scope?
+        answer: No. Meetings cannot exceed their decision scope or bypass the authority boundaries of Layer 2.
+        ref: 7.2.3
+      - id: too-many-meetings
+        question: What if there are simply too many meetings?
+        answer: Meeting load has to be bounded, monitored and reviewable, as set out in 7.4.
+        ref: 7.2.4
+  - ref: '7.3'
+    inShort: Write down where records live and who may see them, and make every decision traceable, so the community doesn't depend on whoever happens to remember.
+    questions:
+      - id: trace-decision
+        question: What makes a decision traceable?
+        answer: You can see its type and domain, who decided, by which mechanism and threshold, and what the outcome and effective date were.
+        ref: 7.3.3
+      - id: one-person-knows
+        question: Only one person knows how the water system works. Is that a problem?
+        answer: Yes, for a critical process. It has to be documented so continuity doesn't depend on tacit knowledge.
+        ref: 7.3.4
+  - ref: '7.4'
+    inShort: Time, attention and goodwill run out. Set limits on meetings and roles, and act when people are overloaded.
+    questions:
+      - id: burnout
+        question: What should happen when someone is burning out?
+        answer: Persistent overload or burnout risk triggers review or repair under Layer 4. It is a system issue, not a personal failing.
+        ref: 7.4.4
+      - id: what-limits
+        question: What kind of limits are meant?
+        answer: Limits on meeting load and role load, expectations for response times, and ways to renegotiate or redistribute work.
+        ref: 7.4.2
+  - ref: '7.5'
+    inShort: No single person may be the only one who can keep core operations running.
+    questions:
+      - id: backup
+        question: What do core roles need for continuity?
+        answer: Documented procedures, clear handover, and backup or redundancy where feasible.
+        ref: 7.5.2
+  - ref: '7.6'
+    inShort: Layer 5 lives in three living documents, the Operations Manual, the Role Registry and the Meeting Templates.
+    questions:
+      - id: which-documents
+        question: Which documents does Layer 5 need?
+        answer: An Operations Manual, a Role Registry and Meeting Templates.
+        ref: 7.6.1
+  - ref: '7.7'
+    inShort: The operational hard limits are that every responsibility has a role, nothing critical lives only in someone's head, workload is bounded, and information access is clear.
+    questions:
+      - id: goodwill
+        question: Can we rely on a few committed people who just get things done?
+        answer: Not for critical processes. They cannot rest solely on individual memory, goodwill or informal handover.
+        ref: 7.7.2
+  - ref: '7.8'
+    inShort: Roles, meetings and information access have to be explicit. Tools, schedules and personal work styles are up to you.
+    questions:
+      - id: tools
+        question: Does RCOS tell us which tools to use?
+        answer: No. Tooling choices for documentation and coordination are optional.
+        ref: 7.8.2
+templates:
+  - key: operations-manual.core-operational-processes
+    question: Which things have to keep happening every week — and are they written down anywhere?
+    prompts:
+      - Which processes have to keep happening for the community to work — onboarding, exit, publishing proposals, recording contributions, running meetings, managing money, reviewing platform access, and anything else?
+      - 'For each process: which role owns it, and what does it involve in two or three sentences?'
+      - 'For each process: where are the steps written down, so someone new could carry it out without asking the person who usually does it? (Where our documents live in general is its own question.)'
+      - Which of these still depends on one person's memory or goodwill — and who will write it up, by when?
+      - How do we keep each written process up to date when the way we actually do it changes? (Handoffs between roles are their own question.)
+    examples:
+      - 'Our core processes are member onboarding and member exit (Membership Admin, following those protocols), proposal publication (Governance Secretary), contribution recording (Contribution Steward), the weekly meeting (rotating facilitator: agenda, notes, action list), treasury management (Finance Steward) and platform access review (Infrastructure Steward, monthly, removing exited members). Each has a one-page checklist in the shared handbook that a new role holder can follow without help, and the owner updates it within a week of any change in practice.'
+  - key: operations-manual.temporary-and-ad-hoc-responsibilities
+    question: How do we stop a temporary favour becoming somebody's permanent unpaid job?
+    prompts:
+      - When someone takes on a temporary task, how is its end set — a date, or a clear condition that marks it done?
+      - Where is it recorded as temporary at the moment it is handed out, and by whom?
+      - What is the longest a temporary responsibility may run, extensions included, before it must become a formal role or stop?
+      - Who checks on it before the end date, and how is it either ended or turned into a proper role? (Defining the new role is a Role Registry question.)
+    examples:
+      - 'Every temporary task is given with an end date or a clear "done when" condition and logged as temporary on the task board by whoever assigns it. A week before it ends, the assigner and the person doing it check in: the task either ends, or it is proposed as a new role for the Role Registry. No temporary responsibility may run longer than 90 days in total, extensions included.'
+  - key: operations-manual.role-and-domain-interfaces
+    question: Where does one role's work end and the next one's begin?
+    prompts:
+      - Which roles regularly pass work to each other?
+      - 'For each handoff: what is handed over, in which direction, and how does the receiving role know it has arrived?'
+      - At what point does the work stop being the first role's responsibility and become the next one's?
+      - Where does work pass between a role and a meeting — for example, a decision that a role must then carry out?
+      - When a handoff gets dropped, who notices and who sorts it out?
+    examples:
+      - 'Membership Admin to Infrastructure Steward: when a new member''s trial starts, the admin posts their details in the access channel and the steward sets up accounts within three days; on exit the same route removes them. Finance Steward to Contribution Steward: at each month-end the finance steward shares amounts paid in so contribution records can be reconciled. Governance meeting to role holders: each adopted decision is assigned to a named role in the notes, and that role confirms it has picked it up.'
+  - key: operations-manual.workload-boundaries
+    question: How much time, meeting and care can we ask of one person — and what happens when someone is overloaded?
+    prompts:
+      - How much meeting time can we ask of one person — how often, how long, and what counts as an extra meeting?
+      - How many roles or hours a week may one person carry — counting unseen work like hosting, cleaning up or emotional support?
+      - What reply times do we expect — for everyday messages, urgent operational matters and safety issues — and when is nobody expected to answer?
+      - When someone says they are overloaded, how is their work covered, handed on or shared out — and how quickly?
+      - What signs tell us there is a pattern — lasting overload, burnout, members going quiet, or everything resting on a few people — and which review or repair process does that start?
+      - How often do we review these limits, and how are they changed?
+    examples:
+      - Recurring meetings take up at most four hours a month per person; an extra meeting needs 72 hours' notice. Nobody holds more than two roles or about eight hours a week, care and hosting work included. Messages get a reply within three days, urgent operational ones within a day, safety issues at once. Anyone can say they are overloaded, and their tasks are reshared within two weeks; overload flagged twice in a quarter goes to our review-and-repair process. These limits are reviewed yearly and changed by proposal.
+  - key: operations-manual.operational-continuity
+    question: If any one of us disappeared for a month, what would stop working?
+    prompts:
+      - Honestly, who or what is a single point of failure today — a person, account, key or skill that only one of us has?
+      - 'For each one: what is our plan to share it, and by when?'
+      - 'For each core role and process: is the procedure written down, and what must be handed over before the holder leaves?'
+      - Who backs up each core role — and where is a backup not yet possible?
+      - How often do we review this, and what else triggers a review, such as a role changing hands?
+    examples:
+      - Today only one member can access the bank account and only one understands the water system. By March a second bank signatory will be added, and the water system will have a written guide and a trained deputy. Every core role has a named backup and a handover checklist that must be completed before the holder steps down. The Infrastructure Steward reviews this list every quarter and whenever a role changes hands.
+  - key: operations-manual.information-flow-and-anti-gatekeeping
+    question: How do we make sure nobody has to go through one person to find something out?
+    prompts:
+      - Which records can every Full Member open directly, without asking anyone — decisions, meeting notes, roles, membership, contributions? (Restricted and private records are their own question.)
+      - How soon after a meeting must notes and decisions be published?
+      - When someone asks for information they are entitled to, who must answer, and within how long?
+      - How do we make sure no single person or role is the only way in to information others need — passwords, files, contacts?
+      - What happens when someone holds back information a member is entitled to?
+    examples:
+      - Every Full Member can read decisions, meeting notes, role assignments, membership status and contribution records in the shared drive without asking anyone. Meeting notes are posted within 48 hours. Any other request for information a member is entitled to is answered within five days. Every shared account and folder has at least two people with access, and withholding information a member is entitled to is treated as an accountability issue under our conflict process.
+  - key: operations-manual.documentation-locations-and-update-procedures
+    question: What do we write down, where, and who may read it — and can every decision be traced to who made it and how?
+    prompts:
+      - 'For each kind of record — our governance documents, member registry, meeting notes, proposals, contribution records: where does the official copy live, who keeps it, and how often is it reviewed?'
+      - What must be written down about decisions, roles, day-to-day operations and shared obligations — what does each record have to contain at minimum?
+      - Who may read which records, and which are restricted for privacy — on what grounds, and who may still see them?
+      - When must a new record be published or announced, and to whom?
+      - Does every decision record say what type of decision it was and which area it covers, who had the authority, how it was decided and by what threshold, the outcome, and when it takes effect?
+      - Where can anyone find, written down, our roles, who may decide what, our meeting types, and our access and privacy rules?
+    examples:
+      - Governance documents, the member registry and proposals live in the shared drive, kept by the Secretary and reviewed yearly; meeting notes and contribution records live on the wiki, kept by each facilitator and the Contribution Steward and reviewed quarterly. Every decision record states its type and area, who decided, the mechanism and threshold, the outcome and its start date, and is announced within three days. Members can read everything except health, safeguarding and conflict records, which only the people involved and two named stewards may see.
+  - key: role-registry.overview
+    question: Which ongoing jobs have a name and a person, rather than being everybody's and nobody's?
+    prompts:
+      - Which ongoing responsibilities do we have today, and does each belong to a named role — or is some of it still done by whoever happens to notice?
+      - What makes a role operational (it may act for the community within set limits) rather than functional (it does work but carries no special say)?
+      - What does ‘in good standing’ mean for anyone who wants to take on a role?
+      - What must every role entry contain — purpose, scope and authority, boundaries with other roles, who is eligible, term, and how holders are appointed, reviewed and removed?
+      - How do we make sure nobody is held responsible for work that was never assigned to their role?
+      - How often do we check the registry against the work actually being done, and who does it?
+    examples:
+      - Every ongoing task belongs to a role in this registry; if it is not listed, nobody can be held to it, and whoever notices proposes a role for it. Operational roles may act for the community within limits set in the Decision Matrix; functional roles do work but carry no extra say. A member is in good standing if they are up to date on agreed contributions and not suspended. Each entry lists purpose, scope and authority, boundaries, eligibility, term, and appointment, review and removal. Stewards check the registry every six months.
+  - key: role-registry.operational-roles
+    question: For each role that keeps things running, what is it answerable for and who reviews that?
+    prompts:
+      - 'Which operational roles do we need, and for each: what is it for and what is it responsible for?'
+      - 'For each role: which decisions may it take without a community vote, and where are its limits (for example, a spending cap)?'
+      - 'For each role: who is eligible, how long is the term, and how is the holder chosen?'
+      - 'For each role: how, how often and by whom is the holder''s work reviewed?'
+      - 'For each role: what happens if the work is not getting done or the holder is overloaded — and how can the role be reassigned?'
+      - 'For each role: what must be handed over before the holder leaves it?'
+    examples:
+      - 'Finance Steward: keeps the accounts, pays agreed bills and reports the balance monthly. May approve spending up to €500 per item within the budget; anything more needs a proposal. Any Full Member in good standing may stand for a two-year term, chosen by Strategic vote. The Operations meeting reviews the role every six months, and any member can raise a concern. If the holder is overloaded, the deputy takes over payments; persistent failure leads to reassignment by Strategic vote. Before leaving, the holder hands over bank access, open invoices and the reporting checklist.'
+  - key: role-registry.functional-roles
+    question: Which roles exist for a function rather than for daily work, and what are they for?
+    prompts:
+      - Which functional roles do we have — for example facilitator, note-taker or welcomer — and what is each for?
+      - 'For each role: what does it do, and which other roles does it work with?'
+      - 'For each role: who may take it on, and is saying ‘I''ll do it’ enough?'
+      - 'For each role: what does it not include — which decisions can it not make on the community''s behalf?'
+      - 'For each role: how does someone step down, and what must they brief the next person on?'
+    examples:
+      - 'Facilitator: prepares and runs meetings so everyone is heard and the agenda finishes on time. Any Full Member may take it on by announcing it in the members'' channel; no vote is needed, and it carries no extra say in decisions. A facilitator who is a party to a conflict on the agenda steps aside for that item. They may step down at any time after briefing the next facilitator on upcoming meetings and open actions.'
+  - key: meeting-templates.meeting-type-operations
+    question: How do we run the meeting where the week's work gets sorted out?
+    prompts:
+      - What is this meeting for, and which decisions may it make — and what happens when something bigger than day-to-day work comes up?
+      - Who has to be there, how many make a quorum, and who may join if they wish?
+      - How often does it meet, how long may it run, and who facilitates — chosen or rotated how, with what cover if they are away?
+      - What is the fixed agenda, in what order?
+      - Who takes notes, in what format, and where and how soon are they published — and how is each decision recorded?
+      - Do we have a template like this one for every kind of meeting we hold — operations, governance, coordination, reflection and conflict — and how do we notice when meetings overrun or multiply? (The overall limit on meeting load is its own question.)
+    examples:
+      - 'The Operations meeting reviews active work, clears blockers and makes Operational decisions only; anything Strategic or Constitutional becomes a proposal. All current role holders attend (quorum four); any member may join. It meets weekly for at most 60 minutes, run by a facilitator who rotates monthly. Agenda: check-in, task review, blockers, decisions, actions. Notes go on the shared board within 48 hours, each decision with who made it, the outcome and its start date. If it overruns three weeks running, that goes to the quarterly workload review.'
+  - key: meeting-templates.meeting-type-governance
+    question: How do we run the meeting where decisions actually get made?
+    prompts:
+      - Who must be invited, must the proposer be present, and who may observe?
+      - When is this meeting held, and how long may it run?
+      - Who facilitates, and how are they chosen?
+      - What is the agenda — how long for presenting the proposal, for clarifying questions, for discussion, and for the closing summary?
+      - Is anything decided in the room, or does the binding decision happen afterwards so that members who could not attend still take part? (The thresholds themselves are set in the Decision Matrix.)
+      - What do the notes record — which proposal, what type of decision, how it will be decided, and the outcome — and where are they published?
+    examples:
+      - 'A Governance meeting is held during the deliberation period of every Strategic or Constitutional proposal. All Full Members are invited, the proposer must attend, and anyone else may observe. It lasts at most 60 minutes: the proposer presents (10 minutes), clarifying questions only (10), open discussion (30), then the facilitator summarises and confirms when voting opens (10). Nothing is decided in the room — the vote runs online for seven days afterwards. Notes link to the proposal and are posted within two days.'
+  - key: meeting-templates.meeting-type-coordination-alignment
+    question: How do we run the meeting that keeps separate work from drifting apart?
+    prompts:
+      - When do we call this meeting rather than raising things at the regular Operations meeting?
+      - Who has to attend — only role holders with active pieces of work that depend on each other — and who else is welcome?
+      - How often does it meet, how long may it run, and who facilitates, with what cover?
+      - What is the agenda — dependencies, handoffs, competing priorities — and in what order?
+      - What may it agree, and what happens when a clash of priorities needs a bigger decision than it is allowed to make?
+      - Where are the notes and agreed handoffs recorded, and how soon?
+    examples:
+      - Coordination meets online on the first Tuesday of each month for at most 60 minutes, and any two role holders can call one sooner. Only role holders with an active initiative must attend; any member may join. The agenda is dependencies, handoffs, then competing priorities. It may agree Operational changes only — a priority clash that needs a Strategic call is written up as a proposal. Facilitation rotates among attendees, and notes with the agreed handoffs go in the shared channel the same week.
+  - key: meeting-templates.meeting-type-reflection-learning
+    question: How do we run the meeting where we look back rather than forward?
+    prompts:
+      - Who is invited, how often do we meet, and how long may it run?
+      - Who facilitates, and how are they chosen?
+      - What is the agenda — how do we look back at the period, what worked, what did not — and how do we keep it about patterns rather than blame?
+      - What comes out of it — which lessons go into the Learning Log, and which ideas become future proposals?
+      - Can this meeting decide anything itself, or does it only send items on?
+      - What stops it being postponed or dropped whenever we are busy?
+    examples:
+      - 'Every three months all Full Members are invited to a 90-minute Reflection meeting, in person with a call-in link. A facilitator chosen at the previous one runs it: what happened this quarter, what worked, what did not — looking for patterns, not blame — then which lessons go into the Learning Log and which ideas become future proposals. It decides nothing itself. It may be postponed once, never cancelled. The list of outputs, or "none", is published with the notes within a week.'
+  - key: meeting-templates.meeting-type-conflict-handling
+    question: How do we run a meeting whose subject is a conflict?
+    prompts:
+      - Which steps of our conflict process use this meeting format, and when must we not use an ordinary meeting instead?
+      - How long does a session last, and who may extend it?
+      - What is said at the start — about consent, confidentiality, protection from retaliation, and anyone's right to pause?
+      - What is the agenda — how does each party get to speak uninterrupted and for equal time, and what follows?
+      - How can a session end — agreement, moving to the next step, or adjourning — and how is that outcome noted? (Who facilitates and who may see the record are set in the conflict protocol.)
+    examples:
+      - 'This format is used only for facilitated sessions at steps 2 to 4 of our conflict ladder. A session runs up to 90 minutes; the Facilitator may extend it once by 30 minutes if both parties agree. It opens with the ground rules: taking part is voluntary, what is said stays in the room, nobody may be penalised for raising the conflict, and anyone may call a pause. Each party then speaks uninterrupted for equal time, followed by exploring options and agreeing next steps. It ends as agreement reached, escalated, or adjourned.'

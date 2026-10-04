@@ -3,10 +3,10 @@ import MiniSearch from 'minisearch';
 
 export type SearchResult = {
 	id: string;
-	slug: string;
+	/** Page URL, already in the page's language */
+	url: string;
 	title: string;
-	meta?: string;
-	parentId?: string | null;
+	kind: 'standard' | 'template' | 'guide' | 'test' | 'toolkit' | 'library';
 };
 
 export const searchIndex = writable<MiniSearch<SearchResult>>();
@@ -45,10 +45,9 @@ function runSearch() {
 	const raw = idx.search(q, { fuzzy: 0.2, prefix: true });
 	const mapped: SearchResult[] = raw.map((doc) => ({
 		id: doc.id,
-		slug: doc.slug,
+		url: doc.url,
 		title: doc.title,
-		meta: doc.meta,
-		parentId: doc.parentId
+		kind: doc.kind
 	}));
 	results.set(mapped);
 	status.set('ready');

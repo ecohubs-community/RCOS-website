@@ -1,7 +1,7 @@
 import { describe, expect, it } from 'vitest';
 import { standardNav, standardPage, standardPaths, standardPrint } from './standard';
 
-const order = { high: 0, medium: 1, other: 2 };
+const order = { high: 0, medium: 1, low: 2, other: 3 };
 
 describe('standard pages', () => {
 	it('lists every page of the standard', async () => {
@@ -53,10 +53,10 @@ describe('standard pages', () => {
 		const page = (await standardPage('/standard/core/0.1/layer-0-identity-scope', 'de'))!;
 		const r = page.related!;
 		expect(r.layer).toBe(0);
-		expect(r.guide?.href).toBe('/de/articles/rcos-layers/layer-0-identity-scope');
+		expect(r.guide?.href).toBe('/de/layers/0-identity-scope');
 		expect(r.templates.map((t) => t.ref)).toEqual(['§2.1', '§2.2', '§2.3', '§2.4']);
-		expect(r.templates[0].href).toBe('/de/articles/rcos-templates/layer-0/purpose-charter');
-		expect(r.templatesHref).toBe('/de/articles/rcos-templates/layer-0');
+		expect(r.templates[0].href).toBe('/de/templates/layer-0/purpose-charter');
+		expect(r.templatesHref).toBe('/de/templates/layer-0');
 		// Tests mainly about Layer 0 first, by severity; tests that also touch it last.
 		const levels = r.tests.map((t) => t.level);
 		expect(levels).toEqual([...levels].sort((a, b) => order[a] - order[b]));
@@ -82,6 +82,31 @@ describe('standard pages', () => {
 		expect(clause.parts).toContainEqual(
 			expect.objectContaining({ t: 'layer', href: '#ch-layer-2-governance-decision-logic' })
 		);
+	});
+
+	it('adds guidance, templates and stress tests to each section', async () => {
+		const page = (await standardPage('/standard/core/0.1/layer-0-identity-scope', 'de'))!;
+		const invariants = page.sections.find((s) => s.ref === '2.3')!;
+		const g = invariants.guide!;
+		// Guidance is English until it is translated; the template rationale already is.
+		expect(g.lang).toBe('en');
+		expect(g.why[0].source.template).toBe('Invariantenregister');
+		expect(g.examples.length).toBeGreaterThan(0);
+		expect(g.questions.find((q) => q.id === 'emergency')?.ref).toBe('2.3.4');
+		const clause = invariants.blocks.find((b) => b.kind === 'clause' && b.ref === '2.3.4');
+		expect(clause?.kind === 'clause' && clause.question).toBe('emergency');
+		expect(invariants.practice[0].href).toBe(
+			'/de/templates/layer-0/invariants-register#active-invariants'
+		);
+		expect(invariants.testedBy.map((t) => t.href)).toContain(
+			'/de/stress-tests/unprotected-core-invariants'
+		);
+		// Every numbered section of every layer has guidance.
+		for (const n of [0, 1, 2, 3, 4, 5, 6]) {
+			const nav = await standardNav('en');
+			const layer = (await standardPage(nav.layers[n].path, 'en'))!;
+			for (const s of layer.sections) expect(s.guide, `§${s.ref}`).not.toBeNull();
+		}
 	});
 
 	it('builds the contents navigation and the clause index', async () => {

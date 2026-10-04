@@ -4,9 +4,22 @@
 	import ClauseText from './ClauseText.svelte';
 	import IconLink from '~icons/tabler/link';
 	import IconCheck from '~icons/tabler/check';
+	import IconMessageQuestion from '~icons/tabler/message-question';
 
-	let { ref, parts, items }: { ref: string; parts: RenderedPart[]; items: RenderedPart[][] } =
-		$props();
+	let {
+		ref,
+		parts,
+		items,
+		question = null,
+		onquestion
+	}: {
+		ref: string;
+		parts: RenderedPart[];
+		items: RenderedPart[][];
+		/** A common question this clause answers; the button opens the guide there */
+		question?: string | null;
+		onquestion?: () => void;
+	} = $props();
 
 	let copied = $state(false);
 
@@ -44,14 +57,27 @@
 			</ul>
 		{/if}
 	</div>
-	<button
-		type="button"
-		onclick={copyLink}
-		aria-label={copied ? m.std_link_copied() : m.std_copy_link({ ref })}
-		title={copied ? m.std_link_copied() : m.std_copy_link({ ref })}
-		class="inline-flex size-7.5 items-center justify-center rounded-md text-ink-faint opacity-0 group-hover/clause:opacity-100 hover:bg-selected hover:text-accent-ink focus-visible:opacity-100"
-	>
-		{#if copied}<IconCheck class="size-4" />{:else}<IconLink class="size-4" />{/if}
-	</button>
+	<div class="flex flex-col items-center gap-0.5">
+		{#if question && onquestion}
+			<button
+				type="button"
+				onclick={onquestion}
+				aria-label={m.std_clause_question({ ref })}
+				title={m.std_clause_question({ ref })}
+				class="inline-flex size-7.5 items-center justify-center rounded-md text-clay-500 hover:bg-guide-chip hover:text-guide-accent"
+			>
+				<IconMessageQuestion class="size-4" />
+			</button>
+		{/if}
+		<button
+			type="button"
+			onclick={copyLink}
+			aria-label={copied ? m.std_link_copied() : m.std_copy_link({ ref })}
+			title={copied ? m.std_link_copied() : m.std_copy_link({ ref })}
+			class="inline-flex size-7.5 items-center justify-center rounded-md text-ink-faint opacity-0 group-hover/clause:opacity-100 hover:bg-selected hover:text-accent-ink focus-visible:opacity-100"
+		>
+			{#if copied}<IconCheck class="size-4" />{:else}<IconLink class="size-4" />{/if}
+		</button>
+	</div>
 	<span class="sr-only" aria-live="polite">{copied ? m.std_link_copied() : ''}</span>
 </li>

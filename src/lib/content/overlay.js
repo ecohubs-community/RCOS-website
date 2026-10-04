@@ -33,7 +33,13 @@ export const TRANSLATABLE = new Set([
 	'symptoms',
 	'tags',
 	'term',
-	'definition'
+	'definition',
+	// guidance (content/guidance)
+	'inShort',
+	'question',
+	'answer',
+	'prompts',
+	'examples'
 ]);
 
 const IDENTITY = ['id', 'ref', 'test', 'key'];

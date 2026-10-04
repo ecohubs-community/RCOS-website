@@ -4,7 +4,7 @@ headingLevel: 3
 id: 9d3e6a24
 title: Rapid Growth without Onboarding
 summary: When the community grows faster than it can integrate anyone.
-parentId: a9e4c65d
+parentId: 6acbe9a7
 order: 2
 severity: high
 stage:
@@ -15,6 +15,9 @@ layers:
 invariants:
   - '1.1'
   - '5.2'
+tests:
+  - '3.2'
+  - '3.3'
 remediationReady: true
 tags:
   - 'Layer 1: Membership'

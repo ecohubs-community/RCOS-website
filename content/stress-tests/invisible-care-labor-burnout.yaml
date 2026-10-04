@@ -4,7 +4,7 @@ headingLevel: 3
 id: 8c2d5f13
 title: Invisible Care Labor Burnout
 summary: When the community runs on the unpaid care of a quietly exhausted few.
-parentId: a9e4c65d
+parentId: 6acbe9a7
 order: 0
 severity: high
 stage:
@@ -16,6 +16,10 @@ layers:
 invariants:
   - '3.3'
   - '5.3'
+tests:
+  - '5.2'
+  - '5.6'
+  - '7.4'
 remediationReady: true
 tags:
   - 'Layer 5: Operations'

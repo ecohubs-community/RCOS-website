@@ -4,7 +4,7 @@ headingLevel: 3
 id: e5c1b8a4
 title: Institutional Amnesia
 summary: When the community keeps relearning the same lessons the hard way.
-parentId: 6acde7a7
+parentId: 6acbe9a7
 order: 4
 severity: medium
 stage:
@@ -16,6 +16,10 @@ layers:
 invariants:
   - '6.4'
   - '5.2'
+tests:
+  - '7.3'
+  - '8.2'
+  - '8.4'
 remediationReady: true
 tags:
   - 'Layer 6: Evolution'

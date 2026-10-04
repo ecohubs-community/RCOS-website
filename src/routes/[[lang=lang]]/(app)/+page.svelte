@@ -1,77 +1,65 @@
 <script lang="ts">
+	import { Tabs } from 'bits-ui';
 	import ClickToLoad from '$lib/components/embed/ClickToLoad.svelte';
-	import { articleBySlug, rootArticles } from '$lib/stores/graph';
-	import Card from '$lib/components/common/Card.svelte';
-	import Button from '$lib/components/common/Button.svelte';
-	import IconBolt from '~icons/tabler/bolt';
-	import IconBook2 from '~icons/tabler/book-2';
-	import IconClockExclamation from '~icons/tabler/clock-exclamation';
-	import IconCode from '~icons/tabler/code';
-	import IconDoorExit from '~icons/tabler/door-exit';
-	import IconFilePencil from '~icons/tabler/file-pencil';
-	import IconHelpHexagon from '~icons/tabler/help-hexagon';
-	import IconHomeHeart from '~icons/tabler/home-heart';
-	import IconMessages from '~icons/tabler/messages';
-	import IconPuzzle from '~icons/tabler/puzzle';
-	import IconSeedling from '~icons/tabler/seedling';
-	import IconShieldCheck from '~icons/tabler/shield-check';
-	import IconStack2 from '~icons/tabler/stack-2';
-	import IconWriting from '~icons/tabler/writing';
-	import IconArrowDown from '~icons/tabler/arrow-down';
-	import IconArrowRight from '~icons/tabler/arrow-right';
-	import IconArrowUpRight from '~icons/tabler/arrow-up-right';
-	import IconBookmark from '~icons/tabler/bookmark';
-	import IconDownload from '~icons/tabler/download';
-	import IconInfoCircle from '~icons/tabler/info-circle';
 	import SEO from '$lib/components/seo/SEO.svelte';
+	import LayerRings from '$lib/components/home/LayerRings.svelte';
 	import { buildHomeSchema } from '$lib/utils/jsonld';
 	import { m } from '$lib/paraglide/messages.js';
 	import { localized } from '$lib/i18n/path';
 	import { DEFAULT_LOCALE } from '$lib/i18n/languages';
+	import { GITHUB_HREF, MODULES } from '$lib/nav/site-nav';
+	import IconArrowDown from '~icons/tabler/arrow-down';
+	import IconArrowRight from '~icons/tabler/arrow-right';
+	import IconDownload from '~icons/tabler/download';
+	import IconBook2 from '~icons/tabler/book-2';
+	import IconStack2 from '~icons/tabler/stack-2';
+	import IconPuzzle from '~icons/tabler/puzzle';
+	import IconFilePencil from '~icons/tabler/file-pencil';
+	import IconShieldCheck from '~icons/tabler/shield-check';
+	import IconShieldLock from '~icons/tabler/shield-lock';
+	import IconBuildingCommunity from '~icons/tabler/building-community';
+	import IconBooks from '~icons/tabler/books';
+	import IconSeedling from '~icons/tabler/seedling';
+	import IconHomeHeart from '~icons/tabler/home-heart';
+	import IconMessages from '~icons/tabler/messages';
+	import IconCode from '~icons/tabler/code';
+	import IconHandClick from '~icons/tabler/hand-click';
+	import IconPlus from '~icons/tabler/plus';
+	import IconHeadphones from '~icons/tabler/headphones';
 
 	let { data } = $props();
 
 	const locale = $derived(data.locale ?? DEFAULT_LOCALE);
-	const href = (path: string) => localized(path, locale);
+	const href = (path: string) => (path.startsWith('http') ? path : localized(path, locale));
 
-	// The story, one beat per step. Icons carry the mood so the text can stay short.
-	// Messages are referenced as functions (not built from key strings), so the
-	// bundle only carries the messages this page uses.
-	const storySteps = [
-		{
-			key: 'step1',
-			icon: IconDoorExit,
-			title: m.home_story_step1_title,
-			body: m.home_story_step1_body
-		},
-		{
-			key: 'step2',
-			icon: IconClockExclamation,
-			title: m.home_story_step2_title,
-			body: m.home_story_step2_body
-		},
-		{
-			key: 'step3',
-			icon: IconBolt,
-			title: m.home_story_step3_title,
-			body: m.home_story_step3_body
-		},
-		{
-			key: 'step4',
-			icon: IconWriting,
-			title: m.home_story_step4_title,
-			body: m.home_story_step4_body
-		},
-		{
-			key: 'step5',
-			icon: IconHelpHexagon,
-			title: m.home_story_step5_title,
-			body: m.home_story_step5_body
-		}
+	// The story: one beat per step, with the layer that would have answered it.
+	const story = [
+		{ title: m.home_story_step1_title, body: m.home_story_step1_body, layer: 1 },
+		{ title: m.home_story_step2_title, body: m.home_story_step2_body, layer: null },
+		{ title: m.home_story_step3_title, body: m.home_story_step3_body, layer: 4 },
+		{ title: m.home_story_step4_title, body: m.home_story_step4_body, layer: 6 },
+		{ title: m.home_story_step5_title, body: m.home_story_step5_body, layer: null }
+	];
+	const layerPath = [
+		'/layers/0-identity-scope',
+		'/layers/1-membership-system',
+		'/layers/2-governance-decision-logic',
+		'/layers/3-economic-resource-system',
+		'/layers/4-conflict-repair-accountability',
+		'/layers/5-operations-coordination',
+		'/layers/6-evolution-adaptation'
+	];
+	const layerShort = [
+		m.layer_short_0,
+		m.layer_short_1,
+		m.layer_short_2,
+		m.layer_short_3,
+		m.layer_short_4,
+		m.layer_short_5,
+		m.layer_short_6
 	];
 
-	// Real clauses from RCOS Core v0.1. Numbers stay in code; wording is per-locale
-	// in the message bundles, copied from the translated spec.
+	// Real clauses from RCOS Core v0.1: the question, and the rules that make sure it gets answered.
 	const examples = [
 		{
 			question: m.home_what_example_exit_question,
@@ -80,507 +68,499 @@
 				{ num: '3.6.2', text: m.home_clause_3_6_2 },
 				{ num: '3.6.5', text: m.home_clause_3_6_5 }
 			],
-			path: '/standard/core/0.1/layer-1-membership-system'
+			path: '/standard/core/0.1/layer-1-membership-system#3.6'
 		},
 		{
 			question: m.home_what_example_purpose_question,
 			layer: 0,
 			clauses: [{ num: '2.1.1', text: m.home_clause_2_1_1 }],
-			path: '/standard/core/0.1/layer-0-identity-scope'
+			path: '/standard/core/0.1/layer-0-identity-scope#2.1'
 		}
 	];
 
-	const layerSlugs = [
-		'layer-0-identity-scope',
-		'layer-1-membership-system',
-		'layer-2-governance-decision-logic',
-		'layer-3-economic-resource-system',
-		'layer-4-conflict-repair-accountability',
-		'layer-5-operations-coordination',
-		'layer-6-evolution-adaptation'
-	];
-	const layerQuestions = [
-		m.home_layers_q0,
-		m.home_layers_q1,
-		m.home_layers_q2,
-		m.home_layers_q3,
-		m.home_layers_q4,
-		m.home_layers_q5,
-		m.home_layers_q6
-	];
-	// Layers the story touches: leaving (1), the fight (4), fixing the rule (6).
-	const storyLayers = new Set([1, 4, 6]);
-
-	const layers = $derived(
-		layerSlugs.map((slug, n) => ({
-			n,
-			path: `/articles/rcos-layers/${slug}`,
-			// Localized title from the content graph; the number alone is a safe fallback.
-			title: $articleBySlug.get(`rcos-layers/${slug}`)?.title ?? `Layer ${n}`,
-			question: layerQuestions[n]()
-		}))
-	);
-
-	const parts = $derived([
+	const parts = [
 		{
-			key: 'core',
 			icon: IconBook2,
 			name: m.home_parts_core_name,
 			what: m.home_parts_core_what,
-			use: m.home_parts_core_use,
-			path: '/standard/core/0.1',
-			example: `§3.6.1 “${m.home_clause_3_6_1()}”`
+			path: '/standard/core/0.1'
 		},
 		{
-			key: 'layers',
 			icon: IconStack2,
 			name: m.home_parts_layers_name,
 			what: m.home_parts_layers_what,
-			use: m.home_parts_layers_use,
-			path: '/articles/rcos-layers',
-			example: m.home_parts_layers_example()
+			path: '/layers'
 		},
 		{
-			key: 'modules',
 			icon: IconPuzzle,
 			name: m.home_parts_modules_name,
 			what: m.home_parts_modules_what,
-			use: m.home_parts_modules_use,
-			path: '/standard/modules',
-			example: m.home_parts_modules_example()
+			path: '/standard/modules'
 		},
 		{
-			key: 'templates',
 			icon: IconFilePencil,
 			name: m.home_parts_templates_name,
 			what: m.home_parts_templates_what,
-			use: m.home_parts_templates_use,
-			path: '/articles/rcos-templates',
-			example: m.home_parts_templates_example()
+			path: '/templates'
 		},
 		{
-			key: 'stress_tests',
 			icon: IconShieldCheck,
 			name: m.home_parts_stress_tests_name,
 			what: m.home_parts_stress_tests_what,
-			use: m.home_parts_stress_tests_use,
-			path: '/articles/rcos-stress-tests',
-			example: m.home_parts_stress_tests_example()
+			path: '/stress-tests'
 		}
-	]);
+	];
 
-	const audiences = [
+	type Step = { title: () => string; body: () => string; cta: () => string; path: string };
+	const audiences: {
+		key: string;
+		icon: typeof IconSeedling;
+		label: () => string;
+		pitch: () => string;
+		steps: Step[];
+	}[] = [
 		{
 			key: 'founders',
-			title: m.home_who_founders_title,
-			body: m.home_who_founders_body,
-			icon: IconSeedling
+			icon: IconSeedling,
+			label: m.home_who_founders_title,
+			pitch: m.home_who_founders_body,
+			steps: [
+				{
+					title: m.home_start_step1_title,
+					body: m.home_start_step1_body,
+					cta: m.home_start_step1_cta,
+					path: '/layers'
+				},
+				{
+					title: m.home_pick_purpose_title,
+					body: m.home_pick_purpose_body,
+					cta: m.home_start_step3_cta,
+					path: '/templates/layer-0'
+				},
+				{
+					title: m.home_pick_modules_title,
+					body: m.home_pick_modules_body,
+					cta: m.home_pick_modules_cta,
+					path: '/standard/modules'
+				}
+			]
 		},
 		{
 			key: 'existing',
-			title: m.home_who_existing_title,
-			body: m.home_who_existing_body,
-			icon: IconHomeHeart
+			icon: IconHomeHeart,
+			label: m.home_who_existing_title,
+			pitch: m.home_who_existing_body,
+			steps: [
+				{
+					title: m.home_start_step2_title,
+					body: m.home_start_step2_body,
+					cta: m.home_start_step2_cta,
+					path: '/toolkit/self-assessment'
+				},
+				{
+					title: m.home_pick_others_title,
+					body: m.home_pick_others_body,
+					cta: m.home_pick_others_cta,
+					path: '/stress-tests'
+				},
+				{
+					title: m.home_pick_gaps_title,
+					body: m.home_pick_gaps_body,
+					cta: m.home_start_step3_cta,
+					path: '/templates#downloads'
+				}
+			]
 		},
 		{
 			key: 'facilitators',
-			title: m.home_who_facilitators_title,
-			body: m.home_who_facilitators_body,
-			icon: IconMessages
+			icon: IconMessages,
+			label: m.home_who_facilitators_title,
+			pitch: m.home_who_facilitators_body,
+			steps: [
+				{
+					title: m.home_pick_language_title,
+					body: m.home_start_step1_body,
+					cta: m.home_start_step1_cta,
+					path: '/layers'
+				},
+				{
+					title: m.home_pick_cases_title,
+					body: m.home_pick_cases_body,
+					cta: m.mega_facilitation,
+					path: '/toolkit/facilitation-worksheet'
+				},
+				{
+					title: m.home_pick_document_title,
+					body: m.home_pick_document_body,
+					cta: m.home_start_step3_cta,
+					path: '/templates#downloads'
+				}
+			]
 		},
 		{
 			key: 'builders',
-			title: m.home_who_builders_title,
-			body: m.home_who_builders_body,
-			icon: IconCode
+			icon: IconCode,
+			label: m.home_who_builders_title,
+			pitch: m.home_who_builders_body,
+			steps: [
+				{
+					title: m.home_pick_standard_title,
+					body: m.home_pick_standard_body,
+					cta: m.home_pick_standard_cta,
+					path: '/standard/core/0.1'
+				},
+				{
+					title: m.home_pick_data_title,
+					body: m.home_pick_data_body,
+					cta: m.site_data,
+					path: '/data'
+				},
+				{
+					title: m.home_pick_licence_title,
+					body: m.home_pick_licence_body,
+					cta: m.home_pick_licence_cta,
+					path: GITHUB_HREF
+				}
+			]
 		}
 	];
+	let audience = $state('founders');
 
-	const startSteps = [
+	const more = [
 		{
-			key: 'step1',
-			title: m.home_start_step1_title,
-			body: m.home_start_step1_body,
-			cta: m.home_start_step1_cta,
-			path: '/articles/rcos-layers'
+			icon: IconShieldLock,
+			title: m.mega_safeguards,
+			desc: m.mega_safeguards_desc,
+			path: '/safeguards'
 		},
 		{
-			key: 'step2',
-			title: m.home_start_step2_title,
-			body: m.home_start_step2_body,
-			cta: m.home_start_step2_cta,
-			path: '/articles/rcos-stress-tests/self-assessment'
+			icon: IconBuildingCommunity,
+			title: m.mega_refimpl,
+			desc: m.mega_refimpl_desc,
+			path: '/reference-implementations'
 		},
-		{
-			key: 'step3',
-			title: m.home_start_step3_title,
-			body: m.home_start_step3_body,
-			cta: m.home_start_step3_cta,
-			path: '/articles/rcos-templates#downloads'
-		}
+		{ icon: IconBooks, title: m.site_library, desc: m.site_library_lead, path: '/library' }
 	];
 
-	// Root articles the "five parts" section doesn't already cover.
-	const coveredRoots = new Set([
-		'rcos-core',
-		'rcos-layers',
-		'rcos-modules',
-		'rcos-templates',
-		'rcos-stress-tests'
-	]);
-	const moreArticles = $derived($rootArticles.filter((a) => !coveredRoots.has(a.slug)));
+	const eyebrow = 'font-ui text-[13px] font-semibold tracking-[0.08em] text-accent-ink uppercase';
+	const h2 =
+		'font-serif text-[clamp(1.875rem,3.6vw,2.75rem)] leading-tight font-bold text-balance text-heading';
+	const lead = 'text-lg leading-relaxed text-pretty text-ink-2';
 </script>
 
-<!-- Interim container (was in the old AppShell); the page is rebuilt in phase 5. -->
-<div class="mx-auto w-full max-w-7xl px-lg py-xl">
-	<SEO
-		title={m.site_name()}
-		description={m.site_description()}
-		url="/"
-		type="website"
-		jsonLd={buildHomeSchema(locale, m.site_description())}
-		locale={data.locale}
-	/>
+<SEO
+	title={m.site_name()}
+	description={m.site_description()}
+	url="/"
+	type="website"
+	jsonLd={buildHomeSchema(locale, m.site_description())}
+	locale={data.locale}
+/>
 
-	{#snippet sectionHeader(eyebrow: string, heading: string, body?: string)}
-		<div class="max-w-3xl mb-10">
-			<p class="text-sm font-semibold uppercase tracking-wider text-primary mb-3">{eyebrow}</p>
-			<h2 class="text-3xl md:text-4xl font-bold font-serif text-text-primary leading-tight">
-				{heading}
-			</h2>
-			{#if body}
-				<p class="text-lg text-text-secondary mt-4 leading-relaxed">{body}</p>
-			{/if}
-		</div>
-	{/snippet}
-
-	<div class="space-y-24 pb-12">
-		<!-- Hero -->
-		<section
-			class="relative rounded-2xl overflow-hidden bg-linear-to-br from-forest-50 to-blue-50 dark:from-forest-900 dark:to-blue-900 border border-border"
-		>
-			<div
-				class="absolute inset-0 opacity-10 dark:opacity-20"
-				style="background-image: radial-gradient(var(--color-primary) 1px, transparent 1px); background-size: 24px 24px;"
-			></div>
-
-			<div class="relative z-10 px-xl py-3xl text-center max-w-3xl mx-auto">
-				<p class="text-sm font-semibold uppercase tracking-wider text-primary mb-4">
-					{m.home_hero_eyebrow()}
-				</p>
-				<h1
-					class="text-4xl md:text-5xl lg:text-6xl font-bold font-serif text-gradient mb-6 leading-tight"
+<div
+	class="mx-auto flex w-full max-w-6xl flex-col gap-24 px-4 pt-10 pb-24 sm:px-6 lg:gap-28 lg:px-8 lg:pt-16"
+>
+	<!-- Hero, next to the intro video -->
+	<section class="grid items-center gap-10 lg:grid-cols-[minmax(0,1.05fr)_minmax(0,1fr)]">
+		<div class="flex flex-col gap-6">
+			<p class={eyebrow}>{m.home_hero_eyebrow()}</p>
+			<h1
+				class="font-serif text-[clamp(2.375rem,5vw,3.75rem)] leading-[1.08] font-bold text-balance text-heading"
+			>
+				{m.home_title()}
+			</h1>
+			<p class="{lead} text-xl">{m.home_hero_lead()}</p>
+			<div class="flex flex-wrap gap-3">
+				<a
+					href="#story"
+					class="inline-flex h-12 items-center gap-2 rounded-xl bg-brand px-5 font-ui font-semibold text-white hover:opacity-90"
+					>{m.home_cta_how_it_works()}<IconArrowDown class="size-4" /></a
 				>
-					{m.home_title()}
-				</h1>
-				<p class="text-lg md:text-xl text-text-secondary mb-8 leading-relaxed">
-					{m.home_hero_lead()}
-				</p>
-
-				<div class="flex flex-wrap justify-center gap-4">
-					<Button variant="primary" size="lg" href="#story" class="gap-2">
-						{m.home_cta_how_it_works()}
-						<IconArrowDown class="w-4 h-4" />
-					</Button>
-					<Button
-						variant="secondary"
-						size="lg"
-						href={href('/articles/rcos-templates#downloads')}
-						class="gap-2"
-					>
-						<IconDownload class="w-4 h-4" />
-						{m.home_cta_download_templates()}
-					</Button>
-					<Button variant="outline" size="lg" href={href('/articles')}
-						>{m.home_cta_explore_articles()}</Button
-					>
-				</div>
+				<a
+					href={href('/templates#downloads')}
+					class="inline-flex h-12 items-center gap-2 rounded-xl border border-line bg-card px-5 font-ui font-semibold text-ink hover:border-forest-400"
+					><IconDownload class="size-4" />{m.home_cta_download_templates()}</a
+				>
 			</div>
-		</section>
-
-		<!-- 1. The story -->
-		<section id="story" class="scroll-mt-24">
-			{@render sectionHeader(m.home_story_eyebrow(), m.home_story_heading())}
-
-			<ol class="relative max-w-3xl border-l-2 border-border ml-5 space-y-10">
-				{#each storySteps as step, i (step.key)}
-					<li class="relative pl-10">
-						<span
-							class="absolute -left-[21px] top-0 flex items-center justify-center w-10 h-10 rounded-full border-2 border-background
-	              {i === 2
-								? 'bg-highlight text-white'
-								: i === storySteps.length - 1
-									? 'bg-primary text-white'
-									: 'bg-surface-elevated text-text-secondary'}"
-							aria-hidden="true"
-						>
-							<step.icon class="w-5 h-5" />
-						</span>
-						<h3 class="text-xl font-bold text-text-primary mb-1 pt-1.5">
-							{step.title()}
-						</h3>
-						<p class="text-text-secondary leading-relaxed">{step.body()}</p>
-					</li>
-				{/each}
-			</ol>
-
-			<p class="max-w-3xl mt-10 text-2xl md:text-3xl font-serif font-bold text-primary">
-				{m.home_story_punchline()}
+			<p class="text-sm text-ink-muted">
+				{m.home_already()}
+				<a href={href('/standard/core/0.1')} class="font-semibold text-accent-ink hover:underline"
+					>{m.home_read_standard()} →</a
+				>
 			</p>
-		</section>
-
-		<!-- 2. What RCOS is: questions become numbered rules -->
-		<section>
-			{@render sectionHeader(m.home_what_eyebrow(), m.home_what_heading(), m.home_what_body())}
-
-			<p class="text-text-secondary mb-6 max-w-3xl">{m.home_what_examples_intro()}</p>
-
-			<div class="grid gap-6 lg:grid-cols-2">
-				{#each examples as ex (ex.path)}
-					<a
-						href={href(ex.path)}
-						class="group block rounded-xl border border-border bg-surface overflow-hidden transition-all hover:border-primary-light/50 hover:shadow-lg"
-					>
-						<div class="p-lg">
-							<p class="text-xs font-semibold uppercase tracking-wider text-text-tertiary mb-2">
-								{m.home_what_question_label()}
-							</p>
-							<p class="text-xl font-serif font-bold text-text-primary">“{ex.question()}”</p>
-						</div>
-						<div class="p-lg bg-primary/5 dark:bg-primary/10 border-t border-border">
-							<p
-								class="text-xs font-semibold uppercase tracking-wider text-primary mb-3 flex items-center gap-2"
-							>
-								<IconArrowDown class="w-4 h-4" />
-								{m.home_what_rule_label()} · {layers[ex.layer].title}
-							</p>
-							<ul class="space-y-2">
-								{#each ex.clauses as clause (clause.num)}
-									<li class="flex gap-3 text-text-primary">
-										<span class="font-mono text-sm font-semibold text-primary shrink-0 pt-0.5"
-											>§{clause.num}</span
-										>
-										<span>{clause.text()}</span>
-									</li>
-								{/each}
-							</ul>
-						</div>
-					</a>
-				{/each}
+			<ul
+				class="flex flex-wrap gap-x-6 gap-y-2 border-t border-line pt-5 font-ui text-sm text-ink-2"
+			>
+				<li>{m.home_fact_open()}</li>
+				<li>{m.home_fact_layers()}</li>
+				<li>{m.home_fact_languages()}</li>
+			</ul>
+		</div>
+		<div class="flex flex-col gap-3">
+			<div class="overflow-hidden rounded-2xl shadow-panel">
+				<ClickToLoad
+					src="https://www.youtube-nocookie.com/embed/YNQN5PxXPt0"
+					title={m.home_video_title()}
+					provider="YouTube"
+					poster="https://i.ytimg.com/vi/YNQN5PxXPt0/hqdefault.jpg"
+				/>
 			</div>
+			<p class="text-sm text-ink-muted">{m.home_video_note()}</p>
+		</div>
+	</section>
 
-			<div class="mt-6 flex flex-col sm:flex-row sm:items-center gap-4 justify-between max-w-full">
-				<p class="text-sm text-text-tertiary flex gap-2 max-w-2xl">
-					<IconInfoCircle class="w-5 h-5 shrink-0" />
-					<span>{m.home_what_must_note()}</span>
-				</p>
-				<Button variant="ghost" href={href('/standard/core/0.1')} class="gap-2 shrink-0">
-					{m.home_what_read_core()}
-					<IconArrowRight class="w-4 h-4" />
-				</Button>
-			</div>
-		</section>
-
-		<!-- 3. The seven layers -->
-		<section>
-			{@render sectionHeader(
-				m.home_layers_eyebrow(),
-				m.home_layers_heading(),
-				m.home_layers_body()
-			)}
-
-			<!-- Listed top-down from 6 to 0 so it reads like a stack resting on its foundation -->
-			<ol class="space-y-2 max-w-4xl">
-				{#each [...layers].reverse() as layer (layer.n)}
-					<li>
-						<a
-							href={href(layer.path)}
-							class="group flex items-center gap-4 rounded-lg border px-4 py-3 transition-colors hover:border-primary-light/50 hover:bg-surface-elevated
-	              {storyLayers.has(layer.n)
-								? 'border-highlight/50 bg-highlight/5'
-								: 'border-border bg-surface'}"
-						>
-							<span
-								class="flex items-center justify-center w-9 h-9 rounded-md bg-primary text-white font-bold font-mono shrink-0"
-								>{layer.n}</span
-							>
-							<span class="flex-1 min-w-0">
-								<span
-									class="block font-semibold text-text-primary group-hover:text-primary transition-colors"
-									>{layer.title}</span
-								>
-								<span class="block text-sm text-text-secondary">{layer.question}</span>
-							</span>
-							{#if storyLayers.has(layer.n)}
-								<span
-									class="hidden sm:inline-flex items-center gap-1 text-xs font-semibold text-highlight-dark dark:text-highlight shrink-0"
-								>
-									<IconBookmark class="w-4 h-4" />
-									{m.home_layers_in_story()}
-								</span>
-							{/if}
-							{#if layer.n === 0}
-								<span
-									class="hidden sm:inline text-xs font-semibold uppercase tracking-wider text-text-tertiary shrink-0"
-									>{m.home_layers_foundation()}</span
-								>
-							{/if}
-						</a>
-					</li>
-				{/each}
-			</ol>
-
-			<div class="mt-6 flex flex-col sm:flex-row sm:items-center gap-4 justify-between max-w-4xl">
-				<p class="text-sm text-text-secondary flex gap-2 max-w-2xl">
-					<IconBookmark class="w-5 h-5 shrink-0 text-highlight-dark dark:text-highlight" />
-					<span>{m.home_layers_story_note()}</span>
-				</p>
-				<Button variant="ghost" href={href('/articles/rcos-layers')} class="gap-2 shrink-0">
-					{m.home_layers_read_more()}
-					<IconArrowRight class="w-4 h-4" />
-				</Button>
-			</div>
-		</section>
-
-		<!-- 4. The five parts -->
-		<section>
-			{@render sectionHeader(m.home_parts_eyebrow(), m.home_parts_heading(), m.home_parts_body())}
-
-			<!-- Two cards over three on wide screens; on two columns the last one spans the row -->
-			<div class="grid gap-6 md:grid-cols-2 xl:grid-cols-6">
-				{#each parts as part, i (part.key)}
-					{@const name = part.name()}
-					{@const span =
-						i < 2
-							? 'xl:col-span-3'
-							: i === parts.length - 1
-								? 'md:col-span-2 xl:col-span-2'
-								: 'xl:col-span-2'}
-					<Card href={href(part.path)} class="h-full flex flex-col group {span}">
-						<div class="flex items-center gap-3 mb-4">
-							<span
-								class="inline-flex items-center justify-center w-10 h-10 rounded-lg bg-primary-light/20 text-primary-dark dark:text-primary"
-							>
-								<part.icon class="w-5 h-5" />
-							</span>
-							<h3
-								class="text-xl font-bold text-text-primary group-hover:text-primary transition-colors"
-							>
-								{name}
-							</h3>
-						</div>
-						<p class="text-text-primary font-medium mb-2">{part.what()}</p>
-						<p class="text-text-secondary text-sm mb-4">{part.use()}</p>
-						<div class="mt-auto pt-4 border-t border-border">
-							<p class="text-xs font-semibold uppercase tracking-wider text-text-tertiary mb-1">
-								{m.home_parts_example_label()}
-							</p>
-							<p class="text-sm text-text-secondary italic">{part.example}</p>
-						</div>
-					</Card>
-				{/each}
-			</div>
-		</section>
-
-		<!-- 5. Who it's for -->
-		<section>
-			{@render sectionHeader(m.home_who_eyebrow(), m.home_who_heading())}
-
-			<div class="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
-				{#each audiences as a (a.key)}
-					<div class="rounded-xl border border-border bg-surface p-lg">
-						<a.icon class="w-7 h-7 text-primary mb-3" />
-						<h3 class="font-bold text-text-primary mb-2">{a.title()}</h3>
-						<p class="text-sm text-text-secondary">{a.body()}</p>
-					</div>
-				{/each}
-			</div>
-		</section>
-
-		<!-- 6. Where to start -->
-		<section
-			class="rounded-2xl border border-border bg-linear-to-br from-forest-50 to-amber-50 dark:from-forest-900/60 dark:to-soil-900/60 p-xl md:p-2xl"
-		>
-			{@render sectionHeader(m.home_start_eyebrow(), m.home_start_heading())}
-
-			<ol class="grid gap-6 md:grid-cols-3">
-				{#each startSteps as step, i (step.key)}
-					<li class="flex flex-col">
-						<span
-							class="flex items-center justify-center w-10 h-10 rounded-full bg-primary text-white font-bold mb-4"
-							>{i + 1}</span
-						>
-						<h3 class="text-lg font-bold text-text-primary mb-2">
-							{step.title()}
-						</h3>
-						<p class="text-text-secondary mb-4 flex-1">{step.body()}</p>
-						<Button
-							variant={i === 2 ? 'primary' : 'outline'}
-							href={href(step.path)}
-							class="gap-2 self-start"
-						>
-							{step.cta()}
-							<IconArrowRight class="w-4 h-4" />
-						</Button>
-					</li>
-				{/each}
-			</ol>
-		</section>
-
-		<!-- 7. Watch & listen -->
-		<section>
-			<div class="max-w-3xl mb-8">
-				<h2 class="text-3xl font-bold font-serif text-text-primary">{m.home_media_heading()}</h2>
-				<p class="text-text-secondary mt-2">{m.home_media_body()}</p>
-			</div>
-
-			<div class="grid gap-6 lg:grid-cols-2 items-start">
-				<div class="w-full overflow-hidden rounded-xl shadow-lg">
-					<ClickToLoad
-						src="https://www.youtube-nocookie.com/embed/YNQN5PxXPt0"
-						title={m.home_video_title()}
-						provider="YouTube"
-						poster="https://i.ytimg.com/vi/YNQN5PxXPt0/hqdefault.jpg"
-					/>
-				</div>
-				<div class="space-y-4">
-					<ClickToLoad
-						src="https://player.rss.com/the-regenerative-future-podcast/2620815?theme=dark&v=2&skip=false"
-						title="Redesigning Community: Inside the Regenerative Community Operating System"
-						provider="RSS.com"
-						kind="audio"
-					/>
-					<Button
-						variant="outline"
-						href="https://ecohubs.community"
-						target="_blank"
-						rel="noopener"
-						class="gap-2"
-					>
-						{m.home_cta_learn_more()}
-						<IconArrowUpRight class="w-4 h-4" />
-					</Button>
-				</div>
-			</div>
-		</section>
-
-		<!-- More root articles not covered above (e.g. safeguards, reference implementations) -->
-		{#if moreArticles.length > 0}
-			<section>
-				<h2 class="text-2xl font-bold font-serif text-text-primary mb-6">
-					{m.home_more_heading()}
+	<!-- Podcast band -->
+	<section
+		aria-labelledby="podcast"
+		class="-my-8 grid items-center gap-6 rounded-3xl border border-line bg-card px-5 py-6 sm:px-8 lg:grid-cols-[minmax(0,1fr)_minmax(0,1.3fr)]"
+	>
+		<div class="flex gap-4">
+			<span
+				class="inline-flex size-11 shrink-0 items-center justify-center rounded-xl bg-guide-chip text-guide-accent"
+				><IconHeadphones class="size-5.5" /></span
+			>
+			<div>
+				<h2 id="podcast" class="font-serif text-xl font-semibold text-heading">
+					{m.home_podcast_title()}
 				</h2>
-				<div class="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-					{#each moreArticles as article (article.id)}
-						<Card href={href(`/articles/${article.slug}`)} class="h-full flex flex-col">
-							<h3 class="text-lg font-bold text-text-primary mb-2">{article.title}</h3>
-							{#if article.summary}
-								<p class="text-sm text-text-secondary line-clamp-3">{article.summary}</p>
-							{/if}
-						</Card>
+				<p class="text-ink-2">{m.home_podcast_body()}</p>
+			</div>
+		</div>
+		<ClickToLoad
+			src="https://player.rss.com/the-regenerative-future-podcast/2620815?theme=dark&v=2&skip=false"
+			title="Redesigning Community: Inside the Regenerative Community Operating System"
+			provider="RSS.com"
+			kind="audio"
+		/>
+	</section>
+
+	<!-- The story -->
+	<section id="story" aria-labelledby="story-title" class="scroll-mt-24">
+		<div class="mb-10 flex max-w-3xl flex-col gap-3">
+			<p class={eyebrow}>{m.home_story_eyebrow()}</p>
+			<h2 id="story-title" class={h2}>{m.home_story_heading()}</h2>
+		</div>
+		<ol class="grid gap-4 md:grid-cols-5">
+			{#each story as step, i (i)}
+				<li
+					class={[
+						'flex flex-col gap-2 rounded-2xl border px-4.5 py-5',
+						i === 4 ? 'border-forest-300 bg-hover' : 'border-line bg-card'
+					]}
+				>
+					<span class="font-mono text-sm font-bold text-forest-600">0{i + 1}</span>
+					<h3 class="font-ui text-[17px] leading-snug font-semibold text-heading">
+						{step.title()}
+					</h3>
+					<p class="text-[15px] leading-normal text-ink-2">{step.body()}</p>
+					{#if step.layer !== null}
+						<a
+							href={href(layerPath[step.layer])}
+							class="mt-auto pt-2 font-ui text-xs font-semibold text-accent-ink hover:underline"
+							>{m.layer_label({ n: step.layer })} · {layerShort[step.layer]()}</a
+						>
+					{/if}
+				</li>
+			{/each}
+		</ol>
+		<p class="mt-8 max-w-3xl font-serif text-2xl font-bold text-heading">
+			{m.home_story_punchline()}
+		</p>
+	</section>
+
+	<!-- What RCOS is: questions become numbered rules -->
+	<section aria-labelledby="what-title">
+		<div class="mb-8 flex max-w-3xl flex-col gap-3">
+			<p class={eyebrow}>{m.home_what_eyebrow()}</p>
+			<h2 id="what-title" class={h2}>{m.home_what_heading()}</h2>
+			<p class={lead}>{m.home_what_body()}</p>
+		</div>
+		<div class="grid gap-5 lg:grid-cols-2">
+			{#each examples as ex (ex.path)}
+				<a
+					href={href(ex.path)}
+					class="flex flex-col overflow-hidden rounded-2xl border border-line bg-card hover:border-forest-300"
+				>
+					<div class="flex flex-col gap-2 px-5 py-5">
+						<p class="font-ui text-[11px] font-semibold tracking-[0.08em] text-ink-faint uppercase">
+							{m.home_what_question_label()}
+						</p>
+						<p class="font-serif text-xl font-semibold text-heading">“{ex.question()}”</p>
+					</div>
+					<div class="flex flex-1 flex-col gap-2.5 border-t border-line bg-hover px-5 py-4">
+						<p
+							class="font-ui text-[11px] font-semibold tracking-[0.08em] text-accent-ink uppercase"
+						>
+							{m.home_what_rule_label()} · {m.layer_label({ n: ex.layer })}
+						</p>
+						{#each ex.clauses as c (c.num)}
+							<p class="flex gap-3 text-[15px] text-ink">
+								<span class="shrink-0 pt-0.5 font-mono text-sm font-semibold text-accent-ink"
+									>§{c.num}</span
+								>{c.text()}
+							</p>
+						{/each}
+					</div>
+				</a>
+			{/each}
+		</div>
+		<div class="mt-5 flex flex-wrap items-center justify-between gap-3">
+			<p class="text-sm text-ink-muted">{m.home_what_must_note()}</p>
+			<a
+				href={href('/standard/core/0.1')}
+				class="inline-flex items-center gap-1.5 font-ui text-sm font-semibold text-accent-ink hover:underline"
+				>{m.home_what_read_core()}<IconArrowRight class="size-4" /></a
+			>
+		</div>
+	</section>
+
+	<!-- The seven layers as rings, and the modules beside them -->
+	<section aria-labelledby="layers-title">
+		<div class="mb-8 flex max-w-3xl flex-col gap-3">
+			<p class={eyebrow}>{m.home_layers_eyebrow()}</p>
+			<h2 id="layers-title" class={h2}>{m.home_layers_heading()}</h2>
+			<p class={lead}>{m.home_layers_body()}</p>
+		</div>
+		<div class="grid items-center gap-10 lg:grid-cols-[minmax(0,1.4fr)_minmax(0,1fr)] lg:gap-14">
+			<div class="flex min-w-0 flex-col gap-3.5">
+				<p class="flex flex-wrap items-center gap-x-3 gap-y-2 text-[13px] text-ink-2">
+					<span
+						class="rounded-md bg-brand px-2 py-0.5 font-ui text-xs font-semibold tracking-[0.06em] text-white uppercase"
+						>{m.home_rings_core()}</span
+					>
+					{m.home_rings_core_note()} ·
+					<span class="inline-flex items-center gap-1 font-medium text-accent-ink"
+						><IconHandClick class="size-4" />{m.home_rings_tap()}</span
+					>
+				</p>
+				<LayerRings {locale} />
+			</div>
+			<div
+				class="flex flex-col gap-4.5 rounded-3xl border border-dashed border-clay-300 bg-guide px-6 py-6"
+			>
+				<p class="font-ui text-xs font-semibold tracking-[0.06em] text-guide-accent uppercase">
+					{m.mega_modules()}
+				</p>
+				<h3 class="font-serif text-2xl font-semibold text-heading">{m.home_modules_title()}</h3>
+				<ul class="flex flex-col gap-2.5">
+					{#each MODULES as mod (mod.href)}
+						<li>
+							<a
+								href={href(mod.href)}
+								class="flex items-center gap-3 rounded-xl border border-guide-line bg-card px-3.5 py-3 hover:border-clay-500"
+							>
+								<span
+									class="inline-flex size-8 shrink-0 items-center justify-center rounded-full border-[1.5px] border-dashed border-clay-500 text-clay-800"
+									><IconPlus class="size-4" /></span
+								>
+								<span class="flex flex-col">
+									<span class="font-ui text-[15px] font-semibold text-heading">{mod.label()}</span>
+									{#if mod.desc}<span class="text-sm text-ink-muted">{mod.desc()}</span>{/if}
+								</span>
+							</a>
+						</li>
 					{/each}
-				</div>
-			</section>
-		{/if}
-	</div>
+				</ul>
+				<p class="text-sm text-guide-ink">{m.home_modules_body()}</p>
+				<a
+					href={href('/standard/modules')}
+					class="inline-flex items-center gap-1.5 self-start font-ui text-sm font-semibold text-guide-accent hover:underline"
+					>{m.home_modules_all()}<IconArrowRight class="size-4" /></a
+				>
+			</div>
+		</div>
+	</section>
+
+	<!-- Five parts -->
+	<section aria-labelledby="parts-title">
+		<div class="mb-8 flex max-w-3xl flex-col gap-3">
+			<p class={eyebrow}>{m.home_parts_eyebrow()}</p>
+			<h2 id="parts-title" class={h2}>{m.home_parts_heading()}</h2>
+			<p class={lead}>{m.home_parts_body()}</p>
+		</div>
+		<ul class="grid gap-4 sm:grid-cols-2 lg:grid-cols-5">
+			{#each parts as part (part.path)}
+				<li>
+					<a
+						href={href(part.path)}
+						class="flex h-full flex-col gap-2.5 rounded-2xl border border-line bg-card px-4.5 py-5 hover:border-forest-300"
+					>
+						<span
+							class="inline-flex size-10 items-center justify-center rounded-xl bg-hover text-accent-ink"
+							><part.icon class="size-5" /></span
+						>
+						<h3 class="font-ui text-[17px] font-semibold text-heading">{part.name()}</h3>
+						<p class="text-[15px] leading-normal text-ink-2">{part.what()}</p>
+					</a>
+				</li>
+			{/each}
+		</ul>
+	</section>
+
+	<!-- Start where you are -->
+	<section
+		aria-labelledby="start-title"
+		class="rounded-3xl border border-line bg-hover px-5 py-8 sm:px-8 sm:py-10"
+	>
+		<div class="mb-6 flex max-w-3xl flex-col gap-3">
+			<p class={eyebrow}>{m.home_start_eyebrow()}</p>
+			<h2 id="start-title" class={h2}>{m.home_pick_heading()}</h2>
+		</div>
+		<Tabs.Root bind:value={audience}>
+			<Tabs.List class="flex flex-wrap gap-2">
+				{#each audiences as a (a.key)}
+					<Tabs.Trigger
+						value={a.key}
+						class="inline-flex h-10 items-center gap-2 rounded-full border border-line bg-card px-4 font-ui text-sm font-semibold text-ink hover:border-forest-400 data-[state=active]:border-brand data-[state=active]:bg-brand data-[state=active]:text-white"
+						><a.icon class="size-4" />{a.label()}</Tabs.Trigger
+					>
+				{/each}
+			</Tabs.List>
+			{#each audiences as a (a.key)}
+				<Tabs.Content value={a.key} class="mt-6 flex flex-col gap-6">
+					<p class="max-w-2xl text-lg text-ink-2">{a.pitch()}</p>
+					<ol class="grid gap-4 md:grid-cols-3">
+						{#each a.steps as step, i (i)}
+							<li class="flex flex-col gap-2 rounded-2xl border border-line bg-card px-5 py-5">
+								<span
+									class="inline-flex size-8 items-center justify-center rounded-full bg-brand font-ui text-sm font-bold text-white"
+									>{i + 1}</span
+								>
+								<h3 class="font-ui text-[17px] font-semibold text-heading">{step.title()}</h3>
+								<p class="flex-1 text-[15px] text-ink-2">{step.body()}</p>
+								<a
+									href={href(step.path)}
+									class="inline-flex items-center gap-1.5 self-start pt-1 font-ui text-sm font-semibold text-accent-ink hover:underline"
+									>{step.cta()}<IconArrowRight class="size-4" /></a
+								>
+							</li>
+						{/each}
+					</ol>
+				</Tabs.Content>
+			{/each}
+		</Tabs.Root>
+	</section>
+
+	<!-- Also in the knowledge base -->
+	<section aria-labelledby="more-title">
+		<h2 id="more-title" class="mb-5 font-serif text-2xl font-semibold text-heading">
+			{m.home_more_heading()}
+		</h2>
+		<ul class="grid gap-4 sm:grid-cols-3">
+			{#each more as item (item.path)}
+				<li>
+					<a
+						href={href(item.path)}
+						class="flex h-full gap-3 rounded-2xl border border-line bg-card px-4.5 py-4 hover:border-forest-300"
+					>
+						<item.icon class="mt-0.5 size-5 shrink-0 text-accent-ink" />
+						<span class="flex flex-col gap-1">
+							<span class="font-ui text-[15.5px] font-semibold text-heading">{item.title()}</span>
+							<span class="line-clamp-2 text-sm text-ink-muted">{item.desc()}</span>
+						</span>
+					</a>
+				</li>
+			{/each}
+		</ul>
+	</section>
 </div>

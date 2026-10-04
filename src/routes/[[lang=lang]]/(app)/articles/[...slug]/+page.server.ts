@@ -1,81 +1,18 @@
-import { buildGraph } from '$lib/server/graph';
-import { readArticleBody } from '$lib/server/content';
-import { getArticleDownloads } from '$lib/server/downloads';
-import { buildCoverage } from '$lib/server/coverage';
-import { buildAssessment } from '$lib/server/assessment';
-import { getFileDates } from '$lib/server/dates';
-import { rewriteArticleLinks } from '$lib/server/links';
-import { DEFAULT_LOCALE, LOCALE_CODES } from '$lib/i18n/languages';
+import { error } from '@sveltejs/kit';
 import { redirects } from '$lib/server/redirects';
+import { DEFAULT_LOCALE, LOCALE_CODES } from '$lib/i18n/languages';
 import type { EntryGenerator, PageServerLoad } from './$types';
 
-/** Slug of the Stress Tests index, which additionally renders an invariant-coverage matrix. */
-const STRESS_TESTS_INDEX_SLUG = 'rcos-stress-tests';
-/** Slug of the self-assessment page, which renders the interactive symptom checklist. */
-const SELF_ASSESSMENT_SLUG = 'rcos-stress-tests/self-assessment';
-
-export const entries: EntryGenerator = async () => {
-	// Use the default-locale graph for entry enumeration. Non-default locale
-	// routes are reached via crawling from links emitted by LanguageSwitcher,
-	// which the prerender crawler follows automatically.
-	const graph = await buildGraph(DEFAULT_LOCALE);
-	// Pages that moved to /standard: prerendering them records their redirects
-	// (see $lib/server/redirects), in every language.
-	const moved = [...(await redirects()).keys()].flatMap((from) => {
-		const slug = from.replace(/^\/articles\//, '');
+/**
+ * /articles/… was the markdown-era site. Every old URL answers a 308 from
+ * hooks.server.ts; listing them as prerender entries makes the build record
+ * each redirect, which adapter-vercel serves as a static route.
+ */
+export const entries: EntryGenerator = async () =>
+	[...(await redirects()).keys()].flatMap((from) => {
+		const slug = from.replace(/^\/articles\/?/, '');
 		return LOCALE_CODES.map((code) => (code === DEFAULT_LOCALE ? { slug } : { lang: code, slug }));
 	});
-	return [...graph.articles.map((article) => ({ slug: article.slug })), ...moved];
-};
 
-export const load: PageServerLoad = async ({ params }) => {
-	const locale = params.lang ?? DEFAULT_LOCALE;
-	const article = await readArticleBody(params.slug, locale);
-	const downloads = getArticleDownloads(params.slug, locale);
-
-	// Look up the article in the locale-specific graph so the page can render at
-	// SSR without depending on the client-side store. Also yields availableLocales
-	// (which locales this article actually exists in — drives switcher dimming
-	// and SEO hreflang alternates) and the resolved children list (locale-aware).
-	const graph = await buildGraph(locale);
-	const meta = graph.articles.find((a) => a.slug === params.slug);
-	const breadcrumbs = meta ? buildBreadcrumbs(graph.articles, meta.id) : [];
-	const parent = meta?.parentId ? graph.articles.find((a) => a.id === meta.parentId) : undefined;
-
-	// Only the Stress Tests index renders the coverage matrix; skip the extra
-	// content scan on every other article page.
-	const coverage = params.slug === STRESS_TESTS_INDEX_SLUG ? await buildCoverage(locale) : null;
-	const assessment = params.slug === SELF_ASSESSMENT_SLUG ? await buildAssessment(locale) : null;
-
-	// Dates of the file actually served (the English source on a fallback page).
-	const dates = article?.filePath ? (await getFileDates()).get(article.filePath) : undefined;
-
-	return {
-		article: meta ?? null,
-		breadcrumbs,
-		parent: parent ?? null,
-		body: article?.body ? rewriteArticleLinks(article.body, locale, graph.articles) : null,
-		datePublished: dates?.published ?? null,
-		dateModified: dates?.modified ?? null,
-		bodyLang: article?.lang ?? locale,
-		bodyIsFallback: article?.isFallback ?? false,
-		downloads,
-		coverage,
-		assessment,
-		availableLocales: meta?.availableLocales ?? [DEFAULT_LOCALE]
-	};
-};
-
-function buildBreadcrumbs(
-	all: Array<{ id: string; slug: string; title: string; parentId?: string | null }>,
-	startId: string
-) {
-	const byId = new Map(all.map((a) => [a.id, a] as const));
-	const out: Array<{ id: string; slug: string; title: string }> = [];
-	let cur = byId.get(startId);
-	while (cur) {
-		out.unshift({ id: cur.id, slug: cur.slug, title: cur.title });
-		cur = cur.parentId ? byId.get(cur.parentId) : undefined;
-	}
-	return out;
-}
+// Only reached for an /articles URL that never existed.
+export const load: PageServerLoad = () => error(404, 'Not found');

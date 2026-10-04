@@ -1,5 +1,5 @@
 lang: pt-br
-sourceHash: '9a017ccb'
+sourceHash: 'cd8af28f'
 title: Privatização dos Bens Comuns pela Venda de Terras
 summary: Quando vender a terra aos membros silenciosamente torna impossível sair da comunidade de forma justa.
 tags:
@@ -80,7 +80,7 @@ sections:
       - **[Regulamento da Tesouraria](rcos:template/treasury-ruleset)** + **[Protocolo de Economia Interna](rcos:template/internal-economy-protocol)** — declaram o que é bem comum versus privado e protegem os bens comuns da privatização informal.
       - **[Protocolo de Saída](rcos:template/exit-protocol)** — garante que os termos de saída e revenda existam antes que alguém transfira qualquer coisa, para que ninguém fique preso.
       - **[Registro de Invariantes](rcos:template/invariants-register)** — registra a proteção dos bens comuns como uma invariante protegida que não pode ser silenciosamente alterada.
-      - Exemplo trabalhado: a salvaguarda **[Anti-Privatização dos Bens Comuns de Terra](/articles/safeguards/land-commons-anti-privatization)**.
+      - Exemplo trabalhado: a salvaguarda **[Anti-Privatização dos Bens Comuns de Terra](/safeguards/land-commons-anti-privatization)**.
 
       Veja também a especificação: [Camada 3 — Bens Comuns vs Recursos Privados](rcos:§5.1) e [Camada 1 — Saída e Separação](rcos:§3.6).
   if-it-s-already-happening:

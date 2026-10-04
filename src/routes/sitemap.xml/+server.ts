@@ -1,10 +1,11 @@
-import { buildGraph } from '$lib/server/graph';
-import { readArticleMeta } from '$lib/server/content';
 import { standardSitemap } from '$lib/server/standard';
+import { siteSitemap } from '$lib/server/site';
+import { PAGE_KEYS, pageLocales } from '$lib/server/pages';
 import { getFileDates } from '$lib/server/dates';
 import { SITE_URL } from '$lib/config/site';
-import { LOCALES, DEFAULT_LOCALE } from '$lib/i18n/languages';
+import { LOCALES, LOCALE_CODES, DEFAULT_LOCALE } from '$lib/i18n/languages';
 import { localeUrl } from '$lib/i18n/path';
+import path from 'node:path';
 import type { RequestHandler } from './$types';
 
 export const prerender = true;
@@ -18,13 +19,12 @@ export const prerender = true;
  * EVERY available locale (bidirectional reciprocity is required), plus an x-default
  * pointing at the canonical (default-locale) URL.
  *
- * Per-article availability is computed by buildGraph() from the set of files
- * actually present (e.g. presence of `00-introduction.de.md` registers `de` for
- * that article); untranslated articles emit only the default-locale URL.
+ * A page is available in a locale when its source has a translation there;
+ * untranslated pages emit only the default-locale URL.
  */
 
 type Entry = {
-	path: string; // unprefixed canonical path, e.g. "/articles/foo"
+	path: string; // unprefixed canonical path, e.g. "/templates/layer-0"
 	availableLocales: string[]; // locales where a real translation exists
 	changefreq: string;
 	priority: string;
@@ -35,61 +35,53 @@ type Entry = {
 };
 
 export const GET: RequestHandler = async () => {
-	// Default-locale graph: per-article availability is the same regardless of which
-	// locale we resolve into, since availableLocales is computed from the files
-	// present, not the requested locale.
-	const graph = await buildGraph(DEFAULT_LOCALE);
-
-	const staticEntries: Entry[] = [
-		{
-			path: '/',
-			// All UI is auto-translated (or trivially translatable); treat home as available everywhere.
-			availableLocales: LOCALES.map((l) => l.code),
-			changefreq: 'monthly',
-			priority: '1.0'
-		},
-		{
-			path: '/articles',
-			availableLocales: LOCALES.map((l) => l.code),
-			changefreq: 'weekly',
-			priority: '0.8'
-		}
-	];
-
-	// slug → locale → last-modified date of that locale's file.
-	const [meta, fileDates] = await Promise.all([readArticleMeta(), getFileDates()]);
-	const lastmodBySlug = new Map<string, Record<string, string>>();
-	for (const entry of meta) {
-		const modified = entry.filePath ? fileDates.get(entry.filePath)?.modified : undefined;
-		if (!modified) continue;
-		const bySlug = lastmodBySlug.get(entry.slug) ?? {};
-		bySlug[entry.lang ?? DEFAULT_LOCALE] = modified;
-		lastmodBySlug.set(entry.slug, bySlug);
-	}
-
-	const articleEntries: Entry[] = graph.articles.map((article) => ({
-		path: `/articles/${article.slug}`,
-		availableLocales: article.availableLocales.length ? article.availableLocales : [DEFAULT_LOCALE],
-		changefreq: 'weekly',
-		priority: '0.6',
-		lastmod: lastmodBySlug.get(article.slug)
-	}));
-
-	// The standard, served from its YAML (one source file per locale).
-	const standardEntries: Entry[] = (await standardSitemap()).map(({ path, locales, files }) => ({
-		path,
-		availableLocales: locales,
-		changefreq: 'weekly',
-		priority: path === '/standard' || /^\/standard\/core\/[^/]+\/[^/]+$/.test(path) ? '0.8' : '0.6',
-		lastmod: Object.fromEntries(
+	const fileDates = await getFileDates();
+	const lastmod = (files: Record<string, string>) =>
+		Object.fromEntries(
 			Object.entries(files).flatMap(([loc, file]) => {
 				const modified = fileDates.get(file)?.modified;
 				return modified ? [[loc, modified]] : [];
 			})
-		)
-	}));
+		);
+	const all = LOCALES.map((l) => l.code);
 
-	const allEntries = [...staticEntries, ...standardEntries, ...articleEntries];
+	const staticEntries: Entry[] = [
+		{ path: '/', availableLocales: all, changefreq: 'monthly', priority: '1.0' },
+		{ path: '/library', availableLocales: all, changefreq: 'monthly', priority: '0.8' },
+		{ path: '/toolkit', availableLocales: all, changefreq: 'monthly', priority: '0.7' },
+		{ path: '/data', availableLocales: all, changefreq: 'monthly', priority: '0.5' }
+	];
+
+	// The standard and the content pages, served from their YAML (one file per locale).
+	const yamlEntries: Entry[] = [...(await standardSitemap()), ...(await siteSitemap())].map(
+		({ path: p, locales, files }) => ({
+			path: p,
+			availableLocales: locales,
+			changefreq: 'weekly',
+			priority: p === '/standard' || /^\/standard\/core\/[^/]+\/[^/]+$/.test(p) ? '0.8' : '0.6',
+			lastmod: lastmod(files)
+		})
+	);
+
+	// Pages whose copy is markdown (hubs, toolkit, safeguards, reference implementations).
+	const pageEntries: Entry[] = PAGE_KEYS.map((key) => {
+		const locales = pageLocales(key, LOCALE_CODES);
+		const files = Object.fromEntries(
+			locales.map((l) => [
+				l,
+				path.resolve('content/pages', `${key}${l === DEFAULT_LOCALE ? '' : `.${l}`}.md`)
+			])
+		);
+		return {
+			path: `/${key}`,
+			availableLocales: locales,
+			changefreq: 'weekly',
+			priority: '0.7',
+			lastmod: lastmod(files)
+		};
+	});
+
+	const allEntries = [...staticEntries, ...yamlEntries, ...pageEntries];
 
 	const renderUrl = (entry: Entry, loc: string) => {
 		const alternates =

@@ -7,6 +7,12 @@
 	import Clause from '$lib/components/standard/Clause.svelte';
 	import OnThisPage from '$lib/components/standard/OnThisPage.svelte';
 	import RelatedRail from '$lib/components/standard/RelatedRail.svelte';
+	import ReadingModeToggle from '$lib/components/standard/ReadingModeToggle.svelte';
+	import SectionFooter from '$lib/components/standard/SectionFooter.svelte';
+	import GuideSheet from '$lib/components/standard/GuideSheet.svelte';
+	import { closeGuide, openGuide } from '$lib/components/standard/guide.svelte';
+	import { afterNavigate } from '$app/navigation';
+	import IconBulb from '~icons/tabler/bulb';
 	import { setStandardContext } from '$lib/components/standard/context';
 	import { scrollSpy } from '$lib/components/standard/spy.svelte';
 	import IconArrowLeft from '~icons/tabler/arrow-left';
@@ -15,6 +21,12 @@
 
 	let { data } = $props();
 	const p = $derived(data.page);
+
+	// The guide belongs to this page: close it when the reader moves to another one
+	// (but not for in-page links such as "See §2.3.4").
+	afterNavigate(({ from, to }) => {
+		if (from?.url.pathname !== to?.url.pathname) closeGuide();
+	});
 
 	// Rule text reads term definitions and layer names from the page.
 	setStandardContext(() => p);
@@ -27,6 +39,7 @@
 			.slice(0, 200) || p.fullTitle
 	);
 	const isChapter = $derived(p.number !== null);
+	const hasGuidance = $derived(p.sections.some((s) => s.guide));
 	const citation = $derived(
 		isChapter
 			? `RCOS-Core v0.1, §${p.number} “${p.fullTitle.replace(/^\d+\.\s*/, '')}”. EcoHubs, 2026. CC BY 4.0.`
@@ -94,6 +107,9 @@
 			{#if p.introHtml}
 				<Prose html={p.introHtml} class="text-lg leading-relaxed" />
 			{/if}
+			{#if hasGuidance}
+				<ReadingModeToggle />
+			{/if}
 		</header>
 
 		{#each p.sections as section (section.id)}
@@ -118,17 +134,60 @@
 						>
 					{/if}
 					<span class="min-w-0 flex-1">{section.title}</span>
+					{#if section.guide}
+						<button
+							type="button"
+							onclick={() => openGuide(section.id)}
+							aria-label={m.std_guide_open({ ref: section.ref ?? '' })}
+							title={m.std_guide_more()}
+							class="inline-flex h-8 shrink-0 items-center gap-1.5 self-center rounded-full border border-transparent px-2.5 font-ui text-[12.5px] font-semibold text-guide-accent opacity-50 hover:border-guide-line hover:bg-guide-chip hover:opacity-100 focus-visible:opacity-100 [.guided_&]:border-guide-line [.guided_&]:bg-guide [.guided_&]:opacity-100"
+						>
+							<IconBulb class="size-4" /><span class="max-sm:sr-only">{m.std_guide_button()}</span>
+						</button>
+					{/if}
 				</h2>
+				{#if section.guide}
+					<div
+						class="-mt-1 mb-4 hidden items-start gap-3 rounded-xl border border-dashed border-clay-300 bg-guide px-3.5 py-3 [.guided_&]:flex"
+					>
+						<span
+							class="mt-0.5 shrink-0 rounded bg-guide-chip px-1.5 py-0.5 font-ui text-[10.5px] font-bold tracking-[0.08em] text-guide-accent uppercase"
+							>{m.std_in_short()}</span
+						>
+						<div class="flex min-w-0 flex-col gap-1.5">
+							<Prose
+								html={section.guide.inShortHtml}
+								class="text-[15px] leading-normal text-guide-ink"
+								lang={section.guide.lang}
+							/>
+							<button
+								type="button"
+								onclick={() => openGuide(section.id)}
+								class="inline-flex items-center gap-1 self-start font-ui text-[13px] font-semibold text-clay-800 hover:underline"
+								>{m.std_guide_more()} →</button
+							>
+						</div>
+					</div>
+				{/if}
 				{#if section.blocks.length}
 					<ol class="flex flex-col gap-0.5">
 						{#each section.blocks as block, i (i)}
 							{#if block.kind === 'clause'}
-								<Clause ref={block.ref} parts={block.parts} items={block.items} />
+								<Clause
+									ref={block.ref}
+									parts={block.parts}
+									items={block.items}
+									question={block.question}
+									onquestion={() => openGuide(section.id, block.question)}
+								/>
 							{:else}
 								<li class="list-none py-2"><Prose html={block.html} /></li>
 							{/if}
 						{/each}
 					</ol>
+				{/if}
+				{#if section.practice.length || section.testedBy.length}
+					<SectionFooter practice={section.practice} testedBy={section.testedBy} />
 				{/if}
 			</section>
 		{/each}
@@ -199,3 +258,7 @@
 		</aside>
 	{/if}
 </div>
+
+{#if hasGuidance}
+	<GuideSheet sections={p.sections} locale={data.locale} />
+{/if}

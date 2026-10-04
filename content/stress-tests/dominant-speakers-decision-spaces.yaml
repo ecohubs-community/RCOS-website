@@ -4,7 +4,7 @@ headingLevel: 3
 id: 6acfe5f7
 title: Dominant Speakers in Decision Spaces
 summary: When the loudest voice, not the agreed process, decides.
-parentId: 7f25f268
+parentId: 6acbe9a7
 order: 0
 severity: high
 stage:
@@ -19,6 +19,10 @@ invariants:
   - '2.2'
   - '5.1'
   - '4.1'
+tests:
+  - '4.2'
+  - '4.6'
+  - '7.2'
 remediationReady: true
 tags:
   - 'Layer 2: Governance'

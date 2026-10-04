@@ -4,7 +4,7 @@ headingLevel: 3
 id: 45a25135
 title: Cultural Norm Violation Scope Test
 summary: When an unwritten norm gets punished as if it were a written rule.
-parentId: 45625035
+parentId: 6acbe9a7
 order: 0
 severity: medium
 stage:
@@ -19,6 +19,10 @@ invariants:
   - '0.2'
   - '1.1'
   - '4.4'
+tests:
+  - '2.2'
+  - '2.4'
+  - '6.4'
 remediationReady: true
 tags:
   - 'Layer 0: Scope'

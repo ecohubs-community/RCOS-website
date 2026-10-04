@@ -2,7 +2,7 @@
 
 # RCOS Core Specification — v0.1
 
-- **Generated:** 2026-10-02
+- **Generated:** 2026-10-03
 - **Source (latest version):** [https://rcos.ecohubs.community/articles/rcos-core/v0-1](https://rcos.ecohubs.community/articles/rcos-core/v0-1)
 
 - Status: Draft
@@ -220,7 +220,7 @@ RCOS turns:
 
 ### Known Failure Modes RCOS Is Designed to Prevent
 
-See [RCOS Stress Tests](https://rcos.ecohubs.community/articles/rcos-stress-tests?id=6acbe9a7)
+See [RCOS Stress Tests](https://rcos.ecohubs.community/stress-tests)
 
 ## Reference Implementations
 

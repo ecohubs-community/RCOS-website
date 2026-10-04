@@ -5,20 +5,23 @@
  * rendered, links are resolved and localized, and the page receives finished
  * data. Nothing matches or parses in the browser.
  */
-import { loadDocuments } from '$lib/content/load.js';
-import { merge } from '$lib/content/overlay.js';
-import { articleUrl, refTargets, refsIn, resolveAll } from '$lib/content/refs.js';
-import { standardRoute } from '$lib/content/routes.js';
+import {
+	fileName,
+	loadStore,
+	localized,
+	localizeLinks,
+	localizePath,
+	type Doc,
+	type Loaded,
+	type Store as DocStore
+} from './docs';
+import { refTargets, refsIn, resolveAll } from '$lib/content/refs.js';
+import { siteRoute, standardRoute } from '$lib/content/routes.js';
 import { tokenize, termForms, type Part } from '$lib/content/tokenize.js';
 import { renderBlock, renderInline } from '$lib/content/render.js';
 import { headingSlug } from '$lib/content/markdown.js';
 import { DEFAULT_LOCALE } from '$lib/i18n/languages';
 import { PUBLIC_SITE_URL } from '$lib/config/site';
-
-// YAML documents are checked by the content schema, not by TypeScript.
-// eslint-disable-next-line @typescript-eslint/no-explicit-any
-type Doc = Record<string, any>;
-type Loaded = Awaited<ReturnType<typeof loadDocuments>>[number];
 
 export type RenderedPart =
 	| { t: 'text'; text: string }
@@ -28,8 +31,29 @@ export type RenderedPart =
 	| { t: 'term'; text: string; key: string };
 
 export type BlockView =
-	| { kind: 'clause'; ref: string; parts: RenderedPart[]; items: RenderedPart[][] }
+	| {
+			kind: 'clause';
+			ref: string;
+			parts: RenderedPart[];
+			items: RenderedPart[][];
+			/** A common question answered by this clause (opens the guide there) */
+			question: string | null;
+	  }
 	| { kind: 'html'; html: string };
+
+/** A template section, as a link target. */
+export type TemplateLink = { href: string; template: string; section: string };
+
+/** Plain-language help for one section of the standard (non-normative). */
+export type GuideView = {
+	inShortHtml: string;
+	/** "Why it matters": the rationale of the template sections that own this section's clauses */
+	why: { html: string; source: TemplateLink }[];
+	examples: { text: string; source: TemplateLink }[];
+	questions: { id: string; question: string; answerHtml: string; ref: string | null }[];
+	/** Language the guidance is written in (English until it is translated) */
+	lang: string;
+};
 
 export type SectionView = {
 	/** Anchor: the section number (2.1), or a slug for unnumbered sections */
@@ -39,6 +63,11 @@ export type SectionView = {
 	/** Heading ids of the markdown era (#21-purpose-definition), kept so old links land */
 	legacyAnchors: string[];
 	blocks: BlockView[];
+	guide: GuideView | null;
+	/** Template sections where a community writes what this section asks for */
+	practice: TemplateLink[];
+	/** Stress tests that exercise this section */
+	testedBy: { href: string; title: string; severity: string | null }[];
 };
 
 export type PageLink = { path: string; title: string; number: string | null };
@@ -50,7 +79,7 @@ export type RelatedView = {
 	templates: { href: string; title: string; ref: string | null }[];
 	templatesHref: string | null;
 	/** level: the test's severity when it is mainly about this layer, else "other" */
-	tests: { href: string; title: string; level: 'high' | 'medium' | 'other' }[];
+	tests: { href: string; title: string; level: 'high' | 'medium' | 'low' | 'other' }[];
 	selfCheckHref: string;
 };
 
@@ -97,16 +126,17 @@ export type StandardNav = {
 
 // --- Loading -----------------------------------------------------------------------
 
-let loaded: Promise<{ pages: Map<string, Loaded>; all: Loaded[] }> | undefined;
+type Store = DocStore & { pages: Map<string, Loaded> };
+let loaded: Promise<Store> | undefined;
 
 function load() {
-	loaded ??= loadDocuments().then((all) => {
+	loaded ??= loadStore().then((store) => {
 		const pages = new Map<string, Loaded>();
-		for (const d of all) {
-			const path = standardRoute(d.file, d.en);
-			if (path) pages.set(path, d);
+		for (const d of store.all) {
+			const route = standardRoute(d.file, d.en);
+			if (route) pages.set(route, d);
 		}
-		return { pages, all };
+		return { ...store, pages };
 	});
 	return loaded;
 }
@@ -116,21 +146,7 @@ export async function standardPaths(): Promise<string[]> {
 	return [...(await load()).pages.keys()];
 }
 
-function localized(d: Loaded, locale: string): { doc: Doc; fallback: boolean } {
-	if (locale === DEFAULT_LOCALE) return { doc: d.en, fallback: false };
-	const overlay = d.overlays[locale];
-	if (!overlay) return { doc: d.en, fallback: true };
-	const { lang: _l, sourceHash: _h, ...text } = overlay.data;
-	return { doc: merge(d.en, text), fallback: false };
-}
-
 // --- Chapter identity -------------------------------------------------------------------
-
-const fileName = (d: Loaded) =>
-	d.file
-		.split('/')
-		.pop()!
-		.replace(/\.yaml$/, '');
 
 /** "02-layer-0-…" → "2"; "appendix-a-…" → "A"; anything else → null. */
 function chapterNumber(d: Loaded): string | null {
@@ -156,15 +172,6 @@ function shortTitle(title: string, d: Loaded): string {
 
 // --- Rendering ------------------------------------------------------------------------------
 
-/** Prefix internal links with the locale (EN is unprefixed). */
-function localizeLinks(md: string, locale: string): string {
-	if (locale === DEFAULT_LOCALE) return md;
-	return md.replace(/\]\(\/(standard|articles)(\/|\))/g, `](/${locale}/$1$2`);
-}
-
-const localizePath = (path: string, locale: string) =>
-	locale === DEFAULT_LOCALE ? path : `/${locale}${path}`;
-
 function renderParts(
 	parts: Part[],
 	locale: string,
@@ -178,11 +185,12 @@ function renderParts(
 }
 
 export async function standardPage(path: string, locale: string): Promise<StandardPage | null> {
-	const { pages, all } = await load();
+	const store = await load();
+	const { pages, all } = store;
 	const d = pages.get(path);
 	if (!d) return null;
 	const { doc: raw, fallback } = localized(d, locale);
-	const targets = refTargets(all);
+	const targets = store.targets;
 	const doc = resolveAll(raw, targets);
 
 	// Glossary, for term tooltips (in the page's language).
@@ -201,8 +209,12 @@ export async function standardPage(path: string, locale: string): Promise<Standa
 	const glossaryPath = [...pages].find(([, x]) => x.en.kind === 'glossary')?.[0] ?? null;
 	const layerHref = (n: number) => layerPaths.get(n) ?? '/standard/core/0.1';
 
+	const layer = layerOf(d);
+	const help = layer === null ? null : guidanceFor(layer, store, locale, targets);
+
 	const used = new Set<string>();
 	const sections: SectionView[] = (doc.sections ?? []).map((s: Doc, i: number) => {
+		const guide = s.ref ? (help?.sections.get(s.ref) ?? null) : null;
 		const seen = new Set<string>();
 		const enSection = d.en.sections?.[i];
 		const legacy = new Set<string>();
@@ -218,7 +230,8 @@ export async function standardPage(path: string, locale: string): Promise<Standa
 					parts: renderParts(tokenize(b.text, ctx), locale, layerHref),
 					items: (b.items ?? []).map((item: string) =>
 						renderParts(tokenize(item, ctx), locale, layerHref)
-					)
+					),
+					question: guide?.questions.find((q) => q.ref === b.ref)?.id ?? null
 				};
 				for (const k of seen) used.add(k);
 				return clause;
@@ -227,7 +240,16 @@ export async function standardPage(path: string, locale: string): Promise<Standa
 		});
 		const id = s.ref ?? headingSlug(s.title);
 		legacy.delete(id);
-		return { id, ref: s.ref, title: s.title, legacyAnchors: [...legacy], blocks };
+		return {
+			id,
+			ref: s.ref,
+			title: s.title,
+			legacyAnchors: [...legacy],
+			blocks,
+			guide,
+			practice: s.ref ? (help?.practice.get(s.ref) ?? []) : [],
+			testedBy: s.ref ? (help?.testedBy.get(s.ref) ?? []) : []
+		};
 	});
 
 	const terms: StandardPage['terms'] = {};
@@ -273,7 +295,7 @@ export async function standardPage(path: string, locale: string): Promise<Standa
 
 /** Guide, templates and stress tests of a layer (still article pages until phase 5). */
 function related(layer: number, all: Loaded[], locale: string): RelatedView {
-	const href = (legacyPath: string) => localizePath(articleUrl(legacyPath), locale);
+	const href = (d: Loaded) => localizePath(siteRoute(d.file) ?? '/', locale);
 	const text = (d: Loaded) => localized(d, locale).doc;
 	const under = (prefix: string) => all.filter((d) => d.en.legacyPath.startsWith(prefix));
 
@@ -284,17 +306,17 @@ function related(layer: number, all: Loaded[], locale: string): RelatedView {
 		.filter((d) => d.en.kind === 'template')
 		.sort((a, b) => a.en.order - b.en.order)
 		.map((d) => ({
-			href: href(d.en.legacyPath),
+			href: href(d),
 			title: text(d).title,
 			ref: refsIn(d.en.preamble ?? '').find((r: string) => r.startsWith('§')) ?? null
 		}));
 	const index = all.find((d) => d.en.legacyPath === `rcos-templates/layer-${layer}`);
 
-	const rank = { high: 0, medium: 1, other: 2 };
+	const rank = { high: 0, medium: 1, low: 2, other: 3 };
 	const tests = under('rcos-stress-tests/')
 		.filter((d) => d.en.layers?.includes(layer))
 		.map((d) => ({
-			href: href(d.en.legacyPath),
+			href: href(d),
 			title: text(d).title,
 			level: (d.en.layers[0] === layer
 				? d.en.severity
@@ -306,15 +328,130 @@ function related(layer: number, all: Loaded[], locale: string): RelatedView {
 		layer,
 		guide: guide
 			? {
-					href: href(guide.en.legacyPath),
+					href: href(guide),
 					question: String(text(guide).head ?? '').replace(/\*\*/g, '')
 				}
 			: null,
 		templates,
-		templatesHref: index ? href(index.en.legacyPath) : null,
+		templatesHref: index ? href(index) : null,
 		tests,
-		selfCheckHref: href('rcos-stress-tests/self-assessment')
+		selfCheckHref: localizePath('/toolkit/self-assessment', locale)
 	};
+}
+
+// --- Guidance ---------------------------------------------------------------------------------
+
+type LayerHelp = {
+	sections: Map<string, GuideView>;
+	practice: Map<string, TemplateLink[]>;
+	testedBy: Map<string, SectionView['testedBy']>;
+};
+
+/**
+ * Everything the guidance adds to a layer's sections: "In short" and questions
+ * (content/guidance), "Why it matters" and examples from the template sections
+ * that own the section's clauses (ownership.yaml, as in RCOS-compass), the
+ * templates to put it into practice, and the stress tests that exercise it.
+ */
+const helpCache = new Map<string, LayerHelp>();
+
+function guidanceFor(
+	layer: number,
+	store: Store,
+	locale: string,
+	targets: ReturnType<typeof refTargets>
+): LayerHelp {
+	const key = `${layer}|${locale}`;
+	let help = helpCache.get(key);
+	if (!help) helpCache.set(key, (help = buildHelp(layer, store, locale, targets)));
+	return help;
+}
+
+function buildHelp(
+	layer: number,
+	{ all, guides, owners }: Store,
+	locale: string,
+	targets: ReturnType<typeof refTargets>
+): LayerHelp {
+	const help: LayerHelp = { sections: new Map(), practice: new Map(), testedBy: new Map() };
+	const md = (text: string) => renderInline(localizeLinks(resolveAll(text, targets), locale));
+	const inLayer = (ref: string) => Number(ref.split('.')[0]) - 2 === layer;
+
+	// Template sections by key, in the page's language.
+	const templates = new Map<string, { link: TemplateLink; section: Doc }>();
+	for (const t of all) {
+		if (t.en.kind !== 'template') continue;
+		const { doc } = localized(t, locale);
+		const name = fileName(t);
+		for (const section of doc.sections) {
+			templates.set(`${name}.${section.id}`, {
+				link: {
+					href: `${localizePath(siteRoute(t.file) ?? '/', locale)}#${section.id}`,
+					template: doc.title,
+					section: section.title
+				},
+				section
+			});
+		}
+	}
+	// Each section's owning template sections, in clause order.
+	const owning = new Map<string, string[]>();
+	for (const [clause, key] of owners) {
+		const ref = clause.split('.').slice(0, 2).join('.');
+		if (!inLayer(ref)) continue;
+		const list = owning.get(ref) ?? [];
+		if (!list.includes(key)) list.push(key);
+		owning.set(ref, list);
+	}
+	for (const [ref, keys] of owning)
+		help.practice.set(
+			ref,
+			keys.flatMap((k) => templates.get(k)?.link ?? [])
+		);
+
+	for (const t of all) {
+		for (const ref of t.en.tests ?? []) {
+			if (!inLayer(ref)) continue;
+			const list = help.testedBy.get(ref) ?? [];
+			list.push({
+				href: localizePath(siteRoute(t.file) ?? '/', locale),
+				title: localized(t, locale).doc.title,
+				severity: t.en.severity ?? null
+			});
+			help.testedBy.set(ref, list);
+		}
+	}
+
+	const g = guides.get(layer);
+	if (!g) return help;
+	const { doc: guide } = localized(g, locale);
+	const lang = locale === DEFAULT_LOCALE || g.overlays[locale] ? locale : DEFAULT_LOCALE;
+	const examplesOf = new Map<string, string[]>(
+		guide.templates.map((t: Doc) => [t.key, t.examples ?? []])
+	);
+	for (const s of guide.sections as Doc[]) {
+		const keys = owning.get(s.ref) ?? [];
+		help.sections.set(s.ref, {
+			inShortHtml: md(s.inShort),
+			why: keys.flatMap((k) => {
+				const t = templates.get(k);
+				const rationale = t?.section.blocks.find((b: Doc) => b.kind === 'rationale');
+				return t && rationale ? [{ html: md(rationale.body), source: t.link }] : [];
+			}),
+			examples: keys.flatMap((k) => {
+				const t = templates.get(k);
+				return t ? (examplesOf.get(k) ?? []).map((text) => ({ text, source: t.link })) : [];
+			}),
+			questions: (s.questions ?? []).map((q: Doc) => ({
+				id: q.id,
+				question: q.question,
+				answerHtml: md(q.answer),
+				ref: q.ref ?? null
+			})),
+			lang
+		});
+	}
+	return help;
 }
 
 function titleIn(path: string, locale: string, pages: Map<string, Loaded>): string {

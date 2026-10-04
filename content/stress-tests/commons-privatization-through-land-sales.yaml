@@ -4,7 +4,7 @@ headingLevel: 3
 id: 1afbg1a7
 title: Commons Privatization through Land Sales
 summary: When selling the land to members quietly makes the community impossible to leave fairly.
-parentId: cbd2804b
+parentId: 6acbe9a7
 order: 0
 severity: high
 stage:
@@ -18,6 +18,11 @@ invariants:
   - '0.2'
   - '3.2'
   - '1.2'
+tests:
+  - '2.3'
+  - '3.6'
+  - '5.1'
+  - '5.6'
 remediationReady: true
 tags:
   - 'Layer 3: Economy'
@@ -105,7 +110,7 @@ sections:
       - **[Treasury Ruleset](rcos:template/treasury-ruleset)** + **[Internal Economy Protocol](rcos:template/internal-economy-protocol)** — declare what is commons vs private and protect the commons from informal privatization.
       - **[Exit Protocol](rcos:template/exit-protocol)** — guarantee exit and resale terms exist before anyone transfers anything, so no one is trapped.
       - **[Invariants Register](rcos:template/invariants-register)** — register commons protection as a protected invariant that can't be quietly amended.
-      - Worked example: the **[Land Commons Anti-Privatization](/articles/safeguards/land-commons-anti-privatization)** safeguard.
+      - Worked example: the **[Land Commons Anti-Privatization](/safeguards/land-commons-anti-privatization)** safeguard.
 
       See also the spec: [Layer 3 — Commons vs Private Resources](rcos:§5.1) and [Layer 1 — Exit and Separation](rcos:§3.6).
   - id: if-it-s-already-happening

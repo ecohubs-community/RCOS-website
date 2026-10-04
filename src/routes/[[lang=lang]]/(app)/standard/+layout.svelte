@@ -7,6 +7,8 @@
 	import StandardDownloads from '$lib/components/standard/StandardDownloads.svelte';
 	import { spy } from '$lib/components/standard/spy.svelte';
 	import { onRailKey, toggleRail } from '$lib/components/standard/rail';
+	import { initReading } from '$lib/components/standard/reading.svelte';
+	import { onMount } from 'svelte';
 	import IconCollapse from '~icons/tabler/layout-sidebar-left-collapse';
 	import IconListTree from '~icons/tabler/list-tree';
 	import IconChevronDown from '~icons/tabler/chevron-down';
@@ -14,6 +16,7 @@
 
 	let { data, children } = $props();
 	let drawerOpen = $state(false);
+	onMount(initReading);
 
 	const current = $derived(page.url.pathname);
 	const pageTitle = $derived((page.data as { page?: { title: string } }).page?.title ?? '');

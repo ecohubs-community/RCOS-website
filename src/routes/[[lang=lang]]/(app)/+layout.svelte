@@ -1,7 +1,6 @@
 <script lang="ts">
 	import './layout.css';
 	import { onMount } from 'svelte';
-	import { graph } from '$lib/stores/graph';
 	import { initTheme } from '$lib/stores/ui';
 	import SiteHeader from '$lib/components/shell/SiteHeader.svelte';
 	import SiteFooter from '$lib/components/shell/SiteFooter.svelte';
@@ -11,14 +10,7 @@
 	import textFont from '@fontsource-variable/stack-sans-text/files/stack-sans-text-latin-wght-normal.woff2?url';
 	import pridiBold from '@fontsource/pridi/files/pridi-latin-700-normal.woff2?url';
 
-	let { children, data } = $props();
-
-	// Initialize graph store from server data
-	$effect(() => {
-		if (data.graph) {
-			graph.set(data.graph);
-		}
-	});
+	let { children } = $props();
 
 	// Theme: saved choice, else system setting (app.html already applied it pre-paint)
 	onMount(() => initTheme());

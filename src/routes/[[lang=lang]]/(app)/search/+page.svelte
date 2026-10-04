@@ -14,7 +14,7 @@
 	onMount(() => {
 		const idx = MiniSearch.loadJSON(JSON.stringify(data.searchIndex), {
 			fields: ['title', 'body'],
-			storeFields: ['id', 'slug', 'title', 'parentId'],
+			storeFields: ['id', 'url', 'title', 'kind'],
 			searchOptions: {
 				fuzzy: 0.2,
 				prefix: true,

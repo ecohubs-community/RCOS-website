@@ -4,7 +4,7 @@ headingLevel: 3
 id: 65cde9a1
 title: Invisible Power via Responsibilities
 summary: When one indispensable person becomes a single point of failure — and informal power.
-parentId: a9e4c65d
+parentId: 6acbe9a7
 order: 1
 severity: high
 stage:
@@ -18,6 +18,10 @@ invariants:
   - '5.1'
   - '5.2'
   - '3.4'
+tests:
+  - '7.1'
+  - '7.3'
+  - '7.5'
 remediationReady: true
 tags:
   - 'Layer 5: Operations'

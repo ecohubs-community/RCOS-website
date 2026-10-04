@@ -4,7 +4,7 @@ headingLevel: 3
 id: 1agdfya7
 title: Emergency Rule Bypass Precedent
 summary: When a temporary crisis exception quietly becomes the permanent rule.
-parentId: 6acde7a7
+parentId: 6acbe9a7
 order: 0
 severity: high
 stage:
@@ -16,6 +16,10 @@ layers:
 invariants:
   - '2.3'
   - '6.2'
+tests:
+  - '4.3'
+  - '8.2'
+  - '8.5'
 remediationReady: true
 tags:
   - 'Layer 2: Governance'

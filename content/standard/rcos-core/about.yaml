@@ -277,7 +277,7 @@ sections:
         md: '### Known Failure Modes RCOS Is Designed to Prevent'
       - id: b10
         kind: md
-        md: See [RCOS Stress Tests](/articles/rcos-stress-tests?id=6acbe9a7)
+        md: See [RCOS Stress Tests](/stress-tests)
   - id: s11
     title: Reference Implementations
     blocks:

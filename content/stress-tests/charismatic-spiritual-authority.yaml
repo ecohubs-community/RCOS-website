@@ -4,7 +4,7 @@ headingLevel: 3
 id: 30f2b8a2
 title: Charismatic Spiritual Authority
 summary: When reverence for a person quietly becomes their right to decide.
-parentId: fc613f12
+parentId: 6acbe9a7
 order: 0
 severity: high
 stage:
@@ -17,6 +17,10 @@ layers:
 invariants:
   - '2.2'
   - '4.2'
+tests:
+  - '4.3'
+  - '4.6'
+  - '6.3'
 remediationReady: true
 tags:
   - 'Layer 2: Governance'

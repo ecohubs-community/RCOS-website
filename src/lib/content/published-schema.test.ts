@@ -19,6 +19,7 @@ describe('published standard data', () => {
 			'sections',
 			'artifacts',
 			'glossary',
+			'specSections',
 			'meta'
 		]);
 	});

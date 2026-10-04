@@ -2,7 +2,7 @@
 /**
  * Translation drift detector.
  *
- * Walks content/articles (and the YAML under content/standard, templates,
+ * Walks content/pages (and the YAML under content/standard, templates,
  * layers, stress-tests), joins each source to its translations
  * `<base>.<lang>.md` by frontmatter `id`, and reports per locale:
  *
@@ -37,7 +37,7 @@ import { SUPPORTED_LOCALES } from './i18n.mjs';
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const ROOT = path.resolve(__dirname, '..');
-const ARTICLES_DIR = path.join(ROOT, 'content/articles');
+const ARTICLES_DIR = path.join(ROOT, 'content/pages');
 
 // scripts/i18n.mjs is the build-side source of truth and intentionally mirrors
 // the runtime registry in src/lib/i18n/languages.ts. Keep them in sync.

@@ -27,6 +27,10 @@ const DEFAULT_LOCALE = 'en';
 const PORT = 4372;
 
 const urlArg = process.argv.indexOf('--url');
+if (urlArg > 0 && !process.argv[urlArg + 1]) {
+	console.error('Usage: pnpm content:pdf [--url http://localhost:5173]');
+	process.exit(1);
+}
 let base = urlArg > 0 ? process.argv[urlArg + 1].replace(/\/$/, '') : null;
 
 /** @type {import('node:child_process').ChildProcess | null} */
