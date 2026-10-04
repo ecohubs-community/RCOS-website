@@ -78,7 +78,7 @@
 					<Dialog.Title
 						class="flex items-baseline gap-2.5 font-serif text-2xl leading-tight font-semibold text-heading"
 					>
-						<span class="font-mono text-[15px] text-forest-600">{section.ref}</span>{section.title}
+						<span class="font-mono text-[15px] text-accent-ink">{section.ref}</span>{section.title}
 					</Dialog.Title>
 					<Dialog.Description class="sr-only">{m.std_guidance_note()}</Dialog.Description>
 					<div class="flex flex-wrap gap-1.5">
@@ -116,7 +116,7 @@
 									<Prose html={why.html} class="text-[15.5px] leading-relaxed text-pretty" />
 									<a
 										href={why.source.href}
-										class="text-[12.5px] text-clay-700 underline hover:text-guide-ink"
+										class="text-[12.5px] text-guide-ink underline hover:text-guide-ink"
 										>{m.std_from_template({
 											template: why.source.template,
 											section: why.source.section
@@ -138,7 +138,7 @@
 										<IconQuote class="mt-0.5 size-4.5 shrink-0 text-clay-500" />
 										<p class="font-serif text-base leading-snug text-ink">{ex.text}</p>
 									</blockquote>
-									<figcaption class="pl-7.5 text-[12px] text-clay-700">
+									<figcaption class="pl-7.5 text-[12px] text-guide-ink">
 										<a href={ex.source.href} class="underline hover:text-guide-ink"
 											>{m.std_from_template({
 												template: ex.source.template,
@@ -148,7 +148,7 @@
 									</figcaption>
 								</figure>
 							{/each}
-							<p class="text-[12.5px] text-clay-700">{m.std_examples_note()}</p>
+							<p class="text-[12.5px] text-guide-ink">{m.std_examples_note()}</p>
 						</section>
 					{/if}
 
@@ -201,7 +201,7 @@
 				<div
 					class="flex items-center justify-between gap-3 border-t border-guide-line px-5 py-3.5 text-[13px]"
 				>
-					<span class="text-clay-700">{m.std_guide_unclear()}</span>
+					<span class="text-guide-ink">{m.std_guide_unclear()}</span>
 					<a
 						href={issue}
 						rel="noopener"

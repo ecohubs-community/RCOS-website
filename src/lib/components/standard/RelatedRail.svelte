@@ -69,7 +69,7 @@
 					href={t.href}
 					class="flex items-center gap-2 py-1.25 text-[13.5px] leading-snug text-ink hover:text-heading"
 				>
-					<IconFilePencil class="size-3.75 shrink-0 text-forest-600" />
+					<IconFilePencil class="size-3.75 shrink-0 text-accent-ink" />
 					<span class="flex-1">{t.title}</span>
 					{#if t.ref}<span class="font-mono text-[11px] text-ink-faint">{t.ref}</span>{/if}
 				</a>

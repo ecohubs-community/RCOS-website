@@ -1,6 +1,7 @@
 <script lang="ts">
 	import { m } from '$lib/paraglide/messages.js';
 	import SEO from '$lib/components/seo/SEO.svelte';
+	import { buildDownloadsSchema, buildPageLd } from '$lib/utils/jsonld';
 	import PageHeader from '$lib/components/site/PageHeader.svelte';
 	import LayerChip from '$lib/components/ui/LayerChip.svelte';
 	import Prose from '$lib/components/ui/Prose.svelte';
@@ -13,33 +14,47 @@
 
 	let { data } = $props();
 	const p = $derived(data.page);
+	// The preamble's quote, or else what the template covers.
 	const description = $derived(
-		p.preambleHtml
-			.replace(/<[^>]+>/g, '')
-			.replace(/\s+/g, ' ')
-			.trim()
-			.slice(0, 200)
+		(
+			p.preambleHtml
+				.replace(/<[^>]+>/g, '')
+				.replace(/\s+/g, ' ')
+				.trim() || `${p.title}: ${p.sections.map((s) => s.title).join(', ')}.`
+		).slice(0, 200)
 	);
 	const label = 'font-ui text-[11px] font-semibold tracking-[0.08em] text-ink-faint uppercase';
+
+	const crumbs = $derived([
+		{ label: m.mega_templates(), href: localized('/templates', data.locale) },
+		{
+			label: m.layer_label({ n: p.layer.n }),
+			href: localized(`/templates/layer-${p.layer.n}`, data.locale)
+		},
+		{ label: p.title }
+	]);
+	const jsonLd = $derived([
+		...buildPageLd({
+			title: p.title,
+			description,
+			path: p.path,
+			locale: data.locale,
+			inLanguage: p.fallback ? 'en' : data.locale,
+			crumbs
+		}),
+		...(p.downloads?.type === 'single'
+			? buildDownloadsSchema(p.title, p.downloads.files, p.downloads.servedLocale)
+			: [])
+	]);
 </script>
 
-<SEO title={p.title} {description} url={p.path} type="article" locale={data.locale} />
+<SEO title={p.title} {description} url={p.path} type="article" locale={data.locale} {jsonLd} />
 
 <div
 	class="mx-auto grid w-full max-w-6xl grid-cols-1 gap-x-12 px-4 pt-8 pb-20 sm:px-6 lg:grid-cols-[minmax(0,1fr)_17rem] lg:px-8 lg:pt-12"
 >
 	<article class="min-w-0">
-		<PageHeader
-			crumbs={[
-				{ label: m.mega_templates(), href: localized('/templates', data.locale) },
-				{
-					label: m.layer_label({ n: p.layer.n }),
-					href: localized(`/templates/layer-${p.layer.n}`, data.locale)
-				},
-				{ label: p.title }
-			]}
-			title={p.title}
-		>
+		<PageHeader {crumbs} title={p.title}>
 			{#snippet eyebrow()}
 				<LayerChip n={p.layer.n} size="xs" />
 				<a href={p.layer.href} class="hover:underline"
@@ -75,7 +90,7 @@
 								<summary
 									class="flex cursor-pointer items-center gap-2 font-ui text-sm font-semibold text-heading"
 								>
-									<IconGavel class="size-4 text-forest-600" />{m.site_clauses()}
+									<IconGavel class="size-4 text-accent-ink" />{m.site_clauses()}
 									<span class="font-mono text-xs font-normal text-ink-muted"
 										>{b.clauses.map((c) => c.ref).join(', ')}</span
 									>
@@ -138,7 +153,7 @@
 										>
 									</blockquote>
 								{/each}
-								<p class="text-xs text-clay-700">{m.std_examples_note()}</p>
+								<p class="text-xs text-guide-ink">{m.std_examples_note()}</p>
 							</div>
 						{/if}
 					</div>
@@ -166,7 +181,7 @@
 						href={t.path}
 						aria-current={t.path === localized(p.path, data.locale) ? 'page' : undefined}
 						class="flex items-center gap-2 py-1 text-[13.5px] text-ink hover:text-heading aria-[current=page]:font-semibold aria-[current=page]:text-heading"
-						><IconFilePencil class="size-3.75 shrink-0 text-forest-600" />{t.title}</a
+						><IconFilePencil class="size-3.75 shrink-0 text-accent-ink" />{t.title}</a
 					>
 				{/each}
 			</nav>

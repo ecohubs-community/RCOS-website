@@ -1,6 +1,13 @@
 <script lang="ts">
 	import { m } from '$lib/paraglide/messages.js';
 	import SEO from '$lib/components/seo/SEO.svelte';
+	import { stripLocale } from '$lib/i18n/path';
+	import {
+		buildBreadcrumbSchema,
+		buildDownloadsSchema,
+		buildGlossarySchema,
+		buildStandardSchema
+	} from '$lib/utils/jsonld';
 	import LocaleFallbackBanner from '$lib/components/i18n/LocaleFallbackBanner.svelte';
 	import Prose from '$lib/components/ui/Prose.svelte';
 	import LayerChip from '$lib/components/ui/LayerChip.svelte';
@@ -39,6 +46,64 @@
 			.slice(0, 200) || p.fullTitle
 	);
 	const isChapter = $derived(p.number !== null);
+
+	// A title that is unique across the standard: module pages say which module,
+	// and a version page says which standard ("v0.1" alone appears three times).
+	const seoTitle = $derived.by(() => {
+		if (data.canonicalPath === '/standard/core/0.1') return m.std_version_label();
+		const mod = data.nav.modules.find((x) =>
+			data.canonicalPath.startsWith(stripLocale(x.path) + '/')
+		);
+		return mod ? `${p.fullTitle} · ${mod.title}` : p.fullTitle;
+	});
+
+	// Structured data: the page as part of RCOS-Core 0.1, its place in the
+	// standard, the glossary's terms, and the downloads on the version page.
+	const jsonLd = $derived.by(() => {
+		const plain = (html: string) => html.replace(/<[^>]+>/g, '').trim();
+		const ld: Record<string, unknown>[] = [
+			buildStandardSchema({
+				title: seoTitle,
+				description,
+				path: data.canonicalPath,
+				locale: data.locale,
+				inLanguage: p.fallback ? 'en' : data.locale
+			}),
+			buildBreadcrumbSchema(
+				[
+					{ name: m.std_breadcrumb_standard(), path: '/standard' },
+					...(isChapter ? [{ name: m.std_version_label(), path: '/standard/core/0.1' }] : []),
+					{ name: p.title, path: data.canonicalPath }
+				],
+				data.locale
+			)
+		];
+		if (p.glossary.length)
+			ld.push(
+				buildGlossarySchema(
+					p.glossary.map((t) => ({
+						key: t.key,
+						term: t.term,
+						definition: plain(t.definitionHtml)
+					})),
+					{ title: p.title, path: data.canonicalPath, locale: data.locale }
+				)
+			);
+		if (data.canonicalPath === '/standard/core/0.1') {
+			const { pdf, md } = data.downloads;
+			ld.push(
+				...buildDownloadsSchema(
+					m.std_version_label(),
+					Object.fromEntries(Object.entries({ pdf, md }).filter(([, v]) => v)) as Record<
+						string,
+						string
+					>,
+					data.locale
+				)
+			);
+		}
+		return ld;
+	});
 	const hasGuidance = $derived(p.sections.some((s) => s.guide));
 	const citation = $derived(
 		isChapter
@@ -48,11 +113,12 @@
 </script>
 
 <SEO
-	title={p.fullTitle}
+	title={seoTitle}
 	{description}
 	url={data.canonicalPath}
 	type="article"
 	locale={data.locale}
+	{jsonLd}
 />
 
 <div class="grid grid-cols-1 gap-x-12 xl:grid-cols-[minmax(0,1fr)_16rem]">
@@ -129,7 +195,7 @@
 						<a
 							href="#{section.id}"
 							title={m.std_section_link()}
-							class="font-mono text-base font-semibold text-forest-600 hover:text-heading hover:underline"
+							class="font-mono text-base font-semibold text-accent-ink hover:text-heading hover:underline"
 							>{section.ref}</a
 						>
 					{/if}
@@ -140,7 +206,7 @@
 							onclick={() => openGuide(section.id)}
 							aria-label={m.std_guide_open({ ref: section.ref ?? '' })}
 							title={m.std_guide_more()}
-							class="inline-flex h-8 shrink-0 items-center gap-1.5 self-center rounded-full border border-transparent px-2.5 font-ui text-[12.5px] font-semibold text-guide-accent opacity-50 hover:border-guide-line hover:bg-guide-chip hover:opacity-100 focus-visible:opacity-100 [.guided_&]:border-guide-line [.guided_&]:bg-guide [.guided_&]:opacity-100"
+							class="inline-flex h-8 shrink-0 items-center gap-1.5 self-center rounded-full border border-transparent px-2.5 font-ui text-[12.5px] font-semibold text-guide-accent hover:border-guide-line hover:bg-guide-chip [.guided_&]:border-guide-line [.guided_&]:bg-guide"
 						>
 							<IconBulb class="size-4" /><span class="max-sm:sr-only">{m.std_guide_button()}</span>
 						</button>

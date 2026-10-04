@@ -1,6 +1,7 @@
 <script lang="ts">
 	import { m } from '$lib/paraglide/messages.js';
 	import SEO from '$lib/components/seo/SEO.svelte';
+	import { buildPageLd } from '$lib/utils/jsonld';
 	import PageHeader from '$lib/components/site/PageHeader.svelte';
 	import LayerChip from '$lib/components/ui/LayerChip.svelte';
 	import {
@@ -22,6 +23,17 @@
 		'flex h-full flex-col gap-1 rounded-2xl border border-line bg-card px-4.5 py-4 hover:border-forest-300';
 	const pill =
 		'rounded-lg border border-line px-2.5 py-1 font-ui text-[13px] font-semibold text-ink-2 hover:border-forest-300 hover:text-heading';
+
+	const crumbs = $derived([{ label: m.site_library() }]);
+	const jsonLd = $derived(
+		buildPageLd({
+			title: m.site_library(),
+			description: m.site_library_lead(),
+			path: '/library',
+			locale: data.locale,
+			crumbs
+		})
+	);
 </script>
 
 <SEO
@@ -29,6 +41,7 @@
 	description={m.site_library_lead()}
 	url="/library"
 	locale={data.locale}
+	{jsonLd}
 />
 
 <div class="mx-auto w-full max-w-6xl px-4 pt-8 pb-20 sm:px-6 lg:px-8 lg:pt-12">
@@ -52,7 +65,7 @@
 			<p class="mt-4 flex flex-wrap gap-x-4 gap-y-1.5 text-sm">
 				{#each REFERENCE as item (item.href)}
 					<a href={href(item.href)} class="text-ink-2 hover:text-heading"
-						><span class="font-mono text-xs text-forest-600">{item.num}</span> {item.label()}</a
+						><span class="font-mono text-xs text-accent-ink">{item.num}</span> {item.label()}</a
 					>
 				{/each}
 			</p>

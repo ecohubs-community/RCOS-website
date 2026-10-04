@@ -80,7 +80,7 @@
 					<span class="font-ui text-[14.5px] leading-snug font-semibold">{layer.name()}</span>
 					<span class="truncate text-[12.5px] leading-snug text-ink-faint">{layer.question()}</span>
 				</span>
-				<span class="shrink-0 font-mono text-xs text-forest-600">{layer.sec}</span>
+				<span class="shrink-0 font-mono text-xs text-accent-ink">{layer.sec}</span>
 			</NavigationMenu.Link>
 		{/each}
 	</div>
@@ -108,7 +108,7 @@
 					</span>
 					<span class="flex min-w-0 flex-col">
 						<span class="font-ui text-sm leading-snug font-semibold">{mod.label()}</span>
-						<span class="text-[12.5px] leading-snug text-clay-700">{mod.desc?.()}</span>
+						<span class="text-[12.5px] leading-snug text-guide-ink">{mod.desc?.()}</span>
 					</span>
 				</NavigationMenu.Link>
 			{/each}
@@ -122,7 +122,7 @@
 					href={href(item.href)}
 					class="-ml-2 flex gap-2.5 rounded-md px-2 py-1 text-sm leading-snug text-ink hover:bg-hover hover:text-accent-ink"
 				>
-					<span class="w-5.5 shrink-0 pt-px font-mono text-xs text-forest-600">{item.num}</span>
+					<span class="w-5.5 shrink-0 pt-px font-mono text-xs text-accent-ink">{item.num}</span>
 					<span>{item.label()}</span>
 				</NavigationMenu.Link>
 			{/each}

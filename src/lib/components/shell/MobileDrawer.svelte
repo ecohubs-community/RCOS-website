@@ -89,7 +89,7 @@
 								href={href(item.href)}
 								class="flex min-h-10 items-center gap-2.5 text-[15px] text-ink"
 							>
-								<span class="w-5.5 font-mono text-xs text-forest-600">{item.num}</span
+								<span class="w-5.5 font-mono text-xs text-accent-ink">{item.num}</span
 								>{item.label()}
 							</a>
 						{/each}
@@ -99,7 +99,7 @@
 								href={href(layer.rules)}
 								class="flex min-h-10 items-center gap-2.5 text-[15px] text-ink"
 							>
-								<span class="w-5.5 font-mono text-xs text-forest-600">{layer.n + 2}</span>
+								<span class="w-5.5 font-mono text-xs text-accent-ink">{layer.n + 2}</span>
 								{m.layer_label({ n: layer.n })} — {layer.name()}
 							</a>
 						{/each}
@@ -118,7 +118,7 @@
 								href={href(item.href)}
 								class="flex min-h-10 items-center gap-2.5 text-[15px] text-ink"
 							>
-								<span class="w-5.5 font-mono text-xs text-forest-600">{item.num}</span
+								<span class="w-5.5 font-mono text-xs text-accent-ink">{item.num}</span
 								>{item.label()}
 							</a>
 						{/each}

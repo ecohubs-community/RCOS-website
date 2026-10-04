@@ -1,6 +1,7 @@
 <script lang="ts">
 	import { m } from '$lib/paraglide/messages.js';
 	import SEO from '$lib/components/seo/SEO.svelte';
+	import { buildPageLd } from '$lib/utils/jsonld';
 	import PageHeader from '$lib/components/site/PageHeader.svelte';
 	import LayerChip from '$lib/components/ui/LayerChip.svelte';
 	import Prose from '$lib/components/ui/Prose.svelte';
@@ -28,6 +29,24 @@
 		enables: m.site_relation_enables
 	};
 	const label = 'font-ui text-[11px] font-semibold tracking-[0.08em] text-ink-faint uppercase';
+
+	const crumbs = $derived([
+		{ label: m.mega_stress_tests(), href: localized('/stress-tests', data.locale) },
+		{
+			label: m.layer_label({ n: p.layers[0] }),
+			href: localized(`/stress-tests#layer-${p.layers[0]}`, data.locale)
+		},
+		{ label: p.title }
+	]);
+	const jsonLd = $derived(
+		buildPageLd({
+			title: p.title,
+			description: p.summary ?? '',
+			path: data.path,
+			locale: data.locale,
+			crumbs
+		})
+	);
 </script>
 
 <SEO
@@ -36,24 +55,14 @@
 	url={data.path}
 	type="article"
 	locale={data.locale}
+	{jsonLd}
 />
 
 <div
 	class="mx-auto grid w-full max-w-6xl grid-cols-1 gap-x-12 px-4 pt-8 pb-20 sm:px-6 lg:grid-cols-[minmax(0,1fr)_18rem] lg:px-8 lg:pt-12"
 >
 	<article class="min-w-0">
-		<PageHeader
-			crumbs={[
-				{ label: m.mega_stress_tests(), href: localized('/stress-tests', data.locale) },
-				{
-					label: m.layer_label({ n: p.layers[0] }),
-					href: localized(`/stress-tests#layer-${p.layers[0]}`, data.locale)
-				},
-				{ label: p.title }
-			]}
-			title={p.title}
-			lead={p.summary}
-		>
+		<PageHeader {crumbs} title={p.title} lead={p.summary}>
 			{#snippet eyebrow()}
 				<span class="inline-flex items-center gap-1.5 font-ui"
 					><SeverityDot severity={p.severity} />{p.severity ? SEVERITY[p.severity]() : ''}</span
@@ -74,6 +83,7 @@
 		{#if p.headHtml}<Prose html={p.headHtml} class="mt-6" />{/if}
 		{#each p.sections as s (s.id)}
 			<section id={s.id} class="scroll-mt-24 pt-9">
+				{#each s.legacyAnchors as a (a)}<span id={a} class="block scroll-mt-24"></span>{/each}
 				<h2 class="mb-3 font-serif text-[1.5rem] font-semibold text-heading">{s.title}</h2>
 				<Prose html={s.html} />
 			</section>
@@ -87,7 +97,7 @@
 					<p class="pb-1 {label}">{m.site_prevented_by()}</p>
 					{#each p.preventsWith as t (t.href)}
 						<a href={t.href} class="flex items-center gap-2 text-[14px] text-ink hover:text-heading"
-							><IconFilePencil class="size-4 shrink-0 text-forest-600" />{t.title}</a
+							><IconFilePencil class="size-4 shrink-0 text-accent-ink" />{t.title}</a
 						>
 					{/each}
 				</div>
@@ -111,7 +121,7 @@
 					<p class="pb-1 {label}">{m.site_invariants_at_stake()}</p>
 					{#each p.invariants as inv (inv.id)}
 						<a href={inv.href} class="text-[13.5px] leading-snug text-ink hover:text-heading"
-							><span class="font-mono text-xs font-semibold text-forest-600">{inv.code}</span>
+							><span class="font-mono text-xs font-semibold text-accent-ink">{inv.code}</span>
 							{inv.name}</a
 						>
 					{/each}

@@ -47,7 +47,7 @@
 	>
 		<header class="space-y-2 mb-6">
 			<h2 class="text-2xl font-bold text-text-primary flex items-center gap-2">
-				<IconPackage class="w-6 h-6 text-primary" />
+				<IconPackage class="w-6 h-6 text-accent-ink" />
 				{m.downloads_heading_all()}
 			</h2>
 			<p class="text-text-secondary text-sm">
@@ -60,7 +60,7 @@
 				<p
 					class="flex items-start gap-2 text-xs text-text-secondary border border-border bg-background rounded-md px-3 py-2"
 				>
-					<IconLanguage class="w-4 h-4 mt-0.5 text-primary shrink-0" />
+					<IconLanguage class="w-4 h-4 mt-0.5 text-accent-ink shrink-0" />
 					<span>{m.downloads_bundle_fallback({ served: servedLocaleName })}</span>
 				</p>
 			{/if}
@@ -75,9 +75,9 @@
 					class="flex flex-col gap-1 rounded-lg border border-border bg-background hover:border-primary hover:bg-surface transition-colors p-4 group"
 				>
 					<span class="flex items-center gap-2 font-semibold text-text-primary">
-						<info.icon class="w-5 h-5 text-primary" />
+						<info.icon class="w-5 h-5 text-accent-ink" />
 						{info.label()}
-						<IconDownload class="w-4 h-4 ml-auto text-text-tertiary group-hover:text-primary" />
+						<IconDownload class="w-4 h-4 ml-auto text-text-tertiary group-hover:text-accent-ink" />
 					</span>
 					<span class="text-xs text-text-tertiary">{info.hint()}</span>
 					<span class="text-xs text-text-tertiary"
@@ -89,7 +89,7 @@
 
 		<details class="mt-6 group">
 			<summary
-				class="cursor-pointer text-sm font-medium text-text-primary hover:text-primary list-none flex items-center gap-2"
+				class="cursor-pointer text-sm font-medium text-text-primary hover:text-accent-ink list-none flex items-center gap-2"
 			>
 				<IconChevronRight class="w-4 h-4 transition-transform group-open:rotate-90" />
 				{m.downloads_toggle_single()}
@@ -108,7 +108,7 @@
 											`/templates/${t.slug.replace(/^rcos-templates\//, '')}`,
 											locale
 										)}
-										class="text-text-primary hover:text-primary font-medium"
+										class="text-text-primary hover:text-accent-ink font-medium"
 									>
 										{t.title}
 									</a>
@@ -125,7 +125,7 @@
 											<a
 												href={t.files[fmt]}
 												download
-												class="hover:text-primary underline-offset-2 hover:underline"
+												class="hover:text-accent-ink underline-offset-2 hover:underline"
 												title={m.downloads_format_download_as({
 													title: t.title,
 													format: FORMAT_INFO[fmt].label()
@@ -147,12 +147,12 @@
 	>
 		<div class="space-y-1">
 			<h2 class="text-base font-semibold text-text-primary flex items-center gap-2">
-				<IconDownload class="w-5 h-5 text-primary" />
+				<IconDownload class="w-5 h-5 text-accent-ink" />
 				{m.downloads_heading_single()}
 			</h2>
 			<p class="text-xs text-text-tertiary">
 				{m.downloads_generated_inline({ date: downloads.generated })}
-				<a href={localized('/templates#downloads', locale)} class="text-primary hover:underline">
+				<a href={localized('/templates#downloads', locale)} class="text-accent-ink hover:underline">
 					{m.downloads_all_link()}
 				</a>
 			</p>
@@ -171,7 +171,7 @@
 					title={info.hint()}
 					class="inline-flex items-center gap-1.5 rounded-md border border-border bg-background hover:border-primary hover:bg-surface transition-colors px-3 py-1.5 text-sm font-medium text-text-primary"
 				>
-					<info.icon class="w-4 h-4 text-primary" />
+					<info.icon class="w-4 h-4 text-accent-ink" />
 					{info.label()}
 				</a>
 			{/each}
@@ -183,7 +183,7 @@
 	>
 		<div class="space-y-1">
 			<h2 class="text-base font-semibold text-text-primary flex items-center gap-2">
-				<IconFileDownload class="w-5 h-5 text-primary" />
+				<IconFileDownload class="w-5 h-5 text-accent-ink" />
 				{m.downloads_heading_spec()}
 			</h2>
 			<p class="text-xs text-text-tertiary">
@@ -204,7 +204,7 @@
 					title={info.hint()}
 					class="inline-flex items-center gap-1.5 rounded-md border border-border bg-background hover:border-primary hover:bg-surface transition-colors px-3 py-1.5 text-sm font-medium text-text-primary"
 				>
-					<info.icon class="w-4 h-4 text-primary" />
+					<info.icon class="w-4 h-4 text-accent-ink" />
 					{info.label()}
 				</a>
 			{/each}

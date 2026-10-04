@@ -1,6 +1,7 @@
 <script lang="ts">
 	import { m } from '$lib/paraglide/messages.js';
 	import SEO from '$lib/components/seo/SEO.svelte';
+	import { buildPageLd } from '$lib/utils/jsonld';
 	import PageHeader from '$lib/components/site/PageHeader.svelte';
 	import LayerChip from '$lib/components/ui/LayerChip.svelte';
 	import Prose from '$lib/components/ui/Prose.svelte';
@@ -10,19 +11,26 @@
 
 	let { data } = $props();
 	const title = $derived(data.page?.title ?? m.mega_templates());
+
+	const crumbs = $derived([
+		{ label: m.site_library(), href: localized('/library', data.locale) },
+		{ label: title }
+	]);
+	const jsonLd = $derived(
+		buildPageLd({
+			title: title,
+			description: m.mega_templates_desc(),
+			path: '/templates',
+			locale: data.locale,
+			crumbs
+		})
+	);
 </script>
 
-<SEO {title} description={m.mega_templates_desc()} url="/templates" locale={data.locale} />
+<SEO {title} description={m.mega_templates_desc()} url="/templates" locale={data.locale} {jsonLd} />
 
 <div class="mx-auto w-full max-w-6xl px-4 pt-8 pb-20 sm:px-6 lg:px-8 lg:pt-12">
-	<PageHeader
-		crumbs={[
-			{ label: m.site_library(), href: localized('/library', data.locale) },
-			{ label: title }
-		]}
-		{title}
-		lead={m.mega_templates_desc()}
-	/>
+	<PageHeader {crumbs} {title} lead={m.mega_templates_desc()} />
 
 	<div class="mt-10 flex flex-col gap-12">
 		{#each data.hub.layers as l (l.layer.n)}
@@ -53,7 +61,7 @@
 								<span
 									class="flex items-center gap-2 font-ui text-[15.5px] font-semibold text-heading"
 								>
-									<IconFilePencil class="size-4 shrink-0 text-forest-600" />{t.title}
+									<IconFilePencil class="size-4 shrink-0 text-accent-ink" />{t.title}
 									{#if t.ref}<span class="ml-auto font-mono text-[11px] font-normal text-ink-faint"
 											>{t.ref}</span
 										>{/if}

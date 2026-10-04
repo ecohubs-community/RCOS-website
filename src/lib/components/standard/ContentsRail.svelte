@@ -53,7 +53,7 @@
 					aria-current={isCurrent(item) ? 'page' : undefined}
 					class="flex gap-2.5 rounded-lg px-2.5 py-1.5 leading-snug text-ink-2 hover:bg-hover hover:text-heading aria-[current=page]:bg-selected aria-[current=page]:font-semibold aria-[current=page]:text-heading"
 				>
-					<span class="w-4.5 shrink-0 pt-px font-mono text-xs text-forest-600"
+					<span class="w-4.5 shrink-0 pt-px font-mono text-xs text-accent-ink"
 						>{item.number ?? '→'}</span
 					>
 					<span>{item.title}</span>
@@ -83,7 +83,7 @@
 								aria-current={active === s.id ? 'location' : undefined}
 								class="-ml-3 flex gap-2 border-l-2 border-transparent py-1 pr-2.5 pl-2.5 text-[13.5px] leading-snug text-ink-muted hover:text-heading aria-[current=location]:border-accent-ink aria-[current=location]:font-semibold aria-[current=location]:text-heading"
 							>
-								<span class="w-6 shrink-0 pt-px font-mono text-[11.5px] text-forest-600"
+								<span class="w-6 shrink-0 pt-px font-mono text-[11.5px] text-accent-ink"
 									>{s.ref}</span
 								>
 								<span>{s.title}</span>
@@ -127,7 +127,7 @@
 					aria-current={isCurrent(item) ? 'page' : undefined}
 					class="flex gap-2.5 rounded-lg px-2.5 py-1.25 leading-snug text-ink-2 hover:bg-hover hover:text-heading aria-[current=page]:bg-selected aria-[current=page]:font-semibold aria-[current=page]:text-heading"
 				>
-					<span class="w-4.5 shrink-0 pt-px font-mono text-xs text-forest-600">{item.number}</span>
+					<span class="w-4.5 shrink-0 pt-px font-mono text-xs text-accent-ink">{item.number}</span>
 					<span>{item.title}</span>
 				</a>
 			{/each}

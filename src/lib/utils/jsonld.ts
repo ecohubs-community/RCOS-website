@@ -1,5 +1,5 @@
 import { SITE_URL, SITE_NAME } from '$lib/config/site';
-import { localeUrl } from '$lib/i18n/path';
+import { localeUrl, stripLocale } from '$lib/i18n/path';
 import { m } from '$lib/paraglide/messages.js';
 import type { Locale } from '$lib/paraglide/runtime.js';
 
@@ -90,4 +90,112 @@ export function buildBreadcrumbSchema(crumbs: Crumb[], locale: string): Record<s
 			item: item.url
 		}))
 	};
+}
+
+const LICENSE = 'https://creativecommons.org/licenses/by/4.0/';
+
+/** The standard itself, as the work every chapter is part of. */
+function standardWork(locale: string): Record<string, unknown> {
+	return {
+		'@type': 'CreativeWork',
+		name: 'RCOS-Core',
+		version: '0.1',
+		creativeWorkStatus: 'Draft',
+		license: LICENSE,
+		url: localeUrl(SITE_URL, '/standard/core/0.1', locale),
+		publisher: PUBLISHER
+	};
+}
+
+/** A page of the standard: a TechArticle that is part of RCOS-Core 0.1. */
+export function buildStandardSchema(opts: {
+	title: string;
+	description?: string | null;
+	path: string;
+	locale: string;
+	inLanguage: string;
+}): Record<string, unknown> {
+	const url = localeUrl(SITE_URL, opts.path, opts.locale);
+	return {
+		'@context': 'https://schema.org',
+		'@type': 'TechArticle',
+		headline: opts.title,
+		url,
+		mainEntityOfPage: url,
+		inLanguage: opts.inLanguage,
+		license: LICENSE,
+		publisher: PUBLISHER,
+		...(opts.description ? { description: opts.description } : {}),
+		isPartOf: standardWork(opts.locale)
+	};
+}
+
+/** The glossary as a DefinedTermSet. */
+export function buildGlossarySchema(
+	terms: { key: string; term: string; definition: string }[],
+	opts: { title: string; path: string; locale: string }
+): Record<string, unknown> {
+	const url = localeUrl(SITE_URL, opts.path, opts.locale);
+	return {
+		'@context': 'https://schema.org',
+		'@type': 'DefinedTermSet',
+		'@id': `${url}#glossary`,
+		name: opts.title,
+		url,
+		inLanguage: opts.locale,
+		hasDefinedTerm: terms.map((t) => ({
+			'@type': 'DefinedTerm',
+			termCode: t.key,
+			name: t.term,
+			description: t.definition,
+			url: `${url}#term-${t.key}`,
+			inDefinedTermSet: `${url}#glossary`
+		}))
+	};
+}
+
+const MEDIA_TYPE: Record<string, string> = {
+	md: 'text/markdown',
+	docx: 'application/vnd.openxmlformats-officedocument.wordprocessingml.document',
+	odt: 'application/vnd.oasis.opendocument.text',
+	pdf: 'application/pdf'
+};
+
+/** Downloadable files of a page (a template, the standard) as DigitalDocuments. */
+export function buildDownloadsSchema(
+	name: string,
+	files: Record<string, string>,
+	locale: string
+): Record<string, unknown>[] {
+	return Object.entries(files).map(([format, href]) => ({
+		'@context': 'https://schema.org',
+		'@type': 'DigitalDocument',
+		name,
+		encodingFormat: MEDIA_TYPE[format] ?? format,
+		contentUrl: href.startsWith('http') ? href : `${SITE_URL}${href}`,
+		inLanguage: locale,
+		license: LICENSE,
+		publisher: PUBLISHER
+	}));
+}
+
+/**
+ * Article + breadcrumb trail for a content page, from the same crumbs the page
+ * shows (their hrefs may carry the locale prefix; the last crumb is the page).
+ */
+export function buildPageLd(opts: {
+	title: string;
+	description?: string | null;
+	path: string;
+	locale: string;
+	inLanguage?: string;
+	crumbs: { label: string; href?: string }[];
+}): Record<string, unknown>[] {
+	return [
+		buildPageSchema({ ...opts, inLanguage: opts.inLanguage ?? opts.locale }),
+		buildBreadcrumbSchema(
+			opts.crumbs.map((c) => ({ name: c.label, path: c.href ? stripLocale(c.href) : opts.path })),
+			opts.locale
+		)
+	];
 }
