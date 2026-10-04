@@ -1,4 +1,5 @@
-import MiniSearch, { type SearchResult } from 'minisearch';
+import type MiniSearch from 'minisearch';
+import type { SearchResult } from 'minisearch';
 import { KIND_ORDER, type SearchDoc, type SearchKind } from './types';
 
 /**
@@ -17,7 +18,8 @@ export function loadEngine(locale: string): Promise<Engine> {
 				if (!r.ok) throw new Error(`search index: ${r.status}`);
 				return r.json() as Promise<SearchDoc[]>;
 			})
-			.then(build);
+			// MiniSearch loads with the index, so pages that never search don't ship it.
+			.then(async (docs) => build(docs, (await import('minisearch')).default));
 		// A failed fetch may succeed on the next try.
 		engine.catch(() => engines.delete(locale));
 		engines.set(locale, engine);
@@ -28,10 +30,10 @@ export function loadEngine(locale: string): Promise<Engine> {
 /** "2.3.4", "§2.3" or "2.3." → the number, else null. */
 export const refIn = (q: string) => /^§?\s*(\d+\.\d+(?:\.\d+)?)\.?$/.exec(q.trim())?.[1] ?? null;
 
-function build(docs: SearchDoc[]): Engine {
+function build(docs: SearchDoc[], MiniSearchClass: typeof MiniSearch): Engine {
 	const byRef = new Map(docs.filter((d) => d.ref).map((d) => [d.ref!, d]));
 	const byId = new Map(docs.map((d) => [d.id, d]));
-	const mini = new MiniSearch<SearchDoc>({
+	const mini = new MiniSearchClass<SearchDoc>({
 		fields: ['title', 'text', 'context'],
 		searchOptions: { prefix: true, fuzzy: 0.2, boost: { title: 3, context: 0.5 } }
 	});

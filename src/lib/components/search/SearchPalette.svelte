@@ -1,5 +1,6 @@
 <script lang="ts">
 	import { Command, Dialog } from 'bits-ui';
+	import { untrack } from 'svelte';
 	import { goto } from '$app/navigation';
 	import { page } from '$app/state';
 	import { m } from '$lib/paraglide/messages.js';
@@ -24,8 +25,11 @@
 	// The index of the page's language; a language switch loads the other one.
 	const locale = $derived((page.data.locale as string | undefined) ?? getLocale());
 
+	// Runs when the palette opens or the language changes, not when a load fails
+	// (engineLocale is read untracked), so a failure is retried on the next open
+	// instead of in a loop.
 	$effect(() => {
-		if (!palette.open || engineLocale === locale) return;
+		if (!palette.open || untrack(() => engineLocale) === locale) return;
 		const wanted = locale;
 		engine = null;
 		failed = false;
