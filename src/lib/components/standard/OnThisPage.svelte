@@ -20,7 +20,7 @@
 			aria-current={spy.active === s.id ? 'location' : undefined}
 			class="flex gap-2 border-l-2 border-transparent py-1 pl-3 text-[13.5px] leading-snug text-ink-muted hover:text-heading aria-[current=location]:border-accent-ink aria-[current=location]:font-semibold aria-[current=location]:text-heading"
 		>
-			<span class="w-6 shrink-0 pt-px font-mono text-[11.5px] text-forest-600">{s.ref}</span
+			<span class="w-6 shrink-0 pt-px font-mono text-[11.5px] text-accent-ink">{s.ref}</span
 			>{s.title}
 		</a>
 	{/each}

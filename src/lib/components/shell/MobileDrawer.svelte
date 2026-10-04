@@ -15,6 +15,8 @@
 	} from '$lib/nav/site-nav';
 	import LayerChip from '$lib/components/ui/LayerChip.svelte';
 	import HeaderSearch from './HeaderSearch.svelte';
+	// Closing the drawer into the search palette must not take focus back to the menu button.
+	import { palette } from '$lib/components/search/palette.svelte';
 	import ThemeToggle from './ThemeToggle.svelte';
 	import LanguageSwitcher from '$lib/components/i18n/LanguageSwitcher.svelte';
 	import IconMenu2 from '~icons/tabler/menu-2';
@@ -49,6 +51,7 @@
 	<Dialog.Portal>
 		<Dialog.Overlay class="fixed inset-0 z-(--z-overlay) bg-forest-900/35" />
 		<Dialog.Content
+			onCloseAutoFocus={(e) => palette.open && e.preventDefault()}
 			class="fixed inset-y-0 right-0 z-(--z-drawer) flex w-full max-w-100 flex-col overflow-y-auto bg-paper shadow-sheet"
 		>
 			<div
@@ -89,7 +92,7 @@
 								href={href(item.href)}
 								class="flex min-h-10 items-center gap-2.5 text-[15px] text-ink"
 							>
-								<span class="w-5.5 font-mono text-xs text-forest-600">{item.num}</span
+								<span class="w-5.5 font-mono text-xs text-accent-ink">{item.num}</span
 								>{item.label()}
 							</a>
 						{/each}
@@ -99,7 +102,7 @@
 								href={href(layer.rules)}
 								class="flex min-h-10 items-center gap-2.5 text-[15px] text-ink"
 							>
-								<span class="w-5.5 font-mono text-xs text-forest-600">{layer.n + 2}</span>
+								<span class="w-5.5 font-mono text-xs text-accent-ink">{layer.n + 2}</span>
 								{m.layer_label({ n: layer.n })} — {layer.name()}
 							</a>
 						{/each}
@@ -118,7 +121,7 @@
 								href={href(item.href)}
 								class="flex min-h-10 items-center gap-2.5 text-[15px] text-ink"
 							>
-								<span class="w-5.5 font-mono text-xs text-forest-600">{item.num}</span
+								<span class="w-5.5 font-mono text-xs text-accent-ink">{item.num}</span
 								>{item.label()}
 							</a>
 						{/each}

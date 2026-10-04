@@ -1,11 +1,26 @@
 <script lang="ts">
 	import { m } from '$lib/paraglide/messages.js';
 	import SEO from '$lib/components/seo/SEO.svelte';
+	import { buildPageLd } from '$lib/utils/jsonld';
 	import PageHeader from '$lib/components/site/PageHeader.svelte';
 	import { TOOLKIT } from '$lib/nav/site-nav';
 	import { localized } from '$lib/i18n/path';
 
 	let { data } = $props();
+
+	const crumbs = $derived([
+		{ label: m.site_library(), href: localized('/library', data.locale) },
+		{ label: m.site_toolkit() }
+	]);
+	const jsonLd = $derived(
+		buildPageLd({
+			title: m.site_toolkit(),
+			description: m.site_toolkit_lead(),
+			path: '/toolkit',
+			locale: data.locale,
+			crumbs
+		})
+	);
 </script>
 
 <SEO
@@ -13,17 +28,11 @@
 	description={m.site_toolkit_lead()}
 	url="/toolkit"
 	locale={data.locale}
+	{jsonLd}
 />
 
 <div class="mx-auto w-full max-w-5xl px-4 pt-8 pb-20 sm:px-6 lg:px-8 lg:pt-12">
-	<PageHeader
-		crumbs={[
-			{ label: m.site_library(), href: localized('/library', data.locale) },
-			{ label: m.site_toolkit() }
-		]}
-		title={m.site_toolkit()}
-		lead={m.site_toolkit_lead()}
-	/>
+	<PageHeader {crumbs} title={m.site_toolkit()} lead={m.site_toolkit_lead()} />
 	<div class="mt-10 flex flex-col gap-10">
 		{#each TOOLKIT as group, i (i)}
 			<section aria-labelledby="group-{i}">

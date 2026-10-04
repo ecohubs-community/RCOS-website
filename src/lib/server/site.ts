@@ -72,11 +72,14 @@ export type GuidePage = {
 	layer: LayerRef;
 	title: string;
 	headHtml: string;
-	sections: { id: string; title: string; html: string }[];
+	sections: ProseSection[];
 	invariants: Invariant[];
 	links: { rules: string; templates: string };
 	fallback: boolean;
 };
+
+/** A prose section; `legacyAnchors` are its heading ids of the markdown era (in-page links use them). */
+export type ProseSection = { id: string; title: string; html: string; legacyAnchors: string[] };
 
 export type Invariant = { id: string; code: string; name: string; href: string };
 
@@ -92,7 +95,7 @@ export type StressTestPage = TestCard & {
 	stage: string[];
 	symptoms: string[];
 	headHtml: string;
-	sections: { id: string; title: string; html: string }[];
+	sections: ProseSection[];
 	preventsWith: { href: string; title: string }[];
 	cascade: { href: string; title: string; relation: string; note: string }[];
 	tests: { ref: string; href: string }[];
@@ -111,6 +114,9 @@ function md(text: string, store: Store, locale: string, inline = false): string 
 const route = (d: Loaded) => siteRoute(d.file);
 const byRoute = (store: Store, path: string) => store.all.find((d) => route(d) === path);
 const plain = (s: string) => s.replace(/\*\*/g, '').trim();
+/** Heading ids the markdown pages had (translated and English), other than the section's id. */
+const anchorsOf = (id: string, ...titles: string[]) =>
+	[...new Set(titles.map((t) => headingSlug(plain(t))))].filter((a) => a !== id);
 /** Template and layer-guide docs have their layer in the path. */
 const layerFromPath = (d: Loaded) => Number(/layer-(\d)/.exec(d.file)?.[1] ?? -1);
 
@@ -287,9 +293,10 @@ export async function guidePage(path: string, locale: string): Promise<GuidePage
 		layer: layerRef(store, n, locale),
 		title: plain(doc.title),
 		headHtml: md(doc.head ?? '', store, locale, true),
-		sections: doc.sections.map((s: Doc) => ({
+		sections: doc.sections.map((s: Doc, i: number) => ({
 			id: s.id,
 			title: plain(s.title),
+			legacyAnchors: anchorsOf(s.id, s.title, d.en.sections[i].title),
 			html: md(
 				s.id === 'layer-invariants'
 					? // "Invariant 2.1:" is shown as INV-2.1 everywhere (Q-9), with an anchor to link to.
@@ -366,9 +373,10 @@ export async function stressTestPage(path: string, locale: string): Promise<Stre
 		stage: d.en.stage ?? [],
 		symptoms: doc.symptoms ?? [],
 		headHtml: md(doc.head ?? '', store, locale),
-		sections: doc.sections.map((s: Doc) => ({
+		sections: doc.sections.map((s: Doc, i: number) => ({
 			id: s.id,
 			title: plain(s.title),
+			legacyAnchors: anchorsOf(s.id, s.title, d.en.sections[i].title),
 			html: md(s.md, store, locale)
 		})),
 		preventsWith: (d.en.preventsWith ?? []).flatMap((p: string) => link(p) ?? []),

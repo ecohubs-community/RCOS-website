@@ -1,6 +1,7 @@
 <script lang="ts">
 	import { m } from '$lib/paraglide/messages.js';
 	import SEO from '$lib/components/seo/SEO.svelte';
+	import { buildPageLd } from '$lib/utils/jsonld';
 	import PageHeader from '$lib/components/site/PageHeader.svelte';
 	import LayerChip from '$lib/components/ui/LayerChip.svelte';
 	import Prose from '$lib/components/ui/Prose.svelte';
@@ -10,19 +11,26 @@
 	const title = $derived(data.page?.title ?? m.nav_layers());
 	const link =
 		'rounded-lg border border-line px-2.5 py-1 font-ui text-[13px] font-semibold text-ink-2 hover:border-forest-300 hover:text-heading';
+
+	const crumbs = $derived([
+		{ label: m.site_library(), href: localized('/library', data.locale) },
+		{ label: title }
+	]);
+	const jsonLd = $derived(
+		buildPageLd({
+			title: title,
+			description: m.mega_layers_body(),
+			path: '/layers',
+			locale: data.locale,
+			crumbs
+		})
+	);
 </script>
 
-<SEO {title} description={m.mega_layers_body()} url="/layers" locale={data.locale} />
+<SEO {title} description={m.mega_layers_body()} url="/layers" locale={data.locale} {jsonLd} />
 
 <div class="mx-auto w-full max-w-5xl px-4 pt-8 pb-20 sm:px-6 lg:px-8 lg:pt-12">
-	<PageHeader
-		crumbs={[
-			{ label: m.site_library(), href: localized('/library', data.locale) },
-			{ label: title }
-		]}
-		{title}
-		lead={m.mega_layers_body()}
-	>
+	<PageHeader {crumbs} {title} lead={m.mega_layers_body()}>
 		{#if data.page}<Prose html={data.page.html} lang={data.page.lang} />{/if}
 	</PageHeader>
 

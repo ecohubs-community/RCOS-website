@@ -55,7 +55,7 @@
 
 	<div class="mt-8 flex flex-col gap-8" aria-live="polite">
 		{#if !engine}
-			<p class="text-ink-muted">{failed ? m.search_no_results() : m.search_loading()}</p>
+			<p class="text-ink-muted">{failed ? m.search_index_failed() : m.search_loading()}</p>
 		{:else if !q.trim()}
 			<p class="text-ink-muted">{m.search_hint()}</p>
 		{:else}

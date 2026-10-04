@@ -93,7 +93,7 @@
 						<h3
 							class="mb-3 flex items-baseline gap-3 font-serif text-xl font-semibold break-after-avoid text-heading"
 						>
-							{#if section.ref}<span class="font-mono text-sm text-forest-600">{section.ref}</span
+							{#if section.ref}<span class="font-mono text-sm text-accent-ink">{section.ref}</span
 								>{/if}
 							{section.title}
 						</h3>

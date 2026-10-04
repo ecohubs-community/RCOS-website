@@ -25,6 +25,8 @@ export type MarkdownPage = {
 	key: string;
 	title: string;
 	summary: string | null;
+	/** The first words of the text, for a description when there is no summary */
+	excerpt: string;
 	html: string;
 	/** Language of the text served (English when the page is not translated) */
 	lang: string;
@@ -63,6 +65,12 @@ export async function readPage(key: PageKey, locale: string): Promise<MarkdownPa
 		title: String(data.title ?? key),
 		summary: data.summary ? String(data.summary) : null,
 		html: compiled?.code ?? content,
+		excerpt: (compiled?.code ?? content)
+			.replace(/<h[1-6][^>]*>[\s\S]*?<\/h[1-6]>/g, ' ')
+			.replace(/<[^>]+>/g, ' ')
+			.replace(/\s+/g, ' ')
+			.trim()
+			.slice(0, 200),
 		lang,
 		fallback: lang !== locale,
 		datePublished: dates?.published ?? null,

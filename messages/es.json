@@ -383,5 +383,6 @@
 	"error_title": "Algo salió mal",
 	"error_body": "No se pudo mostrar la página. Inténtenlo de nuevo en un momento.",
 	"error_home": "Ir a la página de inicio",
-	"error_search": "Buscar en RCOS"
+	"error_search": "Buscar en RCOS",
+	"search_index_failed": "No se pudo cargar el índice de búsqueda. Revisen la conexión e inténtenlo de nuevo."
 }

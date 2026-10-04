@@ -1,6 +1,7 @@
 <script lang="ts">
 	import { m } from '$lib/paraglide/messages.js';
 	import SEO from '$lib/components/seo/SEO.svelte';
+	import { buildPageLd } from '$lib/utils/jsonld';
 	import PageHeader from '$lib/components/site/PageHeader.svelte';
 	import LayerChip from '$lib/components/ui/LayerChip.svelte';
 	import Prose from '$lib/components/ui/Prose.svelte';
@@ -10,19 +11,32 @@
 
 	let { data } = $props();
 	const title = $derived(data.page?.title ?? m.mega_stress_tests());
+
+	const crumbs = $derived([
+		{ label: m.site_library(), href: localized('/library', data.locale) },
+		{ label: title }
+	]);
+	const jsonLd = $derived(
+		buildPageLd({
+			title: title,
+			description: m.mega_stress_tests_desc(),
+			path: '/stress-tests',
+			locale: data.locale,
+			crumbs
+		})
+	);
 </script>
 
-<SEO {title} description={m.mega_stress_tests_desc()} url="/stress-tests" locale={data.locale} />
+<SEO
+	{title}
+	description={m.mega_stress_tests_desc()}
+	url="/stress-tests"
+	locale={data.locale}
+	{jsonLd}
+/>
 
 <div class="mx-auto w-full max-w-6xl px-4 pt-8 pb-20 sm:px-6 lg:px-8 lg:pt-12">
-	<PageHeader
-		crumbs={[
-			{ label: m.site_library(), href: localized('/library', data.locale) },
-			{ label: title }
-		]}
-		{title}
-		lead={m.mega_stress_tests_desc()}
-	/>
+	<PageHeader {crumbs} {title} lead={m.mega_stress_tests_desc()} />
 
 	<!-- Grouped by primary layer (Q-15). The old category pages redirect to these anchors. -->
 	<div class="mt-10 flex flex-col gap-10">

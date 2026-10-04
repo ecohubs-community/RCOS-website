@@ -20,7 +20,7 @@
 					href={t.href}
 					class="inline-flex items-start gap-1.5 text-sm leading-snug font-medium text-heading hover:underline"
 				>
-					<IconFilePencil class="mt-0.5 size-3.75 shrink-0 text-forest-600" />
+					<IconFilePencil class="mt-0.5 size-3.75 shrink-0 text-accent-ink" />
 					<span>{t.template} <span class="font-normal text-ink-muted">· {t.section}</span></span>
 				</a>
 			{/each}

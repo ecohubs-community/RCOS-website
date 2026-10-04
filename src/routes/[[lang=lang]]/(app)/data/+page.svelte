@@ -1,24 +1,38 @@
 <script lang="ts">
 	import { m } from '$lib/paraglide/messages.js';
 	import SEO from '$lib/components/seo/SEO.svelte';
+	import { buildPageLd } from '$lib/utils/jsonld';
 	import PageHeader from '$lib/components/site/PageHeader.svelte';
 	import { localized } from '$lib/i18n/path';
 	import IconFileCode from '~icons/tabler/file-code';
 
 	let { data } = $props();
+
+	const crumbs = $derived([
+		{ label: m.site_library(), href: localized('/library', data.locale) },
+		{ label: m.site_data() }
+	]);
+	const jsonLd = $derived(
+		buildPageLd({
+			title: m.site_data(),
+			description: m.site_data_lead(),
+			path: '/data',
+			locale: data.locale,
+			crumbs
+		})
+	);
 </script>
 
-<SEO title={m.site_data()} description={m.site_data_lead()} url="/data" locale={data.locale} />
+<SEO
+	title={m.site_data()}
+	description={m.site_data_lead()}
+	url="/data"
+	locale={data.locale}
+	{jsonLd}
+/>
 
 <div class="mx-auto w-full max-w-4xl px-4 pt-8 pb-20 sm:px-6 lg:px-8 lg:pt-12">
-	<PageHeader
-		crumbs={[
-			{ label: m.site_library(), href: localized('/library', data.locale) },
-			{ label: m.site_data() }
-		]}
-		title={m.site_data()}
-		lead={m.site_data_lead()}
-	/>
+	<PageHeader {crumbs} title={m.site_data()} lead={m.site_data_lead()} />
 	<h2
 		class="mt-10 mb-3 font-ui text-[11px] font-semibold tracking-[0.08em] text-ink-faint uppercase"
 	>

@@ -43,7 +43,7 @@
 					{#each invariants as inv (inv.id)}
 						<li class="grid gap-x-3 gap-y-1 sm:grid-cols-[minmax(0,1fr)_minmax(0,1fr)]">
 							<a href={inv.href} class="text-sm text-ink-2 hover:text-heading">
-								<span class="font-mono text-xs font-semibold text-forest-600">{inv.code}</span>
+								<span class="font-mono text-xs font-semibold text-accent-ink">{inv.code}</span>
 								{inv.name}
 							</a>
 							<span class="flex flex-wrap gap-x-3 gap-y-1 text-sm">

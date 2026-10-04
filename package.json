@@ -25,10 +25,12 @@
 		"build:standard-data": "node scripts/build-standard-data.mjs",
 		"content:articles": "node scripts/content/build-articles.mjs",
 		"content:check": "node scripts/content/check.mjs",
-		"content:pdf": "node scripts/content/build-pdf.mjs"
+		"content:pdf": "node scripts/content/build-pdf.mjs",
+		"check:links": "node scripts/check-links.mjs"
 	},
 	"devDependencies": {
 		"@anthropic-ai/sdk": "^0.91.1",
+		"@axe-core/playwright": "^4.13.0",
 		"@eslint/compat": "^1.4.0",
 		"@eslint/js": "^9.39.1",
 		"@google/genai": "^1.50.1",

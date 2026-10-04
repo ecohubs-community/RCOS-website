@@ -348,7 +348,7 @@
 						i === 4 ? 'border-forest-300 bg-hover' : 'border-line bg-card'
 					]}
 				>
-					<span class="font-mono text-sm font-bold text-forest-600">0{i + 1}</span>
+					<span class="font-mono text-sm font-bold text-accent-ink">0{i + 1}</span>
 					<h3 class="font-ui text-[17px] leading-snug font-semibold text-heading">
 						{step.title()}
 					</h3>
