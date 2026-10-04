@@ -70,6 +70,28 @@ test('the guide sheet opens from a clause', async ({ page }) => {
 	);
 });
 
+test('⌘K searches in the page language and jumps to a clause', async ({ page }) => {
+	await page.goto('/de');
+	await page.keyboard.press('Control+k');
+	await page.getByRole('combobox').fill('Austritt');
+	const first = page.getByRole('dialog').getByRole('option').first();
+	await expect(first).toBeVisible({ timeout: 15_000 });
+	await page.getByRole('combobox').fill('2.3.4');
+	await page.keyboard.press('Enter');
+	await expect(page).toHaveURL(/\/de\/standard\/core\/0\.1\/layer-0-identity-scope#2\.3\.4$/);
+});
+
+test('search from the mobile menu focuses the search field', async ({ page }) => {
+	await page.setViewportSize({ width: 390, height: 844 });
+	await page.goto('/');
+	await page.getByRole('button', { name: /menu/i }).first().click();
+	await page
+		.getByRole('dialog')
+		.getByRole('link', { name: /Search/ })
+		.click();
+	await expect(page.getByRole('combobox')).toBeFocused();
+});
+
 for (const path of ['/admin', '/api/auth/debug']) {
 	test(`${path} is gone`, async ({ request }) => {
 		expect((await request.get(path)).status()).toBe(404);

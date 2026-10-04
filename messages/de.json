@@ -383,5 +383,6 @@
 	"error_title": "Etwas ist schiefgelaufen",
 	"error_body": "Die Seite konnte nicht angezeigt werden. Versucht es bitte gleich noch einmal.",
 	"error_home": "Zur Startseite",
-	"error_search": "RCOS durchsuchen"
+	"error_search": "RCOS durchsuchen",
+	"search_index_failed": "Der Suchindex konnte nicht geladen werden. Prüft eure Verbindung und versucht es noch einmal."
 }

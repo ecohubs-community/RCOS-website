@@ -6,7 +6,8 @@
 		buildBreadcrumbSchema,
 		buildDownloadsSchema,
 		buildGlossarySchema,
-		buildStandardSchema
+		buildStandardSchema,
+		textOf
 	} from '$lib/utils/jsonld';
 	import LocaleFallbackBanner from '$lib/components/i18n/LocaleFallbackBanner.svelte';
 	import Prose from '$lib/components/ui/Prose.svelte';
@@ -38,13 +39,7 @@
 	// Rule text reads term definitions and layer names from the page.
 	setStandardContext(() => p);
 
-	const description = $derived(
-		p.introHtml
-			.replace(/<[^>]+>/g, '')
-			.replace(/\s+/g, ' ')
-			.trim()
-			.slice(0, 200) || p.fullTitle
-	);
+	const description = $derived(textOf(p.introHtml).slice(0, 200) || p.fullTitle);
 	const isChapter = $derived(p.number !== null);
 
 	// A title that is unique across the standard: module pages say which module,
@@ -60,7 +55,6 @@
 	// Structured data: the page as part of RCOS-Core 0.1, its place in the
 	// standard, the glossary's terms, and the downloads on the version page.
 	const jsonLd = $derived.by(() => {
-		const plain = (html: string) => html.replace(/<[^>]+>/g, '').trim();
 		const ld: Record<string, unknown>[] = [
 			buildStandardSchema({
 				title: seoTitle,
@@ -84,7 +78,7 @@
 					p.glossary.map((t) => ({
 						key: t.key,
 						term: t.term,
-						definition: plain(t.definitionHtml)
+						definition: textOf(t.definitionHtml)
 					})),
 					{ title: p.title, path: data.canonicalPath, locale: data.locale }
 				)

@@ -11,7 +11,7 @@
 </script>
 
 <svelte:head>
-	<title>{notFound ? m.error_not_found_title() : m.error_title()} - RCOS</title>
+	<title>{notFound ? m.error_not_found_title() : m.error_title()} - {m.site_short_name()}</title>
 	<meta name="robots" content="noindex" />
 </svelte:head>
 

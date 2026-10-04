@@ -383,5 +383,6 @@
 	"error_title": "Une erreur s’est produite",
 	"error_body": "La page n’a pas pu s’afficher. Réessayez dans un instant.",
 	"error_home": "Aller à l’accueil",
-	"error_search": "Rechercher dans RCOS"
+	"error_search": "Rechercher dans RCOS",
+	"search_index_failed": "L’index de recherche n’a pas pu être chargé. Vérifiez votre connexion et réessayez."
 }

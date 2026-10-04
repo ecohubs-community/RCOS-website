@@ -3,7 +3,8 @@ import {
 	buildDownloadsSchema,
 	buildGlossarySchema,
 	buildPageLd,
-	buildStandardSchema
+	buildStandardSchema,
+	textOf
 } from './jsonld';
 
 describe('structured data', () => {
@@ -54,5 +55,11 @@ describe('structured data', () => {
 			'/de/stress-tests',
 			'/de/stress-tests/founder-informal-veto'
 		]);
+	});
+
+	it('turns rendered HTML into plain text for structured data', () => {
+		expect(textOf('<p>A community&#39;s rules &amp; <em>roles</em>&nbsp;</p>')).toBe(
+			"A community's rules & roles"
+		);
 	});
 });

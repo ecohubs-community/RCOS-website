@@ -44,6 +44,21 @@ export function buildHomeSchema(locale: string, description: string): Record<str
 
 export type Crumb = { name: string; path: string };
 
+/** HTML (rendered at build time) as plain text: tags stripped, entities decoded. */
+export function textOf(html: string): string {
+	return html
+		.replace(/<[^>]+>/g, '')
+		.replace(/&#(\d+);/g, (_m, n) => String.fromCodePoint(Number(n)))
+		.replace(/&#x([\da-f]+);/gi, (_m, n) => String.fromCodePoint(parseInt(n, 16)))
+		.replace(/&quot;/g, '"')
+		.replace(/&lt;/g, '<')
+		.replace(/&gt;/g, '>')
+		.replace(/&nbsp;/g, ' ')
+		.replace(/&amp;/g, '&')
+		.replace(/\s+/g, ' ')
+		.trim();
+}
+
 /**
  * A content page in one locale. `path` is locale-neutral; `inLanguage` is the
  * language of the text actually served (English on a not-yet-translated page).

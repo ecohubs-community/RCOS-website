@@ -383,5 +383,6 @@
 	"error_title": "Something went wrong",
 	"error_body": "The page could not be shown. Please try again in a moment.",
 	"error_home": "Go to the home page",
-	"error_search": "Search RCOS"
+	"error_search": "Search RCOS",
+	"search_index_failed": "The search index could not be loaded. Check your connection and try again."
 }

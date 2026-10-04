@@ -383,5 +383,6 @@
 	"error_title": "Algo deu errado",
 	"error_body": "Não foi possível mostrar a página. Tentem de novo daqui a pouco.",
 	"error_home": "Ir para a página inicial",
-	"error_search": "Pesquisar no RCOS"
+	"error_search": "Pesquisar no RCOS",
+	"search_index_failed": "Não foi possível carregar o índice de pesquisa. Verifiquem a conexão e tentem de novo."
 }

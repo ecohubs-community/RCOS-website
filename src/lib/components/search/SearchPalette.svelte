@@ -1,6 +1,7 @@
 <script lang="ts">
 	import { Command, Dialog } from 'bits-ui';
 	import { goto } from '$app/navigation';
+	import { page } from '$app/state';
 	import { m } from '$lib/paraglide/messages.js';
 	import { getLocale } from '$lib/paraglide/runtime.js';
 	import { localized } from '$lib/i18n/path';
@@ -17,13 +18,27 @@
 	 */
 	let query = $state('');
 	let engine = $state<Engine | null>(null);
+	let engineLocale = $state<string | null>(null);
 	let failed = $state(false);
 
+	// The index of the page's language; a language switch loads the other one.
+	const locale = $derived((page.data.locale as string | undefined) ?? getLocale());
+
 	$effect(() => {
-		if (!palette.open || engine) return;
-		loadEngine(getLocale())
-			.then((e) => (engine = e))
-			.catch(() => (failed = true));
+		if (!palette.open || engineLocale === locale) return;
+		const wanted = locale;
+		engine = null;
+		failed = false;
+		engineLocale = wanted;
+		loadEngine(wanted)
+			.then((e) => {
+				if (engineLocale === wanted) engine = e;
+			})
+			.catch(() => {
+				if (engineLocale !== wanted) return;
+				failed = true;
+				engineLocale = null; // try again on the next open
+			});
 	});
 
 	const jump = $derived(engine?.jump(query) ?? null);
@@ -69,7 +84,7 @@
 					<Command.Viewport>
 						{#if !engine}
 							<p class="px-3 py-6 text-center text-sm text-ink-muted">
-								{failed ? m.search_no_results() : m.search_loading()}
+								{failed ? m.search_index_failed() : m.search_loading()}
 							</p>
 						{:else if !query.trim()}
 							<p class="px-3 py-6 text-center text-sm text-ink-muted">{m.search_hint()}</p>
@@ -132,7 +147,7 @@
 				</Command.List>
 				{#if query.trim()}
 					<a
-						href={localized(`/search?q=${encodeURIComponent(query)}`, getLocale())}
+						href={localized(`/search?q=${encodeURIComponent(query)}`, locale)}
 						onclick={() => (palette.open = false)}
 						class="flex items-center justify-end gap-1.5 border-t border-line px-4 py-2.5 font-ui text-[13px] font-semibold text-accent-ink hover:underline"
 						>{m.search_see_all()}<IconArrowRight class="size-3.5" /></a

@@ -15,6 +15,8 @@
 	} from '$lib/nav/site-nav';
 	import LayerChip from '$lib/components/ui/LayerChip.svelte';
 	import HeaderSearch from './HeaderSearch.svelte';
+	// Closing the drawer into the search palette must not take focus back to the menu button.
+	import { palette } from '$lib/components/search/palette.svelte';
 	import ThemeToggle from './ThemeToggle.svelte';
 	import LanguageSwitcher from '$lib/components/i18n/LanguageSwitcher.svelte';
 	import IconMenu2 from '~icons/tabler/menu-2';
@@ -49,6 +51,7 @@
 	<Dialog.Portal>
 		<Dialog.Overlay class="fixed inset-0 z-(--z-overlay) bg-forest-900/35" />
 		<Dialog.Content
+			onCloseAutoFocus={(e) => palette.open && e.preventDefault()}
 			class="fixed inset-y-0 right-0 z-(--z-drawer) flex w-full max-w-100 flex-col overflow-y-auto bg-paper shadow-sheet"
 		>
 			<div
