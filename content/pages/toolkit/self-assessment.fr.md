@@ -7,7 +7,7 @@ summary: >-
 parentId: 6acbe9a7
 order: 2
 lang: fr
-sourceHash: 9c8ba5cc
+sourceHash: a5991441
 ---
 
 Ci-dessous se trouvent les signaux d'alerte issus de chaque test de résistance de la bibliothèque. Parcours-les et **coche ceux qui te semblent familiers** — ceux que tu as réellement observés dans ta communauté, pas ceux qui t'inquiètent en théorie.

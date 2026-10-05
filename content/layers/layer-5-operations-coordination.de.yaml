@@ -38,7 +38,7 @@ sections:
       * Rollenregister (wer welche Rolle innehat und wie lange)
       * Besprechungsvorlagen (Agenda, Protokoll, Entscheidungsdokumentation)
   layer-invariants:
-    title: '**Layer-Invarianten**'
+    title: '**Schicht-Invarianten**'
     md: |-
       * **Invariante 5.1: Rollen müssen definiert sein**
         Laufende Verantwortlichkeiten dürfen nicht ohne eine benannte Rolle existieren.

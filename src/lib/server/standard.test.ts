@@ -88,8 +88,9 @@ describe('standard pages', () => {
 		const page = (await standardPage('/standard/core/0.1/layer-0-identity-scope', 'de'))!;
 		const invariants = page.sections.find((s) => s.ref === '2.3')!;
 		const g = invariants.guide!;
-		// Guidance is English until it is translated; the template rationale already is.
-		expect(g.lang).toBe('en');
+		// The guidance is translated, like the template rationale it sits next to.
+		expect(g.lang).toBe('de');
+		expect(g.questions.find((q) => q.id === 'emergency')?.question).toMatch(/Notfall/);
 		expect(g.why[0].source.template).toBe('Invariantenregister');
 		expect(g.examples.length).toBeGreaterThan(0);
 		expect(g.questions.find((q) => q.id === 'emergency')?.ref).toBe('2.3.4');

@@ -10,7 +10,7 @@ import { chunks } from './markdown.js';
 import { sectionId } from './template.js';
 
 /**
- * @typedef {{ key: string, term: string, definition: string, autolink?: boolean }} Term
+ * @typedef {{ key: string, term: string, definition: string, autolink?: boolean, aliases?: string[] }} Term
  * @typedef {{ intro: string, terms: Term[] }} Glossary
  */
 

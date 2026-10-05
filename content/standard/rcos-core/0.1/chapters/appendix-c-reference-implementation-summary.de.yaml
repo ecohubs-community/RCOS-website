@@ -25,13 +25,13 @@ sections:
             - Modulname und Geltungsbereich
             - Übernahmedatum
             - Link zur Modulspezifikation
-            - Deklarierte Layer-Abhängigkeiten
+            - Deklarierte Schicht-Abhängigkeiten
   s3:
-    title: C.3 Layer-für-Layer-Zusammenfassung
+    title: C.3 Schicht-für-Schicht-Zusammenfassung
     blocks:
       b1:
         md: |-
-          Für jeden Layer (0–6):
+          Für jede Schicht (0–6):
           - Implementierte Artefakte (mit Links)
           - Abweichungen oder Anpassungen (mit Links)
           - Bekannte Herausforderungen und aufgetretene Fehlermodi
@@ -39,7 +39,7 @@ sections:
         md: 'Empfohlenes Format:'
       b3:
         md: |-
-          | Layer | Implementierte Pflichtartefakte | Öffentliche(r) Link(s) | Version/Datum | Anmerkungen |
+          | Schicht | Implementierte Pflichtartefakte | Öffentliche(r) Link(s) | Version/Datum | Anmerkungen |
           |---:|---|---|---|---|
           | 0 | Zweckcharta; Geltungsbereichserklärung; Invariantenregister | [Platzhalter] | v0.3 / 2026-01-01 | Zweck stabil; Invarianten werden vierteljährlich überprüft |
           | 1 | Mitgliedschaftsvereinbarung; Onboarding-Protokoll; Austritts- & Trennungsprotokoll; Mitgliedschaftsstatus-Register | [Platzhalter] | v1.1 / 2026-02-15 | Probezeit beträgt 3 Monate |
@@ -59,7 +59,7 @@ sections:
           - Abweichungsregister (empfohlen):
       b2:
         md: |-
-          | Gegenstand | Layer | Typ | Status | Beginn | Überprüfung/Ende | Link |
+          | Gegenstand | Schicht | Typ | Status | Beginn | Überprüfung/Ende | Link |
           |---|---|---|---|---|---|---|
           | Versuch mit rotierender Moderation | 5 | Experiment | Aktiv | 2026-06-01 | 2026-08-01 | [Platzhalter] |
           | Ausnahme bei Kassentransparenz (Sicherheit) | 3/4 | Permanent | Aktiv | 2026-04-10 | Jährliche Überprüfung | [Platzhalter] |
@@ -77,7 +77,7 @@ sections:
         md: |-
           | Nachweis | Datum | Link |
           |---|---:|---|
-          | Layer-für-Layer-Checklisten-Ergebnis | 2026-07-01 | [Platzhalter] |
+          | Schicht-für-Schicht-Checklisten-Ergebnis | 2026-07-01 | [Platzhalter] |
           | Audit-Notizen / Feststellungen | 2026-07-01 | [Platzhalter] |
           | Abhilfemaßnahmen-Protokoll | 2026-07-15 | [Platzhalter] |
           - Bekannte Zeiträume der Nicht-Konformität (falls vorhanden)  
@@ -88,7 +88,7 @@ sections:
         md: '- Öffentlicher Artefakt-Index (empfohlen):'
       b2:
         md: |-
-          | Artefakt | Layer | Öffentlicher Link | Version/Datum | Anmerkungen |
+          | Artefakt | Schicht | Öffentlicher Link | Version/Datum | Anmerkungen |
           |---|---:|---|---:|---|
           | Zweckcharta | 0 | [Platzhalter] | 2026-01-01 | |
           | Entscheidungsmatrix | 2 | [Platzhalter] | 2026-03-10 | |

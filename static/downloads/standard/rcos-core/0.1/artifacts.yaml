@@ -58,7 +58,7 @@
     de:
       title: Invariantenregister
       summary: >-
-        Invarianten sind Rahmenbedingungen, die DARF NICHT verletzt werden, solange sie in Kraft
+        Invarianten sind Rahmenbedingungen, die DÜRFEN NICHT verletzt werden, solange sie in Kraft
         sind. Keine Entscheidung, Rolle, Prozess oder Notfallmaßnahme darf eine Invariante außer
         Kraft setzen. Entsteht ein Konflikt zwischen einer Invariante und einer anderen Regel, hat
         die Invariante Vorrang.

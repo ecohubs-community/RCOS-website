@@ -1,0 +1,221 @@
+lang: fr
+sourceHash: 77a53ee7
+sections:
+  '7.1':
+    inShort: Chaque responsabilité continue appartient à un rôle nommé, avec un périmètre écrit, des limites et un moyen de le revoir, pour que rien d'important ne repose sur des attentes implicites.
+    questions:
+      unassigned-task:
+        question: Peut-on reprocher à quelqu'un une tâche que personne ne lui a confiée ?
+        answer: Non. Personne ne peut être tenu responsable de responsabilités qui n'ont pas été formellement attribuées à un rôle.
+      temporary-task:
+        question: Et les tâches ponctuelles ?
+        answer: Elles sont acceptables si elles sont explicitement limitées dans le temps. Si elles deviennent du travail continu, il leur faut un rôle.
+  '7.2':
+    inShort: Chaque type de réunion a un objectif écrit, un périmètre de décision, des participants, une cadence et une facilitation, et reste dans les limites de l'autorité qui lui est donnée.
+    questions:
+      meeting-decides:
+        question: Une réunion peut-elle décider de choses qui sortent de son périmètre déclaré ?
+        answer: Non. Les réunions ne peuvent pas dépasser leur périmètre de décision ni contourner les limites d'autorité de la Couche 2.
+      too-many-meetings:
+        question: Et s'il y a tout simplement trop de réunions ?
+        answer: La charge de réunions doit être plafonnée, suivie et révisable, comme indiqué en 7.4.
+  '7.3':
+    inShort: Notez par écrit où se trouvent les documents et qui peut les consulter, et rendez chaque décision traçable, pour que la communauté ne dépende pas de la mémoire de telle ou telle personne.
+    questions:
+      trace-decision:
+        question: Qu'est-ce qui rend une décision traçable ?
+        answer: On peut voir son type et son domaine, qui a décidé, par quel mécanisme et avec quel seuil, ainsi que le résultat et la date d'effet.
+      one-person-knows:
+        question: Une seule personne sait comment fonctionne le système d'eau. Est-ce un problème ?
+        answer: Oui, pour un processus critique. Il doit être documenté pour que la continuité ne dépende pas de savoirs tacites.
+  '7.4':
+    inShort: Le temps, l'attention et la bonne volonté s'épuisent. Fixez des limites aux réunions et aux rôles, et agissez quand les personnes sont surchargées.
+    questions:
+      burnout:
+        question: Que devrait-il se passer quand quelqu'un s'épuise ?
+        answer: Une surcharge persistante ou un risque d'épuisement déclenche une revue ou une réparation au titre de la Couche 4. C'est un problème de système, pas une faiblesse personnelle.
+      what-limits:
+        question: De quel genre de limites parle-t-on ?
+        answer: Des limites sur la charge de réunions et la charge de rôles, des attentes en matière de délais de réponse, et des moyens de renégocier ou de redistribuer le travail.
+  '7.5':
+    inShort: Aucune personne ne peut être la seule à pouvoir maintenir les opérations essentielles en marche.
+    questions:
+      backup:
+        question: De quoi les rôles essentiels ont-ils besoin pour la continuité ?
+        answer: Des procédures documentées, une transmission claire, et une suppléance ou une redondance là où c'est faisable.
+  '7.6':
+    inShort: 'La Couche 5 vit dans trois documents vivants : le Manuel des opérations, le Registre des rôles et les Modèles de réunion.'
+    questions:
+      which-documents:
+        question: De quels documents la Couche 5 a-t-elle besoin ?
+        answer: D'un Manuel des opérations, d'un Registre des rôles et de Modèles de réunion.
+  '7.7':
+    inShort: 'Les limites opérationnelles strictes sont les suivantes : chaque responsabilité a un rôle, rien de critique ne vit uniquement dans la tête de quelqu''un, la charge de travail est plafonnée et l''accès à l''information est clair.'
+    questions:
+      goodwill:
+        question: Pouvons-nous compter sur quelques personnes engagées qui font simplement ce qu'il faut ?
+        answer: Pas pour les processus critiques. Ils ne peuvent pas reposer uniquement sur la mémoire individuelle, la bonne volonté ou une transmission informelle.
+  '7.8':
+    inShort: Les rôles, les réunions et l'accès à l'information doivent être explicites. Les outils, les horaires et les façons personnelles de travailler vous appartiennent.
+    questions:
+      tools:
+        question: Est-ce que RCOS nous dit quels outils utiliser ?
+        answer: Non. Les choix d'outils pour la documentation et la coordination sont optionnels.
+templates:
+  operations-manual.core-operational-processes:
+    question: Quelles choses doivent continuer à se faire chaque semaine — et sont-elles écrites quelque part ?
+    prompts:
+      - Quels processus doivent continuer à se faire pour que la communauté fonctionne — accueil, départ, publication des propositions, enregistrement des contributions, animation des réunions, gestion de l'argent, revue des accès aux plateformes, et quoi d'autre ?
+      - 'Pour chaque processus : quel rôle en est responsable, et en quoi consiste-t-il en deux ou trois phrases ?'
+      - 'Pour chaque processus : où les étapes sont-elles écrites, pour qu''une personne nouvelle puisse l''exécuter sans demander à celle qui le fait habituellement ? (Le lieu où vivent nos documents en général est une question à part.)'
+      - Lesquels dépendent encore de la mémoire ou de la bonne volonté d'une seule personne — et qui va les rédiger, pour quand ?
+      - Comment maintenons-nous chaque processus écrit à jour quand notre manière de faire change ? (Les transmissions entre rôles sont une question à part.)
+    examples:
+      - 'Nos processus essentiels sont l''accueil et le départ des membres (Administrateur·rice des adhésions, en suivant ces protocoles), la publication des propositions (Secrétaire de gouvernance), l''enregistrement des contributions (Intendant·e des contributions), la réunion hebdomadaire (facilitateur·rice tournant·e : ordre du jour, notes, liste d''actions), la gestion de la trésorerie (Intendant·e des finances) et la revue des accès aux plateformes (Intendant·e des infrastructures, tous les mois, en retirant les membres partis). Chacun a une liste de contrôle d''une page dans le manuel partagé qu''un·e nouveau·elle titulaire peut suivre sans aide, et la personne responsable la met à jour dans la semaine qui suit tout changement de pratique.'
+  operations-manual.temporary-and-ad-hoc-responsibilities:
+    question: Comment éviter qu'un coup de main temporaire devienne le travail bénévole permanent de quelqu'un ?
+    prompts:
+      - Quand quelqu'un prend une tâche temporaire, comment sa fin est-elle fixée — une date, ou une condition claire qui marque qu'elle est terminée ?
+      - Où est-elle consignée comme temporaire au moment où elle est confiée, et par qui ?
+      - Quelle est la durée maximale d'une responsabilité temporaire, prolongations incluses, avant qu'elle doive devenir un rôle formel ou s'arrêter ?
+      - Qui la vérifie avant la date de fin, et comment est-elle soit terminée, soit transformée en véritable rôle ? (Définir le nouveau rôle est une question du Registre des rôles.)
+    examples:
+      - 'Chaque tâche temporaire est confiée avec une date de fin ou une condition claire de type « terminée quand… », et consignée comme temporaire sur le tableau des tâches par la personne qui l''attribue. Une semaine avant la fin, celle qui l''a attribuée et celle qui l''exécute font un point : la tâche se termine, ou elle est proposée comme nouveau rôle pour le Registre des rôles. Aucune responsabilité temporaire ne peut durer plus de 90 jours au total, prolongations incluses.'
+  operations-manual.role-and-domain-interfaces:
+    question: Où s'arrête le travail d'un rôle et où commence celui du suivant ?
+    prompts:
+      - Quels rôles se passent régulièrement du travail ?
+      - 'Pour chaque transmission : qu''est-ce qui est transmis, dans quel sens, et comment le rôle qui reçoit sait-il que c''est bien arrivé ?'
+      - À quel moment le travail cesse-t-il d'être la responsabilité du premier rôle pour devenir celle du suivant ?
+      - Où le travail passe-t-il entre un rôle et une réunion — par exemple une décision qu'un rôle doit ensuite exécuter ?
+      - Quand une transmission passe à la trappe, qui le remarque et qui règle la situation ?
+    examples:
+      - 'Administrateur·rice des adhésions vers Intendant·e des infrastructures : quand la période d''essai d''un nouveau membre commence, l''administrateur·rice publie ses informations dans le canal des accès et l''intendant·e crée les comptes sous trois jours ; au départ, le même chemin les supprime. Intendant·e des finances vers Intendant·e des contributions : à chaque fin de mois, l''intendant·e des finances partage les montants versés pour que les relevés de contributions puissent être rapprochés. Réunion de gouvernance vers titulaires de rôles : chaque décision adoptée est attribuée à un rôle nommé dans les notes, et ce rôle confirme qu''il l''a prise en charge.'
+  operations-manual.workload-boundaries:
+    question: Combien de temps, de réunions et de soin pouvons-nous demander à une personne — et que se passe-t-il quand quelqu'un est surchargé ?
+    prompts:
+      - Combien de temps de réunion pouvons-nous demander à une personne — à quelle fréquence, pendant combien de temps, et qu'est-ce qui compte comme réunion supplémentaire ?
+      - Combien de rôles ou d'heures par semaine une personne peut-elle porter — en comptant le travail invisible comme accueillir, ranger ou soutenir émotionnellement ?
+      - Quels délais de réponse attendons-nous — pour les messages courants, les sujets opérationnels urgents et les questions de sécurité — et quand personne n'est-il censé répondre ?
+      - Quand quelqu'un dit qu'il est surchargé, comment son travail est-il couvert, transmis ou réparti — et à quelle vitesse ?
+      - Quels signes nous indiquent qu'il y a un schéma — surcharge durable, épuisement, membres qui se taisent, ou tout qui repose sur quelques personnes — et quel processus de revue ou de réparation cela déclenche-t-il ?
+      - À quelle fréquence revoyons-nous ces limites, et comment sont-elles modifiées ?
+    examples:
+      - Les réunions récurrentes prennent au maximum quatre heures par mois et par personne ; une réunion supplémentaire exige un préavis de 72 heures. Personne ne porte plus de deux rôles ni plus de huit heures par semaine environ, travail de soin et d'accueil compris. Les messages reçoivent une réponse sous trois jours, les urgences opérationnelles sous un jour, les questions de sécurité immédiatement. N'importe qui peut dire qu'il est surchargé, et ses tâches sont redistribuées sous deux semaines ; une surcharge signalée deux fois dans un trimestre part vers notre processus de revue et de réparation. Ces limites sont revues chaque année et modifiées par proposition.
+  operations-manual.operational-continuity:
+    question: Si l'un·e de nous disparaissait pendant un mois, qu'est-ce qui cesserait de fonctionner ?
+    prompts:
+      - Honnêtement, qui ou quoi constitue aujourd'hui un point de défaillance unique — une personne, un compte, une clé ou une compétence qu'une seule d'entre nous possède ?
+      - 'Pour chacun : quel est notre plan pour le partager, et pour quand ?'
+      - 'Pour chaque rôle et processus essentiel : la procédure est-elle écrite, et que faut-il transmettre avant que la personne titulaire s''en aille ?'
+      - Qui assure la suppléance de chaque rôle essentiel — et où une suppléance n'est-elle pas encore possible ?
+      - À quelle fréquence revoyons-nous cela, et qu'est-ce qui déclenche aussi une revue, comme un changement de titulaire ?
+    examples:
+      - Aujourd'hui, un seul membre peut accéder au compte bancaire et une seule personne comprend le système d'eau. D'ici mars, une deuxième signature bancaire sera ajoutée, et le système d'eau aura un guide écrit et une personne formée en suppléance. Chaque rôle essentiel a une suppléance nommée et une liste de contrôle de transmission à remplir avant que la personne titulaire se retire. L'Intendant·e des infrastructures revoit cette liste chaque trimestre et à chaque changement de titulaire.
+  operations-manual.information-flow-and-anti-gatekeeping:
+    question: Comment nous assurer que personne n'a à passer par une seule personne pour apprendre quelque chose ?
+    prompts:
+      - Quels documents chaque Membre à part entière peut-il ouvrir directement, sans rien demander à personne — décisions, notes de réunion, rôles, adhésions, contributions ? (Les documents restreints et privés sont une question à part.)
+      - Combien de temps après une réunion les notes et les décisions doivent-elles être publiées ?
+      - Quand quelqu'un demande une information à laquelle il a droit, qui doit répondre, et dans quel délai ?
+      - Comment nous assurer qu'aucune personne ni aucun rôle n'est le seul accès à des informations dont d'autres ont besoin — mots de passe, fichiers, contacts ?
+      - Que se passe-t-il quand quelqu'un retient une information à laquelle un membre a droit ?
+    examples:
+      - Chaque Membre à part entière peut lire les décisions, les notes de réunion, les attributions de rôles, les statuts d'adhésion et les relevés de contributions dans le disque partagé sans rien demander à personne. Les notes de réunion sont publiées sous 48 heures. Toute autre demande d'information à laquelle un membre a droit reçoit une réponse sous cinq jours. Chaque compte et dossier partagé compte au moins deux personnes ayant un accès, et retenir une information à laquelle un membre a droit est traité comme un problème de redevabilité dans notre processus de conflit.
+  operations-manual.documentation-locations-and-update-procedures:
+    question: Qu'écrivons-nous, où, et qui peut le lire — et chaque décision peut-elle être reliée à qui l'a prise et comment ?
+    prompts:
+      - 'Pour chaque type de document — nos documents de gouvernance, le registre des membres, les notes de réunion, les propositions, les relevés de contributions : où se trouve la copie officielle, qui la tient, et à quelle fréquence est-elle revue ?'
+      - Que faut-il écrire sur les décisions, les rôles, les opérations quotidiennes et les obligations partagées — que doit contenir chaque document au minimum ?
+      - Qui peut lire quels documents, et lesquels sont restreints pour des raisons de vie privée — sur quels motifs, et qui peut malgré tout les consulter ?
+      - Quand un nouveau document doit-il être publié ou annoncé, et à qui ?
+      - Chaque enregistrement de décision indique-t-il de quel type de décision il s'agissait et quel domaine elle couvre, qui avait l'autorité, comment elle a été décidée et avec quel seuil, le résultat, et quand elle prend effet ?
+      - Où peut-on trouver, par écrit, nos rôles, qui peut décider quoi, nos types de réunion, et nos règles d'accès et de vie privée ?
+    examples:
+      - Les documents de gouvernance, le registre des membres et les propositions vivent dans le disque partagé, tenus par le·la Secrétaire et revus chaque année ; les notes de réunion et les relevés de contributions vivent sur le wiki, tenus par chaque facilitateur·rice et par l'Intendant·e des contributions, et revus chaque trimestre. Chaque enregistrement de décision indique son type et son domaine, qui a décidé, le mécanisme et le seuil, le résultat et sa date d'entrée en vigueur, et il est annoncé sous trois jours. Les membres peuvent tout lire sauf les documents de santé, de protection et de conflit, que seules les personnes concernées et deux intendant·e·s nommé·e·s peuvent consulter.
+  role-registry.overview:
+    question: Quels travaux continus ont un nom et une personne, plutôt que d'être à tout le monde et à personne ?
+    prompts:
+      - Quelles responsabilités continues avons-nous aujourd'hui, et chacune appartient-elle à un rôle nommé — ou une partie est-elle encore faite par celui ou celle qui le remarque ?
+      - Qu'est-ce qui fait qu'un rôle est opérationnel (il peut agir au nom de la communauté dans des limites fixées) plutôt que fonctionnel (il fait du travail mais n'a pas de voix particulière) ?
+      - Que signifie « en règle » pour une personne qui veut prendre un rôle ?
+      - Que doit contenir chaque entrée de rôle — objectif, périmètre et autorité, limites avec les autres rôles, qui est éligible, durée du mandat, et comment les titulaires sont nommé·e·s, évalué·e·s et révoqué·e·s ?
+      - Comment nous assurer que personne n'est tenu responsable d'un travail qui n'a jamais été attribué à son rôle ?
+      - À quelle fréquence vérifions-nous le registre par rapport au travail réellement fait, et qui s'en charge ?
+    examples:
+      - Chaque tâche continue appartient à un rôle de ce registre ; si elle n'y figure pas, personne ne peut en être tenu responsable, et celui ou celle qui le remarque propose un rôle pour elle. Les rôles opérationnels peuvent agir au nom de la communauté dans les limites fixées par la Matrice de décision ; les rôles fonctionnels font du travail mais n'ont pas de voix supplémentaire. Un membre est en règle s'il est à jour de ses contributions convenues et n'est pas suspendu. Chaque entrée indique l'objectif, le périmètre et l'autorité, les limites, l'éligibilité, la durée du mandat, et la nomination, l'évaluation et la révocation. Les intendant·e·s vérifient le registre tous les six mois.
+  role-registry.operational-roles:
+    question: Pour chaque rôle qui fait tourner les choses, de quoi est-il redevable et qui l'évalue ?
+    prompts:
+      - 'De quels rôles opérationnels avons-nous besoin, et pour chacun : à quoi sert-il et de quoi est-il responsable ?'
+      - 'Pour chaque rôle : quelles décisions peut-il prendre sans vote de la communauté, et où sont ses limites (par exemple un plafond de dépense) ?'
+      - 'Pour chaque rôle : qui est éligible, quelle est la durée du mandat, et comment la personne titulaire est-elle choisie ?'
+      - 'Pour chaque rôle : comment, à quelle fréquence et par qui le travail de la personne titulaire est-il évalué ?'
+      - 'Pour chaque rôle : que se passe-t-il si le travail n''avance pas ou si la personne titulaire est surchargée — et comment le rôle peut-il être réattribué ?'
+      - 'Pour chaque rôle : que faut-il transmettre avant que la personne titulaire le quitte ?'
+    examples:
+      - 'Intendant·e des finances : tient les comptes, paie les factures convenues et rapporte le solde chaque mois. Peut approuver des dépenses jusqu''à 500 € par poste dans le cadre du budget ; au-delà, il faut une proposition. Tout Membre à part entière en règle peut se présenter pour un mandat de deux ans, choisi par vote Stratégique. La réunion d''opérations évalue le rôle tous les six mois, et tout membre peut soulever une préoccupation. Si la personne titulaire est surchargée, la suppléance reprend les paiements ; un manquement persistant conduit à une réattribution par vote Stratégique. Avant de partir, la personne titulaire transmet l''accès bancaire, les factures en cours et la liste de contrôle des rapports.'
+  role-registry.functional-roles:
+    question: Quels rôles existent pour une fonction plutôt que pour le travail quotidien, et à quoi servent-ils ?
+    prompts:
+      - Quels rôles fonctionnels avons-nous — par exemple facilitateur·rice, secrétaire de séance ou personne d'accueil — et à quoi sert chacun ?
+      - 'Pour chaque rôle : que fait-il, et avec quels autres rôles travaille-t-il ?'
+      - 'Pour chaque rôle : qui peut le prendre, et est-ce que dire « je le fais » suffit ?'
+      - 'Pour chaque rôle : qu''est-ce qu''il ne comprend pas — quelles décisions ne peut-il pas prendre au nom de la communauté ?'
+      - 'Pour chaque rôle : comment se retire-t-on, et sur quoi faut-il informer la personne suivante ?'
+    examples:
+      - 'Facilitateur·rice : prépare et anime les réunions pour que chacun·e soit entendu·e et que l''ordre du jour se termine à l''heure. Tout Membre à part entière peut le prendre en l''annonçant dans le canal des membres ; aucun vote n''est nécessaire, et cela ne donne aucune voix supplémentaire dans les décisions. Un·e facilitateur·rice qui est partie à un conflit inscrit à l''ordre du jour se retire pour ce point. Il ou elle peut se retirer à tout moment après avoir informé la personne suivante des réunions à venir et des actions ouvertes.'
+  meeting-templates.meeting-type-operations:
+    question: Comment animons-nous la réunion où le travail de la semaine se règle ?
+    prompts:
+      - À quoi sert cette réunion, et quelles décisions peut-elle prendre — et que se passe-t-il quand surgit quelque chose de plus grand que le quotidien ?
+      - Qui doit être présent, combien de personnes font le quorum, et qui peut s'y joindre si elle le souhaite ?
+      - À quelle fréquence se réunit-elle, combien de temps peut-elle durer, et qui facilite — choisi·e ou tournant·e comment, avec quelle suppléance en cas d'absence ?
+      - Quel est l'ordre du jour fixe, et dans quel ordre ?
+      - Qui prend les notes, sous quel format, et où et dans quel délai sont-elles publiées — et comment chaque décision est-elle consignée ?
+      - Avons-nous un modèle comme celui-ci pour chaque type de réunion que nous tenons — opérations, gouvernance, coordination, réflexion et conflit — et comment remarquons-nous que les réunions débordent ou se multiplient ? (La limite globale de charge de réunions est une question à part.)
+    examples:
+      - 'La réunion d''opérations passe en revue le travail en cours, lève les blocages et ne prend que des décisions Opérationnelles ; tout ce qui est Stratégique ou Constitutionnel devient une proposition. Tous les titulaires de rôles en cours y participent (quorum de quatre) ; tout membre peut s''y joindre. Elle se tient chaque semaine pendant 60 minutes au maximum, animée par un·e facilitateur·rice qui tourne chaque mois. Ordre du jour : tour de parole d''arrivée, revue des tâches, blocages, décisions, actions. Les notes sont publiées sur le tableau partagé sous 48 heures, chaque décision avec qui l''a prise, le résultat et sa date d''entrée en vigueur. Si elle déborde trois semaines de suite, cela part vers la revue trimestrielle de la charge de travail.'
+  meeting-templates.meeting-type-governance:
+    question: Comment animons-nous la réunion où les décisions se prennent réellement ?
+    prompts:
+      - Qui doit être invité, la personne qui propose doit-elle être présente, et qui peut observer ?
+      - Quand cette réunion a-t-elle lieu, et combien de temps peut-elle durer ?
+      - Qui facilite, et comment cette personne est-elle choisie ?
+      - Quel est l'ordre du jour — combien de temps pour présenter la proposition, pour les questions de clarification, pour la discussion, et pour le résumé de clôture ?
+      - Décide-t-on quelque chose dans la salle, ou la décision contraignante a-t-elle lieu après, pour que les membres qui n'ont pas pu venir participent quand même ? (Les seuils eux-mêmes sont fixés dans la Matrice de décision.)
+      - Que consignent les notes — quelle proposition, quel type de décision, comment elle sera décidée, et le résultat — et où sont-elles publiées ?
+    examples:
+      - 'Une réunion de gouvernance est tenue pendant la période de délibération de chaque proposition Stratégique ou Constitutionnelle. Tous les Membres à part entière sont invités, la personne qui propose doit être présente, et toute autre personne peut observer. Elle dure 60 minutes au maximum : la personne qui propose présente (10 minutes), questions de clarification uniquement (10), discussion ouverte (30), puis le·la facilitateur·rice résume et confirme l''ouverture du vote (10). Rien n''est décidé dans la salle — le vote se déroule ensuite en ligne pendant sept jours. Les notes renvoient à la proposition et sont publiées sous deux jours.'
+  meeting-templates.meeting-type-coordination-alignment:
+    question: Comment animons-nous la réunion qui empêche des travaux séparés de dériver ?
+    prompts:
+      - Quand convoquons-nous cette réunion plutôt que d'aborder les choses à la réunion d'opérations habituelle ?
+      - Qui doit y participer — seulement les titulaires de rôles ayant des travaux en cours qui dépendent les uns des autres — et qui d'autre est bienvenu ?
+      - À quelle fréquence se réunit-elle, combien de temps peut-elle durer, et qui facilite, avec quelle suppléance ?
+      - Quel est l'ordre du jour — dépendances, transmissions, priorités concurrentes — et dans quel ordre ?
+      - Que peut-elle convenir, et que se passe-t-il quand un conflit de priorités demande une décision plus grande que ce qu'elle peut prendre ?
+      - Où les notes et les transmissions convenues sont-elles consignées, et dans quel délai ?
+    examples:
+      - La coordination se réunit en ligne le premier mardi de chaque mois pendant 60 minutes au maximum, et deux titulaires de rôles peuvent en convoquer une plus tôt. Seuls les titulaires de rôles ayant une initiative en cours doivent y participer ; tout membre peut s'y joindre. L'ordre du jour est les dépendances, les transmissions, puis les priorités concurrentes. Elle ne peut convenir que de changements Opérationnels — un conflit de priorités qui demande un arbitrage Stratégique est rédigé comme proposition. La facilitation tourne parmi les personnes présentes, et les notes avec les transmissions convenues sont publiées dans le canal partagé la même semaine.
+  meeting-templates.meeting-type-reflection-learning:
+    question: Comment animons-nous la réunion où nous regardons en arrière plutôt qu'en avant ?
+    prompts:
+      - Qui est invité, à quelle fréquence nous réunissons-nous, et combien de temps cela peut-il durer ?
+      - Qui facilite, et comment cette personne est-elle choisie ?
+      - Quel est l'ordre du jour — comment revenons-nous sur la période, ce qui a marché, ce qui n'a pas marché — et comment restons-nous sur les schémas plutôt que sur les reproches ?
+      - Qu'en sort-il — quels enseignements vont dans le Journal d'apprentissage, et quelles idées deviennent de futures propositions ?
+      - Cette réunion peut-elle décider quelque chose elle-même, ou ne fait-elle que transmettre des points ?
+      - Qu'est-ce qui l'empêche d'être reportée ou abandonnée dès que nous sommes occupés ?
+    examples:
+      - 'Tous les trois mois, tous les Membres à part entière sont invités à une réunion de réflexion de 90 minutes, en présence avec un lien pour se joindre à distance. Une personne choisie à la réunion précédente l''anime : ce qui s''est passé ce trimestre, ce qui a marché, ce qui n''a pas marché — en cherchant des schémas, pas des reproches — puis quels enseignements vont dans le Journal d''apprentissage et quelles idées deviennent de futures propositions. Elle ne décide rien elle-même. Elle peut être reportée une fois, jamais annulée. La liste de ce qui en sort, ou « rien », est publiée avec les notes sous une semaine.'
+  meeting-templates.meeting-type-conflict-handling:
+    question: Comment animons-nous une réunion dont le sujet est un conflit ?
+    prompts:
+      - Quelles étapes de notre processus de conflit utilisent ce format de réunion, et quand ne devons-nous surtout pas utiliser une réunion ordinaire à la place ?
+      - Combien de temps dure une séance, et qui peut la prolonger ?
+      - Qu'est-il dit au début — sur le consentement, la confidentialité, la protection contre les représailles, et le droit de chacun·e de demander une pause ?
+      - Quel est l'ordre du jour — comment chaque partie peut-elle parler sans être interrompue et pendant un temps égal, et qu'est-ce qui suit ?
+      - Comment une séance peut-elle se terminer — accord, passage à l'étape suivante, ou ajournement — et comment ce résultat est-il consigné ? (Qui facilite et qui peut consulter le compte rendu sont fixés dans le protocole de conflit.)
+    examples:
+      - 'Ce format n''est utilisé que pour les séances facilitées aux étapes 2 à 4 de notre échelle de conflit. Une séance dure jusqu''à 90 minutes ; le·la Facilitateur·rice peut la prolonger une fois de 30 minutes si les deux parties sont d''accord. Elle commence par les règles de base : la participation est volontaire, ce qui est dit reste dans la salle, personne ne peut être pénalisé pour avoir soulevé le conflit, et chacun·e peut demander une pause. Chaque partie parle ensuite sans être interrompue pendant un temps égal, puis vient l''exploration des options et l''accord sur les prochaines étapes. Elle se termine par un accord trouvé, une escalade, ou un ajournement.'

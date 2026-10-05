@@ -1,0 +1,180 @@
+lang: es
+sourceHash: 705f5d64
+sections:
+  '6.1':
+    inShort: Clasifica cada conflicto en una categoría conocida —interpersonal, de rol, estructural o una violación de límites— para que todas las personas sepan qué camino sigue. Todo lo que afecte a la seguridad es crítico para la seguridad.
+    questions:
+      safety-critical:
+        question: ¿Cuándo es un conflicto crítico para la seguridad?
+        answer: Cuando implica riesgos creíbles para la seguridad, coerción, abuso o amenazas. Esos casos activan las salvaguardas reforzadas de 6.3.
+      avoid-classifying:
+        question: ¿Y si preferimos no etiquetar un conflicto en absoluto?
+        answer: Evitar la clasificación o equivocarse en ella cuenta como un fallo de proceso y se revisa.
+  '6.2':
+    inShort: Hay una sola escalera de resolución para todo el mundo, con pasos claros, plazos y una manera de avanzar cuando alguien no quiere participar.
+    questions:
+      refuses:
+        question: ¿Y si la otra persona se niega a participar?
+        answer: La escalera tiene que decir cómo se maneja la negativa, la falta de respuesta o el abandono, para que un conflicto no pueda quedar bloqueado por el silencio.
+      status-needed:
+        question: ¿Necesito conocer a las personas adecuadas para plantear un conflicto?
+        answer: No. El proceso tiene que funcionar sin estatus social, antigüedad, carisma ni cercanía a quienes toman decisiones.
+  '6.3':
+    inShort: Donde hay una brecha de poder, una dependencia o un riesgo para la seguridad, se aplica protección adicional, y nadie es castigado por hablar.
+    questions:
+      retaliation:
+        question: ¿Estoy protegida o protegido si planteo una preocupación sobre alguien con poder?
+        answer: Sí. Las salvaguardas protegen frente a represalias por plantear una preocupación, pedir mediación, aportar pruebas o participar en una revisión.
+      act-before-process:
+        question: ¿Puede la comunidad actuar antes de que termine el proceso?
+        answer: En conflictos críticos para la seguridad, sí. Pueden tomarse de inmediato medidas protectoras como la separación temporal.
+  '6.4':
+    inShort: Las sanciones y la reparación están escritas, son proporcionadas, tienen un plazo definido y se pueden apelar. La reparación va antes que el castigo, salvo cuando está en juego la seguridad.
+    questions:
+      cold-shoulder:
+        question: ¿Es una sanción darle la espalda a alguien?
+        answer: Es una sanción informal, y esas no están permitidas. Las sanciones no pueden aplicarse mediante exclusión, presión social, silencio o derechos retirados de forma silenciosa.
+      repair-first:
+        question: ¿Por qué reparar antes de castigar?
+        answer: La reparación mantiene a las personas y a las relaciones dentro de la comunidad cuando eso es posible. La acción punitiva va primero solo en casos críticos para la seguridad.
+  '6.5':
+    inShort: 'La Capa 4 vive en dos documentos: la Escalera de Resolución de Conflictos y el Protocolo de Rendición de Cuentas.'
+    questions:
+      which-documents:
+        question: ¿Qué documentos necesita la Capa 4?
+        answer: Una Escalera de Resolución de Conflictos y un Protocolo de Rendición de Cuentas.
+  '6.6':
+    inShort: Los límites infranqueables del conflicto son que se atiende, nunca se ignora. Las brechas de poder elevan las salvaguardas, la reparación va primero y la seguridad está por encima de todo lo demás.
+    questions:
+      ignore-conflict:
+        question: ¿Es un problema dejar que un conflicto se resuelva por sí solo?
+        answer: Dejar un conflicto sin resolver, reprimido o normalizado cuenta como una violación del sistema. Necesita una vía definida.
+  '6.7':
+    inShort: El sistema de conflictos tiene que ser explícito. Cómo expresa cada persona sus emociones, o qué lente espiritual o terapéutica usa, sigue siendo cosa suya.
+    questions:
+      mediation-style:
+        question: ¿Tenemos que usar un método de mediación concreto?
+        answer: No. Los estilos de mediación son opcionales; solo el proceso mínimo y las salvaguardas tienen que ser explícitos.
+templates:
+  conflict-resolution-ladder.conflict-classification:
+    question: ¿Qué tipos de conflicto tenemos nombrados, para que nadie se invente uno en medio de una discusión, y cuáles son críticos para la seguridad?
+    prompts:
+      - '¿Qué tipos de conflicto nombramos: al menos interpersonal, de rol, estructural y ético?'
+      - ¿Qué situaciones son críticas para la seguridad, y qué cambia para ellas?
+      - 'Para cada tipo: ¿cómo lo reconocemos, con qué rapidez tenemos que responder y qué camino sigue?'
+      - 'Para cada tipo: ¿qué queda registrado? (Quién puede leerlo es otra cuestión aparte.)'
+      - ¿Qué pasa cuando un conflicto se clasifica en el tipo equivocado, o nadie lo clasifica?
+    examples:
+      - 'Nombramos cinco tipos de conflicto: entre personas, sobre un rol, sobre nuestras reglas o estructuras, sobre un incumplimiento de nuestros acuerdos, y crítico para la seguridad. Un conflicto es crítico para la seguridad siempre que alguien teme de forma creíble por su seguridad o está siendo coaccionado; se salta los primeros pasos y nuestras medidas de seguridad se aplican de inmediato. Los conflictos cotidianos reciben respuesta en 14 días y empiezan con una conversación privada; los demás empiezan con la coordinadora de conflictos, que registra el tipo y el motivo. Un conflicto que nadie ha clasificado en una semana se revisa como un fallo de proceso.'
+  conflict-resolution-ladder.resolution-ladder-steps:
+    question: ¿Cuáles son los pasos desde una conversación tranquila hasta un proceso formal, y en qué orden?
+    prompts:
+      - 'Para cada paso, desde una conversación privada hasta una decisión de gobernanza: ¿quién participa, qué ocurre y cuánto tarda?'
+      - ¿Cómo se plantea, se registra y se acusa recibo de un conflicto, y cómo se informa e invita a participar a las demás personas implicadas?
+      - ¿Cuándo sube un conflicto al siguiente paso, y puede cualquiera de las partes pedirlo por su cuenta?
+      - Cuando nada más lo resuelve, ¿cómo llega a una decisión a través de nuestra Matriz de Decisiones, sin ningún atajo que la evite?
+      - ¿Cómo nos aseguramos de que cualquier persona pueda usar la escalera, sea cual sea su posición, antigüedad o amistades?
+      - ¿Qué hacemos cuando un conflicto se está ignorando o enterrando en silencio? (La falta de respuesta y el bloqueo, la elección de quien facilita y quién puede leer los registros son cuestiones aparte.)
+    examples:
+      - 'Paso 1: las personas implicadas hablan en privado en un plazo de dos semanas. Paso 2: cualquiera puede pedir una persona facilitadora, que acoge una conversación en un plazo de tres semanas. Paso 3: cualquiera puede abrir un caso por escrito con la Coordinadora de Conflictos, que lo registra y acusa recibo en 7 días e invita a la otra parte. Paso 4: un panel de tres miembros escucha a ambas partes y emite una recomendación en 30 días. Paso 5: los Miembros Plenos deciden según la Matriz de Decisiones. Cualquier miembro puede iniciar la escalera o subir de paso; dejar sin atender un conflicto conocido es un incumplimiento.'
+  conflict-resolution-ladder.non-response-withdrawal-and-deadlock:
+    question: ¿Qué pasa cuando alguien no quiere participar, se retira o simplemente nos quedamos bloqueados?
+    prompts:
+      - 'Si alguien no responde: ¿cuántos recordatorios recibe, en cuánto tiempo, antes de que el silencio cuente como no resolución, y qué pasa después?'
+      - 'Si alguien se retira a mitad de camino: ¿cómo se informa a la otra parte, y puede cerrar el asunto o pedir un resumen por escrito?'
+      - Cuando alguien se retira, ¿qué pasa con cualquier asunto de rendición de cuentas que siga abierto?
+      - Cuando estamos bloqueados, ¿cómo se documenta el bloqueo y se lleva a una decisión de gobernanza?
+      - ¿Cómo puede alguien objetar que el proceso mismo falló, dónde se registra eso, y cuándo lleva a una revisión de esta escalera?
+    examples:
+      - Si alguien no responde en 14 días, la persona facilitadora envía un segundo aviso con 14 días más; el silencio continuado cuenta como no resolución y el caso sube un paso. Si alguien se retira, se informa a la otra parte en 7 días y esta puede cerrar el asunto o pedir un resumen por escrito; cualquier asunto de rendición de cuentas abierto continúa. Un bloqueo documentado por escrito pasa a los Miembros Plenos. Las objeciones al proceso van al registro de conflictos, y tres en un año inician una revisión de esta escalera.
+  conflict-resolution-ladder.facilitator-selection-and-replacement:
+    question: ¿Quién facilita un conflicto, y cómo puede cualquiera de las partes conseguir que se le sustituya?
+    prompts:
+      - '¿Quién facilita por defecto: qué rol de nuestro Registro de Roles?'
+      - Cuando quien facilita está implicado en el conflicto, o es cercano a una de las partes, ¿quién elige a una persona neutral sustituta y cómo?
+      - ¿Cómo puede cualquiera de las partes rechazar a quien facilita, y qué motivo tiene que dar?
+      - ¿Cuándo podemos traer a alguien de fuera, quién tiene que estar de acuerdo y quién paga?
+    examples:
+      - La Custodia de Conflictos nombrada en el Registro de Roles facilita por defecto. Si es parte del conflicto, o comparte hogar con alguna de las partes, cada parte nombra a un miembro y esos dos eligen juntos a una persona facilitadora neutral. Cualquiera de las partes puede rechazar a quien facilita alegando un conflicto de interés, y se encuentra una sustitución en 10 días. Si ambas partes están de acuerdo, invitamos a una persona mediadora externa, pagada con el fondo común.
+  conflict-resolution-ladder.privacy-and-information-access-boundaries:
+    question: ¿Quién puede saber qué sobre un conflicto, mientras transcurre y después?
+    prompts:
+      - ¿Qué pasos son totalmente confidenciales, y quién puede ver los registros durante ellos?
+      - Cuando un conflicto llega a una decisión de gobernanza, ¿qué es lo mínimo que los Miembros Plenos necesitan saber, y se informa a las personas implicadas antes de compartir nada?
+      - ¿Quién custodia los registros, durante cuánto tiempo y cómo se destruyen?
+      - ¿Qué pueden contar las personas participantes a quien está fuera del proceso, y qué cambia con el consentimiento de quién?
+    examples:
+      - 'Los pasos 1 a 4 son totalmente confidenciales: solo las partes y quien facilita pueden ver las notas. Si un caso llega a los Miembros Plenos, reciben solo lo que necesitan para decidir —de qué va el conflicto, qué pasos se intentaron y cuáles son las opciones— y las partes ven ese resumen tres días antes de que se comparta. Quien facilita conserva los registros durante tres años después del cierre del caso y luego los borra. Ninguna persona participante puede hablar del caso fuera del proceso sin el consentimiento por escrito de todas las partes.'
+  conflict-resolution-ladder.safeguards:
+    question: ¿Qué cambia cuando las personas en conflicto no tienen el mismo poder, o cuando alguien no está a salvo?
+    prompts:
+      - ¿Qué protección adicional se aplica cuando las personas en conflicto no tienen el mismo poder, por ejemplo facilitación independiente o una vía separada para plantearlo?
+      - Cuando alguien no está a salvo, ¿qué podemos hacer de inmediato, antes de que termine el proceso, y quién lo decide?
+      - ¿Cómo nos aseguramos de que la seguridad va antes que los derechos de participación, los roles y la comodidad?
+    examples:
+      - Cuando las personas en conflicto tienen poder desigual —por ejemplo quien ocupa un rol y un miembro más nuevo—, la persona con menos poder puede plantearlo ante una persona facilitadora externa en lugar de nuestra custodia de conflictos, y la autoridad de quien ocupa el rol sobre ella queda en pausa mientras transcurre. Si alguien informa de forma creíble de que no está a salvo, dos custodias cualesquiera pueden de inmediato separar a las personas implicadas, restringir el acceso a espacios compartidos o suspender un rol hasta 14 días, antes de que termine el proceso. La seguridad va primero, incluso cuando le cuesta un rol a alguien o resulta incómodo.
+  accountability-protocol.triggers:
+    question: ¿Qué tiene que pasar antes de que empiece el proceso de rendición de cuentas, y quién puede iniciarlo?
+    prompts:
+      - '¿Qué condiciones inician una revisión de rendición de cuentas: por ejemplo un vacío prolongado en las contribuciones, una obligación incumplida del Acuerdo de Membresía o actuar en contra de uno de nuestros compromisos fundacionales?'
+      - 'Para cada detonante: ¿cómo puede cualquier persona comprobar que ha ocurrido, a partir de nuestros registros o de una derivación directa?'
+      - ¿Quién puede iniciar el proceso, y cómo, y puede derivarse un caso desde la Escalera de Resolución de Conflictos?
+      - '¿Qué no es un detonante: cómo evitamos que el proceso se inicie porque alguien cae mal?'
+    examples:
+      - 'Una revisión de rendición de cuentas se inicia solo cuando una de estas cosas consta por escrito: un miembro no ha hecho ninguna contribución registrada durante cuatro meses consecutivos; un miembro ha incumplido una obligación del Acuerdo de Membresía y no lo ha corregido en los 30 días siguientes a un recordatorio; un miembro ha actuado en contra de uno de nuestros compromisos fundacionales; o un caso se deriva desde el paso 3 o superior de la Escalera de Resolución de Conflictos. Cualquier miembro puede hacer la derivación, por escrito, a la Coordinadora de Rendición de Cuentas. Que alguien no caiga bien no es un detonante.'
+  accountability-protocol.investigation-and-review:
+    question: ¿Quién investiga lo que pasó, y cómo lo hace sin tomar partido?
+    prompts:
+      - ¿Qué vías usamos —suave (como la inactividad), media (una obligación incumplida) y grave (una violación de nuestros compromisos fundacionales o una preocupación de seguridad)— y qué sitúa un caso en cada una?
+      - 'Para cada vía: ¿quién hace el contacto o abre la revisión, y cuánto dura cada etapa?'
+      - 'Para cada vía: ¿cuáles son los resultados posibles, y a dónde pasa el caso si no se resuelve?'
+      - ¿Quién no puede investigar un caso —por ejemplo alguien implicado, o cercano a una de las partes— y quién entra en su lugar?
+      - ¿Cómo se documenta lo que se encontró antes de que alguien decida qué sigue? (Qué consecuencias pueden seguir es otra cuestión aparte.)
+    examples:
+      - 'Suave: si las contribuciones de un miembro se interrumpen, alguien del equipo de cuidados se pone en contacto en dos semanas. Media: una obligación incumplida del Acuerdo de Membresía recibe un aviso por escrito de la Coordinadora de Rendición de Cuentas; si no se resuelve en 30 días, pasa a un panel de revisión de tres miembros. Grave: una violación de un compromiso fundacional o una preocupación creíble de seguridad pasa directamente al paso 5 de la Escalera de Resolución de Conflictos. Nadie implicado en el asunto, ni que comparta hogar con alguna de las partes, puede formar parte del panel.'
+  accountability-protocol.due-process-guarantees:
+    question: ¿A qué tiene derecho alguien a quien se acusa de algo, antes de que se decida cualquier cosa?
+    prompts:
+      - ¿Cómo y cuándo se le comunica por escrito cuál es la preocupación, antes de que empiece cualquier revisión o consecuencia?
+      - ¿Cuál es el tiempo mínimo que tendrá para responder, y puede pedir más?
+      - ¿Puede ver en qué se basa la preocupación, traer a una persona de apoyo y elegir responder por escrito o en persona?
+      - ¿Dónde se puede apelar cualquier decisión, y pueden quienes la tomaron escuchar también la apelación?
+    examples:
+      - Antes de que empiece cualquier revisión, el miembro recibe un aviso por escrito que expone la preocupación y los registros en los que se apoya. Tiene al menos 30 días para responder, por escrito o en una reunión, y puede traer a una persona de apoyo de su elección. Cualquier decisión puede apelarse ante los Miembros Plenos en un plazo de 14 días y se resuelve mediante una votación Estratégica; nadie que tomó la decisión original puede presidir la apelación.
+  accountability-protocol.anti-retaliation-protections:
+    question: ¿Cómo protegemos a quien plantea una preocupación para que no lo pague después?
+    prompts:
+      - '¿Quién está protegido: quien plantea una preocupación, pide mediación, aporta información o pruebas, o participa en una revisión o apelación?'
+      - ¿Qué cuenta como represalia, incluidas las formas silenciosas como perder un rol, recibir peores tareas o quedar excluida socialmente?
+      - '¿Qué pasa cuando alguien toma represalias: inicia eso una revisión de rendición de cuentas propia?'
+      - ¿Cuánto dura la protección después de que el proceso se haya cerrado?
+    examples:
+      - Nadie puede recibir un peor trato por plantear una preocupación, pedir mediación, aportar información o pruebas, o participar en una revisión o apelación. Un peor trato incluye ser retirada de un rol, perder acceso a recursos compartidos o quedar fuera de los eventos de la comunidad. La represalia es en sí misma un detonante de rendición de cuentas, y esta protección dura dos años después del cierre del proceso.
+  accountability-protocol.sanction-and-repair-options:
+    question: ¿Qué consecuencias pueden seguir, cómo se mantienen proporcionadas y apelables, y cómo va la reparación antes del castigo?
+    prompts:
+      - ¿Qué consecuencias pueden seguir a un incumplimiento, y qué pasos de reparación van antes de cualquier castigo?
+      - 'Para cada consecuencia: ¿qué hay que demostrar primero, y qué pruebas bastan?'
+      - 'Para cada consecuencia: ¿quién puede aplicarla, cuánto dura y cómo se apela?'
+      - ¿Cómo nos aseguramos de que nadie es castigado de manera informal, por exclusión, silencio o presión social?
+    examples:
+      - 'Nuestra primera respuesta es siempre la reparación: una conversación, una disculpa o compensar el daño, acordado con las personas afectadas. Si eso falla, el panel de rendición de cuentas puede emitir un aviso por escrito y después restringir el acceso a un espacio compartido o a un rol hasta tres meses; solo los miembros plenos pueden decidir una salida forzada. Cada paso necesita una conclusión por escrito, puede apelarse en 14 días y termina en una fecha indicada. Nadie queda excluido de manera informal. Solo un riesgo inmediato para la seguridad nos permite pasar directamente a una restricción.'
+  accountability-protocol.conditions-for-restoring-rights:
+    question: ¿Cómo recupera alguien su posición una vez que una sanción ha cumplido su curso?
+    prompts:
+      - 'Para cada tipo de sanción: ¿cuál es el camino de vuelta a los derechos plenos, y quién confirma que se ha completado?'
+      - 'Después de una restricción temporal: ¿qué hay que demostrar, y con qué rapidez se restauran los derechos una vez demostrado?'
+      - 'Después de que alguien se haya ido por su propia voluntad: ¿puede volver, y a través de qué proceso?'
+      - 'Después de una salida forzada: ¿cuánto tiene que esperar alguien antes de volver a solicitar, y qué proceso de admisión se aplica entonces?'
+      - Una vez cumplidas las condiciones, ¿cómo evitamos que alguien quede excluido de manera informal?
+    examples:
+      - Después de una restricción temporal, los derechos se restauran por completo cuando la Coordinadora de Rendición de Cuentas confirma que los pasos de reparación acordados están hechos; la Coordinadora tiene que comprobarlo en los 14 días siguientes a la solicitud del miembro. Quien se fue voluntariamente puede volver a solicitar en cualquier momento a través del Protocolo de Incorporación, sin retorno automático. Después de una salida forzada, puede volver a solicitar al cabo de dos años, y se aplica el proceso de admisión normal.
+  accountability-protocol.coordination-with-layer-1:
+    question: Cuando la rendición de cuentas lleva a que alguien sea suspendido o expulsado, ¿cómo nos aseguramos de que hubo garantías procesales antes y de que se aplican las reglas del protocolo de salida?
+    prompts:
+      - Cuando un proceso de rendición de cuentas acaba en la expulsión de alguien, ¿seguimos el Protocolo de Salida y Separación, sin ninguna vía de salida aparte aquí?
+      - ¿Es una suspensión temporal o una restricción de acceso una salida? Si no, ¿qué deja intacto?
+      - ¿Qué pasos de garantías procesales tienen que estar completos antes de que alguien sea suspendido o expulsado, aparte de las medidas de seguridad inmediatas?
+      - ¿Cómo comparten los dos procesos un solo registro, para que una salida nunca quede anotada dos veces o de formas distintas? (Cómo se decide una salida forzada es cuestión del protocolo de salida.)
+    examples:
+      - 'Toda salida forzada y toda restricción temporal de acceso sigue el Protocolo de Salida y Separación; este protocolo no crea ninguna vía de salida aparte. Una restricción temporal no es una salida: el miembro conserva su membresía y no queda sujeto al bloqueo de nueva solicitud a menos que los Miembros Plenos voten después una salida forzada. Aparte de las medidas de seguridad inmediatas, nadie es suspendido ni expulsado hasta haber recibido un aviso por escrito, el plazo completo de respuesta y la oportunidad de apelar.'

@@ -4,7 +4,7 @@ title: Camadas do RCOS
 parentId: null
 order: 2
 lang: pt-br
-sourceHash: 1ae7c27f
+sourceHash: c93eea84
 ---
 
 **Pilha de protocolo: camadas superiores não podem sobrepor as inferiores.**

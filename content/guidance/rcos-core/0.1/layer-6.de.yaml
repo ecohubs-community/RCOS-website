@@ -1,0 +1,201 @@
+lang: de
+sourceHash: 6ed5c6a7
+sections:
+  '8.1':
+    inShort: Regeln zu ändern folgt einem eigenen schriftlichen Verfahren. Jeder Vorschlag sagt, was er ändert, wer darüber entscheidet und wie er überprüft wird.
+    questions:
+      proposal-contents:
+        question: Was muss ein Änderungsvorschlag sagen?
+        answer: Was er betrifft, den Entscheidungstyp und den Entscheidungsweg, die beabsichtigte Wirkung und die Risiken, wann er in Kraft tritt und wie bestehende Rollen, Vereinbarungen oder Aufzeichnungen übergehen.
+      layer-0-change:
+        question: Wie ändern wir etwas in Schicht 0?
+        answer: Als Verfassungsänderung, über den Entscheidungsmechanismus für Verfassungsänderungen.
+  '8.2':
+    inShort: Jede angenommene Änderung bekommt eine Version, damit alle erkennen können, welche Regeln heute gelten und welche vorher galten.
+    questions:
+      understood-change:
+        question: Alle waren sich in der Küche einig. Gilt die Regeländerung?
+        answer: Nein. Informelle, nicht dokumentierte oder „stillschweigend verstandene“ Regeländerungen sind nicht gültig.
+      old-rules:
+        question: Können wir Regeln löschen, die nicht mehr gelten?
+        answer: Ersetzte Regeln bleiben zugänglich, mit den Zeiträumen, in denen sie galten – für Prüfungen, Lernen und Streitfälle.
+  '8.3':
+    inShort: Experimente erlauben euch, für eine begrenzte Zeit etwas Neues auszuprobieren, mit klaren Erfolgskriterien und einem Weg zurück.
+    questions:
+      experiment-invariant:
+        question: Kann ein Experiment eine Invariante außer Kraft setzen?
+        answer: Nein. Experimente können die Invarianten von Schicht 0 nicht übergehen und die Governance-Grenzen von Schicht 2 nicht umgehen.
+      experiment-harm:
+        question: Was, wenn ein Experiment anfängt, Schaden anzurichten?
+        answer: Es wird als Schutzmaßnahme sofort ausgesetzt oder beendet und danach überprüft.
+  '8.4':
+    inShort: Schreibt auf, was schiefgelaufen ist und was ihr gelernt habt, damit die Gemeinschaft als Ganzes lernt, statt Einzelnen die Schuld zu geben.
+    questions:
+      repeated-failure:
+        question: Dasselbe Problem tritt immer wieder auf. Was nun?
+        answer: Wiederkehrende Fehlermuster lösen eine strukturelle Überprüfung aus, statt einzelne Personen zu beschuldigen.
+  '8.5':
+    inShort: Bevorzugt Änderungen, die ihr zurücknehmen könnt. Große oder unumkehrbare bekommen mehr Zeit, eine höhere Hürde und einen ehrlichen Blick auf die Risiken.
+    questions:
+      emergency-change:
+        question: Können wir Regeln im Notfall schnell ändern?
+        answer: Nur dort, wo Notfalländerungen ausdrücklich definiert sind. Sie sind zeitlich begrenzt, können Invarianten nicht übergehen und werden danach überprüft und bestätigt oder zurückgenommen.
+  '8.6':
+    inShort: 'Schicht 6 lebt in drei Dokumenten: dem Änderungsprotokoll, der Versionshistorie und dem Lernprotokoll.'
+    questions:
+      which-documents:
+        question: Welche Dokumente braucht Schicht 6?
+        answer: Ein Änderungsprotokoll, eine Versionshistorie und ein Lernprotokoll.
+  '8.7':
+    inShort: 'Die harten Grenzen von Veränderung sind: Veränderung ist immer möglich, aber niemals sofort oder unsichtbar – und Fehlschläge werden zu gemeinsamem Lernen, statt gelöscht zu werden.'
+    questions:
+      instant-change:
+        question: Warum kann eine Änderung nicht sofort in Kraft treten?
+        answer: Keine Änderung darf augenblicklich, implizit oder nicht überprüfbar sein. Genau das hält Veränderung möglich, ohne sie zu einem Werkzeug der Vereinnahmung zu machen.
+  '8.8':
+    inShort: Wie Regeln sich ändern, wie Versionen funktionieren und wie Experimente enden, muss ausdrücklich geregelt sein. Wie schnell ihr Neues ausprobiert, ist eure Entscheidung.
+    questions:
+      pace:
+        question: Erwartet RCOS von uns, dass wir uns ständig verändern?
+        answer: Nein. Das Tempo der Erneuerung bleibt optional und außerhalb des Geltungsbereichs; nur die Art, wie Veränderung geschieht, muss ausdrücklich geregelt sein.
+templates:
+  change-protocol.how-changes-are-proposed:
+    question: Wie schlägt jemand vor, eine unserer Regeln, Rollen oder Strukturen hinzuzufügen, zu ändern, zu pausieren oder zu entfernen?
+    prompts:
+      - Wer darf vorschlagen, eine Regel, eine Rolle, ein Dokument oder eine Art zu entscheiden hinzuzufügen, zu ändern, zu pausieren oder zu entfernen?
+      - Wo wird ein Vorschlag eingereicht, und wer stellt sicher, dass er alle erreicht?
+      - Welche Dokumente und Abschnitte muss der Vorschlag als betroffen benennen?
+      - Welchen Entscheidungstyp und welchen Entscheidungsweg aus unserer Entscheidungsmatrix muss der Vorschlag benennen – und damit, wer darüber entscheidet?
+      - Was muss jeder Vorschlag über seinen Zweck, seine Reichweite und seine bekannten Risiken sagen?
+      - Was muss er über das Datum des Inkrafttretens, eine Übergangszeit, den Umgang mit bestehenden Rollen, Vereinbarungen und Aufzeichnungen und darüber sagen, wie er zurückgenommen würde? (Wie lange er überprüft wird und was im Notfall gilt, sind eigene Fragen.)
+    examples:
+      - Jedes Vollmitglied kann vorschlagen, eine Regel, eine Rolle, ein Dokument oder eine Entscheidungsstruktur hinzuzufügen, zu ändern, zu pausieren oder zu entfernen, indem es das Vorschlagsformular im Vorschlagsordner ausfüllt und die Moderation informiert. Das Formular benennt die betroffenen Dokumente und Abschnitte, den Entscheidungstyp und den Entscheidungsweg aus unserer Entscheidungsmatrix, was die Änderung bewirken soll, wie weit sie reicht und welche Risiken sie hat, das Datum des Inkrafttretens und eine etwaige Übergangszeit, was mit bestehenden Rollen, Vereinbarungen und Aufzeichnungen geschieht und wie sie zurückgenommen würde. Unvollständige Formulare werden zurückgegeben, bevor die Diskussion beginnt.
+  change-protocol.how-proposals-are-classified:
+    question: Wie unterscheiden wir eine kleine Anpassung von einer Änderung daran, wer wir sind – und eine dauerhafte Änderung von einem Experiment?
+    prompts:
+      - 'Für jeden Entscheidungstyp (zum Beispiel operativ, strategisch, verfassungsändernd): Welche Arten von Änderungen fallen darunter?'
+      - Welche Änderungen sind immer verfassungsändernd – etwa alles, was unseren Zweck, unseren Geltungsbereich, die Zusagen, die wir für unveränderlich erklärt haben, oder unsere Art der Selbstverwaltung berührt?
+      - Wie unterscheiden wir eine dauerhafte Änderung von einem zeitlich begrenzten Experiment, und wo steht das im Vorschlag?
+      - 'Wenn unklar ist, welcher Typ ein Vorschlag ist: Welcher Typ gilt, und wer entscheidet bei Uneinigkeit darüber?'
+    examples:
+      - 'Formulierungskorrekturen und Formatierung sind operativ: Die Dokumentenpflege nimmt sie vor und listet sie im nächsten Kreis auf. Änderungen daran, wie Mitglieder beitreten, entscheiden, Kosten teilen oder Rollen übernehmen, sind strategisch. Alles, was unseren Zweck, unseren Geltungsbereich, unsere nicht verhandelbaren Zusagen oder die Art unserer Selbstverwaltung berührt, ist verfassungsändernd und läuft über das Verfahren für Verfassungsänderungen. Ein Vorschlag mit festem Enddatum wird als Experiment eingeordnet; alles andere ist dauerhaft. Sind wir uns über den Typ nicht einig, gilt der höhere.'
+  change-protocol.review-and-deliberation:
+    question: Wie lange muss eine vorgeschlagene Änderung liegen, bevor wir sie annehmen dürfen?
+    prompts:
+      - 'Für jeden Entscheidungstyp: Wie lange muss ein Vorschlag mindestens zur Diskussion offen sein, bevor darüber entschieden werden kann?'
+      - Wo findet die Diskussion statt, damit auch Mitglieder, die abwesend, krank oder beschäftigt sind, mitlesen und antworten können?
+      - Wie lang ist bei Verfassungsänderungen die Ratifizierungsfrist nach einer erfolgreichen Abstimmung, und was können Mitglieder in dieser Zeit tun?
+      - 'Wenn manche kleinen Änderungen keine Wartezeit brauchen: Wie können Mitglieder sie trotzdem sehen und nachträglich eine richtige Überprüfung verlangen? (Dringende Änderungen sind eine eigene Frage.)'
+    examples:
+      - Operative Änderungen brauchen keine Wartezeit, werden aber 7 Tage im Änderungskanal veröffentlicht; in dieser Zeit kann jedes Mitglied eine vollständige Überprüfung verlangen. Strategische Vorschläge bleiben mindestens 14 Tage offen, einschließlich einer Vollversammlung, bevor entschieden wird. Verfassungsändernde Vorschläge brauchen mindestens 30 Tage Diskussion und nach einer erfolgreichen Abstimmung eine Ratifizierungsfrist von 14 Tagen, in der jedes Vollmitglied eine zweite Abstimmung verlangen kann.
+  change-protocol.adoption-and-publication:
+    question: 'Wenn eine Änderung angenommen ist: Wie erfahren alle davon, und ab wann gilt sie?'
+    prompts:
+      - Welche Schritte folgen, wenn ein Vorschlag angenommen ist – in welcher Reihenfolge und innerhalb von wie vielen Tagen?
+      - Wer ist dafür verantwortlich, die betroffenen Dokumente zu aktualisieren und den Eintrag in der Versionshistorie hinzuzufügen? (Was der Eintrag enthält, ist eine eigene Frage.)
+      - Wie werden alle Mitglieder über die Änderung informiert, und was enthält diese Mitteilung?
+      - Ab wann gilt eine angenommene Änderung – und kann sie jemals gelten, bevor sie veröffentlicht ist?
+      - Was passiert, wenn eine Änderung beschlossen, aber nie aufgeschrieben wurde – gilt sie dann?
+    examples:
+      - Innerhalb von 7 Tagen nach Annahme einer Änderung aktualisiert die Schriftführung alle betroffenen Dokumente, kennzeichnet den alten Wortlaut als ersetzt, fügt einen Eintrag in die Versionshistorie ein und verschiebt den Vorschlag in den Ordner der angenommenen Vorschläge. Danach erhalten alle Mitglieder eine E-Mail mit einer Zusammenfassung und dem Datum des Inkrafttretens. Die Änderung gilt ab dem im Vorschlag genannten Datum des Inkrafttretens oder ab der Veröffentlichung, wenn diese später liegt. Eine Änderung, die nicht auf diesem Weg aufgeschrieben wurde, ist nicht in Kraft – so klar sich auch alle an die Zustimmung erinnern.
+  change-protocol.rejection:
+    question: Was passiert mit einem abgelehnten Vorschlag – kann er wiederkommen, und wie schnell?
+    prompts:
+      - Wo wird ein abgelehnter Vorschlag zusammen mit seinem Entscheidungsprotokoll aufbewahrt, und innerhalb von wie vielen Tagen wird er abgelegt?
+      - Wird der vorschlagenden Person gesagt, warum er abgelehnt wurde, und von wem?
+      - Kann derselbe Vorschlag wiederkommen – nach welcher Zeit, oder nur mit neuen Informationen?
+      - Wer entscheidet, ob ein wiederkehrender Vorschlag wirklich neu ist oder derselbe unter einem anderen Namen?
+    examples:
+      - Innerhalb von 7 Tagen wird ein abgelehnter Vorschlag mit seinem Entscheidungsprotokoll und einer kurzen Notiz zu den wichtigsten genannten Gründen im Ordner der abgelehnten Vorschläge abgelegt. An unseren Dokumenten ändert sich nichts. Derselbe Vorschlag kann nach sechs Monaten wiederkommen, oder früher, wenn die vorschlagende Person neue Informationen zeigt, die während der ersten Diskussion nicht verfügbar waren; die Moderation entscheidet, ob ein wiederkehrender Vorschlag im Wesentlichen derselbe ist.
+  change-protocol.transition-and-migration:
+    question: Welche besondere Sorgfalt braucht eine Änderung, die schwer zurückzunehmen ist – und was passiert mit dem, was unter der alten Regel schon läuft?
+    prompts:
+      - Wie erkennen wir eine Änderung als weitreichend oder schwer umkehrbar, und wer stellt das fest?
+      - Wie viel länger wird über solche Änderungen diskutiert, und welche höhere Hürde brauchen sie?
+      - Wie werden die Risiken vor der Entscheidung festgehalten und anerkannt?
+      - Wie viel Vorlauf bekommen Personen, die derzeit Rollen innehaben, und Mitglieder, bevor eine Änderung sie betrifft?
+      - Kann eine Änderung Rechte verringern, die bestehende Mitglieder schon haben, und wenn ja, was braucht es dafür?
+      - Was passiert mit Aufzeichnungen und Vereinbarungen, die unter der alten Regel entstanden sind – bleiben sie, wie sie waren?
+    examples:
+      - Eine Änderung gilt als weitreichend, wenn sie Geld, Wohnen oder Mitgliedschaftsrechte betrifft oder nicht leicht zurückzunehmen ist. Solche Änderungen bekommen die doppelte normale Diskussionszeit, brauchen eine Zweidrittelmehrheit statt einer einfachen und enthalten einen schriftlichen Risikoabschnitt, den die Mitglieder vor der Abstimmung zur Kenntnis nehmen. Betroffene Personen in Rollen werden mindestens 30 Tage vor dem Inkrafttreten informiert. Die Rechte bestehender Mitglieder werden nie ohne deren Zustimmung oder eine verfassungsändernde Abstimmung verringert, und Aufzeichnungen, die unter der alten Regel entstanden sind, werden nicht verändert.
+  change-protocol.rollback:
+    question: Wie prüfen wir, ob eine Änderung funktioniert – und überarbeiten oder nehmen sie zurück, wenn nicht?
+    prompts:
+      - Wie und wann prüfen wir, ob eine angenommene Änderung so wirkt, wie sie sollte?
+      - Welche Anzeichen bedeuten, dass eine Änderung überarbeitet oder zurückgenommen werden muss – etwa Schaden, Instabilität oder dass sich Entscheidungen in weniger Händen sammeln?
+      - Wer kann verlangen, dass eine Änderung überarbeitet oder zurückgenommen wird, und was muss diese Person zeigen?
+      - Welchen Entscheidungstyp und welches Verfahren nutzt eine Rücknahme?
+      - Wie bevorzugen wir bei der Wahl zwischen Wegen, ein Problem zu lösen, den, der leichter umkehrbar ist?
+    examples:
+      - 'Jede angenommene strategische oder verfassungsändernde Änderung wird sechs Monate nach ihrem Inkrafttreten überprüft: Der Verantwortungskreis berichtet, ob sie Schaden, Verwirrung oder eine Bündelung von Entscheidungen in weniger Händen verursacht hat. Jedes Vollmitglied kann die Überarbeitung oder Rücknahme einer Änderung verlangen, indem es schriftlich Gründe nennt, die beim ersten Mal nicht berücksichtigt wurden. Eine Rücknahme nutzt denselben Entscheidungstyp wie die ursprüngliche Annahme. Wenn zwei Optionen dasselbe Problem lösen würden, wählen wir die, die leichter umkehrbar ist.'
+  change-protocol.emergency-changes:
+    question: Was dürfen wir in Eile entscheiden, wer darf das, und wann läuft es aus?
+    prompts:
+      - Welche Situationen gelten als Notfall – und was macht es unmöglich, auf eine normale Entscheidung zu warten?
+      - Wer darf eine Notfalländerung vornehmen, allein oder zusammen mit einer anderen Person?
+      - Was darf im Notfall nie geändert werden, etwa unser Zweck oder die Zusagen, die wir für unveränderlich erklärt haben?
+      - Wie schnell muss eine Notfalländerung gemeldet werden, und wem?
+      - Wann wird sie überprüft, und bis wann muss sie über den normalen Entscheidungstyp bestätigt werden – oder endet sie automatisch?
+    examples:
+      - Die beiden Personen für die Sicherheitskoordination dürfen gemeinsam eine Notfalländerung nur dann vornehmen, wenn sofortiges Handeln nötig ist, um Schaden an Menschen oder den Verlust des Gebäudes zu verhindern, und eine Mitgliederversammlung nicht rechtzeitig stattfinden kann. Eine Notfalländerung darf unseren Zweck oder unsere Kernzusagen nie verändern. Sie wird innerhalb von 24 Stunden allen Mitgliedern gemeldet, bei der nächsten Versammlung besprochen und läuft nach 21 Tagen aus, wenn die Mitglieder sie nicht über den Entscheidungstyp bestätigen, den die Änderung normalerweise bräuchte.
+  change-protocol.experiments:
+    question: Wie probieren wir etwas eine Zeit lang aus, ohne dass es stillschweigend dauerhaft wird?
+    prompts:
+      - Wer darf ein Experiment vorschlagen, und welche Entscheidung startet, verlängert, ändert oder beendet es?
+      - Was muss jedes Experiment angeben – was sich ändert und was gleich bleibt, wie lange es läuft, seine Zwischenprüfungen und die Anzeichen für Erfolg oder Scheitern?
+      - Was löst eine Rücknahme aus, und wie wird sie durchgeführt?
+      - Was darf ein Experiment nie berühren, etwa unsere Kernzusagen oder die Art, wie Entscheidungen getroffen werden?
+      - Wie wird ein Experiment in jedem betroffenen Dokument gekennzeichnet, und welches feste Enddatum trägt es?
+      - 'Wenn ein Experiment Schaden, Druck auf Menschen oder ein Sicherheitsrisiko verursacht: Wer darf es sofort stoppen, und wie wird das danach überprüft?'
+    examples:
+      - Jedes Vollmitglied kann ein Experiment von bis zu 12 Monaten vorschlagen; Start, Verlängerung oder Änderung brauchen eine strategische Entscheidung. Der Vorschlag nennt, was sich ändert und was nicht, eine Zwischenprüfung zur Hälfte, Anzeichen für Erfolg und Scheitern und wie zurückgenommen wird. Jedes betroffene Dokument wird mit „Experimentell bis“ und seinem Enddatum gekennzeichnet. Experimente können unsere Kernzusagen nicht ändern und unsere Entscheidungsregeln nicht überspringen, und sie enden an ihrem Datum, wenn sie nicht durch eine neue Entscheidung verlängert werden. Zwei Verantwortliche können ein Experiment jederzeit sofort anhalten, wenn es Schaden verursacht; die Überprüfung folgt innerhalb von 14 Tagen.
+  version-history.entry-format:
+    question: Was halten wir zu jeder Version unserer Regeln fest, damit alle nachvollziehen können, was sich geändert hat?
+    prompts:
+      - Wie werden Versionen nummeriert, und wodurch ändert sich die Nummer?
+      - Was hält jeder Eintrag fest – Version, Datum der Annahme, Datum des Inkrafttretens, die Entscheidung, aus der er stammt, eine Zusammenfassung und etwaige Hinweise zum Übergang?
+      - Wie erkennen alle, welche Version heute gilt und welche Dokumente als die offiziellen gelten?
+      - Wo werden frühere Versionen aufbewahrt, und wie kann man sehen, in welchen Zeiträumen sie jeweils galten?
+      - Wie wird ein Fehler in einem alten Eintrag korrigiert, ohne ihn zu bearbeiten?
+    examples:
+      - 'Jede Version bekommt eine Nummer wie 2.3: Die erste Zahl steigt bei verfassungsändernden Änderungen, die zweite bei allen anderen. Jeder Eintrag hält die Version, das Datum der Annahme und des Inkrafttretens, den Verweis auf die Entscheidung mit ihrem Mechanismus und ihrer Schwelle, eine kurze Zusammenfassung und etwaige Hinweise zum Übergang fest, die neuesten zuerst. Der oberste Eintrag ist die gültige Version, und nur Dokumente im Ordner „aktuell“ zählen. Frühere Versionen bleiben im Archiv, mit den Zeiträumen, in denen sie galten, und Fehler werden mit einem neuen Eintrag korrigiert, nie durch Bearbeiten eines alten.'
+  learning-log.what-constitutes-a-learnable-event:
+    question: Welche Art von Schiefgehen ist es wert, aufgeschrieben zu werden, um daraus zu lernen?
+    prompts:
+      - Welche Ereignisse erfordern immer einen Eintrag im Lernprotokoll – etwa eine zurückgenommene Entscheidung, ein beendetes Experiment, ein eskalierter Konflikt, ein Fehlschlag, der Schaden verursacht hat, eine größere Änderung unserer Arbeitsweise oder ein Beinahe-Vorfall?
+      - Was braucht keinen Eintrag?
+      - Wer verantwortet das Protokoll und stellt sicher, dass Einträge geschrieben werden? (Was ein Eintrag enthält, ist eine eigene Frage.)
+      - Wie oft wird das Protokoll durchgesehen, und wer erstellt eine Zusammenfassung der Muster?
+      - 'Wenn dieselbe Art von Fehlschlag immer wieder auftritt: Wie überprüfen wir die Struktur dahinter, statt einer Person die Schuld zu geben?'
+      - Wie stellen wir sicher, dass unangenehme Fehlschläge festgehalten und später nie gelöscht oder versteckt werden?
+    examples:
+      - Ein Eintrag ist erforderlich, wenn eine Entscheidung zurückgenommen wird, ein Experiment endet, ein Konflikt die Governance-Stufe erreicht, ein Fehlschlag Schaden oder wiederholtes Scheitern verursacht, eine größere Änderung unserer Arbeitsweise angenommen wird oder ein Beinahe-Vorfall passiert. Routineentscheidungen und früh beigelegte Konflikte brauchen keinen. Die lernverantwortliche Person stellt sicher, dass Einträge geschrieben und nie entfernt werden. Jedes Quartal fasst sie die neuen Einträge zusammen; tritt dieselbe Art von Fehlschlag zweimal auf, überprüfen wir die Struktur dahinter, statt nach einer Person zu suchen, der wir die Schuld geben.
+  learning-log.entry-format:
+    question: Was halten wir über etwas fest, das wir gelernt haben, damit es in drei Jahren noch nützlich ist?
+    prompts:
+      - Was ist passiert, und warum war es wichtig?
+      - Welche Regeln, Rollen oder Dokumente waren beteiligt?
+      - Welche Anzeichen, Belege oder Schwellen haben uns zum Handeln gebracht?
+      - Was haben wir geändert, ausprobiert oder gestoppt, und was ist daraus geworden?
+      - Wer verantwortet die Nachverfolgung, und bis wann?
+      - Wer darf Einträge nach unseren Regeln zum Informationszugang lesen, und was wird weggelassen, um die beteiligten Personen zu schützen?
+    examples:
+      - Jeder Eintrag hält das Datum fest, was passiert ist und warum es wichtig war, welche Regeln oder Dokumente beteiligt waren, welche Anzeichen oder Schwellen uns zum Handeln gebracht haben, was wir geändert, ausprobiert oder gestoppt haben, was daraus geworden ist und wer bis wann nachverfolgt. Einträge haben dieselbe Zugangsstufe wie Versammlungsprotokolle, sodass alle Mitglieder sie lesen können; die Namen der beteiligten Personen werden weggelassen, sofern sie nicht zustimmen.
+  experiment-template.required-fields:
+    question: Was muss jemand aufschreiben, bevor wir zustimmen, etwas auszuprobieren?
+    prompts:
+      - Welche Felder enthält jedes Formular für einen Experimentvorschlag, und welche dürfen nie leer bleiben?
+      - Wie zeigt die vorschlagende Person, dass die Anzeichen für Erfolg und für einen vorzeitigen Abbruch tatsächlich beobachtbar sind?
+      - Wer prüft vor der Entscheidung, ob ein Formular vollständig ist, und was passiert mit einem unvollständigen?
+      - Wo wird das ausgefüllte Formular während des Experiments aufbewahrt, damit Mitglieder es mit dem Geschehen vergleichen können? (Was am Ende passiert, ist eine eigene Frage.)
+    examples:
+      - 'Jedes Experiment nutzt ein Formular mit diesen Feldern: Name, vorschlagende Person, was sich ändert und welche Dokumente betroffen sind, was gleich bleibt, Start- und Enddatum, mindestens eine Zwischenprüfung zur Hälfte, beobachtbare Anzeichen für Erfolg, beobachtbare Anzeichen, bei denen wir vorzeitig abbrechen, was eine Rücknahme auslöst und wie, wer es verlängern oder beenden darf, und eine Zeile, die anerkennt, dass es im Notfall ausgesetzt werden kann. Die Moderation gibt jedes Formular mit einem leeren Feld zurück, bevor es zur Entscheidung angesetzt wird.'
+  experiment-template.expiry-and-renewal:
+    question: Wann endet ein Experiment von selbst, und was braucht es, um es weiterlaufen zu lassen?
+    prompts:
+      - Was passiert am Enddatum, wenn niemand gehandelt hat?
+      - Was braucht es, um ein Experiment zu verlängern, und wie oft darf es verlängert werden?
+      - Wie wird aus einem erfolgreichen Experiment eine dauerhafte Regel?
+      - Wer schreibt die Ergebnisse ins Lernprotokoll, und bis wann?
+    examples:
+      - Ein Experiment endet an seinem Enddatum, auch wenn niemand handelt, und ab dem nächsten Tag gilt wieder die vorherige Regel. Es weiterlaufen zu lassen braucht einen neuen Vorschlag und eine neue strategische Entscheidung vor dem Enddatum; es kann einmal verlängert werden, danach muss es als dauerhafte Änderung angenommen oder gestoppt werden. Innerhalb von 30 Tagen nach dem Ende schreibt die vorschlagende Person die Ergebnisse und das Gelernte ins Lernprotokoll.

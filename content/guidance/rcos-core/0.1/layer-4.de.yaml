@@ -1,0 +1,180 @@
+lang: de
+sourceHash: 705f5d64
+sections:
+  '6.1':
+    inShort: Ordne jeden Konflikt einer bekannten Klasse zu – zwischenmenschlich, rollenbezogen, strukturell oder eine Grenzüberschreitung –, damit alle wissen, welchen Weg er nimmt. Alles, was die Sicherheit betrifft, ist sicherheitskritisch.
+    questions:
+      safety-critical:
+        question: Wann ist ein Konflikt sicherheitskritisch?
+        answer: Wenn es um glaubhafte Sicherheitsrisiken, Zwang, Missbrauch oder Drohungen geht. Diese lösen die verstärkten Schutzvorkehrungen in 6.3 aus.
+      avoid-classifying:
+        question: Was, wenn wir einen Konflikt am liebsten gar nicht einordnen würden?
+        answer: Die Einordnung zu vermeiden oder falsch zu treffen gilt als Prozessfehler und wird überprüft.
+  '6.2':
+    inShort: Es gibt eine einzige Konfliktlösungsleiter für alle, mit klaren Schritten, Fristen und einem Weg nach vorn, wenn jemand nicht mitmacht.
+    questions:
+      refuses:
+        question: Was, wenn die andere Person sich verweigert?
+        answer: Die Leiter muss festlegen, wie mit Verweigerung, Nichtreaktion oder Rückzug umgegangen wird, damit ein Konflikt nicht durch Schweigen blockiert werden kann.
+      status-needed:
+        question: Muss ich die richtigen Leute kennen, um einen Konflikt anzusprechen?
+        answer: Nein. Der Prozess muss ohne sozialen Status, Dienstalter, Charisma oder Nähe zu den Entscheidenden funktionieren.
+  '6.3':
+    inShort: Wo es ein Machtgefälle, eine Abhängigkeit oder ein Sicherheitsrisiko gibt, gelten zusätzliche Schutzvorkehrungen – und niemand wird dafür bestraft, etwas anzusprechen.
+    questions:
+      retaliation:
+        question: Bin ich geschützt, wenn ich etwas über eine mächtige Person anspreche?
+        answer: Ja. Die Schutzvorkehrungen schützen vor Vergeltung dafür, ein Anliegen anzusprechen, um Mediation zu bitten, Beweise vorzulegen oder an einer Überprüfung teilzunehmen.
+      act-before-process:
+        question: Kann die Gemeinschaft handeln, bevor der Prozess abgeschlossen ist?
+        answer: Bei sicherheitskritischen Konflikten ja. Schutzmaßnahmen wie eine zeitweise Trennung können sofort ergriffen werden.
+  '6.4':
+    inShort: Sanktionen und Wiedergutmachung sind schriftlich festgehalten, verhältnismäßig, zeitlich begrenzt und anfechtbar. Wiedergutmachung kommt vor Bestrafung – außer wenn die Sicherheit auf dem Spiel steht.
+    questions:
+      cold-shoulder:
+        question: Ist es eine Sanktion, jemanden zu schneiden?
+        answer: Es ist eine informelle – und die sind nicht erlaubt. Sanktionen dürfen nicht über Ausschluss, sozialen Druck, Schweigen oder stillschweigend entzogene Rechte verhängt werden.
+      repair-first:
+        question: Warum Wiedergutmachung vor Bestrafung?
+        answer: Wiedergutmachung hält Menschen und Beziehungen in der Gemeinschaft, wo das möglich ist. Nur in sicherheitskritischen Fällen kommt eine strafende Maßnahme zuerst.
+  '6.5':
+    inShort: 'Schicht 4 lebt in zwei Dokumenten: der Konfliktlösungsleiter und dem Rechenschaftsprotokoll.'
+    questions:
+      which-documents:
+        question: Welche Dokumente braucht Schicht 4?
+        answer: Eine Konfliktlösungsleiter und ein Rechenschaftsprotokoll.
+  '6.6':
+    inShort: 'Die harten Grenzen bei Konflikten lauten: Ein Konflikt wird bearbeitet, niemals ignoriert. Machtgefälle erhöhen die Schutzvorkehrungen, Wiedergutmachung kommt zuerst, und Sicherheit überwiegt alles andere.'
+    questions:
+      ignore-conflict:
+        question: Ist es ein Problem, einen Konflikt sich von selbst beruhigen zu lassen?
+        answer: Einen Konflikt unbearbeitet zu lassen, zu unterdrücken oder zu normalisieren gilt als Systemverstoß. Er braucht einen definierten Weg.
+  '6.7':
+    inShort: Das Konfliktsystem muss explizit sein. Wie Menschen Gefühle ausdrücken oder welche spirituelle oder therapeutische Brille sie nutzen, bleibt ihre eigene Sache.
+    questions:
+      mediation-style:
+        question: Müssen wir eine bestimmte Mediationsmethode nutzen?
+        answer: Nein. Mediationsstile sind optional; nur der Mindestprozess und die Schutzvorkehrungen müssen explizit sein.
+templates:
+  conflict-resolution-ladder.conflict-classification:
+    question: Welche Konfliktarten haben bei uns einen Namen, damit niemand mitten im Streit eine neue erfindet – und welche sind sicherheitskritisch?
+    prompts:
+      - Welche Konfliktarten benennen wir – mindestens zwischenmenschlich, rollenbezogen, strukturell und ethisch?
+      - Welche Situationen sind sicherheitskritisch, und was ändert sich für sie?
+      - 'Für jede Art: Wie erkennen wir sie, wie schnell müssen wir reagieren, und welchen Weg nimmt sie?'
+      - 'Für jede Art: Was wird schriftlich festgehalten? (Wer es lesen darf, ist eine eigene Frage.)'
+      - Was passiert, wenn ein Konflikt der falschen Art zugeordnet wird oder niemand ihn einordnet?
+    examples:
+      - 'Wir benennen fünf Konfliktarten: zwischen Menschen, über eine Rolle, über unsere Regeln oder Strukturen, über einen Bruch unserer Vereinbarungen und sicherheitskritisch. Ein Konflikt ist sicherheitskritisch, sobald jemand glaubhaft um die eigene Sicherheit fürchtet oder unter Zwang steht; er überspringt die ersten Schritte, und unsere Sicherheitsmaßnahmen gelten sofort. Alltägliche Konflikte bekommen innerhalb von 14 Tagen eine Antwort und beginnen mit einem Gespräch unter vier Augen; die anderen beginnen bei der Konfliktkoordination, die Art und Begründung festhält. Ein Konflikt, den innerhalb einer Woche niemand eingeordnet hat, wird als Prozessfehler überprüft.'
+  conflict-resolution-ladder.resolution-ladder-steps:
+    question: Welche Schritte führen vom ruhigen Gespräch bis zum formalen Verfahren, und in welcher Reihenfolge?
+    prompts:
+      - 'Für jeden Schritt, vom Gespräch unter vier Augen bis zur Governance-Entscheidung: Wer ist beteiligt, was passiert, und wie lange dauert es?'
+      - Wie wird ein Konflikt angesprochen, festgehalten und bestätigt – und wie werden die anderen Beteiligten informiert und zur Teilnahme eingeladen?
+      - Wann rückt ein Konflikt eine Stufe höher, und können beide Seiten das selbst verlangen?
+      - 'Wenn sonst nichts ihn löst: Wie kommt er über unsere Entscheidungsmatrix zu einer Entscheidung – ohne Abkürzung daran vorbei?'
+      - Wie stellen wir sicher, dass alle die Leiter nutzen können, unabhängig von Ansehen, Dienstalter oder Freundschaften?
+      - Was tun wir, wenn ein Konflikt ignoriert oder stillschweigend begraben wird? (Nichtreaktion und Patt, die Wahl der Moderation und wer die Aufzeichnungen lesen darf, sind eigene Fragen.)
+    examples:
+      - 'Schritt 1: Die Beteiligten sprechen innerhalb von zwei Wochen unter vier Augen. Schritt 2: Jede Seite kann eine Moderation anfragen, die innerhalb von drei Wochen ein Gespräch ausrichtet. Schritt 3: Jede Seite kann einen schriftlichen Fall bei der Konfliktkoordination eröffnen, die ihn innerhalb von 7 Tagen protokolliert und bestätigt und die andere Seite einlädt. Schritt 4: Ein Gremium aus drei Mitgliedern hört beide Seiten und gibt innerhalb von 30 Tagen eine Empfehlung. Schritt 5: Die Vollmitglieder entscheiden nach der Entscheidungsmatrix. Jedes Mitglied kann die Leiter beginnen oder eine Stufe höher gehen; einen bekannten Konflikt unbearbeitet zu lassen ist ein Verstoß.'
+  conflict-resolution-ladder.non-response-withdrawal-and-deadlock:
+    question: Was passiert, wenn jemand nicht mitmacht, aussteigt oder wir einfach feststecken?
+    prompts:
+      - 'Wenn jemand nicht reagiert: Wie viele Erinnerungen gibt es, über welchen Zeitraum, bevor Schweigen als Nichtlösung gilt – und was passiert dann?'
+      - 'Wenn jemand mitten im Verfahren aussteigt: Wie wird die andere Seite informiert, und darf sie die Sache abschließen oder eine schriftliche Zusammenfassung verlangen?'
+      - Wenn jemand aussteigt, was passiert mit einer noch offenen Rechenschaftssache?
+      - Wenn wir feststecken, wie wird das Patt festgehalten und zu einer Governance-Entscheidung gebracht?
+      - Wie kann jemand einwenden, dass der Prozess selbst fehlerhaft war, wo wird das protokolliert, und wann führt es zu einer Überprüfung dieser Leiter?
+    examples:
+      - Reagiert jemand nicht innerhalb von 14 Tagen, schickt die Moderation eine zweite Mitteilung mit weiteren 14 Tagen; anhaltendes Schweigen gilt als Nichtlösung, und der Fall rückt eine Stufe höher. Steigt jemand aus, wird die andere Seite innerhalb von 7 Tagen informiert und kann die Sache abschließen oder eine schriftliche Zusammenfassung verlangen; eine offene Rechenschaftssache läuft weiter. Ein schriftlich festgehaltenes Patt geht an die Vollmitglieder. Einwände gegen den Prozess kommen ins Konfliktprotokoll, und drei davon in einem Jahr lösen eine Überprüfung dieser Leiter aus.
+  conflict-resolution-ladder.facilitator-selection-and-replacement:
+    question: Wer moderiert einen Konflikt, und wie bekommt jede Seite diese Person ersetzt?
+    prompts:
+      - Wer moderiert standardmäßig – welche Rolle aus unserem Rollenregister?
+      - Wenn die Moderation selbst am Konflikt beteiligt oder einer Seite nahe ist, wer wählt einen neutralen Ersatz und wie?
+      - Wie kann jede Seite eine Moderation ablehnen, und welche Begründung muss sie dafür nennen?
+      - Wann dürfen wir jemanden von außen hinzuziehen, wer muss zustimmen, und wer zahlt?
+    examples:
+      - Standardmäßig moderiert der im Rollenregister benannte Konflikt-Steward. Ist diese Person selbst Partei oder lebt mit einer Partei im selben Haushalt, benennt jede Partei ein Mitglied, und diese beiden wählen gemeinsam eine neutrale Moderation. Jede Partei kann eine Moderation ablehnen, indem sie einen Interessenkonflikt benennt; innerhalb von 10 Tagen wird ein Ersatz gefunden. Sind beide Parteien einverstanden, laden wir eine externe Mediation ein, bezahlt aus dem gemeinsamen Fonds.
+  conflict-resolution-ladder.privacy-and-information-access-boundaries:
+    question: Wer darf was über einen Konflikt wissen, während er läuft und danach?
+    prompts:
+      - Welche Schritte sind vollständig vertraulich, und wer darf die Aufzeichnungen während dieser Zeit sehen?
+      - Wenn ein Konflikt zu einer Governance-Entscheidung kommt, was müssen die Vollmitglieder mindestens wissen – und werden die Beteiligten informiert, bevor etwas geteilt wird?
+      - Wer verwahrt die Aufzeichnungen, wie lange, und wie werden sie vernichtet?
+      - Was dürfen Beteiligte Menschen außerhalb des Prozesses erzählen, und wessen Einverständnis ändert das?
+    examples:
+      - 'Die Schritte 1 bis 4 sind vollständig vertraulich: Nur die Parteien und die Moderation dürfen die Notizen sehen. Kommt ein Fall zu den Vollmitgliedern, erhalten diese nur, was sie zur Entscheidung brauchen – worum es im Konflikt geht, welche Schritte versucht wurden und welche Optionen es gibt – und die Parteien sehen diese Zusammenfassung drei Tage, bevor sie geteilt wird. Die Moderation verwahrt die Aufzeichnungen drei Jahre nach Abschluss des Falls und löscht sie dann. Niemand, der beteiligt war, darf den Fall außerhalb des Prozesses ohne das schriftliche Einverständnis aller Parteien besprechen.'
+  conflict-resolution-ladder.safeguards:
+    question: Was ändert sich, wenn die Menschen in einem Konflikt nicht gleich viel Macht haben – oder wenn jemand nicht sicher ist?
+    prompts:
+      - Welcher zusätzliche Schutz gilt, wenn die Menschen in einem Konflikt nicht gleich viel Macht haben – zum Beispiel eine unabhängige Moderation oder ein getrennter Weg, es anzusprechen?
+      - Wenn jemand nicht sicher ist, was dürfen wir sofort tun, noch vor Abschluss des Prozesses – und wer entscheidet das?
+      - Wie stellen wir sicher, dass Sicherheit vor Teilnahmerechten, Rollen und Bequemlichkeit kommt?
+    examples:
+      - Wenn die Menschen in einem Konflikt ungleich viel Macht haben – etwa jemand mit einer Rolle und ein neueres Mitglied –, kann die weniger mächtige Person den Konflikt bei einer externen Moderation statt bei unserem Konflikt-Steward ansprechen, und die Autorität der Rolle über sie ruht, solange das Verfahren läuft. Meldet jemand glaubhaft, nicht sicher zu sein, können zwei beliebige Stewards die Beteiligten sofort trennen, den Zugang zu gemeinsamen Räumen einschränken oder eine Rolle für bis zu 14 Tage aussetzen, noch vor Abschluss des Prozesses. Sicherheit kommt zuerst, auch wenn das jemanden eine Rolle kostet oder unbequem ist.
+  accountability-protocol.triggers:
+    question: Was muss passieren, bevor der Rechenschaftsprozess beginnt, und wer kann ihn auslösen?
+    prompts:
+      - Welche Bedingungen lösen eine Rechenschaftsprüfung aus – zum Beispiel eine lange Lücke bei den Beiträgen, eine gebrochene Pflicht aus der Mitgliedschaftsvereinbarung oder ein Handeln gegen eine unserer Gründungsverpflichtungen?
+      - 'Für jeden Auslöser: Wie kann jede Person nachprüfen, dass er eingetreten ist – aus unseren Aufzeichnungen oder durch eine direkte Meldung?'
+      - Wer darf den Prozess auslösen, und wie – und kann ein Fall von der Konfliktlösungsleiter weitergegeben werden?
+      - Was ist kein Auslöser – wie verhindern wir, dass der Prozess gestartet wird, weil jemand unbeliebt ist?
+    examples:
+      - 'Eine Rechenschaftsprüfung beginnt nur, wenn eines davon dokumentiert ist: Ein Mitglied hat vier Monate in Folge keinen erfassten Beitrag geleistet; ein Mitglied hat eine Pflicht aus der Mitgliedschaftsvereinbarung versäumt und sie nicht innerhalb von 30 Tagen nach einer Erinnerung erfüllt; ein Mitglied hat gegen eine unserer Gründungsverpflichtungen gehandelt; oder ein Fall wird aus Schritt 3 oder höher der Konfliktlösungsleiter weitergegeben. Jedes Mitglied kann die Meldung schriftlich an die Rechenschaftskoordination richten. Dass jemand unbeliebt ist, ist kein Auslöser.'
+  accountability-protocol.investigation-and-review:
+    question: Wer sieht sich an, was passiert ist, und wie geht das ohne Parteinahme?
+    prompts:
+      - Welche Wege nutzen wir – sanft (etwa bei Inaktivität), mittel (eine gebrochene Pflicht) und schwer (ein Bruch unserer Gründungsverpflichtungen oder ein Sicherheitsanliegen) – und was ordnet einen Fall welchem Weg zu?
+      - 'Für jeden Weg: Wer nimmt Kontakt auf oder eröffnet die Überprüfung, und wie lange dauert jede Stufe?'
+      - 'Für jeden Weg: Welche Ergebnisse sind möglich, und wohin geht der Fall, wenn er nicht gelöst wird?'
+      - Wer darf einen Fall nicht untersuchen – zum Beispiel wer selbst beteiligt oder einer der Seiten nahe ist – und wer übernimmt stattdessen?
+      - Wie wird das Ergebnis festgehalten, bevor jemand über die Folgen entscheidet? (Welche Folgen eintreten können, ist eine eigene Frage.)
+    examples:
+      - 'Sanft: Lassen die Beiträge eines Mitglieds nach, meldet sich innerhalb von zwei Wochen jemand aus dem Sorge-Team. Mittel: Eine gebrochene Pflicht aus der Mitgliedschaftsvereinbarung bekommt eine schriftliche Mitteilung der Rechenschaftskoordination; ist sie nach 30 Tagen nicht gelöst, geht sie an ein Überprüfungsgremium aus drei Mitgliedern. Schwer: Ein Bruch einer Gründungsverpflichtung oder ein glaubhaftes Sicherheitsanliegen geht direkt an Schritt 5 der Konfliktlösungsleiter. Wer an der Sache beteiligt ist oder mit einer der Seiten im selben Haushalt lebt, darf nicht im Gremium sitzen.'
+  accountability-protocol.due-process-guarantees:
+    question: Was steht einer Person zu, der etwas vorgeworfen wird, bevor etwas entschieden wird?
+    prompts:
+      - Wie und wann wird ihr schriftlich mitgeteilt, worum es geht – vor jeder Überprüfung und jeder Folge?
+      - Wie viel Zeit hat sie mindestens, um zu antworten, und kann sie mehr verlangen?
+      - Darf sie einsehen, worauf das Anliegen beruht, eine Vertrauensperson mitbringen und wählen, ob sie schriftlich oder persönlich antwortet?
+      - Wo kann eine Entscheidung angefochten werden – und dürfen die Menschen, die sie getroffen haben, auch über die Anfechtung befinden?
+    examples:
+      - Vor jeder Überprüfung erhält das Mitglied eine schriftliche Mitteilung, die das Anliegen und die Aufzeichnungen nennt, auf denen es beruht. Es hat mindestens 30 Tage Zeit, schriftlich oder in einem Treffen zu antworten, und kann eine Vertrauensperson eigener Wahl mitbringen. Jede Entscheidung kann innerhalb von 14 Tagen bei den Vollmitgliedern angefochten werden und wird durch eine Strategische Abstimmung entschieden; niemand, der an der ursprünglichen Entscheidung beteiligt war, darf die Anfechtung leiten.
+  accountability-protocol.anti-retaliation-protections:
+    question: Wie schützen wir eine Person, die etwas anspricht, davor, später dafür zu zahlen?
+    prompts:
+      - Wer ist geschützt – wer etwas anspricht, um Mediation bittet, Informationen oder Beweise beisteuert oder an einer Überprüfung oder Anfechtung teilnimmt?
+      - Was gilt als Vergeltung – auch stille Formen wie der Verlust einer Rolle, schlechtere Aufgaben oder sozialer Ausschluss?
+      - Was passiert, wenn jemand Vergeltung übt – löst das eine eigene Rechenschaftsprüfung aus?
+      - Wie lange gilt der Schutz nach Abschluss des Prozesses?
+    examples:
+      - Niemand darf dafür schlechter behandelt werden, etwas angesprochen, um Mediation gebeten, Informationen oder Beweise beigesteuert oder an einer Überprüfung oder Anfechtung teilgenommen zu haben. Schlechter behandelt heißt auch, aus einer Rolle entfernt zu werden, den Zugang zu gemeinsamen Ressourcen zu verlieren oder von Gemeinschaftsveranstaltungen ausgeschlossen zu werden. Vergeltung ist selbst ein Auslöser für Rechenschaft, und dieser Schutz gilt zwei Jahre nach Abschluss des Prozesses.
+  accountability-protocol.sanction-and-repair-options:
+    question: Welche Folgen können eintreten, wie bleiben sie verhältnismäßig und anfechtbar – und wie kommt Wiedergutmachung vor Bestrafung?
+    prompts:
+      - Welche Folgen kann ein Verstoß haben – und welche Schritte zur Wiedergutmachung kommen vor jeder Bestrafung?
+      - 'Für jede Folge: Was muss zuerst belegt sein, und welche Belege genügen?'
+      - 'Für jede Folge: Wer darf sie verhängen, wie lange gilt sie, und wie wird sie angefochten?'
+      - Wie stellen wir sicher, dass niemand informell bestraft wird – durch Ausschluss, Schweigen oder sozialen Druck?
+    examples:
+      - 'Unsere erste Antwort ist immer Wiedergutmachung: ein Gespräch, eine Entschuldigung oder das Beheben des Schadens, abgesprochen mit den Betroffenen. Scheitert das, kann das Rechenschaftsgremium eine schriftliche Verwarnung aussprechen und danach den Zugang zu einem gemeinsamen Raum oder einer Rolle für bis zu drei Monate einschränken; einen erzwungenen Austritt können nur die Vollmitglieder beschließen. Jeder Schritt braucht ein schriftliches Ergebnis, kann innerhalb von 14 Tagen angefochten werden und endet an einem genannten Datum. Niemand wird informell ausgeschlossen. Nur ein unmittelbares Sicherheitsrisiko erlaubt uns, direkt zu einer Einschränkung zu springen.'
+  accountability-protocol.conditions-for-restoring-rights:
+    question: Wie bekommt jemand seinen Stand zurück, wenn eine Sanktion abgelaufen ist?
+    prompts:
+      - 'Für jede Art von Sanktion: Wie führt der Weg zurück zu vollen Rechten, und wer bestätigt, dass er abgeschlossen ist?'
+      - 'Nach einer zeitweisen Einschränkung: Was muss nachgewiesen werden, und wie schnell werden die Rechte danach wiederhergestellt?'
+      - 'Nach einem freiwilligen Austritt: Kann die Person zurückkommen, und über welches Verfahren?'
+      - 'Nach einem erzwungenen Austritt: Wie lange muss jemand warten, bevor eine erneute Bewerbung möglich ist, und welches Aufnahmeverfahren gilt dann?'
+      - Wenn die Bedingungen erfüllt sind, wie verhindern wir, dass jemand informell draußen gehalten wird?
+    examples:
+      - Nach einer zeitweisen Einschränkung kehren die Rechte vollständig zurück, sobald die Rechenschaftskoordination bestätigt, dass die vereinbarten Schritte zur Wiedergutmachung erledigt sind; die Koordination muss das innerhalb von 14 Tagen nach der Anfrage des Mitglieds prüfen. Wer freiwillig gegangen ist, kann sich jederzeit über das Onboarding-Protokoll erneut bewerben, ohne automatische Rückkehr. Nach einem erzwungenen Austritt ist eine erneute Bewerbung nach zwei Jahren möglich, und es gilt das normale Aufnahmeverfahren.
+  accountability-protocol.coordination-with-layer-1:
+    question: Wenn Rechenschaft dazu führt, dass jemand ausgesetzt oder entfernt wird, wie stellen wir sicher, dass zuerst ein faires Verfahren lief und die Regeln des Austrittsprotokolls gelten?
+    prompts:
+      - Wenn ein Rechenschaftsprozess mit der Entfernung einer Person endet, folgen wir dem Austritts- und Trennungsprotokoll – ohne einen eigenen Weg hinaus an dieser Stelle?
+      - Ist eine zeitweise Aussetzung oder Zugangsbeschränkung ein Austritt? Wenn nicht, was lässt sie unberührt?
+      - Welche Verfahrensschritte müssen abgeschlossen sein, bevor jemand ausgesetzt oder entfernt wird – abgesehen von unmittelbaren Sicherheitsmaßnahmen?
+      - Wie teilen die beiden Prozesse eine gemeinsame Aufzeichnung, damit ein Austritt niemals doppelt oder unterschiedlich festgehalten wird? (Wie ein erzwungener Austritt entschieden wird, ist die Frage des Austrittsprotokolls.)
+    examples:
+      - 'Jeder erzwungene Austritt und jede zeitweise Zugangsbeschränkung folgt dem Austritts- und Trennungsprotokoll; dieses Protokoll schafft keinen eigenen Weg hinaus. Eine zeitweise Einschränkung ist kein Austritt: Das Mitglied behält seine Mitgliedschaft und unterliegt keiner Sperre für eine erneute Bewerbung, sofern die Vollmitglieder nicht später einen erzwungenen Austritt beschließen. Abgesehen von unmittelbaren Sicherheitsmaßnahmen wird niemand ausgesetzt oder entfernt, solange die Person nicht eine schriftliche Mitteilung, die vollständige Antwortfrist und die Gelegenheit zur Anfechtung hatte.'

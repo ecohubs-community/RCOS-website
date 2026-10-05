@@ -25,7 +25,7 @@ sections:
           - Zulässige und erforderliche Lösungswege
           - Dokumentationsanforderungen und Datenschutzgrenzen
       6.1.4:
-        text: Konflikte, die glaubhafte Sicherheitsrisiken, Zwang, Missbrauch oder Drohungen beinhalten, MUSS als **sicherheitskritisch** klassifiziert werden und MUSS erhöhte Schutzmaßnahmen auslösen, wie in Abschnitt 6.3 definiert.
+        text: Konflikte, die glaubhafte Sicherheitsrisiken, Zwang, Missbrauch oder Drohungen beinhalten, MÜSSEN als **sicherheitskritisch** klassifiziert werden und MÜSSEN erhöhte Schutzmaßnahmen auslösen, wie in Abschnitt 6.3 definiert.
       6.1.5:
         text: Fehlklassifikation oder Vermeidung der Klassifikation MUSS als Prozessversagen behandelt werden, das einer Überprüfung unterliegt.
   '6.2':
@@ -48,42 +48,42 @@ sections:
       6.2.4:
         text: Der Lösungsprozess MUSS zugänglich sein, ohne dass sozialer Status, Dienstalter, Charisma oder informelle Nähe zu Entscheidungsträger\*innen erforderlich ist.
       6.2.5:
-        text: Ungelöste Konflikte MUSS über definierte Governance-Wege eskaliert werden, ohne die in Schicht 2 definierte Entscheidungsmatrix zu umgehen.
+        text: Ungelöste Konflikte MÜSSEN über definierte Governance-Wege eskaliert werden, ohne die in Schicht 2 definierte Entscheidungsmatrix zu umgehen.
   '6.3':
     title: Schutzmaßnahmen
     blocks:
       6.3.1:
         text: Die Gemeinschaft MUSS explizite Schutzmaßnahmen für Konflikte definieren, die Machtasymmetrien, Abhängigkeitsverhältnisse oder Sicherheitsrisiken beinhalten.
       6.3.2:
-        text: 'Schutzmaßnahmen MUSS Schutz vor Vergeltung umfassen für:'
+        text: 'Schutzmaßnahmen MÜSSEN Schutz vor Vergeltung umfassen für:'
         items:
           - Das Vorbringen eines Anliegens
           - Das Anfordern von Mediation
           - Das Abgeben von Aussagen oder Beweisen
           - Die Teilnahme an einer Überprüfung oder Berufung
       6.3.3:
-        text: 'Wenn ein Machtgefälle zwischen den Parteien besteht, MUSS erhöhte Schutzmaßnahmen angewendet werden, die KANN umfassen:'
+        text: 'Wenn ein Machtgefälle zwischen den Parteien besteht, MÜSSEN erhöhte Schutzmaßnahmen angewendet werden, die KÖNNEN umfassen:'
         items:
           - Unabhängige oder externe Moderation
           - Getrennte Aufnahme-, Dokumentations- oder Kommunikationskanäle
           - Vorübergehende Aussetzung oder Einschränkung der Rollenbefugnisse
           - Zusätzliche Beweis- und Überprüfungsschwellen vor Sanktionen
       6.3.4:
-        text: 'Bei sicherheitskritischen Konflikten MUSS die Gemeinschaft sofortige Schutzmaßnahmen definieren, die vor Abschluss des vollständigen Verfahrens ergriffen werden können, die KANN umfassen:'
+        text: 'Bei sicherheitskritischen Konflikten MUSS die Gemeinschaft sofortige Schutzmaßnahmen definieren, die vor Abschluss des vollständigen Verfahrens ergriffen werden können, die KÖNNEN umfassen:'
         items:
           - Vorübergehende Trennungsmaßnahmen
           - Eingeschränkter Zugang zu gemeinsamen Räumen oder Ressourcen
           - Vorübergehende Rollensuspendierung
           - Notfall-Eskalationsfristen
       6.3.5:
-        text: Sicherheitsmaßnahmen MUSS Teilnahmerechte, Rollenkontinuität und betriebliche Zweckmäßigkeit übersteuern.
+        text: Sicherheitsmaßnahmen MÜSSEN Teilnahmerechte, Rollenkontinuität und betriebliche Zweckmäßigkeit übersteuern.
   '6.4':
     title: Sanktionen, Wiedergutmachung und Trennung
     blocks:
       6.4.1:
         text: Die Gemeinschaft MUSS ein explizites Sanktions- und Wiedergutmachungsrahmenwerk definieren.
       6.4.2:
-        text: 'Sanktionen und Wiedergutmachungsmaßnahmen MUSS:'
+        text: 'Sanktionen und Wiedergutmachungsmaßnahmen MÜSSEN:'
         items:
           - Verhältnismäßig zum Verstoß sein
           - Explizit dokumentiert sein
@@ -98,21 +98,21 @@ sections:
           - Überprüfungs- und Berufungsmechanismen
           - Bedingungen für die Wiederherstellung von Rechten, Rollen oder Teilnahme
       6.4.4:
-        text: Trennungs-, Suspendierungs- oder Ausschlussmaßnahmen MUSS einem ordnungsgemäßen Verfahren folgen und MUSS mit den in Schicht 1 definierten Austritts- und Trennungsregeln übereinstimmen.
+        text: Trennungs-, Suspendierungs- oder Ausschlussmaßnahmen MÜSSEN einem ordnungsgemäßen Verfahren folgen und MÜSSEN mit den in Schicht 1 definierten Austritts- und Trennungsregeln übereinstimmen.
       6.4.5:
-        text: Sanktionen DARF NICHT durch informellen Ausschluss, sozialen Druck, Schweigen oder stillschweigende Entziehung von Rechten verhängt werden.
+        text: Sanktionen DÜRFEN NICHT durch informellen Ausschluss, sozialen Druck, Schweigen oder stillschweigende Entziehung von Rechten verhängt werden.
       6.4.6:
-        text: Wiedergutmachungsorientierte Maßnahmen MUSS gegenüber strafenden Maßnahmen priorisiert werden, außer in sicherheitskritischen Fällen.
+        text: Wiedergutmachungsorientierte Maßnahmen MÜSSEN gegenüber strafenden Maßnahmen priorisiert werden, außer in sicherheitskritischen Fällen.
   '6.5':
     title: Artefakte
     blocks:
       6.5.1:
-        text: 'Die folgenden Artefakte sind für die Layer-4-Konformität verpflichtend:'
+        text: 'Die folgenden Artefakte sind für die Schicht-4-Konformität verpflichtend:'
         items:
           - Konfliktlösungsleiter
           - Verantwortlichkeitsprotokoll
       6.5.2:
-        text: 'Layer-4-Artefakte MUSS:'
+        text: 'Schicht-4-Artefakte MÜSSEN:'
         items:
           - Explizit und eindeutig sein
           - Versioniert sein
@@ -134,16 +134,16 @@ sections:
           - Berufungs-, Aufsichts- und Eskalationswege
           - Koordination mit den Austritts- und Trennungsprozessen von Schicht 1
   '6.6':
-    title: Layer-Invarianten
+    title: Schicht-Invarianten
     blocks:
       6.6.1:
-        text: Konflikte MUSS als behandelte Bedingung mit definierten Wegen betrachtet werden; das Ignorieren, Unterdrücken oder Normalisieren ungelöster Konflikte MUSS als Systemverstoß gelten.
+        text: Konflikte MÜSSEN als behandelte Bedingung mit definierten Wegen betrachtet werden; das Ignorieren, Unterdrücken oder Normalisieren ungelöster Konflikte MUSS als Systemverstoß gelten.
       6.6.2:
-        text: Konflikte mit Machtasymmetrien MUSS erhöhte Schutzmaßnahmen auslösen.
+        text: Konflikte mit Machtasymmetrien MÜSSEN erhöhte Schutzmaßnahmen auslösen.
       6.6.3:
-        text: Wiedergutmachung und Wiederherstellung MUSS vor Bestrafung stehen, außer wenn unmittelbare Sicherheit gefährdet ist.
+        text: Wiedergutmachung und Wiederherstellung MÜSSEN vor Bestrafung stehen, außer wenn unmittelbare Sicherheit gefährdet ist.
       6.6.4:
-        text: Physische, psychische und Kindersicherheit MUSS Teilnahmerechte, Rollenkontinuität und Reputationsbelange übersteuern.
+        text: Physische, psychische und Kindersicherheit MÜSSEN Teilnahmerechte, Rollenkontinuität und Reputationsbelange übersteuern.
   '6.7':
     title: Explizitheitsregeln
     blocks:

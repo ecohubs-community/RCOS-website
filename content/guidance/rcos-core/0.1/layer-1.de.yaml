@@ -1,0 +1,228 @@
+lang: de
+sourceHash: 3d261f1e
+sections:
+  '3.1':
+    inShort: Jede Person, die mit der Gemeinschaft verbunden ist, befindet sich in genau einem klar benannten Status – von der Bewerbung bis zum ausgetretenen Mitglied –, und jeder Status sagt, was diese Person darf und was sie tun muss.
+    questions:
+      minimum-states:
+        question: Welche Mitgliedschaftsstatus brauchen wir mindestens?
+        answer: Bewerber:in, Probe- oder Übergangsmitglied, Vollmitglied und ausgetretenes Mitglied. Weitere könnt ihr ergänzen.
+      two-states:
+        question: Kann jemand in einem Bereich Vollmitglied und in einem anderen auf Probe sein?
+        answer: Nein. Jede Person hat zu jedem Zeitpunkt genau einen Mitgliedschaftsstatus.
+  '3.2':
+    inShort: Der Beitritt läuft über einen schriftlichen Prozess mit schriftlichen Kriterien – niemals dadurch, dass jemand einfach lange genug da ist.
+    questions:
+      long-time-guest:
+        question: Jemand ist seit Jahren dabei. Ist diese Person ein Mitglied?
+        answer: Nicht, solange sie kein Onboarding durchlaufen hat. Informelle, implizite oder rückwirkende Mitgliedschaft ist nicht zulässig.
+      what-onboarding-includes:
+        question: Was muss das Onboarding beinhalten?
+        answer: Eine Prüfung der RCOS-Core-Artefakte, die ausdrückliche Zustimmung zu den Regeln von Schicht 0 und Schicht 1 und die Festlegung eines anfänglichen Mitgliedschaftsstatus.
+  '3.3':
+    inShort: Neue Mitglieder durchlaufen eine Probezeit mit festgelegter Dauer, klaren Kriterien und einer klaren Entscheidung am Ende.
+    questions:
+      trial-ends-without-decision:
+        question: Was passiert, wenn die Probezeit endet und niemand entscheidet?
+        answer: Die Gemeinschaft muss für diesen Fall einen definierten Weg haben – entweder Austritt oder eine definierte Verlängerung –, damit niemand unbefristet auf Probe bleibt.
+      trial-rights:
+        question: Haben Menschen auf Probe weniger Rechte?
+        answer: Das können sie, aber ihre Pflichten müssen genauso explizit sein wie die aller anderen.
+  '3.4':
+    inShort: Zu jeder Pflicht gehört ein passendes Recht, und beides ist für jeden Mitgliedschaftsstatus aufgeschrieben.
+    questions:
+      open-ended-obligation:
+        question: Können wir von Mitgliedern verlangen, „überall zu helfen, wo es gerade nötig ist“?
+        answer: Nicht als Pflicht. Pflichten dürfen nicht offen oder unbestimmt sein; sagt, was erwartet wird und in welchem Umfang.
+      obligation-without-right:
+        question: Können wir eine Pflicht durchsetzen, zu der es kein passendes Recht gibt?
+        answer: Nein. Eine Pflicht kann nur durchgesetzt werden, wenn ein entsprechendes, dokumentiertes Recht existiert.
+  '3.5':
+    inShort: Sagt, welche Teilnahme ihr erwartet, welche Arten von Beitrag zählen und was passiert, wenn jemand aufhört mitzumachen.
+    questions:
+      paying-instead:
+        question: Kann ein Mitglied jemanden dafür bezahlen, seinen Anteil der Arbeit zu übernehmen?
+        answer: Nur wenn eure Regeln diese Art der Vertretung ausdrücklich regeln. Einfach informell passieren darf es nicht.
+      non-participation:
+        question: Was, wenn jemand ganz aufhört mitzumachen?
+        answer: Dauerhafte Nichtteilnahme löst den Rechenschaftsprozess aus, der in Schicht 4 definiert ist – nicht Gerede oder stillen Ausschluss.
+  '3.6':
+    inShort: Alle können jederzeit gehen, über einen schriftlichen, nicht strafenden Prozess, wobei vorher geklärt ist, was mit ihren Rollen und den geteilten Dingen passiert.
+    questions:
+      block-exit:
+        question: Kann die Gemeinschaft den Austritt davon abhängig machen, dass jemand etwas zurückzahlt?
+        answer: Ein Austritt muss jederzeit möglich bleiben, und Gehen darf keine Rechte kosten, die über die an die Mitgliedschaft gebundenen hinausgehen. Jede Trennung von Vermögenswerten oder Verantwortlichkeiten ist vorab definiert und wird nicht an der Tür erfunden.
+      forced-exit:
+        question: Kann die Gemeinschaft jemanden bitten zu gehen?
+        answer: Ja, aber nur über ein ordnungsgemäßes Verfahren, abgewickelt mit den Konflikt- und Rechenschaftsmechanismen von Schicht 4.
+  '3.7':
+    inShort: Eine Suspendierung ist ein temporärer Status mit schriftlichen Bedingungen, einem Enddatum und einer Überprüfung. Sie ist niemals ein stiller Weg, jemanden hinauszudrängen.
+    questions:
+      need-suspension:
+        question: Müssen wir überhaupt eine Suspendierung haben?
+        answer: Nein, sie ist optional. Wenn ihr sie habt, müssen ihre Bedingungen explizit, zeitlich begrenzt und überprüfbar sein.
+      indefinite-suspension:
+        question: Kann eine Suspendierung bis auf Weiteres dauern?
+        answer: Nein. Eine Suspendierung darf nicht als unbefristeter oder strafender Ersatz für einen Austritt verwendet werden.
+  '3.8':
+    inShort: Schicht 1 lebt in vier Dokumenten, die jedes Mitglied lesen kann und die unter Versionskontrolle stehen.
+    questions:
+      which-documents:
+        question: Welche Dokumente braucht Schicht 1?
+        answer: Eine Mitgliedschaftsvereinbarung, ein Onboarding-Protokoll, ein Austritts- und Trennungsprotokoll und ein Mitgliedschaftsstatus-Register.
+templates:
+  membership-agreement.membership-state-on-signing:
+    question: Was ist jemand in dem Moment, in dem unterschrieben wird – welchem Status wird damit zugestimmt?
+    prompts:
+      - Welchen Mitgliedschaftsstatus hat jemand in dem Moment, in dem diese Vereinbarung unterschrieben wird – genau so benannt wie in unserem Mitgliedschaftsstatus-Register?
+      - Unterschreiben alle am gleichen Punkt, oder kann zu unterschiedlichen Zeitpunkten unterschrieben werden – und welchen Status verleiht welche Unterschrift?
+      - Wie sieht die Person vor der Unterschrift, welchen Status sie damit annimmt?
+    examples:
+      - Wer diese Vereinbarung unterschreibt, nachdem die Bewerbung angenommen wurde, wird am Tag der Unterschrift Probemitglied. Vollmitglied wird eine Person erst, wenn der Abschluss ihres Onboardings festgehalten ist; eine Unterschrift allein macht niemanden zum Vollmitglied.
+  membership-agreement.member-rights:
+    question: Welche Rechte hat jedes Mitglied – im Verhältnis zu dem, was wir von ihm verlangen?
+    prompts:
+      - 'Für jeden Mitgliedschaftsstatus: Welche Rechte hat ein Mitglied in diesem Status?'
+      - Welche Rechte gelten für alle, in jedem Status – etwa ein Anliegen ohne Vergeltung ansprechen zu können oder jederzeit gehen zu dürfen?
+      - Passen die Rechte jedes Status zu dem, was wir von diesem Status verlangen, sodass ein Mitglied umso mehr Schutz und Mitbestimmung hat, je mehr wir von ihm verlangen?
+      - Wo ein Recht in einem anderen Dokument festgelegt ist – Abstimmen in der Entscheidungsmatrix, Rollen im Rollenregister –, verweisen wir darauf, statt es doppelt aufzuschreiben?
+    examples:
+      - Jedes Mitglied darf in jedem Status einen Konflikt über die Konfliktlösungsleiter ansprechen, ohne Vergeltung zu befürchten, die Governance-Aufzeichnungen der Gemeinschaft lesen und jederzeit gehen. Probemitglieder dürfen außerdem an allen Treffen teilnehmen und Themen für die Agenda vorschlagen. Vollmitglieder dürfen zusätzlich über Entscheidungen abstimmen, wie es die Entscheidungsmatrix festlegt, Rollen aus dem Rollenregister innehaben und Änderungen an jeder Vereinbarung vorschlagen. Vollmitglieder tragen den Arbeitsplan und die gemeinsamen Kosten, also haben sie auch das Stimmrecht, das Probemitglieder nicht haben.
+  membership-agreement.member-obligations:
+    question: Was erwartet die Gemeinschaft von jedem Mitglied – und wo hört diese Erwartung auf?
+    prompts:
+      - 'Für jede Pflicht: Was genau wird verlangt, und woran würde ein Mitglied erkennen, ob es sie erfüllt?'
+      - Wo hört jede Pflicht auf – wie viel, wie oft, wie lange?
+      - Welchem dokumentierten Recht entspricht jede Pflicht? (Die Rechte selbst sind eine eigene Frage.)
+      - Welche Pflichten gelten in jedem Mitgliedschaftsstatus, und welche nur in manchen?
+      - Gibt es etwas, das wir still von Mitgliedern erwarten, ohne es aufgeschrieben zu haben – und sollten wir es aufschreiben oder fallen lassen?
+    examples:
+      - Jedes Mitglied hält sich an unsere Identitätsbeschränkungen, nimmt an einem Konfliktprozess teil, wenn es als Partei benannt ist, spricht ohne Mandat der Vollversammlung nicht öffentlich für die Gemeinschaft und nutzt Gelder oder Konten der Gemeinschaft nicht über die Befugnis hinaus, die eine Rolle verleiht. Jeder Pflicht entspricht ein Recht in dieser Vereinbarung, etwa das Recht auf ein faires Verfahren und darauf, Rollen innezuhaben. Mehr darf von einem Mitglied nicht verlangt werden, solange diese Liste nicht durch eine Entscheidung geändert wird.
+  membership-agreement.participation-and-contribution-expectations:
+    question: Was zählt als Teilnahme, wie viel ist genug, darf jemand eine Vertretung schicken – und was passiert, wenn jemand aufhört?
+    prompts:
+      - Welche Formen des Beitrags erkennen wir an?
+      - Wie viel ist genug – wie viele Beiträge, welcher Art, in welchem Zeitraum?
+      - Darf jemand eine Vertretung schicken oder jemanden dafür bezahlen, seinen Anteil zu übernehmen – für welche Aufgaben, und wer bleibt verantwortlich?
+      - Wie sagt jemand uns, dass er abwesend sein wird, und für wie lange können Erwartungen ausgesetzt werden?
+      - Nach welcher Zeit ohne Teilnahme und ohne Abmeldung beginnt ein Rechenschaftsprozess – und wer startet ihn? (Was dieser Prozess tut, legt die Konfliktlösungsleiter fest.)
+    examples:
+      - 'Wir erkennen vier Formen des Beitrags an: Arbeitstage auf dem Land, Kochen für gemeinsame Mahlzeiten, Moderation oder Protokoll bei Treffen und Aufgaben aus dem Wartungsplan. Jedes Mitglied bringt mindestens 8 Stunden im Monat über diese Formen ein. Ein Mitglied darf eine Aufgabe mit einem anderen Mitglied tauschen, darf aber keine externe Person dafür bezahlen, seinen Anteil zu übernehmen. Die Erwartungen ruhen für bis zu 3 Monate, wenn das Mitglied es dem Mitgliedschafts-Steward vorab mitteilt. Zwei aufeinanderfolgende Monate unter dem Minimum ohne Abmeldung eröffnen eine Rechenschaftsprüfung.'
+  membership-agreement.due-process-reference:
+    question: Was schützt ein Mitglied, wenn sich die Gemeinschaft gegen es wendet?
+    prompts:
+      - Welche Dokumente schützen ein Mitglied vor Ausschluss, Suspendierung oder eingeschränktem Zugang – und benennt diese Vereinbarung jedes davon?
+      - Was versprechen wir hier in ein oder zwei einfachen Sätzen, damit niemand nach einer Regel ausgeschlossen oder eingeschränkt wird, die ihm nie gezeigt wurde?
+      - Wie findet ein Mitglied, das diese Vereinbarung liest, die aktuelle Version dieser Dokumente?
+    examples:
+      - Kein Mitglied kann ausgeschlossen, suspendiert oder in seinem Zugang eingeschränkt werden, außer über die Prozesse in unserer Konfliktlösungsleiter und unserem Austritts- und Trennungsprotokoll. Beide sind aus dieser Vereinbarung verlinkt. Keine Regel, die nicht in einem dieser beiden Dokumente steht, kann gegen ein Mitglied verwendet werden.
+  membership-agreement.consent-acknowledgment:
+    question: Wie zeigt jemand, dass er all das gelesen hat und ihm zustimmt?
+    prompts:
+      - Was ist der Akt des Zustimmens – eine Unterschrift, eine Bestätigung in unseren Tools oder eine Zusage in einem Treffen, die protokolliert wird?
+      - Welchen Dokumenten, und welchen Versionen davon, stimmt jemand in diesem Moment zu – und wie sieht die Person genau diese Versionen?
+      - Wie stellen wir sicher, dass die Zustimmung frei und informiert gegeben wird – zum Beispiel mit Zeit, vorher zu lesen und Fragen zu stellen? (Wo der Nachweis aufbewahrt wird, ist eine eigene Frage.)
+    examples:
+      - Ein neues Mitglied stimmt zu, indem es die Mitgliedschaftsvereinbarung in unserer Mitglieder-App unterschreibt, nach einem Treffen, in dem es Fragen stellen konnte. Der Unterschriftsbildschirm listet jedes Dokument auf, dem zugestimmt wird, mit Versionsnummer und einem Link auf genau diese Version, und die Unterschrift wird datiert.
+  membership-agreement.ratification-record:
+    question: Wer hat diese Vereinbarung beschlossen, wann, und wie wurde entschieden?
+  onboarding-protocol.admission-criteria:
+    question: Wer kann beitreten, nach welchen schriftlichen Kriterien, und wer entscheidet – damit niemand einfach dadurch Mitglied wird, dass er da ist?
+    prompts:
+      - Welche Kriterien muss eine bewerbende Person erfüllen, so geschrieben, dass jede Person sie überprüfen könnte?
+      - Wer entscheidet über eine Bewerbung? (Benennt das Gremium, dem die Entscheidungsmatrix Aufnahmen zuweist, statt eine zweite Regel aufzustellen.)
+      - Wie stellen wir sicher, dass niemand informell oder nachträglich Mitglied wird?
+  onboarding-protocol.onboarding-steps:
+    question: Was passiert tatsächlich zwischen „Ich würde gern beitreten“ und „Ich bin dabei“?
+    prompts:
+      - Was sind die Schritte, in ihrer Reihenfolge, von einer angenommenen Bewerbung bis zur Vollmitgliedschaft?
+      - In welchem Schritt liest jemand alle unsere Governance-Dokumente, und woran erkennen wir, dass es passiert ist?
+      - In welchem Schritt stimmt die Person ausdrücklich unseren Identitätsbeschränkungen und unseren Mitgliedschaftsregeln zu – und wie?
+      - In welchem Schritt wird ihr anfänglicher Mitgliedschaftsstatus festgelegt, und von wem? (Was dieser Status erlaubt, ist eine eigene Frage.)
+      - Welche Konten, Tools und Kanäle werden eingerichtet, von wem, und in welchem Schritt?
+    examples:
+      - 1. Die bewerbende Person liest alle unsere Governance-Dokumente gemeinsam mit einer Begleitperson, die ihre Fragen beantwortet. 2. Sie bestätigt schriftlich, dass sie unseren Identitätsbeschränkungen und der Mitgliedschaftsvereinbarung zustimmt, und der Mitgliedschafts-Steward erklärt sie zum Probemitglied. 3. Die Administration richtet ihr Mitgliedskonto ein und nimmt sie in den Mitglieder-Chat auf. 4. Wenn ihre Probezeit mit einer positiven Entscheidung endet, wird der Abschluss festgehalten und sie wird Vollmitglied.
+  onboarding-protocol.initial-membership-state:
+    question: Was ist jemand an seinem ersten Tag – und was darf diese Person schon?
+    prompts:
+      - Welchen Mitgliedschaftsstatus hat jemand an seinem ersten Tag, benannt wie in unserem Mitgliedschaftsstatus-Register?
+      - Welche Status durchläuft die Person während des Onboardings, und was löst jeden Wechsel aus?
+      - Was darf sie an ihrem ersten Tag schon, und was muss warten? (Die Rechte jedes Status legt das Mitgliedschaftsstatus-Register fest.)
+      - Wie stellen wir sicher, dass kein Zugang und kein Recht vor dem Schritt gegeben wird, der es freischaltet?
+    examples:
+      - Wird eine Bewerbung angenommen, wird die neue Person Probemitglied, mit den Rechten, die das Mitgliedschaftsstatus-Register diesem Status gibt. Vollmitglied wird sie automatisch an dem Tag, an dem der Abschluss ihres Onboardings festgehalten wird. Es gibt keinen anderen Weg zur Vollmitgliedschaft, und kein Zugang für Vollmitglieder wird vor diesem Tag gegeben.
+  onboarding-protocol.trial-and-evaluation:
+    question: Wie lange ist eine neue Person auf Probe, woran wird sie gemessen, wer entscheidet – und was passiert, wenn es nicht klappt?
+    prompts:
+      - Wie lange dauert die Probezeit, und ab wann wird sie gezählt?
+      - Woran wird das neue Mitglied gemessen – so geschrieben, dass es es selbst nachprüfen kann?
+      - Wer trifft die Entscheidung am Ende der Probezeit, und wie?
+      - Welche Pflichten gelten während der Probezeit, und woher kennt das neue Mitglied sie? (Welche Rechte eingeschränkt sind, legt das Mitgliedschaftsstatus-Register fest.)
+      - Wenn die Probezeit nicht in eine Vollmitgliedschaft mündet – was passiert dann, kann sie verlängert werden, um wie viel und wie oft, und wann beginnt der Austritt?
+      - Wie lange dauert es nach einem Austritt am Ende der Probezeit, bis sich jemand erneut bewerben darf?
+    examples:
+      - Die Probezeit dauert 6 Monate ab dem Tag der Unterschrift, und jede Mitgliedspflicht gilt vollständig. Gemessen wird daran, dass alle Onboarding-Schritte abgeschlossen sind und das Teilnahmeminimum in mindestens 5 der 6 Monate erreicht wurde. Am Ende entscheiden die Vollmitglieder im Konsent in einer Vollversammlung. Sind die Kriterien nicht erfüllt, kann die Probezeit einmal um bis zu 3 Monate verlängert werden; danach beginnt der Austrittsprozess, und die Person darf sich nach 12 Monaten erneut bewerben.
+  onboarding-protocol.completion-record:
+    question: Wie halten wir fest, dass jemand den Beitritt abgeschlossen hat, und was bewahrt dieser Nachweis auf?
+    prompts:
+      - Wo wird der Abschlussnachweis aufbewahrt, und wer schreibt ihn?
+      - Was hält er fest – mindestens das Datum und die genaue Version jedes Dokuments, dem die Person zugestimmt hat?
+      - Wie lange wird er aufbewahrt, auch nachdem die Person gegangen ist?
+    examples:
+      - Der Mitgliedschafts-Steward hält den Abschluss am Tag des letzten Onboarding-Schritts im Mitgliederregister fest. Der Eintrag enthält das Datum, den Namen der Person, ihren neuen Mitgliedschaftsstatus und die Versionsnummer jedes Dokuments, dem sie zugestimmt hat. Einträge werden nie gelöscht; nachdem jemand gegangen ist, bleibt der Eintrag bestehen und wird mit dem Austrittsdatum markiert.
+  onboarding-protocol.ratification-record:
+    question: Wer hat diesen Onboarding-Prozess beschlossen, wann, und wie wurde entschieden?
+  exit-protocol.voluntary-exit:
+    question: Wie kann jemand gehen, wann er will – ohne dafür bestraft zu werden oder mehr zu verlieren als seine Mitgliedschaft?
+    prompts:
+      - Wie sagt jemand uns, dass er geht – und schuldet er irgendwem eine Begründung oder eine Abstimmung?
+      - Wann endet sein Zugang, und wo wird der Austritt festgehalten?
+      - Welche Rechte enden mit der Mitgliedschaft, und welche behält die Person, weil sie nie von ihr abhingen?
+    examples:
+      - Jedes Mitglied kann die Gemeinschaft jederzeit verlassen, indem es die Gemeinschaft schriftlich informiert. Es braucht dafür keine Erlaubnis und keine Abstimmung. Die Gemeinschaft hält das Austrittsdatum fest und folgt dem vereinbarten Prozess für die Rückgabe persönlicher Gegenstände, den Ausgleich offener Zahlungen und das Beenden mitgliedschaftsbezogener Verantwortlichkeiten. Gehen bedeutet, auf Rechte zu verzichten, die nur wegen der Mitgliedschaft bestehen, etwa den Zugang zu gemeinsamen Einrichtungen oder die Teilnahme an der Governance. Es nimmt keine Rechte, die die Person unabhängig von der Mitgliedschaft hat, etwa das Eigentum an ihren persönlichen Gegenständen oder Geld, das die Gemeinschaft ihr schuldet.
+  exit-protocol.forced-exit:
+    question: Was muss erfüllt sein, bevor die Gemeinschaft jemanden bitten kann zu gehen?
+    prompts:
+      - Was muss passiert sein, bevor jemand ausgeschlossen werden kann – welcher Rechenschaftsprozess muss abgeschlossen sein, und welche schriftliche Entscheidung muss er hervorgebracht haben?
+      - Wie wird die Person informiert – schriftlich, mit den Gründen und dem Verweis auf die Entscheidung – und wie lange danach endet ihr Zugang?
+      - Was bewahren wir über den Ausschluss auf, und was löschen wir?
+      - Wie lange muss jemand warten, bevor er sich erneut bewerben darf, und wer legt diese Frist fest?
+      - Wer darf den Entscheidungsnachweis lesen, und was bleibt vertraulich?
+    examples:
+      - Niemand kann ausgeschlossen werden, außer als Ergebnis eines abgeschlossenen Rechenschaftsprozesses nach unserer Konfliktlösungsleiter, der in einer schriftlichen Entscheidung endet. Die Person erhält diese Entscheidung schriftlich, mit den Gründen und ihrem Verweis, mindestens 48 Stunden bevor ihr Zugang endet. Wir bewahren den Entscheidungsnachweis auf und entfernen die Person von Mitgliederlisten und aus Kanälen. Die Entscheidung legt eine Sperre für eine erneute Bewerbung von mindestens 12 Monaten fest. Nur die Parteien und die Stewards, die den Fall bearbeitet haben, dürfen den Nachweis lesen.
+  exit-protocol.suspension:
+    question: Kann jemand pausiert statt ausgeschlossen werden – für wie lange, von wem überprüft, und niemals als verdeckte Strafe?
+    prompts:
+      - Wollen wir überhaupt eine formale Suspendierung – oder sagen wir klar, dass wir keine haben?
+      - 'Wenn wir eine haben: Was genau kann jemanden in eine Suspendierung bringen, und wer entscheidet darüber?'
+      - Wie lange darf eine Suspendierung höchstens dauern, und wer überprüft sie, und wann?
+      - Was darf ein suspendiertes Mitglied weiterhin, und was ist pausiert?
+      - Wie endet eine Suspendierung – und was verhindert, dass sie zu einer Strafe oder zu einem Ausschluss unter anderem Namen wird?
+    examples:
+      - Wir haben keinen formalen Suspendierungsstatus. Ist das Verhalten einer Person schwerwiegend genug, um ihre Mitgliedschaft einzuschränken, läuft das über unseren Rechenschaftsprozess, der in einer Entscheidung endet und nie in einer unbefristeten Pause.
+      - Ein Mitglied kann nur suspendiert werden, solange ein Rechenschaftsprozess über es offen ist, durch Entscheidung der zwei Stewards, die ihn bearbeiten, und für höchstens 30 Tage. Während der Suspendierung behält es sein Zuhause, den Zugang zu den Aufzeichnungen der Gemeinschaft und das Recht zu antworten, kann aber nicht abstimmen und keine Rollen innehaben. Der Mitgliederkreis überprüft jede Suspendierung an Tag 14. Sie endet an Tag 30 oder wenn der Prozess abgeschlossen ist, was zuerst eintritt, und kann für die gleiche Sache nicht verlängert werden.
+  exit-protocol.asset-role-and-responsibility-separation:
+    question: 'Wenn jemand geht: Was passiert mit seinen Rollen, Aufgaben, Zugängen und allem, was er für uns hält – vereinbart, bevor jemand geht?'
+    prompts:
+      - Gilt eine Checkliste für jeden Austritt, ob jemand freiwillig geht oder ausgeschlossen wird – und wer arbeitet sie ab?
+      - 'Für jede Rolle, die die Person innehat: Wer markiert sie im Rollenregister als unbesetzt, und wer übernimmt sie, bis sie neu besetzt ist?'
+      - Wie werden ihre laufenden Aufgaben freigegeben oder übergeben, und an wen?
+      - Wer entzieht ihr den Zugang zu Geld – Bankkonten, Wallets, Zeichnungsrechte – und bis wann?
+      - Wer entzieht ihr die Admin-Zugänge zu unseren Plattformen und gemeinsamen Konten, und wie bestätigen wir, dass es erledigt ist?
+      - Wie werden Verpflichtungen in beide Richtungen ausgeglichen oder übertragen, bevor der Austritt abgeschlossen wird?
+    examples:
+      - Für jeden Austritt, freiwillig oder nicht, läuft die gleiche Checkliste, geführt vom Mitgliedschafts-Steward. Innerhalb von 24 Stunden entzieht die Plattform-Administration alle Admin-Zugänge und Zugänge zu gemeinsamen Konten, und die Kassenführung entfernt die Person als Zeichnungsberechtigte vom Bankkonto. Innerhalb von 7 Tagen werden ihre Rollen im Rollenregister als unbesetzt markiert und ihre offenen Aufgaben auf dem Aufgabenboard übergeben. Geld, das in eine der beiden Richtungen geschuldet wird, wird ausgeglichen oder in eine Rückzahlungsvereinbarung geschrieben, bevor der Austritt als abgeschlossen markiert wird.
+  exit-protocol.ratification-record:
+    question: Wer hat dieses Austrittsprotokoll beschlossen, wann, und wie wurde entschieden?
+  membership-state-registry.defined-membership-states:
+    question: Welche Mitgliedschaftsstatus haben wir – mindestens Bewerbung, Probe, Vollmitgliedschaft und Austritt – und welche Rechte, Pflichten und Einschränkungen gehören dazu?
+    prompts:
+      - Welche Mitgliedschaftsstatus haben wir – mindestens Bewerbung, Probe, Vollmitgliedschaft und Austritt – und brauchen wir weitere?
+      - 'Für jeden Status: Welche Rechte, Pflichten und Einschränkungen gelten?'
+      - 'Für jeden Status: Was bringt jemanden hinein, und was bringt jemanden hinaus?'
+      - Wie stellen wir sicher, dass niemand zwei Status gleichzeitig hat?
+      - Wie stellen wir sicher, dass niemand ein Recht beansprucht oder an eine Pflicht gehalten wird, die sein aktueller Status nicht vorsieht?
+    examples:
+      - 'Bewerber:in: darf an offenen Treffen teilnehmen; muss ehrliche Angaben machen; tritt mit der Bewerbung ein, geht mit der Aufnahmeentscheidung hinaus. Probemitglied: darf an allen Treffen teilnehmen und sprechen, kann nicht abstimmen und keine Rollen innehaben; hält sich an den Arbeitsplan; tritt mit der Unterschrift ein, geht mit der Probezeitentscheidung hinaus. Vollmitglied: stimmt ab und hat Rollen inne; bringt monatlich Beiträge ein und teilt die Kosten; tritt ein, wenn das Onboarding festgehalten ist, geht mit dem Austritt hinaus. Ausgetretenes Mitglied: behält den Zugang zu den eigenen Aufzeichnungen, hat keine Pflichten; darf sich erneut als Bewerber:in bewerben. Jede Person hat zu jedem Zeitpunkt genau einen Status.'
+  membership-state-registry.ratification-record:
+    question: Wer hat die Mitgliedschaftsstatus beschlossen, wann, und wie wurde entschieden?

@@ -7,7 +7,7 @@ sections:
     title: Entscheidungstypen
     blocks:
       4.1.1:
-        text: 'Alle kollektiven Entscheidungen MUSS in genau einen der folgenden Entscheidungstypen eingeordnet werden:'
+        text: 'Alle kollektiven Entscheidungen MÜSSEN in genau einen der folgenden Entscheidungstypen eingeordnet werden:'
         items:
           - Operative Entscheidungen
           - Strategische Entscheidungen
@@ -26,7 +26,7 @@ sections:
       4.2.1:
         text: Für jeden Entscheidungstyp MUSS ein explizit definierter Entscheidungsmechanismus festgelegt sein.
       4.2.2:
-        text: 'Entscheidungsmechanismen KANN unter anderem folgende umfassen:'
+        text: 'Entscheidungsmechanismen KÖNNEN unter anderem folgende umfassen:'
         items:
           - Konsent-basierte Entscheidungsfindung
           - Mehrheitsentscheid
@@ -34,7 +34,7 @@ sections:
           - Delegierte Autorität
           - Zufällige oder rotierende Zuweisung
       4.2.3:
-        text: 'Entscheidungsmechanismen MUSS festlegen:'
+        text: 'Entscheidungsmechanismen MÜSSEN festlegen:'
         items:
           - Teilnahmeberechtigte Personen
           - Entscheidungsschwellen
@@ -48,7 +48,7 @@ sections:
       4.3.1:
         text: Alle Autorität MUSS explizit definierten Rollen, Kreisen oder Gremien zugewiesen werden.
       4.3.2:
-        text: 'Autoritätszuweisungen MUSS beinhalten:'
+        text: 'Autoritätszuweisungen MÜSSEN beinhalten:'
         items:
           - Umfang der Autorität
           - Grenzen der Autorität
@@ -76,7 +76,7 @@ sections:
       4.4.3:
         text: Die Entscheidungsmatrix MUSS für alle Mitglieder öffentlich zugänglich sein.
       4.4.4:
-        text: Entscheidungen, die außerhalb der Entscheidungsmatrix getroffen werden, MUSS als ungültig betrachtet werden.
+        text: Entscheidungen, die außerhalb der Entscheidungsmatrix getroffen werden, MÜSSEN als ungültig betrachtet werden.
   '4.5':
     title: Governance-Protokoll
     blocks:
@@ -93,7 +93,7 @@ sections:
       4.5.3:
         text: Das Governance-Protokoll MUSS festlegen, wie Konflikte zwischen Entscheidungen gelöst werden.
       4.5.4:
-        text: Alle Governance-Handlungen MUSS gemäß den Dokumentationsregeln von Schicht 5 dokumentiert werden.
+        text: Alle Governance-Handlungen MÜSSEN gemäß den Dokumentationsregeln von Schicht 5 dokumentiert werden.
   '4.6':
     title: Sicherungsmechanismen und Fehlermodi
     blocks:
@@ -105,23 +105,23 @@ sections:
           - Vereinnahmung von Entscheidungen durch Untergruppen
           - Verfestigung von Gründer- oder Rollenpositionen
       4.6.2:
-        text: Governance-Mechanismen MUSS Anfechtung und Überprüfung ohne Vergeltungsmaßnahmen ermöglichen.
+        text: Governance-Mechanismen MÜSSEN Anfechtung und Überprüfung ohne Vergeltungsmaßnahmen ermöglichen.
       4.6.3:
-        text: Anhaltende Governance-Versagen MUSS eine formelle Überprüfung oder einen konstitutionellen Prozess auslösen.
+        text: Anhaltende Governance-Versagen MÜSSEN eine formelle Überprüfung oder einen konstitutionellen Prozess auslösen.
   '4.7':
     title: Artefakte
     blocks:
       4.7.1:
-        text: 'Die folgenden Artefakte sind für die Layer-2-Konformität verpflichtend:'
+        text: 'Die folgenden Artefakte sind für die Schicht-2-Konformität verpflichtend:'
         items:
           - Entscheidungsmatrix
           - Governance-Protokoll
           - Autoritätsregister
       4.7.2:
-        text: 'Layer-2-Artefakte MUSS:'
+        text: 'Schicht-2-Artefakte MÜSSEN:'
         items:
           - Explizit und eindeutig sein
           - Versioniert sein
           - Für alle Mitglieder zugänglich sein
       4.7.3:
-        text: Das Fehlen, die Mehrdeutigkeit oder die systematische Verletzung von Layer-2-Artefakten MUSS zum Verlust der RCOS-Core-Konformität führen.
+        text: Das Fehlen, die Mehrdeutigkeit oder die systematische Verletzung von Schicht-2-Artefakten MUSS zum Verlust der RCOS-Core-Konformität führen.

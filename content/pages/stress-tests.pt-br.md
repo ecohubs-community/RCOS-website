@@ -4,7 +4,7 @@ title: Testes de Estresse do RCOS
 parentId: null
 order: 7
 lang: pt-br
-sourceHash: e05e86e3
+sourceHash: fed16d4b
 ---
 
 ## O que são os Testes de Estresse

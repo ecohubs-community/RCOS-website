@@ -4,7 +4,7 @@ title: Adenda Anti-Privatización de Tierras Comunes
 parentId: aac2e91b
 order: 0
 lang: es
-sourceHash: 8a9e28c9
+sourceHash: 0c29c68e
 ---
 
 ## Adenda Anti-Privatización de Tierras Comunes (No Normativa)

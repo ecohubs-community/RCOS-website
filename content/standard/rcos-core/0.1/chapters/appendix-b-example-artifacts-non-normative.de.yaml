@@ -95,7 +95,7 @@ sections:
         md: |-
           - Änderungstitel:
           - Zusammenfassung (1–3 Sätze):
-          - Betroffene Layer und Artefakte (Links):
+          - Betroffene Schichten und Artefakte (Links):
           - Änderungstyp:
             - Dauerhafte Änderung / Experiment
           - Entscheidungstyp und autorisierter Entscheidungsweg (Verweis auf Entscheidungsmatrix):
@@ -197,7 +197,7 @@ sections:
           - Datum:
           - Auslösendes Ereignis:
           - Was ist passiert (kurze Beschreibung):
-          - Betroffene Layer/Artefakte:
+          - Betroffene Schichten/Artefakte:
           - Signale, die zur Handlung geführt haben:
           - Was wurde geändert (oder versucht):
           - Ergebnis nach Überprüfung:

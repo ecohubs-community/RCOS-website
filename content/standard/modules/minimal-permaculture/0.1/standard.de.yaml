@@ -91,10 +91,10 @@ sections:
     title: Entscheidungsbefugnis
     blocks:
       b1:
-        md: Alltägliche ökologische Entscheidungen KANN von den aktuellen Hüter*innen getroffen werden.
+        md: Alltägliche ökologische Entscheidungen KÖNNEN von den aktuellen Hüter*innen getroffen werden.
       b2:
         md: |-
-          Strukturelle Entscheidungen (z. B. Gärten erweitern, Bäume entfernen, Landnutzung festschreiben) MUSS:
+          Strukturelle Entscheidungen (z. B. Gärten erweitern, Bäume entfernen, Landnutzung festschreiben) MÜSSEN:
           - den Entscheidungsregeln von RCOS Schicht 2 folgen,
           - überprüfbar sein,
           - wo möglich reversibel sein.
@@ -108,11 +108,11 @@ sections:
       b1:
         md: |-
           Land oder Systeme, die von der Gemeinschaft genutzt werden:
-          - DARF NICHT durch Pflege oder Investition privatisiert werden,
-          - MUSS durch die Gemeinschaft rückholbar bleiben,
-          - MUSS einen Ausstiegspfad sowohl für Pflegende als auch für Nicht-Pflegende haben.
+          - DÜRFEN NICHT durch Pflege oder Investition privatisiert werden,
+          - MÜSSEN durch die Gemeinschaft rückholbar bleiben,
+          - MÜSSEN einen Ausstiegspfad sowohl für Pflegende als auch für Nicht-Pflegende haben.
       b2:
-        md: Wenn Eigentum besteht, MUSS Nutzungsrechte explizit geregelt sein.
+        md: Wenn Eigentum besteht, MÜSSEN Nutzungsrechte explizit geregelt sein.
       b3:
         md: '---'
   s9:

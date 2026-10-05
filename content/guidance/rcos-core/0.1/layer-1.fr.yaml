@@ -1,0 +1,228 @@
+lang: fr
+sourceHash: 3d261f1e
+sections:
+  '3.1':
+    inShort: Chaque personne liée à la communauté se trouve dans exactement un état clairement nommé, du candidat au membre sorti, et chaque état précise ce que cette personne peut faire et doit faire.
+    questions:
+      minimum-states:
+        question: De quels états d'adhésion avons-nous besoin au minimum ?
+        answer: Candidat, membre à l'essai ou en période probatoire, membre à part entière, et membre sorti. Tu peux en ajouter d'autres.
+      two-states:
+        question: Quelqu'un peut-il être membre à part entière dans un domaine et à l'essai dans un autre ?
+        answer: Non. Chaque personne détient exactement un état d'adhésion à la fois.
+  '3.2':
+    inShort: L'adhésion passe par un processus écrit avec des critères écrits, jamais simplement parce que quelqu'un est présent depuis assez longtemps.
+    questions:
+      long-time-guest:
+        question: Quelqu'un est là depuis des années. Est-ce un membre ?
+        answer: Pas si cette personne n'a pas suivi l'intégration. L'adhésion informelle, implicite ou rétroactive n'est pas permise.
+      what-onboarding-includes:
+        question: Que doit comprendre l'intégration ?
+        answer: Une lecture des artefacts RCOS-Core, un consentement explicite aux règles de la Couche 0 et de la Couche 1, et un état d'adhésion initial déclaré.
+  '3.3':
+    inShort: Les nouveaux membres passent par une période d'essai d'une durée fixée, avec des critères clairs et une décision claire à la fin.
+    questions:
+      trial-ends-without-decision:
+        question: Que se passe-t-il si la période d'essai se termine et que personne ne décide ?
+        answer: La communauté doit avoir une voie définie pour ce cas, soit la sortie, soit une prolongation définie, afin que personne ne reste à l'essai indéfiniment.
+      trial-rights:
+        question: Les personnes à l'essai ont-elles moins de droits ?
+        answer: C'est possible, mais leurs obligations doivent être aussi explicites que celles de tout le monde.
+  '3.4':
+    inShort: Chaque obligation va de pair avec un droit correspondant, et les deux sont écrits pour chaque état d'adhésion.
+    questions:
+      open-ended-obligation:
+        question: Pouvons-nous demander aux membres d'« aider là où c'est nécessaire » ?
+        answer: Pas en tant qu'obligation. Les obligations ne peuvent pas être illimitées ou indéfinies ; dis ce qui est attendu et dans quelle mesure.
+      obligation-without-right:
+        question: Pouvons-nous faire respecter une obligation à laquelle ne correspond aucun droit ?
+        answer: Non. Une obligation ne peut être appliquée que lorsqu'un droit correspondant et documenté existe.
+  '3.5':
+    inShort: Dis quelle participation tu attends, quels types de contribution comptent, et ce qui se passe quand quelqu'un cesse de participer.
+    questions:
+      paying-instead:
+        question: Un membre peut-il payer quelqu'un pour faire sa part du travail ?
+        answer: Seulement si tes règles encadrent explicitement ce type de remplacement. Cela ne peut pas se faire de manière informelle.
+      non-participation:
+        question: Et si quelqu'un cesse complètement de participer ?
+        answer: La non-participation persistante déclenche le processus de responsabilisation défini dans la Couche 4, et non des ragots ou une exclusion silencieuse.
+  '3.6':
+    inShort: Toute personne peut partir à tout moment, par un processus écrit et non punitif, avec un règlement préalable du sort de ses rôles et des biens partagés.
+    questions:
+      block-exit:
+        question: La communauté peut-elle conditionner le départ au remboursement de quelque chose ?
+        answer: La sortie doit rester possible à tout moment, et partir ne peut pas coûter de droits au-delà de ceux liés à l'adhésion. Toute séparation de biens ou de responsabilités est définie à l'avance, et non inventée au moment du départ.
+      forced-exit:
+        question: La communauté peut-elle demander à quelqu'un de partir ?
+        answer: Oui, mais seulement dans le cadre d'une procédure équitable, traitée avec les mécanismes de conflit et de responsabilisation de la Couche 4.
+  '3.7':
+    inShort: Une suspension est un état temporaire avec des conditions écrites, une date de fin et un réexamen. Ce n'est jamais une façon discrète de pousser quelqu'un vers la sortie.
+    questions:
+      need-suspension:
+        question: Devons-nous absolument avoir une suspension ?
+        answer: Non, c'est optionnel. Si tu en as une, ses conditions doivent être explicites, limitées dans le temps et réexaminables.
+      indefinite-suspension:
+        question: Une suspension peut-elle durer jusqu'à nouvel ordre ?
+        answer: Non. La suspension ne peut pas servir de substitut indéfini ou punitif à la sortie.
+  '3.8':
+    inShort: La Couche 1 tient dans quatre documents que chaque membre peut lire et qui sont tenus sous contrôle de version.
+    questions:
+      which-documents:
+        question: De quels documents la Couche 1 a-t-elle besoin ?
+        answer: Un Accord d'adhésion, un Protocole d'intégration, un Protocole de sortie et de séparation et un Registre des états d'adhésion.
+templates:
+  membership-agreement.membership-state-on-signing:
+    question: Qu'est-ce que quelqu'un accepte d'être au moment où il signe ?
+    prompts:
+      - Quel état d'adhésion quelqu'un détient-il au moment où il signe cet accord — nommé exactement comme dans notre Registre des états d'adhésion ?
+      - Est-ce que tout le monde signe au même moment, ou la signature peut-elle intervenir à différentes étapes — et quel état chaque signature confère-t-elle ?
+      - Comment la personne voit-elle, avant de signer, dans quel état elle accepte d'entrer ?
+    examples:
+      - Toute personne qui signe cet accord après l'approbation de sa candidature devient Membre à l'essai le jour de sa signature. Elle ne devient Membre à part entière que lorsque l'achèvement de son intégration est enregistré ; la signature seule ne fait jamais de quelqu'un un Membre à part entière.
+  membership-agreement.member-rights:
+    question: Quels sont les droits de chaque membre, en proportion de ce que nous leur demandons ?
+    prompts:
+      - 'Pour chaque état d''adhésion : quels droits un membre dans cet état détient-il ?'
+      - Quels droits valent pour tout le monde, dans chaque état — comme soulever une préoccupation sans représailles, ou partir à tout moment ?
+      - Les droits de chaque état correspondent-ils à ce que nous demandons à cet état, de sorte que plus nous demandons, plus un membre bénéficie de protection et de voix ?
+      - Lorsqu'un droit est fixé dans un autre document — le vote dans la Matrice de décision, les rôles dans le Registre des rôles — y renvoyons-nous plutôt que de l'écrire deux fois ?
+    examples:
+      - Chaque membre, dans n'importe quel état, peut soulever un conflit par l'Échelle de résolution des conflits sans représailles, consulter les archives de gouvernance de la communauté et partir à tout moment. Les Membres à l'essai peuvent en plus participer à toutes les réunions et proposer des points à l'ordre du jour. Les Membres à part entière peuvent en outre voter sur les décisions comme prévu dans la Matrice de décision, occuper les rôles listés dans le Registre des rôles et proposer des modifications à tout accord. Les Membres à part entière assument le planning de travail et les coûts partagés, et détiennent donc aussi le droit de vote que les Membres à l'essai n'ont pas.
+  membership-agreement.member-obligations:
+    question: Qu'attend la communauté de chaque membre — et où cette attente s'arrête-t-elle ?
+    prompts:
+      - 'Pour chaque obligation : qu''est-ce qui est demandé exactement, et comment un membre saurait-il s''il la remplit ?'
+      - Où s'arrête chaque obligation — combien, à quelle fréquence, pendant combien de temps ?
+      - À quel droit documenté chaque obligation correspond-elle ? (Les droits eux-mêmes font l'objet de leur propre question.)
+      - Quelles obligations s'appliquent dans chaque état d'adhésion, et lesquelles seulement dans certains ?
+      - Y a-t-il quelque chose que nous attendons tacitement des membres sans l'avoir écrit — et devrions-nous l'écrire ou l'abandonner ?
+    examples:
+      - Chaque membre respecte nos contraintes d'identité, participe à un processus de conflit lorsqu'il y est désigné comme partie, ne parle pas au nom de la communauté en public sans mandat de l'assemblée générale, et n'utilise pas l'argent ou les comptes de la communauté au-delà de l'autorité que lui donne un rôle. À chaque obligation correspond un droit dans cet accord, comme le droit à une procédure équitable et à occuper des rôles. Rien d'autre ne peut être exigé d'un membre à moins que cette liste ne soit modifiée par décision.
+  membership-agreement.participation-and-contribution-expectations:
+    question: Qu'est-ce qui compte comme participation, combien suffit, quelqu'un peut-il envoyer un remplaçant — et que se passe-t-il quand quelqu'un s'arrête ?
+    prompts:
+      - Quelles formes de contribution reconnaissons-nous ?
+      - Combien suffit — combien de contributions, de quels types, sur quelle période ?
+      - Quelqu'un peut-il envoyer un remplaçant, ou payer quelqu'un pour faire sa part — pour quelles tâches, et qui reste responsable ?
+      - Comment quelqu'un nous annonce-t-il son absence, et pendant combien de temps les attentes peuvent-elles être suspendues ?
+      - Au bout de combien de temps sans participation et sans avertissement un processus de responsabilisation démarre-t-il — et qui le lance ? (Ce que fait ce processus est fixé dans l'Échelle de résolution des conflits.)
+    examples:
+      - 'Nous reconnaissons quatre formes de contribution : les journées de travail sur le terrain, la cuisine pour les repas partagés, l''animation ou la prise de notes lors des réunions, et les tâches du planning d''entretien. Chaque membre contribue au moins 8 heures par mois, réparties entre ces formes. Un membre peut échanger une tâche avec un autre membre, mais ne peut pas payer une personne extérieure pour faire sa part. Les attentes sont suspendues jusqu''à 3 mois si le membre en informe à l''avance la personne référente des adhésions. Deux mois consécutifs sous le minimum sans avertissement ouvrent une vérification de responsabilisation.'
+  membership-agreement.due-process-reference:
+    question: Qu'est-ce qui protège un membre quand la communauté se retourne contre lui ?
+    prompts:
+      - Quels documents protègent un membre contre l'exclusion, la suspension ou la restriction d'accès — et cet accord les nomme-t-il chacun ?
+      - En une ou deux phrases simples, que promettons-nous ici, pour que personne ne soit exclu ou restreint en vertu d'une règle qui ne lui a jamais été montrée ?
+      - Comment un membre qui lit cet accord trouve-t-il la version actuelle de ces documents ?
+    examples:
+      - Aucun membre ne peut être exclu, suspendu ou voir son accès restreint autrement que par les processus de notre Échelle de résolution des conflits et de notre Protocole de sortie et de séparation. Les deux sont liés depuis cet accord. Aucune règle qui n'est pas écrite dans l'un de ces deux documents ne peut être invoquée contre un membre.
+  membership-agreement.consent-acknowledgment:
+    question: Comment quelqu'un montre-t-il qu'il a lu et accepté tout cela ?
+    prompts:
+      - En quoi consiste l'acte d'accepter — une signature, une confirmation dans nos outils, ou une déclaration en réunion consignée au compte rendu ?
+      - À quels documents, et à quelles versions de ceux-ci, quelqu'un donne-t-il son accord à ce moment-là — et comment voit-il ces versions exactes ?
+      - Comment nous assurons-nous que l'accord est donné librement et en connaissance de cause — par exemple, du temps pour lire et poser des questions au préalable ? (Le lieu de conservation de la trace fait l'objet de sa propre question.)
+    examples:
+      - Un nouveau membre donne son accord en signant l'Accord d'adhésion dans notre application des membres, après une réunion où il a pu poser des questions. L'écran de signature liste chaque document auquel il donne son accord, avec son numéro de version et un lien vers cette version exacte, et la signature est datée.
+  membership-agreement.ratification-record:
+    question: Qui a adopté cet accord, quand, et comment la décision a-t-elle été prise ?
+  onboarding-protocol.admission-criteria:
+    question: Qui peut adhérer, selon quels critères écrits, et qui décide — pour que personne ne devienne membre simplement en étant présent ?
+    prompts:
+      - Quels critères un candidat doit-il remplir, écrits de façon que n'importe qui puisse les vérifier ?
+      - Qui décide d'une candidature ? (Nomme l'instance à laquelle la Matrice de décision confie les admissions, plutôt que de créer une deuxième règle.)
+      - Comment nous assurons-nous que personne ne devient membre de façon informelle, ou après coup ?
+  onboarding-protocol.onboarding-steps:
+    question: Que se passe-t-il concrètement entre « j'aimerais adhérer » et « j'en fais partie » ?
+    prompts:
+      - Quelles sont les étapes, dans l'ordre, entre une candidature approuvée et l'adhésion à part entière ?
+      - À quelle étape quelqu'un lit-il tous nos documents de gouvernance, et comment savons-nous qu'il l'a fait ?
+      - À quelle étape accepte-t-il explicitement nos contraintes d'identité et nos règles d'adhésion — et comment ?
+      - À quelle étape son état d'adhésion initial est-il déclaré, et par qui ? (Ce que cet état permet fait l'objet de sa propre question.)
+      - Quels comptes, outils et canaux sont mis en place, par qui, et à quelle étape ?
+    examples:
+      - 1. Le candidat lit tous nos documents de gouvernance avec un parrain, qui répond à ses questions. 2. Il confirme par écrit qu'il consent à nos contraintes d'identité et à l'Accord d'adhésion, et la personne référente des adhésions le déclare Membre à l'essai. 3. L'administrateur crée son compte de membre et l'ajoute au chat des membres. 4. Lorsque son essai se termine par une décision positive, l'achèvement est enregistré et il devient Membre à part entière.
+  onboarding-protocol.initial-membership-state:
+    question: Qu'est quelqu'un lors de son premier jour — et que peut-il déjà faire ?
+    prompts:
+      - Quel état d'adhésion quelqu'un détient-il lors de son premier jour, nommé comme dans notre Registre des états d'adhésion ?
+      - Par quels états passe-t-il pendant l'intégration, et qu'est-ce qui déclenche chaque passage ?
+      - Que peut-il déjà faire lors de son premier jour, et qu'est-ce qui doit attendre ? (Les droits de chaque état sont fixés dans le Registre des états d'adhésion.)
+      - Comment nous assurons-nous qu'aucun accès ni droit n'est accordé avant l'étape qui le débloque ?
+    examples:
+      - Lorsque sa candidature est approuvée, une nouvelle personne devient Membre à l'essai, avec les droits que le Registre des états d'adhésion attribue à cet état. Elle devient automatiquement Membre à part entière le jour où l'achèvement de son intégration est enregistré. Il n'existe aucune autre voie vers le statut de Membre à part entière, et aucun accès de Membre à part entière n'est accordé avant ce jour.
+  onboarding-protocol.trial-and-evaluation:
+    question: Combien de temps une nouvelle personne est-elle à l'essai, sur quoi est-elle évaluée, qui décide — et que se passe-t-il si cela ne fonctionne pas ?
+    prompts:
+      - Combien de temps dure l'essai, et à partir de quand est-il compté ?
+      - Sur quoi le nouveau membre est-il évalué — écrit de façon qu'il puisse le vérifier lui-même ?
+      - Qui prend la décision à la fin de l'essai, et comment ?
+      - Pendant l'essai, quelles obligations s'appliquent, et comment le nouveau membre les connaît-il ? (Les droits qui sont limités sont fixés dans le Registre des états d'adhésion.)
+      - Si l'essai ne se termine pas par une adhésion à part entière, que se passe-t-il — peut-il être prolongé, pour combien de temps et combien de fois, et quand la sortie commence-t-elle ?
+      - Après une sortie à la fin d'un essai, au bout de combien de temps quelqu'un peut-il à nouveau candidater ?
+    examples:
+      - L'essai dure 6 mois à compter du jour de la signature, et toutes les obligations des membres s'appliquent intégralement. La personne est évaluée sur l'accomplissement de chaque étape d'intégration et sur le respect du minimum de participation pendant au moins 5 des 6 mois. À la fin, les membres à part entière décident par consentement en assemblée générale. Si les critères ne sont pas remplis, l'essai peut être prolongé une fois de 3 mois au maximum ; après cela, le processus de sortie commence, et la personne peut candidater à nouveau après 12 mois.
+  onboarding-protocol.completion-record:
+    question: Comment enregistrons-nous que quelqu'un a terminé son adhésion, et que conserve cette trace ?
+    prompts:
+      - Où la trace d'achèvement est-elle conservée, et qui l'écrit ?
+      - Que consigne-t-elle — au minimum la date, et la version exacte de chaque document que la personne a accepté ?
+      - Combien de temps est-elle conservée, y compris après le départ de la personne ?
+    examples:
+      - La personne référente des adhésions enregistre l'achèvement dans le registre des membres le jour où la dernière étape d'intégration est accomplie. L'entrée contient la date, le nom de la personne, son nouvel état d'adhésion, et le numéro de version de chaque document auquel elle a consenti. Les entrées ne sont jamais supprimées ; après le départ de quelqu'un, son entrée reste, marquée de la date de sortie.
+  onboarding-protocol.ratification-record:
+    question: Qui a adopté ce processus d'intégration, quand, et comment la décision a-t-elle été prise ?
+  exit-protocol.voluntary-exit:
+    question: Comment quelqu'un peut-il partir quand il le choisit — sans être puni pour cela, ni perdre plus que son adhésion ?
+    prompts:
+      - Comment quelqu'un nous annonce-t-il son départ — et doit-il une raison ou un vote à quiconque ?
+      - Quand son accès prend-il fin, et où la sortie est-elle enregistrée ?
+      - Quels droits prennent fin avec l'adhésion, et lesquels conserve-t-il parce qu'ils n'en ont jamais dépendu ?
+    examples:
+      - Tout membre peut quitter la communauté à tout moment en l'informant par écrit. Il n'a besoin ni d'autorisation ni d'un vote pour partir. La communauté enregistre la date de sortie et suit le processus convenu pour la restitution des biens personnels, le règlement des paiements en cours et la fin des responsabilités liées à l'adhésion. Partir signifie renoncer aux droits qui n'existent qu'en raison de l'adhésion, comme l'accès aux installations partagées ou la participation à la gouvernance. Cela ne retire aucun droit que la personne détient indépendamment de son adhésion, comme la propriété de ses biens personnels ou l'argent que la communauté lui doit.
+  exit-protocol.forced-exit:
+    question: Que faut-il avoir établi avant que la communauté puisse demander à quelqu'un de partir ?
+    prompts:
+      - Que doit-il s'être passé avant que quiconque puisse être exclu — quel processus de responsabilisation doit avoir été mené à son terme, et quelle décision écrite doit-il avoir produite ?
+      - Comment la personne en est-elle informée — par écrit, avec les motifs et la référence de la décision — et combien de temps après son accès prend-il fin ?
+      - Que conservons-nous au sujet de l'exclusion, et que supprimons-nous ?
+      - Combien de temps quelqu'un doit-il attendre avant de pouvoir candidater à nouveau, et qui fixe ce délai ?
+      - Qui peut consulter la trace de la décision, et qu'est-ce qui reste confidentiel ?
+    examples:
+      - Personne ne peut être exclu autrement qu'à l'issue d'un processus de responsabilisation mené à son terme selon notre Échelle de résolution des conflits, aboutissant à une décision écrite. La personne reçoit cette décision par écrit, avec les motifs et sa référence, au moins 48 heures avant la fin de son accès. Nous conservons la trace de la décision et la retirons des listes de membres et des canaux. La décision fixe un délai de nouvelle candidature d'au moins 12 mois. Seules les parties et les personnes référentes qui ont traité le cas peuvent consulter la trace.
+  exit-protocol.suspension:
+    question: Quelqu'un peut-il être mis en pause plutôt qu'exclu — pour combien de temps, réexaminé par qui, et jamais comme une punition déguisée ?
+    prompts:
+      - Voulons-nous une suspension formelle — ou déclarons-nous clairement que nous n'en avons aucune ?
+      - Si nous en avons une, qu'est-ce qui peut exactement placer quelqu'un en suspension, et qui en décide ?
+      - Quelle est la durée maximale d'une suspension, et qui la réexamine, et quand ?
+      - Que peut encore faire un membre suspendu, et qu'est-ce qui est mis en pause ?
+      - Comment une suspension se termine-t-elle — et qu'est-ce qui l'empêche de devenir une punition, ou une exclusion sous un autre nom ?
+    examples:
+      - Nous n'avons pas d'état de suspension formel. Si le comportement de quelqu'un est suffisamment grave pour restreindre son adhésion, cela passe par notre processus de responsabilisation, qui aboutit à une décision et jamais à une mise en pause illimitée.
+      - Un membre ne peut être suspendu que pendant qu'un processus de responsabilisation le concernant est ouvert, par décision des deux personnes référentes qui le traitent, pour 30 jours au maximum. Pendant la suspension, il conserve son logement, l'accès aux archives de la communauté et le droit de répondre, mais ne peut pas voter ni occuper de rôles. Le cercle des membres réexamine chaque suspension le 14e jour. Elle prend fin le 30e jour ou à la conclusion du processus, selon ce qui arrive en premier, et ne peut pas être renouvelée pour la même affaire.
+  exit-protocol.asset-role-and-responsibility-separation:
+    question: Quand quelqu'un part, qu'advient-il de ses rôles, de ses tâches, de ses accès et de tout ce qu'il détient pour nous — convenu avant que quiconque ne parte ?
+    prompts:
+      - Une seule liste de contrôle s'applique-t-elle à chaque sortie, que la personne parte par choix ou soit exclue — et qui la déroule ?
+      - 'Pour chaque rôle que quelqu''un occupe : qui le marque vacant dans le Registre des rôles, et qui l''assure jusqu''à ce qu''il soit pourvu ?'
+      - Comment ses tâches en cours sont-elles libérées ou transmises, et à qui ?
+      - Qui lui retire l'accès à l'argent — comptes bancaires, portefeuilles, droits de signature — et pour quand ?
+      - Qui révoque son accès administrateur à nos plateformes et comptes partagés, et comment confirmons-nous que c'est fait ?
+      - Comment les obligations dans un sens comme dans l'autre sont-elles réglées ou transférées avant que la sortie ne soit finalisée ?
+    examples:
+      - La même liste de contrôle est déroulée pour chaque sortie, volontaire ou non, sous la conduite de la personne référente des adhésions. Dans les 24 heures, l'administrateur de la plateforme révoque tous les accès administrateur et aux comptes partagés, et le trésorier retire la personne des signataires du compte bancaire. Dans les 7 jours, ses rôles sont marqués vacants dans le Registre des rôles et ses tâches ouvertes sont transmises sur le tableau des tâches. L'argent dû dans un sens comme dans l'autre est réglé, ou inscrit dans un accord de remboursement, avant que la sortie ne soit marquée comme terminée.
+  exit-protocol.ratification-record:
+    question: Qui a adopté ce protocole de sortie, quand, et comment la décision a-t-elle été prise ?
+  membership-state-registry.defined-membership-states:
+    question: Quels états d'adhésion avons-nous — au minimum candidat, à l'essai, à part entière et sorti — et quels sont leurs droits, obligations et limitations ?
+    prompts:
+      - Quels états d'adhésion avons-nous — au minimum candidat, à l'essai, à part entière et sorti — et en faut-il d'autres ?
+      - 'Pour chaque état : quels droits, obligations et limitations s''appliquent ?'
+      - 'Pour chaque état : qu''est-ce qui y fait entrer quelqu''un, et qu''est-ce qui l''en fait sortir ?'
+      - Comment nous assurons-nous que personne ne détient deux états à la fois ?
+      - Comment nous assurons-nous que personne ne revendique un droit, ou n'est tenu à une obligation, que son état actuel ne lui donne pas ?
+    examples:
+      - 'Candidat : peut assister aux réunions ouvertes ; doit donner des informations honnêtes ; entre en candidatant, sort à la décision d''admission. Membre à l''essai : peut participer à toutes les réunions et y prendre la parole, ne peut pas voter ni occuper de rôles ; suit le planning de travail ; entre à la signature, sort à la décision d''essai. Membre à part entière : vote et occupe des rôles ; contribue chaque mois et partage les coûts ; entre lorsque l''intégration est enregistrée, sort à la sortie. Membre sorti : conserve l''accès à ses propres archives, n''a aucune obligation ; peut candidater à nouveau comme Candidat. Chaque personne détient exactement un état à la fois.'
+  membership-state-registry.ratification-record:
+    question: Qui a adopté les états d'adhésion, quand, et comment la décision a-t-elle été prise ?

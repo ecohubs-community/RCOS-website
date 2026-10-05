@@ -4,7 +4,7 @@ title: Couches RCOS
 parentId: null
 order: 2
 lang: fr
-sourceHash: 1ae7c27f
+sourceHash: c93eea84
 ---
 
 **Pile de protocoles : les couches supérieures ne peuvent pas outrepasser les couches inférieures.**

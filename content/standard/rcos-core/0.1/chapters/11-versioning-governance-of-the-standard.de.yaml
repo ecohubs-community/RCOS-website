@@ -9,12 +9,12 @@ sections:
       11.1.1:
         text: RCOS MUSS über eine identifizierbare verwaltende Stelle oder einen verwaltenden Prozess verfügen.
       11.1.2:
-        text: 'Die Verantwortlichkeiten der Verwaltung MUSS umfassen:'
+        text: 'Die Verantwortlichkeiten der Verwaltung MÜSSEN umfassen:'
         items:
           - 'Pflege der kanonischen Spezifikation  '
           - 'Verwaltung von Versionsfreigaben  '
           - 'Kuratierung von Referenzmaterialien und Lernressourcen  '
-          - 'Schutz der Layer-0-Invarianten des Standards selbst  '
+          - 'Schutz der Schicht-0-Invarianten des Standards selbst  '
       11.1.3:
         text: Die Verwaltung DARF NICHT als Durchsetzungsinstanz gegenüber Gemeinschaften agieren.
       11.1.4:
@@ -23,7 +23,7 @@ sections:
     title: Änderungsprozess
     blocks:
       11.2.1:
-        text: Änderungen an RCOS-Core MUSS einem definierten Änderungsprozess folgen.
+        text: Änderungen an RCOS-Core MÜSSEN einem definierten Änderungsprozess folgen.
       11.2.2:
         text: 'Der Änderungsprozess MUSS umfassen:'
         items:
@@ -34,8 +34,8 @@ sections:
       11.2.3:
         text: Abwärtskompatibilität SOLLTE nach Möglichkeit gewahrt werden.
       11.2.4:
-        text: Nicht abwärtskompatible Änderungen MUSS klar gekennzeichnet und begründet werden.
+        text: Nicht abwärtskompatible Änderungen MÜSSEN klar gekennzeichnet und begründet werden.
       11.2.5:
-        text: Abgelöste Versionen von RCOS MUSS öffentlich zugänglich bleiben.
+        text: Abgelöste Versionen von RCOS MÜSSEN öffentlich zugänglich bleiben.
       11.2.6:
         text: 'RCOS selbst MUSS dieselben Prinzipien vorleben, die es von Gemeinschaften verlangt: Explizitheit, begrenzte Befugnisse, Umkehrbarkeit und Lernbereitschaft.'

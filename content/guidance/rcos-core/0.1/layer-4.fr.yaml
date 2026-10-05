@@ -1,0 +1,180 @@
+lang: fr
+sourceHash: 705f5d64
+sections:
+  '6.1':
+    inShort: Classez chaque conflit dans une classe connue — interpersonnel, lié au rôle, structurel ou manquement à une obligation — pour que tout le monde sache quel chemin il suit. Tout ce qui touche à la sécurité est critique pour la sécurité.
+    questions:
+      safety-critical:
+        question: Quand un conflit est-il critique pour la sécurité ?
+        answer: Lorsqu'il implique des risques crédibles pour la sécurité, de la coercition, des abus ou des menaces. Ces cas déclenchent les garde-fous renforcés prévus en 6.3.
+      avoid-classifying:
+        question: Et si nous préférions ne pas étiqueter un conflit du tout ?
+        answer: Éviter la classification ou se tromper de classe compte comme une défaillance du processus, et cela fait l'objet d'un examen.
+  '6.2':
+    inShort: Il existe une seule échelle de résolution pour tout le monde, avec des étapes claires, des délais, et une suite possible quand quelqu'un refuse de participer.
+    questions:
+      refuses:
+        question: Et si l'autre personne refuse de s'engager dans le processus ?
+        answer: L'échelle doit dire comment le refus, la non-réponse ou le retrait sont gérés, pour qu'un conflit ne puisse pas être bloqué par le silence.
+      status-needed:
+        question: Dois-je connaître les bonnes personnes pour soulever un conflit ?
+        answer: Non. Le processus doit fonctionner sans statut social, sans ancienneté, sans charisme et sans proximité avec les personnes qui décident.
+  '6.3':
+    inShort: Là où il y a un écart de pouvoir, une dépendance ou un risque pour la sécurité, une protection supplémentaire s'applique, et personne n'est puni pour avoir parlé.
+    questions:
+      retaliation:
+        question: Suis-je protégé·e si je soulève une préoccupation au sujet de quelqu'un de puissant ?
+        answer: Oui. Les garde-fous protègent contre les représailles liées au fait de soulever une préoccupation, de demander une médiation, d'apporter des éléments ou de participer à un examen.
+      act-before-process:
+        question: La communauté peut-elle agir avant la fin du processus ?
+        answer: Dans les conflits critiques pour la sécurité, oui. Des mesures de protection comme une séparation temporaire peuvent être prises immédiatement.
+  '6.4':
+    inShort: Les sanctions et la réparation sont écrites, proportionnées, limitées dans le temps et susceptibles d'appel. La réparation passe avant la punition, sauf quand la sécurité est en jeu.
+    questions:
+      cold-shoulder:
+        question: Faire la tête à quelqu'un, est-ce une sanction ?
+        answer: C'en est une informelle, et celles-là ne sont pas permises. Les sanctions ne peuvent pas être appliquées par l'exclusion, la pression sociale, le silence ou le retrait discret de droits.
+      repair-first:
+        question: Pourquoi la réparation avant la punition ?
+        answer: La réparation garde les personnes et les relations dans la communauté quand c'est possible. L'action punitive ne vient en premier que dans les cas critiques pour la sécurité.
+  '6.5':
+    inShort: La Couche 4 tient dans deux documents, l'Échelle de résolution des conflits et le Protocole de responsabilisation.
+    questions:
+      which-documents:
+        question: De quels documents la Couche 4 a-t-elle besoin ?
+        answer: Une Échelle de résolution des conflits et un Protocole de responsabilisation.
+  '6.6':
+    inShort: Les limites strictes en matière de conflit sont qu'un conflit est traité, jamais ignoré. Les écarts de pouvoir renforcent les garde-fous, la réparation passe en premier, et la sécurité prime sur tout le reste.
+    questions:
+      ignore-conflict:
+        question: Est-ce un problème de laisser un conflit se tasser tout seul ?
+        answer: Laisser un conflit non résolu, étouffé ou normalisé compte comme une violation du système. Il lui faut un chemin défini.
+  '6.7':
+    inShort: Le système de gestion des conflits doit être explicite. La manière dont les personnes expriment leurs émotions, ou le prisme spirituel ou thérapeutique qu'elles utilisent, leur appartient.
+    questions:
+      mediation-style:
+        question: Devons-nous utiliser une méthode de médiation particulière ?
+        answer: Non. Les styles de médiation sont optionnels ; seuls le processus minimum et les garde-fous doivent être explicites.
+templates:
+  conflict-resolution-ladder.conflict-classification:
+    question: Quels types de conflit avons-nous nommés, pour que personne n'en invente un en pleine dispute — et lesquels sont critiques pour la sécurité ?
+    prompts:
+      - Quels types de conflit nommons-nous — au moins interpersonnel, lié au rôle, structurel et éthique ?
+      - Quelles situations sont critiques pour la sécurité, et qu'est-ce qui change pour elles ?
+      - 'Pour chaque type : comment le reconnaissons-nous, en combien de temps devons-nous réagir, et quel chemin suit-il ?'
+      - 'Pour chaque type : qu''est-ce qui est consigné ? (Qui peut le lire est une autre question.)'
+      - Que se passe-t-il quand un conflit est rangé dans le mauvais type, ou que personne ne le classe ?
+    examples:
+      - 'Nous nommons cinq types de conflit : entre personnes, à propos d''un rôle, à propos de nos règles ou structures, à propos d''un manquement à nos accords, et critique pour la sécurité. Un conflit est critique pour la sécurité dès que quelqu''un craint de façon crédible pour sa sécurité ou subit une coercition ; il contourne les premières étapes et nos mesures de sécurité s''appliquent immédiatement. Les conflits ordinaires reçoivent une réponse sous 14 jours et commencent par une conversation privée ; les autres commencent chez la personne coordinatrice des conflits, qui consigne le type et le motif. Un conflit que personne n''a classé en une semaine est examiné comme une défaillance du processus.'
+  conflict-resolution-ladder.resolution-ladder-steps:
+    question: Quelles sont les étapes, du mot discret au processus formel, et dans quel ordre ?
+    prompts:
+      - 'Pour chaque étape, de la conversation privée à la décision de gouvernance : qui est impliqué, que se passe-t-il, et combien de temps cela prend-il ?'
+      - Comment un conflit est-il soulevé, consigné et accusé réception — et comment les autres personnes concernées sont-elles informées et invitées à participer ?
+      - Quand un conflit passe-t-il à l'étape suivante, et chaque partie peut-elle le demander elle-même ?
+      - Quand rien d'autre ne le résout, comment arrive-t-il à une décision via notre Matrice de décision — sans aucun raccourci pour la contourner ?
+      - Comment nous assurons-nous que n'importe qui peut utiliser l'échelle, quel que soit son statut, son ancienneté ou ses amitiés ?
+      - Que faisons-nous quand un conflit est ignoré ou discrètement enterré ? (La non-réponse et l'impasse, le choix de la personne qui facilite, et qui peut lire les dossiers sont d'autres questions.)
+    examples:
+      - 'Étape 1 : les personnes concernées se parlent en privé dans les deux semaines. Étape 2 : chacune peut demander un·e facilitateur·rice, qui organise une conversation dans les trois semaines. Étape 3 : chacune peut ouvrir un dossier écrit auprès de la personne coordinatrice des conflits, qui le consigne et en accuse réception sous 7 jours et invite l''autre partie. Étape 4 : un panel de trois membres entend les deux parties et formule une recommandation sous 30 jours. Étape 5 : les Membres titulaires décident selon la Matrice de décision. Tout membre peut engager l''échelle ou la faire monter d''un cran ; laisser un conflit connu sans réponse est un manquement.'
+  conflict-resolution-ladder.non-response-withdrawal-and-deadlock:
+    question: Que se passe-t-il quand quelqu'un refuse de participer, s'en va, ou que nous sommes simplement bloqués ?
+    prompts:
+      - 'Si quelqu''un ne répond pas : combien de relances reçoit-il, sur quelle durée, avant que le silence compte comme une non-résolution — et que se passe-t-il ensuite ?'
+      - 'Si quelqu''un se retire en cours de route : comment l''autre partie est-elle informée, et peut-elle clore l''affaire ou demander un résumé écrit ?'
+      - Quand quelqu'un se retire, qu'advient-il d'une question de responsabilisation encore ouverte ?
+      - Quand nous sommes bloqués, comment l'impasse est-elle consignée et portée à une décision de gouvernance ?
+      - Comment quelqu'un peut-il objecter que le processus lui-même a mal tourné, où cela est-il consigné, et quand cela conduit-il à une révision de cette échelle ?
+    examples:
+      - Si quelqu'un ne répond pas sous 14 jours, la personne qui facilite envoie une seconde notification avec 14 jours de plus ; un silence prolongé compte comme une non-résolution et le dossier monte d'une étape. Si quelqu'un se retire, l'autre partie est informée sous 7 jours et peut clore l'affaire ou demander un résumé écrit ; toute question de responsabilisation ouverte se poursuit. Une impasse consignée par écrit va aux Membres titulaires. Les objections sur le processus sont inscrites dans le journal des conflits, et trois objections en un an déclenchent une révision de cette échelle.
+  conflict-resolution-ladder.facilitator-selection-and-replacement:
+    question: Qui facilite un conflit, et comment chaque partie peut-elle obtenir son remplacement ?
+    prompts:
+      - Qui facilite par défaut — quel rôle de notre Registre des rôles ?
+      - Quand la personne qui facilite est partie au conflit, ou proche de l'une des parties, qui choisit un·e remplaçant·e neutre et comment ?
+      - Comment chaque partie peut-elle récuser un·e facilitateur·rice, et quel motif doit-elle donner ?
+      - Quand pouvons-nous faire appel à quelqu'un de l'extérieur, qui doit être d'accord, et qui paie ?
+    examples:
+      - L'intendant·e des conflits nommé·e dans le Registre des rôles facilite par défaut. S'il ou elle est partie au conflit, ou partage un foyer avec une partie, chaque partie nomme un membre et ces deux personnes choisissent ensemble un·e facilitateur·rice neutre. Chaque partie peut récuser un·e facilitateur·rice en invoquant un conflit d'intérêts, et un·e remplaçant·e est trouvé·e sous 10 jours. Si les deux parties sont d'accord, nous invitons un·e médiateur·rice externe, payé·e sur la caisse commune.
+  conflict-resolution-ladder.privacy-and-information-access-boundaries:
+    question: Qui a le droit de savoir quoi sur un conflit, pendant son déroulement et après ?
+    prompts:
+      - Quelles étapes sont entièrement confidentielles, et qui peut consulter les dossiers pendant ces étapes ?
+      - Quand un conflit arrive à une décision de gouvernance, quel est le minimum que les Membres titulaires doivent savoir — et les personnes concernées sont-elles informées avant que quoi que ce soit soit partagé ?
+      - Qui détient les dossiers, pendant combien de temps, et comment sont-ils détruits ?
+      - Que peuvent dire les participant·e·s à des personnes extérieures au processus, et quel consentement change cela ?
+    examples:
+      - 'Les étapes 1 à 4 sont entièrement confidentielles : seules les parties et la personne qui facilite peuvent consulter les notes. Si un dossier arrive devant les Membres titulaires, ils ne reçoivent que ce dont ils ont besoin pour décider — l''objet du conflit, les étapes déjà tentées et les options — et les parties voient ce résumé trois jours avant qu''il ne soit partagé. La personne qui facilite conserve les dossiers trois ans après la clôture du dossier, puis les supprime. Aucun·e participant·e ne peut parler du dossier en dehors du processus sans le consentement écrit de toutes les parties.'
+  conflict-resolution-ladder.safeguards:
+    question: Qu'est-ce qui change quand les personnes en conflit n'ont pas le même pouvoir — ou quand quelqu'un n'est pas en sécurité ?
+    prompts:
+      - Quelle protection supplémentaire s'applique quand les personnes en conflit n'ont pas le même pouvoir — par exemple une facilitation indépendante, ou un canal séparé pour le soulever ?
+      - Quand quelqu'un n'est pas en sécurité, que pouvons-nous faire immédiatement, avant la fin du processus — et qui décide ?
+      - Comment nous assurons-nous que la sécurité passe avant les droits de participation, les rôles et la commodité ?
+    examples:
+      - Quand les personnes en conflit n'ont pas le même pouvoir — par exemple un·e titulaire de rôle et un membre récent —, la personne la moins puissante peut soulever le conflit auprès d'un·e facilitateur·rice externe plutôt qu'auprès de notre intendant·e des conflits, et l'autorité du ou de la titulaire de rôle sur elle est suspendue pendant la procédure. Si quelqu'un signale de façon crédible être en danger, deux intendant·e·s quelconques peuvent immédiatement séparer les personnes concernées, restreindre l'accès aux espaces partagés ou suspendre un rôle pour 14 jours au maximum, avant la fin du processus. La sécurité passe en premier, même quand cela coûte un rôle à quelqu'un ou que c'est peu pratique.
+  accountability-protocol.triggers:
+    question: Que faut-il qu'il se passe avant que le processus de responsabilisation démarre, et qui peut l'enclencher ?
+    prompts:
+      - Quelles conditions déclenchent un contrôle de responsabilisation — par exemple une longue absence de contributions, un manquement à une obligation de l'Accord d'adhésion, ou un acte contraire à l'un de nos engagements fondateurs ?
+      - 'Pour chaque déclencheur : comment n''importe qui peut-il vérifier qu''il s''est produit, à partir de nos registres ou d''un renvoi direct ?'
+      - Qui peut enclencher le processus, et comment — et un dossier peut-il être renvoyé depuis l'Échelle de résolution des conflits ?
+      - Qu'est-ce qui n'est pas un déclencheur — comment empêchons-nous que le processus soit enclenché parce que quelqu'un est mal aimé ?
+    examples:
+      - 'Un contrôle de responsabilisation ne démarre que lorsque l''une de ces conditions est consignée : un membre n''a aucune contribution enregistrée depuis quatre mois consécutifs ; un membre a manqué à une obligation de l''Accord d''adhésion et ne l''a pas réparé dans les 30 jours suivant une relance ; un membre a agi contre l''un de nos engagements fondateurs ; ou un dossier est renvoyé depuis l''étape 3 ou supérieure de l''Échelle de résolution des conflits. Tout membre peut faire le renvoi, par écrit, à la personne coordinatrice de la responsabilisation. La désapprobation envers quelqu''un n''est pas un déclencheur.'
+  accountability-protocol.investigation-and-review:
+    question: Qui examine ce qui s'est passé, et comment le fait-on sans prendre parti ?
+    prompts:
+      - Quels parcours utilisons-nous — léger (par exemple l'inactivité), intermédiaire (un manquement à une obligation) et grave (une atteinte à nos engagements fondateurs ou une préoccupation de sécurité) — et qu'est-ce qui range un dossier dans chacun ?
+      - 'Pour chaque parcours : qui prend contact ou ouvre l''examen, et combien de temps prend chaque étape ?'
+      - 'Pour chaque parcours : quelles sont les issues possibles, et où va le dossier s''il n''est pas résolu ?'
+      - Qui ne peut pas examiner un dossier — par exemple une personne impliquée, ou proche de l'une des parties — et qui prend le relais ?
+      - Comment les constats sont-ils consignés avant que quiconque décide de la suite ? (Quelles conséquences peuvent suivre est une autre question.)
+    examples:
+      - 'Léger : si les contributions d''un membre s''interrompent, quelqu''un de l''équipe de soin prend contact dans les deux semaines. Intermédiaire : un manquement à une obligation de l''Accord d''adhésion reçoit un avis écrit de la personne coordinatrice de la responsabilisation ; s''il n''est pas résolu sous 30 jours, le dossier va à un panel d''examen de trois membres. Grave : une atteinte à un engagement fondateur ou une préoccupation crédible de sécurité va directement à l''étape 5 de l''Échelle de résolution des conflits. Aucune personne impliquée dans l''affaire, ni partageant un foyer avec l''une des parties, ne peut siéger au panel.'
+  accountability-protocol.due-process-guarantees:
+    question: À quoi a droit une personne mise en cause, avant que quoi que ce soit soit décidé ?
+    prompts:
+      - Comment et quand la personne est-elle informée par écrit du motif de préoccupation — avant que tout examen ou toute conséquence ne commence ?
+      - De quel délai minimum dispose-t-elle pour répondre, et peut-elle en demander davantage ?
+      - Peut-elle consulter les éléments sur lesquels repose la préoccupation, être accompagnée d'une personne de soutien, et choisir de répondre par écrit ou en personne ?
+      - Où une décision peut-elle être contestée en appel — et les personnes qui l'ont prise peuvent-elles aussi juger l'appel ?
+    examples:
+      - Avant tout examen, le membre reçoit une notification écrite indiquant le motif de préoccupation et les éléments sur lesquels il repose. Il ou elle dispose d'au moins 30 jours pour répondre, par écrit ou lors d'une réunion, et peut être accompagné·e d'une personne de soutien de son choix. Toute décision peut faire l'objet d'un appel auprès des Membres titulaires sous 14 jours et est tranchée par un vote Stratégique ; aucune des personnes ayant pris la décision initiale ne peut présider l'appel.
+  accountability-protocol.anti-retaliation-protections:
+    question: Comment protégeons-nous une personne qui soulève une préoccupation pour qu'elle ne le paie pas plus tard ?
+    prompts:
+      - Qui est protégé — une personne qui soulève une préoccupation, demande une médiation, fournit des informations ou des éléments, ou participe à un examen ou à un appel ?
+      - Qu'est-ce qui compte comme représailles — y compris les formes discrètes comme la perte d'un rôle, l'attribution de tâches moins intéressantes, ou la mise à l'écart sociale ?
+      - Que se passe-t-il quand quelqu'un exerce des représailles — cela déclenche-t-il un contrôle de responsabilisation à part entière ?
+      - Combien de temps la protection dure-t-elle après la clôture du processus ?
+    examples:
+      - Personne ne peut être moins bien traité pour avoir soulevé une préoccupation, demandé une médiation, fourni des informations ou des éléments, ou participé à un examen ou à un appel. Être moins bien traité inclut être retiré d'un rôle, perdre l'accès aux ressources partagées, ou être laissé de côté lors des événements de la communauté. Les représailles sont elles-mêmes un déclencheur de responsabilisation, et cette protection dure deux ans après la clôture du processus.
+  accountability-protocol.sanction-and-repair-options:
+    question: Quelles conséquences peuvent suivre, comment restent-elles proportionnées et susceptibles d'appel — et comment la réparation passe-t-elle avant la punition ?
+    prompts:
+      - Quelles conséquences peuvent suivre un manquement — et quelles étapes de réparation viennent avant toute punition ?
+      - 'Pour chaque conséquence : que faut-il établir d''abord, et quels éléments suffisent ?'
+      - 'Pour chaque conséquence : qui peut l''appliquer, combien de temps dure-t-elle, et comment la contester en appel ?'
+      - Comment nous assurons-nous que personne n'est puni de façon informelle — par l'exclusion, le silence ou la pression sociale ?
+    examples:
+      - 'Notre première réponse est toujours la réparation : une conversation, des excuses ou la remise en état du dommage, convenues avec les personnes concernées. Si cela échoue, le panel de responsabilisation peut donner un avertissement écrit, puis restreindre l''accès à un espace partagé ou à un rôle pour trois mois au maximum ; seuls les Membres titulaires peuvent décider d''une exclusion forcée. Chaque étape exige un constat écrit, peut être contestée en appel sous 14 jours, et se termine à une date indiquée. Personne n''est mis à l''écart de façon informelle. Seul un risque immédiat pour la sécurité nous permet de passer directement à une restriction.'
+  accountability-protocol.conditions-for-restoring-rights:
+    question: Comment quelqu'un retrouve-t-il son statut une fois qu'une sanction est arrivée à son terme ?
+    prompts:
+      - 'Pour chaque type de sanction : quel est le chemin de retour vers les pleins droits, et qui confirme qu''il a été parcouru ?'
+      - 'Après une restriction temporaire : que faut-il démontrer, et dans quel délai les droits sont-ils rétablis une fois cela fait ?'
+      - 'Après un départ volontaire : la personne peut-elle revenir, et par quel processus ?'
+      - 'Après une exclusion forcée : combien de temps faut-il attendre avant de candidater à nouveau, et quel processus d''admission s''applique alors ?'
+      - Une fois les conditions remplies, comment empêchons-nous que quelqu'un reste tenu à l'écart de façon informelle ?
+    examples:
+      - Après une restriction temporaire, les droits sont pleinement rétablis dès que la personne coordinatrice de la responsabilisation confirme que les étapes de réparation convenues sont accomplies ; elle doit faire cette vérification dans les 14 jours suivant la demande du membre. Une personne partie volontairement peut candidater à nouveau à tout moment via le Protocole d'intégration, sans retour automatique. Après une exclusion forcée, elle peut candidater à nouveau au bout de deux ans, et le processus d'admission habituel s'applique.
+  accountability-protocol.coordination-with-layer-1:
+    question: Quand la responsabilisation conduit à suspendre ou exclure quelqu'un, comment nous assurons-nous que la procédure régulière a eu lieu d'abord et que les règles du protocole de sortie s'appliquent ?
+    prompts:
+      - Quand un processus de responsabilisation se termine par une exclusion, suivons-nous le Protocole de sortie et de séparation — sans aucune voie de sortie séparée ici ?
+      - Une suspension temporaire ou une restriction d'accès est-elle une sortie ? Si non, qu'est-ce qu'elle laisse intact ?
+      - Quelles étapes de procédure régulière doivent être accomplies avant toute suspension ou exclusion, en dehors des mesures de sécurité immédiates ?
+      - Comment les deux processus partagent-ils un seul registre, pour qu'une sortie ne soit jamais consignée deux fois ou de deux manières différentes ? (La façon dont une exclusion forcée est décidée relève du protocole de sortie.)
+    examples:
+      - 'Toute exclusion forcée et toute restriction d''accès temporaire suivent le Protocole de sortie et de séparation ; ce protocole ne crée aucune voie de sortie séparée. Une restriction temporaire n''est pas une sortie : le membre conserve son adhésion et n''est pas soumis au blocage de nouvelle candidature, sauf si les Membres titulaires votent ensuite une exclusion forcée. En dehors des mesures de sécurité immédiates, personne n''est suspendu ni exclu avant d''avoir reçu une notification écrite, bénéficié du plein délai de réponse et eu la possibilité de faire appel.'

@@ -4,7 +4,7 @@ title: Implementaciones de Referencia
 parentId: null
 order: 5
 lang: es
-sourceHash: ef04ede4
+sourceHash: 3299369b
 ---
 
 Este artículo documenta **comunidades reales que aplican RCOS** en la práctica.

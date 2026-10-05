@@ -1,0 +1,179 @@
+lang: pt-br
+sourceHash: cd25f3f7
+sections:
+  '4.1':
+    inShort: Toda decisão coletiva é operacional, estratégica ou constitucional, e o tipo determina como ela é tomada.
+    questions:
+      unclear-type:
+        question: E se não conseguirmos dizer de que tipo é uma decisão?
+        answer: Trate-a como o tipo de maior impacto. Assim uma decisão grande nunca passa como se fosse pequena.
+      constitutional-examples:
+        question: Quais decisões são constitucionais?
+        answer: Mudanças na Camada 0 (propósito, escopo, invariantes) e no próprio sistema de governança.
+  '4.2':
+    inShort: Para cada tipo de decisão, anote quem decide, como, com qual limiar, quem pode bloquear e quanto tempo leva.
+    questions:
+      which-method:
+        question: O RCOS prescreve consenso, consentimento ou votação?
+        answer: Não. Você escolhe o mecanismo para cada tipo de decisão; o RCOS só pede que ele seja explícito e completo.
+      quick-chat:
+        question: Algumas pessoas podem resolver algo informalmente para ganhar tempo?
+        answer: Não para decisões coletivas. Se precisa ser rápido, defina um mecanismo rápido, como autoridade delegada, e use-o abertamente.
+  '4.3':
+    inShort: A autoridade fica com papéis e órgãos nomeados, cada um com escopo, limites e mandato escritos. Ela nunca vem de carisma, antiguidade ou propriedade.
+    questions:
+      founder-authority:
+        question: Quem fundou nossa comunidade sempre teve a última palavra. Isso é permitido?
+        answer: Só se isso estiver escrito como um papel com escopo, limites e mandato definidos. A autoridade não pode derivar de ter fundado, de antiguidade ou de influência informal.
+      emergency-authority:
+        question: Alguém pode assumir o comando numa emergência?
+        answer: Sim, se a autoridade de emergência for definida explicitamente, limitada no tempo e revisada depois.
+  '4.4':
+    inShort: A Matriz de Decisões é o mapa de quem decide o quê, e como. Uma decisão tomada fora dela não é válida.
+    questions:
+      matrix-contents:
+        question: O que a Matriz de Decisões mapeia?
+        answer: 'Para cada decisão: seu tipo, o domínio, o papel ou órgão autorizado, o mecanismo, o limiar de aprovação e o caminho de escalonamento.'
+      outside-matrix:
+        question: O que acontece com uma decisão tomada fora da matriz?
+        answer: Ela é considerada inválida.
+  '4.5':
+    inShort: O Protocolo de Governança descreve a vida inteira de uma decisão, da proposta à deliberação, execução, registro e recurso.
+    questions:
+      conflicting-decisions:
+        question: E se duas decisões se contradizem?
+        answer: O Protocolo de Governança tem que dizer como esses conflitos são resolvidos, para que não fique valendo quem agir primeiro.
+      recording:
+        question: Onde as ações de governança são registradas?
+        answer: Conforme as regras de documentação da Camada 5.
+  '4.6':
+    inShort: Inclua proteções contra as formas pelas quais a governança costuma dar errado, como poder concentrado, vetos informais, captura por um subgrupo e fundadores entrincheirados.
+    questions:
+      challenge-safely:
+        question: Os membros podem contestar uma decisão sem arriscar sua posição?
+        answer: Sim. Os mecanismos de governança têm que permitir contestação e revisão sem retaliação.
+      repeated-failure:
+        question: E se a governança continua falhando do mesmo jeito?
+        answer: Falhas persistentes acionam uma revisão formal ou um processo constitucional, não apenas mais uma tentativa.
+  '4.7':
+    inShort: A Camada 2 vive em três documentos, a Matriz de Decisões, o Protocolo de Governança e o Registro de Autoridades, todos explícitos, versionados e abertos aos membros.
+    questions:
+      which-documents:
+        question: De quais documentos a Camada 2 precisa?
+        answer: Uma Matriz de Decisões, um Protocolo de Governança e um Registro de Autoridades.
+templates:
+  decision-matrix.voting-principles:
+    question: Para cada tipo de decisão, quem tem voz, o que conta como acordo, quem pode bloquear e por quanto tempo ela fica aberta?
+    prompts:
+      - 'Para cada tipo de decisão: qual mecanismo usamos — consentimento, maioria simples, maioria qualificada, entregar a quem ocupa um papel, ou rotação ou sorteio?'
+      - 'Para cada mecanismo: quem pode participar e o que conta como acordo — uma proporção dos votos, um quórum, ou nenhuma objeção restante?'
+      - Alguém pode bloquear ou vetar uma decisão, e com base em quê — ou não existe bloqueio nenhum?
+      - Por quanto tempo cada decisão fica aberta, e o que acontece em caso de empate ou quando o prazo termina sem resultado?
+      - Onde a decisão acontece — numa reunião, numa ferramenta online, ou nos dois?
+      - Até qual valor ou escopo quem ocupa um papel pode decidir sozinho, sem votação?
+    examples:
+      - 'Decisões operacionais são tomadas por quem ocupa o papel correspondente, que pode gastar até €300 por item sem votação. Decisões estratégicas usam consentimento: todo membro pleno pode participar, e uma proposta passa quando nenhuma objeção fundamentada permanece após uma rodada de 14 dias. Só uma objeção que mostre como a proposta prejudica nosso propósito pode bloquear. Decisões constitucionais usam o mesmo processo de consentimento com uma rodada de 30 dias. Se uma objeção ainda estiver aberta quando a rodada fechar, a proposta não passa e a regra atual continua valendo.'
+      - Decisões estratégicas são tomadas por maioria dos membros plenos na nossa ferramenta de votação, aberta por 7 dias, com pelo menos metade de todos os membros plenos votando. Decisões constitucionais precisam de dois terços de todos os membros plenos, com votação aberta por 14 dias. Ninguém tem veto. Um empate, ou votos insuficientes, significa que a proposta não passa e nada muda. Pessoas coordenadoras podem gastar até €500 dentro de sua área sem votação.
+  decision-matrix.matrix:
+    question: Quais decisões pertencem a quem — numa tabela que possamos apontar no meio de uma discussão?
+    prompts:
+      - 'Para cada área sobre a qual decidimos (associação, dinheiro, terra e construções, parcerias, nossas próprias regras): qual é o tipo de decisão e qual papel ou órgão decide?'
+      - 'Para cada linha: qual mecanismo e qual limiar de aprovação se aplicam?'
+      - 'Para cada linha: para onde o assunto vai se o papel ou órgão que decide não conseguir chegar a acordo, tiver conflito de interesse, ou o assunto passar do seu limite?'
+      - Onde a matriz fica guardada para que todo membro possa ler a qualquer momento, e como avisamos os membros quando ela muda?
+      - O que acontece com uma decisão que alguém tomou fora da matriz — quem pode apontar isso, e como ela é desfeita?
+    examples:
+      - 'A admissão de membros é Estratégica: o círculo de membros decide por consentimento após uma rodada de 14 dias, escalando para a assembleia geral se não chegar a acordo. Gastos abaixo de €500 são Operacionais e a tesouraria decide sozinha; acima disso são Estratégicos e precisam de dois terços dos votos, escalando para a assembleia geral. Mudanças no nosso propósito ou na nossa governança são Constitucionais e precisam de três quartos dos votos após 30 dias. A matriz fica fixada no manual dos membros, e uma decisão tomada fora dela não tem efeito até ser tomada de novo pela linha correta.'
+  decision-matrix.decision-type-definitions:
+    question: Que tipos de decisão tomamos, e como distinguimos uma grande de uma pequena?
+    prompts:
+      - O que conta como decisão Operacional para nós — trabalho do dia a dia dentro de regras que já temos? Cite duas ou três reais.
+      - O que conta como Estratégica — rumo de longo prazo, gastos grandes, criar ou encerrar um grupo importante? Onde exatamente está a linha, por exemplo um valor em dinheiro?
+      - O que conta como Constitucional — mudanças no nosso propósito, no escopo, nos compromissos centrais, ou em como nos governamos?
+      - 'Para cada tipo: quem executa a decisão, e ela precisa de proposta e votação ou não? (Os limiares exatos são uma questão à parte.)'
+      - Como garantimos que toda decisão coletiva caia em exatamente um tipo — e que, quando puder caber em dois, seja tratada como a maior?
+      - Quem resolve uma disputa sobre qual é o tipo de uma decisão?
+    examples:
+      - Decisões operacionais mantêm as coisas funcionando dentro das regras existentes — comprar sementes, agendar dias de trabalho, consertar a bomba — e quem ocupa o papel responsável decide sozinho. Decisões estratégicas definem rumo para um ano ou mais, gastam mais de €1.000, ou criam ou encerram um grupo de trabalho; precisam de votação dos membros após deliberação. Decisões constitucionais mudam nosso propósito, nossos compromissos centrais ou como nos governamos; precisam de maioria qualificada e de um período de ratificação. Se alguém tiver dúvida sobre qual é o tipo de uma decisão, ela é tratada como o tipo maior.
+  governance-protocol.proposal-submission:
+    question: Como alguém coloca uma proposta na nossa frente, e o que tem que constar nela?
+    prompts:
+      - Quais decisões precisam de proposta escrita, e quais quem ocupa um papel pode simplesmente tomar?
+      - Quem pode apresentar uma proposta, e onde ela é enviada para que todo mundo possa ver?
+      - O que toda proposta tem que conter — por exemplo um resumo, o tipo de decisão, o que ela muda, os motivos, os riscos e como desfazê-la?
+      - Quem declara o tipo de decisão de uma proposta no momento do envio? (Como uma disputa sobre o tipo é resolvida é uma questão à parte.)
+      - Quando quem propõe pode retirar uma proposta, e como?
+      - Somado às etapas seguintes, nosso processo leva uma proposta até o fim — envio, deliberação, decisão, execução, registro e recurso — sem nenhuma etapa faltando?
+    examples:
+      - Qualquer membro pleno pode enviar uma proposta Estratégica ou Constitucional publicando-a na seção Propostas do nosso fórum, usando o modelo compartilhado. Cada proposta indica um resumo, seu tipo de decisão, os acordos que ela muda, os motivos, os riscos, como revertê-la e uma data de início proposta. Quem propõe declara o tipo; qualquer membro pode pedir um tipo maior, e a dúvida é resolvida para cima. Quem propõe pode retirar uma proposta a qualquer momento antes de a votação abrir. Decisões operacionais não precisam de proposta.
+  governance-protocol.review-and-deliberation:
+    question: Por quanto tempo ficamos com uma proposta antes de decidir, e quem tem que ser ouvido primeiro?
+    prompts:
+      - Onde acontece a discussão de uma proposta — num tópico do fórum, numa reunião, ou nos dois — e como os membros que perdem a reunião ainda participam?
+      - Por quanto tempo uma proposta Estratégica tem que ficar aberta para discussão antes de a votação poder começar?
+      - Por quanto tempo uma proposta Constitucional tem que ficar aberta antes de a votação poder começar?
+      - Quais vozes têm que ser ouvidas antes de a votação abrir — por exemplo as pessoas mais afetadas, ou quem vai executar a decisão?
+      - Quem propõe pode mudar a proposta durante a discussão, e uma mudança reinicia o prazo?
+      - Como incentivamos os membros a levantar preocupações agora, e não depois da votação? (Reabrir uma decisão é uma questão à parte.)
+    examples:
+      - A discussão acontece no tópico da proposta no fórum e em pelo menos uma assembleia geral, com anotações publicadas para quem não pôde comparecer. Uma proposta Estratégica fica aberta por pelo menos 14 dias e uma Constitucional por pelo menos 30 dias antes de a votação poder começar. Quem propõe tem que convidar comentários do grupo de trabalho mais afetado. Uma mudança substancial na proposta reinicia o prazo mínimo. Esperamos que os membros levantem preocupações nessa janela, não depois da votação.
+  governance-protocol.decision-execution:
+    question: Depois que decidimos algo, quem executa e até quando?
+    prompts:
+      - Quando uma proposta passa, quem é responsável por executá-la — quem propôs, um papel nomeado ou um grupo de trabalho?
+      - Quais dos nossos acordos e documentos têm que ser mudados para corresponder à decisão, e quem faz essas mudanças?
+      - Quanto tempo depois do fechamento da votação a decisão tem que estar em vigor e os documentos atualizados?
+      - Quando uma proposta é rejeitada, quem a encerra e avisa quem propôs, e até quando? (Onde os registros ficam guardados é uma questão à parte.)
+      - O que acontece se o prazo passa e nada foi feito — quem percebe, e quem assume?
+    examples:
+      - Toda proposta aprovada nomeia uma pessoa responsável por executá-la; se não nomear, o círculo de coordenação nomeia alguém em 7 dias. Essa pessoa atualiza cada acordo afetado e registra a mudança no histórico de versões em até 14 dias do fechamento da votação. Propostas rejeitadas são marcadas como rejeitadas e encerradas pela facilitação em até 7 dias, e quem propôs é informado do motivo. Se um prazo é perdido, a facilitação leva o caso à próxima assembleia geral e uma nova pessoa é designada.
+  governance-protocol.documentation-and-publication:
+    question: Onde uma decisão fica registrada, e quem pode ler depois?
+    prompts:
+      - Quais ações de governança são registradas — propostas aprovadas e rejeitadas, propostas retiradas, votações, nomeações?
+      - O que exatamente conta como registro de uma decisão — a votação encerrada, a ata, o texto final da proposta — e o que ele tem que mostrar?
+      - Em quantos dias após o fechamento da votação o registro é arquivado, e por quem?
+      - Como garantimos que esses registros sigam nossas regras gerais de documentação — o mesmo lugar, formato e nomenclatura dos nossos outros registros?
+      - Quando o histórico de versões é atualizado, e o que diz cada entrada?
+      - Quem pode ler os registros de decisões depois?
+    examples:
+      - Toda proposta, aprovada ou rejeitada, é arquivada na pasta Decisões do nosso drive compartilhado em até 7 dias do fechamento da votação, por quem facilitou a votação. O registro da decisão é a página da votação encerrada com a contagem e o texto final da proposta, com link para a ata de qualquer reunião em que ela foi discutida. Toda proposta aprovada também recebe uma entrada no histórico de versões dizendo o que mudou. Todos os membros podem ler a pasta; nada nela é apagado, e correções são acrescentadas como novas entradas.
+  governance-protocol.appeal-and-review:
+    question: Se alguém acha que uma decisão saiu errada, como consegue que ela seja reexaminada?
+    prompts:
+      - Quem pode pedir que uma decisão seja reexaminada, e em até quanto tempo depois de ela ter sido tomada?
+      - O que o pedido tem que conter — e o que conta como um motivo novo, em vez de simplesmente discordar do resultado?
+      - Quem verifica se um pedido se qualifica, e com que rapidez?
+      - Como a segunda decisão é tomada — com o mesmo mecanismo e limiar da primeira, ou com algo diferente?
+      - A decisão original continua em vigor enquanto está sendo reexaminada?
+      - Como lidamos com pedidos repetidos sobre o mesmo assunto que não trazem nenhum motivo novo?
+    examples:
+      - Qualquer membro pleno pode pedir nova votação em até 30 dias de uma decisão, publicando uma objeção escrita que aponte uma consideração não levantada durante a discussão; discordar do resultado não basta. A facilitação verifica a objeção em até 7 dias e, se ela se qualificar, abre nova votação com o mesmo mecanismo e limiar da original. A decisão continua em vigor nesse meio-tempo. Um novo pedido sobre o mesmo assunto dentro de 12 meses precisa do apoio escrito de cinco membros plenos.
+  governance-protocol.conflict-between-decisions:
+    question: Quando duas das nossas próprias decisões se contradizem, qual delas prevalece?
+    prompts:
+      - Quando decisões de tipos diferentes se contradizem, o tipo maior sempre prevalece?
+      - Quando duas decisões do mesmo tipo se contradizem, a mais recente prevalece — e uma decisão anterior pode se proteger de ser sobreposta, e como?
+      - Quem pode apontar um conflito entre decisões, e onde levanta isso?
+      - Até o conflito ser resolvido, qual decisão seguimos — e como a contradição é eliminada de vez?
+    examples:
+      - 'Um tipo de decisão maior sempre prevalece: uma decisão Constitucional sobre uma Estratégica, e uma Estratégica sobre uma Operacional. Entre duas decisões do mesmo tipo, a mais recente prevalece, a menos que a anterior tenha dito explicitamente que só poderia ser mudada por um tipo maior. Qualquer membro pode sinalizar um conflito no canal de governança; a facilitação confirma em até 7 dias qual decisão se aplica segundo esta regra, e uma proposta para eliminar a contradição vai à próxima assembleia geral.'
+  governance-protocol.safeguards-and-failure-modes:
+    question: O que impede que o poder se concentre em poucas mãos, permite que qualquer pessoa conteste uma decisão com segurança e força uma revisão quando a governança continua falhando?
+    prompts:
+      - O que impede que o poder de decisão se concentre numa pessoa ou num grupo pequeno?
+      - O que impede um veto informal — alguém bloqueando uma decisão fora do processo acordado?
+      - O que impede que um subgrupo capture as decisões, por exemplo aparecendo só quando lhe convém?
+      - O que impede que fundadores ou pessoas há muito tempo em papéis se entrincheirem?
+      - Como qualquer pessoa pode contestar uma decisão sem medo de retaliação?
+      - Qual padrão de falhas força uma revisão formal — e quem a inicia?
+  authority-registry.registered-authorities:
+    question: Quais papéis, círculos ou órgãos têm autoridade aqui — e qual é o escopo, os limites e o mandato de cada um?
+    prompts:
+      - Quais papéis, círculos ou órgãos podem decidir alguma coisa? (Os membros plenos em conjunto são um deles.)
+      - 'Para cada um: o que pode decidir, e onde isso termina?'
+      - 'Para cada um: por quanto tempo detém essa autoridade, e como ela é renovada ou encerrada?'
+      - De onde cada um tira sua autoridade — nunca de antiguidade, propriedade, carisma ou de ter fundado a comunidade?
+      - Que autoridade temporária ou de emergência permitimos, como ela é limitada no tempo, e como é revisada depois?
+    examples:
+      - Os membros plenos em conjunto decidem o que a Matriz de Decisões lhes dá, enquanto forem membros. A pessoa que cuida das finanças paga contas aprovadas e pode gastar até €300 por item dentro do orçamento, por um mandato de dois anos, nomeada por votação. A pessoa que administra a associação conduz entradas e saídas, mas não pode admitir ninguém sozinha. Ninguém tem autoridade por ter fundado a comunidade ou por ser proprietário de terra aqui. Numa emergência, quaisquer duas pessoas responsáveis por uma área podem agir por até 72 horas, e a próxima assembleia geral revisa o que elas fizeram.

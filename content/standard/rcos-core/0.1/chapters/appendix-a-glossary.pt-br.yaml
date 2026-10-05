@@ -14,9 +14,13 @@ terms:
   artifact:
     term: Artefato
     definition: 'Um objeto documentado e versionado (ex.: protocolo, registro, carta) adotado por meio de um processo autorizado e usado para operacionalizar as Camadas do RCOS.'
+    aliases:
+      - artefatos
   authority-boundary:
     term: Limite de Autoridade
     definition: Os limites explícitos dentro dos quais um papel, círculo ou corpo pode tomar decisões ou agir.
+    aliases:
+      - limites de autoridade
   change-protocol:
     term: Protocolo de Mudança
     definition: Um artefato que define como as mudanças são propostas, revisadas, adotadas, publicadas e revertidas, incluindo classificação do tipo de decisão e disposições para emergências.
@@ -35,18 +39,24 @@ terms:
   constitutional-decision:
     term: Decisão Constitucional
     definition: Uma decisão que modifica o propósito, escopo, invariantes ou restrições de identidade da Camada 0, ou o próprio sistema de governança.
+    aliases:
+      - decisões constitucionais
   decision-matrix:
     term: Matriz de Decisões
     definition: Um artefato de governança que mapeia tipos e domínios de decisão para papéis autorizados, mecanismos, limiares e caminhos de escalonamento.
   decision-type:
     term: Tipo de Decisão
     definition: Uma classificação de decisões (Operacionais, Estratégicas, Constitucionais) usada para determinar autoridade e processo.
+    aliases:
+      - tipos de decisão
   due-process:
     term: Devido Processo
     definition: As garantias mínimas de justiça exigidas antes de restringir direitos, aplicar sanções ou acionar separação, incluindo notificação, revisão e caminhos de apelação conforme definido.
   emergency-change:
     term: Mudança de Emergência
     definition: Uma mudança com prazo determinado, decretada sob condições de emergência explicitamente definidas, exigindo revisão posterior e ratificação ou reversão.
+    aliases:
+      - mudanças de emergência
   explicit:
     term: Explícito
     definition: |-
@@ -58,6 +68,8 @@ terms:
   experiment:
     term: Experimento
     definition: Uma mudança com prazo determinado e reversível adotada para aprendizado e avaliação.
+    aliases:
+      - experimentos
   exit-separation-protocol:
     term: Protocolo de Saída e Separação
     definition: Um artefato que define saída voluntária, devido processo para saída forçada e separação de ativos, papéis, acessos e obrigações.
@@ -73,6 +85,8 @@ terms:
   invariant:
     term: Invariante
     definition: Uma restrição inegociável que não pode ser substituída enquanto estiver em vigor.
+    aliases:
+      - invariantes
   layer:
     term: Camada
     definition: Um domínio funcional do RCOS que define um aspecto específico da operação da comunidade.
@@ -85,24 +99,38 @@ terms:
   optional-module:
     term: Módulo Opcional
     definition: Uma extensão específica de domínio que se baseia no RCOS-Core sem alterar suas camadas obrigatórias.
+    aliases:
+      - módulos opcionais
   registry:
     term: Registro (Registry)
     definition: 'Um artefato que mantém um conjunto de entradas autoritativas (ex.: papéis, recursos, estados de associação) com clareza sobre propriedade, regras de atualização e histórico de versões.'
+    aliases:
+      - registros
   reference-implementation:
     term: Implementação de Referência
     definition: Uma comunidade do mundo real que documenta publicamente sua aplicação do RCOS-Core.
+    aliases:
+      - implementações de referência
   role:
     term: Papel
     definition: Um conjunto explicitamente definido de responsabilidades, autoridade e prestação de contas, independente da pessoa que o ocupa.
   safety-critical:
     term: Crítico para a Segurança (Safety-Critical)
     definition: Uma condição em que a segurança física, psicológica ou infantil está em risco, exigindo salvaguardas elevadas e potencialmente ação protetiva imediata.
+    aliases:
+      - crítica para a segurança
+      - críticos para a segurança
+      - críticas para a segurança
   sanction:
     term: Sanção
     definition: Uma restrição ou ação corretiva definida e documentada, aplicada por meio de processo autorizado, proporcional a uma violação e sujeita a revisão.
+    aliases:
+      - sanções
   scope:
     term: Escopo
     definition: Os domínios, ativos e atividades explicitamente declarados sobre os quais a comunidade exerce autoridade.
+    aliases:
+      - escopos
   stewardship:
     term: Zeladoria (Stewardship)
     definition: Responsabilidade pelo cuidado, manutenção e governança de um recurso dentro de limites definidos.
@@ -115,6 +143,8 @@ terms:
   transparency-exception:
     term: Exceção de Transparência
     definition: Uma limitação ao acesso à informação, explicitamente definida, justificada e com prazo determinado, que ainda permite auditoria de conformidade.
+    aliases:
+      - exceções de transparência
   version-history:
     term: Histórico de Versões
     definition: Um artefato que registra qual versão está em vigor e documenta mudanças adotadas, datas de vigência e referências de decisão.

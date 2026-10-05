@@ -13,8 +13,8 @@
  *  5. Translation rules (formerly normalize-rfc-keywords / normalize-terms): no
  *     English RFC 2119 keyword and no "Layer N" left in translated text.
  *  6. Guidance (content/guidance): shape, references, one entry per template
- *     section, and no RFC 2119 keyword in capitals (guidance never adds rules).
- *     Its translations are optional until they are done (plan phase 8).
+ *     section, all four translations, and no normative keyword in capitals in
+ *     any language (guidance never adds rules).
  *
  * Exits 1 on any error, printing all of them.
  */
@@ -35,6 +35,7 @@ import { sectionId } from '../../src/lib/content/template.js';
 import { refTargets, refsIn, resolveRef } from '../../src/lib/content/refs.js';
 import { loadDocuments } from './build-articles.mjs';
 import { loadGuidance } from '../../src/lib/content/load.js';
+import { KEYWORDS } from '../../src/lib/content/tokenize.js';
 
 const ROOT = path.resolve(import.meta.dirname, '../..');
 const LOCALES = ['de', 'es', 'fr', 'pt-br'];
@@ -216,7 +217,9 @@ export async function checkContent(contentDir = path.join(ROOT, 'content')) {
 
 	// --- 5. Translation rules -------------------------------------------------------------------
 	const RFC = /\b(MUST NOT|MUST|SHOULD NOT|SHOULD|MAY|REQUIRED|RECOMMENDED)\b/;
-	const LAYER = /\bLayer \d\b/;
+	// "Layer" anywhere, also in compounds ("Layer-2-Artefakte"); a gloss in
+	// parentheses ("Capa (Layer)") is allowed.
+	const LAYER = /(?<![\p{L}(])Layers?(?![\p{L})])/u;
 	for (const { overlays } of docs) {
 		for (const [locale, o] of Object.entries(overlays)) {
 			for (const [where, value] of strings(o.data)) {
@@ -228,7 +231,7 @@ export async function checkContent(contentDir = path.join(ROOT, 'content')) {
 						`${where}: English RFC 2119 keyword "${RFC.exec(value)?.[0]}" in ${locale} text`
 					);
 				if (LAYER.test(stripCode(value)))
-					err(rel(o.file), `${where}: "${LAYER.exec(value)?.[0]}" not translated`);
+					err(rel(o.file), `${where}: "${LAYER.exec(stripCode(value))?.[0]}" not translated`);
 			}
 		}
 	}
@@ -269,7 +272,20 @@ export async function checkContent(contentDir = path.join(ROOT, 'content')) {
 					rel(file),
 					`${where}: "${RFC_CAPS.exec(value)?.[0]}" in guidance (it explains rules, never adds them)`
 				);
-		for (const o of Object.values(overlays)) {
+		for (const locale of LOCALES) if (!overlays[locale]) err(rel(file), `no ${locale} translation`);
+		for (const [locale, o] of Object.entries(overlays)) {
+			// The same translation rules as the standard, and no normative keywords at all.
+			const caps = new RegExp(
+				`(?<![\\p{L}])(${KEYWORDS[/** @type {keyof typeof KEYWORDS} */ (locale)].map(([k]) => k).join('|')})(?![\\p{L}])`,
+				'u'
+			);
+			for (const [where, value] of strings(o.data)) {
+				if (where === 'sourceHash' || where === 'lang') continue;
+				const found = RFC.exec(value) ?? caps.exec(value);
+				if (found) err(rel(o.file), `${where}: "${found[0]}" in guidance (it never adds rules)`);
+				if (LAYER.test(stripCode(value)))
+					err(rel(o.file), `${where}: "${LAYER.exec(stripCode(value))?.[0]}" not translated`);
+			}
 			const { lang: _l, sourceHash: _h, ...overlay } = o.data;
 			try {
 				if (!isDeepStrictEqual(split(en, merge(en, overlay)) ?? {}, overlay))

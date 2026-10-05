@@ -4,7 +4,7 @@ title: Pruebas de Estrés de RCOS
 parentId: null
 order: 7
 lang: es
-sourceHash: e05e86e3
+sourceHash: fed16d4b
 ---
 
 ## Qué son las Pruebas de Estrés

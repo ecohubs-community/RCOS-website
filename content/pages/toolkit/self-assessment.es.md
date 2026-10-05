@@ -7,7 +7,7 @@ summary: >-
 parentId: 6acbe9a7
 order: 2
 lang: es
-sourceHash: 9c8ba5cc
+sourceHash: a5991441
 ---
 
 A continuación encontrarás las señales de alerta de cada prueba de estrés de la biblioteca. Revísalas y **marca las que te resulten familiares** — las que realmente has visto en tu comunidad, no las que te preocupan en teoría.

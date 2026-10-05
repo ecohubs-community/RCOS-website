@@ -7,7 +7,7 @@ summary: >-
 parentId: 6acbe9a7
 order: 2
 lang: pt-br
-sourceHash: 9c8ba5cc
+sourceHash: a5991441
 ---
 
 Abaixo estão os sinais de alerta de cada teste de estresse da biblioteca. Percorra-os e **marque os que parecem familiares** — aqueles que você realmente viu na sua comunidade, não os que você teme em teoria.

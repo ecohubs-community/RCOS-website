@@ -4,7 +4,7 @@ title: RCOS-Vorlagen
 parentId: null
 order: 4
 lang: de
-sourceHash: 9daa7180
+sourceHash: ea11889c
 ---
 
 ## Was die RCOS-Vorlagen sind

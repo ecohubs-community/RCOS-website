@@ -9,7 +9,7 @@ sections:
     title: Rollen und Verantwortlichkeiten
     blocks:
       7.1.1:
-        text: Alle laufenden Verantwortlichkeiten MUSS expliziten, benannten Rollen zugewiesen werden — nicht impliziten Erwartungen oder informellen Absprachen.
+        text: Alle laufenden Verantwortlichkeiten MÜSSEN expliziten, benannten Rollen zugewiesen werden — nicht impliziten Erwartungen oder informellen Absprachen.
       7.1.2:
         text: 'Die Gemeinschaft MUSS ein **Rollenregister** führen, das mindestens Folgendes enthält:'
         items:
@@ -28,7 +28,7 @@ sections:
       7.1.4:
         text: Keine laufende Verantwortlichkeit KANN ohne eine explizite Rolle bestehen, und keine Person KANN für Verantwortlichkeiten zur Rechenschaft gezogen werden, die nicht formal einer Rolle zugewiesen sind.
       7.1.5:
-        text: Temporäre oder Ad-hoc-Verantwortlichkeiten MUSS explizit zeitlich begrenzt sein und DARF NICHT ohne formale Rollendefinition dauerhaft werden.
+        text: Temporäre oder Ad-hoc-Verantwortlichkeiten MÜSSEN explizit zeitlich begrenzt sein und DÜRFEN NICHT ohne formale Rollendefinition dauerhaft werden.
   '7.2':
     title: Sitzungssystem
     blocks:
@@ -51,7 +51,7 @@ sections:
           - 'Dokumentations- und Veröffentlichungsanforderungen  '
           - 'Anforderungen an die Entscheidungserfassung, wo Entscheidungen getroffen werden  '
       7.2.3:
-        text: Sitzungen DARF NICHT ihren erklärten Entscheidungsumfang überschreiten oder die in Schicht 2 definierten Autoritätsgrenzen umgehen.
+        text: Sitzungen DÜRFEN NICHT ihren erklärten Entscheidungsumfang überschreiten oder die in Schicht 2 definierten Autoritätsgrenzen umgehen.
       7.2.4:
         text: Die Sitzungsbelastung MUSS begrenzt, überwacht und überprüfbar sein, wie in Abschnitt 7.4 definiert.
   '7.3':
@@ -60,29 +60,29 @@ sections:
       7.3.1:
         text: Die Gemeinschaft MUSS explizite Dokumentationsregeln für Entscheidungen, Rollen, Betriebsabläufe und gemeinsame Pflichten definieren.
       7.3.2:
-        text: 'Dokumentationsregeln MUSS mindestens Folgendes festlegen:'
+        text: 'Dokumentationsregeln MÜSSEN mindestens Folgendes festlegen:'
         items:
-          - 'Welche Informationen aufgezeichnet werden MUSS  '
+          - 'Welche Informationen aufgezeichnet werden MÜSSEN  '
           - 'Wo Aufzeichnungen gespeichert werden  '
           - 'Wer Zugang zu welchen Aufzeichnungen hat  '
           - 'Veröffentlichungs- oder Benachrichtigungsfristen (falls vorhanden)  '
           - 'Datenschutzgrenzen und Bedingungen für eingeschränkten Zugang  '
       7.3.3:
-        text: 'Alle Entscheidungen MUSS rückverfolgbar sein auf:'
+        text: 'Alle Entscheidungen MÜSSEN rückverfolgbar sein auf:'
         items:
           - 'Entscheidungstyp und Bereich  '
           - 'Autorisierte Rolle oder Gremium  '
           - 'Entscheidungsmechanismus und Schwellenwert  '
           - 'Erfasstes Ergebnis und Inkrafttreten  '
       7.3.4:
-        text: Kritische Betriebsprozesse MUSS so dokumentiert sein, dass die Kontinuität nicht von implizitem Wissen einzelner Personen abhängt.
+        text: Kritische Betriebsprozesse MÜSSEN so dokumentiert sein, dass die Kontinuität nicht von implizitem Wissen einzelner Personen abhängt.
       7.3.5:
         text: Der Informationsfluss MUSS so gestaltet sein, dass Gatekeeping, Engpässe oder Abhängigkeit von informellen Vermittlern verhindert werden.
   '7.4':
     title: Arbeitsbelastung und Kapazitätsgrenzen
     blocks:
       7.4.1:
-        text: Zeit, Aufmerksamkeit, Koordinationskapazität und emotionale Arbeit MUSS als endliche und begrenzte Ressourcen behandelt werden.
+        text: Zeit, Aufmerksamkeit, Koordinationskapazität und emotionale Arbeit MÜSSEN als endliche und begrenzte Ressourcen behandelt werden.
       7.4.2:
         text: 'Die Gemeinschaft MUSS explizite Belastungsgrenzen definieren, darunter:'
         items:
@@ -91,7 +91,7 @@ sections:
           - 'Erwartungen an Reaktionszeiten und Verfügbarkeit (falls vorhanden)  '
           - 'Mechanismen für Neuverhandlung, Entlastung, Vertretung oder Umverteilung  '
       7.4.3:
-        text: Belastungsgrenzen MUSS durch einen autorisierten Governance-Prozess überprüfbar und anpassbar sein.
+        text: Belastungsgrenzen MÜSSEN durch einen autorisierten Governance-Prozess überprüfbar und anpassbar sein.
       7.4.4:
         text: Anhaltende Überlastung, Burnout-Risiko, chronische Nicht-Teilnahme oder Abhängigkeit von übermäßig engagierten Einzelpersonen MUSS Überprüfungs- oder Reparaturprozesse auslösen, wie in Schicht 4 definiert.
   '7.5':
@@ -100,7 +100,7 @@ sections:
       7.5.1:
         text: Die Gemeinschaft MUSS sicherstellen, dass keine einzelne Person ein kritischer Single Point of Failure für den Kernbetrieb ist.
       7.5.2:
-        text: 'Zentrale Betriebsrollen und -prozesse MUSS Folgendes beinhalten:'
+        text: 'Zentrale Betriebsrollen und -prozesse MÜSSEN Folgendes beinhalten:'
         items:
           - 'Dokumentierte Verfahren  '
           - 'Klare Übergabemechanismen  '
@@ -117,7 +117,7 @@ sections:
           - 'Rollenregister  '
           - 'Sitzungsvorlagen  '
       7.6.2:
-        text: 'Artefakte von Schicht 5 MUSS:'
+        text: 'Artefakte von Schicht 5 MÜSSEN:'
         items:
           - 'Explizit und eindeutig sein  '
           - 'Versioniert sein  '
@@ -130,22 +130,22 @@ sections:
           - 'Schnittstellen zwischen Rollen, Bereichen und Sitzungstypen  '
           - 'Dokumentationsstandorte und Aktualisierungsverfahren  '
       7.6.4:
-        text: 'Sitzungsvorlagen MUSS mindestens Folgendes definieren:'
+        text: 'Sitzungsvorlagen MÜSSEN mindestens Folgendes definieren:'
         items:
           - 'Tagesordnungsstruktur  '
           - 'Protokoll- und Aufzeichnungsformat  '
           - 'Entscheidungserfassungsformat, wo zutreffend  '
   '7.7':
-    title: Layer-Invarianten
+    title: Schicht-Invarianten
     blocks:
       7.7.1:
-        text: Laufende Verantwortlichkeiten DARF NICHT ohne eine explizite Rolle bestehen.
+        text: Laufende Verantwortlichkeiten DÜRFEN NICHT ohne eine explizite Rolle bestehen.
       7.7.2:
-        text: Kritische Betriebsprozesse DARF NICHT ausschließlich auf individuellem Gedächtnis, gutem Willen oder informeller Weitergabe beruhen.
+        text: Kritische Betriebsprozesse DÜRFEN NICHT ausschließlich auf individuellem Gedächtnis, gutem Willen oder informeller Weitergabe beruhen.
       7.7.3:
-        text: Sitzungsbelastung, Koordinationsaufwand und unbezahlte oder unsichtbare Arbeit MUSS begrenzt und überprüfbar sein.
+        text: Sitzungsbelastung, Koordinationsaufwand und unbezahlte oder unsichtbare Arbeit MÜSSEN begrenzt und überprüfbar sein.
       7.7.4:
-        text: Regeln für den Informationszugang MUSS explizit und durchsetzbar sein.
+        text: Regeln für den Informationszugang MÜSSEN explizit und durchsetzbar sein.
   '7.8':
     title: Explizierungsregeln
     blocks:

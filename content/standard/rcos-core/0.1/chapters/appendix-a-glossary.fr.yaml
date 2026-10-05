@@ -14,9 +14,13 @@ terms:
   artifact:
     term: Artéfact
     definition: Un objet documenté et versionné (par ex. protocole, registre, charte) adopté par un processus autorisé et utilisé pour opérationnaliser les couches RCOS.
+    aliases:
+      - artéfacts
   authority-boundary:
     term: Limite d'autorité
     definition: Les limites explicites dans lesquelles un rôle, un cercle ou un organe peut prendre des décisions ou agir.
+    aliases:
+      - limites d'autorité
   change-protocol:
     term: Protocole de changement
     definition: Un artéfact définissant comment les changements sont proposés, examinés, adoptés, publiés et annulés, y compris la classification des types de décision et les dispositions d'urgence.
@@ -35,18 +39,24 @@ terms:
   constitutional-decision:
     term: Décision constitutionnelle
     definition: Une décision qui modifie l'objectif, le périmètre, les invariants ou les contraintes d'identité de la Couche 0, ou le système de gouvernance lui-même.
+    aliases:
+      - décisions constitutionnelles
   decision-matrix:
     term: Matrice de décision
     definition: Un artéfact de gouvernance associant les types et domaines de décision aux rôles autorisés, mécanismes, seuils et voies d'escalade.
   decision-type:
     term: Type de décision
     definition: Une classification des décisions (opérationnelle, stratégique, constitutionnelle) utilisée pour déterminer l'autorité et le processus.
+    aliases:
+      - types de décision
   due-process:
     term: Procédure régulière (Due Process)
     definition: Les garanties minimales d'équité requises avant de restreindre des droits, d'appliquer des sanctions ou de déclencher une séparation, y compris les voies de notification, de revue et d'appel telles que définies.
   emergency-change:
     term: Changement d'urgence
     definition: Un changement limité dans le temps, adopté dans des conditions d'urgence explicitement définies, nécessitant une revue a posteriori et une ratification ou une annulation.
+    aliases:
+      - changements d'urgence
   explicit:
     term: Explicite
     definition: |-
@@ -58,6 +68,8 @@ terms:
   experiment:
     term: Expérimentation
     definition: Un changement limité dans le temps, réversible, adopté à des fins d'apprentissage et d'évaluation.
+    aliases:
+      - expérimentations
   exit-separation-protocol:
     term: Protocole de sortie et de séparation
     definition: Un artéfact définissant la sortie volontaire, la procédure régulière de sortie forcée, et la séparation des actifs, rôles, accès et obligations.
@@ -73,6 +85,8 @@ terms:
   invariant:
     term: Invariant
     definition: Une contrainte non négociable qui ne PEUT pas être outrepassée tant qu'elle est en vigueur.
+    aliases:
+      - invariants
   layer:
     term: Couche
     definition: Un domaine fonctionnel de RCOS qui définit un aspect spécifique du fonctionnement de la communauté.
@@ -85,24 +99,36 @@ terms:
   optional-module:
     term: Module optionnel
     definition: Une extension spécifique à un domaine qui s'appuie sur RCOS-Core sans modifier ses couches obligatoires.
+    aliases:
+      - modules optionnels
   registry:
     term: Registre
     definition: Un artéfact qui enregistre un ensemble d'entrées faisant autorité (par ex. rôles, ressources, statuts d'adhésion) avec une propriété claire, des règles de mise à jour et un historique de versions.
+    aliases:
+      - registres
   reference-implementation:
     term: Implémentation de référence
     definition: Une communauté réelle qui documente publiquement son application de RCOS-Core.
+    aliases:
+      - implémentations de référence
   role:
     term: Rôle
     definition: Un ensemble explicitement défini de responsabilités, d'autorité et de redevabilité, indépendant de la personne qui l'occupe.
   safety-critical:
     term: Critique pour la sécurité
     definition: Une situation dans laquelle la sécurité physique, psychologique ou celle des enfants est en danger, nécessitant des garanties renforcées et potentiellement une action protectrice immédiate.
+    aliases:
+      - critiques pour la sécurité
   sanction:
     term: Sanction
     definition: Une restriction ou action corrective définie et documentée, appliquée par un processus autorisé, proportionnée à une violation et soumise à revue.
+    aliases:
+      - sanctions
   scope:
     term: Périmètre
     definition: Les domaines, actifs et activités explicitement déclarés sur lesquels la communauté exerce son autorité.
+    aliases:
+      - périmètres
   stewardship:
     term: Intendance
     definition: La responsabilité du soin, de la maintenance et de la gouvernance d'une ressource dans des limites définies.
@@ -115,6 +141,8 @@ terms:
   transparency-exception:
     term: Exception de transparence
     definition: Une limitation explicitement définie, justifiée et limitée dans le temps de l'accès à l'information, qui permet néanmoins l'audit de conformité.
+    aliases:
+      - exceptions de transparence
   version-history:
     term: Historique de versions
     definition: Un artéfact enregistrant quelle version est en vigueur et documentant les changements adoptés, les dates d'entrée en vigueur et les références de décision.

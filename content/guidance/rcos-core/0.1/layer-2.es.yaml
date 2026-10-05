@@ -1,0 +1,179 @@
+lang: es
+sourceHash: cd25f3f7
+sections:
+  '4.1':
+    inShort: Toda decisión colectiva es operativa, estratégica o constitucional, y el tipo determina cómo se toma.
+    questions:
+      unclear-type:
+        question: ¿Y si no sabemos de qué tipo es una decisión?
+        answer: Trátala como la del tipo de mayor impacto. Así una decisión grande nunca puede colarse como si fuera pequeña.
+      constitutional-examples:
+        question: ¿Qué decisiones son constitucionales?
+        answer: Los cambios en la Capa 0 (propósito, alcance, invariantes) y en el propio sistema de gobernanza.
+  '4.2':
+    inShort: Para cada tipo de decisión, escribe quién decide, cómo, con qué umbral, quién puede bloquearla y cuánto tiempo lleva.
+    questions:
+      which-method:
+        question: ¿RCOS prescribe consenso, consentimiento o votación?
+        answer: No. Vosotras elegís el mecanismo para cada tipo de decisión; RCOS solo pide que sea explícito y completo.
+      quick-chat:
+        question: ¿Pueden unas pocas personas resolver algo informalmente para ahorrar tiempo?
+        answer: No para decisiones colectivas. Si algo debe ir rápido, define un mecanismo rápido, como una autoridad delegada, y úsalo abiertamente.
+  '4.3':
+    inShort: La autoridad reside en roles y órganos nombrados, cada uno con un alcance, unos límites y un mandato escritos. Nunca proviene del carisma, la antigüedad o la propiedad.
+    questions:
+      founder-authority:
+        question: Nuestra persona fundadora siempre ha tenido la última palabra. ¿Eso está permitido?
+        answer: Solo si está escrito como un rol con un alcance, unos límites y un mandato definidos. La autoridad no puede derivarse de haber fundado la comunidad, de la antigüedad ni de la influencia informal.
+      emergency-authority:
+        question: ¿Puede alguien tomar el mando en una emergencia?
+        answer: Sí, si la autoridad de emergencia está definida de forma explícita, acotada en el tiempo y revisada después.
+  '4.4':
+    inShort: La Matriz de Decisiones es el mapa de quién decide qué y cómo. Una decisión tomada fuera de ella no es válida.
+    questions:
+      matrix-contents:
+        question: ¿Qué recoge la Matriz de Decisiones?
+        answer: Para cada decisión, su tipo, su ámbito, el rol u órgano autorizado, el mecanismo, el umbral de aprobación y la vía de escalamiento.
+      outside-matrix:
+        question: ¿Qué pasa con una decisión tomada fuera de la matriz?
+        answer: Se considera inválida.
+  '4.5':
+    inShort: El Protocolo de Gobernanza describe toda la vida de una decisión, desde la propuesta hasta la deliberación, la ejecución, el registro y la apelación.
+    questions:
+      conflicting-decisions:
+        question: ¿Y si dos decisiones se contradicen?
+        answer: El Protocolo de Gobernanza tiene que decir cómo se resuelven esos conflictos, para que no lo zanje quien actúe primero.
+      recording:
+        question: ¿Dónde se registran las acciones de gobernanza?
+        answer: Según las reglas de documentación de la Capa 5.
+  '4.6':
+    inShort: Incorpora protección frente a las formas en que la gobernanza suele fallar, como la concentración de poder, los vetos informales, la captura por un subgrupo y el atrincheramiento de las personas fundadoras.
+    questions:
+      challenge-safely:
+        question: ¿Pueden los miembros impugnar una decisión sin poner en riesgo su posición?
+        answer: Sí. Los mecanismos de gobernanza tienen que permitir la impugnación y la revisión sin represalias.
+      repeated-failure:
+        question: ¿Y si la gobernanza falla una y otra vez de la misma manera?
+        answer: Los fallos persistentes activan una revisión formal o un proceso constitucional, no simplemente otro intento.
+  '4.7':
+    inShort: La Capa 2 vive en tres documentos, la Matriz de Decisiones, el Protocolo de Gobernanza y el Registro de Autoridad, todos explícitos, versionados y abiertos a los miembros.
+    questions:
+      which-documents:
+        question: ¿Qué documentos necesita la Capa 2?
+        answer: Una Matriz de Decisiones, un Protocolo de Gobernanza y un Registro de Autoridad.
+templates:
+  decision-matrix.voting-principles:
+    question: Para cada tipo de decisión, ¿quién tiene voz, qué cuenta como acuerdo, quién puede bloquearla y cuánto tiempo permanece abierta?
+    prompts:
+      - 'Para cada tipo de decisión: ¿qué mecanismo usamos — consentimiento, voto por mayoría, mayoría cualificada, delegarla en quien ocupa un rol, o rotación o sorteo?'
+      - 'Para cada mecanismo: ¿quién puede participar y qué cuenta como acuerdo — una proporción de votos, un quórum, o que no queden objeciones?'
+      - ¿Puede alguien bloquear o vetar una decisión, y con qué fundamentos — o no existe bloqueo alguno?
+      - ¿Cuánto tiempo permanece abierta cada decisión, y qué pasa en caso de empate o cuando se agota el plazo sin resultado?
+      - ¿Dónde se decide — en una reunión, en una herramienta en línea, o en ambas?
+      - ¿Hasta qué importe o alcance puede decidir sola la persona que ocupa un rol, sin votación?
+    examples:
+      - 'Las decisiones operativas las toma la persona titular del rol correspondiente, que puede gastar hasta 300 € por concepto sin votación. Las decisiones estratégicas usan consentimiento: todo miembro de pleno derecho puede participar, y una propuesta se aprueba cuando no queda ninguna objeción razonada tras una ronda de 14 días. Solo puede bloquear una objeción que muestre cómo la propuesta daña nuestro propósito. Las decisiones constitucionales usan el mismo proceso de consentimiento con una ronda de 30 días. Si al cerrarse la ronda sigue abierta una objeción, la propuesta decae y se mantiene la regla vigente.'
+      - Las decisiones estratégicas se toman por voto por mayoría de los miembros de pleno derecho en nuestra herramienta de votación, abierta 7 días, con la participación de al menos la mitad de todos los miembros de pleno derecho. Las decisiones constitucionales necesitan dos tercios de todos los miembros de pleno derecho, con la votación abierta 14 días. Nadie tiene derecho de veto. Un empate, o una participación insuficiente, significa que la propuesta decae y nada cambia. Las personas coordinadoras pueden gastar hasta 500 € dentro de su área sin votación.
+  decision-matrix.matrix:
+    question: ¿Qué decisiones corresponden a quién — en una sola tabla que podamos señalar en medio de una discusión?
+    prompts:
+      - 'Para cada ámbito sobre el que decidimos (membresía, dinero, tierra y edificios, alianzas, nuestras propias reglas): ¿de qué tipo de decisión se trata y qué rol u órgano decide?'
+      - 'Para cada fila: ¿qué mecanismo y qué umbral de aprobación se aplican?'
+      - 'Para cada fila: ¿adónde va si el rol u órgano que decide no logra ponerse de acuerdo, tiene un conflicto de interés o el asunto excede su límite?'
+      - ¿Dónde se guarda la matriz para que cualquier miembro pueda leerla en todo momento, y cómo avisamos a los miembros cuando cambia?
+      - ¿Qué pasa con una decisión que alguien tomó fuera de la matriz — quién puede señalarlo y cómo se deshace?
+    examples:
+      - 'La admisión de miembros es Estratégica: el círculo de miembros decide por consentimiento tras una ronda de 14 días, y escala a la asamblea general si no logra acuerdo. El gasto por debajo de 500 € es Operativo y lo decide sola la tesorería; por encima de esa cifra es Estratégico y necesita un voto de dos tercios, escalando a la asamblea general. Los cambios en nuestro propósito o en nuestra gobernanza son Constitucionales y necesitan un voto de tres cuartos tras 30 días. La matriz está fijada en el manual de miembros, y una decisión tomada fuera de ella no tiene efecto hasta que se vuelve a tomar por la fila correcta.'
+  decision-matrix.decision-type-definitions:
+    question: ¿Qué tipos de decisión tomamos y cómo distinguimos una grande de una pequeña?
+    prompts:
+      - ¿Qué cuenta como decisión Operativa para nosotras — el trabajo del día a día dentro de reglas que ya tenemos? Nombra dos o tres casos reales.
+      - ¿Qué cuenta como Estratégica — la dirección a largo plazo, un gasto grande, abrir o cerrar un grupo importante? ¿Dónde está exactamente la línea, por ejemplo un importe de dinero?
+      - ¿Qué cuenta como Constitucional — cambios en nuestro propósito, nuestro alcance, nuestros compromisos fundamentales o en cómo nos gobernamos?
+      - 'Para cada tipo: ¿quién lleva a cabo la decisión, y hace falta una propuesta y una votación o no? (Los umbrales exactos son otra pregunta aparte.)'
+      - ¿Cómo nos aseguramos de que cada decisión colectiva caiga en exactamente un tipo — y de que, cuando podría encajar en dos, se trate como la mayor?
+      - ¿Quién resuelve una disputa sobre de qué tipo es una decisión?
+    examples:
+      - Las decisiones operativas mantienen las cosas en marcha dentro de las reglas existentes — comprar semillas, programar jornadas de trabajo, reparar la bomba — y las toma sola la persona titular del rol a cargo. Las decisiones estratégicas marcan la dirección para un año o más, gastan más de 1.000 € o crean o cierran un grupo de trabajo; necesitan un voto de los miembros tras la deliberación. Las decisiones constitucionales cambian nuestro propósito, nuestros compromisos fundamentales o cómo nos gobernamos; necesitan una mayoría cualificada y un periodo de ratificación. Si alguien duda de qué tipo es una decisión, se trata como la del tipo superior.
+  governance-protocol.proposal-submission:
+    question: ¿Cómo pone alguien una propuesta ante nosotras y qué tiene que incluir?
+    prompts:
+      - ¿Qué decisiones necesitan realmente una propuesta escrita y cuáles puede tomar sin más la persona titular de un rol?
+      - ¿Quién puede presentar una propuesta y dónde se entrega para que todo el mundo pueda verla?
+      - ¿Qué debe contener toda propuesta — por ejemplo un resumen, el tipo de decisión, qué cambia, los motivos, los riesgos y cómo deshacerla?
+      - ¿Quién declara el tipo de decisión de una propuesta cuando se presenta? (Cómo se zanja una disputa sobre el tipo es otra pregunta aparte.)
+      - ¿Cuándo puede retirar su propuesta quien la presenta, y cómo?
+      - En conjunto con los pasos que vienen después, ¿nuestro proceso acompaña una propuesta hasta el final — presentación, deliberación, decisión, ejecución, registro y apelación — sin que falte ningún paso?
+    examples:
+      - Cualquier miembro de pleno derecho puede presentar una propuesta Estratégica o Constitucional publicándola en la sección Propuestas de nuestro foro con la plantilla compartida. Cada propuesta indica un resumen, su tipo de decisión, los acuerdos que modifica, los motivos, los riesgos y cómo revertirla, y una fecha de inicio propuesta. Quien propone declara el tipo; cualquier miembro puede pedir uno superior, y la duda se resuelve hacia arriba. Quien propone puede retirar la propuesta en cualquier momento antes de que se abra la votación. Las decisiones operativas no necesitan propuesta.
+  governance-protocol.review-and-deliberation:
+    question: ¿Cuánto tiempo reposamos una propuesta antes de decidir, y a quién hay que escuchar primero?
+    prompts:
+      - ¿Dónde se discute una propuesta — en un hilo del foro, en una reunión o en ambos — y cómo participan los miembros que se pierden una reunión?
+      - ¿Cuánto tiempo debe permanecer abierta a discusión una propuesta Estratégica antes de que pueda empezar la votación?
+      - ¿Cuánto tiempo debe permanecer abierta una propuesta Constitucional antes de que pueda empezar la votación?
+      - ¿A quién hay que escuchar antes de abrir la votación — por ejemplo a las personas más afectadas o a quien tendría que ejecutar la decisión?
+      - ¿Puede quien propone modificar la propuesta durante la discusión, y un cambio reinicia el plazo?
+      - ¿Cómo animamos a los miembros a plantear sus inquietudes ahora, y no después de la votación? (Reabrir una decisión es otra pregunta aparte.)
+    examples:
+      - La discusión ocurre en el hilo del foro de la propuesta y en al menos una asamblea general, con notas publicadas para quien no haya podido asistir. Una propuesta Estratégica permanece abierta al menos 14 días y una Constitucional al menos 30 días antes de que pueda empezar la votación. Quien propone debe invitar a comentar al grupo de trabajo más afectado. Un cambio sustancial en la propuesta reinicia el plazo mínimo. Se espera que los miembros planteen sus inquietudes durante esa ventana, no después de la votación.
+  governance-protocol.decision-execution:
+    question: Una vez que hemos decidido algo, ¿quién lo ejecuta y para cuándo?
+    prompts:
+      - Cuando una propuesta se aprueba, ¿quién es responsable de ejecutarla — quien la propuso, un rol nombrado o un grupo de trabajo?
+      - ¿Cuáles de nuestros acuerdos y documentos hay que cambiar para que coincidan con la decisión, y quién hace esos cambios?
+      - ¿Cuánto tiempo después del cierre de la votación debe estar en vigor la decisión y actualizados los documentos?
+      - Cuando una propuesta se rechaza, ¿quién la cierra y avisa a quien la propuso, y para cuándo? (Dónde se guardan los registros es otra pregunta aparte.)
+      - ¿Qué pasa si vence el plazo y no se ha hecho nada — quién se da cuenta y quién toma el relevo?
+    examples:
+      - Toda propuesta aprobada nombra a una persona responsable de ejecutarla; si no lo hace, el círculo de coordinación nombra a alguien en un plazo de 7 días. Esa persona actualiza cada acuerdo afectado y anota el cambio en el historial de versiones dentro de los 14 días siguientes al cierre de la votación. Las propuestas rechazadas las marca como rechazadas y las cierra la persona facilitadora en un plazo de 7 días, y se le explica el motivo a quien propuso. Si se incumple un plazo, la persona facilitadora lo plantea en la siguiente asamblea general y se asigna a otra persona.
+  governance-protocol.documentation-and-publication:
+    question: ¿Dónde queda escrita una decisión y quién puede leerla después?
+    prompts:
+      - ¿Qué acciones de gobernanza se registran — propuestas aprobadas y rechazadas, propuestas retiradas, votaciones, nombramientos?
+      - ¿Qué cuenta exactamente como registro de una decisión — la votación cerrada, el acta, el texto final de la propuesta — y qué debe mostrar?
+      - ¿En cuántos días desde el cierre de la votación se archiva el registro, y quién lo hace?
+      - ¿Cómo nos aseguramos de que estos registros sigan nuestras reglas generales de documentación — el mismo lugar, formato y nomenclatura que el resto de nuestros registros?
+      - ¿Cuándo se actualiza el historial de versiones y qué dice cada entrada?
+      - ¿Quién puede leer después los registros de decisiones?
+    examples:
+      - Toda propuesta, aprobada o rechazada, se archiva en la carpeta Decisiones de nuestra unidad compartida dentro de los 7 días siguientes al cierre de la votación, a cargo de la persona facilitadora que condujo la votación. El registro de la decisión es la página de la votación cerrada con el recuento y el texto final de la propuesta, enlazada al acta de cualquier reunión en la que se discutiera. Toda propuesta aprobada recibe además una entrada en el historial de versiones que dice qué cambió. Todos los miembros pueden leer la carpeta; no se borra nada de ella, y las correcciones se añaden como entradas nuevas.
+  governance-protocol.appeal-and-review:
+    question: Si alguien cree que una decisión salió mal, ¿cómo consigue que se revise?
+    prompts:
+      - ¿Quién puede pedir que se revise una decisión, y dentro de cuánto tiempo desde que se tomó?
+      - ¿Qué debe contener la solicitud — y qué cuenta como un motivo nuevo en lugar de un simple desacuerdo con el resultado?
+      - ¿Quién comprueba si una solicitud cumple los requisitos, y con qué rapidez?
+      - ¿Cómo se toma la segunda decisión — con el mismo mecanismo y umbral que la primera, o con otros distintos?
+      - ¿La decisión original sigue en vigor mientras se revisa?
+      - ¿Cómo gestionamos las solicitudes repetidas sobre el mismo asunto que no aportan motivos nuevos?
+    examples:
+      - Cualquier miembro de pleno derecho puede pedir una nueva votación dentro de los 30 días siguientes a una decisión publicando una objeción escrita que señale una consideración no planteada durante la discusión; no basta con estar en desacuerdo con el resultado. Las personas facilitadoras revisan la objeción en un plazo de 7 días y, si cumple los requisitos, abren una nueva votación con el mismo mecanismo y umbral que la original. Mientras tanto, la decisión sigue en vigor. Una solicitud posterior sobre el mismo asunto dentro de los 12 meses necesita el apoyo escrito de cinco miembros de pleno derecho.
+  governance-protocol.conflict-between-decisions:
+    question: Cuando dos de nuestras propias decisiones se contradicen, ¿cuál prevalece?
+    prompts:
+      - Cuando se contradicen decisiones de tipos distintos, ¿prevalece siempre el tipo superior?
+      - Cuando se contradicen dos decisiones del mismo tipo, ¿prevalece la más reciente — y puede una decisión anterior protegerse de ser anulada, y cómo?
+      - ¿Quién puede señalar un conflicto entre decisiones y dónde lo plantea?
+      - Hasta que se resuelva el conflicto, ¿qué decisión seguimos — y cómo se elimina la contradicción de forma definitiva?
+    examples:
+      - 'Un tipo de decisión superior prevalece siempre: una decisión Constitucional sobre una Estratégica, y una Estratégica sobre una Operativa. Entre dos decisiones del mismo tipo prevalece la más reciente, salvo que la anterior dijera explícitamente que solo podía modificarse mediante un tipo superior. Cualquier miembro puede señalar un conflicto en el canal de gobernanza; las personas facilitadoras confirman en un plazo de 7 días qué decisión se aplica según esta regla, y una propuesta para eliminar la contradicción va a la siguiente asamblea general.'
+  governance-protocol.safeguards-and-failure-modes:
+    question: ¿Qué impide que el poder se concentre en unas pocas manos, permite que cualquiera impugne una decisión con seguridad y obliga a una revisión cuando la gobernanza falla una y otra vez?
+    prompts:
+      - ¿Qué impide que el poder de decisión se concentre en una persona o en un grupo pequeño?
+      - ¿Qué impide un veto informal — que alguien bloquee una decisión fuera del proceso acordado?
+      - ¿Qué impide que un subgrupo capture las decisiones, por ejemplo apareciendo solo cuando le conviene?
+      - ¿Qué impide que las personas fundadoras o quienes llevan mucho tiempo en un rol se atrincheren?
+      - ¿Cómo puede cualquiera impugnar una decisión sin miedo a represalias?
+      - ¿Qué patrón de fallos obliga a una revisión formal — y quién la inicia?
+  authority-registry.registered-authorities:
+    question: ¿Qué roles, círculos u órganos tienen autoridad aquí — y cuál es el alcance, los límites y el mandato de cada uno?
+    prompts:
+      - ¿Qué roles, círculos u órganos pueden decidir algo? (Los miembros de pleno derecho en conjunto son uno de ellos.)
+      - 'Para cada uno: ¿qué puede decidir y dónde se detiene eso?'
+      - 'Para cada uno: ¿durante cuánto tiempo tiene esa autoridad, y cómo se renueva o se termina?'
+      - ¿De dónde saca cada uno su autoridad — nunca de la antigüedad, la propiedad, el carisma ni de haber fundado la comunidad?
+      - ¿Qué autoridad temporal o de emergencia permitimos, cómo se acota en el tiempo y cómo se revisa después?
+    examples:
+      - Los miembros de pleno derecho en conjunto deciden lo que les otorga la Matriz de Decisiones, mientras sean miembros. La persona responsable de finanzas paga las facturas aprobadas y puede gastar hasta 300 € por concepto dentro del presupuesto, con un mandato de dos años y nombrada por votación. La persona encargada de membresía gestiona las incorporaciones y las salidas, pero no puede admitir a nadie por sí sola. Nadie tiene autoridad por haber fundado la comunidad o por poseer tierra aquí. En una emergencia, dos personas responsables cualesquiera pueden actuar durante un máximo de 72 horas, y la siguiente asamblea general revisa lo que hicieron.

@@ -7,7 +7,7 @@ summary: >-
 parentId: 6acbe9a7
 order: 1
 lang: de
-sourceHash: bc1902a5
+sourceHash: 6d391b8c
 ---
 
 Ein Stresstest ist am nützlichsten, wenn eine Gemeinschaft ihn *gemeinsam* und laut durchführt, statt dass eine Person ihn allein liest. Dieser Leitfaden macht aus jedem Test der Bibliothek eine strukturierte Sitzung. Er funktioniert für eine sich bildende Gruppe, die Probleme antizipiert, oder für eine etablierte, die prüft, wo sie tatsächlich steht.

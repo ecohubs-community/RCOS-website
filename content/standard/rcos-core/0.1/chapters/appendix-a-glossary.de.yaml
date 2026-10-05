@@ -8,21 +8,32 @@ terms:
   accountability:
     term: Rechenschaftspflicht
     definition: Die Erwartung, dass Rollen und Mitglieder aufgefordert werden können, Handlungen, Ergebnisse und die Einhaltung vereinbarter Regeln zu erklären, mit definierten Überprüfungs- und Korrekturmechanismen.
+    aliases:
+      - Rechenschaft
   accountability-protocol:
     term: Rechenschaftsprotokoll
     definition: Ein Artefakt, das festlegt, wie Verstöße, Schäden oder wiederholte Fehler überprüft, dokumentiert und behandelt werden, einschließlich ordentlichem Verfahren, Schutzmaßnahmen und Eskalationspfaden.
   artifact:
     term: Artefakt
     definition: Ein dokumentiertes, versioniertes Objekt (z. B. Protokoll, Register, Satzung), das durch einen autorisierten Prozess beschlossen und zur Operationalisierung von RCOS-Schichten verwendet wird.
+    aliases:
+      - Artefakte
+      - Artefakten
+      - Artefakts
   authority-boundary:
     term: Kompetenzgrenze
     definition: Die expliziten Grenzen, innerhalb derer eine Rolle, ein Kreis oder ein Gremium Entscheidungen treffen oder handeln darf.
+    aliases:
+      - Kompetenzgrenzen
   change-protocol:
     term: Änderungsprotokoll
     definition: Ein Artefakt, das festlegt, wie Änderungen vorgeschlagen, überprüft, beschlossen, veröffentlicht und zurückgerollt werden, einschließlich der Klassifizierung von Entscheidungstypen und Notfallregelungen.
   commons:
     term: Gemeingüter
     definition: Ressourcen, die kollektiv unter expliziten Verwaltungs-, Zugangs- und Entscheidungsregeln geführt werden.
+    aliases:
+      - Gemeingut
+      - Gemeingütern
   community:
     term: Gemeinschaft
     definition: Eine Gruppe von Menschen, die sich freiwillig um einen gemeinsamen Zweck innerhalb eines definierten Geltungsbereichs und Governance-Systems koordinieren.
@@ -35,18 +46,31 @@ terms:
   constitutional-decision:
     term: Konstitutionelle Entscheidung
     definition: Eine Entscheidung, die den Zweck, den Geltungsbereich, die Invarianten oder Identitätsbeschränkungen von Schicht 0 oder das Governance-System selbst verändert.
+    aliases:
+      - konstitutionelle Entscheidungen
+      - konstitutionellen Entscheidung
+      - konstitutionellen Entscheidungen
   decision-matrix:
     term: Entscheidungsmatrix
     definition: Ein Governance-Artefakt, das Entscheidungstypen und -domänen autorisierten Rollen, Mechanismen, Schwellenwerten und Eskalationspfaden zuordnet.
   decision-type:
     term: Entscheidungstyp
     definition: Eine Klassifizierung von Entscheidungen (Operativ, Strategisch, Konstitutionell), die zur Bestimmung von Zuständigkeit und Prozess verwendet wird.
+    aliases:
+      - Entscheidungstypen
+      - Entscheidungstyps
   due-process:
     term: Ordentliches Verfahren
     definition: Die Mindestgarantien für Fairness, die erforderlich sind, bevor Rechte eingeschränkt, Sanktionen verhängt oder eine Trennung ausgelöst wird, einschließlich Benachrichtigung, Überprüfung und Rechtsmittelpfaden wie definiert.
+    aliases:
+      - ordentlichen Verfahren
+      - ordnungsgemäßes Verfahren
+      - ordnungsgemäßen Verfahren
   emergency-change:
     term: Notfalländerung
     definition: Eine zeitlich begrenzte Änderung, die unter explizit definierten Notfallbedingungen umgesetzt wird und eine nachträgliche Überprüfung und Ratifizierung oder Rücknahme erfordert.
+    aliases:
+      - Notfalländerungen
   explicit:
     term: Explizit
     definition: |-
@@ -58,6 +82,10 @@ terms:
   experiment:
     term: Experiment
     definition: Eine zeitlich begrenzte, reversible Änderung, die zu Lern- und Auswertungszwecken beschlossen wird.
+    aliases:
+      - Experimente
+      - Experimenten
+      - Experiments
   exit-separation-protocol:
     term: Austritts- und Trennungsprotokoll
     definition: Ein Artefakt, das freiwilligen Austritt, ordentliches Verfahren bei erzwungenem Austritt sowie die Trennung von Ressourcen, Rollen, Zugängen und Verpflichtungen definiert.
@@ -73,6 +101,8 @@ terms:
   invariant:
     term: Invariante
     definition: Eine nicht verhandelbare Bedingung, die nicht außer Kraft gesetzt werden kann, solange sie gilt.
+    aliases:
+      - Invarianten
   layer:
     term: Schicht
     definition: Ein funktionaler Bereich von RCOS, der einen bestimmten Aspekt des Gemeinschaftsbetriebs definiert.
@@ -85,36 +115,60 @@ terms:
   optional-module:
     term: Optionales Modul
     definition: Eine domänenspezifische Erweiterung, die auf RCOS-Core aufbaut, ohne dessen Pflichtschichten zu verändern.
+    aliases:
+      - optionale Module
+      - optionalen Module
+      - optionalen Modulen
+      - optionalen Moduls
   registry:
     term: Register
     definition: Ein Artefakt, das eine Menge autoritativer Einträge (z. B. Rollen, Ressourcen, Mitgliedschaftszustände) mit klarer Zuständigkeit, Aktualisierungsregeln und Versionshistorie erfasst.
+    aliases:
+      - Registers
+      - Registern
   reference-implementation:
     term: Referenzimplementierung
     definition: Eine reale Gemeinschaft, die ihre Anwendung von RCOS-Core öffentlich dokumentiert.
+    aliases:
+      - Referenzimplementierungen
   role:
     term: Rolle
     definition: Ein explizit definiertes Bündel aus Verantwortlichkeiten, Befugnissen und Rechenschaftspflicht, unabhängig von der Person, die sie innehat.
   safety-critical:
     term: Sicherheitskritisch
     definition: Ein Zustand, in dem physische, psychische oder Kindersicherheit gefährdet ist, der erhöhte Schutzmaßnahmen und möglicherweise sofortige Schutzmaßnahmen erfordert.
+    aliases:
+      - sicherheitskritische
+      - sicherheitskritischen
+      - sicherheitskritischer
+      - sicherheitskritisches
   sanction:
     term: Sanktion
     definition: Eine definierte, dokumentierte Einschränkung oder Korrekturmaßnahme, die durch einen autorisierten Prozess verhängt wird, proportional zu einem Verstoß und einer Überprüfung unterliegt.
+    aliases:
+      - Sanktionen
   scope:
     term: Geltungsbereich
     definition: Die explizit deklarierten Domänen, Ressourcen und Aktivitäten, über die die Gemeinschaft Autorität ausübt.
+    aliases:
+      - Geltungsbereichs
+      - Geltungsbereiche
   stewardship:
     term: Verwaltungsverantwortung
     definition: Verantwortung für Pflege, Instandhaltung und Governance einer Ressource innerhalb definierter Grenzen.
   treasury:
     term: Gemeinschaftskasse
     definition: Die Gesamtheit der gemeinsamen Ressourcen, Salden, Verpflichtungen und Zusagen, die unter kollektiven Regeln gehalten werden.
+    aliases:
+      - Gemeinschaftskassen
   treasury-ruleset:
     term: Kassenregelwerk
     definition: Ein Artefakt, das festlegt, wie Ressourcen der Gemeinschaftskasse gehalten, ausgegeben, berichtet, geprüft und eingeschränkt werden, einschließlich Schwellenwerte und Interessenkonfliktregeln.
   transparency-exception:
     term: Transparenzausnahme
     definition: Eine explizit definierte, gerechtfertigte, zeitlich begrenzte Einschränkung des Informationszugangs, die dennoch eine Konformitätsprüfung ermöglicht.
+    aliases:
+      - Transparenzausnahmen
   version-history:
     term: Versionshistorie
     definition: Ein Artefakt, das festhält, welche Version in Kraft ist, und beschlossene Änderungen, Inkrafttretensdaten und Entscheidungsreferenzen dokumentiert.

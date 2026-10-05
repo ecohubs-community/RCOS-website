@@ -19,7 +19,7 @@
  * Longer phrases first, so "MUST NOT" wins over "MUST".
  * @type {Record<string, Array<[string, string]>>}
  */
-const KEYWORDS = {
+export const KEYWORDS = {
 	en: [
 		['MUST NOT', 'must-not'],
 		['SHOULD NOT', 'should-not'],
@@ -98,8 +98,9 @@ const word = (/** @type {string} */ s) => `(?<![\\p{L}\\p{N}])${s}(?![\\p{L}\\p{
 /**
  * Glossary terms → the forms to look for in rule text. A parenthetical
  * ("Rendición de cuentas (Accountability)") is dropped; English also matches a
- * simple plural. Terms marked autolink: false are skipped.
- * @param {Array<{ key: string, term: string, autolink?: boolean }>} terms
+ * simple plural, and each language lists its other forms (plurals, inflected
+ * adjectives) as `aliases`. Terms marked autolink: false are skipped.
+ * @param {Array<{ key: string, term: string, autolink?: boolean, aliases?: string[] }>} terms
  * @param {string} locale
  * @returns {TermForms[]}
  */
@@ -109,7 +110,7 @@ export function termForms(terms, locale) {
 		.map((t) => {
 			const base = t.term.replace(/\s*\([^)]*\)\s*$/, '').trim();
 			const variants = base.split(/\s*\/\s*/).filter(Boolean);
-			const forms = new Set(variants);
+			const forms = new Set([...variants, ...(t.aliases ?? [])]);
 			if (locale === 'en') for (const v of variants) if (!/s$/i.test(v)) forms.add(`${v}s`);
 			return { key: t.key, forms: [...forms] };
 		});
