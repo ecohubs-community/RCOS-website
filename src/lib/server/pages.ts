@@ -73,6 +73,15 @@ export const PAGE_KEYS = [
 ] as const;
 export type PageKey = (typeof PAGE_KEYS)[number];
 
+/**
+ * Load and render a markdown page, falling back to English when the requested
+ * translation is absent. Localize links and include metadata, an excerpt and
+ * file dates in the result.
+ * @param key Page key relative to `content/pages`, without a file extension.
+ * @param locale Requested content and link locale.
+ * @returns The rendered page with its actual language and fallback status, or
+ * null when the selected file does not exist.
+ */
 export async function readPage(key: PageKey, locale: string): Promise<MarkdownPage | null> {
 	const translated = path.join(ROOT, `${key}.${locale}.md`);
 	const source = path.join(ROOT, `${key}.md`);
