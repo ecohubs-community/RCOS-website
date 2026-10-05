@@ -14,4 +14,6 @@ bun.lockb
 /design_files/
 # Generated
 /src/lib/paraglide/
-/project.inlang/cache/
+# Paraglide writes cache, .meta.json and README.md here; only settings.json is ours.
+/project.inlang/*
+!/project.inlang/settings.json
