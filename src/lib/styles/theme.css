@@ -72,17 +72,8 @@
 
 	/* Semantic Colors - Light Mode */
 	--color-primary: #6b9f3d;
-	--color-primary-dark: #4a7c2a;
-	--color-primary-light: #7fb84a;
 	--color-secondary: var(--color-soil-700);
-	--color-secondary-dark: var(--color-soil-800);
-	--color-secondary-light: var(--color-soil-600);
 	--color-accent: var(--color-blue-600);
-	--color-accent-dark: var(--color-blue-700);
-	--color-accent-light: var(--color-blue-500);
-	--color-highlight: var(--color-amber-500);
-	--color-highlight-dark: var(--color-amber-600);
-	--color-highlight-light: var(--color-amber-400);
 
 	/* Background Colors - Light Mode */
 	--color-background: #ffffff;
@@ -213,14 +204,6 @@
 	--shadow-sheet: -24px 0 48px -24px rgb(93 77 53 / 0.35); /* guide sheet */
 	--shadow-pop: 0 20px 40px -16px rgb(26 48 9 / 0.35); /* popovers */
 
-	/* EcoHubs Colors */
-	--color-ecohubs-base: #fbfbf9;
-	--color-ecohubs-text: #1c1917;
-	--color-ecohubs-primary: #059669;
-	--color-ecohubs-dark: #064e3b;
-	--color-ecohubs-accent: #d97706;
-	--color-ecohubs-light: #a7f3d0;
-
 	/* Spacing Scale */
 	--spacing-xs: 0.5rem;
 	--spacing-sm: 0.75rem;
@@ -271,17 +254,8 @@
 html.dark {
 	/* Semantic Colors - Dark Mode */
 	--color-primary: var(--color-forest-400);
-	--color-primary-dark: var(--color-forest-500);
-	--color-primary-light: var(--color-forest-300);
 	--color-secondary: var(--color-soil-500);
-	--color-secondary-dark: var(--color-soil-600);
-	--color-secondary-light: var(--color-soil-400);
 	--color-accent: var(--color-blue-500);
-	--color-accent-dark: var(--color-blue-600);
-	--color-accent-light: var(--color-blue-400);
-	--color-highlight: var(--color-amber-400);
-	--color-highlight-dark: var(--color-amber-500);
-	--color-highlight-light: var(--color-amber-300);
 
 	/* Background Colors - Dark Mode */
 	--color-background: #0f1419;

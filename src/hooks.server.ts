@@ -7,7 +7,7 @@ import { redirectFor } from '$lib/server/redirects';
 import { building } from '$app/environment';
 
 /**
- * Locale negotiation order (per docs/translation-plan.md §0.4):
+ * Locale negotiation order (per specs/TRANSLATION.md §0.4):
  *   1. URL prefix (e.g. /de/articles/...)        — explicit, wins outright
  *   2. `lang` cookie set by the language switcher
  *   3. `Accept-Language` header (only on root requests, to avoid surprising

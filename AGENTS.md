@@ -4,11 +4,11 @@ You are able to use the Svelte MCP server, where you have access to comprehensiv
 
 ### Frontend
 
-Please read the `FRONTEND.md` file for information about the frontend.
+Please read [`specs/FRONTEND.md`](specs/FRONTEND.md) for information about the frontend (routes, components, styling rules).
 
 ### Backend
 
-Please read the `BACKEND.md` file for information about the backend.
+Please read [`specs/BACKEND.md`](specs/BACKEND.md) for information about the content, the build and the published data. Translating: [`docs/translation-workflow.md`](docs/translation-workflow.md).
 
 ## Available MCP Tools:
 

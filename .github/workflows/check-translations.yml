@@ -23,7 +23,7 @@ on:
       - 'content/**'
       - 'scripts/content/**'
       - 'src/lib/content/**'
-      - 'src/lib/i18n/messages/**'
+      - 'messages/**'
       - 'src/lib/i18n/languages.ts'
       - 'scripts/check-translations.mjs'
       - 'scripts/i18n.mjs'

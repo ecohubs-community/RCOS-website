@@ -24,27 +24,28 @@ For full details, please refer to the respective license files in the repository
 
 ## Technical Stack & Development
 
-This software implementation is built with [Svelte](https://svelte.dev/) and [`sv`](https://github.com/sveltejs/cli).
+The site is built with [SvelteKit](https://svelte.dev/) and prerendered for Vercel. The content of the standard is YAML in `content/`; the downloads and the data used by RCOS Compass are generated from it.
+
+- [specs/BACKEND.md](specs/BACKEND.md): content, build, downloads, published data, checks
+- [specs/FRONTEND.md](specs/FRONTEND.md): routes, components, styling rules
+- [docs/translation-workflow.md](docs/translation-workflow.md): translating
 
 ### Developing
 
-Once you've installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
-
 ```sh
-npm run dev
-
-# or start the server and open the app in a new browser tab
-npm run dev -- --open
+pnpm install
+pnpm dev
 ```
 
-### Building
-
-To create a production version of your app:
+### Checking and building
 
 ```sh
-npm run build
+pnpm content:check   # validate content/
+pnpm check           # types
+pnpm test:unit
+pnpm build
+pnpm check:links     # after a build
+pnpm test:e2e        # after a build
 ```
 
-You can preview the production build with `npm run preview`.
-
-> To deploy your app, you may need to install an [adapter](https://svelte.dev/docs/kit/adapters) for your target environment.
+After changing content, regenerate the downloads with `pnpm build:downloads` and commit them.
