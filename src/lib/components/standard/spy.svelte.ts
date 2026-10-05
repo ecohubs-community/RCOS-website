@@ -32,7 +32,13 @@ export function scrollSpy(_path: string): Attachment<HTMLElement> {
 			const atEnd =
 				window.innerHeight + window.scrollY >= document.documentElement.scrollHeight - 2;
 			if (atEnd && location.hash) {
-				const id = decodeURIComponent(location.hash.slice(1));
+				const raw = location.hash.slice(1);
+				let id = raw;
+				try {
+					id = decodeURIComponent(raw);
+				} catch {
+					// A malformed escape (#%E0): compare the fragment as it is.
+				}
 				const target = sections.find((s) => s.id === id);
 				if (target && target.getBoundingClientRect().top < window.innerHeight) current = target;
 			}

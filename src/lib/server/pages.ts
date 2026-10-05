@@ -22,19 +22,24 @@ const plainText = (html: string) =>
 
 /**
  * Markdown to HTML with heading ids as GitHub makes them (a repeated id gets
- * -1, -2, …), so links to `#some-heading` keep working.
+ * -1, -2, …, skipping any id already taken), so links to `#some-heading` keep
+ * working.
  */
 function render(md: string): string {
-	const used = new Map<string, number>();
+	const counts = new Map<string, number>();
+	const taken = new Set<string>();
 	const marked = new Marked({ gfm: true, async: false });
 	marked.use({
 		renderer: {
 			heading({ tokens, depth }) {
 				const html = this.parser.parseInline(tokens);
 				const base = headingSlug(plainText(html));
-				const n = used.get(base) ?? 0;
-				used.set(base, n + 1);
-				return `<h${depth} id="${n ? `${base}-${n}` : base}">${html}</h${depth}>\n`;
+				let n = counts.get(base) ?? 0;
+				let id = n ? `${base}-${n}` : base;
+				while (taken.has(id)) id = `${base}-${++n}`;
+				counts.set(base, n + 1);
+				taken.add(id);
+				return `<h${depth} id="${id}">${html}</h${depth}>\n`;
 			}
 		}
 	});
