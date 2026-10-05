@@ -72,7 +72,13 @@ test('the guide sheet opens from a clause', async ({ page }) => {
 
 test('⌘K searches in the page language and jumps to a clause', async ({ page }) => {
 	await page.goto('/de');
-	await page.keyboard.press('Control+k');
+	// The shortcut listener exists only after hydration, and a press before it is
+	// lost. Press until the palette opens; the wait between presses is long
+	// enough that a slow-rendering palette is not toggled shut again.
+	await expect(async () => {
+		await page.keyboard.press('Control+k');
+		await expect(page.getByRole('combobox')).toBeVisible({ timeout: 5_000 });
+	}).toPass({ timeout: 25_000 });
 	await page.getByRole('combobox').fill('Austritt');
 	const first = page.getByRole('dialog').getByRole('option').first();
 	await expect(first).toBeVisible({ timeout: 15_000 });

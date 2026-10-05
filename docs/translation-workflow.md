@@ -1,161 +1,104 @@
 # Translation workflow
 
-Operational checklist for translating articles into a registered locale. The
-strategic context (architecture decisions, plumbing, scripts) lives in
-[`translation-plan.md`](./translation-plan.md). This file is the day-to-day
-runbook — designed to be followed by either a human contributor or an AI
-agent.
+How to translate RCOS content, for people and AI agents. For how the content is
+stored, see [specs/BACKEND.md](../specs/BACKEND.md). The original design notes
+are in [specs/TRANSLATION.md](../specs/TRANSLATION.md) (historical).
 
-Replace `<locale>` with the target locale code (`de`, `es`, …) and `<scope>`
-with a path filter (e.g. `rcos-core/0.1`).
+Locales: `en` (source, American English), `de`, `es` (neutral, not Castilian),
+`fr`, `pt-br`. Replace `<locale>` below with one of them.
 
-**Where translations live (since phase 2 of the redesign).** The standard,
-the templates, the layer guides and the stress tests are YAML under
-`content/standard`, `content/templates`, `content/layers` and
-`content/stress-tests`. Each English `<name>.yaml` has one overlay per locale,
-`<name>.<locale>.yaml`, holding only the translated text (keyed by section,
-clause or block id) plus `lang` and `sourceHash`. `pnpm run translate` handles
-both these and the remaining markdown articles in `content/articles`. For YAML
-it translates the document as a markdown article and stores the result as an
-overlay, and it rejects a translation whose structure differs from English.
+## What gets translated, and where it lives
 
----
+| Content                                                    | Source (English)                                                  | Translation                     |
+| ---------------------------------------------------------- | ----------------------------------------------------------------- | ------------------------------- |
+| Standard, templates, layer guides, stress tests            | `content/{standard,templates,layers,stress-tests}/**/<name>.yaml` | `<name>.<locale>.yaml` overlay  |
+| Guidance ("In short", questions, prompts, examples)        | `content/guidance/rcos-core/0.1/layer-N.yaml`                     | `layer-N.<locale>.yaml` overlay |
+| Hub intros, toolkit, safeguards, reference implementations | `content/pages/**/<key>.md`                                       | `<key>.<locale>.md`             |
+| UI strings and page copy of Svelte pages                   | `messages/en.json`                                                | `messages/<locale>.json`        |
+| Strings inside downloaded files                            | `scripts/i18n.mjs`                                                | same file, one entry per locale |
 
-## Pre-flight checklist — before running `pnpm run translate`
+An overlay holds only the translated text, keyed by id, plus `lang` and
+`sourceHash`. `sourceHash` records which English text was translated; when the
+English changes, the translation shows as **outdated**.
 
-### 1. Sync and install
+## Terms to keep consistent
 
-```bash
-git pull                                  # fetch latest source content
-pnpm install --frozen-lockfile            # only if package.json changed
-```
+- **RFC keywords** stay in capitals and use the agreed forms, e.g. German
+  MUSS / MÜSSEN / DARF NICHT / SOLLTE / KANN. `tokenize.js` (`KEYWORDS`) lists
+  every form per locale; `pnpm content:check` fails when a translated clause
+  lost a keyword.
+- **Layer N** is always Schicht N / Capa N / Couche N / Camada N.
+- **Glossary terms**: translate the term in the glossary overlay. If the term
+  appears inflected or in the plural in running text, add those forms as
+  `aliases` on the term in the glossary overlay, so the reader marks it.
+- Guidance never uses capitalised RFC keywords; it explains, it does not
+  require.
 
-### 2. Pick (and confirm) a backend
-
-The translator auto-selects based on env vars:
-`ANTHROPIC_API_KEY` → `anthropic-api`, else `GEMINI_API_KEY` → `gemini`,
-else `claude-cli`. Override with `--provider <name>` if needed.
-
-| Backend                      | Pre-flight check                      |
-| ---------------------------- | ------------------------------------- |
-| `claude-cli` (free, default) | `claude --version` returns a version  |
-| `gemini` (free API)          | `echo $GEMINI_API_KEY` shows a key    |
-| `anthropic-api` (paid)       | `echo $ANTHROPIC_API_KEY` shows a key |
-
-### 3. Survey what needs translating
+## 1. See what needs translating
 
 ```bash
-pnpm run check:translations -- --locale <locale>
+pnpm check:translations -- --locale <locale>
 ```
 
-Reports per-article `MISSING` / `OUTDATED` / `UP-TO-DATE` and a coverage
-percentage. Use the path list to plan your batches.
+Lists every file as `MISSING`, `OUTDATED` or `UP-TO-DATE`.
 
-### 4. Pick a batch scope
+## 2. Translate with the script
 
-Translate a small, coherent subtree first — easier to spot-check before going
-wider. Common scopes:
-
-```
---only rcos-core/v0-1                   # ~14 articles, the spec
---only rcos-templates --include-empty   # 22 templates + 8 frontmatter shells
---only rcos-layers                      # 7 layer overview articles
---only rcos-modules                     # modules + their v0-1 sub-articles
---only rcos-stress-tests                # ~20 stress test scenarios
---only safeguards                       # 1–2 articles
---only reference-implementations        # 1 article
-```
-
-`--include-empty` is required for parent/index pages that have only
-frontmatter (no body). They get a translated title but empty body.
-
-### 5. Dry-run the chosen scope
+`scripts/translate.mjs` translates missing and outdated files with an LLM and
+writes the overlay or markdown file. It picks a backend from the environment:
+`ANTHROPIC_API_KEY` → Anthropic API, else `GEMINI_API_KEY` → Gemini, else the
+local `claude` CLI. Override with `--provider anthropic-api|gemini|claude-cli`
+and `--model <id>`.
 
 ```bash
-pnpm run translate -- --locale <locale> --only <scope> --dry-run
+pnpm translate -- --locale <locale> --only <path-part> --dry-run   # list what would run
+pnpm translate -- --locale <locale> --only <path-part>             # translate
 ```
 
-Confirms the file list and the resolved provider before any API/CLI calls.
-Abort here if anything looks off.
+- `--only` matches part of the source path, e.g. `templates/layer-2`,
+  `stress-tests`, `guidance`, `chapters/03`.
+- `--force` re-translates files that are up to date.
+- YAML goes to the model as markdown (guidance as JSON) and comes back into the
+  overlay. A reply whose structure differs from the English is rejected, so
+  nothing half-translated is written.
 
-### 6. Run for real
+To translate or fix by hand, edit the overlay (or copy one from another
+language and replace the text). For an outdated file, `pnpm check:translations`
+prints the old and the current hash (`sourceHash: old → current`); once the
+text matches the English again, set `sourceHash` to the current one.
+
+## 3. Check
 
 ```bash
-pnpm run translate -- --locale <locale> --only <scope>
+pnpm content:check                                # overlays merge, keywords, layer words
+pnpm check:translations -- --locale <locale>      # nothing missing or outdated
+pnpm check:i18n                                   # UI message keys complete
 ```
 
-Optional flags:
+Then read a few pages in the browser (`pnpm dev`, open `/<locale>/…`). A page
+that is not translated shows the English text with a notice.
 
-- `--include-empty` — translate frontmatter-only shells (titles only)
-- `--force` — re-translate even if `sourceHash` matches (use sparingly)
-- `--provider <name>` — override auto-selected backend
-- `--model <id>` — override the provider's default model
-
----
-
-## Post-flight checklist — after each batch
+## 4. Regenerate downloads and commit
 
 ```bash
-# 1. Spot-check 1–2 outputs by hand
-$EDITOR content/<scope>/...<locale>.yaml        # or content/articles/…<locale>.md
-
-# 2. Verify drift detector reports clean
-pnpm run check:translations -- --locale <locale>
-
-# 3. Commit
-git add 'content/**/*.<locale>.yaml' 'content/articles/**/*.<locale>.md'
-git commit -m "Translate <scope> to <Language>"
+pnpm build:downloads     # template files, core markdown, published data
+git add content messages static/downloads
+git commit -m "Translate <scope> to <language>"
 ```
 
----
+The PDF is rebuilt with `pnpm content:pdf` (needs a build and Playwright).
 
-## When all batches for a locale are translated
+## 5. Review
 
-```bash
-pnpm run build:downloads       # regenerate per-locale ZIPs + manifest
-pnpm build                     # re-prerender pages with the new content
-pnpm run check:translations    # final coverage check (0 outdated, 0 missing)
+Machine translations need a native speaker's review before they count as
+final. Review the guidance and the clause wording first: they are what people
+act on.
 
-git add static/downloads/
-git commit -m "Regenerate <Locale> download bundles"
-```
+## Adding a new locale
 
-After deploy, verify in the browser:
-
-- `/<locale>/` chrome is in the target language
-- `/<locale>/articles/...` shows translated content (no English-fallback banner
-  for translated articles)
-- `/<locale>/articles/rcos-templates#downloads` serves locale-specific bundles
-
----
-
-## TL;DR
-
-```bash
-pnpm run check:translations -- --locale <locale>                       # see what's needed
-pnpm run translate -- --locale <locale> --only <scope> --dry-run       # preview
-pnpm run translate -- --locale <locale> --only <scope>                 # execute
-```
-
----
-
-## Adding a brand-new locale
-
-If the locale isn't registered yet (no `<code>` entry in
-`src/lib/i18n/languages.ts`), follow the [Spanish setup commit
-](https://github.com/ecohubs-community/RCOS-website/commit/multi-lang)
-as a template. The full step list:
-
-1. Add the locale to `src/lib/i18n/languages.ts` `LOCALES`.
-2. Create `src/lib/i18n/messages/<code>.json` (copy `en.json`, translate ~88
-   keys).
-3. Wire it into `src/lib/i18n/index.ts` `MESSAGES` registry.
-4. Add an entry to `scripts/i18n.mjs` `DOWNLOADS_I18N` (preamble strings for
-   the artifact-side bundles).
-5. Add an RFC-2119-keyword table to `scripts/normalize-rfc-keywords.mjs`.
-6. Add a term table (e.g. `Layer N` → locale equivalent) to
-   `scripts/normalize-terms.mjs`.
-7. Optionally extend the `translate.mjs` SYSTEM_PROMPT glossary with the
-   locale's chosen "Layer" term so first-pass translations are consistent.
-
-Then start the workflow above with the new `<locale>`.
+1. `project.inlang/settings.json` `locales`, and `messages/<code>.json` (copy `en.json`, translate).
+2. `src/lib/i18n/languages.ts` `LOCALES` (the router, sitemap and language switcher follow it).
+3. The locale lists in `src/lib/content/schema.js` (overlay `lang`), `src/lib/content/published-schema.js`, `scripts/content/check.mjs` and `scripts/i18n.mjs` (`SUPPORTED_LOCALES` and the download strings).
+4. Keywords and the layer word in `src/lib/content/tokenize.js` (`KEYWORDS`, `LAYER_WORD`), the clause prefix in `src/lib/content/template.js`, and the Open Graph locale in `src/lib/components/seo/SEO.svelte`.
+5. `scripts/translate.mjs`: the language name and the term rules in the prompt.
+6. Translate everything (steps 1–4 above), then run all checks and `pnpm build`.

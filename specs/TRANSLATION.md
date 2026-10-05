@@ -1,5 +1,7 @@
 # Translation Plan for RCOS Standard
 
+> **Historical.** This is the plan from before the 2026 redesign; content is now YAML with per-locale overlays, and `content/articles` and `src/lib/i18n/messages` no longer exist. For how translation works today, see [docs/translation-workflow.md](../docs/translation-workflow.md) and [BACKEND.md](./BACKEND.md).
+
 ## Overview
 
 This document describes how to add multi-language support to the RCOS Standard platform. The system has **four** distinct translation surfaces, each with its own strategy:

@@ -4,7 +4,7 @@ import { fileURLToPath } from 'node:url';
 import { DEFAULT_LOCALE } from '$lib/i18n/languages';
 
 /**
- * Manifest schema (per docs/translation-plan.md §3.2). Per-locale bundles and
+ * Manifest schema (per specs/TRANSLATION.md §3.2). Per-locale bundles and
  * per-(template, locale, format) file URLs. The build scripts emit one entry
  * per template with `availableLocales` listing the locales for which a real
  * translation exists; the runtime falls back to the default locale when the

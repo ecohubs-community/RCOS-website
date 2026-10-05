@@ -13,8 +13,8 @@
 //
 // We escape every `<`/`>` to an HTML entity EXCEPT the two structural tags the
 // templates genuinely rely on (`<details>` / `<summary>`), and we leave fenced
-// code blocks untouched — their contents are escaped by `codeHighlighter` for the
-// web and rendered verbatim by pandoc for downloads.
+// code blocks untouched — the markdown renderer escapes their contents for the
+// web and pandoc renders them verbatim for downloads.
 
 // Real structural tags to preserve. Case-sensitive: the genuine tags are always
 // lowercase, whereas placeholders like `<Summary of the change.>` are not (and
@@ -36,7 +36,7 @@ function escapeAnglesPreservingTags(text) {
 /**
  * Escape angle-bracket template placeholders so they render as literal text,
  * without touching fenced code blocks or the structural `<details>`/`<summary>`
- * tags. Safe to run on both the web-render input (before mdsvex) and the
+ * tags. Safe to run on both the web-render input (before marked) and the
  * download input (before pandoc, after `<details>` flattening).
  * @param {string} md
  * @returns {string}
@@ -65,33 +65,4 @@ export function escapeTemplatePlaceholders(md) {
 		lines[i] = escapeAnglesPreservingTags(lines[i]);
 	}
 	return lines.join('\n');
-}
-
-/**
- * @param {string} c
- * @returns {string}
- */
-function escapeHtmlChar(c) {
-	if (c === '&') return '&amp;';
-	if (c === '<') return '&lt;';
-	if (c === '>') return '&gt;';
-	return c;
-}
-
-/**
- * Plain code highlighter for mdsvex.
- *
- * mdsvex's default highlighter wraps its output in a Svelte `{@html `…`}` block.
- * Because article bodies are injected via `{@html body}` (the mdsvex output is
- * treated as HTML, not compiled as a Svelte component), that wrapper leaks to the
- * page as literal text. This highlighter returns escaped `<pre><code>` HTML
- * directly — no `{@html}` wrapper — while keeping the `language-*` classes.
- * @param {string} code
- * @param {string} [lang]
- * @returns {string}
- */
-export function codeHighlighter(code, lang) {
-	const cls = lang ? `language-${lang}` : 'language-text';
-	const escaped = code.replace(/[&<>]/g, escapeHtmlChar);
-	return `<pre class="${cls}"><code class="${cls}">${escaped}</code></pre>`;
 }

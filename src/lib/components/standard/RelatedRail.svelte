@@ -8,8 +8,13 @@
 	import IconFolder from '~icons/tabler/folder';
 	import IconChecklist from '~icons/tabler/checklist';
 	import IconArrowRight from '~icons/tabler/arrow-right';
+	import IconChevronRight from '~icons/tabler/chevron-right';
 
-	/** Where a layer is explained, put into practice, and tested. */
+	/**
+	 * Where a layer is explained, put into practice, and tested. The template
+	 * and stress-test lists start collapsed: the card closes a chapter, and the
+	 * full lists would bury the next/previous links.
+	 */
 	let { related, class: className }: { related: RelatedView; class?: ClassValue } = $props();
 	const uid = $props.id();
 
@@ -30,8 +35,12 @@
 			related.tests.some((t) => t.level === l)
 		)
 	);
+	// A <summary> holding the group's heading, its count and an open/closed chevron.
+	const summary =
+		'-mx-2 flex cursor-pointer list-none items-center gap-2 rounded-lg px-2 py-1.5 hover:bg-hover [&::-webkit-details-marker]:hidden';
 	const groupTitle =
-		'flex justify-between pb-1 font-ui text-[11px] font-semibold tracking-[0.08em] text-ink-faint uppercase';
+		'flex flex-1 justify-between font-ui text-[11px] font-semibold tracking-[0.08em] text-ink-muted uppercase';
+	const chevron = 'size-3.5 shrink-0 text-ink-faint transition-transform group-open:rotate-90';
 </script>
 
 <section
@@ -60,53 +69,66 @@
 	{/if}
 
 	{#if related.templates.length}
-		<div class="flex flex-col gap-1">
-			<h3 class={groupTitle}>
-				{m.std_templates()}<span class="font-mono tracking-normal">{related.templates.length}</span>
-			</h3>
-			{#each related.templates as t (t.href)}
-				<a
-					href={t.href}
-					class="flex items-center gap-2 py-1.25 text-[13.5px] leading-snug text-ink hover:text-heading"
-				>
-					<IconFilePencil class="size-3.75 shrink-0 text-accent-ink" />
-					<span class="flex-1">{t.title}</span>
-					{#if t.ref}<span class="font-mono text-[11px] text-ink-faint">{t.ref}</span>{/if}
-				</a>
-			{/each}
-			{#if related.templatesHref}
-				<a
-					href={related.templatesHref}
-					class="inline-flex items-center gap-1.5 pt-1 font-ui text-[13px] font-semibold text-accent-ink hover:underline"
-					><IconFolder class="size-3.75" />{m.std_all_layer_templates({ n: related.layer })}</a
-				>
-			{/if}
-		</div>
+		<details class="group">
+			<summary class={summary}>
+				<IconChevronRight class={chevron} aria-hidden="true" />
+				<h3 class={groupTitle}>
+					{m.std_templates()}<span class="font-mono tracking-normal"
+						>{related.templates.length}</span
+					>
+				</h3>
+			</summary>
+			<div class="flex flex-col gap-1 pt-1">
+				{#each related.templates as t (t.href)}
+					<a
+						href={t.href}
+						class="flex items-center gap-2 py-1.25 text-[13.5px] leading-snug text-ink hover:text-heading"
+					>
+						<IconFilePencil class="size-3.75 shrink-0 text-accent-ink" />
+						<span class="flex-1">{t.title}</span>
+						{#if t.ref}<span class="font-mono text-[11px] text-ink-faint">{t.ref}</span>{/if}
+					</a>
+				{/each}
+				{#if related.templatesHref}
+					<a
+						href={related.templatesHref}
+						class="inline-flex items-center gap-1.5 pt-1 font-ui text-[13px] font-semibold text-accent-ink hover:underline"
+						><IconFolder class="size-3.75" />{m.std_all_layer_templates({ n: related.layer })}</a
+					>
+				{/if}
+			</div>
+		</details>
 	{/if}
 
 	{#if related.tests.length}
-		<div class="flex flex-col gap-1 border-t border-line-soft pt-3">
-			<h3 class={groupTitle}>
-				{m.std_stress_tests()}<span class="font-mono tracking-normal">{related.tests.length}</span>
-			</h3>
-			{#each related.tests as t (t.href)}
-				<a
-					href={t.href}
-					class="flex items-start gap-2 py-1.25 text-[13.5px] leading-snug text-ink hover:text-guide-ink"
-				>
-					<span class="mt-1.25 size-2 shrink-0 rounded-full {DOT[t.level]}" title={LABEL[t.level]}
-					></span>
-					<span class="flex-1">{t.title}</span>
-				</a>
-			{/each}
-			<p class="flex flex-wrap gap-x-3 gap-y-1 pt-1 text-[11.5px] text-ink-muted">
-				{#each levels as l (l)}
-					<span class="inline-flex items-center gap-1.25"
-						><span class="size-1.75 rounded-full {DOT[l]}"></span>{LABEL[l]}</span
+		<details class="group border-t border-line-soft pt-3">
+			<summary class={summary}>
+				<IconChevronRight class={chevron} aria-hidden="true" />
+				<h3 class={groupTitle}>
+					{m.std_stress_tests()}<span class="font-mono tracking-normal">{related.tests.length}</span
 					>
+				</h3>
+			</summary>
+			<div class="flex flex-col gap-1 pt-1">
+				{#each related.tests as t (t.href)}
+					<a
+						href={t.href}
+						class="flex items-start gap-2 py-1.25 text-[13.5px] leading-snug text-ink hover:text-guide-ink"
+					>
+						<span class="mt-1.25 size-2 shrink-0 rounded-full {DOT[t.level]}" title={LABEL[t.level]}
+						></span>
+						<span class="flex-1">{t.title}</span>
+					</a>
 				{/each}
-			</p>
-		</div>
+				<p class="flex flex-wrap gap-x-3 gap-y-1 pt-1 text-[11.5px] text-ink-muted">
+					{#each levels as l (l)}
+						<span class="inline-flex items-center gap-1.25"
+							><span class="size-1.75 rounded-full {DOT[l]}"></span>{LABEL[l]}</span
+						>
+					{/each}
+				</p>
+			</div>
+		</details>
 	{/if}
 
 	<a

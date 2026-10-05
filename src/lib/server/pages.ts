@@ -7,19 +7,44 @@ import { readFile } from 'node:fs/promises';
 import { existsSync } from 'node:fs';
 import path from 'node:path';
 import matter from 'gray-matter';
-import { compile, type MdsvexCompileOptions } from 'mdsvex';
-import rehypeSlug from 'rehype-slug';
+import { Marked } from 'marked';
 import { DEFAULT_LOCALE } from '$lib/i18n/languages';
-import { escapeTemplatePlaceholders, codeHighlighter } from './template-markdown.js';
+import { headingSlug } from '$lib/content/markdown.js';
+import { escapeTemplatePlaceholders } from './template-markdown.js';
 import { localizeLinks } from './docs';
 import { getFileDates } from './dates';
 
 const ROOT = path.resolve('content/pages');
 
-const mdsvexOptions = {
-	rehypePlugins: [rehypeSlug],
-	highlight: { highlighter: codeHighlighter }
-} as unknown as MdsvexCompileOptions;
+const ENTITIES: Record<string, string> = { amp: '&', lt: '<', gt: '>', quot: '"', '#39': "'" };
+const plainText = (html: string) =>
+	html.replace(/<[^>]+>/g, '').replace(/&(amp|lt|gt|quot|#39);/g, (_, e) => ENTITIES[e]);
+
+/**
+ * Markdown to HTML with heading ids as GitHub makes them (a repeated id gets
+ * -1, -2, …, skipping any id already taken), so links to `#some-heading` keep
+ * working.
+ */
+function render(md: string): string {
+	const counts = new Map<string, number>();
+	const taken = new Set<string>();
+	const marked = new Marked({ gfm: true, async: false });
+	marked.use({
+		renderer: {
+			heading({ tokens, depth }) {
+				const html = this.parser.parseInline(tokens);
+				const base = headingSlug(plainText(html));
+				let n = counts.get(base) ?? 0;
+				let id = n ? `${base}-${n}` : base;
+				while (taken.has(id)) id = `${base}-${++n}`;
+				counts.set(base, n + 1);
+				taken.add(id);
+				return `<h${depth} id="${id}">${html}</h${depth}>\n`;
+			}
+		}
+	});
+	return marked.parse(md) as string;
+}
 
 export type MarkdownPage = {
 	key: string;
@@ -48,24 +73,30 @@ export const PAGE_KEYS = [
 ] as const;
 export type PageKey = (typeof PAGE_KEYS)[number];
 
+/**
+ * Load and render a markdown page, falling back to English when the requested
+ * translation is absent. Localize links and include metadata, an excerpt and
+ * file dates in the result.
+ * @param key Page key relative to `content/pages`, without a file extension.
+ * @param locale Requested content and link locale.
+ * @returns The rendered page with its actual language and fallback status, or
+ * null when the selected file does not exist.
+ */
 export async function readPage(key: PageKey, locale: string): Promise<MarkdownPage | null> {
 	const translated = path.join(ROOT, `${key}.${locale}.md`);
 	const source = path.join(ROOT, `${key}.md`);
 	const file = locale !== DEFAULT_LOCALE && existsSync(translated) ? translated : source;
 	if (!existsSync(file)) return null;
 	const { data, content } = matter(await readFile(file, 'utf8'));
-	const compiled = await compile(
-		escapeTemplatePlaceholders(localizeLinks(content, locale)),
-		mdsvexOptions
-	);
+	const html = render(escapeTemplatePlaceholders(localizeLinks(content, locale)));
 	const lang = file === source ? DEFAULT_LOCALE : locale;
 	const dates = (await getFileDates()).get(file);
 	return {
 		key,
 		title: String(data.title ?? key),
 		summary: data.summary ? String(data.summary) : null,
-		html: compiled?.code ?? content,
-		excerpt: (compiled?.code ?? content)
+		html,
+		excerpt: html
 			.replace(/<h[1-6][^>]*>[\s\S]*?<\/h[1-6]>/g, ' ')
 			.replace(/<[^>]+>/g, ' ')
 			.replace(/\s+/g, ' ')
