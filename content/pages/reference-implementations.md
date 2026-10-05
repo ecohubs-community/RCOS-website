@@ -1,127 +1,38 @@
 ---
 id: b6d6319b
 title: Reference Implementations
+summary: Real communities that use RCOS and share how it goes, including what doesn't work.
 parentId: null
 order: 5
 ---
 
-This article documents **real-world communities that apply RCOS** in practice.
+A standard is only worth something if it holds up in real life. This page is for communities that use RCOS, fully or in part, and are willing to show how: what they adopted, what they changed, and where it broke.
 
-Reference implementations are not presented as ideal or complete. Their purpose is to make RCOS **observable, testable, and learnable** in lived environments.
+**No community is listed yet.** RCOS v0.1 is new, and the first groups are only starting to work with it. If yours is one of them, we'd like to hear from you.
 
-An implementation may be partial, evolving, or experimental. What matters is that the structure is explicit and that deviations from RCOS are documented rather than hidden.
+## What a listing shows
 
----
+A listing is not a showcase. It shows how a community actually uses RCOS, including the parts that don't fit:
 
-## Purpose of Reference Implementations
+- **The community:** its name or a pseudonym, region, size, and setting, such as rural, urban, co-housing or online-first.
+- **What it adopted:** the RCOS version, which layers it has answered, which it hasn't yet and why, and since when.
+- **Its documents:** links to the answers it has written down, such as its purpose charter, membership rules and decision processes. Sensitive details can be left out, as long as the structure stays visible.
+- **Where it differs:** rules it doesn't follow, exceptions it's trying out, and tensions it hasn't resolved. Being open about these is the most useful part.
+- **What it learned** (optional): stress tests it went through, what held, what didn't, and what it changed afterwards.
 
-Reference implementations serve four core functions:
+Being listed is not a certificate. It doesn't mean the community is compliant, successful or endorsed, and it says nothing about its values or culture.
 
-1. **Validation**  
-   Demonstrate that RCOS can be applied outside theory.
+## Get listed
 
-2. **Learning**  
-   Capture what works, what breaks, and why.
+Communities at any stage are welcome, including early and partial ones. Email [rcos@ecohubs.community](mailto:rcos@ecohubs.community) with the subject “RCOS Reference Implementation” and include:
 
-3. **Calibration**  
-   Identify ambiguities, missing constraints, or over-engineering in the spec.
+- your community's name or a pseudonym;
+- links to any documents you can share;
+- which layers you have in place so far;
+- how openly you'd like to share: publicly, semi-publicly, or anonymized.
 
-4. **Signal**  
-   Allow others to see how RCOS looks in practice before adopting it.
+If privacy or safety is a concern, we can publish an anonymized or simplified listing.
 
-This section is intentionally transparent and non-marketing.
+## Why it matters
 
----
-
-## What Is Displayed Here
-
-Each reference implementation SHOULD publish a concise, structured profile including:
-
-### Community Overview
-- Name of the community or project
-- Location (country / region; exact address optional)
-- Community size (current and target)
-- Context (rural, urban, co-housing, eco-village, digital-first, etc.)
-
-### RCOS Adoption Scope
-- RCOS version adopted
-- Layers implemented (0–6)
-- Layers partially implemented or excluded (with rationale)
-- Date of initial adoption
-
-### Structural Artifacts
-Links or references to:
-- Purpose Charter and Scope Declaration
-- Membership rules
-- Governance protocols
-- Role registry
-- Conflict handling mechanisms
-- Change / versioning protocol
-
-Sensitive content MAY be redacted, but structure SHOULD remain visible.
-
-### Known Deviations
-Explicit list of:
-- RCOS rules not followed
-- Invariants under tension
-- Temporary exceptions or experiments
-- Legacy constraints
-
-Honest deviation reporting is a strength, not a failure.
-
-### Stress-Test Outcomes (Optional)
-If applicable, brief notes on:
-- RCOS stress tests encountered
-- Which mechanisms held
-- Which failed and why
-- Structural changes made as a result
-
----
-
-## What This Section Is Not
-
-This section is explicitly **not**:
-- a certification list,
-- a ranking system,
-- a showcase of “successful” communities,
-- or an endorsement of values, culture, or ideology.
-
-Presence here does not imply RCOS compliance or approval.
-
----
-
-## How to Be Listed
-
-Communities applying RCOS — fully or partially — are invited to be listed.
-
-To request inclusion, provide:
-- Community name or pseudonym
-- Public or semi-public documentation links (if available)
-- RCOS layers currently implemented
-- Willingness level to share learnings (public / semi-public / anonymized)
-
-Incomplete or early-stage implementations are welcome.
-
----
-
-## Contact & Submission
-
-If your community is experimenting with RCOS and would like to be included as a reference implementation, please contact:
-
-**Email:** rcos@ecohubs.community  
-**Subject:** “RCOS Reference Implementation”
-
-If privacy or safety is a concern, anonymized or abstracted listings can be arranged.
-
----
-
-## Why This Matters
-
-RCOS is not meant to remain static or theoretical.
-
-This section exists so that:
-- real communities can influence the spec,
-- failures can improve the system,
-- and future communities can learn without repeating the same mistakes.
-
-RCOS evolves through practice — not opinion.
+Real communities shape the standard. Their experience shows where RCOS is unclear, where it asks too much, and where it misses something, so the next version can fix it and the next community doesn't have to repeat the same mistakes.

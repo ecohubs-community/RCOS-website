@@ -3,6 +3,7 @@
 	import SEO from '$lib/components/seo/SEO.svelte';
 	import { buildPageLd } from '$lib/utils/jsonld';
 	import PageHeader from '$lib/components/site/PageHeader.svelte';
+	import HubSteps from '$lib/components/site/HubSteps.svelte';
 	import LayerChip from '$lib/components/ui/LayerChip.svelte';
 	import {
 		LAYERS,
@@ -46,6 +47,29 @@
 
 <div class="mx-auto w-full max-w-6xl px-4 pt-8 pb-20 sm:px-6 lg:px-8 lg:pt-12">
 	<PageHeader title={m.site_library()} lead={m.site_library_lead()} />
+	<HubSteps
+		heading={m.hub_where_to_start()}
+		steps={[
+			{
+				title: m.hub_library_step1_title(),
+				body: m.hub_library_step1_body(),
+				href: href('/layers'),
+				cta: m.home_start_step1_cta()
+			},
+			{
+				title: m.hub_library_step2_title(),
+				body: m.hub_library_step2_body(),
+				href: href('/templates'),
+				cta: m.home_start_step3_cta()
+			},
+			{
+				title: m.hub_library_step3_title(),
+				body: m.hub_library_step3_body(),
+				href: href('/toolkit/self-assessment'),
+				cta: m.home_start_step2_cta()
+			}
+		]}
+	/>
 
 	<div class="mt-10 flex flex-col gap-14">
 		<section aria-labelledby="standard">
