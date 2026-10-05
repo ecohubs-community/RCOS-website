@@ -4,7 +4,7 @@ title: Implémentations de référence
 parentId: null
 order: 5
 lang: fr
-sourceHash: ef04ede4
+sourceHash: 3299369b
 ---
 
 Cet article documente les **communautés réelles qui appliquent le RCOS** en pratique.

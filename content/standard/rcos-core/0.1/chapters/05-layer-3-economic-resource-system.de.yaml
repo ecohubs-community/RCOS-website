@@ -132,7 +132,7 @@ sections:
           - 'Rücklagen-, Risiko- und Verschuldungsbeschränkungen  '
           - 'Interessenkonfliktregeln für Ausgaben und Beschaffung  '
   '5.6':
-    title: Layer-Invarianten
+    title: Schicht-Invarianten
     blocks:
       5.6.1:
         text: Geteilte Ressourcen, Flüsse und Verpflichtungen MÜSSEN standardmäßig für die Gemeinschaft sichtbar sein, mit nur begrenzten und expliziten Ausnahmen.

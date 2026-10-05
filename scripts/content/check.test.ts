@@ -61,7 +61,7 @@ describe('content:check', { timeout: 60_000 }, () => {
 
 	it('catches an untranslated "Layer N"', async () => {
 		const errors = await checkWith(`${CH}.fr.yaml`, (t) => t.replace(/Couche 2/, 'Layer 2'));
-		expect(errors.join('\n')).toMatch(/"Layer 2" not translated/);
+		expect(errors.join('\n')).toMatch(/"Layer" not translated/);
 	});
 
 	it('catches ownership pointing at a section that does not exist', async () => {

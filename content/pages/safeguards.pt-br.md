@@ -4,7 +4,7 @@ title: Salvaguardas
 parentId: null
 order: 6
 lang: pt-br
-sourceHash: '80540912'
+sourceHash: 9738d0c2
 ---
 
 ## Salvaguardas

@@ -1,0 +1,228 @@
+lang: pt-br
+sourceHash: 3d261f1e
+sections:
+  '3.1':
+    inShort: Toda pessoa ligada à comunidade está em exatamente um estado claramente nomeado, de candidato a ex-membro, e cada estado diz o que essa pessoa pode e tem de fazer.
+    questions:
+      minimum-states:
+        question: De quais estados de membresia precisamos, no mínimo?
+        answer: Candidato, membro em experiência ou provisório, membro pleno e ex-membro. Vocês podem acrescentar outros.
+      two-states:
+        question: Alguém pode ser membro pleno em uma área e estar em experiência em outra?
+        answer: Não. Cada pessoa tem exatamente um estado de membresia por vez.
+  '3.2':
+    inShort: A entrada acontece por meio de um processo escrito, com critérios escritos, nunca pelo simples fato de alguém aparecer por tempo suficiente.
+    questions:
+      long-time-guest:
+        question: Alguém frequenta a comunidade há anos. Essa pessoa é membro?
+        answer: Não, a menos que tenha passado pela integração. Membresia informal, implícita ou retroativa não é permitida.
+      what-onboarding-includes:
+        question: O que a integração tem de incluir?
+        answer: Uma leitura dos artefatos do RCOS-Core, consentimento explícito às regras da Camada 0 e da Camada 1, e um estado de membresia inicial declarado.
+  '3.3':
+    inShort: Novos membros passam por um período de experiência com duração definida, critérios claros e uma decisão clara no final.
+    questions:
+      trial-ends-without-decision:
+        question: O que acontece se o período de experiência termina e ninguém decide?
+        answer: A comunidade tem de ter um caminho definido para esse caso, seja a saída ou uma prorrogação definida, para que ninguém fique em experiência indefinidamente.
+      trial-rights:
+        question: Pessoas em experiência têm menos direitos?
+        answer: Podem ter, mas as obrigações delas têm de ser tão explícitas quanto as de todo mundo.
+  '3.4':
+    inShort: Cada obrigação vem acompanhada de um direito correspondente, e os dois estão escritos para cada estado de membresia.
+    questions:
+      open-ended-obligation:
+        question: Podemos pedir que os membros "ajudem onde for preciso"?
+        answer: Não como obrigação. Obrigações não podem ser abertas nem indefinidas; digam o que se espera e quanto.
+      obligation-without-right:
+        question: Podemos exigir uma obrigação que não tem um direito correspondente?
+        answer: Não. Uma obrigação só pode ser exigida quando existe um direito correspondente e documentado.
+  '3.5':
+    inShort: Digam qual participação vocês esperam, quais tipos de contribuição contam e o que acontece quando alguém para de participar.
+    questions:
+      paying-instead:
+        question: Um membro pode pagar alguém para fazer a sua parte do trabalho?
+        answer: Somente se as regras de vocês tratarem explicitamente desse tipo de substituição. Isso não pode simplesmente acontecer de modo informal.
+      non-participation:
+        question: E se alguém parar de participar por completo?
+        answer: A não participação persistente aciona o processo de responsabilização definido na Camada 4, não fofoca nem exclusão silenciosa.
+  '3.6':
+    inShort: Qualquer pessoa pode sair a qualquer momento, por um processo escrito e não punitivo, com o destino dos seus papéis e das coisas compartilhadas acertado de antemão.
+    questions:
+      block-exit:
+        question: A comunidade pode condicionar a saída ao pagamento de algo?
+        answer: A saída tem de permanecer possível a qualquer momento, e sair não pode custar direitos além daqueles ligados à membresia. Qualquer separação de bens ou responsabilidades é definida de antemão, não inventada na hora da despedida.
+      forced-exit:
+        question: A comunidade pode pedir que alguém saia?
+        answer: Sim, mas somente por meio do devido processo, conduzido com os mecanismos de conflito e responsabilização da Camada 4.
+  '3.7':
+    inShort: Uma suspensão é um estado temporário com condições escritas, uma data de término e uma revisão. Nunca é um jeito silencioso de empurrar alguém para fora.
+    questions:
+      need-suspension:
+        question: Precisamos ter suspensão?
+        answer: Não, ela é opcional. Se vocês a tiverem, as suas condições têm de ser explícitas, limitadas no tempo e revisáveis.
+      indefinite-suspension:
+        question: Uma suspensão pode durar até novo aviso?
+        answer: Não. A suspensão não pode ser usada como substituto indefinido ou punitivo da saída.
+  '3.8':
+    inShort: A Camada 1 vive em quatro documentos que todo membro pode ler e que são mantidos sob controle de versão.
+    questions:
+      which-documents:
+        question: De quais documentos a Camada 1 precisa?
+        answer: Um Acordo de Membresia, um Protocolo de Integração, um Protocolo de Saída e Separação e um Registro de Estados de Membresia.
+templates:
+  membership-agreement.membership-state-on-signing:
+    question: Com o que alguém está concordando em ser, no momento em que assina?
+    prompts:
+      - Qual estado de membresia alguém tem no momento em que assina este acordo — nomeado exatamente como no nosso Registro de Estados de Membresia?
+      - Todas as pessoas assinam no mesmo momento, ou a assinatura pode acontecer em etapas diferentes — e qual estado cada assinatura confere?
+      - Como a pessoa vê, antes de assinar, em qual estado ela está concordando em entrar?
+    examples:
+      - Quem assina este acordo depois que a sua candidatura é aprovada torna-se Membro em Experiência no dia da assinatura. Essa pessoa só se torna Membro Pleno quando a conclusão da sua integração é registrada; a assinatura, por si só, nunca torna alguém Membro Pleno.
+  membership-agreement.member-rights:
+    question: Quais são os direitos de cada membro, em proporção ao que pedimos dele?
+    prompts:
+      - 'Para cada estado de membresia: quais direitos tem um membro nesse estado?'
+      - Quais direitos valem para todas as pessoas, em todos os estados — como levantar uma preocupação sem sofrer retaliação, ou sair a qualquer momento?
+      - Os direitos de cada estado correspondem ao que pedimos daquele estado, de modo que, quanto mais pedimos, mais proteção e voz um membro tem?
+      - Onde um direito está definido em outro documento — a votação na Matriz de Decisão, os papéis no Registro de Papéis — nós apontamos para ele em vez de escrevê-lo duas vezes?
+    examples:
+      - Todo membro, em qualquer estado, pode levantar um conflito pela Escada de Resolução de Conflitos sem sofrer retaliação, ler os registros de governança da comunidade e sair a qualquer momento. Membros em Experiência também podem participar de todas as reuniões e propor itens de pauta. Membros Plenos podem, além disso, votar nas decisões conforme a Matriz de Decisão, ocupar papéis listados no Registro de Papéis e propor mudanças em qualquer acordo. Os Membros Plenos carregam a escala de trabalho e os custos compartilhados, então também têm o voto que os Membros em Experiência não têm.
+  membership-agreement.member-obligations:
+    question: O que a comunidade espera de cada membro — e onde essa expectativa termina?
+    prompts:
+      - 'Para cada obrigação: o que exatamente se pede, e como um membro saberia se está cumprindo?'
+      - Onde cada obrigação termina — quanto, com que frequência, por quanto tempo?
+      - A qual direito documentado cada obrigação corresponde? (Os direitos em si são uma pergunta própria.)
+      - Quais obrigações valem em todos os estados de membresia, e quais apenas em alguns?
+      - Existe algo que esperamos silenciosamente dos membros e que não está escrito — e devemos escrever ou abandonar?
+    examples:
+      - Todo membro cumpre as nossas restrições de identidade, participa de um processo de conflito quando é nomeado como parte, não fala pela comunidade em público sem um mandato da assembleia geral e não usa dinheiro ou contas da comunidade além da autoridade que um papel lhe dá. Cada obrigação tem como contrapartida um direito neste acordo, como o direito a um processo justo e a ocupar papéis. Nada além desta lista pode ser exigido de um membro, a menos que a lista seja alterada por decisão.
+  membership-agreement.participation-and-contribution-expectations:
+    question: O que conta como participação, quanto é suficiente, alguém pode mandar um substituto — e o que acontece quando alguém para?
+    prompts:
+      - Quais formas de contribuição reconhecemos?
+      - Quanto é suficiente — quantas contribuições, de quais tipos, em qual período?
+      - Alguém pode mandar um substituto, ou pagar alguém para fazer a sua parte — para quais tarefas, e quem continua responsável?
+      - Como alguém nos avisa que vai se ausentar, e por quanto tempo as expectativas podem ficar pausadas?
+      - Depois de quanto tempo sem participação, e sem aviso, começa um processo de responsabilização — e quem o inicia? (O que esse processo faz está definido na Escada de Resolução de Conflitos.)
+    examples:
+      - 'Reconhecemos quatro formas de contribuição: dias de trabalho na terra, cozinhar para as refeições compartilhadas, facilitar reuniões ou fazer a ata, e tarefas da escala de manutenção. Cada membro contribui com pelo menos 8 horas por mês em qualquer uma delas. Um membro pode trocar uma tarefa com outro membro, mas não pode pagar alguém de fora para fazer a sua parte. As expectativas ficam pausadas por até 3 meses, se o membro avisar com antecedência a pessoa responsável pela membresia. Dois meses consecutivos abaixo do mínimo sem aviso abrem uma verificação de responsabilização.'
+  membership-agreement.due-process-reference:
+    question: O que protege um membro quando a comunidade se volta contra ele?
+    prompts:
+      - Quais documentos protegem um membro contra remoção, suspensão ou acesso restrito — e este acordo nomeia cada um deles?
+      - Em uma ou duas frases simples, o que prometemos aqui, para que ninguém seja removido ou restringido por uma regra que nunca lhe foi mostrada?
+      - Como um membro que lê este acordo encontra a versão atual desses documentos?
+    examples:
+      - Nenhum membro pode ser removido, suspenso ou ter o seu acesso restringido a não ser pelos processos da nossa Escada de Resolução de Conflitos e do nosso Protocolo de Saída e Separação. Os dois estão vinculados a partir deste acordo. Nenhuma regra que não esteja escrita em um desses dois documentos pode ser usada contra um membro.
+  membership-agreement.consent-acknowledgment:
+    question: Como alguém demonstra que leu e concordou com tudo isso?
+    prompts:
+      - Qual é o ato de concordar — uma assinatura, uma confirmação nas nossas ferramentas, ou dizer isso em uma reunião e constar na ata?
+      - Com quais documentos, e com quais versões deles, a pessoa está concordando naquele momento — e como ela vê exatamente essas versões?
+      - Como garantimos que a concordância é dada de forma livre e consciente — por exemplo, com tempo para ler e fazer perguntas antes? (Onde o registro é guardado é uma pergunta própria.)
+    examples:
+      - Um novo membro concorda assinando o Acordo de Membresia no aplicativo dos membros, depois de uma reunião em que pôde fazer perguntas. A tela de assinatura lista cada documento com o qual a pessoa está concordando, com o número da versão e um link para exatamente aquela versão, e a assinatura é datada.
+  membership-agreement.ratification-record:
+    question: Quem adotou este acordo, quando, e como isso foi decidido?
+  onboarding-protocol.admission-criteria:
+    question: Quem pode entrar, por quais critérios escritos, e quem decide — para que ninguém se torne membro apenas por estar por perto?
+    prompts:
+      - Quais critérios uma pessoa candidata precisa cumprir, escritos de modo que qualquer pessoa possa verificá-los?
+      - Quem decide uma candidatura? (Nomeiem o corpo ao qual a Matriz de Decisão atribui as admissões, em vez de criar uma segunda regra.)
+      - Como garantimos que ninguém se torne membro de modo informal, ou depois do fato?
+  onboarding-protocol.onboarding-steps:
+    question: O que acontece de fato entre "eu gostaria de entrar" e "estou dentro"?
+    prompts:
+      - Quais são as etapas, em ordem, desde uma candidatura aprovada até a membresia plena?
+      - Em qual etapa a pessoa lê todos os nossos documentos de governança, e como sabemos que ela leu?
+      - Em qual etapa ela concorda explicitamente com as nossas restrições de identidade e com as nossas regras de membresia — e como?
+      - Em qual etapa o seu estado de membresia inicial é declarado, e por quem? (O que esse estado permite é uma pergunta própria.)
+      - Quais contas, ferramentas e canais são criados, por quem, e em qual etapa?
+    examples:
+      - 1. A pessoa candidata lê todos os nossos documentos de governança com uma pessoa de apoio, que responde às suas perguntas. 2. Ela confirma por escrito que consente com as nossas restrições de identidade e com o Acordo de Membresia, e a pessoa responsável pela membresia a declara Membro em Experiência. 3. Quem administra os nossos sistemas cria a sua conta de membro e a adiciona ao chat dos membros. 4. Quando o seu período de experiência termina com uma decisão positiva, a conclusão é registrada e ela se torna Membro Pleno.
+  onboarding-protocol.initial-membership-state:
+    question: O que alguém é no seu primeiro dia — e o que já pode fazer?
+    prompts:
+      - Qual estado de membresia alguém tem no seu primeiro dia, nomeado como no nosso Registro de Estados de Membresia?
+      - Por quais estados essa pessoa passa durante a integração, e o que dispara cada mudança?
+      - O que ela já pode fazer no seu primeiro dia, e o que tem de esperar? (Os direitos de cada estado estão definidos no Registro de Estados de Membresia.)
+      - Como garantimos que nenhum acesso ou direito seja concedido antes da etapa que o libera?
+    examples:
+      - Quando a sua candidatura é aprovada, uma pessoa nova se torna Membro em Experiência, com os direitos que o Registro de Estados de Membresia dá a esse estado. Ela se torna Membro Pleno automaticamente no dia em que a conclusão da sua integração é registrada. Não existe outro caminho para Membro Pleno, e nenhum acesso de Membro Pleno é concedido antes desse dia.
+  onboarding-protocol.trial-and-evaluation:
+    question: Por quanto tempo alguém novo fica em experiência, por quais critérios é avaliado, quem decide — e o que acontece se não der certo?
+    prompts:
+      - Quanto tempo dura o período de experiência, e a partir de quando ele é contado?
+      - Com base em que o novo membro é avaliado — escrito de modo que ele mesmo possa conferir?
+      - Quem toma a decisão no fim do período de experiência, e como?
+      - Durante a experiência, quais obrigações se aplicam, e como o novo membro as conhece? (Quais direitos são limitados está definido no Registro de Estados de Membresia.)
+      - Se o período de experiência não terminar em membresia plena, o que acontece — ele pode ser prorrogado, por quanto tempo e quantas vezes, e quando começa a saída?
+      - Depois de uma saída ao fim de um período de experiência, quanto tempo se passa até a pessoa poder se candidatar de novo?
+    examples:
+      - O período de experiência dura 6 meses a partir do dia em que a pessoa assina, e todas as obrigações de membro valem integralmente. A avaliação considera ter concluído todas as etapas de integração e ter cumprido o mínimo de participação em pelo menos 5 dos 6 meses. No fim, os membros plenos decidem por consentimento em assembleia geral. Se os critérios não forem cumpridos, o período de experiência pode ser prorrogado uma vez por até 3 meses; depois disso, começa o processo de saída, e a pessoa pode se candidatar de novo após 12 meses.
+  onboarding-protocol.completion-record:
+    question: Como registramos que alguém terminou de entrar, e o que esse registro guarda?
+    prompts:
+      - Onde o registro de conclusão é guardado, e quem o escreve?
+      - O que ele captura — no mínimo a data e a versão exata de cada documento com o qual a pessoa concordou?
+      - Por quanto tempo ele é guardado, inclusive depois que a pessoa sai?
+    examples:
+      - A pessoa responsável pela membresia registra a conclusão no registro de membros no dia em que a última etapa de integração é cumprida. A entrada guarda a data, o nome da pessoa, o seu novo estado de membresia e o número de versão de cada documento com o qual ela consentiu. Entradas nunca são apagadas; depois que alguém sai, a sua entrada permanece, marcada com a data de saída.
+  onboarding-protocol.ratification-record:
+    question: Quem adotou este processo de integração, quando, e como isso foi decidido?
+  exit-protocol.voluntary-exit:
+    question: Como alguém pode sair quando quiser — sem ser punido por isso, nem perder mais do que a sua membresia?
+    prompts:
+      - Como alguém nos avisa que está saindo — e deve a alguém uma justificativa ou uma votação?
+      - Quando o seu acesso termina, e onde a saída é registrada?
+      - Quais direitos terminam com a membresia, e quais a pessoa mantém porque nunca dependeram dela?
+    examples:
+      - Qualquer membro pode sair da comunidade a qualquer momento, informando a comunidade por escrito. Não precisa de permissão nem de votação para sair. A comunidade registra a data da saída e segue o processo acordado para devolver bens pessoais, quitar pagamentos pendentes e encerrar responsabilidades ligadas à membresia. Sair significa abrir mão de direitos que existem apenas por causa da membresia, como o acesso às instalações compartilhadas ou a participação na governança. Não remove nenhum direito que a pessoa tenha independentemente da membresia, como a propriedade dos seus bens pessoais ou dinheiro que a comunidade lhe deve.
+  exit-protocol.forced-exit:
+    question: O que precisa ser verdade antes de a comunidade poder pedir que alguém saia?
+    prompts:
+      - O que precisa ter acontecido antes de alguém poder ser removido — qual processo de responsabilização precisa ter sido concluído, e qual decisão escrita ele precisa ter produzido?
+      - Como a pessoa é avisada — por escrito, com os motivos e a referência da decisão — e quanto tempo depois disso o seu acesso termina?
+      - O que guardamos sobre a remoção, e o que apagamos?
+      - Quanto tempo a pessoa precisa esperar antes de poder se candidatar de novo, e quem define essa espera?
+      - Quem pode ler o registro da decisão, e o que permanece privado?
+    examples:
+      - Ninguém pode ser removido a não ser como resultado de um processo de responsabilização concluído sob a nossa Escada de Resolução de Conflitos, terminando em uma decisão escrita. A pessoa recebe essa decisão por escrito, com os motivos e a sua referência, pelo menos 48 horas antes de o seu acesso terminar. Guardamos o registro da decisão e removemos a pessoa das listas de membros e dos canais. A decisão estabelece um bloqueio de nova candidatura de pelo menos 12 meses. Somente as partes e os responsáveis que conduziram o caso podem ler o registro.
+  exit-protocol.suspension:
+    question: Alguém pode ser pausado em vez de removido — por quanto tempo, revisado por quem, e nunca como punição disfarçada?
+    prompts:
+      - Queremos ter uma suspensão formal — ou declaramos abertamente que não temos nenhuma?
+      - Se tivermos, o que exatamente pode colocar alguém em suspensão, e quem decide isso?
+      - Qual é o tempo máximo que uma suspensão pode durar, quem a revisa e quando?
+      - O que um membro suspenso ainda pode fazer, e o que fica pausado?
+      - Como uma suspensão termina — e o que impede que ela se torne uma punição, ou uma remoção com outro nome?
+    examples:
+      - Não temos um estado formal de suspensão. Se o comportamento de alguém for grave o bastante para restringir a sua membresia, isso passa pelo nosso processo de responsabilização, que termina em uma decisão e nunca em uma pausa sem prazo.
+      - Um membro pode ser suspenso apenas enquanto um processo de responsabilização sobre ele estiver aberto, por decisão dos dois responsáveis que o conduzem, por no máximo 30 dias. Durante a suspensão, mantém a sua casa, o acesso aos registros da comunidade e o direito de responder, mas não pode votar nem ocupar papéis. O círculo de membros revisa cada suspensão no 14º dia. Ela termina no 30º dia ou quando o processo se conclui, o que vier primeiro, e não pode ser renovada para o mesmo assunto.
+  exit-protocol.asset-role-and-responsibility-separation:
+    question: Quando alguém sai, o que acontece com os seus papéis, tarefas, acessos e com tudo o que essa pessoa guarda por nós — acordado antes de alguém sair?
+    prompts:
+      - Uma única lista de verificação vale para toda saída, seja por escolha, seja por remoção — e quem a conduz?
+      - 'Para cada papel que alguém ocupa: quem o marca como vago no Registro de Papéis, e quem o cobre até que seja preenchido?'
+      - Como as suas tarefas em andamento são liberadas ou transferidas, e para quem?
+      - Quem remove o seu acesso ao dinheiro — contas bancárias, carteiras, direitos de assinatura — e até quando?
+      - Quem revoga o seu acesso de administração às nossas plataformas e contas compartilhadas, e como confirmamos que isso foi feito?
+      - Como as obrigações em qualquer das direções são quitadas ou transferidas antes de a saída ser finalizada?
+    examples:
+      - A mesma lista de verificação vale para toda saída, voluntária ou não, conduzida pela pessoa responsável pela membresia. Em 24 horas, quem administra as plataformas revoga todo acesso de administração e às contas compartilhadas, e a tesouraria remove a pessoa como signatária da conta bancária. Em 7 dias, os seus papéis são marcados como vagos no Registro de Papéis e as suas tarefas abertas são transferidas no quadro de tarefas. O dinheiro devido em qualquer das direções é quitado, ou registrado em um acordo de pagamento, antes de a saída ser marcada como concluída.
+  exit-protocol.ratification-record:
+    question: Quem adotou este protocolo de saída, quando, e como isso foi decidido?
+  membership-state-registry.defined-membership-states:
+    question: Quais estados de membresia temos — no mínimo candidato, em experiência, pleno e ex-membro — e quais são os seus direitos, obrigações e limitações?
+    prompts:
+      - Quais estados de membresia temos — no mínimo candidato, em experiência, pleno e ex-membro — e precisamos de algum outro?
+      - 'Para cada estado: quais direitos, obrigações e limitações se aplicam?'
+      - 'Para cada estado: o que coloca alguém nele, e o que o tira dele?'
+      - Como garantimos que ninguém tenha dois estados ao mesmo tempo?
+      - Como garantimos que ninguém reivindique um direito, ou seja cobrado por uma obrigação, que o seu estado atual não dá?
+    examples:
+      - 'Candidato: pode participar de reuniões abertas; deve dar informações honestas; entra ao se candidatar, sai com a decisão de admissão. Membro em Experiência: pode participar de todas as reuniões e falar, não pode votar nem ocupar papéis; segue a escala de trabalho; entra na assinatura, sai com a decisão sobre a experiência. Membro Pleno: vota e ocupa papéis; contribui mensalmente e divide os custos; entra quando a integração é registrada, sai na saída. Ex-Membro: mantém o acesso aos seus próprios registros, não tem obrigações; pode se candidatar de novo como Candidato. Cada pessoa tem exatamente um estado por vez.'
+  membership-state-registry.ratification-record:
+    question: Quem adotou os estados de membresia, quando, e como isso foi decidido?

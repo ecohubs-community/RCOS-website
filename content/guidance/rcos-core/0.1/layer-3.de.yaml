@@ -1,0 +1,179 @@
+lang: de
+sourceHash: c6d3e526
+sections:
+  '5.1':
+    inShort: Jede Ressource, die die Gemeinschaft verwaltet, ist aufgelistet und als Gemeingut oder Privateigentum markiert – mit der Angabe, wer sich darum kümmert und wie sie genutzt oder übertragen werden darf.
+    questions:
+      unclassified:
+        question: Was gilt für eine Ressource, die noch niemand klassifiziert hat?
+        answer: Sie ist unklassifiziert, und die Gemeinschaft kann sie nicht zuweisen, belasten, monetarisieren oder übertragen, bis eine autorisierte Entscheidung sie klassifiziert.
+      private-property:
+        question: Kann die Gemeinschaft über das Privateigentum von Mitgliedern entscheiden?
+        answer: Nur soweit der Geltungsbereich, Mitgliedschaftsvereinbarungen oder andere geregelte Artefakte das ausdrücklich sagen.
+  '5.2':
+    inShort: Entscheidet, welche Arten von Beitrag zählen – auch Sorgearbeit und Koordination – und wie sie anerkannt werden, damit die wesentliche Arbeit von niemandem unsichtbar bleibt.
+    questions:
+      care-work:
+        question: Muss Sorgearbeit als Beitrag zählen?
+        answer: 'Ihr entscheidet, welche Kategorien anerkannt werden, und Sorge- und emotionale Arbeit ist eine, die RCOS benennt. Was ihr nicht tun könnt: euch auf unbezahlte, unsichtbare Arbeit stützen, ohne zu definieren, wie sie anerkannt wird.'
+      contribution-and-power:
+        question: Haben Leute, die mehr beitragen, auch mehr Mitbestimmung?
+        answer: Nicht durch die Anerkennung von Beiträgen. Sie kann keine Entscheidungsbefugnis und keinen Einfluss schaffen, der über das hinausgeht, was Schicht 2 definiert.
+  '5.3':
+    inShort: Sagt, was die gemeinsame Kasse enthält, woher das Geld kommt, wer wie viel ausgeben darf – und macht die Bücher standardmäßig offen.
+    questions:
+      confidential-finances:
+        question: Können manche Finanzen vertraulich bleiben?
+        answer: Ja, als definierte, begründete und zeitlich begrenzte Ausnahmen – und niemals so, dass Mitglieder nicht mehr prüfen können, ob die Regeln eingehalten werden.
+      spending-limits:
+        question: Wie begrenzen wir die Ausgabenbefugnis?
+        answer: Mit klaren Zuweisungen von Befugnissen, Schwellenwerten nach Betrag oder Kategorie, Genehmigungs- und Eskalationswegen und vorgeschriebenen Aufzeichnungen.
+  '5.4':
+    inShort: Stellt sicher, dass Geld, Guthaben oder Schulden sich nicht stillschweigend in Macht über die Gemeinschaft verwandeln können.
+    questions:
+      buy-influence:
+        question: Kann ein wohlhabendes Mitglied Dinge finanzieren und dafür mehr Mitbestimmung bekommen?
+        answer: Nein. Wirtschaftliche Mechanismen können nicht genutzt werden, um die Befugnisgrenzen von Schicht 2 zu umgehen – weder durch den Kauf von Einfluss noch durch das Erzeugen von Abhängigkeit.
+      limit-mechanisms:
+        question: Wie können wir die Anhäufung interner Guthaben begrenzen?
+        answer: Mit Obergrenzen, Abschmelzen oder Verfall, Nichtübertragbarkeit, Umverteilung oder zeitlich begrenzter Gültigkeit – je nachdem, was zu eurem System passt.
+  '5.5':
+    inShort: 'Schicht 3 lebt in zwei Dokumenten: dem Internen Wirtschaftsprotokoll und dem Regelwerk der Gemeinschaftskasse.'
+    questions:
+      which-documents:
+        question: Welche Dokumente braucht Schicht 3?
+        answer: Ein Internes Wirtschaftsprotokoll und ein Regelwerk der Gemeinschaftskasse.
+  '5.6':
+    inShort: 'Die harten wirtschaftlichen Grenzen sind: gemeinsame Ressourcen bleiben sichtbar, Gemeingut kann nicht stillschweigend privatisiert werden, unsichtbare Arbeit ist niemals strukturell vorausgesetzt, und Einfluss kann sich nicht unbegrenzt anhäufen.'
+    questions:
+      sell-commons:
+        question: Kann eine Gemeingut-Ressource überhaupt verkauft werden?
+        answer: Nicht durch informelles, implizites oder einseitiges Handeln. Jede Änderung läuft über eine autorisierte Entscheidung.
+  '5.7':
+    inShort: Manche wirtschaftlichen Fragen müssen schriftlich festgehalten werden, manche können es, und manche – wie die persönliche Haltung zu Geld – bleiben außerhalb des Standards.
+    questions:
+      equal-outcomes:
+        question: Erwartet RCOS, dass alle das gleiche Einkommen oder den gleichen Anteil haben?
+        answer: Nein. Ob die Ergebnisse gleich oder unterschiedlich sind, bleibt optional und außerhalb des Geltungsbereichs.
+templates:
+  internal-economy-protocol.commons-vs-private-classification:
+    question: Was gehört uns allen, was bleibt persönlich, und wo steht das geschrieben?
+    prompts:
+      - 'Für jedes Ding, das wir haben – Land, Gebäude, Geld, Werkzeug, Websites, Konten: Gehört es uns allen gemeinsam oder jemandem selbst, und wer kümmert sich darum oder besitzt es?'
+      - 'Für jede gemeinsame Ressource: Wer darf sie wie nutzen, wer entscheidet über sie, wer kümmert sich um sie, und wie wird ihr Unterhalt bezahlt?'
+      - Kann eine gemeinsame Ressource überhaupt verkauft, verliehen oder in jemandes Eigentum überführt werden – und wenn ja, nur über welche Entscheidung, damit es nie stillschweigend passiert?
+      - Wo endet unsere Mitbestimmung über die privaten Sachen einzelner?
+      - Wo wird die Liste geführt, wie wird jede Änderung datiert und versioniert, und was passiert mit etwas, das noch niemand aufgelistet hat?
+    examples:
+      - 'Jede Änderung an unserem Ressourcenregister ist eine neue, datierte Version, die auf einer Mitgliederversammlung beschlossen wird. Land und Werkstatt sind gemeinsam: Jedes Mitglied darf sie nutzen, die Landgruppe entscheidet über sie und hält sie durch monatliche Arbeitstage instand, Reparaturen werden aus dem gemeinsamen Budget bezahlt. Gemeinsame Ressourcen dürfen nicht verkauft, langfristig verliehen oder privatisiert werden, außer durch eine Abstimmung der Vollmitglieder. Wohnungen, Fahrzeuge und Ersparnisse der Mitglieder gehören ihnen selbst, und wir haben darüber keine Mitbestimmung, die über die Mitgliedschaftsvereinbarung hinausgeht. Alles, was noch nicht registriert ist, bleibt unangetastet, bis es klassifiziert ist.'
+  internal-economy-protocol.recognized-contribution-categories:
+    question: Welche Arten von Arbeit zählen wir als Beitrag – auch die Arbeit, die niemand sieht?
+    prompts:
+      - Welche Arten von Beitrag erkennen wir an – zum Beispiel praktische Arbeit, Sorgearbeit, Lehren, Koordination, Instandhaltung?
+      - Welche Arbeit hält uns am Laufen, wird aber selten bemerkt oder gewürdigt – gastgeben, zuhören, nach Treffen aufräumen, moderieren, Papierkram hinterherlaufen?
+      - 'Für jede Art von Arbeit, auf die wir uns stützen: Wird sie anerkannt, als Pflicht aufgeteilt oder bezahlt – damit nichts Wesentliches davon abhängt, dass jemand es still und unbezahlt macht?'
+      - Woran würden wir merken, dass Arbeit, auf die wir uns stützen, in der Liste fehlt? (Wie Beiträge erfasst werden, ist eine eigene Frage.)
+    examples:
+      - 'Wir erkennen sechs Arten von Beitrag an: Schreiben und Recherche, Bauen und Pflegen unserer Werkzeuge, Koordination und Moderation, Begrüßen und Begleiten neuer Mitglieder, Moderation und Sorge für Menschen in Konflikt oder Not sowie die Pflege gemeinsamer Dokumente und Konten. Moderation und Sorgearbeit rotieren alle drei Monate zwischen den Mitgliedern, damit sie niemand unbegrenzt trägt. Bei jedem Vierteljahresrückblick wird jede Arbeit, auf die wir uns gestützt haben und die nicht auf dieser Liste steht, entweder als Kategorie aufgenommen oder in eine rotierende Pflicht umgewandelt.'
+  internal-economy-protocol.contribution-recognition-mechanism:
+    question: Wie halten wir Beiträge fest und erkennen sie an – und was bringt diese Anerkennung, wenn überhaupt?
+    prompts:
+      - Wie wird ein Beitrag erfasst oder gewürdigt, und von wem?
+      - Wer darf einen Eintrag bestätigen? (Ihn anzufechten, ist eine eigene Frage.)
+      - Bringt Anerkennung irgendwelche Vorteile, Verantwortlichkeiten oder Zugang zu gemeinsamen Ressourcen?
+      - Wie stellen wir sicher, dass Anerkennung niemals mehr Mitbestimmung bei Entscheidungen gibt, als die Entscheidungsmatrix gewährt?
+    examples:
+      - Mitglieder tragen ihre eigenen Beiträge innerhalb einer Woche in die gemeinsame Tabelle ein, und die für die Aufgabe verantwortliche Person oder ein beliebiges anderes Mitglied bestätigt sie. Bestätigte Beiträge zählen für das monatliche Mindestmaß an Beteiligung und geben Vorrang bei der Buchung des Gästezimmers. Sie geben niemals zusätzliche Stimmen, ein Veto oder mehr Gewicht bei irgendeiner Entscheidung.
+  internal-economy-protocol.internal-units:
+    question: Wenn wir eigene Guthaben oder Stunden nutzen – wer gibt sie aus, und wofür können sie verwendet werden?
+    prompts:
+      - Nutzen wir eigene Einheiten (Stunden, Guthaben, Punkte)? Wenn nicht, sagt das – und was müssten wir vereinbaren, bevor wir eine einführen?
+      - 'Für jede Einheit: Wozu dient sie, wer gibt sie aus, wofür und in welcher Höhe?'
+      - Kann eine Einheit an jemand anderen verschenkt, getauscht oder verkauft werden – und wenn ja, zwischen wem?
+      - Verfällt eine Einheit, verliert sie mit der Zeit an Wert oder endet sie bei einer Obergrenze? (Ob das reicht, um zu verhindern, dass jemand alles steuert, ist eine eigene Frage.)
+      - Wie verhindern wir gefälschte oder fehlerhafte Einträge, wie wird ein falscher Stand korrigiert, und wohin wendet sich jemand, der mit dem eigenen Stand nicht einverstanden ist?
+      - Wer kann den Stand und die Transaktionen einer Person sehen – alle, nur die Person selbst, oder eine benannte Rolle?
+    examples:
+      - 'Wir nutzen eine Einheit: die Arbeitsstunde. Die Koordination für Arbeitsstunden verbucht für jede Stunde gemeinsamer Arbeit eine Stunde, sobald die für die Aufgabe verantwortliche Person sie abgezeichnet hat; Stunden können nicht verschenkt, getauscht oder verkauft werden. Stunden verfallen 24 Monate nach dem Erwerb, und niemand darf mehr als 200 halten. Jedes Mitglied sieht den eigenen Stand und alle Transaktionen ohne Namen; die Koordination korrigiert Fehler innerhalb einer Woche, und wer mit dem eigenen Stand nicht einverstanden ist, nutzt unser Verfahren für strittige wirtschaftliche Einträge.'
+      - Wir nutzen keine internen Guthaben, Stunden oder Punkte. Bevor wir eine Einheit einführen, müssen die Vollmitglieder als Änderung dieses Protokolls vereinbaren, wozu sie dient, wie sie ausgegeben wird, ob sie übertragbar ist, wann sie verfällt, wie Fehler korrigiert werden und wer Stände sehen kann.
+  internal-economy-protocol.accumulation-constraints:
+    question: Was verhindert, dass eine Person so viel anhäuft, dass sie alles steuern kann – und woran würden wir es merken?
+    prompts:
+      - Was begrenzt, wie viel einer Einheit, einer Ressource oder einer Forderung an die Gemeinschaft eine Person aufbauen kann – eine Obergrenze, Verfall, keine Übertragungen, Umverteilung oder eine zeitliche Begrenzung?
+      - Wie stellen wir sicher, dass niemand Geld, Guthaben, Darlehen oder Gefälligkeiten in zusätzliche Mitbestimmung verwandelt – durch den Kauf von Einfluss, dadurch, dass andere abhängig werden, oder indem die Entscheidungsmatrix umgangen wird?
+      - Welche Anzeichen würden uns zeigen, dass sich Einfluss in wenigen Händen sammelt, wer prüft sie, und wie oft?
+      - 'Wenn ein Anzeichen auftritt: Wer darf die Grenzen verschärfen, und über welche Entscheidung?'
+    examples:
+      - Kein Mitglied darf mehr als 100 Guthaben halten, und ungenutzte Guthaben verfallen nach 18 Monaten. Guthaben, Darlehen an die Gemeinschaft und Spenden geben niemandem zusätzliche Stimmen, ein Veto oder irgendeine Mitbestimmung, die über das hinausgeht, was die Entscheidungsmatrix gewährt. Zweimal im Jahr berichtet die Finanzverwaltung den höchsten einzelnen Guthabenstand und den höchsten Betrag, den die Gemeinschaft einem einzelnen Mitglied schuldet. Wenn ein Mitglied an der Obergrenze ist oder mehr als 5.000 € zu bekommen hat, prüft die nächste Mitgliederversammlung diese Grenzen und kann sie per Abstimmung verschärfen.
+  internal-economy-protocol.external-income-interfaces:
+    question: Wie erreicht uns Geld von außen, und zu welchen Bedingungen?
+    prompts:
+      - Über welche Kanäle erreicht uns heute Geld von außen, welche könnten wir künftig öffnen – und welche lehnen wir grundsätzlich ab?
+      - Was muss entschieden sein, bevor ein neuer Kanal geöffnet wird, und darf vor dieser Entscheidung überhaupt jemand Geld annehmen oder etwas versprechen?
+      - Welche Bedingungen, die an Geld von außen hängen – Berichte, Branding, Zusagen darüber, wie wir arbeiten – müssen die Mitglieder sehen, bevor sie zustimmen?
+    examples:
+      - Geld von außen erreicht uns über Kursgebühren und eine Stiftungsförderung; künftig könnten wir Räume vermieten oder Erzeugnisse verkaufen, aber von Werbetreibenden nehmen wir kein Geld. Kein neuer Einnahmekanal darf geöffnet werden, und niemand darf Mittel annehmen oder einem Fördergeber oder Kunden etwas versprechen, bevor die Vollmitglieder dem durch eine strategische Entscheidung zugestimmt haben – nachdem sie alle Bedingungen gesehen haben, einschließlich Berichtspflichten oder Auflagen dazu, wie wir arbeiten.
+  internal-economy-protocol.dispute-resolution-for-economic-records:
+    question: Wenn jemand sagt, der Eintrag zum eigenen Beitrag sei falsch – wie wird das geklärt?
+    prompts:
+      - Wie lange nach dem Eintrag eines Beitrags oder Stands kann jemand ihn anfechten?
+      - Wer entscheidet über einen strittigen Eintrag – und wer übernimmt, wenn diese Person selbst beteiligt ist?
+      - 'Wie wird eine Korrektur vorgenommen: Bleibt das Original erhalten und kommt ein neuer Eintrag dazu, und wer wird informiert?'
+      - Wenn jemand mit dem Ergebnis nicht einverstanden ist – wohin kann diese Person sich wenden, und wann ist die Sache abgeschlossen?
+    examples:
+      - Jedes Mitglied kann einen Beitragseintrag oder Stand innerhalb von 60 Tagen nach dem Eintrag anfechten, indem es sich schriftlich an die Aufzeichnungsverwaltung wendet. Die Aufzeichnungsverwaltung – oder eine andere verwaltende Rolle, wenn die Aufzeichnungsverwaltung selbst beteiligt ist – entscheidet innerhalb von 21 Tagen und hält die Gründe schriftlich fest. Korrekturen werden als neue Einträge ergänzt, das Original wird niemals gelöscht. Beide Seiten können die nächste Vollversammlung der Mitglieder anrufen; deren Entscheidung ist endgültig.
+  treasury-ruleset.treasury-scope:
+    question: Was wird gemeinsam gehalten – und wo endet die gemeinsame Kasse und beginnt die persönliche?
+    prompts:
+      - Welche Konten, Wallets oder Kassen sind Gemeinschaftsgeld – einzeln benannt?
+      - Wie wird ein neues Kassenkonto eröffnet, und kann Geld darauf eingezahlt werden, bevor das entschieden ist?
+      - Wenn jemand Gemeinschaftskosten aus eigener Tasche bezahlt – wird das dadurch zu Gemeinschaftsgeld, und schuldet die Gemeinschaft dieser Person dann etwas?
+      - 'Wo gemeinsames Geld und private Ressourcen aufeinandertreffen – Land eines Mitglieds, das wir nutzen, oder gemeinsames Geld, das in der Nähe von jemandes Wohnung ausgegeben wird: Welche Regel gilt?'
+    examples:
+      - 'Unsere Kasse besteht aus genau zwei Konten: dem Girokonto der Genossenschaft und ihrem Sparkonto, beide auf den Namen der Genossenschaft. Jedes neue Kassenkonto muss durch eine strategische Entscheidung der Vollmitglieder genehmigt werden, bevor Geld darauf eingezahlt wird. Geld, das ein Mitglied aus eigener Tasche für gemeinsame Kosten ausgibt, ist keine Kasse und begründet keine Schuld – es sei denn, die Ausgabe war vorab nach unseren Ausgabenregeln genehmigt; dann wird sie aus dem Girokonto zurückgezahlt. Kassengeld wird niemals für Reparaturen innerhalb privater Wohnungen ausgegeben.'
+  treasury-ruleset.income-sources:
+    question: Woher kommt unser Geld, und worauf stützen wir uns?
+    prompts:
+      - Welches Geld kommt heute herein – von wem, wie oft und wofür? Wenn noch nichts, sagt das.
+      - Was erwartet jede Quelle von uns als Gegenleistung, und wann endet sie?
+      - Welche Quelle würde am meisten wehtun, wenn sie wegfällt?
+      - Wer hält diese Liste aktuell, wenn eine Quelle endet oder sich ihre Bedingungen ändern? (Eine neue Quelle zu öffnen, ist eine eigene Frage.)
+    examples:
+      - 'Unsere Einnahmen kommen aus drei Quellen: monatlichen Mitgliedsbeiträgen, Gebühren der zwei offenen Kurse, die wir jeden Sommer anbieten, und einer dreijährigen Förderung einer regionalen Stiftung, die im nächsten Frühjahr endet und einen jährlichen Tätigkeitsbericht verlangt. Wir haben keine Darlehen, Sponsoren oder Investoren. Der Verlust der Förderung würde am meisten wehtun, deshalb planen wir das Budget jedes Jahres ohne sie. Die Finanzverwaltung aktualisiert diese Liste, sobald eine Quelle endet oder sich ihre Bedingungen ändern.'
+  treasury-ruleset.spending-authority:
+    question: Wer darf wie viel ohne Rückfrage ausgeben, wer genehmigt den Rest, und wie wird jede Ausgabe erfasst?
+    prompts:
+      - 'Für jede Ausgabenstufe: Bis zu welchem Betrag oder für welche Art von Kosten, welche Art von Entscheidung, wer genehmigt sie, und wie?'
+      - Welche Verpflichtungen bilden unabhängig vom Betrag ihre eigene Stufe – mehrjährige Verträge, Darlehen, alles, was künftige Mitglieder bindet?
+      - Was passiert, wenn eine Ausgabe dringend ist oder am Ende mehr kostet als genehmigt?
+      - Was wird für jede Ausgabe erfasst – Betrag, Zweck, wer sie genehmigt hat, auf welcher Entscheidung sie beruht – und wo?
+    examples:
+      - 'Die Finanzverwaltung darf jede einzelne Ausgabe bis 300 € innerhalb des vereinbarten Jahresbudgets genehmigen. Alles über 300 € oder außerhalb des Budgets braucht eine strategische Entscheidung per Abstimmung der Vollmitglieder. Mehrjährige Verträge, Darlehen und andere langfristige Verpflichtungen brauchen eine konstitutionelle Entscheidung: zwei Drittel der Vollmitglieder, bestätigt in einer zweiten Versammlung 14 Tage später. Eine Ausgabe, die mehr kosten wird als genehmigt, geht zuerst an die nächste Stufe. Jede Ausgabe wird innerhalb einer Woche mit Betrag, Zweck, genehmigender Person und einem Link zur Entscheidung erfasst.'
+  treasury-ruleset.transparency-and-reporting:
+    question: Wer kann die Konten sehen, wie oft, und was darf zurückgehalten werden?
+    prompts:
+      - 'Für jedes Kassenkonto: Wer kann den Stand und jede Transaktion sehen, und zwar live oder später per Bericht?'
+      - 'Wo ein Konto nicht direkt geteilt werden kann: Wer berichtet darüber, wie oft und wie detailliert?'
+      - Wie sehen Mitglieder, was wir schulden und was wir zugesagt haben – nicht nur, was wir haben?
+      - 'Was darf privat bleiben – zum Beispiel eine Zahlung an jemanden in einer Notlage: Wer entscheidet das, für wie lange und warum?'
+      - 'Auch wenn etwas privat bleibt: Wie können Mitglieder trotzdem prüfen, dass die Regeln eingehalten wurden?'
+    examples:
+      - 'Alle Vollmitglieder haben Lesezugriff auf das Gemeinschaftskonto und sehen jede Transaktion, sobald sie passiert. Die Kassenverwaltung stellt innerhalb von zehn Tagen nach Monatsende eine monatliche Übersicht über Stände, Ein- und Ausgaben, Schulden und unterzeichnete Verpflichtungen ins Mitgliederforum. Die einzige Ausnahme ist Unterstützung für ein Mitglied in einer Notlage: Der Name bleibt bis zu 12 Monate verborgen, aber Betrag, Datum und genehmigende Entscheidung werden immer gezeigt, und zwei jährlich per Los bestimmte Mitglieder dürfen die vollständigen Angaben prüfen.'
+  treasury-ruleset.reserve-risk-and-debt-constraints:
+    question: Wie viel dürfen wir schulden, und wie viel legen wir für ein schlechtes Jahr beiseite?
+    prompts:
+      - Dürfen wir überhaupt Geld leihen – und wenn ja, wie viel, von wem, und nur über welche Entscheidung?
+      - Welche laufenden Kosten oder langen Verträge (Mieten, Abos, bezahlte Stellen) brauchen eine Entscheidung, bevor jemand unterschreibt?
+      - Legen wir Geld für ein schlechtes Jahr beiseite – wie viel, wofür darf es verwendet werden, und wer darf darauf zugreifen? Wenn wir noch kein Ziel haben, sagt das.
+      - Darf jemand in unserem Namen Darlehen aufnehmen, Bürgschaften geben oder Investitionen außerhalb der Kassenkonten machen?
+    examples:
+      - Wir leihen kein Geld, geben keine Bürgschaften und machen keine Investitionen, es sei denn, die Vollmitglieder stimmen in einer strategischen Abstimmung zu; die Gesamtschuld darf niemals sechs Monate unserer üblichen Einnahmen überschreiten. Jeder Vertrag und jede laufende Kostenverpflichtung mit mehr als einem Jahr Laufzeit braucht ebenfalls eine strategische Abstimmung. Wir wollen drei Monate Betriebskosten auf einem separaten Reservekonto halten; es darf nur für Notreparaturen oder ausgefallene Einnahmen genutzt werden, und jede Entnahme wird auf der nächsten Mitgliederversammlung berichtet.
+  treasury-ruleset.conflict-of-interest-rules:
+    question: Was tut jemand, wenn eine Entscheidung über Geld ihm oder ihr persönlich nützen würde?
+    prompts:
+      - Darf jemand eine Ausgabe genehmigen, die man selbst beantragt hat – und wenn nicht, wer genehmigt sie stattdessen?
+      - Was gilt als persönliches Interesse – das Geschäft einer verwandten Person, eine befreundete Person, die uns beliefert, eine bezahlte Rolle?
+      - 'Wenn jemand von einer Zahlung oder einem Kauf profitieren würde: Wann sagt diese Person das, und verlässt sie die Diskussion und die Entscheidung?'
+      - Wo werden Offenlegungen festgehalten, und was passiert mit einer Entscheidung, wenn ein Interesse nicht offengelegt wurde?
+    examples:
+      - Niemand darf einen Ausgabenantrag genehmigen, den man selbst gestellt hat; er geht stattdessen an eine andere verwaltende Rolle. Jedes Mitglied, das selbst oder über Partner, Familie oder Unternehmen von einer Ausgaben- oder Kaufentscheidung profitieren würde, muss das vor Beginn der Diskussion sagen, verlässt dann die Diskussion und stimmt nicht mit ab. Offenlegungen werden im Protokoll vermerkt. Kommt ein nicht offengelegtes Interesse später heraus, wird die Entscheidung auf der nächsten Mitgliederversammlung überprüft.

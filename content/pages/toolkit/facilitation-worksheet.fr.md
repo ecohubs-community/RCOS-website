@@ -7,7 +7,7 @@ summary: >-
 parentId: 6acbe9a7
 order: 1
 lang: fr
-sourceHash: bc1902a5
+sourceHash: 6d391b8c
 ---
 
 Un test de résistance est le plus utile quand une communauté le mène *ensemble*, à voix haute, plutôt qu'une seule personne le lisant dans son coin. Ce guide transforme n'importe quel test de la bibliothèque en une séance structurée. Il fonctionne pour un groupe en formation qui anticipe les problèmes, comme pour un groupe établi qui audite sa situation réelle.

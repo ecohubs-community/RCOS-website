@@ -4,7 +4,7 @@ title: Schutzmaßnahmen
 parentId: null
 order: 0
 lang: de
-sourceHash: '80540912'
+sourceHash: 9738d0c2
 ---
 
 ## Schutzmaßnahmen

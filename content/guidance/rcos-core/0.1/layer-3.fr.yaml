@@ -1,0 +1,179 @@
+lang: fr
+sourceHash: c6d3e526
+sections:
+  '5.1':
+    inShort: Chaque ressource que la communauté gouverne est répertoriée et marquée comme commun ou privée, avec la personne qui en prend soin et la manière dont elle peut être utilisée ou transférée.
+    questions:
+      unclassified:
+        question: Et une ressource que personne n'a encore classée ?
+        answer: Elle est non classée, et la communauté ne peut pas l'allouer, la grever, la monétiser ni la transférer tant qu'une décision autorisée ne l'a pas classée.
+      private-property:
+        question: La communauté peut-elle décider des biens privés de ses membres ?
+        answer: Uniquement dans la mesure où le périmètre, les accords d'adhésion ou d'autres artefacts gouvernés le disent explicitement.
+  '5.2':
+    inShort: Décidez quels types de contribution comptent, y compris le soin et la coordination, et comment ils sont reconnus, afin que le travail essentiel de personne ne reste invisible.
+    questions:
+      care-work:
+        question: Le travail de soin doit-il compter comme une contribution ?
+        answer: Vous décidez quelles catégories sont reconnues, et le soin et le travail émotionnel en font partie de celles que RCOS nomme. Ce que vous ne pouvez pas faire, c'est dépendre d'un travail invisible et non rémunéré sans définir comment il est reconnu.
+      contribution-and-power:
+        question: Les personnes qui contribuent davantage ont-elles plus voix au chapitre ?
+        answer: Pas par la reconnaissance des contributions. Celle-ci ne peut pas créer d'autorité décisionnelle ni d'influence au-delà de ce que définit la Couche 2.
+  '5.3':
+    inShort: Dites ce que contient la trésorerie commune, d'où vient l'argent, qui peut dépenser combien, et rendez les comptes ouverts par défaut.
+    questions:
+      confidential-finances:
+        question: Certaines finances peuvent-elles rester confidentielles ?
+        answer: Oui, sous forme d'exceptions définies, justifiées et limitées dans le temps, et jamais d'une manière qui empêche les membres de vérifier la conformité.
+      spending-limits:
+        question: Comment encadrer le pouvoir de dépense ?
+        answer: Avec des attributions d'autorité claires, des seuils par montant ou par catégorie, des chemins d'approbation et d'escalade, et des enregistrements obligatoires.
+  '5.4':
+    inShort: Veillez à ce que l'argent, les crédits ou les dettes ne se transforment pas discrètement en pouvoir sur la communauté.
+    questions:
+      buy-influence:
+        question: Un membre fortuné peut-il financer des choses en échange de plus de poids dans les décisions ?
+        answer: Non. Les mécanismes économiques ne peuvent pas servir à contourner les limites d'autorité de la Couche 2, que ce soit en achetant de l'influence ou en créant une dépendance.
+      limit-mechanisms:
+        question: Comment limiter l'accumulation de crédits internes ?
+        answer: Avec des plafonds, une dégradation ou une expiration, la non-transférabilité, la redistribution, ou une validité limitée dans le temps — ce qui convient à votre système.
+  '5.5':
+    inShort: La Couche 3 tient dans deux documents, le Protocole d'économie interne et le Règlement de trésorerie.
+    questions:
+      which-documents:
+        question: De quels documents la Couche 3 a-t-elle besoin ?
+        answer: Un Protocole d'économie interne et un Règlement de trésorerie.
+  '5.6':
+    inShort: Les limites économiques strictes sont que les ressources partagées restent visibles, que les communs ne peuvent pas être privatisés en douce, que le travail invisible n'est jamais structurellement requis, et que l'influence ne peut pas s'accumuler indéfiniment.
+    questions:
+      sell-commons:
+        question: Une ressource commune peut-elle un jour être vendue ?
+        answer: Pas par une action informelle, implicite ou unilatérale. Tout changement passe par une décision autorisée.
+  '5.7':
+    inShort: Certaines questions économiques doivent être écrites, d'autres peuvent l'être, et d'autres encore, comme le rapport personnel à l'argent, restent en dehors du standard.
+    questions:
+      equal-outcomes:
+        question: RCOS attend-il que tout le monde ait le même revenu ou la même part ?
+        answer: Non. Que les résultats soient égaux ou différenciés reste optionnel et hors périmètre.
+templates:
+  internal-economy-protocol.commons-vs-private-classification:
+    question: Qu'est-ce qui appartient à toutes et tous, qu'est-ce qui reste personnel, et où est-ce écrit ?
+    prompts:
+      - 'Pour chaque chose que nous détenons — terrain, bâtiments, argent, outils, sites web, comptes : est-elle partagée par toutes et tous ou propre à quelqu''un, et qui en est la personne gardienne ou propriétaire ?'
+      - 'Pour chaque ressource partagée : qui peut l''utiliser et comment, qui décide à son sujet, qui en prend soin, et comment son entretien est-il financé ?'
+      - Une ressource partagée peut-elle un jour être vendue, prêtée ou devenir la propriété de quelqu'un — et si oui, seulement par quelle décision, pour que cela n'arrive jamais en douce ?
+      - Où s'arrête notre droit de regard sur les biens privés de quelqu'un ?
+      - Où la liste est-elle tenue, comment chaque changement est-il daté et versionné, et qu'advient-il d'une chose que personne n'a encore répertoriée ?
+    examples:
+      - 'Chaque modification de notre registre des ressources est une nouvelle version datée, adoptée en assemblée des membres. Le terrain et l''atelier sont partagés : tout membre peut les utiliser, et le groupe terrain décide à leur sujet et les entretient lors de journées de travail mensuelles, les réparations étant payées sur le budget commun. Les ressources partagées ne peuvent être vendues, prêtées à long terme ni privatisées, sauf par un vote des membres de plein droit. Les logements, véhicules et économies des membres leur appartiennent, et nous n''avons aucun droit de regard dessus au-delà de l''accord d''adhésion. Tout ce qui n''est pas encore enregistré reste intouché jusqu''à sa classification.'
+  internal-economy-protocol.recognized-contribution-categories:
+    question: Quels types de travail comptons-nous comme contribution — y compris le travail que personne ne voit ?
+    prompts:
+      - Quels types de contribution reconnaissons-nous — par exemple le travail pratique, le soin, l'enseignement, la coordination, l'entretien ?
+      - Quel travail nous fait tourner mais est rarement remarqué ou remercié — accueillir, écouter, ranger après les réunions, modérer, relancer la paperasse ?
+      - 'Pour chaque type de travail dont nous dépendons : est-il reconnu, réparti comme une tâche tournante, ou rémunéré — afin que rien d''essentiel ne repose sur quelqu''un qui le fait discrètement gratuitement ?'
+      - Comment remarquerions-nous qu'un travail dont nous dépendons manque à la liste ? (La manière dont les contributions sont enregistrées est une autre question.)
+    examples:
+      - 'Nous reconnaissons six types de contribution : l''écriture et la recherche, la construction et la maintenance de nos outils, la coordination et la facilitation, l''accueil et l''accompagnement des nouveaux membres, la modération et le soin aux personnes en conflit ou en détresse, et l''entretien des documents et comptes partagés. La modération et le soin tournent entre les membres tous les trois mois, pour que personne ne les porte indéfiniment. À chaque bilan trimestriel, tout travail sur lequel nous nous sommes appuyés et qui ne figure pas sur cette liste est soit ajouté comme catégorie, soit transformé en tâche tournante.'
+  internal-economy-protocol.contribution-recognition-mechanism:
+    question: Comment suivons-nous et reconnaissons-nous les contributions — et qu'est-ce que la reconnaissance ouvre, s'il y a lieu ?
+    prompts:
+      - Comment une contribution est-elle enregistrée ou reconnue, et par qui ?
+      - Qui peut confirmer un enregistrement ? (Le contester est une autre question.)
+      - La reconnaissance donne-t-elle des avantages, des responsabilités ou un accès aux ressources partagées ?
+      - Comment nous assurons-nous que la reconnaissance ne donne jamais de poids supplémentaire dans les décisions au-delà de ce qu'accorde la Matrice de décision ?
+    examples:
+      - Les membres consignent eux-mêmes leurs contributions sur le tableau partagé dans la semaine, et la personne référente de la tâche ou tout autre membre les confirme. Les contributions confirmées comptent pour le minimum mensuel de participation et donnent priorité pour réserver la chambre d'amis. Elles ne donnent jamais de voix supplémentaire, de veto ni de poids accru dans une décision.
+  internal-economy-protocol.internal-units:
+    question: Si nous utilisons nos propres crédits ou heures, qui les émet et à quoi peuvent-ils servir ?
+    prompts:
+      - Utilisons-nous des unités à nous (heures, crédits, points) ? Si non, dites-le — et que faudrait-il décider avant d'en introduire une ?
+      - 'Pour chaque unité : à quoi sert-elle, qui l''émet, pour quoi, et en quelle quantité ?'
+      - Une unité peut-elle être donnée, échangée ou vendue à quelqu'un d'autre — et si oui, entre qui ?
+      - Une unité expire-t-elle, perd-elle de la valeur avec le temps, ou s'arrête-t-elle à un maximum ? (Savoir si cela suffit à empêcher quiconque de tout piloter est une autre question.)
+      - Comment empêchons-nous les saisies fausses ou erronées, comment un solde incorrect est-il corrigé, et où s'adresse quelqu'un qui conteste le sien ?
+      - Qui peut voir le solde et les transactions de chaque personne — tout le monde, seulement la personne concernée, ou un rôle désigné ?
+    examples:
+      - Nous utilisons une seule unité, l'heure de travail. La personne coordinatrice des heures de travail consigne une heure pour chaque heure de travail partagé validée par la personne référente de la tâche ; les heures ne peuvent être ni données, ni échangées, ni vendues. Les heures expirent 24 mois après avoir été acquises, et personne ne peut en détenir plus de 200. Chaque membre voit son propre solde et toutes les transactions sans les noms ; la personne coordinatrice corrige les erreurs dans la semaine, et quiconque conteste son solde utilise notre procédure pour les enregistrements économiques contestés.
+      - Nous n'utilisons aucun crédit, heure ni point interne. Avant d'en introduire un, les membres de plein droit doivent s'accorder, par amendement à ce protocole, sur son objet, son mode d'émission, sa transférabilité, son expiration, la correction des erreurs et la visibilité des soldes.
+  internal-economy-protocol.accumulation-constraints:
+    question: Qu'est-ce qui empêche une personne d'accumuler assez pour tout piloter — et comment le remarquerions-nous ?
+    prompts:
+      - Qu'est-ce qui limite la quantité d'unités, de ressources ou de créances sur la communauté qu'une personne peut accumuler — un plafond, une expiration, l'absence de transfert, une redistribution, ou une limite de durée ?
+      - Comment nous assurons-nous que personne ne transforme argent, crédits, prêts ou faveurs en poids supplémentaire — en achetant de l'influence, en rendant les autres dépendants, ou en contournant la Matrice de décision ?
+      - Quels signaux nous diraient que l'influence se concentre entre quelques mains, qui les vérifie, et à quelle fréquence ?
+      - Quand un signal apparaît, qui peut resserrer les limites, et par quelle décision ?
+    examples:
+      - Aucun membre ne peut détenir plus de 100 crédits, et les crédits non utilisés expirent au bout de 18 mois. Les crédits, les prêts à la communauté et les dons ne donnent jamais à quiconque de voix supplémentaire, de veto, ni de poids au-delà de ce qu'accorde la Matrice de décision. Deux fois par an, la personne gardienne des finances rapporte le plus gros solde de crédits individuel et le plus gros montant que la communauté doit à un seul membre. Si un membre atteint le plafond ou si plus de 5 000 € lui sont dus, la prochaine assemblée des membres réexamine ces limites et peut les resserrer par vote.
+  internal-economy-protocol.external-income-interfaces:
+    question: Comment l'argent de l'extérieur nous parvient-il, et à quelles conditions ?
+    prompts:
+      - Par quels canaux l'argent de l'extérieur nous parvient-il aujourd'hui, et lesquels pourrions-nous ouvrir à l'avenir — ou refuser catégoriquement ?
+      - Que faut-il décider avant d'ouvrir un nouveau canal, et quelqu'un peut-il accepter de l'argent ou promettre quoi que ce soit avant cette décision ?
+      - Quelles conditions attachées à l'argent extérieur — rapports, visibilité de marque, promesses sur notre manière de travailler — les membres doivent-ils voir avant de dire oui ?
+    examples:
+      - L'argent de l'extérieur nous parvient par les frais de formation et une subvention de fondation ; à l'avenir, nous pourrions envisager la location de salles ou la vente de produits, mais nous n'accepterons pas d'argent d'annonceurs. Aucun nouveau canal de revenus ne peut être ouvert, et personne ne peut accepter de fonds ni promettre quoi que ce soit à un bailleur ou à un client, tant que les membres de plein droit ne l'ont pas approuvé par une décision Stratégique après avoir vu l'ensemble de ses conditions, y compris les obligations de rapport ou les conditions portant sur notre manière de travailler.
+  internal-economy-protocol.dispute-resolution-for-economic-records:
+    question: Quand quelqu'un dit que l'enregistrement de sa contribution est erroné, comment cela se règle-t-il ?
+    prompts:
+      - Combien de temps après la saisie d'un enregistrement de contribution ou d'un solde peut-on le contester ?
+      - Qui tranche un enregistrement contesté — et qui prend le relais si cette personne est impliquée ?
+      - 'Comment une correction est-elle faite : l''original est-il conservé et une nouvelle entrée ajoutée, et qui en est informé ?'
+      - Si quelqu'un conteste le résultat, où peut-il faire appel, et quand l'affaire est-elle close ?
+    examples:
+      - Tout membre peut contester un enregistrement de contribution ou un solde dans les 60 jours suivant sa saisie, en écrivant à la personne gardienne des enregistrements. Celle-ci, ou une autre personne gardienne si elle est impliquée, décide sous 21 jours et consigne les motifs. Les corrections sont ajoutées comme nouvelles entrées et l'original n'est jamais supprimé. Chaque partie peut faire appel devant la prochaine assemblée des membres, dont la décision est définitive.
+  treasury-ruleset.treasury-scope:
+    question: Qu'est-ce qui est détenu en commun — et où s'arrête la bourse commune, où commence la bourse personnelle ?
+    prompts:
+      - Quels comptes, portefeuilles ou caisses sont de l'argent communautaire — nommés un par un ?
+      - Comment un nouveau compte de trésorerie est-il ouvert, et peut-on y verser de l'argent avant que ce soit décidé ?
+      - Quand quelqu'un paie une dépense communautaire de sa poche, cela en fait-il de l'argent communautaire — et la communauté lui doit-elle alors quelque chose ?
+      - 'Là où l''argent commun et les ressources privées se rencontrent — un terrain d''un membre que nous utilisons, ou de l''argent commun dépensé près du logement de quelqu''un : quelle règle s''applique ?'
+    examples:
+      - 'Notre trésorerie, ce sont exactement deux comptes : le compte courant de la coopérative et son compte d''épargne, tous deux au nom de la coopérative. Tout nouveau compte de trésorerie doit être approuvé par une décision Stratégique des membres de plein droit avant qu''on y verse de l''argent. L''argent qu''un membre dépense de sa poche pour des coûts partagés n''est pas de la trésorerie et ne crée aucune dette, sauf si la dépense a été approuvée au préalable selon nos règles de dépense, auquel cas elle est remboursée depuis le compte courant. L''argent de la trésorerie n''est jamais dépensé pour des réparations à l''intérieur des logements privés.'
+  treasury-ruleset.income-sources:
+    question: D'où vient notre argent, et sur quoi comptons-nous ?
+    prompts:
+      - Quel argent entre aujourd'hui — de qui, à quelle fréquence, et pour quoi ? Si rien pour l'instant, dites-le.
+      - Qu'attend de nous chaque source en retour, et quand prend-elle fin ?
+      - Quelle source nous manquerait le plus si elle s'arrêtait ?
+      - Qui tient cette liste à jour quand une source se termine ou que ses conditions changent ? (Ouvrir une nouvelle source est une autre question.)
+    examples:
+      - 'Nos revenus viennent de trois sources : les contributions mensuelles des membres, les frais des deux formations ouvertes que nous organisons chaque été, et une subvention de trois ans d''une fondation régionale qui se termine au printemps prochain et exige un rapport d''activité annuel. Nous n''avons ni prêts, ni sponsors, ni investisseurs. Perdre la subvention nous ferait le plus mal, aussi nous construisons le budget de chaque année sans elle. La personne gardienne des finances met cette liste à jour chaque fois qu''une source se termine ou que ses conditions changent.'
+  treasury-ruleset.spending-authority:
+    question: Qui peut dépenser combien sans demander, qui approuve le reste, et comment chaque dépense est-elle enregistrée ?
+    prompts:
+      - 'Pour chaque palier de dépense : jusqu''à quel montant ou pour quel type de coût, quel type de décision, qui l''approuve, et comment ?'
+      - Quels engagements relèvent d'un palier à part quel que soit le montant — contrats pluriannuels, prêts, tout ce qui engage les futurs membres ?
+      - Que se passe-t-il quand une dépense est urgente, ou qu'elle finit par coûter plus que ce qui a été approuvé ?
+      - Qu'enregistre-t-on pour chaque dépense — montant, objet, qui l'a approuvée, sur quelle décision elle s'appuie — et où ?
+    examples:
+      - 'La personne gardienne des finances peut approuver toute dépense unique jusqu''à 300 € dans le cadre du budget annuel convenu. Au-delà de 300 €, ou hors budget, il faut une décision Stratégique par vote des membres de plein droit. Les contrats pluriannuels, les prêts et autres obligations de long terme exigent une décision Constitutionnelle : deux tiers des membres de plein droit, confirmée lors d''une seconde assemblée 14 jours plus tard. Une dépense qui coûtera plus que ce qui a été approuvé remonte d''abord au palier suivant. Chaque dépense est consignée dans la semaine avec son montant, son objet, la personne qui l''a approuvée et un lien vers la décision.'
+  treasury-ruleset.transparency-and-reporting:
+    question: Qui peut voir les comptes, à quelle fréquence, et que peut-on retenir ?
+    prompts:
+      - 'Pour chaque compte de trésorerie : qui peut voir le solde et chaque transaction, et est-ce en direct ou rapporté plus tard ?'
+      - Là où un compte ne peut pas être partagé directement, qui en rend compte, à quelle fréquence, et avec quel niveau de détail ?
+      - Comment les membres voient-ils ce que nous devons et ce que nous avons promis, et pas seulement ce que nous détenons ?
+      - 'Que peut-on garder confidentiel — par exemple un versement à une personne en difficulté : qui décide, pour combien de temps, et pourquoi ?'
+      - Même lorsque quelque chose reste confidentiel, comment les membres peuvent-ils tout de même vérifier que les règles ont été suivies ?
+    examples:
+      - 'Tous les membres de plein droit ont un accès en lecture seule au compte bancaire de la communauté et voient chaque transaction en temps réel. La personne trésorière publie sur le forum des membres, dans les dix jours suivant la fin du mois, un résumé mensuel des soldes, des entrées et sorties, des dettes et des engagements signés. La seule exception est l''aide versée à un membre en difficulté : le nom reste masqué jusqu''à 12 mois, mais le montant, la date et la décision d''approbation sont toujours affichés, et deux membres tirés au sort chaque année peuvent vérifier l''ensemble des détails.'
+  treasury-ruleset.reserve-risk-and-debt-constraints:
+    question: Combien pouvons-nous devoir, et combien gardons-nous de côté pour une mauvaise année ?
+    prompts:
+      - Pouvons-nous emprunter de l'argent — et si oui, combien, auprès de qui, et seulement par quelle décision ?
+      - Quels coûts récurrents ou contrats longs (baux, abonnements, personnel salarié) exigent une décision avant toute signature ?
+      - Gardons-nous de l'argent de côté pour une mauvaise année — combien, à quoi peut-il servir, et qui peut y puiser ? Si nous n'avons pas encore d'objectif, disons-le.
+      - Quelqu'un peut-il contracter des prêts, donner des garanties ou faire des placements en notre nom en dehors des comptes de trésorerie ?
+    examples:
+      - Nous n'empruntons pas, ne donnons pas de garanties et ne faisons pas de placements sans approbation des membres de plein droit par un vote Stratégique, et la dette totale ne peut jamais dépasser six mois de nos revenus habituels. Tout contrat ou coût récurrent d'une durée supérieure à un an exige aussi un vote Stratégique. Nous visons à conserver trois mois de frais de fonctionnement sur un compte de réserve séparé ; il ne peut servir qu'à des réparations d'urgence ou à une perte de revenus, et chaque retrait est rapporté à la prochaine assemblée des membres.
+  treasury-ruleset.conflict-of-interest-rules:
+    question: Que fait une personne quand une décision financière lui profiterait personnellement ?
+    prompts:
+      - Quelqu'un peut-il approuver une dépense qu'il a lui-même demandée — et si non, qui l'approuve à la place ?
+      - Qu'est-ce qui compte comme intérêt personnel — l'entreprise d'un proche, un ami qui nous fournit, un rôle rémunéré ?
+      - Quand une personne gagnerait à un versement ou à un achat, quand le dit-elle, et se retire-t-elle de la discussion et de la décision ?
+      - Où les déclarations sont-elles consignées, et qu'advient-il d'une décision si un intérêt n'a pas été déclaré ?
+    examples:
+      - Personne ne peut approuver une demande de dépense qu'il a formulée lui-même ; elle passe à une autre personne gardienne. Tout membre qui, ou dont le ou la partenaire, la famille ou l'entreprise, gagnerait à une décision de dépense ou d'achat doit le dire avant le début de la discussion, puis quitte la discussion et ne vote pas. Les déclarations sont notées au compte rendu. Si un intérêt non déclaré apparaît plus tard, la décision est réexaminée à la prochaine assemblée des membres.

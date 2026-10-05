@@ -69,9 +69,9 @@ const body = (doc: Doc) => {
 	const out = Object.fromEntries(
 		Object.entries(doc).filter(([k]) => keep.includes(k) && doc[k] !== '')
 	);
-	// `autolink` tells the site which terms not to underline; markdown has no
-	// place for it.
-	if (out.terms) out.terms = out.terms.map(({ autolink: _a, ...t }: Doc) => t);
+	// `autolink` and `aliases` tell the site which terms to underline and in which
+	// forms; markdown has no place for them.
+	if (out.terms) out.terms = out.terms.map(({ autolink: _a, aliases: _b, ...t }: Doc) => t);
 	return out;
 };
 
@@ -152,6 +152,8 @@ describe('translation round trip (article.js)', () => {
 					readFileSync(file.replace(/\.yaml$/, `.${locale}.yaml`), 'utf8')
 				) as Doc;
 				const { lang: _l, sourceHash: _h, ...overlay } = raw;
+				// Glossary aliases are for the site only; the article has no place for them.
+				if (overlay.terms) for (const t of Object.values(overlay.terms) as Doc[]) delete t.aliases;
 				const article = toArticle(doc, overlay, locale, targets);
 				expect(fromArticle(doc, article, locale, targets)).toEqual(overlay);
 				checked++;

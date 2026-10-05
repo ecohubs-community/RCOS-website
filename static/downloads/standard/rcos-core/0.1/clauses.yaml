@@ -84,7 +84,7 @@
   i18n:
     en: Secondary purposes MAY be defined, but MUST NOT conflict with or override the primary purpose.
     de: >-
-      Sekundäre Zwecke KANN definiert werden, DARF NICHT jedoch dem primären Zweck widersprechen
+      Sekundäre Zwecke KÖNNEN definiert werden, DÜRFEN NICHT jedoch dem primären Zweck widersprechen
       oder ihn außer Kraft setzen.
     es: >-
       Se PUEDEN definir propósitos secundarios, pero NO DEBEN entrar en conflicto con el propósito
@@ -289,7 +289,7 @@
   key: l0.invariants.2
   i18n:
     en: Invariants MUST be explicitly listed and documented.
-    de: Invarianten MUSS explizit aufgelistet und dokumentiert sein.
+    de: Invarianten MÜSSEN explizit aufgelistet und dokumentiert sein.
     es: Las invariantes DEBEN estar explícitamente listadas y documentadas.
     fr: Les invariants DOIVENT être explicitement listés et documentés.
     pt-br: Invariantes DEVEM ser listadas e documentadas explicitamente.
@@ -306,7 +306,7 @@
   key: l0.invariants.3
   i18n:
     en: Invariants MUST apply across all layers of RCOS.
-    de: Invarianten MUSS über alle Layer von RCOS hinweg gelten.
+    de: Invarianten MÜSSEN über alle Schichten von RCOS hinweg gelten.
     es: Las invariantes DEBEN aplicarse a todas las capas de RCOS.
     fr: Les invariants DOIVENT s'appliquer à travers toutes les couches du RCOS.
     pt-br: Invariantes DEVEM se aplicar a todas as camadas do RCOS.
@@ -368,7 +368,7 @@
       Invariants MAY only be changed or removed through a constitutional change process as defined
       in Layer 2 and Layer 6.
     de: >-
-      Invarianten KANN nur durch einen konstitutionellen Änderungsprozess gemäß Schicht 2 und
+      Invarianten KÖNNEN nur durch einen konstitutionellen Änderungsprozess gemäß Schicht 2 und
       Schicht 6 geändert oder entfernt werden.
     es: >-
       Las invariantes solo PUEDEN ser modificadas o eliminadas mediante un proceso de cambio
@@ -425,7 +425,7 @@
       - Participation prerequisites
       - Non-negotiable cultural or ecological constraints
     de: |-
-      Identitätseinschränkungen KANN unter anderem Folgendes umfassen:
+      Identitätseinschränkungen KÖNNEN unter anderem Folgendes umfassen:
       - Ethische oder verhaltensbezogene Grenzen
       - Teilnahmevoraussetzungen
       - Nicht verhandelbare kulturelle oder ökologische Einschränkungen
@@ -457,7 +457,7 @@
   key: l0.identity-constraints.3
   i18n:
     en: Identity constraints MUST be testable and enforceable through defined processes.
-    de: Identitätseinschränkungen MUSS überprüfbar und durch definierte Prozesse durchsetzbar sein.
+    de: Identitätseinschränkungen MÜSSEN überprüfbar und durch definierte Prozesse durchsetzbar sein.
     es: >-
       Las restricciones de identidad DEBEN ser verificables y aplicables mediante procesos
       definidos.
@@ -479,7 +479,7 @@
   key: l0.identity-constraints.4
   i18n:
     en: Identity constraints MUST NOT be enforced implicitly or informally.
-    de: Identitätseinschränkungen DARF NICHT implizit oder informell durchgesetzt werden.
+    de: Identitätseinschränkungen DÜRFEN NICHT implizit oder informell durchgesetzt werden.
     es: Las restricciones de identidad NO DEBEN aplicarse de manera implícita o informal.
     fr: Les contraintes d'identité NE DOIVENT PAS être appliquées de manière implicite ou informelle.
     pt-br: Restrições de identidade NÃO DEVEM ser aplicadas de forma implícita ou informal.
@@ -543,7 +543,7 @@
       - Versioned
       - Adopted through a formal ratification process
     de: |-
-      Artefakte von Schicht 0 MUSS:
+      Artefakte von Schicht 0 MÜSSEN:
       - Für alle Mitglieder öffentlich zugänglich sein
       - Versioniert sein
       - Durch einen formalen Ratifizierungsprozess angenommen werden
@@ -630,7 +630,7 @@
       - Full Member
       - Exited Member
     de: |-
-      Mindestens die folgenden Mitgliedschaftsstatus MUSS existieren:
+      Mindestens die folgenden Mitgliedschaftsstatus MÜSSEN existieren:
       - Bewerber:in
       - Probe- / Übergangsmitglied
       - Vollmitglied
@@ -709,7 +709,7 @@
   i18n:
     en: No rights or obligations MAY be assumed outside of the individual’s current membership state.
     de: >-
-      Keine Rechte oder Pflichten KANN außerhalb des aktuellen Mitgliedschaftsstatus der
+      Keine Rechte oder Pflichten KÖNNEN außerhalb des aktuellen Mitgliedschaftsstatus der
       Einzelperson angenommen werden.
     es: >-
       No se PUEDE asumir ningún derecho u obligación fuera del estado de membresía actual del
@@ -786,7 +786,7 @@
   key: l1.entry-and-onboarding.3
   i18n:
     en: Admission criteria MUST be explicit and documented.
-    de: Aufnahmekriterien MUSS explizit und dokumentiert sein.
+    de: Aufnahmekriterien MÜSSEN explizit und dokumentiert sein.
     es: Los criterios de admisión DEBEN ser explícitos y estar documentados.
     fr: Les critères d'admission DOIVENT être explicites et documentés.
     pt-br: Os critérios de admissão DEVEM ser explícitos e documentados.
@@ -874,7 +874,7 @@
   key: l1.trial-and-evaluation.3
   i18n:
     en: During probation, rights MAY be limited but obligations MUST be explicit.
-    de: Während der Probezeit KANN Rechte eingeschränkt werden, aber Pflichten MUSS explizit sein.
+    de: Während der Probezeit KÖNNEN Rechte eingeschränkt werden, aber Pflichten MÜSSEN explizit sein.
     es: >-
       Durante el periodo de prueba, los derechos PUEDEN ser limitados, pero las obligaciones DEBEN
       ser explícitas.
@@ -956,7 +956,7 @@
   key: l1.rights-and-obligations.3
   i18n:
     en: Rights and obligations MUST be symmetrical and proportionate to membership state.
-    de: Rechte und Pflichten MUSS symmetrisch und proportional zum Mitgliedschaftsstatus sein.
+    de: Rechte und Pflichten MÜSSEN symmetrisch und proportional zum Mitgliedschaftsstatus sein.
     es: Los derechos y obligaciones DEBEN ser simétricos y proporcionales al estado de membresía.
     fr: Les droits et obligations DOIVENT être symétriques et proportionnels à l'état d'adhésion.
     pt-br: Direitos e obrigações DEVEM ser simétricos e proporcionais ao estado de filiação.
@@ -991,7 +991,7 @@
   key: l1.rights-and-obligations.5
   i18n:
     en: Obligations MUST NOT be open-ended or undefined.
-    de: Pflichten DARF NICHT unbefristet oder undefiniert sein.
+    de: Pflichten DÜRFEN NICHT unbefristet oder undefiniert sein.
     es: Las obligaciones NO DEBEN ser indefinidas o carecer de definición.
     fr: Les obligations NE DOIVENT PAS être ouvertes ou indéfinies.
     pt-br: As obrigações NÃO DEVEM ser abertas ou indefinidas.
@@ -1008,7 +1008,7 @@
   key: l1.participation-and-contribution.1
   i18n:
     en: Participation expectations MUST be explicitly defined.
-    de: Erwartungen an die Teilnahme MUSS explizit definiert werden.
+    de: Erwartungen an die Teilnahme MÜSSEN explizit definiert werden.
     es: Las expectativas de participación DEBEN estar definidas explícitamente.
     fr: Les attentes en matière de participation DOIVENT être explicitement définies.
     pt-br: As expectativas de participação DEVEM ser explicitamente definidas.
@@ -1025,7 +1025,7 @@
   key: l1.participation-and-contribution.2
   i18n:
     en: Acceptable forms of contribution MUST be listed.
-    de: Akzeptable Formen des Beitrags MUSS aufgelistet werden.
+    de: Akzeptable Formen des Beitrags MÜSSEN aufgelistet werden.
     es: Las formas aceptables de contribución DEBEN estar enumeradas.
     fr: Les formes acceptables de contribution DOIVENT être énumérées.
     pt-br: As formas aceitáveis de contribuição DEVEM ser listadas.
@@ -1212,7 +1212,7 @@
   key: l1.suspension-and-temporary-status.2
   i18n:
     en: Suspension conditions MUST be explicit, time-bounded, and reviewable.
-    de: Suspendierungsbedingungen MUSS explizit, zeitlich begrenzt und überprüfbar sein.
+    de: Suspendierungsbedingungen MÜSSEN explizit, zeitlich begrenzt und überprüfbar sein.
     es: Las condiciones de suspensión DEBEN ser explícitas, limitadas en el tiempo y revisables.
     fr: Les conditions de suspension DOIVENT être explicites, limitées dans le temps et révisables.
     pt-br: As condições de suspensão DEVEM ser explícitas, com prazo definido e revisáveis.
@@ -1254,7 +1254,7 @@
       - Exit & Separation Protocol
       - Membership State Registry
     de: |-
-      Die folgenden Artefakte sind für die Layer-1-Konformität verpflichtend:
+      Die folgenden Artefakte sind für die Schicht-1-Konformität verpflichtend:
       - Mitgliedschaftsvereinbarung
       - Onboarding-Protokoll
       - Austritts- und Trennungsprotokoll
@@ -1294,7 +1294,7 @@
       - Versioned
       - Accessible to all members
     de: |-
-      Layer-1-Artefakte MUSS:
+      Schicht-1-Artefakte MÜSSEN:
       - Explizit und eindeutig sein
       - Versioniert sein
       - Allen Mitgliedern zugänglich sein
@@ -1333,7 +1333,7 @@
       Absence, ambiguity, or systematic violation of Layer 1 artifacts MUST result in loss of
       RCOS-Core compliance.
     de: >-
-      Das Fehlen, die Mehrdeutigkeit oder die systematische Verletzung von Layer-1-Artefakten MUSS
+      Das Fehlen, die Mehrdeutigkeit oder die systematische Verletzung von Schicht-1-Artefakten MUSS
       zum Verlust der RCOS-Core-Konformität führen.
     es: >-
       La ausencia, ambigüedad o violación sistemática de los artefactos de la Capa 1 DEBE resultar
@@ -1362,7 +1362,7 @@
       - Strategic Decisions
       - Constitutional Decisions
     de: >-
-      Alle kollektiven Entscheidungen MUSS in genau einen der folgenden Entscheidungstypen
+      Alle kollektiven Entscheidungen MÜSSEN in genau einen der folgenden Entscheidungstypen
       eingeordnet werden:
 
       - Operative Entscheidungen
@@ -1546,7 +1546,7 @@
       - Delegated authority
       - Randomized or rotational assignment
     de: |-
-      Entscheidungsmechanismen KANN unter anderem folgende umfassen:
+      Entscheidungsmechanismen KÖNNEN unter anderem folgende umfassen:
       - Konsent-basierte Entscheidungsfindung
       - Mehrheitsentscheid
       - Qualifizierte Mehrheit
@@ -1592,7 +1592,7 @@
       - Blocking or veto conditions, if any
       - Time constraints
     de: |-
-      Entscheidungsmechanismen MUSS festlegen:
+      Entscheidungsmechanismen MÜSSEN festlegen:
       - Teilnahmeberechtigte Personen
       - Entscheidungsschwellen
       - Blockade- oder Vetobedingungen, falls vorhanden
@@ -1671,7 +1671,7 @@
       - Limits of authority
       - Duration or term, if applicable
     de: |-
-      Autoritätszuweisungen MUSS beinhalten:
+      Autoritätszuweisungen MÜSSEN beinhalten:
       - Umfang der Autorität
       - Grenzen der Autorität
       - Dauer oder Amtszeit, falls zutreffend
@@ -1865,7 +1865,7 @@
   i18n:
     en: Decisions made outside the Decision Matrix MUST be considered invalid.
     de: >-
-      Entscheidungen, die außerhalb der Entscheidungsmatrix getroffen werden, MUSS als ungültig
+      Entscheidungen, die außerhalb der Entscheidungsmatrix getroffen werden, MÜSSEN als ungültig
       betrachtet werden.
     es: Las decisiones tomadas fuera de la Matriz de decisión DEBEN considerarse inválidas.
     fr: >-
@@ -1979,7 +1979,7 @@
   i18n:
     en: All governance actions MUST be documented according to Layer 5 documentation rules.
     de: >-
-      Alle Governance-Handlungen MUSS gemäß den Dokumentationsregeln von Schicht 5 dokumentiert
+      Alle Governance-Handlungen MÜSSEN gemäß den Dokumentationsregeln von Schicht 5 dokumentiert
       werden.
     es: >-
       Todas las acciones de gobernanza DEBEN documentarse de acuerdo con las reglas de documentación
@@ -2046,7 +2046,9 @@
   key: l2.safeguards-and-failure-modes.2
   i18n:
     en: Governance mechanisms MUST allow for challenge and review without retaliation.
-    de: Governance-Mechanismen MUSS Anfechtung und Überprüfung ohne Vergeltungsmaßnahmen ermöglichen.
+    de: >-
+      Governance-Mechanismen MÜSSEN Anfechtung und Überprüfung ohne Vergeltungsmaßnahmen
+      ermöglichen.
     es: Los mecanismos de gobernanza DEBEN permitir la impugnación y revisión sin represalias.
     fr: >-
       Les mécanismes de gouvernance DOIVENT permettre la contestation et la révision sans
@@ -2067,7 +2069,7 @@
   i18n:
     en: Persistent governance failures MUST trigger a formal review or constitutional process.
     de: >-
-      Anhaltende Governance-Versagen MUSS eine formelle Überprüfung oder einen konstitutionellen
+      Anhaltende Governance-Versagen MÜSSEN eine formelle Überprüfung oder einen konstitutionellen
       Prozess auslösen.
     es: >-
       Los fallos persistentes en la gobernanza DEBEN activar un proceso formal de revisión o un
@@ -2096,7 +2098,7 @@
       - Governance Protocol
       - Authority Registry
     de: |-
-      Die folgenden Artefakte sind für die Layer-2-Konformität verpflichtend:
+      Die folgenden Artefakte sind für die Schicht-2-Konformität verpflichtend:
       - Entscheidungsmatrix
       - Governance-Protokoll
       - Autoritätsregister
@@ -2132,7 +2134,7 @@
       - Versioned
       - Accessible to all members
     de: |-
-      Layer-2-Artefakte MUSS:
+      Schicht-2-Artefakte MÜSSEN:
       - Explizit und eindeutig sein
       - Versioniert sein
       - Für alle Mitglieder zugänglich sein
@@ -2170,7 +2172,7 @@
       Absence, ambiguity, or systematic violation of Layer 2 artifacts MUST result in loss of
       RCOS-Core compliance.
     de: >-
-      Das Fehlen, die Mehrdeutigkeit oder die systematische Verletzung von Layer-2-Artefakten MUSS
+      Das Fehlen, die Mehrdeutigkeit oder die systematische Verletzung von Schicht-2-Artefakten MUSS
       zum Verlust der RCOS-Core-Konformität führen.
     es: >-
       La ausencia, ambigüedad o violación sistemática de los artefactos de la Capa 2 DEBE resultar
@@ -3569,7 +3571,7 @@
       **safety-critical** and MUST trigger elevated safeguards as defined in Section 6.3.
     de: >-
       Konflikte, die glaubhafte Sicherheitsrisiken, Zwang, Missbrauch oder Drohungen beinhalten,
-      MUSS als **sicherheitskritisch** klassifiziert werden und MUSS erhöhte Schutzmaßnahmen
+      MÜSSEN als **sicherheitskritisch** klassifiziert werden und MÜSSEN erhöhte Schutzmaßnahmen
       auslösen, wie in Abschnitt 6.3 definiert.
     es: >-
       Los conflictos que impliquen riesgos creíbles para la seguridad, coerción, abuso o amenazas
@@ -3765,8 +3767,8 @@
       Unresolved conflicts MUST escalate through defined governance pathways without bypassing the
       Decision Matrix defined in Layer 2.
     de: >-
-      Ungelöste Konflikte MUSS über definierte Governance-Wege eskaliert werden, ohne die in Schicht
-      2 definierte Entscheidungsmatrix zu umgehen.
+      Ungelöste Konflikte MÜSSEN über definierte Governance-Wege eskaliert werden, ohne die in
+      Schicht 2 definierte Entscheidungsmatrix zu umgehen.
     es: >-
       Los conflictos no resueltos DEBEN escalar a través de las vías de gobernanza definidas sin
       eludir la Matriz de Decisión definida en la Capa 2.
@@ -3824,7 +3826,7 @@
       - Providing testimony or evidence
       - Participating in a review or appeal
     de: |-
-      Schutzmaßnahmen MUSS Schutz vor Vergeltung umfassen für:
+      Schutzmaßnahmen MÜSSEN Schutz vor Vergeltung umfassen für:
       - Das Vorbringen eines Anliegens
       - Das Anfordern von Mediation
       - Das Abgeben von Aussagen oder Beweisen
@@ -3872,8 +3874,8 @@
 
       - Additional evidence and review thresholds prior to sanctions
     de: >-
-      Wenn ein Machtgefälle zwischen den Parteien besteht, MUSS erhöhte Schutzmaßnahmen angewendet
-      werden, die KANN umfassen:
+      Wenn ein Machtgefälle zwischen den Parteien besteht, MÜSSEN erhöhte Schutzmaßnahmen angewendet
+      werden, die KÖNNEN umfassen:
 
       - Unabhängige oder externe Moderation
 
@@ -3941,7 +3943,7 @@
       - Emergency escalation timelines
     de: >-
       Bei sicherheitskritischen Konflikten MUSS die Gemeinschaft sofortige Schutzmaßnahmen
-      definieren, die vor Abschluss des vollständigen Verfahrens ergriffen werden können, die KANN
+      definieren, die vor Abschluss des vollständigen Verfahrens ergriffen werden können, die KÖNNEN
       umfassen:
 
       - Vorübergehende Trennungsmaßnahmen
@@ -4001,7 +4003,7 @@
       Safety safeguards MUST override participation rights, role continuity, and operational
       convenience.
     de: >-
-      Sicherheitsmaßnahmen MUSS Teilnahmerechte, Rollenkontinuität und betriebliche Zweckmäßigkeit
+      Sicherheitsmaßnahmen MÜSSEN Teilnahmerechte, Rollenkontinuität und betriebliche Zweckmäßigkeit
       übersteuern.
     es: >-
       Las salvaguardas de seguridad DEBEN prevalecer sobre los derechos de participación, la
@@ -4049,7 +4051,7 @@
       - Time-bounded where applicable
       - Reviewable and appealable
     de: |-
-      Sanktionen und Wiedergutmachungsmaßnahmen MUSS:
+      Sanktionen und Wiedergutmachungsmaßnahmen MÜSSEN:
       - Verhältnismäßig zum Verstoß sein
       - Explizit dokumentiert sein
       - Zeitlich begrenzt sein, wo zutreffend
@@ -4138,8 +4140,8 @@
       Separation, suspension, or removal actions MUST follow due process and MUST align with exit
       and separation rules defined in Layer 1.
     de: >-
-      Trennungs-, Suspendierungs- oder Ausschlussmaßnahmen MUSS einem ordnungsgemäßen Verfahren
-      folgen und MUSS mit den in Schicht 1 definierten Austritts- und Trennungsregeln
+      Trennungs-, Suspendierungs- oder Ausschlussmaßnahmen MÜSSEN einem ordnungsgemäßen Verfahren
+      folgen und MÜSSEN mit den in Schicht 1 definierten Austritts- und Trennungsregeln
       übereinstimmen.
     es: >-
       Las acciones de separación, suspensión o remoción DEBEN seguir el debido proceso y DEBEN estar
@@ -4168,7 +4170,7 @@
       Sanctions MUST NOT be applied through informal exclusion, social pressure, silence, or
       implicit withdrawal of rights.
     de: >-
-      Sanktionen DARF NICHT durch informellen Ausschluss, sozialen Druck, Schweigen oder
+      Sanktionen DÜRFEN NICHT durch informellen Ausschluss, sozialen Druck, Schweigen oder
       stillschweigende Entziehung von Rechten verhängt werden.
     es: >-
       Las sanciones NO DEBEN aplicarse mediante exclusión informal, presión social, silencio o
@@ -4195,8 +4197,8 @@
       Repair-oriented actions MUST be prioritized over punitive actions except in safety-critical
       cases.
     de: >-
-      Wiedergutmachungsorientierte Maßnahmen MUSS gegenüber strafenden Maßnahmen priorisiert werden,
-      außer in sicherheitskritischen Fällen.
+      Wiedergutmachungsorientierte Maßnahmen MÜSSEN gegenüber strafenden Maßnahmen priorisiert
+      werden, außer in sicherheitskritischen Fällen.
     es: >-
       Las acciones orientadas a la reparación DEBEN priorizarse sobre las acciones punitivas,
       excepto en casos críticos para la seguridad.
@@ -4224,7 +4226,7 @@
       - Conflict Resolution Ladder
       - Accountability Protocol
     de: |-
-      Die folgenden Artefakte sind für die Layer-4-Konformität verpflichtend:
+      Die folgenden Artefakte sind für die Schicht-4-Konformität verpflichtend:
       - Konfliktlösungsleiter
       - Verantwortlichkeitsprotokoll
     es: |-
@@ -4257,7 +4259,7 @@
       - Accessible to all members, with clearly bounded privacy protections
       - Adopted through an authorized governance process
     de: |-
-      Layer-4-Artefakte MUSS:
+      Schicht-4-Artefakte MÜSSEN:
       - Explizit und eindeutig sein
       - Versioniert sein
       - Allen Mitgliedern zugänglich sein, mit klar begrenztem Datenschutz
@@ -4397,7 +4399,7 @@
       Conflict MUST be treated as a handled condition with defined pathways; ignoring, suppressing,
       or normalizing unresolved conflict MUST be considered a system violation.
     de: >-
-      Konflikte MUSS als behandelte Bedingung mit definierten Wegen betrachtet werden; das
+      Konflikte MÜSSEN als behandelte Bedingung mit definierten Wegen betrachtet werden; das
       Ignorieren, Unterdrücken oder Normalisieren ungelöster Konflikte MUSS als Systemverstoß
       gelten.
     es: >-
@@ -4423,7 +4425,7 @@
   key: l4.layer-invariants.2
   i18n:
     en: Conflicts involving power asymmetries MUST trigger elevated safeguards.
-    de: Konflikte mit Machtasymmetrien MUSS erhöhte Schutzmaßnahmen auslösen.
+    de: Konflikte mit Machtasymmetrien MÜSSEN erhöhte Schutzmaßnahmen auslösen.
     es: Los conflictos que involucren asimetrías de poder DEBEN activar salvaguardas elevadas.
     fr: >-
       Les conflits impliquant des asymétries de pouvoir DOIVENT déclencher des mesures de protection
@@ -4443,7 +4445,7 @@
   i18n:
     en: Repair and restoration MUST precede punishment except where immediate safety is at risk.
     de: >-
-      Wiedergutmachung und Wiederherstellung MUSS vor Bestrafung stehen, außer wenn unmittelbare
+      Wiedergutmachung und Wiederherstellung MÜSSEN vor Bestrafung stehen, außer wenn unmittelbare
       Sicherheit gefährdet ist.
     es: >-
       La reparación y la restauración DEBEN preceder al castigo, excepto cuando la seguridad
@@ -4470,7 +4472,7 @@
       Physical, psychological, and child safety MUST override participation rights, role continuity,
       and reputational concerns.
     de: >-
-      Physische, psychische und Kindersicherheit MUSS Teilnahmerechte, Rollenkontinuität und
+      Physische, psychische und Kindersicherheit MÜSSEN Teilnahmerechte, Rollenkontinuität und
       Reputationsbelange übersteuern.
     es: >-
       La seguridad física, psicológica y de menores DEBE prevalecer sobre los derechos de
@@ -4609,7 +4611,7 @@
       All ongoing responsibilities MUST be assigned to explicit, named roles rather than implicit
       expectations or informal agreements.
     de: >-
-      Alle laufenden Verantwortlichkeiten MUSS expliziten, benannten Rollen zugewiesen werden —
+      Alle laufenden Verantwortlichkeiten MÜSSEN expliziten, benannten Rollen zugewiesen werden —
       nicht impliziten Erwartungen oder informellen Absprachen.
     es: >-
       Todas las responsabilidades continuas DEBEN asignarse a roles explícitos y con nombre, en
@@ -4758,8 +4760,8 @@
       Temporary or ad-hoc responsibilities MUST be explicitly time-bounded and MUST NOT become
       ongoing without formal role definition.
     de: >-
-      Temporäre oder Ad-hoc-Verantwortlichkeiten MUSS explizit zeitlich begrenzt sein und DARF NICHT
-      ohne formale Rollendefinition dauerhaft werden.
+      Temporäre oder Ad-hoc-Verantwortlichkeiten MÜSSEN explizit zeitlich begrenzt sein und DÜRFEN
+      NICHT ohne formale Rollendefinition dauerhaft werden.
     es: >-
       Las responsabilidades temporales o ad-hoc DEBEN estar explícitamente acotadas en el tiempo y
       NO DEBEN convertirse en continuas sin una definición formal de rol.
@@ -4903,7 +4905,7 @@
       Meetings MUST NOT exceed their declared decision scope or bypass authority boundaries defined
       in Layer 2.
     de: >-
-      Sitzungen DARF NICHT ihren erklärten Entscheidungsumfang überschreiten oder die in Schicht 2
+      Sitzungen DÜRFEN NICHT ihren erklärten Entscheidungsumfang überschreiten oder die in Schicht 2
       definierten Autoritätsgrenzen umgehen.
     es: >-
       Las reuniones NO DEBEN exceder su alcance de decisión declarado ni eludir los límites de
@@ -4988,8 +4990,8 @@
       - Publication or notification timelines (if any)
       - Privacy boundaries and conditions for restricted access
     de: |-
-      Dokumentationsregeln MUSS mindestens Folgendes festlegen:
-      - Welche Informationen aufgezeichnet werden MUSS
+      Dokumentationsregeln MÜSSEN mindestens Folgendes festlegen:
+      - Welche Informationen aufgezeichnet werden MÜSSEN
       - Wo Aufzeichnungen gespeichert werden
       - Wer Zugang zu welchen Aufzeichnungen hat
       - Veröffentlichungs- oder Benachrichtigungsfristen (falls vorhanden)
@@ -5035,7 +5037,7 @@
       - Decision mechanism and threshold
       - Recorded outcome and effective date
     de: |-
-      Alle Entscheidungen MUSS rückverfolgbar sein auf:
+      Alle Entscheidungen MÜSSEN rückverfolgbar sein auf:
       - Entscheidungstyp und Bereich
       - Autorisierte Rolle oder Gremium
       - Entscheidungsmechanismus und Schwellenwert
@@ -5074,7 +5076,7 @@
       Critical operational processes MUST be documented such that continuity does not depend on
       tacit knowledge held by specific individuals.
     de: >-
-      Kritische Betriebsprozesse MUSS so dokumentiert sein, dass die Kontinuität nicht von
+      Kritische Betriebsprozesse MÜSSEN so dokumentiert sein, dass die Kontinuität nicht von
       implizitem Wissen einzelner Personen abhängt.
     es: >-
       Los procesos operativos críticos DEBEN estar documentados de modo que la continuidad no
@@ -5129,7 +5131,7 @@
       Time, attention, coordination capacity, and emotional labor MUST be treated as finite and
       limited resources.
     de: >-
-      Zeit, Aufmerksamkeit, Koordinationskapazität und emotionale Arbeit MUSS als endliche und
+      Zeit, Aufmerksamkeit, Koordinationskapazität und emotionale Arbeit MÜSSEN als endliche und
       begrenzte Ressourcen behandelt werden.
     es: >-
       El tiempo, la atención, la capacidad de coordinación y el trabajo emocional DEBEN tratarse
@@ -5198,8 +5200,8 @@
       Workload boundaries MUST be reviewable and adjustable through an authorized governance
       process.
     de: >-
-      Belastungsgrenzen MUSS durch einen autorisierten Governance-Prozess überprüfbar und anpassbar
-      sein.
+      Belastungsgrenzen MÜSSEN durch einen autorisierten Governance-Prozess überprüfbar und
+      anpassbar sein.
     es: >-
       Los límites de carga de trabajo DEBEN ser revisables y ajustables mediante un proceso de
       gobernanza autorizado.
@@ -5285,7 +5287,7 @@
       - Clear handover mechanisms
       - Backup or redundancy arrangements where feasible
     de: |-
-      Zentrale Betriebsrollen und -prozesse MUSS Folgendes beinhalten:
+      Zentrale Betriebsrollen und -prozesse MÜSSEN Folgendes beinhalten:
       - Dokumentierte Verfahren
       - Klare Übergabemechanismen
       - Backup- oder Redundanzregelungen, wo machbar
@@ -5376,7 +5378,7 @@
       - Accessible to all members, with clearly bounded privacy protections
       - Maintained as living documents with defined ownership and review cycles
     de: |-
-      Artefakte von Schicht 5 MUSS:
+      Artefakte von Schicht 5 MÜSSEN:
       - Explizit und eindeutig sein
       - Versioniert sein
       - Für alle Mitglieder zugänglich sein, mit klar begrenztem Datenschutz
@@ -5462,7 +5464,7 @@
       - Notes and record format
       - Decision capture format where applicable
     de: |-
-      Sitzungsvorlagen MUSS mindestens Folgendes definieren:
+      Sitzungsvorlagen MÜSSEN mindestens Folgendes definieren:
       - Tagesordnungsstruktur
       - Protokoll- und Aufzeichnungsformat
       - Entscheidungserfassungsformat, wo zutreffend
@@ -5498,7 +5500,7 @@
   key: l5.layer-invariants.1
   i18n:
     en: Ongoing responsibilities MUST NOT exist without an explicit role.
-    de: Laufende Verantwortlichkeiten DARF NICHT ohne eine explizite Rolle bestehen.
+    de: Laufende Verantwortlichkeiten DÜRFEN NICHT ohne eine explizite Rolle bestehen.
     es: Las responsabilidades continuas NO DEBEN existir sin un rol explícito.
     fr: Les responsabilités continues NE DOIVENT PAS exister sans un rôle explicite.
     pt-br: Responsabilidades contínuas NÃO DEVEM existir sem um papel explícito.
@@ -5519,7 +5521,7 @@
       Critical operational processes MUST NOT rely solely on individual memory, goodwill, or
       informal transmission.
     de: >-
-      Kritische Betriebsprozesse DARF NICHT ausschließlich auf individuellem Gedächtnis, gutem
+      Kritische Betriebsprozesse DÜRFEN NICHT ausschließlich auf individuellem Gedächtnis, gutem
       Willen oder informeller Weitergabe beruhen.
     es: >-
       Los procesos operativos críticos NO DEBEN depender exclusivamente de la memoria individual, la
@@ -5546,7 +5548,7 @@
       Meeting load, coordination burden, and unpaid or invisible labor MUST be bounded and
       reviewable.
     de: >-
-      Sitzungsbelastung, Koordinationsaufwand und unbezahlte oder unsichtbare Arbeit MUSS begrenzt
+      Sitzungsbelastung, Koordinationsaufwand und unbezahlte oder unsichtbare Arbeit MÜSSEN begrenzt
       und überprüfbar sein.
     es: >-
       La carga de reuniones, la carga de coordinación y el trabajo no remunerado o invisible DEBEN
@@ -5570,7 +5572,7 @@
   key: l5.layer-invariants.4
   i18n:
     en: Information access rules MUST be explicit and enforceable.
-    de: Regeln für den Informationszugang MUSS explizit und durchsetzbar sein.
+    de: Regeln für den Informationszugang MÜSSEN explizit und durchsetzbar sein.
     es: Las reglas de acceso a la información DEBEN ser explícitas y aplicables.
     fr: Les règles d'accès à l'information DOIVENT être explicites et applicables.
     pt-br: As regras de acesso à informação DEVEM ser explícitas e exequíveis.
@@ -5741,7 +5743,7 @@
       - Permanent rule changes
       - Time-bounded experiments as defined in Section 8.3
     de: |-
-      Änderungsmechanismen MUSS explizit unterscheiden zwischen:
+      Änderungsmechanismen MÜSSEN explizit unterscheiden zwischen:
       - Dauerhaften Regeländerungen
       - Zeitlich begrenzten Experimenten gemäß Abschnitt 8.3
     es: |-
@@ -5778,7 +5780,7 @@
       - Migration requirements for existing roles, agreements, or records
     de: |-
       Jede vorgeschlagene Änderung MUSS mindestens folgendes angeben:
-      - Die betroffenen Artefakte, Layer und Abschnitte
+      - Die betroffenen Artefakte, Schichten und Abschnitte
       - Den Entscheidungstyp und den autorisierten Entscheidungspfad gemäß Schicht 2
       - Die beabsichtigte Wirkung, den Geltungsbereich und bekannte Risiken
       - Das Inkrafttretungsdatum und etwaige Übergangsfristen
@@ -5821,8 +5823,8 @@
       classified as constitutional changes and MUST follow the constitutional decision mechanism.
     de: >-
       Änderungen, die den Zweck, den Geltungsbereich, die Invarianten oder die
-      Identitätsbeschränkungen von Schicht 0 betreffen, MUSS als konstitutionelle Änderungen
-      klassifiziert werden und MUSS dem konstitutionellen Entscheidungsmechanismus folgen.
+      Identitätsbeschränkungen von Schicht 0 betreffen, MÜSSEN als konstitutionelle Änderungen
+      klassifiziert werden und MÜSSEN dem konstitutionellen Entscheidungsmechanismus folgen.
     es: >-
       Los cambios que afecten el propósito, alcance, invariantes o restricciones de identidad de la
       Capa 0 DEBEN clasificarse como cambios constitucionales y DEBEN seguir el mecanismo de
@@ -5880,7 +5882,7 @@
   key: l6.versioning-and-authority.1
   i18n:
     en: All adopted changes MUST be versioned and traceable.
-    de: Alle angenommenen Änderungen MUSS versioniert und nachvollziehbar sein.
+    de: Alle angenommenen Änderungen MÜSSEN versioniert und nachvollziehbar sein.
     es: Todos los cambios adoptados DEBEN ser versionados y trazables.
     fr: Tous les changements adoptés DOIVENT être versionnés et traçables.
     pt-br: Todas as mudanças adotadas DEVEM ser versionadas e rastreáveis.
@@ -5982,7 +5984,7 @@
       Superseded rules MUST remain accessible for auditability, learning, and dispute resolution,
       together with the dates during which they were in force.
     de: >-
-      Abgelöste Regeln MUSS zusammen mit den Zeiträumen, in denen sie galten, für Prüfbarkeit,
+      Abgelöste Regeln MÜSSEN zusammen mit den Zeiträumen, in denen sie galten, für Prüfbarkeit,
       Lernen und Streitbeilegung zugänglich bleiben.
     es: >-
       Las reglas reemplazadas DEBEN permanecer accesibles para auditoría, aprendizaje y resolución
@@ -6008,7 +6010,7 @@
   i18n:
     en: No informal, undocumented, or “understood” rule changes MAY be considered valid.
     de: >-
-      Keine informellen, undokumentierten oder „stillschweigend verstandenen" Regeländerungen KANN
+      Keine informellen, undokumentierten oder „stillschweigend verstandenen" Regeländerungen KÖNNEN
       als gültig betrachtet werden.
     es: Ningún cambio de reglas informal, no documentado o "sobreentendido" PUEDE considerarse válido.
     fr: >-
@@ -6122,8 +6124,8 @@
       Experiments MUST NOT override Layer 0 invariants and MUST NOT bypass governance constraints
       defined in Layer 2.
     de: >-
-      Experimente DARF NICHT die Invarianten von Schicht 0 außer Kraft setzen und DARF NICHT die in
-      Schicht 2 definierten Governance-Beschränkungen umgehen.
+      Experimente DÜRFEN NICHT die Invarianten von Schicht 0 außer Kraft setzen und DÜRFEN NICHT die
+      in Schicht 2 definierten Governance-Beschränkungen umgehen.
     es: >-
       Los experimentos NO DEBEN anular las invariantes de la Capa 0 y NO DEBEN eludir las
       restricciones de gobernanza definidas en la Capa 2.
@@ -6150,9 +6152,9 @@
       Experiments MUST be explicitly labeled as experimental in all affected artifacts and MUST
       include a non-extendable expiration date unless renewed through an authorized decision.
     de: >-
-      Experimente MUSS in allen betroffenen Artefakten ausdrücklich als experimentell gekennzeichnet
-      sein und MUSS ein nicht verlängerbares Ablaufdatum enthalten, sofern sie nicht durch eine
-      autorisierte Entscheidung erneuert werden.
+      Experimente MÜSSEN in allen betroffenen Artefakten ausdrücklich als experimentell
+      gekennzeichnet sein und MÜSSEN ein nicht verlängerbares Ablaufdatum enthalten, sofern sie
+      nicht durch eine autorisierte Entscheidung erneuert werden.
     es: >-
       Los experimentos DEBEN estar explícitamente etiquetados como experimentales en todos los
       artefactos afectados y DEBEN incluir una fecha de expiración no prorrogable, a menos que se
@@ -6213,7 +6215,7 @@
   i18n:
     en: Major failures, adaptations, reversals, and systemic learnings MUST be documented.
     de: >-
-      Größere Fehlschläge, Anpassungen, Rücknahmen und systemische Erkenntnisse MUSS dokumentiert
+      Größere Fehlschläge, Anpassungen, Rücknahmen und systemische Erkenntnisse MÜSSEN dokumentiert
       werden.
     es: >-
       Los fallos importantes, las adaptaciones, las reversiones y los aprendizajes sistémicos DEBEN
@@ -6243,7 +6245,7 @@
     de: |-
       Die Lernerfassung MUSS mindestens folgendes beinhalten:
       - Was geschah und warum es relevant war
-      - Welche Layer, Regeln oder Artefakte betroffen waren
+      - Welche Schichten, Regeln oder Artefakte betroffen waren
       - Was geändert, versucht oder gestoppt wurde
       - Welche Signale, Nachweise oder Schwellenwerte eine Handlung ausgelöst haben
     es: |-
@@ -6277,7 +6279,7 @@
   key: l6.learning-and-feedback-capture.3
   i18n:
     en: Learning records MUST be accessible according to Layer 5 information access rules.
-    de: Lernaufzeichnungen MUSS gemäß den Informationszugangsregeln von Schicht 5 zugänglich sein.
+    de: Lernaufzeichnungen MÜSSEN gemäß den Informationszugangsregeln von Schicht 5 zugänglich sein.
     es: >-
       Los registros de aprendizaje DEBEN ser accesibles según las reglas de acceso a la información
       de la Capa 5.
@@ -6301,7 +6303,7 @@
   i18n:
     en: Repeated failure patterns MUST trigger structural review rather than individual blame.
     de: >-
-      Wiederkehrende Fehlermuster MUSS eine strukturelle Überprüfung auslösen, keine individuelle
+      Wiederkehrende Fehlermuster MÜSSEN eine strukturelle Überprüfung auslösen, keine individuelle
       Schuldzuweisung.
     es: >-
       Los patrones de fallo recurrentes DEBEN desencadenar una revisión estructural en lugar de
@@ -6350,7 +6352,7 @@
       - Higher decision thresholds where appropriate
       - Explicit risk acknowledgment
     de: |-
-      Irreversible oder folgenschwere Änderungen MUSS beinhalten:
+      Irreversible oder folgenschwere Änderungen MÜSSEN beinhalten:
       - Verlängerte Beratungs- oder Überprüfungszeiträume
       - Höhere Entscheidungsschwellen, wo angemessen
       - Ausdrückliche Risikoanerkennung
@@ -6386,10 +6388,10 @@
       NOT override Layer 0 invariants, and MUST undergo mandatory post-hoc review and ratification
       or rollback.
     de: >-
-      Notfalländerungen KANN nur dort zulässig sein, wo sie ausdrücklich definiert sind, MUSS
-      zeitlich begrenzt sein, DARF NICHT die Invarianten von Schicht 0 außer Kraft setzen und MUSS
-      einer verpflichtenden nachträglichen Überprüfung und Ratifizierung oder Rücknahme unterzogen
-      werden.
+      Notfalländerungen KÖNNEN nur dort zulässig sein, wo sie ausdrücklich definiert sind, MÜSSEN
+      zeitlich begrenzt sein, DÜRFEN NICHT die Invarianten von Schicht 0 außer Kraft setzen und
+      MÜSSEN einer verpflichtenden nachträglichen Überprüfung und Ratifizierung oder Rücknahme
+      unterzogen werden.
     es: >-
       Los cambios de emergencia PUEDEN permitirse solo cuando estén explícitamente definidos, DEBEN
       estar acotados en el tiempo, NO DEBEN anular las invariantes de la Capa 0 y DEBEN someterse a
@@ -6458,7 +6460,7 @@
       - Accessible to all members, with clearly bounded privacy protections
       - Adopted through an authorized governance process
     de: |-
-      Artefakte von Schicht 6 MUSS:
+      Artefakte von Schicht 6 MÜSSEN:
       - Explizit und eindeutig sein
       - Versioniert sein
       - Für alle Mitglieder zugänglich sein, mit klar abgegrenztem Datenschutz
@@ -6686,7 +6688,7 @@
   key: l6.layer-invariants.2
   i18n:
     en: All adopted changes MUST be versioned, documented, and traceable.
-    de: Alle angenommenen Änderungen MUSS versioniert, dokumentiert und nachvollziehbar sein.
+    de: Alle angenommenen Änderungen MÜSSEN versioniert, dokumentiert und nachvollziehbar sein.
     es: Todos los cambios adoptados DEBEN ser versionados, documentados y trazables.
     fr: Tous les changements adoptés DOIVENT être versionnés, documentés et traçables.
     pt-br: Todas as mudanças adotadas DEVEM ser versionadas, documentadas e rastreáveis.
@@ -6703,7 +6705,7 @@
   key: l6.layer-invariants.3
   i18n:
     en: Experiments MUST be time-bounded, explicitly labeled, and reversible.
-    de: Experimente MUSS zeitlich begrenzt, ausdrücklich gekennzeichnet und reversibel sein.
+    de: Experimente MÜSSEN zeitlich begrenzt, ausdrücklich gekennzeichnet und reversibel sein.
     es: >-
       Los experimentos DEBEN estar acotados en el tiempo, explícitamente etiquetados y ser
       reversibles.
@@ -6726,7 +6728,7 @@
   i18n:
     en: Major failures and adaptations MUST be captured as shared learning, not erased or hidden.
     de: >-
-      Größere Fehlschläge und Anpassungen MUSS als gemeinsames Lernen festgehalten werden, nicht
+      Größere Fehlschläge und Anpassungen MÜSSEN als gemeinsames Lernen festgehalten werden, nicht
       ausradiert oder versteckt.
     es: >-
       Los fallos importantes y las adaptaciones DEBEN capturarse como aprendizaje compartido, no

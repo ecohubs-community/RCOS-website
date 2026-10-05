@@ -4,7 +4,7 @@ title: Allmende-Antiprivatisierungs-Zusatz für Landbesitz
 parentId: aac2e91b
 order: 0
 lang: de
-sourceHash: 8a9e28c9
+sourceHash: 0c29c68e
 ---
 
 ## Allmende-Antiprivatisierungs-Zusatz für Landbesitz (nicht-normativ)

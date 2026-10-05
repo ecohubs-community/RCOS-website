@@ -44,10 +44,10 @@ sections:
       b10:
         md: |-
           Module:
-          - DARF NICHT dem Zweck, Geltungsbereich oder den Invarianten von Schicht 0 widersprechen
-          - MUSS die in Schicht 2 definierten Governance-Einschränkungen einhalten
-          - MUSS sich in bestehende Artefakte und Entscheidungsmechanismen integrieren
-          - KANN Regeln in den Schichten 3–6 innerhalb ihres deklarierten Geltungsbereichs erweitern oder spezialisieren
+          - DÜRFEN NICHT dem Zweck, Geltungsbereich oder den Invarianten von Schicht 0 widersprechen
+          - MÜSSEN die in Schicht 2 definierten Governance-Einschränkungen einhalten
+          - MÜSSEN sich in bestehende Artefakte und Entscheidungsmechanismen integrieren
+          - KÖNNEN Regeln in den Schichten 3–6 innerhalb ihres deklarierten Geltungsbereichs erweitern oder spezialisieren
       b11:
         md: Module können Kern-Invarianten nicht außer Kraft setzen. Wo ein Modul strengere Regeln einführt, gelten diese nur innerhalb der deklarierten Domäne des Moduls.
       b12:
@@ -94,7 +94,7 @@ sections:
           - Dokumentieren, wie das Modul mit bestehenden Regeln zusammenwirkt
       b20:
         md: |-
-          Module KANN:
+          Module KÖNNEN:
           - Zeitlich begrenzt sein
           - Experimentell sein
           - Schrittweise eingeführt werden

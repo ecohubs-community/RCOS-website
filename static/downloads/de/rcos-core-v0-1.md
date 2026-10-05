@@ -2,7 +2,7 @@
 
 # RCOS-Kernspezifikation — v0.1
 
-- **Generiert:** 2026-10-03
+- **Generiert:** 2026-10-05
 - **Quelle (aktuelle Version):** [https://rcos.ecohubs.community/de/articles/rcos-core/v0-1](https://rcos.ecohubs.community/de/articles/rcos-core/v0-1)
 
 - Status: Entwurf
@@ -344,7 +344,7 @@ Was nicht schriftlich festgehalten und angenommen wurde, existiert nicht.
 
 # 2. Schicht 0 — Identität & Geltungsbereich
 
-Schicht 0 definiert die konstitutionelle Identität der Gemeinschaft. Er legt fest, was die Gemeinschaft *ist*, was sie *nicht ist*, und die nicht verhandelbaren Einschränkungen, unter denen alle anderen Layer operieren. Keine Regel, Entscheidung oder Praxis in höheren Layern darf Schicht 0 widersprechen.
+Schicht 0 definiert die konstitutionelle Identität der Gemeinschaft. Sie legt fest, was die Gemeinschaft *ist*, was sie *nicht ist*, und die nicht verhandelbaren Einschränkungen, unter denen alle anderen Schichten operieren. Keine Regel, Entscheidung oder Praxis in höheren Schichten darf Schicht 0 widersprechen.
 
 ## 2.1 Zweckdefinition
 
@@ -354,7 +354,7 @@ Schicht 0 definiert die konstitutionelle Identität der Gemeinschaft. Er legt fe
 
 2.1.3 Der primäre Zweck MUSS über die Zeit stabil sein und MUSS nur durch eine konstitutionelle Entscheidung gemäß Schicht 2 und über den in Schicht 6 definierten Änderungsprozess geändert werden.
 
-2.1.4 Sekundäre Zwecke KANN definiert werden, DARF NICHT jedoch dem primären Zweck widersprechen oder ihn außer Kraft setzen.
+2.1.4 Sekundäre Zwecke KÖNNEN definiert werden, DÜRFEN NICHT jedoch dem primären Zweck widersprechen oder ihn außer Kraft setzen.
 
 2.1.5 Keine Handlung, Entscheidung oder Ressourcenzuweisung KANN dem erklärten primären Zweck materiell widersprechen.
 
@@ -377,28 +377,28 @@ Schicht 0 definiert die konstitutionelle Identität der Gemeinschaft. Er legt fe
 
 2.3.1 Invarianten sind Einschränkungen, die definieren, was DARF NICHT verletzt werden darf, solange sie in Kraft sind.
 
-2.3.2 Invarianten MUSS explizit aufgelistet und dokumentiert sein.
+2.3.2 Invarianten MÜSSEN explizit aufgelistet und dokumentiert sein.
 
-2.3.3 Invarianten MUSS über alle Layer von RCOS hinweg gelten.
+2.3.3 Invarianten MÜSSEN über alle Schichten von RCOS hinweg gelten.
 
 2.3.4 Keine Entscheidung, Rolle, kein Prozess und keine Notfallmaßnahme KANN eine Invariante außer Kraft setzen.
 
 2.3.5 Wenn ein Konflikt zwischen einer Invariante und einer anderen Regel entsteht, MUSS die Invariante Vorrang haben.
 
-2.3.6 Invarianten KANN nur durch einen konstitutionellen Änderungsprozess gemäß Schicht 2 und Schicht 6 geändert oder entfernt werden.
+2.3.6 Invarianten KÖNNEN nur durch einen konstitutionellen Änderungsprozess gemäß Schicht 2 und Schicht 6 geändert oder entfernt werden.
 
 ## 2.4 Identitätseinschränkungen
 
 2.4.1 Die Gemeinschaft MUSS alle Einschränkungen auf Identitätsebene erklären, die Teilnahme, Verhalten oder Governance wesentlich beeinflussen.
 
-2.4.2 Identitätseinschränkungen KANN unter anderem Folgendes umfassen:
+2.4.2 Identitätseinschränkungen KÖNNEN unter anderem Folgendes umfassen:
 - Ethische oder verhaltensbezogene Grenzen
 - Teilnahmevoraussetzungen
 - Nicht verhandelbare kulturelle oder ökologische Einschränkungen
 
-2.4.3 Identitätseinschränkungen MUSS überprüfbar und durch definierte Prozesse durchsetzbar sein.
+2.4.3 Identitätseinschränkungen MÜSSEN überprüfbar und durch definierte Prozesse durchsetzbar sein.
 
-2.4.4 Identitätseinschränkungen DARF NICHT implizit oder informell durchgesetzt werden.
+2.4.4 Identitätseinschränkungen DÜRFEN NICHT implizit oder informell durchgesetzt werden.
 
 ## 2.5 Artefakte
 
@@ -408,7 +408,7 @@ Schicht 0 definiert die konstitutionelle Identität der Gemeinschaft. Er legt fe
 - Invarianten-Register
 - Register der Identitätseinschränkungen
 
-2.5.2 Artefakte von Schicht 0 MUSS:
+2.5.2 Artefakte von Schicht 0 MÜSSEN:
 - Für alle Mitglieder öffentlich zugänglich sein
 - Versioniert sein
 - Durch einen formalen Ratifizierungsprozess angenommen werden
@@ -420,13 +420,13 @@ Schicht 0 definiert die konstitutionelle Identität der Gemeinschaft. Er legt fe
 
 # 3. Schicht 1 — Mitgliedschaftssystem
 
-Schicht 1 definiert, wie Einzelpersonen der Gemeinschaft beitreten, an ihr teilnehmen und sie verlassen. Er legt die explizite Beziehung zwischen dem Individuum und dem Kollektiv fest, einschließlich Rechte, Pflichten und ordnungsgemäße Verfahren. Keine Person darf als Mitglied behandelt werden, ohne die in diesem Layer definierten Mechanismen durchlaufen zu haben.
+Schicht 1 definiert, wie Einzelpersonen der Gemeinschaft beitreten, an ihr teilnehmen und sie verlassen. Sie legt die explizite Beziehung zwischen dem Individuum und dem Kollektiv fest, einschließlich Rechte, Pflichten und ordnungsgemäße Verfahren. Keine Person darf als Mitglied behandelt werden, ohne die in dieser Schicht definierten Mechanismen durchlaufen zu haben.
 
 ## 3.1 Mitgliedschaftsstatus
 
 3.1.1 Die Gemeinschaft MUSS explizite Mitgliedschaftsstatus definieren.
 
-3.1.2 Mindestens die folgenden Mitgliedschaftsstatus MUSS existieren:
+3.1.2 Mindestens die folgenden Mitgliedschaftsstatus MÜSSEN existieren:
 - Bewerber:in
 - Probe- / Übergangsmitglied
 - Vollmitglied
@@ -436,7 +436,7 @@ Schicht 1 definiert, wie Einzelpersonen der Gemeinschaft beitreten, an ihr teiln
 
 3.1.4 Keine Einzelperson KANN gleichzeitig mehrere Mitgliedschaftsstatus innehaben.
 
-3.1.5 Keine Rechte oder Pflichten KANN außerhalb des aktuellen Mitgliedschaftsstatus der Einzelperson angenommen werden.
+3.1.5 Keine Rechte oder Pflichten KÖNNEN außerhalb des aktuellen Mitgliedschaftsstatus der Einzelperson angenommen werden.
 
 ## 3.2 Beitritt und Onboarding
 
@@ -447,7 +447,7 @@ Schicht 1 definiert, wie Einzelpersonen der Gemeinschaft beitreten, an ihr teiln
 - Explizite Zustimmung zu den Regeln von Schicht 0 und Schicht 1
 - Festlegung des anfänglichen Mitgliedschaftsstatus
 
-3.2.3 Aufnahmekriterien MUSS explizit und dokumentiert sein.
+3.2.3 Aufnahmekriterien MÜSSEN explizit und dokumentiert sein.
 
 3.2.4 Informelle, implizite oder rückwirkende Mitgliedschaft DARF NICHT gestattet werden.
 
@@ -460,7 +460,7 @@ Schicht 1 definiert, wie Einzelpersonen der Gemeinschaft beitreten, an ihr teiln
 - Explizite Bewertungskriterien
 - Einen klaren Entscheidungsprozess für den Übergang
 
-3.3.3 Während der Probezeit KANN Rechte eingeschränkt werden, aber Pflichten MUSS explizit sein.
+3.3.3 Während der Probezeit KÖNNEN Rechte eingeschränkt werden, aber Pflichten MÜSSEN explizit sein.
 
 3.3.4 Ein Scheitern des Übergangs aus der Probezeit MUSS einen definierten Austritts- oder Verlängerungsprozess auslösen.
 
@@ -470,17 +470,17 @@ Schicht 1 definiert, wie Einzelpersonen der Gemeinschaft beitreten, an ihr teiln
 
 3.4.2 Die Gemeinschaft MUSS Mitgliedspflichten explizit definieren.
 
-3.4.3 Rechte und Pflichten MUSS symmetrisch und proportional zum Mitgliedschaftsstatus sein.
+3.4.3 Rechte und Pflichten MÜSSEN symmetrisch und proportional zum Mitgliedschaftsstatus sein.
 
 3.4.4 Keine Pflicht KANN ohne ein entsprechendes, dokumentiertes Recht durchgesetzt werden.
 
-3.4.5 Pflichten DARF NICHT unbefristet oder undefiniert sein.
+3.4.5 Pflichten DÜRFEN NICHT unbefristet oder undefiniert sein.
 
 ## 3.5 Teilnahme und Beitrag
 
-3.5.1 Erwartungen an die Teilnahme MUSS explizit definiert werden.
+3.5.1 Erwartungen an die Teilnahme MÜSSEN explizit definiert werden.
 
-3.5.2 Akzeptable Formen des Beitrags MUSS aufgelistet werden.
+3.5.2 Akzeptable Formen des Beitrags MÜSSEN aufgelistet werden.
 
 3.5.3 Stellvertretende Teilnahme (z. B. Auslagerung von Arbeit) MUSS explizit geregelt sein.
 
@@ -502,24 +502,24 @@ Schicht 1 definiert, wie Einzelpersonen der Gemeinschaft beitreten, an ihr teiln
 
 3.7.1 Die Gemeinschaft KANN temporäre Suspendierungszustände definieren.
 
-3.7.2 Suspendierungsbedingungen MUSS explizit, zeitlich begrenzt und überprüfbar sein.
+3.7.2 Suspendierungsbedingungen MÜSSEN explizit, zeitlich begrenzt und überprüfbar sein.
 
 3.7.3 Suspendierung DARF NICHT als unbefristeter oder strafender Ersatz für einen Austritt verwendet werden.
 
 ## 3.8 Artefakte
 
-3.8.1 Die folgenden Artefakte sind für die Layer-1-Konformität verpflichtend:
+3.8.1 Die folgenden Artefakte sind für die Schicht-1-Konformität verpflichtend:
 - Mitgliedschaftsvereinbarung
 - Onboarding-Protokoll
 - Austritts- und Trennungsprotokoll
 - Mitgliedschaftsstatus-Register
 
-3.8.2 Layer-1-Artefakte MUSS:
+3.8.2 Schicht-1-Artefakte MÜSSEN:
 - Explizit und eindeutig sein
 - Versioniert sein
 - Allen Mitgliedern zugänglich sein
 
-3.8.3 Das Fehlen, die Mehrdeutigkeit oder die systematische Verletzung von Layer-1-Artefakten MUSS zum Verlust der RCOS-Core-Konformität führen.
+3.8.3 Das Fehlen, die Mehrdeutigkeit oder die systematische Verletzung von Schicht-1-Artefakten MUSS zum Verlust der RCOS-Core-Konformität führen.
 
 
 ---
@@ -530,7 +530,7 @@ Schicht 2 definiert, wie kollektive Entscheidungen getroffen werden, wer befugt 
 
 ## 4.1 Entscheidungstypen
 
-4.1.1 Alle kollektiven Entscheidungen MUSS in genau einen der folgenden Entscheidungstypen eingeordnet werden:
+4.1.1 Alle kollektiven Entscheidungen MÜSSEN in genau einen der folgenden Entscheidungstypen eingeordnet werden:
 - Operative Entscheidungen
 - Strategische Entscheidungen
 - Konstitutionelle Entscheidungen
@@ -547,14 +547,14 @@ Schicht 2 definiert, wie kollektive Entscheidungen getroffen werden, wer befugt 
 
 4.2.1 Für jeden Entscheidungstyp MUSS ein explizit definierter Entscheidungsmechanismus festgelegt sein.
 
-4.2.2 Entscheidungsmechanismen KANN unter anderem folgende umfassen:
+4.2.2 Entscheidungsmechanismen KÖNNEN unter anderem folgende umfassen:
 - Konsent-basierte Entscheidungsfindung
 - Mehrheitsentscheid
 - Qualifizierte Mehrheit
 - Delegierte Autorität
 - Zufällige oder rotierende Zuweisung
 
-4.2.3 Entscheidungsmechanismen MUSS festlegen:
+4.2.3 Entscheidungsmechanismen MÜSSEN festlegen:
 - Teilnahmeberechtigte Personen
 - Entscheidungsschwellen
 - Blockade- oder Vetobedingungen, falls vorhanden
@@ -566,7 +566,7 @@ Schicht 2 definiert, wie kollektive Entscheidungen getroffen werden, wer befugt 
 
 4.3.1 Alle Autorität MUSS explizit definierten Rollen, Kreisen oder Gremien zugewiesen werden.
 
-4.3.2 Autoritätszuweisungen MUSS beinhalten:
+4.3.2 Autoritätszuweisungen MÜSSEN beinhalten:
 - Umfang der Autorität
 - Grenzen der Autorität
 - Dauer oder Amtszeit, falls zutreffend
@@ -591,7 +591,7 @@ Schicht 2 definiert, wie kollektive Entscheidungen getroffen werden, wer befugt 
 
 4.4.3 Die Entscheidungsmatrix MUSS für alle Mitglieder öffentlich zugänglich sein.
 
-4.4.4 Entscheidungen, die außerhalb der Entscheidungsmatrix getroffen werden, MUSS als ungültig betrachtet werden.
+4.4.4 Entscheidungen, die außerhalb der Entscheidungsmatrix getroffen werden, MÜSSEN als ungültig betrachtet werden.
 
 ## 4.5 Governance-Protokoll
 
@@ -606,7 +606,7 @@ Schicht 2 definiert, wie kollektive Entscheidungen getroffen werden, wer befugt 
 
 4.5.3 Das Governance-Protokoll MUSS festlegen, wie Konflikte zwischen Entscheidungen gelöst werden.
 
-4.5.4 Alle Governance-Handlungen MUSS gemäß den Dokumentationsregeln von Schicht 5 dokumentiert werden.
+4.5.4 Alle Governance-Handlungen MÜSSEN gemäß den Dokumentationsregeln von Schicht 5 dokumentiert werden.
 
 ## 4.6 Sicherungsmechanismen und Fehlermodi
 
@@ -616,23 +616,23 @@ Schicht 2 definiert, wie kollektive Entscheidungen getroffen werden, wer befugt 
 - Vereinnahmung von Entscheidungen durch Untergruppen
 - Verfestigung von Gründer- oder Rollenpositionen
 
-4.6.2 Governance-Mechanismen MUSS Anfechtung und Überprüfung ohne Vergeltungsmaßnahmen ermöglichen.
+4.6.2 Governance-Mechanismen MÜSSEN Anfechtung und Überprüfung ohne Vergeltungsmaßnahmen ermöglichen.
 
-4.6.3 Anhaltende Governance-Versagen MUSS eine formelle Überprüfung oder einen konstitutionellen Prozess auslösen.
+4.6.3 Anhaltende Governance-Versagen MÜSSEN eine formelle Überprüfung oder einen konstitutionellen Prozess auslösen.
 
 ## 4.7 Artefakte
 
-4.7.1 Die folgenden Artefakte sind für die Layer-2-Konformität verpflichtend:
+4.7.1 Die folgenden Artefakte sind für die Schicht-2-Konformität verpflichtend:
 - Entscheidungsmatrix
 - Governance-Protokoll
 - Autoritätsregister
 
-4.7.2 Layer-2-Artefakte MUSS:
+4.7.2 Schicht-2-Artefakte MÜSSEN:
 - Explizit und eindeutig sein
 - Versioniert sein
 - Für alle Mitglieder zugänglich sein
 
-4.7.3 Das Fehlen, die Mehrdeutigkeit oder die systematische Verletzung von Layer-2-Artefakten MUSS zum Verlust der RCOS-Core-Konformität führen.
+4.7.3 Das Fehlen, die Mehrdeutigkeit oder die systematische Verletzung von Schicht-2-Artefakten MUSS zum Verlust der RCOS-Core-Konformität führen.
 
 
 ---
@@ -751,7 +751,7 @@ Sein Zweck ist es, wirtschaftliche Macht explizit, begrenzt, überprüfbar und d
 - Rücklagen-, Risiko- und Verschuldungsbeschränkungen  
 - Interessenkonfliktregeln für Ausgaben und Beschaffung  
 
-## 5.6 Layer-Invarianten
+## 5.6 Schicht-Invarianten
 
 5.6.1 Geteilte Ressourcen, Flüsse und Verpflichtungen MÜSSEN standardmäßig für die Gemeinschaft sichtbar sein, mit nur begrenzten und expliziten Ausnahmen.
 
@@ -804,7 +804,7 @@ Sein Zweck ist es sicherzustellen, dass Konflikte explizit, fair und sicher beha
 - Zulässige und erforderliche Lösungswege
 - Dokumentationsanforderungen und Datenschutzgrenzen
 
-6.1.4 Konflikte, die glaubhafte Sicherheitsrisiken, Zwang, Missbrauch oder Drohungen beinhalten, MUSS als **sicherheitskritisch** klassifiziert werden und MUSS erhöhte Schutzmaßnahmen auslösen, wie in Abschnitt 6.3 definiert.
+6.1.4 Konflikte, die glaubhafte Sicherheitsrisiken, Zwang, Missbrauch oder Drohungen beinhalten, MÜSSEN als **sicherheitskritisch** klassifiziert werden und MÜSSEN erhöhte Schutzmaßnahmen auslösen, wie in Abschnitt 6.3 definiert.
 
 6.1.5 Fehlklassifikation oder Vermeidung der Klassifikation MUSS als Prozessversagen behandelt werden, das einer Überprüfung unterliegt.
 
@@ -825,37 +825,37 @@ Sein Zweck ist es sicherzustellen, dass Konflikte explizit, fair und sicher beha
 
 6.2.4 Der Lösungsprozess MUSS zugänglich sein, ohne dass sozialer Status, Dienstalter, Charisma oder informelle Nähe zu Entscheidungsträger\*innen erforderlich ist.
 
-6.2.5 Ungelöste Konflikte MUSS über definierte Governance-Wege eskaliert werden, ohne die in Schicht 2 definierte Entscheidungsmatrix zu umgehen.
+6.2.5 Ungelöste Konflikte MÜSSEN über definierte Governance-Wege eskaliert werden, ohne die in Schicht 2 definierte Entscheidungsmatrix zu umgehen.
 
 ## 6.3 Schutzmaßnahmen
 
 6.3.1 Die Gemeinschaft MUSS explizite Schutzmaßnahmen für Konflikte definieren, die Machtasymmetrien, Abhängigkeitsverhältnisse oder Sicherheitsrisiken beinhalten.
 
-6.3.2 Schutzmaßnahmen MUSS Schutz vor Vergeltung umfassen für:
+6.3.2 Schutzmaßnahmen MÜSSEN Schutz vor Vergeltung umfassen für:
 - Das Vorbringen eines Anliegens
 - Das Anfordern von Mediation
 - Das Abgeben von Aussagen oder Beweisen
 - Die Teilnahme an einer Überprüfung oder Berufung
 
-6.3.3 Wenn ein Machtgefälle zwischen den Parteien besteht, MUSS erhöhte Schutzmaßnahmen angewendet werden, die KANN umfassen:
+6.3.3 Wenn ein Machtgefälle zwischen den Parteien besteht, MÜSSEN erhöhte Schutzmaßnahmen angewendet werden, die KÖNNEN umfassen:
 - Unabhängige oder externe Moderation
 - Getrennte Aufnahme-, Dokumentations- oder Kommunikationskanäle
 - Vorübergehende Aussetzung oder Einschränkung der Rollenbefugnisse
 - Zusätzliche Beweis- und Überprüfungsschwellen vor Sanktionen
 
-6.3.4 Bei sicherheitskritischen Konflikten MUSS die Gemeinschaft sofortige Schutzmaßnahmen definieren, die vor Abschluss des vollständigen Verfahrens ergriffen werden können, die KANN umfassen:
+6.3.4 Bei sicherheitskritischen Konflikten MUSS die Gemeinschaft sofortige Schutzmaßnahmen definieren, die vor Abschluss des vollständigen Verfahrens ergriffen werden können, die KÖNNEN umfassen:
 - Vorübergehende Trennungsmaßnahmen
 - Eingeschränkter Zugang zu gemeinsamen Räumen oder Ressourcen
 - Vorübergehende Rollensuspendierung
 - Notfall-Eskalationsfristen
 
-6.3.5 Sicherheitsmaßnahmen MUSS Teilnahmerechte, Rollenkontinuität und betriebliche Zweckmäßigkeit übersteuern.
+6.3.5 Sicherheitsmaßnahmen MÜSSEN Teilnahmerechte, Rollenkontinuität und betriebliche Zweckmäßigkeit übersteuern.
 
 ## 6.4 Sanktionen, Wiedergutmachung und Trennung
 
 6.4.1 Die Gemeinschaft MUSS ein explizites Sanktions- und Wiedergutmachungsrahmenwerk definieren.
 
-6.4.2 Sanktionen und Wiedergutmachungsmaßnahmen MUSS:
+6.4.2 Sanktionen und Wiedergutmachungsmaßnahmen MÜSSEN:
 - Verhältnismäßig zum Verstoß sein
 - Explizit dokumentiert sein
 - Zeitlich begrenzt sein, wo zutreffend
@@ -868,19 +868,19 @@ Sein Zweck ist es sicherzustellen, dass Konflikte explizit, fair und sicher beha
 - Überprüfungs- und Berufungsmechanismen
 - Bedingungen für die Wiederherstellung von Rechten, Rollen oder Teilnahme
 
-6.4.4 Trennungs-, Suspendierungs- oder Ausschlussmaßnahmen MUSS einem ordnungsgemäßen Verfahren folgen und MUSS mit den in Schicht 1 definierten Austritts- und Trennungsregeln übereinstimmen.
+6.4.4 Trennungs-, Suspendierungs- oder Ausschlussmaßnahmen MÜSSEN einem ordnungsgemäßen Verfahren folgen und MÜSSEN mit den in Schicht 1 definierten Austritts- und Trennungsregeln übereinstimmen.
 
-6.4.5 Sanktionen DARF NICHT durch informellen Ausschluss, sozialen Druck, Schweigen oder stillschweigende Entziehung von Rechten verhängt werden.
+6.4.5 Sanktionen DÜRFEN NICHT durch informellen Ausschluss, sozialen Druck, Schweigen oder stillschweigende Entziehung von Rechten verhängt werden.
 
-6.4.6 Wiedergutmachungsorientierte Maßnahmen MUSS gegenüber strafenden Maßnahmen priorisiert werden, außer in sicherheitskritischen Fällen.
+6.4.6 Wiedergutmachungsorientierte Maßnahmen MÜSSEN gegenüber strafenden Maßnahmen priorisiert werden, außer in sicherheitskritischen Fällen.
 
 ## 6.5 Artefakte
 
-6.5.1 Die folgenden Artefakte sind für die Layer-4-Konformität verpflichtend:
+6.5.1 Die folgenden Artefakte sind für die Schicht-4-Konformität verpflichtend:
 - Konfliktlösungsleiter
 - Verantwortlichkeitsprotokoll
 
-6.5.2 Layer-4-Artefakte MUSS:
+6.5.2 Schicht-4-Artefakte MÜSSEN:
 - Explizit und eindeutig sein
 - Versioniert sein
 - Allen Mitgliedern zugänglich sein, mit klar begrenztem Datenschutz
@@ -899,15 +899,15 @@ Sein Zweck ist es sicherzustellen, dass Konflikte explizit, fair und sicher beha
 - Berufungs-, Aufsichts- und Eskalationswege
 - Koordination mit den Austritts- und Trennungsprozessen von Schicht 1
 
-## 6.6 Layer-Invarianten
+## 6.6 Schicht-Invarianten
 
-6.6.1 Konflikte MUSS als behandelte Bedingung mit definierten Wegen betrachtet werden; das Ignorieren, Unterdrücken oder Normalisieren ungelöster Konflikte MUSS als Systemverstoß gelten.
+6.6.1 Konflikte MÜSSEN als behandelte Bedingung mit definierten Wegen betrachtet werden; das Ignorieren, Unterdrücken oder Normalisieren ungelöster Konflikte MUSS als Systemverstoß gelten.
 
-6.6.2 Konflikte mit Machtasymmetrien MUSS erhöhte Schutzmaßnahmen auslösen.
+6.6.2 Konflikte mit Machtasymmetrien MÜSSEN erhöhte Schutzmaßnahmen auslösen.
 
-6.6.3 Wiedergutmachung und Wiederherstellung MUSS vor Bestrafung stehen, außer wenn unmittelbare Sicherheit gefährdet ist.
+6.6.3 Wiedergutmachung und Wiederherstellung MÜSSEN vor Bestrafung stehen, außer wenn unmittelbare Sicherheit gefährdet ist.
 
-6.6.4 Physische, psychische und Kindersicherheit MUSS Teilnahmerechte, Rollenkontinuität und Reputationsbelange übersteuern.
+6.6.4 Physische, psychische und Kindersicherheit MÜSSEN Teilnahmerechte, Rollenkontinuität und Reputationsbelange übersteuern.
 
 ## 6.7 Explizitheitsregeln
 
@@ -936,7 +936,7 @@ Sein Zweck ist sicherzustellen, dass der Betrieb nachvollziehbar, nachhaltig und
 
 ## 7.1 Rollen und Verantwortlichkeiten
 
-7.1.1 Alle laufenden Verantwortlichkeiten MUSS expliziten, benannten Rollen zugewiesen werden — nicht impliziten Erwartungen oder informellen Absprachen.
+7.1.1 Alle laufenden Verantwortlichkeiten MÜSSEN expliziten, benannten Rollen zugewiesen werden — nicht impliziten Erwartungen oder informellen Absprachen.
 
 7.1.2 Die Gemeinschaft MUSS ein **Rollenregister** führen, das mindestens Folgendes enthält:
 - Rollenname und Zweck  
@@ -953,7 +953,7 @@ Sein Zweck ist sicherzustellen, dass der Betrieb nachvollziehbar, nachhaltig und
 
 7.1.4 Keine laufende Verantwortlichkeit KANN ohne eine explizite Rolle bestehen, und keine Person KANN für Verantwortlichkeiten zur Rechenschaft gezogen werden, die nicht formal einer Rolle zugewiesen sind.
 
-7.1.5 Temporäre oder Ad-hoc-Verantwortlichkeiten MUSS explizit zeitlich begrenzt sein und DARF NICHT ohne formale Rollendefinition dauerhaft werden.
+7.1.5 Temporäre oder Ad-hoc-Verantwortlichkeiten MÜSSEN explizit zeitlich begrenzt sein und DÜRFEN NICHT ohne formale Rollendefinition dauerhaft werden.
 
 ## 7.2 Sitzungssystem
 
@@ -973,7 +973,7 @@ Sein Zweck ist sicherzustellen, dass der Betrieb nachvollziehbar, nachhaltig und
 - Dokumentations- und Veröffentlichungsanforderungen  
 - Anforderungen an die Entscheidungserfassung, wo Entscheidungen getroffen werden  
 
-7.2.3 Sitzungen DARF NICHT ihren erklärten Entscheidungsumfang überschreiten oder die in Schicht 2 definierten Autoritätsgrenzen umgehen.
+7.2.3 Sitzungen DÜRFEN NICHT ihren erklärten Entscheidungsumfang überschreiten oder die in Schicht 2 definierten Autoritätsgrenzen umgehen.
 
 7.2.4 Die Sitzungsbelastung MUSS begrenzt, überwacht und überprüfbar sein, wie in Abschnitt 7.4 definiert.
 
@@ -981,26 +981,26 @@ Sein Zweck ist sicherzustellen, dass der Betrieb nachvollziehbar, nachhaltig und
 
 7.3.1 Die Gemeinschaft MUSS explizite Dokumentationsregeln für Entscheidungen, Rollen, Betriebsabläufe und gemeinsame Pflichten definieren.
 
-7.3.2 Dokumentationsregeln MUSS mindestens Folgendes festlegen:
-- Welche Informationen aufgezeichnet werden MUSS  
+7.3.2 Dokumentationsregeln MÜSSEN mindestens Folgendes festlegen:
+- Welche Informationen aufgezeichnet werden MÜSSEN  
 - Wo Aufzeichnungen gespeichert werden  
 - Wer Zugang zu welchen Aufzeichnungen hat  
 - Veröffentlichungs- oder Benachrichtigungsfristen (falls vorhanden)  
 - Datenschutzgrenzen und Bedingungen für eingeschränkten Zugang  
 
-7.3.3 Alle Entscheidungen MUSS rückverfolgbar sein auf:
+7.3.3 Alle Entscheidungen MÜSSEN rückverfolgbar sein auf:
 - Entscheidungstyp und Bereich  
 - Autorisierte Rolle oder Gremium  
 - Entscheidungsmechanismus und Schwellenwert  
 - Erfasstes Ergebnis und Inkrafttreten  
 
-7.3.4 Kritische Betriebsprozesse MUSS so dokumentiert sein, dass die Kontinuität nicht von implizitem Wissen einzelner Personen abhängt.
+7.3.4 Kritische Betriebsprozesse MÜSSEN so dokumentiert sein, dass die Kontinuität nicht von implizitem Wissen einzelner Personen abhängt.
 
 7.3.5 Der Informationsfluss MUSS so gestaltet sein, dass Gatekeeping, Engpässe oder Abhängigkeit von informellen Vermittlern verhindert werden.
 
 ## 7.4 Arbeitsbelastung und Kapazitätsgrenzen
 
-7.4.1 Zeit, Aufmerksamkeit, Koordinationskapazität und emotionale Arbeit MUSS als endliche und begrenzte Ressourcen behandelt werden.
+7.4.1 Zeit, Aufmerksamkeit, Koordinationskapazität und emotionale Arbeit MÜSSEN als endliche und begrenzte Ressourcen behandelt werden.
 
 7.4.2 Die Gemeinschaft MUSS explizite Belastungsgrenzen definieren, darunter:
 - Begrenzungen der Sitzungsbelastung (Häufigkeit, Dauer oder Gesamtzeit)  
@@ -1008,7 +1008,7 @@ Sein Zweck ist sicherzustellen, dass der Betrieb nachvollziehbar, nachhaltig und
 - Erwartungen an Reaktionszeiten und Verfügbarkeit (falls vorhanden)  
 - Mechanismen für Neuverhandlung, Entlastung, Vertretung oder Umverteilung  
 
-7.4.3 Belastungsgrenzen MUSS durch einen autorisierten Governance-Prozess überprüfbar und anpassbar sein.
+7.4.3 Belastungsgrenzen MÜSSEN durch einen autorisierten Governance-Prozess überprüfbar und anpassbar sein.
 
 7.4.4 Anhaltende Überlastung, Burnout-Risiko, chronische Nicht-Teilnahme oder Abhängigkeit von übermäßig engagierten Einzelpersonen MUSS Überprüfungs- oder Reparaturprozesse auslösen, wie in Schicht 4 definiert.
 
@@ -1016,7 +1016,7 @@ Sein Zweck ist sicherzustellen, dass der Betrieb nachvollziehbar, nachhaltig und
 
 7.5.1 Die Gemeinschaft MUSS sicherstellen, dass keine einzelne Person ein kritischer Single Point of Failure für den Kernbetrieb ist.
 
-7.5.2 Zentrale Betriebsrollen und -prozesse MUSS Folgendes beinhalten:
+7.5.2 Zentrale Betriebsrollen und -prozesse MÜSSEN Folgendes beinhalten:
 - Dokumentierte Verfahren  
 - Klare Übergabemechanismen  
 - Backup- oder Redundanzregelungen, wo machbar  
@@ -1030,7 +1030,7 @@ Sein Zweck ist sicherzustellen, dass der Betrieb nachvollziehbar, nachhaltig und
 - Rollenregister  
 - Sitzungsvorlagen  
 
-7.6.2 Artefakte von Schicht 5 MUSS:
+7.6.2 Artefakte von Schicht 5 MÜSSEN:
 - Explizit und eindeutig sein  
 - Versioniert sein  
 - Für alle Mitglieder zugänglich sein, mit klar begrenztem Datenschutz  
@@ -1041,20 +1041,20 @@ Sein Zweck ist sicherzustellen, dass der Betrieb nachvollziehbar, nachhaltig und
 - Schnittstellen zwischen Rollen, Bereichen und Sitzungstypen  
 - Dokumentationsstandorte und Aktualisierungsverfahren  
 
-7.6.4 Sitzungsvorlagen MUSS mindestens Folgendes definieren:
+7.6.4 Sitzungsvorlagen MÜSSEN mindestens Folgendes definieren:
 - Tagesordnungsstruktur  
 - Protokoll- und Aufzeichnungsformat  
 - Entscheidungserfassungsformat, wo zutreffend  
 
-## 7.7 Layer-Invarianten
+## 7.7 Schicht-Invarianten
 
-7.7.1 Laufende Verantwortlichkeiten DARF NICHT ohne eine explizite Rolle bestehen.
+7.7.1 Laufende Verantwortlichkeiten DÜRFEN NICHT ohne eine explizite Rolle bestehen.
 
-7.7.2 Kritische Betriebsprozesse DARF NICHT ausschließlich auf individuellem Gedächtnis, gutem Willen oder informeller Weitergabe beruhen.
+7.7.2 Kritische Betriebsprozesse DÜRFEN NICHT ausschließlich auf individuellem Gedächtnis, gutem Willen oder informeller Weitergabe beruhen.
 
-7.7.3 Sitzungsbelastung, Koordinationsaufwand und unbezahlte oder unsichtbare Arbeit MUSS begrenzt und überprüfbar sein.
+7.7.3 Sitzungsbelastung, Koordinationsaufwand und unbezahlte oder unsichtbare Arbeit MÜSSEN begrenzt und überprüfbar sein.
 
-7.7.4 Regeln für den Informationszugang MUSS explizit und durchsetzbar sein.
+7.7.4 Regeln für den Informationszugang MÜSSEN explizit und durchsetzbar sein.
 
 ## 7.8 Explizierungsregeln
 
@@ -1087,24 +1087,24 @@ Sein Zweck ist sicherzustellen, dass Veränderung bewusst, eingegrenzt, wo angem
 
 8.1.1 Die Gemeinschaft MUSS explizite Änderungsmechanismen für das Modifizieren, Hinzufügen, Aussetzen oder Entfernen von Regeln, Rollen, Artefakten oder Entscheidungsstrukturen definieren.
 
-8.1.2 Änderungsmechanismen MUSS explizit unterscheiden zwischen:
+8.1.2 Änderungsmechanismen MÜSSEN explizit unterscheiden zwischen:
 - Dauerhaften Regeländerungen  
 - Zeitlich begrenzten Experimenten gemäß Abschnitt 8.3  
 
 8.1.3 Jede vorgeschlagene Änderung MUSS mindestens folgendes angeben:
-- Die betroffenen Artefakte, Layer und Abschnitte  
+- Die betroffenen Artefakte, Schichten und Abschnitte  
 - Den Entscheidungstyp und den autorisierten Entscheidungspfad gemäß Schicht 2  
 - Die beabsichtigte Wirkung, den Geltungsbereich und bekannte Risiken  
 - Das Inkrafttretungsdatum und etwaige Übergangsfristen  
 - Migrationsanforderungen für bestehende Rollen, Vereinbarungen oder Aufzeichnungen  
 
-8.1.4 Änderungen, die den Zweck, den Geltungsbereich, die Invarianten oder die Identitätsbeschränkungen von Schicht 0 betreffen, MUSS als konstitutionelle Änderungen klassifiziert werden und MUSS dem konstitutionellen Entscheidungsmechanismus folgen.
+8.1.4 Änderungen, die den Zweck, den Geltungsbereich, die Invarianten oder die Identitätsbeschränkungen von Schicht 0 betreffen, MÜSSEN als konstitutionelle Änderungen klassifiziert werden und MÜSSEN dem konstitutionellen Entscheidungsmechanismus folgen.
 
 8.1.5 Die Gemeinschaft MUSS explizite Überprüfungsmechanismen für angenommene Änderungen definieren, einschließlich wie Änderungen bewertet, überarbeitet oder rückgängig gemacht werden, wenn sie Schaden, Instabilität oder unbeabsichtigte Machtkonzentration verursachen.
 
 ## 8.2 Versionierung und Autorität
 
-8.2.1 Alle angenommenen Änderungen MUSS versioniert und nachvollziehbar sein.
+8.2.1 Alle angenommenen Änderungen MÜSSEN versioniert und nachvollziehbar sein.
 
 8.2.2 Die Gemeinschaft MUSS eine **Versionshistorie** führen, die mindestens folgendes dokumentiert:
 - Versionskennung  
@@ -1117,9 +1117,9 @@ Sein Zweck ist sicherzustellen, dass Veränderung bewusst, eingegrenzt, wo angem
 - Welche Version derzeit in Kraft ist  
 - Welche Artefakte für die Konformität maßgeblich sind  
 
-8.2.4 Abgelöste Regeln MUSS zusammen mit den Zeiträumen, in denen sie galten, für Prüfbarkeit, Lernen und Streitbeilegung zugänglich bleiben.
+8.2.4 Abgelöste Regeln MÜSSEN zusammen mit den Zeiträumen, in denen sie galten, für Prüfbarkeit, Lernen und Streitbeilegung zugänglich bleiben.
 
-8.2.5 Keine informellen, undokumentierten oder „stillschweigend verstandenen" Regeländerungen KANN als gültig betrachtet werden.
+8.2.5 Keine informellen, undokumentierten oder „stillschweigend verstandenen" Regeländerungen KÖNNEN als gültig betrachtet werden.
 
 ## 8.3 Experimente
 
@@ -1132,36 +1132,36 @@ Sein Zweck ist sicherzustellen, dass Veränderung bewusst, eingegrenzt, wo angem
 - Rollback-Bedingungen und Rollback-Prozess  
 - Autorisierter Entscheidungspfad für das Starten, Verlängern, Ändern oder Beenden des Experiments  
 
-8.3.3 Experimente DARF NICHT die Invarianten von Schicht 0 außer Kraft setzen und DARF NICHT die in Schicht 2 definierten Governance-Beschränkungen umgehen.
+8.3.3 Experimente DÜRFEN NICHT die Invarianten von Schicht 0 außer Kraft setzen und DÜRFEN NICHT die in Schicht 2 definierten Governance-Beschränkungen umgehen.
 
-8.3.4 Experimente MUSS in allen betroffenen Artefakten ausdrücklich als experimentell gekennzeichnet sein und MUSS ein nicht verlängerbares Ablaufdatum enthalten, sofern sie nicht durch eine autorisierte Entscheidung erneuert werden.
+8.3.4 Experimente MÜSSEN in allen betroffenen Artefakten ausdrücklich als experimentell gekennzeichnet sein und MÜSSEN ein nicht verlängerbares Ablaufdatum enthalten, sofern sie nicht durch eine autorisierte Entscheidung erneuert werden.
 
 8.3.5 Wenn ein Experiment Sicherheitsrisiken, Zwang oder anhaltenden Schaden verursacht, MUSS die Gemeinschaft das Experiment unverzüglich durch eine Schutzmaßnahme aussetzen oder beenden, gefolgt von einer nachträglichen Überprüfung.
 
 ## 8.4 Lernen und Feedback-Erfassung
 
-8.4.1 Größere Fehlschläge, Anpassungen, Rücknahmen und systemische Erkenntnisse MUSS dokumentiert werden.
+8.4.1 Größere Fehlschläge, Anpassungen, Rücknahmen und systemische Erkenntnisse MÜSSEN dokumentiert werden.
 
 8.4.2 Die Lernerfassung MUSS mindestens folgendes beinhalten:
 - Was geschah und warum es relevant war  
-- Welche Layer, Regeln oder Artefakte betroffen waren  
+- Welche Schichten, Regeln oder Artefakte betroffen waren  
 - Was geändert, versucht oder gestoppt wurde  
 - Welche Signale, Nachweise oder Schwellenwerte eine Handlung ausgelöst haben  
 
-8.4.3 Lernaufzeichnungen MUSS gemäß den Informationszugangsregeln von Schicht 5 zugänglich sein.
+8.4.3 Lernaufzeichnungen MÜSSEN gemäß den Informationszugangsregeln von Schicht 5 zugänglich sein.
 
-8.4.4 Wiederkehrende Fehlermuster MUSS eine strukturelle Überprüfung auslösen, keine individuelle Schuldzuweisung.
+8.4.4 Wiederkehrende Fehlermuster MÜSSEN eine strukturelle Überprüfung auslösen, keine individuelle Schuldzuweisung.
 
 ## 8.5 Änderungssicherheit und Reversibilität
 
 8.5.1 Das System MUSS wo möglich reversible Änderungen gegenüber irreversiblen bevorzugen.
 
-8.5.2 Irreversible oder folgenschwere Änderungen MUSS beinhalten:
+8.5.2 Irreversible oder folgenschwere Änderungen MÜSSEN beinhalten:
 - Verlängerte Beratungs- oder Überprüfungszeiträume  
 - Höhere Entscheidungsschwellen, wo angemessen  
 - Ausdrückliche Risikoanerkennung  
 
-8.5.3 Notfalländerungen KANN nur dort zulässig sein, wo sie ausdrücklich definiert sind, MUSS zeitlich begrenzt sein, DARF NICHT die Invarianten von Schicht 0 außer Kraft setzen und MUSS einer verpflichtenden nachträglichen Überprüfung und Ratifizierung oder Rücknahme unterzogen werden.
+8.5.3 Notfalländerungen KÖNNEN nur dort zulässig sein, wo sie ausdrücklich definiert sind, MÜSSEN zeitlich begrenzt sein, DÜRFEN NICHT die Invarianten von Schicht 0 außer Kraft setzen und MÜSSEN einer verpflichtenden nachträglichen Überprüfung und Ratifizierung oder Rücknahme unterzogen werden.
 
 ## 8.6 Artefakte
 
@@ -1170,7 +1170,7 @@ Sein Zweck ist sicherzustellen, dass Veränderung bewusst, eingegrenzt, wo angem
 - Versionshistorie  
 - Lernprotokoll  
 
-8.6.2 Artefakte von Schicht 6 MUSS:
+8.6.2 Artefakte von Schicht 6 MÜSSEN:
 - Explizit und eindeutig sein  
 - Versioniert sein  
 - Für alle Mitglieder zugänglich sein, mit klar abgegrenztem Datenschutz  
@@ -1194,15 +1194,15 @@ Sein Zweck ist sicherzustellen, dass Veränderung bewusst, eingegrenzt, wo angem
 - Dokumentationsformat und Zuständigkeit  
 - Überprüfungs- und Synthese-Rhythmus  
 
-## 8.7 Layer-Invarianten
+## 8.7 Schicht-Invarianten
 
 8.7.1 Veränderung MUSS möglich, aber eingegrenzt sein; keine Änderung KANN augenblicklich, implizit oder unüberprüfbar sein.
 
-8.7.2 Alle angenommenen Änderungen MUSS versioniert, dokumentiert und nachvollziehbar sein.
+8.7.2 Alle angenommenen Änderungen MÜSSEN versioniert, dokumentiert und nachvollziehbar sein.
 
-8.7.3 Experimente MUSS zeitlich begrenzt, ausdrücklich gekennzeichnet und reversibel sein.
+8.7.3 Experimente MÜSSEN zeitlich begrenzt, ausdrücklich gekennzeichnet und reversibel sein.
 
-8.7.4 Größere Fehlschläge und Anpassungen MUSS als gemeinsames Lernen festgehalten werden, nicht ausradiert oder versteckt.
+8.7.4 Größere Fehlschläge und Anpassungen MÜSSEN als gemeinsames Lernen festgehalten werden, nicht ausradiert oder versteckt.
 
 ## 8.8 Explizitätsregeln
 
@@ -1235,17 +1235,17 @@ Nichts in diesem Abschnitt darf Anforderungen, die in den Schichten 0–6 defini
 
 9.1.1 Optionale Module sind domänenspezifische Erweiterungen, die auf RCOS-Core aufbauen, ohne dessen verpflichtende Schichten zu verändern.
 
-9.1.2 Optionale Module MUSS:
+9.1.2 Optionale Module MÜSSEN:
 - Deklarieren, welche RCOS-Schichten sie erweitern oder von welchen sie abhängen
 - Ausdrücklich angeben, welche zusätzlichen Rollen, Regeln oder Artefakte sie einführen
 - Invarianten der Schicht 0 oder RCOS-Core-Anforderungen NOT überschreiben oder ihnen widersprechen
 
-9.1.3 Optionale Module KANN definieren:
+9.1.3 Optionale Module KÖNNEN definieren:
 - Domänenspezifische Praktiken
 - Zusätzliche Einschränkungen oder Standards
 - Spezialisierte Governance- oder Betriebsmuster
 
-9.1.4 Typische Domänen optionaler Module KANN umfassen, sind aber nicht beschränkt auf:
+9.1.4 Typische Domänen optionaler Module KÖNNEN umfassen, sind aber nicht beschränkt auf:
 - Permakultur und regenerative Landschaftspflege
 - Alternative oder gemeinschaftsbasierte Bildungssysteme
 - Gesundheits-, Pflege- und Wohlbefindenspraktiken
@@ -1274,7 +1274,7 @@ Sie veranschaulichen, wie RCOS umgesetzt werden kann, nicht wie es umgesetzt wer
 - Bekannte Herausforderungen und Fehlschläge
 - Entwicklungsgeschichte und wesentliche Anpassungen
 
-9.2.5 Referenzimplementierungen DARF NICHT als autoritative Auslegungen des Standards behandelt werden.
+9.2.5 Referenzimplementierungen DÜRFEN NICHT als autoritative Auslegungen des Standards behandelt werden.
 
 ## 9.3 Bekannte Fehlermuster
 
@@ -1282,7 +1282,7 @@ Sie veranschaulichen, wie RCOS umgesetzt werden kann, nicht wie es umgesetzt wer
 
 9.3.2 Fehlermuster sind **informative Signale**, keine Compliance-Kriterien.
 
-9.3.3 Fehlermuster KANN umfassen, sind aber nicht beschränkt auf:
+9.3.3 Fehlermuster KÖNNEN umfassen, sind aber nicht beschränkt auf:
 - Informelle Machtakkumulation
 - Dominanz von Gründern oder Grundeigentümern
 - Unsichtbare oder geschlechtsspezifische Arbeitsabhängigkeit
@@ -1309,40 +1309,40 @@ Dieses Kapitel definiert, wie RCOS-Core-Compliance bewertet und aufrechterhalten
 
 10.1.1 RCOS-Core-Compliance ist binär: Eine Gemeinschaft ist entweder compliant oder non-compliant.
 
-10.1.2 Compliance MUSS pro Layer (Schicht 0–6) bewertet werden.
+10.1.2 Compliance MUSS pro Schicht (0–6) bewertet werden.
 
-10.1.3 Für jeden Layer MUSS die Compliance-Checkliste überprüfen:
+10.1.3 Für jede Schicht MUSS die Compliance-Checkliste überprüfen:
 - Vorhandensein verbindlicher Artefakte  
 - Explizitheit und Zugänglichkeit der erforderlichen Regeln  
 - Verabschiedung durch autorisierte Governance-Prozesse  
 
 10.1.4 Teilweise Compliance oder „Absicht zur Compliance" DARF NICHT als compliant betrachtet werden.
 
-10.1.5 Optionale Module DARF NICHT in die RCOS-Core-Compliance-Bewertung einbezogen werden.
+10.1.5 Optionale Module DÜRFEN NICHT in die RCOS-Core-Compliance-Bewertung einbezogen werden.
 
 ## 10.2 Testfälle
 
 10.2.1 Testfälle sind strukturierte Szenarien, mit denen überprüft wird, ob RCOS-Mechanismen wie beabsichtigt funktionieren.
 
-10.2.2 Testfälle KANN sein:
+10.2.2 Testfälle KÖNNEN sein:
 - Hypothetische Szenarien  
 - Historische Gemeinschafts-Fehlschläge  
 - Simulierte Stresstests  
 
-10.2.3 Testfälle SOLLTE mindestens abdecken:
+10.2.3 Testfälle SOLLTEN mindestens abdecken:
 - Versuche der Machtkonzentration  
 - Austritts- und Trennungsszenarien  
 - Governance-Deadlock  
 - Versuche wirtschaftlicher Vereinnahmung  
 - Sicherheitskritische Konflikte  
 
-10.2.4 Testfälle sind informativ, SOLLTE aber bei Audits, Onboarding und regelmäßigen Überprüfungen eingesetzt werden.
+10.2.4 Testfälle sind informativ, SOLLTEN aber bei Audits, Onboarding und regelmäßigen Überprüfungen eingesetzt werden.
 
 ## 10.3 Non-Compliance
 
 10.3.1 Eine Gemeinschaft MUSS als non-compliant betrachtet werden, wenn:
 - Ein verbindliches Artefakt fehlt  
-- Layer-0-Invarianten verletzt werden  
+- Schicht-0-Invarianten verletzt werden  
 - Entscheidungen wiederholt außerhalb autorisierter Governance-Strukturen getroffen werden  
 - Der Austritt blockiert oder informell eingeschränkt wird  
 
@@ -1353,7 +1353,7 @@ Dieses Kapitel definiert, wie RCOS-Core-Compliance bewertet und aufrechterhalten
 - Formale Verabschiedung fehlender oder korrigierter Artefakte  
 - Dokumentation der Behebung  
 
-10.3.4 Ansprüche auf RCOS-Compliance MUSS während Zeiträumen bekannter Non-Compliance zurückgezogen werden.
+10.3.4 Ansprüche auf RCOS-Compliance MÜSSEN während Zeiträumen bekannter Non-Compliance zurückgezogen werden.
 
 
 ---
@@ -1366,11 +1366,11 @@ Dieses Kapitel definiert, wie sich RCOS selbst als Standard weiterentwickelt.
 
 11.1.1 RCOS MUSS über eine identifizierbare verwaltende Stelle oder einen verwaltenden Prozess verfügen.
 
-11.1.2 Die Verantwortlichkeiten der Verwaltung MUSS umfassen:
+11.1.2 Die Verantwortlichkeiten der Verwaltung MÜSSEN umfassen:
 - Pflege der kanonischen Spezifikation  
 - Verwaltung von Versionsfreigaben  
 - Kuratierung von Referenzmaterialien und Lernressourcen  
-- Schutz der Layer-0-Invarianten des Standards selbst  
+- Schutz der Schicht-0-Invarianten des Standards selbst  
 
 11.1.3 Die Verwaltung DARF NICHT als Durchsetzungsinstanz gegenüber Gemeinschaften agieren.
 
@@ -1378,7 +1378,7 @@ Dieses Kapitel definiert, wie sich RCOS selbst als Standard weiterentwickelt.
 
 ## 11.2 Änderungsprozess
 
-11.2.1 Änderungen an RCOS-Core MUSS einem definierten Änderungsprozess folgen.
+11.2.1 Änderungen an RCOS-Core MÜSSEN einem definierten Änderungsprozess folgen.
 
 11.2.2 Der Änderungsprozess MUSS umfassen:
 - Einreichung von Vorschlägen  
@@ -1388,9 +1388,9 @@ Dieses Kapitel definiert, wie sich RCOS selbst als Standard weiterentwickelt.
 
 11.2.3 Abwärtskompatibilität SOLLTE nach Möglichkeit gewahrt werden.
 
-11.2.4 Nicht abwärtskompatible Änderungen MUSS klar gekennzeichnet und begründet werden.
+11.2.4 Nicht abwärtskompatible Änderungen MÜSSEN klar gekennzeichnet und begründet werden.
 
-11.2.5 Abgelöste Versionen von RCOS MUSS öffentlich zugänglich bleiben.
+11.2.5 Abgelöste Versionen von RCOS MÜSSEN öffentlich zugänglich bleiben.
 
 11.2.6 RCOS selbst MUSS dieselben Prinzipien vorleben, die es von Gemeinschaften verlangt: Explizitheit, begrenzte Befugnisse, Umkehrbarkeit und Lernbereitschaft.
 
@@ -1599,7 +1599,7 @@ Die Beispiele dienen nur zur Information und sollten nicht als vorgeschriebene F
 
 - Änderungstitel:
 - Zusammenfassung (1–3 Sätze):
-- Betroffene Layer und Artefakte (Links):
+- Betroffene Schichten und Artefakte (Links):
 - Änderungstyp:
   - Dauerhafte Änderung / Experiment
 - Entscheidungstyp und autorisierter Entscheidungsweg (Verweis auf Entscheidungsmatrix):
@@ -1687,7 +1687,7 @@ Die Beispiele dienen nur zur Information und sollten nicht als vorgeschriebene F
 - Datum:
 - Auslösendes Ereignis:
 - Was ist passiert (kurze Beschreibung):
-- Betroffene Layer/Artefakte:
+- Betroffene Schichten/Artefakte:
 - Signale, die zur Handlung geführt haben:
 - Was wurde geändert (oder versucht):
 - Ergebnis nach Überprüfung:
@@ -1717,18 +1717,18 @@ Dieser Anhang definiert eine **empfohlene Dokumentationsstruktur** für Gemeinsc
   - Modulname und Geltungsbereich
   - Übernahmedatum
   - Link zur Modulspezifikation
-  - Deklarierte Layer-Abhängigkeiten
+  - Deklarierte Schicht-Abhängigkeiten
 
-## C.3 Layer-für-Layer-Zusammenfassung
+## C.3 Schicht-für-Schicht-Zusammenfassung
 
-Für jeden Layer (0–6):
+Für jede Schicht (0–6):
 - Implementierte Artefakte (mit Links)
 - Abweichungen oder Anpassungen (mit Links)
 - Bekannte Herausforderungen und aufgetretene Fehlermodi
 
 Empfohlenes Format:
 
-| Layer | Implementierte Pflichtartefakte | Öffentliche(r) Link(s) | Version/Datum | Anmerkungen |
+| Schicht | Implementierte Pflichtartefakte | Öffentliche(r) Link(s) | Version/Datum | Anmerkungen |
 |---:|---|---|---|---|
 | 0 | Zweckcharta; Geltungsbereichserklärung; Invariantenregister | [Platzhalter] | v0.3 / 2026-01-01 | Zweck stabil; Invarianten werden vierteljährlich überprüft |
 | 1 | Mitgliedschaftsvereinbarung; Onboarding-Protokoll; Austritts- & Trennungsprotokoll; Mitgliedschaftsstatus-Register | [Platzhalter] | v1.1 / 2026-02-15 | Probezeit beträgt 3 Monate |
@@ -1745,7 +1745,7 @@ Empfohlenes Format:
 - Wichtige Erkenntnisse und Fehlschläge (mit Links zu Learning-Log-Einträgen)
 - Abweichungsregister (empfohlen):
 
-| Gegenstand | Layer | Typ | Status | Beginn | Überprüfung/Ende | Link |
+| Gegenstand | Schicht | Typ | Status | Beginn | Überprüfung/Ende | Link |
 |---|---|---|---|---|---|---|
 | Versuch mit rotierender Moderation | 5 | Experiment | Aktiv | 2026-06-01 | 2026-08-01 | [Platzhalter] |
 | Ausnahme bei Kassentransparenz (Sicherheit) | 3/4 | Permanent | Aktiv | 2026-04-10 | Jährliche Überprüfung | [Platzhalter] |
@@ -1760,7 +1760,7 @@ Empfohlenes Format:
 
 | Nachweis | Datum | Link |
 |---|---:|---|
-| Layer-für-Layer-Checklisten-Ergebnis | 2026-07-01 | [Platzhalter] |
+| Schicht-für-Schicht-Checklisten-Ergebnis | 2026-07-01 | [Platzhalter] |
 | Audit-Notizen / Feststellungen | 2026-07-01 | [Platzhalter] |
 | Abhilfemaßnahmen-Protokoll | 2026-07-15 | [Platzhalter] |
 - Bekannte Zeiträume der Nicht-Konformität (falls vorhanden)  
@@ -1769,7 +1769,7 @@ Empfohlenes Format:
 
 - Öffentlicher Artefakt-Index (empfohlen):
 
-| Artefakt | Layer | Öffentlicher Link | Version/Datum | Anmerkungen |
+| Artefakt | Schicht | Öffentlicher Link | Version/Datum | Anmerkungen |
 |---|---:|---|---:|---|
 | Zweckcharta | 0 | [Platzhalter] | 2026-01-01 | |
 | Entscheidungsmatrix | 2 | [Platzhalter] | 2026-03-10 | |

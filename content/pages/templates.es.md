@@ -4,7 +4,7 @@ title: Plantillas RCOS
 parentId: null
 order: 4
 lang: es
-sourceHash: 9daa7180
+sourceHash: ea11889c
 ---
 
 ## Qué son las Plantillas RCOS

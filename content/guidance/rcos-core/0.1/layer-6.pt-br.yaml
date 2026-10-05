@@ -1,0 +1,201 @@
+lang: pt-br
+sourceHash: 6ed5c6a7
+sections:
+  '8.1':
+    inShort: Mudar as regras segue um processo escrito próprio. Toda proposta diz o que muda, quem decide e como será revisada.
+    questions:
+      proposal-contents:
+        question: O que uma proposta de mudança precisa dizer?
+        answer: O que ela afeta, o tipo e o caminho de decisão, o efeito pretendido e os riscos, quando entra em vigor e como papéis, acordos ou registros existentes são migrados.
+      layer-0-change:
+        question: Como mudamos algo na Camada 0?
+        answer: Como uma mudança constitucional, pelo mecanismo de decisão constitucional.
+  '8.2':
+    inShort: Toda mudança adotada recebe uma versão, para que qualquer pessoa saiba quais regras valem hoje e quais valiam antes.
+    questions:
+      understood-change:
+        question: Todo mundo concordou na cozinha. A mudança de regra vale?
+        answer: Não. Mudanças de regra informais, não documentadas ou "tácitas" não são válidas.
+      old-rules:
+        question: Podemos apagar regras que não valem mais?
+        answer: Regras substituídas continuam acessíveis, com as datas em que estiveram em vigor, para auditorias, aprendizado e disputas.
+  '8.3':
+    inShort: Experimentos permitem testar algo novo por um tempo limitado, com critérios de sucesso claros e um caminho de volta.
+    questions:
+      experiment-invariant:
+        question: Um experimento pode suspender uma invariante?
+        answer: Não. Experimentos não podem passar por cima das invariantes da Camada 0 nem contornar as restrições de governança da Camada 2.
+      experiment-harm:
+        question: E se um experimento começar a causar dano?
+        answer: Ele é suspenso ou encerrado imediatamente como ação protetiva, e revisado depois.
+  '8.4':
+    inShort: Registre o que deu errado e o que vocês aprenderam, para que a comunidade aprenda como um todo em vez de culpar pessoas.
+    questions:
+      repeated-failure:
+        question: O mesmo problema fica acontecendo. E agora?
+        answer: Padrões de falha repetidos acionam uma revisão estrutural, em vez de culpa individual.
+  '8.5':
+    inShort: Prefira mudanças que vocês possam desfazer. As grandes ou irreversíveis recebem mais tempo, um critério mais alto e um olhar honesto sobre os riscos.
+    questions:
+      emergency-change:
+        question: Podemos mudar regras rapidamente numa emergência?
+        answer: Somente onde mudanças de emergência estiverem explicitamente definidas. Elas têm prazo limitado, não podem passar por cima das invariantes e depois são revisadas e ratificadas ou revertidas.
+  '8.6':
+    inShort: 'A Camada 6 vive em três documentos: o Protocolo de Mudança, o Histórico de Versões e o Registro de Aprendizados.'
+    questions:
+      which-documents:
+        question: Quais documentos a Camada 6 exige?
+        answer: Um Protocolo de Mudança, um Histórico de Versões e um Registro de Aprendizados.
+  '8.7':
+    inShort: 'Os limites rígidos da mudança são: a mudança é sempre possível, mas nunca instantânea ou invisível, e as falhas se tornam aprendizado compartilhado em vez de serem apagadas.'
+    questions:
+      instant-change:
+        question: Por que uma mudança não pode entrar em vigor imediatamente?
+        answer: Nenhuma mudança pode ser instantânea, implícita ou não revisável. É isso que mantém a mudança possível sem transformá-la em ferramenta de captura.
+  '8.8':
+    inShort: Como as regras mudam, como as versões funcionam e como os experimentos terminam tem que ser explícito. O ritmo da inovação é escolha de vocês.
+    questions:
+      pace:
+        question: O RCOS espera que a gente esteja sempre mudando?
+        answer: Não. O ritmo da inovação permanece opcional e fora do escopo; só a forma como a mudança acontece tem que ser explícita.
+templates:
+  change-protocol.how-changes-are-proposed:
+    question: Como alguém propõe acrescentar, mudar, pausar ou remover uma de nossas regras, papéis ou estruturas?
+    prompts:
+      - Quem pode propor acrescentar, mudar, pausar ou remover uma regra, papel, documento ou forma de decidir?
+      - Onde a proposta é entregue, e quem garante que ela chegue a todo mundo?
+      - Quais documentos e seções a proposta precisa nomear como afetados?
+      - Qual tipo de decisão e qual caminho de decisão da nossa Matriz de Decisão a proposta precisa nomear — e, portanto, quem decide?
+      - O que toda proposta tem que dizer sobre seu propósito, seu alcance e seus riscos conhecidos?
+      - O que ela tem que dizer sobre a data de vigência, qualquer período de transição, o que acontece com papéis, acordos e registros existentes, e como ela seria desfeita? (Por quanto tempo ela fica em discussão, e o que acontece numa emergência, são perguntas próprias.)
+    examples:
+      - Qualquer Membro Pleno pode propor acrescentar, mudar, pausar ou remover uma regra, papel, documento ou estrutura de decisão preenchendo o formulário de proposta na pasta de propostas e avisando quem facilita. O formulário nomeia os documentos e seções afetados, o tipo e o caminho de decisão da nossa Matriz de Decisão, o que a mudança pretende fazer, até onde ela alcança e seus riscos, a data de vigência e qualquer período de transição, o que acontece com papéis, acordos e registros existentes, e como ela seria revertida. Formulários incompletos são devolvidos antes de a discussão começar.
+  change-protocol.how-proposals-are-classified:
+    question: Como distinguimos um ajuste pequeno de uma mudança em quem somos — e uma mudança permanente de um experimento?
+    prompts:
+      - 'Para cada tipo de decisão (por exemplo Operacional, Estratégica, Constitucional): que tipos de mudança se encaixam nele?'
+      - Quais mudanças são sempre Constitucionais — como qualquer coisa que toque nosso propósito, nosso escopo, os compromissos que dissemos que nunca mudariam, ou a forma como nos governamos?
+      - Como distinguimos uma mudança permanente de um experimento com prazo, e onde isso está escrito na proposta?
+      - Quando não está claro de que tipo é uma proposta, qual tipo vale, e quem resolve uma divergência sobre isso?
+    examples:
+      - 'Correções de redação e formatação são Operacionais: quem cuida dos documentos as faz e as lista no próximo círculo. Mudanças em como as pessoas entram, decidem, dividem custos ou assumem papéis são Estratégicas. Qualquer coisa que toque nosso propósito, nosso escopo, nossos compromissos não negociáveis ou a forma como nos governamos é Constitucional e passa pelo processo de decisão Constitucional. Uma proposta com data final definida é arquivada como experimento; todo o resto é permanente. Se discordarmos sobre o tipo, vale o mais alto.'
+  change-protocol.review-and-deliberation:
+    question: Por quanto tempo uma mudança proposta precisa ficar em espera antes de podermos adotá-la?
+    prompts:
+      - 'Para cada tipo de decisão: qual é o tempo mínimo em que uma proposta tem que ficar aberta para discussão antes de ser decidida?'
+      - Onde a discussão acontece, para que pessoas ausentes, doentes ou ocupadas ainda possam ler e responder?
+      - Para mudanças Constitucionais, quanto dura o período de ratificação depois que a votação é aprovada, e o que as pessoas podem fazer nesse período?
+      - Se algumas mudanças pequenas não exigem período de espera, como as pessoas ainda conseguem vê-las e pedir uma revisão formal depois? (Mudanças urgentes são uma pergunta própria.)
+    examples:
+      - Mudanças Operacionais não exigem período de espera, mas são publicadas no canal de mudanças por 7 dias, durante os quais qualquer membro pode pedir uma revisão completa. Propostas Estratégicas ficam abertas por no mínimo 14 dias, incluindo uma assembleia geral, antes da decisão. Propostas Constitucionais exigem no mínimo 30 dias de discussão e, depois de aprovada a votação, um período de ratificação de 14 dias em que qualquer Membro Pleno pode convocar uma segunda votação.
+  change-protocol.adoption-and-publication:
+    question: Quando uma mudança é adotada, como todo mundo fica sabendo, e a partir de quando ela vale?
+    prompts:
+      - Depois que a proposta é aprovada, quais passos vêm a seguir, em que ordem e em quantos dias?
+      - Quem é responsável por atualizar os documentos afetados e acrescentar a entrada no Histórico de Versões? (O que a entrada contém é uma pergunta própria.)
+      - Como todas as pessoas são avisadas da mudança, e o que o aviso inclui?
+      - A partir de quando uma mudança adotada vale — e ela pode valer antes de ser publicada?
+      - O que acontece se uma mudança foi combinada mas nunca registrada — ela vale?
+    examples:
+      - Em até 7 dias depois da aprovação, quem cuida da secretaria atualiza todos os documentos afetados, marca a redação antiga como substituída, acrescenta uma entrada no Histórico de Versões e move a proposta para a pasta de propostas aprovadas. Em seguida, todas as pessoas recebem um e-mail com um resumo e a data de vigência. A mudança vale a partir da data de vigência indicada na proposta, ou a partir da publicação, se esta for posterior. Uma mudança que não foi registrada desse jeito não está em vigor, não importa quão claramente as pessoas se lembrem de ter concordado com ela.
+  change-protocol.rejection:
+    question: O que acontece com uma proposta rejeitada — ela pode voltar, e em quanto tempo?
+    prompts:
+      - Onde uma proposta rejeitada é guardada, junto com seu registro de decisão, e em quantos dias ela é arquivada?
+      - Quem propôs é informado do motivo da rejeição, e por quem?
+      - A mesma proposta pode voltar — depois de quanto tempo, ou só com informação nova?
+      - Quem decide se uma proposta que volta é realmente nova, ou a mesma com outro nome?
+    examples:
+      - Em até 7 dias, uma proposta rejeitada é arquivada na pasta de propostas rejeitadas com seu registro de decisão e uma nota curta com as principais razões apresentadas. Nada nos nossos documentos muda. A mesma proposta pode voltar depois de seis meses, ou antes se quem propôs apresentar informação nova que não estava disponível na primeira discussão; quem facilita decide se uma proposta que volta é substancialmente a mesma.
+  change-protocol.transition-and-migration:
+    question: De que cuidado extra precisa uma mudança difícil de desfazer — e o que acontece com o que já está em andamento sob a regra antiga?
+    prompts:
+      - Como reconhecemos uma mudança como de alto impacto ou difícil de desfazer, e quem decide que ela é?
+      - Para essas mudanças, quanto mais longa é a discussão, e qual limiar mais alto elas exigem?
+      - Como os riscos são registrados e reconhecidos antes da decisão?
+      - Com quanta antecedência quem ocupa papéis e os demais membros são avisados antes de uma mudança afetá-los?
+      - Uma mudança pode reduzir os direitos que membros existentes já têm e, se puder, o que isso exige?
+      - O que acontece com registros e acordos feitos sob a regra antiga — eles ficam como estavam?
+    examples:
+      - Uma mudança conta como de alto impacto se afeta dinheiro, moradia ou direitos de membresia, ou não pode ser desfeita com facilidade. Essas mudanças recebem o dobro do tempo normal de discussão, exigem maioria de dois terços em vez de maioria simples e incluem uma seção escrita de riscos que as pessoas reconhecem antes de votar. Quem ocupa papéis afetados é avisado com no mínimo 30 dias de antecedência da entrada em vigor. Os direitos de membros existentes nunca são reduzidos sem o consentimento deles ou uma votação Constitucional, e registros feitos sob a regra antiga não são alterados.
+  change-protocol.rollback:
+    question: Como verificamos se uma mudança está funcionando — e como a revisamos ou desfazemos se não estiver?
+    prompts:
+      - Como e quando verificamos se uma mudança adotada está funcionando como pretendido?
+      - Que sinais indicam que uma mudança precisa ser revisada ou revertida — como dano, instabilidade ou decisões se concentrando em menos mãos?
+      - Quem pode pedir que uma mudança seja revisada ou revertida, e o que essa pessoa precisa apresentar?
+      - Qual tipo e processo de decisão uma reversão usa?
+      - Ao escolher entre formas de resolver um problema, como privilegiamos a que é mais fácil de desfazer?
+    examples:
+      - 'Toda mudança Estratégica ou Constitucional adotada é revisada seis meses depois de entrar em vigor: o círculo de zeladoria relata se ela causou dano, confusão ou concentrou decisões em menos mãos. Qualquer Membro Pleno pode pedir que uma mudança seja revisada ou revertida apresentando por escrito razões que não foram consideradas na primeira vez. Uma reversão usa o mesmo tipo de decisão da adoção original. Quando duas opções resolveriam o mesmo problema, escolhemos a que é mais fácil de desfazer.'
+  change-protocol.emergency-changes:
+    question: O que podemos decidir às pressas, quem pode fazer isso, e quando essa decisão expira?
+    prompts:
+      - Que situações contam como emergência — e o que torna impossível esperar por uma decisão normal?
+      - Quem pode fazer uma mudança de emergência, por conta própria ou junto com outra pessoa?
+      - O que nunca pode ser mudado numa emergência, como nosso propósito ou os compromissos que dissemos que nunca mudariam?
+      - Com que rapidez uma mudança de emergência tem que ser comunicada, e a quem?
+      - Quando ela é revisada, e até quando tem que ser confirmada pelo tipo de decisão normal — ou ela termina automaticamente?
+    examples:
+      - As duas pessoas na coordenação de segurança, juntas, podem fazer uma mudança de emergência somente quando é necessária ação imediata para evitar dano às pessoas ou a perda do prédio, e não dá tempo de realizar uma assembleia. Uma mudança de emergência nunca pode alterar nosso propósito ou nossos compromissos centrais. Ela é comunicada a todas as pessoas em até 24 horas, discutida na próxima assembleia, e caduca depois de 21 dias, a menos que as pessoas a ratifiquem pelo tipo de decisão que a mudança normalmente exigiria.
+  change-protocol.experiments:
+    question: Como testamos algo por um tempo sem que isso se torne permanente sem ninguém perceber?
+    prompts:
+      - Quem pode propor um experimento, e qual decisão inicia, estende, altera ou encerra um?
+      - O que todo experimento tem que declarar — o que muda e o que permanece igual, quanto tempo dura, seus pontos de checagem e os sinais de sucesso ou de falha?
+      - O que aciona uma reversão, e como ela é executada?
+      - No que um experimento nunca pode tocar, como nossos compromissos centrais ou a forma como as decisões são tomadas?
+      - Como um experimento é sinalizado em cada documento que ele afeta, e que data final fixa ele carrega?
+      - Se um experimento causa dano, pressão sobre as pessoas ou risco de segurança, quem pode interrompê-lo na hora, e como isso é revisado depois?
+    examples:
+      - Qualquer Membro Pleno pode propor um experimento de até 12 meses; iniciar, estender ou alterar um exige uma decisão Estratégica. A proposta declara o que muda e o que não muda, uma checagem no meio do caminho, sinais de sucesso e de falha, e como reverter. Cada documento afetado recebe a marca "Experimental até" sua data final. Experimentos não podem mudar nossos compromissos centrais nem pular nossas regras de decisão, e terminam na data marcada, a menos que sejam renovados por uma nova decisão. Quaisquer duas pessoas da zeladoria podem interromper um experimento imediatamente se ele causar dano, com revisão em até 14 dias.
+  version-history.entry-format:
+    question: O que registramos sobre cada versão das nossas regras, para que qualquer pessoa possa rastrear o que mudou?
+    prompts:
+      - Como as versões são numeradas, e o que faz o número mudar?
+      - O que cada entrada registra — versão, data de adoção, data de vigência, a decisão de onde ela veio, um resumo e eventuais notas de migração?
+      - Como qualquer pessoa sabe qual versão está em vigor hoje, e quais documentos valem como os oficiais?
+      - Onde as versões anteriores são guardadas, e como alguém pode ver as datas em que cada uma valeu?
+      - Como um erro numa entrada antiga é corrigido sem editá-la?
+    examples:
+      - 'Cada versão recebe um número como 2.3: o primeiro número sobe em mudanças Constitucionais, o segundo em todas as outras. Cada entrada registra a versão, as datas de adoção e de vigência, a referência da decisão com seu mecanismo e limiar, um resumo curto e eventuais notas de migração, da mais nova para a mais antiga. A entrada do topo é a versão em vigor, e só os documentos na pasta "atual" valem. As versões anteriores ficam no arquivo com as datas em que valeram, e os erros são corrigidos com uma nova entrada, nunca editando uma antiga.'
+  learning-log.what-constitutes-a-learnable-event:
+    question: Que tipo de coisa que dá errado vale registrar e aprender com?
+    prompts:
+      - Quais eventos sempre exigem uma entrada no Registro de Aprendizados — como uma decisão revertida, um experimento encerrado, um conflito que escalou, uma falha que causou dano, uma mudança grande no nosso jeito de trabalhar ou um quase acidente?
+      - O que não precisa de entrada?
+      - Quem é responsável pelo registro e garante que as entradas sejam escritas? (O que uma entrada contém é uma pergunta própria.)
+      - Com que frequência o registro é revisado, e quem prepara um resumo dos padrões?
+      - Quando o mesmo tipo de falha fica acontecendo, como revisamos a estrutura por trás dela em vez de culpar uma pessoa?
+      - Como garantimos que falhas incômodas sejam registradas e nunca apagadas ou escondidas depois?
+    examples:
+      - Uma entrada é obrigatória quando uma decisão é revertida, um experimento termina, um conflito chega à etapa de governança, uma falha causa dano ou colapso repetido, uma mudança grande no nosso jeito de trabalhar é adotada, ou acontece um quase acidente. Decisões rotineiras e conflitos resolvidos cedo não precisam de entrada. Quem cuida do aprendizado garante que as entradas sejam escritas e nunca removidas. A cada trimestre, essa pessoa resume as novas entradas; se o mesmo tipo de falha aparecer duas vezes, revisamos a estrutura por trás dela em vez de procurar alguém para culpar.
+  learning-log.entry-format:
+    question: O que registramos sobre algo que aprendemos, para que ainda seja útil em três anos?
+    prompts:
+      - O que aconteceu, e por que isso importou?
+      - Quais regras, papéis ou documentos estavam envolvidos?
+      - Que sinais, evidências ou limiares nos fizeram agir?
+      - O que mudamos, testamos ou interrompemos, e no que isso deu?
+      - Quem é responsável pelo acompanhamento, e até quando?
+      - Quem pode ler as entradas segundo nossas regras de acesso à informação, e o que fica de fora para proteger as pessoas envolvidas?
+    examples:
+      - Cada entrada registra a data, o que aconteceu e por que importou, quais regras ou documentos estavam envolvidos, que sinais ou limiares nos fizeram agir, o que mudamos, testamos ou interrompemos, no que isso deu, e quem faz o acompanhamento até quando. As entradas têm o mesmo nível de acesso que as atas das reuniões, então todos os membros podem ler; os nomes das pessoas envolvidas ficam de fora, a menos que elas concordem.
+  experiment-template.required-fields:
+    question: O que alguém tem que registrar antes de a gente concordar em testar algo?
+    prompts:
+      - Quais campos todo formulário de proposta de experimento contém, e quais nunca podem ficar em branco?
+      - Como quem propõe mostra que os sinais de sucesso e de interrupção antecipada são coisas que realmente conseguimos observar?
+      - Quem confere se o formulário está completo antes de ir para decisão, e o que acontece com um incompleto?
+      - Onde o formulário preenchido fica guardado enquanto o experimento acontece, para que as pessoas possam compará-lo com o que está acontecendo? (O que acontece quando ele termina é uma pergunta própria.)
+    examples:
+      - 'Todo experimento usa um único formulário com estes campos: nome, quem propõe, o que muda e quais documentos são afetados, o que permanece igual, datas de início e de término, pelo menos uma checagem no meio do caminho, sinais observáveis de sucesso, sinais observáveis que nos fazem interromper antes do prazo, o que aciona a reversão e como, quem pode estender ou encerrar, e uma linha aceitando que ele pode ser suspenso numa emergência. Quem facilita devolve qualquer formulário com campo vazio antes de ele ser pautado para decisão.'
+  experiment-template.expiry-and-renewal:
+    question: Quando um experimento termina por conta própria, e o que é preciso para mantê-lo?
+    prompts:
+      - O que acontece na data final se ninguém agiu?
+      - O que é preciso para renovar um experimento, e quantas vezes ele pode ser renovado?
+      - Como um experimento bem-sucedido se torna uma regra permanente?
+      - Quem registra os resultados no Registro de Aprendizados, e até quando?
+    examples:
+      - Um experimento termina na sua data final mesmo que ninguém faça nada, e a regra anterior volta a valer no dia seguinte. Mantê-lo exige uma nova proposta e uma nova decisão Estratégica antes da data final; ele pode ser renovado uma vez, e depois disso tem que ser adotado como mudança permanente ou interrompido. Em até 30 dias depois do término, quem propôs escreve os resultados e o que aprendemos no Registro de Aprendizados.

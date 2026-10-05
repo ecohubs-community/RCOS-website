@@ -74,7 +74,9 @@ export const glossary = z.strictObject({
 				term: text,
 				definition: text,
 				// false: too common to underline in rule text (Community, Member, …)
-				autolink: z.boolean().optional()
+				autolink: z.boolean().optional(),
+				/** Other forms of the term in running text (plurals, inflections), per language */
+				aliases: z.array(text).optional()
 			})
 		)
 		.min(1)

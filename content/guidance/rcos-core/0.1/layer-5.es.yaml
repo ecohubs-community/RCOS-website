@@ -1,0 +1,221 @@
+lang: es
+sourceHash: 77a53ee7
+sections:
+  '7.1':
+    inShort: Cada responsabilidad continua pertenece a un rol con nombre, con un alcance escrito, límites y una forma de revisarlo, para que nada importante dependa de expectativas no dichas.
+    questions:
+      unassigned-task:
+        question: ¿Se le puede culpar a alguien por una tarea que nadie le encargó?
+        answer: No. Nadie puede rendir cuentas por responsabilidades que no fueron asignadas formalmente a un rol.
+      temporary-task:
+        question: ¿Y los trabajos puntuales?
+        answer: Están bien si tienen un plazo explícito. Si se convierten en trabajo continuo, necesitan un rol.
+  '7.2':
+    inShort: Cada tipo de reunión tiene por escrito su propósito, su alcance de decisión, sus participantes, su frecuencia y su facilitación, y se mantiene dentro de la autoridad que tiene.
+    questions:
+      meeting-decides:
+        question: ¿Puede una reunión decidir cosas fuera de su alcance declarado?
+        answer: No. Las reuniones no pueden exceder su alcance de decisión ni saltarse los límites de autoridad de la Capa 2.
+      too-many-meetings:
+        question: ¿Y si simplemente hay demasiadas reuniones?
+        answer: La carga de reuniones tiene que estar limitada, monitoreada y ser revisable, como se establece en 7.4.
+  '7.3':
+    inShort: Escriban dónde viven los registros y quién puede verlos, y hagan que cada decisión sea rastreable, para que la comunidad no dependa de quien justo se acuerde.
+    questions:
+      trace-decision:
+        question: ¿Qué hace que una decisión sea rastreable?
+        answer: Se puede ver su tipo y su ámbito, quién decidió, mediante qué mecanismo y umbral, y cuál fue el resultado y su fecha de entrada en vigor.
+      one-person-knows:
+        question: Solo una persona sabe cómo funciona el sistema de agua. ¿Es un problema?
+        answer: Sí, si es un proceso crítico. Tiene que estar documentado para que la continuidad no dependa de conocimiento tácito.
+  '7.4':
+    inShort: El tiempo, la atención y la buena voluntad se agotan. Pongan límites a las reuniones y a los roles, y actúen cuando alguien esté sobrecargado.
+    questions:
+      burnout:
+        question: ¿Qué debería pasar cuando alguien se está agotando?
+        answer: La sobrecarga persistente o el riesgo de agotamiento activa una revisión o una reparación en la Capa 4. Es un problema del sistema, no un fallo personal.
+      what-limits:
+        question: ¿De qué tipo de límites se habla?
+        answer: Límites a la carga de reuniones y a la carga de roles, expectativas sobre tiempos de respuesta, y formas de renegociar o redistribuir el trabajo.
+  '7.5':
+    inShort: Ninguna persona puede ser la única capaz de mantener en marcha las operaciones esenciales.
+    questions:
+      backup:
+        question: ¿Qué necesitan los roles esenciales para la continuidad?
+        answer: Procedimientos documentados, una entrega clara, y respaldo o redundancia donde sea viable.
+  '7.6':
+    inShort: 'La Capa 5 vive en tres documentos vivos: el Manual de Operaciones, el Registro de Roles y las Plantillas de Reunión.'
+    questions:
+      which-documents:
+        question: ¿Qué documentos necesita la Capa 5?
+        answer: Un Manual de Operaciones, un Registro de Roles y Plantillas de Reunión.
+  '7.7':
+    inShort: Los límites operativos infranqueables son que cada responsabilidad tenga un rol, que nada crítico viva solo en la cabeza de alguien, que la carga de trabajo esté limitada y que el acceso a la información sea claro.
+    questions:
+      goodwill:
+        question: ¿Podemos apoyarnos en unas pocas personas comprometidas que simplemente sacan las cosas adelante?
+        answer: No para procesos críticos. No pueden depender únicamente de la memoria individual, de la buena voluntad o de una entrega informal.
+  '7.8':
+    inShort: Los roles, las reuniones y el acceso a la información tienen que ser explícitos. Las herramientas, los horarios y los estilos personales de trabajo dependen de ustedes.
+    questions:
+      tools:
+        question: ¿RCOS nos dice qué herramientas usar?
+        answer: No. La elección de herramientas para documentación y coordinación es opcional.
+templates:
+  operations-manual.core-operational-processes:
+    question: ¿Qué cosas tienen que seguir pasando cada semana, y están escritas en algún lugar?
+    prompts:
+      - '¿Qué procesos tienen que seguir ocurriendo para que la comunidad funcione: incorporación, salida, publicación de propuestas, registro de contribuciones, conducción de reuniones, gestión del dinero, revisión del acceso a plataformas y cualquier otro?'
+      - 'Para cada proceso: ¿qué rol lo tiene a cargo y en qué consiste, en dos o tres frases?'
+      - 'Para cada proceso: ¿dónde están escritos los pasos, de modo que alguien nuevo pudiera llevarlo a cabo sin preguntarle a la persona que suele hacerlo? (Dónde viven nuestros documentos en general es otra pregunta aparte.)'
+      - ¿Cuáles de estos siguen dependiendo de la memoria o la buena voluntad de una sola persona, y quién los va a escribir, y para cuándo?
+      - ¿Cómo mantenemos actualizado cada proceso escrito cuando cambia la forma en que realmente lo hacemos? (Las entregas entre roles son otra pregunta aparte.)
+    examples:
+      - 'Nuestros procesos esenciales son la incorporación y la salida de miembros (Administración de Membresía, siguiendo esos protocolos), la publicación de propuestas (Secretaría de Gobernanza), el registro de contribuciones (Responsable de Contribuciones), la reunión semanal (facilitación rotativa: agenda, notas, lista de acciones), la gestión de la tesorería (Responsable de Finanzas) y la revisión del acceso a plataformas (Responsable de Infraestructura, mensual, dando de baja a quienes se fueron). Cada uno tiene una lista de verificación de una página en el manual compartido que quien asuma el rol puede seguir sin ayuda, y la persona a cargo la actualiza en el plazo de una semana ante cualquier cambio en la práctica.'
+  operations-manual.temporary-and-ad-hoc-responsibilities:
+    question: ¿Cómo evitamos que un favor temporal se convierta en el trabajo permanente y no remunerado de alguien?
+    prompts:
+      - 'Cuando alguien asume una tarea temporal, ¿cómo se define su final: una fecha, o una condición clara que indique que está terminada?'
+      - ¿Dónde se registra como temporal en el momento en que se asigna, y quién lo hace?
+      - ¿Cuál es el tiempo máximo que puede durar una responsabilidad temporal, prórrogas incluidas, antes de que tenga que convertirse en un rol formal o terminar?
+      - ¿Quién la revisa antes de la fecha de finalización, y cómo se termina o se convierte en un rol en regla? (Definir el nuevo rol es una pregunta del Registro de Roles.)
+    examples:
+      - 'Cada tarea temporal se asigna con una fecha de finalización o una condición clara de "terminada cuando", y queda registrada como temporal en el tablero de tareas por quien la asigna. Una semana antes de su final, quien la asignó y quien la realiza se reúnen: la tarea termina, o se propone como un rol nuevo para el Registro de Roles. Ninguna responsabilidad temporal puede durar más de 90 días en total, prórrogas incluidas.'
+  operations-manual.role-and-domain-interfaces:
+    question: ¿Dónde termina el trabajo de un rol y empieza el del siguiente?
+    prompts:
+      - ¿Qué roles se pasan trabajo entre sí de forma habitual?
+      - 'Para cada entrega: ¿qué se entrega, en qué dirección, y cómo sabe el rol que recibe que ya llegó?'
+      - ¿En qué momento el trabajo deja de ser responsabilidad del primer rol y pasa a ser del siguiente?
+      - ¿Dónde pasa el trabajo entre un rol y una reunión; por ejemplo, una decisión que luego un rol tiene que ejecutar?
+      - Cuando una entrega se cae, ¿quién lo nota y quién lo resuelve?
+    examples:
+      - 'De Administración de Membresía a Responsable de Infraestructura: cuando empieza el periodo de prueba de una persona nueva, la administración publica sus datos en el canal de accesos y el responsable crea las cuentas en tres días; al salir, se dan de baja por la misma vía. De Responsable de Finanzas a Responsable de Contribuciones: al cierre de cada mes, finanzas comparte los montos recibidos para poder conciliar los registros de contribuciones. De la reunión de gobernanza a quienes ocupan roles: cada decisión adoptada queda asignada en las notas a un rol con nombre, y ese rol confirma que la tomó a su cargo.'
+  operations-manual.workload-boundaries:
+    question: ¿Cuánto tiempo, cuántas reuniones y cuánto cuidado podemos pedirle a una persona, y qué pasa cuando alguien está sobrecargado?
+    prompts:
+      - '¿Cuánto tiempo de reunión podemos pedirle a una persona: con qué frecuencia, cuánto dura, y qué cuenta como reunión extra?'
+      - ¿Cuántos roles u horas por semana puede llevar una persona, contando el trabajo invisible como recibir visitas, ordenar o dar apoyo emocional?
+      - ¿Qué tiempos de respuesta esperamos, para mensajes cotidianos, asuntos operativos urgentes y temas de seguridad, y cuándo no se espera que nadie responda?
+      - Cuando alguien dice que está sobrecargado, ¿cómo se cubre, se traspasa o se reparte su trabajo, y con qué rapidez?
+      - '¿Qué señales nos indican que hay un patrón: sobrecarga prolongada, agotamiento, miembros que se callan, o que todo recae en unas pocas personas, y qué proceso de revisión o reparación activa eso?'
+      - ¿Cada cuánto revisamos estos límites, y cómo se cambian?
+    examples:
+      - Las reuniones periódicas ocupan como máximo cuatro horas al mes por persona; una reunión extra requiere avisar con 72 horas de antelación. Nadie ocupa más de dos roles ni unas ocho horas por semana, incluyendo el trabajo de cuidado y de recibir visitas. Los mensajes se responden en un plazo de tres días, los operativos urgentes en un día, y los temas de seguridad de inmediato. Cualquiera puede decir que está sobrecargado, y sus tareas se reparten de nuevo en un plazo de dos semanas; una sobrecarga señalada dos veces en un trimestre pasa a nuestro proceso de revisión y reparación. Estos límites se revisan cada año y se cambian mediante propuesta.
+  operations-manual.operational-continuity:
+    question: Si cualquiera de nosotros desapareciera durante un mes, ¿qué dejaría de funcionar?
+    prompts:
+      - 'Con honestidad, ¿quién o qué es hoy un punto único de fallo: una persona, una cuenta, una llave o una habilidad que solo una de nosotras tiene?'
+      - 'Para cada caso: ¿cuál es nuestro plan para compartirlo, y para cuándo?'
+      - 'Para cada rol y proceso esencial: ¿está escrito el procedimiento, y qué tiene que entregarse antes de que la persona deje el rol?'
+      - ¿Quién hace de respaldo de cada rol esencial, y dónde todavía no es posible tener un respaldo?
+      - ¿Cada cuánto revisamos esto, y qué más activa una revisión, como un cambio de persona en un rol?
+    examples:
+      - Hoy solo una persona puede acceder a la cuenta bancaria y solo una entiende el sistema de agua. Para marzo se añadirá una segunda firma bancaria, y el sistema de agua tendrá una guía escrita y una persona suplente formada. Cada rol esencial tiene un respaldo con nombre y una lista de entrega que debe completarse antes de que la persona deje el rol. El Responsable de Infraestructura revisa esta lista cada trimestre y cada vez que un rol cambia de manos.
+  operations-manual.information-flow-and-anti-gatekeeping:
+    question: ¿Cómo nos aseguramos de que nadie tenga que pasar por una sola persona para enterarse de algo?
+    prompts:
+      - '¿Qué registros puede abrir directamente cualquier Miembro Plena, sin pedirle permiso a nadie: decisiones, notas de reuniones, roles, membresía, contribuciones? (Los registros restringidos y privados son otra pregunta aparte.)'
+      - ¿Con cuánta rapidez después de una reunión tienen que publicarse las notas y las decisiones?
+      - Cuando alguien pide información a la que tiene derecho, ¿quién tiene que responder, y en cuánto tiempo?
+      - '¿Cómo nos aseguramos de que ninguna persona o rol sea la única vía de acceso a información que otras necesitan: contraseñas, archivos, contactos?'
+      - ¿Qué pasa cuando alguien retiene información a la que un miembro tiene derecho?
+    examples:
+      - Cada Miembro Plena puede leer las decisiones, las notas de reuniones, las asignaciones de roles, el estado de membresía y los registros de contribuciones en la unidad compartida sin pedirle permiso a nadie. Las notas de reuniones se publican en un plazo de 48 horas. Cualquier otra solicitud de información a la que un miembro tiene derecho se responde en cinco días. Cada cuenta y carpeta compartida tiene al menos dos personas con acceso, y retener información a la que un miembro tiene derecho se trata como un asunto de rendición de cuentas dentro de nuestro proceso de conflictos.
+  operations-manual.documentation-locations-and-update-procedures:
+    question: ¿Qué anotamos, dónde, y quién puede leerlo, y se puede rastrear cada decisión hasta quién la tomó y cómo?
+    prompts:
+      - 'Para cada tipo de registro —nuestros documentos de gobernanza, el registro de miembros, las notas de reuniones, las propuestas, los registros de contribuciones—: ¿dónde vive la copia oficial, quién la mantiene, y cada cuánto se revisa?'
+      - '¿Qué tiene que quedar escrito sobre las decisiones, los roles, las operaciones del día a día y las obligaciones compartidas: qué tiene que contener como mínimo cada registro?'
+      - '¿Quién puede leer qué registros, y cuáles están restringidos por privacidad: con qué fundamento, y quién sí puede verlos?'
+      - ¿Cuándo tiene que publicarse o anunciarse un nuevo registro, y a quién?
+      - ¿Cada registro de decisión indica de qué tipo de decisión se trató y qué ámbito abarca, quién tenía la autoridad, cómo se decidió y con qué umbral, el resultado, y cuándo entra en vigor?
+      - ¿Dónde puede encontrar cualquiera, por escrito, nuestros roles, quién puede decidir qué, nuestros tipos de reunión, y nuestras reglas de acceso y privacidad?
+    examples:
+      - Los documentos de gobernanza, el registro de miembros y las propuestas viven en la unidad compartida, los mantiene la Secretaría y se revisan cada año; las notas de reuniones y los registros de contribuciones viven en la wiki, los mantienen cada facilitadora y el Responsable de Contribuciones, y se revisan cada trimestre. Cada registro de decisión indica su tipo y su ámbito, quién decidió, el mecanismo y el umbral, el resultado y su fecha de inicio, y se anuncia en un plazo de tres días. Los miembros pueden leer todo excepto los registros de salud, de protección y de conflictos, que solo pueden ver las personas implicadas y dos responsables designadas.
+  role-registry.overview:
+    question: ¿Qué trabajos continuos tienen un nombre y una persona, en lugar de ser de todas y de nadie?
+    prompts:
+      - ¿Qué responsabilidades continuas tenemos hoy, y pertenece cada una a un rol con nombre, o parte de eso todavía lo hace quien justo se da cuenta?
+      - ¿Qué hace que un rol sea operativo (puede actuar en nombre de la comunidad dentro de límites establecidos) y no funcional (hace trabajo pero no tiene una voz especial)?
+      - ¿Qué significa ‘estar en regla’ para quien quiera asumir un rol?
+      - '¿Qué tiene que contener cada entrada de rol: propósito, alcance y autoridad, límites con otros roles, quién puede ocuparlo, duración, y cómo se nombra, se revisa y se destituye a quien lo ocupa?'
+      - ¿Cómo nos aseguramos de que nadie sea responsable de un trabajo que nunca se asignó a su rol?
+      - ¿Cada cuánto comparamos el registro con el trabajo que realmente se está haciendo, y quién lo hace?
+    examples:
+      - Cada tarea continua pertenece a un rol de este registro; si no está listada, nadie puede ser obligado a hacerla, y quien lo note propone un rol para ella. Los roles operativos pueden actuar en nombre de la comunidad dentro de los límites fijados en la Matriz de Decisiones; los roles funcionales hacen trabajo pero no tienen voz adicional. Una persona está en regla si está al día con las contribuciones acordadas y no está suspendida. Cada entrada indica propósito, alcance y autoridad, límites, elegibilidad, duración, y nombramiento, revisión y destitución. Las personas responsables revisan el registro cada seis meses.
+  role-registry.operational-roles:
+    question: Para cada rol que mantiene las cosas en marcha, ¿de qué responde y quién lo revisa?
+    prompts:
+      - '¿Qué roles operativos necesitamos, y para cada uno: para qué sirve y de qué es responsable?'
+      - 'Para cada rol: ¿qué decisiones puede tomar sin una votación comunitaria, y dónde están sus límites (por ejemplo, un techo de gasto)?'
+      - 'Para cada rol: ¿quién puede ocuparlo, cuánto dura el mandato, y cómo se elige a la persona?'
+      - 'Para cada rol: ¿cómo, cada cuánto y por parte de quién se revisa el trabajo de quien lo ocupa?'
+      - 'Para cada rol: ¿qué pasa si el trabajo no se está haciendo o la persona está sobrecargada, y cómo se puede reasignar el rol?'
+      - 'Para cada rol: ¿qué tiene que entregarse antes de que la persona lo deje?'
+    examples:
+      - 'Responsable de Finanzas: lleva las cuentas, paga las facturas acordadas e informa el saldo cada mes. Puede aprobar gastos de hasta 500 € por concepto dentro del presupuesto; cualquier monto mayor requiere una propuesta. Cualquier Miembro Plena en regla puede presentarse a un mandato de dos años, elegido por voto Estratégico. La reunión de Operaciones revisa el rol cada seis meses, y cualquier miembro puede plantear una preocupación. Si la persona está sobrecargada, la suplente asume los pagos; un incumplimiento persistente lleva a una reasignación por voto Estratégico. Antes de dejar el rol, entrega el acceso bancario, las facturas pendientes y la lista de verificación de informes.'
+  role-registry.functional-roles:
+    question: ¿Qué roles existen por una función y no por el trabajo diario, y para qué sirven?
+    prompts:
+      - ¿Qué roles funcionales tenemos —por ejemplo facilitación, toma de notas o acogida— y para qué sirve cada uno?
+      - 'Para cada rol: ¿qué hace, y con qué otros roles trabaja?'
+      - 'Para cada rol: ¿quién puede asumirlo, y basta con decir ‘yo lo hago’?'
+      - 'Para cada rol: ¿qué no incluye, qué decisiones no puede tomar en nombre de la comunidad?'
+      - 'Para cada rol: ¿cómo se deja, y sobre qué tiene que poner al día a la siguiente persona?'
+    examples:
+      - 'Facilitación: prepara y conduce las reuniones para que todas las voces se escuchen y la agenda termine a tiempo. Cualquier Miembro Plena puede asumirlo anunciándolo en el canal de miembros; no hace falta votación, y no otorga voz adicional en las decisiones. Una facilitadora que sea parte de un conflicto en la agenda se aparta en ese punto. Puede dejar el rol en cualquier momento después de poner al día a la siguiente persona sobre las próximas reuniones y las acciones pendientes.'
+  meeting-templates.meeting-type-operations:
+    question: ¿Cómo conducimos la reunión donde se organiza el trabajo de la semana?
+    prompts:
+      - ¿Para qué sirve esta reunión, y qué decisiones puede tomar, y qué pasa cuando surge algo más grande que el trabajo del día a día?
+      - ¿Quién tiene que estar, cuántas personas hacen quórum, y quién puede sumarse si quiere?
+      - '¿Cada cuánto se reúne, cuánto puede durar, y quién facilita: elegida o rotada de qué manera, y con qué reemplazo si no está?'
+      - ¿Cuál es la agenda fija, y en qué orden?
+      - ¿Quién toma las notas, en qué formato, y dónde y con cuánta rapidez se publican, y cómo se registra cada decisión?
+      - ¿Tenemos una plantilla como esta para cada tipo de reunión que hacemos —operaciones, gobernanza, coordinación, reflexión y conflictos— y cómo nos damos cuenta cuando las reuniones se alargan o se multiplican? (El límite general a la carga de reuniones es otra pregunta aparte.)
+    examples:
+      - 'La reunión de Operaciones revisa el trabajo en curso, destraba lo que esté bloqueado y toma solo decisiones Operativas; todo lo Estratégico o Constitucional se convierte en una propuesta. Asisten todas las personas que ocupan roles (quórum de cuatro); cualquier miembro puede sumarse. Se reúne cada semana durante 60 minutos como máximo, conducida por una facilitadora que rota cada mes. Agenda: ronda de apertura, revisión de tareas, bloqueos, decisiones, acciones. Las notas se publican en el tablero compartido en un plazo de 48 horas, cada decisión con quién la tomó, el resultado y su fecha de inicio. Si se pasa del tiempo tres semanas seguidas, eso pasa a la revisión trimestral de carga de trabajo.'
+  meeting-templates.meeting-type-governance:
+    question: ¿Cómo conducimos la reunión donde realmente se toman las decisiones?
+    prompts:
+      - ¿A quién hay que invitar, tiene que estar presente quien propone, y quién puede observar?
+      - ¿Cuándo se hace esta reunión, y cuánto puede durar?
+      - ¿Quién facilita, y cómo se elige a esa persona?
+      - '¿Cuál es la agenda: cuánto tiempo para presentar la propuesta, para preguntas de clarificación, para el debate y para el resumen de cierre?'
+      - ¿Se decide algo en la sala, o la decisión vinculante ocurre después, para que los miembros que no pudieron asistir también participen? (Los umbrales en sí se fijan en la Matriz de Decisiones.)
+      - '¿Qué registran las notas: qué propuesta, qué tipo de decisión, cómo se decidirá, y el resultado, y dónde se publican?'
+    examples:
+      - 'Se hace una reunión de Gobernanza durante el periodo de deliberación de cada propuesta Estratégica o Constitucional. Se invita a todos los Miembros Plenos, quien propone tiene que asistir, y cualquier otra persona puede observar. Dura 60 minutos como máximo: quien propone presenta (10 minutos), solo preguntas de clarificación (10), debate abierto (30), y luego la facilitadora resume y confirma cuándo se abre la votación (10). En la sala no se decide nada: la votación se hace en línea durante los siete días siguientes. Las notas enlazan a la propuesta y se publican en un plazo de dos días.'
+  meeting-templates.meeting-type-coordination-alignment:
+    question: ¿Cómo conducimos la reunión que evita que trabajos separados se vayan por caminos distintos?
+    prompts:
+      - ¿Cuándo convocamos esta reunión en lugar de plantear las cosas en la reunión habitual de Operaciones?
+      - ¿Quién tiene que asistir —solo quienes ocupan roles con trabajos activos que dependen entre sí— y quién más es bienvenido?
+      - ¿Cada cuánto se reúne, cuánto puede durar, y quién facilita, con qué reemplazo?
+      - ¿Cuál es la agenda —dependencias, entregas, prioridades en conflicto— y en qué orden?
+      - ¿Qué puede acordar, y qué pasa cuando un choque de prioridades requiere una decisión más grande de las que le está permitido tomar?
+      - ¿Dónde se registran las notas y las entregas acordadas, y con cuánta rapidez?
+    examples:
+      - 'Coordinación se reúne en línea el primer martes de cada mes durante 60 minutos como máximo, y cualquier par de personas con roles puede convocarla antes. Solo tienen que asistir quienes ocupan roles con una iniciativa activa; cualquier miembro puede sumarse. La agenda es dependencias, entregas y luego prioridades en conflicto. Solo puede acordar cambios Operativos: un choque de prioridades que requiera una decisión Estratégica se redacta como propuesta. La facilitación rota entre quienes asisten, y las notas con las entregas acordadas se publican en el canal compartido esa misma semana.'
+  meeting-templates.meeting-type-reflection-learning:
+    question: ¿Cómo conducimos la reunión en la que miramos hacia atrás en lugar de hacia adelante?
+    prompts:
+      - ¿A quién se invita, cada cuánto nos reunimos, y cuánto puede durar?
+      - ¿Quién facilita, y cómo se elige a esa persona?
+      - ¿Cuál es la agenda —cómo miramos hacia atrás el periodo, qué funcionó, qué no— y cómo mantenemos el foco en los patrones y no en la culpa?
+      - '¿Qué sale de ahí: qué aprendizajes van al Registro de Aprendizajes, y qué ideas se convierten en futuras propuestas?'
+      - ¿Puede esta reunión decidir algo por sí misma, o solo deriva los temas?
+      - ¿Qué evita que se posponga o se deje de lado cada vez que estamos ocupadas?
+    examples:
+      - 'Cada tres meses se invita a todos los Miembros Plenos a una reunión de Reflexión de 90 minutos, presencial y con enlace para sumarse a distancia. La conduce una facilitadora elegida en la reunión anterior: qué pasó este trimestre, qué funcionó, qué no —buscando patrones, no culpables— y luego qué aprendizajes van al Registro de Aprendizajes y qué ideas se convierten en futuras propuestas. No decide nada por sí misma. Puede posponerse una vez, nunca cancelarse. La lista de resultados, o "ninguno", se publica con las notas en el plazo de una semana.'
+  meeting-templates.meeting-type-conflict-handling:
+    question: ¿Cómo conducimos una reunión cuyo tema es un conflicto?
+    prompts:
+      - ¿Qué pasos de nuestro proceso de conflictos usan este formato de reunión, y cuándo no debemos usar en su lugar una reunión corriente?
+      - ¿Cuánto dura una sesión, y quién puede extenderla?
+      - ¿Qué se dice al inicio sobre el consentimiento, la confidencialidad, la protección frente a represalias y el derecho de cualquiera a pedir una pausa?
+      - '¿Cuál es la agenda: cómo logra cada parte hablar sin interrupciones y por el mismo tiempo, y qué viene después?'
+      - ¿Cómo puede terminar una sesión —con un acuerdo, pasando al paso siguiente, o suspendiéndose— y cómo se registra ese resultado? (Quién facilita y quién puede ver el registro se fijan en el protocolo de conflictos.)
+    examples:
+      - 'Este formato se usa solo para las sesiones facilitadas de los pasos 2 a 4 de nuestra escalera de conflictos. Una sesión dura hasta 90 minutos; la facilitadora puede extenderla una vez por 30 minutos si ambas partes están de acuerdo. Abre con las reglas básicas: participar es voluntario, lo que se dice queda en la sala, nadie puede ser penalizado por plantear el conflicto, y cualquiera puede pedir una pausa. Luego cada parte habla sin interrupciones por el mismo tiempo, y después se exploran opciones y se acuerdan los próximos pasos. Termina con un acuerdo alcanzado, con una escalada, o suspendida.'

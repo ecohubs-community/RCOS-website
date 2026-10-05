@@ -21,6 +21,106 @@
             No. A project ends when it is done; the primary purpose describes why the community
             exists at all, and outlasts any single project.
           ref: 2.1.2
+    de:
+      title: Zweckdefinition
+      inShort: >-
+        Eure Gemeinschaft braucht einen Grund zu existieren, an dem sich jede andere Entscheidung
+        messen lässt.
+      questions:
+        - id: more-than-one-purpose
+          question: Können wir mehr als einen Zweck haben?
+          answer: >-
+            Ja, als sekundäre Zwecke. Sie dürfen dem primären Zweck nur nicht widersprechen und ihn
+            nicht außer Kraft setzen.
+          ref: 2.1.4
+        - id: change-purpose
+          question: Wie ändern wir unseren Zweck später?
+          answer: >-
+            Nur durch eine konstitutionelle Entscheidung (Schicht 2), umgesetzt mit dem
+            Änderungsprozess aus Schicht 6. Ein Zweck, der sich häufig ändert, ist eine Strategie
+            und kein Zweck.
+          ref: 2.1.3
+        - id: goal-as-purpose
+          question: Kann unser Zweck ein Projekt sein, etwa ein Haus zu bauen?
+          answer: >-
+            Nein. Ein Projekt endet, wenn es fertig ist; der primäre Zweck beschreibt, warum die
+            Gemeinschaft überhaupt existiert, und überdauert jedes einzelne Projekt.
+          ref: 2.1.2
+    es:
+      title: Definición de Propósito
+      inShort: >-
+        Tu comunidad necesita una razón de existir con la que se pueda comprobar cualquier otra
+        decisión.
+      questions:
+        - id: more-than-one-purpose
+          question: ¿Podemos tener más de un propósito?
+          answer: >-
+            Sí, como propósitos secundarios. Lo único es que no pueden entrar en conflicto con el
+            propósito primario ni pasar por encima de él.
+          ref: 2.1.4
+        - id: change-purpose
+          question: ¿Cómo cambiamos nuestro propósito más adelante?
+          answer: >-
+            Solo mediante una decisión constitucional (Capa 2), llevada a cabo con el proceso de
+            cambio de la Capa 6. Un propósito que cambia a menudo es una estrategia, no un
+            propósito.
+          ref: 2.1.3
+        - id: goal-as-purpose
+          question: ¿Nuestro propósito puede ser un proyecto, como construir una casa?
+          answer: >-
+            No. Un proyecto termina cuando está hecho; el propósito primario describe por qué existe
+            la comunidad en absoluto, y sobrevive a cualquier proyecto concreto.
+          ref: 2.1.2
+    fr:
+      title: Définition de la raison d'être
+      inShort: >-
+        Ta communauté a besoin d'une seule raison d'exister à laquelle toutes les autres décisions
+        peuvent être confrontées.
+      questions:
+        - id: more-than-one-purpose
+          question: Peut-on avoir plus d'une finalité ?
+          answer: >-
+            Oui, en tant que finalités secondaires. Elles ne peuvent simplement pas entrer en
+            conflit avec la finalité première ni la supplanter.
+          ref: 2.1.4
+        - id: change-purpose
+          question: Comment changer notre finalité plus tard ?
+          answer: >-
+            Uniquement par une décision constitutionnelle (Couche 2), mise en œuvre avec le
+            processus de changement de la Couche 6. Une finalité qui change souvent est une
+            stratégie, pas une finalité.
+          ref: 2.1.3
+        - id: goal-as-purpose
+          question: Notre finalité peut-elle être un projet, comme construire une maison ?
+          answer: >-
+            Non. Un projet se termine quand il est achevé ; la finalité première décrit pourquoi la
+            communauté existe tout court, et elle survit à n'importe quel projet.
+          ref: 2.1.2
+    pt-br:
+      title: Definição de Propósito
+      inShort: >-
+        Sua comunidade precisa de uma única razão para existir, contra a qual todas as outras
+        decisões possam ser verificadas.
+      questions:
+        - id: more-than-one-purpose
+          question: Podemos ter mais de um propósito?
+          answer: >-
+            Sim, como propósitos secundários. Eles apenas não podem entrar em conflito com o
+            propósito primário nem se sobrepor a ele.
+          ref: 2.1.4
+        - id: change-purpose
+          question: Como mudamos nosso propósito mais tarde?
+          answer: >-
+            Somente por meio de uma decisão constitucional (Camada 2), executada com o processo de
+            mudança da Camada 6. Um propósito que muda com frequência é uma estratégia, não um
+            propósito.
+          ref: 2.1.3
+        - id: goal-as-purpose
+          question: Nosso propósito pode ser um projeto, como construir uma casa?
+          answer: >-
+            Não. Um projeto termina quando está concluído; o propósito primário descreve por que a
+            comunidade existe em primeiro lugar, e sobrevive a qualquer projeto individual.
+          ref: 2.1.2
 - ref: '2.2'
   layer: 0
   i18n:
@@ -47,6 +147,107 @@
           answer: >-
             At least the assets you govern, the domains you decide about, and the activities and
             responsibilities under collective control, plus an explicit out-of-scope list.
+          ref: 2.2.2
+    de:
+      title: Geltungsbereichserklärung
+      inShort: >-
+        Schreibt auf, was die Gemeinschaft regelt – und genauso klar, was sie nicht regelt. Alles,
+        was ihr nicht auflistet, bleibt außerhalb eurer Zuständigkeit.
+      questions:
+        - id: forgot-something
+          question: Was, wenn wir etwas zu listen vergessen?
+          answer: >-
+            Dann liegt es außerhalb des Geltungsbereichs, bis ihr es ergänzt. Die Gemeinschaft hat
+            keine Zuständigkeit für Dinge, die sie nie erklärt hat.
+          ref: 2.2.4
+        - id: private-lives
+          question: Hat die Gemeinschaft ein Mitbestimmungsrecht im Privatleben der Mitglieder?
+          answer: >-
+            Nur dort, wo die Geltungsbereichserklärung das ausdrücklich sagt. Personen,
+            Vermögenswerte und Bereiche, die als außerhalb des Geltungsbereichs erklärt sind, liegen
+            jenseits der Zuständigkeit der Gemeinschaft.
+          ref: 2.2.5
+        - id: what-to-include
+          question: Was muss eine Geltungsbereichserklärung abdecken?
+          answer: >-
+            Mindestens die Vermögenswerte, die ihr verwaltet, die Bereiche, über die ihr
+            entscheidet, und die Tätigkeiten und Verantwortlichkeiten unter kollektiver Kontrolle –
+            plus eine ausdrückliche Liste dessen, was außerhalb des Geltungsbereichs liegt.
+          ref: 2.2.2
+    es:
+      title: Declaración de Alcance
+      inShort: >-
+        Escribe qué gobierna la comunidad y, con la misma claridad, qué no. Todo lo que dejes sin
+        listar queda fuera de tu autoridad.
+      questions:
+        - id: forgot-something
+          question: ¿Qué pasa si olvidamos listar algo?
+          answer: >-
+            Entonces queda fuera del alcance hasta que lo añadan. La comunidad no tiene autoridad
+            sobre cosas que nunca declaró.
+          ref: 2.2.4
+        - id: private-lives
+          question: ¿La comunidad puede opinar sobre la vida privada de las personas miembro?
+          answer: >-
+            Solo donde la declaración de alcance lo diga explícitamente. Las personas, los bienes y
+            los ámbitos declarados fuera de alcance están más allá de la autoridad de la comunidad.
+          ref: 2.2.5
+        - id: what-to-include
+          question: ¿Qué tiene que cubrir una declaración de alcance?
+          answer: >-
+            Al menos los bienes que gobiernan, los ámbitos sobre los que deciden y las actividades y
+            responsabilidades bajo control colectivo, más una lista explícita de lo que queda fuera
+            de alcance.
+          ref: 2.2.2
+    fr:
+      title: Déclaration de périmètre
+      inShort: >-
+        Écris noir sur blanc ce que la communauté gouverne, et tout aussi clairement ce qu'elle ne
+        gouverne pas. Tout ce que tu ne listes pas reste hors de ton autorité.
+      questions:
+        - id: forgot-something
+          question: Et si on oublie de lister quelque chose ?
+          answer: >-
+            Alors c'est hors périmètre jusqu'à ce que vous l'ajoutiez. La communauté n'a aucune
+            autorité sur ce qu'elle n'a jamais déclaré.
+          ref: 2.2.4
+        - id: private-lives
+          question: La communauté a-t-elle un mot à dire sur la vie privée des membres ?
+          answer: >-
+            Seulement là où la déclaration de périmètre le dit explicitement. Les personnes, les
+            biens et les domaines déclarés hors périmètre échappent à l'autorité de la communauté.
+          ref: 2.2.5
+        - id: what-to-include
+          question: Que doit couvrir une déclaration de périmètre ?
+          answer: >-
+            Au minimum les biens que vous gouvernez, les domaines sur lesquels vous décidez, et les
+            activités et responsabilités sous contrôle collectif, plus une liste explicite de ce qui
+            est hors périmètre.
+          ref: 2.2.2
+    pt-br:
+      title: Declaração de Escopo
+      inShort: >-
+        Escreva o que a comunidade governa e, com a mesma clareza, o que ela não governa. Tudo o que
+        você deixar de listar permanece fora da sua autoridade.
+      questions:
+        - id: forgot-something
+          question: E se esquecermos de listar alguma coisa?
+          answer: >-
+            Então está fora do escopo até que você a acrescente. A comunidade não tem autoridade
+            sobre coisas que nunca declarou.
+          ref: 2.2.4
+        - id: private-lives
+          question: A comunidade tem voz na vida privada dos membros?
+          answer: >-
+            Apenas onde a declaração de escopo diz isso explicitamente. Pessoas, bens e domínios
+            declarados fora do escopo estão além da autoridade da comunidade.
+          ref: 2.2.5
+        - id: what-to-include
+          question: O que uma declaração de escopo precisa cobrir?
+          answer: >-
+            No mínimo os bens que vocês governam, os domínios sobre os quais vocês decidem e as
+            atividades e responsabilidades sob controle coletivo, além de uma lista explícita do que
+            está fora do escopo.
           ref: 2.2.2
 - ref: '2.3'
   layer: 0
@@ -78,6 +279,133 @@
             RCOS doesn't set a number. Fewer, clearer invariants are easier to protect; each one is
             a promise that can never be broken casually.
           ref: null
+    de:
+      title: Invarianten
+      inShort: >-
+        Invarianten sind die wenigen harten Grenzen, die eure Gemeinschaft dem alltäglichen
+        Entscheiden entzieht. Nicht einmal ein einstimmiger Beschluss kann sie einfach so außer
+        Kraft setzen.
+      questions:
+        - id: emergency
+          question: Kann ein Notfall rechtfertigen, eine Invariante zu brechen?
+          answer: >-
+            Nein. Keine Entscheidung, keine Rolle, kein Prozess und keine Notfallmaßnahme darf eine
+            Invariante außer Kraft setzen.
+          ref: 2.3.4
+        - id: change-invariant
+          question: Können wir eine Invariante überhaupt ändern?
+          answer: >-
+            Ja, aber nur über einen konstitutionellen Änderungsprozess, wie er in Schicht 2 und
+            Schicht 6 definiert ist.
+          ref: 2.3.6
+        - id: invariant-vs-constraint
+          question: Wie unterscheidet sich eine Invariante von einer Identitätsbeschränkung?
+          answer: >-
+            Eine Invariante ist eine harte Grenze dafür, was niemals passieren darf – etwa das Land
+            zu verkaufen. Eine Identitätsbeschränkung beschreibt, wer die Gemeinschaft ist und was
+            Teilnahme voraussetzt – etwa ökologische oder verhaltensbezogene Grenzen.
+          ref: '2.4'
+        - id: how-many
+          question: Wie viele Invarianten sollten wir haben?
+          answer: >-
+            RCOS legt keine Zahl fest. Weniger und klarere Invarianten sind leichter zu schützen;
+            jede einzelne ist ein Versprechen, das niemals einfach so gebrochen werden kann.
+          ref: null
+    es:
+      title: Invariantes
+      inShort: >-
+        Los invariantes son los pocos límites duros que tu comunidad pone fuera del alcance de las
+        decisiones cotidianas. Ni siquiera una votación unánime puede pasar por encima de ellos a la
+        ligera.
+      questions:
+        - id: emergency
+          question: ¿Una emergencia puede justificar romper un invariante?
+          answer: >-
+            No. Ninguna decisión, rol, proceso ni medida de emergencia puede pasar por encima de un
+            invariante.
+          ref: 2.3.4
+        - id: change-invariant
+          question: ¿Podemos cambiar un invariante alguna vez?
+          answer: >-
+            Sí, pero solo mediante un proceso de cambio constitucional como se define en la Capa 2 y
+            la Capa 6.
+          ref: 2.3.6
+        - id: invariant-vs-constraint
+          question: ¿En qué se diferencia un invariante de una restricción de identidad?
+          answer: >-
+            Un invariante es un límite duro sobre lo que nunca debe ocurrir, como vender la tierra.
+            Una restricción de identidad describe quién es la comunidad y qué exige la
+            participación, como límites ecológicos o de comportamiento.
+          ref: '2.4'
+        - id: how-many
+          question: ¿Cuántos invariantes deberíamos tener?
+          answer: >-
+            RCOS no fija un número. Menos invariantes y más claros son más fáciles de proteger; cada
+            uno es una promesa que nunca se puede romper a la ligera.
+          ref: null
+    fr:
+      title: Invariants
+      inShort: >-
+        Les invariants sont les quelques limites absolues que ta communauté met hors de portée des
+        décisions quotidiennes. Même un vote unanime ne peut pas les contourner à la légère.
+      questions:
+        - id: emergency
+          question: Une urgence peut-elle justifier de rompre un invariant ?
+          answer: >-
+            Non. Aucune décision, aucun rôle, aucun processus ni aucune mesure d'urgence ne peut
+            supplanter un invariant.
+          ref: 2.3.4
+        - id: change-invariant
+          question: Peut-on un jour changer un invariant ?
+          answer: >-
+            Oui, mais uniquement par un processus de changement constitutionnel tel que défini dans
+            la Couche 2 et la Couche 6.
+          ref: 2.3.6
+        - id: invariant-vs-constraint
+          question: Quelle différence entre un invariant et une contrainte d'identité ?
+          answer: >-
+            Un invariant est une limite absolue sur ce qui ne doit jamais arriver, comme vendre la
+            terre. Une contrainte d'identité décrit qui est la communauté et ce qu'exige la
+            participation, comme des limites écologiques ou comportementales.
+          ref: '2.4'
+        - id: how-many
+          question: Combien d'invariants devrions-nous avoir ?
+          answer: >-
+            RCOS ne fixe aucun nombre. Des invariants moins nombreux et plus clairs sont plus
+            faciles à protéger ; chacun est une promesse qui ne peut jamais être rompue à la légère.
+          ref: null
+    pt-br:
+      title: Invariantes
+      inShort: >-
+        Invariantes são os poucos limites rígidos que sua comunidade coloca fora do alcance das
+        decisões do dia a dia. Nem um voto unânime pode anulá-los de forma leviana.
+      questions:
+        - id: emergency
+          question: Uma emergência pode justificar violar uma invariante?
+          answer: >-
+            Não. Nenhuma decisão, papel, processo ou medida de emergência pode se sobrepor a uma
+            invariante.
+          ref: 2.3.4
+        - id: change-invariant
+          question: Podemos mudar uma invariante algum dia?
+          answer: >-
+            Sim, mas somente por meio de um processo de mudança constitucional, conforme definido na
+            Camada 2 e na Camada 6.
+          ref: 2.3.6
+        - id: invariant-vs-constraint
+          question: Qual é a diferença entre uma invariante e uma restrição de identidade?
+          answer: >-
+            Uma invariante é um limite rígido sobre o que nunca pode acontecer, como vender a terra.
+            Uma restrição de identidade descreve quem a comunidade é e o que a participação exige,
+            como limites ecológicos ou de comportamento.
+          ref: '2.4'
+        - id: how-many
+          question: Quantas invariantes devemos ter?
+          answer: >-
+            O RCOS não define um número. Invariantes em menor quantidade e mais claras são mais
+            fáceis de proteger; cada uma é uma promessa que nunca pode ser quebrada de forma
+            leviana.
+          ref: null
 - ref: '2.4'
   layer: 0
   i18n:
@@ -100,6 +428,87 @@
             Someone else could look at a situation and agree whether the constraint was kept or
             broken, and there is a defined process for what happens next.
           ref: 2.4.3
+    de:
+      title: Identitätseinschränkungen
+      inShort: >-
+        Wenn die Teilnahme an dieser Gemeinschaft mit Grenzen verbunden ist – etwa wie Menschen sich
+        verhalten oder wozu sie sich verpflichten –, dann sagt es offen und sagt auch, wie es
+        überprüft wird.
+      questions:
+        - id: unwritten-norms
+          question: Wir teilen Werte, die niemand aufgeschrieben hat. Ist das ein Problem?
+          answer: >-
+            Ja, wenn diese Werte darüber entscheiden, wer teilnehmen darf oder wie Menschen
+            behandelt werden. Identitätsbeschränkungen, die in der Praxis wirken, müssen erklärt und
+            über definierte Prozesse durchgesetzt werden – niemals informell.
+          ref: 2.4.4
+        - id: testable
+          question: Was macht eine Identitätsbeschränkung überprüfbar?
+          answer: >-
+            Eine andere Person könnte sich eine Situation ansehen und zum gleichen Ergebnis kommen,
+            ob die Beschränkung eingehalten oder gebrochen wurde – und es gibt einen definierten
+            Prozess dafür, was dann passiert.
+          ref: 2.4.3
+    es:
+      title: Restricciones de Identidad
+      inShort: >-
+        Si formar parte de esta comunidad viene con límites, como cómo se comporta la gente o a qué
+        se compromete, dilo abiertamente y di cómo se comprueba.
+      questions:
+        - id: unwritten-norms
+          question: Compartimos valores que nadie ha escrito. ¿Eso es un problema?
+          answer: >-
+            Lo es si esos valores deciden quién puede participar o cómo se trata a la gente. Las
+            restricciones de identidad que importan en la práctica tienen que declararse y aplicarse
+            mediante procesos definidos, nunca de manera informal.
+          ref: 2.4.4
+        - id: testable
+          question: ¿Qué hace que una restricción de identidad sea comprobable?
+          answer: >-
+            Que otra persona pueda mirar una situación y coincidir en si la restricción se cumplió o
+            se rompió, y que exista un proceso definido para lo que pasa después.
+          ref: 2.4.3
+    fr:
+      title: Contraintes d'identité
+      inShort: >-
+        Si faire partie de cette communauté implique des limites, par exemple sur la manière dont
+        les gens se comportent ou sur ce à quoi ils s'engagent, dis-le ouvertement et dis comment
+        c'est vérifié.
+      questions:
+        - id: unwritten-norms
+          question: Nous partageons des valeurs que personne n'a écrites. Est-ce un problème ?
+          answer: >-
+            Oui, si ces valeurs déterminent qui peut participer ou comment les gens sont traités.
+            Les contraintes d'identité qui comptent en pratique doivent être déclarées et appliquées
+            par des processus définis, jamais de manière informelle.
+          ref: 2.4.4
+        - id: testable
+          question: Qu'est-ce qui rend une contrainte d'identité vérifiable ?
+          answer: >-
+            Quelqu'un d'autre pourrait regarder une situation et être d'accord sur le fait que la
+            contrainte a été respectée ou rompue, et il existe un processus défini pour ce qui se
+            passe ensuite.
+          ref: 2.4.3
+    pt-br:
+      title: Restrições de Identidade
+      inShort: >-
+        Se fazer parte desta comunidade vem acompanhado de limites, como a forma de se comportar ou
+        aquilo com que as pessoas se comprometem, diga isso abertamente e diga como isso é
+        verificado.
+      questions:
+        - id: unwritten-norms
+          question: Compartilhamos valores que ninguém escreveu. Isso é um problema?
+          answer: >-
+            É, se esses valores decidem quem pode participar ou como as pessoas são tratadas.
+            Restrições de identidade que importam na prática têm de ser declaradas e aplicadas por
+            processos definidos, nunca de modo informal.
+          ref: 2.4.4
+        - id: testable
+          question: O que torna uma restrição de identidade verificável?
+          answer: >-
+            Outra pessoa poderia olhar uma situação e concordar se a restrição foi cumprida ou
+            violada, e existe um processo definido para o que acontece em seguida.
+          ref: 2.4.3
 - ref: '2.5'
   layer: 0
   i18n:
@@ -119,6 +528,76 @@
           question: What if two of these documents contradict each other?
           answer: Then the community is not compliant with RCOS-Core until the contradiction is resolved.
           ref: 2.5.3
+    de:
+      title: Artefakte
+      inShort: >-
+        Schicht 0 lebt in vier kurzen Dokumenten. Jedes Mitglied kann sie lesen, jede Version wird
+        aufbewahrt, und jedes wurde durch eine formale Ratifizierung beschlossen.
+      questions:
+        - id: which-documents
+          question: Welche Dokumente braucht Schicht 0?
+          answer: >-
+            Eine Zweckcharta, eine Geltungsbereichserklärung, ein Invariantenregister und ein
+            Register der Identitätsbeschränkungen.
+          ref: 2.5.1
+        - id: contradiction
+          question: Was, wenn zwei dieser Dokumente sich widersprechen?
+          answer: >-
+            Dann erfüllt die Gemeinschaft RCOS-Core nicht, solange der Widerspruch nicht aufgelöst
+            ist.
+          ref: 2.5.3
+    es:
+      title: Artefactos
+      inShort: >-
+        La Capa 0 vive en cuatro documentos breves. Toda persona miembro puede leerlos, se conserva
+        cada versión y cada uno se adoptó mediante una ratificación formal.
+      questions:
+        - id: which-documents
+          question: ¿Qué documentos necesita la Capa 0?
+          answer: >-
+            Una Carta de Propósito, una Declaración de Alcance, un Registro de Invariantes y un
+            Registro de Restricciones de Identidad.
+          ref: 2.5.1
+        - id: contradiction
+          question: ¿Qué pasa si dos de estos documentos se contradicen?
+          answer: Entonces la comunidad no cumple con RCOS-Core hasta que la contradicción se resuelva.
+          ref: 2.5.3
+    fr:
+      title: Artefacts
+      inShort: >-
+        La Couche 0 vit dans quatre documents courts. Chaque membre peut les lire, chaque version
+        est conservée, et chacun a été adopté par une ratification formelle.
+      questions:
+        - id: which-documents
+          question: De quels documents la Couche 0 a-t-elle besoin ?
+          answer: >-
+            Une charte de finalité, une déclaration de périmètre, un registre des invariants et un
+            registre des contraintes d'identité.
+          ref: 2.5.1
+        - id: contradiction
+          question: Et si deux de ces documents se contredisent ?
+          answer: >-
+            Alors la communauté n'est pas conforme à RCOS-Core jusqu'à ce que la contradiction soit
+            résolue.
+          ref: 2.5.3
+    pt-br:
+      title: Artefatos
+      inShort: >-
+        A Camada 0 vive em quatro documentos curtos. Todo membro pode lê-los, toda versão é
+        guardada, e cada um deles foi adotado por uma ratificação formal.
+      questions:
+        - id: which-documents
+          question: De quais documentos a Camada 0 precisa?
+          answer: >-
+            Uma Carta de Propósito, uma Declaração de Escopo, um Registro de Invariantes e um
+            Registro de Restrições de Identidade.
+          ref: 2.5.1
+        - id: contradiction
+          question: E se dois desses documentos se contradisserem?
+          answer: >-
+            Então a comunidade não está em conformidade com o RCOS-Core até que a contradição seja
+            resolvida.
+          ref: 2.5.3
 - ref: '3.1'
   layer: 1
   i18n:
@@ -137,6 +616,75 @@
         - id: two-states
           question: Can someone be a full member in one area and on trial in another?
           answer: No. Each person holds exactly one membership state at a time.
+          ref: 3.1.4
+    de:
+      title: Mitgliedschaftsstatus
+      inShort: >-
+        Jede Person, die mit der Gemeinschaft verbunden ist, befindet sich in genau einem klar
+        benannten Status – von der Bewerbung bis zum ausgetretenen Mitglied –, und jeder Status
+        sagt, was diese Person darf und was sie tun muss.
+      questions:
+        - id: minimum-states
+          question: Welche Mitgliedschaftsstatus brauchen wir mindestens?
+          answer: >-
+            Bewerber:in, Probe- oder Übergangsmitglied, Vollmitglied und ausgetretenes Mitglied.
+            Weitere könnt ihr ergänzen.
+          ref: 3.1.2
+        - id: two-states
+          question: Kann jemand in einem Bereich Vollmitglied und in einem anderen auf Probe sein?
+          answer: Nein. Jede Person hat zu jedem Zeitpunkt genau einen Mitgliedschaftsstatus.
+          ref: 3.1.4
+    es:
+      title: Estados de Membresía
+      inShort: >-
+        Toda persona vinculada a la comunidad está en exactamente un estado con nombre claro, desde
+        solicitante hasta miembro saliente, y cada estado dice qué puede hacer y qué tiene que hacer
+        esa persona.
+      questions:
+        - id: minimum-states
+          question: ¿Qué estados de membresía necesitamos como mínimo?
+          answer: >-
+            Solicitante, miembro en prueba o probatorio, miembro pleno y miembro saliente. Puedes
+            añadir más.
+          ref: 3.1.2
+        - id: two-states
+          question: ¿Alguien puede ser miembro pleno en un área y estar en prueba en otra?
+          answer: No. Cada persona tiene exactamente un estado de membresía a la vez.
+          ref: 3.1.4
+    fr:
+      title: États d'adhésion
+      inShort: >-
+        Chaque personne liée à la communauté se trouve dans exactement un état clairement nommé, du
+        candidat au membre sorti, et chaque état précise ce que cette personne peut faire et doit
+        faire.
+      questions:
+        - id: minimum-states
+          question: De quels états d'adhésion avons-nous besoin au minimum ?
+          answer: >-
+            Candidat, membre à l'essai ou en période probatoire, membre à part entière, et membre
+            sorti. Tu peux en ajouter d'autres.
+          ref: 3.1.2
+        - id: two-states
+          question: >-
+            Quelqu'un peut-il être membre à part entière dans un domaine et à l'essai dans un autre
+            ?
+          answer: Non. Chaque personne détient exactement un état d'adhésion à la fois.
+          ref: 3.1.4
+    pt-br:
+      title: Estados de Filiação
+      inShort: >-
+        Toda pessoa ligada à comunidade está em exatamente um estado claramente nomeado, de
+        candidato a ex-membro, e cada estado diz o que essa pessoa pode e tem de fazer.
+      questions:
+        - id: minimum-states
+          question: De quais estados de membresia precisamos, no mínimo?
+          answer: >-
+            Candidato, membro em experiência ou provisório, membro pleno e ex-membro. Vocês podem
+            acrescentar outros.
+          ref: 3.1.2
+        - id: two-states
+          question: Alguém pode ser membro pleno em uma área e estar em experiência em outra?
+          answer: Não. Cada pessoa tem exatamente um estado de membresia por vez.
           ref: 3.1.4
 - ref: '3.2'
   layer: 1
@@ -159,6 +707,78 @@
             A review of the RCOS-Core artifacts, explicit consent to the Layer 0 and Layer 1 rules,
             and a declared starting membership state.
           ref: 3.2.2
+    de:
+      title: Beitritt und Onboarding
+      inShort: >-
+        Der Beitritt läuft über einen schriftlichen Prozess mit schriftlichen Kriterien – niemals
+        dadurch, dass jemand einfach lange genug da ist.
+      questions:
+        - id: long-time-guest
+          question: Jemand ist seit Jahren dabei. Ist diese Person ein Mitglied?
+          answer: >-
+            Nicht, solange sie kein Onboarding durchlaufen hat. Informelle, implizite oder
+            rückwirkende Mitgliedschaft ist nicht zulässig.
+          ref: 3.2.4
+        - id: what-onboarding-includes
+          question: Was muss das Onboarding beinhalten?
+          answer: >-
+            Eine Prüfung der RCOS-Core-Artefakte, die ausdrückliche Zustimmung zu den Regeln von
+            Schicht 0 und Schicht 1 und die Festlegung eines anfänglichen Mitgliedschaftsstatus.
+          ref: 3.2.2
+    es:
+      title: Ingreso e Incorporación
+      inShort: >-
+        La incorporación ocurre mediante un proceso escrito con criterios escritos, nunca por el
+        simple hecho de llevar suficiente tiempo apareciendo por allí.
+      questions:
+        - id: long-time-guest
+          question: Alguien lleva años por aquí. ¿Es miembro?
+          answer: >-
+            No, a menos que haya pasado por la incorporación. No se permite la membresía informal,
+            implícita ni retroactiva.
+          ref: 3.2.4
+        - id: what-onboarding-includes
+          question: ¿Qué tiene que incluir la incorporación?
+          answer: >-
+            Una revisión de los artefactos de RCOS-Core, consentimiento explícito a las reglas de la
+            Capa 0 y la Capa 1, y un estado de membresía inicial declarado.
+          ref: 3.2.2
+    fr:
+      title: Entrée et intégration
+      inShort: >-
+        L'adhésion passe par un processus écrit avec des critères écrits, jamais simplement parce
+        que quelqu'un est présent depuis assez longtemps.
+      questions:
+        - id: long-time-guest
+          question: Quelqu'un est là depuis des années. Est-ce un membre ?
+          answer: >-
+            Pas si cette personne n'a pas suivi l'intégration. L'adhésion informelle, implicite ou
+            rétroactive n'est pas permise.
+          ref: 3.2.4
+        - id: what-onboarding-includes
+          question: Que doit comprendre l'intégration ?
+          answer: >-
+            Une lecture des artefacts RCOS-Core, un consentement explicite aux règles de la Couche 0
+            et de la Couche 1, et un état d'adhésion initial déclaré.
+          ref: 3.2.2
+    pt-br:
+      title: Entrada e Integração
+      inShort: >-
+        A entrada acontece por meio de um processo escrito, com critérios escritos, nunca pelo
+        simples fato de alguém aparecer por tempo suficiente.
+      questions:
+        - id: long-time-guest
+          question: Alguém frequenta a comunidade há anos. Essa pessoa é membro?
+          answer: >-
+            Não, a menos que tenha passado pela integração. Membresia informal, implícita ou
+            retroativa não é permitida.
+          ref: 3.2.4
+        - id: what-onboarding-includes
+          question: O que a integração tem de incluir?
+          answer: >-
+            Uma leitura dos artefatos do RCOS-Core, consentimento explícito às regras da Camada 0 e
+            da Camada 1, e um estado de membresia inicial declarado.
+          ref: 3.2.2
 - ref: '3.3'
   layer: 1
   i18n:
@@ -178,6 +798,74 @@
           question: Do people on trial have fewer rights?
           answer: They can, but their obligations have to be just as explicit as everyone else's.
           ref: 3.3.3
+    de:
+      title: Probezeit und Bewertung
+      inShort: >-
+        Neue Mitglieder durchlaufen eine Probezeit mit festgelegter Dauer, klaren Kriterien und
+        einer klaren Entscheidung am Ende.
+      questions:
+        - id: trial-ends-without-decision
+          question: Was passiert, wenn die Probezeit endet und niemand entscheidet?
+          answer: >-
+            Die Gemeinschaft muss für diesen Fall einen definierten Weg haben – entweder Austritt
+            oder eine definierte Verlängerung –, damit niemand unbefristet auf Probe bleibt.
+          ref: 3.3.4
+        - id: trial-rights
+          question: Haben Menschen auf Probe weniger Rechte?
+          answer: Das können sie, aber ihre Pflichten müssen genauso explizit sein wie die aller anderen.
+          ref: 3.3.3
+    es:
+      title: Periodo de Prueba y Evaluación
+      inShort: >-
+        Las personas nuevas pasan por un período de prueba con una duración fijada, criterios claros
+        y una decisión clara al final.
+      questions:
+        - id: trial-ends-without-decision
+          question: ¿Qué pasa si el período de prueba termina y nadie decide?
+          answer: >-
+            La comunidad tiene que tener un camino definido para este caso, ya sea la salida o una
+            extensión definida, para que nadie se quede en prueba indefinidamente.
+          ref: 3.3.4
+        - id: trial-rights
+          question: ¿Las personas en prueba tienen menos derechos?
+          answer: >-
+            Pueden tenerlos, pero sus obligaciones tienen que ser igual de explícitas que las de
+            todos los demás.
+          ref: 3.3.3
+    fr:
+      title: Période d'essai et évaluation
+      inShort: >-
+        Les nouveaux membres passent par une période d'essai d'une durée fixée, avec des critères
+        clairs et une décision claire à la fin.
+      questions:
+        - id: trial-ends-without-decision
+          question: Que se passe-t-il si la période d'essai se termine et que personne ne décide ?
+          answer: >-
+            La communauté doit avoir une voie définie pour ce cas, soit la sortie, soit une
+            prolongation définie, afin que personne ne reste à l'essai indéfiniment.
+          ref: 3.3.4
+        - id: trial-rights
+          question: Les personnes à l'essai ont-elles moins de droits ?
+          answer: >-
+            C'est possible, mais leurs obligations doivent être aussi explicites que celles de tout
+            le monde.
+          ref: 3.3.3
+    pt-br:
+      title: Período de Experiência e Avaliação
+      inShort: >-
+        Novos membros passam por um período de experiência com duração definida, critérios claros e
+        uma decisão clara no final.
+      questions:
+        - id: trial-ends-without-decision
+          question: O que acontece se o período de experiência termina e ninguém decide?
+          answer: >-
+            A comunidade tem de ter um caminho definido para esse caso, seja a saída ou uma
+            prorrogação definida, para que ninguém fique em experiência indefinidamente.
+          ref: 3.3.4
+        - id: trial-rights
+          question: Pessoas em experiência têm menos direitos?
+          answer: Podem ter, mas as obrigações delas têm de ser tão explícitas quanto as de todo mundo.
+          ref: 3.3.3
 - ref: '3.4'
   layer: 1
   i18n:
@@ -196,6 +884,78 @@
         - id: obligation-without-right
           question: Can we enforce an obligation that has no matching right?
           answer: No. An obligation can only be enforced when a corresponding, documented right exists.
+          ref: 3.4.4
+    de:
+      title: Rechte und Pflichten
+      inShort: >-
+        Zu jeder Pflicht gehört ein passendes Recht, und beides ist für jeden Mitgliedschaftsstatus
+        aufgeschrieben.
+      questions:
+        - id: open-ended-obligation
+          question: Können wir von Mitgliedern verlangen, „überall zu helfen, wo es gerade nötig ist“?
+          answer: >-
+            Nicht als Pflicht. Pflichten dürfen nicht offen oder unbestimmt sein; sagt, was erwartet
+            wird und in welchem Umfang.
+          ref: 3.4.5
+        - id: obligation-without-right
+          question: Können wir eine Pflicht durchsetzen, zu der es kein passendes Recht gibt?
+          answer: >-
+            Nein. Eine Pflicht kann nur durchgesetzt werden, wenn ein entsprechendes, dokumentiertes
+            Recht existiert.
+          ref: 3.4.4
+    es:
+      title: Derechos y Obligaciones
+      inShort: >-
+        Cada obligación viene con un derecho que le corresponde, y ambos están escritos para cada
+        estado de membresía.
+      questions:
+        - id: open-ended-obligation
+          question: ¿Podemos pedir a los miembros que «ayuden donde se necesite»?
+          answer: >-
+            No como obligación. Las obligaciones no pueden ser abiertas ni indefinidas; di qué se
+            espera y cuánto.
+          ref: 3.4.5
+        - id: obligation-without-right
+          question: ¿Podemos hacer cumplir una obligación que no tiene un derecho que le corresponda?
+          answer: >-
+            No. Una obligación solo se puede hacer cumplir cuando existe un derecho correspondiente
+            y documentado.
+          ref: 3.4.4
+    fr:
+      title: Droits et obligations
+      inShort: >-
+        Chaque obligation va de pair avec un droit correspondant, et les deux sont écrits pour
+        chaque état d'adhésion.
+      questions:
+        - id: open-ended-obligation
+          question: Pouvons-nous demander aux membres d'« aider là où c'est nécessaire » ?
+          answer: >-
+            Pas en tant qu'obligation. Les obligations ne peuvent pas être illimitées ou indéfinies
+            ; dis ce qui est attendu et dans quelle mesure.
+          ref: 3.4.5
+        - id: obligation-without-right
+          question: Pouvons-nous faire respecter une obligation à laquelle ne correspond aucun droit ?
+          answer: >-
+            Non. Une obligation ne peut être appliquée que lorsqu'un droit correspondant et
+            documenté existe.
+          ref: 3.4.4
+    pt-br:
+      title: Direitos e Obrigações
+      inShort: >-
+        Cada obrigação vem acompanhada de um direito correspondente, e os dois estão escritos para
+        cada estado de membresia.
+      questions:
+        - id: open-ended-obligation
+          question: Podemos pedir que os membros "ajudem onde for preciso"?
+          answer: >-
+            Não como obrigação. Obrigações não podem ser abertas nem indefinidas; digam o que se
+            espera e quanto.
+          ref: 3.4.5
+        - id: obligation-without-right
+          question: Podemos exigir uma obrigação que não tem um direito correspondente?
+          answer: >-
+            Não. Uma obrigação só pode ser exigida quando existe um direito correspondente e
+            documentado.
           ref: 3.4.4
 - ref: '3.5'
   layer: 1
@@ -217,6 +977,78 @@
           answer: >-
             Persistent non-participation triggers the accountability process defined in Layer 4, not
             gossip or quiet exclusion.
+          ref: 3.5.4
+    de:
+      title: Teilnahme und Beitrag
+      inShort: >-
+        Sagt, welche Teilnahme ihr erwartet, welche Arten von Beitrag zählen und was passiert, wenn
+        jemand aufhört mitzumachen.
+      questions:
+        - id: paying-instead
+          question: Kann ein Mitglied jemanden dafür bezahlen, seinen Anteil der Arbeit zu übernehmen?
+          answer: >-
+            Nur wenn eure Regeln diese Art der Vertretung ausdrücklich regeln. Einfach informell
+            passieren darf es nicht.
+          ref: 3.5.3
+        - id: non-participation
+          question: Was, wenn jemand ganz aufhört mitzumachen?
+          answer: >-
+            Dauerhafte Nichtteilnahme löst den Rechenschaftsprozess aus, der in Schicht 4 definiert
+            ist – nicht Gerede oder stillen Ausschluss.
+          ref: 3.5.4
+    es:
+      title: Participación y Contribución
+      inShort: >-
+        Di qué participación esperas, qué tipos de contribución cuentan y qué pasa cuando alguien
+        deja de participar.
+      questions:
+        - id: paying-instead
+          question: ¿Puede un miembro pagar a alguien para que haga su parte del trabajo?
+          answer: >-
+            Solo si tus reglas regulan explícitamente ese tipo de sustitución. No puede ocurrir
+            simplemente de manera informal.
+          ref: 3.5.3
+        - id: non-participation
+          question: ¿Y si alguien deja de participar del todo?
+          answer: >-
+            La no participación persistente activa el proceso de rendición de cuentas definido en la
+            Capa 4, no los chismes ni la exclusión silenciosa.
+          ref: 3.5.4
+    fr:
+      title: Participation et contribution
+      inShort: >-
+        Dis quelle participation tu attends, quels types de contribution comptent, et ce qui se
+        passe quand quelqu'un cesse de participer.
+      questions:
+        - id: paying-instead
+          question: Un membre peut-il payer quelqu'un pour faire sa part du travail ?
+          answer: >-
+            Seulement si tes règles encadrent explicitement ce type de remplacement. Cela ne peut
+            pas se faire de manière informelle.
+          ref: 3.5.3
+        - id: non-participation
+          question: Et si quelqu'un cesse complètement de participer ?
+          answer: >-
+            La non-participation persistante déclenche le processus de responsabilisation défini
+            dans la Couche 4, et non des ragots ou une exclusion silencieuse.
+          ref: 3.5.4
+    pt-br:
+      title: Participação e Contribuição
+      inShort: >-
+        Digam qual participação vocês esperam, quais tipos de contribuição contam e o que acontece
+        quando alguém para de participar.
+      questions:
+        - id: paying-instead
+          question: Um membro pode pagar alguém para fazer a sua parte do trabalho?
+          answer: >-
+            Somente se as regras de vocês tratarem explicitamente desse tipo de substituição. Isso
+            não pode simplesmente acontecer de modo informal.
+          ref: 3.5.3
+        - id: non-participation
+          question: E se alguém parar de participar por completo?
+          answer: >-
+            A não participação persistente aciona o processo de responsabilização definido na Camada
+            4, não fofoca nem exclusão silenciosa.
           ref: 3.5.4
 - ref: '3.6'
   layer: 1
@@ -240,6 +1072,82 @@
             Yes, but only through due process, handled with the Layer 4 conflict and accountability
             mechanisms.
           ref: 3.6.3
+    de:
+      title: Austritt und Trennung
+      inShort: >-
+        Alle können jederzeit gehen, über einen schriftlichen, nicht strafenden Prozess, wobei
+        vorher geklärt ist, was mit ihren Rollen und den geteilten Dingen passiert.
+      questions:
+        - id: block-exit
+          question: Kann die Gemeinschaft den Austritt davon abhängig machen, dass jemand etwas zurückzahlt?
+          answer: >-
+            Ein Austritt muss jederzeit möglich bleiben, und Gehen darf keine Rechte kosten, die
+            über die an die Mitgliedschaft gebundenen hinausgehen. Jede Trennung von Vermögenswerten
+            oder Verantwortlichkeiten ist vorab definiert und wird nicht an der Tür erfunden.
+          ref: 3.6.1
+        - id: forced-exit
+          question: Kann die Gemeinschaft jemanden bitten zu gehen?
+          answer: >-
+            Ja, aber nur über ein ordnungsgemäßes Verfahren, abgewickelt mit den Konflikt- und
+            Rechenschaftsmechanismen von Schicht 4.
+          ref: 3.6.3
+    es:
+      title: Salida y Separación
+      inShort: >-
+        Cualquiera puede irse en cualquier momento, mediante un proceso escrito y no punitivo, con
+        lo que pasa con sus roles y con las cosas compartidas resuelto de antemano.
+      questions:
+        - id: block-exit
+          question: ¿Puede la comunidad condicionar la salida a que alguien devuelva algo?
+          answer: >-
+            La salida tiene que seguir siendo posible en todo momento, e irse no puede costar
+            derechos más allá de los que están ligados a la membresía. Cualquier separación de
+            bienes o responsabilidades se define por adelantado, no se improvisa en la puerta.
+          ref: 3.6.1
+        - id: forced-exit
+          question: ¿Puede la comunidad pedirle a alguien que se vaya?
+          answer: >-
+            Sí, pero solo mediante el debido proceso, gestionado con los mecanismos de conflicto y
+            rendición de cuentas de la Capa 4.
+          ref: 3.6.3
+    fr:
+      title: Sortie et séparation
+      inShort: >-
+        Toute personne peut partir à tout moment, par un processus écrit et non punitif, avec un
+        règlement préalable du sort de ses rôles et des biens partagés.
+      questions:
+        - id: block-exit
+          question: La communauté peut-elle conditionner le départ au remboursement de quelque chose ?
+          answer: >-
+            La sortie doit rester possible à tout moment, et partir ne peut pas coûter de droits
+            au-delà de ceux liés à l'adhésion. Toute séparation de biens ou de responsabilités est
+            définie à l'avance, et non inventée au moment du départ.
+          ref: 3.6.1
+        - id: forced-exit
+          question: La communauté peut-elle demander à quelqu'un de partir ?
+          answer: >-
+            Oui, mais seulement dans le cadre d'une procédure équitable, traitée avec les mécanismes
+            de conflit et de responsabilisation de la Couche 4.
+          ref: 3.6.3
+    pt-br:
+      title: Saída e Separação
+      inShort: >-
+        Qualquer pessoa pode sair a qualquer momento, por um processo escrito e não punitivo, com o
+        destino dos seus papéis e das coisas compartilhadas acertado de antemão.
+      questions:
+        - id: block-exit
+          question: A comunidade pode condicionar a saída ao pagamento de algo?
+          answer: >-
+            A saída tem de permanecer possível a qualquer momento, e sair não pode custar direitos
+            além daqueles ligados à membresia. Qualquer separação de bens ou responsabilidades é
+            definida de antemão, não inventada na hora da despedida.
+          ref: 3.6.1
+        - id: forced-exit
+          question: A comunidade pode pedir que alguém saia?
+          answer: >-
+            Sim, mas somente por meio do devido processo, conduzido com os mecanismos de conflito e
+            responsabilização da Camada 4.
+          ref: 3.6.3
 - ref: '3.7'
   layer: 1
   i18n:
@@ -259,6 +1167,72 @@
           question: Can a suspension last until further notice?
           answer: No. Suspension cannot be used as an indefinite or punitive substitute for exit.
           ref: 3.7.3
+    de:
+      title: Suspendierung und temporärer Status
+      inShort: >-
+        Eine Suspendierung ist ein temporärer Status mit schriftlichen Bedingungen, einem Enddatum
+        und einer Überprüfung. Sie ist niemals ein stiller Weg, jemanden hinauszudrängen.
+      questions:
+        - id: need-suspension
+          question: Müssen wir überhaupt eine Suspendierung haben?
+          answer: >-
+            Nein, sie ist optional. Wenn ihr sie habt, müssen ihre Bedingungen explizit, zeitlich
+            begrenzt und überprüfbar sein.
+          ref: 3.7.2
+        - id: indefinite-suspension
+          question: Kann eine Suspendierung bis auf Weiteres dauern?
+          answer: >-
+            Nein. Eine Suspendierung darf nicht als unbefristeter oder strafender Ersatz für einen
+            Austritt verwendet werden.
+          ref: 3.7.3
+    es:
+      title: Suspensión y Estado Temporal
+      inShort: >-
+        Una suspensión es un estado temporal con condiciones escritas, una fecha de fin y una
+        revisión. Nunca es una forma silenciosa de echar a alguien.
+      questions:
+        - id: need-suspension
+          question: ¿Tenemos que tener suspensión?
+          answer: >-
+            No, es opcional. Si la tienes, sus condiciones tienen que ser explícitas, limitadas en
+            el tiempo y revisables.
+          ref: 3.7.2
+        - id: indefinite-suspension
+          question: ¿Puede una suspensión durar hasta nuevo aviso?
+          answer: No. La suspensión no se puede usar como sustituto indefinido o punitivo de la salida.
+          ref: 3.7.3
+    fr:
+      title: Suspension et statut temporaire
+      inShort: >-
+        Une suspension est un état temporaire avec des conditions écrites, une date de fin et un
+        réexamen. Ce n'est jamais une façon discrète de pousser quelqu'un vers la sortie.
+      questions:
+        - id: need-suspension
+          question: Devons-nous absolument avoir une suspension ?
+          answer: >-
+            Non, c'est optionnel. Si tu en as une, ses conditions doivent être explicites, limitées
+            dans le temps et réexaminables.
+          ref: 3.7.2
+        - id: indefinite-suspension
+          question: Une suspension peut-elle durer jusqu'à nouvel ordre ?
+          answer: Non. La suspension ne peut pas servir de substitut indéfini ou punitif à la sortie.
+          ref: 3.7.3
+    pt-br:
+      title: Suspensão e Status Temporário
+      inShort: >-
+        Uma suspensão é um estado temporário com condições escritas, uma data de término e uma
+        revisão. Nunca é um jeito silencioso de empurrar alguém para fora.
+      questions:
+        - id: need-suspension
+          question: Precisamos ter suspensão?
+          answer: >-
+            Não, ela é opcional. Se vocês a tiverem, as suas condições têm de ser explícitas,
+            limitadas no tempo e revisáveis.
+          ref: 3.7.2
+        - id: indefinite-suspension
+          question: Uma suspensão pode durar até novo aviso?
+          answer: Não. A suspensão não pode ser usada como substituto indefinido ou punitivo da saída.
+          ref: 3.7.3
 - ref: '3.8'
   layer: 1
   i18n:
@@ -273,6 +1247,54 @@
           answer: >-
             A Membership Agreement, an Onboarding Protocol, an Exit & Separation Protocol and a
             Membership State Registry.
+          ref: 3.8.1
+    de:
+      title: Artefakte
+      inShort: >-
+        Schicht 1 lebt in vier Dokumenten, die jedes Mitglied lesen kann und die unter
+        Versionskontrolle stehen.
+      questions:
+        - id: which-documents
+          question: Welche Dokumente braucht Schicht 1?
+          answer: >-
+            Eine Mitgliedschaftsvereinbarung, ein Onboarding-Protokoll, ein Austritts- und
+            Trennungsprotokoll und ein Mitgliedschaftsstatus-Register.
+          ref: 3.8.1
+    es:
+      title: Artefactos
+      inShort: >-
+        La Capa 1 vive en cuatro documentos que todos los miembros pueden leer y que se mantienen
+        bajo control de versiones.
+      questions:
+        - id: which-documents
+          question: ¿Qué documentos necesita la Capa 1?
+          answer: >-
+            Un Acuerdo de Membresía, un Protocolo de Incorporación, un Protocolo de Salida y
+            Separación y un Registro de Estados de Membresía.
+          ref: 3.8.1
+    fr:
+      title: Artefacts
+      inShort: >-
+        La Couche 1 tient dans quatre documents que chaque membre peut lire et qui sont tenus sous
+        contrôle de version.
+      questions:
+        - id: which-documents
+          question: De quels documents la Couche 1 a-t-elle besoin ?
+          answer: >-
+            Un Accord d'adhésion, un Protocole d'intégration, un Protocole de sortie et de
+            séparation et un Registre des états d'adhésion.
+          ref: 3.8.1
+    pt-br:
+      title: Artefatos
+      inShort: >-
+        A Camada 1 vive em quatro documentos que todo membro pode ler e que são mantidos sob
+        controle de versão.
+      questions:
+        - id: which-documents
+          question: De quais documentos a Camada 1 precisa?
+          answer: >-
+            Um Acordo de Membresia, um Protocolo de Integração, um Protocolo de Saída e Separação e
+            um Registro de Estados de Membresia.
           ref: 3.8.1
 - ref: '4.1'
   layer: 2
@@ -292,6 +1314,78 @@
         - id: constitutional-examples
           question: Which decisions are constitutional?
           answer: Changes to Layer 0 (purpose, scope, invariants) and to the governance system itself.
+          ref: 4.1.4
+    de:
+      title: Entscheidungstypen
+      inShort: >-
+        Jede kollektive Entscheidung ist operativ, strategisch oder konstitutionell, und die Art der
+        Entscheidung bestimmt, wie sie getroffen wird.
+      questions:
+        - id: unclear-type
+          question: Was, wenn wir nicht erkennen können, welche Art eine Entscheidung hat?
+          answer: >-
+            Behandelt sie als die Art mit der größeren Tragweite. So kann eine große Entscheidung
+            nie als kleine durchrutschen.
+          ref: 4.1.5
+        - id: constitutional-examples
+          question: Welche Entscheidungen sind konstitutionell?
+          answer: >-
+            Änderungen an Schicht 0 (Zweck, Geltungsbereich, Invarianten) und am Governance-System
+            selbst.
+          ref: 4.1.4
+    es:
+      title: Tipos de decisión
+      inShort: >-
+        Toda decisión colectiva es operativa, estratégica o constitucional, y el tipo determina cómo
+        se toma.
+      questions:
+        - id: unclear-type
+          question: ¿Y si no sabemos de qué tipo es una decisión?
+          answer: >-
+            Trátala como la del tipo de mayor impacto. Así una decisión grande nunca puede colarse
+            como si fuera pequeña.
+          ref: 4.1.5
+        - id: constitutional-examples
+          question: ¿Qué decisiones son constitucionales?
+          answer: >-
+            Los cambios en la Capa 0 (propósito, alcance, invariantes) y en el propio sistema de
+            gobernanza.
+          ref: 4.1.4
+    fr:
+      title: Types de décisions
+      inShort: >-
+        Chaque décision collective est opérationnelle, stratégique ou constitutionnelle, et c'est
+        son type qui détermine la façon dont elle est prise.
+      questions:
+        - id: unclear-type
+          question: Et si nous n'arrivons pas à dire de quel type relève une décision ?
+          answer: >-
+            Traitez-la comme le type au plus fort impact. Ainsi, une décision importante ne peut
+            jamais passer pour une petite.
+          ref: 4.1.5
+        - id: constitutional-examples
+          question: Quelles décisions sont constitutionnelles ?
+          answer: >-
+            Les changements apportés à la Couche 0 (raison d'être, périmètre, invariants) et au
+            système de gouvernance lui-même.
+          ref: 4.1.4
+    pt-br:
+      title: Tipos de Decisão
+      inShort: >-
+        Toda decisão coletiva é operacional, estratégica ou constitucional, e o tipo determina como
+        ela é tomada.
+      questions:
+        - id: unclear-type
+          question: E se não conseguirmos dizer de que tipo é uma decisão?
+          answer: >-
+            Trate-a como o tipo de maior impacto. Assim uma decisão grande nunca passa como se fosse
+            pequena.
+          ref: 4.1.5
+        - id: constitutional-examples
+          question: Quais decisões são constitucionais?
+          answer: >-
+            Mudanças na Camada 0 (propósito, escopo, invariantes) e no próprio sistema de
+            governança.
           ref: 4.1.4
 - ref: '4.2'
   layer: 2
@@ -314,6 +1408,80 @@
             Not for collective decisions. If it should be quick, define a quick mechanism, such as
             delegated authority, and use it openly.
           ref: 4.2.4
+    de:
+      title: Entscheidungsmechanismen
+      inShort: >-
+        Schreibt für jede Art von Entscheidung auf, wer entscheidet, wie, mit welcher Schwelle, wer
+        blockieren kann und wie lange es dauert.
+      questions:
+        - id: which-method
+          question: Schreibt RCOS Konsens, Konsent oder Abstimmung vor?
+          answer: >-
+            Nein. Ihr wählt das Verfahren für jede Entscheidungsart selbst; RCOS verlangt nur, dass
+            es ausdrücklich und vollständig festgelegt ist.
+          ref: 4.2.2
+        - id: quick-chat
+          question: Können ein paar Leute etwas informell klären, um Zeit zu sparen?
+          answer: >-
+            Nicht bei kollektiven Entscheidungen. Wenn es schnell gehen soll, legt ein schnelles
+            Verfahren fest, etwa delegierte Befugnis, und nutzt es offen.
+          ref: 4.2.4
+    es:
+      title: Mecanismos de decisión
+      inShort: >-
+        Para cada tipo de decisión, escribe quién decide, cómo, con qué umbral, quién puede
+        bloquearla y cuánto tiempo lleva.
+      questions:
+        - id: which-method
+          question: ¿RCOS prescribe consenso, consentimiento o votación?
+          answer: >-
+            No. Vosotras elegís el mecanismo para cada tipo de decisión; RCOS solo pide que sea
+            explícito y completo.
+          ref: 4.2.2
+        - id: quick-chat
+          question: ¿Pueden unas pocas personas resolver algo informalmente para ahorrar tiempo?
+          answer: >-
+            No para decisiones colectivas. Si algo debe ir rápido, define un mecanismo rápido, como
+            una autoridad delegada, y úsalo abiertamente.
+          ref: 4.2.4
+    fr:
+      title: Mécanismes de décision
+      inShort: >-
+        Pour chaque type de décision, notez qui décide, comment, selon quel seuil, qui peut bloquer
+        et combien de temps cela prend.
+      questions:
+        - id: which-method
+          question: Le RCOS prescrit-il le consensus, le consentement ou le vote ?
+          answer: >-
+            Non. Vous choisissez le mécanisme pour chaque type de décision ; le RCOS demande
+            seulement qu'il soit explicite et complet.
+          ref: 4.2.2
+        - id: quick-chat
+          question: >-
+            Quelques personnes peuvent-elles régler une question de façon informelle pour gagner du
+            temps ?
+          answer: >-
+            Pas pour des décisions collectives. Si cela doit aller vite, définissez un mécanisme
+            rapide, comme une délégation d'autorité, et utilisez-le ouvertement.
+          ref: 4.2.4
+    pt-br:
+      title: Mecanismos de Decisão
+      inShort: >-
+        Para cada tipo de decisão, anote quem decide, como, com qual limiar, quem pode bloquear e
+        quanto tempo leva.
+      questions:
+        - id: which-method
+          question: O RCOS prescreve consenso, consentimento ou votação?
+          answer: >-
+            Não. Você escolhe o mecanismo para cada tipo de decisão; o RCOS só pede que ele seja
+            explícito e completo.
+          ref: 4.2.2
+        - id: quick-chat
+          question: Algumas pessoas podem resolver algo informalmente para ganhar tempo?
+          answer: >-
+            Não para decisões coletivas. Se precisa ser rápido, defina um mecanismo rápido, como
+            autoridade delegada, e use-o abertamente.
+          ref: 4.2.4
 - ref: '4.3'
   layer: 2
   i18n:
@@ -332,6 +1500,83 @@
         - id: emergency-authority
           question: Can someone take charge in an emergency?
           answer: Yes, if emergency authority is explicitly defined, time-bounded and reviewed afterwards.
+          ref: 4.3.5
+    de:
+      title: Autoritätsgrenzen
+      inShort: >-
+        Befugnis liegt bei benannten Rollen und Gremien, jede mit schriftlich festgelegtem
+        Geltungsbereich, Grenzen und Amtszeit. Sie entsteht nie aus Charisma, Dienstalter oder
+        Eigentum.
+      questions:
+        - id: founder-authority
+          question: Unsere Gründerin hatte immer das letzte Wort. Ist das erlaubt?
+          answer: >-
+            Nur wenn es als Rolle mit festgelegtem Geltungsbereich, Grenzen und Amtszeit
+            aufgeschrieben ist. Befugnis kann nicht aus der Gründung, dem Dienstalter oder
+            informellem Einfluss abgeleitet werden.
+          ref: 4.3.4
+        - id: emergency-authority
+          question: Kann jemand im Notfall das Kommando übernehmen?
+          answer: >-
+            Ja, wenn Notfallbefugnis ausdrücklich festgelegt, zeitlich begrenzt und im Nachhinein
+            überprüft wird.
+          ref: 4.3.5
+    es:
+      title: Límites de autoridad
+      inShort: >-
+        La autoridad reside en roles y órganos nombrados, cada uno con un alcance, unos límites y un
+        mandato escritos. Nunca proviene del carisma, la antigüedad o la propiedad.
+      questions:
+        - id: founder-authority
+          question: Nuestra persona fundadora siempre ha tenido la última palabra. ¿Eso está permitido?
+          answer: >-
+            Solo si está escrito como un rol con un alcance, unos límites y un mandato definidos. La
+            autoridad no puede derivarse de haber fundado la comunidad, de la antigüedad ni de la
+            influencia informal.
+          ref: 4.3.4
+        - id: emergency-authority
+          question: ¿Puede alguien tomar el mando en una emergencia?
+          answer: >-
+            Sí, si la autoridad de emergencia está definida de forma explícita, acotada en el tiempo
+            y revisada después.
+          ref: 4.3.5
+    fr:
+      title: Limites de l'autorité
+      inShort: >-
+        L'autorité appartient à des rôles et des instances nommés, chacun avec un périmètre, des
+        limites et une durée de mandat écrits. Elle ne découle jamais du charisme, de l'ancienneté
+        ou de la propriété.
+      questions:
+        - id: founder-authority
+          question: La personne qui a fondé notre communauté a toujours eu le dernier mot. Est-ce permis ?
+          answer: >-
+            Seulement si c'est écrit comme un rôle avec un périmètre, des limites et une durée
+            définis. L'autorité ne peut pas découler du fait d'avoir fondé la communauté, de
+            l'ancienneté ou d'une influence informelle.
+          ref: 4.3.4
+        - id: emergency-authority
+          question: Quelqu'un peut-il prendre les commandes en cas d'urgence ?
+          answer: >-
+            Oui, si l'autorité d'urgence est explicitement définie, limitée dans le temps et
+            réexaminée après coup.
+          ref: 4.3.5
+    pt-br:
+      title: Limites de Autoridade
+      inShort: >-
+        A autoridade fica com papéis e órgãos nomeados, cada um com escopo, limites e mandato
+        escritos. Ela nunca vem de carisma, antiguidade ou propriedade.
+      questions:
+        - id: founder-authority
+          question: Quem fundou nossa comunidade sempre teve a última palavra. Isso é permitido?
+          answer: >-
+            Só se isso estiver escrito como um papel com escopo, limites e mandato definidos. A
+            autoridade não pode derivar de ter fundado, de antiguidade ou de influência informal.
+          ref: 4.3.4
+        - id: emergency-authority
+          question: Alguém pode assumir o comando numa emergência?
+          answer: >-
+            Sim, se a autoridade de emergência for definida explicitamente, limitada no tempo e
+            revisada depois.
           ref: 4.3.5
 - ref: '4.4'
   layer: 2
@@ -352,6 +1597,70 @@
           question: What happens to a decision made outside the matrix?
           answer: It is considered invalid.
           ref: 4.4.4
+    de:
+      title: Entscheidungsmatrix
+      inShort: >-
+        Die Entscheidungsmatrix ist die Landkarte, wer was entscheidet und wie. Eine Entscheidung,
+        die außerhalb davon getroffen wird, ist nicht gültig.
+      questions:
+        - id: matrix-contents
+          question: Was hält die Entscheidungsmatrix fest?
+          answer: >-
+            Für jede Entscheidung ihre Art, ihren Bereich, die befugte Rolle oder das befugte
+            Gremium, das Verfahren, die Zustimmungsschwelle und den Eskalationsweg.
+          ref: 4.4.2
+        - id: outside-matrix
+          question: Was passiert mit einer Entscheidung, die außerhalb der Matrix getroffen wurde?
+          answer: Sie gilt als ungültig.
+          ref: 4.4.4
+    es:
+      title: Matriz de decisión
+      inShort: >-
+        La Matriz de Decisiones es el mapa de quién decide qué y cómo. Una decisión tomada fuera de
+        ella no es válida.
+      questions:
+        - id: matrix-contents
+          question: ¿Qué recoge la Matriz de Decisiones?
+          answer: >-
+            Para cada decisión, su tipo, su ámbito, el rol u órgano autorizado, el mecanismo, el
+            umbral de aprobación y la vía de escalamiento.
+          ref: 4.4.2
+        - id: outside-matrix
+          question: ¿Qué pasa con una decisión tomada fuera de la matriz?
+          answer: Se considera inválida.
+          ref: 4.4.4
+    fr:
+      title: Matrice de décision
+      inShort: >-
+        La matrice de décision est la carte de qui décide quoi, et comment. Une décision prise en
+        dehors d'elle n'est pas valide.
+      questions:
+        - id: matrix-contents
+          question: Que recense la matrice de décision ?
+          answer: >-
+            Pour chaque décision : son type, son domaine, le rôle ou l'instance autorisé, le
+            mécanisme, le seuil d'approbation et le chemin d'escalade.
+          ref: 4.4.2
+        - id: outside-matrix
+          question: Qu'advient-il d'une décision prise en dehors de la matrice ?
+          answer: Elle est considérée comme invalide.
+          ref: 4.4.4
+    pt-br:
+      title: Matriz de Decisão
+      inShort: >-
+        A Matriz de Decisões é o mapa de quem decide o quê, e como. Uma decisão tomada fora dela não
+        é válida.
+      questions:
+        - id: matrix-contents
+          question: O que a Matriz de Decisões mapeia?
+          answer: >-
+            Para cada decisão: seu tipo, o domínio, o papel ou órgão autorizado, o mecanismo, o
+            limiar de aprovação e o caminho de escalonamento.
+          ref: 4.4.2
+        - id: outside-matrix
+          question: O que acontece com uma decisão tomada fora da matriz?
+          answer: Ela é considerada inválida.
+          ref: 4.4.4
 - ref: '4.5'
   layer: 2
   i18n:
@@ -370,6 +1679,70 @@
         - id: recording
           question: Where are governance actions recorded?
           answer: According to the documentation rules of Layer 5.
+          ref: 4.5.4
+    de:
+      title: Governance-Protokoll
+      inShort: >-
+        Das Governance-Protokoll beschreibt das ganze Leben einer Entscheidung, vom Vorschlag über
+        die Beratung bis zur Umsetzung, Dokumentation und Anfechtung.
+      questions:
+        - id: conflicting-decisions
+          question: Was, wenn sich zwei Entscheidungen widersprechen?
+          answer: >-
+            Das Governance-Protokoll muss festlegen, wie solche Konflikte gelöst werden, damit es
+            nicht die Person entscheidet, die zuerst handelt.
+          ref: 4.5.3
+        - id: recording
+          question: Wo werden Governance-Handlungen dokumentiert?
+          answer: Gemäß den Dokumentationsregeln von Schicht 5.
+          ref: 4.5.4
+    es:
+      title: Protocolo de gobernanza
+      inShort: >-
+        El Protocolo de Gobernanza describe toda la vida de una decisión, desde la propuesta hasta
+        la deliberación, la ejecución, el registro y la apelación.
+      questions:
+        - id: conflicting-decisions
+          question: ¿Y si dos decisiones se contradicen?
+          answer: >-
+            El Protocolo de Gobernanza tiene que decir cómo se resuelven esos conflictos, para que
+            no lo zanje quien actúe primero.
+          ref: 4.5.3
+        - id: recording
+          question: ¿Dónde se registran las acciones de gobernanza?
+          answer: Según las reglas de documentación de la Capa 5.
+          ref: 4.5.4
+    fr:
+      title: Protocole de gouvernance
+      inShort: >-
+        Le protocole de gouvernance décrit toute la vie d'une décision, de la proposition à la
+        délibération, la mise en œuvre, la consignation et le recours.
+      questions:
+        - id: conflicting-decisions
+          question: Et si deux décisions se contredisent ?
+          answer: >-
+            Le protocole de gouvernance doit dire comment ces conflits se règlent, pour que ce ne
+            soit pas la personne qui agit la première qui tranche.
+          ref: 4.5.3
+        - id: recording
+          question: Où les actes de gouvernance sont-ils consignés ?
+          answer: Selon les règles de documentation de la Couche 5.
+          ref: 4.5.4
+    pt-br:
+      title: Protocolo de Governança
+      inShort: >-
+        O Protocolo de Governança descreve a vida inteira de uma decisão, da proposta à deliberação,
+        execução, registro e recurso.
+      questions:
+        - id: conflicting-decisions
+          question: E se duas decisões se contradizem?
+          answer: >-
+            O Protocolo de Governança tem que dizer como esses conflitos são resolvidos, para que
+            não fique valendo quem agir primeiro.
+          ref: 4.5.3
+        - id: recording
+          question: Onde as ações de governança são registradas?
+          answer: Conforme as regras de documentação da Camada 5.
           ref: 4.5.4
 - ref: '4.6'
   layer: 2
@@ -390,6 +1763,78 @@
             Persistent failures trigger a formal review or a constitutional process, not just
             another attempt.
           ref: 4.6.3
+    de:
+      title: Sicherungsmechanismen und Fehlermodi
+      inShort: >-
+        Baut Schutz gegen die typischen Fehlentwicklungen von Governance ein, etwa
+        Machtkonzentration, informelle Vetos, Vereinnahmung durch eine Untergruppe und festgesetzte
+        Gründer.
+      questions:
+        - id: challenge-safely
+          question: Können Mitglieder eine Entscheidung anfechten, ohne ihre Stellung zu riskieren?
+          answer: >-
+            Ja. Governance-Verfahren müssen Anfechtung und Überprüfung ohne Repressalien
+            ermöglichen.
+          ref: 4.6.2
+        - id: repeated-failure
+          question: Was, wenn Governance immer auf die gleiche Weise scheitert?
+          answer: >-
+            Anhaltende Fehlschläge lösen eine formale Überprüfung oder ein konstitutionelles
+            Verfahren aus, nicht einfach den nächsten Versuch.
+          ref: 4.6.3
+    es:
+      title: Salvaguardas y modos de fallo
+      inShort: >-
+        Incorpora protección frente a las formas en que la gobernanza suele fallar, como la
+        concentración de poder, los vetos informales, la captura por un subgrupo y el
+        atrincheramiento de las personas fundadoras.
+      questions:
+        - id: challenge-safely
+          question: ¿Pueden los miembros impugnar una decisión sin poner en riesgo su posición?
+          answer: >-
+            Sí. Los mecanismos de gobernanza tienen que permitir la impugnación y la revisión sin
+            represalias.
+          ref: 4.6.2
+        - id: repeated-failure
+          question: ¿Y si la gobernanza falla una y otra vez de la misma manera?
+          answer: >-
+            Los fallos persistentes activan una revisión formal o un proceso constitucional, no
+            simplemente otro intento.
+          ref: 4.6.3
+    fr:
+      title: Garde-fous et modes de défaillance
+      inShort: >-
+        Prévoyez une protection contre les dérives habituelles de la gouvernance : concentration du
+        pouvoir, vetos informels, captation par un sous-groupe et fondateurs indéboulonnables.
+      questions:
+        - id: challenge-safely
+          question: Les membres peuvent-ils contester une décision sans risquer leur place ?
+          answer: >-
+            Oui. Les mécanismes de gouvernance doivent permettre la contestation et le réexamen sans
+            représailles.
+          ref: 4.6.2
+        - id: repeated-failure
+          question: Et si la gouvernance échoue toujours de la même manière ?
+          answer: >-
+            Des échecs persistants déclenchent un réexamen formel ou un processus constitutionnel,
+            et pas simplement une nouvelle tentative.
+          ref: 4.6.3
+    pt-br:
+      title: Salvaguardas e Modos de Falha
+      inShort: >-
+        Inclua proteções contra as formas pelas quais a governança costuma dar errado, como poder
+        concentrado, vetos informais, captura por um subgrupo e fundadores entrincheirados.
+      questions:
+        - id: challenge-safely
+          question: Os membros podem contestar uma decisão sem arriscar sua posição?
+          answer: Sim. Os mecanismos de governança têm que permitir contestação e revisão sem retaliação.
+          ref: 4.6.2
+        - id: repeated-failure
+          question: E se a governança continua falhando do mesmo jeito?
+          answer: >-
+            Falhas persistentes acionam uma revisão formal ou um processo constitucional, não apenas
+            mais uma tentativa.
+          ref: 4.6.3
 - ref: '4.7'
   layer: 2
   i18n:
@@ -402,6 +1847,46 @@
         - id: which-documents
           question: Which documents does Layer 2 need?
           answer: A Decision Matrix, a Governance Protocol and an Authority Registry.
+          ref: 4.7.1
+    de:
+      title: Artefakte
+      inShort: >-
+        Schicht 2 lebt in drei Dokumenten, der Entscheidungsmatrix, dem Governance-Protokoll und dem
+        Befugnisregister, alle ausdrücklich, versioniert und für Mitglieder zugänglich.
+      questions:
+        - id: which-documents
+          question: Welche Dokumente braucht Schicht 2?
+          answer: Eine Entscheidungsmatrix, ein Governance-Protokoll und ein Befugnisregister.
+          ref: 4.7.1
+    es:
+      title: Artefactos
+      inShort: >-
+        La Capa 2 vive en tres documentos, la Matriz de Decisiones, el Protocolo de Gobernanza y el
+        Registro de Autoridad, todos explícitos, versionados y abiertos a los miembros.
+      questions:
+        - id: which-documents
+          question: ¿Qué documentos necesita la Capa 2?
+          answer: Una Matriz de Decisiones, un Protocolo de Gobernanza y un Registro de Autoridad.
+          ref: 4.7.1
+    fr:
+      title: Artefacts
+      inShort: >-
+        La Couche 2 tient dans trois documents : la matrice de décision, le protocole de gouvernance
+        et le registre des autorités, tous explicites, versionnés et accessibles aux membres.
+      questions:
+        - id: which-documents
+          question: De quels documents la Couche 2 a-t-elle besoin ?
+          answer: Une matrice de décision, un protocole de gouvernance et un registre des autorités.
+          ref: 4.7.1
+    pt-br:
+      title: Artefatos
+      inShort: >-
+        A Camada 2 vive em três documentos, a Matriz de Decisões, o Protocolo de Governança e o
+        Registro de Autoridades, todos explícitos, versionados e abertos aos membros.
+      questions:
+        - id: which-documents
+          question: De quais documentos a Camada 2 precisa?
+          answer: Uma Matriz de Decisões, um Protocolo de Governança e um Registro de Autoridades.
           ref: 4.7.1
 - ref: '5.1'
   layer: 3
@@ -423,6 +1908,80 @@
           answer: >-
             Only as far as the scope, membership agreements or other governed artifacts explicitly
             say.
+          ref: 5.1.5
+    de:
+      title: Gemeingüter vs. Privatressourcen
+      inShort: >-
+        Jede Ressource, die die Gemeinschaft verwaltet, ist aufgelistet und als Gemeingut oder
+        Privateigentum markiert – mit der Angabe, wer sich darum kümmert und wie sie genutzt oder
+        übertragen werden darf.
+      questions:
+        - id: unclassified
+          question: Was gilt für eine Ressource, die noch niemand klassifiziert hat?
+          answer: >-
+            Sie ist unklassifiziert, und die Gemeinschaft kann sie nicht zuweisen, belasten,
+            monetarisieren oder übertragen, bis eine autorisierte Entscheidung sie klassifiziert.
+          ref: 5.1.3
+        - id: private-property
+          question: Kann die Gemeinschaft über das Privateigentum von Mitgliedern entscheiden?
+          answer: >-
+            Nur soweit der Geltungsbereich, Mitgliedschaftsvereinbarungen oder andere geregelte
+            Artefakte das ausdrücklich sagen.
+          ref: 5.1.5
+    es:
+      title: Recursos comunes vs privados
+      inShort: >-
+        Todos los recursos que gobierna la comunidad están listados y marcados como comunes o
+        privados, con quién los administra y cómo se pueden usar o transferir.
+      questions:
+        - id: unclassified
+          question: ¿Qué pasa con un recurso que todavía nadie ha clasificado?
+          answer: >-
+            Queda sin clasificar, y la comunidad no puede asignarlo, gravarlo, monetizarlo ni
+            transferirlo hasta que una decisión autorizada lo clasifique.
+          ref: 5.1.3
+        - id: private-property
+          question: ¿Puede la comunidad decidir sobre la propiedad privada de los miembros?
+          answer: >-
+            Solo en la medida en que el ámbito, los acuerdos de membresía u otros artefactos
+            gobernados lo digan explícitamente.
+          ref: 5.1.5
+    fr:
+      title: Ressources communes vs privées
+      inShort: >-
+        Chaque ressource que la communauté gouverne est répertoriée et marquée comme commun ou
+        privée, avec la personne qui en prend soin et la manière dont elle peut être utilisée ou
+        transférée.
+      questions:
+        - id: unclassified
+          question: Et une ressource que personne n'a encore classée ?
+          answer: >-
+            Elle est non classée, et la communauté ne peut pas l'allouer, la grever, la monétiser ni
+            la transférer tant qu'une décision autorisée ne l'a pas classée.
+          ref: 5.1.3
+        - id: private-property
+          question: La communauté peut-elle décider des biens privés de ses membres ?
+          answer: >-
+            Uniquement dans la mesure où le périmètre, les accords d'adhésion ou d'autres artefacts
+            gouvernés le disent explicitement.
+          ref: 5.1.5
+    pt-br:
+      title: Recursos Comuns vs Privados
+      inShort: >-
+        Todo recurso que a comunidade governa está listado e marcado como comum ou privado, com quem
+        cuida dele e como ele pode ser usado ou transferido.
+      questions:
+        - id: unclassified
+          question: E um recurso que ninguém classificou ainda?
+          answer: >-
+            Ele fica sem classificação, e a comunidade não pode alocá-lo, gravá-lo com ônus,
+            monetizá-lo ou transferi-lo até que uma decisão autorizada o classifique.
+          ref: 5.1.3
+        - id: private-property
+          question: A comunidade pode decidir sobre a propriedade privada dos membros?
+          answer: >-
+            Só na medida em que o escopo, os acordos de associação ou outros artefatos governados
+            disserem isso explicitamente.
           ref: 5.1.5
 - ref: '5.2'
   layer: 3
@@ -446,6 +2005,82 @@
             Not through contribution recognition. It cannot create decision authority or influence
             beyond what Layer 2 defines.
           ref: 5.2.5
+    de:
+      title: Beitragsanerkennung
+      inShort: >-
+        Entscheidet, welche Arten von Beitrag zählen – auch Sorgearbeit und Koordination – und wie
+        sie anerkannt werden, damit die wesentliche Arbeit von niemandem unsichtbar bleibt.
+      questions:
+        - id: care-work
+          question: Muss Sorgearbeit als Beitrag zählen?
+          answer: >-
+            Ihr entscheidet, welche Kategorien anerkannt werden, und Sorge- und emotionale Arbeit
+            ist eine, die RCOS benennt. Was ihr nicht tun könnt: euch auf unbezahlte, unsichtbare
+            Arbeit stützen, ohne zu definieren, wie sie anerkannt wird.
+          ref: 5.2.3
+        - id: contribution-and-power
+          question: Haben Leute, die mehr beitragen, auch mehr Mitbestimmung?
+          answer: >-
+            Nicht durch die Anerkennung von Beiträgen. Sie kann keine Entscheidungsbefugnis und
+            keinen Einfluss schaffen, der über das hinausgeht, was Schicht 2 definiert.
+          ref: 5.2.5
+    es:
+      title: Reconocimiento de contribuciones
+      inShort: >-
+        Decide qué tipos de contribución cuentan, incluidos los cuidados y la coordinación, y cómo
+        se reconocen, para que el trabajo esencial de nadie quede invisible.
+      questions:
+        - id: care-work
+          question: ¿El trabajo de cuidados tiene que contar como contribución?
+          answer: >-
+            Tú decides qué categorías se reconocen, y los cuidados y el trabajo emocional son una de
+            las que RCOS menciona. Lo que no puedes hacer es depender de un trabajo no remunerado e
+            invisible sin definir cómo se reconoce.
+          ref: 5.2.3
+        - id: contribution-and-power
+          question: ¿Quien contribuye más tiene más voz en las decisiones?
+          answer: >-
+            No a través del reconocimiento de contribuciones. No puede crear autoridad de decisión
+            ni influencia más allá de lo que define la Capa 2.
+          ref: 5.2.5
+    fr:
+      title: Reconnaissance des contributions
+      inShort: >-
+        Décidez quels types de contribution comptent, y compris le soin et la coordination, et
+        comment ils sont reconnus, afin que le travail essentiel de personne ne reste invisible.
+      questions:
+        - id: care-work
+          question: Le travail de soin doit-il compter comme une contribution ?
+          answer: >-
+            Vous décidez quelles catégories sont reconnues, et le soin et le travail émotionnel en
+            font partie de celles que RCOS nomme. Ce que vous ne pouvez pas faire, c'est dépendre
+            d'un travail invisible et non rémunéré sans définir comment il est reconnu.
+          ref: 5.2.3
+        - id: contribution-and-power
+          question: Les personnes qui contribuent davantage ont-elles plus voix au chapitre ?
+          answer: >-
+            Pas par la reconnaissance des contributions. Celle-ci ne peut pas créer d'autorité
+            décisionnelle ni d'influence au-delà de ce que définit la Couche 2.
+          ref: 5.2.5
+    pt-br:
+      title: Reconhecimento de Contribuições
+      inShort: >-
+        Decidam quais tipos de contribuição contam, incluindo cuidado e coordenação, e como eles são
+        reconhecidos, para que o trabalho essencial de ninguém fique invisível.
+      questions:
+        - id: care-work
+          question: O trabalho de cuidado tem que contar como contribuição?
+          answer: >-
+            Vocês decidem quais categorias são reconhecidas, e o cuidado e o trabalho emocional são
+            uma das que o RCOS nomeia. O que vocês não podem fazer é depender de trabalho invisível
+            e não remunerado sem definir como ele é reconhecido.
+          ref: 5.2.3
+        - id: contribution-and-power
+          question: Quem contribui mais tem mais voz?
+          answer: >-
+            Não através do reconhecimento de contribuição. Ele não pode criar autoridade de decisão
+            nem influência além do que a Camada 2 define.
+          ref: 5.2.5
 - ref: '5.3'
   layer: 3
   i18n:
@@ -467,6 +2102,78 @@
             With clear authority assignments, thresholds by amount or category, approval and
             escalation paths, and required records.
           ref: 5.3.3
+    de:
+      title: Gemeinschaftskasse
+      inShort: >-
+        Sagt, was die gemeinsame Kasse enthält, woher das Geld kommt, wer wie viel ausgeben darf –
+        und macht die Bücher standardmäßig offen.
+      questions:
+        - id: confidential-finances
+          question: Können manche Finanzen vertraulich bleiben?
+          answer: >-
+            Ja, als definierte, begründete und zeitlich begrenzte Ausnahmen – und niemals so, dass
+            Mitglieder nicht mehr prüfen können, ob die Regeln eingehalten werden.
+          ref: 5.3.5
+        - id: spending-limits
+          question: Wie begrenzen wir die Ausgabenbefugnis?
+          answer: >-
+            Mit klaren Zuweisungen von Befugnissen, Schwellenwerten nach Betrag oder Kategorie,
+            Genehmigungs- und Eskalationswegen und vorgeschriebenen Aufzeichnungen.
+          ref: 5.3.3
+    es:
+      title: Gestión de tesorería
+      inShort: >-
+        Di qué contiene la tesorería compartida, de dónde viene el dinero, quién puede gastar
+        cuánto, y haz que las cuentas sean abiertas por defecto.
+      questions:
+        - id: confidential-finances
+          question: ¿Se pueden mantener confidenciales algunas finanzas?
+          answer: >-
+            Sí, como excepciones definidas, justificadas y acotadas en el tiempo, y nunca de un modo
+            que impida a los miembros comprobar el cumplimiento.
+          ref: 5.3.5
+        - id: spending-limits
+          question: ¿Cómo acotamos la autoridad de gasto?
+          answer: >-
+            Con asignaciones claras de autoridad, umbrales por monto o categoría, vías de aprobación
+            y escalamiento, y registros obligatorios.
+          ref: 5.3.3
+    fr:
+      title: Gestion de la trésorerie
+      inShort: >-
+        Dites ce que contient la trésorerie commune, d'où vient l'argent, qui peut dépenser combien,
+        et rendez les comptes ouverts par défaut.
+      questions:
+        - id: confidential-finances
+          question: Certaines finances peuvent-elles rester confidentielles ?
+          answer: >-
+            Oui, sous forme d'exceptions définies, justifiées et limitées dans le temps, et jamais
+            d'une manière qui empêche les membres de vérifier la conformité.
+          ref: 5.3.5
+        - id: spending-limits
+          question: Comment encadrer le pouvoir de dépense ?
+          answer: >-
+            Avec des attributions d'autorité claires, des seuils par montant ou par catégorie, des
+            chemins d'approbation et d'escalade, et des enregistrements obligatoires.
+          ref: 5.3.3
+    pt-br:
+      title: Gestão da Tesouraria
+      inShort: >-
+        Digam o que o tesouro compartilhado guarda, de onde vem o dinheiro, quem pode gastar quanto,
+        e deixem as contas abertas por padrão.
+      questions:
+        - id: confidential-finances
+          question: Algumas finanças podem ser mantidas confidenciais?
+          answer: >-
+            Sim, como exceções definidas, justificadas e com prazo determinado, e nunca de um jeito
+            que impeça os membros de verificar a conformidade.
+          ref: 5.3.5
+        - id: spending-limits
+          question: Como delimitamos a autoridade de gasto?
+          answer: >-
+            Com atribuições claras de autoridade, limites por valor ou categoria, caminhos de
+            aprovação e escalonamento, e registros obrigatórios.
+          ref: 5.3.3
 - ref: '5.4'
   layer: 3
   i18n:
@@ -486,6 +2193,82 @@
             With caps, decay or expiration, non-transferability, redistribution, or time-bounded
             validity, whichever fits your system.
           ref: 5.4.2
+    de:
+      title: Akkumulationsbeschränkungen
+      inShort: >-
+        Stellt sicher, dass Geld, Guthaben oder Schulden sich nicht stillschweigend in Macht über
+        die Gemeinschaft verwandeln können.
+      questions:
+        - id: buy-influence
+          question: Kann ein wohlhabendes Mitglied Dinge finanzieren und dafür mehr Mitbestimmung bekommen?
+          answer: >-
+            Nein. Wirtschaftliche Mechanismen können nicht genutzt werden, um die Befugnisgrenzen
+            von Schicht 2 zu umgehen – weder durch den Kauf von Einfluss noch durch das Erzeugen von
+            Abhängigkeit.
+          ref: 5.4.3
+        - id: limit-mechanisms
+          question: Wie können wir die Anhäufung interner Guthaben begrenzen?
+          answer: >-
+            Mit Obergrenzen, Abschmelzen oder Verfall, Nichtübertragbarkeit, Umverteilung oder
+            zeitlich begrenzter Gültigkeit – je nachdem, was zu eurem System passt.
+          ref: 5.4.2
+    es:
+      title: Restricciones de acumulación
+      inShort: >-
+        Asegúrate de que el dinero, los créditos o las deudas no se puedan convertir calladamente en
+        poder sobre la comunidad.
+      questions:
+        - id: buy-influence
+          question: ¿Puede un miembro con dinero financiar cosas a cambio de más voz?
+          answer: >-
+            No. Los mecanismos económicos no se pueden usar para eludir los límites de autoridad de
+            la Capa 2, ni comprando influencia ni creando dependencia.
+          ref: 5.4.3
+        - id: limit-mechanisms
+          question: ¿Cómo podemos limitar la acumulación de créditos internos?
+          answer: >-
+            Con límites máximos, decaimiento o expiración, no transferibilidad, redistribución o
+            validez acotada en el tiempo, según lo que encaje en tu sistema.
+          ref: 5.4.2
+    fr:
+      title: Contraintes d'accumulation
+      inShort: >-
+        Veillez à ce que l'argent, les crédits ou les dettes ne se transforment pas discrètement en
+        pouvoir sur la communauté.
+      questions:
+        - id: buy-influence
+          question: >-
+            Un membre fortuné peut-il financer des choses en échange de plus de poids dans les
+            décisions ?
+          answer: >-
+            Non. Les mécanismes économiques ne peuvent pas servir à contourner les limites
+            d'autorité de la Couche 2, que ce soit en achetant de l'influence ou en créant une
+            dépendance.
+          ref: 5.4.3
+        - id: limit-mechanisms
+          question: Comment limiter l'accumulation de crédits internes ?
+          answer: >-
+            Avec des plafonds, une dégradation ou une expiration, la non-transférabilité, la
+            redistribution, ou une validité limitée dans le temps — ce qui convient à votre système.
+          ref: 5.4.2
+    pt-br:
+      title: Restrições de Acumulação
+      inShort: >-
+        Garantam que dinheiro, créditos ou dívidas não se transformem silenciosamente em poder sobre
+        a comunidade.
+      questions:
+        - id: buy-influence
+          question: Um membro rico pode financiar coisas em troca de mais voz?
+          answer: >-
+            Não. Mecanismos econômicos não podem ser usados para contornar os limites de autoridade
+            da Camada 2, seja comprando influência ou criando dependência.
+          ref: 5.4.3
+        - id: limit-mechanisms
+          question: Como podemos limitar a acumulação de créditos internos?
+          answer: >-
+            Com tetos, decaimento ou expiração, intransferibilidade, redistribuição ou validade com
+            prazo determinado — o que se encaixar no seu sistema.
+          ref: 5.4.2
 - ref: '5.5'
   layer: 3
   i18n:
@@ -496,6 +2279,46 @@
         - id: which-documents
           question: Which documents does Layer 3 need?
           answer: An Internal Economy Protocol and a Treasury Ruleset.
+          ref: 5.5.1
+    de:
+      title: Artefakte
+      inShort: >-
+        Schicht 3 lebt in zwei Dokumenten: dem Internen Wirtschaftsprotokoll und dem Regelwerk der
+        Gemeinschaftskasse.
+      questions:
+        - id: which-documents
+          question: Welche Dokumente braucht Schicht 3?
+          answer: Ein Internes Wirtschaftsprotokoll und ein Regelwerk der Gemeinschaftskasse.
+          ref: 5.5.1
+    es:
+      title: Artefactos
+      inShort: >-
+        La Capa 3 vive en dos documentos, el Protocolo de Economía Interna y el Reglamento de
+        Tesorería.
+      questions:
+        - id: which-documents
+          question: ¿Qué documentos necesita la Capa 3?
+          answer: Un Protocolo de Economía Interna y un Reglamento de Tesorería.
+          ref: 5.5.1
+    fr:
+      title: Artefacts
+      inShort: >-
+        La Couche 3 tient dans deux documents, le Protocole d'économie interne et le Règlement de
+        trésorerie.
+      questions:
+        - id: which-documents
+          question: De quels documents la Couche 3 a-t-elle besoin ?
+          answer: Un Protocole d'économie interne et un Règlement de trésorerie.
+          ref: 5.5.1
+    pt-br:
+      title: Artefatos
+      inShort: >-
+        A Camada 3 vive em dois documentos, o Protocolo de Economia Interna e o Conjunto de Regras
+        do Tesouro.
+      questions:
+        - id: which-documents
+          question: De quais documentos a Camada 3 precisa?
+          answer: Um Protocolo de Economia Interna e um Conjunto de Regras do Tesouro.
           ref: 5.5.1
 - ref: '5.6'
   layer: 3
@@ -513,6 +2336,58 @@
             Not through informal, implicit or unilateral action. Any change goes through an
             authorized decision.
           ref: 5.6.2
+    de:
+      title: Schicht-Invarianten
+      inShort: >-
+        Die harten wirtschaftlichen Grenzen sind: gemeinsame Ressourcen bleiben sichtbar, Gemeingut
+        kann nicht stillschweigend privatisiert werden, unsichtbare Arbeit ist niemals strukturell
+        vorausgesetzt, und Einfluss kann sich nicht unbegrenzt anhäufen.
+      questions:
+        - id: sell-commons
+          question: Kann eine Gemeingut-Ressource überhaupt verkauft werden?
+          answer: >-
+            Nicht durch informelles, implizites oder einseitiges Handeln. Jede Änderung läuft über
+            eine autorisierte Entscheidung.
+          ref: 5.6.2
+    es:
+      title: Invariantes de capa
+      inShort: >-
+        Los límites económicos infranqueables son que los recursos compartidos sigan siendo
+        visibles, que los comunes no se puedan privatizar a escondidas, que el trabajo invisible
+        nunca sea estructuralmente necesario y que la influencia no se pueda acumular sin límite.
+      questions:
+        - id: sell-commons
+          question: ¿Se puede vender alguna vez un recurso común?
+          answer: >-
+            No mediante una acción informal, implícita o unilateral. Cualquier cambio pasa por una
+            decisión autorizada.
+          ref: 5.6.2
+    fr:
+      title: Invariants de couche
+      inShort: >-
+        Les limites économiques strictes sont que les ressources partagées restent visibles, que les
+        communs ne peuvent pas être privatisés en douce, que le travail invisible n'est jamais
+        structurellement requis, et que l'influence ne peut pas s'accumuler indéfiniment.
+      questions:
+        - id: sell-commons
+          question: Une ressource commune peut-elle un jour être vendue ?
+          answer: >-
+            Pas par une action informelle, implicite ou unilatérale. Tout changement passe par une
+            décision autorisée.
+          ref: 5.6.2
+    pt-br:
+      title: Invariantes da Camada
+      inShort: >-
+        Os limites rígidos econômicos são que os recursos compartilhados permaneçam visíveis, que os
+        bens comuns não possam ser privatizados na surdina, que o trabalho invisível nunca seja
+        estruturalmente exigido, e que a influência não possa se acumular indefinidamente.
+      questions:
+        - id: sell-commons
+          question: Um recurso comum pode ser vendido em algum momento?
+          answer: >-
+            Não por ação informal, implícita ou unilateral. Qualquer mudança passa por uma decisão
+            autorizada.
+          ref: 5.6.2
 - ref: '5.7'
   layer: 3
   i18n:
@@ -525,6 +2400,48 @@
         - id: equal-outcomes
           question: Does RCOS expect everyone to have the same income or share?
           answer: No. Whether outcomes are equal or differentiated stays optional and out of scope.
+          ref: 5.7.3
+    de:
+      title: Explizitätsregeln
+      inShort: >-
+        Manche wirtschaftlichen Fragen müssen schriftlich festgehalten werden, manche können es, und
+        manche – wie die persönliche Haltung zu Geld – bleiben außerhalb des Standards.
+      questions:
+        - id: equal-outcomes
+          question: Erwartet RCOS, dass alle das gleiche Einkommen oder den gleichen Anteil haben?
+          answer: >-
+            Nein. Ob die Ergebnisse gleich oder unterschiedlich sind, bleibt optional und außerhalb
+            des Geltungsbereichs.
+          ref: 5.7.3
+    es:
+      title: Reglas de explicitud
+      inShort: >-
+        Algunos asuntos económicos tienen que estar escritos, otros pueden estarlo, y otros, como la
+        actitud personal de cada quien ante el dinero, quedan fuera del estándar.
+      questions:
+        - id: equal-outcomes
+          question: ¿RCOS espera que todo el mundo tenga los mismos ingresos o la misma parte?
+          answer: No. Que los resultados sean iguales o diferenciados queda opcional y fuera del alcance.
+          ref: 5.7.3
+    fr:
+      title: Règles d'explicitation
+      inShort: >-
+        Certaines questions économiques doivent être écrites, d'autres peuvent l'être, et d'autres
+        encore, comme le rapport personnel à l'argent, restent en dehors du standard.
+      questions:
+        - id: equal-outcomes
+          question: RCOS attend-il que tout le monde ait le même revenu ou la même part ?
+          answer: Non. Que les résultats soient égaux ou différenciés reste optionnel et hors périmètre.
+          ref: 5.7.3
+    pt-br:
+      title: Regras de Explicitude
+      inShort: >-
+        Algumas questões econômicas precisam ser escritas, algumas podem ser, e algumas, como
+        atitudes pessoais em relação ao dinheiro, ficam fora do padrão.
+      questions:
+        - id: equal-outcomes
+          question: O RCOS espera que todos tenham a mesma renda ou a mesma parte?
+          answer: Não. Se os resultados são iguais ou diferenciados permanece opcional e fora do escopo.
           ref: 5.7.3
 - ref: '6.1'
   layer: 4
@@ -548,6 +2465,80 @@
             Avoiding or getting the classification wrong counts as a process failure and is
             reviewed.
           ref: 6.1.5
+    de:
+      title: Konfliktklassifikation
+      inShort: >-
+        Ordne jeden Konflikt einer bekannten Klasse zu – zwischenmenschlich, rollenbezogen,
+        strukturell oder eine Grenzüberschreitung –, damit alle wissen, welchen Weg er nimmt. Alles,
+        was die Sicherheit betrifft, ist sicherheitskritisch.
+      questions:
+        - id: safety-critical
+          question: Wann ist ein Konflikt sicherheitskritisch?
+          answer: >-
+            Wenn es um glaubhafte Sicherheitsrisiken, Zwang, Missbrauch oder Drohungen geht. Diese
+            lösen die verstärkten Schutzvorkehrungen in 6.3 aus.
+          ref: 6.1.4
+        - id: avoid-classifying
+          question: Was, wenn wir einen Konflikt am liebsten gar nicht einordnen würden?
+          answer: >-
+            Die Einordnung zu vermeiden oder falsch zu treffen gilt als Prozessfehler und wird
+            überprüft.
+          ref: 6.1.5
+    es:
+      title: Clasificación de conflictos
+      inShort: >-
+        Clasifica cada conflicto en una categoría conocida —interpersonal, de rol, estructural o una
+        violación de límites— para que todas las personas sepan qué camino sigue. Todo lo que afecte
+        a la seguridad es crítico para la seguridad.
+      questions:
+        - id: safety-critical
+          question: ¿Cuándo es un conflicto crítico para la seguridad?
+          answer: >-
+            Cuando implica riesgos creíbles para la seguridad, coerción, abuso o amenazas. Esos
+            casos activan las salvaguardas reforzadas de 6.3.
+          ref: 6.1.4
+        - id: avoid-classifying
+          question: ¿Y si preferimos no etiquetar un conflicto en absoluto?
+          answer: >-
+            Evitar la clasificación o equivocarse en ella cuenta como un fallo de proceso y se
+            revisa.
+          ref: 6.1.5
+    fr:
+      title: Classification des conflits
+      inShort: >-
+        Classez chaque conflit dans une classe connue — interpersonnel, lié au rôle, structurel ou
+        manquement à une obligation — pour que tout le monde sache quel chemin il suit. Tout ce qui
+        touche à la sécurité est critique pour la sécurité.
+      questions:
+        - id: safety-critical
+          question: Quand un conflit est-il critique pour la sécurité ?
+          answer: >-
+            Lorsqu'il implique des risques crédibles pour la sécurité, de la coercition, des abus ou
+            des menaces. Ces cas déclenchent les garde-fous renforcés prévus en 6.3.
+          ref: 6.1.4
+        - id: avoid-classifying
+          question: Et si nous préférions ne pas étiqueter un conflit du tout ?
+          answer: >-
+            Éviter la classification ou se tromper de classe compte comme une défaillance du
+            processus, et cela fait l'objet d'un examen.
+          ref: 6.1.5
+    pt-br:
+      title: Classificação de Conflitos
+      inShort: >-
+        Classifique cada conflito em uma categoria conhecida — interpessoal, ligado a um papel,
+        estrutural ou violação de limites — para que todos saibam qual caminho ele segue. Tudo que
+        envolve segurança é crítico para a segurança.
+      questions:
+        - id: safety-critical
+          question: Quando um conflito é crítico para a segurança?
+          answer: >-
+            Quando envolve riscos de segurança críveis, coerção, abuso ou ameaças. Esses casos
+            acionam as proteções reforçadas em 6.3.
+          ref: 6.1.4
+        - id: avoid-classifying
+          question: E se preferirmos não rotular um conflito?
+          answer: Evitar a classificação ou errá-la conta como falha de processo e passa por revisão.
+          ref: 6.1.5
 - ref: '6.2'
   layer: 4
   i18n:
@@ -568,6 +2559,78 @@
           answer: >-
             No. The process has to work without social status, seniority, charisma or closeness to
             decision-makers.
+          ref: 6.2.4
+    de:
+      title: Lösungswege
+      inShort: >-
+        Es gibt eine einzige Konfliktlösungsleiter für alle, mit klaren Schritten, Fristen und einem
+        Weg nach vorn, wenn jemand nicht mitmacht.
+      questions:
+        - id: refuses
+          question: Was, wenn die andere Person sich verweigert?
+          answer: >-
+            Die Leiter muss festlegen, wie mit Verweigerung, Nichtreaktion oder Rückzug umgegangen
+            wird, damit ein Konflikt nicht durch Schweigen blockiert werden kann.
+          ref: 6.2.3
+        - id: status-needed
+          question: Muss ich die richtigen Leute kennen, um einen Konflikt anzusprechen?
+          answer: >-
+            Nein. Der Prozess muss ohne sozialen Status, Dienstalter, Charisma oder Nähe zu den
+            Entscheidenden funktionieren.
+          ref: 6.2.4
+    es:
+      title: Vías de resolución
+      inShort: >-
+        Hay una sola escalera de resolución para todo el mundo, con pasos claros, plazos y una
+        manera de avanzar cuando alguien no quiere participar.
+      questions:
+        - id: refuses
+          question: ¿Y si la otra persona se niega a participar?
+          answer: >-
+            La escalera tiene que decir cómo se maneja la negativa, la falta de respuesta o el
+            abandono, para que un conflicto no pueda quedar bloqueado por el silencio.
+          ref: 6.2.3
+        - id: status-needed
+          question: ¿Necesito conocer a las personas adecuadas para plantear un conflicto?
+          answer: >-
+            No. El proceso tiene que funcionar sin estatus social, antigüedad, carisma ni cercanía a
+            quienes toman decisiones.
+          ref: 6.2.4
+    fr:
+      title: Voies de résolution
+      inShort: >-
+        Il existe une seule échelle de résolution pour tout le monde, avec des étapes claires, des
+        délais, et une suite possible quand quelqu'un refuse de participer.
+      questions:
+        - id: refuses
+          question: Et si l'autre personne refuse de s'engager dans le processus ?
+          answer: >-
+            L'échelle doit dire comment le refus, la non-réponse ou le retrait sont gérés, pour
+            qu'un conflit ne puisse pas être bloqué par le silence.
+          ref: 6.2.3
+        - id: status-needed
+          question: Dois-je connaître les bonnes personnes pour soulever un conflit ?
+          answer: >-
+            Non. Le processus doit fonctionner sans statut social, sans ancienneté, sans charisme et
+            sans proximité avec les personnes qui décident.
+          ref: 6.2.4
+    pt-br:
+      title: Caminhos de Resolução
+      inShort: >-
+        Existe uma única escada de resolução para todos, com passos claros, prazos e um caminho para
+        seguir adiante quando alguém não quer participar.
+      questions:
+        - id: refuses
+          question: E se a outra pessoa se recusar a participar?
+          answer: >-
+            A escada precisa dizer como a recusa, a falta de resposta ou a desistência são tratadas,
+            para que um conflito não possa ser travado pelo silêncio.
+          ref: 6.2.3
+        - id: status-needed
+          question: Preciso conhecer as pessoas certas para levantar um conflito?
+          answer: >-
+            Não. O processo precisa funcionar sem status social, antiguidade, carisma ou proximidade
+            com quem decide.
           ref: 6.2.4
 - ref: '6.3'
   layer: 4
@@ -590,6 +2653,79 @@
             In safety-critical conflicts, yes. Protective actions such as temporary separation can
             be taken right away.
           ref: 6.3.4
+    de:
+      title: Schutzmaßnahmen
+      inShort: >-
+        Wo es ein Machtgefälle, eine Abhängigkeit oder ein Sicherheitsrisiko gibt, gelten
+        zusätzliche Schutzvorkehrungen – und niemand wird dafür bestraft, etwas anzusprechen.
+      questions:
+        - id: retaliation
+          question: Bin ich geschützt, wenn ich etwas über eine mächtige Person anspreche?
+          answer: >-
+            Ja. Die Schutzvorkehrungen schützen vor Vergeltung dafür, ein Anliegen anzusprechen, um
+            Mediation zu bitten, Beweise vorzulegen oder an einer Überprüfung teilzunehmen.
+          ref: 6.3.2
+        - id: act-before-process
+          question: Kann die Gemeinschaft handeln, bevor der Prozess abgeschlossen ist?
+          answer: >-
+            Bei sicherheitskritischen Konflikten ja. Schutzmaßnahmen wie eine zeitweise Trennung
+            können sofort ergriffen werden.
+          ref: 6.3.4
+    es:
+      title: Salvaguardas
+      inShort: >-
+        Donde hay una brecha de poder, una dependencia o un riesgo para la seguridad, se aplica
+        protección adicional, y nadie es castigado por hablar.
+      questions:
+        - id: retaliation
+          question: ¿Estoy protegida o protegido si planteo una preocupación sobre alguien con poder?
+          answer: >-
+            Sí. Las salvaguardas protegen frente a represalias por plantear una preocupación, pedir
+            mediación, aportar pruebas o participar en una revisión.
+          ref: 6.3.2
+        - id: act-before-process
+          question: ¿Puede la comunidad actuar antes de que termine el proceso?
+          answer: >-
+            En conflictos críticos para la seguridad, sí. Pueden tomarse de inmediato medidas
+            protectoras como la separación temporal.
+          ref: 6.3.4
+    fr:
+      title: Mesures de protection
+      inShort: >-
+        Là où il y a un écart de pouvoir, une dépendance ou un risque pour la sécurité, une
+        protection supplémentaire s'applique, et personne n'est puni pour avoir parlé.
+      questions:
+        - id: retaliation
+          question: Suis-je protégé·e si je soulève une préoccupation au sujet de quelqu'un de puissant ?
+          answer: >-
+            Oui. Les garde-fous protègent contre les représailles liées au fait de soulever une
+            préoccupation, de demander une médiation, d'apporter des éléments ou de participer à un
+            examen.
+          ref: 6.3.2
+        - id: act-before-process
+          question: La communauté peut-elle agir avant la fin du processus ?
+          answer: >-
+            Dans les conflits critiques pour la sécurité, oui. Des mesures de protection comme une
+            séparation temporaire peuvent être prises immédiatement.
+          ref: 6.3.4
+    pt-br:
+      title: Salvaguardas
+      inShort: >-
+        Onde há desequilíbrio de poder, dependência ou risco à segurança, valem proteções extras, e
+        ninguém é punido por falar.
+      questions:
+        - id: retaliation
+          question: Tenho proteção se levantar uma preocupação sobre alguém com poder?
+          answer: >-
+            Sim. As proteções resguardam contra retaliação por levantar uma preocupação, pedir
+            mediação, apresentar evidências ou participar de uma revisão.
+          ref: 6.3.2
+        - id: act-before-process
+          question: A comunidade pode agir antes de o processo terminar?
+          answer: >-
+            Em conflitos críticos para a segurança, sim. Ações protetivas, como separação
+            temporária, podem ser tomadas de imediato.
+          ref: 6.3.4
 - ref: '6.4'
   layer: 4
   i18n:
@@ -611,6 +2747,84 @@
             Repair keeps people and relationships in the community where that is possible. Punitive
             action comes first only in safety-critical cases.
           ref: 6.4.6
+    de:
+      title: Sanktionen, Wiedergutmachung und Trennung
+      inShort: >-
+        Sanktionen und Wiedergutmachung sind schriftlich festgehalten, verhältnismäßig, zeitlich
+        begrenzt und anfechtbar. Wiedergutmachung kommt vor Bestrafung – außer wenn die Sicherheit
+        auf dem Spiel steht.
+      questions:
+        - id: cold-shoulder
+          question: Ist es eine Sanktion, jemanden zu schneiden?
+          answer: >-
+            Es ist eine informelle – und die sind nicht erlaubt. Sanktionen dürfen nicht über
+            Ausschluss, sozialen Druck, Schweigen oder stillschweigend entzogene Rechte verhängt
+            werden.
+          ref: 6.4.5
+        - id: repair-first
+          question: Warum Wiedergutmachung vor Bestrafung?
+          answer: >-
+            Wiedergutmachung hält Menschen und Beziehungen in der Gemeinschaft, wo das möglich ist.
+            Nur in sicherheitskritischen Fällen kommt eine strafende Maßnahme zuerst.
+          ref: 6.4.6
+    es:
+      title: Sanciones, reparación y separación
+      inShort: >-
+        Las sanciones y la reparación están escritas, son proporcionadas, tienen un plazo definido y
+        se pueden apelar. La reparación va antes que el castigo, salvo cuando está en juego la
+        seguridad.
+      questions:
+        - id: cold-shoulder
+          question: ¿Es una sanción darle la espalda a alguien?
+          answer: >-
+            Es una sanción informal, y esas no están permitidas. Las sanciones no pueden aplicarse
+            mediante exclusión, presión social, silencio o derechos retirados de forma silenciosa.
+          ref: 6.4.5
+        - id: repair-first
+          question: ¿Por qué reparar antes de castigar?
+          answer: >-
+            La reparación mantiene a las personas y a las relaciones dentro de la comunidad cuando
+            eso es posible. La acción punitiva va primero solo en casos críticos para la seguridad.
+          ref: 6.4.6
+    fr:
+      title: Sanctions, réparation et séparation
+      inShort: >-
+        Les sanctions et la réparation sont écrites, proportionnées, limitées dans le temps et
+        susceptibles d'appel. La réparation passe avant la punition, sauf quand la sécurité est en
+        jeu.
+      questions:
+        - id: cold-shoulder
+          question: Faire la tête à quelqu'un, est-ce une sanction ?
+          answer: >-
+            C'en est une informelle, et celles-là ne sont pas permises. Les sanctions ne peuvent pas
+            être appliquées par l'exclusion, la pression sociale, le silence ou le retrait discret
+            de droits.
+          ref: 6.4.5
+        - id: repair-first
+          question: Pourquoi la réparation avant la punition ?
+          answer: >-
+            La réparation garde les personnes et les relations dans la communauté quand c'est
+            possible. L'action punitive ne vient en premier que dans les cas critiques pour la
+            sécurité.
+          ref: 6.4.6
+    pt-br:
+      title: Sanções, Reparação e Separação
+      inShort: >-
+        Sanções e reparação são escritas, proporcionais, com prazo definido e passíveis de recurso.
+        A reparação vem antes da punição, exceto quando a segurança está em jogo.
+      questions:
+        - id: cold-shoulder
+          question: Dar um gelo em alguém é uma sanção?
+          answer: >-
+            É uma sanção informal, e essas não são permitidas. Sanções não podem ser aplicadas por
+            meio de exclusão, pressão social, silêncio ou direitos retirados em silêncio.
+          ref: 6.4.5
+        - id: repair-first
+          question: Por que reparação antes de punição?
+          answer: >-
+            A reparação mantém pessoas e relações na comunidade quando isso é possível. A ação
+            punitiva vem primeiro apenas em casos críticos para a segurança.
+          ref: 6.4.6
 - ref: '6.5'
   layer: 4
   i18n:
@@ -623,6 +2837,44 @@
         - id: which-documents
           question: Which documents does Layer 4 need?
           answer: A Conflict Resolution Ladder and an Accountability Protocol.
+          ref: 6.5.1
+    de:
+      title: Artefakte
+      inShort: 'Schicht 4 lebt in zwei Dokumenten: der Konfliktlösungsleiter und dem Rechenschaftsprotokoll.'
+      questions:
+        - id: which-documents
+          question: Welche Dokumente braucht Schicht 4?
+          answer: Eine Konfliktlösungsleiter und ein Rechenschaftsprotokoll.
+          ref: 6.5.1
+    es:
+      title: Artefactos
+      inShort: >-
+        La Capa 4 vive en dos documentos: la Escalera de Resolución de Conflictos y el Protocolo de
+        Rendición de Cuentas.
+      questions:
+        - id: which-documents
+          question: ¿Qué documentos necesita la Capa 4?
+          answer: Una Escalera de Resolución de Conflictos y un Protocolo de Rendición de Cuentas.
+          ref: 6.5.1
+    fr:
+      title: Artefacts
+      inShort: >-
+        La Couche 4 tient dans deux documents, l'Échelle de résolution des conflits et le Protocole
+        de responsabilisation.
+      questions:
+        - id: which-documents
+          question: De quels documents la Couche 4 a-t-elle besoin ?
+          answer: Une Échelle de résolution des conflits et un Protocole de responsabilisation.
+          ref: 6.5.1
+    pt-br:
+      title: Artefatos
+      inShort: >-
+        A Camada 4 vive em dois documentos: a Escada de Resolução de Conflitos e o Protocolo de
+        Responsabilização.
+      questions:
+        - id: which-documents
+          question: Quais documentos a Camada 4 precisa?
+          answer: Uma Escada de Resolução de Conflitos e um Protocolo de Responsabilização.
           ref: 6.5.1
 - ref: '6.6'
   layer: 4
@@ -639,6 +2891,57 @@
             Leaving a conflict unresolved, suppressed or normalized counts as a system violation. It
             needs a defined pathway.
           ref: 6.6.1
+    de:
+      title: Schicht-Invarianten
+      inShort: >-
+        Die harten Grenzen bei Konflikten lauten: Ein Konflikt wird bearbeitet, niemals ignoriert.
+        Machtgefälle erhöhen die Schutzvorkehrungen, Wiedergutmachung kommt zuerst, und Sicherheit
+        überwiegt alles andere.
+      questions:
+        - id: ignore-conflict
+          question: Ist es ein Problem, einen Konflikt sich von selbst beruhigen zu lassen?
+          answer: >-
+            Einen Konflikt unbearbeitet zu lassen, zu unterdrücken oder zu normalisieren gilt als
+            Systemverstoß. Er braucht einen definierten Weg.
+          ref: 6.6.1
+    es:
+      title: Invariantes de la capa
+      inShort: >-
+        Los límites infranqueables del conflicto son que se atiende, nunca se ignora. Las brechas de
+        poder elevan las salvaguardas, la reparación va primero y la seguridad está por encima de
+        todo lo demás.
+      questions:
+        - id: ignore-conflict
+          question: ¿Es un problema dejar que un conflicto se resuelva por sí solo?
+          answer: >-
+            Dejar un conflicto sin resolver, reprimido o normalizado cuenta como una violación del
+            sistema. Necesita una vía definida.
+          ref: 6.6.1
+    fr:
+      title: Invariants de la couche
+      inShort: >-
+        Les limites strictes en matière de conflit sont qu'un conflit est traité, jamais ignoré. Les
+        écarts de pouvoir renforcent les garde-fous, la réparation passe en premier, et la sécurité
+        prime sur tout le reste.
+      questions:
+        - id: ignore-conflict
+          question: Est-ce un problème de laisser un conflit se tasser tout seul ?
+          answer: >-
+            Laisser un conflit non résolu, étouffé ou normalisé compte comme une violation du
+            système. Il lui faut un chemin défini.
+          ref: 6.6.1
+    pt-br:
+      title: Invariantes da Camada
+      inShort: >-
+        Os limites rígidos do conflito são que ele seja tratado, nunca ignorado. Desequilíbrios de
+        poder elevam as proteções, a reparação vem primeiro e a segurança se sobrepõe a tudo o mais.
+      questions:
+        - id: ignore-conflict
+          question: É um problema deixar um conflito se resolver sozinho?
+          answer: >-
+            Deixar um conflito sem resolução, abafado ou normalizado conta como violação do sistema.
+            Ele precisa de um caminho definido.
+          ref: 6.6.1
 - ref: '6.7'
   layer: 4
   i18n:
@@ -653,6 +2956,55 @@
           answer: >-
             No. Mediation styles are optional; only the minimum process and safeguards have to be
             explicit.
+          ref: 6.7.2
+    de:
+      title: Explizitheitsregeln
+      inShort: >-
+        Das Konfliktsystem muss explizit sein. Wie Menschen Gefühle ausdrücken oder welche
+        spirituelle oder therapeutische Brille sie nutzen, bleibt ihre eigene Sache.
+      questions:
+        - id: mediation-style
+          question: Müssen wir eine bestimmte Mediationsmethode nutzen?
+          answer: >-
+            Nein. Mediationsstile sind optional; nur der Mindestprozess und die Schutzvorkehrungen
+            müssen explizit sein.
+          ref: 6.7.2
+    es:
+      title: Reglas de explicitud
+      inShort: >-
+        El sistema de conflictos tiene que ser explícito. Cómo expresa cada persona sus emociones, o
+        qué lente espiritual o terapéutica usa, sigue siendo cosa suya.
+      questions:
+        - id: mediation-style
+          question: ¿Tenemos que usar un método de mediación concreto?
+          answer: >-
+            No. Los estilos de mediación son opcionales; solo el proceso mínimo y las salvaguardas
+            tienen que ser explícitos.
+          ref: 6.7.2
+    fr:
+      title: Règles d'explicitation
+      inShort: >-
+        Le système de gestion des conflits doit être explicite. La manière dont les personnes
+        expriment leurs émotions, ou le prisme spirituel ou thérapeutique qu'elles utilisent, leur
+        appartient.
+      questions:
+        - id: mediation-style
+          question: Devons-nous utiliser une méthode de médiation particulière ?
+          answer: >-
+            Non. Les styles de médiation sont optionnels ; seuls le processus minimum et les
+            garde-fous doivent être explicites.
+          ref: 6.7.2
+    pt-br:
+      title: Regras de Explicitude
+      inShort: >-
+        O sistema de conflitos precisa ser explícito. Como as pessoas expressam sentimentos, ou qual
+        lente espiritual ou terapêutica usam, continua sendo coisa delas.
+      questions:
+        - id: mediation-style
+          question: Precisamos usar um método específico de mediação?
+          answer: >-
+            Não. Os estilos de mediação são opcionais; só o processo mínimo e as proteções precisam
+            ser explícitos.
           ref: 6.7.2
 - ref: '7.1'
   layer: 5
@@ -673,6 +3025,80 @@
             They are fine if they are explicitly time-bounded. If they turn into ongoing work, they
             need a role.
           ref: 7.1.5
+    de:
+      title: Rollen und Verantwortlichkeiten
+      inShort: >-
+        Jede dauerhafte Verantwortung gehört zu einer benannten Rolle mit schriftlichem Umfang,
+        klaren Grenzen und einem Weg, sie zu überprüfen, damit nichts Wichtiges auf
+        unausgesprochenen Erwartungen ruht.
+      questions:
+        - id: unassigned-task
+          question: Kann jemand für eine Aufgabe verantwortlich gemacht werden, die ihm niemand gegeben hat?
+          answer: >-
+            Nein. Niemand kann für Verantwortlichkeiten zur Rechenschaft gezogen werden, die keiner
+            Rolle formell zugewiesen sind.
+          ref: 7.1.4
+        - id: temporary-task
+          question: Was ist mit einmaligen Aufgaben?
+          answer: >-
+            Die sind in Ordnung, solange sie ausdrücklich zeitlich begrenzt sind. Wenn daraus
+            dauerhafte Arbeit wird, braucht es eine Rolle.
+          ref: 7.1.5
+    es:
+      title: Roles y Responsabilidades
+      inShort: >-
+        Cada responsabilidad continua pertenece a un rol con nombre, con un alcance escrito, límites
+        y una forma de revisarlo, para que nada importante dependa de expectativas no dichas.
+      questions:
+        - id: unassigned-task
+          question: ¿Se le puede culpar a alguien por una tarea que nadie le encargó?
+          answer: >-
+            No. Nadie puede rendir cuentas por responsabilidades que no fueron asignadas formalmente
+            a un rol.
+          ref: 7.1.4
+        - id: temporary-task
+          question: ¿Y los trabajos puntuales?
+          answer: >-
+            Están bien si tienen un plazo explícito. Si se convierten en trabajo continuo, necesitan
+            un rol.
+          ref: 7.1.5
+    fr:
+      title: Rôles et responsabilités
+      inShort: >-
+        Chaque responsabilité continue appartient à un rôle nommé, avec un périmètre écrit, des
+        limites et un moyen de le revoir, pour que rien d'important ne repose sur des attentes
+        implicites.
+      questions:
+        - id: unassigned-task
+          question: Peut-on reprocher à quelqu'un une tâche que personne ne lui a confiée ?
+          answer: >-
+            Non. Personne ne peut être tenu responsable de responsabilités qui n'ont pas été
+            formellement attribuées à un rôle.
+          ref: 7.1.4
+        - id: temporary-task
+          question: Et les tâches ponctuelles ?
+          answer: >-
+            Elles sont acceptables si elles sont explicitement limitées dans le temps. Si elles
+            deviennent du travail continu, il leur faut un rôle.
+          ref: 7.1.5
+    pt-br:
+      title: Papéis e Responsabilidades
+      inShort: >-
+        Toda responsabilidade contínua pertence a um papel nomeado, com escopo escrito, limites e
+        uma forma de revisá-lo, para que nada importante dependa de expectativas não ditas.
+      questions:
+        - id: unassigned-task
+          question: Alguém pode ser culpado por uma tarefa que ninguém lhe deu?
+          answer: >-
+            Não. Ninguém pode ser responsabilizado por responsabilidades que não foram formalmente
+            atribuídas a um papel.
+          ref: 7.1.4
+        - id: temporary-task
+          question: E as tarefas pontuais?
+          answer: >-
+            Tudo bem, desde que tenham prazo explícito. Se virarem trabalho contínuo, precisam de um
+            papel.
+          ref: 7.1.5
 - ref: '7.2'
   layer: 5
   i18n:
@@ -691,6 +3117,73 @@
         - id: too-many-meetings
           question: What if there are simply too many meetings?
           answer: Meeting load has to be bounded, monitored and reviewable, as set out in 7.4.
+          ref: 7.2.4
+    de:
+      title: Sitzungssystem
+      inShort: >-
+        Jede Art von Treffen hat einen schriftlichen Zweck, einen Entscheidungsrahmen, Teilnehmende,
+        einen Rhythmus und eine Moderation – und bleibt innerhalb der Befugnisse, die sie hat.
+      questions:
+        - id: meeting-decides
+          question: Kann ein Treffen Dinge entscheiden, die außerhalb seines erklärten Rahmens liegen?
+          answer: >-
+            Nein. Treffen können ihren Entscheidungsrahmen nicht überschreiten und die
+            Befugnisgrenzen von Schicht 2 nicht umgehen.
+          ref: 7.2.3
+        - id: too-many-meetings
+          question: Was, wenn es einfach zu viele Treffen gibt?
+          answer: Die Treffenlast muss begrenzt, beobachtet und überprüfbar sein, wie in 7.4 beschrieben.
+          ref: 7.2.4
+    es:
+      title: Sistema de Reuniones
+      inShort: >-
+        Cada tipo de reunión tiene por escrito su propósito, su alcance de decisión, sus
+        participantes, su frecuencia y su facilitación, y se mantiene dentro de la autoridad que
+        tiene.
+      questions:
+        - id: meeting-decides
+          question: ¿Puede una reunión decidir cosas fuera de su alcance declarado?
+          answer: >-
+            No. Las reuniones no pueden exceder su alcance de decisión ni saltarse los límites de
+            autoridad de la Capa 2.
+          ref: 7.2.3
+        - id: too-many-meetings
+          question: ¿Y si simplemente hay demasiadas reuniones?
+          answer: >-
+            La carga de reuniones tiene que estar limitada, monitoreada y ser revisable, como se
+            establece en 7.4.
+          ref: 7.2.4
+    fr:
+      title: Système de réunions
+      inShort: >-
+        Chaque type de réunion a un objectif écrit, un périmètre de décision, des participants, une
+        cadence et une facilitation, et reste dans les limites de l'autorité qui lui est donnée.
+      questions:
+        - id: meeting-decides
+          question: Une réunion peut-elle décider de choses qui sortent de son périmètre déclaré ?
+          answer: >-
+            Non. Les réunions ne peuvent pas dépasser leur périmètre de décision ni contourner les
+            limites d'autorité de la Couche 2.
+          ref: 7.2.3
+        - id: too-many-meetings
+          question: Et s'il y a tout simplement trop de réunions ?
+          answer: La charge de réunions doit être plafonnée, suivie et révisable, comme indiqué en 7.4.
+          ref: 7.2.4
+    pt-br:
+      title: Sistema de Reuniões
+      inShort: >-
+        Cada tipo de reunião tem um propósito escrito, escopo de decisão, participantes,
+        periodicidade e facilitação, e se mantém dentro da autoridade que tem.
+      questions:
+        - id: meeting-decides
+          question: Uma reunião pode decidir coisas fora do escopo que ela declarou?
+          answer: >-
+            Não. Reuniões não podem exceder seu escopo de decisão nem contornar os limites de
+            autoridade da Camada 2.
+          ref: 7.2.3
+        - id: too-many-meetings
+          question: E se simplesmente houver reuniões demais?
+          answer: A carga de reuniões precisa ser limitada, monitorada e revisável, como descrito em 7.4.
           ref: 7.2.4
 - ref: '7.3'
   layer: 5
@@ -713,6 +3206,80 @@
             Yes, for a critical process. It has to be documented so continuity doesn't depend on
             tacit knowledge.
           ref: 7.3.4
+    de:
+      title: Dokumentation und Informationsfluss
+      inShort: >-
+        Schreibt auf, wo Aufzeichnungen liegen und wer sie sehen darf, und macht jede Entscheidung
+        nachvollziehbar, damit die Gemeinschaft nicht davon abhängt, wer sich gerade erinnert.
+      questions:
+        - id: trace-decision
+          question: Was macht eine Entscheidung nachvollziehbar?
+          answer: >-
+            Man kann sehen, welcher Typ und welcher Bereich sie betrifft, wer entschieden hat, mit
+            welchem Mechanismus und welcher Schwelle, und was das Ergebnis und das Datum des
+            Inkrafttretens waren.
+          ref: 7.3.3
+        - id: one-person-knows
+          question: Nur eine Person weiß, wie die Wasseranlage funktioniert. Ist das ein Problem?
+          answer: >-
+            Ja, bei einem kritischen Prozess. Er muss dokumentiert werden, damit die Kontinuität
+            nicht von stillschweigendem Wissen abhängt.
+          ref: 7.3.4
+    es:
+      title: Documentación y Flujo de Información
+      inShort: >-
+        Escriban dónde viven los registros y quién puede verlos, y hagan que cada decisión sea
+        rastreable, para que la comunidad no dependa de quien justo se acuerde.
+      questions:
+        - id: trace-decision
+          question: ¿Qué hace que una decisión sea rastreable?
+          answer: >-
+            Se puede ver su tipo y su ámbito, quién decidió, mediante qué mecanismo y umbral, y cuál
+            fue el resultado y su fecha de entrada en vigor.
+          ref: 7.3.3
+        - id: one-person-knows
+          question: Solo una persona sabe cómo funciona el sistema de agua. ¿Es un problema?
+          answer: >-
+            Sí, si es un proceso crítico. Tiene que estar documentado para que la continuidad no
+            dependa de conocimiento tácito.
+          ref: 7.3.4
+    fr:
+      title: Documentation et flux d'information
+      inShort: >-
+        Notez par écrit où se trouvent les documents et qui peut les consulter, et rendez chaque
+        décision traçable, pour que la communauté ne dépende pas de la mémoire de telle ou telle
+        personne.
+      questions:
+        - id: trace-decision
+          question: Qu'est-ce qui rend une décision traçable ?
+          answer: >-
+            On peut voir son type et son domaine, qui a décidé, par quel mécanisme et avec quel
+            seuil, ainsi que le résultat et la date d'effet.
+          ref: 7.3.3
+        - id: one-person-knows
+          question: Une seule personne sait comment fonctionne le système d'eau. Est-ce un problème ?
+          answer: >-
+            Oui, pour un processus critique. Il doit être documenté pour que la continuité ne
+            dépende pas de savoirs tacites.
+          ref: 7.3.4
+    pt-br:
+      title: Documentação e Fluxo de Informação
+      inShort: >-
+        Escrevam onde ficam os registros e quem pode vê-los, e tornem cada decisão rastreável, para
+        que a comunidade não dependa de quem por acaso se lembra.
+      questions:
+        - id: trace-decision
+          question: O que torna uma decisão rastreável?
+          answer: >-
+            Você consegue ver seu tipo e domínio, quem decidiu, por qual mecanismo e limiar, e qual
+            foi o resultado e a data de vigência.
+          ref: 7.3.3
+        - id: one-person-knows
+          question: Só uma pessoa sabe como funciona o sistema de água. Isso é um problema?
+          answer: >-
+            Sim, para um processo crítico. Ele precisa estar documentado para que a continuidade não
+            dependa de conhecimento tácito.
+          ref: 7.3.4
 - ref: '7.4'
   layer: 5
   i18n:
@@ -734,6 +3301,79 @@
             Limits on meeting load and role load, expectations for response times, and ways to
             renegotiate or redistribute work.
           ref: 7.4.2
+    de:
+      title: Arbeitsbelastung und Kapazitätsgrenzen
+      inShort: >-
+        Zeit, Aufmerksamkeit und Wohlwollen gehen zur Neige. Setzt Grenzen für Treffen und Rollen
+        und handelt, wenn Menschen überlastet sind.
+      questions:
+        - id: burnout
+          question: Was sollte passieren, wenn jemand ausbrennt?
+          answer: >-
+            Dauerhafte Überlastung oder Burnout-Risiko löst eine Überprüfung oder Reparatur nach
+            Schicht 4 aus. Das ist ein Systemproblem, kein persönliches Versagen.
+          ref: 7.4.4
+        - id: what-limits
+          question: Welche Art von Grenzen ist gemeint?
+          answer: >-
+            Grenzen für die Treffenlast und die Rollenlast, Erwartungen an Antwortzeiten und Wege,
+            Arbeit neu zu verhandeln oder umzuverteilen.
+          ref: 7.4.2
+    es:
+      title: Límites de Carga de Trabajo y Capacidad
+      inShort: >-
+        El tiempo, la atención y la buena voluntad se agotan. Pongan límites a las reuniones y a los
+        roles, y actúen cuando alguien esté sobrecargado.
+      questions:
+        - id: burnout
+          question: ¿Qué debería pasar cuando alguien se está agotando?
+          answer: >-
+            La sobrecarga persistente o el riesgo de agotamiento activa una revisión o una
+            reparación en la Capa 4. Es un problema del sistema, no un fallo personal.
+          ref: 7.4.4
+        - id: what-limits
+          question: ¿De qué tipo de límites se habla?
+          answer: >-
+            Límites a la carga de reuniones y a la carga de roles, expectativas sobre tiempos de
+            respuesta, y formas de renegociar o redistribuir el trabajo.
+          ref: 7.4.2
+    fr:
+      title: Limites de charge de travail et de capacité
+      inShort: >-
+        Le temps, l'attention et la bonne volonté s'épuisent. Fixez des limites aux réunions et aux
+        rôles, et agissez quand les personnes sont surchargées.
+      questions:
+        - id: burnout
+          question: Que devrait-il se passer quand quelqu'un s'épuise ?
+          answer: >-
+            Une surcharge persistante ou un risque d'épuisement déclenche une revue ou une
+            réparation au titre de la Couche 4. C'est un problème de système, pas une faiblesse
+            personnelle.
+          ref: 7.4.4
+        - id: what-limits
+          question: De quel genre de limites parle-t-on ?
+          answer: >-
+            Des limites sur la charge de réunions et la charge de rôles, des attentes en matière de
+            délais de réponse, et des moyens de renégocier ou de redistribuer le travail.
+          ref: 7.4.2
+    pt-br:
+      title: Limites de Carga de Trabalho e Capacidade
+      inShort: >-
+        Tempo, atenção e boa vontade acabam. Definam limites para reuniões e papéis, e ajam quando
+        as pessoas estiverem sobrecarregadas.
+      questions:
+        - id: burnout
+          question: O que deve acontecer quando alguém está entrando em burnout?
+          answer: >-
+            Sobrecarga persistente ou risco de burnout dispara revisão ou reparação na Camada 4. É
+            um problema do sistema, não uma falha pessoal.
+          ref: 7.4.4
+        - id: what-limits
+          question: Que tipo de limites são esses?
+          answer: >-
+            Limites de carga de reuniões e de carga de papéis, expectativas de tempo de resposta, e
+            formas de renegociar ou redistribuir o trabalho.
+          ref: 7.4.2
 - ref: '7.5'
   layer: 5
   i18n:
@@ -744,6 +3384,46 @@
         - id: backup
           question: What do core roles need for continuity?
           answer: Documented procedures, clear handover, and backup or redundancy where feasible.
+          ref: 7.5.2
+    de:
+      title: Betriebskontinuität
+      inShort: Keine einzelne Person darf die Einzige sein, die den Kernbetrieb am Laufen halten kann.
+      questions:
+        - id: backup
+          question: Was brauchen Kernrollen für Kontinuität?
+          answer: Dokumentierte Abläufe, klare Übergaben und Backup oder Redundanz, wo machbar.
+          ref: 7.5.2
+    es:
+      title: Continuidad Operativa
+      inShort: Ninguna persona puede ser la única capaz de mantener en marcha las operaciones esenciales.
+      questions:
+        - id: backup
+          question: ¿Qué necesitan los roles esenciales para la continuidad?
+          answer: >-
+            Procedimientos documentados, una entrega clara, y respaldo o redundancia donde sea
+            viable.
+          ref: 7.5.2
+    fr:
+      title: Continuité opérationnelle
+      inShort: >-
+        Aucune personne ne peut être la seule à pouvoir maintenir les opérations essentielles en
+        marche.
+      questions:
+        - id: backup
+          question: De quoi les rôles essentiels ont-ils besoin pour la continuité ?
+          answer: >-
+            Des procédures documentées, une transmission claire, et une suppléance ou une redondance
+            là où c'est faisable.
+          ref: 7.5.2
+    pt-br:
+      title: Continuidade Operacional
+      inShort: Nenhuma pessoa sozinha pode ser a única capaz de manter as operações essenciais funcionando.
+      questions:
+        - id: backup
+          question: O que os papéis essenciais precisam para ter continuidade?
+          answer: >-
+            Procedimentos documentados, passagem de bastão clara, e reserva ou redundância onde for
+            viável.
           ref: 7.5.2
 - ref: '7.6'
   layer: 5
@@ -757,6 +3437,46 @@
         - id: which-documents
           question: Which documents does Layer 5 need?
           answer: An Operations Manual, a Role Registry and Meeting Templates.
+          ref: 7.6.1
+    de:
+      title: Artefakte
+      inShort: >-
+        Schicht 5 lebt in drei lebendigen Dokumenten: dem Betriebshandbuch, dem Rollenverzeichnis
+        und den Treffen-Vorlagen.
+      questions:
+        - id: which-documents
+          question: Welche Dokumente braucht Schicht 5?
+          answer: Ein Betriebshandbuch, ein Rollenverzeichnis und Treffen-Vorlagen.
+          ref: 7.6.1
+    es:
+      title: Artefactos
+      inShort: >-
+        La Capa 5 vive en tres documentos vivos: el Manual de Operaciones, el Registro de Roles y
+        las Plantillas de Reunión.
+      questions:
+        - id: which-documents
+          question: ¿Qué documentos necesita la Capa 5?
+          answer: Un Manual de Operaciones, un Registro de Roles y Plantillas de Reunión.
+          ref: 7.6.1
+    fr:
+      title: Artefacts
+      inShort: >-
+        La Couche 5 vit dans trois documents vivants : le Manuel des opérations, le Registre des
+        rôles et les Modèles de réunion.
+      questions:
+        - id: which-documents
+          question: De quels documents la Couche 5 a-t-elle besoin ?
+          answer: D'un Manuel des opérations, d'un Registre des rôles et de Modèles de réunion.
+          ref: 7.6.1
+    pt-br:
+      title: Artefatos
+      inShort: >-
+        A Camada 5 vive em três documentos vivos: o Manual de Operações, o Registro de Papéis e os
+        Modelos de Reunião.
+      questions:
+        - id: which-documents
+          question: De quais documentos a Camada 5 precisa?
+          answer: Um Manual de Operações, um Registro de Papéis e Modelos de Reunião.
           ref: 7.6.1
 - ref: '7.7'
   layer: 5
@@ -773,6 +3493,64 @@
             Not for critical processes. They cannot rest solely on individual memory, goodwill or
             informal handover.
           ref: 7.7.2
+    de:
+      title: Schicht-Invarianten
+      inShort: >-
+        Die operativen harten Grenzen sind: jede Verantwortung hat eine Rolle, nichts Kritisches
+        lebt nur in jemandes Kopf, die Arbeitslast ist begrenzt, und der Zugang zu Informationen ist
+        klar.
+      questions:
+        - id: goodwill
+          question: >-
+            Können wir uns auf ein paar engagierte Menschen verlassen, die einfach die Dinge
+            erledigen?
+          answer: >-
+            Nicht bei kritischen Prozessen. Sie dürfen nicht allein auf individuellem Gedächtnis,
+            Wohlwollen oder informeller Übergabe ruhen.
+          ref: 7.7.2
+    es:
+      title: Invariantes de Capa
+      inShort: >-
+        Los límites operativos infranqueables son que cada responsabilidad tenga un rol, que nada
+        crítico viva solo en la cabeza de alguien, que la carga de trabajo esté limitada y que el
+        acceso a la información sea claro.
+      questions:
+        - id: goodwill
+          question: >-
+            ¿Podemos apoyarnos en unas pocas personas comprometidas que simplemente sacan las cosas
+            adelante?
+          answer: >-
+            No para procesos críticos. No pueden depender únicamente de la memoria individual, de la
+            buena voluntad o de una entrega informal.
+          ref: 7.7.2
+    fr:
+      title: Invariants de couche
+      inShort: >-
+        Les limites opérationnelles strictes sont les suivantes : chaque responsabilité a un rôle,
+        rien de critique ne vit uniquement dans la tête de quelqu'un, la charge de travail est
+        plafonnée et l'accès à l'information est clair.
+      questions:
+        - id: goodwill
+          question: Pouvons-nous compter sur quelques personnes engagées qui font simplement ce qu'il faut ?
+          answer: >-
+            Pas pour les processus critiques. Ils ne peuvent pas reposer uniquement sur la mémoire
+            individuelle, la bonne volonté ou une transmission informelle.
+          ref: 7.7.2
+    pt-br:
+      title: Invariantes da Camada
+      inShort: >-
+        Os limites rígidos operacionais são que toda responsabilidade tem um papel, nada crítico
+        existe apenas na cabeça de alguém, a carga de trabalho é limitada e o acesso à informação é
+        claro.
+      questions:
+        - id: goodwill
+          question: >-
+            Podemos contar com algumas pessoas dedicadas que simplesmente fazem as coisas
+            acontecerem?
+          answer: >-
+            Não para processos críticos. Eles não podem depender apenas da memória individual, da
+            boa vontade ou de passagens informais.
+          ref: 7.7.2
 - ref: '7.8'
   layer: 5
   i18n:
@@ -785,6 +3563,46 @@
         - id: tools
           question: Does RCOS tell us which tools to use?
           answer: No. Tooling choices for documentation and coordination are optional.
+          ref: 7.8.2
+    de:
+      title: Explizierungsregeln
+      inShort: >-
+        Rollen, Treffen und Informationszugang müssen explizit sein. Werkzeuge, Zeitpläne und
+        persönliche Arbeitsstile liegen bei euch.
+      questions:
+        - id: tools
+          question: Schreibt RCOS uns vor, welche Werkzeuge wir nutzen?
+          answer: Nein. Die Wahl der Werkzeuge für Dokumentation und Koordination ist optional.
+          ref: 7.8.2
+    es:
+      title: Reglas de Explicitud
+      inShort: >-
+        Los roles, las reuniones y el acceso a la información tienen que ser explícitos. Las
+        herramientas, los horarios y los estilos personales de trabajo dependen de ustedes.
+      questions:
+        - id: tools
+          question: ¿RCOS nos dice qué herramientas usar?
+          answer: No. La elección de herramientas para documentación y coordinación es opcional.
+          ref: 7.8.2
+    fr:
+      title: Règles d'explicitation
+      inShort: >-
+        Les rôles, les réunions et l'accès à l'information doivent être explicites. Les outils, les
+        horaires et les façons personnelles de travailler vous appartiennent.
+      questions:
+        - id: tools
+          question: Est-ce que RCOS nous dit quels outils utiliser ?
+          answer: Non. Les choix d'outils pour la documentation et la coordination sont optionnels.
+          ref: 7.8.2
+    pt-br:
+      title: Regras de Explicitude
+      inShort: >-
+        Papéis, reuniões e acesso à informação precisam ser explícitos. Ferramentas, horários e
+        estilos pessoais de trabalho ficam a critério de vocês.
+      questions:
+        - id: tools
+          question: O RCOS diz quais ferramentas devemos usar?
+          answer: Não. As escolhas de ferramentas para documentação e coordenação são opcionais.
           ref: 7.8.2
 - ref: '8.1'
   layer: 6
@@ -805,6 +3623,72 @@
           question: How do we change something in Layer 0?
           answer: As a constitutional change, through the constitutional decision mechanism.
           ref: 8.1.4
+    de:
+      title: Änderungsmechanismen
+      inShort: >-
+        Regeln zu ändern folgt einem eigenen schriftlichen Verfahren. Jeder Vorschlag sagt, was er
+        ändert, wer darüber entscheidet und wie er überprüft wird.
+      questions:
+        - id: proposal-contents
+          question: Was muss ein Änderungsvorschlag sagen?
+          answer: >-
+            Was er betrifft, den Entscheidungstyp und den Entscheidungsweg, die beabsichtigte
+            Wirkung und die Risiken, wann er in Kraft tritt und wie bestehende Rollen,
+            Vereinbarungen oder Aufzeichnungen übergehen.
+          ref: 8.1.3
+        - id: layer-0-change
+          question: Wie ändern wir etwas in Schicht 0?
+          answer: Als Verfassungsänderung, über den Entscheidungsmechanismus für Verfassungsänderungen.
+          ref: 8.1.4
+    es:
+      title: Mecanismos de cambio
+      inShort: >-
+        Cambiar las reglas sigue su propio proceso escrito. Cada propuesta dice qué cambia, quién lo
+        decide y cómo se revisará.
+      questions:
+        - id: proposal-contents
+          question: ¿Qué tiene que decir una propuesta de cambio?
+          answer: >-
+            A qué afecta, el tipo de decisión y su vía, el efecto que busca y sus riesgos, cuándo
+            entra en vigor y cómo migran los roles, acuerdos o registros existentes.
+          ref: 8.1.3
+        - id: layer-0-change
+          question: ¿Cómo cambiamos algo en la Capa 0?
+          answer: Como un cambio constitucional, a través del mecanismo de decisión constitucional.
+          ref: 8.1.4
+    fr:
+      title: Mécanismes de changement
+      inShort: >-
+        Changer les règles suit son propre processus écrit. Chaque proposition dit ce qu'elle
+        change, qui en décide, et comment elle sera réexaminée.
+      questions:
+        - id: proposal-contents
+          question: Que doit contenir une proposition de changement ?
+          answer: >-
+            Ce qu'elle affecte, le type de décision et le chemin de décision, l'effet visé et les
+            risques, la date d'entrée en vigueur, et la manière dont les rôles, accords ou archives
+            existants migrent.
+          ref: 8.1.3
+        - id: layer-0-change
+          question: Comment changer quelque chose dans la Couche 0 ?
+          answer: Comme un changement constitutionnel, par le mécanisme de décision constitutionnelle.
+          ref: 8.1.4
+    pt-br:
+      title: Mecanismos de Mudança
+      inShort: >-
+        Mudar as regras segue um processo escrito próprio. Toda proposta diz o que muda, quem decide
+        e como será revisada.
+      questions:
+        - id: proposal-contents
+          question: O que uma proposta de mudança precisa dizer?
+          answer: >-
+            O que ela afeta, o tipo e o caminho de decisão, o efeito pretendido e os riscos, quando
+            entra em vigor e como papéis, acordos ou registros existentes são migrados.
+          ref: 8.1.3
+        - id: layer-0-change
+          question: Como mudamos algo na Camada 0?
+          answer: Como uma mudança constitucional, pelo mecanismo de decisão constitucional.
+          ref: 8.1.4
 - ref: '8.2'
   layer: 6
   i18n:
@@ -823,6 +3707,74 @@
           answer: >-
             Superseded rules stay accessible, with the dates they were in force, for audits,
             learning and disputes.
+          ref: 8.2.4
+    de:
+      title: Versionierung und Autorität
+      inShort: >-
+        Jede angenommene Änderung bekommt eine Version, damit alle erkennen können, welche Regeln
+        heute gelten und welche vorher galten.
+      questions:
+        - id: understood-change
+          question: Alle waren sich in der Küche einig. Gilt die Regeländerung?
+          answer: >-
+            Nein. Informelle, nicht dokumentierte oder „stillschweigend verstandene“ Regeländerungen
+            sind nicht gültig.
+          ref: 8.2.5
+        - id: old-rules
+          question: Können wir Regeln löschen, die nicht mehr gelten?
+          answer: >-
+            Ersetzte Regeln bleiben zugänglich, mit den Zeiträumen, in denen sie galten – für
+            Prüfungen, Lernen und Streitfälle.
+          ref: 8.2.4
+    es:
+      title: Versionado y autoridad
+      inShort: >-
+        Cada cambio adoptado recibe una versión, para que cualquiera pueda saber qué reglas están en
+        vigor hoy y cuáles se aplicaban antes.
+      questions:
+        - id: understood-change
+          question: Todo el mundo estuvo de acuerdo en la cocina. ¿Cuenta el cambio de regla?
+          answer: No. Los cambios de regla informales, no documentados o "sobreentendidos" no son válidos.
+          ref: 8.2.5
+        - id: old-rules
+          question: ¿Podemos borrar reglas que ya no se aplican?
+          answer: >-
+            Las reglas sustituidas siguen accesibles, con las fechas en que estuvieron en vigor,
+            para auditorías, aprendizaje y disputas.
+          ref: 8.2.4
+    fr:
+      title: Versionnement et autorité
+      inShort: >-
+        Chaque changement adopté reçoit une version, pour que tout le monde puisse dire quelles
+        règles sont en vigueur aujourd'hui et lesquelles s'appliquaient avant.
+      questions:
+        - id: understood-change
+          question: Tout le monde était d'accord dans la cuisine. Le changement de règle compte-t-il ?
+          answer: >-
+            Non. Les changements de règles informels, non documentés ou « tacites » ne sont pas
+            valides.
+          ref: 8.2.5
+        - id: old-rules
+          question: Pouvons-nous supprimer les règles qui ne s'appliquent plus ?
+          answer: >-
+            Les règles remplacées restent accessibles, avec les dates auxquelles elles étaient en
+            vigueur, pour les audits, l'apprentissage et les litiges.
+          ref: 8.2.4
+    pt-br:
+      title: Versionamento e Autoridade
+      inShort: >-
+        Toda mudança adotada recebe uma versão, para que qualquer pessoa saiba quais regras valem
+        hoje e quais valiam antes.
+      questions:
+        - id: understood-change
+          question: Todo mundo concordou na cozinha. A mudança de regra vale?
+          answer: Não. Mudanças de regra informais, não documentadas ou "tácitas" não são válidas.
+          ref: 8.2.5
+        - id: old-rules
+          question: Podemos apagar regras que não valem mais?
+          answer: >-
+            Regras substituídas continuam acessíveis, com as datas em que estiveram em vigor, para
+            auditorias, aprendizado e disputas.
           ref: 8.2.4
 - ref: '8.3'
   layer: 6
@@ -843,6 +3795,72 @@
           question: What if an experiment starts causing harm?
           answer: It is suspended or ended immediately as a protective action, and reviewed afterwards.
           ref: 8.3.5
+    de:
+      title: Experimente
+      inShort: >-
+        Experimente erlauben euch, für eine begrenzte Zeit etwas Neues auszuprobieren, mit klaren
+        Erfolgskriterien und einem Weg zurück.
+      questions:
+        - id: experiment-invariant
+          question: Kann ein Experiment eine Invariante außer Kraft setzen?
+          answer: >-
+            Nein. Experimente können die Invarianten von Schicht 0 nicht übergehen und die
+            Governance-Grenzen von Schicht 2 nicht umgehen.
+          ref: 8.3.3
+        - id: experiment-harm
+          question: Was, wenn ein Experiment anfängt, Schaden anzurichten?
+          answer: Es wird als Schutzmaßnahme sofort ausgesetzt oder beendet und danach überprüft.
+          ref: 8.3.5
+    es:
+      title: Experimentos
+      inShort: >-
+        Los experimentos te permiten probar algo nuevo durante un tiempo limitado, con criterios de
+        éxito claros y una vía de retorno.
+      questions:
+        - id: experiment-invariant
+          question: ¿Puede un experimento suspender un invariante?
+          answer: >-
+            No. Los experimentos no pueden anular los invariantes de la Capa 0 ni saltarse las
+            restricciones de gobernanza de la Capa 2.
+          ref: 8.3.3
+        - id: experiment-harm
+          question: ¿Y si un experimento empieza a causar daño?
+          answer: Se suspende o se termina de inmediato como medida de protección, y se revisa después.
+          ref: 8.3.5
+    fr:
+      title: Expérimentations
+      inShort: >-
+        Les expérimentations permettent d'essayer quelque chose de nouveau pour une durée limitée,
+        avec des critères de réussite clairs et un chemin de retour.
+      questions:
+        - id: experiment-invariant
+          question: Une expérimentation peut-elle suspendre un invariant ?
+          answer: >-
+            Non. Les expérimentations ne peuvent pas passer outre les invariants de la Couche 0 ni
+            contourner les contraintes de gouvernance de la Couche 2.
+          ref: 8.3.3
+        - id: experiment-harm
+          question: Et si une expérimentation commence à causer du tort ?
+          answer: >-
+            Elle est suspendue ou arrêtée immédiatement comme action de protection, et réexaminée
+            ensuite.
+          ref: 8.3.5
+    pt-br:
+      title: Experimentos
+      inShort: >-
+        Experimentos permitem testar algo novo por um tempo limitado, com critérios de sucesso
+        claros e um caminho de volta.
+      questions:
+        - id: experiment-invariant
+          question: Um experimento pode suspender uma invariante?
+          answer: >-
+            Não. Experimentos não podem passar por cima das invariantes da Camada 0 nem contornar as
+            restrições de governança da Camada 2.
+          ref: 8.3.3
+        - id: experiment-harm
+          question: E se um experimento começar a causar dano?
+          answer: Ele é suspenso ou encerrado imediatamente como ação protetiva, e revisado depois.
+          ref: 8.3.5
 - ref: '8.4'
   layer: 6
   i18n:
@@ -855,6 +3873,52 @@
         - id: repeated-failure
           question: The same problem keeps happening. What now?
           answer: Repeated failure patterns trigger a structural review rather than individual blame.
+          ref: 8.4.4
+    de:
+      title: Lernen und Feedback-Erfassung
+      inShort: >-
+        Schreibt auf, was schiefgelaufen ist und was ihr gelernt habt, damit die Gemeinschaft als
+        Ganzes lernt, statt Einzelnen die Schuld zu geben.
+      questions:
+        - id: repeated-failure
+          question: Dasselbe Problem tritt immer wieder auf. Was nun?
+          answer: >-
+            Wiederkehrende Fehlermuster lösen eine strukturelle Überprüfung aus, statt einzelne
+            Personen zu beschuldigen.
+          ref: 8.4.4
+    es:
+      title: Captura de aprendizajes y retroalimentación
+      inShort: >-
+        Anota qué salió mal y qué aprendieron, para que la comunidad aprenda en conjunto en lugar de
+        culpar a personas individuales.
+      questions:
+        - id: repeated-failure
+          question: El mismo problema se repite. ¿Y ahora qué?
+          answer: >-
+            Los patrones de fallo repetidos activan una revisión estructural en lugar de culpar a
+            personas individuales.
+          ref: 8.4.4
+    fr:
+      title: Capture des apprentissages et des retours
+      inShort: >-
+        Écrivez ce qui a mal tourné et ce que vous en avez appris, pour que la communauté apprenne
+        dans son ensemble au lieu de blâmer des personnes.
+      questions:
+        - id: repeated-failure
+          question: Le même problème revient sans cesse. Et maintenant ?
+          answer: >-
+            Les schémas d'échec répétés déclenchent une revue structurelle plutôt qu'un blâme
+            individuel.
+          ref: 8.4.4
+    pt-br:
+      title: Captura de Aprendizado e Feedback
+      inShort: >-
+        Registre o que deu errado e o que vocês aprenderam, para que a comunidade aprenda como um
+        todo em vez de culpar pessoas.
+      questions:
+        - id: repeated-failure
+          question: O mesmo problema fica acontecendo. E agora?
+          answer: Padrões de falha repetidos acionam uma revisão estrutural, em vez de culpa individual.
           ref: 8.4.4
 - ref: '8.5'
   layer: 6
@@ -871,6 +3935,58 @@
             Only where emergency changes are explicitly defined. They are time-bounded, cannot
             override invariants, and are reviewed and ratified or rolled back afterwards.
           ref: 8.5.3
+    de:
+      title: Änderungssicherheit und Reversibilität
+      inShort: >-
+        Bevorzugt Änderungen, die ihr zurücknehmen könnt. Große oder unumkehrbare bekommen mehr
+        Zeit, eine höhere Hürde und einen ehrlichen Blick auf die Risiken.
+      questions:
+        - id: emergency-change
+          question: Können wir Regeln im Notfall schnell ändern?
+          answer: >-
+            Nur dort, wo Notfalländerungen ausdrücklich definiert sind. Sie sind zeitlich begrenzt,
+            können Invarianten nicht übergehen und werden danach überprüft und bestätigt oder
+            zurückgenommen.
+          ref: 8.5.3
+    es:
+      title: Seguridad del cambio y reversibilidad
+      inShort: >-
+        Prefiere los cambios que puedes deshacer. Los cambios grandes o irreversibles reciben más
+        tiempo, un umbral más alto y una mirada honesta a los riesgos.
+      questions:
+        - id: emergency-change
+          question: ¿Podemos cambiar reglas rápidamente en una emergencia?
+          answer: >-
+            Solo donde los cambios de emergencia estén definidos explícitamente. Tienen un plazo
+            limitado, no pueden anular invariantes, y después se revisan y se ratifican o se
+            revierten.
+          ref: 8.5.3
+    fr:
+      title: Sécurité du changement et réversibilité
+      inShort: >-
+        Préférez les changements réversibles. Les changements importants ou irréversibles
+        bénéficient de plus de temps, d'un seuil plus élevé et d'un examen honnête des risques.
+      questions:
+        - id: emergency-change
+          question: Pouvons-nous changer les règles rapidement en cas d'urgence ?
+          answer: >-
+            Seulement là où les changements d'urgence sont explicitement définis. Ils sont limités
+            dans le temps, ne peuvent pas passer outre les invariants, et sont réexaminés puis
+            ratifiés ou annulés ensuite.
+          ref: 8.5.3
+    pt-br:
+      title: Segurança e Reversibilidade da Mudança
+      inShort: >-
+        Prefira mudanças que vocês possam desfazer. As grandes ou irreversíveis recebem mais tempo,
+        um critério mais alto e um olhar honesto sobre os riscos.
+      questions:
+        - id: emergency-change
+          question: Podemos mudar regras rapidamente numa emergência?
+          answer: >-
+            Somente onde mudanças de emergência estiverem explicitamente definidas. Elas têm prazo
+            limitado, não podem passar por cima das invariantes e depois são revisadas e ratificadas
+            ou revertidas.
+          ref: 8.5.3
 - ref: '8.6'
   layer: 6
   i18n:
@@ -883,6 +3999,46 @@
         - id: which-documents
           question: Which documents does Layer 6 need?
           answer: A Change Protocol, a Version History and a Learning Log.
+          ref: 8.6.1
+    de:
+      title: Artefakte
+      inShort: >-
+        Schicht 6 lebt in drei Dokumenten: dem Änderungsprotokoll, der Versionshistorie und dem
+        Lernprotokoll.
+      questions:
+        - id: which-documents
+          question: Welche Dokumente braucht Schicht 6?
+          answer: Ein Änderungsprotokoll, eine Versionshistorie und ein Lernprotokoll.
+          ref: 8.6.1
+    es:
+      title: Artefactos
+      inShort: >-
+        La Capa 6 vive en tres documentos: el Protocolo de Cambios, el Historial de Versiones y el
+        Registro de Aprendizajes.
+      questions:
+        - id: which-documents
+          question: ¿Qué documentos necesita la Capa 6?
+          answer: Un Protocolo de Cambios, un Historial de Versiones y un Registro de Aprendizajes.
+          ref: 8.6.1
+    fr:
+      title: Artefacts
+      inShort: >-
+        La Couche 6 vit dans trois documents : le Protocole de changement, l'Historique des versions
+        et le Journal d'apprentissage.
+      questions:
+        - id: which-documents
+          question: De quels documents la Couche 6 a-t-elle besoin ?
+          answer: Un Protocole de changement, un Historique des versions et un Journal d'apprentissage.
+          ref: 8.6.1
+    pt-br:
+      title: Artefatos
+      inShort: >-
+        A Camada 6 vive em três documentos: o Protocolo de Mudança, o Histórico de Versões e o
+        Registro de Aprendizados.
+      questions:
+        - id: which-documents
+          question: Quais documentos a Camada 6 exige?
+          answer: Um Protocolo de Mudança, um Histórico de Versões e um Registro de Aprendizados.
           ref: 8.6.1
 - ref: '8.7'
   layer: 6
@@ -899,6 +4055,55 @@
             No change can be instantaneous, implicit or unreviewable. That is what keeps change
             possible without making it a tool for capture.
           ref: 8.7.1
+    de:
+      title: Schicht-Invarianten
+      inShort: >-
+        Die harten Grenzen von Veränderung sind: Veränderung ist immer möglich, aber niemals sofort
+        oder unsichtbar – und Fehlschläge werden zu gemeinsamem Lernen, statt gelöscht zu werden.
+      questions:
+        - id: instant-change
+          question: Warum kann eine Änderung nicht sofort in Kraft treten?
+          answer: >-
+            Keine Änderung darf augenblicklich, implizit oder nicht überprüfbar sein. Genau das hält
+            Veränderung möglich, ohne sie zu einem Werkzeug der Vereinnahmung zu machen.
+          ref: 8.7.1
+    es:
+      title: Invariantes de la capa
+      inShort: >-
+        Los límites duros del cambio son que el cambio siempre es posible pero nunca instantáneo ni
+        invisible, y que los fallos se convierten en aprendizaje compartido en lugar de borrarse.
+      questions:
+        - id: instant-change
+          question: ¿Por qué un cambio no puede entrar en vigor de inmediato?
+          answer: >-
+            Ningún cambio puede ser instantáneo, implícito ni imposible de revisar. Eso es lo que
+            mantiene el cambio posible sin convertirlo en una herramienta de captura.
+          ref: 8.7.1
+    fr:
+      title: Invariants de couche
+      inShort: >-
+        Les limites strictes du changement sont que le changement est toujours possible mais jamais
+        instantané ni invisible, et que les échecs deviennent un apprentissage partagé au lieu
+        d'être effacés.
+      questions:
+        - id: instant-change
+          question: Pourquoi un changement ne peut-il pas prendre effet immédiatement ?
+          answer: >-
+            Aucun changement ne peut être instantané, implicite ou non réexaminable. C'est ce qui
+            garde le changement possible sans en faire un outil de captation.
+          ref: 8.7.1
+    pt-br:
+      title: Invariantes da Camada
+      inShort: >-
+        Os limites rígidos da mudança são: a mudança é sempre possível, mas nunca instantânea ou
+        invisível, e as falhas se tornam aprendizado compartilhado em vez de serem apagadas.
+      questions:
+        - id: instant-change
+          question: Por que uma mudança não pode entrar em vigor imediatamente?
+          answer: >-
+            Nenhuma mudança pode ser instantânea, implícita ou não revisável. É isso que mantém a
+            mudança possível sem transformá-la em ferramenta de captura.
+          ref: 8.7.1
 - ref: '8.8'
   layer: 6
   i18n:
@@ -913,4 +4118,53 @@
           answer: >-
             No. The pace of innovation stays optional and out of scope; only the way change happens
             has to be explicit.
+          ref: 8.8.3
+    de:
+      title: Explizitätsregeln
+      inShort: >-
+        Wie Regeln sich ändern, wie Versionen funktionieren und wie Experimente enden, muss
+        ausdrücklich geregelt sein. Wie schnell ihr Neues ausprobiert, ist eure Entscheidung.
+      questions:
+        - id: pace
+          question: Erwartet RCOS von uns, dass wir uns ständig verändern?
+          answer: >-
+            Nein. Das Tempo der Erneuerung bleibt optional und außerhalb des Geltungsbereichs; nur
+            die Art, wie Veränderung geschieht, muss ausdrücklich geregelt sein.
+          ref: 8.8.3
+    es:
+      title: Reglas de explicitud
+      inShort: >-
+        Cómo cambian las reglas, cómo funcionan las versiones y cómo terminan los experimentos tiene
+        que ser explícito. La velocidad a la que innovan es su decisión.
+      questions:
+        - id: pace
+          question: ¿RCOS espera que sigamos cambiando?
+          answer: >-
+            No. El ritmo de innovación queda opcional y fuera del alcance; solo la forma en que
+            ocurre el cambio tiene que ser explícita.
+          ref: 8.8.3
+    fr:
+      title: Règles d'explicitation
+      inShort: >-
+        La manière dont les règles changent, le fonctionnement des versions et la façon dont les
+        expérimentations prennent fin doivent être explicites. La vitesse à laquelle vous innovez
+        est votre choix.
+      questions:
+        - id: pace
+          question: RCOS attend-il de nous que nous changions continuellement ?
+          answer: >-
+            Non. Le rythme de l'innovation reste optionnel et hors périmètre ; seule la manière dont
+            le changement se produit doit être explicite.
+          ref: 8.8.3
+    pt-br:
+      title: Regras de Explicitude
+      inShort: >-
+        Como as regras mudam, como as versões funcionam e como os experimentos terminam tem que ser
+        explícito. O ritmo da inovação é escolha de vocês.
+      questions:
+        - id: pace
+          question: O RCOS espera que a gente esteja sempre mudando?
+          answer: >-
+            Não. O ritmo da inovação permanece opcional e fora do escopo; só a forma como a mudança
+            acontece tem que ser explícita.
           ref: 8.8.3

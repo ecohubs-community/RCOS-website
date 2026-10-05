@@ -7,7 +7,7 @@ summary: >-
 parentId: 6acbe9a7
 order: 1
 lang: pt-br
-sourceHash: bc1902a5
+sourceHash: 6d391b8c
 ---
 
 Um teste de estresse é mais útil quando uma comunidade o conduz *junta*, em voz alta, em vez de uma pessoa lê-lo sozinha. Este guia transforma qualquer teste da biblioteca em uma sessão estruturada. Funciona tanto para um grupo em formação antecipando problemas quanto para um já estabelecido auditando onde realmente se encontra.

@@ -1,0 +1,177 @@
+lang: es
+sourceHash: 1e9b7b71
+sections:
+  '2.1':
+    inShort: Tu comunidad necesita una razón de existir con la que se pueda comprobar cualquier otra decisión.
+    questions:
+      more-than-one-purpose:
+        question: ¿Podemos tener más de un propósito?
+        answer: Sí, como propósitos secundarios. Lo único es que no pueden entrar en conflicto con el propósito primario ni pasar por encima de él.
+      change-purpose:
+        question: ¿Cómo cambiamos nuestro propósito más adelante?
+        answer: Solo mediante una decisión constitucional (Capa 2), llevada a cabo con el proceso de cambio de la Capa 6. Un propósito que cambia a menudo es una estrategia, no un propósito.
+      goal-as-purpose:
+        question: ¿Nuestro propósito puede ser un proyecto, como construir una casa?
+        answer: No. Un proyecto termina cuando está hecho; el propósito primario describe por qué existe la comunidad en absoluto, y sobrevive a cualquier proyecto concreto.
+  '2.2':
+    inShort: Escribe qué gobierna la comunidad y, con la misma claridad, qué no. Todo lo que dejes sin listar queda fuera de tu autoridad.
+    questions:
+      forgot-something:
+        question: ¿Qué pasa si olvidamos listar algo?
+        answer: Entonces queda fuera del alcance hasta que lo añadan. La comunidad no tiene autoridad sobre cosas que nunca declaró.
+      private-lives:
+        question: ¿La comunidad puede opinar sobre la vida privada de las personas miembro?
+        answer: Solo donde la declaración de alcance lo diga explícitamente. Las personas, los bienes y los ámbitos declarados fuera de alcance están más allá de la autoridad de la comunidad.
+      what-to-include:
+        question: ¿Qué tiene que cubrir una declaración de alcance?
+        answer: Al menos los bienes que gobiernan, los ámbitos sobre los que deciden y las actividades y responsabilidades bajo control colectivo, más una lista explícita de lo que queda fuera de alcance.
+  '2.3':
+    inShort: Los invariantes son los pocos límites duros que tu comunidad pone fuera del alcance de las decisiones cotidianas. Ni siquiera una votación unánime puede pasar por encima de ellos a la ligera.
+    questions:
+      emergency:
+        question: ¿Una emergencia puede justificar romper un invariante?
+        answer: No. Ninguna decisión, rol, proceso ni medida de emergencia puede pasar por encima de un invariante.
+      change-invariant:
+        question: ¿Podemos cambiar un invariante alguna vez?
+        answer: Sí, pero solo mediante un proceso de cambio constitucional como se define en la Capa 2 y la Capa 6.
+      invariant-vs-constraint:
+        question: ¿En qué se diferencia un invariante de una restricción de identidad?
+        answer: Un invariante es un límite duro sobre lo que nunca debe ocurrir, como vender la tierra. Una restricción de identidad describe quién es la comunidad y qué exige la participación, como límites ecológicos o de comportamiento.
+      how-many:
+        question: ¿Cuántos invariantes deberíamos tener?
+        answer: RCOS no fija un número. Menos invariantes y más claros son más fáciles de proteger; cada uno es una promesa que nunca se puede romper a la ligera.
+  '2.4':
+    inShort: Si formar parte de esta comunidad viene con límites, como cómo se comporta la gente o a qué se compromete, dilo abiertamente y di cómo se comprueba.
+    questions:
+      unwritten-norms:
+        question: Compartimos valores que nadie ha escrito. ¿Eso es un problema?
+        answer: Lo es si esos valores deciden quién puede participar o cómo se trata a la gente. Las restricciones de identidad que importan en la práctica tienen que declararse y aplicarse mediante procesos definidos, nunca de manera informal.
+      testable:
+        question: ¿Qué hace que una restricción de identidad sea comprobable?
+        answer: Que otra persona pueda mirar una situación y coincidir en si la restricción se cumplió o se rompió, y que exista un proceso definido para lo que pasa después.
+  '2.5':
+    inShort: La Capa 0 vive en cuatro documentos breves. Toda persona miembro puede leerlos, se conserva cada versión y cada uno se adoptó mediante una ratificación formal.
+    questions:
+      which-documents:
+        question: ¿Qué documentos necesita la Capa 0?
+        answer: Una Carta de Propósito, una Declaración de Alcance, un Registro de Invariantes y un Registro de Restricciones de Identidad.
+      contradiction:
+        question: ¿Qué pasa si dos de estos documentos se contradicen?
+        answer: Entonces la comunidad no cumple con RCOS-Core hasta que la contradicción se resuelva.
+templates:
+  purpose-charter.primary-purpose:
+    question: ¿Por qué existe esta comunidad — en una frase que siga siendo verdad dentro de diez años?
+    prompts:
+      - Si pudiéramos quedarnos con una sola razón para existir, ¿cuál sería?
+      - ¿Seguiría siendo verdad dentro de diez años, cuando nuestros proyectos actuales estén terminados o abandonados?
+      - ¿Es una razón duradera — no un proyecto, una estrategia ni una meta que algún día podríamos dar por cumplida?
+      - ¿Es lo bastante clara para que podamos darnos cuenta cuando una decisión, o una forma de gastar nuestro tiempo o nuestro dinero, va en su contra?
+    examples:
+      - Existimos para que quienes vivimos aquí podamos compartir tierra, viviendas y trabajo diario de una manera que deje el suelo, el agua y nuestro vecindario mejor de como los encontramos.
+  purpose-charter.secondary-purposes:
+    question: ¿Qué propósitos secundarios perseguimos — sin competir con la razón por la que existimos?
+    prompts:
+      - Además de nuestro propósito primario, ¿hacia qué otros resultados concretos trabajamos, si hay alguno?
+      - 'Para cada uno: ¿podría alguna vez desviar tiempo, dinero o personas de nuestro propósito primario — y si pudiera, es realmente secundario?'
+      - ¿Decimos con claridad que cuando un propósito secundario choca con el primario, gana el primario?
+    examples:
+      - 'Junto a nuestro propósito primario perseguimos tres propósitos secundarios: mantener las viviendas asequibles para las personas miembro con ingresos modestos, llevar una biblioteca abierta de herramientas para el barrio y compartir lo que aprendemos sobre vivir cooperativamente en dos jornadas de puertas abiertas al año. Ninguno de ellos puede pasar por encima de nuestro propósito primario; si uno entra en conflicto con él, el propósito primario tiene precedencia y el secundario se reduce o se abandona.'
+  purpose-charter.non-goals-and-exclusions:
+    question: ¿Qué no somos deliberadamente, por tentador que resulte?
+    prompts:
+      - ¿Qué podrían suponer que somos las personas de fuera o las nuevas, y no somos — un partido político, un negocio, un grupo religioso, una organización de caridad?
+      - ¿Qué direcciones tentadoras han surgido antes, o es probable que surjan, que queremos descartar ya?
+      - 'Para cada una: ¿está formulada con suficiente claridad para que cualquiera pueda señalar una actividad y decir que cruza la línea?'
+    examples:
+      - 'No somos un partido político, y como comunidad no respaldamos candidaturas ni campañas. No somos un vehículo de inversión: nadie se une para obtener un rendimiento, y los bienes compartidos nunca se gestionan para generar beneficio a las personas miembro. No somos un grupo religioso ni espiritual, y no se espera ninguna creencia ni práctica de quien participa.'
+  purpose-charter.conditions-for-purpose-change:
+    question: ¿Qué haría falta para cambiar por qué existimos — y quién tendría que estar de acuerdo?
+    prompts:
+      - ¿Tratamos el cambio de nuestro propósito primario como una de nuestras decisiones del nivel más alto (constitucionales), y no como una decisión ordinaria?
+      - ¿Cuántas personas tienen que estar de acuerdo, y quiénes cuentan — todas las personas miembro, solo las de pleno derecho, o quienes votan?
+      - ¿Cuánto tiempo debemos esperar entre la decisión y la entrada en vigor del cambio?
+      - ¿Dónde se registra el cambio, para que tanto la redacción antigua como la nueva sigan visibles?
+      - ¿Nuestros propósitos secundarios necesitan el mismo umbral para cambiar, o uno más bajo?
+    examples:
+      - Cambiar el propósito primario es una decisión constitucional. La propuesta debe compartirse 30 días antes de la votación, y se aprueba solo con al menos dos tercios de los votos emitidos por las personas miembro de pleno derecho, votando al menos la mitad de todas ellas. El cambio entra en vigor 30 días después y se registra, junto con la redacción anterior, en nuestro historial de versiones. Los propósitos secundarios se pueden cambiar mediante una decisión comunitaria ordinaria.
+  purpose-charter.ratification-record:
+    question: ¿Quién adoptó esta carta, cuándo y cómo se decidió?
+  scope-declaration.in-scope-assets:
+    question: ¿Qué posee o custodia la comunidad en conjunto?
+    prompts:
+      - ¿Qué poseemos, mantenemos o cuidamos en conjunto — dinero, tierra, edificios, equipamiento, software, sitios web, cuentas, nuestro nombre y nuestro logo?
+      - 'Para cada cosa: ¿qué es exactamente — qué cuenta, qué parcela, qué dominio — para que nadie pueda discutir a qué nos referimos?'
+      - ¿Qué tienen a su nombre las personas individuales en representación de la comunidad, como una cuenta o un dominio — y lo contamos como nuestro?
+      - ¿Hay algo que en la práctica compartimos y que nunca hemos nombrado? (Qué decisiones y qué trabajo son colectivos son preguntas aparte.)
+    examples:
+      - 'El colectivo gobierna: la tesorería compartida en nuestra cartera multifirma de dos de tres; el sitio web del proyecto y su dominio; los repositorios de código bajo la cuenta de organización del colectivo; nuestro servidor de chat y nuestras cuentas en redes sociales; y el nombre, el logo y las guías publicadas del colectivo. Cualquier cuenta que una persona miembro registre en representación del colectivo pertenece al colectivo.'
+  scope-declaration.in-scope-decision-domains:
+    question: ¿Qué decisiones son del grupo y no de las personas individuales?
+    prompts:
+      - ¿Qué tipos de preguntas decidimos juntas — por ejemplo cómo decidimos, quién puede entrar, cómo se gasta el dinero compartido, cómo se usan los espacios compartidos?
+      - 'Para cada uno: ¿dónde se detiene — qué queda en manos de una persona, un hogar o alguien de fuera?'
+      - ¿Hay decisiones que hoy toma una sola persona por costumbre y que queremos nombrar como del grupo — o decir con claridad que no lo son? (Cómo se toma cada tipo de decisión es una pregunta aparte.)
+    examples:
+      - 'Decidimos juntas sobre: nuestras reglas de gobernanza y cómo se toman las decisiones; quién puede entrar y en qué condiciones; cómo se gastan el presupuesto compartido y las reservas; el uso y el mantenimiento de la casa, el jardín y las habitaciones de invitados compartidos; y cualquier acuerdo hecho en nombre de la comunidad con alguien de fuera. Las decisiones sobre el piso propio de cada hogar quedan en manos de ese hogar.'
+  scope-declaration.in-scope-activities-and-responsibilities:
+    question: ¿Qué trabajo y qué responsabilidades son colectivos?
+    prompts:
+      - ¿De qué trabajo continuo somos responsables como comunidad — mantenimiento, acogida de nuevas personas miembro, llevar las cuentas, cuidar nuestro nombre, recibir visitas?
+      - 'Para cada cosa: ¿se hace con regularidad o solo cuando hace falta, y qué sale mal si nadie lo hace?'
+      - ¿Hay alguien haciendo hoy un trabajo que nadie asumió formalmente — y debería ser colectivo, o deberíamos decir que no lo es? (Quién hace cada parte del trabajo se decide al asignar los roles.)
+    examples:
+      - 'Como comunidad somos responsables de: mantener el suministro de agua compartido, los caminos y el sistema solar; llevar la huerta y el frutal; admitir y acoger a las nuevas personas miembro; llevar las cuentas e informar sobre ellas dos veces al año; y recibir a visitas y voluntariado. El trabajo en las viviendas privadas y los jardines personales no es una responsabilidad colectiva.'
+  scope-declaration.explicitly-out-of-scope:
+    question: ¿Qué no es asunto de la comunidad — y seguirá sin serlo?
+    prompts:
+      - ¿Sobre qué podría pensar la gente que la comunidad tiene algo que decir, y no lo tiene — el dinero de las personas miembro, sus relaciones, sus trabajos, sus creencias u otros proyectos a los que pertenecen?
+      - ¿Con qué organizaciones, servicios o vecindario de fuera colaboramos sin tener autoridad sobre ellos?
+      - ¿Decimos con claridad que todo lo que no esté nombrado dentro del alcance queda fuera del alcance, aunque esta lista no lo mencione?
+      - ¿Qué pasa con una decisión que se mete en algo de esta lista — simplemente no tiene efecto?
+    examples:
+      - 'Lo siguiente queda fuera del alcance: los ingresos personales, los ahorros y las finanzas privadas de las personas miembro; sus relaciones privadas y cómo organizan su propia casa; su trabajo remunerado y sus proyectos fuera de la comunidad; y las empresas de alojamiento y los servicios de software que usamos, cuyos términos aceptamos pero no gobernamos. Todo lo que no se declare dentro del alcance queda fuera del alcance, y una decisión comunitaria que se meta en estas áreas no tiene efecto.'
+  scope-declaration.ratification-record:
+    question: ¿Quién adoptó este alcance, cuándo y cómo se decidió?
+  invariants-register.active-invariants:
+    question: ¿Qué no debe pasar nunca aquí, sean cuales sean las circunstancias o la mayoría?
+    prompts:
+      - ¿Qué no debe pasar nunca aquí, ni siquiera en una emergencia ni después de una votación muy respaldada? Escribe cada caso en una frase clara.
+      - 'Para cada uno: ¿cómo sabría cualquiera, sin discusión, que se ha roto?'
+      - ¿Cada uno vale en todas partes — en la membresía, el dinero, los roles, la seguridad y la forma de decidir — o lo hemos formulado de modo que solo cubre un área?
+      - Cuando una decisión, un rol o cualquier otra regla choca con uno de estos, ¿decimos con claridad que gana el invariante y que lo otro cede?
+      - ¿Es la lista lo bastante corta para que cada elemento sea de verdad absoluto — y hay algo en ella que en realidad es solo una preferencia fuerte?
+      - ¿Estamos de acuerdo en que estos solo se pueden cambiar mediante nuestro proceso de cambio del nivel más alto (constitucional), nunca por una decisión ordinaria?
+    examples:
+      - A nadie se le puede impedir irse de la comunidad, ni castigar por irse. Ninguna persona ni rol puede ejercer una autoridad que no esté escrita en nuestros documentos de gobernanza. La seguridad física de cualquier persona, y sobre todo de un niño o una niña, está por delante del rol, la reputación o la participación de cualquiera. Estos valen para cada regla, rol, decisión y medida de emergencia que tenemos; donde algo entre en conflicto con ellos, prevalecen, y solo cambian mediante nuestro proceso de cambio constitucional.
+  invariants-register.ratification-record:
+    question: ¿Quién adoptó estos invariantes, cuándo y cómo se decidió?
+  identity-constraints-register.active-identity-constraints:
+    question: ¿Qué reglas no negociables se derivan de quiénes somos como comunidad — sobre comportamiento, entrada, cultura o tierra?
+    prompts:
+      - ¿Qué reglas valen para todas las personas que participan, sea lo que sea que quiera una mayoría un día dado?
+      - 'Para cada una: ¿a quién se aplica?'
+      - ¿Qué significa en la práctica para esas personas — qué no pueden hacer, o qué debe cumplirse antes de que puedan entrar?
+      - ¿Por qué hace falta — qué saldría mal aquí sin ella?
+    examples:
+      - Solo las personas de 18 años o más pueden ser miembros.
+      - No se puede exigir ningún sistema de creencias, religión ni postura política para entrar o participar.
+      - Nada de lo que haga la comunidad puede causar un daño duradero a la tierra que custodia; cada decisión sobre tierra y edificios dice cómo se comprobó.
+  identity-constraints-register.enforcement-and-testability:
+    question: ¿Cómo comprobaría cualquiera si una restricción se está cumpliendo — y qué pasa si no?
+    prompts:
+      - 'Para cada regla: ¿cómo se daría cuenta cualquiera de que no se está cumpliendo?'
+      - ¿Qué proceso escrito se ocupa de un incumplimiento, para que no quede en manos de quien proteste más fuerte?
+      - ¿Quién lo vigila, y cada cuánto se vuelve a revisar?
+    examples:
+      - 'Cada restricción nombra cómo se manifestaría un incumplimiento y quién lo vigila: el grupo de tierra comprueba las restricciones ecológicas en su recorrido trimestral, y cualquiera puede reportar un incumplimiento de una restricción de comportamiento a la coordinación de rendición de cuentas. Cada incumplimiento reportado pasa por nuestro proceso de rendición de cuentas — nunca una advertencia privada ni una exclusión silenciosa. Revisamos todo el registro en el encuentro anual de reflexión.'
+  identity-constraints-register.conditions-for-change:
+    question: ¿Cómo se añaden, cambian o eliminan nuestras reglas no negociables — y quién tiene que estar de acuerdo?
+    prompts:
+      - ¿Qué tipo de decisión hace falta para añadir, cambiar o eliminar una de nuestras reglas no negociables — una ordinaria, o una de nuestras decisiones del nivel más alto (constitucionales)?
+      - ¿Cuántas personas tienen que estar de acuerdo, y quiénes cuentan — todas, solo las personas miembro de pleno derecho, o las presentes?
+      - ¿Cuánto esperamos entre acordar un cambio y su entrada en vigor, para que quien se vea afectado pueda plantear inquietudes o prepararse?
+      - ¿Eliminar una regla no negociable necesita el mismo umbral que añadirla o cambiarla?
+    examples:
+      - Añadir, cambiar o eliminar una restricción de identidad es una decisión constitucional. La propuesta debe compartirse con todas las personas miembro de pleno derecho al menos 21 días antes de la reunión que la decide, y se aprueba solo si al menos tres cuartos de todas las personas miembro de pleno derecho votan a favor. El cambio entra en vigor 30 días después de la decisión, y tanto la redacción antigua como la nueva permanecen en el historial del registro.
+  identity-constraints-register.ratification-record:
+    question: ¿Quién adoptó estas restricciones, cuándo y cómo se decidió?

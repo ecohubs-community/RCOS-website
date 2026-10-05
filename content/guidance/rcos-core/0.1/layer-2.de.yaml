@@ -1,0 +1,179 @@
+lang: de
+sourceHash: cd25f3f7
+sections:
+  '4.1':
+    inShort: Jede kollektive Entscheidung ist operativ, strategisch oder konstitutionell, und die Art der Entscheidung bestimmt, wie sie getroffen wird.
+    questions:
+      unclear-type:
+        question: Was, wenn wir nicht erkennen können, welche Art eine Entscheidung hat?
+        answer: Behandelt sie als die Art mit der größeren Tragweite. So kann eine große Entscheidung nie als kleine durchrutschen.
+      constitutional-examples:
+        question: Welche Entscheidungen sind konstitutionell?
+        answer: Änderungen an Schicht 0 (Zweck, Geltungsbereich, Invarianten) und am Governance-System selbst.
+  '4.2':
+    inShort: Schreibt für jede Art von Entscheidung auf, wer entscheidet, wie, mit welcher Schwelle, wer blockieren kann und wie lange es dauert.
+    questions:
+      which-method:
+        question: Schreibt RCOS Konsens, Konsent oder Abstimmung vor?
+        answer: Nein. Ihr wählt das Verfahren für jede Entscheidungsart selbst; RCOS verlangt nur, dass es ausdrücklich und vollständig festgelegt ist.
+      quick-chat:
+        question: Können ein paar Leute etwas informell klären, um Zeit zu sparen?
+        answer: Nicht bei kollektiven Entscheidungen. Wenn es schnell gehen soll, legt ein schnelles Verfahren fest, etwa delegierte Befugnis, und nutzt es offen.
+  '4.3':
+    inShort: Befugnis liegt bei benannten Rollen und Gremien, jede mit schriftlich festgelegtem Geltungsbereich, Grenzen und Amtszeit. Sie entsteht nie aus Charisma, Dienstalter oder Eigentum.
+    questions:
+      founder-authority:
+        question: Unsere Gründerin hatte immer das letzte Wort. Ist das erlaubt?
+        answer: Nur wenn es als Rolle mit festgelegtem Geltungsbereich, Grenzen und Amtszeit aufgeschrieben ist. Befugnis kann nicht aus der Gründung, dem Dienstalter oder informellem Einfluss abgeleitet werden.
+      emergency-authority:
+        question: Kann jemand im Notfall das Kommando übernehmen?
+        answer: Ja, wenn Notfallbefugnis ausdrücklich festgelegt, zeitlich begrenzt und im Nachhinein überprüft wird.
+  '4.4':
+    inShort: Die Entscheidungsmatrix ist die Landkarte, wer was entscheidet und wie. Eine Entscheidung, die außerhalb davon getroffen wird, ist nicht gültig.
+    questions:
+      matrix-contents:
+        question: Was hält die Entscheidungsmatrix fest?
+        answer: Für jede Entscheidung ihre Art, ihren Bereich, die befugte Rolle oder das befugte Gremium, das Verfahren, die Zustimmungsschwelle und den Eskalationsweg.
+      outside-matrix:
+        question: Was passiert mit einer Entscheidung, die außerhalb der Matrix getroffen wurde?
+        answer: Sie gilt als ungültig.
+  '4.5':
+    inShort: Das Governance-Protokoll beschreibt das ganze Leben einer Entscheidung, vom Vorschlag über die Beratung bis zur Umsetzung, Dokumentation und Anfechtung.
+    questions:
+      conflicting-decisions:
+        question: Was, wenn sich zwei Entscheidungen widersprechen?
+        answer: Das Governance-Protokoll muss festlegen, wie solche Konflikte gelöst werden, damit es nicht die Person entscheidet, die zuerst handelt.
+      recording:
+        question: Wo werden Governance-Handlungen dokumentiert?
+        answer: Gemäß den Dokumentationsregeln von Schicht 5.
+  '4.6':
+    inShort: Baut Schutz gegen die typischen Fehlentwicklungen von Governance ein, etwa Machtkonzentration, informelle Vetos, Vereinnahmung durch eine Untergruppe und festgesetzte Gründer.
+    questions:
+      challenge-safely:
+        question: Können Mitglieder eine Entscheidung anfechten, ohne ihre Stellung zu riskieren?
+        answer: Ja. Governance-Verfahren müssen Anfechtung und Überprüfung ohne Repressalien ermöglichen.
+      repeated-failure:
+        question: Was, wenn Governance immer auf die gleiche Weise scheitert?
+        answer: Anhaltende Fehlschläge lösen eine formale Überprüfung oder ein konstitutionelles Verfahren aus, nicht einfach den nächsten Versuch.
+  '4.7':
+    inShort: Schicht 2 lebt in drei Dokumenten, der Entscheidungsmatrix, dem Governance-Protokoll und dem Befugnisregister, alle ausdrücklich, versioniert und für Mitglieder zugänglich.
+    questions:
+      which-documents:
+        question: Welche Dokumente braucht Schicht 2?
+        answer: Eine Entscheidungsmatrix, ein Governance-Protokoll und ein Befugnisregister.
+templates:
+  decision-matrix.voting-principles:
+    question: Wer hat bei welcher Art von Entscheidung ein Mitspracherecht, was gilt als Zustimmung, wer kann sie blockieren und wie lange bleibt sie offen?
+    prompts:
+      - 'Für jede Art von Entscheidung: Welches Verfahren nutzen wir — Konsent, Mehrheitsentscheid, qualifizierte Mehrheit, Übergabe an eine Rolleninhaberin oder Rotation bzw. Losverfahren?'
+      - 'Für jedes Verfahren: Wer darf teilnehmen, und was gilt als Zustimmung — ein Anteil der Stimmen, ein Quorum oder keine verbleibenden Einwände?'
+      - Kann jemand eine Entscheidung blockieren oder ein Veto einlegen, und auf welcher Grundlage — oder gibt es überhaupt keine Blockademöglichkeit?
+      - Wie lange bleibt jede Entscheidung offen, und was passiert bei Stimmengleichheit oder wenn die Zeit ohne Ergebnis abläuft?
+      - Wo wird entschieden — in einem Treffen, über ein Online-Werkzeug oder beides?
+      - Bis zu welchem Betrag oder Umfang darf eine Rolleninhaberin allein entscheiden, ohne Abstimmung?
+    examples:
+      - 'Operative Entscheidungen trifft die zuständige Rolleninhaberin, die pro Posten bis zu 300 € ohne Abstimmung ausgeben darf. Strategische Entscheidungen laufen über Konsent: Jedes Vollmitglied darf teilnehmen, und ein Vorschlag ist angenommen, wenn nach einer 14-tägigen Runde kein begründeter Einwand mehr offen ist. Blockieren kann nur ein Einwand, der zeigt, wie der Vorschlag unserem Zweck schadet. Konstitutionelle Entscheidungen nutzen dasselbe Konsent-Verfahren mit einer 30-tägigen Runde. Ist beim Ende der Runde noch ein Einwand offen, scheitert der Vorschlag und die bestehende Regel bleibt.'
+      - Strategische Entscheidungen treffen wir per Mehrheitsentscheid der Vollmitglieder über unser Abstimmungswerkzeug, 7 Tage offen, wobei mindestens die Hälfte aller Vollmitglieder abstimmen muss. Konstitutionelle Entscheidungen brauchen zwei Drittel aller Vollmitglieder, die Abstimmung ist 14 Tage offen. Niemand hat ein Veto. Stimmengleichheit oder zu wenige Stimmen bedeuten, dass der Vorschlag scheitert und sich nichts ändert. Koordinatorinnen dürfen in ihrem Bereich bis zu 500 € ohne Abstimmung ausgeben.
+  decision-matrix.matrix:
+    question: Welche Entscheidungen gehören wem — in einer Tabelle, auf die wir mitten in einer Diskussion zeigen können?
+    prompts:
+      - 'Für jeden Bereich, über den wir entscheiden (Mitgliedschaft, Geld, Land und Gebäude, Partnerschaften, unsere eigenen Regeln): Welche Entscheidungsart ist das, und welche Rolle oder welches Gremium entscheidet?'
+      - 'Für jede Zeile: Welches Verfahren und welche Zustimmungsschwelle gelten?'
+      - 'Für jede Zeile: Wohin geht die Sache, wenn die entscheidende Rolle oder das entscheidende Gremium sich nicht einigen kann, einen Interessenkonflikt hat oder die Sache über ihre Grenze hinausgeht?'
+      - Wo wird die Matrix aufbewahrt, damit jedes Mitglied sie jederzeit lesen kann, und wie sagen wir Mitgliedern, wenn sie sich ändert?
+      - Was passiert mit einer Entscheidung, die jemand außerhalb der Matrix getroffen hat — wer kann darauf hinweisen, und wie wird sie rückgängig gemacht?
+    examples:
+      - 'Die Aufnahme von Mitgliedern ist strategisch: Der Mitgliederkreis entscheidet nach einer 14-tägigen Runde im Konsent und eskaliert an die Mitgliederversammlung, wenn er sich nicht einigen kann. Ausgaben unter 500 € sind operativ und die Finanzverwalterin entscheidet allein; darüber sind sie strategisch und brauchen eine Zweidrittelmehrheit, mit Eskalation an die Mitgliederversammlung. Änderungen an unserem Zweck oder unserer Governance sind konstitutionell und brauchen nach 30 Tagen eine Dreiviertelmehrheit. Die Matrix ist im Mitgliederhandbuch fest verankert, und eine außerhalb davon getroffene Entscheidung hat keine Wirkung, bis sie über die richtige Zeile erneut getroffen wird.'
+  decision-matrix.decision-type-definitions:
+    question: Welche Arten von Entscheidungen treffen wir, und wie unterscheiden wir eine große von einer kleinen?
+    prompts:
+      - Was gilt bei uns als operative Entscheidung — Alltagsarbeit innerhalb bestehender Regeln? Nennt zwei oder drei konkrete Beispiele.
+      - Was gilt als strategisch — langfristige Ausrichtung, größere Ausgaben, Gründung oder Auflösung einer wichtigen Gruppe? Wo genau liegt die Grenze, zum Beispiel bei einem Geldbetrag?
+      - Was gilt als konstitutionell — Änderungen an unserem Zweck, Geltungsbereich, unseren Kernverpflichtungen oder daran, wie wir uns selbst regieren?
+      - 'Für jede Art: Wer setzt die Entscheidung um, und braucht sie einen Vorschlag und eine Abstimmung oder nicht? (Die genauen Schwellen sind eine eigene Frage.)'
+      - Wie stellen wir sicher, dass jede kollektive Entscheidung genau einer Art zugeordnet wird — und dass sie, wenn sie auf zwei passen könnte, als die größere behandelt wird?
+      - Wer entscheidet einen Streit darüber, welche Art eine Entscheidung hat?
+    examples:
+      - Operative Entscheidungen halten den Betrieb innerhalb bestehender Regeln am Laufen — Saatgut kaufen, Arbeitstage planen, die Pumpe reparieren — und die zuständige Rolleninhaberin entscheidet allein. Strategische Entscheidungen legen die Ausrichtung für ein Jahr oder länger fest, geben über 1.000 € aus oder gründen bzw. lösen eine Arbeitsgruppe auf; sie brauchen nach einer Beratung eine Mitgliederabstimmung. Konstitutionelle Entscheidungen ändern unseren Zweck, unsere Kernverpflichtungen oder unsere Governance; sie brauchen eine qualifizierte Mehrheit und eine Ratifizierungsfrist. Zweifelt jemand, welche Art eine Entscheidung hat, wird sie als die höhere behandelt.
+  governance-protocol.proposal-submission:
+    question: Wie legt jemand uns einen Vorschlag vor, und was muss darin stehen?
+    prompts:
+      - Welche Entscheidungen brauchen überhaupt einen schriftlichen Vorschlag, und welche kann eine Rolleninhaberin einfach treffen?
+      - Wer darf einen Vorschlag einbringen, und wo wird er eingereicht, damit alle ihn sehen können?
+      - Was muss jeder Vorschlag enthalten — zum Beispiel eine Zusammenfassung, die Entscheidungsart, was er ändert, die Begründung, die Risiken und wie man ihn rückgängig macht?
+      - Wer erklärt bei der Einreichung die Entscheidungsart eines Vorschlags? (Wie ein Streit über die Art geklärt wird, ist eine eigene Frage.)
+      - Wann darf eine vorschlagende Person einen Vorschlag zurückziehen, und wie?
+      - Trägt unser Verfahren zusammen mit den folgenden Schritten einen Vorschlag den ganzen Weg — Einreichung, Beratung, Entscheidung, Umsetzung, Dokumentation und Anfechtung — ohne dass ein Schritt fehlt?
+    examples:
+      - Jedes Vollmitglied darf einen strategischen oder konstitutionellen Vorschlag einreichen, indem es ihn mit unserer gemeinsamen Vorlage im Bereich „Vorschläge“ unseres Forums veröffentlicht. Jeder Vorschlag nennt eine Zusammenfassung, seine Entscheidungsart, die Vereinbarungen, die er ändert, die Begründung, die Risiken und wie man ihn rückgängig macht, sowie ein vorgeschlagenes Startdatum. Die vorschlagende Person erklärt die Art; jedes Mitglied darf eine höhere verlangen, und Zweifel werden nach oben aufgelöst. Eine vorschlagende Person darf den Vorschlag jederzeit zurückziehen, bevor die Abstimmung öffnet. Operative Entscheidungen brauchen keinen Vorschlag.
+  governance-protocol.review-and-deliberation:
+    question: Wie lange lassen wir einen Vorschlag wirken, bevor wir entscheiden, und wer muss vorher gehört werden?
+    prompts:
+      - Wo wird über einen Vorschlag diskutiert — in einem Forenbeitrag, in einem Treffen oder beidem — und wie nehmen Mitglieder teil, die ein Treffen verpassen?
+      - Wie lange muss ein strategischer Vorschlag zur Diskussion offen bleiben, bevor eine Abstimmung beginnen darf?
+      - Wie lange muss ein konstitutioneller Vorschlag offen bleiben, bevor eine Abstimmung beginnen darf?
+      - Wessen Sicht muss gehört werden, bevor die Abstimmung öffnet — zum Beispiel die der am stärksten Betroffenen oder derjenigen, die die Entscheidung umsetzen würden?
+      - Darf die vorschlagende Person den Vorschlag während der Diskussion ändern, und setzt eine Änderung die Frist neu?
+      - Wie ermutigen wir Mitglieder, Bedenken jetzt zu äußern statt erst nach der Abstimmung? (Das Wiederaufgreifen einer Entscheidung ist eine eigene Frage.)
+    examples:
+      - Die Diskussion findet im Forenbeitrag zum Vorschlag und in mindestens einer Mitgliederversammlung statt, mit Notizen für alle, die nicht dabei sein konnten. Ein strategischer Vorschlag bleibt mindestens 14 Tage offen, ein konstitutioneller mindestens 30 Tage, bevor abgestimmt werden darf. Die vorschlagende Person muss die am stärksten betroffene Arbeitsgruppe zur Stellungnahme einladen. Eine wesentliche Änderung am Vorschlag setzt die Mindestfrist neu. Von Mitgliedern wird erwartet, dass sie Bedenken in diesem Zeitraum äußern, nicht nach der Abstimmung.
+  governance-protocol.decision-execution:
+    question: Wenn wir etwas entschieden haben, wer setzt es um und bis wann?
+    prompts:
+      - Wer ist nach Annahme eines Vorschlags für die Umsetzung verantwortlich — die vorschlagende Person, eine benannte Rolle oder eine Arbeitsgruppe?
+      - Welche unserer Vereinbarungen und Dokumente müssen passend zur Entscheidung geändert werden, und wer nimmt diese Änderungen vor?
+      - Wie lange nach Abschluss der Abstimmung müssen die Entscheidung in Kraft und die Dokumente aktualisiert sein?
+      - Wer schließt einen abgelehnten Vorschlag ab und informiert die vorschlagende Person, und bis wann? (Wo Aufzeichnungen aufbewahrt werden, ist eine eigene Frage.)
+      - Was passiert, wenn die Frist verstreicht und nichts getan wurde — wer merkt es, und wer übernimmt?
+    examples:
+      - Jeder angenommene Vorschlag benennt eine Person, die für die Umsetzung verantwortlich ist; tut er das nicht, benennt der Koordinationskreis innerhalb von 7 Tagen jemanden. Diese Person aktualisiert jede betroffene Vereinbarung und hält die Änderung innerhalb von 14 Tagen nach Abschluss der Abstimmung in der Versionsgeschichte fest. Abgelehnte Vorschläge werden von der Moderation innerhalb von 7 Tagen als abgelehnt markiert und geschlossen, und die vorschlagende Person erfährt die Begründung. Wird eine Frist versäumt, bringt die Moderation das in der nächsten Mitgliederversammlung zur Sprache und eine neue Person wird benannt.
+  governance-protocol.documentation-and-publication:
+    question: Wo wird eine Entscheidung aufgeschrieben, und wer kann sie danach lesen?
+    prompts:
+      - Welche Governance-Handlungen werden dokumentiert — angenommene und abgelehnte Vorschläge, zurückgezogene, Abstimmungen, Besetzungen?
+      - Was genau gilt als Aufzeichnung einer Entscheidung — die abgeschlossene Abstimmung, das Protokoll, der endgültige Vorschlagstext — und was muss darin stehen?
+      - Innerhalb wie vieler Tage nach Abschluss der Abstimmung wird die Aufzeichnung abgelegt, und von wem?
+      - Wie stellen wir sicher, dass diese Aufzeichnungen unseren allgemeinen Dokumentationsregeln folgen — gleicher Ort, gleiches Format und gleiche Benennung wie unsere anderen Aufzeichnungen?
+      - Wann wird die Versionsgeschichte aktualisiert, und was steht in jedem Eintrag?
+      - Wer kann die Entscheidungsaufzeichnungen danach lesen?
+    examples:
+      - Jeder Vorschlag, angenommen oder abgelehnt, wird innerhalb von 7 Tagen nach Abschluss der Abstimmung von der Moderation, die die Abstimmung geleitet hat, im Ordner „Entscheidungen“ unseres gemeinsamen Laufwerks abgelegt. Die Entscheidungsaufzeichnung ist die abgeschlossene Abstimmungsseite mit dem Ergebnis und dem endgültigen Vorschlagstext, verlinkt mit dem Protokoll jedes Treffens, in dem darüber gesprochen wurde. Jeder angenommene Vorschlag bekommt außerdem einen Eintrag in der Versionsgeschichte, der sagt, was sich geändert hat. Alle Mitglieder können den Ordner lesen; nichts darin wird gelöscht, und Korrekturen kommen als neue Einträge hinzu.
+  governance-protocol.appeal-and-review:
+    question: Wenn jemand findet, dass eine Entscheidung schiefgelaufen ist, wie bekommt diese Person sie erneut geprüft?
+    prompts:
+      - Wer darf verlangen, dass eine Entscheidung erneut geprüft wird, und innerhalb welcher Frist nach der Entscheidung?
+      - Was muss der Antrag enthalten — und was gilt als neuer Grund und nicht bloß als Unzufriedenheit mit dem Ergebnis?
+      - Wer prüft, ob ein Antrag zulässig ist, und wie schnell?
+      - Wie wird die zweite Entscheidung getroffen — mit demselben Verfahren und derselben Schwelle wie die erste oder anders?
+      - Bleibt die ursprüngliche Entscheidung in Kraft, während sie erneut geprüft wird?
+      - Wie gehen wir mit wiederholten Anträgen zur selben Sache um, die keine neuen Gründe bringen?
+    examples:
+      - Jedes Vollmitglied darf innerhalb von 30 Tagen nach einer Entscheidung eine erneute Abstimmung verlangen, indem es einen schriftlichen Einwand veröffentlicht, der einen in der Diskussion nicht genannten Aspekt benennt; Unzufriedenheit mit dem Ergebnis genügt nicht. Die Moderation prüft den Einwand innerhalb von 7 Tagen und öffnet, wenn er zulässig ist, eine erneute Abstimmung mit demselben Verfahren und derselben Schwelle wie beim ersten Mal. Die Entscheidung bleibt in der Zwischenzeit in Kraft. Ein weiterer Antrag zur selben Sache innerhalb von 12 Monaten braucht die schriftliche Unterstützung von fünf Vollmitgliedern.
+  governance-protocol.conflict-between-decisions:
+    question: Wenn sich zwei unserer eigenen Entscheidungen widersprechen, welche gewinnt?
+    prompts:
+      - Wenn sich Entscheidungen verschiedener Arten widersprechen, gewinnt immer die höhere Art?
+      - Wenn sich zwei Entscheidungen derselben Art widersprechen, gewinnt die neuere — und kann eine frühere Entscheidung sich davor schützen, überschrieben zu werden, und wie?
+      - Wer darf auf einen Konflikt zwischen Entscheidungen hinweisen, und wo wird das vorgebracht?
+      - Welcher Entscheidung folgen wir, bis der Konflikt geklärt ist — und wie wird der Widerspruch endgültig beseitigt?
+    examples:
+      - 'Eine höhere Entscheidungsart setzt sich immer durch: eine konstitutionelle Entscheidung über eine strategische und eine strategische über eine operative. Zwischen zwei Entscheidungen derselben Art setzt sich die neuere durch, es sei denn, die frühere hat ausdrücklich festgelegt, dass sie nur durch eine höhere Art geändert werden kann. Jedes Mitglied kann einen Konflikt im Governance-Kanal melden; die Moderation bestätigt innerhalb von 7 Tagen, welche Entscheidung nach dieser Regel gilt, und ein Vorschlag zur Beseitigung des Widerspruchs geht an die nächste Mitgliederversammlung.'
+  governance-protocol.safeguards-and-failure-modes:
+    question: Was verhindert, dass sich Macht in wenigen Händen sammelt, erlaubt allen, eine Entscheidung sicher anzufechten, und erzwingt eine Überprüfung, wenn Governance immer wieder scheitert?
+    prompts:
+      - Was verhindert, dass sich Entscheidungsmacht bei einer Person oder einer kleinen Gruppe konzentriert?
+      - Was verhindert ein informelles Veto — dass jemand eine Entscheidung außerhalb des vereinbarten Verfahrens blockiert?
+      - Was verhindert, dass eine Untergruppe Entscheidungen vereinnahmt, zum Beispiel indem sie nur erscheint, wenn es ihr passt?
+      - Was verhindert, dass Gründerinnen oder langjährige Rolleninhaberinnen sich festsetzen?
+      - Wie kann jede Person eine Entscheidung anfechten, ohne Repressalien befürchten zu müssen?
+      - Welches Muster von Fehlschlägen erzwingt eine formale Überprüfung — und wer setzt sie in Gang?
+  authority-registry.registered-authorities:
+    question: Welche Rollen, Kreise oder Gremien haben hier Befugnis — und wie lauten Geltungsbereich, Grenzen und Amtszeit bei jeder?
+    prompts:
+      - Welche Rollen, Kreise oder Gremien dürfen überhaupt etwas entscheiden? (Die Vollmitglieder gemeinsam sind eines davon.)
+      - 'Für jede: Was darf sie entscheiden, und wo endet das?'
+      - 'Für jede: Wie lange hält sie diese Befugnis, und wie wird sie verlängert oder beendet?'
+      - Woraus bezieht jede ihre Befugnis — niemals aus Dienstalter, Eigentum, Charisma oder dem Gründerstatus?
+      - Welche vorübergehende oder Notfallbefugnis erlauben wir, wie ist sie zeitlich begrenzt, und wie wird sie im Nachhinein überprüft?
+    examples:
+      - Die Vollmitglieder gemeinsam entscheiden, was ihnen die Entscheidungsmatrix zuweist, solange sie Mitglieder sind. Die Finanzverwalterin bezahlt freigegebene Rechnungen und darf im Rahmen des Budgets bis zu 300 € pro Posten ausgeben, für eine Amtszeit von zwei Jahren, bestellt durch Abstimmung. Die Mitgliederverwaltung betreut Eintritte und Austritte, kann aber niemanden allein aufnehmen. Niemand hat Befugnis, weil die Person die Gemeinschaft gegründet hat oder hier Land besitzt. Im Notfall dürfen zwei beliebige Verwalterinnen bis zu 72 Stunden handeln, und die nächste Mitgliederversammlung überprüft ihr Vorgehen.

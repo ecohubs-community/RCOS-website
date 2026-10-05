@@ -7,7 +7,7 @@ summary: >-
 parentId: 6acbe9a7
 order: 2
 lang: de
-sourceHash: 9c8ba5cc
+sourceHash: a5991441
 ---
 
 Unten findest du die Warnzeichen aus allen Stresstests der Bibliothek. Geh sie durch und **hake die ab, die dir bekannt vorkommen** — die du tatsächlich in deiner Gemeinschaft beobachtet hast, nicht jene, um die du dir theoretisch Sorgen machst.

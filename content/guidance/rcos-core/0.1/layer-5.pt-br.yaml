@@ -1,0 +1,221 @@
+lang: pt-br
+sourceHash: 77a53ee7
+sections:
+  '7.1':
+    inShort: Toda responsabilidade contínua pertence a um papel nomeado, com escopo escrito, limites e uma forma de revisá-lo, para que nada importante dependa de expectativas não ditas.
+    questions:
+      unassigned-task:
+        question: Alguém pode ser culpado por uma tarefa que ninguém lhe deu?
+        answer: Não. Ninguém pode ser responsabilizado por responsabilidades que não foram formalmente atribuídas a um papel.
+      temporary-task:
+        question: E as tarefas pontuais?
+        answer: Tudo bem, desde que tenham prazo explícito. Se virarem trabalho contínuo, precisam de um papel.
+  '7.2':
+    inShort: Cada tipo de reunião tem um propósito escrito, escopo de decisão, participantes, periodicidade e facilitação, e se mantém dentro da autoridade que tem.
+    questions:
+      meeting-decides:
+        question: Uma reunião pode decidir coisas fora do escopo que ela declarou?
+        answer: Não. Reuniões não podem exceder seu escopo de decisão nem contornar os limites de autoridade da Camada 2.
+      too-many-meetings:
+        question: E se simplesmente houver reuniões demais?
+        answer: A carga de reuniões precisa ser limitada, monitorada e revisável, como descrito em 7.4.
+  '7.3':
+    inShort: Escrevam onde ficam os registros e quem pode vê-los, e tornem cada decisão rastreável, para que a comunidade não dependa de quem por acaso se lembra.
+    questions:
+      trace-decision:
+        question: O que torna uma decisão rastreável?
+        answer: Você consegue ver seu tipo e domínio, quem decidiu, por qual mecanismo e limiar, e qual foi o resultado e a data de vigência.
+      one-person-knows:
+        question: Só uma pessoa sabe como funciona o sistema de água. Isso é um problema?
+        answer: Sim, para um processo crítico. Ele precisa estar documentado para que a continuidade não dependa de conhecimento tácito.
+  '7.4':
+    inShort: Tempo, atenção e boa vontade acabam. Definam limites para reuniões e papéis, e ajam quando as pessoas estiverem sobrecarregadas.
+    questions:
+      burnout:
+        question: O que deve acontecer quando alguém está entrando em burnout?
+        answer: Sobrecarga persistente ou risco de burnout dispara revisão ou reparação na Camada 4. É um problema do sistema, não uma falha pessoal.
+      what-limits:
+        question: Que tipo de limites são esses?
+        answer: Limites de carga de reuniões e de carga de papéis, expectativas de tempo de resposta, e formas de renegociar ou redistribuir o trabalho.
+  '7.5':
+    inShort: Nenhuma pessoa sozinha pode ser a única capaz de manter as operações essenciais funcionando.
+    questions:
+      backup:
+        question: O que os papéis essenciais precisam para ter continuidade?
+        answer: Procedimentos documentados, passagem de bastão clara, e reserva ou redundância onde for viável.
+  '7.6':
+    inShort: 'A Camada 5 vive em três documentos vivos: o Manual de Operações, o Registro de Papéis e os Modelos de Reunião.'
+    questions:
+      which-documents:
+        question: De quais documentos a Camada 5 precisa?
+        answer: Um Manual de Operações, um Registro de Papéis e Modelos de Reunião.
+  '7.7':
+    inShort: Os limites rígidos operacionais são que toda responsabilidade tem um papel, nada crítico existe apenas na cabeça de alguém, a carga de trabalho é limitada e o acesso à informação é claro.
+    questions:
+      goodwill:
+        question: Podemos contar com algumas pessoas dedicadas que simplesmente fazem as coisas acontecerem?
+        answer: Não para processos críticos. Eles não podem depender apenas da memória individual, da boa vontade ou de passagens informais.
+  '7.8':
+    inShort: Papéis, reuniões e acesso à informação precisam ser explícitos. Ferramentas, horários e estilos pessoais de trabalho ficam a critério de vocês.
+    questions:
+      tools:
+        question: O RCOS diz quais ferramentas devemos usar?
+        answer: Não. As escolhas de ferramentas para documentação e coordenação são opcionais.
+templates:
+  operations-manual.core-operational-processes:
+    question: Quais coisas precisam continuar acontecendo toda semana — e estão escritas em algum lugar?
+    prompts:
+      - Quais processos precisam continuar acontecendo para a comunidade funcionar — entrada de novos membros, saída, publicação de propostas, registro de contribuições, condução de reuniões, gestão do dinheiro, revisão de acesso às plataformas, e o que mais houver?
+      - 'Para cada processo: qual papel é responsável por ele, e o que ele envolve em duas ou três frases?'
+      - 'Para cada processo: onde estão escritos os passos, para que alguém novo possa executá-lo sem perguntar à pessoa que costuma fazer? (Onde nossos documentos ficam em geral é uma questão à parte.)'
+      - Quais desses ainda dependem da memória ou da boa vontade de uma única pessoa — e quem vai escrevê-los, até quando?
+      - Como mantemos cada processo escrito atualizado quando a forma como realmente fazemos as coisas muda? (As passagens entre papéis são uma questão à parte.)
+    examples:
+      - 'Nossos processos essenciais são a entrada e a saída de membros (Administração de Membros, seguindo esses protocolos), a publicação de propostas (Secretário de Governança), o registro de contribuições (Guardião de Contribuições), a reunião semanal (facilitação rotativa: pauta, ata, lista de ações), a gestão da tesouraria (Guardião das Finanças) e a revisão de acesso às plataformas (Guardião de Infraestrutura, mensalmente, removendo membros que saíram). Cada um tem um checklist de uma página no manual compartilhado que uma pessoa nova no papel consegue seguir sem ajuda, e quem é responsável o atualiza em até uma semana depois de qualquer mudança na prática.'
+  operations-manual.temporary-and-ad-hoc-responsibilities:
+    question: Como evitamos que um favor temporário se transforme no trabalho permanente e não remunerado de alguém?
+    prompts:
+      - Quando alguém assume uma tarefa temporária, como o fim dela é definido — uma data, ou uma condição clara que marca que está concluída?
+      - Onde ela é registrada como temporária no momento em que é atribuída, e por quem?
+      - Qual é o prazo máximo que uma responsabilidade temporária pode durar, incluindo prorrogações, antes de ter que se tornar um papel formal ou acabar?
+      - Quem acompanha isso antes da data final, e como ela é encerrada ou transformada num papel de verdade? (Definir o novo papel é uma questão do Registro de Papéis.)
+    examples:
+      - 'Toda tarefa temporária é atribuída com uma data final ou uma condição clara de "concluída quando" e registrada como temporária no quadro de tarefas por quem a atribui. Uma semana antes do fim, quem atribuiu e quem está executando conversam: a tarefa termina, ou é proposta como um novo papel para o Registro de Papéis. Nenhuma responsabilidade temporária pode durar mais de 90 dias no total, incluindo prorrogações.'
+  operations-manual.role-and-domain-interfaces:
+    question: Onde termina o trabalho de um papel e começa o do próximo?
+    prompts:
+      - Quais papéis passam trabalho entre si regularmente?
+      - 'Para cada passagem: o que é passado, em qual direção, e como o papel que recebe sabe que chegou?'
+      - Em que ponto o trabalho deixa de ser responsabilidade do primeiro papel e passa a ser do próximo?
+      - Onde o trabalho passa entre um papel e uma reunião — por exemplo, uma decisão que um papel precisa então executar?
+      - Quando uma passagem é esquecida, quem percebe e quem resolve?
+    examples:
+      - 'Administração de Membros para Guardião de Infraestrutura: quando começa o período de experiência de um novo membro, a administração publica os dados dele no canal de acessos e o guardião cria as contas em até três dias; na saída, o mesmo caminho as remove. Guardião das Finanças para Guardião de Contribuições: no fim de cada mês, o guardião das finanças compartilha os valores recebidos para que os registros de contribuição possam ser conciliados. Reunião de governança para quem ocupa papéis: cada decisão aprovada é atribuída a um papel nomeado na ata, e esse papel confirma que a assumiu.'
+  operations-manual.workload-boundaries:
+    question: Quanto tempo, reunião e cuidado podemos pedir de uma pessoa — e o que acontece quando alguém está sobrecarregado?
+    prompts:
+      - Quanto tempo de reunião podemos pedir de uma pessoa — com que frequência, por quanto tempo, e o que conta como reunião extra?
+      - Quantos papéis ou horas por semana uma pessoa pode carregar — contando o trabalho invisível, como receber pessoas, arrumar depois ou dar apoio emocional?
+      - Que tempos de resposta esperamos — para mensagens do dia a dia, assuntos operacionais urgentes e questões de segurança — e quando ninguém precisa responder?
+      - Quando alguém diz que está sobrecarregado, como o trabalho dessa pessoa é coberto, passado adiante ou dividido — e com que rapidez?
+      - Que sinais nos mostram que existe um padrão — sobrecarga duradoura, burnout, membros que ficam calados, ou tudo apoiado em poucas pessoas — e qual processo de revisão ou reparação isso inicia?
+      - Com que frequência revisamos esses limites, e como eles são alterados?
+    examples:
+      - Reuniões recorrentes ocupam no máximo quatro horas por mês por pessoa; uma reunião extra precisa de 72 horas de aviso. Ninguém ocupa mais de dois papéis ou cerca de oito horas por semana, incluindo trabalho de cuidado e de acolhimento. Mensagens recebem resposta em até três dias, as operacionais urgentes em até um dia, questões de segurança na hora. Qualquer pessoa pode dizer que está sobrecarregada, e suas tarefas são redistribuídas em até duas semanas; sobrecarga sinalizada duas vezes num trimestre vai para nosso processo de revisão e reparação. Esses limites são revisados anualmente e alterados por proposta.
+  operations-manual.operational-continuity:
+    question: Se qualquer um de nós desaparecesse por um mês, o que pararia de funcionar?
+    prompts:
+      - Sinceramente, quem ou o que é hoje um ponto único de falha — uma pessoa, conta, chave ou habilidade que só um de nós tem?
+      - 'Para cada um deles: qual é nosso plano para compartilhá-lo, e até quando?'
+      - 'Para cada papel e processo essencial: o procedimento está escrito, e o que precisa ser passado adiante antes de quem o ocupa sair?'
+      - Quem é a reserva de cada papel essencial — e onde ainda não é possível ter uma reserva?
+      - Com que frequência revisamos isso, e o que mais dispara uma revisão, como um papel trocar de mãos?
+    examples:
+      - Hoje só um membro tem acesso à conta bancária e só um entende o sistema de água. Até março, um segundo signatário bancário será incluído, e o sistema de água terá um guia escrito e uma pessoa suplente treinada. Todo papel essencial tem uma reserva nomeada e um checklist de passagem que precisa ser concluído antes de quem o ocupa deixá-lo. O Guardião de Infraestrutura revisa essa lista a cada trimestre e sempre que um papel troca de mãos.
+  operations-manual.information-flow-and-anti-gatekeeping:
+    question: Como garantimos que ninguém precise passar por uma única pessoa para descobrir algo?
+    prompts:
+      - Quais registros todo Membro Pleno pode abrir diretamente, sem pedir a ninguém — decisões, atas de reuniões, papéis, quadro de membros, contribuições? (Registros restritos e privados são uma questão à parte.)
+      - Em quanto tempo depois de uma reunião as atas e decisões precisam ser publicadas?
+      - Quando alguém pede uma informação à qual tem direito, quem precisa responder, e em quanto tempo?
+      - Como garantimos que nenhuma pessoa ou papel seja a única porta de entrada para informações de que outros precisam — senhas, arquivos, contatos?
+      - O que acontece quando alguém retém uma informação à qual um membro tem direito?
+    examples:
+      - Todo Membro Pleno consegue ler decisões, atas de reuniões, atribuições de papéis, situação de membros e registros de contribuição no drive compartilhado sem pedir a ninguém. As atas das reuniões são publicadas em até 48 horas. Qualquer outro pedido de informação à qual um membro tem direito é respondido em até cinco dias. Toda conta e pasta compartilhada tem pelo menos duas pessoas com acesso, e reter uma informação à qual um membro tem direito é tratado como uma questão de responsabilização no nosso processo de conflito.
+  operations-manual.documentation-locations-and-update-procedures:
+    question: O que escrevemos, onde, e quem pode ler — e cada decisão pode ser rastreada até quem a tomou e como?
+    prompts:
+      - 'Para cada tipo de registro — nossos documentos de governança, o registro de membros, as atas de reuniões, as propostas, os registros de contribuição: onde fica a cópia oficial, quem a mantém, e com que frequência é revisada?'
+      - O que precisa estar escrito sobre decisões, papéis, operações do dia a dia e obrigações compartilhadas — o que cada registro precisa conter no mínimo?
+      - Quem pode ler quais registros, e quais são restritos por privacidade — com que fundamento, e quem ainda assim pode vê-los?
+      - Quando um novo registro precisa ser publicado ou anunciado, e para quem?
+      - Todo registro de decisão informa qual foi o tipo de decisão e qual área ela abrange, quem tinha a autoridade, como foi decidida e por qual limiar, o resultado, e quando entra em vigor?
+      - Onde qualquer pessoa encontra, por escrito, nossos papéis, quem pode decidir o quê, nossos tipos de reunião, e nossas regras de acesso e privacidade?
+    examples:
+      - Os documentos de governança, o registro de membros e as propostas ficam no drive compartilhado, mantidos pelo Secretário e revisados anualmente; as atas de reuniões e os registros de contribuição ficam no wiki, mantidos por cada facilitador e pelo Guardião de Contribuições e revisados trimestralmente. Todo registro de decisão informa seu tipo e sua área, quem decidiu, o mecanismo e o limiar, o resultado e sua data de início, e é anunciado em até três dias. Os membros podem ler tudo, exceto registros de saúde, de proteção e de conflito, que só as pessoas envolvidas e dois guardiões nomeados podem ver.
+  role-registry.overview:
+    question: Quais trabalhos contínuos têm um nome e uma pessoa, em vez de serem de todos e de ninguém?
+    prompts:
+      - Quais responsabilidades contínuas temos hoje, e cada uma pertence a um papel nomeado — ou parte delas ainda é feita por quem por acaso percebe?
+      - O que torna um papel operacional (ele pode agir em nome da comunidade dentro de limites definidos) em vez de funcional (ele faz o trabalho, mas não tem poder de decisão especial)?
+      - O que significa ‘em situação regular’ para quem quer assumir um papel?
+      - O que toda entrada de papel precisa conter — propósito, escopo e autoridade, limites com outros papéis, quem é elegível, mandato, e como as pessoas são nomeadas, revisadas e destituídas?
+      - Como garantimos que ninguém seja responsabilizado por um trabalho que nunca foi atribuído ao seu papel?
+      - Com que frequência conferimos o registro em relação ao trabalho que realmente está sendo feito, e quem faz isso?
+    examples:
+      - Toda tarefa contínua pertence a um papel deste registro; se não estiver listada, ninguém pode ser cobrado por ela, e quem perceber propõe um papel para ela. Papéis operacionais podem agir em nome da comunidade dentro dos limites definidos na Matriz de Decisões; papéis funcionais fazem trabalho, mas não têm poder de decisão extra. Um membro está em situação regular se estiver em dia com as contribuições acordadas e não estiver suspenso. Cada entrada lista propósito, escopo e autoridade, limites, elegibilidade, mandato, e nomeação, revisão e destituição. Os guardiões conferem o registro a cada seis meses.
+  role-registry.operational-roles:
+    question: Para cada papel que mantém as coisas funcionando, do que ele responde e quem revisa isso?
+    prompts:
+      - 'Quais papéis operacionais precisamos, e para cada um: para que ele serve e do que é responsável?'
+      - 'Para cada papel: quais decisões ele pode tomar sem votação da comunidade, e onde estão seus limites (por exemplo, um teto de gastos)?'
+      - 'Para cada papel: quem é elegível, quanto dura o mandato, e como a pessoa é escolhida?'
+      - 'Para cada papel: como, com que frequência e por quem o trabalho de quem o ocupa é revisado?'
+      - 'Para cada papel: o que acontece se o trabalho não estiver sendo feito ou se a pessoa estiver sobrecarregada — e como o papel pode ser reatribuído?'
+      - 'Para cada papel: o que precisa ser passado adiante antes de a pessoa deixá-lo?'
+    examples:
+      - 'Guardião das Finanças: mantém as contas, paga as despesas acordadas e informa o saldo mensalmente. Pode aprovar gastos de até €500 por item dentro do orçamento; acima disso precisa de uma proposta. Qualquer Membro Pleno em situação regular pode se candidatar a um mandato de dois anos, escolhido por votação Estratégica. A reunião de Operações revisa o papel a cada seis meses, e qualquer membro pode levantar uma preocupação. Se a pessoa estiver sobrecarregada, o suplente assume os pagamentos; falhas persistentes levam à reatribuição por votação Estratégica. Antes de sair, a pessoa passa adiante o acesso bancário, as faturas em aberto e o checklist de relatórios.'
+  role-registry.functional-roles:
+    question: Quais papéis existem por causa de uma função e não do trabalho do dia a dia, e para que servem?
+    prompts:
+      - Quais papéis funcionais temos — por exemplo facilitador, relator ou pessoa de acolhimento — e para que serve cada um?
+      - 'Para cada papel: o que ele faz, e com quais outros papéis ele trabalha?'
+      - 'Para cada papel: quem pode assumi-lo, e basta dizer "eu faço"?'
+      - 'Para cada papel: o que ele não inclui — quais decisões ele não pode tomar em nome da comunidade?'
+      - 'Para cada papel: como alguém sai dele, e sobre o que precisa informar a próxima pessoa?'
+    examples:
+      - 'Facilitador: prepara e conduz as reuniões para que todos sejam ouvidos e a pauta termine no horário. Qualquer Membro Pleno pode assumi-lo anunciando no canal dos membros; não precisa de votação, e isso não dá nenhum poder extra nas decisões. Um facilitador que seja parte de um conflito que está na pauta se afasta desse item. Pode deixar o papel a qualquer momento depois de informar o próximo facilitador sobre as reuniões seguintes e as ações em aberto.'
+  meeting-templates.meeting-type-operations:
+    question: Como conduzimos a reunião em que o trabalho da semana é organizado?
+    prompts:
+      - Para que serve essa reunião, e quais decisões ela pode tomar — e o que acontece quando surge algo maior que o dia a dia?
+      - Quem precisa estar presente, quantas pessoas formam quórum, e quem pode participar se quiser?
+      - Com que frequência ela acontece, quanto tempo pode durar, e quem facilita — escolhido ou rotativo de que forma, com que substituição se a pessoa faltar?
+      - Qual é a pauta fixa, em que ordem?
+      - Quem faz a ata, em qual formato, e onde e em quanto tempo ela é publicada — e como cada decisão é registrada?
+      - Temos um modelo como este para cada tipo de reunião que fazemos — operações, governança, coordenação, reflexão e conflito — e como percebemos quando as reuniões se estendem ou se multiplicam? (O limite geral da carga de reuniões é uma questão à parte.)
+    examples:
+      - 'A reunião de Operações revisa o trabalho em andamento, destrava impedimentos e toma apenas decisões Operacionais; qualquer coisa Estratégica ou Constitucional se torna uma proposta. Todas as pessoas que ocupam papéis participam (quórum de quatro); qualquer membro pode entrar. Acontece semanalmente por no máximo 60 minutos, conduzida por um facilitador que muda mensalmente. Pauta: abertura, revisão de tarefas, impedimentos, decisões, ações. As atas vão para o quadro compartilhado em até 48 horas, cada decisão com quem a tomou, o resultado e sua data de início. Se a reunião se estender três semanas seguidas, isso vai para a revisão trimestral de carga de trabalho.'
+  meeting-templates.meeting-type-governance:
+    question: Como conduzimos a reunião em que as decisões são realmente tomadas?
+    prompts:
+      - Quem precisa ser convidado, quem propõe precisa estar presente, e quem pode observar?
+      - Quando essa reunião acontece, e quanto tempo pode durar?
+      - Quem facilita, e como essa pessoa é escolhida?
+      - Qual é a pauta — quanto tempo para apresentar a proposta, para perguntas de esclarecimento, para a discussão, e para o resumo final?
+      - Alguma coisa é decidida na sala, ou a decisão vinculante acontece depois, para que os membros que não puderam participar também decidam? (Os limiares em si são definidos na Matriz de Decisões.)
+      - O que a ata registra — qual proposta, que tipo de decisão, como ela será decidida, e o resultado — e onde ela é publicada?
+    examples:
+      - 'Uma reunião de Governança acontece durante o período de deliberação de toda proposta Estratégica ou Constitucional. Todos os Membros Plenos são convidados, quem propõe precisa participar, e qualquer outra pessoa pode observar. Dura no máximo 60 minutos: quem propõe apresenta (10 minutos), só perguntas de esclarecimento (10), discussão aberta (30), e então o facilitador resume e confirma quando a votação abre (10). Nada é decidido na sala — a votação acontece online por sete dias depois. A ata remete à proposta e é publicada em até dois dias.'
+  meeting-templates.meeting-type-coordination-alignment:
+    question: Como conduzimos a reunião que evita que trabalhos separados se distanciem?
+    prompts:
+      - Quando convocamos essa reunião em vez de levar os assuntos à reunião regular de Operações?
+      - Quem precisa participar — apenas quem ocupa papéis com trabalhos em andamento que dependem uns dos outros — e quem mais é bem-vindo?
+      - Com que frequência ela acontece, quanto tempo pode durar, e quem facilita, com que substituição?
+      - Qual é a pauta — dependências, passagens, prioridades em conflito — e em que ordem?
+      - O que ela pode acordar, e o que acontece quando um conflito de prioridades exige uma decisão maior do que ela pode tomar?
+      - Onde a ata e as passagens acordadas são registradas, e em quanto tempo?
+    examples:
+      - A Coordenação acontece online na primeira terça-feira de cada mês por no máximo 60 minutos, e quaisquer duas pessoas que ocupem papéis podem convocá-la antes. Só quem ocupa papéis com uma iniciativa em andamento precisa participar; qualquer membro pode entrar. A pauta é dependências, passagens e, por fim, prioridades em conflito. Ela pode acordar apenas mudanças Operacionais — um conflito de prioridades que exija uma decisão Estratégica é escrito como proposta. A facilitação é rotativa entre os participantes, e a ata com as passagens acordadas vai para o canal compartilhado na mesma semana.
+  meeting-templates.meeting-type-reflection-learning:
+    question: Como conduzimos a reunião em que olhamos para trás, e não para a frente?
+    prompts:
+      - Quem é convidado, com que frequência nos reunimos, e quanto tempo pode durar?
+      - Quem facilita, e como essa pessoa é escolhida?
+      - Qual é a pauta — como olhamos para o período que passou, o que funcionou, o que não funcionou — e como mantemos o foco em padrões e não em culpa?
+      - O que sai dela — quais aprendizados vão para o Registro de Aprendizados, e quais ideias se tornam propostas futuras?
+      - Essa reunião pode decidir algo por si mesma, ou apenas encaminha itens adiante?
+      - O que impede que ela seja adiada ou abandonada sempre que estamos ocupados?
+    examples:
+      - 'A cada três meses, todos os Membros Plenos são convidados a uma reunião de Reflexão de 90 minutos, presencial e com link para participar à distância. Um facilitador escolhido na reunião anterior a conduz: o que aconteceu neste trimestre, o que funcionou, o que não funcionou — buscando padrões, não culpados — e depois quais aprendizados vão para o Registro de Aprendizados e quais ideias se tornam propostas futuras. Ela não decide nada por si mesma. Pode ser adiada uma vez, nunca cancelada. A lista do que saiu dela, ou "nada", é publicada junto com a ata em até uma semana.'
+  meeting-templates.meeting-type-conflict-handling:
+    question: Como conduzimos uma reunião cujo assunto é um conflito?
+    prompts:
+      - Quais etapas do nosso processo de conflito usam este formato de reunião, e quando não podemos usar uma reunião comum no lugar dele?
+      - Quanto tempo dura uma sessão, e quem pode prorrogá-la?
+      - O que é dito no início — sobre consentimento, confidencialidade, proteção contra retaliação, e o direito de qualquer pessoa de pedir uma pausa?
+      - Qual é a pauta — como cada parte fala sem interrupção e pelo mesmo tempo, e o que vem depois?
+      - Como uma sessão pode terminar — acordo, passagem para a etapa seguinte, ou suspensão — e como esse resultado é registrado? (Quem facilita e quem pode ver o registro são definidos no protocolo de conflito.)
+    examples:
+      - 'Este formato é usado apenas nas sessões facilitadas das etapas 2 a 4 da nossa escada de conflito. Uma sessão dura até 90 minutos; o Facilitador pode prorrogá-la uma vez por 30 minutos se as duas partes concordarem. Ela abre com os acordos de convivência: participar é voluntário, o que é dito fica na sala, ninguém pode ser punido por levantar o conflito, e qualquer pessoa pode pedir uma pausa. Depois cada parte fala sem interrupção pelo mesmo tempo, seguido de explorar opções e acordar os próximos passos. Termina como acordo alcançado, encaminhado à etapa seguinte, ou suspenso.'

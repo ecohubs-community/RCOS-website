@@ -2,9 +2,11 @@
 /**
  * AI-assisted bulk translation, provider-agnostic.
  *
- * Walks content/pages and the YAML documents (content/standard, templates,
- * layers, stress-tests), finds those missing or outdated for a target locale,
- * and produces `<base>.<lang>.md` translations using a configurable LLM backend.
+ * Walks content/pages, the YAML documents (content/standard, templates,
+ * layers, stress-tests) and the guidance (content/guidance), finds those
+ * missing or outdated for a target locale, and writes their translations
+ * (`<base>.<lang>.md`, or a `<base>.<lang>.yaml` overlay) using a configurable
+ * LLM backend. Guidance goes to the model as JSON of its translatable fields.
  * Idempotent — skips up-to-date translations whose stored `sourceHash` already
  * matches the current source.
  *
@@ -52,6 +54,9 @@ import { loadDocuments } from './content/build-articles.mjs';
 import { refTargets } from '../src/lib/content/refs.js';
 import { sourceHashOf } from '../src/lib/content/hash.js';
 import { toArticle, fromArticle } from '../src/lib/content/article.js';
+import { loadGuidance } from '../src/lib/content/load.js';
+import { merge, split } from '../src/lib/content/overlay.js';
+import { isDeepStrictEqual } from 'node:util';
 import { SUPPORTED_LOCALES } from './i18n.mjs';
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
@@ -221,6 +226,7 @@ async function buildJobs() {
 	}
 
 	await addYamlJobs(jobs, skipped);
+	await addGuidanceJobs(jobs, skipped);
 	return { jobs, skipped };
 }
 
@@ -262,6 +268,45 @@ async function addYamlJobs(jobs, skipped) {
 			sourcePath: file,
 			sourceRel,
 			sourceRaw: toArticle(en, undefined, 'en', targets),
+			sourceData: en,
+			sourceHash,
+			targetPath,
+			targetRel: path.relative(ROOT, targetPath),
+			status
+		});
+	}
+}
+
+/**
+ * Guidance (content/guidance) is not an article: its translatable text goes to
+ * the model as YAML (exactly the overlay's shape), and the reply must split back
+ * to the same structure as English before it is written as the overlay.
+ */
+async function addGuidanceJobs(jobs, skipped) {
+	for (const { file, en, overlays } of await loadGuidance()) {
+		const sourceRel = path.relative(ROOT, file);
+		if (args.only && !sourceRel.includes(args.only)) {
+			skipped.filtered++;
+			continue;
+		}
+		const sourceHash = sourceHashOf(en);
+		const existing = overlays[args.locale];
+		const status = !existing
+			? 'missing'
+			: existing.data.sourceHash === sourceHash
+				? 'up-to-date'
+				: 'outdated';
+		if (status === 'up-to-date' && !args.force) {
+			skipped.upToDate++;
+			continue;
+		}
+		const targetPath = file.replace(/\.yaml$/, `.${args.locale}.yaml`);
+		jobs.push({
+			guidance: { en },
+			sourcePath: file,
+			sourceRel,
+			// JSON both ways: YAML replies broke on French colons ("question : …").
+			sourceRaw: JSON.stringify(split(en, en), null, 1),
 			sourceData: en,
 			sourceHash,
 			targetPath,
@@ -321,6 +366,18 @@ Rules:
 
 function buildUserPrompt(job) {
 	const language = LANGUAGE_NAMES[args.locale] ?? args.locale;
+	if (job.guidance)
+		return `Translate the string values in the following JSON to ${language}. It is plain-language guidance next to the RCOS standard: "In short" summaries, common questions with answers, and per template section the question it answers, what to cover (prompts) and example answers.
+
+Rules for this document:
+- Output ONLY valid JSON, with exactly the same keys, nesting and list lengths. Keep every key (\`inShort\`, \`question\`, \`answer\`, \`prompts\`, \`examples\`, section numbers like '2.3', ids like \`emergency\`, keys like \`purpose-charter.primary-purpose\`) unchanged; translate only the string values.
+- Guidance explains the rules and never adds to them: write "must", "may", "should" as ordinary lowercase words, never as capitalised RFC 2119 keywords in any language.
+- Examples are written as one community's own rule, in the first person plural ("we"). Keep that voice.
+- Keep "Layer N" as the layer term from the glossary below, and keep §-numbers unchanged.
+
+\`\`\`json
+${job.sourceRaw}
+\`\`\``;
 	return `Translate the following markdown article to ${language}. Output ONLY the translated markdown — frontmatter first, then a blank line, then the body — with no commentary or wrapping code fence.
 
 \`\`\`markdown
@@ -476,7 +533,7 @@ function autoSelectProvider() {
 /* ---------------- output post-processing ---------------- */
 
 function stripCodeFence(s) {
-	const m = s.match(/^```(?:markdown|md)?\s*\n([\s\S]*?)\n?```\s*$/);
+	const m = s.match(/^```(?:markdown|md|yaml|yml|json)?\s*\n([\s\S]*?)\n?```\s*$/);
 	return m ? m[1] : s;
 }
 
@@ -566,6 +623,26 @@ function finalizeOutput(translatedRaw, job) {
 	fm.data.sourceHash = job.sourceHash;
 
 	return matter.stringify(fm.content, fm.data);
+}
+
+/** Translated guidance YAML → the overlay file, if it has exactly English's structure. */
+function finalizeGuidance(translatedRaw, job) {
+	const cleaned = stripCodeFence(translatedRaw.trim());
+	if (hasLeakMarkers(cleaned)) {
+		throw new Error('provider returned reasoning text — refusing to write a broken file.');
+	}
+	const overlay = JSON.parse(cleaned.slice(cleaned.indexOf('{'), cleaned.lastIndexOf('}') + 1));
+	const { en } = job.guidance;
+	if (!isDeepStrictEqual(split(en, merge(en, overlay)) ?? {}, overlay)) {
+		throw new Error('the translation does not have the structure of the English guidance');
+	}
+	if (!isDeepStrictEqual(Object.keys(split(en, en) ?? {}).sort(), Object.keys(overlay).sort())) {
+		throw new Error('the translation leaves out parts of the guidance');
+	}
+	return yaml.dump(
+		{ lang: args.locale, sourceHash: job.sourceHash, ...overlay },
+		{ lineWidth: -1, noRefs: true, quotingType: "'" }
+	);
 }
 
 /** A translated article (for a YAML document) → the overlay file. */
@@ -686,7 +763,11 @@ async function main() {
 				throw new Error('provider returned empty text');
 			}
 
-			const out = job.yaml ? finalizeYaml(text, job) : finalizeOutput(text, job);
+			const out = job.guidance
+				? finalizeGuidance(text, job)
+				: job.yaml
+					? finalizeYaml(text, job)
+					: finalizeOutput(text, job);
 			await writeFile(job.targetPath, out, 'utf8');
 
 			let costStr = '';

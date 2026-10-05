@@ -9,9 +9,9 @@ sections:
       10.1.1:
         text: 'RCOS-Core-Compliance ist binär: Eine Gemeinschaft ist entweder compliant oder non-compliant.'
       10.1.2:
-        text: Compliance MUSS pro Layer (Schicht 0–6) bewertet werden.
+        text: Compliance MUSS pro Schicht (0–6) bewertet werden.
       10.1.3:
-        text: 'Für jeden Layer MUSS die Compliance-Checkliste überprüfen:'
+        text: 'Für jede Schicht MUSS die Compliance-Checkliste überprüfen:'
         items:
           - 'Vorhandensein verbindlicher Artefakte  '
           - 'Explizitheit und Zugänglichkeit der erforderlichen Regeln  '
@@ -19,20 +19,20 @@ sections:
       10.1.4:
         text: Teilweise Compliance oder „Absicht zur Compliance" DARF NICHT als compliant betrachtet werden.
       10.1.5:
-        text: Optionale Module DARF NICHT in die RCOS-Core-Compliance-Bewertung einbezogen werden.
+        text: Optionale Module DÜRFEN NICHT in die RCOS-Core-Compliance-Bewertung einbezogen werden.
   '10.2':
     title: Testfälle
     blocks:
       10.2.1:
         text: Testfälle sind strukturierte Szenarien, mit denen überprüft wird, ob RCOS-Mechanismen wie beabsichtigt funktionieren.
       10.2.2:
-        text: 'Testfälle KANN sein:'
+        text: 'Testfälle KÖNNEN sein:'
         items:
           - 'Hypothetische Szenarien  '
           - 'Historische Gemeinschafts-Fehlschläge  '
           - 'Simulierte Stresstests  '
       10.2.3:
-        text: 'Testfälle SOLLTE mindestens abdecken:'
+        text: 'Testfälle SOLLTEN mindestens abdecken:'
         items:
           - 'Versuche der Machtkonzentration  '
           - 'Austritts- und Trennungsszenarien  '
@@ -40,7 +40,7 @@ sections:
           - 'Versuche wirtschaftlicher Vereinnahmung  '
           - 'Sicherheitskritische Konflikte  '
       10.2.4:
-        text: Testfälle sind informativ, SOLLTE aber bei Audits, Onboarding und regelmäßigen Überprüfungen eingesetzt werden.
+        text: Testfälle sind informativ, SOLLTEN aber bei Audits, Onboarding und regelmäßigen Überprüfungen eingesetzt werden.
   '10.3':
     title: Non-Compliance
     blocks:
@@ -48,7 +48,7 @@ sections:
         text: 'Eine Gemeinschaft MUSS als non-compliant betrachtet werden, wenn:'
         items:
           - 'Ein verbindliches Artefakt fehlt  '
-          - 'Layer-0-Invarianten verletzt werden  '
+          - 'Schicht-0-Invarianten verletzt werden  '
           - 'Entscheidungen wiederholt außerhalb autorisierter Governance-Strukturen getroffen werden  '
           - 'Der Austritt blockiert oder informell eingeschränkt wird  '
       10.3.2:
@@ -60,4 +60,4 @@ sections:
           - 'Formale Verabschiedung fehlender oder korrigierter Artefakte  '
           - 'Dokumentation der Behebung  '
       10.3.4:
-        text: Ansprüche auf RCOS-Compliance MUSS während Zeiträumen bekannter Non-Compliance zurückgezogen werden.
+        text: Ansprüche auf RCOS-Compliance MÜSSEN während Zeiträumen bekannter Non-Compliance zurückgezogen werden.

@@ -25,7 +25,7 @@ sections:
       * Change Protocol
       * Version History
   layer-invariants:
-    title: '**Layer-Invarianten**'
+    title: '**Schicht-Invarianten**'
     md: |-
       * **Invariante 6.1: Veränderung ist möglich, aber eingehegt**
         Keine Systemkomponente ist für immer eingefroren, aber keine Änderung geschieht sofort.

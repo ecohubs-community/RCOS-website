@@ -80,4 +80,13 @@ describe('tokenize', () => {
 		});
 		expect(parts).toEqual([{ t: 'text', text: 'PODEMOS e DEVERIAMENTE' }]);
 	});
+
+	it('finds a glossary term in the forms its language lists', () => {
+		const terms = termForms(
+			[{ key: 'invariant', term: 'Invariante', aliases: ['Invarianten'] }],
+			'de'
+		);
+		const parts = tokenize('Invarianten MÜSSEN gelten.', { locale: 'de', terms, seen: new Set() });
+		expect(parts[0]).toEqual({ t: 'term', text: 'Invarianten', key: 'invariant' });
+	});
 });

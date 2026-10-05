@@ -2,7 +2,7 @@ lang: de
 sourceHash: 'b2f58556'
 title: Geltungsbereichserklärung
 preamble: |-
-  - **Layer:** 0 — Identität & Geltungsbereich
+  - **Schicht:** 0 — Identität & Geltungsbereich
   - **Status:** Vorlage — an eure Gemeinschaft anpassen
   - **RCOS-Referenz:** [§2.2](rcos:§2.2), [§2.5](rcos:§2.5)
 

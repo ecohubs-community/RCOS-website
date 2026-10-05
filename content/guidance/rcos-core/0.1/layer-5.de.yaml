@@ -1,0 +1,221 @@
+lang: de
+sourceHash: 77a53ee7
+sections:
+  '7.1':
+    inShort: Jede dauerhafte Verantwortung gehört zu einer benannten Rolle mit schriftlichem Umfang, klaren Grenzen und einem Weg, sie zu überprüfen, damit nichts Wichtiges auf unausgesprochenen Erwartungen ruht.
+    questions:
+      unassigned-task:
+        question: Kann jemand für eine Aufgabe verantwortlich gemacht werden, die ihm niemand gegeben hat?
+        answer: Nein. Niemand kann für Verantwortlichkeiten zur Rechenschaft gezogen werden, die keiner Rolle formell zugewiesen sind.
+      temporary-task:
+        question: Was ist mit einmaligen Aufgaben?
+        answer: Die sind in Ordnung, solange sie ausdrücklich zeitlich begrenzt sind. Wenn daraus dauerhafte Arbeit wird, braucht es eine Rolle.
+  '7.2':
+    inShort: Jede Art von Treffen hat einen schriftlichen Zweck, einen Entscheidungsrahmen, Teilnehmende, einen Rhythmus und eine Moderation – und bleibt innerhalb der Befugnisse, die sie hat.
+    questions:
+      meeting-decides:
+        question: Kann ein Treffen Dinge entscheiden, die außerhalb seines erklärten Rahmens liegen?
+        answer: Nein. Treffen können ihren Entscheidungsrahmen nicht überschreiten und die Befugnisgrenzen von Schicht 2 nicht umgehen.
+      too-many-meetings:
+        question: Was, wenn es einfach zu viele Treffen gibt?
+        answer: Die Treffenlast muss begrenzt, beobachtet und überprüfbar sein, wie in 7.4 beschrieben.
+  '7.3':
+    inShort: Schreibt auf, wo Aufzeichnungen liegen und wer sie sehen darf, und macht jede Entscheidung nachvollziehbar, damit die Gemeinschaft nicht davon abhängt, wer sich gerade erinnert.
+    questions:
+      trace-decision:
+        question: Was macht eine Entscheidung nachvollziehbar?
+        answer: Man kann sehen, welcher Typ und welcher Bereich sie betrifft, wer entschieden hat, mit welchem Mechanismus und welcher Schwelle, und was das Ergebnis und das Datum des Inkrafttretens waren.
+      one-person-knows:
+        question: Nur eine Person weiß, wie die Wasseranlage funktioniert. Ist das ein Problem?
+        answer: Ja, bei einem kritischen Prozess. Er muss dokumentiert werden, damit die Kontinuität nicht von stillschweigendem Wissen abhängt.
+  '7.4':
+    inShort: Zeit, Aufmerksamkeit und Wohlwollen gehen zur Neige. Setzt Grenzen für Treffen und Rollen und handelt, wenn Menschen überlastet sind.
+    questions:
+      burnout:
+        question: Was sollte passieren, wenn jemand ausbrennt?
+        answer: Dauerhafte Überlastung oder Burnout-Risiko löst eine Überprüfung oder Reparatur nach Schicht 4 aus. Das ist ein Systemproblem, kein persönliches Versagen.
+      what-limits:
+        question: Welche Art von Grenzen ist gemeint?
+        answer: Grenzen für die Treffenlast und die Rollenlast, Erwartungen an Antwortzeiten und Wege, Arbeit neu zu verhandeln oder umzuverteilen.
+  '7.5':
+    inShort: Keine einzelne Person darf die Einzige sein, die den Kernbetrieb am Laufen halten kann.
+    questions:
+      backup:
+        question: Was brauchen Kernrollen für Kontinuität?
+        answer: Dokumentierte Abläufe, klare Übergaben und Backup oder Redundanz, wo machbar.
+  '7.6':
+    inShort: 'Schicht 5 lebt in drei lebendigen Dokumenten: dem Betriebshandbuch, dem Rollenverzeichnis und den Treffen-Vorlagen.'
+    questions:
+      which-documents:
+        question: Welche Dokumente braucht Schicht 5?
+        answer: Ein Betriebshandbuch, ein Rollenverzeichnis und Treffen-Vorlagen.
+  '7.7':
+    inShort: 'Die operativen harten Grenzen sind: jede Verantwortung hat eine Rolle, nichts Kritisches lebt nur in jemandes Kopf, die Arbeitslast ist begrenzt, und der Zugang zu Informationen ist klar.'
+    questions:
+      goodwill:
+        question: Können wir uns auf ein paar engagierte Menschen verlassen, die einfach die Dinge erledigen?
+        answer: Nicht bei kritischen Prozessen. Sie dürfen nicht allein auf individuellem Gedächtnis, Wohlwollen oder informeller Übergabe ruhen.
+  '7.8':
+    inShort: Rollen, Treffen und Informationszugang müssen explizit sein. Werkzeuge, Zeitpläne und persönliche Arbeitsstile liegen bei euch.
+    questions:
+      tools:
+        question: Schreibt RCOS uns vor, welche Werkzeuge wir nutzen?
+        answer: Nein. Die Wahl der Werkzeuge für Dokumentation und Koordination ist optional.
+templates:
+  operations-manual.core-operational-processes:
+    question: Welche Dinge müssen jede Woche weiterlaufen – und steht das irgendwo geschrieben?
+    prompts:
+      - Welche Prozesse müssen weiterlaufen, damit die Gemeinschaft funktioniert – Aufnahme, Austritt, Veröffentlichen von Vorschlägen, Erfassen von Beiträgen, Durchführen von Treffen, Umgang mit Geld, Überprüfen von Plattformzugängen und was sonst noch?
+      - 'Für jeden Prozess: welche Rolle verantwortet ihn, und worum geht es in zwei oder drei Sätzen?'
+      - 'Für jeden Prozess: wo sind die Schritte aufgeschrieben, sodass eine neue Person sie ausführen könnte, ohne die Person zu fragen, die das normalerweise macht? (Wo unsere Dokumente generell liegen, ist eine eigene Frage.)'
+      - Was davon hängt noch am Gedächtnis oder Wohlwollen einer einzelnen Person – und wer schreibt es bis wann auf?
+      - Wie halten wir jeden aufgeschriebenen Prozess aktuell, wenn sich die Art, wie wir es tatsächlich machen, ändert? (Übergaben zwischen Rollen sind eine eigene Frage.)
+    examples:
+      - 'Unsere Kernprozesse sind die Aufnahme und der Austritt von Mitgliedern (Mitgliederverwaltung, nach den entsprechenden Protokollen), die Veröffentlichung von Vorschlägen (Governance-Sekretariat), die Erfassung von Beiträgen (Beitragsverantwortliche), das wöchentliche Treffen (rotierende Moderation: Agenda, Protokoll, Aufgabenliste), die Verwaltung der Kasse (Finanzverantwortliche) und die Überprüfung der Plattformzugänge (Infrastrukturverantwortliche, monatlich, mit Entfernen ausgetretener Mitglieder). Für jeden gibt es eine einseitige Checkliste im gemeinsamen Handbuch, der eine neue Person in der Rolle ohne Hilfe folgen kann, und die verantwortliche Person aktualisiert sie innerhalb einer Woche nach jeder Änderung in der Praxis.'
+  operations-manual.temporary-and-ad-hoc-responsibilities:
+    question: Wie verhindern wir, dass aus einem zeitweiligen Gefallen jemandes dauerhafter unbezahlter Job wird?
+    prompts:
+      - Wenn jemand eine zeitweilige Aufgabe übernimmt, wie wird ihr Ende festgelegt – ein Datum oder eine klare Bedingung, die sie als erledigt markiert?
+      - Wo wird sie in dem Moment, in dem sie vergeben wird, als zeitweilig festgehalten, und von wem?
+      - Wie lange darf eine zeitweilige Verantwortung höchstens laufen, Verlängerungen eingeschlossen, bevor sie zu einer formellen Rolle werden oder enden muss?
+      - Wer schaut vor dem Enddatum nach, und wie wird sie entweder beendet oder in eine richtige Rolle umgewandelt? (Die neue Rolle zu definieren ist eine Frage des Rollenverzeichnisses.)
+    examples:
+      - 'Jede zeitweilige Aufgabe wird mit einem Enddatum oder einer klaren „erledigt, wenn“-Bedingung vergeben und von der vergebenden Person als zeitweilig auf dem Aufgabenboard eingetragen. Eine Woche vor dem Ende sprechen die vergebende und die ausführende Person miteinander: die Aufgabe endet, oder sie wird als neue Rolle für das Rollenverzeichnis vorgeschlagen. Keine zeitweilige Verantwortung darf länger als 90 Tage insgesamt laufen, Verlängerungen eingeschlossen.'
+  operations-manual.role-and-domain-interfaces:
+    question: Wo endet die Arbeit einer Rolle und wo beginnt die der nächsten?
+    prompts:
+      - Welche Rollen geben regelmäßig Arbeit aneinander weiter?
+      - 'Für jede Übergabe: was wird übergeben, in welche Richtung, und woher weiß die empfangende Rolle, dass es angekommen ist?'
+      - Ab wann ist die Arbeit nicht mehr die Verantwortung der ersten Rolle, sondern die der nächsten?
+      - Wo geht Arbeit zwischen einer Rolle und einem Treffen über – zum Beispiel eine Entscheidung, die eine Rolle dann ausführen muss?
+      - Wenn eine Übergabe liegen bleibt, wer merkt es und wer bringt es in Ordnung?
+    examples:
+      - 'Mitgliederverwaltung an Infrastrukturverantwortliche: wenn die Probezeit eines neuen Mitglieds beginnt, postet die Verwaltung die Angaben im Zugangskanal, und die Verantwortliche richtet innerhalb von drei Tagen die Konten ein; beim Austritt werden sie auf demselben Weg entfernt. Finanzverantwortliche an Beitragsverantwortliche: zum Monatsende teilt die Finanzverantwortliche die eingegangenen Beträge, damit die Beitragsaufzeichnungen abgeglichen werden können. Governance-Treffen an Rolleninhabende: jede angenommene Entscheidung wird im Protokoll einer benannten Rolle zugewiesen, und diese Rolle bestätigt, dass sie sie übernommen hat.'
+  operations-manual.workload-boundaries:
+    question: Wie viel Zeit, Treffen und Fürsorge können wir von einer Person verlangen – und was passiert, wenn jemand überlastet ist?
+    prompts:
+      - Wie viel Treffenzeit können wir von einer Person verlangen – wie oft, wie lange, und was zählt als zusätzliches Treffen?
+      - Wie viele Rollen oder Stunden pro Woche darf eine Person tragen – unsichtbare Arbeit wie Gastgeben, Aufräumen oder emotionale Unterstützung eingeschlossen?
+      - Welche Antwortzeiten erwarten wir – bei alltäglichen Nachrichten, dringenden operativen Dingen und Sicherheitsfragen – und wann wird von niemandem eine Antwort erwartet?
+      - Wenn jemand sagt, überlastet zu sein, wie wird die Arbeit abgedeckt, weitergegeben oder verteilt – und wie schnell?
+      - Welche Zeichen sagen uns, dass es ein Muster gibt – anhaltende Überlastung, Burnout, Mitglieder, die still werden, oder dass alles auf wenigen Menschen ruht – und welchen Überprüfungs- oder Reparaturprozess löst das aus?
+      - Wie oft überprüfen wir diese Grenzen, und wie werden sie geändert?
+    examples:
+      - Regelmäßige Treffen nehmen höchstens vier Stunden pro Monat und Person ein; ein zusätzliches Treffen braucht 72 Stunden Vorlauf. Niemand hat mehr als zwei Rollen oder etwa acht Stunden pro Woche, Fürsorge- und Gastgeberarbeit eingeschlossen. Nachrichten werden innerhalb von drei Tagen beantwortet, dringende operative innerhalb eines Tages, Sicherheitsfragen sofort. Alle können sagen, dass sie überlastet sind, und ihre Aufgaben werden innerhalb von zwei Wochen neu verteilt; Überlastung, die zweimal in einem Quartal gemeldet wird, geht in unseren Überprüfungs- und Reparaturprozess. Diese Grenzen werden jährlich überprüft und per Vorschlag geändert.
+  operations-manual.operational-continuity:
+    question: Wenn eine von uns einen Monat lang verschwände, was würde nicht mehr funktionieren?
+    prompts:
+      - Wer oder was ist heute ehrlich gesagt ein Single Point of Failure – eine Person, ein Konto, ein Schlüssel oder eine Fähigkeit, die nur eine von uns hat?
+      - 'Für jeden Punkt: was ist unser Plan, ihn zu teilen, und bis wann?'
+      - 'Für jede Kernrolle und jeden Kernprozess: ist der Ablauf aufgeschrieben, und was muss übergeben werden, bevor die Person geht?'
+      - Wer vertritt jede Kernrolle – und wo ist eine Vertretung noch nicht möglich?
+      - Wie oft überprüfen wir das, und was löst sonst eine Überprüfung aus, etwa ein Rollenwechsel?
+    examples:
+      - Heute kommt nur ein Mitglied an das Bankkonto, und nur eine Person versteht die Wasseranlage. Bis März wird eine zweite zeichnungsberechtigte Person für die Bank hinzugefügt, und die Wasseranlage bekommt eine schriftliche Anleitung und eine eingearbeitete Vertretung. Jede Kernrolle hat eine benannte Vertretung und eine Übergabe-Checkliste, die abgeschlossen sein muss, bevor die Person zurücktritt. Die Infrastrukturverantwortliche überprüft diese Liste jedes Quartal und immer dann, wenn eine Rolle wechselt.
+  operations-manual.information-flow-and-anti-gatekeeping:
+    question: Wie stellen wir sicher, dass niemand über eine einzelne Person gehen muss, um etwas zu erfahren?
+    prompts:
+      - Welche Aufzeichnungen kann jedes Vollmitglied direkt öffnen, ohne jemanden zu fragen – Entscheidungen, Protokolle, Rollen, Mitgliedschaft, Beiträge? (Eingeschränkte und private Aufzeichnungen sind eine eigene Frage.)
+      - Wie schnell nach einem Treffen müssen Protokoll und Entscheidungen veröffentlicht werden?
+      - Wenn jemand Informationen anfragt, auf die diese Person Anspruch hat, wer muss antworten, und innerhalb welcher Zeit?
+      - Wie stellen wir sicher, dass keine einzelne Person oder Rolle der einzige Zugang zu Informationen ist, die andere brauchen – Passwörter, Dateien, Kontakte?
+      - Was passiert, wenn jemand Informationen zurückhält, auf die ein Mitglied Anspruch hat?
+    examples:
+      - Jedes Vollmitglied kann Entscheidungen, Protokolle, Rollenzuweisungen, Mitgliedsstatus und Beitragsaufzeichnungen im gemeinsamen Laufwerk lesen, ohne jemanden zu fragen. Protokolle werden innerhalb von 48 Stunden veröffentlicht. Jede andere Anfrage nach Informationen, auf die ein Mitglied Anspruch hat, wird innerhalb von fünf Tagen beantwortet. Jedes gemeinsame Konto und jeder gemeinsame Ordner hat mindestens zwei Personen mit Zugang, und Informationen zurückzuhalten, auf die ein Mitglied Anspruch hat, wird in unserem Konfliktprozess als Verantwortlichkeitsfrage behandelt.
+  operations-manual.documentation-locations-and-update-procedures:
+    question: Was schreiben wir auf, wo, und wer darf es lesen – und lässt sich jede Entscheidung darauf zurückführen, wer sie wie getroffen hat?
+    prompts:
+      - 'Für jede Art von Aufzeichnung – unsere Governance-Dokumente, das Mitgliederverzeichnis, Protokolle, Vorschläge, Beitragsaufzeichnungen: wo liegt die offizielle Fassung, wer pflegt sie, und wie oft wird sie überprüft?'
+      - Was muss über Entscheidungen, Rollen, den laufenden Betrieb und gemeinsame Verpflichtungen aufgeschrieben werden – was muss jede Aufzeichnung mindestens enthalten?
+      - Wer darf welche Aufzeichnungen lesen, und welche sind aus Datenschutzgründen eingeschränkt – aus welchen Gründen, und wer darf sie dennoch sehen?
+      - Wann muss eine neue Aufzeichnung veröffentlicht oder angekündigt werden, und wem gegenüber?
+      - Steht in jeder Entscheidungsaufzeichnung, welcher Typ von Entscheidung es war und welchen Bereich sie betrifft, wer die Befugnis hatte, wie und mit welcher Schwelle entschieden wurde, wie das Ergebnis lautet und wann es in Kraft tritt?
+      - Wo findet jede Person schriftlich unsere Rollen, wer was entscheiden darf, unsere Treffenarten und unsere Zugangs- und Datenschutzregeln?
+    examples:
+      - Governance-Dokumente, das Mitgliederverzeichnis und Vorschläge liegen im gemeinsamen Laufwerk, gepflegt vom Sekretariat und jährlich überprüft; Protokolle und Beitragsaufzeichnungen liegen im Wiki, gepflegt von der jeweiligen Moderation und der Beitragsverantwortlichen und vierteljährlich überprüft. Jede Entscheidungsaufzeichnung nennt Typ und Bereich, wer entschieden hat, Mechanismus und Schwelle, das Ergebnis und sein Startdatum, und wird innerhalb von drei Tagen angekündigt. Mitglieder können alles lesen außer Gesundheits-, Schutz- und Konfliktaufzeichnungen, die nur die beteiligten Personen und zwei benannte Verantwortliche sehen dürfen.
+  role-registry.overview:
+    question: Welche dauerhaften Aufgaben haben einen Namen und eine Person, statt allen und niemandem zu gehören?
+    prompts:
+      - Welche dauerhaften Verantwortlichkeiten haben wir heute, und gehört jede zu einer benannten Rolle – oder wird ein Teil davon noch von der Person gemacht, die es zufällig bemerkt?
+      - Was macht eine Rolle operativ (sie darf innerhalb festgelegter Grenzen für die Gemeinschaft handeln) und nicht funktional (sie macht Arbeit, hat aber kein besonderes Mitentscheidungsrecht)?
+      - Was bedeutet ‚in gutem Stand‘ für alle, die eine Rolle übernehmen wollen?
+      - Was muss jeder Rolleneintrag enthalten – Zweck, Umfang und Befugnis, Grenzen zu anderen Rollen, wer infrage kommt, Amtszeit und wie Inhabende bestellt, überprüft und abgelöst werden?
+      - Wie stellen wir sicher, dass niemand für Arbeit verantwortlich gemacht wird, die der Rolle nie zugewiesen wurde?
+      - Wie oft prüfen wir das Verzeichnis gegen die tatsächlich geleistete Arbeit, und wer macht das?
+    examples:
+      - Jede dauerhafte Aufgabe gehört zu einer Rolle in diesem Verzeichnis; wenn sie nicht aufgeführt ist, kann niemand dafür belangt werden, und wer es bemerkt, schlägt eine Rolle dafür vor. Operative Rollen dürfen innerhalb der in der Entscheidungsmatrix festgelegten Grenzen für die Gemeinschaft handeln; funktionale Rollen machen Arbeit, haben aber kein zusätzliches Mitentscheidungsrecht. Ein Mitglied ist in gutem Stand, wenn es mit den vereinbarten Beiträgen auf dem aktuellen Stand und nicht suspendiert ist. Jeder Eintrag nennt Zweck, Umfang und Befugnis, Grenzen, Eignung, Amtszeit sowie Bestellung, Überprüfung und Ablösung. Die Verantwortlichen prüfen das Verzeichnis alle sechs Monate.
+  role-registry.operational-roles:
+    question: Wofür ist jede Rolle, die den Betrieb am Laufen hält, verantwortlich, und wer überprüft das?
+    prompts:
+      - 'Welche operativen Rollen brauchen wir, und für jede: wofür ist sie da und wofür ist sie verantwortlich?'
+      - 'Für jede Rolle: welche Entscheidungen darf sie ohne Abstimmung in der Gemeinschaft treffen, und wo liegen ihre Grenzen (zum Beispiel eine Ausgabenobergrenze)?'
+      - 'Für jede Rolle: wer kommt infrage, wie lang ist die Amtszeit, und wie wird die Person ausgewählt?'
+      - 'Für jede Rolle: wie, wie oft und von wem wird die Arbeit der Person überprüft?'
+      - 'Für jede Rolle: was passiert, wenn die Arbeit nicht erledigt wird oder die Person überlastet ist – und wie kann die Rolle neu vergeben werden?'
+      - 'Für jede Rolle: was muss übergeben werden, bevor die Person sie abgibt?'
+    examples:
+      - 'Finanzverantwortliche: führt die Buchhaltung, bezahlt vereinbarte Rechnungen und berichtet monatlich den Kontostand. Darf Ausgaben bis 500 € pro Posten innerhalb des Budgets genehmigen; alles darüber braucht einen Vorschlag. Jedes Vollmitglied in gutem Stand kann für eine zweijährige Amtszeit kandidieren, gewählt per strategischer Abstimmung. Das operative Treffen überprüft die Rolle alle sechs Monate, und jedes Mitglied kann ein Anliegen einbringen. Ist die Person überlastet, übernimmt die Vertretung die Zahlungen; anhaltendes Versagen führt zur Neuvergabe per strategischer Abstimmung. Vor dem Abgeben übergibt die Person Bankzugang, offene Rechnungen und die Berichts-Checkliste.'
+  role-registry.functional-roles:
+    question: Welche Rollen gibt es für eine Funktion statt für die tägliche Arbeit, und wofür sind sie da?
+    prompts:
+      - Welche funktionalen Rollen haben wir – zum Beispiel Moderation, Protokollführung oder Begrüßung – und wofür ist jede da?
+      - 'Für jede Rolle: was macht sie, und mit welchen anderen Rollen arbeitet sie zusammen?'
+      - 'Für jede Rolle: wer darf sie übernehmen, und reicht ein ‚ich mache das‘?'
+      - 'Für jede Rolle: was gehört nicht dazu – welche Entscheidungen kann sie nicht im Namen der Gemeinschaft treffen?'
+      - 'Für jede Rolle: wie tritt jemand zurück, und worüber muss die nächste Person informiert werden?'
+    examples:
+      - 'Moderation: bereitet Treffen vor und führt sie so, dass alle gehört werden und die Agenda rechtzeitig fertig wird. Jedes Vollmitglied kann sie übernehmen, indem es das im Mitgliederkanal ankündigt; es braucht keine Abstimmung, und sie bringt kein zusätzliches Mitentscheidungsrecht. Eine Moderation, die an einem Konflikt auf der Agenda beteiligt ist, tritt für diesen Punkt zurück. Sie kann jederzeit abgeben, nachdem sie die nächste Moderation über kommende Treffen und offene Aufgaben informiert hat.'
+  meeting-templates.meeting-type-operations:
+    question: Wie führen wir das Treffen, in dem die Arbeit der Woche sortiert wird?
+    prompts:
+      - Wofür ist dieses Treffen da, und welche Entscheidungen darf es treffen – und was passiert, wenn etwas Größeres als Alltagsarbeit auftaucht?
+      - Wer muss da sein, wie viele machen ein Quorum, und wer darf dazukommen, wenn sie möchte?
+      - Wie oft trifft es sich, wie lange darf es dauern, und wer moderiert – wie gewählt oder rotiert, und mit welcher Vertretung bei Abwesenheit?
+      - Was ist die feste Agenda, in welcher Reihenfolge?
+      - Wer schreibt das Protokoll, in welchem Format, und wo und wie schnell wird es veröffentlicht – und wie wird jede Entscheidung festgehalten?
+      - Haben wir für jede Art von Treffen, die wir abhalten, eine Vorlage wie diese – operativ, Governance, Koordination, Reflexion und Konflikt – und wie merken wir, wenn Treffen überziehen oder sich vermehren? (Die Gesamtgrenze für die Treffenlast ist eine eigene Frage.)
+    examples:
+      - 'Das operative Treffen prüft laufende Arbeit, räumt Blockaden aus dem Weg und trifft nur operative Entscheidungen; alles Strategische oder Konstitutionelle wird zu einem Vorschlag. Alle aktuellen Rolleninhabenden nehmen teil (Quorum vier); jedes Mitglied darf dazukommen. Es trifft sich wöchentlich für höchstens 60 Minuten, geführt von einer Moderation, die monatlich rotiert. Agenda: Ankommensrunde, Aufgabenüberblick, Blockaden, Entscheidungen, nächste Schritte. Das Protokoll kommt innerhalb von 48 Stunden auf das gemeinsame Board, jede Entscheidung mit der Person, die sie getroffen hat, dem Ergebnis und dem Startdatum. Zieht es drei Wochen in Folge über, geht das in die vierteljährliche Überprüfung der Arbeitslast.'
+  meeting-templates.meeting-type-governance:
+    question: Wie führen wir das Treffen, in dem Entscheidungen tatsächlich getroffen werden?
+    prompts:
+      - Wer muss eingeladen werden, muss die vorschlagende Person anwesend sein, und wer darf zuhören?
+      - Wann findet dieses Treffen statt, und wie lange darf es dauern?
+      - Wer moderiert, und wie wird diese Person ausgewählt?
+      - Was ist die Agenda – wie viel Zeit für das Vorstellen des Vorschlags, für Verständnisfragen, für die Diskussion und für die abschließende Zusammenfassung?
+      - Wird im Raum etwas entschieden, oder fällt die bindende Entscheidung danach, damit Mitglieder, die nicht dabei sein konnten, trotzdem mitwirken? (Die Schwellen selbst werden in der Entscheidungsmatrix festgelegt.)
+      - Was hält das Protokoll fest – welcher Vorschlag, welcher Entscheidungstyp, wie entschieden wird und das Ergebnis – und wo wird es veröffentlicht?
+    examples:
+      - 'Während der Beratungsphase jedes strategischen oder konstitutionellen Vorschlags findet ein Governance-Treffen statt. Alle Vollmitglieder sind eingeladen, die vorschlagende Person muss teilnehmen, und alle anderen dürfen zuhören. Es dauert höchstens 60 Minuten: die vorschlagende Person stellt vor (10 Minuten), nur Verständnisfragen (10), offene Diskussion (30), dann fasst die Moderation zusammen und bestätigt, wann die Abstimmung öffnet (10). Im Raum wird nichts entschieden – die Abstimmung läuft danach sieben Tage online. Das Protokoll verlinkt den Vorschlag und wird innerhalb von zwei Tagen veröffentlicht.'
+  meeting-templates.meeting-type-coordination-alignment:
+    question: Wie führen wir das Treffen, das verhindert, dass getrennte Arbeitsstränge auseinanderlaufen?
+    prompts:
+      - Wann rufen wir dieses Treffen ein, statt Dinge im regulären operativen Treffen anzusprechen?
+      - Wer muss teilnehmen – nur Rolleninhabende mit laufenden Arbeitssträngen, die voneinander abhängen – und wer ist sonst willkommen?
+      - Wie oft trifft es sich, wie lange darf es dauern, und wer moderiert, mit welcher Vertretung?
+      - Was ist die Agenda – Abhängigkeiten, Übergaben, konkurrierende Prioritäten – und in welcher Reihenfolge?
+      - Was darf es vereinbaren, und was passiert, wenn ein Prioritätenkonflikt eine größere Entscheidung braucht, als es treffen darf?
+      - Wo werden das Protokoll und die vereinbarten Übergaben festgehalten, und wie schnell?
+    examples:
+      - Die Koordination trifft sich online am ersten Dienstag jedes Monats für höchstens 60 Minuten, und zwei Rolleninhabende können sie jederzeit früher einberufen. Nur Rolleninhabende mit einer laufenden Initiative müssen teilnehmen; jedes Mitglied darf dazukommen. Die Agenda ist Abhängigkeiten, Übergaben, dann konkurrierende Prioritäten. Sie darf nur operative Änderungen vereinbaren – ein Prioritätenkonflikt, der eine strategische Entscheidung braucht, wird als Vorschlag aufgeschrieben. Die Moderation rotiert unter den Teilnehmenden, und das Protokoll mit den vereinbarten Übergaben kommt in derselben Woche in den gemeinsamen Kanal.
+  meeting-templates.meeting-type-reflection-learning:
+    question: Wie führen wir das Treffen, in dem wir zurückschauen statt nach vorn?
+    prompts:
+      - Wer ist eingeladen, wie oft treffen wir uns, und wie lange darf es dauern?
+      - Wer moderiert, und wie wird diese Person ausgewählt?
+      - Was ist die Agenda – wie schauen wir auf den Zeitraum zurück, was hat funktioniert, was nicht – und wie halten wir es bei Mustern statt bei Schuldzuweisungen?
+      - Was kommt dabei heraus – welche Erkenntnisse gehen ins Lernprotokoll, und welche Ideen werden zu späteren Vorschlägen?
+      - Kann dieses Treffen selbst etwas entscheiden, oder gibt es Dinge nur weiter?
+      - Was verhindert, dass es verschoben oder gestrichen wird, wann immer wir viel zu tun haben?
+    examples:
+      - 'Alle drei Monate sind alle Vollmitglieder zu einem 90-minütigen Reflexionstreffen eingeladen, vor Ort mit Zuschaltmöglichkeit. Eine beim vorigen Treffen gewählte Moderation führt es: was dieses Quartal passiert ist, was funktioniert hat, was nicht – auf der Suche nach Mustern, nicht nach Schuld – und dann, welche Erkenntnisse ins Lernprotokoll gehen und welche Ideen zu späteren Vorschlägen werden. Es entscheidet selbst nichts. Es darf einmal verschoben, aber nie abgesagt werden. Die Liste der Ergebnisse, oder „keine“, wird innerhalb einer Woche mit dem Protokoll veröffentlicht.'
+  meeting-templates.meeting-type-conflict-handling:
+    question: Wie führen wir ein Treffen, dessen Thema ein Konflikt ist?
+    prompts:
+      - Welche Schritte unseres Konfliktprozesses nutzen dieses Treffenformat, und wann dürfen wir stattdessen kein gewöhnliches Treffen nutzen?
+      - Wie lange dauert eine Sitzung, und wer darf sie verlängern?
+      - Was wird am Anfang gesagt – über Einverständnis, Vertraulichkeit, Schutz vor Vergeltung und das Recht aller, zu unterbrechen?
+      - Was ist die Agenda – wie kommt jede Seite ununterbrochen und gleich lang zu Wort, und was folgt danach?
+      - Wie kann eine Sitzung enden – Einigung, Weitergehen zum nächsten Schritt oder Unterbrechen – und wie wird dieses Ergebnis festgehalten? (Wer moderiert und wer die Aufzeichnung sehen darf, wird im Konfliktprotokoll festgelegt.)
+    examples:
+      - 'Dieses Format wird nur für moderierte Sitzungen in den Schritten 2 bis 4 unserer Konfliktleiter genutzt. Eine Sitzung läuft bis zu 90 Minuten; die Moderation darf sie einmal um 30 Minuten verlängern, wenn beide Seiten einverstanden sind. Sie beginnt mit den Grundregeln: Teilnahme ist freiwillig, was gesagt wird, bleibt im Raum, niemand darf dafür benachteiligt werden, den Konflikt angesprochen zu haben, und alle dürfen eine Pause verlangen. Dann spricht jede Seite ununterbrochen und gleich lang, danach werden Optionen erkundet und nächste Schritte vereinbart. Sie endet mit Einigung, Eskalation oder Unterbrechung.'

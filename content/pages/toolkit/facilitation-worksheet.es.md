@@ -7,7 +7,7 @@ summary: >-
 parentId: 6acbe9a7
 order: 1
 lang: es
-sourceHash: bc1902a5
+sourceHash: 6d391b8c
 ---
 
 Una prueba de estrés es más útil cuando una comunidad la realiza *en conjunto*, en voz alta, en lugar de que una sola persona la lea por su cuenta. Esta guía convierte cualquier prueba de la biblioteca en una sesión estructurada. Funciona para un grupo en formación que anticipa problemas, o para uno establecido que audita dónde se encuentra realmente.

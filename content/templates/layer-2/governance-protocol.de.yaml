@@ -2,7 +2,7 @@ lang: de
 sourceHash: '223f0d90'
 title: Governance-Protokoll
 preamble: |-
-  - **Layer:** 2 — Governance & Entscheidungslogik
+  - **Schicht:** 2 — Governance & Entscheidungslogik
   - **Status:** Vorlage — an deine Gemeinschaft anpassen
   - **RCOS-Referenz:** [§4.5](rcos:§4.5), [§4.6](rcos:§4.6), [§4.7](rcos:§4.7)
 
@@ -23,7 +23,7 @@ sections:
         md: |-
           - _<Operative Entscheidungen — werden von der zuständigen Rolleninhaber:in gemäß dem Rollenregister bearbeitet; kein Antrag erforderlich.>_
           - _<Strategische und Verfassungsentscheidungen — wer einreichen darf und auf welcher Plattform.>_
-          - _<Pflichtfelder im Antrag: Zusammenfassung, betroffene Layer und Artefakte, Entscheidungstyp, Begründung, Risiken und Gegenmaßnahmen, Rücknahmeplan, vorgeschlagenes Wirksamkeitsdatum.>_
+          - _<Pflichtfelder im Antrag: Zusammenfassung, betroffene Schichten und Artefakte, Entscheidungstyp, Begründung, Risiken und Gegenmaßnahmen, Rücknahmeplan, vorgeschlagenes Wirksamkeitsdatum.>_
           - _<Der Entscheidungstyp wird von der antragstellenden Person angegeben; im Zweifelsfall gilt der höhere Wirkungstyp.>_
           - _<Rücknahmeregeln — wann ein Antrag zurückgezogen werden kann und wie.>_
   review-and-deliberation:

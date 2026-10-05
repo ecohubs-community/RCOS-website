@@ -1,0 +1,177 @@
+lang: fr
+sourceHash: 1e9b7b71
+sections:
+  '2.1':
+    inShort: Ta communauté a besoin d'une seule raison d'exister à laquelle toutes les autres décisions peuvent être confrontées.
+    questions:
+      more-than-one-purpose:
+        question: Peut-on avoir plus d'une finalité ?
+        answer: Oui, en tant que finalités secondaires. Elles ne peuvent simplement pas entrer en conflit avec la finalité première ni la supplanter.
+      change-purpose:
+        question: Comment changer notre finalité plus tard ?
+        answer: Uniquement par une décision constitutionnelle (Couche 2), mise en œuvre avec le processus de changement de la Couche 6. Une finalité qui change souvent est une stratégie, pas une finalité.
+      goal-as-purpose:
+        question: Notre finalité peut-elle être un projet, comme construire une maison ?
+        answer: Non. Un projet se termine quand il est achevé ; la finalité première décrit pourquoi la communauté existe tout court, et elle survit à n'importe quel projet.
+  '2.2':
+    inShort: Écris noir sur blanc ce que la communauté gouverne, et tout aussi clairement ce qu'elle ne gouverne pas. Tout ce que tu ne listes pas reste hors de ton autorité.
+    questions:
+      forgot-something:
+        question: Et si on oublie de lister quelque chose ?
+        answer: Alors c'est hors périmètre jusqu'à ce que vous l'ajoutiez. La communauté n'a aucune autorité sur ce qu'elle n'a jamais déclaré.
+      private-lives:
+        question: La communauté a-t-elle un mot à dire sur la vie privée des membres ?
+        answer: Seulement là où la déclaration de périmètre le dit explicitement. Les personnes, les biens et les domaines déclarés hors périmètre échappent à l'autorité de la communauté.
+      what-to-include:
+        question: Que doit couvrir une déclaration de périmètre ?
+        answer: Au minimum les biens que vous gouvernez, les domaines sur lesquels vous décidez, et les activités et responsabilités sous contrôle collectif, plus une liste explicite de ce qui est hors périmètre.
+  '2.3':
+    inShort: Les invariants sont les quelques limites absolues que ta communauté met hors de portée des décisions quotidiennes. Même un vote unanime ne peut pas les contourner à la légère.
+    questions:
+      emergency:
+        question: Une urgence peut-elle justifier de rompre un invariant ?
+        answer: Non. Aucune décision, aucun rôle, aucun processus ni aucune mesure d'urgence ne peut supplanter un invariant.
+      change-invariant:
+        question: Peut-on un jour changer un invariant ?
+        answer: Oui, mais uniquement par un processus de changement constitutionnel tel que défini dans la Couche 2 et la Couche 6.
+      invariant-vs-constraint:
+        question: Quelle différence entre un invariant et une contrainte d'identité ?
+        answer: Un invariant est une limite absolue sur ce qui ne doit jamais arriver, comme vendre la terre. Une contrainte d'identité décrit qui est la communauté et ce qu'exige la participation, comme des limites écologiques ou comportementales.
+      how-many:
+        question: Combien d'invariants devrions-nous avoir ?
+        answer: RCOS ne fixe aucun nombre. Des invariants moins nombreux et plus clairs sont plus faciles à protéger ; chacun est une promesse qui ne peut jamais être rompue à la légère.
+  '2.4':
+    inShort: Si faire partie de cette communauté implique des limites, par exemple sur la manière dont les gens se comportent ou sur ce à quoi ils s'engagent, dis-le ouvertement et dis comment c'est vérifié.
+    questions:
+      unwritten-norms:
+        question: Nous partageons des valeurs que personne n'a écrites. Est-ce un problème ?
+        answer: Oui, si ces valeurs déterminent qui peut participer ou comment les gens sont traités. Les contraintes d'identité qui comptent en pratique doivent être déclarées et appliquées par des processus définis, jamais de manière informelle.
+      testable:
+        question: Qu'est-ce qui rend une contrainte d'identité vérifiable ?
+        answer: Quelqu'un d'autre pourrait regarder une situation et être d'accord sur le fait que la contrainte a été respectée ou rompue, et il existe un processus défini pour ce qui se passe ensuite.
+  '2.5':
+    inShort: La Couche 0 vit dans quatre documents courts. Chaque membre peut les lire, chaque version est conservée, et chacun a été adopté par une ratification formelle.
+    questions:
+      which-documents:
+        question: De quels documents la Couche 0 a-t-elle besoin ?
+        answer: Une charte de finalité, une déclaration de périmètre, un registre des invariants et un registre des contraintes d'identité.
+      contradiction:
+        question: Et si deux de ces documents se contredisent ?
+        answer: Alors la communauté n'est pas conforme à RCOS-Core jusqu'à ce que la contradiction soit résolue.
+templates:
+  purpose-charter.primary-purpose:
+    question: Pourquoi cette communauté existe-t-elle — en une phrase qui sera encore vraie dans dix ans ?
+    prompts:
+      - Si nous ne pouvions garder qu'une seule raison d'exister, laquelle serait-ce ?
+      - Serait-elle encore vraie dans dix ans, une fois nos projets actuels achevés ou abandonnés ?
+      - Est-ce une raison durable — pas un projet, une stratégie ou un objectif qu'on pourrait un jour cocher ?
+      - Est-elle assez claire pour que nous puissions dire quand une décision, ou une façon de dépenser notre temps ou notre argent, va à son encontre ?
+    examples:
+      - Nous existons pour que les personnes qui vivent ici puissent partager la terre, les logements et le travail quotidien d'une manière qui laisse le sol, l'eau et nos voisins en meilleur état que nous les avons trouvés.
+  purpose-charter.secondary-purposes:
+    question: Quelles finalités secondaires poursuivons-nous — sans concurrencer la raison de notre existence ?
+    prompts:
+      - Au-delà de notre finalité première, vers quels autres résultats concrets travaillons-nous — s'il y en a ?
+      - 'Pour chacune : pourrait-elle un jour détourner du temps, de l''argent ou des personnes de notre finalité première — et si oui, est-elle vraiment secondaire ?'
+      - Disons-nous clairement que lorsqu'une finalité secondaire entre en conflit avec notre finalité première, c'est la finalité première qui l'emporte ?
+    examples:
+      - 'À côté de notre finalité première, nous poursuivons trois finalités secondaires : maintenir des logements abordables pour les membres à revenus modestes, animer une bibliothèque d''outils ouverte au quartier, et partager ce que nous apprenons sur la vie coopérative lors de deux journées portes ouvertes par an. Aucune d''elles ne peut supplanter notre finalité première ; si l''une entre en conflit avec elle, la finalité première prime et la finalité secondaire est réduite ou abandonnée.'
+  purpose-charter.non-goals-and-exclusions:
+    question: Que ne sommes-nous délibérément pas, aussi tentant que cela devienne ?
+    prompts:
+      - Que pourraient supposer les gens de l'extérieur ou les nouveaux membres à notre sujet, que nous ne sommes pas — un parti politique, une entreprise, un groupe religieux, une œuvre caritative ?
+      - Quelles directions tentantes ont déjà été évoquées, ou le seront probablement, que nous voulons exclure dès maintenant ?
+      - 'Pour chacune : est-elle formulée assez clairement pour que n''importe qui puisse pointer une activité et dire qu''elle franchit la ligne ?'
+    examples:
+      - 'Nous ne sommes pas un parti politique, et nous ne soutenons ni candidats ni campagnes en tant que communauté. Nous ne sommes pas un véhicule d''investissement : personne ne nous rejoint pour toucher un rendement, et les biens partagés ne sont jamais gérés pour générer un profit pour les membres. Nous ne sommes pas un groupe religieux ou spirituel, et aucune croyance ni pratique n''est attendue de qui que ce soit qui participe.'
+  purpose-charter.conditions-for-purpose-change:
+    question: Que faudrait-il pour changer la raison de notre existence — et qui devrait être d'accord ?
+    prompts:
+      - Traitons-nous le changement de notre finalité première comme l'une de nos décisions du plus haut niveau (constitutionnelles), plutôt que comme une décision ordinaire ?
+      - Combien de personnes doivent être d'accord, et qui compte — tous les membres, les membres de plein droit seulement, ou celles qui votent ?
+      - Combien de temps devons-nous attendre entre la décision et l'entrée en vigueur du changement ?
+      - Où le changement est-il consigné, pour que l'ancienne et la nouvelle formulation restent toutes deux visibles ?
+      - Nos finalités secondaires exigent-elles le même seuil pour être changées, ou un seuil plus bas ?
+    examples:
+      - Changer la finalité première est une décision constitutionnelle. La proposition doit être partagée 30 jours avant le vote, et elle n'est adoptée qu'avec au moins deux tiers des voix exprimées par les membres de plein droit, avec au moins la moitié de tous les membres de plein droit qui votent. Le changement entre en vigueur après 30 jours supplémentaires et est consigné, avec la formulation précédente, dans notre historique des versions. Les finalités secondaires peuvent être changées par une décision communautaire ordinaire.
+  purpose-charter.ratification-record:
+    question: Qui a adopté cette charte, quand, et comment la décision a-t-elle été prise ?
+  scope-declaration.in-scope-assets:
+    question: Que la communauté possède-t-elle ou prend-elle en soin ensemble ?
+    prompts:
+      - Que possédons-nous, détenons-nous ou entretenons-nous ensemble — argent, terre, bâtiments, équipement, logiciels, sites web, comptes, notre nom et notre logo ?
+      - 'Pour chacun : de quoi s''agit-il exactement — quel compte, quelle parcelle, quel domaine — pour que personne ne puisse discuter de ce qui est visé ?'
+      - Que des individus détiennent-ils pour le compte de la communauté, comme un compte ou un domaine au nom d'un membre — et le considérons-nous comme nôtre ?
+      - Y a-t-il quelque chose de partagé en pratique que nous n'avons jamais nommé ? (Quelles décisions et quel travail sont collectifs sont des questions à part.)
+    examples:
+      - 'Le collectif gouverne : la trésorerie partagée détenue dans notre portefeuille multi-signature deux-sur-trois ; le site web du projet et son domaine ; les dépôts de code sous le compte d''organisation du collectif ; notre serveur de discussion et nos comptes de réseaux sociaux ; et le nom, le logo et les guides publiés du collectif. Tout compte qu''un membre enregistre pour le compte du collectif appartient au collectif.'
+  scope-declaration.in-scope-decision-domains:
+    question: Quelles décisions appartiennent au groupe plutôt qu'aux individus ?
+    prompts:
+      - Quels types de questions décidons-nous ensemble — par exemple comment nous décidons, qui peut rejoindre, comment l'argent partagé est dépensé, comment les espaces partagés sont utilisés ?
+      - 'Pour chacun : où s''arrête-t-il — qu''est-ce qui reste du ressort d''un individu, d''un foyer ou d''un tiers extérieur ?'
+      - Y a-t-il des décisions prises aujourd'hui par une seule personne par habitude que nous voulons désigner comme celles du groupe — ou dire clairement qu'elles ne le sont pas ? (La façon dont chaque type de décision est prise est une question à part.)
+    examples:
+      - 'Nous décidons ensemble : de nos règles de gouvernance et de la manière dont les décisions sont prises ; de qui peut rejoindre, et à quelles conditions ; de la façon dont le budget partagé et les réserves sont dépensés ; de l''usage et de l''entretien de la maison partagée, du jardin et des chambres d''hôtes ; et de tout accord conclu au nom de la communauté avec un tiers extérieur. Les décisions concernant le logement propre de chaque foyer restent du ressort de ce foyer.'
+  scope-declaration.in-scope-activities-and-responsibilities:
+    question: Quels travaux et responsabilités sont collectifs ?
+    prompts:
+      - De quel travail continu sommes-nous responsables en tant que communauté — entretien, accueil des nouveaux membres, tenue des comptes, soin de notre nom, accueil des visiteurs ?
+      - 'Pour chacun : est-il fait régulièrement ou seulement au besoin, et qu''est-ce qui se passe mal si personne ne le fait ?'
+      - Quelqu'un fait-il aujourd'hui un travail que personne n'a formellement pris en charge — et devrait-il être collectif, ou devrions-nous dire qu'il ne l'est pas ? (Qui fait chaque tâche se décide lors de l'attribution des rôles.)
+    examples:
+      - 'En tant que communauté, nous sommes responsables de : l''entretien de l''approvisionnement en eau partagé, des chemins et du système solaire ; la gestion du potager et du verger ; l''admission et l''accueil des nouveaux membres ; la tenue des comptes et leur présentation deux fois par an ; et l''accueil des visiteurs et des bénévoles. Les travaux sur les logements privés et les jardins personnels ne sont pas une responsabilité collective.'
+  scope-declaration.explicitly-out-of-scope:
+    question: Qu'est-ce qui ne regarde pas la communauté — et le reste ?
+    prompts:
+      - Sur quoi les gens pourraient-ils supposer que la communauté a un mot à dire, alors que ce n'est pas le cas — l'argent des membres, leurs relations, leurs emplois, leurs croyances, ou d'autres projets auxquels ils appartiennent ?
+      - Avec quelles organisations extérieures, quels services ou quels voisins travaillons-nous sans avoir d'autorité sur eux ?
+      - Disons-nous clairement que tout ce qui n'est pas nommé comme dans le périmètre est hors périmètre, même si cette liste ne le mentionne pas ?
+      - Qu'advient-il d'une décision qui empiète sur quelque chose figurant dans cette liste — est-elle simplement sans effet ?
+    examples:
+      - 'Les éléments suivants sont hors périmètre : les revenus personnels, l''épargne et les finances privées des membres ; leurs relations privées et la façon dont ils organisent leur propre logement ; leur travail rémunéré et leurs projets en dehors de la communauté ; et les hébergeurs et services logiciels que nous utilisons, dont nous acceptons les conditions sans les gouverner. Tout ce qui n''est pas déclaré dans le périmètre est hors périmètre, et une décision communautaire qui empiète sur ces domaines est sans effet.'
+  scope-declaration.ratification-record:
+    question: Qui a adopté ce périmètre, quand, et comment la décision a-t-elle été prise ?
+  invariants-register.active-invariants:
+    question: Que ne doit-il jamais se passer ici, quelles que soient les circonstances ou la majorité ?
+    prompts:
+      - Que ne doit-il jamais se passer ici, même en cas d'urgence ou après un vote largement favorable ? Écris chaque point en une phrase claire.
+      - 'Pour chacun : comment saurait-on, sans discussion possible, qu''il a été rompu ?'
+      - Chacun tient-il partout — pour l'adhésion, l'argent, les rôles, la sécurité et la façon dont nous décidons — ou l'avons-nous formulé de sorte qu'il ne couvre qu'un seul domaine ?
+      - Lorsqu'une décision, un rôle ou toute autre règle entre en conflit avec l'un d'eux, disons-nous clairement que l'invariant l'emporte et que l'autre cède ?
+      - La liste est-elle assez courte pour que chaque point soit vraiment absolu — et y a-t-il quelque chose dessus qui n'est en fait qu'une forte préférence ?
+      - Sommes-nous d'accord pour que ceux-ci ne puissent être changés que par notre processus de changement du plus haut niveau (constitutionnel), jamais par une décision ordinaire ?
+    examples:
+      - Personne ne peut être empêché de quitter la communauté, ni puni pour l'avoir quittée. Aucune personne ni aucun rôle ne peut exercer une autorité qui n'est pas inscrite dans nos documents de gouvernance. La sécurité physique de toute personne, et avant tout d'un enfant, passe avant le rôle, la réputation ou la participation de qui que ce soit. Ceux-ci valent pour chaque règle, rôle, décision et mesure d'urgence que nous avons ; en cas de conflit avec quoi que ce soit, ils prévalent, et ils ne changent que par notre processus de changement constitutionnel.
+  invariants-register.ratification-record:
+    question: Qui a adopté ces invariants, quand, et comment la décision a-t-elle été prise ?
+  identity-constraints-register.active-identity-constraints:
+    question: Quelles règles non négociables découlent de qui nous sommes en tant que communauté — à propos du comportement, de l'adhésion, de la culture ou de la terre ?
+    prompts:
+      - Quelles règles valent pour toute personne qui participe, quoi qu'une majorité veuille un jour donné ?
+      - 'Pour chacune : à qui s''applique-t-elle ?'
+      - Qu'est-ce que cela signifie pour ces personnes en pratique — que ne peuvent-elles pas faire, ou que doit-il être vrai avant qu'elles puissent rejoindre ?
+      - Pourquoi est-elle nécessaire — qu'est-ce qui se passerait mal ici sans elle ?
+    examples:
+      - Seules les personnes âgées de 18 ans ou plus peuvent devenir membres.
+      - Aucun système de croyance, religion ou opinion politique ne peut être exigé pour rejoindre ou participer.
+      - Rien de ce que fait la communauté ne peut causer de dommage durable à la terre dont elle prend soin ; chaque décision concernant la terre et les bâtiments indique comment cela a été vérifié.
+  identity-constraints-register.enforcement-and-testability:
+    question: Comment vérifier si une contrainte est respectée — et que se passe-t-il si elle ne l'est pas ?
+    prompts:
+      - 'Pour chaque règle : comment remarquerait-on qu''elle n''est pas respectée ?'
+      - Quel processus écrit traite un manquement, pour qu'il ne soit pas laissé à celui ou celle qui proteste le plus fort ?
+      - Qui garde un œil dessus, et à quelle fréquence cela est-il réexaminé ?
+    examples:
+      - 'Chaque contrainte indique comment un manquement se manifesterait et qui garde un œil dessus : le groupe terre vérifie les contraintes écologiques lors de sa tournée trimestrielle, et toute personne peut signaler un manquement à une contrainte comportementale à la coordinatrice ou au coordinateur de la redevabilité. Chaque manquement signalé passe par notre processus de redevabilité — jamais par un avertissement privé ou une exclusion discrète. Nous réexaminons l''ensemble du registre lors de la réunion annuelle de bilan.'
+  identity-constraints-register.conditions-for-change:
+    question: Comment nos non-négociables sont-ils ajoutés, changés ou supprimés — et qui doit être d'accord ?
+    prompts:
+      - Quel type de décision faut-il pour ajouter, changer ou supprimer l'un de nos non-négociables — une décision ordinaire, ou l'une de nos décisions du plus haut niveau (constitutionnelles) ?
+      - Combien de personnes doivent être d'accord, et qui compte — tout le monde, les membres de plein droit seulement, ou les personnes présentes ?
+      - Combien de temps attendons-nous entre l'accord sur un changement et son entrée en vigueur, pour que toute personne concernée puisse exprimer ses préoccupations ou se préparer ?
+      - Supprimer un non-négociable exige-t-il le même seuil que d'en ajouter ou d'en changer un ?
+    examples:
+      - Ajouter, changer ou supprimer une contrainte d'identité est une décision constitutionnelle. La proposition doit être partagée avec tous les membres de plein droit au moins 21 jours avant la réunion qui en décide, et elle n'est adoptée que si au moins trois quarts de tous les membres de plein droit votent pour. Le changement entre en vigueur 30 jours après la décision, et l'ancienne comme la nouvelle formulation restent dans l'historique du registre.
+  identity-constraints-register.ratification-record:
+    question: Qui a adopté ces contraintes, quand, et comment la décision a-t-elle été prise ?

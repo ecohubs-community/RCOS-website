@@ -47,8 +47,13 @@ jobs:
       - name: Validate content
         run: pnpm content:check
 
+      # The tests import the Paraglide messages, which are generated (not committed).
       - name: Unit tests
-        run: pnpm test:unit
+        run: |
+          pnpm paraglide:compile
+          pnpm test:unit
+        env:
+          PUBLIC_APP_URL: https://rcos.ecohubs.community
 
       # The standard data (what RCOS-compass consumes) and the core markdown
       # download must match the content. Their date lines ("Generated: …" in

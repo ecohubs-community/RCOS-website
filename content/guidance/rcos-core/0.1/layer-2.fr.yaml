@@ -1,0 +1,179 @@
+lang: fr
+sourceHash: cd25f3f7
+sections:
+  '4.1':
+    inShort: Chaque décision collective est opérationnelle, stratégique ou constitutionnelle, et c'est son type qui détermine la façon dont elle est prise.
+    questions:
+      unclear-type:
+        question: Et si nous n'arrivons pas à dire de quel type relève une décision ?
+        answer: Traitez-la comme le type au plus fort impact. Ainsi, une décision importante ne peut jamais passer pour une petite.
+      constitutional-examples:
+        question: Quelles décisions sont constitutionnelles ?
+        answer: Les changements apportés à la Couche 0 (raison d'être, périmètre, invariants) et au système de gouvernance lui-même.
+  '4.2':
+    inShort: Pour chaque type de décision, notez qui décide, comment, selon quel seuil, qui peut bloquer et combien de temps cela prend.
+    questions:
+      which-method:
+        question: Le RCOS prescrit-il le consensus, le consentement ou le vote ?
+        answer: Non. Vous choisissez le mécanisme pour chaque type de décision ; le RCOS demande seulement qu'il soit explicite et complet.
+      quick-chat:
+        question: Quelques personnes peuvent-elles régler une question de façon informelle pour gagner du temps ?
+        answer: Pas pour des décisions collectives. Si cela doit aller vite, définissez un mécanisme rapide, comme une délégation d'autorité, et utilisez-le ouvertement.
+  '4.3':
+    inShort: L'autorité appartient à des rôles et des instances nommés, chacun avec un périmètre, des limites et une durée de mandat écrits. Elle ne découle jamais du charisme, de l'ancienneté ou de la propriété.
+    questions:
+      founder-authority:
+        question: La personne qui a fondé notre communauté a toujours eu le dernier mot. Est-ce permis ?
+        answer: Seulement si c'est écrit comme un rôle avec un périmètre, des limites et une durée définis. L'autorité ne peut pas découler du fait d'avoir fondé la communauté, de l'ancienneté ou d'une influence informelle.
+      emergency-authority:
+        question: Quelqu'un peut-il prendre les commandes en cas d'urgence ?
+        answer: Oui, si l'autorité d'urgence est explicitement définie, limitée dans le temps et réexaminée après coup.
+  '4.4':
+    inShort: La matrice de décision est la carte de qui décide quoi, et comment. Une décision prise en dehors d'elle n'est pas valide.
+    questions:
+      matrix-contents:
+        question: Que recense la matrice de décision ?
+        answer: 'Pour chaque décision : son type, son domaine, le rôle ou l''instance autorisé, le mécanisme, le seuil d''approbation et le chemin d''escalade.'
+      outside-matrix:
+        question: Qu'advient-il d'une décision prise en dehors de la matrice ?
+        answer: Elle est considérée comme invalide.
+  '4.5':
+    inShort: Le protocole de gouvernance décrit toute la vie d'une décision, de la proposition à la délibération, la mise en œuvre, la consignation et le recours.
+    questions:
+      conflicting-decisions:
+        question: Et si deux décisions se contredisent ?
+        answer: Le protocole de gouvernance doit dire comment ces conflits se règlent, pour que ce ne soit pas la personne qui agit la première qui tranche.
+      recording:
+        question: Où les actes de gouvernance sont-ils consignés ?
+        answer: Selon les règles de documentation de la Couche 5.
+  '4.6':
+    inShort: 'Prévoyez une protection contre les dérives habituelles de la gouvernance : concentration du pouvoir, vetos informels, captation par un sous-groupe et fondateurs indéboulonnables.'
+    questions:
+      challenge-safely:
+        question: Les membres peuvent-ils contester une décision sans risquer leur place ?
+        answer: Oui. Les mécanismes de gouvernance doivent permettre la contestation et le réexamen sans représailles.
+      repeated-failure:
+        question: Et si la gouvernance échoue toujours de la même manière ?
+        answer: Des échecs persistants déclenchent un réexamen formel ou un processus constitutionnel, et pas simplement une nouvelle tentative.
+  '4.7':
+    inShort: 'La Couche 2 tient dans trois documents : la matrice de décision, le protocole de gouvernance et le registre des autorités, tous explicites, versionnés et accessibles aux membres.'
+    questions:
+      which-documents:
+        question: De quels documents la Couche 2 a-t-elle besoin ?
+        answer: Une matrice de décision, un protocole de gouvernance et un registre des autorités.
+templates:
+  decision-matrix.voting-principles:
+    question: 'Pour chaque type de décision : qui a voix au chapitre, qu''est-ce qui compte comme un accord, qui peut la bloquer, et combien de temps reste-t-elle ouverte ?'
+    prompts:
+      - 'Pour chaque type de décision : quel mécanisme utilisons-nous — consentement, vote à la majorité, majorité qualifiée, délégation à une personne titulaire d''un rôle, ou rotation ou tirage au sort ?'
+      - 'Pour chaque mécanisme : qui peut y prendre part, et qu''est-ce qui compte comme un accord — une part des voix, un quorum, ou l''absence d''objection restante ?'
+      - Quelqu'un peut-il bloquer une décision ou y opposer son veto, et pour quels motifs — ou n'y a-t-il aucun blocage possible ?
+      - Combien de temps chaque décision reste-t-elle ouverte, et que se passe-t-il en cas d'égalité ou lorsque le délai expire sans résultat ?
+      - Où la décision se prend-elle — en réunion, sur un outil en ligne, ou les deux ?
+      - Jusqu'à quel montant ou quelle portée une personne titulaire d'un rôle peut-elle décider seule, sans vote ?
+    examples:
+      - 'Les décisions opérationnelles sont prises par la personne titulaire du rôle concerné, qui peut dépenser jusqu''à 300 € par poste sans vote. Les décisions stratégiques se prennent par consentement : tout membre à part entière peut y prendre part, et une proposition passe lorsqu''aucune objection motivée ne subsiste après un tour de 14 jours. Seule une objection montrant en quoi la proposition nuit à notre raison d''être peut bloquer. Les décisions constitutionnelles suivent le même processus de consentement avec un tour de 30 jours. Si une objection est encore ouverte à la clôture du tour, la proposition échoue et la règle en vigueur reste.'
+      - Les décisions stratégiques sont prises à la majorité des membres à part entière sur notre outil de vote, ouvert pendant 7 jours, avec au moins la moitié de l'ensemble des membres à part entière qui votent. Les décisions constitutionnelles exigent les deux tiers de l'ensemble des membres à part entière, avec un vote ouvert pendant 14 jours. Personne ne dispose d'un veto. Une égalité, ou un nombre de votes insuffisant, signifie que la proposition échoue et que rien ne change. Les personnes qui coordonnent peuvent dépenser jusqu'à 500 € dans leur domaine sans vote.
+  decision-matrix.matrix:
+    question: Quelles décisions reviennent à qui — dans un seul tableau que nous pouvons montrer du doigt en plein débat ?
+    prompts:
+      - 'Pour chaque domaine sur lequel nous décidons (adhésion, argent, terres et bâtiments, partenariats, nos propres règles) : de quel type de décision s''agit-il, et quel rôle ou quelle instance décide ?'
+      - 'Pour chaque ligne : quels mécanisme et seuil d''approbation s''appliquent ?'
+      - 'Pour chaque ligne : où la question part-elle si le rôle ou l''instance qui décide n''arrive pas à s''entendre, se trouve en conflit d''intérêts, ou si l''affaire dépasse sa limite ?'
+      - Où la matrice est-elle conservée pour que chaque membre puisse la lire à tout moment, et comment prévenons-nous les membres quand elle change ?
+      - Qu'advient-il d'une décision prise en dehors de la matrice — qui peut le signaler, et comment est-elle annulée ?
+    examples:
+      - 'L''admission de nouveaux membres est stratégique : le cercle des membres décide par consentement après un tour de 14 jours, avec escalade vers l''assemblée générale s''il n''arrive pas à s''entendre. Une dépense de moins de 500 € est opérationnelle et la personne à la trésorerie décide seule ; au-delà, elle est stratégique et exige un vote aux deux tiers, avec escalade vers l''assemblée générale. Les changements de notre raison d''être ou de notre gouvernance sont constitutionnels et exigent un vote aux trois quarts après 30 jours. La matrice est épinglée dans le manuel des membres, et une décision prise en dehors d''elle n''a aucun effet tant qu''elle n''est pas reprise par la bonne ligne.'
+  decision-matrix.decision-type-definitions:
+    question: Quels types de décisions prenons-nous, et comment distinguons-nous une grande d'une petite ?
+    prompts:
+      - Qu'est-ce qui compte pour nous comme une décision opérationnelle — le travail quotidien dans le cadre de règles que nous avons déjà ? Nommez-en deux ou trois bien concrètes.
+      - Qu'est-ce qui compte comme stratégique — orientation de long terme, dépenses importantes, création ou fermeture d'un groupe majeur ? Où passe exactement la limite, par exemple un montant ?
+      - Qu'est-ce qui compte comme constitutionnel — des changements de notre raison d'être, de notre périmètre, de nos engagements fondamentaux, ou de la façon dont nous nous gouvernons ?
+      - 'Pour chaque type : qui met la décision en œuvre, et faut-il une proposition et un vote ou non ? (Les seuils exacts font l''objet d''une autre question.)'
+      - Comment nous assurons-nous que chaque décision collective relève d'un seul type — et que, lorsqu'elle pourrait relever de deux, elle est traitée comme la plus importante ?
+      - Qui tranche un désaccord sur le type dont relève une décision ?
+    examples:
+      - Les décisions opérationnelles font tourner la maison dans le cadre des règles existantes — acheter des semences, planifier les journées de travail, réparer la pompe — et la personne titulaire du rôle responsable décide seule. Les décisions stratégiques fixent une orientation pour un an ou plus, engagent plus de 1 000 €, ou créent ou ferment un groupe de travail ; elles exigent un vote des membres après délibération. Les décisions constitutionnelles modifient notre raison d'être, nos engagements fondamentaux ou notre façon de nous gouverner ; elles exigent une majorité qualifiée et une période de ratification. Si quelqu'un doute du type dont relève une décision, elle est traitée comme le type le plus élevé.
+  governance-protocol.proposal-submission:
+    question: Comment quelqu'un nous soumet-il une proposition, et que doit-elle contenir ?
+    prompts:
+      - Quelles décisions exigent vraiment une proposition écrite, et lesquelles une personne titulaire d'un rôle peut-elle simplement prendre ?
+      - Qui peut déposer une proposition, et où est-elle soumise pour que tout le monde la voie ?
+      - Que doit contenir chaque proposition — par exemple un résumé, le type de décision, ce qu'elle change, les raisons, les risques et la manière de revenir en arrière ?
+      - Qui déclare le type de décision d'une proposition au moment du dépôt ? (La façon dont un désaccord sur le type se règle fait l'objet d'une autre question.)
+      - Quand une personne peut-elle retirer sa proposition, et comment ?
+      - Pris avec les étapes qui suivent, notre processus accompagne-t-il une proposition de bout en bout — dépôt, délibération, décision, mise en œuvre, consignation et recours — sans qu'il manque une étape ?
+    examples:
+      - Tout membre à part entière peut soumettre une proposition stratégique ou constitutionnelle en la publiant dans la section Propositions de notre forum, à l'aide du modèle commun. Chaque proposition indique un résumé, son type de décision, les accords qu'elle modifie, les raisons, les risques et la manière de revenir en arrière, ainsi qu'une date de mise en œuvre proposée. La personne qui propose déclare le type ; tout membre peut en demander un plus élevé, et le doute se tranche vers le haut. Une proposition peut être retirée à tout moment avant l'ouverture du vote. Les décisions opérationnelles n'exigent aucune proposition.
+  governance-protocol.review-and-deliberation:
+    question: Combien de temps laissons-nous mûrir une proposition avant de décider, et qui doit être entendu d'abord ?
+    prompts:
+      - Où la discussion d'une proposition a-t-elle lieu — un fil de forum, une réunion, ou les deux — et comment les membres qui manquent une réunion y prennent-ils quand même part ?
+      - Combien de temps une proposition stratégique doit-elle rester ouverte à la discussion avant qu'un vote puisse commencer ?
+      - Combien de temps une proposition constitutionnelle doit-elle rester ouverte avant qu'un vote puisse commencer ?
+      - Quels points de vue doivent être entendus avant l'ouverture du vote — par exemple celui des personnes les plus concernées, ou de celles qui mettraient la décision en œuvre ?
+      - La personne qui propose peut-elle modifier sa proposition pendant la discussion, et une modification remet-elle le compteur à zéro ?
+      - Comment encourageons-nous les membres à soulever leurs préoccupations maintenant, plutôt qu'après le vote ? (Rouvrir une décision fait l'objet d'une autre question.)
+    examples:
+      - La discussion a lieu dans le fil de forum de la proposition et lors d'au moins une assemblée générale, avec des notes publiées pour les personnes qui n'ont pas pu venir. Une proposition stratégique reste ouverte au moins 14 jours et une proposition constitutionnelle au moins 30 jours avant que le vote puisse commencer. La personne qui propose doit inviter le groupe de travail le plus concerné à commenter. Une modification substantielle de la proposition fait repartir le délai minimum. Les membres sont censés soulever leurs préoccupations pendant cette fenêtre, et non après le vote.
+  governance-protocol.decision-execution:
+    question: Une fois que nous avons décidé quelque chose, qui le met en œuvre et pour quand ?
+    prompts:
+      - Une fois une proposition adoptée, qui est responsable de sa mise en œuvre — la personne qui l'a proposée, un rôle nommé, ou un groupe de travail ?
+      - Lesquels de nos accords et documents doivent être modifiés pour correspondre à la décision, et qui fait ces modifications ?
+      - Combien de temps après la clôture du vote la décision doit-elle être en vigueur et les documents à jour ?
+      - Lorsqu'une proposition est rejetée, qui la clôt et en informe la personne qui l'a proposée, et dans quel délai ? (Le lieu où sont conservées les archives fait l'objet d'une autre question.)
+      - Que se passe-t-il si l'échéance passe sans que rien ne soit fait — qui s'en aperçoit, et qui prend le relais ?
+    examples:
+      - Chaque proposition adoptée désigne une personne responsable de sa mise en œuvre ; à défaut, le cercle de coordination en désigne une dans les 7 jours. Cette personne met à jour chaque accord concerné et consigne le changement dans l'historique des versions dans les 14 jours suivant la clôture du vote. Les propositions rejetées sont marquées comme rejetées et closes par la personne qui facilite, dans les 7 jours, et la personne qui a proposé en apprend la raison. Si une échéance est manquée, la personne qui facilite le signale à la prochaine assemblée générale et quelqu'un d'autre est désigné.
+  governance-protocol.documentation-and-publication:
+    question: Où une décision est-elle consignée, et qui peut la lire ensuite ?
+    prompts:
+      - Quels actes de gouvernance sont consignés — propositions adoptées et rejetées, propositions retirées, votes, nominations ?
+      - Qu'est-ce qui compte exactement comme la trace d'une décision — le vote clos, le compte rendu, le texte final de la proposition — et que doit-elle montrer ?
+      - Dans combien de jours après la clôture du vote la trace est-elle archivée, et par qui ?
+      - Comment nous assurons-nous que ces archives suivent nos règles générales de documentation — même emplacement, même format et même nommage que nos autres archives ?
+      - Quand l'historique des versions est-il mis à jour, et que dit chaque entrée ?
+      - Qui peut lire les archives de décisions ensuite ?
+    examples:
+      - Chaque proposition, adoptée ou rejetée, est archivée dans le dossier Décisions de notre espace partagé dans les 7 jours suivant la clôture du vote, par la personne qui a facilité le vote. La trace de la décision est la page du vote clos avec le décompte et le texte final de la proposition, reliée au compte rendu de toute réunion où elle a été discutée. Chaque proposition adoptée reçoit aussi une entrée dans l'historique des versions indiquant ce qui a changé. Tous les membres peuvent lire le dossier ; rien n'y est supprimé, et les corrections sont ajoutées sous forme de nouvelles entrées.
+  governance-protocol.appeal-and-review:
+    question: Si quelqu'un estime qu'une décision est mauvaise, comment la fait-il réexaminer ?
+    prompts:
+      - Qui peut demander le réexamen d'une décision, et dans quel délai après qu'elle a été prise ?
+      - Que doit contenir la demande — et qu'est-ce qui compte comme un motif nouveau plutôt qu'un simple désaccord avec le résultat ?
+      - Qui vérifie qu'une demande est recevable, et dans quels délais ?
+      - Comment la seconde décision se prend-elle — avec le même mécanisme et le même seuil que la première, ou autrement ?
+      - La décision initiale reste-t-elle en vigueur pendant le réexamen ?
+      - Comment traitons-nous les demandes répétées sur la même question qui n'apportent aucun motif nouveau ?
+    examples:
+      - Tout membre à part entière peut demander un nouveau vote dans les 30 jours suivant une décision, en publiant une objection écrite qui nomme un élément non soulevé pendant la discussion ; être en désaccord avec le résultat ne suffit pas. Les personnes qui facilitent examinent l'objection dans les 7 jours et, si elle est recevable, ouvrent un nouveau vote avec le même mécanisme et le même seuil que l'original. La décision reste en vigueur entre-temps. Une nouvelle demande sur la même question dans les 12 mois exige le soutien écrit de cinq membres à part entière.
+  governance-protocol.conflict-between-decisions:
+    question: Quand deux de nos propres décisions se contredisent, laquelle l'emporte ?
+    prompts:
+      - Quand des décisions de types différents se contredisent, le type le plus élevé l'emporte-t-il toujours ?
+      - Quand deux décisions du même type se contredisent, la plus récente l'emporte-t-elle — et une décision antérieure peut-elle se protéger d'être écrasée, et comment ?
+      - Qui peut signaler un conflit entre décisions, et où le signale-t-il ?
+      - Tant que le conflit n'est pas réglé, quelle décision suivons-nous — et comment la contradiction est-elle supprimée définitivement ?
+    examples:
+      - 'Un type de décision plus élevé l''emporte toujours : une décision constitutionnelle sur une décision stratégique, et une décision stratégique sur une décision opérationnelle. Entre deux décisions du même type, la plus récente l''emporte, sauf si la plus ancienne indiquait explicitement qu''elle ne pouvait être modifiée que par un type plus élevé. Tout membre peut signaler un conflit dans le canal gouvernance ; les personnes qui facilitent confirment dans les 7 jours quelle décision s''applique selon cette règle, et une proposition visant à supprimer la contradiction est portée à la prochaine assemblée générale.'
+  governance-protocol.safeguards-and-failure-modes:
+    question: Qu'est-ce qui empêche le pouvoir de se concentrer entre quelques mains, permet à chacun de contester une décision en toute sécurité, et impose un réexamen quand la gouvernance échoue à répétition ?
+    prompts:
+      - Qu'est-ce qui empêche le pouvoir de décision de se concentrer sur une personne ou un petit groupe ?
+      - Qu'est-ce qui empêche un veto informel — quelqu'un qui bloque une décision en dehors du processus convenu ?
+      - Qu'est-ce qui empêche un sous-groupe de capter les décisions, par exemple en ne venant que lorsque cela l'arrange ?
+      - Qu'est-ce qui empêche les personnes qui ont fondé la communauté ou les titulaires de rôles de longue date de s'incruster ?
+      - Comment chacun peut-il contester une décision sans craindre de représailles ?
+      - Quel enchaînement d'échecs impose un réexamen formel — et qui le déclenche ?
+  authority-registry.registered-authorities:
+    question: Quels rôles, cercles ou instances détiennent de l'autorité ici — et quels sont le périmètre, les limites et la durée de mandat de chacun ?
+    prompts:
+      - Quels rôles, cercles ou instances peuvent décider de quoi que ce soit ? (L'ensemble des membres à part entière en fait partie.)
+      - 'Pour chacun : que peut-il décider, et où cela s''arrête-t-il ?'
+      - 'Pour chacun : pendant combien de temps détient-il cette autorité, et comment est-elle renouvelée ou prend-elle fin ?'
+      - D'où chacun tire-t-il son autorité — jamais de l'ancienneté, de la propriété, du charisme ou du fait d'avoir fondé la communauté ?
+      - Quelle autorité temporaire ou d'urgence autorisons-nous, comment est-elle limitée dans le temps, et comment est-elle réexaminée après coup ?
+    examples:
+      - L'ensemble des membres à part entière décide de ce que la matrice de décision lui attribue, aussi longtemps que ces personnes sont membres. La personne à l'intendance des finances paie les factures approuvées et peut dépenser jusqu'à 300 € par poste dans le cadre du budget, pour un mandat de deux ans, désignée par vote. La personne qui administre les adhésions gère les arrivées et les départs mais ne peut admettre personne seule. Personne ne détient d'autorité parce qu'elle a fondé la communauté ou possède des terres ici. En cas d'urgence, deux des personnes d'intendance peuvent agir pendant 72 heures au maximum, et la prochaine assemblée générale réexamine ce qu'elles ont fait.

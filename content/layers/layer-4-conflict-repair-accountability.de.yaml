@@ -29,7 +29,7 @@ sections:
       * Conflict Resolution Ladder  
       * Accountability Protocol
   layer-invariants:
-    title: Layer-Invarianten
+    title: Schicht-Invarianten
     md: |-
       * **Invariante 4.1: Konflikte werden bearbeitet, nicht vermieden**  
         Alle Konflikte müssen einen definierten Lösungsweg haben; Konflikte zu ignorieren ist ein Verstoß.

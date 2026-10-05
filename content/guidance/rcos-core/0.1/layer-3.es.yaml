@@ -1,0 +1,179 @@
+lang: es
+sourceHash: c6d3e526
+sections:
+  '5.1':
+    inShort: Todos los recursos que gobierna la comunidad están listados y marcados como comunes o privados, con quién los administra y cómo se pueden usar o transferir.
+    questions:
+      unclassified:
+        question: ¿Qué pasa con un recurso que todavía nadie ha clasificado?
+        answer: Queda sin clasificar, y la comunidad no puede asignarlo, gravarlo, monetizarlo ni transferirlo hasta que una decisión autorizada lo clasifique.
+      private-property:
+        question: ¿Puede la comunidad decidir sobre la propiedad privada de los miembros?
+        answer: Solo en la medida en que el ámbito, los acuerdos de membresía u otros artefactos gobernados lo digan explícitamente.
+  '5.2':
+    inShort: Decide qué tipos de contribución cuentan, incluidos los cuidados y la coordinación, y cómo se reconocen, para que el trabajo esencial de nadie quede invisible.
+    questions:
+      care-work:
+        question: ¿El trabajo de cuidados tiene que contar como contribución?
+        answer: Tú decides qué categorías se reconocen, y los cuidados y el trabajo emocional son una de las que RCOS menciona. Lo que no puedes hacer es depender de un trabajo no remunerado e invisible sin definir cómo se reconoce.
+      contribution-and-power:
+        question: ¿Quien contribuye más tiene más voz en las decisiones?
+        answer: No a través del reconocimiento de contribuciones. No puede crear autoridad de decisión ni influencia más allá de lo que define la Capa 2.
+  '5.3':
+    inShort: Di qué contiene la tesorería compartida, de dónde viene el dinero, quién puede gastar cuánto, y haz que las cuentas sean abiertas por defecto.
+    questions:
+      confidential-finances:
+        question: ¿Se pueden mantener confidenciales algunas finanzas?
+        answer: Sí, como excepciones definidas, justificadas y acotadas en el tiempo, y nunca de un modo que impida a los miembros comprobar el cumplimiento.
+      spending-limits:
+        question: ¿Cómo acotamos la autoridad de gasto?
+        answer: Con asignaciones claras de autoridad, umbrales por monto o categoría, vías de aprobación y escalamiento, y registros obligatorios.
+  '5.4':
+    inShort: Asegúrate de que el dinero, los créditos o las deudas no se puedan convertir calladamente en poder sobre la comunidad.
+    questions:
+      buy-influence:
+        question: ¿Puede un miembro con dinero financiar cosas a cambio de más voz?
+        answer: No. Los mecanismos económicos no se pueden usar para eludir los límites de autoridad de la Capa 2, ni comprando influencia ni creando dependencia.
+      limit-mechanisms:
+        question: ¿Cómo podemos limitar la acumulación de créditos internos?
+        answer: Con límites máximos, decaimiento o expiración, no transferibilidad, redistribución o validez acotada en el tiempo, según lo que encaje en tu sistema.
+  '5.5':
+    inShort: La Capa 3 vive en dos documentos, el Protocolo de Economía Interna y el Reglamento de Tesorería.
+    questions:
+      which-documents:
+        question: ¿Qué documentos necesita la Capa 3?
+        answer: Un Protocolo de Economía Interna y un Reglamento de Tesorería.
+  '5.6':
+    inShort: Los límites económicos infranqueables son que los recursos compartidos sigan siendo visibles, que los comunes no se puedan privatizar a escondidas, que el trabajo invisible nunca sea estructuralmente necesario y que la influencia no se pueda acumular sin límite.
+    questions:
+      sell-commons:
+        question: ¿Se puede vender alguna vez un recurso común?
+        answer: No mediante una acción informal, implícita o unilateral. Cualquier cambio pasa por una decisión autorizada.
+  '5.7':
+    inShort: Algunos asuntos económicos tienen que estar escritos, otros pueden estarlo, y otros, como la actitud personal de cada quien ante el dinero, quedan fuera del estándar.
+    questions:
+      equal-outcomes:
+        question: ¿RCOS espera que todo el mundo tenga los mismos ingresos o la misma parte?
+        answer: No. Que los resultados sean iguales o diferenciados queda opcional y fuera del alcance.
+templates:
+  internal-economy-protocol.commons-vs-private-classification:
+    question: ¿Qué es de todos nosotros, qué sigue siendo personal, y dónde está eso escrito?
+    prompts:
+      - 'Para cada cosa que tenemos — tierra, edificios, dinero, herramientas, sitios web, cuentas: ¿es compartida por todos nosotros o propia de alguien, y quién la administra o la posee?'
+      - 'Para cada recurso compartido: ¿quién puede usarlo y cómo, quién decide sobre él, quién lo cuida, y cómo se paga su mantenimiento?'
+      - ¿Se puede vender, prestar o convertir en propiedad de alguien un recurso compartido? Y si es así, ¿solo mediante qué decisión, para que nunca pase calladamente?
+      - ¿Dónde termina nuestra autoridad sobre las pertenencias privadas de alguien?
+      - ¿Dónde se guarda la lista, cómo se fecha y versiona cada cambio, y qué pasa con algo que todavía nadie ha listado?
+    examples:
+      - 'Cada cambio en nuestro registro de recursos es una nueva versión fechada y acordada en una asamblea general. La tierra y el taller son compartidos: cualquier miembro puede usarlos, y el grupo de tierra decide sobre ellos y los mantiene mediante jornadas de trabajo mensuales, con las reparaciones pagadas del presupuesto compartido. Los recursos compartidos no se pueden vender, prestar a largo plazo ni privatizar salvo por votación de los miembros plenos. Las viviendas, los vehículos y los ahorros de los miembros son suyos, y no tenemos autoridad sobre ellos más allá del acuerdo de membresía. Todo lo que todavía no esté registrado queda intacto hasta que se clasifique.'
+  internal-economy-protocol.recognized-contribution-categories:
+    question: ¿Qué tipos de trabajo contamos como contribución, incluido el trabajo que nadie ve?
+    prompts:
+      - '¿Qué tipos de contribución reconocemos: por ejemplo trabajo práctico, cuidados, enseñanza, coordinación, mantenimiento?'
+      - '¿Qué trabajo nos mantiene en marcha pero casi nunca se nota ni se agradece: acoger, escuchar, recoger después de las reuniones, moderar, perseguir papeleo?'
+      - 'Para cada tipo de trabajo del que dependemos: ¿está reconocido, repartido como un deber o remunerado, para que nada esencial dependa de que alguien lo haga gratis y en silencio?'
+      - ¿Cómo notaríamos que falta en la lista un trabajo del que dependemos? (Cómo se registran las contribuciones es una pregunta aparte.)
+    examples:
+      - 'Reconocemos seis tipos de contribución: escritura e investigación, construir y mantener nuestras herramientas, coordinación y facilitación, acoger y acompañar a los miembros nuevos, moderación y cuidado de las personas en conflicto o en dificultad, y mantenimiento de los documentos y las cuentas compartidas. La moderación y el cuidado rotan entre los miembros cada tres meses, para que nadie las cargue indefinidamente. En cada revisión trimestral, todo trabajo del que hayamos dependido y que no esté en esta lista se añade como categoría o se convierte en un deber rotativo.'
+  internal-economy-protocol.contribution-recognition-mechanism:
+    question: ¿Cómo llevamos la cuenta de las contribuciones y las reconocemos, y qué desbloquea ese reconocimiento, si desbloquea algo?
+    prompts:
+      - ¿Cómo se registra o se reconoce una contribución, y quién lo hace?
+      - ¿Quién puede confirmar un registro? (Impugnarlo es una pregunta aparte.)
+      - ¿El reconocimiento da algún beneficio, responsabilidad o acceso a recursos compartidos?
+      - ¿Cómo nos aseguramos de que el reconocimiento nunca dé más voz en las decisiones de lo que otorga la Matriz de Decisiones?
+    examples:
+      - Los miembros registran sus propias contribuciones en la hoja compartida en el plazo de una semana, y la persona responsable de la tarea o cualquier otro miembro las confirma. Las contribuciones confirmadas cuentan para el mínimo mensual de participación y dan prioridad al reservar la habitación de invitados. Nunca dan votos extra, derecho de veto ni más peso en ninguna decisión.
+  internal-economy-protocol.internal-units:
+    question: Si usamos nuestros propios créditos u horas, ¿quién los emite y para qué se pueden usar?
+    prompts:
+      - ¿Usamos alguna unidad propia (horas, créditos, puntos)? Si no, dilo, y ¿qué tendríamos que acordar antes de introducir una?
+      - 'Para cada unidad: ¿para qué sirve, quién la emite, por qué concepto y en qué cantidad?'
+      - ¿Se puede dar, intercambiar o vender una unidad a otra persona? Y si es así, ¿entre quiénes?
+      - ¿Una unidad expira, pierde valor con el tiempo o tiene un máximo? (Si eso basta para que nadie pueda dirigirlo todo es una pregunta aparte.)
+      - ¿Cómo evitamos registros falsos o erróneos, cómo se corrige un saldo equivocado, y a dónde acude quien no está de acuerdo con el suyo?
+      - '¿Quién puede ver el saldo y las transacciones de cada persona: todo el mundo, solo quien las tiene, o un rol nombrado?'
+    examples:
+      - Usamos una sola unidad, la hora de trabajo. La persona que coordina las horas de trabajo registra una hora por cada hora de trabajo compartido validada por quien lidera esa tarea; las horas no se pueden dar, intercambiar ni vender. Las horas expiran 24 meses después de haberse ganado, y nadie puede tener más de 200. Cada miembro ve su propio saldo y todas las transacciones sin nombres; la persona coordinadora corrige los errores en el plazo de una semana, y quien no esté de acuerdo con su saldo usa nuestro proceso para registros económicos en disputa.
+      - No usamos ningún crédito, hora ni punto interno. Antes de introducir uno, los miembros plenos tienen que acordar para qué sirve, cómo se emite, si se puede transferir, cuándo expira, cómo se corrigen los errores y quién puede ver los saldos, como una enmienda a este protocolo.
+  internal-economy-protocol.accumulation-constraints:
+    question: ¿Qué impide que una sola persona acumule lo suficiente para dirigirlo todo, y cómo lo notaríamos?
+    prompts:
+      - '¿Qué limita cuánto puede acumular una persona de cualquier unidad, recurso o derecho sobre la comunidad: un límite máximo, la expiración, la no transferibilidad, la redistribución o un plazo?'
+      - ¿Cómo nos aseguramos de que nadie convierta dinero, créditos, préstamos o favores en más voz, comprando influencia, haciendo que otras personas dependan de ella o saltándose la Matriz de Decisiones?
+      - ¿Qué señales nos dirían que la influencia se está concentrando en pocas manos, quién las revisa y con qué frecuencia?
+      - Cuando aparece una señal, ¿quién puede endurecer los límites, y mediante qué decisión?
+    examples:
+      - Ningún miembro puede tener más de 100 créditos, y los créditos sin usar expiran a los 18 meses. Los créditos, los préstamos a la comunidad y las donaciones nunca dan a nadie votos extra, derecho de veto ni voz más allá de lo que otorga la Matriz de Decisiones. Dos veces al año, la persona responsable de finanzas informa del mayor saldo individual de créditos y de la mayor cantidad que la comunidad debe a un solo miembro. Si algún miembro está en el límite o se le deben más de 5.000 €, la siguiente asamblea general revisa estos límites y puede endurecerlos por votación.
+  internal-economy-protocol.external-income-interfaces:
+    question: ¿Cómo llega hasta nosotros el dinero de fuera, y en qué condiciones?
+    prompts:
+      - ¿Por qué canales nos llega hoy dinero de fuera, cuáles podríamos abrir en el futuro y cuáles rechazamos de plano?
+      - ¿Qué hay que decidir antes de abrir un canal nuevo, y puede alguien aceptar dinero o prometer algo antes de esa decisión?
+      - ¿Qué condiciones ligadas al dinero de fuera — informes, uso de nuestra imagen, promesas sobre cómo trabajamos — tienen que ver los miembros antes de decir sí?
+    examples:
+      - El dinero de fuera nos llega por las cuotas de los cursos y por una subvención de una fundación; en el futuro podríamos considerar alquilar salas o vender productos, pero no aceptaremos dinero de anunciantes. No se puede abrir ningún canal de ingresos nuevo, y nadie puede aceptar fondos ni prometer nada a quien financia o a un cliente, hasta que los miembros plenos lo aprueben por una decisión Estratégica después de ver todas sus condiciones, incluidos los deberes de informar y las condiciones sobre cómo trabajamos.
+  internal-economy-protocol.dispute-resolution-for-economic-records:
+    question: Cuando alguien dice que el registro de su contribución está equivocado, ¿cómo se resuelve?
+    prompts:
+      - ¿Cuánto tiempo después de anotarse un registro de contribución o un saldo se puede impugnar?
+      - ¿Quién resuelve un registro impugnado, y quién interviene si esa persona está implicada?
+      - 'Cómo se hace una corrección: ¿se conserva el original y se añade un registro nuevo, y a quién se le comunica?'
+      - Si alguien no está de acuerdo con el resultado, ¿dónde puede apelar, y cuándo se cierra el asunto?
+    examples:
+      - Cualquier miembro puede impugnar un registro de contribución o un saldo en los 60 días siguientes a su anotación, escribiendo a la persona responsable de los registros. Esa persona, u otra persona responsable si la de registros está implicada, decide en 21 días y escribe los motivos. Las correcciones se añaden como registros nuevos y el original nunca se borra. Cualquiera de las partes puede apelar a la siguiente asamblea general, cuya decisión es definitiva.
+  treasury-ruleset.treasury-scope:
+    question: ¿Qué se tiene en común, y dónde termina el bolsillo compartido y empieza el personal?
+    prompts:
+      - ¿Qué cuentas, monederos o cajas de efectivo son dinero de la comunidad, nombrados uno por uno?
+      - ¿Cómo se abre una cuenta de tesorería nueva, y se puede ingresar dinero en ella antes de que eso se decida?
+      - Cuando alguien paga un gasto de la comunidad de su propio bolsillo, ¿eso lo convierte en dinero de la comunidad, y le debe entonces algo la comunidad?
+      - 'Donde el dinero compartido y los recursos privados se encuentran — la tierra de un miembro que usamos, o dinero compartido gastado cerca de la casa de alguien: ¿qué regla se aplica?'
+    examples:
+      - 'Nuestra tesorería son exactamente dos cuentas: la cuenta corriente de la cooperativa y su cuenta de ahorro, las dos a nombre de la cooperativa. Cualquier cuenta de tesorería nueva tiene que aprobarse por una decisión Estratégica de los miembros plenos antes de que se ingrese dinero en ella. El dinero que un miembro gasta de su propio bolsillo en costos compartidos no es tesorería y no genera ninguna deuda, salvo que el gasto se haya aprobado por adelantado según nuestras reglas de gasto, y entonces se le reembolsa desde la cuenta corriente. El dinero de la tesorería nunca se gasta en reparaciones dentro de las viviendas privadas.'
+  treasury-ruleset.income-sources:
+    question: ¿De dónde viene nuestro dinero, y de qué estamos dependiendo?
+    prompts:
+      - '¿Qué dinero entra hoy: de quién, con qué frecuencia y para qué? Si todavía no entra nada, dilo.'
+      - ¿Qué espera de nosotros cada fuente a cambio, y cuándo termina?
+      - ¿Qué fuente nos dolería más si se cortara?
+      - ¿Quién mantiene esta lista al día cuando una fuente termina o cambian sus condiciones? (Abrir una fuente nueva es una pregunta aparte.)
+    examples:
+      - 'Nuestros ingresos vienen de tres fuentes: las contribuciones mensuales de los miembros, las cuotas de los dos cursos abiertos que hacemos cada verano, y una subvención de tres años de una fundación regional que termina la primavera que viene y exige un informe anual de actividades. No tenemos préstamos, patrocinios ni inversores. Perder la subvención sería lo que más nos dolería, así que planificamos el presupuesto de cada año sin ella. La persona responsable de finanzas actualiza esta lista cada vez que una fuente termina o cambian sus condiciones.'
+  treasury-ruleset.spending-authority:
+    question: ¿Quién puede gastar cuánto sin preguntar, quién aprueba el resto, y cómo se registra cada gasto?
+    prompts:
+      - 'Para cada nivel de gasto: ¿hasta qué importe o para qué tipo de costo, qué tipo de decisión, quién lo aprueba y cómo?'
+      - '¿Qué compromisos están en un nivel propio sea cual sea el importe: contratos de varios años, préstamos, cualquier cosa que ate a los miembros futuros?'
+      - ¿Qué pasa cuando un gasto es urgente, o acaba costando más de lo aprobado?
+      - ¿Qué se registra de cada gasto — importe, finalidad, quién lo aprobó, en qué decisión se apoya — y dónde?
+    examples:
+      - 'La persona responsable de finanzas puede aprobar cualquier gasto individual de hasta 300 € dentro del presupuesto anual acordado. Todo lo que pase de 300 €, o quede fuera del presupuesto, necesita una decisión Estratégica por votación de los miembros plenos. Los contratos de varios años, los préstamos y otras obligaciones a largo plazo necesitan una decisión Constitucional: dos tercios de los miembros plenos, confirmada en una segunda asamblea 14 días después. Un gasto que vaya a costar más de lo aprobado pasa primero al nivel siguiente. Cada gasto se registra en el plazo de una semana con el importe, la finalidad, quién lo aprobó y un enlace a la decisión.'
+  treasury-ruleset.transparency-and-reporting:
+    question: ¿Quién puede ver las cuentas, con qué frecuencia, y qué se puede reservar?
+    prompts:
+      - 'Para cada cuenta de tesorería: ¿quién puede ver el saldo y todas las transacciones, y es en vivo o informado después?'
+      - Donde una cuenta no se puede compartir directamente, ¿quién informa sobre ella, con qué frecuencia y con cuánto detalle?
+      - ¿Cómo ven los miembros lo que debemos y lo que hemos prometido, y no solo lo que tenemos?
+      - 'Qué se puede mantener en privado — por ejemplo un pago a alguien en dificultad: ¿quién lo decide, por cuánto tiempo y por qué?'
+      - Incluso cuando algo se mantiene en privado, ¿cómo pueden los miembros comprobar que se siguieron las reglas?
+    examples:
+      - 'Todos los miembros plenos tienen acceso de solo lectura a la cuenta bancaria de la comunidad y ven cada transacción en el momento en que ocurre. La persona que lleva la tesorería publica cada mes en el foro de miembros un resumen de saldos, entradas y salidas de dinero, deudas y compromisos firmados, en los diez días siguientes al cierre del mes. La única excepción es el apoyo pagado a un miembro en dificultad: el nombre queda oculto hasta 12 meses, pero el importe, la fecha y la decisión que lo aprobó se muestran siempre, y dos miembros elegidos por sorteo cada año pueden revisar todos los detalles.'
+  treasury-ruleset.reserve-risk-and-debt-constraints:
+    question: ¿Cuánto podemos deber, y cuánto guardamos para un año malo?
+    prompts:
+      - ¿Podemos pedir dinero prestado? Y si es así, ¿cuánto, a quién y solo mediante qué decisión?
+      - ¿Qué costos recurrentes o contratos largos (alquileres, suscripciones, personal remunerado) necesitan una decisión antes de que alguien firme?
+      - '¿Guardamos dinero para un año malo: cuánto, para qué se puede usar y quién puede recurrir a él? Si todavía no tenemos un objetivo, dilo.'
+      - ¿Puede alguien pedir préstamos, dar garantías o hacer inversiones en nuestro nombre fuera de las cuentas de tesorería?
+    examples:
+      - No pedimos préstamos, no damos garantías ni hacemos inversiones salvo que los miembros plenos lo aprueben por voto Estratégico, y la deuda total nunca puede superar seis meses de nuestros ingresos habituales. Cualquier contrato o costo recurrente que dure más de un año también necesita un voto Estratégico. Queremos mantener tres meses de gastos de funcionamiento en una cuenta de reserva aparte; solo se puede usar para reparaciones de emergencia o pérdida de ingresos, y cada retirada se informa en la siguiente asamblea general.
+  treasury-ruleset.conflict-of-interest-rules:
+    question: ¿Qué hace alguien cuando una decisión sobre dinero le beneficiaría personalmente?
+    prompts:
+      - ¿Puede alguien aprobar un gasto que pidió esa misma persona? Y si no, ¿quién lo aprueba en su lugar?
+      - '¿Qué cuenta como interés personal: el negocio de un familiar, una amistad que nos provee, un rol remunerado?'
+      - Cuando alguien saldría ganando con un pago o una compra, ¿en qué momento lo dice, y se retira de la discusión y de la decisión?
+      - ¿Dónde se registran las declaraciones, y qué pasa con una decisión si un interés no se declaró?
+    examples:
+      - Nadie puede aprobar una solicitud de gasto que haya hecho esa misma persona; pasa a otra persona responsable. Todo miembro que, o cuya pareja, familia o negocio, saldría ganando con una decisión de gasto o de compra tiene que decirlo antes de que empiece la discusión, y después se retira de la discusión y no vota. Las declaraciones se anotan en el acta. Si más tarde se descubre un interés no declarado, la decisión se revisa en la siguiente asamblea general.

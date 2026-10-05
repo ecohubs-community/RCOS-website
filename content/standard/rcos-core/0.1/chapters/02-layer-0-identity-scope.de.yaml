@@ -1,7 +1,7 @@
 lang: de
 sourceHash: 'eb931554'
 title: 2. Schicht 0 — Identität & Geltungsbereich
-intro: Schicht 0 definiert die konstitutionelle Identität der Gemeinschaft. Er legt fest, was die Gemeinschaft *ist*, was sie *nicht ist*, und die nicht verhandelbaren Einschränkungen, unter denen alle anderen Layer operieren. Keine Regel, Entscheidung oder Praxis in höheren Layern darf Schicht 0 widersprechen.
+intro: Schicht 0 definiert die konstitutionelle Identität der Gemeinschaft. Sie legt fest, was die Gemeinschaft *ist*, was sie *nicht ist*, und die nicht verhandelbaren Einschränkungen, unter denen alle anderen Schichten operieren. Keine Regel, Entscheidung oder Praxis in höheren Schichten darf Schicht 0 widersprechen.
 sections:
   '2.1':
     title: Zweckdefinition
@@ -13,7 +13,7 @@ sections:
       2.1.3:
         text: Der primäre Zweck MUSS über die Zeit stabil sein und MUSS nur durch eine konstitutionelle Entscheidung gemäß Schicht 2 und über den in Schicht 6 definierten Änderungsprozess geändert werden.
       2.1.4:
-        text: Sekundäre Zwecke KANN definiert werden, DARF NICHT jedoch dem primären Zweck widersprechen oder ihn außer Kraft setzen.
+        text: Sekundäre Zwecke KÖNNEN definiert werden, DÜRFEN NICHT jedoch dem primären Zweck widersprechen oder ihn außer Kraft setzen.
       2.1.5:
         text: Keine Handlung, Entscheidung oder Ressourcenzuweisung KANN dem erklärten primären Zweck materiell widersprechen.
   '2.2':
@@ -39,30 +39,30 @@ sections:
       2.3.1:
         text: Invarianten sind Einschränkungen, die definieren, was DARF NICHT verletzt werden darf, solange sie in Kraft sind.
       2.3.2:
-        text: Invarianten MUSS explizit aufgelistet und dokumentiert sein.
+        text: Invarianten MÜSSEN explizit aufgelistet und dokumentiert sein.
       2.3.3:
-        text: Invarianten MUSS über alle Layer von RCOS hinweg gelten.
+        text: Invarianten MÜSSEN über alle Schichten von RCOS hinweg gelten.
       2.3.4:
         text: Keine Entscheidung, Rolle, kein Prozess und keine Notfallmaßnahme KANN eine Invariante außer Kraft setzen.
       2.3.5:
         text: Wenn ein Konflikt zwischen einer Invariante und einer anderen Regel entsteht, MUSS die Invariante Vorrang haben.
       2.3.6:
-        text: Invarianten KANN nur durch einen konstitutionellen Änderungsprozess gemäß Schicht 2 und Schicht 6 geändert oder entfernt werden.
+        text: Invarianten KÖNNEN nur durch einen konstitutionellen Änderungsprozess gemäß Schicht 2 und Schicht 6 geändert oder entfernt werden.
   '2.4':
     title: Identitätseinschränkungen
     blocks:
       2.4.1:
         text: Die Gemeinschaft MUSS alle Einschränkungen auf Identitätsebene erklären, die Teilnahme, Verhalten oder Governance wesentlich beeinflussen.
       2.4.2:
-        text: 'Identitätseinschränkungen KANN unter anderem Folgendes umfassen:'
+        text: 'Identitätseinschränkungen KÖNNEN unter anderem Folgendes umfassen:'
         items:
           - Ethische oder verhaltensbezogene Grenzen
           - Teilnahmevoraussetzungen
           - Nicht verhandelbare kulturelle oder ökologische Einschränkungen
       2.4.3:
-        text: Identitätseinschränkungen MUSS überprüfbar und durch definierte Prozesse durchsetzbar sein.
+        text: Identitätseinschränkungen MÜSSEN überprüfbar und durch definierte Prozesse durchsetzbar sein.
       2.4.4:
-        text: Identitätseinschränkungen DARF NICHT implizit oder informell durchgesetzt werden.
+        text: Identitätseinschränkungen DÜRFEN NICHT implizit oder informell durchgesetzt werden.
   '2.5':
     title: Artefakte
     blocks:
@@ -74,7 +74,7 @@ sections:
           - Invarianten-Register
           - Register der Identitätseinschränkungen
       2.5.2:
-        text: 'Artefakte von Schicht 0 MUSS:'
+        text: 'Artefakte von Schicht 0 MÜSSEN:'
         items:
           - Für alle Mitglieder öffentlich zugänglich sein
           - Versioniert sein

@@ -1,0 +1,177 @@
+lang: de
+sourceHash: 1e9b7b71
+sections:
+  '2.1':
+    inShort: Eure Gemeinschaft braucht einen Grund zu existieren, an dem sich jede andere Entscheidung messen lässt.
+    questions:
+      more-than-one-purpose:
+        question: Können wir mehr als einen Zweck haben?
+        answer: Ja, als sekundäre Zwecke. Sie dürfen dem primären Zweck nur nicht widersprechen und ihn nicht außer Kraft setzen.
+      change-purpose:
+        question: Wie ändern wir unseren Zweck später?
+        answer: Nur durch eine konstitutionelle Entscheidung (Schicht 2), umgesetzt mit dem Änderungsprozess aus Schicht 6. Ein Zweck, der sich häufig ändert, ist eine Strategie und kein Zweck.
+      goal-as-purpose:
+        question: Kann unser Zweck ein Projekt sein, etwa ein Haus zu bauen?
+        answer: Nein. Ein Projekt endet, wenn es fertig ist; der primäre Zweck beschreibt, warum die Gemeinschaft überhaupt existiert, und überdauert jedes einzelne Projekt.
+  '2.2':
+    inShort: Schreibt auf, was die Gemeinschaft regelt – und genauso klar, was sie nicht regelt. Alles, was ihr nicht auflistet, bleibt außerhalb eurer Zuständigkeit.
+    questions:
+      forgot-something:
+        question: Was, wenn wir etwas zu listen vergessen?
+        answer: Dann liegt es außerhalb des Geltungsbereichs, bis ihr es ergänzt. Die Gemeinschaft hat keine Zuständigkeit für Dinge, die sie nie erklärt hat.
+      private-lives:
+        question: Hat die Gemeinschaft ein Mitbestimmungsrecht im Privatleben der Mitglieder?
+        answer: Nur dort, wo die Geltungsbereichserklärung das ausdrücklich sagt. Personen, Vermögenswerte und Bereiche, die als außerhalb des Geltungsbereichs erklärt sind, liegen jenseits der Zuständigkeit der Gemeinschaft.
+      what-to-include:
+        question: Was muss eine Geltungsbereichserklärung abdecken?
+        answer: Mindestens die Vermögenswerte, die ihr verwaltet, die Bereiche, über die ihr entscheidet, und die Tätigkeiten und Verantwortlichkeiten unter kollektiver Kontrolle – plus eine ausdrückliche Liste dessen, was außerhalb des Geltungsbereichs liegt.
+  '2.3':
+    inShort: Invarianten sind die wenigen harten Grenzen, die eure Gemeinschaft dem alltäglichen Entscheiden entzieht. Nicht einmal ein einstimmiger Beschluss kann sie einfach so außer Kraft setzen.
+    questions:
+      emergency:
+        question: Kann ein Notfall rechtfertigen, eine Invariante zu brechen?
+        answer: Nein. Keine Entscheidung, keine Rolle, kein Prozess und keine Notfallmaßnahme darf eine Invariante außer Kraft setzen.
+      change-invariant:
+        question: Können wir eine Invariante überhaupt ändern?
+        answer: Ja, aber nur über einen konstitutionellen Änderungsprozess, wie er in Schicht 2 und Schicht 6 definiert ist.
+      invariant-vs-constraint:
+        question: Wie unterscheidet sich eine Invariante von einer Identitätsbeschränkung?
+        answer: Eine Invariante ist eine harte Grenze dafür, was niemals passieren darf – etwa das Land zu verkaufen. Eine Identitätsbeschränkung beschreibt, wer die Gemeinschaft ist und was Teilnahme voraussetzt – etwa ökologische oder verhaltensbezogene Grenzen.
+      how-many:
+        question: Wie viele Invarianten sollten wir haben?
+        answer: RCOS legt keine Zahl fest. Weniger und klarere Invarianten sind leichter zu schützen; jede einzelne ist ein Versprechen, das niemals einfach so gebrochen werden kann.
+  '2.4':
+    inShort: Wenn die Teilnahme an dieser Gemeinschaft mit Grenzen verbunden ist – etwa wie Menschen sich verhalten oder wozu sie sich verpflichten –, dann sagt es offen und sagt auch, wie es überprüft wird.
+    questions:
+      unwritten-norms:
+        question: Wir teilen Werte, die niemand aufgeschrieben hat. Ist das ein Problem?
+        answer: Ja, wenn diese Werte darüber entscheiden, wer teilnehmen darf oder wie Menschen behandelt werden. Identitätsbeschränkungen, die in der Praxis wirken, müssen erklärt und über definierte Prozesse durchgesetzt werden – niemals informell.
+      testable:
+        question: Was macht eine Identitätsbeschränkung überprüfbar?
+        answer: Eine andere Person könnte sich eine Situation ansehen und zum gleichen Ergebnis kommen, ob die Beschränkung eingehalten oder gebrochen wurde – und es gibt einen definierten Prozess dafür, was dann passiert.
+  '2.5':
+    inShort: Schicht 0 lebt in vier kurzen Dokumenten. Jedes Mitglied kann sie lesen, jede Version wird aufbewahrt, und jedes wurde durch eine formale Ratifizierung beschlossen.
+    questions:
+      which-documents:
+        question: Welche Dokumente braucht Schicht 0?
+        answer: Eine Zweckcharta, eine Geltungsbereichserklärung, ein Invariantenregister und ein Register der Identitätsbeschränkungen.
+      contradiction:
+        question: Was, wenn zwei dieser Dokumente sich widersprechen?
+        answer: Dann erfüllt die Gemeinschaft RCOS-Core nicht, solange der Widerspruch nicht aufgelöst ist.
+templates:
+  purpose-charter.primary-purpose:
+    question: Warum existiert diese Gemeinschaft – in einem Satz, der in zehn Jahren noch stimmt?
+    prompts:
+      - Wenn wir nur einen einzigen Grund zu existieren behalten könnten – welcher wäre es?
+      - Würde er in zehn Jahren noch stimmen, wenn unsere aktuellen Projekte abgeschlossen oder aufgegeben sind?
+      - Ist es ein dauerhafter Grund – kein Projekt, keine Strategie und kein Ziel, das wir eines Tages abhaken könnten?
+      - Ist er klar genug, dass wir erkennen könnten, wenn eine Entscheidung oder die Art, wie wir Zeit oder Geld einsetzen, ihm widerspricht?
+    examples:
+      - Wir existieren, damit die Menschen, die hier leben, Land, Wohnraum und die tägliche Arbeit so teilen können, dass Boden, Wasser und unsere Nachbarschaft besser dastehen als wir sie angetroffen haben.
+  purpose-charter.secondary-purposes:
+    question: Welche sekundären Zwecke verfolgen wir – ohne mit unserem Existenzgrund zu konkurrieren?
+    prompts:
+      - Welche anderen konkreten Ergebnisse verfolgen wir neben unserem primären Zweck – wenn überhaupt?
+      - 'Bei jedem einzelnen: Könnte er jemals Zeit, Geld oder Menschen von unserem primären Zweck abziehen – und wenn ja, ist er dann wirklich sekundär?'
+      - Sagen wir klar, dass der primäre Zweck gewinnt, wenn ein sekundärer Zweck mit ihm in Konflikt gerät?
+    examples:
+      - 'Neben unserem primären Zweck verfolgen wir drei sekundäre Zwecke: Wohnraum für Mitglieder mit kleinem Einkommen bezahlbar zu halten, eine offene Werkzeugbibliothek für die Nachbarschaft zu betreiben und an zwei Tagen der offenen Tür pro Jahr zu teilen, was wir über das gemeinschaftliche Leben lernen. Keiner davon darf unseren primären Zweck außer Kraft setzen; wenn einer mit ihm in Konflikt gerät, hat der primäre Zweck Vorrang, und der sekundäre Zweck wird zurückgefahren oder aufgegeben.'
+  purpose-charter.non-goals-and-exclusions:
+    question: Was sind wir bewusst nicht – wie verlockend es auch werden mag?
+    prompts:
+      - Für was könnten Außenstehende oder neue Mitglieder uns halten, was wir nicht sind – eine politische Partei, ein Unternehmen, eine religiöse Gruppe, eine Wohltätigkeitsorganisation?
+      - Welche verlockenden Richtungen sind schon aufgekommen oder werden es wahrscheinlich, die wir jetzt ausschließen wollen?
+      - 'Bei jeder einzelnen: Ist sie klar genug formuliert, dass jede Person auf eine Aktivität zeigen und sagen könnte, dass sie die Grenze überschreitet?'
+    examples:
+      - 'Wir sind keine politische Partei, und wir unterstützen als Gemeinschaft keine Kandidaturen oder Kampagnen. Wir sind kein Anlagevehikel: Niemand tritt bei, um eine Rendite zu erzielen, und gemeinschaftliche Vermögenswerte werden nie so verwaltet, dass sie Mitgliedern Gewinn bringen. Wir sind keine religiöse oder spirituelle Gruppe, und von niemandem, der teilnimmt, wird ein Glaube oder eine Praxis erwartet.'
+  purpose-charter.conditions-for-purpose-change:
+    question: Was wäre nötig, um unseren Existenzgrund zu ändern – und wer müsste zustimmen?
+    prompts:
+      - Behandeln wir die Änderung unseres primären Zwecks als eine unserer höchstrangigen (konstitutionellen) Entscheidungen und nicht als gewöhnliche?
+      - Wie viele Menschen müssen zustimmen, und wer zählt – alle Mitglieder, nur Vollmitglieder oder die, die abstimmen?
+      - Wie lange müssen wir zwischen der Entscheidung und dem Inkrafttreten der Änderung warten?
+      - Wo wird die Änderung festgehalten, damit die alte und die neue Formulierung beide sichtbar bleiben?
+      - Brauchen unsere sekundären Zwecke für eine Änderung die gleiche Hürde oder eine niedrigere?
+    examples:
+      - Die Änderung des primären Zwecks ist eine konstitutionelle Entscheidung. Der Vorschlag muss 30 Tage vor der Abstimmung geteilt werden, und er wird nur mit mindestens zwei Dritteln der von Vollmitgliedern abgegebenen Stimmen angenommen, wobei mindestens die Hälfte aller Vollmitglieder abstimmen muss. Die Änderung tritt nach weiteren 30 Tagen in Kraft und wird zusammen mit der vorherigen Formulierung in unserer Versionshistorie festgehalten. Sekundäre Zwecke können durch eine gewöhnliche Gemeinschaftsentscheidung geändert werden.
+  purpose-charter.ratification-record:
+    question: Wer hat diese Charta beschlossen, wann, und wie wurde entschieden?
+  scope-declaration.in-scope-assets:
+    question: Was besitzt oder betreut die Gemeinschaft gemeinsam?
+    prompts:
+      - Was besitzen, halten oder betreuen wir gemeinsam – Geld, Land, Gebäude, Ausrüstung, Software, Websites, Konten, unseren Namen und unser Logo?
+      - 'Bei jedem einzelnen: Was genau ist es – welches Konto, welches Grundstück, welche Domain –, damit niemand darüber streiten kann, was gemeint ist?'
+      - Was halten Einzelpersonen im Namen der Gemeinschaft, etwa ein Konto oder eine Domain auf den Namen eines Mitglieds – und zählen wir das als unseres?
+      - Gibt es etwas, das wir in der Praxis teilen, aber nie benannt haben? (Welche Entscheidungen und welche Arbeit kollektiv sind, sind eigene Fragen.)
+    examples:
+      - 'Das Kollektiv verwaltet: die gemeinsame Kasse in unserer Multi-Signature-Wallet mit zwei von drei Schlüsseln; die Projekt-Website und ihre Domain; die Code-Repositories unter dem Organisationskonto des Kollektivs; unseren Chat-Server und unsere Social-Media-Konten; sowie den Namen, das Logo und die veröffentlichten Leitfäden des Kollektivs. Jedes Konto, das ein Mitglied im Namen des Kollektivs registriert, gehört dem Kollektiv.'
+  scope-declaration.in-scope-decision-domains:
+    question: Welche Entscheidungen gehören der Gruppe und nicht Einzelpersonen?
+    prompts:
+      - Welche Arten von Fragen entscheiden wir gemeinsam – zum Beispiel wie wir entscheiden, wer beitreten darf, wie gemeinsames Geld ausgegeben wird, wie gemeinsame Räume genutzt werden?
+      - 'Bei jeder einzelnen: Wo endet sie – was bleibt bei einer Einzelperson, einem Haushalt oder einer externen Partei?'
+      - Werden heute aus Gewohnheit Entscheidungen von einer Person getroffen, die wir als Entscheidungen der Gruppe benennen wollen – oder von denen wir klar sagen, dass sie es nicht sind? (Wie jede Art von Entscheidung getroffen wird, ist eine eigene Frage.)
+    examples:
+      - 'Wir entscheiden gemeinsam über: unsere Governance-Regeln und wie Entscheidungen getroffen werden; wer beitreten darf und zu welchen Bedingungen; wie das gemeinsame Budget und die Reserven verwendet werden; die Nutzung und Instandhaltung des gemeinsamen Hauses, des Gartens und der Gästezimmer; und jede Vereinbarung, die im Namen der Gemeinschaft mit einer externen Partei getroffen wird. Entscheidungen über die eigene Wohnung jedes Haushalts bleiben bei diesem Haushalt.'
+  scope-declaration.in-scope-activities-and-responsibilities:
+    question: Welche Arbeit und welche Verantwortlichkeiten sind kollektiv?
+    prompts:
+      - Für welche laufende Arbeit sind wir als Gemeinschaft verantwortlich – Instandhaltung, Aufnahme neuer Mitglieder, Buchhaltung, Pflege unseres Namens, Bewirtung von Gästen?
+      - 'Bei jeder einzelnen: Wird sie regelmäßig oder nur bei Bedarf gemacht, und was geht schief, wenn sie niemand macht?'
+      - Macht heute jemand Arbeit, die niemand formell übernommen hat – und sollte sie kollektiv sein, oder sollten wir sagen, dass sie es nicht ist? (Wer welche Arbeit macht, wird bei der Rollenvergabe entschieden.)
+    examples:
+      - 'Als Gemeinschaft sind wir verantwortlich für: die Instandhaltung der gemeinsamen Wasserversorgung, der Wege und der Solaranlage; den Betrieb des Gemüsegartens und der Obstwiese; die Aufnahme und das Willkommenheißen neuer Mitglieder; die Buchhaltung und die Berichterstattung darüber zweimal im Jahr; und die Bewirtung von Gästen und Freiwilligen. Arbeit an privaten Wohnungen und persönlichen Gärten ist keine kollektive Verantwortung.'
+  scope-declaration.explicitly-out-of-scope:
+    question: Was ist nicht Sache der Gemeinschaft – und bleibt es auch?
+    prompts:
+      - Wobei könnten Menschen annehmen, die Gemeinschaft habe ein Mitbestimmungsrecht, obwohl sie keines hat – Geld, Beziehungen, Berufe und Überzeugungen der Mitglieder oder andere Projekte, zu denen sie gehören?
+      - Mit welchen externen Organisationen, Diensten oder Nachbarn arbeiten wir zusammen, ohne Zuständigkeit über sie zu haben?
+      - Sagen wir klar, dass alles, was nicht als im Geltungsbereich benannt ist, außerhalb liegt, auch wenn diese Liste es nicht erwähnt?
+      - Was passiert mit einer Entscheidung, die in etwas auf dieser Liste hineingreift – ist sie einfach unwirksam?
+    examples:
+      - 'Folgendes liegt außerhalb des Geltungsbereichs: persönliches Einkommen, Ersparnisse und Privatfinanzen der Mitglieder; ihre privaten Beziehungen und wie sie ihre eigenen Wohnungen einrichten; ihre Erwerbsarbeit und ihre Projekte außerhalb der Gemeinschaft; und die Hosting-Firmen und Software-Dienste, die wir nutzen, deren Bedingungen wir akzeptieren, aber nicht bestimmen. Alles, was nicht als im Geltungsbereich erklärt ist, liegt außerhalb, und eine Gemeinschaftsentscheidung, die in diese Bereiche hineingreift, ist unwirksam.'
+  scope-declaration.ratification-record:
+    question: Wer hat diesen Geltungsbereich beschlossen, wann, und wie wurde entschieden?
+  invariants-register.active-invariants:
+    question: Was darf hier niemals passieren, ganz gleich unter welchen Umständen oder mit welcher Mehrheit?
+    prompts:
+      - Was darf hier niemals passieren, selbst im Notfall oder nach einer breiten Abstimmung? Schreibt jedes als einen klaren Satz.
+      - 'Bei jeder einzelnen: Woran würde jede Person ohne Streit erkennen, dass sie gebrochen wurde?'
+      - Gilt jede überall – bei Mitgliedschaft, Geld, Rollen, Sicherheit und der Art, wie wir entscheiden – oder haben wir sie so formuliert, dass sie nur einen Bereich abdeckt?
+      - Wenn eine Entscheidung, eine Rolle oder eine andere Regel mit einer davon in Konflikt gerät, sagen wir klar, dass die Invariante gewinnt und das andere zurücktritt?
+      - Ist die Liste kurz genug, dass jede einzelne wirklich absolut ist – und ist etwas darauf eigentlich nur eine starke Vorliebe?
+      - Sind wir uns einig, dass sie nur über unseren höchstrangigen (konstitutionellen) Änderungsprozess geändert werden können und nie durch eine gewöhnliche Entscheidung?
+    examples:
+      - Niemand darf daran gehindert werden, die Gemeinschaft zu verlassen, oder dafür bestraft werden. Keine Person und keine Rolle darf Befugnisse ausüben, die nicht in unseren Governance-Dokumenten festgeschrieben sind. Die körperliche Sicherheit jeder Person, und vor allem die eines Kindes, hat Vorrang vor Rolle, Ansehen und Teilnahme jeder anderen Person. Das gilt für jede Regel, jede Rolle, jede Entscheidung und jede Notfallmaßnahme bei uns; wo etwas damit in Konflikt gerät, setzen sich diese Invarianten durch, und sie ändern sich nur über unseren konstitutionellen Änderungsprozess.
+  invariants-register.ratification-record:
+    question: Wer hat diese Invarianten beschlossen, wann, und wie wurde entschieden?
+  identity-constraints-register.active-identity-constraints:
+    question: Welche nicht verhandelbaren Regeln folgen daraus, wer wir als Gemeinschaft sind – zu Verhalten, Beitritt, Kultur oder Land?
+    prompts:
+      - Welche Regeln gelten für alle, die teilnehmen, ganz gleich was eine Mehrheit an einem bestimmten Tag will?
+      - 'Bei jeder einzelnen: Für wen gilt sie?'
+      - Was bedeutet sie für diese Menschen in der Praxis – was dürfen sie nicht tun, oder was muss zutreffen, bevor sie beitreten können?
+      - Warum ist sie nötig – was würde hier ohne sie schiefgehen?
+    examples:
+      - Nur Menschen ab 18 Jahren können Mitglieder werden.
+      - Kein Glaubenssystem, keine Religion und keine politische Überzeugung darf für Beitritt oder Teilnahme verlangt werden.
+      - Nichts, was die Gemeinschaft tut, darf dem Land, das sie betreut, dauerhaft schaden; bei jeder Entscheidung zu Land und Gebäuden steht, wie das geprüft wurde.
+  identity-constraints-register.enforcement-and-testability:
+    question: Wie würde jemand prüfen, ob eine Beschränkung eingehalten wird – und was passiert, wenn nicht?
+    prompts:
+      - 'Bei jeder Regel: Woran würde jemand merken, dass sie nicht eingehalten wird?'
+      - Welcher schriftlich festgehaltene Prozess behandelt einen Verstoß, damit er nicht der Person überlassen bleibt, die am lautesten widerspricht?
+      - Wer hat ein Auge darauf, und wie oft wird das wieder überprüft?
+    examples:
+      - 'Bei jeder Beschränkung steht, woran ein Verstoß sichtbar würde und wer ein Auge darauf hat: Die Landgruppe prüft die ökologischen Beschränkungen bei ihrem vierteljährlichen Rundgang, und jede Person kann einen Verstoß gegen eine verhaltensbezogene Beschränkung an die Koordination für Verantwortlichkeit melden. Jeder gemeldete Verstoß geht durch unseren Verantwortlichkeitsprozess – nie durch eine private Verwarnung oder einen stillen Ausschluss. Das gesamte Register überprüfen wir beim jährlichen Reflexionstreffen.'
+  identity-constraints-register.conditions-for-change:
+    question: Wie werden unsere nicht verhandelbaren Regeln ergänzt, geändert oder entfernt – und wer muss zustimmen?
+    prompts:
+      - Welche Art von Entscheidung braucht es, um eine unserer nicht verhandelbaren Regeln zu ergänzen, zu ändern oder zu entfernen – eine gewöhnliche oder eine unserer höchstrangigen (konstitutionellen) Entscheidungen?
+      - Wie viele Menschen müssen zustimmen, und wer zählt – alle, nur Vollmitglieder oder die Anwesenden?
+      - Wie lange warten wir zwischen dem Beschluss einer Änderung und ihrem Inkrafttreten, damit Betroffene Bedenken äußern oder sich vorbereiten können?
+      - Braucht das Entfernen einer nicht verhandelbaren Regel die gleiche Hürde wie das Ergänzen oder Ändern?
+    examples:
+      - Eine Identitätsbeschränkung zu ergänzen, zu ändern oder zu entfernen ist eine konstitutionelle Entscheidung. Der Vorschlag muss allen Vollmitgliedern mindestens 21 Tage vor dem Treffen, das darüber entscheidet, mitgeteilt werden, und er wird nur angenommen, wenn mindestens drei Viertel aller Vollmitglieder dafür stimmen. Die Änderung tritt 30 Tage nach der Entscheidung in Kraft, und die alte und die neue Formulierung bleiben beide in der Historie des Registers.
+  identity-constraints-register.ratification-record:
+    question: Wer hat diese Beschränkungen beschlossen, wann, und wie wurde entschieden?

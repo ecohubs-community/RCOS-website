@@ -21,6 +21,10 @@ jobs:
   build:
     runs-on: ubuntu-latest
     timeout-minutes: 25
+    env:
+      # Read through $env/static/public, so type checks, tests and the build
+      # all need it.
+      PUBLIC_APP_URL: https://rcos.ecohubs.community
     steps:
       - uses: actions/checkout@v4
 
@@ -48,9 +52,6 @@ jobs:
 
       - name: Build
         run: pnpm build
-        env:
-          # Read through $env/static/public, so it must exist at build time.
-          PUBLIC_APP_URL: https://rcos.ecohubs.community
 
       - name: Internal links and anchors
         run: pnpm check:links

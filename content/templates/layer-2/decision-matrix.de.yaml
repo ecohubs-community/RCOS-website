@@ -2,7 +2,7 @@ lang: de
 sourceHash: '8c53f945'
 title: Entscheidungsmatrix
 preamble: |-
-  - **Layer:** 2 — Governance & Entscheidungslogik
+  - **Schicht:** 2 — Governance & Entscheidungslogik
   - **Status:** Vorlage — an deine Gemeinschaft anpassen
   - **RCOS-Referenz:** [§4.2](rcos:§4.2), [§4.4](rcos:§4.4), [§4.7](rcos:§4.7)
 

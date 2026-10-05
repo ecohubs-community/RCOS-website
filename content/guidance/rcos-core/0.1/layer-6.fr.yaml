@@ -1,0 +1,201 @@
+lang: fr
+sourceHash: 6ed5c6a7
+sections:
+  '8.1':
+    inShort: Changer les règles suit son propre processus écrit. Chaque proposition dit ce qu'elle change, qui en décide, et comment elle sera réexaminée.
+    questions:
+      proposal-contents:
+        question: Que doit contenir une proposition de changement ?
+        answer: Ce qu'elle affecte, le type de décision et le chemin de décision, l'effet visé et les risques, la date d'entrée en vigueur, et la manière dont les rôles, accords ou archives existants migrent.
+      layer-0-change:
+        question: Comment changer quelque chose dans la Couche 0 ?
+        answer: Comme un changement constitutionnel, par le mécanisme de décision constitutionnelle.
+  '8.2':
+    inShort: Chaque changement adopté reçoit une version, pour que tout le monde puisse dire quelles règles sont en vigueur aujourd'hui et lesquelles s'appliquaient avant.
+    questions:
+      understood-change:
+        question: Tout le monde était d'accord dans la cuisine. Le changement de règle compte-t-il ?
+        answer: Non. Les changements de règles informels, non documentés ou « tacites » ne sont pas valides.
+      old-rules:
+        question: Pouvons-nous supprimer les règles qui ne s'appliquent plus ?
+        answer: Les règles remplacées restent accessibles, avec les dates auxquelles elles étaient en vigueur, pour les audits, l'apprentissage et les litiges.
+  '8.3':
+    inShort: Les expérimentations permettent d'essayer quelque chose de nouveau pour une durée limitée, avec des critères de réussite clairs et un chemin de retour.
+    questions:
+      experiment-invariant:
+        question: Une expérimentation peut-elle suspendre un invariant ?
+        answer: Non. Les expérimentations ne peuvent pas passer outre les invariants de la Couche 0 ni contourner les contraintes de gouvernance de la Couche 2.
+      experiment-harm:
+        question: Et si une expérimentation commence à causer du tort ?
+        answer: Elle est suspendue ou arrêtée immédiatement comme action de protection, et réexaminée ensuite.
+  '8.4':
+    inShort: Écrivez ce qui a mal tourné et ce que vous en avez appris, pour que la communauté apprenne dans son ensemble au lieu de blâmer des personnes.
+    questions:
+      repeated-failure:
+        question: Le même problème revient sans cesse. Et maintenant ?
+        answer: Les schémas d'échec répétés déclenchent une revue structurelle plutôt qu'un blâme individuel.
+  '8.5':
+    inShort: Préférez les changements réversibles. Les changements importants ou irréversibles bénéficient de plus de temps, d'un seuil plus élevé et d'un examen honnête des risques.
+    questions:
+      emergency-change:
+        question: Pouvons-nous changer les règles rapidement en cas d'urgence ?
+        answer: Seulement là où les changements d'urgence sont explicitement définis. Ils sont limités dans le temps, ne peuvent pas passer outre les invariants, et sont réexaminés puis ratifiés ou annulés ensuite.
+  '8.6':
+    inShort: 'La Couche 6 vit dans trois documents : le Protocole de changement, l''Historique des versions et le Journal d''apprentissage.'
+    questions:
+      which-documents:
+        question: De quels documents la Couche 6 a-t-elle besoin ?
+        answer: Un Protocole de changement, un Historique des versions et un Journal d'apprentissage.
+  '8.7':
+    inShort: Les limites strictes du changement sont que le changement est toujours possible mais jamais instantané ni invisible, et que les échecs deviennent un apprentissage partagé au lieu d'être effacés.
+    questions:
+      instant-change:
+        question: Pourquoi un changement ne peut-il pas prendre effet immédiatement ?
+        answer: Aucun changement ne peut être instantané, implicite ou non réexaminable. C'est ce qui garde le changement possible sans en faire un outil de captation.
+  '8.8':
+    inShort: La manière dont les règles changent, le fonctionnement des versions et la façon dont les expérimentations prennent fin doivent être explicites. La vitesse à laquelle vous innovez est votre choix.
+    questions:
+      pace:
+        question: RCOS attend-il de nous que nous changions continuellement ?
+        answer: Non. Le rythme de l'innovation reste optionnel et hors périmètre ; seule la manière dont le changement se produit doit être explicite.
+templates:
+  change-protocol.how-changes-are-proposed:
+    question: Comment quelqu'un propose-t-il d'ajouter, de changer, de suspendre ou de supprimer une de nos règles, un de nos rôles ou une de nos structures ?
+    prompts:
+      - Qui peut proposer d'ajouter, de changer, de suspendre ou de supprimer une règle, un rôle, un document ou une manière de décider ?
+      - Où une proposition est-elle déposée, et qui s'assure qu'elle parvient à tout le monde ?
+      - Quels documents et quelles sections la proposition doit-elle nommer comme affectés ?
+      - Quel type de décision et quel chemin de décision de notre Matrice de décision la proposition doit-elle nommer — et donc qui en décide ?
+      - Que doit dire chaque proposition sur son objectif, sa portée et ses risques connus ?
+      - Que doit-elle dire sur sa date d'entrée en vigueur, une éventuelle période de transition, ce qui arrive aux rôles, accords et archives existants, et la manière dont elle serait annulée ? (La durée de son réexamen et ce qui se passe en cas d'urgence font l'objet de leurs propres questions.)
+    examples:
+      - Tout Membre à part entière peut proposer d'ajouter, de changer, de suspendre ou de supprimer une règle, un rôle, un document ou une structure de décision en remplissant le formulaire de proposition dans le dossier des propositions et en informant la personne qui facilite. Le formulaire nomme les documents et sections affectés, le type et le chemin de décision issus de notre Matrice de décision, ce que le changement est censé faire, sa portée et ses risques, la date d'entrée en vigueur et toute période de transition, ce qui arrive aux rôles, accords et archives existants, et la manière dont il serait annulé. Les formulaires incomplets sont renvoyés avant le début de la discussion.
+  change-protocol.how-proposals-are-classified:
+    question: Comment distinguons-nous un petit ajustement d'un changement de ce que nous sommes — et un changement permanent d'une expérimentation ?
+    prompts:
+      - 'Pour chaque type de décision (par exemple Opérationnel, Stratégique, Constitutionnel) : quels types de changement en relèvent ?'
+      - Quels changements sont toujours Constitutionnels — comme tout ce qui touche à notre objectif, à notre périmètre, aux engagements dont nous avons dit qu'ils ne changeraient jamais, ou à la manière dont nous nous gouvernons ?
+      - Comment distinguons-nous un changement permanent d'une expérimentation limitée dans le temps, et où cela est-il écrit sur la proposition ?
+      - Quand le type d'une proposition n'est pas clair, quel type s'applique, et qui tranche un désaccord à ce sujet ?
+    examples:
+      - 'Les corrections de formulation et de mise en forme sont Opérationnelles : la personne qui tient les documents les fait et les énumère au cercle suivant. Les changements concernant la façon dont les membres rejoignent, décident, partagent les coûts ou occupent des rôles sont Stratégiques. Tout ce qui touche à notre objectif, à notre périmètre, à nos engagements non négociables ou à la manière dont nous nous gouvernons est Constitutionnel et passe par le processus de décision constitutionnelle. Une proposition avec une date de fin fixée est classée comme expérimentation ; tout le reste est permanent. Si nous ne sommes pas d''accord sur le type, le plus élevé s''applique.'
+  change-protocol.review-and-deliberation:
+    question: Combien de temps un changement proposé doit-il rester en attente avant que nous puissions l'adopter ?
+    prompts:
+      - 'Pour chaque type de décision : quelle est la durée minimale pendant laquelle une proposition doit rester ouverte à la discussion avant de pouvoir être décidée ?'
+      - Où la discussion a-t-elle lieu, afin que les membres absents, malades ou occupés puissent quand même lire et répondre ?
+      - Pour les changements Constitutionnels, combien de temps dure la période de ratification après l'adoption du vote, et que peuvent faire les membres pendant ce temps ?
+      - Si certains petits changements ne nécessitent aucun délai d'attente, comment les membres peuvent-ils quand même les voir et demander un réexamen complet ensuite ? (Les changements urgents font l'objet de leur propre question.)
+    examples:
+      - Les changements Opérationnels ne nécessitent aucun délai d'attente mais sont publiés dans le canal des changements pendant 7 jours, durant lesquels tout membre peut demander un réexamen complet. Les propositions Stratégiques restent ouvertes au moins 14 jours, dont une assemblée générale, avant une décision. Les propositions Constitutionnelles nécessitent au moins 30 jours de discussion et, après l'adoption du vote, une période de ratification de 14 jours pendant laquelle tout Membre à part entière peut demander un second vote.
+  change-protocol.adoption-and-publication:
+    question: Lorsqu'un changement est adopté, comment tout le monde l'apprend-il, et à partir de quand s'applique-t-il ?
+    prompts:
+      - Une fois qu'une proposition est adoptée, quelles étapes suivent, dans quel ordre, et sous combien de jours ?
+      - Qui est responsable de la mise à jour des documents affectés et de l'ajout de l'entrée dans l'Historique des versions ? (Ce que contient l'entrée fait l'objet de sa propre question.)
+      - Comment tous les membres sont-ils informés du changement, et que contient l'avis ?
+      - À partir de quand un changement adopté s'applique-t-il — et peut-il jamais s'appliquer avant d'être publié ?
+      - Que se passe-t-il si un changement a été décidé mais jamais consigné — compte-t-il ?
+    examples:
+      - Dans les 7 jours suivant l'adoption d'un changement, la personne au secrétariat met à jour chaque document affecté, marque l'ancienne formulation comme remplacée, ajoute une entrée à l'Historique des versions et déplace la proposition dans le dossier des propositions adoptées. Tous les membres reçoivent ensuite un e-mail avec un résumé et la date d'entrée en vigueur. Le changement s'applique à partir de la date d'entrée en vigueur indiquée dans la proposition, ou à partir de la publication si celle-ci est postérieure. Un changement qui n'a pas été consigné de cette manière n'est pas en vigueur, aussi clairement que les gens se souviennent de l'avoir accepté.
+  change-protocol.rejection:
+    question: Qu'arrive-t-il à une proposition rejetée — peut-elle revenir, et au bout de combien de temps ?
+    prompts:
+      - Où une proposition rejetée est-elle conservée, avec son compte rendu de décision, et sous combien de jours est-elle classée ?
+      - La personne qui a proposé est-elle informée des raisons du rejet, et par qui ?
+      - La même proposition peut-elle revenir — après combien de temps, ou seulement avec de nouvelles informations ?
+      - Qui décide si une proposition qui revient est vraiment nouvelle, ou la même sous un autre nom ?
+    examples:
+      - Dans les 7 jours, une proposition rejetée est classée dans le dossier des propositions rejetées avec son compte rendu de décision et une courte note sur les principales raisons avancées. Rien ne change dans nos documents. La même proposition peut revenir après six mois, ou plus tôt si la personne qui l'a proposée présente de nouvelles informations qui n'étaient pas disponibles lors de la première discussion ; la personne qui facilite décide si une proposition qui revient est substantiellement la même.
+  change-protocol.transition-and-migration:
+    question: De quel soin supplémentaire un changement difficile à annuler a-t-il besoin — et qu'arrive-t-il à ce qui est déjà en cours sous l'ancienne règle ?
+    prompts:
+      - Comment reconnaissons-nous un changement comme à fort impact ou difficile à annuler, et qui décide qu'il l'est ?
+      - Pour ces changements, de combien la discussion est-elle prolongée, et quel seuil plus élevé nécessitent-ils ?
+      - Comment les risques sont-ils consignés et reconnus avant la décision ?
+      - De combien de préavis les titulaires de rôles et les membres actuels bénéficient-ils avant qu'un changement ne les affecte ?
+      - Un changement peut-il réduire les droits que les membres existants ont déjà, et si oui, que faut-il pour cela ?
+      - Qu'arrive-t-il aux archives et aux accords conclus sous l'ancienne règle — sont-ils laissés tels quels ?
+    examples:
+      - Un changement compte comme à fort impact s'il concerne l'argent, le logement ou les droits d'adhésion, ou s'il ne peut pas être facilement annulé. Ces changements bénéficient du double du temps de discussion habituel, nécessitent une majorité des deux tiers au lieu d'une majorité simple, et comprennent une section écrite sur les risques que les membres reconnaissent avant de voter. Les titulaires de rôles concernés sont informés au moins 30 jours avant l'entrée en vigueur du changement. Les droits des membres existants ne sont jamais réduits sans leur consentement ou un vote Constitutionnel, et les archives constituées sous l'ancienne règle ne sont pas modifiées.
+  change-protocol.rollback:
+    question: Comment vérifions-nous qu'un changement fonctionne — et le révisons-nous ou l'annulons-nous s'il ne fonctionne pas ?
+    prompts:
+      - Comment et quand vérifions-nous qu'un changement adopté fonctionne comme prévu ?
+      - Quels signes indiquent qu'un changement doit être révisé ou annulé — comme un tort causé, de l'instabilité, ou des décisions qui se concentrent entre moins de mains ?
+      - Qui peut demander qu'un changement soit révisé ou annulé, et que faut-il montrer pour cela ?
+      - Quel type de décision et quel processus une annulation utilise-t-elle ?
+      - Lorsque nous choisissons entre plusieurs manières de résoudre un problème, comment privilégions-nous celle qui est la plus facile à annuler ?
+    examples:
+      - 'Chaque changement Stratégique ou Constitutionnel adopté est réexaminé six mois après son entrée en vigueur : le cercle d''intendance indique s''il a causé du tort, de la confusion, ou s''il a concentré les décisions entre moins de mains. Tout Membre à part entière peut demander qu''un changement soit révisé ou annulé en donnant par écrit des raisons qui n''avaient pas été prises en compte la première fois. Une annulation utilise le même type de décision que l''adoption initiale. Lorsque deux options résoudraient le même problème, nous choisissons celle qui est la plus facile à annuler.'
+  change-protocol.emergency-changes:
+    question: Que pouvons-nous décider dans l'urgence, qui peut le faire, et quand cela expire-t-il ?
+    prompts:
+      - Quelles situations comptent comme une urgence — et qu'est-ce qui rend impossible d'attendre une décision normale ?
+      - Qui peut faire un changement d'urgence, seul ou avec quelqu'un d'autre ?
+      - Que ne peut-on jamais changer en urgence, comme notre objectif ou les engagements dont nous avons dit qu'ils ne changeraient jamais ?
+      - À quelle vitesse un changement d'urgence doit-il être signalé, et à qui ?
+      - Quand est-il réexaminé, et pour quand doit-il être confirmé par le type de décision normal — ou prend-il fin automatiquement ?
+    examples:
+      - Les deux personnes qui coordonnent la sécurité peuvent ensemble faire un changement d'urgence uniquement lorsqu'une action immédiate est nécessaire pour éviter un préjudice aux personnes ou la perte du bâtiment, et qu'une assemblée des membres ne peut pas être tenue à temps. Un changement d'urgence ne peut jamais modifier notre objectif ni nos engagements fondamentaux. Il est signalé à tous les membres dans les 24 heures, discuté à la réunion suivante, et expire après 21 jours à moins que les membres ne le ratifient par le type de décision que le changement nécessiterait normalement.
+  change-protocol.experiments:
+    question: Comment essayer quelque chose pendant un temps sans que cela devienne discrètement permanent ?
+    prompts:
+      - Qui peut proposer une expérimentation, et quelle décision la démarre, la prolonge, la modifie ou y met fin ?
+      - Que doit indiquer chaque expérimentation — ce qui change et ce qui reste identique, sa durée, ses points de contrôle, et les signes de réussite ou d'échec ?
+      - Qu'est-ce qui déclenche une annulation, et comment est-elle effectuée ?
+      - À quoi une expérimentation ne peut-elle jamais toucher, comme nos engagements fondamentaux ou la manière dont les décisions sont prises ?
+      - Comment une expérimentation est-elle étiquetée dans chaque document qu'elle affecte, et quelle date de fin fixe porte-t-elle ?
+      - Si une expérimentation cause du tort, une pression sur les personnes ou un risque pour la sécurité, qui peut l'arrêter immédiatement, et comment cela est-il réexaminé ensuite ?
+    examples:
+      - Tout Membre à part entière peut proposer une expérimentation d'une durée maximale de 12 mois ; la démarrer, la prolonger ou la modifier demande une décision Stratégique. La proposition indique ce qui change et ce qui ne change pas, un point de contrôle à mi-parcours, les signes de réussite et d'échec, et la manière d'annuler. Chaque document affecté porte la mention « Expérimental jusqu'au » suivie de sa date de fin. Les expérimentations ne peuvent pas modifier nos engagements fondamentaux ni contourner nos règles de décision, et elles prennent fin à leur date sauf renouvellement par une nouvelle décision. Deux personnes d'intendance peuvent en arrêter une immédiatement si elle cause du tort, avec un réexamen dans les 14 jours.
+  version-history.entry-format:
+    question: Que consignons-nous sur chaque version de nos règles, pour que quiconque puisse retracer ce qui a changé ?
+    prompts:
+      - Comment les versions sont-elles numérotées, et qu'est-ce qui fait changer le numéro ?
+      - Que consigne chaque entrée — la version, la date d'adoption, la date d'entrée en vigueur, la décision dont elle découle, un résumé, et d'éventuelles notes de migration ?
+      - Comment savoir quelle version est en vigueur aujourd'hui, et quels documents comptent comme les documents officiels ?
+      - Où les versions antérieures sont-elles conservées, et comment peut-on voir les dates auxquelles chacune s'appliquait ?
+      - Comment une erreur dans une ancienne entrée est-elle corrigée sans la modifier ?
+    examples:
+      - 'Chaque version reçoit un numéro comme 2.3 : le premier chiffre augmente pour les changements Constitutionnels, le second pour tous les autres. Chaque entrée consigne la version, les dates d''adoption et d''entrée en vigueur, la référence de la décision avec son mécanisme et son seuil, un court résumé et d''éventuelles notes de migration, les plus récentes en premier. L''entrée du haut est la version en vigueur, et seuls les documents du dossier « actuel » comptent. Les versions antérieures restent dans les archives avec les dates auxquelles elles s''appliquaient, et les erreurs sont corrigées par une nouvelle entrée, jamais en modifiant une ancienne.'
+  learning-log.what-constitutes-a-learnable-event:
+    question: Quel genre de chose qui va mal vaut la peine d'être consigné et d'en tirer des leçons ?
+    prompts:
+      - Quels événements nécessitent toujours une entrée au Journal d'apprentissage — comme une décision annulée, une expérimentation terminée, un conflit escaladé, un échec ayant causé du tort, un changement majeur dans notre façon de travailler, ou un incident évité de justesse ?
+      - Qu'est-ce qui ne nécessite pas d'entrée ?
+      - À qui appartient le journal et qui s'assure que les entrées sont écrites ? (Ce que contient une entrée fait l'objet de sa propre question.)
+      - À quelle fréquence le journal est-il réexaminé, et qui prépare un résumé des schémas ?
+      - Lorsque le même genre d'échec revient sans cesse, comment réexaminons-nous la structure derrière lui au lieu de blâmer une personne ?
+      - Comment nous assurons-nous que les échecs inconfortables sont consignés et jamais supprimés ou cachés par la suite ?
+    examples:
+      - Une entrée est requise lorsqu'une décision est annulée, qu'une expérimentation prend fin, qu'un conflit atteint l'étape de gouvernance, qu'un échec cause du tort ou une rupture répétée, qu'un changement majeur dans notre façon de travailler est adopté, ou qu'un incident est évité de justesse. Les décisions de routine et les conflits réglés tôt n'en nécessitent pas. La personne qui veille à l'apprentissage s'assure que les entrées sont écrites et jamais supprimées. Chaque trimestre, elle résume les nouvelles entrées ; si le même genre d'échec apparaît deux fois, nous réexaminons la structure derrière lui plutôt que de chercher quelqu'un à blâmer.
+  learning-log.entry-format:
+    question: Que consignons-nous sur ce que nous avons appris, pour que ce soit encore utile dans trois ans ?
+    prompts:
+      - Que s'est-il passé, et pourquoi était-ce important ?
+      - Quelles règles, quels rôles ou quels documents étaient impliqués ?
+      - Quels signes, quelles preuves ou quels seuils nous ont fait agir ?
+      - Qu'avons-nous changé, essayé ou arrêté, et qu'en est-il résulté ?
+      - À qui appartient le suivi, et pour quand ?
+      - Qui peut lire les entrées selon nos règles d'accès à l'information, et qu'est-ce qui est omis pour protéger les personnes concernées ?
+    examples:
+      - Chaque entrée consigne la date, ce qui s'est passé et pourquoi c'était important, quelles règles ou quels documents étaient impliqués, quels signes ou seuils nous ont fait agir, ce que nous avons changé, essayé ou arrêté, ce qui en est résulté, et qui assure le suivi et pour quand. Les entrées ont le même niveau d'accès que les comptes rendus de réunion, donc tous les membres peuvent les lire ; les noms des personnes concernées sont omis sauf si elles sont d'accord.
+  experiment-template.required-fields:
+    question: Que faut-il consigner avant que nous acceptions d'essayer quelque chose ?
+    prompts:
+      - Quels champs contient chaque formulaire de proposition d'expérimentation, et lesquels ne peuvent jamais rester vides ?
+      - Comment la personne qui propose montre-t-elle que les signes de réussite et d'arrêt anticipé sont des choses que nous pouvons réellement observer ?
+      - Qui vérifie qu'un formulaire est complet avant qu'il passe à une décision, et qu'advient-il d'un formulaire incomplet ?
+      - Où le formulaire rempli est-il conservé pendant l'expérimentation, pour que les membres puissent le comparer à ce qui se passe réellement ? (Ce qui arrive à la fin fait l'objet de sa propre question.)
+    examples:
+      - 'Chaque expérimentation utilise un formulaire avec ces champs : nom, personne qui propose, ce qui change et quels documents sont affectés, ce qui reste identique, dates de début et de fin, au moins un point de contrôle à mi-parcours, des signes de réussite observables, des signes observables qui signifient que nous arrêtons tôt, ce qui déclenche une annulation et comment, qui peut la prolonger ou y mettre fin, et une ligne acceptant qu''elle puisse être suspendue en cas d''urgence. La personne qui facilite renvoie tout formulaire comportant un champ vide avant qu''il ne soit inscrit à une décision.'
+  experiment-template.expiry-and-renewal:
+    question: Quand une expérimentation prend-elle fin d'elle-même, et que faut-il pour la poursuivre ?
+    prompts:
+      - Que se passe-t-il à la date de fin si personne n'a agi ?
+      - Que faut-il pour renouveler une expérimentation, et combien de fois peut-elle être renouvelée ?
+      - Comment une expérimentation réussie devient-elle une règle permanente ?
+      - Qui consigne les résultats dans le Journal d'apprentissage, et pour quand ?
+    examples:
+      - Une expérimentation prend fin à sa date de fin même si personne n'agit, et l'ancienne règle s'applique de nouveau dès le lendemain. La poursuivre demande une nouvelle proposition et une nouvelle décision Stratégique avant la date de fin ; elle peut être renouvelée une fois, après quoi elle doit être adoptée comme changement permanent ou arrêtée. Dans les 30 jours suivant la fin, la personne qui a proposé consigne les résultats et ce que nous avons appris dans le Journal d'apprentissage.

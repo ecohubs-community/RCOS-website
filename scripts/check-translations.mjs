@@ -71,7 +71,7 @@ function parseArgs(argv) {
 	return out;
 }
 
-const YAML_DIRS = ['standard', 'templates', 'layers', 'stress-tests'];
+const YAML_DIRS = ['standard', 'templates', 'layers', 'stress-tests', 'guidance'];
 
 async function walkYaml(dir) {
 	const out = [];
@@ -156,7 +156,7 @@ async function buildIndex() {
 	}
 
 	// Content authored as YAML (content/standard, templates, layers,
-	// stress-tests): the English file is the source, each `<name>.<lang>.yaml`
+	// stress-tests, guidance): the English file is the source, each `<name>.<lang>.yaml`
 	// overlay stores the hash of the English file it was translated from.
 	for (const dir of YAML_DIRS) {
 		for (const filePath of await walkYaml(path.join(ROOT, 'content', dir))) {

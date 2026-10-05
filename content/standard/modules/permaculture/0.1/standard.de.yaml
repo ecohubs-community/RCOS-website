@@ -68,7 +68,7 @@ sections:
         md: |-
           - Ökologische Autorität MUSS überprüfbar sein.
           - Ökologische Arbeit MUSS nachvollziehbar sein.
-          - Ökologische Systeme MUSS ausstiegsfähig bleiben.
+          - Ökologische Systeme MÜSSEN ausstiegsfähig bleiben.
           - Ökologische Expertise DARF NICHT in Governance-Macht umgewandelt werden.
       b3:
         md: Die Nichteinhaltung dieser Beschränkungen stellt einen strukturellen Verstoß dar.
@@ -89,7 +89,7 @@ sections:
           - Entscheidungsbefugnis,
           - Überprüfungs- und Reklassifizierungsmechanismus.
       b4:
-        md: Nicht klassifiziertes Land oder nicht klassifizierte Systeme DARF NICHT durch dieses Modul geregelt werden.
+        md: Nicht klassifiziertes Land oder nicht klassifizierte Systeme DÜRFEN NICHT durch dieses Modul geregelt werden.
       b5:
         md: '---'
       b6:
@@ -97,9 +97,9 @@ sections:
       b7:
         md: |-
           Land oder Systeme, die als Allmende klassifiziert sind:
-          - DARF NICHT durch Nutzung, Pflege oder Investition privatisiert werden,
-          - DARF NICHT unbefristet von Einzelpersonen oder Familien kontrolliert werden,
-          - MUSS explizite Austritts- und Neuzuweisungsregeln haben.
+          - DÜRFEN NICHT durch Nutzung, Pflege oder Investition privatisiert werden,
+          - DÜRFEN NICHT unbefristet von Einzelpersonen oder Familien kontrolliert werden,
+          - MÜSSEN explizite Austritts- und Neuzuweisungsregeln haben.
       b8:
         md: Kein Maß an Arbeit, Expertise oder historischem Beitrag gewährt standardmäßig Eigentum.
       b9:
@@ -110,12 +110,12 @@ sections:
       b1:
         md: '### Rollendefinition'
       b2:
-        md: Alle laufenden ökologischen Verantwortlichkeiten MUSS expliziten Rollen zugewiesen werden.
+        md: Alle laufenden ökologischen Verantwortlichkeiten MÜSSEN expliziten Rollen zugewiesen werden.
       b3:
         md: |-
           Jede Verwaltungsrolle MUSS Folgendes definieren:
           - Umfang und Grenzen der Befugnis,
-          - Entscheidungsschnittstellen mit Layer-2-Governance,
+          - Entscheidungsschnittstellen mit Schicht-2-Governance,
           - Amtsdauer und Überprüfungsrhythmus,
           - Übergabe- und Nachfolgeprozess,
           - Versagens- und Abberufungsbedingungen.
@@ -142,7 +142,7 @@ sections:
         md: '### Befugniszuordnung'
       b2:
         md: |-
-          Ökologische Entscheidungen MUSS auf RCOS-Entscheidungstypen abgebildet werden:
+          Ökologische Entscheidungen MÜSSEN auf RCOS-Entscheidungstypen abgebildet werden:
           - operativ (Tagesgeschäft),
           - politisch (Regeln und Einschränkungen),
           - konstitutionell (Geltungsbereich, Allmende-Grenzen).
@@ -178,7 +178,7 @@ sections:
       b7:
         md: |-
           Wenn ökologische Arbeit ausgelagert werden darf:
-          - Äquivalenzregeln MUSS explizit sein,
+          - Äquivalenzregeln MÜSSEN explizit sein,
           - finanzielle Substitution DARF NICHT Teilnahmeanforderungen umgehen, es sei denn, dies ist ausdrücklich erlaubt,
           - Auslagerung DARF NICHT Abhängigkeit von Kapital statt Beitrag erzeugen.
       b8:
@@ -195,7 +195,7 @@ sections:
       b2:
         md: Ertragszugang DARF NICHT stillschweigend Mitgliedschafts- oder Beitragspflichten ersetzen.
       b3:
-        md: Ernährungssysteme DARF NICHT als Druckmittel gegen Teilnahme oder Widerspruch eingesetzt werden.
+        md: Ernährungssysteme DÜRFEN NICHT als Druckmittel gegen Teilnahme oder Widerspruch eingesetzt werden.
       b4:
         md: '---'
   s10:
@@ -209,14 +209,14 @@ sections:
           - Finanzierungs- und Abschreibungsregeln,
           - Stilllegungs- oder Übertragungsbedingungen.
       b2:
-        md: Private Investitionen in Allmende-Infrastruktur DARF NICHT Kontrollrechte gewähren, es sei denn, dies ist ausdrücklich genehmigt.
+        md: Private Investitionen in Allmende-Infrastruktur DÜRFEN NICHT Kontrollrechte gewähren, es sei denn, dies ist ausdrücklich genehmigt.
       b3:
         md: '---'
   s11:
     title: Konflikt, Schaden & Wiedergutmachung
     blocks:
       b1:
-        md: Ökologische Konflikte MUSS Layer-4-Prozesse nutzen.
+        md: Ökologische Konflikte MÜSSEN Schicht-4-Prozesse nutzen.
       b2:
         md: |-
           Die Gemeinschaft SOLLTE unterscheiden zwischen:
@@ -225,7 +225,7 @@ sections:
           - Grenz- oder Befugnisverstoß,
           - ökologischem Schaden, der Wiedergutmachung erfordert.
       b3:
-        md: Wiedergutmachungspflichten MUSS im Voraus definiert werden und MUSS verhältnismäßig sein.
+        md: Wiedergutmachungspflichten MÜSSEN im Voraus definiert werden und MÜSSEN verhältnismäßig sein.
       b4:
         md: '---'
   s12:
@@ -241,7 +241,7 @@ sections:
           - Ertragszuteilungsregeln
           - Ökologisches Infrastruktur-Register
       b2:
-        md: Artefakte MUSS versioniert und überprüfbar sein.
+        md: Artefakte MÜSSEN versioniert und überprüfbar sein.
       b3:
         md: '---'
   s13:
@@ -263,12 +263,12 @@ sections:
       b1:
         md: |-
           Wenn dieses Modul geändert oder entfernt wird:
-          - Verwaltungsrollen MUSS sauber abgewickelt werden,
+          - Verwaltungsrollen MÜSSEN sauber abgewickelt werden,
           - ökologische Befugnis MUSS an die Kern-Governance zurückfallen,
-          - keine dauerhaften Kontrollansprüche KANN fortbestehen.
+          - keine dauerhaften Kontrollansprüche KÖNNEN fortbestehen.
       b2:
         md: |-
-          Ökologische Systeme KANN weiterbestehen.
+          Ökologische Systeme KÖNNEN weiterbestehen.
           Ökologische Macht DARF NICHT.
       b3:
         md: '---'
@@ -278,12 +278,12 @@ sections:
       b1:
         md: |-
           Dieses Modul:
-          - MUSS Layer-0-Geltungsbereich und -Invarianten respektieren,
-          - MUSS über Layer-2-Governance operieren,
-          - MUSS mit Layer-3-Wirtschaftsregeln übereinstimmen,
-          - MUSS Layer-4-Konfliktpfade nutzen,
+          - MUSS Schicht-0-Geltungsbereich und -Invarianten respektieren,
+          - MUSS über Schicht-2-Governance operieren,
+          - MUSS mit Schicht-3-Wirtschaftsregeln übereinstimmen,
+          - MUSS Schicht-4-Konfliktpfade nutzen,
           - MUSS über Schicht 5 dokumentiert sein,
-          - KANN sich über Layer-6-Änderungsmechanismen weiterentwickeln.
+          - KANN sich über Schicht-6-Änderungsmechanismen weiterentwickeln.
       b2:
         md: Ein Versagen dieses Moduls DARF NICHT den RCOS-Kern destabilisieren.
       b3:

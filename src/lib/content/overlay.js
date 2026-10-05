@@ -34,6 +34,7 @@ export const TRANSLATABLE = new Set([
 	'tags',
 	'term',
 	'definition',
+	'aliases',
 	// guidance (content/guidance)
 	'inShort',
 	'question',

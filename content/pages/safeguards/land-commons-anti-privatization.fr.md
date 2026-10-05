@@ -4,7 +4,7 @@ title: Addendum anti-privatisation des communs fonciers
 parentId: aac2e91b
 order: 0
 lang: fr
-sourceHash: 8a9e28c9
+sourceHash: 0c29c68e
 ---
 
 ## Addendum anti-privatisation des communs fonciers (non normatif)
