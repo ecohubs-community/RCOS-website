@@ -79,7 +79,12 @@ analytics and the search palette.
   and the guide buttons; "Spec only" hides them. The guide sheet
   (`guide.svelte.ts`, `GuideSheet`) shows the guidance for one section.
 - **Rail** (`rail.ts`): `[` collapses and expands the contents rail.
-- `spy.svelte.ts` tracks the section in view for the rails.
+- `spy.svelte.ts` marks the section in view for both rails: the last one whose
+  top has passed its scroll margin (where a jump lands), or, at the end of the
+  page, the one named in the URL.
+- The right column holds only "On this page". The "Related to Layer N" card
+  (`RelatedRail`) closes the chapter, with Templates and Stress tests in
+  `<details>` that start collapsed.
 
 ### 3.2 State that must exist before first paint
 

@@ -143,7 +143,7 @@ or removing one breaks Compass, so change both repos together.
 
 GitHub workflows:
 
-- `site.yml`: type check, lint, unit tests, build, link check.
+- `site.yml`: type check, lint, unit tests, build, link check, e2e and axe.
 - `content.yml`: content check, unit tests, and generated downloads are current.
 - `check-translations.yml`: posts translation coverage on PRs (never blocks).
 

@@ -273,8 +273,8 @@
 		{/if}
 
 		{#if p.related}
-			<!-- The right rail is hidden below xl; the same card closes the page there. -->
-			<RelatedRail related={p.related} class="mt-11 xl:hidden" />
+			<!-- Closes the page rather than sitting in the right rail, which keeps only "On this page". -->
+			<RelatedRail related={p.related} class="mt-11" />
 		{/if}
 
 		{#if p.prev || p.next}
@@ -305,16 +305,11 @@
 		{/if}
 	</article>
 
-	{#if p.related || p.sections.some((s) => s.ref)}
+	{#if p.sections.some((s) => s.ref)}
 		<aside
-			class="sticky top-(--header-h) hidden max-h-[calc(100dvh-var(--header-h))] flex-col gap-7 overflow-y-auto py-10 xl:flex"
+			class="sticky top-(--header-h) hidden max-h-[calc(100dvh-var(--header-h))] flex-col overflow-y-auto py-10 xl:flex"
 		>
-			{#if p.sections.some((s) => s.ref)}
-				<OnThisPage sections={p.sections.filter((s) => s.ref)} />
-			{/if}
-			{#if p.related}
-				<RelatedRail related={p.related} />
-			{/if}
+			<OnThisPage sections={p.sections.filter((s) => s.ref)} />
 		</aside>
 	{/if}
 </div>

@@ -26,6 +26,11 @@
 	import IconHandClick from '~icons/tabler/hand-click';
 	import IconPlus from '~icons/tabler/plus';
 	import IconHeadphones from '~icons/tabler/headphones';
+	import story1 from '$lib/assets/rcos-story/rcos-story-1.webp';
+	import story2 from '$lib/assets/rcos-story/rcos-story-2.webp';
+	import story3 from '$lib/assets/rcos-story/rcos-story-3.webp';
+	import story4 from '$lib/assets/rcos-story/rcos-story-4.webp';
+	import story5 from '$lib/assets/rcos-story/rcos-story-5.webp';
 
 	let { data } = $props();
 
@@ -34,11 +39,41 @@
 
 	// The story: one beat per step, with the layer that would have answered it.
 	const story = [
-		{ title: m.home_story_step1_title, body: m.home_story_step1_body, layer: 1 },
-		{ title: m.home_story_step2_title, body: m.home_story_step2_body, layer: null },
-		{ title: m.home_story_step3_title, body: m.home_story_step3_body, layer: 4 },
-		{ title: m.home_story_step4_title, body: m.home_story_step4_body, layer: 6 },
-		{ title: m.home_story_step5_title, body: m.home_story_step5_body, layer: null }
+		{
+			title: m.home_story_step1_title,
+			body: m.home_story_step1_body,
+			img: story1,
+			alt: m.home_story_step1_alt,
+			layer: 1
+		},
+		{
+			title: m.home_story_step2_title,
+			body: m.home_story_step2_body,
+			img: story2,
+			alt: m.home_story_step2_alt,
+			layer: null
+		},
+		{
+			title: m.home_story_step3_title,
+			body: m.home_story_step3_body,
+			img: story3,
+			alt: m.home_story_step3_alt,
+			layer: 4
+		},
+		{
+			title: m.home_story_step4_title,
+			body: m.home_story_step4_body,
+			img: story4,
+			alt: m.home_story_step4_alt,
+			layer: 6
+		},
+		{
+			title: m.home_story_step5_title,
+			body: m.home_story_step5_body,
+			img: story5,
+			alt: m.home_story_step5_alt,
+			layer: null
+		}
 	];
 	const layerPath = [
 		'/layers/0-identity-scope',
@@ -258,7 +293,7 @@
 />
 
 <div
-	class="mx-auto flex w-full max-w-6xl flex-col gap-24 px-4 pt-10 pb-24 sm:px-6 lg:gap-28 lg:px-8 lg:pt-16"
+	class="mx-auto flex w-full max-w-7xl flex-col gap-24 px-4 pt-10 pb-24 sm:px-6 lg:gap-28 lg:px-8 lg:pt-16"
 >
 	<!-- Hero, next to the intro video -->
 	<section class="grid items-center gap-10 lg:grid-cols-[minmax(0,1.05fr)_minmax(0,1fr)]">
@@ -344,10 +379,20 @@
 			{#each story as step, i (i)}
 				<li
 					class={[
-						'flex flex-col gap-2 rounded-2xl border px-4.5 py-5',
+						'flex flex-col gap-2 overflow-hidden rounded-2xl border px-4.5 pb-5',
 						i === 4 ? 'border-forest-300 bg-hover' : 'border-line bg-card'
 					]}
 				>
+					<!-- The illustration fills the card's top edge (the card's padding is undone). -->
+					<img
+						src={step.img}
+						alt={step.alt()}
+						width="800"
+						height="600"
+						loading="lazy"
+						decoding="async"
+						class="-mx-4.5 mb-2 aspect-4/3 w-[calc(100%+2.25rem)] max-w-none object-cover"
+					/>
 					<span class="font-mono text-sm font-bold text-accent-ink">0{i + 1}</span>
 					<h3 class="font-ui text-[17px] leading-snug font-semibold text-heading">
 						{step.title()}
