@@ -238,6 +238,8 @@
 	"std_informative": "Informativo",
 	"std_draft": "Rascunho",
 	"std_version_label": "Núcleo RCOS v0.1",
+	"std_module_about": "Sobre este módulo",
+	"std_module_definitions": "Definições v{version}",
 	"std_collapse": "Recolher conteúdo",
 	"std_expand": "Expandir conteúdo",
 	"std_open_contents": "Conteúdo",

@@ -238,6 +238,8 @@
 	"std_informative": "Informative",
 	"std_draft": "Draft",
 	"std_version_label": "RCOS-Core v0.1",
+	"std_module_about": "About this module",
+	"std_module_definitions": "Definitions v{version}",
 	"std_collapse": "Collapse contents",
 	"std_expand": "Expand contents",
 	"std_open_contents": "Contents",

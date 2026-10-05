@@ -238,6 +238,8 @@
 	"std_informative": "Informatif",
 	"std_draft": "Brouillon",
 	"std_version_label": "Noyau RCOS v0.1",
+	"std_module_about": "À propos de ce module",
+	"std_module_definitions": "Définitions v{version}",
 	"std_collapse": "Replier le sommaire",
 	"std_expand": "Déplier le sommaire",
 	"std_open_contents": "Sommaire",

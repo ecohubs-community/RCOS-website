@@ -104,13 +104,13 @@ export const MODULES: NavLink[] = [
 		icon: IconPlant2,
 		label: m.mega_module_permaculture,
 		desc: m.mega_module_permaculture_desc,
-		href: '/standard/modules/permaculture'
+		href: '/standard/modules/permaculture/0.1'
 	},
 	{
 		icon: IconSeedling,
 		label: m.mega_module_minimal,
 		desc: m.mega_module_minimal_desc,
-		href: '/standard/modules/minimal-permaculture'
+		href: '/standard/modules/minimal-permaculture/0.1'
 	}
 ];
 

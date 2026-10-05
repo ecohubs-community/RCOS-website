@@ -181,8 +181,8 @@
 					{m.nav_about_ecohubs()}
 					<IconArrowUpRight class="size-4" />
 				</a>
-				<div class="flex gap-2 pt-2">
-					<LanguageSwitcher {availableLocales} />
+				<div class="flex flex-col gap-2 pt-2">
+					<LanguageSwitcher {availableLocales} inline />
 					<ThemeToggle withLabel />
 				</div>
 			</div>

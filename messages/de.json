@@ -238,6 +238,8 @@
 	"std_informative": "Informativ",
 	"std_draft": "Entwurf",
 	"std_version_label": "RCOS-Kern v0.1",
+	"std_module_about": "Über dieses Modul",
+	"std_module_definitions": "Definitionen v{version}",
 	"std_collapse": "Inhalt einklappen",
 	"std_expand": "Inhalt ausklappen",
 	"std_open_contents": "Inhalt",

@@ -37,7 +37,7 @@
 		<a
 			href={item.path}
 			title={item.title}
-			aria-current={current.startsWith(item.path) ? 'page' : undefined}
+			aria-current={current.startsWith(item.root ?? item.path) ? 'page' : undefined}
 			class="inline-flex size-8 items-center justify-center rounded-full border-[1.5px] border-dashed border-clay-500 text-clay-800 hover:border-solid aria-[current=page]:border-solid"
 		>
 			<IconPlus class="size-3.75" />

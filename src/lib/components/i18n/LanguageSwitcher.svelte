@@ -15,8 +15,12 @@
 	 *
 	 * Omit on pages that don't have per-page coverage data; the switcher then
 	 * treats every locale as fully translated.
+	 *
+	 * `inline` (the mobile drawer): the list opens in the flow below the button,
+	 * full width, instead of as a dropdown that would leave the drawer.
 	 */
-	let { availableLocales }: { availableLocales?: string[] } = $props();
+	let { availableLocales, inline = false }: { availableLocales?: string[]; inline?: boolean } =
+		$props();
 
 	let open = $state(false);
 	let buttonEl: HTMLButtonElement | undefined = $state();
@@ -61,22 +65,25 @@
 	const hasMultiple = $derived(LOCALES.length > 1);
 </script>
 
-<svelte:window on:keydown={onKeydown} on:click={onDocClick} />
+<svelte:window onkeydown={onKeydown} onclick={onDocClick} />
 
 {#if hasMultiple}
-	<div class="relative" data-lang-switcher>
+	<div class={inline ? 'flex w-full flex-col' : 'relative'} data-lang-switcher>
 		<button
 			bind:this={buttonEl}
 			type="button"
-			class="inline-flex items-center gap-1.5 rounded-md px-2 py-1.5 text-sm hover:bg-surface text-text-primary"
+			class={[
+				'inline-flex items-center gap-1.5 rounded-md text-sm text-ink hover:bg-hover',
+				inline ? 'min-h-11 self-start px-3' : 'px-2 py-1.5'
+			]}
 			aria-haspopup="listbox"
 			aria-expanded={open}
 			aria-label={m.language_switcher_aria_label({ language: current.englishName })}
 			onclick={() => (open = !open)}
 		>
-			<IconWorld class="w-4 h-4" />
+			<IconWorld class="size-4" />
 			<span class="font-medium uppercase tracking-wide text-xs">{current.code}</span>
-			<IconChevronDown class="w-3 h-3 opacity-60" />
+			<IconChevronDown class="size-3 opacity-60" />
 		</button>
 
 		<!--
@@ -86,9 +93,11 @@
 		-->
 		<ul
 			role="listbox"
-			class="absolute right-0 mt-1 min-w-[14rem] rounded-md border border-border bg-background shadow-lg py-1 z-50 {open
-				? ''
-				: 'hidden'}"
+			class={[
+				'rounded-md border border-line bg-card py-1',
+				inline ? 'mt-1 w-full' : 'absolute right-0 z-(--z-popover) mt-1 min-w-56 shadow-lg',
+				!open && 'hidden'
+			]}
 		>
 			{#each LOCALES as locale (locale.code)}
 				{@const isCurrent = locale.code === currentLocale}
@@ -100,21 +109,24 @@
 						href={targetUrl(locale)}
 						data-sveltekit-reload
 						onclick={() => onSelect(locale)}
-						class="flex items-center justify-between gap-3 px-3 py-2 text-sm hover:bg-surface
-							{isCurrent ? 'font-semibold text-primary' : 'text-text-primary'}
-							{!translated && !isCurrent ? 'opacity-60' : ''}"
+						class={[
+							'flex items-center justify-between gap-3 px-3 py-2 text-sm hover:bg-hover',
+							inline && 'min-h-11',
+							isCurrent ? 'font-semibold text-accent-ink' : 'text-ink',
+							!translated && !isCurrent && 'opacity-60'
+						]}
 						title={!translated && !isCurrent ? m.language_switcher_fallback_tooltip() : undefined}
 					>
 						<span class="flex flex-col items-start">
 							<span>{locale.nativeName}</span>
 							{#if locale.nativeName !== locale.englishName}
-								<span class="text-xs text-text-tertiary">{locale.englishName}</span>
+								<span class="text-xs text-ink-faint">{locale.englishName}</span>
 							{/if}
 						</span>
 						{#if isCurrent}
-							<IconCheck class="w-4 h-4 text-primary shrink-0" />
+							<IconCheck class="size-4 shrink-0 text-accent-ink" />
 						{:else if !translated}
-							<span class="text-[10px] uppercase tracking-wide text-text-tertiary shrink-0">
+							<span class="shrink-0 text-[10px] tracking-wide text-ink-faint uppercase">
 								{m.language_switcher_fallback_badge()}
 							</span>
 						{/if}

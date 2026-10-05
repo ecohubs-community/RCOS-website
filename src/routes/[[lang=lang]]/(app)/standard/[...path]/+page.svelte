@@ -47,7 +47,7 @@
 	const seoTitle = $derived.by(() => {
 		if (data.canonicalPath === '/standard/core/0.1') return m.std_version_label();
 		const mod = data.nav.modules.find((x) =>
-			data.canonicalPath.startsWith(stripLocale(x.path) + '/')
+			data.canonicalPath.startsWith(stripLocale(x.root ?? x.path) + '/')
 		);
 		return mod ? `${p.fullTitle} · ${mod.title}` : p.fullTitle;
 	});

@@ -115,9 +115,14 @@ describe('standard pages', () => {
 		expect(nav.start.map((i) => i.number)).toEqual([null, '0', '1']);
 		expect(nav.layers.map((i) => i.layer)).toEqual([0, 1, 2, 3, 4, 5, 6]);
 		expect(nav.reference.map((i) => i.number)).toEqual(['9', '10', '11', 'A', 'B', 'C']);
-		expect(nav.modules.map((i) => i.path)).toEqual([
-			'/standard/modules/minimal-permaculture',
-			'/standard/modules/permaculture'
+		expect(nav.modules.map((i) => [i.root, i.path])).toEqual([
+			['/standard/modules/minimal-permaculture', '/standard/modules/minimal-permaculture/0.1'],
+			['/standard/modules/permaculture', '/standard/modules/permaculture/0.1']
+		]);
+		expect(nav.modules[1].pages?.map((x) => [x.kind, x.path])).toEqual([
+			['about', '/standard/modules/permaculture'],
+			['definitions', '/standard/modules/permaculture/0.1'],
+			['page', '/standard/modules/permaculture/0.1/additional-artifacts']
 		]);
 		expect(nav.anchors['2.3.4']).toBe('/standard/core/0.1/layer-0-identity-scope');
 	});

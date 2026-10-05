@@ -113,6 +113,15 @@ export type StandardPage = {
 export type NavItem = PageLink & {
 	layer: number | null;
 	sections: { id: string; ref?: string; title: string }[];
+	/** Modules: the module's own page. `path` then goes to its latest definitions. */
+	root?: string;
+	/** Modules: every page of the module, listed under it while one of them is open. */
+	pages?: {
+		path: string;
+		title: string;
+		kind: 'about' | 'definitions' | 'page';
+		version?: string;
+	}[];
 };
 
 export type StandardNav = {
@@ -489,10 +498,28 @@ export async function standardNav(locale: string): Promise<StandardNav> {
 	const nav: StandardNav = {
 		start: [item('/standard'), ...core.filter((c) => c.number === '0' || c.number === '1')],
 		layers: core.filter((c) => c.layer !== null),
+		// Named after the module's page, linked to the definitions of its latest version.
 		modules: [...pages.keys()]
 			.filter((p) => /^\/standard\/modules\/[^/]+$/.test(p))
 			.sort()
-			.map(item),
+			.map((p) => {
+				const own = [...pages.keys()].filter((k) => k.startsWith(`${p}/`)).sort();
+				const latest = own.filter((k) => /\/\d+\.\d+$/.test(k)).at(-1);
+				return {
+					...item(p),
+					path: localizePath(latest ?? p, locale),
+					root: localizePath(p, locale),
+					pages: [p, ...own].map((k) => {
+						const version = /\/(\d+\.\d+)$/.exec(k)?.[1];
+						return {
+							path: localizePath(k, locale),
+							title: localized(pages.get(k)!, locale).doc.title,
+							kind: k === p ? 'about' : version ? 'definitions' : 'page',
+							version
+						} as const;
+					})
+				};
+			}),
 		reference: core.filter((c) => c.layer === null && c.number !== '0' && c.number !== '1'),
 		anchors: {}
 	};
