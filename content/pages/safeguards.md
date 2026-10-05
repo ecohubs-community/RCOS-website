@@ -1,84 +1,37 @@
 ---
 id: aac2e91b
 title: Safeguards
+summary: Optional protections against the few failures a community can't undo, such as losing its shared land.
 parentId: null
 order: 6
 ---
 
-## Safeguards
+Most mistakes a community makes can be repaired: a bad decision gets revisited, a conflict gets worked through. A few can't. Once shared land has been sold, a founder has taken control, or a lender has a claim on the community's assets, there is often no way back.
 
-Safeguards are optional, non-normative modules designed to protect communities against **known high-risk failure modes** that repeatedly cause collapse, capture, or irreversible harm.
+Safeguards are for those few risks. They are optional additions to RCOS Core that a community adopts on purpose, because it knows a particular danger applies to it. Each one trades some flexibility for protection: it limits what the community can do later, so that nobody can do it by accident, under pressure, or behind everyone's back.
 
-Unlike core RCOS layers, safeguards are **not required for compliance**. They are adopted intentionally when a community recognizes that a specific risk domain applies to its context.
+## Available safeguards
 
-Safeguards exist because some failures:
-- occur infrequently but catastrophically,
-- cross multiple layers of the system,
-- cannot be repaired once triggered,
-- are often underestimated until it is too late.
+- **[Land and commons anti-privatization](/safeguards/land-commons-anti-privatization)** keeps land and shared assets from being sold off, split up or quietly taken over.
 
-### What Safeguards Are
+Other areas where a safeguard can make sense include limits on founder or investor power, on outside capital and debt, on emergency powers, child safeguarding, and protection for succession and dissolution. If your community needs one of these, [tell us](https://ecohubs.community/contact).
 
-Safeguards are:
-- Optional add-ons to RCOS Core
-- Explicit and documented
-- Defensive by design
-- Focused on constraint, not optimization
-- Activated through formal adoption
+## When to adopt one
 
-Safeguards typically:
-- Introduce additional constraints
-- Require new or modified artifacts
-- Tighten exit, transfer, or authority rules
-- Reduce flexibility in exchange for resilience
+Consider a safeguard when a failure would:
 
-### What Safeguards Are Not
+- be impossible to undo, such as losing land or being taken over through the legal structure;
+- reach across several areas at once, such as governance, money and membership;
+- make leaving impossible or punishing;
+- let power or assets gather in a few hands without anyone noticing;
+- involve outside legal or financial systems.
 
-Safeguards are not:
-- Mandatory moral positions
-- Cultural or ideological prescriptions
-- Substitutes for governance or conflict processes
-- Informal norms or “understood rules”
+Adopt it early. Most safeguards lose their force once the failure they guard against has already begun.
 
-If a safeguard is not explicitly adopted, it MUST NOT be assumed to apply.
+## What adopting one means
 
-### When Safeguards Are Appropriate
+A safeguard applies only when the community has adopted it explicitly and written that down; it is never assumed. Once adopted, it can add new documents, change existing ones, or add to the Layer 0 rules (the lines the community will never cross). Those extra requirements apply for as long as the safeguard is in force.
 
-A safeguard is appropriate when:
-- A failure would be irreversible (e.g. loss of land, legal capture)
-- The impact spans multiple layers (governance, economy, membership)
-- Exit would become impossible or punitive
-- Power or assets could silently concentrate
-- External legal or financial systems interact with the community
+Safeguards don't prescribe values or culture, and they don't replace your decision-making or conflict processes. They answer one question in advance:
 
-### Examples of Safeguard Domains
-
-Common safeguard domains include:
-- Land and commons anti-privatization
-- Founder or investor power constraints
-- External capital and debt limitations
-- Child safety and safeguarding
-- Emergency power containment
-- Succession and dissolution protection
-
-### Relationship to Artifacts
-
-Safeguards are **not artifacts themselves**.
-
-However, when adopted, a safeguard MAY:
-- Require new artifacts
-- Modify existing artifacts
-- Add constraints to Layer 0 invariants
-- Introduce additional test cases for compliance
-
-These derived artifacts are only required **while the safeguard is active**.
-
-### Design Principle
-
-Safeguards exist to answer one question clearly:
-
-> “What is so dangerous here that we must limit ourselves in advance?”
-
-They trade optionality for survivability.
-
-Communities are encouraged to adopt safeguards early rather than retroactively, as most safeguards lose effectiveness once a failure mode has already begun.
+> What is so dangerous here that we must limit ourselves before it happens?

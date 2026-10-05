@@ -5,42 +5,26 @@ parentId: null
 order: 7
 ---
 
-## What the Stress Tests Are
+## What a stress test is
 
-RCOS Stress Tests are **real-world failure scenarios** — situations communities have actually lived through — formalized as test cases that the RCOS specification must withstand. Each test describes a concrete failure mode, the layers it touches, the invariants it stresses, and the structural response RCOS expects.
+A stress test is a failure that communities have actually lived through, written up so you can check your own structure against it. Each one describes what happens, which layers it touches, the warning signs, and what RCOS expects to be in place.
 
-A stress test answers a single question:
+Every test asks one question:
 
-> *If this happened to a community using RCOS, would the system absorb it — or would the system have to be bypassed?*
+> If this happened to a community using RCOS, would the structure absorb it, or would people have to work around it?
 
-If RCOS can survive the scenario without informal fixes, the test **passes**. If it cannot, the test **fails** — and a failing test points to a real gap in the framework that future versions must close. Stress tests are how RCOS stays honest: the spec is only as strong as the failures it has been tested against.
+If the structure holds without informal fixes, the test passes. If it doesn't, the test has found a real gap, and a future version of RCOS has to close it. That is how the standard stays honest.
 
-## How to Use Them
+## What they can't do
 
-- As a **design check** — read them before founding a community to anticipate what can go wrong.
-- As an **audit tool** — walk through them with an existing group and notice which scenarios you have no answer for.
-- As a **conflict aid** — when something breaks, find the relevant test and follow the expected behavior instead of improvising.
-- As a **shared vocabulary** for naming failure patterns without blaming individuals.
+RCOS is about structure, and so are its tests. Their limits are worth stating plainly:
 
-## Tools
+- **They make handling explicit; they don't do it for you.** A test can say a conflict must go through a defined process. It can't have the hard conversation, or supply the care and goodwill that process needs.
+- **They don't heal people.** Structure can stop harm from being ignored or hidden. It doesn't resolve trauma or rebuild trust; mediation, therapy and time do that.
+- **They don't create belonging.** No protocol makes people want to live together. The tests can protect a good community from slowly eroding, not create one.
+- **Passing isn't the goal; honesty is.** A community can pass every test on paper and still be a hard place to live, or fail several and still thrive. The tests show structural risk, not overall health.
+- **They describe patterns, not your situation.** Each test combines many real cases. Recognizing yourself in one starts a conversation; it isn't a diagnosis.
 
-Two companion tools make the library easier to act on:
+## Add a stress test
 
-- **[Self-Assessment](/toolkit/self-assessment)** — tick the warning signs that feel familiar and see which stress tests your community is closest to, ranked by how pressing they are, each linked to the structures that prevent it. Everything stays in your browser.
-- **[Facilitation Guide](/toolkit/facilitation-worksheet)** — how to run a stress test as a group session: a step-by-step worksheet that turns any test into a 60–90 minute conversation ending in a concrete next step.
-
-## What These Tests Can't Do
-
-RCOS is a **structural** framework, and these tests inherit its limits. Stating them plainly is part of staying honest:
-
-- **They make handling explicit; they don't do the handling.** A test can tell you conflict must enter a defined process — it can't have the hard conversation for you, or supply the courage, care, and goodwill that process needs to actually work.
-- **They don't heal people.** Structure can stop harm from being ignored or hidden, but it doesn't resolve trauma, rebuild broken trust, or substitute for mediation, therapy, or time. RCOS makes room for that work; it isn't that work.
-- **They don't manufacture relationships.** No protocol creates warmth, chemistry, or belonging. The tests can protect those things from structural erosion, but a community still has to genuinely want to live together.
-- **Passing is not the goal; honesty is.** A community can satisfy every test on paper and still be a hard place to live, or fail several and still be thriving. The tests are a mirror for structural risk, not a certificate of health.
-- **They describe patterns, not your specifics.** Each test is a composite of many real failures. Recognising yourself in one is the start of a conversation, not a diagnosis — your context decides what to actually do.
-
-Use them for the one thing they are genuinely good at: making the implicit explicit, before it costs you.
-
-## Contributing a Stress Test
-
-The library grows by absorbing real experience. **If your community has lived through a structural failure not yet covered here, we welcome it.** [Get in touch](https://ecohubs.community/contact) with the situation — what happened, which layers were involved, how it was (or wasn't) resolved — and we will consider adding it as a new stress test. Real failures make RCOS stronger.
+The library grows from real experience. If your community has lived through a structural failure that isn't covered here, [tell us about it](https://ecohubs.community/contact): what happened, which parts of the community it touched, and how it was (or wasn't) resolved.

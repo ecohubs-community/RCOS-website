@@ -3,6 +3,7 @@
 	import SEO from '$lib/components/seo/SEO.svelte';
 	import { buildPageLd } from '$lib/utils/jsonld';
 	import PageHeader from '$lib/components/site/PageHeader.svelte';
+	import HubSteps from '$lib/components/site/HubSteps.svelte';
 	import LayerChip from '$lib/components/ui/LayerChip.svelte';
 	import Prose from '$lib/components/ui/Prose.svelte';
 	import { localized } from '$lib/i18n/path';
@@ -30,9 +31,15 @@
 <SEO {title} description={m.mega_layers_body()} url="/layers" locale={data.locale} {jsonLd} />
 
 <div class="mx-auto w-full max-w-5xl px-4 pt-8 pb-20 sm:px-6 lg:px-8 lg:pt-12">
-	<PageHeader {crumbs} {title} lead={m.mega_layers_body()}>
-		{#if data.page}<Prose html={data.page.html} lang={data.page.lang} />{/if}
-	</PageHeader>
+	<PageHeader {crumbs} {title} lead={m.hub_layers_lead()} />
+	<HubSteps
+		heading={m.hub_how_to_use()}
+		steps={[
+			{ title: m.hub_layers_step1_title(), body: m.hub_layers_step1_body() },
+			{ title: m.hub_layers_step2_title(), body: m.hub_layers_step2_body() },
+			{ title: m.hub_layers_step3_title(), body: m.hub_layers_step3_body() }
+		]}
+	/>
 
 	<!-- Listed from 6 down to 0, so the stack rests on its foundation. -->
 	<ol class="mt-8 flex flex-col gap-3">
@@ -55,4 +62,11 @@
 			</li>
 		{/each}
 	</ol>
+
+	{#if data.page}
+		<section aria-labelledby="about" class="mt-14 max-w-190 border-t border-line pt-10">
+			<h2 id="about" class="sr-only">{m.site_about_page()}</h2>
+			<Prose html={data.page.html} lang={data.page.lang} />
+		</section>
+	{/if}
 </div>
