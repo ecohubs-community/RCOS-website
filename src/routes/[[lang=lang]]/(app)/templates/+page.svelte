@@ -3,6 +3,7 @@
 	import SEO from '$lib/components/seo/SEO.svelte';
 	import { buildPageLd } from '$lib/utils/jsonld';
 	import PageHeader from '$lib/components/site/PageHeader.svelte';
+	import HubSteps from '$lib/components/site/HubSteps.svelte';
 	import LayerChip from '$lib/components/ui/LayerChip.svelte';
 	import Prose from '$lib/components/ui/Prose.svelte';
 	import TemplateDownloads from '$lib/components/templates/TemplateDownloads.svelte';
@@ -30,7 +31,15 @@
 <SEO {title} description={m.mega_templates_desc()} url="/templates" locale={data.locale} {jsonLd} />
 
 <div class="mx-auto w-full max-w-6xl px-4 pt-8 pb-20 sm:px-6 lg:px-8 lg:pt-12">
-	<PageHeader {crumbs} {title} lead={m.mega_templates_desc()} />
+	<PageHeader {crumbs} {title} lead={m.hub_templates_lead()} />
+	<HubSteps
+		heading={m.hub_how_to_use()}
+		steps={[
+			{ title: m.hub_templates_step1_title(), body: m.hub_templates_step1_body() },
+			{ title: m.hub_templates_step2_title(), body: m.hub_templates_step2_body() },
+			{ title: m.hub_templates_step3_title(), body: m.hub_templates_step3_body() }
+		]}
+	/>
 
 	<div class="mt-10 flex flex-col gap-12">
 		{#each data.hub.layers as l (l.layer.n)}

@@ -1,129 +1,40 @@
 ---
 id: b6d6319b
 title: Implémentations de référence
+summary: Des communautés réelles qui utilisent RCOS et racontent comment ça se passe, y compris ce qui ne marche pas.
 parentId: null
 order: 5
 lang: fr
-sourceHash: 3299369b
+sourceHash: 0b29cd9d
 ---
 
-Cet article documente les **communautés réelles qui appliquent le RCOS** en pratique.
+Un standard ne vaut quelque chose que s'il tient dans la vraie vie. Cette page s'adresse aux communautés qui utilisent RCOS, entièrement ou en partie, et qui acceptent de montrer comment : ce qu'elles ont adopté, ce qu'elles ont changé et là où ça a cassé.
 
-Les implémentations de référence ne sont pas présentées comme idéales ou complètes. Leur objectif est de rendre le RCOS **observable, testable et source d'apprentissage** dans des environnements vécus.
+**Aucune communauté n'est encore répertoriée.** RCOS v0.1 est récent, et les premiers groupes commencent tout juste à travailler avec. Si le vôtre en fait partie, nous aimerions avoir de vos nouvelles.
 
-Une implémentation peut être partielle, en évolution ou expérimentale. Ce qui compte, c'est que la structure soit explicite et que les écarts par rapport au RCOS soient documentés plutôt que dissimulés.
+## Ce que montre une fiche
 
----
+Une fiche n'est pas une vitrine. Elle montre comment une communauté utilise réellement RCOS, y compris les parties qui ne collent pas :
 
-## Objectif des implémentations de référence
+- **La communauté :** son nom ou un pseudonyme, sa région, sa taille et son cadre, par exemple rural, urbain, habitat partagé ou d'abord en ligne.
+- **Ce qu'elle a adopté :** la version de RCOS, les couches auxquelles elle a répondu, celles auxquelles elle n'a pas encore répondu et pourquoi, et depuis quand.
+- **Ses documents :** des liens vers les réponses qu'elle a mises par écrit, comme sa charte de raison d'être, ses règles d'adhésion et ses processus de décision. Les détails sensibles peuvent être omis, tant que la structure reste visible.
+- **Là où elle s'écarte :** les règles qu'elle ne suit pas, les exceptions qu'elle expérimente et les tensions qu'elle n'a pas résolues. Être transparent sur ces points est la partie la plus utile.
+- **Ce qu'elle a appris** (facultatif) : les tests de résistance qu'elle a traversés, ce qui a tenu, ce qui n'a pas tenu et ce qu'elle a changé ensuite.
 
-Les implémentations de référence remplissent quatre fonctions essentielles :
+Figurer dans la liste n'est pas un certificat. Cela ne veut pas dire que la communauté est conforme, qu'elle réussit ou qu'elle est approuvée, et cela ne dit rien de ses valeurs ni de sa culture.
 
-1. **Validation**  
-   Démontrer que le RCOS peut être appliqué au-delà de la théorie.
+## Être répertorié
 
-2. **Apprentissage**  
-   Capturer ce qui fonctionne, ce qui échoue, et pourquoi.
+Les communautés à tous les stades sont les bienvenues, y compris celles qui débutent ou n'ont adopté RCOS qu'en partie. Écrivez à [rcos@ecohubs.community](mailto:rcos@ecohubs.community) avec l'objet « RCOS Reference Implementation » et indiquez :
 
-3. **Calibration**  
-   Identifier les ambiguïtés, les contraintes manquantes ou la sur-ingénierie dans la spécification.
+- le nom de votre communauté ou un pseudonyme ;
+- des liens vers les documents que vous pouvez partager ;
+- les couches que vous avez déjà mises en place ;
+- à quel point vous souhaitez partager ouvertement : publiquement, semi-publiquement ou de façon anonymisée.
 
-4. **Signal**  
-   Permettre à d'autres de voir à quoi ressemble le RCOS en pratique avant de l'adopter.
-
-Cette section est intentionnellement transparente et non promotionnelle.
-
----
-
-## Ce qui est présenté ici
-
-Chaque implémentation de référence DEVRAIT publier un profil concis et structuré comprenant :
-
-### Vue d'ensemble de la communauté
-- Nom de la communauté ou du projet
-- Localisation (pays / région ; adresse exacte facultative)
-- Taille de la communauté (actuelle et cible)
-- Contexte (rural, urbain, habitat partagé, éco-village, prioritairement numérique, etc.)
-
-### Périmètre d'adoption du RCOS
-- Version du RCOS adoptée
-- Couches implémentées (0–6)
-- Couches partiellement implémentées ou exclues (avec justification)
-- Date d'adoption initiale
-
-### Artefacts structurels
-Liens ou références vers :
-- Charte de raison d'être et Déclaration de périmètre
-- Règles d'adhésion
-- Protocoles de gouvernance
-- Registre des rôles
-- Mécanismes de gestion des conflits
-- Protocole de modification / versionnement
-
-Les contenus sensibles PEUVENT être expurgés, mais la structure DEVRAIT rester visible.
-
-### Écarts connus
-Liste explicite de :
-- Règles RCOS non suivies
-- Invariants sous tension
-- Exceptions temporaires ou expérimentations
-- Contraintes héritées
-
-La déclaration honnête des écarts est une force, pas un échec.
-
-### Résultats des tests de résistance (optionnel)
-Le cas échéant, notes brèves sur :
-- Les tests de résistance RCOS rencontrés
-- Les mécanismes qui ont tenu
-- Ceux qui ont échoué et pourquoi
-- Les changements structurels effectués en conséquence
-
----
-
-## Ce que cette section n'est pas
-
-Cette section n'est explicitement **pas** :
-- une liste de certification,
-- un système de classement,
-- une vitrine de communautés « réussies »,
-- ni une approbation de valeurs, de culture ou d'idéologie.
-
-Figurer ici n'implique ni conformité au RCOS ni approbation.
-
----
-
-## Comment être référencé
-
-Les communautés appliquant le RCOS — entièrement ou partiellement — sont invitées à être référencées.
-
-Pour demander l'inclusion, fournir :
-- Nom de la communauté ou pseudonyme
-- Liens vers la documentation publique ou semi-publique (si disponible)
-- Couches RCOS actuellement implémentées
-- Niveau de volonté de partager les apprentissages (public / semi-public / anonymisé)
-
-Les implémentations incomplètes ou à un stade précoce sont les bienvenues.
-
----
-
-## Contact & soumission
-
-Si ta communauté expérimente le RCOS et souhaite être incluse comme implémentation de référence, merci de contacter :
-
-**Email :** rcos@ecohubs.community  
-**Objet :** « Implémentation de référence RCOS »
-
-Si la confidentialité ou la sécurité est une préoccupation, des référencements anonymisés ou abstraits peuvent être organisés.
-
----
+Si la confidentialité ou la sécurité vous préoccupe, nous pouvons publier une fiche anonymisée ou simplifiée.
 
 ## Pourquoi c'est important
 
-Le RCOS n'est pas destiné à rester statique ou théorique.
-
-Cette section existe pour que :
-- les communautés réelles puissent influencer la spécification,
-- les échecs puissent améliorer le système,
-- et les futures communautés puissent apprendre sans répéter les mêmes erreurs.
-
-Le RCOS évolue par la pratique — pas par l'opinion.
+Les communautés réelles façonnent le standard. Leur expérience montre où RCOS manque de clarté, où il en demande trop et où il oublie quelque chose, pour que la version suivante puisse le corriger et que la prochaine communauté n'ait pas à répéter les mêmes erreurs.

@@ -106,8 +106,9 @@
 				<a
 					href={item.path}
 					onclick={onnavigate}
-					aria-current={current.startsWith(item.path) ? 'page' : undefined}
-					class="flex items-center gap-2.5 rounded-lg px-2.5 py-1.5 leading-snug text-guide-ink hover:bg-guide aria-[current=page]:bg-guide aria-[current=page]:font-semibold"
+					aria-current={item.path === current ? 'page' : undefined}
+					data-open={current.startsWith(item.root ?? item.path) || undefined}
+					class="flex items-center gap-2.5 rounded-lg px-2.5 py-1.5 leading-snug text-guide-ink hover:bg-guide data-open:bg-guide data-open:font-semibold"
 				>
 					<span
 						class="inline-flex size-5 shrink-0 items-center justify-center rounded-full border-[1.5px] border-dashed border-clay-500 text-clay-800"
@@ -115,6 +116,23 @@
 					>
 					{item.title}
 				</a>
+				{#if item.root && current.startsWith(item.root) && item.pages}
+					<!-- The open module lists its pages: what it is, its definitions, its extra artifacts. -->
+					<div class="my-0.5 mb-1.5 ml-5 flex flex-col border-l-2 border-line-soft pl-2.5">
+						{#each item.pages as pg (pg.path)}
+							<a
+								href={pg.path}
+								onclick={onnavigate}
+								aria-current={pg.path === current ? 'page' : undefined}
+								class="-ml-3 border-l-2 border-transparent py-1 pr-2.5 pl-2.5 text-[13.5px] leading-snug text-ink-muted hover:text-heading aria-[current=page]:border-clay-500 aria-[current=page]:font-semibold aria-[current=page]:text-heading"
+							>
+								{#if pg.kind === 'about'}{m.std_module_about()}{:else if pg.kind === 'definitions'}{m.std_module_definitions(
+										{ version: pg.version ?? '' }
+									)}{:else}{pg.title}{/if}
+							</a>
+						{/each}
+					</div>
+				{/if}
 			{/each}
 		</div>
 

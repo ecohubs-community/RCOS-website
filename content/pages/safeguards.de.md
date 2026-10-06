@@ -1,86 +1,39 @@
 ---
 id: aac2e91b
 title: Schutzmaßnahmen
+summary: Optionaler Schutz vor den wenigen Fehlern, die eine Gemeinschaft nicht rückgängig machen kann, etwa dem Verlust ihres gemeinsamen Landes.
 parentId: null
-order: 0
+order: 6
 lang: de
-sourceHash: 9738d0c2
+sourceHash: a52d30b8
 ---
 
-## Schutzmaßnahmen
+Die meisten Fehler einer Gemeinschaft lassen sich reparieren: Eine schlechte Entscheidung wird noch einmal aufgegriffen, ein Konflikt wird durchgearbeitet. Ein paar lassen sich nicht reparieren. Ist gemeinsames Land erst verkauft, hat ein Gründer die Kontrolle übernommen oder hat ein Kreditgeber Anspruch auf das Vermögen der Gemeinschaft, gibt es oft keinen Weg zurück.
 
-Schutzmaßnahmen sind optionale, nicht-normative Module, die Gemeinschaften vor **bekannten Hochrisiko-Fehlermodi** schützen sollen, die wiederholt zu Zusammenbruch, Vereinnahmung oder irreversiblem Schaden führen.
+Schutzmaßnahmen sind für diese wenigen Risiken da. Sie sind optionale Ergänzungen zu RCOS Core, die eine Gemeinschaft bewusst übernimmt, weil sie weiß, dass eine bestimmte Gefahr auf sie zutrifft. Jede tauscht etwas Flexibilität gegen Schutz: Sie begrenzt, was die Gemeinschaft später tun kann, damit es niemand aus Versehen, unter Druck oder hinter dem Rücken aller tun kann.
 
-Anders als die Kernschichten des RCOS sind Schutzmaßnahmen **nicht konformitätspflichtig**. Sie werden bewusst eingeführt, wenn eine Gemeinschaft erkennt, dass ein bestimmter Risikobereich auf ihren Kontext zutrifft.
+## Verfügbare Schutzmaßnahmen
 
-Schutzmaßnahmen existieren, weil manche Fehlschläge:
-- selten, aber katastrophal auftreten,
-- mehrere Schichten des Systems durchkreuzen,
-- nach Eintreten nicht mehr repariert werden können,
-- oft unterschätzt werden, bis es zu spät ist.
+- **[Schutz von Land und Gemeingütern vor Privatisierung](/safeguards/land-commons-anti-privatization)** verhindert, dass Land und gemeinsames Vermögen verkauft, aufgeteilt oder still übernommen werden.
 
-### Was Schutzmaßnahmen sind
+Weitere Bereiche, in denen eine Schutzmaßnahme sinnvoll sein kann, sind Grenzen für die Macht von Gründer:innen oder Investor:innen, für externes Kapital und Schulden, für Notfallbefugnisse, außerdem Kinderschutz sowie Schutz bei Nachfolge und Auflösung. Wenn eure Gemeinschaft eine davon braucht, [sagt uns Bescheid](https://ecohubs.community/contact).
 
-Schutzmaßnahmen sind:
-- Optionale Ergänzungen zum RCOS-Kern
-- Explizit und dokumentiert
-- Von Grund auf defensiv gestaltet
-- Auf Begrenzung ausgerichtet, nicht auf Optimierung
-- Durch formale Übernahme aktiviert
+## Wann ihr eine übernehmt
 
-Schutzmaßnahmen bewirken typischerweise:
-- Die Einführung zusätzlicher Einschränkungen
-- Die Erstellung neuer oder geänderter Artefakte
-- Die Verschärfung von Austritts-, Übertragungs- oder Befugnisregeln
-- Eine Verringerung der Flexibilität zugunsten von Resilienz
+Denkt über eine Schutzmaßnahme nach, wenn ein Scheitern:
 
-### Was Schutzmaßnahmen nicht sind
+- nicht rückgängig zu machen wäre, etwa der Verlust von Land oder eine Übernahme über die Rechtsform;
+- mehrere Bereiche zugleich erfasst, etwa Entscheidungsfindung, Geld und Mitgliedschaft;
+- den Austritt unmöglich machen oder bestrafen würde;
+- Macht oder Vermögen in wenigen Händen sammeln ließe, ohne dass es jemand merkt;
+- externe Rechts- oder Finanzsysteme einbezieht.
 
-Schutzmaßnahmen sind nicht:
-- Verbindliche moralische Positionen
-- Kulturelle oder ideologische Vorgaben
-- Ersatz für Governance- oder Konfliktprozesse
-- Informelle Normen oder „stillschweigend geltende Regeln"
+Übernehmt sie früh. Die meisten Schutzmaßnahmen verlieren ihre Wirkung, sobald das Scheitern, vor dem sie schützen, schon begonnen hat.
 
-Wenn eine Schutzmaßnahme nicht explizit eingeführt wurde, DARF NICHT davon ausgegangen werden, dass sie gilt.
+## Was es heißt, eine zu übernehmen
 
-### Wann Schutzmaßnahmen angebracht sind
+Eine Schutzmaßnahme gilt nur, wenn die Gemeinschaft sie ausdrücklich übernommen und das aufgeschrieben hat; sie wird nie stillschweigend angenommen. Einmal übernommen, kann sie neue Dokumente hinzufügen, bestehende ändern oder die Regeln von Schicht 0 ergänzen (die Grenzen, die die Gemeinschaft nie überschreiten wird). Diese zusätzlichen Anforderungen gelten, solange die Schutzmaßnahme in Kraft ist.
 
-Eine Schutzmaßnahme ist angebracht, wenn:
-- Ein Fehlschlag irreversibel wäre (z. B. Verlust von Land, rechtliche Vereinnahmung)
-- Die Auswirkung mehrere Schichten betrifft (Governance, Wirtschaft, Mitgliedschaft)
-- Ein Austritt unmöglich oder bestrafend würde
-- Macht oder Vermögenswerte sich schleichend konzentrieren könnten
-- Externe Rechts- oder Finanzsysteme mit der Gemeinschaft interagieren
+Schutzmaßnahmen schreiben keine Werte oder Kultur vor, und sie ersetzen nicht eure Entscheidungs- oder Konfliktprozesse. Sie beantworten eine Frage im Voraus:
 
-### Beispiele für Schutzmaßnahmen-Domänen
-
-Typische Domänen für Schutzmaßnahmen sind:
-- Anti-Privatisierung von Land und Allmende
-- Macht-Begrenzung für Gründer oder Investoren
-- Begrenzung von externem Kapital und Verschuldung
-- Kinderschutz und Schutzbefohlene
-- Eindämmung von Notstandsbefugnissen
-- Nachfolge- und Auflösungsschutz
-
-### Verhältnis zu Artefakten
-
-Schutzmaßnahmen sind **keine Artefakte an sich**.
-
-Wenn sie jedoch eingeführt werden, KANN eine Schutzmaßnahme:
-- Neue Artefakte erfordern
-- Bestehende Artefakte ändern
-- Einschränkungen zu den Invarianten von Schicht 0 hinzufügen
-- Zusätzliche Testfälle für die Konformitätsprüfung einführen
-
-Diese abgeleiteten Artefakte sind nur erforderlich, **solange die Schutzmaßnahme aktiv ist**.
-
-### Gestaltungsprinzip
-
-Schutzmaßnahmen existieren, um eine Frage klar zu beantworten:
-
-> „Was ist hier so gefährlich, dass wir uns im Voraus selbst beschränken müssen?"
-
-Sie tauschen Optionalität gegen Überlebensfähigkeit.
-
-Gemeinschaften wird empfohlen, Schutzmaßnahmen frühzeitig statt nachträglich einzuführen, da die meisten Schutzmaßnahmen ihre Wirksamkeit verlieren, sobald ein Fehlermodus bereits eingesetzt hat.
+> Was ist hier so gefährlich, dass wir uns einschränken müssen, bevor es passiert?

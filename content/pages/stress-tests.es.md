@@ -1,48 +1,32 @@
 ---
 id: 6acbe9a7
-title: Pruebas de Estrés de RCOS
+title: Pruebas de estrés de RCOS
 parentId: null
 order: 7
 lang: es
-sourceHash: fed16d4b
+sourceHash: fd2856e0
 ---
 
-## Qué son las Pruebas de Estrés
+## Qué es una prueba de estrés
 
-Las Pruebas de Estrés de RCOS son **escenarios de fallo del mundo real** — situaciones que las comunidades han vivido realmente — formalizadas como casos de prueba que la especificación RCOS debe soportar. Cada prueba describe un modo concreto de fallo, las capas que toca, los invariantes que pone bajo presión y la respuesta estructural que RCOS espera.
+Una prueba de estrés es un fallo que comunidades reales han vivido, escrito para que puedas comparar tu propia estructura con él. Cada una describe qué pasa, qué capas toca, las señales de alerta y qué espera RCOS que esté en su lugar.
 
-Una prueba de estrés responde a una sola pregunta:
+Cada prueba hace una sola pregunta:
 
-> *Si esto le sucediera a una comunidad usando RCOS, ¿absorbería el sistema la situación — o habría que eludir el sistema?*
+> Si esto le pasara a una comunidad que usa RCOS, ¿lo absorbería la estructura o las personas tendrían que buscar cómo sortearla?
 
-Si RCOS puede sobrevivir al escenario sin arreglos informales, la prueba **se aprueba**. Si no puede, la prueba **falla** — y una prueba fallida señala una brecha real en el marco que las versiones futuras deben cerrar. Las pruebas de estrés son la forma en que RCOS se mantiene honesto: la especificación es solo tan sólida como los fallos contra los que ha sido probada.
+Si la estructura aguanta sin arreglos informales, la prueba se supera. Si no, la prueba ha encontrado un vacío real, y una versión futura de RCOS tiene que cerrarlo. Así es como el estándar se mantiene honesto.
 
-## Cómo usarlas
+## Lo que no pueden hacer
 
-- Como **verificación de diseño** — léelas antes de fundar una comunidad para anticipar lo que puede salir mal.
-- Como **herramienta de auditoría** — recórrelas con un grupo existente y observa qué escenarios no tienen respuesta.
-- Como **ayuda en el conflicto** — cuando algo se rompe, encuentra la prueba relevante y sigue el comportamiento esperado en lugar de improvisar.
-- Como **vocabulario compartido** para nombrar patrones de fallo sin culpar a individuos.
+RCOS trata sobre la estructura, y sus pruebas también. Vale la pena decir sus límites con claridad:
 
-## Herramientas
+- **Hacen explícito cómo se maneja algo; no lo manejan por ti.** Una prueba puede decir que un conflicto tiene que pasar por un proceso definido. No puede tener la conversación difícil ni aportar el cuidado y la buena voluntad que ese proceso necesita.
+- **No sanan a las personas.** La estructura puede impedir que un daño se ignore o se oculte. No resuelve traumas ni reconstruye la confianza; eso lo hacen la mediación, la terapia y el tiempo.
+- **No crean pertenencia.** Ningún protocolo hace que las personas quieran vivir juntas. Las pruebas pueden proteger a una buena comunidad de desgastarse poco a poco, no crearla.
+- **El objetivo no es aprobar, sino ser honestos.** Una comunidad puede superar todas las pruebas en el papel y aun así ser un lugar difícil para vivir, o fallar varias y aun así prosperar. Las pruebas muestran riesgos estructurales, no la salud general.
+- **Describen patrones, no tu situación.** Cada prueba combina muchos casos reales. Reconocerte en una es el comienzo de una conversación, no un diagnóstico.
 
-Dos herramientas complementarias hacen que la biblioteca sea más fácil de aplicar:
+## Proponer una prueba de estrés
 
-- **[Autoevaluación](/toolkit/self-assessment)** — marca las señales de advertencia que te resulten familiares y ve a qué pruebas de estrés se acerca más tu comunidad, clasificadas por qué tan apremiantes son, cada una enlazada a las estructuras que la previenen. Todo permanece en tu navegador.
-- **[Guía de Facilitación](/toolkit/facilitation-worksheet)** — cómo ejecutar una prueba de estrés como sesión grupal: una hoja de trabajo paso a paso que convierte cualquier prueba en una conversación de 60–90 minutos que termina en un próximo paso concreto.
-
-## Lo que estas pruebas no pueden hacer
-
-RCOS es un marco **estructural**, y estas pruebas heredan sus límites. Enunciarlos claramente es parte de mantenerse honesto:
-
-- **Hacen explícito el manejo; no hacen el manejo por ti.** Una prueba puede decirte que un conflicto debe entrar en un proceso definido — no puede tener la conversación difícil por ti, ni aportar el valor, el cuidado y la buena voluntad que ese proceso necesita para funcionar de verdad.
-- **No sanan a las personas.** La estructura puede impedir que el daño sea ignorado u ocultado, pero no resuelve el trauma, no reconstruye la confianza rota, ni sustituye la mediación, la terapia o el tiempo. RCOS deja espacio para ese trabajo; no es ese trabajo.
-- **No fabrican relaciones.** Ningún protocolo crea calidez, química o pertenencia. Las pruebas pueden proteger esas cosas de la erosión estructural, pero una comunidad aún tiene que querer genuinamente vivir junta.
-- **Aprobar no es el objetivo; la honestidad sí.** Una comunidad puede cumplir cada prueba sobre el papel y aun así ser un lugar difícil para vivir, o fallar varias y aun así estar prosperando. Las pruebas son un espejo del riesgo estructural, no un certificado de salud.
-- **Describen patrones, no tus particularidades.** Cada prueba es un compuesto de muchos fallos reales. Reconocerte en una es el inicio de una conversación, no un diagnóstico — tu contexto decide qué hacer realmente.
-
-Úsalas para lo único en lo que son genuinamente buenas: hacer explícito lo implícito, antes de que te cueste.
-
-## Contribuir con una Prueba de Estrés
-
-La biblioteca crece absorbiendo experiencia real. **Si tu comunidad ha vivido un fallo estructural que aún no está cubierto aquí, lo recibimos con gusto.** [Ponte en contacto](https://ecohubs.community/contact) con la situación — qué ocurrió, qué capas estuvieron involucradas, cómo se resolvió (o no) — y consideraremos añadirlo como una nueva prueba de estrés. Los fallos reales hacen a RCOS más fuerte.
+La biblioteca crece a partir de experiencias reales. Si tu comunidad ha vivido un fallo estructural que no está cubierto aquí, [cuéntanoslo](https://ecohubs.community/contact): qué pasó, qué partes de la comunidad afectó y cómo se resolvió (o no).

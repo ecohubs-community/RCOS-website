@@ -1,86 +1,39 @@
 ---
 id: aac2e91b
 title: Garde-fous
+summary: Des protections optionnelles contre les rares échecs qu'une communauté ne peut pas défaire, comme la perte de ses terres communes.
 parentId: null
 order: 6
 lang: fr
-sourceHash: 9738d0c2
+sourceHash: a52d30b8
 ---
 
-## Garde-fous
+La plupart des erreurs d'une communauté peuvent se réparer : une mauvaise décision est revue, un conflit est surmonté. Quelques-unes, non. Une fois que des terres communes ont été vendues, qu'un fondateur a pris le contrôle ou qu'un prêteur détient une créance sur les biens de la communauté, il n'y a souvent plus de retour possible.
 
-Les garde-fous sont des modules optionnels et non normatifs conçus pour protéger les communautés contre les **modes de défaillance connus à haut risque** qui provoquent de manière récurrente l'effondrement, la captation ou des dommages irréversibles.
+Les garde-fous sont faits pour ces quelques risques. Ce sont des ajouts optionnels au Noyau RCOS qu'une communauté adopte délibérément, parce qu'elle sait qu'un danger précis la concerne. Chacun échange un peu de souplesse contre de la protection : il limite ce que la communauté pourra faire plus tard, pour que personne ne puisse le faire par accident, sous la pression ou dans le dos de tout le monde.
 
-Contrairement aux couches fondamentales du RCOS, les garde-fous ne sont **pas requis pour la conformité**. Ils sont adoptés intentionnellement lorsqu'une communauté reconnaît qu'un domaine de risque spécifique s'applique à son contexte.
+## Garde-fous disponibles
 
-Les garde-fous existent parce que certaines défaillances :
-- surviennent rarement mais de manière catastrophique,
-- traversent plusieurs couches du système,
-- ne peuvent pas être réparées une fois déclenchées,
-- sont souvent sous-estimées jusqu'à ce qu'il soit trop tard.
+- **[Anti-privatisation des terres et des communs](/safeguards/land-commons-anti-privatization)** empêche que les terres et les biens partagés soient vendus, morcelés ou accaparés en douce.
 
-### Ce que sont les garde-fous
+Un garde-fou peut aussi avoir du sens dans d'autres domaines : limites au pouvoir des fondateurs ou des investisseurs, au capital extérieur et à la dette, aux pouvoirs d'urgence, protection de l'enfance, et protection de la succession et de la dissolution. Si votre communauté a besoin de l'un d'eux, [dites-le-nous](https://ecohubs.community/contact).
 
-Les garde-fous sont :
-- Des extensions optionnelles du RCOS Core
-- Explicites et documentés
-- Défensifs par conception
-- Axés sur la contrainte, non sur l'optimisation
-- Activés par une adoption formelle
+## Quand en adopter un
 
-Les garde-fous, typiquement :
-- Introduisent des contraintes supplémentaires
-- Exigent des artefacts nouveaux ou modifiés
-- Renforcent les règles de sortie, de transfert ou d'autorité
-- Réduisent la flexibilité en échange de la résilience
+Envisagez un garde-fou quand un échec :
 
-### Ce que les garde-fous ne sont pas
+- serait impossible à défaire, comme la perte des terres ou une prise de contrôle par la structure juridique ;
+- toucherait plusieurs domaines à la fois, comme la gouvernance, l'argent et l'adhésion ;
+- rendrait le départ impossible ou punitif ;
+- permettrait au pouvoir ou aux biens de se concentrer entre quelques mains sans que personne ne le remarque ;
+- impliquerait des systèmes juridiques ou financiers extérieurs.
 
-Les garde-fous ne sont pas :
-- Des positions morales obligatoires
-- Des prescriptions culturelles ou idéologiques
-- Des substituts aux processus de gouvernance ou de conflit
-- Des normes informelles ou des « règles tacites »
+Adoptez-le tôt. La plupart des garde-fous perdent leur force une fois que l'échec qu'ils doivent prévenir a déjà commencé.
 
-Si un garde-fou n'est pas explicitement adopté, il NE DOIT PAS être considéré comme applicable.
+## Ce que signifie en adopter un
 
-### Quand les garde-fous sont appropriés
+Un garde-fou ne s'applique que si la communauté l'a adopté explicitement et l'a mis par écrit ; il n'est jamais présumé. Une fois adopté, il peut ajouter de nouveaux documents, modifier des documents existants ou compléter les règles de la Couche 0 (les limites que la communauté ne franchira jamais). Ces exigences supplémentaires s'appliquent tant que le garde-fou est en vigueur.
 
-Un garde-fou est approprié lorsque :
-- Une défaillance serait irréversible (par ex. perte de terrain, captation juridique)
-- L'impact s'étend sur plusieurs couches (gouvernance, économie, adhésion)
-- La sortie deviendrait impossible ou punitive
-- Le pouvoir ou les actifs pourraient se concentrer silencieusement
-- Des systèmes juridiques ou financiers externes interagissent avec la communauté
+Les garde-fous ne prescrivent ni valeurs ni culture, et ne remplacent pas vos processus de décision ou de gestion des conflits. Ils répondent à l'avance à une seule question :
 
-### Exemples de domaines de garde-fous
-
-Les domaines courants de garde-fous incluent :
-- Terrain et communs — anti-privatisation
-- Contraintes de pouvoir des fondateurs ou investisseurs
-- Limitations du capital externe et de l'endettement
-- Sécurité et protection des enfants
-- Encadrement des pouvoirs d'urgence
-- Protection en cas de succession et de dissolution
-
-### Relation avec les artefacts
-
-Les garde-fous ne sont **pas eux-mêmes des artefacts**.
-
-Cependant, une fois adopté, un garde-fou PEUT :
-- Exiger de nouveaux artefacts
-- Modifier des artefacts existants
-- Ajouter des contraintes aux invariants de la Couche 0
-- Introduire des cas de test supplémentaires pour la conformité
-
-Ces artefacts dérivés ne sont requis que **tant que le garde-fou est actif**.
-
-### Principe de conception
-
-Les garde-fous existent pour répondre clairement à une seule question :
-
-> « Qu'est-ce qui est si dangereux ici que nous devons nous imposer des limites à l'avance ? »
-
-Ils échangent l'optionnalité contre la capacité de survie.
-
-Les communautés sont encouragées à adopter les garde-fous de manière précoce plutôt que rétroactive, car la plupart des garde-fous perdent leur efficacité une fois qu'un mode de défaillance a déjà commencé.
+> Qu'est-ce qui est si dangereux ici que nous devons nous limiter avant que cela n'arrive ?

@@ -3,6 +3,7 @@
 	import SEO from '$lib/components/seo/SEO.svelte';
 	import { buildPageLd } from '$lib/utils/jsonld';
 	import PageHeader from '$lib/components/site/PageHeader.svelte';
+	import HubSteps from '$lib/components/site/HubSteps.svelte';
 	import LayerChip from '$lib/components/ui/LayerChip.svelte';
 	import Prose from '$lib/components/ui/Prose.svelte';
 	import SeverityDot from '$lib/components/site/SeverityDot.svelte';
@@ -36,7 +37,25 @@
 />
 
 <div class="mx-auto w-full max-w-6xl px-4 pt-8 pb-20 sm:px-6 lg:px-8 lg:pt-12">
-	<PageHeader {crumbs} {title} lead={m.mega_stress_tests_desc()} />
+	<PageHeader {crumbs} {title} lead={m.hub_stress_tests_lead()} />
+	<HubSteps
+		heading={m.hub_how_to_use()}
+		steps={[
+			{
+				title: m.hub_stress_tests_step1_title(),
+				body: m.hub_stress_tests_step1_body(),
+				href: localized('/toolkit/self-assessment', data.locale),
+				cta: m.home_start_step2_cta()
+			},
+			{
+				title: m.hub_stress_tests_step2_title(),
+				body: m.hub_stress_tests_step2_body(),
+				href: localized('/toolkit/facilitation-worksheet', data.locale),
+				cta: m.hub_stress_tests_step2_cta()
+			},
+			{ title: m.hub_stress_tests_step3_title(), body: m.hub_stress_tests_step3_body() }
+		]}
+	/>
 
 	<!-- Grouped by primary layer (Q-15). The old category pages redirect to these anchors. -->
 	<div class="mt-10 flex flex-col gap-10">
