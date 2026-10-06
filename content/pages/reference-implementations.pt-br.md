@@ -5,12 +5,17 @@ summary: Comunidades reais que usam o RCOS e contam como está sendo, inclusive 
 parentId: null
 order: 5
 lang: pt-br
-sourceHash: 0b29cd9d
+sourceHash: eef831af
 ---
 
 Um padrão só vale alguma coisa se resistir à vida real. Esta página é para comunidades que usam o RCOS, total ou parcialmente, e estão dispostas a mostrar como: o que adotaram, o que mudaram e onde algo quebrou.
 
-**Ainda não há nenhuma comunidade listada.** O RCOS v0.1 é novo, e os primeiros grupos estão só começando a trabalhar com ele. Se o seu é um deles, queremos ouvir você.
+## Comunidades que usam o RCOS
+
+- **[EcoHubs](https://specs.ecohubs.community)**, online. A comunidade por trás do RCOS, que aplica o padrão a si mesma. O site dela publica seus documentos do RCOS, registros de decisões e propostas, inclusive as que foram rejeitadas.
+- **[Fruit Haven](https://fruithaven.land)**, Gualaquiza, Equador. Uma ecovila vegana e um sítio de frutas em permacultura na borda da Amazônia, ao pé dos Andes, fundada em 2016.
+
+O RCOS v0.1 é novo, e mais grupos estão começando a trabalhar com ele. Se o seu é um deles, queremos ouvir você.
 
 ## O que uma listagem mostra
 
