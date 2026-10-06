@@ -504,7 +504,16 @@ export async function standardNav(locale: string): Promise<StandardNav> {
 			.sort()
 			.map((p) => {
 				const own = [...pages.keys()].filter((k) => k.startsWith(`${p}/`)).sort();
-				const latest = own.filter((k) => /\/\d+\.\d+$/.test(k)).at(-1);
+				// By version number, not as text: 0.10 comes after 0.9.
+				const num = (k: string) =>
+					k
+						.slice(k.lastIndexOf('/') + 1)
+						.split('.')
+						.map(Number);
+				const latest = own
+					.filter((k) => /\/\d+\.\d+$/.test(k))
+					.sort((a, b) => num(a)[0] - num(b)[0] || num(a)[1] - num(b)[1])
+					.at(-1);
 				return {
 					...item(p),
 					path: localizePath(latest ?? p, locale),

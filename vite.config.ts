@@ -19,7 +19,8 @@ function contentArticles(): Plugin {
 		configureServer(server) {
 			// One rebuild at a time: buildArticles empties its output folder first, so
 			// two overlapping runs (a branch switch touches many files) crash the server.
-			// Changes during a run trigger one more run after it.
+			// Changes during a run trigger one more run after it. The page reloads only
+			// when the last run succeeded, never onto a half-written output folder.
 			let running = false;
 			let again = false;
 			const rebuild = async () => {
@@ -28,16 +29,19 @@ function contentArticles(): Plugin {
 					return;
 				}
 				running = true;
+				let ok: boolean;
 				do {
 					again = false;
 					try {
 						await buildArticles({ quiet: true });
+						ok = true;
 					} catch (error) {
+						ok = false;
 						server.config.logger.error(`[content] ${(error as Error).message}`);
 					}
 				} while (again);
 				running = false;
-				server.ws.send({ type: 'full-reload' });
+				if (ok) server.ws.send({ type: 'full-reload' });
 			};
 			server.watcher.add(['content/**/*.yaml', 'content/pages/**/*.md']);
 			server.watcher.on('all', (_event, file) => {

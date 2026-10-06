@@ -106,8 +106,9 @@
 				<a
 					href={item.path}
 					onclick={onnavigate}
-					aria-current={current.startsWith(item.root ?? item.path) ? 'page' : undefined}
-					class="flex items-center gap-2.5 rounded-lg px-2.5 py-1.5 leading-snug text-guide-ink hover:bg-guide aria-[current=page]:bg-guide aria-[current=page]:font-semibold"
+					aria-current={item.path === current ? 'page' : undefined}
+					data-open={current.startsWith(item.root ?? item.path) || undefined}
+					class="flex items-center gap-2.5 rounded-lg px-2.5 py-1.5 leading-snug text-guide-ink hover:bg-guide data-open:bg-guide data-open:font-semibold"
 				>
 					<span
 						class="inline-flex size-5 shrink-0 items-center justify-center rounded-full border-[1.5px] border-dashed border-clay-500 text-clay-800"
