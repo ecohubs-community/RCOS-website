@@ -4,38 +4,30 @@ title: RCOS-Vorlagen
 parentId: null
 order: 4
 lang: de
-sourceHash: ea11889c
+sourceHash: bd41225b
 ---
 
-## Was die RCOS-Vorlagen sind
-
-Die RCOS-Vorlagen verwandeln die abstrakte Spezifikation des [RCOS Core](/standard) in funktionierende Dokumente, die eine Gemeinschaft tatsächlich ausfüllen kann. Sie sind nach **Schicht** organisiert (Schicht 0 bis Schicht 6) und in die konkreten **Artefakte** unterteilt, die jede Schicht erfordert — zum Beispiel eine _Zweck-Charta_, eine _Geltungsbereichserklärung_, ein _Invarianten-Register_ oder eine _Entscheidungsmatrix_.
+## Was in einer Vorlage steckt
 
 Jede Vorlage:
 
-- verweist auf die genauen RCOS-Core-Klauseln, die sie umsetzt,
-- erklärt die **Begründung** hinter jedem Abschnitt — warum er existiert und welches Risiko er mindert,
-- enthält **Anweisungen** zum Ausfüllen und
-- lässt klar markierte Platzhalter für die eigenen Antworten deiner Gemeinschaft.
+- nennt die Regeln im [Standard](/standard), auf die sie antwortet, damit du genau siehst, was sie abdeckt;
+- erklärt jeden Abschnitt: warum es ihn gibt und was ohne ihn schiefgeht;
+- zeigt, wie andere Gemeinschaften geantwortet haben: Beispiele, keine Empfehlungen;
+- lässt klare Lücken für eure eigenen Antworten.
 
-Die Vorlagen schreiben keine Werte, Kultur oder Überzeugungen vor. Sie schreiben vor, **was explizit gemacht werden muss**, damit Werte, Kultur und Überzeugungen debattiert, festgehalten und geändert werden können, ohne dass das System zerbricht.
+Die Vorlagen sagen euch nicht, was ihr wertschätzen oder wie ihr leben sollt. Sie sorgen dafür, dass das Wichtige aufgeschrieben ist, damit es offen besprochen, vereinbart und geändert werden kann.
 
 ## Für wen sie gedacht sind
 
-- Gemeinschaften, die sich neu **gründen** und vom ersten Tag an eine dauerhafte, explizite Struktur wünschen.
-- Bestehende Gemeinschaften, die ihre impliziten Normen gegen die RCOS-Spezifikation **prüfen**.
-- Moderator:innen, die mit einer Gruppe **strukturelle Gespräche** führen.
-- Alle, die RCOS als **gemeinsame Sprache** für Governance, Konflikte oder Ressourcenentscheidungen nutzen.
+- Gruppen, die eine Gemeinschaft gründen und vom ersten Tag an eine klare Struktur wollen.
+- Bestehende Gemeinschaften, die prüfen, was sie nie aufgeschrieben haben.
+- Moderator:innen, die im Raum mit einem konkreten Dokument arbeiten wollen.
 
-## Wie du sie verwendest
+## Ihr müsst nicht alles auf einmal machen
 
-1. Beginne mit **Schicht 0 — Identität & Geltungsbereich**. Sie ist das Fundament, auf dem alles andere steht.
-2. Arbeite die Schichten der Reihe nach durch. Jede verweist auf die vorherige und baut auf ihr auf.
-3. Fülle die Platzhalter gemeinsam als Gruppe aus und nutze Begründung und Anweisungen, um das Gespräch ehrlich zu halten.
-4. Behandle das Ergebnis als **lebendige Verfassung** — versioniert, überprüfbar und änderbar durch den Prozess, den ihr selbst definiert.
+Eine teilweise Übernahme zählt trotzdem, solange das, was ihr übernehmt, aufgeschrieben und offen für Überprüfung ist. Eine Vorlage auszulassen ist in Ordnung; zu behaupten, ihr hättet eine, die ihr nicht habt, ist es nicht.
 
-Die Einführung kann schrittweise erfolgen. Auch eine teilweise RCOS-Konformität ist bedeutsam, solange die Teile, die ihr übernehmt, explizit und überprüfbar bleiben. Eine Schicht zu überspringen ist erlaubt; vorzugeben, eine zu haben, obwohl das nicht stimmt, ist es nicht.
+## Sprachen und Formate
 
-## Sprachen und Downloads
-
-Die Vorlagen sind auf **Englisch, Deutsch, Spanisch und Französisch** verfügbar. Du kannst jedes Artefakt online ansehen oder [das vollständige Bundle herunterladen](#downloads) als ein einziges Paket (Markdown, DOCX oder ODT), um es offline mit deiner Gruppe zu bearbeiten.
+Die Vorlagen gibt es auf Englisch, Deutsch, Spanisch, Französisch und brasilianischem Portugiesisch. Lies sie hier oder [lade sie herunter](#downloads), als Markdown-, Word- (DOCX) oder OpenDocument-Dateien (ODT), um sie offline zu bearbeiten.

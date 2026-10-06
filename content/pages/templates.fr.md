@@ -4,38 +4,30 @@ title: Modèles RCOS
 parentId: null
 order: 4
 lang: fr
-sourceHash: ea11889c
+sourceHash: bd41225b
 ---
 
-## Ce que sont les modèles RCOS
-
-Les modèles RCOS transforment la spécification abstraite du [Noyau RCOS](/standard) en documents concrets qu'une communauté peut réellement remplir. Ils sont organisés par **couche** (Couche 0 à Couche 6) et répartis en **artefacts** concrets que chaque couche requiert — par exemple une *Charte de raison d'être*, une *Déclaration de portée*, un *Registre des invariants* ou une *Matrice de décision*.
+## Ce que contient un modèle
 
 Chaque modèle :
 
-- fait référence aux clauses exactes du Noyau RCOS qu'il met en œuvre,
-- explique la **justification** de chaque section — pourquoi elle existe et quel risque elle atténue,
-- fournit des **instructions** sur la manière de le remplir, et
-- laisse des emplacements clairement marqués pour les réponses propres à ta communauté.
+- nomme les règles du [standard](/standard) auxquelles il répond, pour que vous voyiez exactement ce qu'il couvre ;
+- explique chaque section : pourquoi elle existe et ce qui tourne mal sans elle ;
+- montre comment d'autres communautés ont répondu : des exemples, pas des recommandations ;
+- laisse des espaces clairs pour vos propres réponses.
 
-Les modèles ne prescrivent pas de valeurs, de culture ou de croyances. Ils prescrivent **ce qui doit être rendu explicite** afin que les valeurs, la culture et les croyances puissent être débattues, consignées et modifiées sans casser le système.
+Les modèles ne vous disent pas quoi valoriser ni comment vivre. Ils veillent à ce que ce qui compte soit écrit, pour pouvoir en discuter, se mettre d'accord et le changer ouvertement.
 
-## À qui s'adressent-ils
+## À qui ils s'adressent
 
-- Aux communautés qui **se fondent** et souhaitent une structure durable et explicite dès le premier jour.
-- Aux communautés existantes qui **auditent** leurs normes implicites au regard de la spécification RCOS.
-- Aux facilitateurs et facilitatrices menant des **conversations structurelles** avec un groupe.
-- À toute personne utilisant RCOS comme **langage commun** pour la gouvernance, les conflits ou les décisions sur les ressources.
+- Aux groupes qui lancent une communauté et veulent une structure claire dès le premier jour.
+- Aux communautés existantes qui vérifient ce qu'elles n'ont jamais mis par écrit.
+- Aux facilitateurs et facilitatrices qui veulent un document concret sur lequel travailler en séance.
 
-## Comment les utiliser
+## Pas besoin de tout faire d'un coup
 
-1. Commence par la **Couche 0 — Identité et portée**. C'est la fondation sur laquelle tout le reste repose.
-2. Parcours les couches dans l'ordre. Chacune fait référence à la précédente et s'appuie sur elle.
-3. Remplis les emplacements en groupe, en utilisant la justification et les instructions pour garder la conversation honnête.
-4. Considère le résultat comme une **constitution vivante** — versionnée, révisable et modifiable par le processus que tu définis.
+Une adoption partielle compte quand même, tant que ce que vous adoptez est écrit et ouvert à la révision. Laisser un modèle de côté, ça va ; prétendre en avoir un que vous n'avez pas, non.
 
-L'adoption peut être progressive. Une conformité partielle à RCOS reste significative, tant que les parties que tu adoptes demeurent explicites et révisables. Sauter une couche est permis ; prétendre en avoir une que tu n'as pas ne l'est pas.
+## Langues et formats
 
-## Langues et téléchargements
-
-Les modèles sont disponibles en **anglais, allemand, espagnol et français**. Tu peux parcourir chaque artefact en ligne, ou [télécharger l'ensemble complet](#downloads) sous forme de paquet unique (Markdown, DOCX ou ODT) pour le modifier hors ligne avec ton groupe.
+Les modèles sont disponibles en anglais, allemand, espagnol, français et portugais du Brésil. Lisez-les ici, ou [téléchargez-les](#downloads) en Markdown, Word (DOCX) ou OpenDocument (ODT) pour les modifier hors ligne.

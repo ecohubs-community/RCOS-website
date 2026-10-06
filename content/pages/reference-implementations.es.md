@@ -1,129 +1,40 @@
 ---
 id: b6d6319b
-title: Implementaciones de Referencia
+title: Implementaciones de referencia
+summary: Comunidades reales que usan RCOS y cuentan cómo les va, incluido lo que no funciona.
 parentId: null
 order: 5
 lang: es
-sourceHash: 3299369b
+sourceHash: 0b29cd9d
 ---
 
-Este artículo documenta **comunidades reales que aplican RCOS** en la práctica.
+Un estándar solo vale algo si resiste en la vida real. Esta página es para las comunidades que usan RCOS, por completo o en parte, y están dispuestas a mostrar cómo: qué adoptaron, qué cambiaron y dónde se rompió.
 
-Las implementaciones de referencia no se presentan como ideales ni completas. Su propósito es hacer que RCOS sea **observable, verificable y aprovechable para el aprendizaje** en entornos vividos.
+**Todavía no hay ninguna comunidad en la lista.** RCOS v0.1 es nuevo, y los primeros grupos apenas están empezando a trabajar con él. Si el tuyo es uno de ellos, nos gustaría saber de ti.
 
-Una implementación puede ser parcial, estar en evolución o ser experimental. Lo que importa es que la estructura sea explícita y que las desviaciones respecto a RCOS se documenten en lugar de ocultarse.
+## Qué muestra una ficha
 
----
+Una ficha no es un escaparate. Muestra cómo una comunidad usa RCOS en la práctica, incluidas las partes que no encajan:
 
-## Propósito de las Implementaciones de Referencia
+- **La comunidad:** su nombre o un seudónimo, región, tamaño y entorno, como rural, urbano, vivienda colaborativa o principalmente en línea.
+- **Qué adoptó:** la versión de RCOS, qué capas ha respondido, cuáles todavía no y por qué, y desde cuándo.
+- **Sus documentos:** enlaces a las respuestas que ha puesto por escrito, como su carta de propósito, sus reglas de membresía y sus procesos de decisión. Los detalles sensibles se pueden omitir, siempre que la estructura siga siendo visible.
+- **En qué se aparta:** reglas que no sigue, excepciones que está probando y tensiones que no ha resuelto. Ser abiertos sobre esto es la parte más útil.
+- **Qué aprendió** (opcional): pruebas de estrés por las que pasó, qué aguantó, qué no y qué cambió después.
 
-Las implementaciones de referencia cumplen cuatro funciones centrales:
+Aparecer en la lista no es un certificado. No significa que la comunidad cumpla con RCOS, que tenga éxito ni que cuente con un respaldo, y no dice nada sobre sus valores ni su cultura.
 
-1. **Validación**  
-   Demostrar que RCOS puede aplicarse fuera de la teoría.
+## Aparecer en la lista
 
-2. **Aprendizaje**  
-   Capturar qué funciona, qué falla y por qué.
+Son bienvenidas las comunidades en cualquier etapa, incluidas las que recién empiezan o lo aplican en parte. Escribe a [rcos@ecohubs.community](mailto:rcos@ecohubs.community) con el asunto «RCOS Reference Implementation» e incluye:
 
-3. **Calibración**  
-   Identificar ambigüedades, restricciones faltantes o sobreingeniería en la especificación.
+- el nombre de tu comunidad o un seudónimo;
+- enlaces a los documentos que puedas compartir;
+- qué capas tienen implementadas hasta ahora;
+- qué tan abiertamente quieren compartir: de forma pública, semipública o anónima.
 
-4. **Señal**  
-   Permitir que otros vean cómo se ve RCOS en la práctica antes de adoptarlo.
+Si la privacidad o la seguridad son una preocupación, podemos publicar una ficha anónima o simplificada.
 
-Esta sección es intencionalmente transparente y no promocional.
+## Por qué importa
 
----
-
-## Qué Se Muestra Aquí
-
-Cada implementación de referencia DEBERÍA publicar un perfil conciso y estructurado que incluya:
-
-### Descripción General de la Comunidad
-- Nombre de la comunidad o proyecto
-- Ubicación (país / región; dirección exacta opcional)
-- Tamaño de la comunidad (actual y objetivo)
-- Contexto (rural, urbano, co-vivienda, eco-aldea, digital-first, etc.)
-
-### Alcance de Adopción de RCOS
-- Versión de RCOS adoptada
-- Capas implementadas (0–6)
-- Capas parcialmente implementadas o excluidas (con justificación)
-- Fecha de adopción inicial
-
-### Artefactos Estructurales
-Enlaces o referencias a:
-- Carta de Propósito y Declaración de Alcance
-- Reglas de membresía
-- Protocolos de gobernanza
-- Registro de roles
-- Mecanismos de manejo de conflictos
-- Protocolo de cambios / versionado
-
-El contenido sensible PUEDE ser redactado, pero la estructura DEBERÍA permanecer visible.
-
-### Desviaciones Conocidas
-Lista explícita de:
-- Reglas de RCOS no seguidas
-- Invariantes bajo tensión
-- Excepciones temporales o experimentos
-- Restricciones heredadas
-
-Reportar desviaciones con honestidad es una fortaleza, no un fracaso.
-
-### Resultados de Pruebas de Estrés (Opcional)
-Si corresponde, notas breves sobre:
-- Pruebas de estrés de RCOS encontradas
-- Qué mecanismos resistieron
-- Cuáles fallaron y por qué
-- Cambios estructurales realizados como resultado
-
----
-
-## Qué No Es Esta Sección
-
-Esta sección explícitamente **no** es:
-- una lista de certificación,
-- un sistema de ranking,
-- una vitrina de comunidades "exitosas",
-- ni un respaldo de valores, cultura o ideología.
-
-La presencia aquí no implica cumplimiento ni aprobación de RCOS.
-
----
-
-## Cómo Aparecer en la Lista
-
-Las comunidades que aplican RCOS — total o parcialmente — están invitadas a ser listadas.
-
-Para solicitar la inclusión, proporciona:
-- Nombre de la comunidad o seudónimo
-- Enlaces a documentación pública o semipública (si están disponibles)
-- Capas de RCOS actualmente implementadas
-- Nivel de disposición para compartir aprendizajes (público / semipúblico / anonimizado)
-
-Las implementaciones incompletas o en etapa temprana son bienvenidas.
-
----
-
-## Contacto y Envío
-
-Si tu comunidad está experimentando con RCOS y te gustaría ser incluida como implementación de referencia, por favor contacta:
-
-**Correo electrónico:** rcos@ecohubs.community  
-**Asunto:** "Implementación de Referencia RCOS"
-
-Si la privacidad o la seguridad son una preocupación, se pueden organizar listados anonimizados o abstractos.
-
----
-
-## Por Qué Esto Importa
-
-RCOS no está pensado para permanecer estático o teórico.
-
-Esta sección existe para que:
-- las comunidades reales puedan influir en la especificación,
-- los fracasos puedan mejorar el sistema,
-- y las comunidades futuras puedan aprender sin repetir los mismos errores.
-
-RCOS evoluciona a través de la práctica — no de la opinión.
+Las comunidades reales dan forma al estándar. Su experiencia muestra dónde RCOS no es claro, dónde pide demasiado y dónde se le escapa algo, para que la próxima versión pueda corregirlo y la próxima comunidad no tenga que repetir los mismos errores.

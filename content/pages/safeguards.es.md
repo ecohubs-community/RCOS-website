@@ -1,86 +1,39 @@
 ---
 id: aac2e91b
 title: Salvaguardas
+summary: Protecciones opcionales contra los pocos fallos que una comunidad no puede deshacer, como perder su tierra compartida.
 parentId: null
 order: 6
 lang: es
-sourceHash: 9738d0c2
+sourceHash: a52d30b8
 ---
 
-## Salvaguardas
+La mayoría de los errores que comete una comunidad se pueden reparar: una mala decisión se revisa, un conflicto se resuelve. Unos pocos no. Una vez que la tierra compartida se ha vendido, que un fundador ha tomado el control o que un prestamista tiene derechos sobre los bienes de la comunidad, muchas veces no hay vuelta atrás.
 
-Las salvaguardas son módulos opcionales y no normativos diseñados para proteger a las comunidades contra **modos de fallo de alto riesgo conocidos** que repetidamente causan colapso, captura o daño irreversible.
+Las salvaguardas son para esos pocos riesgos. Son complementos opcionales al Núcleo RCOS que una comunidad adopta a propósito, porque sabe que un peligro concreto le afecta. Cada una cambia algo de flexibilidad por protección: limita lo que la comunidad podrá hacer más adelante, para que nadie pueda hacerlo por accidente, bajo presión o a espaldas de todos.
 
-A diferencia de las capas centrales de RCOS, las salvaguardas **no son requeridas para el cumplimiento**. Se adoptan intencionalmente cuando una comunidad reconoce que un dominio de riesgo específico aplica a su contexto.
+## Salvaguardas disponibles
 
-Las salvaguardas existen porque algunos fallos:
-- ocurren con poca frecuencia pero de forma catastrófica,
-- atraviesan múltiples capas del sistema,
-- no pueden repararse una vez activados,
-- a menudo se subestiman hasta que es demasiado tarde.
+- **[Antiprivatización de la tierra y los bienes comunes](/safeguards/land-commons-anti-privatization)** impide que la tierra y los bienes compartidos se vendan, se dividan o pasen discretamente a otras manos.
 
-### Qué son las salvaguardas
+Otras áreas en las que una salvaguarda puede tener sentido son los límites al poder de fundadores o inversores, al capital externo y la deuda, a los poderes de emergencia, la protección de la infancia y la protección de la sucesión y la disolución. Si tu comunidad necesita alguna de ellas, [cuéntanos](https://ecohubs.community/contact).
 
-Las salvaguardas son:
-- Complementos opcionales al Núcleo RCOS
-- Explícitas y documentadas
-- Defensivas por diseño
-- Enfocadas en restricción, no en optimización
-- Activadas mediante adopción formal
+## Cuándo adoptar una
 
-Las salvaguardas típicamente:
-- Introducen restricciones adicionales
-- Requieren artefactos nuevos o modificados
-- Endurecen las reglas de salida, transferencia o autoridad
-- Reducen flexibilidad a cambio de resiliencia
+Considera una salvaguarda cuando un fallo:
 
-### Qué no son las salvaguardas
+- sería imposible de deshacer, como perder la tierra o ser absorbida a través de la estructura legal;
+- abarcaría varias áreas a la vez, como la gobernanza, el dinero y la membresía;
+- haría que irse fuera imposible o se castigara;
+- dejaría que el poder o los bienes se concentraran en pocas manos sin que nadie lo notara;
+- involucraría sistemas legales o financieros externos.
 
-Las salvaguardas no son:
-- Posiciones morales obligatorias
-- Prescripciones culturales o ideológicas
-- Sustitutos de procesos de gobernanza o conflicto
-- Normas informales o "reglas sobreentendidas"
+Adóptala pronto. La mayoría de las salvaguardas pierden su fuerza una vez que el fallo contra el que protegen ya ha empezado.
 
-Si una salvaguarda no ha sido adoptada explícitamente, NO DEBE asumirse que aplica.
+## Qué significa adoptar una
 
-### Cuándo son apropiadas las salvaguardas
+Una salvaguarda solo se aplica cuando la comunidad la ha adoptado explícitamente y lo ha dejado por escrito; nunca se da por supuesta. Una vez adoptada, puede añadir documentos nuevos, cambiar los existentes o sumar reglas a la Capa 0 (las líneas que la comunidad nunca cruzará). Esos requisitos adicionales se aplican mientras la salvaguarda esté vigente.
 
-Una salvaguarda es apropiada cuando:
-- Un fallo sería irreversible (p. ej., pérdida de tierra, captura legal)
-- El impacto abarca múltiples capas (gobernanza, economía, membresía)
-- La salida se volvería imposible o punitiva
-- El poder o los activos podrían concentrarse silenciosamente
-- Sistemas legales o financieros externos interactúan con la comunidad
+Las salvaguardas no prescriben valores ni cultura, y no reemplazan sus procesos de decisión ni de conflicto. Responden de antemano a una sola pregunta:
 
-### Ejemplos de dominios de salvaguarda
-
-Los dominios comunes de salvaguarda incluyen:
-- Tierra y anti-privatización de los comunes
-- Restricciones al poder de fundadores o inversores
-- Limitaciones de capital externo y deuda
-- Seguridad y protección infantil
-- Contención de poderes de emergencia
-- Protección de sucesión y disolución
-
-### Relación con los artefactos
-
-Las salvaguardas **no son artefactos en sí mismas**.
-
-Sin embargo, cuando se adoptan, una salvaguarda PUEDE:
-- Requerir nuevos artefactos
-- Modificar artefactos existentes
-- Añadir restricciones a los invariantes de la Capa 0
-- Introducir casos de prueba adicionales para el cumplimiento
-
-Estos artefactos derivados solo son requeridos **mientras la salvaguarda esté activa**.
-
-### Principio de diseño
-
-Las salvaguardas existen para responder una pregunta con claridad:
-
-> "¿Qué es tan peligroso aquí que debemos limitarnos de antemano?"
-
-Intercambian opcionalidad por capacidad de supervivencia.
-
-Se alienta a las comunidades a adoptar salvaguardas de forma temprana en lugar de retroactiva, ya que la mayoría de las salvaguardas pierden efectividad una vez que un modo de fallo ya ha comenzado.
+> ¿Qué es tan peligroso aquí que debemos limitarnos antes de que ocurra?
