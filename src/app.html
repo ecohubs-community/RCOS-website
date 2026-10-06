@@ -3,9 +3,13 @@
 	<head>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="icon" href="/favicon.ico" sizes="48x48" />
 		<link rel="icon" href="/favicon.svg" type="image/svg+xml" />
-		<meta name="theme-color" media="(prefers-color-scheme: light)" content="#ffffff" />
-		<meta name="theme-color" media="(prefers-color-scheme: dark)" content="#0f1419" />
+		<link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+		<link rel="manifest" href="/site.webmanifest" />
+		<!-- The page background (--color-paper) in each scheme. -->
+		<meta name="theme-color" media="(prefers-color-scheme: light)" content="#fbfbf9" />
+		<meta name="theme-color" media="(prefers-color-scheme: dark)" content="#0e1409" />
 		<script>
 			// Apply the theme before first paint so there is no light/dark flash.
 			// A saved choice (localStorage "theme", see src/lib/stores/ui.ts) wins over the system setting.

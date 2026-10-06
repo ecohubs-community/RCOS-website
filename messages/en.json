@@ -421,5 +421,9 @@
 	"hub_stress_tests_step2_body": "Read a test as a group. The facilitation guide turns any test into a 60–90 minute session that ends with a concrete next step.",
 	"hub_stress_tests_step2_cta": "Open the facilitation guide",
 	"hub_stress_tests_step3_title": "Close the gap",
-	"hub_stress_tests_step3_body": "If a test shows something you've never decided, it links to the templates where you can write the answer down."
+	"hub_stress_tests_step3_body": "If a test shows something you've never decided, it links to the templates where you can write the answer down.",
+	"seo_layer_guide_desc": "{question} A plain-language guide to Layer {n}, {title}: what it covers, the questions it asks, and what goes wrong without it.",
+	"seo_templates_layer_desc": "Fill-in templates for Layer {n}, {title}: {list}. Read them online or download them.",
+	"seo_library_title": "RCOS Library: the standard, guides, templates and tools",
+	"seo_toolkit_title": "RCOS Toolkit: self-assessment and facilitation guide"
 }

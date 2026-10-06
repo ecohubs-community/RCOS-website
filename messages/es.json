@@ -421,5 +421,9 @@
 	"hub_stress_tests_step2_body": "Lean una prueba en grupo. La guía de facilitación convierte cualquier prueba en una sesión de 60 a 90 minutos que termina con un siguiente paso concreto.",
 	"hub_stress_tests_step2_cta": "Abrir la guía de facilitación",
 	"hub_stress_tests_step3_title": "Cerrar el vacío",
-	"hub_stress_tests_step3_body": "Si una prueba revela algo que nunca han decidido, enlaza a las plantillas donde pueden escribir la respuesta."
+	"hub_stress_tests_step3_body": "Si una prueba revela algo que nunca han decidido, enlaza a las plantillas donde pueden escribir la respuesta.",
+	"seo_layer_guide_desc": "{question} Una guía en lenguaje sencillo sobre la Capa {n}, {title}: qué abarca, qué preguntas plantea y qué sale mal sin ella.",
+	"seo_templates_layer_desc": "Plantillas para completar de la Capa {n}, {title}: {list}. Léelas en línea o descárgalas.",
+	"seo_library_title": "Biblioteca RCOS: estándar, guías, plantillas y herramientas",
+	"seo_toolkit_title": "Herramientas RCOS: autoevaluación y guía de facilitación"
 }

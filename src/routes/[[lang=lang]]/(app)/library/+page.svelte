@@ -38,7 +38,7 @@
 </script>
 
 <SEO
-	title={m.site_library()}
+	title={m.seo_library_title()}
 	description={m.site_library_lead()}
 	url="/library"
 	locale={data.locale}

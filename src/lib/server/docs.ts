@@ -12,6 +12,7 @@ import { clauseOwners } from '$lib/content/ownership.js';
 import { merge } from '$lib/content/overlay.js';
 import { refTargets } from '$lib/content/refs.js';
 import { DEFAULT_LOCALE } from '$lib/i18n/languages';
+import { getFileDates } from './dates';
 
 // YAML documents are checked by the content schema, not by TypeScript.
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
@@ -55,6 +56,25 @@ export function localized(d: Loaded, locale: string): { doc: Doc; fallback: bool
 	if (!overlay) return { doc: d.en, fallback: true };
 	const { lang: _l, sourceHash: _h, ...text } = overlay.data;
 	return { doc: merge(d.en, text), fallback: false };
+}
+
+export type PageDates = { published: string | null; modified: string | null };
+
+/**
+ * When a page's text first appeared and last changed (git history): published
+ * from the English file, modified from whichever of it and the served
+ * translation changed last. Null when git has no trustworthy date.
+ */
+export async function datesOf(d: Loaded, locale: string): Promise<PageDates> {
+	const dates = await getFileDates();
+	const en = dates.get(d.file);
+	const overlay = locale === DEFAULT_LOCALE ? undefined : d.overlays[locale];
+	const tr = overlay ? dates.get(overlay.file) : undefined;
+	const modified = [en?.modified, tr?.modified]
+		.filter((x): x is string => !!x)
+		.sort()
+		.at(-1);
+	return { published: en?.published ?? null, modified: modified ?? null };
 }
 
 export const fileName = (d: Loaded) =>

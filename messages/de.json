@@ -421,5 +421,9 @@
 	"hub_stress_tests_step2_body": "Lest einen Test gemeinsam. Der Moderationsleitfaden macht aus jedem Test eine Sitzung von 60–90 Minuten, die mit einem konkreten nächsten Schritt endet.",
 	"hub_stress_tests_step2_cta": "Zum Moderationsleitfaden",
 	"hub_stress_tests_step3_title": "Die Lücke schließen",
-	"hub_stress_tests_step3_body": "Zeigt ein Test etwas, das ihr nie entschieden habt, verlinkt er auf die Vorlagen, in denen ihr die Antwort aufschreiben könnt."
+	"hub_stress_tests_step3_body": "Zeigt ein Test etwas, das ihr nie entschieden habt, verlinkt er auf die Vorlagen, in denen ihr die Antwort aufschreiben könnt.",
+	"seo_layer_guide_desc": "{question} Ein verständlicher Leitfaden zu Schicht {n}, {title}: was sie abdeckt, welche Fragen sie stellt und was ohne sie schiefgeht.",
+	"seo_templates_layer_desc": "Vorlagen zum Ausfüllen für Schicht {n}, {title}: {list}. Online lesen oder herunterladen.",
+	"seo_library_title": "RCOS-Bibliothek: Standard, Leitfäden, Vorlagen und Werkzeuge",
+	"seo_toolkit_title": "RCOS-Werkzeuge: Selbsteinschätzung und Moderationsleitfaden"
 }

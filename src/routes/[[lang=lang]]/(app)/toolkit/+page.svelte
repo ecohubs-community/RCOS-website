@@ -24,7 +24,7 @@
 </script>
 
 <SEO
-	title={m.site_toolkit()}
+	title={m.seo_toolkit_title()}
 	description={m.site_toolkit_lead()}
 	url="/toolkit"
 	locale={data.locale}

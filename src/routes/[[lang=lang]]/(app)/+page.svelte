@@ -283,6 +283,11 @@
 	const lead = 'text-lg leading-relaxed text-pretty text-ink-2';
 </script>
 
+<svelte:head>
+	<!-- The video poster above the fold comes from YouTube's image host. -->
+	<link rel="preconnect" href="https://i.ytimg.com" />
+</svelte:head>
+
 <SEO
 	title={m.site_name()}
 	description={m.site_description()}
@@ -338,6 +343,7 @@
 					title={m.home_video_title()}
 					provider="YouTube"
 					poster="https://i.ytimg.com/vi/YNQN5PxXPt0/hqdefault.jpg"
+					eager
 				/>
 			</div>
 			<p class="text-sm text-ink-muted">{m.home_video_note()}</p>

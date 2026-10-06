@@ -17,6 +17,8 @@
 			description: data.page.summary ?? m.mega_safeguards_desc(),
 			path: '/safeguards',
 			inLanguage: data.page.lang,
+			datePublished: data.page.datePublished,
+			dateModified: data.page.dateModified,
 			locale: data.locale,
 			crumbs
 		})

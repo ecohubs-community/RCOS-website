@@ -17,6 +17,8 @@
 			description: data.page.summary ?? data.page.excerpt,
 			path: data.path,
 			inLanguage: data.page.lang,
+			datePublished: data.page.datePublished,
+			dateModified: data.page.dateModified,
 			locale: data.locale,
 			crumbs
 		})

@@ -23,7 +23,13 @@ self-hosted from `@fontsource` (Stack Sans Text, Stack Sans Headline, Pridi).
   never a hard-coded string. Add the key to all five `messages/<locale>.json`.
 - **SEO**: every page has a unique title, a description, a canonical URL,
   `hreflang` alternates and JSON-LD where it fits (`SEO.svelte`,
-  `src/lib/utils/jsonld.ts`). `pnpm check:links` enforces this.
+  `src/lib/utils/jsonld.ts`). `pnpm check:links` enforces this. `SEO.svelte`
+  cuts descriptions at about 155 characters on a word and drops the " - RCOS"
+  suffix when the title would pass 60 characters, so pass the full text. Pages
+  that should not be indexed (search, print view, placeholder chapters without
+  sections) pass `noindex` (`noindex, follow`) and stay out of the sitemap.
+  Articles carry `datePublished`/`dateModified` from git (`datesOf` in
+  `src/lib/server/docs.ts`).
 - **Accessibility**: WCAG 2.1 AA in light and dark mode, checked by axe in
   `tests/e2e/a11y.test.ts`. Use the colour tokens below; they are tuned for
   contrast.
@@ -50,7 +56,10 @@ locales are `/de/…`, `/es/…`, `/fr/…`, `/pt-br/…` (`src/params/lang.ts`)
 | `articles/[...slug]`                                         | Redirects only (old URLs)                                      |
 
 Outside `(app)`: `(print)/standard/core/0.1/print` (the print view used for the
-PDF), `search-index/[lang].json`, `sitemap.xml`, `robots.txt`.
+PDF), `search-index/[lang].json`, `sitemap.xml`, `robots.txt`, `llms.txt`
+(a plain-text map of the site for language models, built from the same data).
+Icons and the web manifest are static files (`favicon.ico`, `favicon.svg`,
+`apple-touch-icon.png`, `icon-*.png`, `site.webmanifest`).
 
 `(app)/+layout.svelte` holds the site shell: header, footer, consent banner,
 analytics and the search palette.

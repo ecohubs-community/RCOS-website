@@ -421,5 +421,9 @@
 	"hub_stress_tests_step2_body": "Lisez un test en groupe. Le guide de facilitation transforme n’importe quel test en une séance de 60 à 90 minutes qui se termine par une prochaine étape concrète.",
 	"hub_stress_tests_step2_cta": "Ouvrir le guide de facilitation",
 	"hub_stress_tests_step3_title": "Combler la lacune",
-	"hub_stress_tests_step3_body": "Si un test révèle quelque chose que vous n’avez jamais décidé, il renvoie aux modèles où vous pouvez écrire la réponse."
+	"hub_stress_tests_step3_body": "Si un test révèle quelque chose que vous n’avez jamais décidé, il renvoie aux modèles où vous pouvez écrire la réponse.",
+	"seo_layer_guide_desc": "{question} Un guide en langage clair sur la Couche {n}, {title} : ce qu’elle couvre, les questions qu’elle pose et ce qui tourne mal sans elle.",
+	"seo_templates_layer_desc": "Modèles à remplir pour la Couche {n}, {title} : {list}. À lire en ligne ou à télécharger.",
+	"seo_library_title": "Bibliothèque RCOS : standard, guides, modèles et outils",
+	"seo_toolkit_title": "Boîte à outils RCOS : auto-évaluation et facilitation"
 }

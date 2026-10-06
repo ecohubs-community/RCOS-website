@@ -421,5 +421,9 @@
 	"hub_stress_tests_step2_body": "Leiam um teste em grupo. O guia de facilitação transforma qualquer teste em uma sessão de 60 a 90 minutos que termina com um próximo passo concreto.",
 	"hub_stress_tests_step2_cta": "Abrir o guia de facilitação",
 	"hub_stress_tests_step3_title": "Feche a lacuna",
-	"hub_stress_tests_step3_body": "Se um teste mostrar algo que vocês nunca decidiram, ele leva aos modelos onde vocês podem escrever a resposta."
+	"hub_stress_tests_step3_body": "Se um teste mostrar algo que vocês nunca decidiram, ele leva aos modelos onde vocês podem escrever a resposta.",
+	"seo_layer_guide_desc": "{question} Um guia em linguagem simples sobre a Camada {n}, {title}: o que ela abrange, as perguntas que faz e o que dá errado sem ela.",
+	"seo_templates_layer_desc": "Modelos para preencher da Camada {n}, {title}: {list}. Leia online ou baixe.",
+	"seo_library_title": "Biblioteca RCOS: o padrão, guias, modelos e ferramentas",
+	"seo_toolkit_title": "Ferramentas RCOS: autoavaliação e guia de facilitação"
 }

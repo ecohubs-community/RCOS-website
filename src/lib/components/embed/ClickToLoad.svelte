@@ -16,11 +16,21 @@
 		provider: string;
 		kind?: 'video' | 'audio';
 		poster?: string;
+		/** The poster is above the fold: load it right away (it may be the largest paint). */
+		eager?: boolean;
 		/** Player height for audio embeds, in px */
 		height?: number;
 	}
 
-	let { src, title, provider, kind = 'video', poster, height = 195 }: Props = $props();
+	let {
+		src,
+		title,
+		provider,
+		kind = 'video',
+		poster,
+		eager = false,
+		height = 195
+	}: Props = $props();
 
 	let active = $state(false);
 	const playSrc = $derived(
@@ -47,7 +57,10 @@
 			<img
 				src={poster}
 				alt=""
-				loading="lazy"
+				width="480"
+				height="360"
+				loading={eager ? 'eager' : 'lazy'}
+				fetchpriority={eager ? 'high' : undefined}
 				class="absolute inset-0 size-full object-cover opacity-85"
 			/>
 		{/if}

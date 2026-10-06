@@ -18,25 +18,28 @@
 		{ label: m.nav_layers(), href: localized('/layers', data.locale) },
 		{ label: m.layer_label({ n: p.layer.n }) }
 	]);
+	// The layer's question alone is short and is shared with its templates page.
+	const description = $derived(
+		m.seo_layer_guide_desc({
+			question: p.headHtml.replace(/<[^>]+>/g, ''),
+			n: p.layer.n,
+			title: p.layer.title
+		})
+	);
 	const jsonLd = $derived(
 		buildPageLd({
 			title: p.title,
-			description: p.headHtml.replace(/<[^>]+>/g, ''),
+			description,
 			path: p.path,
 			locale: data.locale,
+			datePublished: p.dates.published,
+			dateModified: p.dates.modified,
 			crumbs
 		})
 	);
 </script>
 
-<SEO
-	title={p.title}
-	description={p.headHtml.replace(/<[^>]+>/g, '')}
-	url={p.path}
-	type="article"
-	locale={data.locale}
-	{jsonLd}
-/>
+<SEO title={p.title} {description} url={p.path} type="article" locale={data.locale} {jsonLd} />
 
 <div
 	class="mx-auto grid w-full max-w-6xl grid-cols-1 gap-x-12 px-4 pt-8 pb-20 sm:px-6 lg:grid-cols-[minmax(0,1fr)_17rem] lg:px-8 lg:pt-12"
