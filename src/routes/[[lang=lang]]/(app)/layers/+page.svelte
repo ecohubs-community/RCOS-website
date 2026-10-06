@@ -20,7 +20,7 @@
 	const jsonLd = $derived(
 		buildPageLd({
 			title: title,
-			description: m.mega_layers_body(),
+			description: m.hub_layers_lead(),
 			path: '/layers',
 			locale: data.locale,
 			crumbs
@@ -28,7 +28,7 @@
 	);
 </script>
 
-<SEO {title} description={m.mega_layers_body()} url="/layers" locale={data.locale} {jsonLd} />
+<SEO {title} description={m.hub_layers_lead()} url="/layers" locale={data.locale} {jsonLd} />
 
 <div class="mx-auto w-full max-w-5xl px-4 pt-8 pb-20 sm:px-6 lg:px-8 lg:pt-12">
 	<PageHeader {crumbs} {title} lead={m.hub_layers_lead()} />

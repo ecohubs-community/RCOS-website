@@ -20,7 +20,7 @@
 	const jsonLd = $derived(
 		buildPageLd({
 			title: title,
-			description: m.mega_templates_desc(),
+			description: m.hub_templates_lead(),
 			path: '/templates',
 			locale: data.locale,
 			crumbs
@@ -28,7 +28,7 @@
 	);
 </script>
 
-<SEO {title} description={m.mega_templates_desc()} url="/templates" locale={data.locale} {jsonLd} />
+<SEO {title} description={m.hub_templates_lead()} url="/templates" locale={data.locale} {jsonLd} />
 
 <div class="mx-auto w-full max-w-6xl px-4 pt-8 pb-20 sm:px-6 lg:px-8 lg:pt-12">
 	<PageHeader {crumbs} {title} lead={m.hub_templates_lead()} />

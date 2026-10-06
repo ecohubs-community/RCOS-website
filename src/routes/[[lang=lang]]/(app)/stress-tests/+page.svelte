@@ -20,7 +20,7 @@
 	const jsonLd = $derived(
 		buildPageLd({
 			title: title,
-			description: m.mega_stress_tests_desc(),
+			description: m.hub_stress_tests_lead(),
 			path: '/stress-tests',
 			locale: data.locale,
 			crumbs
@@ -30,7 +30,7 @@
 
 <SEO
 	{title}
-	description={m.mega_stress_tests_desc()}
+	description={m.hub_stress_tests_lead()}
 	url="/stress-tests"
 	locale={data.locale}
 	{jsonLd}

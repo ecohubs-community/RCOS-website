@@ -26,6 +26,7 @@
 	import IconHandClick from '~icons/tabler/hand-click';
 	import IconPlus from '~icons/tabler/plus';
 	import IconHeadphones from '~icons/tabler/headphones';
+	import videoPoster from '$lib/assets/video-poster.webp';
 	import story1 from '$lib/assets/rcos-story/rcos-story-1.webp';
 	import story2 from '$lib/assets/rcos-story/rcos-story-2.webp';
 	import story3 from '$lib/assets/rcos-story/rcos-story-3.webp';
@@ -283,11 +284,6 @@
 	const lead = 'text-lg leading-relaxed text-pretty text-ink-2';
 </script>
 
-<svelte:head>
-	<!-- The video poster above the fold comes from YouTube's image host. -->
-	<link rel="preconnect" href="https://i.ytimg.com" />
-</svelte:head>
-
 <SEO
 	title={m.site_name()}
 	description={m.site_description()}
@@ -342,7 +338,7 @@
 					src="https://www.youtube-nocookie.com/embed/YNQN5PxXPt0"
 					title={m.home_video_title()}
 					provider="YouTube"
-					poster="https://i.ytimg.com/vi/YNQN5PxXPt0/hqdefault.jpg"
+					poster={videoPoster}
 					eager
 				/>
 			</div>

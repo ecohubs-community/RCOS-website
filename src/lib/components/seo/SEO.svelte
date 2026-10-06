@@ -4,6 +4,8 @@
 	import { localeUrl } from '$lib/i18n/path';
 	import { m } from '$lib/paraglide/messages.js';
 	import type { Locale } from '$lib/paraglide/runtime.js';
+	// Pages with their own share image, per locale (written by `pnpm content:og`).
+	import ogImages from '$lib/og-images.json';
 
 	type Props = {
 		title: string;
@@ -59,7 +61,19 @@
 	// Canonical = the URL for THIS page in its CURRENT locale (with prefix if non-default).
 	const canonicalUrl = $derived(url ? localeUrl(SITE_URL, url, locale) : SITE_URL);
 
-	const ogImage = $derived(image.startsWith('http') ? image : `${SITE_URL}${image}`);
+	// A page's own share card (1200×630) when it has one, else the image passed in.
+	const card = $derived(
+		image === DEFAULT_OG_IMAGE &&
+			url &&
+			(ogImages as Record<string, string[]>)[locale]?.includes(url)
+			? `/og/${locale}${url}.jpg`
+			: null
+	);
+	const imagePath = $derived(card ?? image);
+	const ogImage = $derived(imagePath.startsWith('http') ? imagePath : `${SITE_URL}${imagePath}`);
+	const imageSize = $derived(
+		card ? { width: 1200, height: 630 } : image === DEFAULT_OG_IMAGE ? DEFAULT_OG_IMAGE_SIZE : null
+	);
 
 	// Open Graph wants language_TERRITORY ("pt_BR"), not BCP-47 ("pt-br").
 	// Territories follow the actual variant of each bundle (see languages.ts);
@@ -113,10 +127,10 @@
 	<meta property="og:url" content={canonicalUrl} />
 	<meta property="og:type" content={type} />
 	<meta property="og:image" content={ogImage} />
-	{#if image === DEFAULT_OG_IMAGE}
-		<meta property="og:image:width" content={String(DEFAULT_OG_IMAGE_SIZE.width)} />
-		<meta property="og:image:height" content={String(DEFAULT_OG_IMAGE_SIZE.height)} />
-		<meta property="og:image:alt" content={siteName} />
+	{#if imageSize}
+		<meta property="og:image:width" content={String(imageSize.width)} />
+		<meta property="og:image:height" content={String(imageSize.height)} />
+		<meta property="og:image:alt" content={card ? fullTitle : siteName} />
 	{/if}
 	<meta property="og:site_name" content={siteName} />
 	<meta property="og:locale" content={ogLocale(locale)} />
@@ -131,8 +145,8 @@
 		<meta name="twitter:description" content={shortDescription} />
 	{/if}
 	<meta name="twitter:image" content={ogImage} />
-	{#if image === DEFAULT_OG_IMAGE}
-		<meta name="twitter:image:alt" content={siteName} />
+	{#if imageSize}
+		<meta name="twitter:image:alt" content={card ? fullTitle : siteName} />
 	{/if}
 
 	{#if !noindex}
