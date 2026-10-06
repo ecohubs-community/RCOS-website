@@ -8,7 +8,12 @@ order: 5
 
 A standard is only worth something if it holds up in real life. This page is for communities that use RCOS, fully or in part, and are willing to show how: what they adopted, what they changed, and where it broke.
 
-**No community is listed yet.** RCOS v0.1 is new, and the first groups are only starting to work with it. If yours is one of them, we'd like to hear from you.
+## Communities using RCOS
+
+- **[EcoHubs](https://specs.ecohubs.community)**, online. The community behind RCOS, applying the standard to itself. Its site publishes its RCOS documents, decision records and proposals, including the ones that were turned down.
+- **[Fruit Haven](https://fruithaven.land)**, Gualaquiza, Ecuador. A vegan ecovillage and permaculture fruit farm on the edge of the Amazon, at the foot of the Andes, founded in 2016.
+
+RCOS v0.1 is new, and more groups are starting to work with it. If yours is one of them, we'd like to hear from you.
 
 ## What a listing shows
 
