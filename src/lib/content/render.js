@@ -5,7 +5,15 @@
  */
 import { Marked } from 'marked';
 
-const marked = new Marked({ gfm: true, breaks: false, async: false });
+const marked = new Marked({
+	gfm: true,
+	breaks: false,
+	async: false,
+	// The page has its own h1; a "# " heading in the content becomes an h2.
+	walkTokens(token) {
+		if (token.type === 'heading' && token.depth === 1) token.depth = 2;
+	}
+});
 
 /** @param {string} md */
 export const renderBlock = (md) => /** @type {string} */ (marked.parse(md));

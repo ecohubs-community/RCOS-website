@@ -1,4 +1,4 @@
-import { SITE_URL, SITE_NAME } from '$lib/config/site';
+import { SITE_URL, SITE_NAME, DEFAULT_OG_IMAGE } from '$lib/config/site';
 import { localeUrl, stripLocale } from '$lib/i18n/path';
 import { m } from '$lib/paraglide/messages.js';
 import type { Locale } from '$lib/paraglide/runtime.js';
@@ -23,6 +23,9 @@ const PUBLISHER = {
 	name: 'EcoHubs Community',
 	url: 'https://ecohubs.community'
 };
+
+/** The share image every page uses (no per-page images yet). */
+const IMAGE = `${SITE_URL}${DEFAULT_OG_IMAGE}`;
 
 /**
  * Home page graph: the site (in the page's language) plus who publishes it.
@@ -80,6 +83,8 @@ export function buildPageSchema(opts: {
 		url,
 		mainEntityOfPage: url,
 		inLanguage: opts.inLanguage,
+		image: IMAGE,
+		author: PUBLISHER,
 		publisher: PUBLISHER,
 		isPartOf: { '@type': 'WebSite', name: SITE_NAME, url: localeUrl(SITE_URL, '/', opts.locale) }
 	};
@@ -129,6 +134,8 @@ export function buildStandardSchema(opts: {
 	path: string;
 	locale: string;
 	inLanguage: string;
+	datePublished?: string | null;
+	dateModified?: string | null;
 }): Record<string, unknown> {
 	const url = localeUrl(SITE_URL, opts.path, opts.locale);
 	return {
@@ -139,8 +146,12 @@ export function buildStandardSchema(opts: {
 		mainEntityOfPage: url,
 		inLanguage: opts.inLanguage,
 		license: LICENSE,
+		image: IMAGE,
+		author: PUBLISHER,
 		publisher: PUBLISHER,
 		...(opts.description ? { description: opts.description } : {}),
+		...(opts.datePublished ? { datePublished: opts.datePublished } : {}),
+		...(opts.dateModified ? { dateModified: opts.dateModified } : {}),
 		isPartOf: standardWork(opts.locale)
 	};
 }
@@ -204,6 +215,8 @@ export function buildPageLd(opts: {
 	path: string;
 	locale: string;
 	inLanguage?: string;
+	datePublished?: string | null;
+	dateModified?: string | null;
 	crumbs: { label: string; href?: string }[];
 }): Record<string, unknown>[] {
 	return [

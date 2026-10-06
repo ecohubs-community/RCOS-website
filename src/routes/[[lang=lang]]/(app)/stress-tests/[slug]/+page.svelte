@@ -44,6 +44,8 @@
 			description: p.summary ?? '',
 			path: data.path,
 			locale: data.locale,
+			datePublished: p.dates.published,
+			dateModified: p.dates.modified,
 			crumbs
 		})
 	);

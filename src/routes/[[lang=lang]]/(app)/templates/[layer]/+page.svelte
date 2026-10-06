@@ -17,10 +17,17 @@
 		{ label: m.mega_templates(), href: localized('/templates', data.locale) },
 		{ label: m.layer_label({ n: l.layer.n }) }
 	]);
+	const description = $derived(
+		m.seo_templates_layer_desc({
+			n: l.layer.n,
+			title: l.layer.title,
+			list: l.templates.map((t) => t.title).join(', ')
+		})
+	);
 	const jsonLd = $derived(
 		buildPageLd({
 			title: title,
-			description: l.question ?? '',
+			description,
 			path: l.path,
 			locale: data.locale,
 			crumbs
@@ -28,7 +35,7 @@
 	);
 </script>
 
-<SEO {title} description={l.question ?? ''} url={l.path} locale={data.locale} {jsonLd} />
+<SEO {title} {description} url={l.path} locale={data.locale} {jsonLd} />
 
 <div class="mx-auto w-full max-w-5xl px-4 pt-8 pb-20 sm:px-6 lg:px-8 lg:pt-12">
 	<PageHeader {crumbs} {title} lead={l.question}>

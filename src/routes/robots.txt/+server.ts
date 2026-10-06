@@ -7,8 +7,6 @@ export const GET: RequestHandler = async () => {
 	const body = `User-agent: *
 Disallow: /admin
 Disallow: /api/
-Disallow: /search
-Disallow: /test-markdown
 
 Sitemap: ${SITE_URL}/sitemap.xml`;
 

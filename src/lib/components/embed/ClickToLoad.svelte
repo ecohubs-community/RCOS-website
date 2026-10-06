@@ -5,9 +5,9 @@
 
 	/**
 	 * A third-party player (YouTube, RSS.com) that loads only when the visitor
-	 * presses play. Until then no request goes to the provider, apart from the
-	 * video's poster image, which the privacy policy discloses. The click itself is
-	 * the consent for that one embed, so this does not depend on the cookie banner.
+	 * presses play. Until then no request goes to the provider: pass a poster
+	 * image served from this site. The click itself is the consent for that one
+	 * embed, so this does not depend on the cookie banner.
 	 */
 	interface Props {
 		/** Player URL. For YouTube, autoplay is added on click so one press plays. */
@@ -16,11 +16,21 @@
 		provider: string;
 		kind?: 'video' | 'audio';
 		poster?: string;
+		/** The poster is above the fold: load it right away (it may be the largest paint). */
+		eager?: boolean;
 		/** Player height for audio embeds, in px */
 		height?: number;
 	}
 
-	let { src, title, provider, kind = 'video', poster, height = 195 }: Props = $props();
+	let {
+		src,
+		title,
+		provider,
+		kind = 'video',
+		poster,
+		eager = false,
+		height = 195
+	}: Props = $props();
 
 	let active = $state(false);
 	const playSrc = $derived(
@@ -47,7 +57,10 @@
 			<img
 				src={poster}
 				alt=""
-				loading="lazy"
+				width="960"
+				height="540"
+				loading={eager ? 'eager' : 'lazy'}
+				fetchpriority={eager ? 'high' : undefined}
 				class="absolute inset-0 size-full object-cover opacity-85"
 			/>
 		{/if}

@@ -16,12 +16,10 @@
 	const p = $derived(data.page);
 	// The preamble's quote, or else what the template covers.
 	const description = $derived(
-		(
-			p.preambleHtml
-				.replace(/<[^>]+>/g, '')
-				.replace(/\s+/g, ' ')
-				.trim() || `${p.title}: ${p.sections.map((s) => s.title).join(', ')}.`
-		).slice(0, 200)
+		p.preambleHtml
+			.replace(/<[^>]+>/g, '')
+			.replace(/\s+/g, ' ')
+			.trim() || `${p.title}: ${p.sections.map((s) => s.title).join(', ')}.`
 	);
 	const label = 'font-ui text-[11px] font-semibold tracking-[0.08em] text-ink-faint uppercase';
 
@@ -40,6 +38,8 @@
 			path: p.path,
 			locale: data.locale,
 			inLanguage: p.fallback ? 'en' : data.locale,
+			datePublished: p.dates.published,
+			dateModified: p.dates.modified,
 			crumbs
 		}),
 		...(p.downloads?.type === 'single'

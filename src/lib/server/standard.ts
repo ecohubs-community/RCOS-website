@@ -6,6 +6,7 @@
  * data. Nothing matches or parses in the browser.
  */
 import {
+	datesOf,
 	fileName,
 	loadStore,
 	localized,
@@ -13,6 +14,7 @@ import {
 	localizePath,
 	type Doc,
 	type Loaded,
+	type PageDates,
 	type Store as DocStore
 } from './docs';
 import { refTargets, refsIn, resolveAll } from '$lib/content/refs.js';
@@ -108,6 +110,9 @@ export type StandardPage = {
 	next: PageLink | null;
 	/** The page has no translation for the requested locale and shows English */
 	fallback: boolean;
+	dates: PageDates;
+	/** A placeholder with no sections yet: kept out of search engines and the sitemap */
+	empty: boolean;
 };
 
 export type NavItem = PageLink & {
@@ -298,7 +303,9 @@ export async function standardPage(path: string, locale: string): Promise<Standa
 		related: layerOf(d) === null ? null : related(layerOf(d)!, all, locale),
 		prev: at > 0 ? link(order[at - 1]) : null,
 		next: at >= 0 && at < order.length - 1 ? link(order[at + 1]) : null,
-		fallback
+		fallback,
+		dates: await datesOf(d, locale),
+		empty: d.en.kind === 'chapter' && !(d.en.sections ?? []).length
 	};
 }
 
@@ -597,9 +604,13 @@ export async function standardSitemap(): Promise<
 	{ path: string; locales: string[]; files: Record<string, string> }[]
 > {
 	const { pages } = await load();
-	return [...pages.entries()].map(([path, d]) => {
-		const files: Record<string, string> = { [DEFAULT_LOCALE]: d.file };
-		for (const [locale, o] of Object.entries(d.overlays)) files[locale] = o.file;
-		return { path, locales: Object.keys(files), files };
-	});
+	// Placeholders (a chapter with no sections yet) stay out of the sitemap.
+	const empty = (d: Loaded) => d.en.kind === 'chapter' && !(d.en.sections ?? []).length;
+	return [...pages.entries()]
+		.filter(([, d]) => !empty(d))
+		.map(([path, d]) => {
+			const files: Record<string, string> = { [DEFAULT_LOCALE]: d.file };
+			for (const [locale, o] of Object.entries(d.overlays)) files[locale] = o.file;
+			return { path, locales: Object.keys(files), files };
+		});
 }

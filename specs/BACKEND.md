@@ -100,15 +100,17 @@ a content change:
 ```bash
 pnpm build:downloads   # templates + core markdown + standard data
 pnpm content:pdf       # the PDF of the standard (needs a running build, Playwright)
+pnpm content:og        # share images of the important pages (after pnpm build; build again after)
 ```
 
-| Script                               | Writes                                                                                          |
-| ------------------------------------ | ----------------------------------------------------------------------------------------------- |
-| `scripts/content/build-articles.mjs` | `.content-build/articles/**.md` from the YAML (input for the scripts below)                     |
-| `scripts/build-templates.mjs`        | Per-locale template files (md, docx, odt via pandoc) and zip bundles, `manifest-templates.json` |
-| `scripts/build-core.mjs`             | The whole core standard as one markdown file per locale, `manifest-core.json`                   |
-| `scripts/build-standard-data.mjs`    | The published data in `static/downloads/standard/rcos-core/0.1/` plus `manifest-standard.json`  |
-| `scripts/content/build-pdf.mjs`      | `static/downloads/<locale>/rcos-core-v0-1.pdf`, printed from the print route                    |
+| Script                               | Writes                                                                                                                  |
+| ------------------------------------ | ----------------------------------------------------------------------------------------------------------------------- |
+| `scripts/content/build-articles.mjs` | `.content-build/articles/**.md` from the YAML (input for the scripts below)                                             |
+| `scripts/build-templates.mjs`        | Per-locale template files (md, docx, odt via pandoc) and zip bundles, `manifest-templates.json`                         |
+| `scripts/build-core.mjs`             | The whole core standard as one markdown file per locale, `manifest-core.json`                                           |
+| `scripts/build-standard-data.mjs`    | The published data in `static/downloads/standard/rcos-core/0.1/` plus `manifest-standard.json`                          |
+| `scripts/content/build-pdf.mjs`      | `static/downloads/<locale>/rcos-core-v0-1.pdf`, printed from the print route                                            |
+| `scripts/content/build-og.mjs`       | `static/og/<locale>/<path>.jpg` (1200×630 share cards for hubs, layer chapters and guides) and `src/lib/og-images.json` |
 
 `scripts/i18n.mjs` holds the strings that appear inside downloaded files
 (preamble labels, "Rationale", …) and `SUPPORTED_LOCALES`.

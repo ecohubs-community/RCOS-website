@@ -26,6 +26,7 @@
 		"content:articles": "node scripts/content/build-articles.mjs",
 		"content:check": "node scripts/content/check.mjs",
 		"content:pdf": "node scripts/content/build-pdf.mjs",
+		"content:og": "node scripts/content/build-og.mjs",
 		"check:links": "node scripts/check-links.mjs"
 	},
 	"devDependencies": {

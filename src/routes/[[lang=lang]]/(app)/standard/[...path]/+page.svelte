@@ -39,7 +39,22 @@
 	// Rule text reads term definitions and layer names from the page.
 	setStandardContext(() => p);
 
-	const description = $derived(textOf(p.introHtml).slice(0, 200) || p.fullTitle);
+	// The intro, or else the chapter's first real paragraph or rule (some chapters have no intro).
+	const firstText = $derived(
+		p.sections
+			.flatMap((s) => s.blocks)
+			.map((b) =>
+				textOf(
+					b.kind === 'html' ? b.html : b.parts.map((x) => ('html' in x ? x.html : x.text)).join('')
+				)
+			)
+			.find((t) => t.length > 40) ?? ''
+	);
+	const intro = $derived(textOf(p.introHtml));
+	// A short intro (a label, a name) is followed by the first paragraph.
+	const description = $derived(
+		(intro.length >= 70 ? intro : [intro, firstText].filter(Boolean).join(' · ')) || p.fullTitle
+	);
 	const isChapter = $derived(p.number !== null);
 
 	// A title that is unique across the standard: module pages say which module,
@@ -61,7 +76,9 @@
 				description,
 				path: data.canonicalPath,
 				locale: data.locale,
-				inLanguage: p.fallback ? 'en' : data.locale
+				inLanguage: p.fallback ? 'en' : data.locale,
+				datePublished: p.dates.published,
+				dateModified: p.dates.modified
 			}),
 			buildBreadcrumbSchema(
 				[
@@ -112,6 +129,7 @@
 	url={data.canonicalPath}
 	type="article"
 	locale={data.locale}
+	noindex={p.empty}
 	{jsonLd}
 />
 

@@ -86,7 +86,7 @@ git add content messages static/downloads
 git commit -m "Translate <scope> to <language>"
 ```
 
-The PDF is rebuilt with `pnpm content:pdf` (needs a build and Playwright).
+The PDF is rebuilt with `pnpm content:pdf` (needs a build and Playwright). If titles or descriptions of the hubs, layer chapters or layer guides changed, rebuild their share images with `pnpm build && pnpm content:og`.
 
 ## 5. Review
 

@@ -17,6 +17,8 @@
 			description: data.page.summary ?? m.mega_refimpl_desc(),
 			path: '/reference-implementations',
 			inLanguage: data.page.lang,
+			datePublished: data.page.datePublished,
+			dateModified: data.page.dateModified,
 			locale: data.locale,
 			crumbs
 		})

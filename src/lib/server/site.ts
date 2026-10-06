@@ -15,8 +15,10 @@ import {
 	localized,
 	localizeLinks,
 	localizePath,
+	datesOf,
 	type Doc,
 	type Loaded,
+	type PageDates,
 	type Store
 } from './docs';
 import { DEFAULT_LOCALE } from '$lib/i18n/languages';
@@ -50,6 +52,7 @@ export type TemplateCard = {
 
 export type TemplatePage = {
 	path: string;
+	dates: PageDates;
 	layer: LayerRef;
 	title: string;
 	preambleHtml: string;
@@ -69,6 +72,7 @@ export type TemplateLayer = {
 
 export type GuidePage = {
 	path: string;
+	dates: PageDates;
 	layer: LayerRef;
 	title: string;
 	headHtml: string;
@@ -92,6 +96,7 @@ export type TestCard = {
 };
 
 export type StressTestPage = TestCard & {
+	dates: PageDates;
 	stage: string[];
 	symptoms: string[];
 	headHtml: string;
@@ -221,6 +226,7 @@ export async function templatePage(path: string, locale: string): Promise<Templa
 
 	return {
 		path,
+		dates: await datesOf(d, locale),
 		layer: layerRef(store, n, locale),
 		title: doc.title,
 		// The preamble has no placeholders, and escaping would break its blockquote.
@@ -290,6 +296,7 @@ export async function guidePage(path: string, locale: string): Promise<GuidePage
 	const chapter = store.targets.anchors.get(`${n + 2}.1`)?.split('#')[0] ?? '/standard/core/0.1';
 	return {
 		path,
+		dates: await datesOf(d, locale),
 		layer: layerRef(store, n, locale),
 		title: plain(doc.title),
 		headHtml: md(doc.head ?? '', store, locale, true),
@@ -370,6 +377,7 @@ export async function stressTestPage(path: string, locale: string): Promise<Stre
 	const invariants = (d.en.layers ?? []).flatMap((n: number) => invariantsOf(store, n, locale));
 	return {
 		...testCard(d, locale),
+		dates: await datesOf(d, locale),
 		stage: d.en.stage ?? [],
 		symptoms: doc.symptoms ?? [],
 		headHtml: md(doc.head ?? '', store, locale),
