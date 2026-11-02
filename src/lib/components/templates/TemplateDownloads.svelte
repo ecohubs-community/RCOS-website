@@ -38,7 +38,17 @@
 		};
 
 	const servedLocaleName = $derived(getLocale(downloads.servedLocale).englishName);
+
+	// Off by default: most people want the bare templates to fill in.
+	let explained = $state(false);
 </script>
+
+{#snippet explanationsToggle()}
+	<label class="inline-flex items-center gap-2 text-sm text-text-secondary cursor-pointer">
+		<input type="checkbox" class="h-4 w-4 shrink-0 accent-primary" bind:checked={explained} />
+		{m.downloads_include_explanations()}
+	</label>
+{/snippet}
 
 {#if downloads.type === 'index'}
 	<section
@@ -64,13 +74,14 @@
 					<span>{m.downloads_bundle_fallback({ served: servedLocaleName })}</span>
 				</p>
 			{/if}
+			{@render explanationsToggle()}
 		</header>
 
 		<div class="grid gap-3 sm:grid-cols-3">
 			{#each downloads.formats as fmt (fmt)}
 				{@const info = FORMAT_INFO[fmt]}
 				<a
-					href={downloads.bundles[fmt]}
+					href={(explained ? downloads.bundlesExplained : downloads.bundles)[fmt]}
 					download
 					class="flex flex-col gap-1 rounded-lg border border-border bg-background hover:border-primary hover:bg-surface transition-colors p-4 group"
 				>
@@ -123,7 +134,7 @@
 									<span class="flex items-center gap-2 text-xs text-text-tertiary">
 										{#each downloads.formats as fmt (fmt)}
 											<a
-												href={t.files[fmt]}
+												href={(explained ? t.filesExplained : t.files)[fmt]}
 												download
 												class="hover:text-accent-ink underline-offset-2 hover:underline"
 												title={m.downloads_format_download_as({
@@ -161,12 +172,13 @@
 					{m.downloads_template_fallback_inline({ served: servedLocaleName })}
 				</p>
 			{/if}
+			<div class="pt-1">{@render explanationsToggle()}</div>
 		</div>
 		<div class="flex flex-wrap gap-2">
 			{#each downloads.formats as fmt (fmt)}
 				{@const info = FORMAT_INFO[fmt]}
 				<a
-					href={downloads.files[fmt]}
+					href={(explained ? downloads.filesExplained : downloads.files)[fmt]}
 					download
 					title={info.hint()}
 					class="inline-flex items-center gap-1.5 rounded-md border border-border bg-background hover:border-primary hover:bg-surface transition-colors px-3 py-1.5 text-sm font-medium text-text-primary"

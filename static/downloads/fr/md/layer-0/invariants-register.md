@@ -2,14 +2,14 @@
 
 # Registre des invariants
 
-- **Généré:** 2026-08-31
+- **Généré:** 2026-11-02
 - **Source (version la plus récente):** [https://rcos.ecohubs.community/fr/articles/rcos-templates/layer-0/invariants-register](https://rcos.ecohubs.community/fr/articles/rcos-templates/layer-0/invariants-register)
 - **Tous les modèles RCOS:** [https://rcos.ecohubs.community/fr/articles/rcos-templates](https://rcos.ecohubs.community/fr/articles/rcos-templates)
 
 ---
 - **Couche :** 0 — Identité et périmètre
 - **Statut :** Modèle — à adapter pour ta communauté
-- **Référence RCOS :** [§2.3](https://rcos.ecohubs.community/fr/articles/rcos-core/v0-1/layer-0-identity-scope#23-invariants), [§2.5](https://rcos.ecohubs.community/fr/articles/rcos-core/v0-1/layer-0-identity-scope#25-artifacts)
+- **Référence RCOS :** [§2.3](https://rcos.ecohubs.community/fr/standard/core/0.1/layer-0-identity-scope#2.3), [§2.5](https://rcos.ecohubs.community/fr/standard/core/0.1/layer-0-identity-scope#2.5)
 
 > Les invariants sont des contraintes qui NE DOIVENT PAS être violées tant qu'ils sont en vigueur. Aucune décision, aucun rôle, processus ou mesure d'urgence ne PEUT outrepasser un invariant. En cas de conflit entre un invariant et toute autre règle, l'invariant prévaut.
 
@@ -17,21 +17,7 @@
 
 ## Invariants actifs
 
-*Clauses RCOS : [2.3.1](https://rcos.ecohubs.community/fr/articles/rcos-core/v0-1/layer-0-identity-scope#23-invariants), [2.3.2](https://rcos.ecohubs.community/fr/articles/rcos-core/v0-1/layer-0-identity-scope#23-invariants), [2.3.3](https://rcos.ecohubs.community/fr/articles/rcos-core/v0-1/layer-0-identity-scope#23-invariants), [2.3.4](https://rcos.ecohubs.community/fr/articles/rcos-core/v0-1/layer-0-identity-scope#23-invariants), [2.3.5](https://rcos.ecohubs.community/fr/articles/rcos-core/v0-1/layer-0-identity-scope#23-invariants), [2.3.6](https://rcos.ecohubs.community/fr/articles/rcos-core/v0-1/layer-0-identity-scope#23-invariants)*
-
-<details data-kind="rationale">
-<summary>Pourquoi les invariants sont-ils impossibles à outrepasser ?</summary>
-
-Les invariants constituent le socle dur du système — les éléments qui doivent rester vrais même sous pression, en situation d'urgence ou lors d'un vote populaire. Si une décision, un rôle ou une mesure de crise pouvait les outrepasser, ils cesseraient d'être des contraintes pour devenir de simples préférences. Les lister explicitement et les rendre contraignants à travers toutes les couches est ce qui rend le système de gouvernance fiable sous stress, pas seulement les jours de calme.
-
-</details>
-
-<details data-kind="instructions">
-<summary>Comment remplir ce document</summary>
-
-Chaque invariant est une contrainte dure. Garde-les peu nombreux, spécifiques et absolus — formulés de sorte que toute violation soit identifiable sans ambiguïté. Catégories courantes : protection de la raison d'être, traçabilité de l'autorité, droits de sortie, neutralité idéologique, non-extraction, primauté de la sécurité.
-
-</details>
+*Clauses RCOS : [2.3.1](https://rcos.ecohubs.community/fr/standard/core/0.1/layer-0-identity-scope#2.3.1), [2.3.2](https://rcos.ecohubs.community/fr/standard/core/0.1/layer-0-identity-scope#2.3.2), [2.3.3](https://rcos.ecohubs.community/fr/standard/core/0.1/layer-0-identity-scope#2.3.3), [2.3.4](https://rcos.ecohubs.community/fr/standard/core/0.1/layer-0-identity-scope#2.3.4), [2.3.5](https://rcos.ecohubs.community/fr/standard/core/0.1/layer-0-identity-scope#2.3.5), [2.3.6](https://rcos.ecohubs.community/fr/standard/core/0.1/layer-0-identity-scope#2.3.6)*
 
 | ID | Invariant | Ajouté | Registre de décision |
 |---|---|---|---|

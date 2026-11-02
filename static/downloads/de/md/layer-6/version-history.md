@@ -2,14 +2,14 @@
 
 # Versionshistorie
 
-- **Generiert:** 2026-08-31
+- **Generiert:** 2026-11-02
 - **Quelle (aktuelle Version):** [https://rcos.ecohubs.community/de/articles/rcos-templates/layer-6/version-history](https://rcos.ecohubs.community/de/articles/rcos-templates/layer-6/version-history)
 - **Alle RCOS-Vorlagen:** [https://rcos.ecohubs.community/de/articles/rcos-templates](https://rcos.ecohubs.community/de/articles/rcos-templates)
 
 ---
 - **Schicht:** 6 — Evolution & Anpassung
 - **Status:** Vorlage — an eure Gemeinschaft anpassen; wird bei jeder übernommenen Änderung aktualisiert
-- **RCOS-Referenz:** [§8.2](https://rcos.ecohubs.community/de/articles/rcos-core/v0-1/layer-6-evolution-adaptation#82-versioning-and-authority), [§8.6](https://rcos.ecohubs.community/de/articles/rcos-core/v0-1/layer-6-evolution-adaptation#86-artifacts)
+- **RCOS-Referenz:** [§8.2](https://rcos.ecohubs.community/de/standard/core/0.1/layer-6-evolution-adaptation#8.2), [§8.6](https://rcos.ecohubs.community/de/standard/core/0.1/layer-6-evolution-adaptation#8.6)
 
 > Das maßgebliche, menschenlesbare Protokoll aller übernommenen Änderungen an der RCOS-Implementierung eurer Gemeinschaft. Die aktuell gültige Version ist der neueste Eintrag am Anfang dieser Datei. Abgelöste Regeln bleiben über die Versionskontrolle zugänglich.
 
@@ -17,21 +17,7 @@
 
 ## Eintragsformat
 
-*RCOS-Klauseln: [8.2.1](https://rcos.ecohubs.community/de/articles/rcos-core/v0-1/layer-6-evolution-adaptation#82-versioning-and-authority), [8.2.2](https://rcos.ecohubs.community/de/articles/rcos-core/v0-1/layer-6-evolution-adaptation#82-versioning-and-authority), [8.2.3](https://rcos.ecohubs.community/de/articles/rcos-core/v0-1/layer-6-evolution-adaptation#82-versioning-and-authority), [8.2.4](https://rcos.ecohubs.community/de/articles/rcos-core/v0-1/layer-6-evolution-adaptation#82-versioning-and-authority), [8.2.5](https://rcos.ecohubs.community/de/articles/rcos-core/v0-1/layer-6-evolution-adaptation#82-versioning-and-authority), [8.6.4](https://rcos.ecohubs.community/de/articles/rcos-core/v0-1/layer-6-evolution-adaptation#86-artifacts), [8.7.2](https://rcos.ecohubs.community/de/articles/rcos-core/v0-1/layer-6-evolution-adaptation#87-layer-invariants)*
-
-<details data-kind="rationale">
-<summary>Warum jede übernommene Änderung festhalten?</summary>
-
-Governance, die nicht auf „was hat sich wann und warum geändert" verweisen kann, ist nicht von Governance durch diejenigen zu unterscheiden, die am lautesten reden. Ein einziges, nur fortschreibbares Protokoll übernommener Änderungen — wobei die abgelösten Versionen in der Versionskontrolle erhalten bleiben — macht den aktuellen Stand der Regeln eindeutig und gibt Mitgliedern, Prüfenden und zukünftigen Verantwortlichen die Möglichkeit, den Weg nachzuvollziehen, der uns hierhergeführt hat.
-
-</details>
-
-<details data-kind="instructions">
-<summary>Wie ihr das ausfüllt</summary>
-
-Nutzt die Eintragsvorlage unten für jede übernommene Änderung. Neue Einträge werden über dem jeweils neuesten eingefügt. Ändert keine historischen Einträge — Korrekturen werden als neue Einträge erfasst.
-
-</details>
+*RCOS-Klauseln: [8.2.1](https://rcos.ecohubs.community/de/standard/core/0.1/layer-6-evolution-adaptation#8.2.1), [8.2.2](https://rcos.ecohubs.community/de/standard/core/0.1/layer-6-evolution-adaptation#8.2.2), [8.2.3](https://rcos.ecohubs.community/de/standard/core/0.1/layer-6-evolution-adaptation#8.2.3), [8.2.4](https://rcos.ecohubs.community/de/standard/core/0.1/layer-6-evolution-adaptation#8.2.4), [8.2.5](https://rcos.ecohubs.community/de/standard/core/0.1/layer-6-evolution-adaptation#8.2.5), [8.6.4](https://rcos.ecohubs.community/de/standard/core/0.1/layer-6-evolution-adaptation#8.6.4), [8.7.2](https://rcos.ecohubs.community/de/standard/core/0.1/layer-6-evolution-adaptation#8.7.2)*
 
 ```markdown
 ## <Version> — <Kurztitel>

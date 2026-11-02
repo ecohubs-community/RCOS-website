@@ -2,14 +2,14 @@
 
 # Registre des autorités
 
-- **Généré:** 2026-08-31
+- **Généré:** 2026-11-02
 - **Source (version la plus récente):** [https://rcos.ecohubs.community/fr/articles/rcos-templates/layer-2/authority-registry](https://rcos.ecohubs.community/fr/articles/rcos-templates/layer-2/authority-registry)
 - **Tous les modèles RCOS:** [https://rcos.ecohubs.community/fr/articles/rcos-templates](https://rcos.ecohubs.community/fr/articles/rcos-templates)
 
 ---
 - **Couche :** 2 — Gouvernance et logique de décision
 - **Statut :** Modèle — à adapter pour ta communauté
-- **Référence RCOS :** [§4.3](https://rcos.ecohubs.community/fr/articles/rcos-core/v0-1/layer-2-governance-decision-logic#43-authority-boundaries), [§4.7](https://rcos.ecohubs.community/fr/articles/rcos-core/v0-1/layer-2-governance-decision-logic#47-artifacts)
+- **Référence RCOS :** [§4.3](https://rcos.ecohubs.community/fr/standard/core/0.1/layer-2-governance-decision-logic#4.3), [§4.7](https://rcos.ecohubs.community/fr/standard/core/0.1/layer-2-governance-decision-logic#4.7)
 
 > Répertorie tous les rôles, cercles ou organes détenant une autorité décisionnelle, ainsi que leur périmètre explicite, leurs limites et leur durée de mandat.
 
@@ -17,21 +17,7 @@
 
 ## Autorités enregistrées
 
-*Clauses RCOS : [4.3.1](https://rcos.ecohubs.community/fr/articles/rcos-core/v0-1/layer-2-governance-decision-logic#43-authority-boundaries), [4.3.2](https://rcos.ecohubs.community/fr/articles/rcos-core/v0-1/layer-2-governance-decision-logic#43-authority-boundaries), [4.3.3](https://rcos.ecohubs.community/fr/articles/rcos-core/v0-1/layer-2-governance-decision-logic#43-authority-boundaries), [4.3.4](https://rcos.ecohubs.community/fr/articles/rcos-core/v0-1/layer-2-governance-decision-logic#43-authority-boundaries), [4.3.5](https://rcos.ecohubs.community/fr/articles/rcos-core/v0-1/layer-2-governance-decision-logic#43-authority-boundaries)*
-
-<details data-kind="rationale">
-<summary>Pourquoi consigner chaque autorité par écrit ?</summary>
-
-Une autorité qui n'est pas explicitement enregistrée est comblée par défaut — par la personne présente depuis le plus longtemps, qui parle le plus fort ou qui détient les clés. Un registre unique qui nomme chaque rôle, délimite son périmètre, plafonne ses limites et rattache sa base à un acte de délégation rend toute action non autorisée détectable et empêche que l'autorité ne découle du charisme, de l'ancienneté ou de la propriété.
-
-</details>
-
-<details data-kind="instructions">
-<summary>Comment remplir ce document</summary>
-
-Pour chaque rôle, organe ou cercle détenant une autorité, indique le périmètre d'autorité, les limites strictes, la durée du mandat et la base (statut de membre, acte de délégation, etc.). Le corps collectif des membres à part entière est lui-même une autorité et doit figurer dans ce tableau.
-
-</details>
+*Clauses RCOS : [4.3.1](https://rcos.ecohubs.community/fr/standard/core/0.1/layer-2-governance-decision-logic#4.3.1), [4.3.2](https://rcos.ecohubs.community/fr/standard/core/0.1/layer-2-governance-decision-logic#4.3.2), [4.3.3](https://rcos.ecohubs.community/fr/standard/core/0.1/layer-2-governance-decision-logic#4.3.3), [4.3.4](https://rcos.ecohubs.community/fr/standard/core/0.1/layer-2-governance-decision-logic#4.3.4), [4.3.5](https://rcos.ecohubs.community/fr/standard/core/0.1/layer-2-governance-decision-logic#4.3.5)*
 
 | Rôle / Organe | Périmètre d'autorité | Limites | Durée du mandat | Base |
 |---|---|---|---|---|

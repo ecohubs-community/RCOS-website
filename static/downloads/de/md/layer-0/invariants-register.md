@@ -2,36 +2,22 @@
 
 # Invariantenregister
 
-- **Generiert:** 2026-08-31
+- **Generiert:** 2026-11-02
 - **Quelle (aktuelle Version):** [https://rcos.ecohubs.community/de/articles/rcos-templates/layer-0/invariants-register](https://rcos.ecohubs.community/de/articles/rcos-templates/layer-0/invariants-register)
 - **Alle RCOS-Vorlagen:** [https://rcos.ecohubs.community/de/articles/rcos-templates](https://rcos.ecohubs.community/de/articles/rcos-templates)
 
 ---
 - **Schicht:** 0 — Identität & Geltungsbereich
 - **Status:** Vorlage — für deine Gemeinschaft anpassen
-- **RCOS-Referenz:** [§2.3](https://rcos.ecohubs.community/de/articles/rcos-core/v0-1/layer-0-identity-scope#23-invariants), [§2.5](https://rcos.ecohubs.community/de/articles/rcos-core/v0-1/layer-0-identity-scope#25-artifacts)
+- **RCOS-Referenz:** [§2.3](https://rcos.ecohubs.community/de/standard/core/0.1/layer-0-identity-scope#2.3), [§2.5](https://rcos.ecohubs.community/de/standard/core/0.1/layer-0-identity-scope#2.5)
 
-> Invarianten sind Rahmenbedingungen, die DARF NICHT verletzt werden, solange sie in Kraft sind. Keine Entscheidung, Rolle, Prozess oder Notfallmaßnahme darf eine Invariante außer Kraft setzen. Entsteht ein Konflikt zwischen einer Invariante und einer anderen Regel, hat die Invariante Vorrang.
+> Invarianten sind Rahmenbedingungen, die DÜRFEN NICHT verletzt werden, solange sie in Kraft sind. Keine Entscheidung, Rolle, Prozess oder Notfallmaßnahme darf eine Invariante außer Kraft setzen. Entsteht ein Konflikt zwischen einer Invariante und einer anderen Regel, hat die Invariante Vorrang.
 
 ---
 
 ## Aktive Invarianten
 
-*RCOS-Klauseln: [2.3.1](https://rcos.ecohubs.community/de/articles/rcos-core/v0-1/layer-0-identity-scope#23-invariants), [2.3.2](https://rcos.ecohubs.community/de/articles/rcos-core/v0-1/layer-0-identity-scope#23-invariants), [2.3.3](https://rcos.ecohubs.community/de/articles/rcos-core/v0-1/layer-0-identity-scope#23-invariants), [2.3.4](https://rcos.ecohubs.community/de/articles/rcos-core/v0-1/layer-0-identity-scope#23-invariants), [2.3.5](https://rcos.ecohubs.community/de/articles/rcos-core/v0-1/layer-0-identity-scope#23-invariants), [2.3.6](https://rcos.ecohubs.community/de/articles/rcos-core/v0-1/layer-0-identity-scope#23-invariants)*
-
-<details data-kind="rationale">
-<summary>Warum können Invarianten nicht außer Kraft gesetzt werden?</summary>
-
-Invarianten sind der harte Boden des Systems — Dinge, die auch unter Druck, in Notfällen oder bei einer Mehrheitsentscheidung gelten müssen. Wenn eine Entscheidung, eine Rolle oder eine Krisenmaßnahme sie außer Kraft setzen könnte, wären sie keine Rahmenbedingungen mehr, sondern nur noch Präferenzen. Sie explizit aufzulisten und auf allen Schichten zu verankern macht das Governance-System auch unter Stress verlässlich — nicht nur an ruhigen Tagen.
-
-</details>
-
-<details data-kind="instructions">
-<summary>So füllst du das aus</summary>
-
-Jede Invariante ist eine harte Rahmenbedingung. Halte sie wenige, spezifisch und absolut — so formuliert, dass jede Verletzung eindeutig erkennbar ist. Häufige Kategorien: Zweckschutz, Rückverfolgbarkeit von Autorität, Austrittsrechte, ideologische Neutralität, Nicht-Extraktion, Sicherheitsvorrang.
-
-</details>
+*RCOS-Klauseln: [2.3.1](https://rcos.ecohubs.community/de/standard/core/0.1/layer-0-identity-scope#2.3.1), [2.3.2](https://rcos.ecohubs.community/de/standard/core/0.1/layer-0-identity-scope#2.3.2), [2.3.3](https://rcos.ecohubs.community/de/standard/core/0.1/layer-0-identity-scope#2.3.3), [2.3.4](https://rcos.ecohubs.community/de/standard/core/0.1/layer-0-identity-scope#2.3.4), [2.3.5](https://rcos.ecohubs.community/de/standard/core/0.1/layer-0-identity-scope#2.3.5), [2.3.6](https://rcos.ecohubs.community/de/standard/core/0.1/layer-0-identity-scope#2.3.6)*
 
 | ID | Invariante | Hinzugefügt | Entscheidungsprotokoll |
 |---|---|---|---|

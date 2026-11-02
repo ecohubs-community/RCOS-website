@@ -2,34 +2,20 @@
 
 # Operations Manual
 
-- **Generated:** 2026-08-31
+- **Generated:** 2026-11-02
 - **Source (latest version):** [https://rcos.ecohubs.community/articles/rcos-templates/layer-5/operations-manual](https://rcos.ecohubs.community/articles/rcos-templates/layer-5/operations-manual)
 - **All RCOS templates:** [https://rcos.ecohubs.community/articles/rcos-templates](https://rcos.ecohubs.community/articles/rcos-templates)
 
 ---
 - **Layer:** 5 — Operations & Coordination
 - **Status:** Template — adapt for your community
-- **RCOS reference:** [§7.1](https://rcos.ecohubs.community/articles/rcos-core/v0-1/layer-5-operations-coordination#71-roles-and-responsibilities), [§7.3](https://rcos.ecohubs.community/articles/rcos-core/v0-1/layer-5-operations-coordination#73-documentation-and-information-flow), [§7.4](https://rcos.ecohubs.community/articles/rcos-core/v0-1/layer-5-operations-coordination#74-workload-and-capacity-boundaries), [§7.5](https://rcos.ecohubs.community/articles/rcos-core/v0-1/layer-5-operations-coordination#75-operational-continuity), [§7.6](https://rcos.ecohubs.community/articles/rcos-core/v0-1/layer-5-operations-coordination#76-artifacts)
+- **RCOS reference:** [§7.1](https://rcos.ecohubs.community/standard/core/0.1/layer-5-operations-coordination#7.1), [§7.3](https://rcos.ecohubs.community/standard/core/0.1/layer-5-operations-coordination#7.3), [§7.4](https://rcos.ecohubs.community/standard/core/0.1/layer-5-operations-coordination#7.4), [§7.5](https://rcos.ecohubs.community/standard/core/0.1/layer-5-operations-coordination#7.5), [§7.6](https://rcos.ecohubs.community/standard/core/0.1/layer-5-operations-coordination#7.6)
 
 ---
 
 ## Core Operational Processes
 
-*RCOS clauses: [7.3.4](https://rcos.ecohubs.community/articles/rcos-core/v0-1/layer-5-operations-coordination#73-documentation-and-information-flow), [7.7.2](https://rcos.ecohubs.community/articles/rcos-core/v0-1/layer-5-operations-coordination#77-layer-invariants), [7.6.3](https://rcos.ecohubs.community/articles/rcos-core/v0-1/layer-5-operations-coordination#76-artifacts)*
-
-<details data-kind="rationale">
-<summary>Why document critical processes?</summary>
-
-If a process only lives in one person's head, the community depends on that person showing up — forever. Writing the critical processes down, with named owners, is what converts private knowledge into a community asset that survives handovers, absences, and exits.
-
-</details>
-
-<details data-kind="instructions">
-<summary>How to fill this in</summary>
-
-For every recurring critical process (onboarding, exit, proposal publication, contribution recording, meeting cadence, treasury management, platform access review), name an owner and a brief description.
-
-</details>
+*RCOS clauses: [7.3.4](https://rcos.ecohubs.community/standard/core/0.1/layer-5-operations-coordination#7.3.4), [7.7.2](https://rcos.ecohubs.community/standard/core/0.1/layer-5-operations-coordination#7.7.2), [7.6.3](https://rcos.ecohubs.community/standard/core/0.1/layer-5-operations-coordination#7.6.3)*
 
 | Process | Who | Detail |
 |---|---|---|
@@ -43,21 +29,7 @@ For every recurring critical process (onboarding, exit, proposal publication, co
 
 ## Temporary and Ad-Hoc Responsibilities
 
-*RCOS clauses: [7.1.5](https://rcos.ecohubs.community/articles/rcos-core/v0-1/layer-5-operations-coordination#71-roles-and-responsibilities), [7.1.4](https://rcos.ecohubs.community/articles/rcos-core/v0-1/layer-5-operations-coordination#71-roles-and-responsibilities), [7.7.1](https://rcos.ecohubs.community/articles/rcos-core/v0-1/layer-5-operations-coordination#77-layer-invariants)*
-
-<details data-kind="rationale">
-<summary>Why cap temporary responsibilities?</summary>
-
-Ad-hoc tasks quietly calcify into permanent unpaid jobs — usually on whoever said yes once. A hard time-box and a forced review make the difference between "I covered for a week" and "apparently this is my role now."
-
-</details>
-
-<details data-kind="instructions">
-<summary>How to fill this in</summary>
-
-State that any temporary responsibility must be time-bounded at assignment, documented, reviewed before expiry, and either formalised or terminated.
-
-</details>
+*RCOS clauses: [7.1.5](https://rcos.ecohubs.community/standard/core/0.1/layer-5-operations-coordination#7.1.5), [7.1.4](https://rcos.ecohubs.community/standard/core/0.1/layer-5-operations-coordination#7.1.4), [7.7.1](https://rcos.ecohubs.community/standard/core/0.1/layer-5-operations-coordination#7.7.1)*
 
 When a task or responsibility is assigned temporarily, it must be:
 
@@ -71,21 +43,7 @@ _<Maximum duration of any temporary responsibility before it must be formally as
 
 ## Role and Domain Interfaces
 
-*RCOS clauses: [7.6.3](https://rcos.ecohubs.community/articles/rcos-core/v0-1/layer-5-operations-coordination#76-artifacts), [7.3.4](https://rcos.ecohubs.community/articles/rcos-core/v0-1/layer-5-operations-coordination#73-documentation-and-information-flow)*
-
-<details data-kind="rationale">
-<summary>Why map handoffs explicitly?</summary>
-
-Most operational failures happen not inside a role but between roles — at the boundaries where work moves from one owner to the next. Naming the handoffs turns invisible dependencies into reviewable ones, and prevents "I thought you had it" failures.
-
-</details>
-
-<details data-kind="instructions">
-<summary>How to fill this in</summary>
-
-For each pair of roles that pass work to each other, name the handoff and the type of work transferred.
-
-</details>
+*RCOS clauses: [7.6.3](https://rcos.ecohubs.community/standard/core/0.1/layer-5-operations-coordination#7.6.3), [7.3.4](https://rcos.ecohubs.community/standard/core/0.1/layer-5-operations-coordination#7.3.4)*
 
 | From | To | Handoff |
 |---|---|---|
@@ -94,21 +52,7 @@ For each pair of roles that pass work to each other, name the handoff and the ty
 
 ## Workload Boundaries
 
-*RCOS clauses: [7.4.1](https://rcos.ecohubs.community/articles/rcos-core/v0-1/layer-5-operations-coordination#74-workload-and-capacity-boundaries), [7.4.2](https://rcos.ecohubs.community/articles/rcos-core/v0-1/layer-5-operations-coordination#74-workload-and-capacity-boundaries), [7.4.3](https://rcos.ecohubs.community/articles/rcos-core/v0-1/layer-5-operations-coordination#74-workload-and-capacity-boundaries), [7.4.4](https://rcos.ecohubs.community/articles/rcos-core/v0-1/layer-5-operations-coordination#74-workload-and-capacity-boundaries), [7.7.3](https://rcos.ecohubs.community/articles/rcos-core/v0-1/layer-5-operations-coordination#77-layer-invariants)*
-
-<details data-kind="rationale">
-<summary>Why make workload limits explicit?</summary>
-
-Unbounded coordination load is the default failure mode of volunteer communities — it quietly burns out the most committed members until they leave. Explicit, reviewable limits make capacity a shared concern rather than a private burden.
-
-</details>
-
-<details data-kind="instructions">
-<summary>How to fill this in</summary>
-
-Set bounds on meeting load, role load, response-time expectations, and the path for renegotiating responsibilities.
-
-</details>
+*RCOS clauses: [7.4.1](https://rcos.ecohubs.community/standard/core/0.1/layer-5-operations-coordination#7.4.1), [7.4.2](https://rcos.ecohubs.community/standard/core/0.1/layer-5-operations-coordination#7.4.2), [7.4.3](https://rcos.ecohubs.community/standard/core/0.1/layer-5-operations-coordination#7.4.3), [7.4.4](https://rcos.ecohubs.community/standard/core/0.1/layer-5-operations-coordination#7.4.4), [7.7.3](https://rcos.ecohubs.community/standard/core/0.1/layer-5-operations-coordination#7.7.3)*
 
 - **Meeting load:** _<recurring meeting cadence and maximum duration; rules for extraordinary meetings.>_
 - **Role load:** _<cap if any; rule for flagging overload; resolution window.>_
@@ -118,21 +62,7 @@ Set bounds on meeting load, role load, response-time expectations, and the path 
 
 ## Operational Continuity
 
-*RCOS clauses: [7.5.1](https://rcos.ecohubs.community/articles/rcos-core/v0-1/layer-5-operations-coordination#75-operational-continuity), [7.5.2](https://rcos.ecohubs.community/articles/rcos-core/v0-1/layer-5-operations-coordination#75-operational-continuity), [7.5.3](https://rcos.ecohubs.community/articles/rcos-core/v0-1/layer-5-operations-coordination#75-operational-continuity)*
-
-<details data-kind="rationale">
-<summary>Why plan for continuity now?</summary>
-
-A community that depends on one irreplaceable person is one illness, one conflict, or one exit away from collapse. Naming the single points of failure — honestly — and building handover into every role is what keeps the community surviving its founders.
-
-</details>
-
-<details data-kind="instructions">
-<summary>How to fill this in</summary>
-
-Name current single points of failure honestly. State the handover requirement for each role and the cadence of continuity review.
-
-</details>
+*RCOS clauses: [7.5.1](https://rcos.ecohubs.community/standard/core/0.1/layer-5-operations-coordination#7.5.1), [7.5.2](https://rcos.ecohubs.community/standard/core/0.1/layer-5-operations-coordination#7.5.2), [7.5.3](https://rcos.ecohubs.community/standard/core/0.1/layer-5-operations-coordination#7.5.3)*
 
 - **Current state:** _<honest list of single points of failure; recruitment plan to reduce concentration.>_
 - **Handover mechanisms:** _<reference handover requirements per role in the Role Registry; handover must be completed before a role is vacated.>_
@@ -140,21 +70,7 @@ Name current single points of failure honestly. State the handover requirement f
 
 ## Information Flow and Anti-Gatekeeping
 
-*RCOS clauses: [7.3.5](https://rcos.ecohubs.community/articles/rcos-core/v0-1/layer-5-operations-coordination#73-documentation-and-information-flow), [7.7.4](https://rcos.ecohubs.community/articles/rcos-core/v0-1/layer-5-operations-coordination#77-layer-invariants), [7.3.2](https://rcos.ecohubs.community/articles/rcos-core/v0-1/layer-5-operations-coordination#73-documentation-and-information-flow)*
-
-<details data-kind="rationale">
-<summary>Why treat information access as a governance issue?</summary>
-
-Whoever controls access to information controls the community, whether they mean to or not. Making access rules explicit — and disallowing sole points of access — is what prevents informal gatekeepers from accumulating the kind of power the governance system is supposed to check.
-
-</details>
-
-<details data-kind="instructions">
-<summary>How to fill this in</summary>
-
-State which records are open to all Full Members, the response window for information requests, and the rule against sole points of access for governance-relevant information.
-
-</details>
+*RCOS clauses: [7.3.5](https://rcos.ecohubs.community/standard/core/0.1/layer-5-operations-coordination#7.3.5), [7.7.4](https://rcos.ecohubs.community/standard/core/0.1/layer-5-operations-coordination#7.7.4), [7.3.2](https://rcos.ecohubs.community/standard/core/0.1/layer-5-operations-coordination#7.3.2)*
 
 - _<Governance decisions accessible to all Full Members.>_
 - _<Meeting notes published within X hours.>_
@@ -168,21 +84,7 @@ State which records are open to all Full Members, the response window for inform
 
 ## Documentation Locations and Update Procedures
 
-*RCOS clauses: [7.3.1](https://rcos.ecohubs.community/articles/rcos-core/v0-1/layer-5-operations-coordination#73-documentation-and-information-flow), [7.3.2](https://rcos.ecohubs.community/articles/rcos-core/v0-1/layer-5-operations-coordination#73-documentation-and-information-flow), [7.3.3](https://rcos.ecohubs.community/articles/rcos-core/v0-1/layer-5-operations-coordination#73-documentation-and-information-flow), [7.8.1](https://rcos.ecohubs.community/articles/rcos-core/v0-1/layer-5-operations-coordination#78-explicitness-rules)*
-
-<details data-kind="rationale">
-<summary>Why name where every document lives?</summary>
-
-If no one can say where the canonical version of something lives, there is no canonical version. Naming the location, owner, and review cadence for each document type is what makes the community's memory auditable rather than folkloric.
-
-</details>
-
-<details data-kind="instructions">
-<summary>How to fill this in</summary>
-
-For each document type, name the canonical location, the owner, and the review cadence.
-
-</details>
+*RCOS clauses: [7.3.1](https://rcos.ecohubs.community/standard/core/0.1/layer-5-operations-coordination#7.3.1), [7.3.2](https://rcos.ecohubs.community/standard/core/0.1/layer-5-operations-coordination#7.3.2), [7.3.3](https://rcos.ecohubs.community/standard/core/0.1/layer-5-operations-coordination#7.3.3), [7.8.1](https://rcos.ecohubs.community/standard/core/0.1/layer-5-operations-coordination#7.8.1)*
 
 | Document type | Location | Owner | Review cadence |
 |---|---|---|---|

@@ -2,14 +2,14 @@
 
 # Registro de Aprendizado
 
-- **Gerado em:** 2026-08-31
+- **Gerado em:** 2026-11-02
 - **Fonte (versão mais recente):** [https://rcos.ecohubs.community/pt-br/articles/rcos-templates/layer-6/learning-log](https://rcos.ecohubs.community/pt-br/articles/rcos-templates/layer-6/learning-log)
 - **Todos os modelos RCOS:** [https://rcos.ecohubs.community/pt-br/articles/rcos-templates](https://rcos.ecohubs.community/pt-br/articles/rcos-templates)
 
 ---
 - **Camada:** 6 — Evolução e Adaptação
 - **Status:** Modelo — adapte para a sua comunidade; atualizado quando ocorrerem eventos que gerem aprendizado
-- **Referência RCOS:** [§8.4](https://rcos.ecohubs.community/pt-br/articles/rcos-core/v0-1/layer-6-evolution-adaptation#84-learning-and-feedback-capture), [§8.6](https://rcos.ecohubs.community/pt-br/articles/rcos-core/v0-1/layer-6-evolution-adaptation#86-artifacts)
+- **Referência RCOS:** [§8.4](https://rcos.ecohubs.community/pt-br/standard/core/0.1/layer-6-evolution-adaptation#8.4), [§8.6](https://rcos.ecohubs.community/pt-br/standard/core/0.1/layer-6-evolution-adaptation#8.6)
 
 > Registra falhas importantes, adaptações, reversões e aprendizados sistêmicos. Padrões recorrentes de falha devem desencadear uma revisão estrutural, não a culpabilização individual. As entradas são adicionadas no topo (mais recentes primeiro).
 
@@ -17,21 +17,7 @@
 
 ## O Que Constitui um Evento Passível de Aprendizado
 
-*Cláusulas RCOS: [8.4.1](https://rcos.ecohubs.community/pt-br/articles/rcos-core/v0-1/layer-6-evolution-adaptation#84-learning-and-feedback-capture), [8.4.4](https://rcos.ecohubs.community/pt-br/articles/rcos-core/v0-1/layer-6-evolution-adaptation#84-learning-and-feedback-capture), [8.6.5](https://rcos.ecohubs.community/pt-br/articles/rcos-core/v0-1/layer-6-evolution-adaptation#86-artifacts), [8.7.4](https://rcos.ecohubs.community/pt-br/articles/rcos-core/v0-1/layer-6-evolution-adaptation#87-layer-invariants)*
-
-<details data-kind="rationale">
-<summary>Por que definir o gatilho explicitamente?</summary>
-
-Se "deveríamos aprender com isso" for deixado ao critério individual, as lições mais difíceis — aquelas que envolvem conflito, fracasso ou constrangimento — são justamente as que têm maior probabilidade de não serem registradas. Nomear os eventos específicos que DEVEM gerar uma entrada tira essa decisão do calor do momento e garante que aprendizados desconfortáveis sejam capturados, em vez de silenciosamente descartados.
-
-</details>
-
-<details data-kind="instructions">
-<summary>Como preencher esta seção</summary>
-
-Liste os eventos específicos que obrigam uma entrada no Registro de Aprendizado. Indique quem é responsável pelo registro e a cadência de síntese.
-
-</details>
+*Cláusulas RCOS: [8.4.1](https://rcos.ecohubs.community/pt-br/standard/core/0.1/layer-6-evolution-adaptation#8.4.1), [8.4.4](https://rcos.ecohubs.community/pt-br/standard/core/0.1/layer-6-evolution-adaptation#8.4.4), [8.6.5](https://rcos.ecohubs.community/pt-br/standard/core/0.1/layer-6-evolution-adaptation#8.6.5), [8.7.4](https://rcos.ecohubs.community/pt-br/standard/core/0.1/layer-6-evolution-adaptation#8.7.4)*
 
 Uma entrada DEVE ser adicionada quando ocorrer qualquer um dos seguintes eventos:
 
@@ -57,21 +43,7 @@ _Nenhuma entrada ainda. A primeira entrada será adicionada quando ocorrer o pri
 
 ## Formato da Entrada
 
-*Cláusulas RCOS: [8.4.2](https://rcos.ecohubs.community/pt-br/articles/rcos-core/v0-1/layer-6-evolution-adaptation#84-learning-and-feedback-capture), [8.4.3](https://rcos.ecohubs.community/pt-br/articles/rcos-core/v0-1/layer-6-evolution-adaptation#84-learning-and-feedback-capture), [8.6.5](https://rcos.ecohubs.community/pt-br/articles/rcos-core/v0-1/layer-6-evolution-adaptation#86-artifacts)*
-
-<details data-kind="rationale">
-<summary>Por que um modelo fixo de entrada?</summary>
-
-A reflexão em formato livre é valiosa, mas não se agrega. Um esquema consistente — gatilho, sinais, o que mudou, resultado, responsável pelo acompanhamento — permite revisar anos de entradas em busca de padrões recorrentes e transformar incidentes isolados em evidência estrutural. Também obriga cada entrada a nomear um responsável, para que o aprendizado não pare em "nós percebemos".
-
-</details>
-
-<details data-kind="instructions">
-<summary>Como preencher esta seção</summary>
-
-Use o modelo abaixo para cada entrada. Cada campo impõe uma lente diferente sobre o evento; não pule o responsável pelo acompanhamento.
-
-</details>
+*Cláusulas RCOS: [8.4.2](https://rcos.ecohubs.community/pt-br/standard/core/0.1/layer-6-evolution-adaptation#8.4.2), [8.4.3](https://rcos.ecohubs.community/pt-br/standard/core/0.1/layer-6-evolution-adaptation#8.4.3), [8.6.5](https://rcos.ecohubs.community/pt-br/standard/core/0.1/layer-6-evolution-adaptation#8.6.5)*
 
 ```markdown
 ## <AAAA-MM-DD> — <Título curto>

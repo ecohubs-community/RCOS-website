@@ -2,34 +2,20 @@
 
 # Registre des états de membre
 
-- **Généré:** 2026-08-31
+- **Généré:** 2026-11-02
 - **Source (version la plus récente):** [https://rcos.ecohubs.community/fr/articles/rcos-templates/layer-1/membership-state-registry](https://rcos.ecohubs.community/fr/articles/rcos-templates/layer-1/membership-state-registry)
 - **Tous les modèles RCOS:** [https://rcos.ecohubs.community/fr/articles/rcos-templates](https://rcos.ecohubs.community/fr/articles/rcos-templates)
 
 ---
 - **Couche :** 1 — Système de membres
 - **Statut :** Modèle — à adapter pour ta communauté
-- **Référence RCOS :** [§3.1](https://rcos.ecohubs.community/fr/articles/rcos-core/v0-1/layer-1-membership-system#31-membership-states)
+- **Référence RCOS :** [§3.1](https://rcos.ecohubs.community/fr/standard/core/0.1/layer-1-membership-system#3.1)
 
 ---
 
 ## États de membre définis
 
-*Clauses RCOS : [3.1.1](https://rcos.ecohubs.community/fr/articles/rcos-core/v0-1/layer-1-membership-system#31-membership-states), [3.1.2](https://rcos.ecohubs.community/fr/articles/rcos-core/v0-1/layer-1-membership-system#31-membership-states), [3.1.3](https://rcos.ecohubs.community/fr/articles/rcos-core/v0-1/layer-1-membership-system#31-membership-states), [3.1.4](https://rcos.ecohubs.community/fr/articles/rcos-core/v0-1/layer-1-membership-system#31-membership-states), [3.1.5](https://rcos.ecohubs.community/fr/articles/rcos-core/v0-1/layer-1-membership-system#31-membership-states)*
-
-<details data-kind="rationale">
-<summary>Pourquoi un tableau unique des états ?</summary>
-
-Les droits et obligations dispersés dans plusieurs documents finissent par diverger. Rassembler chaque état, ses droits, ses obligations et ses transitions dans un seul tableau rend le système de membres vérifiable d'un coup d'œil — tu peux voir chaque porte d'entrée et de sortie de la communauté, et ce que chacune accorde. Si deux documents se contredisent, ce registre fait foi.
-
-</details>
-
-<details data-kind="instructions">
-<summary>Comment remplir cette section</summary>
-
-Définis chaque état de membre que ta communauté reconnaît (par ex. Candidat·e, Membre en période d'essai, Membre à part entière, Membre sorti·e). Pour chacun, liste les droits, les obligations, la condition d'entrée et la condition de sortie. Les états doivent être mutuellement exclusifs — aucune personne ne peut détenir deux états simultanément.
-
-</details>
+*Clauses RCOS : [3.1.1](https://rcos.ecohubs.community/fr/standard/core/0.1/layer-1-membership-system#3.1.1), [3.1.2](https://rcos.ecohubs.community/fr/standard/core/0.1/layer-1-membership-system#3.1.2), [3.1.3](https://rcos.ecohubs.community/fr/standard/core/0.1/layer-1-membership-system#3.1.3), [3.1.4](https://rcos.ecohubs.community/fr/standard/core/0.1/layer-1-membership-system#3.1.4), [3.1.5](https://rcos.ecohubs.community/fr/standard/core/0.1/layer-1-membership-system#3.1.5)*
 
 | État | Droits | Obligations | Condition d'entrée | Condition de sortie |
 |---|---|---|---|---|

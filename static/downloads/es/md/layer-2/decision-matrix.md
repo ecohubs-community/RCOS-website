@@ -2,14 +2,14 @@
 
 # Matriz de Decisiones
 
-- **Generado:** 2026-08-31
+- **Generado:** 2026-11-02
 - **Fuente (versión más reciente):** [https://rcos.ecohubs.community/es/articles/rcos-templates/layer-2/decision-matrix](https://rcos.ecohubs.community/es/articles/rcos-templates/layer-2/decision-matrix)
 - **Todas las plantillas RCOS:** [https://rcos.ecohubs.community/es/articles/rcos-templates](https://rcos.ecohubs.community/es/articles/rcos-templates)
 
 ---
 - **Capa:** 2 — Gobernanza y Lógica de Decisión
 - **Estado:** Plantilla — adaptar para tu comunidad
-- **Referencia RCOS:** [§4.2](https://rcos.ecohubs.community/es/articles/rcos-core/v0-1/layer-2-governance-decision-logic#42-decision-mechanisms), [§4.4](https://rcos.ecohubs.community/es/articles/rcos-core/v0-1/layer-2-governance-decision-logic#44-decision-matrix), [§4.7](https://rcos.ecohubs.community/es/articles/rcos-core/v0-1/layer-2-governance-decision-logic#47-artifacts)
+- **Referencia RCOS:** [§4.2](https://rcos.ecohubs.community/es/standard/core/0.1/layer-2-governance-decision-logic#4.2), [§4.4](https://rcos.ecohubs.community/es/standard/core/0.1/layer-2-governance-decision-logic#4.4), [§4.7](https://rcos.ecohubs.community/es/standard/core/0.1/layer-2-governance-decision-logic#4.7)
 
 > Asigna cada tipo de decisión y dominio a un rol o cuerpo autorizado, mecanismo, umbral y vía de escalamiento. Las decisiones tomadas fuera de esta matriz se consideran inválidas.
 
@@ -17,21 +17,7 @@
 
 ## Principios de Votación
 
-*Cláusulas RCOS: [4.2.1](https://rcos.ecohubs.community/es/articles/rcos-core/v0-1/layer-2-governance-decision-logic#42-decision-mechanisms), [4.2.2](https://rcos.ecohubs.community/es/articles/rcos-core/v0-1/layer-2-governance-decision-logic#42-decision-mechanisms), [4.2.3](https://rcos.ecohubs.community/es/articles/rcos-core/v0-1/layer-2-governance-decision-logic#42-decision-mechanisms), [4.2.4](https://rcos.ecohubs.community/es/articles/rcos-core/v0-1/layer-2-governance-decision-logic#42-decision-mechanisms)*
-
-<details data-kind="rationale">
-<summary>¿Por qué fijar mecanismo, umbral y plazos?</summary>
-
-Una votación sin un mecanismo, umbral y período de deliberación predefinidos es una invitación a fabricar resultados después del hecho — quien cuenta los votos o establece el plazo gana. Declarar estos parámetros de antemano hace que cada decisión colectiva sea reproducible y contestable en los mismos términos, independientemente de quién esté presente.
-
-</details>
-
-<details data-kind="instructions">
-<summary>Cómo rellenar esto</summary>
-
-Indica la plataforma de votación, el umbral para cada tipo de decisión, el período de deliberación, la regla de empate, la regla de re-votación, y cualquier límite de gasto o alcance de autoridad delegada.
-
-</details>
+*Cláusulas RCOS: [4.2.1](https://rcos.ecohubs.community/es/standard/core/0.1/layer-2-governance-decision-logic#4.2.1), [4.2.2](https://rcos.ecohubs.community/es/standard/core/0.1/layer-2-governance-decision-logic#4.2.2), [4.2.3](https://rcos.ecohubs.community/es/standard/core/0.1/layer-2-governance-decision-logic#4.2.3), [4.2.4](https://rcos.ecohubs.community/es/standard/core/0.1/layer-2-governance-decision-logic#4.2.4)*
 
 - **Plataforma de votación:** _<p. ej. Snapshot, Loomio, consenso presencial.>_
 - **Umbral operativo:** _<p. ej. no se requiere votación — delegado al titular del rol operativo correspondiente según el Registro de Roles.>_
@@ -47,21 +33,7 @@ Indica la plataforma de votación, el umbral para cada tipo de decisión, el per
 
 ## Matriz
 
-*Cláusulas RCOS: [4.4.1](https://rcos.ecohubs.community/es/articles/rcos-core/v0-1/layer-2-governance-decision-logic#44-decision-matrix), [4.4.2](https://rcos.ecohubs.community/es/articles/rcos-core/v0-1/layer-2-governance-decision-logic#44-decision-matrix), [4.4.3](https://rcos.ecohubs.community/es/articles/rcos-core/v0-1/layer-2-governance-decision-logic#44-decision-matrix), [4.4.4](https://rcos.ecohubs.community/es/articles/rcos-core/v0-1/layer-2-governance-decision-logic#44-decision-matrix)*
-
-<details data-kind="rationale">
-<summary>¿Por qué una única matriz autoritativa?</summary>
-
-Si las reglas sobre quién decide qué viven en la cabeza de las personas, la autoridad se convierte en lo que diga la persona más ruidosa o con más antigüedad. Una matriz pública que vincule cada decisión a un dominio, cuerpo, mecanismo y umbral hace visible la acción fuera de alcance en el momento en que ocurre — y hace que cualquier decisión tomada fuera de ella sea inválida por construcción.
-
-</details>
-
-<details data-kind="instructions">
-<summary>Cómo rellenar esto</summary>
-
-Para cada dominio de decisión (membresía, tesorería, plataforma, alianzas, gobernanza, etc.), establece el tipo de decisión, el cuerpo autorizado, quién puede participar, el mecanismo, el umbral, las condiciones de bloqueo y la vía de escalamiento.
-
-</details>
+*Cláusulas RCOS: [4.4.1](https://rcos.ecohubs.community/es/standard/core/0.1/layer-2-governance-decision-logic#4.4.1), [4.4.2](https://rcos.ecohubs.community/es/standard/core/0.1/layer-2-governance-decision-logic#4.4.2), [4.4.3](https://rcos.ecohubs.community/es/standard/core/0.1/layer-2-governance-decision-logic#4.4.3), [4.4.4](https://rcos.ecohubs.community/es/standard/core/0.1/layer-2-governance-decision-logic#4.4.4)*
 
 | Dominio de Decisión | Tipo de Decisión | Cuerpo Autorizado | Participantes Elegibles | Mecanismo | Umbral | Condiciones de Bloqueo / Veto | Escalamiento |
 |---|---|---|---|---|---|---|---|
@@ -75,21 +47,7 @@ Para cada dominio de decisión (membresía, tesorería, plataforma, alianzas, go
 
 ## Definiciones de Tipos de Decisión
 
-*Cláusulas RCOS: [4.1.1](https://rcos.ecohubs.community/es/articles/rcos-core/v0-1/layer-2-governance-decision-logic#41-decision-types), [4.1.2](https://rcos.ecohubs.community/es/articles/rcos-core/v0-1/layer-2-governance-decision-logic#41-decision-types), [4.1.3](https://rcos.ecohubs.community/es/articles/rcos-core/v0-1/layer-2-governance-decision-logic#41-decision-types), [4.1.4](https://rcos.ecohubs.community/es/articles/rcos-core/v0-1/layer-2-governance-decision-logic#41-decision-types), [4.1.5](https://rcos.ecohubs.community/es/articles/rcos-core/v0-1/layer-2-governance-decision-logic#41-decision-types)*
-
-<details data-kind="rationale">
-<summary>¿Por qué clasificar cada decisión?</summary>
-
-Sin un tipo, cada decisión se maneja a la velocidad y con el escrutinio que convenga en el momento — los cambios rutinarios se estancan en debates, y los cambios constitucionales pasan desapercibidos. Los tipos fijos vinculan el peso de una decisión al proceso que DEBE superar, y la regla de tipo superior por defecto cierra la brecha donde la ambigüedad de otro modo sería explotada.
-
-</details>
-
-<details data-kind="instructions">
-<summary>Cómo rellenar esto</summary>
-
-Define cada tipo de decisión según lo que abarca, quién la ejecuta, qué proceso requiere y cómo se resuelven las disputas sobre la clasificación.
-
-</details>
+*Cláusulas RCOS: [4.1.1](https://rcos.ecohubs.community/es/standard/core/0.1/layer-2-governance-decision-logic#4.1.1), [4.1.2](https://rcos.ecohubs.community/es/standard/core/0.1/layer-2-governance-decision-logic#4.1.2), [4.1.3](https://rcos.ecohubs.community/es/standard/core/0.1/layer-2-governance-decision-logic#4.1.3), [4.1.4](https://rcos.ecohubs.community/es/standard/core/0.1/layer-2-governance-decision-logic#4.1.4), [4.1.5](https://rcos.ecohubs.community/es/standard/core/0.1/layer-2-governance-decision-logic#4.1.5)*
 
 - **Operativo** — _<funcionamiento diario dentro de las reglas existentes; ejecutado por el titular del rol correspondiente sin votación.>_
 - **Estratégico** — _<dirección a largo plazo, asignación significativa de recursos, creación/eliminación de estructuras importantes; requiere votación de Miembros Plenos con un período de deliberación definido.>_

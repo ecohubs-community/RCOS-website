@@ -1,53 +1,53 @@
 # Modèles RCOS
 
-- **Généré:** 2026-08-31
+- **Généré:** 2026-11-02
 - **Source (version la plus récente):** [https://rcos.ecohubs.community/fr/articles/rcos-templates](https://rcos.ecohubs.community/fr/articles/rcos-templates)
 
 Ce paquet contient tous les modèles RCOS, prêts à être copiés et adaptés à votre communauté.
 
-Chaque modèle inclut un bloc de justification (pourquoi la section existe) et des instructions (comment la remplir).
+Ces modèles ne contiennent que ce que vous remplissez. La version avec explications ajoute une justification (pourquoi chaque section existe) et des instructions (comment la remplir) ; elle se télécharge depuis la page des modèles.
 
 ## Modèles
 
 ### layer-0
 
-- [Registre des contraintes d'identité](layer-0/identity-constraints-register.md)
-- [Registre des invariants](layer-0/invariants-register.md)
-- [Charte de raison d'être](layer-0/purpose-charter.md)
-- [Déclaration de périmètre](layer-0/scope-declaration.md)
+1. [Charte de raison d'être](layer-0/01_purpose-charter.md)
+2. [Déclaration de périmètre](layer-0/02_scope-declaration.md)
+3. [Registre des invariants](layer-0/03_invariants-register.md)
+4. [Registre des contraintes d'identité](layer-0/04_identity-constraints-register.md)
 
 ### layer-1
 
-- [Protocole de sortie et de séparation](layer-1/exit-protocol.md)
-- [Accord d'adhésion](layer-1/membership-agreement.md)
-- [Registre des états de membre](layer-1/membership-state-registry.md)
-- [Protocole d'intégration](layer-1/onboarding-protocol.md)
+1. [Accord d'adhésion](layer-1/01_membership-agreement.md)
+2. [Protocole d'intégration](layer-1/02_onboarding-protocol.md)
+3. [Protocole de sortie et de séparation](layer-1/03_exit-protocol.md)
+4. [Registre des états de membre](layer-1/04_membership-state-registry.md)
 
 ### layer-2
 
-- [Registre des autorités](layer-2/authority-registry.md)
-- [Matrice de décision](layer-2/decision-matrix.md)
-- [Protocole de gouvernance](layer-2/governance-protocol.md)
+1. [Matrice de décision](layer-2/01_decision-matrix.md)
+2. [Protocole de gouvernance](layer-2/02_governance-protocol.md)
+3. [Registre des autorités](layer-2/03_authority-registry.md)
 
 ### layer-3
 
-- [Protocole d'économie interne](layer-3/internal-economy-protocol.md)
-- [Règles de trésorerie](layer-3/treasury-ruleset.md)
+1. [Protocole d'économie interne](layer-3/01_internal-economy-protocol.md)
+2. [Règles de trésorerie](layer-3/02_treasury-ruleset.md)
 
 ### layer-4
 
-- [Protocole de responsabilisation](layer-4/accountability-protocol.md)
-- [Échelle de résolution des conflits](layer-4/conflict-resolution-ladder.md)
+1. [Échelle de résolution des conflits](layer-4/01_conflict-resolution-ladder.md)
+2. [Protocole de responsabilisation](layer-4/02_accountability-protocol.md)
 
 ### layer-5
 
-- [Modèles de réunion](layer-5/meeting-templates.md)
-- [Manuel opérationnel](layer-5/operations-manual.md)
-- [Registre des rôles](layer-5/role-registry.md)
+1. [Manuel opérationnel](layer-5/01_operations-manual.md)
+2. [Registre des rôles](layer-5/02_role-registry.md)
+3. [Modèles de réunion](layer-5/03_meeting-templates.md)
 
 ### layer-6
 
-- [Protocole de changement](layer-6/change-protocol.md)
-- [Modèle d'expérimentation](layer-6/experiment-template.md)
-- [Journal d'apprentissage](layer-6/learning-log.md)
-- [Historique des versions](layer-6/version-history.md)
+1. [Protocole de changement](layer-6/01_change-protocol.md)
+2. [Historique des versions](layer-6/02_version-history.md)
+3. [Journal d'apprentissage](layer-6/03_learning-log.md)
+4. [Modèle d'expérimentation](layer-6/04_experiment-template.md)

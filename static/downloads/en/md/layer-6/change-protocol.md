@@ -2,34 +2,20 @@
 
 # Change Protocol
 
-- **Generated:** 2026-08-31
+- **Generated:** 2026-11-02
 - **Source (latest version):** [https://rcos.ecohubs.community/articles/rcos-templates/layer-6/change-protocol](https://rcos.ecohubs.community/articles/rcos-templates/layer-6/change-protocol)
 - **All RCOS templates:** [https://rcos.ecohubs.community/articles/rcos-templates](https://rcos.ecohubs.community/articles/rcos-templates)
 
 ---
 - **Layer:** 6 — Evolution & Adaptation
 - **Status:** Template — adapt for your community
-- **RCOS reference:** [§8.1](https://rcos.ecohubs.community/articles/rcos-core/v0-1/layer-6-evolution-adaptation#81-change-mechanisms), [§8.5](https://rcos.ecohubs.community/articles/rcos-core/v0-1/layer-6-evolution-adaptation#85-change-safety-and-reversibility), [§8.6](https://rcos.ecohubs.community/articles/rcos-core/v0-1/layer-6-evolution-adaptation#86-artifacts)
+- **RCOS reference:** [§8.1](https://rcos.ecohubs.community/standard/core/0.1/layer-6-evolution-adaptation#8.1), [§8.5](https://rcos.ecohubs.community/standard/core/0.1/layer-6-evolution-adaptation#8.5), [§8.6](https://rcos.ecohubs.community/standard/core/0.1/layer-6-evolution-adaptation#8.6)
 
 ---
 
 ## How Changes Are Proposed
 
-*RCOS clauses: [8.1.1](https://rcos.ecohubs.community/articles/rcos-core/v0-1/layer-6-evolution-adaptation#81-change-mechanisms), [8.1.3](https://rcos.ecohubs.community/articles/rcos-core/v0-1/layer-6-evolution-adaptation#81-change-mechanisms), [8.6.3](https://rcos.ecohubs.community/articles/rcos-core/v0-1/layer-6-evolution-adaptation#86-artifacts), [8.8.1](https://rcos.ecohubs.community/articles/rcos-core/v0-1/layer-6-evolution-adaptation#88-explicitness-rules)*
-
-<details data-kind="rationale">
-<summary>Why require a structured proposal?</summary>
-
-A change that arrives as a vague idea in chat cannot be evaluated, challenged, or rolled back later. Forcing every proposal through the same minimum shape — affected artifacts, rationale, risks, rollback — turns an opinion into a reviewable artifact and makes it impossible to slip a rule change past the community by accident.
-
-</details>
-
-<details data-kind="instructions">
-<summary>How to fill this in</summary>
-
-State who may propose, where proposals are submitted, and the mandatory content fields. Tie this to the Governance Protocol (Layer 2).
-
-</details>
+*RCOS clauses: [8.1.1](https://rcos.ecohubs.community/standard/core/0.1/layer-6-evolution-adaptation#8.1.1), [8.1.3](https://rcos.ecohubs.community/standard/core/0.1/layer-6-evolution-adaptation#8.1.3), [8.6.3](https://rcos.ecohubs.community/standard/core/0.1/layer-6-evolution-adaptation#8.6.3), [8.8.1](https://rcos.ecohubs.community/standard/core/0.1/layer-6-evolution-adaptation#8.8.1)*
 
 _<Any Full Member may propose a change to any RCOS artifact. State the submission channel.>_ Every proposal must include:
 
@@ -43,21 +29,7 @@ _<Any Full Member may propose a change to any RCOS artifact. State the submissio
 
 ## How Proposals Are Classified
 
-*RCOS clauses: [8.1.2](https://rcos.ecohubs.community/articles/rcos-core/v0-1/layer-6-evolution-adaptation#81-change-mechanisms), [8.1.4](https://rcos.ecohubs.community/articles/rcos-core/v0-1/layer-6-evolution-adaptation#81-change-mechanisms)*
-
-<details data-kind="rationale">
-<summary>Why classify by impact?</summary>
-
-Not every change deserves the same friction. Typo fixes should not need a supermajority; constitutional shifts should not pass quietly. Mapping proposals to decision types — and defaulting unclear cases upward — makes the cost of a change proportional to its blast radius and protects Layer 0 from being eroded through small moves.
-
-</details>
-
-<details data-kind="instructions">
-<summary>How to fill this in</summary>
-
-Define what falls under each decision type. State the default-higher rule for ambiguous cases.
-
-</details>
+*RCOS clauses: [8.1.2](https://rcos.ecohubs.community/standard/core/0.1/layer-6-evolution-adaptation#8.1.2), [8.1.4](https://rcos.ecohubs.community/standard/core/0.1/layer-6-evolution-adaptation#8.1.4)*
 
 - **Operational:** _<wording corrections, formatting, minor content updates; no vote required; executed by the responsible role within delegated limits.>_
 - **Strategic:** _<changes to Layer 1–5 content that affect member rights, processes, or structures.>_
@@ -67,21 +39,7 @@ Define what falls under each decision type. State the default-higher rule for am
 
 ## Review and Deliberation
 
-*RCOS clauses: [8.1.2](https://rcos.ecohubs.community/articles/rcos-core/v0-1/layer-6-evolution-adaptation#81-change-mechanisms), [8.7.1](https://rcos.ecohubs.community/articles/rcos-core/v0-1/layer-6-evolution-adaptation#87-layer-invariants)*
-
-<details data-kind="rationale">
-<summary>Why enforce minimum deliberation windows?</summary>
-
-Without a floor on deliberation time, any change can be rushed through on a slow day when few members are paying attention. Mandatory minimums — longer for higher-impact changes — guarantee that members who are travelling, ill, or simply busy still get a real chance to read, object, or show up.
-
-</details>
-
-<details data-kind="instructions">
-<summary>How to fill this in</summary>
-
-Set minimum deliberation periods for each decision type, and a ratification period for Constitutional changes.
-
-</details>
+*RCOS clauses: [8.1.2](https://rcos.ecohubs.community/standard/core/0.1/layer-6-evolution-adaptation#8.1.2), [8.7.1](https://rcos.ecohubs.community/standard/core/0.1/layer-6-evolution-adaptation#8.7.1)*
 
 - **Operational:** _<no deliberation required.>_
 - **Strategic:** _<minimum X-day deliberation; deliberation venue.>_
@@ -89,21 +47,7 @@ Set minimum deliberation periods for each decision type, and a ratification peri
 
 ## Adoption and Publication
 
-*RCOS clauses: [8.2.1](https://rcos.ecohubs.community/articles/rcos-core/v0-1/layer-6-evolution-adaptation#82-versioning-and-authority), [8.2.2](https://rcos.ecohubs.community/articles/rcos-core/v0-1/layer-6-evolution-adaptation#82-versioning-and-authority), [8.2.5](https://rcos.ecohubs.community/articles/rcos-core/v0-1/layer-6-evolution-adaptation#82-versioning-and-authority), [8.6.3](https://rcos.ecohubs.community/articles/rcos-core/v0-1/layer-6-evolution-adaptation#86-artifacts)*
-
-<details data-kind="rationale">
-<summary>Why fixed publication steps?</summary>
-
-A vote that passes but is never written down is the same as no vote at all — and worse, it creates a gap where whoever remembers the outcome gets to define it. Tight, ordered publication steps close that gap and make "what was adopted" a matter of record, not of memory.
-
-</details>
-
-<details data-kind="instructions">
-<summary>How to fill this in</summary>
-
-State the ordered steps that must run after a proposal passes. Include time bounds and the version-history obligation.
-
-</details>
+*RCOS clauses: [8.2.1](https://rcos.ecohubs.community/standard/core/0.1/layer-6-evolution-adaptation#8.2.1), [8.2.2](https://rcos.ecohubs.community/standard/core/0.1/layer-6-evolution-adaptation#8.2.2), [8.2.5](https://rcos.ecohubs.community/standard/core/0.1/layer-6-evolution-adaptation#8.2.5), [8.6.3](https://rcos.ecohubs.community/standard/core/0.1/layer-6-evolution-adaptation#8.6.3)*
 
 When a proposal passes:
 
@@ -114,21 +58,7 @@ When a proposal passes:
 
 ## Rejection
 
-*RCOS clauses: [8.2.2](https://rcos.ecohubs.community/articles/rcos-core/v0-1/layer-6-evolution-adaptation#82-versioning-and-authority), [8.2.4](https://rcos.ecohubs.community/articles/rcos-core/v0-1/layer-6-evolution-adaptation#82-versioning-and-authority)*
-
-<details data-kind="rationale">
-<summary>Why archive rejected proposals?</summary>
-
-Rejected ideas carry as much signal as accepted ones — they show what the community considered and declined. Keeping rejections filed and accessible prevents the same proposal from reappearing under a new name every six months and gives future members a view of the paths not taken.
-
-</details>
-
-<details data-kind="instructions">
-<summary>How to fill this in</summary>
-
-State the archive location for rejected proposals and the re-vote conditions for revisiting the question.
-
-</details>
+*RCOS clauses: [8.2.2](https://rcos.ecohubs.community/standard/core/0.1/layer-6-evolution-adaptation#8.2.2), [8.2.4](https://rcos.ecohubs.community/standard/core/0.1/layer-6-evolution-adaptation#8.2.4)*
 
 When a proposal is rejected:
 
@@ -138,21 +68,7 @@ When a proposal is rejected:
 
 ## Transition and Migration
 
-*RCOS clauses: [8.5.1](https://rcos.ecohubs.community/articles/rcos-core/v0-1/layer-6-evolution-adaptation#85-change-safety-and-reversibility), [8.5.2](https://rcos.ecohubs.community/articles/rcos-core/v0-1/layer-6-evolution-adaptation#85-change-safety-and-reversibility)*
-
-<details data-kind="rationale">
-<summary>Why protect existing rights during transitions?</summary>
-
-If new rules could silently rewrite existing agreements, membership would be meaningless — what you signed up for could be changed out from under you. Explicit transition rules guarantee that rights are not reduced retroactively and that people operating under the old rules are given time and notice before the ground shifts.
-
-</details>
-
-<details data-kind="instructions">
-<summary>How to fill this in</summary>
-
-State the rules protecting existing role holders, members, and records when a rule change takes effect.
-
-</details>
+*RCOS clauses: [8.5.1](https://rcos.ecohubs.community/standard/core/0.1/layer-6-evolution-adaptation#8.5.1), [8.5.2](https://rcos.ecohubs.community/standard/core/0.1/layer-6-evolution-adaptation#8.5.2)*
 
 When a rule change affects existing roles, agreements, or records:
 
@@ -163,41 +79,13 @@ When a rule change affects existing roles, agreements, or records:
 
 ## Rollback
 
-*RCOS clauses: [8.1.5](https://rcos.ecohubs.community/articles/rcos-core/v0-1/layer-6-evolution-adaptation#81-change-mechanisms), [8.5.1](https://rcos.ecohubs.community/articles/rcos-core/v0-1/layer-6-evolution-adaptation#85-change-safety-and-reversibility)*
-
-<details data-kind="rationale">
-<summary>Why make rollback symmetrical with adoption?</summary>
-
-A change that cannot be undone through the same path that created it is a trap. Requiring rollback to use the original decision type keeps the door open for correction without letting a single member quietly reverse a community-level decision by calling it a "fix."
-
-</details>
-
-<details data-kind="instructions">
-<summary>How to fill this in</summary>
-
-State that rollback uses the same decision type and process as the original adoption.
-
-</details>
+*RCOS clauses: [8.1.5](https://rcos.ecohubs.community/standard/core/0.1/layer-6-evolution-adaptation#8.1.5), [8.5.1](https://rcos.ecohubs.community/standard/core/0.1/layer-6-evolution-adaptation#8.5.1)*
 
 _<Any passed decision can be reversed through the same process as the original. Any Full Member may trigger a re-vote by submitting a written reasoned objection that was not considered during the original deliberation. Rollback uses the same decision type as the original.>_
 
 ## Emergency Changes
 
-*RCOS clauses: [8.5.3](https://rcos.ecohubs.community/articles/rcos-core/v0-1/layer-6-evolution-adaptation#85-change-safety-and-reversibility)*
-
-<details data-kind="rationale">
-<summary>Why allow emergency changes at all?</summary>
-
-Some harms unfold faster than a vote can be convened. A narrow, well-guarded emergency path lets the community respond to genuine safety or platform failures without handing anyone a general-purpose override. The mandatory report, review, and ratification-or-rollback cycle is what keeps emergency powers from becoming ordinary powers.
-
-</details>
-
-<details data-kind="instructions">
-<summary>How to fill this in</summary>
-
-Define the conditions under which an emergency change may be made, who can make it, and the mandatory report-review-ratify-or-rollback cycle.
-
-</details>
+*RCOS clauses: [8.5.3](https://rcos.ecohubs.community/standard/core/0.1/layer-6-evolution-adaptation#8.5.3)*
 
 An emergency operational change may be made by _<role>_ only if all of the following conditions are met:
 
@@ -213,21 +101,7 @@ Emergency changes must be:
 
 ## Experiments
 
-*RCOS clauses: [8.3.1](https://rcos.ecohubs.community/articles/rcos-core/v0-1/layer-6-evolution-adaptation#83-experiments), [8.3.2](https://rcos.ecohubs.community/articles/rcos-core/v0-1/layer-6-evolution-adaptation#83-experiments), [8.3.3](https://rcos.ecohubs.community/articles/rcos-core/v0-1/layer-6-evolution-adaptation#83-experiments), [8.3.4](https://rcos.ecohubs.community/articles/rcos-core/v0-1/layer-6-evolution-adaptation#83-experiments), [8.3.5](https://rcos.ecohubs.community/articles/rcos-core/v0-1/layer-6-evolution-adaptation#83-experiments), [8.7.3](https://rcos.ecohubs.community/articles/rcos-core/v0-1/layer-6-evolution-adaptation#87-layer-invariants)*
-
-<details data-kind="rationale">
-<summary>Why treat experiments as a distinct mechanism?</summary>
-
-The community needs a way to try new things without having to permanently adopt them to test them. Experiments create that space — but only if they are time-bounded, labeled, and auto-expiring. Without those guardrails, an "experiment" becomes the fastest way to install a permanent rule with no real deliberation.
-
-</details>
-
-<details data-kind="instructions">
-<summary>How to fill this in</summary>
-
-Define the rules every experiment must satisfy. Reference the Experiment Template for the full submission shape.
-
-</details>
+*RCOS clauses: [8.3.1](https://rcos.ecohubs.community/standard/core/0.1/layer-6-evolution-adaptation#8.3.1), [8.3.2](https://rcos.ecohubs.community/standard/core/0.1/layer-6-evolution-adaptation#8.3.2), [8.3.3](https://rcos.ecohubs.community/standard/core/0.1/layer-6-evolution-adaptation#8.3.3), [8.3.4](https://rcos.ecohubs.community/standard/core/0.1/layer-6-evolution-adaptation#8.3.4), [8.3.5](https://rcos.ecohubs.community/standard/core/0.1/layer-6-evolution-adaptation#8.3.5), [8.7.3](https://rcos.ecohubs.community/standard/core/0.1/layer-6-evolution-adaptation#8.7.3)*
 
 _<Any Full Member may propose a time-bounded experiment via Strategic decision. See the Experiment Template for the required fields.>_
 

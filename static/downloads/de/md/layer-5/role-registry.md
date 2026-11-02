@@ -2,34 +2,20 @@
 
 # Rollenverzeichnis
 
-- **Generiert:** 2026-08-31
+- **Generiert:** 2026-11-02
 - **Quelle (aktuelle Version):** [https://rcos.ecohubs.community/de/articles/rcos-templates/layer-5/role-registry](https://rcos.ecohubs.community/de/articles/rcos-templates/layer-5/role-registry)
 - **Alle RCOS-Vorlagen:** [https://rcos.ecohubs.community/de/articles/rcos-templates](https://rcos.ecohubs.community/de/articles/rcos-templates)
 
 ---
 - **Ebene:** 5 — Betrieb & Koordination
 - **Status:** Vorlage — an eure Gemeinschaft anpassen
-- **RCOS-Referenz:** [§7.1](https://rcos.ecohubs.community/de/articles/rcos-core/v0-1/layer-5-operations-coordination#71-roles-and-responsibilities), [§7.6](https://rcos.ecohubs.community/de/articles/rcos-core/v0-1/layer-5-operations-coordination#76-artifacts)
+- **RCOS-Referenz:** [§7.1](https://rcos.ecohubs.community/de/standard/core/0.1/layer-5-operations-coordination#7.1), [§7.6](https://rcos.ecohubs.community/de/standard/core/0.1/layer-5-operations-coordination#7.6)
 
 ---
 
 ## Überblick
 
-*RCOS-Klauseln: [7.1.1](https://rcos.ecohubs.community/de/articles/rcos-core/v0-1/layer-5-operations-coordination#71-roles-and-responsibilities), [7.1.2](https://rcos.ecohubs.community/de/articles/rcos-core/v0-1/layer-5-operations-coordination#71-roles-and-responsibilities), [7.1.4](https://rcos.ecohubs.community/de/articles/rcos-core/v0-1/layer-5-operations-coordination#71-roles-and-responsibilities), [7.7.1](https://rcos.ecohubs.community/de/articles/rcos-core/v0-1/layer-5-operations-coordination#77-layer-invariants)*
-
-<details data-kind="rationale">
-<summary>Warum muss jede Verantwortung einer benannten Rolle zugeordnet sein?</summary>
-
-Laufende Verantwortlichkeiten ohne explizite Rollen werden zu unsichtbarer Arbeit — erledigt von wem auch immer es auffällt, still hingenommen und unmöglich zu übergeben. Jede laufende Verantwortung zu einer benannten, rechenschaftspflichtigen Rolle zu machen, verhindert, dass die Gemeinschaft auf dem unbezahlten Wohlwollen einiger weniger Mitglieder läuft.
-
-</details>
-
-<details data-kind="instructions">
-<summary>Wie ihr das ausfüllt</summary>
-
-Unterscheidet operative Rollen (mit delegierter Autorität gemäß der Entscheidungsmatrix) von funktionalen Rollen (beitragsbezogen, ohne besondere Governance-Autorität). Legt die Definition von „in gutem Status" fest, die ihr für die Berechtigung verwenden werdet.
-
-</details>
+*RCOS-Klauseln: [7.1.1](https://rcos.ecohubs.community/de/standard/core/0.1/layer-5-operations-coordination#7.1.1), [7.1.2](https://rcos.ecohubs.community/de/standard/core/0.1/layer-5-operations-coordination#7.1.2), [7.1.4](https://rcos.ecohubs.community/de/standard/core/0.1/layer-5-operations-coordination#7.1.4), [7.7.1](https://rcos.ecohubs.community/de/standard/core/0.1/layer-5-operations-coordination#7.7.1)*
 
 Dieses Verzeichnis definiert alle anerkannten Rollen innerhalb der Gemeinschaft. Rollen sind entweder **operativ** (mit delegierter Autorität gemäß der Entscheidungsmatrix) oder **funktional** (beitragsbezogen, ohne besondere Governance-Autorität über die Rechte als Vollmitglied hinaus).
 
@@ -48,21 +34,7 @@ Dieses Verzeichnis definiert alle anerkannten Rollen innerhalb der Gemeinschaft.
 
 ## Operative Rollen
 
-*RCOS-Klauseln: [7.1.2](https://rcos.ecohubs.community/de/articles/rcos-core/v0-1/layer-5-operations-coordination#71-roles-and-responsibilities), [7.1.3](https://rcos.ecohubs.community/de/articles/rcos-core/v0-1/layer-5-operations-coordination#71-roles-and-responsibilities)*
-
-<details data-kind="rationale">
-<summary>Warum Rechenschaftspflicht für delegierte Autorität definieren?</summary>
-
-Operative Rollen tragen echte Macht — sie können innerhalb ihres Zuständigkeitsbereichs ohne Gemeinschaftsabstimmung handeln. Diese Macht bleibt nur sicher, wenn jede Rolle einen klaren Rechenschaftsmechanismus hat: Wer kann Bedenken äußern, wie läuft die Überprüfung ab, und wie kann eine Rolle neu besetzt werden, wenn das Vertrauen bricht.
-
-</details>
-
-<details data-kind="instructions">
-<summary>Wie ihr das ausfüllt</summary>
-
-Füllt für jede operative Rolle die untenstehende Vorlage mit konkretem Zuständigkeitsbereich, Entscheidungsbefugnis, Schnittstellen, Berechtigungskriterien, Amtszeit, Ernennung, Überprüfung/Abberufung und Übergabeanforderungen aus.
-
-</details>
+*RCOS-Klauseln: [7.1.2](https://rcos.ecohubs.community/de/standard/core/0.1/layer-5-operations-coordination#7.1.2), [7.1.3](https://rcos.ecohubs.community/de/standard/core/0.1/layer-5-operations-coordination#7.1.3)*
 
 Operative Rollen tragen delegierte Autorität, innerhalb explizit definierter Grenzen ohne Vollmitglieder-Abstimmung zu handeln, wie in der Entscheidungsmatrix (Schicht 2) festgelegt. Alle Inhaber\*innen operativer Rollen sind der Gesamtheit der Vollmitglieder rechenschaftspflichtig. Jedes Vollmitglied darf Bedenken darüber äußern, wie eine Rolle ausgeübt wird; eine Neubesetzung erfordert eine Strategische Abstimmung.
 
@@ -102,21 +74,7 @@ Operative Rollen tragen delegierte Autorität, innerhalb explizit definierter Gr
 
 ## Funktionale Rollen
 
-*RCOS-Klauseln: [7.1.1](https://rcos.ecohubs.community/de/articles/rcos-core/v0-1/layer-5-operations-coordination#71-roles-and-responsibilities), [7.1.2](https://rcos.ecohubs.community/de/articles/rcos-core/v0-1/layer-5-operations-coordination#71-roles-and-responsibilities)*
-
-<details data-kind="rationale">
-<summary>Warum funktionale von operativen Rollen trennen?</summary>
-
-Nicht jeder Beitrag braucht delegierte Autorität — die meiste Arbeit dreht sich ums Tun, nicht ums Entscheiden. Funktionale Rollen benennen Beitragsbereiche, ohne Governance-Macht zu bündeln, sodass Mitglieder sich in Arbeit einbringen können, ohne eine Autoritätsübertragung, und damit das Governance-System klar bleibt, wer im Namen der Gemeinschaft handeln darf.
-
-</details>
-
-<details data-kind="instructions">
-<summary>Wie ihr das ausfüllt</summary>
-
-Definiert für jede funktionale Rolle Zweck, Zuständigkeitsbereich, Schnittstellen, Berechtigung und Übergabe. Funktionale Rollen erfordern keine Abstimmung zur Übernahme — eine Erklärung genügt.
-
-</details>
+*RCOS-Klauseln: [7.1.1](https://rcos.ecohubs.community/de/standard/core/0.1/layer-5-operations-coordination#7.1.1), [7.1.2](https://rcos.ecohubs.community/de/standard/core/0.1/layer-5-operations-coordination#7.1.2)*
 
 Funktionale Rollen definieren den Beitragsbereich eines Mitglieds. Sie tragen keine delegierte Governance-Autorität über die Rechte als Vollmitglied hinaus. Jedes Vollmitglied kann eine funktionale Rolle durch Erklärung übernehmen; eine Abstimmung ist nicht erforderlich. Rollen können jederzeit durch Benachrichtigung niedergelegt werden.
 

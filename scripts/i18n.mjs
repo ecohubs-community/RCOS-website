@@ -35,6 +35,8 @@ export const DOWNLOADS_I18N = {
 			'This bundle contains every RCOS template, ready to copy and adapt for your community.',
 		bundleNote:
 			'Each template includes a rationale block (why the section exists) and instructions (how to fill it in).',
+		bundleNotePlain:
+			'These templates contain only what you fill in. The version with explanations adds a rationale (why each section exists) and instructions (how to fill it in); download it from the templates page.',
 		bundleSectionHeading: 'Templates'
 	},
 	de: {
@@ -54,6 +56,8 @@ export const DOWNLOADS_I18N = {
 			'Dieses Bündel enthält alle RCOS-Vorlagen, bereit zum Kopieren und Anpassen für eure Gemeinschaft.',
 		bundleNote:
 			'Jede Vorlage enthält einen Begründungsblock (warum der Abschnitt existiert) und eine Anleitung (wie er ausgefüllt wird).',
+		bundleNotePlain:
+			'Diese Vorlagen enthalten nur das, was ihr ausfüllt. Die Version mit Erläuterungen ergänzt eine Begründung (warum der Abschnitt existiert) und eine Anleitung (wie er ausgefüllt wird); ihr findet sie auf der Vorlagenseite.',
 		bundleSectionHeading: 'Vorlagen'
 	},
 	es: {
@@ -73,6 +77,8 @@ export const DOWNLOADS_I18N = {
 			'Este paquete contiene todas las plantillas RCOS, listas para copiar y adaptar a tu comunidad.',
 		bundleNote:
 			'Cada plantilla incluye un bloque de justificación (por qué existe la sección) e instrucciones (cómo rellenarla).',
+		bundleNotePlain:
+			'Estas plantillas contienen solo lo que hay que rellenar. La versión con explicaciones añade una justificación (por qué existe cada sección) e instrucciones (cómo rellenarla); se descarga desde la página de plantillas.',
 		bundleSectionHeading: 'Plantillas'
 	},
 	fr: {
@@ -92,6 +98,8 @@ export const DOWNLOADS_I18N = {
 			'Ce paquet contient tous les modèles RCOS, prêts à être copiés et adaptés à votre communauté.',
 		bundleNote:
 			'Chaque modèle inclut un bloc de justification (pourquoi la section existe) et des instructions (comment la remplir).',
+		bundleNotePlain:
+			'Ces modèles ne contiennent que ce que vous remplissez. La version avec explications ajoute une justification (pourquoi chaque section existe) et des instructions (comment la remplir) ; elle se télécharge depuis la page des modèles.',
 		bundleSectionHeading: 'Modèles'
 	},
 	'pt-br': {
@@ -111,6 +119,8 @@ export const DOWNLOADS_I18N = {
 			'Este pacote contém todos os modelos RCOS, prontos para copiar e adaptar à sua comunidade.',
 		bundleNote:
 			'Cada modelo inclui um bloco de justificativa (por que a seção existe) e instruções (como preenchê-la).',
+		bundleNotePlain:
+			'Estes modelos contêm apenas o que você vai preencher. A versão com explicações acrescenta uma justificativa (por que cada seção existe) e instruções (como preenchê-la); baixe-a na página de modelos.',
 		bundleSectionHeading: 'Modelos'
 	}
 };

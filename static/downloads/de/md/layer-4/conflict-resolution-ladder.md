@@ -2,34 +2,20 @@
 
 # Konfliktlösungsleiter
 
-- **Generiert:** 2026-08-31
+- **Generiert:** 2026-11-02
 - **Quelle (aktuelle Version):** [https://rcos.ecohubs.community/de/articles/rcos-templates/layer-4/conflict-resolution-ladder](https://rcos.ecohubs.community/de/articles/rcos-templates/layer-4/conflict-resolution-ladder)
 - **Alle RCOS-Vorlagen:** [https://rcos.ecohubs.community/de/articles/rcos-templates](https://rcos.ecohubs.community/de/articles/rcos-templates)
 
 ---
 - **Schicht:** 4 — Konflikt, Wiedergutmachung & Rechenschaftspflicht
 - **Status:** Vorlage — an deine Gemeinschaft anpassen
-- **RCOS-Referenz:** [§6.1](https://rcos.ecohubs.community/de/articles/rcos-core/v0-1/layer-4-conflict-repair-accountability#61-conflict-classification), [§6.2](https://rcos.ecohubs.community/de/articles/rcos-core/v0-1/layer-4-conflict-repair-accountability#62-resolution-pathways), [§6.3](https://rcos.ecohubs.community/de/articles/rcos-core/v0-1/layer-4-conflict-repair-accountability#63-safeguards), [§6.5](https://rcos.ecohubs.community/de/articles/rcos-core/v0-1/layer-4-conflict-repair-accountability#65-artifacts)
+- **RCOS-Referenz:** [§6.1](https://rcos.ecohubs.community/de/standard/core/0.1/layer-4-conflict-repair-accountability#6.1), [§6.2](https://rcos.ecohubs.community/de/standard/core/0.1/layer-4-conflict-repair-accountability#6.2), [§6.3](https://rcos.ecohubs.community/de/standard/core/0.1/layer-4-conflict-repair-accountability#6.3), [§6.5](https://rcos.ecohubs.community/de/standard/core/0.1/layer-4-conflict-repair-accountability#6.5)
 
 ---
 
 ## Konfliktklassifizierung
 
-*RCOS-Klauseln: [6.1.1](https://rcos.ecohubs.community/de/articles/rcos-core/v0-1/layer-4-conflict-repair-accountability#61-conflict-classification), [6.1.2](https://rcos.ecohubs.community/de/articles/rcos-core/v0-1/layer-4-conflict-repair-accountability#61-conflict-classification), [6.1.3](https://rcos.ecohubs.community/de/articles/rcos-core/v0-1/layer-4-conflict-repair-accountability#61-conflict-classification), [6.1.4](https://rcos.ecohubs.community/de/articles/rcos-core/v0-1/layer-4-conflict-repair-accountability#61-conflict-classification), [6.1.5](https://rcos.ecohubs.community/de/articles/rcos-core/v0-1/layer-4-conflict-repair-accountability#61-conflict-classification), [6.5.3](https://rcos.ecohubs.community/de/articles/rcos-core/v0-1/layer-4-conflict-repair-accountability#65-artifacts), [6.6.4](https://rcos.ecohubs.community/de/articles/rcos-core/v0-1/layer-4-conflict-repair-accountability#66-layer-invariants), [6.7.1](https://rcos.ecohubs.community/de/articles/rcos-core/v0-1/layer-4-conflict-repair-accountability#67-explicitness-rules)*
-
-<details data-kind="rationale">
-<summary>Warum Konflikte überhaupt klassifizieren?</summary>
-
-Ohne benannte Klassen wird jeder Streit gleich behandelt — oder schlimmer noch, je nach beteiligter Person unterschiedlich. Explizite Klassen legen den Einstiegspunkt, das Reaktionsfenster und den Dokumentationsaufwand von vornherein fest, sodass sicherheitskritische Angelegenheiten nicht stillschweigend über ein freundliches Gespräch abgehandelt und geringfügige Reibungen nicht zu einer formellen Überprüfung aufgebauscht werden können.
-
-</details>
-
-<details data-kind="instructions">
-<summary>Wie du das ausfüllst</summary>
-
-Lege für jede Klasse die Eintrittskriterien, die Einstiegsstufe in der Leiter, das anfängliche Reaktionsfenster und den Dokumentationsaufwand fest.
-
-</details>
+*RCOS-Klauseln: [6.1.1](https://rcos.ecohubs.community/de/standard/core/0.1/layer-4-conflict-repair-accountability#6.1.1), [6.1.2](https://rcos.ecohubs.community/de/standard/core/0.1/layer-4-conflict-repair-accountability#6.1.2), [6.1.3](https://rcos.ecohubs.community/de/standard/core/0.1/layer-4-conflict-repair-accountability#6.1.3), [6.1.4](https://rcos.ecohubs.community/de/standard/core/0.1/layer-4-conflict-repair-accountability#6.1.4), [6.1.5](https://rcos.ecohubs.community/de/standard/core/0.1/layer-4-conflict-repair-accountability#6.1.5), [6.5.3](https://rcos.ecohubs.community/de/standard/core/0.1/layer-4-conflict-repair-accountability#6.5.3), [6.6.4](https://rcos.ecohubs.community/de/standard/core/0.1/layer-4-conflict-repair-accountability#6.6.4), [6.7.1](https://rcos.ecohubs.community/de/standard/core/0.1/layer-4-conflict-repair-accountability#6.7.1)*
 
 | Klasse | Eintrittskriterien | Einstiegspunkt | Anfängliches Reaktionsfenster | Dokumentation |
 |---|---|---|---|---|
@@ -43,21 +29,7 @@ Lege für jede Klasse die Eintrittskriterien, die Einstiegsstufe in der Leiter, 
 
 ## Stufen der Lösungsleiter
 
-*RCOS-Klauseln: [6.2.1](https://rcos.ecohubs.community/de/articles/rcos-core/v0-1/layer-4-conflict-repair-accountability#62-resolution-pathways), [6.2.2](https://rcos.ecohubs.community/de/articles/rcos-core/v0-1/layer-4-conflict-repair-accountability#62-resolution-pathways), [6.2.3](https://rcos.ecohubs.community/de/articles/rcos-core/v0-1/layer-4-conflict-repair-accountability#62-resolution-pathways), [6.2.4](https://rcos.ecohubs.community/de/articles/rcos-core/v0-1/layer-4-conflict-repair-accountability#62-resolution-pathways), [6.2.5](https://rcos.ecohubs.community/de/articles/rcos-core/v0-1/layer-4-conflict-repair-accountability#62-resolution-pathways), [6.5.3](https://rcos.ecohubs.community/de/articles/rcos-core/v0-1/layer-4-conflict-repair-accountability#65-artifacts), [6.6.1](https://rcos.ecohubs.community/de/articles/rcos-core/v0-1/layer-4-conflict-repair-accountability#66-layer-invariants)*
-
-<details data-kind="rationale">
-<summary>Warum eine abgestufte Leiter statt eines einzigen Prozesses?</summary>
-
-Die meisten Konflikte sind niedrigschwellig und lassen sich am besten zwischen den Beteiligten lösen; alles in eine formelle Überprüfung zu zwingen würde Vertrauen zerstören und das Governance-System überfluten. Eine Leiter passt den Prozessaufwand an das Streitgewicht an — zuerst ein privates Gespräch, dann ein moderierter Dialog, eine schriftliche Dokumentation nur bei Bedarf, eine Governance-Abstimmung nur wenn alles andere scheitert. Ausserdem wird die Eskalation zu einem strukturellen Recht, statt einem Gefallen, der von der Person mit der meisten sozialen Macht gewährt wird.
-
-</details>
-
-<details data-kind="instructions">
-<summary>Wie du das ausfüllst</summary>
-
-Definiere jede Leiterstufe: wer beteiligt ist, was passiert, das Zeitfenster und die Eskalationsregel. Halte die frühen Stufen leicht und vertraulich; reserviere die formelle Überprüfung für spätere Stufen.
-
-</details>
+*RCOS-Klauseln: [6.2.1](https://rcos.ecohubs.community/de/standard/core/0.1/layer-4-conflict-repair-accountability#6.2.1), [6.2.2](https://rcos.ecohubs.community/de/standard/core/0.1/layer-4-conflict-repair-accountability#6.2.2), [6.2.3](https://rcos.ecohubs.community/de/standard/core/0.1/layer-4-conflict-repair-accountability#6.2.3), [6.2.4](https://rcos.ecohubs.community/de/standard/core/0.1/layer-4-conflict-repair-accountability#6.2.4), [6.2.5](https://rcos.ecohubs.community/de/standard/core/0.1/layer-4-conflict-repair-accountability#6.2.5), [6.5.3](https://rcos.ecohubs.community/de/standard/core/0.1/layer-4-conflict-repair-accountability#6.5.3), [6.6.1](https://rcos.ecohubs.community/de/standard/core/0.1/layer-4-conflict-repair-accountability#6.6.1)*
 
 1. **Direktes Gespräch** — _<Parteien versuchen, die Sache privat zu klären; Zeitfenster; Ergebnisregeln.>_
 2. **Moderierter Dialog** — _<Moderator*in leitet das Gespräch; Vertraulichkeit; Zeitfenster; Ergebnisregeln.>_
@@ -68,21 +40,7 @@ Definiere jede Leiterstufe: wer beteiligt ist, was passiert, das Zeitfenster und
 
 ## Nichtreaktion, Rückzug und Pattsituation
 
-*RCOS-Klauseln: [6.2.5](https://rcos.ecohubs.community/de/articles/rcos-core/v0-1/layer-4-conflict-repair-accountability#62-resolution-pathways), [6.1.5](https://rcos.ecohubs.community/de/articles/rcos-core/v0-1/layer-4-conflict-repair-accountability#61-conflict-classification)*
-
-<details data-kind="rationale">
-<summary>Was verhindert, dass ein Prozess durch Schweigen sabotiert wird?</summary>
-
-Der einfachste Weg, jeden Rechenschaftsprozess auszuhebeln, ist ihn zu ignorieren. Wenn Nichtreaktion, Rückzug oder Pattsituation die Angelegenheit einfriert, trägt die geschädigte Partei die Kosten der Untätigkeit. Explizite Regeln für jeden Ausfallmodus verwandeln Schweigen in einen dokumentierten Eskalationsauslöser statt in ein Veto.
-
-</details>
-
-<details data-kind="instructions">
-<summary>Wie du das ausfüllst</summary>
-
-Definiere, wie Nichtreaktion, Rückzug während des Prozesses, Pattsituationen und Verfahrensfehler behandelt werden. Jeder Fall sollte einen dokumentierten Eskalationspfad haben.
-
-</details>
+*RCOS-Klauseln: [6.2.5](https://rcos.ecohubs.community/de/standard/core/0.1/layer-4-conflict-repair-accountability#6.2.5), [6.1.5](https://rcos.ecohubs.community/de/standard/core/0.1/layer-4-conflict-repair-accountability#6.1.5)*
 
 **Wenn eine Partei nicht innerhalb des definierten Zeitfensters reagiert:**
 - _<Folgebenachrichtigung; zusätzliche Nachfrist; Behandlung anhaltenden Schweigens als Nichtlösung; Eskalationsregel.>_
@@ -100,21 +58,7 @@ Definiere, wie Nichtreaktion, Rückzug während des Prozesses, Pattsituationen u
 
 ## Auswahl und Ersetzung der Moderation
 
-*RCOS-Klauseln: [6.3.1](https://rcos.ecohubs.community/de/articles/rcos-core/v0-1/layer-4-conflict-repair-accountability#63-safeguards), [6.3.3](https://rcos.ecohubs.community/de/articles/rcos-core/v0-1/layer-4-conflict-repair-accountability#63-safeguards)*
-
-<details data-kind="rationale">
-<summary>Warum festlegen, wie die Moderation ausgewählt oder ersetzt wird?</summary>
-
-Eine moderierende Person, die selbst in den Konflikt verwickelt ist — oder sozial einer Partei nahesteht — kann den Prozess nicht fair führen, egal wie gut ihre Absichten sind. Auswahl- und Ersetzungsregeln vorab festzulegen bedeutet, dass die betroffene Partei nicht um ein neutrales Verfahren kämpfen muss, während sie ohnehin unter Stress steht.
-
-</details>
-
-<details data-kind="instructions">
-<summary>Wie du das ausfüllst</summary>
-
-Lege die standardmässige Moderationsrolle fest, die Regel für den Fall, dass die moderierende Person selbst Partei ist, das Ablehnungsrecht und eine optionale externe Moderation.
-
-</details>
+*RCOS-Klauseln: [6.3.1](https://rcos.ecohubs.community/de/standard/core/0.1/layer-4-conflict-repair-accountability#6.3.1), [6.3.3](https://rcos.ecohubs.community/de/standard/core/0.1/layer-4-conflict-repair-accountability#6.3.3)*
 
 - _<Standard-Moderationsrolle gemäss dem Rollenverzeichnis.>_
 - _<Regel für den Fall, dass die moderierende Person selbst Partei ist — Auswahl einer neutralen Vertretung.>_
@@ -123,21 +67,7 @@ Lege die standardmässige Moderationsrolle fest, die Regel für den Fall, dass d
 
 ## Datenschutz und Informationszugangsgrenzen
 
-*RCOS-Klauseln: [6.5.3](https://rcos.ecohubs.community/de/articles/rcos-core/v0-1/layer-4-conflict-repair-accountability#65-artifacts)*
-
-<details data-kind="rationale">
-<summary>Warum den Informationsfluss so streng begrenzen?</summary>
-
-Konfliktakten enthalten das sensibelste Material, über das die Gemeinschaft verfügt. Durchsickern, Klatsch oder beiläufige Weitergabe verursachen Folgeschäden und schrecken vor zukünftigen Meldungen ab. Explizite Grenzen — was bei den Parteien bleibt, was die Vollmitglieder erfahren und wann Akten vernichtet werden — machen Vertraulichkeit durchsetzbar statt nur wünschenswert.
-
-</details>
-
-<details data-kind="instructions">
-<summary>Wie du das ausfüllst</summary>
-
-Lege fest, welche Stufen vollständig vertraulich sind, welche Mindestinformationen in der Governance-Stufe offengelegt werden dürfen, die Aufbewahrungsfrist und die Verschwiegenheitspflicht.
-
-</details>
+*RCOS-Klauseln: [6.5.3](https://rcos.ecohubs.community/de/standard/core/0.1/layer-4-conflict-repair-accountability#6.5.3)*
 
 - _<Stufen 1–4: vollständig vertraulich; nur Parteien und Moderation haben Zugang zu den Akten.>_
 - _<Stufen 5–6: minimalnotwendige Informationen werden den Vollmitgliedern offengelegt; Parteien werden vor der Offenlegung benachrichtigt. Definiere, was „minimalnotwendig" bedeutet.>_
@@ -146,21 +76,7 @@ Lege fest, welche Stufen vollständig vertraulich sind, welche Mindestinformatio
 
 ## Schutzmassnahmen
 
-*RCOS-Klauseln: [6.3.1](https://rcos.ecohubs.community/de/articles/rcos-core/v0-1/layer-4-conflict-repair-accountability#63-safeguards), [6.3.2](https://rcos.ecohubs.community/de/articles/rcos-core/v0-1/layer-4-conflict-repair-accountability#63-safeguards), [6.3.3](https://rcos.ecohubs.community/de/articles/rcos-core/v0-1/layer-4-conflict-repair-accountability#63-safeguards), [6.3.4](https://rcos.ecohubs.community/de/articles/rcos-core/v0-1/layer-4-conflict-repair-accountability#63-safeguards), [6.3.5](https://rcos.ecohubs.community/de/articles/rcos-core/v0-1/layer-4-conflict-repair-accountability#63-safeguards), [6.6.2](https://rcos.ecohubs.community/de/articles/rcos-core/v0-1/layer-4-conflict-repair-accountability#66-layer-invariants)*
-
-<details data-kind="rationale">
-<summary>Warum gibt es Schutzmassnahmen zusätzlich zur Leiter?</summary>
-
-Ein Prozess allein schützt nicht die Partei mit weniger Macht. Vergeltung, böswillige Beschwerden, befangene Moderation und ungeprüfte Sicherheitsrisiken können ein ansonsten gutes Verfahren aushebeln. Schutzmassnahmen sind die Sicherheitsnetze, die die Leiter funktionsfähig halten, wenn Anreize gegen ehrliche Meldungen wirken.
-
-</details>
-
-<details data-kind="instructions">
-<summary>Wie du das ausfüllst</summary>
-
-Lege für jede Schutzmassnahme die Regel und die Konsequenz bei Verstoss fest. Fälle mit Machtgefälle benötigen einen eigenen Eingangskanal.
-
-</details>
+*RCOS-Klauseln: [6.3.1](https://rcos.ecohubs.community/de/standard/core/0.1/layer-4-conflict-repair-accountability#6.3.1), [6.3.2](https://rcos.ecohubs.community/de/standard/core/0.1/layer-4-conflict-repair-accountability#6.3.2), [6.3.3](https://rcos.ecohubs.community/de/standard/core/0.1/layer-4-conflict-repair-accountability#6.3.3), [6.3.4](https://rcos.ecohubs.community/de/standard/core/0.1/layer-4-conflict-repair-accountability#6.3.4), [6.3.5](https://rcos.ecohubs.community/de/standard/core/0.1/layer-4-conflict-repair-accountability#6.3.5), [6.6.2](https://rcos.ecohubs.community/de/standard/core/0.1/layer-4-conflict-repair-accountability#6.6.2)*
 
 - **Vergeltungsschutz:** _<Vergeltung gegen ein Mitglied, das in gutem Glauben einen Konflikt meldet, ist selbst Grund für ein Rechenschaftsverfahren.>_
 - **Böswillige Beschwerden:** _<Vorsätzlich falsche Beschwerden können ein Rechenschaftsverfahren gegen die beschwerdeführende Person auslösen.>_

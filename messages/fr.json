@@ -130,6 +130,7 @@
 	"downloads_bundle_fallback": "Aucune traduction encore disponible pour cette langue — le paquet est servi en {served}.",
 	"downloads_template_fallback_inline": "Pas encore traduit — le fichier est servi en {served}.",
 	"downloads_template_fallback_tooltip": "Pas encore traduit dans la langue sélectionnée — remplacé par la version anglaise.",
+	"downloads_include_explanations": "Inclure les explications et instructions",
 	"footer_link_about_us": "À propos de nous",
 	"footer_link_join_us": "Rejoignez-nous",
 	"footer_link_github": "GitHub",

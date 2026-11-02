@@ -2,14 +2,14 @@
 
 # Matrice de décision
 
-- **Généré:** 2026-08-31
+- **Généré:** 2026-11-02
 - **Source (version la plus récente):** [https://rcos.ecohubs.community/fr/articles/rcos-templates/layer-2/decision-matrix](https://rcos.ecohubs.community/fr/articles/rcos-templates/layer-2/decision-matrix)
 - **Tous les modèles RCOS:** [https://rcos.ecohubs.community/fr/articles/rcos-templates](https://rcos.ecohubs.community/fr/articles/rcos-templates)
 
 ---
 - **Couche :** 2 — Gouvernance et logique de décision
 - **Statut :** Modèle — à adapter pour ta communauté
-- **Référence RCOS :** [§4.2](https://rcos.ecohubs.community/fr/articles/rcos-core/v0-1/layer-2-governance-decision-logic#42-decision-mechanisms), [§4.4](https://rcos.ecohubs.community/fr/articles/rcos-core/v0-1/layer-2-governance-decision-logic#44-decision-matrix), [§4.7](https://rcos.ecohubs.community/fr/articles/rcos-core/v0-1/layer-2-governance-decision-logic#47-artifacts)
+- **Référence RCOS :** [§4.2](https://rcos.ecohubs.community/fr/standard/core/0.1/layer-2-governance-decision-logic#4.2), [§4.4](https://rcos.ecohubs.community/fr/standard/core/0.1/layer-2-governance-decision-logic#4.4), [§4.7](https://rcos.ecohubs.community/fr/standard/core/0.1/layer-2-governance-decision-logic#4.7)
 
 > Associe chaque type et domaine de décision à un rôle ou organe autorisé, un mécanisme, un seuil et un chemin d'escalade. Toute décision prise en dehors de cette matrice est considérée comme invalide.
 
@@ -17,21 +17,7 @@
 
 ## Principes de vote
 
-*Clauses RCOS : [4.2.1](https://rcos.ecohubs.community/fr/articles/rcos-core/v0-1/layer-2-governance-decision-logic#42-decision-mechanisms), [4.2.2](https://rcos.ecohubs.community/fr/articles/rcos-core/v0-1/layer-2-governance-decision-logic#42-decision-mechanisms), [4.2.3](https://rcos.ecohubs.community/fr/articles/rcos-core/v0-1/layer-2-governance-decision-logic#42-decision-mechanisms), [4.2.4](https://rcos.ecohubs.community/fr/articles/rcos-core/v0-1/layer-2-governance-decision-logic#42-decision-mechanisms)*
-
-<details data-kind="rationale">
-<summary>Pourquoi fixer le mécanisme, le seuil et le calendrier ?</summary>
-
-Un vote sans mécanisme, seuil et délai de délibération prédéfinis est une invitation à fabriquer des résultats après coup — celui qui compte les votes ou fixe l'horloge gagne. Déclarer ces paramètres à l'avance rend chaque décision collective reproductible et contestable selon les mêmes conditions, indépendamment de qui est présent.
-
-</details>
-
-<details data-kind="instructions">
-<summary>Comment remplir cette section</summary>
-
-Indique la plateforme de vote, le seuil pour chaque type de décision, la période de délibération, la règle en cas d'égalité, la règle de revote et toute limite de dépense ou de périmètre en cas d'autorité déléguée.
-
-</details>
+*Clauses RCOS : [4.2.1](https://rcos.ecohubs.community/fr/standard/core/0.1/layer-2-governance-decision-logic#4.2.1), [4.2.2](https://rcos.ecohubs.community/fr/standard/core/0.1/layer-2-governance-decision-logic#4.2.2), [4.2.3](https://rcos.ecohubs.community/fr/standard/core/0.1/layer-2-governance-decision-logic#4.2.3), [4.2.4](https://rcos.ecohubs.community/fr/standard/core/0.1/layer-2-governance-decision-logic#4.2.4)*
 
 - **Plateforme de vote :** _<p. ex. Snapshot, Loomio, consensus en présentiel.>_
 - **Seuil opérationnel :** _<p. ex. aucun vote requis — délégué au titulaire du rôle opérationnel concerné selon le Registre des rôles.>_
@@ -47,21 +33,7 @@ Indique la plateforme de vote, le seuil pour chaque type de décision, la pério
 
 ## Matrice
 
-*Clauses RCOS : [4.4.1](https://rcos.ecohubs.community/fr/articles/rcos-core/v0-1/layer-2-governance-decision-logic#44-decision-matrix), [4.4.2](https://rcos.ecohubs.community/fr/articles/rcos-core/v0-1/layer-2-governance-decision-logic#44-decision-matrix), [4.4.3](https://rcos.ecohubs.community/fr/articles/rcos-core/v0-1/layer-2-governance-decision-logic#44-decision-matrix), [4.4.4](https://rcos.ecohubs.community/fr/articles/rcos-core/v0-1/layer-2-governance-decision-logic#44-decision-matrix)*
-
-<details data-kind="rationale">
-<summary>Pourquoi une matrice unique faisant autorité ?</summary>
-
-Si les règles qui déterminent qui décide de quoi ne vivent que dans la tête des gens, l'autorité devient ce que la personne la plus bruyante ou la plus ancienne dit qu'elle est. Une matrice publique qui lie chaque décision à un domaine, un organe, un mécanisme et un seuil rend toute action hors périmètre visible dès qu'elle se produit — et rend invalide par construction toute décision prise en dehors d'elle.
-
-</details>
-
-<details data-kind="instructions">
-<summary>Comment remplir cette section</summary>
-
-Pour chaque domaine de décision (adhésion, trésorerie, plateforme, partenariats, gouvernance, etc.), définis le type de décision, l'organe autorisé, les personnes éligibles à participer, le mécanisme, le seuil, les conditions de blocage et le chemin d'escalade.
-
-</details>
+*Clauses RCOS : [4.4.1](https://rcos.ecohubs.community/fr/standard/core/0.1/layer-2-governance-decision-logic#4.4.1), [4.4.2](https://rcos.ecohubs.community/fr/standard/core/0.1/layer-2-governance-decision-logic#4.4.2), [4.4.3](https://rcos.ecohubs.community/fr/standard/core/0.1/layer-2-governance-decision-logic#4.4.3), [4.4.4](https://rcos.ecohubs.community/fr/standard/core/0.1/layer-2-governance-decision-logic#4.4.4)*
 
 | Domaine de décision | Type de décision | Organe autorisé | Participants éligibles | Mécanisme | Seuil | Conditions de blocage / veto | Escalade |
 |---|---|---|---|---|---|---|---|
@@ -75,21 +47,7 @@ Pour chaque domaine de décision (adhésion, trésorerie, plateforme, partenaria
 
 ## Définitions des types de décision
 
-*Clauses RCOS : [4.1.1](https://rcos.ecohubs.community/fr/articles/rcos-core/v0-1/layer-2-governance-decision-logic#41-decision-types), [4.1.2](https://rcos.ecohubs.community/fr/articles/rcos-core/v0-1/layer-2-governance-decision-logic#41-decision-types), [4.1.3](https://rcos.ecohubs.community/fr/articles/rcos-core/v0-1/layer-2-governance-decision-logic#41-decision-types), [4.1.4](https://rcos.ecohubs.community/fr/articles/rcos-core/v0-1/layer-2-governance-decision-logic#41-decision-types), [4.1.5](https://rcos.ecohubs.community/fr/articles/rcos-core/v0-1/layer-2-governance-decision-logic#41-decision-types)*
-
-<details data-kind="rationale">
-<summary>Pourquoi classifier chaque décision ?</summary>
-
-Sans type, chaque décision est traitée à la vitesse et avec le niveau de scrutin qui convient sur le moment — les changements de routine s'enlisent dans des débats, et les modifications constitutionnelles passent inaperçues. Des types fixes lient le poids d'une décision au processus qu'elle DOIT traverser, et la règle du défaut vers le haut comble la faille que l'ambiguïté permettrait autrement d'exploiter.
-
-</details>
-
-<details data-kind="instructions">
-<summary>Comment remplir cette section</summary>
-
-Définis chaque type de décision en précisant ce qu'il couvre, qui l'exécute, quel processus il requiert et comment les litiges de classification sont résolus.
-
-</details>
+*Clauses RCOS : [4.1.1](https://rcos.ecohubs.community/fr/standard/core/0.1/layer-2-governance-decision-logic#4.1.1), [4.1.2](https://rcos.ecohubs.community/fr/standard/core/0.1/layer-2-governance-decision-logic#4.1.2), [4.1.3](https://rcos.ecohubs.community/fr/standard/core/0.1/layer-2-governance-decision-logic#4.1.3), [4.1.4](https://rcos.ecohubs.community/fr/standard/core/0.1/layer-2-governance-decision-logic#4.1.4), [4.1.5](https://rcos.ecohubs.community/fr/standard/core/0.1/layer-2-governance-decision-logic#4.1.5)*
 
 - **Opérationnel** — _<fonctionnement quotidien dans le cadre des règles existantes ; exécuté par le titulaire du rôle concerné sans vote.>_
 - **Stratégique** — _<orientation à long terme, allocation significative de ressources, création/suppression de structures majeures ; requiert un vote des Membres titulaires avec une période de délibération définie.>_

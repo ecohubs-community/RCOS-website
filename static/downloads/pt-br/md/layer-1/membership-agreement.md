@@ -2,14 +2,14 @@
 
 # Acordo de Associação
 
-- **Gerado em:** 2026-08-31
+- **Gerado em:** 2026-11-02
 - **Fonte (versão mais recente):** [https://rcos.ecohubs.community/pt-br/articles/rcos-templates/layer-1/membership-agreement](https://rcos.ecohubs.community/pt-br/articles/rcos-templates/layer-1/membership-agreement)
 - **Todos os modelos RCOS:** [https://rcos.ecohubs.community/pt-br/articles/rcos-templates](https://rcos.ecohubs.community/pt-br/articles/rcos-templates)
 
 ---
 - **Camada:** 1 — Sistema de Associação
 - **Status:** Modelo — adapte para a sua comunidade
-- **Referência RCOS:** [§3.4](https://rcos.ecohubs.community/pt-br/articles/rcos-core/v0-1/layer-1-membership-system#34-rights-and-obligations), [§3.5](https://rcos.ecohubs.community/pt-br/articles/rcos-core/v0-1/layer-1-membership-system#35-participation-and-contribution), [§3.8](https://rcos.ecohubs.community/pt-br/articles/rcos-core/v0-1/layer-1-membership-system#38-artifacts)
+- **Referência RCOS:** [§3.4](https://rcos.ecohubs.community/pt-br/standard/core/0.1/layer-1-membership-system#3.4), [§3.5](https://rcos.ecohubs.community/pt-br/standard/core/0.1/layer-1-membership-system#3.5), [§3.8](https://rcos.ecohubs.community/pt-br/standard/core/0.1/layer-1-membership-system#3.8)
 
 > Assinado (ou explicitamente reconhecido) por cada membro no momento da admissão. Define os direitos e obrigações de cada estado de associação.
 
@@ -17,41 +17,13 @@
 
 ## Estado de Associação na Assinatura
 
-*Cláusulas RCOS: [3.1.2](https://rcos.ecohubs.community/pt-br/articles/rcos-core/v0-1/layer-1-membership-system#31-membership-states), [3.1.4](https://rcos.ecohubs.community/pt-br/articles/rcos-core/v0-1/layer-1-membership-system#31-membership-states)*
-
-<details data-kind="rationale">
-<summary>Por que declarar o estado na assinatura?</summary>
-
-A associação não é um único binário. Uma pessoa que está entrando precisa saber exatamente em qual estado está ingressando — Experimental ou Pleno — porque o estado determina o que ela pode fazer e o que se espera dela. Nomeá-lo no momento do consentimento evita ambiguidade posterior sobre aquilo com que ela realmente concordou.
-
-</details>
-
-<details data-kind="instructions">
-<summary>Como preencher esta seção</summary>
-
-Indique em qual(is) estado(s) de associação um novo membro entra no momento da assinatura (por exemplo, Membro Experimental, Membro Pleno ou qualquer estado personalizado definido no Registro de Estados de Associação).
-
-</details>
+*Cláusulas RCOS: [3.1.2](https://rcos.ecohubs.community/pt-br/standard/core/0.1/layer-1-membership-system#3.1.2), [3.1.4](https://rcos.ecohubs.community/pt-br/standard/core/0.1/layer-1-membership-system#3.1.4)*
 
 _<Estado de associação atribuído na assinatura — por exemplo, Membro Experimental na aprovação da candidatura; Membro Pleno na conclusão da integração.>_
 
 ## Direitos dos Membros
 
-*Cláusulas RCOS: [3.4.1](https://rcos.ecohubs.community/pt-br/articles/rcos-core/v0-1/layer-1-membership-system#34-rights-and-obligations), [3.4.3](https://rcos.ecohubs.community/pt-br/articles/rcos-core/v0-1/layer-1-membership-system#34-rights-and-obligations), [3.4.4](https://rcos.ecohubs.community/pt-br/articles/rcos-core/v0-1/layer-1-membership-system#34-rights-and-obligations)*
-
-<details data-kind="rationale">
-<summary>Por que enumerar os direitos explicitamente?</summary>
-
-Direitos que não estão escritos são direitos que podem ser silenciosamente retirados. Enumerá-los torna os compromissos da comunidade legíveis, exigíveis e simétricos em relação às obrigações que se pede aos membros que carreguem. Sem essa lista, as obrigações se tornam exigências em aberto, sem proteção recíproca.
-
-</details>
-
-<details data-kind="instructions">
-<summary>Como preencher esta seção</summary>
-
-Liste direitos concretos concedidos a cada estado de associação. Faça referência à Matriz de Decisão (Camada 2) para os direitos de voto, ao Registro de Papéis (Camada 5) para a elegibilidade a papéis e à Camada 4 para as garantias de devido processo.
-
-</details>
+*Cláusulas RCOS: [3.4.1](https://rcos.ecohubs.community/pt-br/standard/core/0.1/layer-1-membership-system#3.4.1), [3.4.3](https://rcos.ecohubs.community/pt-br/standard/core/0.1/layer-1-membership-system#3.4.3), [3.4.4](https://rcos.ecohubs.community/pt-br/standard/core/0.1/layer-1-membership-system#3.4.4)*
 
 1. _<Direito 1, por exemplo, o direito de votar em todas as decisões definidas na Matriz de Decisão.>_
 2. _<Direito 2, por exemplo, o direito de acessar todos os canais exclusivos para membros, chamadas e registros da comunidade.>_
@@ -64,21 +36,7 @@ Liste direitos concretos concedidos a cada estado de associação. Faça referê
 
 ## Obrigações dos Membros
 
-*Cláusulas RCOS: [3.4.2](https://rcos.ecohubs.community/pt-br/articles/rcos-core/v0-1/layer-1-membership-system#34-rights-and-obligations), [3.4.4](https://rcos.ecohubs.community/pt-br/articles/rcos-core/v0-1/layer-1-membership-system#34-rights-and-obligations), [3.4.5](https://rcos.ecohubs.community/pt-br/articles/rcos-core/v0-1/layer-1-membership-system#34-rights-and-obligations)*
-
-<details data-kind="rationale">
-<summary>Por que delimitar as obrigações com firmeza?</summary>
-
-Obrigações em aberto são o caminho pelo qual as comunidades escorregam para a exploração — "contribua mais", "esteja disponível", "apareça" sem nenhum limite definido. Listar as obrigações de forma discreta, e amarrar cada uma a um direito correspondente, mantém o pedido delimitado e contestável. Um membro precisa sempre conseguir distinguir se está cumprindo o acordo ou se está sendo demandado para algo além dele.
-
-</details>
-
-<details data-kind="instructions">
-<summary>Como preencher esta seção</summary>
-
-Liste obrigações concretas e delimitadas. Cada obrigação deve ser verificável: um membro precisa conseguir saber se está cumprindo-a. Evite deveres vagos.
-
-</details>
+*Cláusulas RCOS: [3.4.2](https://rcos.ecohubs.community/pt-br/standard/core/0.1/layer-1-membership-system#3.4.2), [3.4.4](https://rcos.ecohubs.community/pt-br/standard/core/0.1/layer-1-membership-system#3.4.4), [3.4.5](https://rcos.ecohubs.community/pt-br/standard/core/0.1/layer-1-membership-system#3.4.5)*
 
 1. _<Obrigação 1, por exemplo, aderir a todas as restrições e invariantes de identidade da Camada 0 em todos os momentos.>_
 2. _<Obrigação 2, por exemplo, contribuir para a comunidade em pelo menos uma categoria reconhecida por período definido.>_
@@ -90,21 +48,7 @@ Liste obrigações concretas e delimitadas. Cada obrigação deve ser verificáv
 
 ## Expectativas de Participação e Contribuição
 
-*Cláusulas RCOS: [3.5.1](https://rcos.ecohubs.community/pt-br/articles/rcos-core/v0-1/layer-1-membership-system#35-participation-and-contribution), [3.5.2](https://rcos.ecohubs.community/pt-br/articles/rcos-core/v0-1/layer-1-membership-system#35-participation-and-contribution), [3.5.3](https://rcos.ecohubs.community/pt-br/articles/rcos-core/v0-1/layer-1-membership-system#35-participation-and-contribution), [3.5.4](https://rcos.ecohubs.community/pt-br/articles/rcos-core/v0-1/layer-1-membership-system#35-participation-and-contribution)*
-
-<details data-kind="rationale">
-<summary>Por que definir a participação em números?</summary>
-
-"Membro ativo" não significa nada sem um limite. Um mínimo definido — em tempo, categoria e cadência — transforma a participação de uma sensação em um fato, de modo que ninguém precisa adivinhar se está em boa situação, e ninguém pode ser acusado de afastamento sem evidências. Isso também torna visível, cedo o suficiente para se agir, a linha entre uma ausência genuína e um abandono silencioso.
-
-</details>
-
-<details data-kind="instructions">
-<summary>Como preencher esta seção</summary>
-
-Indique um mínimo mensurável (frequência × categoria), regras de substituição e ausência, e o gatilho que move um membro não participante para um processo da Camada 4.
-
-</details>
+*Cláusulas RCOS: [3.5.1](https://rcos.ecohubs.community/pt-br/standard/core/0.1/layer-1-membership-system#3.5.1), [3.5.2](https://rcos.ecohubs.community/pt-br/standard/core/0.1/layer-1-membership-system#3.5.2), [3.5.3](https://rcos.ecohubs.community/pt-br/standard/core/0.1/layer-1-membership-system#3.5.3), [3.5.4](https://rcos.ecohubs.community/pt-br/standard/core/0.1/layer-1-membership-system#3.5.4)*
 
 - **Contribuição mínima:** _<por exemplo, pelo menos uma contribuição reconhecida a cada 6 meses, em qualquer categoria reconhecida.>_
 - **Categorias reconhecidas:** _<faça referência ao Protocolo de Economia Interna (Camada 3).>_
@@ -114,41 +58,13 @@ Indique um mínimo mensurável (frequência × categoria), regras de substituiç
 
 ## Referência ao Devido Processo
 
-*Cláusulas RCOS: [3.6.3](https://rcos.ecohubs.community/pt-br/articles/rcos-core/v0-1/layer-1-membership-system#36-exit-and-separation)*
-
-<details data-kind="rationale">
-<summary>Por que reafirmar o devido processo aqui?</summary>
-
-O Acordo de Associação é o único documento que cada membro realmente lê e consente. Nomear o devido processo aqui — e não somente na Camada 4 — garante que nenhum membro possa ser removido ou restringido sob uma regra que não lhe foi mostrada quando entrou. Isso fecha a lacuna entre o que a comunidade promete e o que ela pode fazer.
-
-</details>
-
-<details data-kind="instructions">
-<summary>Como preencher esta seção</summary>
-
-Faça referência à Escada de Resolução de Conflitos (Camada 4) e ao Protocolo de Saída e Separação, para que qualquer membro que leia o Acordo de Associação saiba onde residem as proteções procedimentais.
-
-</details>
+*Cláusulas RCOS: [3.6.3](https://rcos.ecohubs.community/pt-br/standard/core/0.1/layer-1-membership-system#3.6.3)*
 
 Qualquer saída forçada, suspensão ou restrição de acesso segue o devido processo da Camada 4 e o Protocolo de Saída e Separação.
 
 ## Reconhecimento de Consentimento
 
-*Cláusulas RCOS: [3.2.2](https://rcos.ecohubs.community/pt-br/articles/rcos-core/v0-1/layer-1-membership-system#32-entry-and-onboarding)*
-
-<details data-kind="rationale">
-<summary>Por que exigir consentimento explícito?</summary>
-
-Consentimento presumido é consentimento que pode ser negado depois. Exigir um ato explícito — assinar, clicar, reconhecer — em um momento conhecido vincula o membro às versões específicas dos artefatos vigentes naquele dia, e dá à comunidade um registro defensável de que o acordo foi firmado livre e conscientemente.
-
-</details>
-
-<details data-kind="instructions">
-<summary>Como preencher esta seção</summary>
-
-Descreva o ato de consentimento (assinatura, reconhecimento no aplicativo etc.) e a quais versões dos artefatos o membro está consentindo naquele momento.
-
-</details>
+*Cláusulas RCOS: [3.2.2](https://rcos.ecohubs.community/pt-br/standard/core/0.1/layer-1-membership-system#3.2.2)*
 
 Ao entrar na comunidade por meio do processo de integração definido, o membro consente explicitamente com os termos deste acordo e com os artefatos da Camada 0 em vigor no momento da admissão.
 

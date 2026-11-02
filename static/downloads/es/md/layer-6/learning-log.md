@@ -2,14 +2,14 @@
 
 # Registro de Aprendizajes
 
-- **Generado:** 2026-08-31
+- **Generado:** 2026-11-02
 - **Fuente (versión más reciente):** [https://rcos.ecohubs.community/es/articles/rcos-templates/layer-6/learning-log](https://rcos.ecohubs.community/es/articles/rcos-templates/layer-6/learning-log)
 - **Todas las plantillas RCOS:** [https://rcos.ecohubs.community/es/articles/rcos-templates](https://rcos.ecohubs.community/es/articles/rcos-templates)
 
 ---
 - **Capa:** 6 — Evolución y Adaptación
 - **Estado:** Plantilla — adapta para tu comunidad; se actualiza cuando ocurren eventos de aprendizaje
-- **Referencia RCOS:** [§8.4](https://rcos.ecohubs.community/es/articles/rcos-core/v0-1/layer-6-evolution-adaptation#84-learning-and-feedback-capture), [§8.6](https://rcos.ecohubs.community/es/articles/rcos-core/v0-1/layer-6-evolution-adaptation#86-artifacts)
+- **Referencia RCOS:** [§8.4](https://rcos.ecohubs.community/es/standard/core/0.1/layer-6-evolution-adaptation#8.4), [§8.6](https://rcos.ecohubs.community/es/standard/core/0.1/layer-6-evolution-adaptation#8.6)
 
 > Registra fallos importantes, adaptaciones, reversiones y aprendizajes sistémicos. Los patrones de fallo recurrentes DEBEN activar una revisión estructural, no culpa individual. Las entradas se añaden al inicio (las más recientes primero).
 
@@ -17,21 +17,7 @@
 
 ## Qué constituye un evento de aprendizaje
 
-*Cláusulas RCOS: [8.4.1](https://rcos.ecohubs.community/es/articles/rcos-core/v0-1/layer-6-evolution-adaptation#84-learning-and-feedback-capture), [8.4.4](https://rcos.ecohubs.community/es/articles/rcos-core/v0-1/layer-6-evolution-adaptation#84-learning-and-feedback-capture), [8.6.5](https://rcos.ecohubs.community/es/articles/rcos-core/v0-1/layer-6-evolution-adaptation#86-artifacts), [8.7.4](https://rcos.ecohubs.community/es/articles/rcos-core/v0-1/layer-6-evolution-adaptation#87-layer-invariants)*
-
-<details data-kind="rationale">
-<summary>¿Por qué definir el detonante explícitamente?</summary>
-
-Si "deberíamos aprender de esto" queda a criterio individual, las lecciones más difíciles — las que implican conflicto, fracaso o vergüenza — son las que más probablemente quedarán sin registrar. Nombrar los eventos específicos que DEBEN producir una entrada elimina la pregunta del momento, y asegura que los aprendizajes incómodos se capturen en lugar de dejarse pasar en silencio.
-
-</details>
-
-<details data-kind="instructions">
-<summary>Cómo completar esto</summary>
-
-Enumera los eventos específicos que obligan a crear una entrada en el Registro de Aprendizajes. Indica quién es responsable del registro y la cadencia de síntesis.
-
-</details>
+*Cláusulas RCOS: [8.4.1](https://rcos.ecohubs.community/es/standard/core/0.1/layer-6-evolution-adaptation#8.4.1), [8.4.4](https://rcos.ecohubs.community/es/standard/core/0.1/layer-6-evolution-adaptation#8.4.4), [8.6.5](https://rcos.ecohubs.community/es/standard/core/0.1/layer-6-evolution-adaptation#8.6.5), [8.7.4](https://rcos.ecohubs.community/es/standard/core/0.1/layer-6-evolution-adaptation#8.7.4)*
 
 Se DEBE añadir una entrada cuando ocurra cualquiera de los siguientes eventos:
 
@@ -57,21 +43,7 @@ _Aún no hay entradas. La primera entrada se añadirá cuando ocurra el primer e
 
 ## Formato de entrada
 
-*Cláusulas RCOS: [8.4.2](https://rcos.ecohubs.community/es/articles/rcos-core/v0-1/layer-6-evolution-adaptation#84-learning-and-feedback-capture), [8.4.3](https://rcos.ecohubs.community/es/articles/rcos-core/v0-1/layer-6-evolution-adaptation#84-learning-and-feedback-capture), [8.6.5](https://rcos.ecohubs.community/es/articles/rcos-core/v0-1/layer-6-evolution-adaptation#86-artifacts)*
-
-<details data-kind="rationale">
-<summary>¿Por qué una plantilla fija de entrada?</summary>
-
-La reflexión libre es valiosa, pero no se agrega. Un esquema consistente — detonante, señales, qué cambió, resultado, responsable de seguimiento — permite recorrer años de entradas buscando patrones recurrentes y convertir incidentes aislados en evidencia estructural. También obliga a cada entrada a nombrar un responsable, para que el aprendizaje no se detenga en "lo notamos".
-
-</details>
-
-<details data-kind="instructions">
-<summary>Cómo completar esto</summary>
-
-Usa la plantilla de abajo para cada entrada. Cada campo impone una perspectiva distinta sobre el evento; no omitas el responsable de seguimiento.
-
-</details>
+*Cláusulas RCOS: [8.4.2](https://rcos.ecohubs.community/es/standard/core/0.1/layer-6-evolution-adaptation#8.4.2), [8.4.3](https://rcos.ecohubs.community/es/standard/core/0.1/layer-6-evolution-adaptation#8.4.3), [8.6.5](https://rcos.ecohubs.community/es/standard/core/0.1/layer-6-evolution-adaptation#8.6.5)*
 
 ```markdown
 ## <AAAA-MM-DD> — <Título breve>

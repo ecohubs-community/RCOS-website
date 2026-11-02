@@ -2,34 +2,20 @@
 
 # Onboarding-Protokoll
 
-- **Generiert:** 2026-08-31
+- **Generiert:** 2026-11-02
 - **Quelle (aktuelle Version):** [https://rcos.ecohubs.community/de/articles/rcos-templates/layer-1/onboarding-protocol](https://rcos.ecohubs.community/de/articles/rcos-templates/layer-1/onboarding-protocol)
 - **Alle RCOS-Vorlagen:** [https://rcos.ecohubs.community/de/articles/rcos-templates](https://rcos.ecohubs.community/de/articles/rcos-templates)
 
 ---
 - **Schicht:** 1 — Mitgliedschaftssystem
 - **Status:** Vorlage — an deine Gemeinschaft anpassen
-- **RCOS-Referenz:** [§3.2](https://rcos.ecohubs.community/de/articles/rcos-core/v0-1/layer-1-membership-system#32-entry-and-onboarding), [§3.3](https://rcos.ecohubs.community/de/articles/rcos-core/v0-1/layer-1-membership-system#33-trial-and-evaluation), [§3.8](https://rcos.ecohubs.community/de/articles/rcos-core/v0-1/layer-1-membership-system#38-artifacts)
+- **RCOS-Referenz:** [§3.2](https://rcos.ecohubs.community/de/standard/core/0.1/layer-1-membership-system#3.2), [§3.3](https://rcos.ecohubs.community/de/standard/core/0.1/layer-1-membership-system#3.3), [§3.8](https://rcos.ecohubs.community/de/standard/core/0.1/layer-1-membership-system#3.8)
 
 ---
 
 ## Aufnahmekriterien
 
-*RCOS-Klauseln: [3.2.3](https://rcos.ecohubs.community/de/articles/rcos-core/v0-1/layer-1-membership-system#32-entry-and-onboarding), [3.2.4](https://rcos.ecohubs.community/de/articles/rcos-core/v0-1/layer-1-membership-system#32-entry-and-onboarding)*
-
-<details data-kind="rationale">
-<summary>Warum festhalten, wer aufgenommen wird?</summary>
-
-Die Aufnahme ist der Moment, in dem eine fremde Person an die Regeln der Gemeinschaft gebunden — und durch sie geschützt — wird. Wenn die Kriterien informell sind, hängt die Entscheidung davon ab, wer die bewerbende Person zufällig sympathisch findet. Schriftliche Kriterien machen die Aufnahme zu einem Governance-Akt statt zu einem sozialen Gefallen und machen eine Ablehnung mit Gründen vertretbar, auf die die Gemeinschaft verweisen kann.
-
-</details>
-
-<details data-kind="instructions">
-<summary>Wie du das ausfüllst</summary>
-
-Formuliere die expliziten Bedingungen, unter denen eine bewerbende Person aufgenommen werden kann. Jedes Kriterium sollte anhand der Bewerbung selbst oder einer externen Prüfung überprüfbar sein.
-
-</details>
+*RCOS-Klauseln: [3.2.3](https://rcos.ecohubs.community/de/standard/core/0.1/layer-1-membership-system#3.2.3), [3.2.4](https://rcos.ecohubs.community/de/standard/core/0.1/layer-1-membership-system#3.2.4)*
 
 1. _<Kriterium 1, z. B. Übereinstimmung mit dem Hauptzweck und den Identitätsbeschränkungen aus Schicht 0.>_
 2. _<Kriterium 2, z. B. Bereitschaft, in mindestens einer anerkannten Kategorie aktiv beizutragen.>_
@@ -38,21 +24,7 @@ Formuliere die expliziten Bedingungen, unter denen eine bewerbende Person aufgen
 
 ## Onboarding-Schritte
 
-*RCOS-Klauseln: [3.2.1](https://rcos.ecohubs.community/de/articles/rcos-core/v0-1/layer-1-membership-system#32-entry-and-onboarding), [3.2.2](https://rcos.ecohubs.community/de/articles/rcos-core/v0-1/layer-1-membership-system#32-entry-and-onboarding)*
-
-<details data-kind="rationale">
-<summary>Warum den Prozess als feste Abfolge gestalten?</summary>
-
-Zustimmung zu Governance bedeutet nur dann etwas, wenn das Mitglied die Governance tatsächlich gesehen hat. Eine feste Abfolge — Prüfung, Zustimmung, technisches Setup — stellt sicher, dass jedes Vollmitglied die gleiche Schwelle in der gleichen Reihenfolge überschritten hat, sodass niemand volle Rechte erhält, ohne die damit verbundenen Einschränkungen kennengelernt zu haben.
-
-</details>
-
-<details data-kind="instructions">
-<summary>Wie du das ausfüllst</summary>
-
-Liste die geordneten Schritte auf, die jedes neue Mitglied durchlaufen muss, um von der bewerbenden zur vollwertigen Person zu werden. Füge explizite Zustimmungsschritte und alle erforderlichen Werkzeug-/Zugangsbereitstellungen hinzu.
-
-</details>
+*RCOS-Klauseln: [3.2.1](https://rcos.ecohubs.community/de/standard/core/0.1/layer-1-membership-system#3.2.1), [3.2.2](https://rcos.ecohubs.community/de/standard/core/0.1/layer-1-membership-system#3.2.2)*
 
 1. _<Schritt 1, z. B. alle Artefakte der Schichten 0–6 und dieses Onboarding-Protokoll durchsehen.>_
 2. _<Schritt 2, z. B. der Mitgliedschaftsvereinbarung und den Identitätsbeschränkungen aus Schicht 0 ausdrücklich zustimmen.>_
@@ -63,42 +35,14 @@ Liste die geordneten Schritte auf, die jedes neue Mitglied durchlaufen muss, um 
 
 ## Anfänglicher Mitgliedschaftsstatus
 
-*RCOS-Klauseln: [3.1.2](https://rcos.ecohubs.community/de/articles/rcos-core/v0-1/layer-1-membership-system#31-membership-states), [3.1.4](https://rcos.ecohubs.community/de/articles/rcos-core/v0-1/layer-1-membership-system#31-membership-states)*
-
-<details data-kind="rationale">
-<summary>Warum am Ende des Onboardings einen Status zuweisen?</summary>
-
-Zwischen „Bewerbung genehmigt" und „vollständig integriert" gibt es eine echte Lücke — Berechtigungen, Zugang und Erwartungen ändern sich. Wenn du den genauen Status festlegst, den ein neues Mitglied in jedem Schritt innehat, beseitigst du Unklarheiten darüber, was es gerade tun darf, und verhinderst unbeabsichtigte Rechtevergaben, bevor das Onboarding abgeschlossen ist.
-
-</details>
-
-<details data-kind="instructions">
-<summary>Wie du das ausfüllst</summary>
-
-Gib die Mitgliedschaftsstatus an, die ein Mitglied während des Onboardings durchläuft, und was jeden Übergang auslöst. Verweise auf das Mitgliedschaftsstatus-Register.
-
-</details>
+*RCOS-Klauseln: [3.1.2](https://rcos.ecohubs.community/de/standard/core/0.1/layer-1-membership-system#3.1.2), [3.1.4](https://rcos.ecohubs.community/de/standard/core/0.1/layer-1-membership-system#3.1.4)*
 
 - Bei Genehmigung: _<z. B. Probemitglied.>_
 - Bei Onboarding-Abschluss: _<z. B. Vollmitglied (automatisch bei Abschluss).>_
 
 ## Probezeit und Bewertung
 
-*RCOS-Klauseln: [3.3.1](https://rcos.ecohubs.community/de/articles/rcos-core/v0-1/layer-1-membership-system#33-trial-and-evaluation), [3.3.2](https://rcos.ecohubs.community/de/articles/rcos-core/v0-1/layer-1-membership-system#33-trial-and-evaluation), [3.3.3](https://rcos.ecohubs.community/de/articles/rcos-core/v0-1/layer-1-membership-system#33-trial-and-evaluation), [3.3.4](https://rcos.ecohubs.community/de/articles/rcos-core/v0-1/layer-1-membership-system#33-trial-and-evaluation)*
-
-<details data-kind="rationale">
-<summary>Warum die Probezeit begrenzen?</summary>
-
-Eine unbegrenzte Probezeit ist eine Mitgliedschaft zweiter Klasse, die nie endet — alle Pflichten, weniger Rechte. Dauer, Kriterien und den Pfad bei Nichtbestehen festzulegen erzwingt einen Entscheidungspunkt: Entweder geht das neue Mitglied in den vollen Status über, oder ein definierter Austrittsprozess wird ausgelöst. Das verhindert, dass die Probezeit zu einem dauerhaften Wartezustand wird.
-
-</details>
-
-<details data-kind="instructions">
-<summary>Wie du das ausfüllst</summary>
-
-Lege Dauer, Bewertungskriterien, Übergangsentscheidung, Nachfrist, Pfad bei Nichtbestehen und etwaige Verlängerungsregeln fest. Proberechte werden im Mitgliedschaftsstatus-Register definiert.
-
-</details>
+*RCOS-Klauseln: [3.3.1](https://rcos.ecohubs.community/de/standard/core/0.1/layer-1-membership-system#3.3.1), [3.3.2](https://rcos.ecohubs.community/de/standard/core/0.1/layer-1-membership-system#3.3.2), [3.3.3](https://rcos.ecohubs.community/de/standard/core/0.1/layer-1-membership-system#3.3.3), [3.3.4](https://rcos.ecohubs.community/de/standard/core/0.1/layer-1-membership-system#3.3.4)*
 
 - **Dauer:** _<z. B. 30 Tage ab Genehmigung.>_
 - **Bewertungskriterien:** _<z. B. alle Onboarding-Schritte abgeschlossen und dokumentiert.>_
@@ -111,21 +55,7 @@ Lege Dauer, Bewertungskriterien, Übergangsentscheidung, Nachfrist, Pfad bei Nic
 
 ## Abschlussnachweis
 
-*RCOS-Klauseln: [3.8.2](https://rcos.ecohubs.community/de/articles/rcos-core/v0-1/layer-1-membership-system#38-artifacts)*
-
-<details data-kind="rationale">
-<summary>Warum den Nachweis dauerhaft aufbewahren?</summary>
-
-Der Abschlussnachweis ist der Beleg dafür, dass ein Mitglied einer bestimmten Version der Regeln an einem bestimmten Datum zugestimmt hat. Ihn zu verlieren oder zu bearbeiten würde es unmöglich machen, Monate oder Jahre später die Frage zu beantworten: „Was genau hat die Person zugestimmt?" — und das ist die einzige Frage, die zählt, wenn ein Streitfall eintritt.
-
-</details>
-
-<details data-kind="instructions">
-<summary>Wie du das ausfüllst</summary>
-
-Gib an, wo der Abschlussnachweis aufbewahrt wird, was er erfasst (Zeitstempel, Versionen der zugestimmten Artefakte) und welche Aufbewahrungsregel gilt.
-
-</details>
+*RCOS-Klauseln: [3.8.2](https://rcos.ecohubs.community/de/standard/core/0.1/layer-1-membership-system#3.8.2)*
 
 _<Beschreibung des Onboarding-Abschlussnachweises — wo er gespeichert ist, was er erfasst und dass er auch nach einem Austritt dauerhaft aufbewahrt wird.>_
 

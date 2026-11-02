@@ -2,34 +2,20 @@
 
 # Accountability Protocol
 
-- **Generated:** 2026-08-31
+- **Generated:** 2026-11-02
 - **Source (latest version):** [https://rcos.ecohubs.community/articles/rcos-templates/layer-4/accountability-protocol](https://rcos.ecohubs.community/articles/rcos-templates/layer-4/accountability-protocol)
 - **All RCOS templates:** [https://rcos.ecohubs.community/articles/rcos-templates](https://rcos.ecohubs.community/articles/rcos-templates)
 
 ---
 - **Layer:** 4 — Conflict, Repair & Accountability
 - **Status:** Template — adapt for your community
-- **RCOS reference:** [§6.4](https://rcos.ecohubs.community/articles/rcos-core/v0-1/layer-4-conflict-repair-accountability#64-sanctions-repair-and-separation), [§6.5](https://rcos.ecohubs.community/articles/rcos-core/v0-1/layer-4-conflict-repair-accountability#65-artifacts)
+- **RCOS reference:** [§6.4](https://rcos.ecohubs.community/standard/core/0.1/layer-4-conflict-repair-accountability#6.4), [§6.5](https://rcos.ecohubs.community/standard/core/0.1/layer-4-conflict-repair-accountability#6.5)
 
 ---
 
 ## Triggers
 
-*RCOS clauses: [6.4.1](https://rcos.ecohubs.community/articles/rcos-core/v0-1/layer-4-conflict-repair-accountability#64-sanctions-repair-and-separation), [6.5.4](https://rcos.ecohubs.community/articles/rcos-core/v0-1/layer-4-conflict-repair-accountability#65-artifacts)*
-
-<details data-kind="rationale">
-<summary>Why enumerate what starts an accountability check?</summary>
-
-If accountability checks only happen when someone feels strongly enough to push, they become political. Naming the exact triggers — inactivity, breach, invariant violation, referral — means the process starts from a condition anyone can verify, not from a judgement about a person.
-
-</details>
-
-<details data-kind="instructions">
-<summary>How to fill this in</summary>
-
-List the specific, verifiable triggers that initiate an accountability check. Each trigger should be observable from records or a direct referral.
-
-</details>
+*RCOS clauses: [6.4.1](https://rcos.ecohubs.community/standard/core/0.1/layer-4-conflict-repair-accountability#6.4.1), [6.5.4](https://rcos.ecohubs.community/standard/core/0.1/layer-4-conflict-repair-accountability#6.5.4)*
 
 An accountability check is initiated when:
 
@@ -40,21 +26,7 @@ An accountability check is initiated when:
 
 ## Investigation and Review
 
-*RCOS clauses: [6.4.2](https://rcos.ecohubs.community/articles/rcos-core/v0-1/layer-4-conflict-repair-accountability#64-sanctions-repair-and-separation), [6.4.3](https://rcos.ecohubs.community/articles/rcos-core/v0-1/layer-4-conflict-repair-accountability#64-sanctions-repair-and-separation), [6.4.6](https://rcos.ecohubs.community/articles/rcos-core/v0-1/layer-4-conflict-repair-accountability#64-sanctions-repair-and-separation), [6.5.4](https://rcos.ecohubs.community/articles/rcos-core/v0-1/layer-4-conflict-repair-accountability#65-artifacts)*
-
-<details data-kind="rationale">
-<summary>Why graduate the response by severity?</summary>
-
-Treating a missed contribution the same as an invariant violation either crushes minor cases with heavy process or lets serious ones slip through a private chat. Graduated pathways — soft check-in, medium written notice, direct escalation for serious breaches — match response weight to breach weight and keep repair the default where repair is still possible.
-
-</details>
-
-<details data-kind="instructions">
-<summary>How to fill this in</summary>
-
-Define soft (inactivity), medium (obligation breach), and serious (invariant violation, safety) pathways. State who initiates, the response window, and the escalation route for each.
-
-</details>
+*RCOS clauses: [6.4.2](https://rcos.ecohubs.community/standard/core/0.1/layer-4-conflict-repair-accountability#6.4.2), [6.4.3](https://rcos.ecohubs.community/standard/core/0.1/layer-4-conflict-repair-accountability#6.4.3), [6.4.6](https://rcos.ecohubs.community/standard/core/0.1/layer-4-conflict-repair-accountability#6.4.6), [6.5.4](https://rcos.ecohubs.community/standard/core/0.1/layer-4-conflict-repair-accountability#6.5.4)*
 
 > **Breach severity guidance:** _<medium = non-compliance with a Membership Agreement obligation that does not threaten member safety or community integrity; serious = Layer 0 invariant violation, credible safety concern, persistent bad-faith conduct.>_
 
@@ -64,21 +36,7 @@ Define soft (inactivity), medium (obligation breach), and serious (invariant vio
 
 ## Due Process Guarantees
 
-*RCOS clauses: [6.4.2](https://rcos.ecohubs.community/articles/rcos-core/v0-1/layer-4-conflict-repair-accountability#64-sanctions-repair-and-separation), [6.4.4](https://rcos.ecohubs.community/articles/rcos-core/v0-1/layer-4-conflict-repair-accountability#64-sanctions-repair-and-separation), [6.5.4](https://rcos.ecohubs.community/articles/rcos-core/v0-1/layer-4-conflict-repair-accountability#65-artifacts)*
-
-<details data-kind="rationale">
-<summary>Why spell out notice, response, and appeal rights?</summary>
-
-Accountability without due process is just punishment with paperwork. A member facing a sanction needs to know the concern, have real time to respond, and have somewhere to appeal to — otherwise the deciding body's word is final by default, which concentrates power exactly where it should not concentrate.
-
-</details>
-
-<details data-kind="instructions">
-<summary>How to fill this in</summary>
-
-State the right to written notice, a minimum response window, and an explicit appeal path to Full Members.
-
-</details>
+*RCOS clauses: [6.4.2](https://rcos.ecohubs.community/standard/core/0.1/layer-4-conflict-repair-accountability#6.4.2), [6.4.4](https://rcos.ecohubs.community/standard/core/0.1/layer-4-conflict-repair-accountability#6.4.4), [6.5.4](https://rcos.ecohubs.community/standard/core/0.1/layer-4-conflict-repair-accountability#6.5.4)*
 
 - **Right to notice:** _<member is notified in writing of the concern before any review or sanction begins.>_
 - **Right to respond:** _<minimum response window — e.g. 30 days.>_
@@ -86,41 +44,13 @@ State the right to written notice, a minimum response window, and an explicit ap
 
 ## Anti-Retaliation Protections
 
-*RCOS clauses: [6.3.2](https://rcos.ecohubs.community/articles/rcos-core/v0-1/layer-4-conflict-repair-accountability#63-safeguards)*
-
-<details data-kind="rationale">
-<summary>Why protect participants explicitly?</summary>
-
-If raising a concern or giving information can cost a member standing, relationships, or access, people will stay silent and the accountability system collapses in practice. Naming retaliation as itself a trigger makes the cost of suppression higher than the cost of reporting.
-
-</details>
-
-<details data-kind="instructions">
-<summary>How to fill this in</summary>
-
-State that retaliation against any member who raises, participates in, or gives information to an accountability process is itself an accountability trigger.
-
-</details>
+*RCOS clauses: [6.3.2](https://rcos.ecohubs.community/standard/core/0.1/layer-4-conflict-repair-accountability#6.3.2)*
 
 _<Retaliation against a member for participating in any part of this process is itself an accountability trigger.>_
 
 ## Sanction and Repair Options
 
-*RCOS clauses: [6.4.1](https://rcos.ecohubs.community/articles/rcos-core/v0-1/layer-4-conflict-repair-accountability#64-sanctions-repair-and-separation), [6.4.2](https://rcos.ecohubs.community/articles/rcos-core/v0-1/layer-4-conflict-repair-accountability#64-sanctions-repair-and-separation), [6.4.3](https://rcos.ecohubs.community/articles/rcos-core/v0-1/layer-4-conflict-repair-accountability#64-sanctions-repair-and-separation), [6.4.5](https://rcos.ecohubs.community/articles/rcos-core/v0-1/layer-4-conflict-repair-accountability#64-sanctions-repair-and-separation), [6.4.6](https://rcos.ecohubs.community/articles/rcos-core/v0-1/layer-4-conflict-repair-accountability#64-sanctions-repair-and-separation), [6.5.4](https://rcos.ecohubs.community/articles/rcos-core/v0-1/layer-4-conflict-repair-accountability#65-artifacts), [6.6.3](https://rcos.ecohubs.community/articles/rcos-core/v0-1/layer-4-conflict-repair-accountability#66-layer-invariants)*
-
-<details data-kind="rationale">
-<summary>Why pre-define the menu of sanctions?</summary>
-
-Ad-hoc sanctions invented mid-process reflect whoever is loudest in the room, not what the breach warrants. A fixed menu — with preconditions, authorized body, and appeal path for each — keeps responses proportional, prevents informal exclusion from becoming the default punishment, and makes it obvious when a sanction is out of scope for the body applying it.
-
-</details>
-
-<details data-kind="instructions">
-<summary>How to fill this in</summary>
-
-For each sanction type, define preconditions, authorized body, and appeal path. Repair-oriented responses should be the default; punitive ones reserved for safety-critical or unresolved breaches.
-
-</details>
+*RCOS clauses: [6.4.1](https://rcos.ecohubs.community/standard/core/0.1/layer-4-conflict-repair-accountability#6.4.1), [6.4.2](https://rcos.ecohubs.community/standard/core/0.1/layer-4-conflict-repair-accountability#6.4.2), [6.4.3](https://rcos.ecohubs.community/standard/core/0.1/layer-4-conflict-repair-accountability#6.4.3), [6.4.5](https://rcos.ecohubs.community/standard/core/0.1/layer-4-conflict-repair-accountability#6.4.5), [6.4.6](https://rcos.ecohubs.community/standard/core/0.1/layer-4-conflict-repair-accountability#6.4.6), [6.5.4](https://rcos.ecohubs.community/standard/core/0.1/layer-4-conflict-repair-accountability#6.5.4), [6.6.3](https://rcos.ecohubs.community/standard/core/0.1/layer-4-conflict-repair-accountability#6.6.3)*
 
 > Repair-oriented responses are preferred over punitive ones except in safety-critical cases.
 > Sanctions must be proportional, time-bounded where applicable, documented, and never applied through informal exclusion or social pressure.
@@ -134,21 +64,7 @@ For each sanction type, define preconditions, authorized body, and appeal path. 
 
 ## Conditions for Restoring Rights
 
-*RCOS clauses: [6.4.4](https://rcos.ecohubs.community/articles/rcos-core/v0-1/layer-4-conflict-repair-accountability#64-sanctions-repair-and-separation)*
-
-<details data-kind="rationale">
-<summary>Why make restoration conditions explicit?</summary>
-
-If there is no defined path back, every sanction becomes effectively permanent and every exit becomes a life sentence. Explicit restoration conditions signal that accountability is about repair where repair is possible, and they prevent post-hoc gatekeeping about whether someone is "really" welcome back.
-
-</details>
-
-<details data-kind="instructions">
-<summary>How to fill this in</summary>
-
-For each sanction class, state the path to restoration of rights — re-application after voluntary exit, re-application block after forced exit, restoration after temporary restriction.
-
-</details>
+*RCOS clauses: [6.4.4](https://rcos.ecohubs.community/standard/core/0.1/layer-4-conflict-repair-accountability#6.4.4)*
 
 - **After voluntary exit:** _<re-application via Onboarding Protocol; no automatic restoration.>_
 - **After forced exit:** _<minimum re-application block; standard admission process applies.>_
@@ -156,21 +72,7 @@ For each sanction class, state the path to restoration of rights — re-applicat
 
 ## Coordination with Layer 1
 
-*RCOS clauses: [6.4.4](https://rcos.ecohubs.community/articles/rcos-core/v0-1/layer-4-conflict-repair-accountability#64-sanctions-repair-and-separation)*
-
-<details data-kind="rationale">
-<summary>Why tie this to the Exit & Separation Protocol?</summary>
-
-Exit rules live in Layer 1 for a reason — they govern who is and is not a member. If accountability actions created their own parallel exit path, there would be two sets of rules, two sets of records, and a loophole for skipping due process. One canonical exit protocol closes that gap.
-
-</details>
-
-<details data-kind="instructions">
-<summary>How to fill this in</summary>
-
-State that all forced exits and temporary access restrictions follow the Exit & Separation Protocol (Layer 1), and clarify that a temporary restriction does not constitute exit.
-
-</details>
+*RCOS clauses: [6.4.4](https://rcos.ecohubs.community/standard/core/0.1/layer-4-conflict-repair-accountability#6.4.4)*
 
 _<All forced exits and temporary access restrictions follow the Exit & Separation Protocol (Layer 1). A temporary access restriction does not constitute exit and does not trigger the re-application block unless a forced exit is subsequently voted by Full Members.>_
 

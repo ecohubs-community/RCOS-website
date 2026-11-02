@@ -2,34 +2,20 @@
 
 # Conflict Resolution Ladder
 
-- **Generated:** 2026-08-31
+- **Generated:** 2026-11-02
 - **Source (latest version):** [https://rcos.ecohubs.community/articles/rcos-templates/layer-4/conflict-resolution-ladder](https://rcos.ecohubs.community/articles/rcos-templates/layer-4/conflict-resolution-ladder)
 - **All RCOS templates:** [https://rcos.ecohubs.community/articles/rcos-templates](https://rcos.ecohubs.community/articles/rcos-templates)
 
 ---
 - **Layer:** 4 — Conflict, Repair & Accountability
 - **Status:** Template — adapt for your community
-- **RCOS reference:** [§6.1](https://rcos.ecohubs.community/articles/rcos-core/v0-1/layer-4-conflict-repair-accountability#61-conflict-classification), [§6.2](https://rcos.ecohubs.community/articles/rcos-core/v0-1/layer-4-conflict-repair-accountability#62-resolution-pathways), [§6.3](https://rcos.ecohubs.community/articles/rcos-core/v0-1/layer-4-conflict-repair-accountability#63-safeguards), [§6.5](https://rcos.ecohubs.community/articles/rcos-core/v0-1/layer-4-conflict-repair-accountability#65-artifacts)
+- **RCOS reference:** [§6.1](https://rcos.ecohubs.community/standard/core/0.1/layer-4-conflict-repair-accountability#6.1), [§6.2](https://rcos.ecohubs.community/standard/core/0.1/layer-4-conflict-repair-accountability#6.2), [§6.3](https://rcos.ecohubs.community/standard/core/0.1/layer-4-conflict-repair-accountability#6.3), [§6.5](https://rcos.ecohubs.community/standard/core/0.1/layer-4-conflict-repair-accountability#6.5)
 
 ---
 
 ## Conflict Classification
 
-*RCOS clauses: [6.1.1](https://rcos.ecohubs.community/articles/rcos-core/v0-1/layer-4-conflict-repair-accountability#61-conflict-classification), [6.1.2](https://rcos.ecohubs.community/articles/rcos-core/v0-1/layer-4-conflict-repair-accountability#61-conflict-classification), [6.1.3](https://rcos.ecohubs.community/articles/rcos-core/v0-1/layer-4-conflict-repair-accountability#61-conflict-classification), [6.1.4](https://rcos.ecohubs.community/articles/rcos-core/v0-1/layer-4-conflict-repair-accountability#61-conflict-classification), [6.1.5](https://rcos.ecohubs.community/articles/rcos-core/v0-1/layer-4-conflict-repair-accountability#61-conflict-classification), [6.5.3](https://rcos.ecohubs.community/articles/rcos-core/v0-1/layer-4-conflict-repair-accountability#65-artifacts), [6.6.4](https://rcos.ecohubs.community/articles/rcos-core/v0-1/layer-4-conflict-repair-accountability#66-layer-invariants), [6.7.1](https://rcos.ecohubs.community/articles/rcos-core/v0-1/layer-4-conflict-repair-accountability#67-explicitness-rules)*
-
-<details data-kind="rationale">
-<summary>Why classify conflicts at all?</summary>
-
-Without named classes, every dispute gets treated the same — or worse, treated differently based on who is involved. Explicit classes set the entry point, the response window, and the documentation burden up front, so safety-critical matters cannot be quietly routed through a friendly chat and minor friction cannot be weaponized into a formal review.
-
-</details>
-
-<details data-kind="instructions">
-<summary>How to fill this in</summary>
-
-For each class, set entry criteria, the entry step in the ladder, the initial response window, and the documentation burden.
-
-</details>
+*RCOS clauses: [6.1.1](https://rcos.ecohubs.community/standard/core/0.1/layer-4-conflict-repair-accountability#6.1.1), [6.1.2](https://rcos.ecohubs.community/standard/core/0.1/layer-4-conflict-repair-accountability#6.1.2), [6.1.3](https://rcos.ecohubs.community/standard/core/0.1/layer-4-conflict-repair-accountability#6.1.3), [6.1.4](https://rcos.ecohubs.community/standard/core/0.1/layer-4-conflict-repair-accountability#6.1.4), [6.1.5](https://rcos.ecohubs.community/standard/core/0.1/layer-4-conflict-repair-accountability#6.1.5), [6.5.3](https://rcos.ecohubs.community/standard/core/0.1/layer-4-conflict-repair-accountability#6.5.3), [6.6.4](https://rcos.ecohubs.community/standard/core/0.1/layer-4-conflict-repair-accountability#6.6.4), [6.7.1](https://rcos.ecohubs.community/standard/core/0.1/layer-4-conflict-repair-accountability#6.7.1)*
 
 | Class | Entry criteria | Entry point | Initial response window | Documentation |
 |---|---|---|---|---|
@@ -43,21 +29,7 @@ For each class, set entry criteria, the entry step in the ladder, the initial re
 
 ## Resolution Ladder Steps
 
-*RCOS clauses: [6.2.1](https://rcos.ecohubs.community/articles/rcos-core/v0-1/layer-4-conflict-repair-accountability#62-resolution-pathways), [6.2.2](https://rcos.ecohubs.community/articles/rcos-core/v0-1/layer-4-conflict-repair-accountability#62-resolution-pathways), [6.2.3](https://rcos.ecohubs.community/articles/rcos-core/v0-1/layer-4-conflict-repair-accountability#62-resolution-pathways), [6.2.4](https://rcos.ecohubs.community/articles/rcos-core/v0-1/layer-4-conflict-repair-accountability#62-resolution-pathways), [6.2.5](https://rcos.ecohubs.community/articles/rcos-core/v0-1/layer-4-conflict-repair-accountability#62-resolution-pathways), [6.5.3](https://rcos.ecohubs.community/articles/rcos-core/v0-1/layer-4-conflict-repair-accountability#65-artifacts), [6.6.1](https://rcos.ecohubs.community/articles/rcos-core/v0-1/layer-4-conflict-repair-accountability#66-layer-invariants)*
-
-<details data-kind="rationale">
-<summary>Why a stepped ladder instead of a single process?</summary>
-
-Most conflict is low-stakes and best resolved between the people involved; forcing everything into formal review would kill trust and flood the governance system. A ladder matches process weight to dispute weight — private conversation first, facilitated dialogue next, written record only when needed, governance vote only when all else fails. It also makes escalation a structural right, not a favour granted by whoever holds social power.
-
-</details>
-
-<details data-kind="instructions">
-<summary>How to fill this in</summary>
-
-Define each ladder step: who is involved, what happens, the time window, and the escalation rule. Keep the early steps light and confidential; reserve formal review for later steps.
-
-</details>
+*RCOS clauses: [6.2.1](https://rcos.ecohubs.community/standard/core/0.1/layer-4-conflict-repair-accountability#6.2.1), [6.2.2](https://rcos.ecohubs.community/standard/core/0.1/layer-4-conflict-repair-accountability#6.2.2), [6.2.3](https://rcos.ecohubs.community/standard/core/0.1/layer-4-conflict-repair-accountability#6.2.3), [6.2.4](https://rcos.ecohubs.community/standard/core/0.1/layer-4-conflict-repair-accountability#6.2.4), [6.2.5](https://rcos.ecohubs.community/standard/core/0.1/layer-4-conflict-repair-accountability#6.2.5), [6.5.3](https://rcos.ecohubs.community/standard/core/0.1/layer-4-conflict-repair-accountability#6.5.3), [6.6.1](https://rcos.ecohubs.community/standard/core/0.1/layer-4-conflict-repair-accountability#6.6.1)*
 
 1. **Direct conversation** — _<parties attempt to resolve privately; window; outcome rules.>_
 2. **Facilitated dialogue** — _<facilitator hosts conversation; confidentiality; window; outcome rules.>_
@@ -68,21 +40,7 @@ Define each ladder step: who is involved, what happens, the time window, and the
 
 ## Non-Response, Withdrawal, and Deadlock
 
-*RCOS clauses: [6.2.5](https://rcos.ecohubs.community/articles/rcos-core/v0-1/layer-4-conflict-repair-accountability#62-resolution-pathways), [6.1.5](https://rcos.ecohubs.community/articles/rcos-core/v0-1/layer-4-conflict-repair-accountability#61-conflict-classification)*
-
-<details data-kind="rationale">
-<summary>What stops a process from being killed by silence?</summary>
-
-The easiest way to defeat any accountability process is to ignore it. If non-response, withdrawal, or deadlock leaves the matter frozen, the party on the receiving end of harm carries the cost of the inaction. Explicit rules for each failure mode convert silence into a documented escalation trigger rather than a veto.
-
-</details>
-
-<details data-kind="instructions">
-<summary>How to fill this in</summary>
-
-Define how non-response, mid-process withdrawal, deadlock, and procedural failure are handled. Each should have a documented escalation path.
-
-</details>
+*RCOS clauses: [6.2.5](https://rcos.ecohubs.community/standard/core/0.1/layer-4-conflict-repair-accountability#6.2.5), [6.1.5](https://rcos.ecohubs.community/standard/core/0.1/layer-4-conflict-repair-accountability#6.1.5)*
 
 **If a party does not respond within the defined window:**
 - _<Follow-up notice; additional grace period; treatment of continued silence as non-resolution; escalation rule.>_
@@ -100,21 +58,7 @@ Define how non-response, mid-process withdrawal, deadlock, and procedural failur
 
 ## Facilitator Selection and Replacement
 
-*RCOS clauses: [6.3.1](https://rcos.ecohubs.community/articles/rcos-core/v0-1/layer-4-conflict-repair-accountability#63-safeguards), [6.3.3](https://rcos.ecohubs.community/articles/rcos-core/v0-1/layer-4-conflict-repair-accountability#63-safeguards)*
-
-<details data-kind="rationale">
-<summary>Why name how the Facilitator is chosen or replaced?</summary>
-
-A facilitator who is implicated in the conflict — or socially aligned with one party — cannot hold the process fairly, no matter how good their intentions. Naming selection and replacement rules up front means the affected party does not have to fight for a neutral hearing while already under stress.
-
-</details>
-
-<details data-kind="instructions">
-<summary>How to fill this in</summary>
-
-State the default facilitator role, the rule when the facilitator is a party, the right to decline, and any provision for external facilitation.
-
-</details>
+*RCOS clauses: [6.3.1](https://rcos.ecohubs.community/standard/core/0.1/layer-4-conflict-repair-accountability#6.3.1), [6.3.3](https://rcos.ecohubs.community/standard/core/0.1/layer-4-conflict-repair-accountability#6.3.3)*
 
 - _<Default facilitator role per the Role Registry.>_
 - _<Rule when the facilitator is a party — selection of a neutral substitute.>_
@@ -123,21 +67,7 @@ State the default facilitator role, the rule when the facilitator is a party, th
 
 ## Privacy and Information Access Boundaries
 
-*RCOS clauses: [6.5.3](https://rcos.ecohubs.community/articles/rcos-core/v0-1/layer-4-conflict-repair-accountability#65-artifacts)*
-
-<details data-kind="rationale">
-<summary>Why bound information flow so tightly?</summary>
-
-Conflict records contain the most sensitive material the community holds. Leaks, gossip, or casual disclosure cause second-order harm and deter future reporting. Explicit boundaries — what stays with the parties, what reaches Full Members, and when records are destroyed — make confidentiality enforceable rather than aspirational.
-
-</details>
-
-<details data-kind="instructions">
-<summary>How to fill this in</summary>
-
-State which steps are fully confidential, what minimum information may be disclosed at the governance step, the retention period, and the non-disclosure obligation.
-
-</details>
+*RCOS clauses: [6.5.3](https://rcos.ecohubs.community/standard/core/0.1/layer-4-conflict-repair-accountability#6.5.3)*
 
 - _<Steps 1–4: fully confidential; only parties and Facilitator may access records.>_
 - _<Steps 5–6: minimum necessary information disclosed to Full Members; parties notified before disclosure. Define what "minimum necessary" means.>_
@@ -146,21 +76,7 @@ State which steps are fully confidential, what minimum information may be disclo
 
 ## Safeguards
 
-*RCOS clauses: [6.3.1](https://rcos.ecohubs.community/articles/rcos-core/v0-1/layer-4-conflict-repair-accountability#63-safeguards), [6.3.2](https://rcos.ecohubs.community/articles/rcos-core/v0-1/layer-4-conflict-repair-accountability#63-safeguards), [6.3.3](https://rcos.ecohubs.community/articles/rcos-core/v0-1/layer-4-conflict-repair-accountability#63-safeguards), [6.3.4](https://rcos.ecohubs.community/articles/rcos-core/v0-1/layer-4-conflict-repair-accountability#63-safeguards), [6.3.5](https://rcos.ecohubs.community/articles/rcos-core/v0-1/layer-4-conflict-repair-accountability#63-safeguards), [6.6.2](https://rcos.ecohubs.community/articles/rcos-core/v0-1/layer-4-conflict-repair-accountability#66-layer-invariants)*
-
-<details data-kind="rationale">
-<summary>Why do safeguards exist on top of the ladder?</summary>
-
-Process alone does not protect the party with less power. Retaliation, bad-faith complaints, conflicted facilitators, and unreviewed safety risks can all neutralize an otherwise good procedure. Safeguards are the backstops that keep the ladder functional when incentives push against honest reporting.
-
-</details>
-
-<details data-kind="instructions">
-<summary>How to fill this in</summary>
-
-For each safeguard, state the rule and the consequence when it is violated. Power-differential cases need their own intake channel.
-
-</details>
+*RCOS clauses: [6.3.1](https://rcos.ecohubs.community/standard/core/0.1/layer-4-conflict-repair-accountability#6.3.1), [6.3.2](https://rcos.ecohubs.community/standard/core/0.1/layer-4-conflict-repair-accountability#6.3.2), [6.3.3](https://rcos.ecohubs.community/standard/core/0.1/layer-4-conflict-repair-accountability#6.3.3), [6.3.4](https://rcos.ecohubs.community/standard/core/0.1/layer-4-conflict-repair-accountability#6.3.4), [6.3.5](https://rcos.ecohubs.community/standard/core/0.1/layer-4-conflict-repair-accountability#6.3.5), [6.6.2](https://rcos.ecohubs.community/standard/core/0.1/layer-4-conflict-repair-accountability#6.6.2)*
 
 - **Anti-retaliation:** _<retaliation against a member raising a conflict in good faith is itself grounds for an accountability process.>_
 - **Bad-faith complaints:** _<deliberately false complaints may trigger an accountability process against the complainant.>_

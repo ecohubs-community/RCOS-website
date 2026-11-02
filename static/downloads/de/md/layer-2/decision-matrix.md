@@ -2,14 +2,14 @@
 
 # Entscheidungsmatrix
 
-- **Generiert:** 2026-08-31
+- **Generiert:** 2026-11-02
 - **Quelle (aktuelle Version):** [https://rcos.ecohubs.community/de/articles/rcos-templates/layer-2/decision-matrix](https://rcos.ecohubs.community/de/articles/rcos-templates/layer-2/decision-matrix)
 - **Alle RCOS-Vorlagen:** [https://rcos.ecohubs.community/de/articles/rcos-templates](https://rcos.ecohubs.community/de/articles/rcos-templates)
 
 ---
-- **Layer:** 2 — Governance & Entscheidungslogik
+- **Schicht:** 2 — Governance & Entscheidungslogik
 - **Status:** Vorlage — an deine Gemeinschaft anpassen
-- **RCOS-Referenz:** [§4.2](https://rcos.ecohubs.community/de/articles/rcos-core/v0-1/layer-2-governance-decision-logic#42-decision-mechanisms), [§4.4](https://rcos.ecohubs.community/de/articles/rcos-core/v0-1/layer-2-governance-decision-logic#44-decision-matrix), [§4.7](https://rcos.ecohubs.community/de/articles/rcos-core/v0-1/layer-2-governance-decision-logic#47-artifacts)
+- **RCOS-Referenz:** [§4.2](https://rcos.ecohubs.community/de/standard/core/0.1/layer-2-governance-decision-logic#4.2), [§4.4](https://rcos.ecohubs.community/de/standard/core/0.1/layer-2-governance-decision-logic#4.4), [§4.7](https://rcos.ecohubs.community/de/standard/core/0.1/layer-2-governance-decision-logic#4.7)
 
 > Ordnet jeden Entscheidungstyp und -bereich einer autorisierten Rolle oder einem Gremium, einem Mechanismus, einer Schwelle und einem Eskalationspfad zu. Entscheidungen, die außerhalb dieser Matrix getroffen werden, gelten als ungültig.
 
@@ -17,21 +17,7 @@
 
 ## Abstimmungsgrundsätze
 
-*RCOS-Klauseln: [4.2.1](https://rcos.ecohubs.community/de/articles/rcos-core/v0-1/layer-2-governance-decision-logic#42-decision-mechanisms), [4.2.2](https://rcos.ecohubs.community/de/articles/rcos-core/v0-1/layer-2-governance-decision-logic#42-decision-mechanisms), [4.2.3](https://rcos.ecohubs.community/de/articles/rcos-core/v0-1/layer-2-governance-decision-logic#42-decision-mechanisms), [4.2.4](https://rcos.ecohubs.community/de/articles/rcos-core/v0-1/layer-2-governance-decision-logic#42-decision-mechanisms)*
-
-<details data-kind="rationale">
-<summary>Warum Mechanismus, Schwelle und Zeitrahmen vorab festlegen?</summary>
-
-Eine Abstimmung ohne vordefinierten Mechanismus, Schwelle und Beratungszeitraum ist eine Einladung, Ergebnisse im Nachhinein zu manipulieren — wer die Stimmen zählt oder die Uhr stellt, gewinnt. Diese Parameter im Voraus festzulegen macht jede kollektive Entscheidung reproduzierbar und unter denselben Bedingungen anfechtbar, unabhängig davon, wer gerade im Raum ist.
-
-</details>
-
-<details data-kind="instructions">
-<summary>Wie du diesen Abschnitt ausfüllst</summary>
-
-Lege die Abstimmungsplattform, die Schwelle für jeden Entscheidungstyp, den Beratungszeitraum, die Patt-Regel, die Regel für erneute Abstimmungen sowie etwaige delegierte Ausgabenlimits oder Zuständigkeitsgrenzen fest.
-
-</details>
+*RCOS-Klauseln: [4.2.1](https://rcos.ecohubs.community/de/standard/core/0.1/layer-2-governance-decision-logic#4.2.1), [4.2.2](https://rcos.ecohubs.community/de/standard/core/0.1/layer-2-governance-decision-logic#4.2.2), [4.2.3](https://rcos.ecohubs.community/de/standard/core/0.1/layer-2-governance-decision-logic#4.2.3), [4.2.4](https://rcos.ecohubs.community/de/standard/core/0.1/layer-2-governance-decision-logic#4.2.4)*
 
 - **Abstimmungsplattform:** _<z. B. Snapshot, Loomio, Konsens in Präsenz.>_
 - **Operative Schwelle:** _<z. B. keine Abstimmung erforderlich — delegiert an die zuständige operative Rolleninhaberin laut Rollenregister.>_
@@ -47,21 +33,7 @@ Lege die Abstimmungsplattform, die Schwelle für jeden Entscheidungstyp, den Ber
 
 ## Matrix
 
-*RCOS-Klauseln: [4.4.1](https://rcos.ecohubs.community/de/articles/rcos-core/v0-1/layer-2-governance-decision-logic#44-decision-matrix), [4.4.2](https://rcos.ecohubs.community/de/articles/rcos-core/v0-1/layer-2-governance-decision-logic#44-decision-matrix), [4.4.3](https://rcos.ecohubs.community/de/articles/rcos-core/v0-1/layer-2-governance-decision-logic#44-decision-matrix), [4.4.4](https://rcos.ecohubs.community/de/articles/rcos-core/v0-1/layer-2-governance-decision-logic#44-decision-matrix)*
-
-<details data-kind="rationale">
-<summary>Warum eine einzige verbindliche Matrix?</summary>
-
-Wenn die Regeln darüber, wer was entscheidet, nur in den Köpfen der Leute existieren, wird Autorität zu dem, was die lauteste oder ranghöchste Person sagt. Eine öffentliche Matrix, die jede Entscheidung an einen Bereich, ein Gremium, einen Mechanismus und eine Schwelle bindet, macht jede Kompetenzüberschreitung sofort sichtbar — und macht jede außerhalb der Matrix getroffene Entscheidung per Definition ungültig.
-
-</details>
-
-<details data-kind="instructions">
-<summary>Wie du diesen Abschnitt ausfüllst</summary>
-
-Lege für jeden Entscheidungsbereich (Mitgliedschaft, Finanzen, Plattform, Partnerschaften, Governance usw.) den Entscheidungstyp, das autorisierte Gremium, die teilnahmeberechtigten Personen, den Mechanismus, die Schwelle, Blockadebedingungen und den Eskalationspfad fest.
-
-</details>
+*RCOS-Klauseln: [4.4.1](https://rcos.ecohubs.community/de/standard/core/0.1/layer-2-governance-decision-logic#4.4.1), [4.4.2](https://rcos.ecohubs.community/de/standard/core/0.1/layer-2-governance-decision-logic#4.4.2), [4.4.3](https://rcos.ecohubs.community/de/standard/core/0.1/layer-2-governance-decision-logic#4.4.3), [4.4.4](https://rcos.ecohubs.community/de/standard/core/0.1/layer-2-governance-decision-logic#4.4.4)*
 
 | Entscheidungsbereich | Entscheidungstyp | Autorisiertes Gremium | Teilnahmeberechtigte | Mechanismus | Schwelle | Blockade- / Vetobedingungen | Eskalation |
 |---|---|---|---|---|---|---|---|
@@ -75,21 +47,7 @@ Lege für jeden Entscheidungsbereich (Mitgliedschaft, Finanzen, Plattform, Partn
 
 ## Definitionen der Entscheidungstypen
 
-*RCOS-Klauseln: [4.1.1](https://rcos.ecohubs.community/de/articles/rcos-core/v0-1/layer-2-governance-decision-logic#41-decision-types), [4.1.2](https://rcos.ecohubs.community/de/articles/rcos-core/v0-1/layer-2-governance-decision-logic#41-decision-types), [4.1.3](https://rcos.ecohubs.community/de/articles/rcos-core/v0-1/layer-2-governance-decision-logic#41-decision-types), [4.1.4](https://rcos.ecohubs.community/de/articles/rcos-core/v0-1/layer-2-governance-decision-logic#41-decision-types), [4.1.5](https://rcos.ecohubs.community/de/articles/rcos-core/v0-1/layer-2-governance-decision-logic#41-decision-types)*
-
-<details data-kind="rationale">
-<summary>Warum jede Entscheidung klassifizieren?</summary>
-
-Ohne einen Typ wird jede Entscheidung mit der Geschwindigkeit und Sorgfalt behandelt, die gerade passt — Routineänderungen versanden in Debatten, und konstitutionelle Änderungen rutschen unbemerkt durch. Feste Typen binden das Gewicht einer Entscheidung an den Prozess, den sie durchlaufen muss, und die Regel „im Zweifel höher einstufen" schließt die Lücke, die sonst ausgenutzt werden könnte.
-
-</details>
-
-<details data-kind="instructions">
-<summary>Wie du diesen Abschnitt ausfüllst</summary>
-
-Definiere jeden Entscheidungstyp anhand seines Geltungsbereichs, wer ihn ausführt, welchen Prozess er erfordert und wie Streitigkeiten über die Klassifizierung gelöst werden.
-
-</details>
+*RCOS-Klauseln: [4.1.1](https://rcos.ecohubs.community/de/standard/core/0.1/layer-2-governance-decision-logic#4.1.1), [4.1.2](https://rcos.ecohubs.community/de/standard/core/0.1/layer-2-governance-decision-logic#4.1.2), [4.1.3](https://rcos.ecohubs.community/de/standard/core/0.1/layer-2-governance-decision-logic#4.1.3), [4.1.4](https://rcos.ecohubs.community/de/standard/core/0.1/layer-2-governance-decision-logic#4.1.4), [4.1.5](https://rcos.ecohubs.community/de/standard/core/0.1/layer-2-governance-decision-logic#4.1.5)*
 
 - **Operativ** — _<Tagesgeschäft innerhalb bestehender Regeln; wird von der zuständigen Rolleninhaberin ohne Abstimmung ausgeführt.>_
 - **Strategisch** — _<langfristige Ausrichtung, bedeutende Ressourcenzuweisung, Schaffung/Abschaffung wesentlicher Strukturen; erfordert eine Abstimmung der Vollmitglieder mit definiertem Beratungszeitraum.>_

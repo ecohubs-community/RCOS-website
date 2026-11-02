@@ -2,34 +2,20 @@
 
 # Mitgliedschaftsstatus-Register
 
-- **Generiert:** 2026-08-31
+- **Generiert:** 2026-11-02
 - **Quelle (aktuelle Version):** [https://rcos.ecohubs.community/de/articles/rcos-templates/layer-1/membership-state-registry](https://rcos.ecohubs.community/de/articles/rcos-templates/layer-1/membership-state-registry)
 - **Alle RCOS-Vorlagen:** [https://rcos.ecohubs.community/de/articles/rcos-templates](https://rcos.ecohubs.community/de/articles/rcos-templates)
 
 ---
 - **Ebene:** 1 — Mitgliedschaftssystem
 - **Status:** Vorlage — an eure Gemeinschaft anpassen
-- **RCOS-Referenz:** [§3.1](https://rcos.ecohubs.community/de/articles/rcos-core/v0-1/layer-1-membership-system#31-membership-states)
+- **RCOS-Referenz:** [§3.1](https://rcos.ecohubs.community/de/standard/core/0.1/layer-1-membership-system#3.1)
 
 ---
 
 ## Definierte Mitgliedschaftsstatus
 
-*RCOS-Klauseln: [3.1.1](https://rcos.ecohubs.community/de/articles/rcos-core/v0-1/layer-1-membership-system#31-membership-states), [3.1.2](https://rcos.ecohubs.community/de/articles/rcos-core/v0-1/layer-1-membership-system#31-membership-states), [3.1.3](https://rcos.ecohubs.community/de/articles/rcos-core/v0-1/layer-1-membership-system#31-membership-states), [3.1.4](https://rcos.ecohubs.community/de/articles/rcos-core/v0-1/layer-1-membership-system#31-membership-states), [3.1.5](https://rcos.ecohubs.community/de/articles/rcos-core/v0-1/layer-1-membership-system#31-membership-states)*
-
-<details data-kind="rationale">
-<summary>Warum eine einzige Statustabelle?</summary>
-
-Rechte und Pflichten, die über verschiedene Dokumente verstreut sind, driften auseinander. Alle Status, ihre Rechte, Pflichten und Übergänge in einer Tabelle zu sammeln, macht das Mitgliedschaftssystem auf einen Blick überprüfbar — ihr seht jede Tür in die und aus der Gemeinschaft und was jede davon gewährt. Falls zwei Dokumente jemals widersprüchlich sind, ist dieses Register der Schiedsrichter.
-
-</details>
-
-<details data-kind="instructions">
-<summary>Wie ihr das ausfüllt</summary>
-
-Definiert jeden Mitgliedschaftsstatus, den eure Gemeinschaft anerkennt (z. B. Bewerber·in, Probemitglied, Vollmitglied, Ausgetretenes Mitglied). Listet für jeden Status Rechte, Pflichten, Eintrittsbedingung und Austrittsbedingung auf. Haltet die Status gegenseitig ausschließend — keine Person darf zwei Status gleichzeitig innehaben.
-
-</details>
+*RCOS-Klauseln: [3.1.1](https://rcos.ecohubs.community/de/standard/core/0.1/layer-1-membership-system#3.1.1), [3.1.2](https://rcos.ecohubs.community/de/standard/core/0.1/layer-1-membership-system#3.1.2), [3.1.3](https://rcos.ecohubs.community/de/standard/core/0.1/layer-1-membership-system#3.1.3), [3.1.4](https://rcos.ecohubs.community/de/standard/core/0.1/layer-1-membership-system#3.1.4), [3.1.5](https://rcos.ecohubs.community/de/standard/core/0.1/layer-1-membership-system#3.1.5)*
 
 | Status | Rechte | Pflichten | Eintrittsbedingung | Austrittsbedingung |
 |---|---|---|---|---|

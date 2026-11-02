@@ -2,14 +2,14 @@
 
 # Version History
 
-- **Generated:** 2026-08-31
+- **Generated:** 2026-11-02
 - **Source (latest version):** [https://rcos.ecohubs.community/articles/rcos-templates/layer-6/version-history](https://rcos.ecohubs.community/articles/rcos-templates/layer-6/version-history)
 - **All RCOS templates:** [https://rcos.ecohubs.community/articles/rcos-templates](https://rcos.ecohubs.community/articles/rcos-templates)
 
 ---
 - **Layer:** 6 — Evolution & Adaptation
 - **Status:** Template — adapt for your community; updated with each adopted change
-- **RCOS reference:** [§8.2](https://rcos.ecohubs.community/articles/rcos-core/v0-1/layer-6-evolution-adaptation#82-versioning-and-authority), [§8.6](https://rcos.ecohubs.community/articles/rcos-core/v0-1/layer-6-evolution-adaptation#86-artifacts)
+- **RCOS reference:** [§8.2](https://rcos.ecohubs.community/standard/core/0.1/layer-6-evolution-adaptation#8.2), [§8.6](https://rcos.ecohubs.community/standard/core/0.1/layer-6-evolution-adaptation#8.6)
 
 > The authoritative human-readable record of all adopted changes to your community's RCOS implementation. The currently active version is the most recent entry at the top of this file. Superseded rules remain accessible via version control.
 
@@ -17,21 +17,7 @@
 
 ## Entry Format
 
-*RCOS clauses: [8.2.1](https://rcos.ecohubs.community/articles/rcos-core/v0-1/layer-6-evolution-adaptation#82-versioning-and-authority), [8.2.2](https://rcos.ecohubs.community/articles/rcos-core/v0-1/layer-6-evolution-adaptation#82-versioning-and-authority), [8.2.3](https://rcos.ecohubs.community/articles/rcos-core/v0-1/layer-6-evolution-adaptation#82-versioning-and-authority), [8.2.4](https://rcos.ecohubs.community/articles/rcos-core/v0-1/layer-6-evolution-adaptation#82-versioning-and-authority), [8.2.5](https://rcos.ecohubs.community/articles/rcos-core/v0-1/layer-6-evolution-adaptation#82-versioning-and-authority), [8.6.4](https://rcos.ecohubs.community/articles/rcos-core/v0-1/layer-6-evolution-adaptation#86-artifacts), [8.7.2](https://rcos.ecohubs.community/articles/rcos-core/v0-1/layer-6-evolution-adaptation#87-layer-invariants)*
-
-<details data-kind="rationale">
-<summary>Why record every adopted change?</summary>
-
-Governance that cannot point to "what changed, when, and why" is indistinguishable from governance by whoever speaks loudest. A single append-only ledger of adopted changes — with the superseded versions preserved in version control — makes the current state of the rules unambiguous and gives members, auditors, and future stewards a way to reconstruct the path that got us here.
-
-</details>
-
-<details data-kind="instructions">
-<summary>How to fill this in</summary>
-
-Use the entry template below for every adopted change. New entries are prepended above the most recent. Do not edit historical entries — corrections are recorded as new entries.
-
-</details>
+*RCOS clauses: [8.2.1](https://rcos.ecohubs.community/standard/core/0.1/layer-6-evolution-adaptation#8.2.1), [8.2.2](https://rcos.ecohubs.community/standard/core/0.1/layer-6-evolution-adaptation#8.2.2), [8.2.3](https://rcos.ecohubs.community/standard/core/0.1/layer-6-evolution-adaptation#8.2.3), [8.2.4](https://rcos.ecohubs.community/standard/core/0.1/layer-6-evolution-adaptation#8.2.4), [8.2.5](https://rcos.ecohubs.community/standard/core/0.1/layer-6-evolution-adaptation#8.2.5), [8.6.4](https://rcos.ecohubs.community/standard/core/0.1/layer-6-evolution-adaptation#8.6.4), [8.7.2](https://rcos.ecohubs.community/standard/core/0.1/layer-6-evolution-adaptation#8.7.2)*
 
 ```markdown
 ## <version> — <Short title>

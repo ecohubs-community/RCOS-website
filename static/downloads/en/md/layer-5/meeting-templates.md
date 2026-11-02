@@ -2,14 +2,14 @@
 
 # Meeting Templates
 
-- **Generated:** 2026-08-31
+- **Generated:** 2026-11-02
 - **Source (latest version):** [https://rcos.ecohubs.community/articles/rcos-templates/layer-5/meeting-templates](https://rcos.ecohubs.community/articles/rcos-templates/layer-5/meeting-templates)
 - **All RCOS templates:** [https://rcos.ecohubs.community/articles/rcos-templates](https://rcos.ecohubs.community/articles/rcos-templates)
 
 ---
 - **Layer:** 5 — Operations & Coordination
 - **Status:** Template — adapt for your community
-- **RCOS reference:** [§7.2](https://rcos.ecohubs.community/articles/rcos-core/v0-1/layer-5-operations-coordination#72-meeting-system), [§7.6](https://rcos.ecohubs.community/articles/rcos-core/v0-1/layer-5-operations-coordination#76-artifacts)
+- **RCOS reference:** [§7.2](https://rcos.ecohubs.community/standard/core/0.1/layer-5-operations-coordination#7.2), [§7.6](https://rcos.ecohubs.community/standard/core/0.1/layer-5-operations-coordination#7.6)
 
 > Meeting templates declare the purpose, decision scope, quorum, and structure of each meeting type. A meeting without a declared template will, given enough time, accumulate authority it should not have. Adapt these templates and add or remove meeting types as your community needs.
 
@@ -17,21 +17,7 @@
 
 ## Meeting Type: Operations
 
-*RCOS clauses: [7.2.1](https://rcos.ecohubs.community/articles/rcos-core/v0-1/layer-5-operations-coordination#72-meeting-system), [7.2.2](https://rcos.ecohubs.community/articles/rcos-core/v0-1/layer-5-operations-coordination#72-meeting-system), [7.2.3](https://rcos.ecohubs.community/articles/rcos-core/v0-1/layer-5-operations-coordination#72-meeting-system), [7.2.4](https://rcos.ecohubs.community/articles/rcos-core/v0-1/layer-5-operations-coordination#72-meeting-system), [7.6.4](https://rcos.ecohubs.community/articles/rcos-core/v0-1/layer-5-operations-coordination#76-artifacts)*
-
-<details data-kind="rationale">
-<summary>Why a regular Operations meeting?</summary>
-
-Day-to-day coordination needs a regular beat, not ad-hoc improvisation. The Operations meeting is the community's heartbeat — a predictable space to review active work, surface blockers, and make small operational decisions. Crucially, only Operational decisions happen here; Strategic and Constitutional ones go through the governance process, so the meeting can't quietly accumulate authority it doesn't have.
-
-</details>
-
-<details data-kind="instructions">
-<summary>How to fill this in</summary>
-
-Set purpose, decision scope, required and optional participants, cadence, duration, and facilitation rules. Keep decision scope to Operational only.
-
-</details>
+*RCOS clauses: [7.2.1](https://rcos.ecohubs.community/standard/core/0.1/layer-5-operations-coordination#7.2.1), [7.2.2](https://rcos.ecohubs.community/standard/core/0.1/layer-5-operations-coordination#7.2.2), [7.2.3](https://rcos.ecohubs.community/standard/core/0.1/layer-5-operations-coordination#7.2.3), [7.2.4](https://rcos.ecohubs.community/standard/core/0.1/layer-5-operations-coordination#7.2.4), [7.6.4](https://rcos.ecohubs.community/standard/core/0.1/layer-5-operations-coordination#7.6.4)*
 
 - **Purpose:** _<review active work, coordinate tasks, surface blockers, make operational decisions.>_
 - **Decision scope:** Operational decisions only — cannot make Strategic or Constitutional decisions.
@@ -71,21 +57,7 @@ Set purpose, decision scope, required and optional participants, cadence, durati
 
 ## Meeting Type: Governance
 
-*RCOS clauses: [7.2.1](https://rcos.ecohubs.community/articles/rcos-core/v0-1/layer-5-operations-coordination#72-meeting-system), [7.2.2](https://rcos.ecohubs.community/articles/rcos-core/v0-1/layer-5-operations-coordination#72-meeting-system), [7.2.3](https://rcos.ecohubs.community/articles/rcos-core/v0-1/layer-5-operations-coordination#72-meeting-system), [7.6.4](https://rcos.ecohubs.community/articles/rcos-core/v0-1/layer-5-operations-coordination#76-artifacts)*
-
-<details data-kind="rationale">
-<summary>Why separate deliberation from the binding vote?</summary>
-
-If a meeting can both discuss and decide, whoever is in the room that day gets to decide — regardless of quorum or authority rules. Keeping deliberation separate from the binding vote preserves the integrity of the Decision Matrix and ensures absent members still get a vote.
-
-</details>
-
-<details data-kind="instructions">
-<summary>How to fill this in</summary>
-
-This meeting deliberates on active proposals during their deliberation period. The binding decision is made via the governance process per the Decision Matrix.
-
-</details>
+*RCOS clauses: [7.2.1](https://rcos.ecohubs.community/standard/core/0.1/layer-5-operations-coordination#7.2.1), [7.2.2](https://rcos.ecohubs.community/standard/core/0.1/layer-5-operations-coordination#7.2.2), [7.2.3](https://rcos.ecohubs.community/standard/core/0.1/layer-5-operations-coordination#7.2.3), [7.6.4](https://rcos.ecohubs.community/standard/core/0.1/layer-5-operations-coordination#7.6.4)*
 
 - **Purpose:** Deliberate on an active proposal during its deliberation period.
 - **Decision scope:** Deliberation only — the binding decision is made via the governance process per the Decision Matrix.
@@ -124,21 +96,7 @@ This meeting deliberates on active proposals during their deliberation period. T
 
 ## Meeting Type: Coordination & Alignment
 
-*RCOS clauses: [7.2.1](https://rcos.ecohubs.community/articles/rcos-core/v0-1/layer-5-operations-coordination#72-meeting-system), [7.2.2](https://rcos.ecohubs.community/articles/rcos-core/v0-1/layer-5-operations-coordination#72-meeting-system), [7.2.3](https://rcos.ecohubs.community/articles/rcos-core/v0-1/layer-5-operations-coordination#72-meeting-system), [7.6.4](https://rcos.ecohubs.community/articles/rcos-core/v0-1/layer-5-operations-coordination#76-artifacts)*
-
-<details data-kind="rationale">
-<summary>Why a dedicated coordination meeting?</summary>
-
-Some blockers span more than one role and can't be resolved in the regular Operations rhythm. Coordination & Alignment gives cross-role work its own space — for dependencies, handoffs, and competing priorities — so the weekly meeting doesn't balloon trying to absorb everything.
-
-</details>
-
-<details data-kind="instructions">
-<summary>How to fill this in</summary>
-
-Use this template when cross-role coordination is needed. Keep decision scope Operational only and limit required participants to those with active initiatives.
-
-</details>
+*RCOS clauses: [7.2.1](https://rcos.ecohubs.community/standard/core/0.1/layer-5-operations-coordination#7.2.1), [7.2.2](https://rcos.ecohubs.community/standard/core/0.1/layer-5-operations-coordination#7.2.2), [7.2.3](https://rcos.ecohubs.community/standard/core/0.1/layer-5-operations-coordination#7.2.3), [7.6.4](https://rcos.ecohubs.community/standard/core/0.1/layer-5-operations-coordination#7.6.4)*
 
 - **Purpose:** Synchronize work across roles and initiatives; surface dependencies and blockers; align priorities.
 - **Decision scope:** Operational decisions only.
@@ -166,21 +124,7 @@ Use this template when cross-role coordination is needed. Keep decision scope Op
 
 ## Meeting Type: Reflection & Learning
 
-*RCOS clauses: [7.2.1](https://rcos.ecohubs.community/articles/rcos-core/v0-1/layer-5-operations-coordination#72-meeting-system), [7.2.2](https://rcos.ecohubs.community/articles/rcos-core/v0-1/layer-5-operations-coordination#72-meeting-system), [7.2.3](https://rcos.ecohubs.community/articles/rcos-core/v0-1/layer-5-operations-coordination#72-meeting-system), [7.6.4](https://rcos.ecohubs.community/articles/rcos-core/v0-1/layer-5-operations-coordination#76-artifacts)*
-
-<details data-kind="rationale">
-<summary>Why give reflection its own meeting type?</summary>
-
-Reflection that happens only when time allows never happens. A named meeting type with a defined cadence makes space for looking back — and keeps retrospection from getting squeezed out by operational urgency. Without it, the Learning Log (Layer 6) stays empty and the framework stops evolving.
-
-</details>
-
-<details data-kind="instructions">
-<summary>How to fill this in</summary>
-
-This meeting reviews the most recent period and feeds insights to the Learning Log (Layer 6) and the Future Proposals queue.
-
-</details>
+*RCOS clauses: [7.2.1](https://rcos.ecohubs.community/standard/core/0.1/layer-5-operations-coordination#7.2.1), [7.2.2](https://rcos.ecohubs.community/standard/core/0.1/layer-5-operations-coordination#7.2.2), [7.2.3](https://rcos.ecohubs.community/standard/core/0.1/layer-5-operations-coordination#7.2.3), [7.6.4](https://rcos.ecohubs.community/standard/core/0.1/layer-5-operations-coordination#7.6.4)*
 
 - **Purpose:** Review experience, surface patterns, capture learnings, feed insights back into the framework.
 - **Decision scope:** May produce proposals for change; no direct decision authority unless specified in the Decision Matrix.
@@ -212,21 +156,7 @@ This meeting reviews the most recent period and feeds insights to the Learning L
 
 ## Meeting Type: Conflict Handling
 
-*RCOS clauses: [7.2.1](https://rcos.ecohubs.community/articles/rcos-core/v0-1/layer-5-operations-coordination#72-meeting-system), [7.2.2](https://rcos.ecohubs.community/articles/rcos-core/v0-1/layer-5-operations-coordination#72-meeting-system), [7.2.3](https://rcos.ecohubs.community/articles/rcos-core/v0-1/layer-5-operations-coordination#72-meeting-system), [7.6.4](https://rcos.ecohubs.community/articles/rcos-core/v0-1/layer-5-operations-coordination#76-artifacts); see also Layer 4 — [Conflict Resolution Ladder](https://rcos.ecohubs.community/articles/rcos-core/v0-1/layer-4-conflict-repair-accountability#62-resolution-pathways)*
-
-<details data-kind="rationale">
-<summary>Why a distinct meeting type for conflict?</summary>
-
-Conflict work has rules that other meetings don't: confidentiality, Facilitator selection that bypasses party preference, anti-retaliation protections, and restricted records. Using the Operations template for a conflict session would quietly violate all of these. A dedicated template makes the different container visible from the first minute.
-
-</details>
-
-<details data-kind="instructions">
-<summary>How to fill this in</summary>
-
-Use this template only for facilitated sessions under Conflict Resolution Ladder Steps 2–4. Privacy and Facilitator-selection rules are governed by Layer 4, not by the meeting itself.
-
-</details>
+*RCOS clauses: [7.2.1](https://rcos.ecohubs.community/standard/core/0.1/layer-5-operations-coordination#7.2.1), [7.2.2](https://rcos.ecohubs.community/standard/core/0.1/layer-5-operations-coordination#7.2.2), [7.2.3](https://rcos.ecohubs.community/standard/core/0.1/layer-5-operations-coordination#7.2.3), [7.6.4](https://rcos.ecohubs.community/standard/core/0.1/layer-5-operations-coordination#7.6.4); see also Layer 4 — [Conflict Resolution Ladder](https://rcos.ecohubs.community/standard/core/0.1/layer-4-conflict-repair-accountability#6.2)*
 
 - **Purpose:** Facilitate resolution at a defined ladder step (Conflict Resolution Ladder Steps 2–4).
 - **Decision scope:** Produces repair plans, agreements, or escalation decisions; binding outcomes require the authority defined in the Conflict Resolution Ladder and Decision Matrix.
