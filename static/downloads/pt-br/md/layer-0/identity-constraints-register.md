@@ -2,14 +2,14 @@
 
 # Registro de Restrições de Identidade
 
-- **Gerado em:** 2026-08-31
+- **Gerado em:** 2026-11-02
 - **Fonte (versão mais recente):** [https://rcos.ecohubs.community/pt-br/articles/rcos-templates/layer-0/identity-constraints-register](https://rcos.ecohubs.community/pt-br/articles/rcos-templates/layer-0/identity-constraints-register)
 - **Todos os modelos RCOS:** [https://rcos.ecohubs.community/pt-br/articles/rcos-templates](https://rcos.ecohubs.community/pt-br/articles/rcos-templates)
 
 ---
 - **Camada:** 0 — Identidade e Escopo
 - **Status:** Modelo — adapte para sua comunidade
-- **Referência RCOS:** [§2.4](https://rcos.ecohubs.community/pt-br/articles/rcos-core/v0-1/layer-0-identity-scope#24-identity-constraints), [§2.5](https://rcos.ecohubs.community/pt-br/articles/rcos-core/v0-1/layer-0-identity-scope#25-artifacts)
+- **Referência RCOS:** [§2.4](https://rcos.ecohubs.community/pt-br/standard/core/0.1/layer-0-identity-scope#2.4), [§2.5](https://rcos.ecohubs.community/pt-br/standard/core/0.1/layer-0-identity-scope#2.5)
 
 > Restrições de identidade são os limites comportamentais, éticos e estruturais inegociáveis que definem quem a comunidade é. Diferente dos invariantes (que protegem o próprio sistema), as restrições de identidade definem como os membros e a comunidade se relacionam com pessoas, ecossistemas e ideologias.
 
@@ -17,21 +17,7 @@
 
 ## Restrições de Identidade Ativas
 
-*Cláusulas RCOS: [2.4.1](https://rcos.ecohubs.community/pt-br/articles/rcos-core/v0-1/layer-0-identity-scope#24-identity-constraints), [2.4.2](https://rcos.ecohubs.community/pt-br/articles/rcos-core/v0-1/layer-0-identity-scope#24-identity-constraints), [2.4.3](https://rcos.ecohubs.community/pt-br/articles/rcos-core/v0-1/layer-0-identity-scope#24-identity-constraints), [2.4.4](https://rcos.ecohubs.community/pt-br/articles/rcos-core/v0-1/layer-0-identity-scope#24-identity-constraints)*
-
-<details data-kind="rationale">
-<summary>Por que declarar as restrições de identidade explicitamente?</summary>
-
-Toda comunidade tem regras implícitas — "isso aqui a gente não faz". Regras implícitas se tornam ferramentas de aplicação arbitrária: quem tem poder social decide o que elas significam. Escrever as restrições de identidade, e exigir que sejam testáveis através de processos definidos, é o que transforma uma norma informal em algo no qual um membro pode realmente confiar ou contestar.
-
-</details>
-
-<details data-kind="instructions">
-<summary>Como preencher isto</summary>
-
-Cada restrição deve ser testável e aplicável através de um processo definido — não aspirações vagas. Categorias comuns do RCOS §2.4.2: limites éticos/comportamentais, pré-requisitos de participação, restrições culturais ou ecológicas inegociáveis. Consulte a Camada 4 para aplicação, a Camada 1 para consequências de participação.
-
-</details>
+*Cláusulas RCOS: [2.4.1](https://rcos.ecohubs.community/pt-br/standard/core/0.1/layer-0-identity-scope#2.4.1), [2.4.2](https://rcos.ecohubs.community/pt-br/standard/core/0.1/layer-0-identity-scope#2.4.2), [2.4.3](https://rcos.ecohubs.community/pt-br/standard/core/0.1/layer-0-identity-scope#2.4.3), [2.4.4](https://rcos.ecohubs.community/pt-br/standard/core/0.1/layer-0-identity-scope#2.4.4)*
 
 1. _<Restrição 1, ex.: Membros não devem agir de formas que concentrem poder, extraiam valor ou causem dano a pessoas, à terra ou à integridade da governança.>_
 2. _<Restrição 2, ex.: A comunidade não pode ser usada como veículo para ganho financeiro especulativo — os mecanismos econômicos internos existem para reconhecer contribuição, não para gerar lucro.>_
@@ -44,21 +30,7 @@ Cada restrição deve ser testável e aplicável através de um processo definid
 
 ## Aplicação e Testabilidade
 
-*Cláusulas RCOS: [2.4.3](https://rcos.ecohubs.community/pt-br/articles/rcos-core/v0-1/layer-0-identity-scope#24-identity-constraints), [2.4.4](https://rcos.ecohubs.community/pt-br/articles/rcos-core/v0-1/layer-0-identity-scope#24-identity-constraints)*
-
-<details data-kind="rationale">
-<summary>Por que as restrições devem ser testáveis, não informais?</summary>
-
-Uma restrição que não pode ser testada é uma restrição aplicada por quem tem o maior capital social na sala. Definir como cada restrição é detectada, quem a aciona e através de qual processo é resolvida é o que impede que regras de identidade se tornem ferramentas de exclusão arbitrária.
-
-</details>
-
-<details data-kind="instructions">
-<summary>Como preencher isto</summary>
-
-Para cada restrição acima (ou como política geral), descreva como uma violação é identificada e tratada. Consulte a Escada de Resolução de Conflitos (Camada 4) e qualquer papel responsável por monitoramento (Camada 5).
-
-</details>
+*Cláusulas RCOS: [2.4.3](https://rcos.ecohubs.community/pt-br/standard/core/0.1/layer-0-identity-scope#2.4.3), [2.4.4](https://rcos.ecohubs.community/pt-br/standard/core/0.1/layer-0-identity-scope#2.4.4)*
 
 - _<Como as violações são detectadas e reportadas.>_
 - _<Qual processo da Camada 4 trata violações de qual classe de restrição.>_
@@ -66,14 +38,7 @@ Para cada restrição acima (ou como política geral), descreva como uma violaç
 
 ## Condições para Mudança
 
-*Cláusulas RCOS: [2.4.1](https://rcos.ecohubs.community/pt-br/articles/rcos-core/v0-1/layer-0-identity-scope#24-identity-constraints), [2.5.2](https://rcos.ecohubs.community/pt-br/articles/rcos-core/v0-1/layer-0-identity-scope#25-artifacts)*
-
-<details data-kind="instructions">
-<summary>Como preencher isto</summary>
-
-Restrições de identidade são constitucionais — descreva o tipo de decisão, o quórum e o processo de ratificação exigidos para adicionar, remover ou alterar uma restrição.
-
-</details>
+*Cláusulas RCOS: [2.4.1](https://rcos.ecohubs.community/pt-br/standard/core/0.1/layer-0-identity-scope#2.4.1), [2.5.2](https://rcos.ecohubs.community/pt-br/standard/core/0.1/layer-0-identity-scope#2.5.2)*
 
 Restrições de identidade só podem ser adicionadas, removidas ou alteradas através de uma decisão Constitucional, conforme definido na Matriz de Decisão (Camada 2), exigindo _<quórum>_ e um período de ratificação não inferior a _<duração>_. Qualquer mudança deve ser registrada no Histórico de Versões (Camada 6).
 

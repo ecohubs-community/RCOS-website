@@ -2,14 +2,14 @@
 
 # Registro de Invariantes
 
-- **Generado:** 2026-08-31
+- **Generado:** 2026-11-02
 - **Fuente (versión más reciente):** [https://rcos.ecohubs.community/es/articles/rcos-templates/layer-0/invariants-register](https://rcos.ecohubs.community/es/articles/rcos-templates/layer-0/invariants-register)
 - **Todas las plantillas RCOS:** [https://rcos.ecohubs.community/es/articles/rcos-templates](https://rcos.ecohubs.community/es/articles/rcos-templates)
 
 ---
 - **Capa:** 0 — Identidad y Alcance
 - **Estado:** Plantilla — adaptar para tu comunidad
-- **Referencia RCOS:** [§2.3](https://rcos.ecohubs.community/es/articles/rcos-core/v0-1/layer-0-identity-scope#23-invariants), [§2.5](https://rcos.ecohubs.community/es/articles/rcos-core/v0-1/layer-0-identity-scope#25-artifacts)
+- **Referencia RCOS:** [§2.3](https://rcos.ecohubs.community/es/standard/core/0.1/layer-0-identity-scope#2.3), [§2.5](https://rcos.ecohubs.community/es/standard/core/0.1/layer-0-identity-scope#2.5)
 
 > Las invariantes son restricciones que NO DEBEN ser violadas mientras estén en vigor. Ninguna decisión, rol, proceso o medida de emergencia puede anular una invariante. Si surge un conflicto entre una invariante y cualquier otra regla, la invariante prevalece.
 
@@ -17,21 +17,7 @@
 
 ## Invariantes Activas
 
-*Cláusulas RCOS: [2.3.1](https://rcos.ecohubs.community/es/articles/rcos-core/v0-1/layer-0-identity-scope#23-invariants), [2.3.2](https://rcos.ecohubs.community/es/articles/rcos-core/v0-1/layer-0-identity-scope#23-invariants), [2.3.3](https://rcos.ecohubs.community/es/articles/rcos-core/v0-1/layer-0-identity-scope#23-invariants), [2.3.4](https://rcos.ecohubs.community/es/articles/rcos-core/v0-1/layer-0-identity-scope#23-invariants), [2.3.5](https://rcos.ecohubs.community/es/articles/rcos-core/v0-1/layer-0-identity-scope#23-invariants), [2.3.6](https://rcos.ecohubs.community/es/articles/rcos-core/v0-1/layer-0-identity-scope#23-invariants)*
-
-<details data-kind="rationale">
-<summary>¿Por qué las invariantes no pueden ser anuladas?</summary>
-
-Las invariantes son el piso firme del sistema — aquello que debe mantenerse verdadero incluso bajo presión, emergencia o votación popular. Si cualquier decisión, rol o medida de crisis pudiera anularlas, dejarían de ser restricciones y se convertirían en preferencias. Enumerarlas explícitamente y vincularlas a todas las capas es lo que hace que el sistema de gobernanza sea confiable bajo estrés, no solo en días tranquilos.
-
-</details>
-
-<details data-kind="instructions">
-<summary>Cómo completar esto</summary>
-
-Cada invariante es una restricción firme. Mantenlas pocas, específicas y absolutas — formuladas de modo que cualquier violación sea inequívocamente identificable. Categorías comunes: protección del propósito, trazabilidad de la autoridad, derechos de salida, neutralidad ideológica, no-extracción, primacía de la seguridad.
-
-</details>
+*Cláusulas RCOS: [2.3.1](https://rcos.ecohubs.community/es/standard/core/0.1/layer-0-identity-scope#2.3.1), [2.3.2](https://rcos.ecohubs.community/es/standard/core/0.1/layer-0-identity-scope#2.3.2), [2.3.3](https://rcos.ecohubs.community/es/standard/core/0.1/layer-0-identity-scope#2.3.3), [2.3.4](https://rcos.ecohubs.community/es/standard/core/0.1/layer-0-identity-scope#2.3.4), [2.3.5](https://rcos.ecohubs.community/es/standard/core/0.1/layer-0-identity-scope#2.3.5), [2.3.6](https://rcos.ecohubs.community/es/standard/core/0.1/layer-0-identity-scope#2.3.6)*
 
 | ID | Invariante | Añadida | Registro de decisión |
 |---|---|---|---|

@@ -2,34 +2,20 @@
 
 # Austritts- & Trennungsprotokoll
 
-- **Generiert:** 2026-08-31
+- **Generiert:** 2026-11-02
 - **Quelle (aktuelle Version):** [https://rcos.ecohubs.community/de/articles/rcos-templates/layer-1/exit-protocol](https://rcos.ecohubs.community/de/articles/rcos-templates/layer-1/exit-protocol)
 - **Alle RCOS-Vorlagen:** [https://rcos.ecohubs.community/de/articles/rcos-templates](https://rcos.ecohubs.community/de/articles/rcos-templates)
 
 ---
 - **Schicht:** 1 — Mitgliedschaftssystem
 - **Status:** Vorlage — an deine Gemeinschaft anpassen
-- **RCOS-Referenz:** [§3.6](https://rcos.ecohubs.community/de/articles/rcos-core/v0-1/layer-1-membership-system#36-exit-and-separation), [§3.7](https://rcos.ecohubs.community/de/articles/rcos-core/v0-1/layer-1-membership-system#37-suspension-and-temporary-status), [§3.8](https://rcos.ecohubs.community/de/articles/rcos-core/v0-1/layer-1-membership-system#38-artifacts)
+- **RCOS-Referenz:** [§3.6](https://rcos.ecohubs.community/de/standard/core/0.1/layer-1-membership-system#3.6), [§3.7](https://rcos.ecohubs.community/de/standard/core/0.1/layer-1-membership-system#3.7), [§3.8](https://rcos.ecohubs.community/de/standard/core/0.1/layer-1-membership-system#3.8)
 
 ---
 
 ## Freiwilliger Austritt
 
-*RCOS-Klauseln: [3.6.1](https://rcos.ecohubs.community/de/articles/rcos-core/v0-1/layer-1-membership-system#36-exit-and-separation), [3.6.2](https://rcos.ecohubs.community/de/articles/rcos-core/v0-1/layer-1-membership-system#36-exit-and-separation), [3.6.4](https://rcos.ecohubs.community/de/articles/rcos-core/v0-1/layer-1-membership-system#36-exit-and-separation)*
-
-<details data-kind="rationale">
-<summary>Warum sollte das Verlassen reibungslos sein?</summary>
-
-Eine Gemeinschaft, die schwer zu verlassen ist, ist keine Gemeinschaft — sie ist eine Falle. Freiwilliger Austritt muss jederzeit möglich sein, ohne Verhör, Kündigungsfristen oder Bestrafung, denn das Recht, Zustimmung zurückzuziehen, ist das, was jede andere Zustimmung erst real macht. Die separate Aufbewahrung der Beitragshistorie stellt sicher, dass ein Austritt die geleistete Arbeit nicht auslöscht.
-
-</details>
-
-<details data-kind="instructions">
-<summary>Wie du diesen Abschnitt ausfüllst</summary>
-
-Beschreibe den Kanal für die Einreichung des Austritts, die Frist bis zum Entzug des Zugangs, welche Aufzeichnungen aufbewahrt werden und den resultierenden Statusübergang.
-
-</details>
+*RCOS-Klauseln: [3.6.1](https://rcos.ecohubs.community/de/standard/core/0.1/layer-1-membership-system#3.6.1), [3.6.2](https://rcos.ecohubs.community/de/standard/core/0.1/layer-1-membership-system#3.6.2), [3.6.4](https://rcos.ecohubs.community/de/standard/core/0.1/layer-1-membership-system#3.6.4)*
 
 - _<Wie ein Mitglied einen freiwilligen Austritt einreicht; Gründe optional.>_
 - _<Kündigungsfrist oder Übergabeerwartung, falls vorhanden.>_
@@ -40,21 +26,7 @@ Beschreibe den Kanal für die Einreichung des Austritts, die Frist bis zum Entzu
 
 ## Erzwungener Austritt
 
-*RCOS-Klauseln: [3.6.3](https://rcos.ecohubs.community/de/articles/rcos-core/v0-1/layer-1-membership-system#36-exit-and-separation), [3.6.4](https://rcos.ecohubs.community/de/articles/rcos-core/v0-1/layer-1-membership-system#36-exit-and-separation)*
-
-<details data-kind="rationale">
-<summary>Warum den Ausschluss an Schicht 4 knüpfen?</summary>
-
-Der Ausschluss ist die schärfste Macht, die eine Gemeinschaft über eine Person hat. Wenn sie von jedem ausgeübt werden kann, der genug sozialen Einfluss hat, ist die Mitgliedschaft wertlos. Die Voraussetzung eines abgeschlossenen Rechenschaftsverfahrens der Schicht 4 — mit schriftlicher Begründung, einer Benachrichtigung und einer Mindest-Wartefrist für erneute Bewerbung — verwandelt den Ausschluss von einem Machtakt in einen Akt der Governance, der überprüft und angefochten werden kann.
-
-</details>
-
-<details data-kind="instructions">
-<summary>Wie du diesen Abschnitt ausfüllst</summary>
-
-Lege fest, dass ein erzwungener Austritt nur nach einem abgeschlossenen Rechenschaftsverfahren der Schicht 4 erfolgen kann. Definiere Benachrichtigung, Zugangsentzug, aufbewahrte Aufzeichnungen, Sperrfrist für erneute Bewerbung und Datenschutz des Entscheidungsprotokolls.
-
-</details>
+*RCOS-Klauseln: [3.6.3](https://rcos.ecohubs.community/de/standard/core/0.1/layer-1-membership-system#3.6.3), [3.6.4](https://rcos.ecohubs.community/de/standard/core/0.1/layer-1-membership-system#3.6.4)*
 
 - _<Ein erzwungener Austritt darf nur aus einem abgeschlossenen Rechenschaftsverfahren der Schicht 4 mit dokumentierter Entscheidung resultieren.>_
 - _<Das betroffene Mitglied muss schriftlich mit Begründung und Verweis auf das Entscheidungsprotokoll benachrichtigt werden, bevor der Zugang entzogen wird.>_
@@ -65,41 +37,13 @@ Lege fest, dass ein erzwungener Austritt nur nach einem abgeschlossenen Rechensc
 
 ## Suspendierung
 
-*RCOS-Klauseln: [3.7.1](https://rcos.ecohubs.community/de/articles/rcos-core/v0-1/layer-1-membership-system#37-suspension-and-temporary-status), [3.7.2](https://rcos.ecohubs.community/de/articles/rcos-core/v0-1/layer-1-membership-system#37-suspension-and-temporary-status), [3.7.3](https://rcos.ecohubs.community/de/articles/rcos-core/v0-1/layer-1-membership-system#37-suspension-and-temporary-status)*
-
-<details data-kind="rationale">
-<summary>Warum Suspendierung sorgfältig gestalten — oder gar nicht?</summary>
-
-Ein schlecht gestalteter Suspendierungsstatus ist schlimmer als keiner — er wird zu einem weichen Austritt ohne ordentliches Verfahren oder zu einem unbefristeten Schwebezustand, der als Strafe dient, ohne die Rechenschaftspflicht eines vollständigen Ausschlusses. Wenn die Gemeinschaft sich nicht zu expliziten Bedingungen, Zeitgrenzen und Überprüfungsmechanismen verpflichten kann, ist es sicherer, keine formale Suspendierung zu haben als eine unklare.
-
-</details>
-
-<details data-kind="instructions">
-<summary>Wie du diesen Abschnitt ausfüllst</summary>
-
-Definiere die Suspendierung entweder explizit (Eintrittsbedingungen, Zeitlimits, Rechte während der Suspendierung, Überprüfungsmechanismus, Ende) oder stelle fest, dass keine formale Suspendierung existiert. Lass diesen Abschnitt nicht mehrdeutig.
-
-</details>
+*RCOS-Klauseln: [3.7.1](https://rcos.ecohubs.community/de/standard/core/0.1/layer-1-membership-system#3.7.1), [3.7.2](https://rcos.ecohubs.community/de/standard/core/0.1/layer-1-membership-system#3.7.2), [3.7.3](https://rcos.ecohubs.community/de/standard/core/0.1/layer-1-membership-system#3.7.3)*
 
 _<Entweder: Definiere den Suspendierungsstatus mit Eintrittsbedingungen, Höchstdauer, Rechten während der Suspendierung, verpflichtendem Überprüfungsmechanismus und Ende; oder: stelle fest, dass eine formale Suspendierung derzeit nicht definiert ist.>_
 
 ## Trennung von Vermögenswerten, Rollen und Verantwortlichkeiten
 
-*RCOS-Klauseln: [3.6.5](https://rcos.ecohubs.community/de/articles/rcos-core/v0-1/layer-1-membership-system#36-exit-and-separation)*
-
-<details data-kind="rationale">
-<summary>Warum Trennungsschritte auflisten?</summary>
-
-Wenn jemand geht, wird jeder offene Faden — eine Rolle, die niemand abgegeben hat, ein Wallet-Schlüssel, der noch aktiv ist, eine Aufgabe, die noch zugewiesen ist — zu einer aktiven Angriffsfläche oder einer operativen Lücke. Eine Checkliste erzwingt, dass diese Fäden bewusst geschlossen werden, anstatt Monate später entdeckt zu werden, wenn etwas kaputtgeht oder jemand Zugang missbraucht, den er nicht mehr haben sollte.
-
-</details>
-
-<details data-kind="instructions">
-<summary>Wie du diesen Abschnitt ausfüllst</summary>
-
-Erstelle eine Checkliste, die sowohl bei freiwilligem als auch bei erzwungenem Austritt angewendet wird. Berücksichtige Rollenabgabe, Aufgabenfreigabe, Entzug des Zugangs zu Finanzinstrumenten, Entzug von Plattform-Administrationsrechten und Klärung offener Verpflichtungen.
-
-</details>
+*RCOS-Klauseln: [3.6.5](https://rcos.ecohubs.community/de/standard/core/0.1/layer-1-membership-system#3.6.5)*
 
 Die folgenden Trennungsschritte gelten sowohl für freiwillige als auch für erzwungene Austritte:
 

@@ -2,14 +2,14 @@
 
 # Registro de Autoridades
 
-- **Gerado em:** 2026-08-31
+- **Gerado em:** 2026-11-02
 - **Fonte (versão mais recente):** [https://rcos.ecohubs.community/pt-br/articles/rcos-templates/layer-2/authority-registry](https://rcos.ecohubs.community/pt-br/articles/rcos-templates/layer-2/authority-registry)
 - **Todos os modelos RCOS:** [https://rcos.ecohubs.community/pt-br/articles/rcos-templates](https://rcos.ecohubs.community/pt-br/articles/rcos-templates)
 
 ---
 - **Camada:** 2 — Governança e Lógica de Decisão
 - **Status:** Modelo — adapte para sua comunidade
-- **Referência RCOS:** [§4.3](https://rcos.ecohubs.community/pt-br/articles/rcos-core/v0-1/layer-2-governance-decision-logic#43-authority-boundaries), [§4.7](https://rcos.ecohubs.community/pt-br/articles/rcos-core/v0-1/layer-2-governance-decision-logic#47-artifacts)
+- **Referência RCOS:** [§4.3](https://rcos.ecohubs.community/pt-br/standard/core/0.1/layer-2-governance-decision-logic#4.3), [§4.7](https://rcos.ecohubs.community/pt-br/standard/core/0.1/layer-2-governance-decision-logic#4.7)
 
 > Lista todos os papéis, círculos ou órgãos que detêm autoridade decisória, junto com seu escopo explícito, limites e duração.
 
@@ -17,21 +17,7 @@
 
 ## Autoridades Registradas
 
-*Cláusulas RCOS: [4.3.1](https://rcos.ecohubs.community/pt-br/articles/rcos-core/v0-1/layer-2-governance-decision-logic#43-authority-boundaries), [4.3.2](https://rcos.ecohubs.community/pt-br/articles/rcos-core/v0-1/layer-2-governance-decision-logic#43-authority-boundaries), [4.3.3](https://rcos.ecohubs.community/pt-br/articles/rcos-core/v0-1/layer-2-governance-decision-logic#43-authority-boundaries), [4.3.4](https://rcos.ecohubs.community/pt-br/articles/rcos-core/v0-1/layer-2-governance-decision-logic#43-authority-boundaries), [4.3.5](https://rcos.ecohubs.community/pt-br/articles/rcos-core/v0-1/layer-2-governance-decision-logic#43-authority-boundaries)*
-
-<details data-kind="rationale">
-<summary>Por que registrar cada autoridade por escrito?</summary>
-
-A autoridade que não é registrada explicitamente acaba sendo preenchida por padrão — por quem está há mais tempo, fala mais alto ou controla as chaves. Um único registro que nomeia cada papel, delimita seu escopo, define seus limites e vincula sua base a um ato de delegação torna ações não autorizadas detectáveis e impede que a autoridade seja derivada de carisma, antiguidade ou propriedade.
-
-</details>
-
-<details data-kind="instructions">
-<summary>Como preencher</summary>
-
-Para cada papel, órgão ou círculo que detém autoridade, liste o escopo da autoridade, os limites rígidos, o mandato/duração e a base (estado de associação, ato de delegação, etc.). O conjunto coletivo de Membros Plenos é em si uma autoridade e pertence a esta tabela.
-
-</details>
+*Cláusulas RCOS: [4.3.1](https://rcos.ecohubs.community/pt-br/standard/core/0.1/layer-2-governance-decision-logic#4.3.1), [4.3.2](https://rcos.ecohubs.community/pt-br/standard/core/0.1/layer-2-governance-decision-logic#4.3.2), [4.3.3](https://rcos.ecohubs.community/pt-br/standard/core/0.1/layer-2-governance-decision-logic#4.3.3), [4.3.4](https://rcos.ecohubs.community/pt-br/standard/core/0.1/layer-2-governance-decision-logic#4.3.4), [4.3.5](https://rcos.ecohubs.community/pt-br/standard/core/0.1/layer-2-governance-decision-logic#4.3.5)*
 
 | Papel / Órgão | Escopo da autoridade | Limites | Mandato / Duração | Base |
 |---|---|---|---|---|

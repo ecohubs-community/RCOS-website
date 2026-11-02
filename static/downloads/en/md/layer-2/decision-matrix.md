@@ -2,14 +2,14 @@
 
 # Decision Matrix
 
-- **Generated:** 2026-08-31
+- **Generated:** 2026-11-02
 - **Source (latest version):** [https://rcos.ecohubs.community/articles/rcos-templates/layer-2/decision-matrix](https://rcos.ecohubs.community/articles/rcos-templates/layer-2/decision-matrix)
 - **All RCOS templates:** [https://rcos.ecohubs.community/articles/rcos-templates](https://rcos.ecohubs.community/articles/rcos-templates)
 
 ---
 - **Layer:** 2 — Governance & Decision Logic
 - **Status:** Template — adapt for your community
-- **RCOS reference:** [§4.2](https://rcos.ecohubs.community/articles/rcos-core/v0-1/layer-2-governance-decision-logic#42-decision-mechanisms), [§4.4](https://rcos.ecohubs.community/articles/rcos-core/v0-1/layer-2-governance-decision-logic#44-decision-matrix), [§4.7](https://rcos.ecohubs.community/articles/rcos-core/v0-1/layer-2-governance-decision-logic#47-artifacts)
+- **RCOS reference:** [§4.2](https://rcos.ecohubs.community/standard/core/0.1/layer-2-governance-decision-logic#4.2), [§4.4](https://rcos.ecohubs.community/standard/core/0.1/layer-2-governance-decision-logic#4.4), [§4.7](https://rcos.ecohubs.community/standard/core/0.1/layer-2-governance-decision-logic#4.7)
 
 > Maps every decision type and domain to an authorized role or body, mechanism, threshold, and escalation path. Decisions made outside this matrix are considered invalid.
 
@@ -17,21 +17,7 @@
 
 ## Voting Principles
 
-*RCOS clauses: [4.2.1](https://rcos.ecohubs.community/articles/rcos-core/v0-1/layer-2-governance-decision-logic#42-decision-mechanisms), [4.2.2](https://rcos.ecohubs.community/articles/rcos-core/v0-1/layer-2-governance-decision-logic#42-decision-mechanisms), [4.2.3](https://rcos.ecohubs.community/articles/rcos-core/v0-1/layer-2-governance-decision-logic#42-decision-mechanisms), [4.2.4](https://rcos.ecohubs.community/articles/rcos-core/v0-1/layer-2-governance-decision-logic#42-decision-mechanisms)*
-
-<details data-kind="rationale">
-<summary>Why pin down mechanism, threshold, and timing?</summary>
-
-A vote without a predefined mechanism, threshold, and deliberation window is an invitation to manufacture outcomes after the fact — whoever counts the votes or sets the clock wins. Declaring these parameters in advance makes every collective decision reproducible and contestable on the same terms, regardless of who is in the room.
-
-</details>
-
-<details data-kind="instructions">
-<summary>How to fill this in</summary>
-
-State the voting platform, the threshold for each decision type, the deliberation period, the tie rule, the re-vote rule, and any delegated-authority spending or scope limit.
-
-</details>
+*RCOS clauses: [4.2.1](https://rcos.ecohubs.community/standard/core/0.1/layer-2-governance-decision-logic#4.2.1), [4.2.2](https://rcos.ecohubs.community/standard/core/0.1/layer-2-governance-decision-logic#4.2.2), [4.2.3](https://rcos.ecohubs.community/standard/core/0.1/layer-2-governance-decision-logic#4.2.3), [4.2.4](https://rcos.ecohubs.community/standard/core/0.1/layer-2-governance-decision-logic#4.2.4)*
 
 - **Voting platform:** _<e.g. Snapshot, Loomio, in-person consensus.>_
 - **Operational threshold:** _<e.g. no vote required — delegated to the relevant operational role holder per the Role Registry.>_
@@ -47,21 +33,7 @@ State the voting platform, the threshold for each decision type, the deliberatio
 
 ## Matrix
 
-*RCOS clauses: [4.4.1](https://rcos.ecohubs.community/articles/rcos-core/v0-1/layer-2-governance-decision-logic#44-decision-matrix), [4.4.2](https://rcos.ecohubs.community/articles/rcos-core/v0-1/layer-2-governance-decision-logic#44-decision-matrix), [4.4.3](https://rcos.ecohubs.community/articles/rcos-core/v0-1/layer-2-governance-decision-logic#44-decision-matrix), [4.4.4](https://rcos.ecohubs.community/articles/rcos-core/v0-1/layer-2-governance-decision-logic#44-decision-matrix)*
-
-<details data-kind="rationale">
-<summary>Why a single authoritative matrix?</summary>
-
-If the rules for who decides what live in people's heads, authority becomes whatever the loudest or most senior person says it is. A public matrix that binds every decision to a domain, body, mechanism, and threshold makes out-of-scope action visible the moment it happens — and makes any decision made outside it invalid by construction.
-
-</details>
-
-<details data-kind="instructions">
-<summary>How to fill this in</summary>
-
-For each decision domain (membership, treasury, platform, partnerships, governance, etc.), set the decision type, the authorized body, who is eligible to participate, the mechanism, threshold, blocking conditions, and escalation path.
-
-</details>
+*RCOS clauses: [4.4.1](https://rcos.ecohubs.community/standard/core/0.1/layer-2-governance-decision-logic#4.4.1), [4.4.2](https://rcos.ecohubs.community/standard/core/0.1/layer-2-governance-decision-logic#4.4.2), [4.4.3](https://rcos.ecohubs.community/standard/core/0.1/layer-2-governance-decision-logic#4.4.3), [4.4.4](https://rcos.ecohubs.community/standard/core/0.1/layer-2-governance-decision-logic#4.4.4)*
 
 | Decision Domain | Decision Type | Authorized Body | Eligible Participants | Mechanism | Threshold | Blocking / Veto conditions | Escalation |
 |---|---|---|---|---|---|---|---|
@@ -75,21 +47,7 @@ For each decision domain (membership, treasury, platform, partnerships, governan
 
 ## Decision Type Definitions
 
-*RCOS clauses: [4.1.1](https://rcos.ecohubs.community/articles/rcos-core/v0-1/layer-2-governance-decision-logic#41-decision-types), [4.1.2](https://rcos.ecohubs.community/articles/rcos-core/v0-1/layer-2-governance-decision-logic#41-decision-types), [4.1.3](https://rcos.ecohubs.community/articles/rcos-core/v0-1/layer-2-governance-decision-logic#41-decision-types), [4.1.4](https://rcos.ecohubs.community/articles/rcos-core/v0-1/layer-2-governance-decision-logic#41-decision-types), [4.1.5](https://rcos.ecohubs.community/articles/rcos-core/v0-1/layer-2-governance-decision-logic#41-decision-types)*
-
-<details data-kind="rationale">
-<summary>Why classify every decision?</summary>
-
-Without a type, every decision gets handled at whatever speed and scrutiny happens to suit the moment — routine changes stall in debate, and constitutional shifts slip through unnoticed. Fixed types tie the weight of a decision to the process it must pass through, and the default-higher rule closes the gap where ambiguity would otherwise be exploited.
-
-</details>
-
-<details data-kind="instructions">
-<summary>How to fill this in</summary>
-
-Define each decision type by what it covers, who executes it, what process it requires, and how disputes about classification are resolved.
-
-</details>
+*RCOS clauses: [4.1.1](https://rcos.ecohubs.community/standard/core/0.1/layer-2-governance-decision-logic#4.1.1), [4.1.2](https://rcos.ecohubs.community/standard/core/0.1/layer-2-governance-decision-logic#4.1.2), [4.1.3](https://rcos.ecohubs.community/standard/core/0.1/layer-2-governance-decision-logic#4.1.3), [4.1.4](https://rcos.ecohubs.community/standard/core/0.1/layer-2-governance-decision-logic#4.1.4), [4.1.5](https://rcos.ecohubs.community/standard/core/0.1/layer-2-governance-decision-logic#4.1.5)*
 
 - **Operational** — _<day-to-day functioning within existing rules; executed by the relevant role holder without a vote.>_
 - **Strategic** — _<long-term direction, significant resource allocation, creation/removal of major structures; requires a Full Member vote with a defined deliberation period.>_

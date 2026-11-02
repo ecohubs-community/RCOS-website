@@ -19,6 +19,8 @@ export type ManifestTemplate = {
 	titles: Record<string, string>;
 	/** Localized download URLs: files[locale][format] = "/downloads/<locale>/<fmt>/...". */
 	files: Record<string, Record<string, string>>;
+	/** The same, with the rationale and instructions kept in. */
+	filesExplained: Record<string, Record<string, string>>;
 	/** Locales for which a real translation exists. */
 	availableLocales: string[];
 };
@@ -28,8 +30,10 @@ export type Manifest = {
 	defaultLocale: string;
 	locales: string[];
 	formats: string[];
-	/** bundles[locale][format] → ZIP URL */
+	/** bundles[locale][format] → ZIP URL (templates without explanations) */
 	bundles: Record<string, Record<string, string>>;
+	/** The same, with the rationale and instructions kept in. */
+	bundlesExplained: Record<string, Record<string, string>>;
 	templates: ManifestTemplate[];
 };
 
@@ -58,8 +62,10 @@ export type SingleTemplateDownloads = {
 	formats: string[];
 	/** Files for the served locale (may be the default-locale fallback). */
 	files: Record<string, string>;
+	filesExplained: Record<string, string>;
 	/** Bundle URLs for the served locale. */
 	bundles: Record<string, string>;
+	bundlesExplained: Record<string, string>;
 	/** Locale actually being served (may differ from requested when fallback kicks in). */
 	servedLocale: string;
 	/** True if the requested locale doesn't have a translation, so we fell back. */
@@ -82,6 +88,7 @@ export type IndexTemplateDownloads = {
 	formats: string[];
 	/** Bundle URLs for the served locale. */
 	bundles: Record<string, string>;
+	bundlesExplained: Record<string, string>;
 	servedLocale: string;
 	/** True if the requested locale has zero translated templates. */
 	isFallback: boolean;
@@ -91,6 +98,7 @@ export type IndexTemplateDownloads = {
 		title: string;
 		slug: string;
 		files: Record<string, string>;
+		filesExplained: Record<string, string>;
 		availableLocales: string[];
 		/** Whether this template has a real translation in the requested locale. */
 		isTranslated: boolean;
@@ -217,12 +225,15 @@ export function getTemplateDownloads(
 		);
 		const localeForBundles = anyTranslatedInLocale ? locale : defaultLocale;
 		const bundles = manifest.bundles[localeForBundles] ?? manifest.bundles[defaultLocale] ?? {};
+		const bundlesExplained =
+			manifest.bundlesExplained[localeForBundles] ?? manifest.bundlesExplained[defaultLocale] ?? {};
 
 		return {
 			type: 'index',
 			generated: manifest.generated,
 			formats: manifest.formats,
 			bundles,
+			bundlesExplained,
 			servedLocale: localeForBundles,
 			isFallback: localeForBundles !== locale,
 			templates: manifest.templates.map((t) => {
@@ -235,6 +246,7 @@ export function getTemplateDownloads(
 					title: t.titles[loc] ?? t.titles[defaultLocale] ?? slugPath,
 					slug: `rcos-templates/${slugPath}`,
 					files: t.files[loc] ?? t.files[defaultLocale] ?? {},
+					filesExplained: t.filesExplained[loc] ?? t.filesExplained[defaultLocale] ?? {},
 					availableLocales: t.availableLocales,
 					isTranslated
 				};
@@ -254,13 +266,17 @@ export function getTemplateDownloads(
 		defaultLocale
 	);
 	const bundles = manifest.bundles[servedLocale] ?? manifest.bundles[defaultLocale] ?? {};
+	const bundlesExplained =
+		manifest.bundlesExplained[servedLocale] ?? manifest.bundlesExplained[defaultLocale] ?? {};
 
 	return {
 		type: 'single',
 		generated: manifest.generated,
 		formats: manifest.formats,
 		files: entry.files[servedLocale] ?? entry.files[defaultLocale] ?? {},
+		filesExplained: entry.filesExplained[servedLocale] ?? entry.filesExplained[defaultLocale] ?? {},
 		bundles,
+		bundlesExplained,
 		servedLocale,
 		isFallback
 	};

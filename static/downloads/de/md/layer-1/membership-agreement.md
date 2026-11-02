@@ -2,14 +2,14 @@
 
 # Mitgliedschaftsvereinbarung
 
-- **Generiert:** 2026-08-31
+- **Generiert:** 2026-11-02
 - **Quelle (aktuelle Version):** [https://rcos.ecohubs.community/de/articles/rcos-templates/layer-1/membership-agreement](https://rcos.ecohubs.community/de/articles/rcos-templates/layer-1/membership-agreement)
 - **Alle RCOS-Vorlagen:** [https://rcos.ecohubs.community/de/articles/rcos-templates](https://rcos.ecohubs.community/de/articles/rcos-templates)
 
 ---
 - **Ebene:** 1 — Mitgliedschaftssystem
 - **Status:** Vorlage — an deine Gemeinschaft anpassen
-- **RCOS-Referenz:** [§3.4](https://rcos.ecohubs.community/de/articles/rcos-core/v0-1/layer-1-membership-system#34-rights-and-obligations), [§3.5](https://rcos.ecohubs.community/de/articles/rcos-core/v0-1/layer-1-membership-system#35-participation-and-contribution), [§3.8](https://rcos.ecohubs.community/de/articles/rcos-core/v0-1/layer-1-membership-system#38-artifacts)
+- **RCOS-Referenz:** [§3.4](https://rcos.ecohubs.community/de/standard/core/0.1/layer-1-membership-system#3.4), [§3.5](https://rcos.ecohubs.community/de/standard/core/0.1/layer-1-membership-system#3.5), [§3.8](https://rcos.ecohubs.community/de/standard/core/0.1/layer-1-membership-system#3.8)
 
 > Wird von jedem Mitglied zum Zeitpunkt der Aufnahme unterschrieben (oder ausdrücklich bestätigt). Definiert die Rechte und Pflichten jedes Mitgliedschaftsstatus.
 
@@ -17,41 +17,13 @@
 
 ## Mitgliedschaftsstatus bei Unterzeichnung
 
-*RCOS-Klauseln: [3.1.2](https://rcos.ecohubs.community/de/articles/rcos-core/v0-1/layer-1-membership-system#31-membership-states), [3.1.4](https://rcos.ecohubs.community/de/articles/rcos-core/v0-1/layer-1-membership-system#31-membership-states)*
-
-<details data-kind="rationale">
-<summary>Warum den Status bei Unterzeichnung festhalten?</summary>
-
-Mitgliedschaft ist kein einfaches Ja oder Nein. Eine beitretende Person muss genau wissen, in welchen Status sie eintritt — Probe oder Voll — denn der Status bestimmt, was sie tun kann und was von ihr erwartet wird. Den Status im Moment der Zustimmung zu benennen, verhindert spätere Unklarheiten darüber, wofür sie sich eigentlich angemeldet hat.
-
-</details>
-
-<details data-kind="instructions">
-<summary>Wie du diesen Abschnitt ausfüllst</summary>
-
-Gib an, in welchen Mitgliedschaftsstatus ein neues Mitglied bei Unterzeichnung eintritt (z. B. Probemitglied, Vollmitglied oder ein anderer im Mitgliedschaftsstatus-Register definierter Status).
-
-</details>
+*RCOS-Klauseln: [3.1.2](https://rcos.ecohubs.community/de/standard/core/0.1/layer-1-membership-system#3.1.2), [3.1.4](https://rcos.ecohubs.community/de/standard/core/0.1/layer-1-membership-system#3.1.4)*
 
 _<Mitgliedschaftsstatus bei Unterzeichnung — z. B. Probemitglied nach Genehmigung der Bewerbung; Vollmitglied nach Abschluss des Onboardings.>_
 
 ## Rechte der Mitglieder
 
-*RCOS-Klauseln: [3.4.1](https://rcos.ecohubs.community/de/articles/rcos-core/v0-1/layer-1-membership-system#34-rights-and-obligations), [3.4.3](https://rcos.ecohubs.community/de/articles/rcos-core/v0-1/layer-1-membership-system#34-rights-and-obligations), [3.4.4](https://rcos.ecohubs.community/de/articles/rcos-core/v0-1/layer-1-membership-system#34-rights-and-obligations)*
-
-<details data-kind="rationale">
-<summary>Warum Rechte ausdrücklich aufzählen?</summary>
-
-Rechte, die nicht schriftlich festgehalten sind, können stillschweigend entzogen werden. Sie aufzuzählen macht die Verpflichtungen der Gemeinschaft lesbar, durchsetzbar und symmetrisch zu den Pflichten, die den Mitgliedern auferlegt werden. Ohne diese Liste werden Pflichten zu unbegrenzten Forderungen ohne gegenseitigen Schutz.
-
-</details>
-
-<details data-kind="instructions">
-<summary>Wie du diesen Abschnitt ausfüllst</summary>
-
-Liste konkrete Rechte auf, die jedem Mitgliedschaftsstatus gewährt werden. Verweise auf die Entscheidungsmatrix (Schicht 2) für Stimmrechte, das Rollenregister (Schicht 5) für Rollenberechtigung und Schicht 4 für Verfahrensgarantien.
-
-</details>
+*RCOS-Klauseln: [3.4.1](https://rcos.ecohubs.community/de/standard/core/0.1/layer-1-membership-system#3.4.1), [3.4.3](https://rcos.ecohubs.community/de/standard/core/0.1/layer-1-membership-system#3.4.3), [3.4.4](https://rcos.ecohubs.community/de/standard/core/0.1/layer-1-membership-system#3.4.4)*
 
 1. _<Recht 1, z. B. das Recht, bei allen Entscheidungen gemäß der Entscheidungsmatrix abzustimmen.>_
 2. _<Recht 2, z. B. das Recht auf Zugang zu allen mitgliederexklusiven Kanälen, Calls und Gemeinschaftsunterlagen.>_
@@ -64,21 +36,7 @@ Liste konkrete Rechte auf, die jedem Mitgliedschaftsstatus gewährt werden. Verw
 
 ## Pflichten der Mitglieder
 
-*RCOS-Klauseln: [3.4.2](https://rcos.ecohubs.community/de/articles/rcos-core/v0-1/layer-1-membership-system#34-rights-and-obligations), [3.4.4](https://rcos.ecohubs.community/de/articles/rcos-core/v0-1/layer-1-membership-system#34-rights-and-obligations), [3.4.5](https://rcos.ecohubs.community/de/articles/rcos-core/v0-1/layer-1-membership-system#34-rights-and-obligations)*
-
-<details data-kind="rationale">
-<summary>Warum Pflichten eng begrenzen?</summary>
-
-Unbegrenzte Pflichten sind der Weg, auf dem Gemeinschaften in Ausbeutung abgleiten — „trag mehr bei", „sei verfügbar", „sei da" ohne definierte Grenze. Pflichten einzeln aufzulisten und jede mit einem entsprechenden Recht zu verknüpfen, hält die Anforderungen begrenzt und anfechtbar. Ein Mitglied muss immer erkennen können, ob es die Vereinbarung erfüllt oder ob etwas verlangt wird, das darüber hinausgeht.
-
-</details>
-
-<details data-kind="instructions">
-<summary>Wie du diesen Abschnitt ausfüllst</summary>
-
-Liste konkrete, begrenzte Pflichten auf. Jede Pflicht muss überprüfbar sein: Ein Mitglied muss erkennen können, ob es sie erfüllt. Vermeide vage Anforderungen.
-
-</details>
+*RCOS-Klauseln: [3.4.2](https://rcos.ecohubs.community/de/standard/core/0.1/layer-1-membership-system#3.4.2), [3.4.4](https://rcos.ecohubs.community/de/standard/core/0.1/layer-1-membership-system#3.4.4), [3.4.5](https://rcos.ecohubs.community/de/standard/core/0.1/layer-1-membership-system#3.4.5)*
 
 1. _<Pflicht 1, z. B. alle Identitätsvorgaben und Invarianten der Schicht 0 jederzeit einhalten.>_
 2. _<Pflicht 2, z. B. in mindestens einer anerkannten Kategorie pro definiertem Zeitraum zur Gemeinschaft beitragen.>_
@@ -90,21 +48,7 @@ Liste konkrete, begrenzte Pflichten auf. Jede Pflicht muss überprüfbar sein: E
 
 ## Erwartungen an Teilnahme und Beitrag
 
-*RCOS-Klauseln: [3.5.1](https://rcos.ecohubs.community/de/articles/rcos-core/v0-1/layer-1-membership-system#35-participation-and-contribution), [3.5.2](https://rcos.ecohubs.community/de/articles/rcos-core/v0-1/layer-1-membership-system#35-participation-and-contribution), [3.5.3](https://rcos.ecohubs.community/de/articles/rcos-core/v0-1/layer-1-membership-system#35-participation-and-contribution), [3.5.4](https://rcos.ecohubs.community/de/articles/rcos-core/v0-1/layer-1-membership-system#35-participation-and-contribution)*
-
-<details data-kind="rationale">
-<summary>Warum Teilnahme in Zahlen definieren?</summary>
-
-„Aktives Mitglied" bedeutet nichts ohne einen Schwellenwert. Ein definiertes Minimum — in Zeit, Kategorie und Häufigkeit — macht Teilnahme von einem Gefühl zu einer Tatsache, sodass niemand raten muss, ob er in gutem Ansehen steht, und niemand ohne Beweise beschuldigt werden kann, sich zurückgezogen zu haben. Es macht außerdem die Grenze zwischen einer echten Abwesenheit und stillem Rückzug früh genug sichtbar, um darauf reagieren zu können.
-
-</details>
-
-<details data-kind="instructions">
-<summary>Wie du diesen Abschnitt ausfüllst</summary>
-
-Gib ein messbares Minimum an (Häufigkeit × Kategorie), Vertretungs- und Abwesenheitsregeln sowie den Auslöser, der ein nicht teilnehmendes Mitglied in einen Ebene-4-Prozess überführt.
-
-</details>
+*RCOS-Klauseln: [3.5.1](https://rcos.ecohubs.community/de/standard/core/0.1/layer-1-membership-system#3.5.1), [3.5.2](https://rcos.ecohubs.community/de/standard/core/0.1/layer-1-membership-system#3.5.2), [3.5.3](https://rcos.ecohubs.community/de/standard/core/0.1/layer-1-membership-system#3.5.3), [3.5.4](https://rcos.ecohubs.community/de/standard/core/0.1/layer-1-membership-system#3.5.4)*
 
 - **Mindestbeitrag:** _<z. B. mindestens ein anerkannter Beitrag pro 6 Monate, in einer beliebigen anerkannten Kategorie.>_
 - **Anerkannte Kategorien:** _<Verweis auf das Binnenwirtschaftsprotokoll (Schicht 3).>_
@@ -114,41 +58,13 @@ Gib ein messbares Minimum an (Häufigkeit × Kategorie), Vertretungs- und Abwese
 
 ## Verweis auf ordentliches Verfahren
 
-*RCOS-Klauseln: [3.6.3](https://rcos.ecohubs.community/de/articles/rcos-core/v0-1/layer-1-membership-system#36-exit-and-separation)*
-
-<details data-kind="rationale">
-<summary>Warum das ordentliche Verfahren hier nochmals erwähnen?</summary>
-
-Die Mitgliedschaftsvereinbarung ist das eine Dokument, das jedes Mitglied tatsächlich liest und dem es zustimmt. Das ordentliche Verfahren hier zu benennen — nicht nur in Schicht 4 — stellt sicher, dass kein Mitglied nach einer Regel entfernt oder eingeschränkt werden kann, die ihm beim Beitritt nicht gezeigt wurde. Es schließt die Lücke zwischen dem, was die Gemeinschaft verspricht, und dem, was sie tun kann.
-
-</details>
-
-<details data-kind="instructions">
-<summary>Wie du diesen Abschnitt ausfüllst</summary>
-
-Verweise auf die Konfliktlösungsstufen (Schicht 4) und das Austritts- und Trennungsprotokoll, damit jedes Mitglied, das die Mitgliedschaftsvereinbarung liest, weiß, wo die Verfahrensgarantien zu finden sind.
-
-</details>
+*RCOS-Klauseln: [3.6.3](https://rcos.ecohubs.community/de/standard/core/0.1/layer-1-membership-system#3.6.3)*
 
 Jeder erzwungene Austritt, jede Suspendierung oder Zugangsbeschränkung folgt dem ordentlichen Verfahren der Schicht 4 und dem Austritts- und Trennungsprotokoll.
 
 ## Zustimmungserklärung
 
-*RCOS-Klauseln: [3.2.2](https://rcos.ecohubs.community/de/articles/rcos-core/v0-1/layer-1-membership-system#32-entry-and-onboarding)*
-
-<details data-kind="rationale">
-<summary>Warum ausdrückliche Zustimmung verlangen?</summary>
-
-Zustimmung, die angenommen wird, ist Zustimmung, die später bestritten werden kann. Einen ausdrücklichen Akt zu verlangen — Unterschrift, Klick, Bestätigung — zu einem bekannten Zeitpunkt bindet das Mitglied an die an diesem Tag geltenden Artefaktversionen und gibt der Gemeinschaft einen belastbaren Nachweis, dass die Vereinbarung freiwillig und wissentlich eingegangen wurde.
-
-</details>
-
-<details data-kind="instructions">
-<summary>Wie du diesen Abschnitt ausfüllst</summary>
-
-Beschreibe den Akt der Zustimmung (Unterschrift, In-App-Bestätigung usw.) und welche Artefaktversionen das Mitglied zu diesem Zeitpunkt anerkennt.
-
-</details>
+*RCOS-Klauseln: [3.2.2](https://rcos.ecohubs.community/de/standard/core/0.1/layer-1-membership-system#3.2.2)*
 
 Durch den Beitritt zur Gemeinschaft über den definierten Onboarding-Prozess stimmt das Mitglied ausdrücklich den Bedingungen dieser Vereinbarung und den zum Zeitpunkt der Aufnahme geltenden Ebene-0-Artefakten zu.
 

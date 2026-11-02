@@ -2,34 +2,20 @@
 
 # Registro de Roles
 
-- **Generado:** 2026-08-31
+- **Generado:** 2026-11-02
 - **Fuente (versión más reciente):** [https://rcos.ecohubs.community/es/articles/rcos-templates/layer-5/role-registry](https://rcos.ecohubs.community/es/articles/rcos-templates/layer-5/role-registry)
 - **Todas las plantillas RCOS:** [https://rcos.ecohubs.community/es/articles/rcos-templates](https://rcos.ecohubs.community/es/articles/rcos-templates)
 
 ---
 - **Capa:** 5 — Operaciones y Coordinación
 - **Estado:** Plantilla — adapta para tu comunidad
-- **Referencia RCOS:** [§7.1](https://rcos.ecohubs.community/es/articles/rcos-core/v0-1/layer-5-operations-coordination#71-roles-and-responsibilities), [§7.6](https://rcos.ecohubs.community/es/articles/rcos-core/v0-1/layer-5-operations-coordination#76-artifacts)
+- **Referencia RCOS:** [§7.1](https://rcos.ecohubs.community/es/standard/core/0.1/layer-5-operations-coordination#7.1), [§7.6](https://rcos.ecohubs.community/es/standard/core/0.1/layer-5-operations-coordination#7.6)
 
 ---
 
 ## Visión general
 
-*Cláusulas RCOS: [7.1.1](https://rcos.ecohubs.community/es/articles/rcos-core/v0-1/layer-5-operations-coordination#71-roles-and-responsibilities), [7.1.2](https://rcos.ecohubs.community/es/articles/rcos-core/v0-1/layer-5-operations-coordination#71-roles-and-responsibilities), [7.1.4](https://rcos.ecohubs.community/es/articles/rcos-core/v0-1/layer-5-operations-coordination#71-roles-and-responsibilities), [7.7.1](https://rcos.ecohubs.community/es/articles/rcos-core/v0-1/layer-5-operations-coordination#77-layer-invariants)*
-
-<details data-kind="rationale">
-<summary>¿Por qué exigir que cada responsabilidad tenga un rol con nombre?</summary>
-
-Las responsabilidades continuas sin roles explícitos se convierten en trabajo invisible — lo hace quien se da cuenta, genera resentimiento silencioso y es imposible de traspasar. Convertir cada responsabilidad continua en un rol con nombre y rendición de cuentas es lo que evita que la comunidad funcione a base de la buena voluntad no reconocida de unos pocos miembros.
-
-</details>
-
-<details data-kind="instructions">
-<summary>Cómo rellenar esto</summary>
-
-Distingue los roles operativos (que llevan autoridad delegada según la Matriz de Decisiones) de los roles funcionales (limitados a contribuciones, sin autoridad de gobernanza especial). Indica la definición de "en buen estado" que usarás para la elegibilidad.
-
-</details>
+*Cláusulas RCOS: [7.1.1](https://rcos.ecohubs.community/es/standard/core/0.1/layer-5-operations-coordination#7.1.1), [7.1.2](https://rcos.ecohubs.community/es/standard/core/0.1/layer-5-operations-coordination#7.1.2), [7.1.4](https://rcos.ecohubs.community/es/standard/core/0.1/layer-5-operations-coordination#7.1.4), [7.7.1](https://rcos.ecohubs.community/es/standard/core/0.1/layer-5-operations-coordination#7.7.1)*
 
 Este registro define todos los roles reconocidos dentro de la comunidad. Los roles son **operativos** (con autoridad delegada según la Matriz de Decisiones) o **funcionales** (limitados a contribuciones, sin autoridad de gobernanza especial más allá de los derechos de Miembro Pleno).
 
@@ -48,21 +34,7 @@ Este registro define todos los roles reconocidos dentro de la comunidad. Los rol
 
 ## Roles operativos
 
-*Cláusulas RCOS: [7.1.2](https://rcos.ecohubs.community/es/articles/rcos-core/v0-1/layer-5-operations-coordination#71-roles-and-responsibilities), [7.1.3](https://rcos.ecohubs.community/es/articles/rcos-core/v0-1/layer-5-operations-coordination#71-roles-and-responsibilities)*
-
-<details data-kind="rationale">
-<summary>¿Por qué definir la rendición de cuentas para la autoridad delegada?</summary>
-
-Los roles operativos tienen poder real — pueden actuar sin votación comunitaria dentro de su ámbito. Ese poder solo se mantiene seguro si cada rol tiene un mecanismo claro de rendición de cuentas: quién puede plantear preocupaciones, cómo se realiza la revisión y cómo se puede reasignar un rol cuando se rompe la confianza.
-
-</details>
-
-<details data-kind="instructions">
-<summary>Cómo rellenar esto</summary>
-
-Para cada rol operativo, completa la plantilla a continuación con ámbito concreto, autoridad de decisión, interfaces, elegibilidad, mandato, nombramiento, revisión/remoción y requisitos de traspaso.
-
-</details>
+*Cláusulas RCOS: [7.1.2](https://rcos.ecohubs.community/es/standard/core/0.1/layer-5-operations-coordination#7.1.2), [7.1.3](https://rcos.ecohubs.community/es/standard/core/0.1/layer-5-operations-coordination#7.1.3)*
 
 Los roles operativos tienen autoridad delegada para actuar dentro de límites explícitamente definidos sin votación de Miembros Plenos, tal como se define en la Matriz de Decisiones (Capa 2). Todos los titulares de roles operativos rinden cuentas colectivamente ante los Miembros Plenos. Cualquier Miembro Pleno puede plantear una preocupación sobre cómo se está desempeñando un rol; la reasignación requiere una votación Estratégica.
 
@@ -102,21 +74,7 @@ Los roles operativos tienen autoridad delegada para actuar dentro de límites ex
 
 ## Roles funcionales
 
-*Cláusulas RCOS: [7.1.1](https://rcos.ecohubs.community/es/articles/rcos-core/v0-1/layer-5-operations-coordination#71-roles-and-responsibilities), [7.1.2](https://rcos.ecohubs.community/es/articles/rcos-core/v0-1/layer-5-operations-coordination#71-roles-and-responsibilities)*
-
-<details data-kind="rationale">
-<summary>¿Por qué separar los roles funcionales de los operativos?</summary>
-
-No toda contribución necesita autoridad delegada — la mayor parte del trabajo consiste en hacer, no en decidir. Los roles funcionales nombran ámbitos de contribución sin agrupar poder de gobernanza, de modo que los miembros puedan optar por realizar trabajo sin una transferencia de autoridad, y para que el sistema de gobernanza mantenga claridad sobre quién puede actuar en nombre de la comunidad.
-
-</details>
-
-<details data-kind="instructions">
-<summary>Cómo rellenar esto</summary>
-
-Para cada rol funcional, define propósito, ámbito, interfaces, elegibilidad y traspaso. Los roles funcionales no requieren votación para asumirlos — basta con una declaración.
-
-</details>
+*Cláusulas RCOS: [7.1.1](https://rcos.ecohubs.community/es/standard/core/0.1/layer-5-operations-coordination#7.1.1), [7.1.2](https://rcos.ecohubs.community/es/standard/core/0.1/layer-5-operations-coordination#7.1.2)*
 
 Los roles funcionales definen el ámbito de contribución de un miembro. No tienen autoridad de gobernanza delegada más allá de los derechos de Miembro Pleno. Cualquier Miembro Pleno puede asumir un rol funcional declarándolo; no se requiere votación. Los roles pueden dejarse vacantes en cualquier momento mediante notificación.
 

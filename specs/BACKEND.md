@@ -106,7 +106,7 @@ pnpm content:og        # share images of the important pages (after pnpm build; 
 | Script                               | Writes                                                                                                                  |
 | ------------------------------------ | ----------------------------------------------------------------------------------------------------------------------- |
 | `scripts/content/build-articles.mjs` | `.content-build/articles/**.md` from the YAML (input for the scripts below)                                             |
-| `scripts/build-templates.mjs`        | Per-locale template files (md, docx, odt via pandoc) and zip bundles, `manifest-templates.json`                         |
+| `scripts/build-templates.mjs`        | Per-locale template files (md, docx, odt via pandoc) and zip bundles, `manifest-templates.json`; see §4.2               |
 | `scripts/build-core.mjs`             | The whole core standard as one markdown file per locale, `manifest-core.json`                                           |
 | `scripts/build-standard-data.mjs`    | The published data in `static/downloads/standard/rcos-core/0.1/` plus `manifest-standard.json`                          |
 | `scripts/content/build-pdf.mjs`      | `static/downloads/<locale>/rcos-core-v0-1.pdf`, printed from the print route                                            |
@@ -114,6 +114,18 @@ pnpm content:og        # share images of the important pages (after pnpm build; 
 
 `scripts/i18n.mjs` holds the strings that appear inside downloaded files
 (preamble labels, "Rationale", …) and `SUPPORTED_LOCALES`.
+
+### 4.2 Template variants
+
+Each template is built twice: plain (the default: only what gets filled in)
+and with explanations (keeps the rationale and instructions blocks). Plain
+files keep the old paths (`<locale>/<format>/…`, `rcos-templates-<format>.zip`);
+the other variant is under `<locale>/with-explanations/<format>/…` and
+`rcos-templates-<format>-with-explanations.zip`. The manifest has `bundles`/`files`
+for plain and `bundlesExplained`/`filesExplained` for the other. Inside the ZIPs
+files are numbered per layer by their `order` (`layer-0/01_purpose-charter.docx`).
+The download box on the site has an "Include explanations & instructions"
+checkbox, off by default.
 
 ### 4.1 The Compass contract
 

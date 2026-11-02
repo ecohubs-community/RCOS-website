@@ -2,34 +2,20 @@
 
 # Registro de Papéis
 
-- **Gerado em:** 2026-08-31
+- **Gerado em:** 2026-11-02
 - **Fonte (versão mais recente):** [https://rcos.ecohubs.community/pt-br/articles/rcos-templates/layer-5/role-registry](https://rcos.ecohubs.community/pt-br/articles/rcos-templates/layer-5/role-registry)
 - **Todos os modelos RCOS:** [https://rcos.ecohubs.community/pt-br/articles/rcos-templates](https://rcos.ecohubs.community/pt-br/articles/rcos-templates)
 
 ---
 - **Camada:** 5 — Operações e Coordenação
 - **Status:** Modelo — adapte para sua comunidade
-- **Referência RCOS:** [§7.1](https://rcos.ecohubs.community/pt-br/articles/rcos-core/v0-1/layer-5-operations-coordination#71-roles-and-responsibilities), [§7.6](https://rcos.ecohubs.community/pt-br/articles/rcos-core/v0-1/layer-5-operations-coordination#76-artifacts)
+- **Referência RCOS:** [§7.1](https://rcos.ecohubs.community/pt-br/standard/core/0.1/layer-5-operations-coordination#7.1), [§7.6](https://rcos.ecohubs.community/pt-br/standard/core/0.1/layer-5-operations-coordination#7.6)
 
 ---
 
 ## Visão Geral
 
-*Cláusulas RCOS: [7.1.1](https://rcos.ecohubs.community/pt-br/articles/rcos-core/v0-1/layer-5-operations-coordination#71-roles-and-responsibilities), [7.1.2](https://rcos.ecohubs.community/pt-br/articles/rcos-core/v0-1/layer-5-operations-coordination#71-roles-and-responsibilities), [7.1.4](https://rcos.ecohubs.community/pt-br/articles/rcos-core/v0-1/layer-5-operations-coordination#71-roles-and-responsibilities), [7.7.1](https://rcos.ecohubs.community/pt-br/articles/rcos-core/v0-1/layer-5-operations-coordination#77-layer-invariants)*
-
-<details data-kind="rationale">
-<summary>Por que exigir que toda responsabilidade tenha um papel nomeado?</summary>
-
-Responsabilidades contínuas sem papéis explícitos viram trabalho invisível — feitas por quem percebe, ressentidas silenciosamente e impossíveis de transferir. Tornar cada responsabilidade contínua um papel nomeado e responsabilizável é o que impede que a comunidade funcione à custa da boa vontade não remunerada de alguns membros.
-
-</details>
-
-<details data-kind="instructions">
-<summary>Como preencher</summary>
-
-Distinga papéis operacionais (que carregam autoridade delegada conforme a Matriz de Decisão) de papéis funcionais (com escopo de contribuição, sem autoridade especial de governança). Defina o que você usará como "em situação regular" para fins de elegibilidade.
-
-</details>
+*Cláusulas RCOS: [7.1.1](https://rcos.ecohubs.community/pt-br/standard/core/0.1/layer-5-operations-coordination#7.1.1), [7.1.2](https://rcos.ecohubs.community/pt-br/standard/core/0.1/layer-5-operations-coordination#7.1.2), [7.1.4](https://rcos.ecohubs.community/pt-br/standard/core/0.1/layer-5-operations-coordination#7.1.4), [7.7.1](https://rcos.ecohubs.community/pt-br/standard/core/0.1/layer-5-operations-coordination#7.7.1)*
 
 Este registro define todos os papéis reconhecidos dentro da comunidade. Os papéis são **operacionais** (carregam autoridade delegada conforme a Matriz de Decisão) ou **funcionais** (com escopo de contribuição, sem autoridade especial de governança além dos direitos de Membro Pleno).
 
@@ -48,21 +34,7 @@ Este registro define todos os papéis reconhecidos dentro da comunidade. Os pap�
 
 ## Papéis Operacionais
 
-*Cláusulas RCOS: [7.1.2](https://rcos.ecohubs.community/pt-br/articles/rcos-core/v0-1/layer-5-operations-coordination#71-roles-and-responsibilities), [7.1.3](https://rcos.ecohubs.community/pt-br/articles/rcos-core/v0-1/layer-5-operations-coordination#71-roles-and-responsibilities)*
-
-<details data-kind="rationale">
-<summary>Por que definir responsabilização para autoridade delegada?</summary>
-
-Papéis operacionais carregam poder real — podem agir sem uma votação da comunidade dentro do seu escopo. Esse poder só permanece seguro se cada papel tiver um mecanismo claro de responsabilização: quem pode levantar preocupações, como acontece a revisão e como um papel pode ser reatribuído quando a confiança é quebrada.
-
-</details>
-
-<details data-kind="instructions">
-<summary>Como preencher</summary>
-
-Para cada papel operacional, preencha o modelo abaixo com escopo concreto, autoridade decisória, interfaces, elegibilidade, mandato, nomeação, revisão/remoção e requisitos de transição.
-
-</details>
+*Cláusulas RCOS: [7.1.2](https://rcos.ecohubs.community/pt-br/standard/core/0.1/layer-5-operations-coordination#7.1.2), [7.1.3](https://rcos.ecohubs.community/pt-br/standard/core/0.1/layer-5-operations-coordination#7.1.3)*
 
 Papéis operacionais carregam autoridade delegada para agir dentro de limites explicitamente definidos sem uma votação de Membros Plenos, conforme definido na Matriz de Decisão (Camada 2). Todos os detentores de papéis operacionais são responsáveis perante os Membros Plenos coletivamente. Qualquer Membro Pleno PODE levantar uma preocupação sobre como um papel está sendo desempenhado; a reatribuição requer uma votação Estratégica.
 
@@ -102,21 +74,7 @@ Papéis operacionais carregam autoridade delegada para agir dentro de limites ex
 
 ## Papéis Funcionais
 
-*Cláusulas RCOS: [7.1.1](https://rcos.ecohubs.community/pt-br/articles/rcos-core/v0-1/layer-5-operations-coordination#71-roles-and-responsibilities), [7.1.2](https://rcos.ecohubs.community/pt-br/articles/rcos-core/v0-1/layer-5-operations-coordination#71-roles-and-responsibilities)*
-
-<details data-kind="rationale">
-<summary>Por que separar papéis funcionais dos operacionais?</summary>
-
-Nem toda contribuição precisa de autoridade delegada — a maior parte do trabalho é sobre fazer, não decidir. Papéis funcionais nomeiam escopos de contribuição sem agregar poder de governança, para que os membros possam aderir ao trabalho sem uma transferência de autoridade e para que o sistema de governança permaneça claro sobre quem pode agir em nome da comunidade.
-
-</details>
-
-<details data-kind="instructions">
-<summary>Como preencher</summary>
-
-Para cada papel funcional, defina propósito, escopo, interfaces, elegibilidade e transição. Papéis funcionais não requerem votação para serem assumidos — a declaração é suficiente.
-
-</details>
+*Cláusulas RCOS: [7.1.1](https://rcos.ecohubs.community/pt-br/standard/core/0.1/layer-5-operations-coordination#7.1.1), [7.1.2](https://rcos.ecohubs.community/pt-br/standard/core/0.1/layer-5-operations-coordination#7.1.2)*
 
 Papéis funcionais definem o escopo de contribuição de um membro. Eles não carregam autoridade delegada de governança além dos direitos de Membro Pleno. Qualquer Membro Pleno PODE assumir um papel funcional ao declará-lo; nenhuma votação é exigida. Os papéis podem ser deixados a qualquer momento mediante notificação.
 

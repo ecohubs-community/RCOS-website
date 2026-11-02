@@ -6,6 +6,7 @@
 	import { LAYERS, LAYERS_INTRO_HREF } from '$lib/nav/site-nav';
 	import LayerChip from '$lib/components/ui/LayerChip.svelte';
 	import IconArrowRight from '~icons/tabler/arrow-right';
+	import IconDownload from '~icons/tabler/download';
 
 	const href = (path: string) => localized(path, getLocale());
 	// Layer 6 on top, as in the ring diagram: the foundation sits at the bottom.
@@ -26,6 +27,13 @@
 		>
 			{m.mega_layers_what()}
 			<IconArrowRight class="size-4" />
+		</NavigationMenu.Link>
+		<NavigationMenu.Link
+			href={href('/templates#downloads')}
+			class="mt-3 inline-flex h-10 items-center gap-2 self-start rounded-lg border border-line bg-card px-4 font-ui text-sm font-semibold text-ink hover:border-forest-400"
+		>
+			<IconDownload class="size-4" />
+			{m.downloads_all_link()}
 		</NavigationMenu.Link>
 	</div>
 	<div class="flex flex-col">

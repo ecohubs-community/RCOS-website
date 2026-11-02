@@ -2,14 +2,14 @@
 
 # Modelos de Reunião
 
-- **Gerado em:** 2026-08-31
+- **Gerado em:** 2026-11-02
 - **Fonte (versão mais recente):** [https://rcos.ecohubs.community/pt-br/articles/rcos-templates/layer-5/meeting-templates](https://rcos.ecohubs.community/pt-br/articles/rcos-templates/layer-5/meeting-templates)
 - **Todos os modelos RCOS:** [https://rcos.ecohubs.community/pt-br/articles/rcos-templates](https://rcos.ecohubs.community/pt-br/articles/rcos-templates)
 
 ---
 - **Camada:** 5 — Operações e Coordenação
 - **Status:** Modelo — adapte para sua comunidade
-- **Referência RCOS:** [§7.2](https://rcos.ecohubs.community/pt-br/articles/rcos-core/v0-1/layer-5-operations-coordination#72-meeting-system), [§7.6](https://rcos.ecohubs.community/pt-br/articles/rcos-core/v0-1/layer-5-operations-coordination#76-artifacts)
+- **Referência RCOS:** [§7.2](https://rcos.ecohubs.community/pt-br/standard/core/0.1/layer-5-operations-coordination#7.2), [§7.6](https://rcos.ecohubs.community/pt-br/standard/core/0.1/layer-5-operations-coordination#7.6)
 
 > Os modelos de reunião declaram o propósito, o escopo de decisão, o quórum e a estrutura de cada tipo de reunião. Uma reunião sem um modelo declarado, com tempo suficiente, acumulará autoridade que não deveria ter. Adapte estes modelos e adicione ou remova tipos de reunião conforme sua comunidade precisar.
 
@@ -17,21 +17,7 @@
 
 ## Tipo de Reunião: Operações
 
-*Cláusulas RCOS: [7.2.1](https://rcos.ecohubs.community/pt-br/articles/rcos-core/v0-1/layer-5-operations-coordination#72-meeting-system), [7.2.2](https://rcos.ecohubs.community/pt-br/articles/rcos-core/v0-1/layer-5-operations-coordination#72-meeting-system), [7.2.3](https://rcos.ecohubs.community/pt-br/articles/rcos-core/v0-1/layer-5-operations-coordination#72-meeting-system), [7.2.4](https://rcos.ecohubs.community/pt-br/articles/rcos-core/v0-1/layer-5-operations-coordination#72-meeting-system), [7.6.4](https://rcos.ecohubs.community/pt-br/articles/rcos-core/v0-1/layer-5-operations-coordination#76-artifacts)*
-
-<details data-kind="rationale">
-<summary>Por que uma reunião regular de Operações?</summary>
-
-A coordenação do dia a dia precisa de uma cadência regular, não de improvisação ad-hoc. A reunião de Operações é o batimento cardíaco da comunidade — um espaço previsível para revisar o trabalho ativo, trazer à tona bloqueios e tomar pequenas decisões operacionais. Crucialmente, apenas decisões Operacionais acontecem aqui; as Estratégicas e Constitucionais passam pelo processo de governança, para que a reunião não acumule silenciosamente uma autoridade que não tem.
-
-</details>
-
-<details data-kind="instructions">
-<summary>Como preencher</summary>
-
-Defina propósito, escopo de decisão, participantes obrigatórios e opcionais, cadência, duração e regras de facilitação. Mantenha o escopo de decisão apenas como Operacional.
-
-</details>
+*Cláusulas RCOS: [7.2.1](https://rcos.ecohubs.community/pt-br/standard/core/0.1/layer-5-operations-coordination#7.2.1), [7.2.2](https://rcos.ecohubs.community/pt-br/standard/core/0.1/layer-5-operations-coordination#7.2.2), [7.2.3](https://rcos.ecohubs.community/pt-br/standard/core/0.1/layer-5-operations-coordination#7.2.3), [7.2.4](https://rcos.ecohubs.community/pt-br/standard/core/0.1/layer-5-operations-coordination#7.2.4), [7.6.4](https://rcos.ecohubs.community/pt-br/standard/core/0.1/layer-5-operations-coordination#7.6.4)*
 
 - **Propósito:** _<revisar trabalho ativo, coordenar tarefas, trazer à tona bloqueios, tomar decisões operacionais.>_
 - **Escopo de decisão:** Apenas decisões operacionais — não pode tomar decisões Estratégicas ou Constitucionais.
@@ -71,21 +57,7 @@ Defina propósito, escopo de decisão, participantes obrigatórios e opcionais, 
 
 ## Tipo de Reunião: Governança
 
-*Cláusulas RCOS: [7.2.1](https://rcos.ecohubs.community/pt-br/articles/rcos-core/v0-1/layer-5-operations-coordination#72-meeting-system), [7.2.2](https://rcos.ecohubs.community/pt-br/articles/rcos-core/v0-1/layer-5-operations-coordination#72-meeting-system), [7.2.3](https://rcos.ecohubs.community/pt-br/articles/rcos-core/v0-1/layer-5-operations-coordination#72-meeting-system), [7.6.4](https://rcos.ecohubs.community/pt-br/articles/rcos-core/v0-1/layer-5-operations-coordination#76-artifacts)*
-
-<details data-kind="rationale">
-<summary>Por que separar a deliberação da votação vinculante?</summary>
-
-Se uma reunião pode tanto discutir quanto decidir, quem estiver na sala naquele dia acaba decidindo — independentemente das regras de quórum ou autoridade. Manter a deliberação separada da votação vinculante preserva a integridade da Matriz de Decisão e garante que membros ausentes ainda tenham voto.
-
-</details>
-
-<details data-kind="instructions">
-<summary>Como preencher</summary>
-
-Esta reunião delibera sobre propostas ativas durante seu período de deliberação. A decisão vinculante é tomada por meio do processo de governança conforme a Matriz de Decisão.
-
-</details>
+*Cláusulas RCOS: [7.2.1](https://rcos.ecohubs.community/pt-br/standard/core/0.1/layer-5-operations-coordination#7.2.1), [7.2.2](https://rcos.ecohubs.community/pt-br/standard/core/0.1/layer-5-operations-coordination#7.2.2), [7.2.3](https://rcos.ecohubs.community/pt-br/standard/core/0.1/layer-5-operations-coordination#7.2.3), [7.6.4](https://rcos.ecohubs.community/pt-br/standard/core/0.1/layer-5-operations-coordination#7.6.4)*
 
 - **Propósito:** Deliberar sobre uma proposta ativa durante seu período de deliberação.
 - **Escopo de decisão:** Apenas deliberação — a decisão vinculante é tomada por meio do processo de governança conforme a Matriz de Decisão.
@@ -124,21 +96,7 @@ Esta reunião delibera sobre propostas ativas durante seu período de deliberaç
 
 ## Tipo de Reunião: Coordenação e Alinhamento
 
-*Cláusulas RCOS: [7.2.1](https://rcos.ecohubs.community/pt-br/articles/rcos-core/v0-1/layer-5-operations-coordination#72-meeting-system), [7.2.2](https://rcos.ecohubs.community/pt-br/articles/rcos-core/v0-1/layer-5-operations-coordination#72-meeting-system), [7.2.3](https://rcos.ecohubs.community/pt-br/articles/rcos-core/v0-1/layer-5-operations-coordination#72-meeting-system), [7.6.4](https://rcos.ecohubs.community/pt-br/articles/rcos-core/v0-1/layer-5-operations-coordination#76-artifacts)*
-
-<details data-kind="rationale">
-<summary>Por que uma reunião dedicada à coordenação?</summary>
-
-Alguns bloqueios atravessam mais de um papel e não podem ser resolvidos no ritmo regular de Operações. Coordenação e Alinhamento dá ao trabalho entre papéis seu próprio espaço — para dependências, transições e prioridades conflitantes — para que a reunião semanal não cresça desordenadamente tentando absorver tudo.
-
-</details>
-
-<details data-kind="instructions">
-<summary>Como preencher</summary>
-
-Use este modelo quando for necessária coordenação entre papéis. Mantenha o escopo de decisão apenas como Operacional e limite os participantes obrigatórios àqueles com iniciativas ativas.
-
-</details>
+*Cláusulas RCOS: [7.2.1](https://rcos.ecohubs.community/pt-br/standard/core/0.1/layer-5-operations-coordination#7.2.1), [7.2.2](https://rcos.ecohubs.community/pt-br/standard/core/0.1/layer-5-operations-coordination#7.2.2), [7.2.3](https://rcos.ecohubs.community/pt-br/standard/core/0.1/layer-5-operations-coordination#7.2.3), [7.6.4](https://rcos.ecohubs.community/pt-br/standard/core/0.1/layer-5-operations-coordination#7.6.4)*
 
 - **Propósito:** Sincronizar o trabalho entre papéis e iniciativas; trazer à tona dependências e bloqueios; alinhar prioridades.
 - **Escopo de decisão:** Apenas decisões operacionais.
@@ -166,21 +124,7 @@ Use este modelo quando for necessária coordenação entre papéis. Mantenha o e
 
 ## Tipo de Reunião: Reflexão e Aprendizado
 
-*Cláusulas RCOS: [7.2.1](https://rcos.ecohubs.community/pt-br/articles/rcos-core/v0-1/layer-5-operations-coordination#72-meeting-system), [7.2.2](https://rcos.ecohubs.community/pt-br/articles/rcos-core/v0-1/layer-5-operations-coordination#72-meeting-system), [7.2.3](https://rcos.ecohubs.community/pt-br/articles/rcos-core/v0-1/layer-5-operations-coordination#72-meeting-system), [7.6.4](https://rcos.ecohubs.community/pt-br/articles/rcos-core/v0-1/layer-5-operations-coordination#76-artifacts)*
-
-<details data-kind="rationale">
-<summary>Por que dar à reflexão seu próprio tipo de reunião?</summary>
-
-A reflexão que só acontece quando o tempo permite nunca acontece. Um tipo de reunião nomeado e com cadência definida abre espaço para olhar para trás — e impede que a retrospectiva seja espremida pela urgência operacional. Sem ela, o Registro de Aprendizado (Camada 6) fica vazio e o framework para de evoluir.
-
-</details>
-
-<details data-kind="instructions">
-<summary>Como preencher</summary>
-
-Esta reunião revisa o período mais recente e alimenta insights no Registro de Aprendizado (Camada 6) e na fila de Propostas Futuras.
-
-</details>
+*Cláusulas RCOS: [7.2.1](https://rcos.ecohubs.community/pt-br/standard/core/0.1/layer-5-operations-coordination#7.2.1), [7.2.2](https://rcos.ecohubs.community/pt-br/standard/core/0.1/layer-5-operations-coordination#7.2.2), [7.2.3](https://rcos.ecohubs.community/pt-br/standard/core/0.1/layer-5-operations-coordination#7.2.3), [7.6.4](https://rcos.ecohubs.community/pt-br/standard/core/0.1/layer-5-operations-coordination#7.6.4)*
 
 - **Propósito:** Revisar a experiência, identificar padrões, capturar aprendizados, devolver insights ao framework.
 - **Escopo de decisão:** PODE gerar propostas de mudança; sem autoridade direta de decisão, salvo se especificado na Matriz de Decisão.
@@ -212,21 +156,7 @@ Esta reunião revisa o período mais recente e alimenta insights no Registro de 
 
 ## Tipo de Reunião: Tratamento de Conflitos
 
-*Cláusulas RCOS: [7.2.1](https://rcos.ecohubs.community/pt-br/articles/rcos-core/v0-1/layer-5-operations-coordination#72-meeting-system), [7.2.2](https://rcos.ecohubs.community/pt-br/articles/rcos-core/v0-1/layer-5-operations-coordination#72-meeting-system), [7.2.3](https://rcos.ecohubs.community/pt-br/articles/rcos-core/v0-1/layer-5-operations-coordination#72-meeting-system), [7.6.4](https://rcos.ecohubs.community/pt-br/articles/rcos-core/v0-1/layer-5-operations-coordination#76-artifacts); ver também Camada 4 — [Escada de Resolução de Conflitos](https://rcos.ecohubs.community/pt-br/articles/rcos-core/v0-1/layer-4-conflict-repair-accountability#62-resolution-pathways)*
-
-<details data-kind="rationale">
-<summary>Por que um tipo de reunião distinto para conflito?</summary>
-
-O trabalho com conflitos tem regras que outras reuniões não têm: confidencialidade, seleção do(a) Facilitador(a) que ignora a preferência das partes, proteções contra retaliação e registros restritos. Usar o modelo de Operações para uma sessão de conflito violaria silenciosamente todas elas. Um modelo dedicado torna o container diferente visível desde o primeiro minuto.
-
-</details>
-
-<details data-kind="instructions">
-<summary>Como preencher</summary>
-
-Use este modelo apenas para sessões facilitadas sob os Passos 2–4 da Escada de Resolução de Conflitos. As regras de privacidade e de seleção do(a) Facilitador(a) são regidas pela Camada 4, não pela própria reunião.
-
-</details>
+*Cláusulas RCOS: [7.2.1](https://rcos.ecohubs.community/pt-br/standard/core/0.1/layer-5-operations-coordination#7.2.1), [7.2.2](https://rcos.ecohubs.community/pt-br/standard/core/0.1/layer-5-operations-coordination#7.2.2), [7.2.3](https://rcos.ecohubs.community/pt-br/standard/core/0.1/layer-5-operations-coordination#7.2.3), [7.6.4](https://rcos.ecohubs.community/pt-br/standard/core/0.1/layer-5-operations-coordination#7.6.4); ver também Camada 4 — [Escada de Resolução de Conflitos](https://rcos.ecohubs.community/pt-br/standard/core/0.1/layer-4-conflict-repair-accountability#6.2)*
 
 - **Propósito:** Facilitar a resolução em um passo definido da escada (Passos 2–4 da Escada de Resolução de Conflitos).
 - **Escopo de decisão:** Produz planos de reparo, acordos ou decisões de escalonamento; resultados vinculantes exigem a autoridade definida na Escada de Resolução de Conflitos e na Matriz de Decisão.

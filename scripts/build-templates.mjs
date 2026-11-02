@@ -3,8 +3,15 @@
  * Generate per-locale download artifacts for every RCOS template.
  *
  *   static/downloads/<locale>/<format>/<layer>/<template>.<ext>
- *   static/downloads/<locale>/rcos-templates-<format>.zip      ← per-locale bundle
- *   static/downloads/manifest-templates.json                   ← root manifest
+ *   static/downloads/<locale>/with-explanations/<format>/<layer>/<template>.<ext>
+ *   static/downloads/<locale>/rcos-templates-<format>.zip                    ← per-locale bundle
+ *   static/downloads/<locale>/rcos-templates-<format>-with-explanations.zip
+ *   static/downloads/manifest-templates.json                                 ← root manifest
+ *
+ * Two variants: the plain one (the default) has only what a community fills
+ * in; "with explanations" keeps the rationale and instructions blocks. Inside
+ * the ZIPs the files are numbered per layer (`01_purpose-charter.docx`) so
+ * they sort in the order the standard lists them.
  *
  * For each registered locale:
  *   - Walk content/articles/rcos-templates and detect translations via
@@ -22,8 +29,9 @@
  * the committed artifacts as static assets.
  */
 import { spawn } from 'node:child_process';
-import { readdir, readFile, writeFile, mkdir, rm, stat, copyFile } from 'node:fs/promises';
+import { readdir, readFile, writeFile, mkdir, mkdtemp, rm, stat, copyFile } from 'node:fs/promises';
 import { existsSync } from 'node:fs';
+import os from 'node:os';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 import matter from 'gray-matter';
@@ -57,6 +65,16 @@ const SITE_URL = process.env.PUBLIC_APP_URL || 'https://rcos.ecohubs.community';
 const DEFAULT_LOCALE = 'en';
 
 const FORMATS = ['md', 'docx', 'odt'];
+
+/**
+ * `dir` is the folder under the locale, `suffix` goes on the ZIP name. The
+ * plain variant keeps the paths that existed before the variants, so old links
+ * still work.
+ */
+const VARIANTS = [
+	{ key: 'plain', dir: '', suffix: '', explanations: false },
+	{ key: 'explained', dir: 'with-explanations', suffix: '-with-explanations', explanations: true }
+];
 
 const today = new Date().toISOString().slice(0, 10);
 
@@ -136,12 +154,31 @@ async function readTemplateGroups() {
 		};
 	}
 
-	// Resolve `id` from the source's frontmatter for stable cross-references.
+	// Resolve `id` and `order` from the source's frontmatter.
 	for (const group of groups.values()) {
 		group.id = group.translations[DEFAULT_LOCALE]?.data?.id ?? null;
+		group.order = group.translations[DEFAULT_LOCALE]?.data?.order ?? Number.MAX_SAFE_INTEGER;
 	}
 
-	return [...groups.values()].sort((a, b) => a.relPath.localeCompare(b.relPath));
+	// The order the standard lists them in: by layer, then by `order`.
+	const sorted = [...groups.values()].sort(
+		(a, b) =>
+			a.layer.localeCompare(b.layer) || a.order - b.order || a.relPath.localeCompare(b.relPath)
+	);
+	// Position within the layer, 1-based, for the numbered names in the ZIPs.
+	for (const g of sorted) {
+		g.position = sorted.filter((o) => o.layer === g.layer).indexOf(g) + 1;
+	}
+	return sorted;
+}
+
+/** `layer-0/purpose-charter.md` → `layer-0/01_purpose-charter.<ext>` */
+function bundledName(group, ext) {
+	const base = path.basename(group.relPath, '.md');
+	return path.join(
+		path.dirname(group.relPath),
+		`${String(group.position).padStart(2, '0')}_${base}.${ext}`
+	);
 }
 
 /** ---- preambles & body transforms ---- */
@@ -221,8 +258,15 @@ function flattenDetails(body, locale) {
 	});
 }
 
-function bodyForFormat(body, format, locale) {
-	const absolute = absolutizeLinks(body, locale);
+/** Drop the rationale and instructions blocks, leaving only what gets filled in. */
+function stripExplanations(body) {
+	return body
+		.replace(/<details data-kind="(?:rationale|instructions)"[^>]*>[\s\S]*?<\/details>\s*/g, '')
+		.replace(/\n{3,}/g, '\n\n');
+}
+
+function bodyForFormat(body, format, locale, explanations) {
+	const absolute = absolutizeLinks(explanations ? body : stripExplanations(body), locale);
 	// Markdown downloads keep the raw `<placeholder>` text as-is (plain text, no
 	// HTML parser to confuse). docx/odt go through pandoc, which reads `<Word …>`
 	// placeholders as raw HTML and silently drops them — so escape the angle
@@ -236,10 +280,18 @@ function bodyForFormat(body, format, locale) {
 async function cleanTemplateOutputs() {
 	await mkdir(OUT_DIR, { recursive: true });
 
-	// Per-locale subdirs we own.
+	// Per-locale outputs we own. The locale folder also holds the core markdown
+	// and PDF, which other scripts write, so only remove ours.
 	for (const locale of SUPPORTED_LOCALES) {
 		const localeDir = path.join(OUT_DIR, locale);
-		if (existsSync(localeDir)) await rm(localeDir, { recursive: true, force: true });
+		if (!existsSync(localeDir)) continue;
+		for (const name of await readdir(localeDir)) {
+			const ours =
+				FORMATS.includes(name) ||
+				VARIANTS.some((v) => v.dir && v.dir === name) ||
+				/^rcos-templates-.*\.zip$/.test(name);
+			if (ours) await rm(path.join(localeDir, name), { recursive: true, force: true });
+		}
 	}
 
 	// Legacy flat layout left over from before per-locale outputs — clean if present.
@@ -280,7 +332,13 @@ function chooseBody(group, locale) {
 	return null;
 }
 
-async function generateOne({ group, locale, format }) {
+/** URL-style path of one generated file, relative to static/downloads. */
+function fileRel(group, locale, format, variant) {
+	const outRel = group.relPath.replace(/\.md$/, `.${format}`);
+	return path.posix.join(locale, variant.dir, format, outRel.replace(/\\/g, '/'));
+}
+
+async function generateOne({ group, locale, format, variant }) {
 	const chosen = chooseBody(group, locale);
 	if (!chosen) return null;
 
@@ -295,11 +353,10 @@ async function generateOne({ group, locale, format }) {
 		locale,
 		isFallback: chosen.isFallback
 	});
-	const transformedBody = bodyForFormat(chosen.body, format, locale);
+	const transformedBody = bodyForFormat(chosen.body, format, locale, variant.explanations);
 	const fullMd = `${preamble}${transformedBody}`;
 
-	const outRel = group.relPath.replace(/\.md$/, `.${format}`);
-	const outPath = path.join(OUT_DIR, locale, format, outRel);
+	const outPath = path.join(OUT_DIR, fileRel(group, locale, format, variant));
 	await mkdir(path.dirname(outPath), { recursive: true });
 
 	if (format === 'md') {
@@ -321,7 +378,7 @@ async function generateOne({ group, locale, format }) {
 	return outPath;
 }
 
-async function buildIndexMd(groups, locale) {
+async function buildIndexMd(groups, locale, format, variant) {
 	const s = getStrings(locale);
 	const lines = [
 		`# ${s.bundleHeading}`,
@@ -331,7 +388,7 @@ async function buildIndexMd(groups, locale) {
 		``,
 		s.bundleIntro,
 		``,
-		s.bundleNote,
+		variant.explanations ? s.bundleNote : s.bundleNotePlain,
 		``,
 		`## ${s.bundleSectionHeading}`,
 		``
@@ -347,19 +404,43 @@ async function buildIndexMd(groups, locale) {
 		for (const g of byLayer.get(layer)) {
 			const data = g.translations[locale]?.data ?? g.translations[DEFAULT_LOCALE]?.data ?? {};
 			const title = data.title || g.relPath;
-			lines.push(`- [${title}](${g.relPath})`);
+			lines.push(`${g.position}. [${title}](${bundledName(g, format).replace(/\\/g, '/')})`);
 		}
 		lines.push(``);
 	}
 	return lines.join('\n');
 }
 
-async function zipFormat(locale, format) {
-	const dir = path.join(OUT_DIR, locale, format);
-	const zipPath = path.join(OUT_DIR, locale, `rcos-templates-${format}.zip`);
-	if (existsSync(zipPath)) await rm(zipPath);
-	await run('zip', ['-r', '-q', zipPath, '.'], { cwd: dir });
-	return zipPath;
+/**
+ * Zip one (locale, format, variant): the generated files under their numbered
+ * names, plus the INDEX. Staged in a temp folder so the per-file URLs stay
+ * unnumbered.
+ */
+async function zipFormat(groups, locale, format, variant) {
+	const stage = await mkdtemp(path.join(os.tmpdir(), 'rcos-templates-'));
+	try {
+		const entries = [`INDEX.${format}`];
+		await copyFile(
+			path.join(OUT_DIR, locale, variant.dir, format, `INDEX.${format}`),
+			path.join(stage, entries[0])
+		);
+		for (const g of groups) {
+			const name = bundledName(g, format);
+			await mkdir(path.dirname(path.join(stage, name)), { recursive: true });
+			await copyFile(
+				path.join(OUT_DIR, fileRel(g, locale, format, variant)),
+				path.join(stage, name)
+			);
+			entries.push(name);
+		}
+		const zipPath = path.join(OUT_DIR, locale, `rcos-templates-${format}${variant.suffix}.zip`);
+		if (existsSync(zipPath)) await rm(zipPath);
+		// Listed explicitly so the archive itself is in reading order too.
+		await run('zip', ['-q', '-X', '-D', zipPath, ...entries], { cwd: stage });
+		return zipPath;
+	} finally {
+		await rm(stage, { recursive: true, force: true });
+	}
 }
 
 /** ---- main ---- */
@@ -383,61 +464,78 @@ async function main() {
 
 	for (const locale of SUPPORTED_LOCALES) {
 		console.log(`\n=== Locale: ${locale} ===`);
-		for (const format of FORMATS) {
-			console.log(`  Generating ${format} ...`);
-			for (const g of groups) {
-				process.stdout.write(`    ${g.relPath} → ${format}\n`);
-				await generateOne({ group: g, locale, format });
+		for (const variant of VARIANTS) {
+			for (const format of FORMATS) {
+				console.log(`  Generating ${format} (${variant.key}) ...`);
+				for (const g of groups) {
+					process.stdout.write(`    ${g.relPath} → ${format}\n`);
+					await generateOne({ group: g, locale, format, variant });
+				}
+				// Per-locale INDEX file
+				const idx = await buildIndexMd(groups, locale, format, variant);
+				const idxPath = path.join(OUT_DIR, locale, variant.dir, format, `INDEX.${format}`);
+				if (format === 'md') {
+					await writeFile(idxPath, idx, 'utf8');
+				} else {
+					const s = getStrings(locale);
+					await run(
+						'pandoc',
+						[
+							'-f',
+							'gfm',
+							'-t',
+							format,
+							'-o',
+							idxPath,
+							'--metadata',
+							`title-meta=${s.bundleHeading}`
+						],
+						{ input: idx, cwd: __dirname }
+					);
+				}
 			}
-			// Per-locale INDEX file
-			const idx = await buildIndexMd(groups, locale);
-			const idxRel = `INDEX.${format === 'md' ? 'md' : format}`;
-			const idxPath = path.join(OUT_DIR, locale, format, idxRel);
-			if (format === 'md') {
-				await writeFile(idxPath, idx, 'utf8');
-			} else {
-				const s = getStrings(locale);
-				await run(
-					'pandoc',
-					['-f', 'gfm', '-t', format, '-o', idxPath, '--metadata', `title-meta=${s.bundleHeading}`],
-					{ input: idx, cwd: __dirname }
-				);
-			}
-		}
 
-		console.log(`  Zipping bundles ...`);
-		for (const format of FORMATS) {
-			const zip = await zipFormat(locale, format);
-			console.log(`    ${path.relative(ROOT, zip)}`);
+			console.log(`  Zipping bundles (${variant.key}) ...`);
+			for (const format of FORMATS) {
+				const zip = await zipFormat(groups, locale, format, variant);
+				console.log(`    ${path.relative(ROOT, zip)}`);
+			}
 		}
 	}
 
-	// Manifest with new schema (per-locale bundles + per-template files).
+	// Manifest: per-locale bundles and per-template files. `bundles` and `files`
+	// are the plain variant; the `…Explained` twins keep the explanations.
+	const [plain, explained] = VARIANTS;
+	const bundlesFor = (variant) =>
+		Object.fromEntries(
+			SUPPORTED_LOCALES.map((loc) => [
+				loc,
+				Object.fromEntries(
+					FORMATS.map((fmt) => [
+						fmt,
+						`/downloads/${loc}/rcos-templates-${fmt}${variant.suffix}.zip`
+					])
+				)
+			])
+		);
+	const filesFor = (g, loc, variant) =>
+		Object.fromEntries(FORMATS.map((fmt) => [fmt, `/downloads/${fileRel(g, loc, fmt, variant)}`]));
 	const manifest = {
 		generated: today,
 		defaultLocale: DEFAULT_LOCALE,
 		locales: SUPPORTED_LOCALES,
 		formats: FORMATS,
-		bundles: Object.fromEntries(
-			SUPPORTED_LOCALES.map((loc) => [
-				loc,
-				Object.fromEntries(
-					FORMATS.map((fmt) => [fmt, `/downloads/${loc}/rcos-templates-${fmt}.zip`])
-				)
-			])
-		),
+		bundles: bundlesFor(plain),
+		bundlesExplained: bundlesFor(explained),
 		templates: groups.map((g) => {
 			const titles = {};
 			const files = {};
+			const filesExplained = {};
 			for (const loc of SUPPORTED_LOCALES) {
 				const data = g.translations[loc]?.data ?? g.translations[DEFAULT_LOCALE]?.data ?? {};
 				titles[loc] = data.title || g.relPath;
-				files[loc] = Object.fromEntries(
-					FORMATS.map((fmt) => [
-						fmt,
-						`/downloads/${loc}/${fmt}/${g.relPath.replace(/\.md$/, `.${fmt}`)}`
-					])
-				);
+				files[loc] = filesFor(g, loc, plain);
+				filesExplained[loc] = filesFor(g, loc, explained);
 			}
 			return {
 				id: g.id,
@@ -445,13 +543,14 @@ async function main() {
 				layer: g.layer,
 				titles,
 				files,
+				filesExplained,
 				availableLocales: Object.keys(g.translations).sort()
 			};
 		})
 	};
 	await writeFile(path.join(OUT_DIR, 'manifest-templates.json'), JSON.stringify(manifest, null, 2));
 	console.log(
-		`\nDone. ${groups.length} templates × ${FORMATS.length} formats × ${SUPPORTED_LOCALES.length} locales.`
+		`\nDone. ${groups.length} templates × ${FORMATS.length} formats × ${VARIANTS.length} variants × ${SUPPORTED_LOCALES.length} locales.`
 	);
 }
 

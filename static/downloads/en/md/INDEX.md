@@ -1,53 +1,53 @@
 # RCOS Templates
 
-- **Generated:** 2026-08-31
+- **Generated:** 2026-11-02
 - **Source (latest version):** [https://rcos.ecohubs.community/articles/rcos-templates](https://rcos.ecohubs.community/articles/rcos-templates)
 
 This bundle contains every RCOS template, ready to copy and adapt for your community.
 
-Each template includes a rationale block (why the section exists) and instructions (how to fill it in).
+These templates contain only what you fill in. The version with explanations adds a rationale (why each section exists) and instructions (how to fill it in); download it from the templates page.
 
 ## Templates
 
 ### layer-0
 
-- [Identity Constraints Register](layer-0/identity-constraints-register.md)
-- [Invariants Register](layer-0/invariants-register.md)
-- [Purpose Charter](layer-0/purpose-charter.md)
-- [Scope Declaration](layer-0/scope-declaration.md)
+1. [Purpose Charter](layer-0/01_purpose-charter.md)
+2. [Scope Declaration](layer-0/02_scope-declaration.md)
+3. [Invariants Register](layer-0/03_invariants-register.md)
+4. [Identity Constraints Register](layer-0/04_identity-constraints-register.md)
 
 ### layer-1
 
-- [Exit & Separation Protocol](layer-1/exit-protocol.md)
-- [Membership Agreement](layer-1/membership-agreement.md)
-- [Membership State Registry](layer-1/membership-state-registry.md)
-- [Onboarding Protocol](layer-1/onboarding-protocol.md)
+1. [Membership Agreement](layer-1/01_membership-agreement.md)
+2. [Onboarding Protocol](layer-1/02_onboarding-protocol.md)
+3. [Exit & Separation Protocol](layer-1/03_exit-protocol.md)
+4. [Membership State Registry](layer-1/04_membership-state-registry.md)
 
 ### layer-2
 
-- [Authority Registry](layer-2/authority-registry.md)
-- [Decision Matrix](layer-2/decision-matrix.md)
-- [Governance Protocol](layer-2/governance-protocol.md)
+1. [Decision Matrix](layer-2/01_decision-matrix.md)
+2. [Governance Protocol](layer-2/02_governance-protocol.md)
+3. [Authority Registry](layer-2/03_authority-registry.md)
 
 ### layer-3
 
-- [Internal Economy Protocol](layer-3/internal-economy-protocol.md)
-- [Treasury Ruleset](layer-3/treasury-ruleset.md)
+1. [Internal Economy Protocol](layer-3/01_internal-economy-protocol.md)
+2. [Treasury Ruleset](layer-3/02_treasury-ruleset.md)
 
 ### layer-4
 
-- [Accountability Protocol](layer-4/accountability-protocol.md)
-- [Conflict Resolution Ladder](layer-4/conflict-resolution-ladder.md)
+1. [Conflict Resolution Ladder](layer-4/01_conflict-resolution-ladder.md)
+2. [Accountability Protocol](layer-4/02_accountability-protocol.md)
 
 ### layer-5
 
-- [Meeting Templates](layer-5/meeting-templates.md)
-- [Operations Manual](layer-5/operations-manual.md)
-- [Role Registry](layer-5/role-registry.md)
+1. [Operations Manual](layer-5/01_operations-manual.md)
+2. [Role Registry](layer-5/02_role-registry.md)
+3. [Meeting Templates](layer-5/03_meeting-templates.md)
 
 ### layer-6
 
-- [Change Protocol](layer-6/change-protocol.md)
-- [Experiment Template](layer-6/experiment-template.md)
-- [Learning Log](layer-6/learning-log.md)
-- [Version History](layer-6/version-history.md)
+1. [Change Protocol](layer-6/01_change-protocol.md)
+2. [Version History](layer-6/02_version-history.md)
+3. [Learning Log](layer-6/03_learning-log.md)
+4. [Experiment Template](layer-6/04_experiment-template.md)

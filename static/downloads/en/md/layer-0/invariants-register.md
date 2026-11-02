@@ -2,14 +2,14 @@
 
 # Invariants Register
 
-- **Generated:** 2026-08-31
+- **Generated:** 2026-11-02
 - **Source (latest version):** [https://rcos.ecohubs.community/articles/rcos-templates/layer-0/invariants-register](https://rcos.ecohubs.community/articles/rcos-templates/layer-0/invariants-register)
 - **All RCOS templates:** [https://rcos.ecohubs.community/articles/rcos-templates](https://rcos.ecohubs.community/articles/rcos-templates)
 
 ---
 - **Layer:** 0 — Identity & Scope
 - **Status:** Template — adapt for your community
-- **RCOS reference:** [§2.3](https://rcos.ecohubs.community/articles/rcos-core/v0-1/layer-0-identity-scope#23-invariants), [§2.5](https://rcos.ecohubs.community/articles/rcos-core/v0-1/layer-0-identity-scope#25-artifacts)
+- **RCOS reference:** [§2.3](https://rcos.ecohubs.community/standard/core/0.1/layer-0-identity-scope#2.3), [§2.5](https://rcos.ecohubs.community/standard/core/0.1/layer-0-identity-scope#2.5)
 
 > Invariants are constraints that MUST NOT be violated while they are in force. No decision, role, process, or emergency measure may override an invariant. If a conflict arises between an invariant and any other rule, the invariant prevails.
 
@@ -17,21 +17,7 @@
 
 ## Active Invariants
 
-*RCOS clauses: [2.3.1](https://rcos.ecohubs.community/articles/rcos-core/v0-1/layer-0-identity-scope#23-invariants), [2.3.2](https://rcos.ecohubs.community/articles/rcos-core/v0-1/layer-0-identity-scope#23-invariants), [2.3.3](https://rcos.ecohubs.community/articles/rcos-core/v0-1/layer-0-identity-scope#23-invariants), [2.3.4](https://rcos.ecohubs.community/articles/rcos-core/v0-1/layer-0-identity-scope#23-invariants), [2.3.5](https://rcos.ecohubs.community/articles/rcos-core/v0-1/layer-0-identity-scope#23-invariants), [2.3.6](https://rcos.ecohubs.community/articles/rcos-core/v0-1/layer-0-identity-scope#23-invariants)*
-
-<details data-kind="rationale">
-<summary>Why are invariants unoverridable?</summary>
-
-Invariants are the hard floor of the system — the things that must hold true even under pressure, emergency, or a popular vote. If any decision, role, or crisis measure could override them, they would stop being constraints and become preferences. Listing them explicitly and binding them across every layer is what makes the governance system trustworthy under stress, not just on calm days.
-
-</details>
-
-<details data-kind="instructions">
-<summary>How to fill this in</summary>
-
-Each invariant is a hard constraint. Keep them few, specific, and absolute — phrased so that any violation is unambiguously identifiable. Common categories: purpose protection, authority traceability, exit rights, ideological neutrality, non-extraction, safety primacy.
-
-</details>
+*RCOS clauses: [2.3.1](https://rcos.ecohubs.community/standard/core/0.1/layer-0-identity-scope#2.3.1), [2.3.2](https://rcos.ecohubs.community/standard/core/0.1/layer-0-identity-scope#2.3.2), [2.3.3](https://rcos.ecohubs.community/standard/core/0.1/layer-0-identity-scope#2.3.3), [2.3.4](https://rcos.ecohubs.community/standard/core/0.1/layer-0-identity-scope#2.3.4), [2.3.5](https://rcos.ecohubs.community/standard/core/0.1/layer-0-identity-scope#2.3.5), [2.3.6](https://rcos.ecohubs.community/standard/core/0.1/layer-0-identity-scope#2.3.6)*
 
 | ID | Invariant | Added | Decision record |
 |---|---|---|---|

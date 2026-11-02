@@ -2,34 +2,20 @@
 
 # Protocole de changement
 
-- **Généré:** 2026-08-31
+- **Généré:** 2026-11-02
 - **Source (version la plus récente):** [https://rcos.ecohubs.community/fr/articles/rcos-templates/layer-6/change-protocol](https://rcos.ecohubs.community/fr/articles/rcos-templates/layer-6/change-protocol)
 - **Tous les modèles RCOS:** [https://rcos.ecohubs.community/fr/articles/rcos-templates](https://rcos.ecohubs.community/fr/articles/rcos-templates)
 
 ---
 - **Couche :** 6 — Évolution et adaptation
 - **Statut :** Modèle — à adapter pour ta communauté
-- **Référence RCOS :** [§8.1](https://rcos.ecohubs.community/fr/articles/rcos-core/v0-1/layer-6-evolution-adaptation#81-change-mechanisms), [§8.5](https://rcos.ecohubs.community/fr/articles/rcos-core/v0-1/layer-6-evolution-adaptation#85-change-safety-and-reversibility), [§8.6](https://rcos.ecohubs.community/fr/articles/rcos-core/v0-1/layer-6-evolution-adaptation#86-artifacts)
+- **Référence RCOS :** [§8.1](https://rcos.ecohubs.community/fr/standard/core/0.1/layer-6-evolution-adaptation#8.1), [§8.5](https://rcos.ecohubs.community/fr/standard/core/0.1/layer-6-evolution-adaptation#8.5), [§8.6](https://rcos.ecohubs.community/fr/standard/core/0.1/layer-6-evolution-adaptation#8.6)
 
 ---
 
 ## Comment les changements sont proposés
 
-*Clauses RCOS : [8.1.1](https://rcos.ecohubs.community/fr/articles/rcos-core/v0-1/layer-6-evolution-adaptation#81-change-mechanisms), [8.1.3](https://rcos.ecohubs.community/fr/articles/rcos-core/v0-1/layer-6-evolution-adaptation#81-change-mechanisms), [8.6.3](https://rcos.ecohubs.community/fr/articles/rcos-core/v0-1/layer-6-evolution-adaptation#86-artifacts), [8.8.1](https://rcos.ecohubs.community/fr/articles/rcos-core/v0-1/layer-6-evolution-adaptation#88-explicitness-rules)*
-
-<details data-kind="rationale">
-<summary>Pourquoi exiger une proposition structurée ?</summary>
-
-Un changement qui arrive sous forme d'idée vague dans une discussion ne peut être ni évalué, ni contesté, ni annulé par la suite. Imposer à chaque proposition la même structure minimale — artefacts concernés, justification, risques, retour en arrière — transforme une opinion en artefact vérifiable et rend impossible de faire passer un changement de règle inaperçu au sein de la communauté.
-
-</details>
-
-<details data-kind="instructions">
-<summary>Comment remplir cette section</summary>
-
-Indique qui peut proposer, où les propositions sont soumises et quels champs de contenu sont obligatoires. Relie ceci au Protocole de gouvernance (Couche 2).
-
-</details>
+*Clauses RCOS : [8.1.1](https://rcos.ecohubs.community/fr/standard/core/0.1/layer-6-evolution-adaptation#8.1.1), [8.1.3](https://rcos.ecohubs.community/fr/standard/core/0.1/layer-6-evolution-adaptation#8.1.3), [8.6.3](https://rcos.ecohubs.community/fr/standard/core/0.1/layer-6-evolution-adaptation#8.6.3), [8.8.1](https://rcos.ecohubs.community/fr/standard/core/0.1/layer-6-evolution-adaptation#8.8.1)*
 
 _<Tout Membre de plein droit peut proposer un changement à tout artefact RCOS. Indique le canal de soumission.>_ Chaque proposition doit inclure :
 
@@ -43,21 +29,7 @@ _<Tout Membre de plein droit peut proposer un changement à tout artefact RCOS. 
 
 ## Comment les propositions sont classifiées
 
-*Clauses RCOS : [8.1.2](https://rcos.ecohubs.community/fr/articles/rcos-core/v0-1/layer-6-evolution-adaptation#81-change-mechanisms), [8.1.4](https://rcos.ecohubs.community/fr/articles/rcos-core/v0-1/layer-6-evolution-adaptation#81-change-mechanisms)*
-
-<details data-kind="rationale">
-<summary>Pourquoi classifier selon l'impact ?</summary>
-
-Tous les changements ne méritent pas le même niveau de friction. Les corrections de coquilles ne devraient pas nécessiter une supermajorité ; les changements constitutionnels ne devraient pas passer en silence. Associer les propositions aux types de décision — et classer par défaut les cas ambigus vers le type supérieur — rend le coût d'un changement proportionnel à sa portée et protège la Couche 0 contre l'érosion par petites touches.
-
-</details>
-
-<details data-kind="instructions">
-<summary>Comment remplir cette section</summary>
-
-Définis ce qui relève de chaque type de décision. Indique la règle de classification par défaut vers le type supérieur pour les cas ambigus.
-
-</details>
+*Clauses RCOS : [8.1.2](https://rcos.ecohubs.community/fr/standard/core/0.1/layer-6-evolution-adaptation#8.1.2), [8.1.4](https://rcos.ecohubs.community/fr/standard/core/0.1/layer-6-evolution-adaptation#8.1.4)*
 
 - **Opérationnel :** _<corrections de formulation, mise en forme, mises à jour mineures de contenu ; aucun vote requis ; exécuté par le rôle responsable dans les limites de sa délégation.>_
 - **Stratégique :** _<changements du contenu des Couches 1 à 5 qui affectent les droits des membres, les processus ou les structures.>_
@@ -67,21 +39,7 @@ Définis ce qui relève de chaque type de décision. Indique la règle de classi
 
 ## Examen et délibération
 
-*Clauses RCOS : [8.1.2](https://rcos.ecohubs.community/fr/articles/rcos-core/v0-1/layer-6-evolution-adaptation#81-change-mechanisms), [8.7.1](https://rcos.ecohubs.community/fr/articles/rcos-core/v0-1/layer-6-evolution-adaptation#87-layer-invariants)*
-
-<details data-kind="rationale">
-<summary>Pourquoi imposer des périodes minimales de délibération ?</summary>
-
-Sans durée minimale de délibération, tout changement peut être adopté à la hâte un jour calme où peu de membres sont attentifs. Des minimums obligatoires — plus longs pour les changements à fort impact — garantissent que les membres en déplacement, malades ou simplement occupés disposent d'une vraie chance de lire, d'objecter ou de se manifester.
-
-</details>
-
-<details data-kind="instructions">
-<summary>Comment remplir cette section</summary>
-
-Définis les périodes minimales de délibération pour chaque type de décision, ainsi qu'une période de ratification pour les changements constitutionnels.
-
-</details>
+*Clauses RCOS : [8.1.2](https://rcos.ecohubs.community/fr/standard/core/0.1/layer-6-evolution-adaptation#8.1.2), [8.7.1](https://rcos.ecohubs.community/fr/standard/core/0.1/layer-6-evolution-adaptation#8.7.1)*
 
 - **Opérationnel :** _<aucune délibération requise.>_
 - **Stratégique :** _<délibération minimale de X jours ; lieu de délibération.>_
@@ -89,21 +47,7 @@ Définis les périodes minimales de délibération pour chaque type de décision
 
 ## Adoption et publication
 
-*Clauses RCOS : [8.2.1](https://rcos.ecohubs.community/fr/articles/rcos-core/v0-1/layer-6-evolution-adaptation#82-versioning-and-authority), [8.2.2](https://rcos.ecohubs.community/fr/articles/rcos-core/v0-1/layer-6-evolution-adaptation#82-versioning-and-authority), [8.2.5](https://rcos.ecohubs.community/fr/articles/rcos-core/v0-1/layer-6-evolution-adaptation#82-versioning-and-authority), [8.6.3](https://rcos.ecohubs.community/fr/articles/rcos-core/v0-1/layer-6-evolution-adaptation#86-artifacts)*
-
-<details data-kind="rationale">
-<summary>Pourquoi des étapes de publication fixes ?</summary>
-
-Un vote qui passe mais n'est jamais consigné par écrit équivaut à une absence de vote — et pire, il crée un vide où quiconque se souvient du résultat peut le définir à sa guise. Des étapes de publication rigoureuses et ordonnées comblent ce vide et font de « ce qui a été adopté » une question d'archive, non de mémoire.
-
-</details>
-
-<details data-kind="instructions">
-<summary>Comment remplir cette section</summary>
-
-Indique les étapes ordonnées qui doivent être exécutées après l'adoption d'une proposition. Inclus les délais et l'obligation de maintenir un historique des versions.
-
-</details>
+*Clauses RCOS : [8.2.1](https://rcos.ecohubs.community/fr/standard/core/0.1/layer-6-evolution-adaptation#8.2.1), [8.2.2](https://rcos.ecohubs.community/fr/standard/core/0.1/layer-6-evolution-adaptation#8.2.2), [8.2.5](https://rcos.ecohubs.community/fr/standard/core/0.1/layer-6-evolution-adaptation#8.2.5), [8.6.3](https://rcos.ecohubs.community/fr/standard/core/0.1/layer-6-evolution-adaptation#8.6.3)*
 
 Lorsqu'une proposition est adoptée :
 
@@ -114,21 +58,7 @@ Lorsqu'une proposition est adoptée :
 
 ## Rejet
 
-*Clauses RCOS : [8.2.2](https://rcos.ecohubs.community/fr/articles/rcos-core/v0-1/layer-6-evolution-adaptation#82-versioning-and-authority), [8.2.4](https://rcos.ecohubs.community/fr/articles/rcos-core/v0-1/layer-6-evolution-adaptation#82-versioning-and-authority)*
-
-<details data-kind="rationale">
-<summary>Pourquoi archiver les propositions rejetées ?</summary>
-
-Les idées rejetées portent autant de signal que celles acceptées — elles montrent ce que la communauté a examiné et refusé. Garder les rejets classés et accessibles empêche la même proposition de réapparaître sous un nouveau nom tous les six mois et offre aux futurs membres une vue des chemins non empruntés.
-
-</details>
-
-<details data-kind="instructions">
-<summary>Comment remplir cette section</summary>
-
-Indique l'emplacement de l'archive pour les propositions rejetées et les conditions de nouveau vote pour rouvrir la question.
-
-</details>
+*Clauses RCOS : [8.2.2](https://rcos.ecohubs.community/fr/standard/core/0.1/layer-6-evolution-adaptation#8.2.2), [8.2.4](https://rcos.ecohubs.community/fr/standard/core/0.1/layer-6-evolution-adaptation#8.2.4)*
 
 Lorsqu'une proposition est rejetée :
 
@@ -138,21 +68,7 @@ Lorsqu'une proposition est rejetée :
 
 ## Transition et migration
 
-*Clauses RCOS : [8.5.1](https://rcos.ecohubs.community/fr/articles/rcos-core/v0-1/layer-6-evolution-adaptation#85-change-safety-and-reversibility), [8.5.2](https://rcos.ecohubs.community/fr/articles/rcos-core/v0-1/layer-6-evolution-adaptation#85-change-safety-and-reversibility)*
-
-<details data-kind="rationale">
-<summary>Pourquoi protéger les droits existants pendant les transitions ?</summary>
-
-Si de nouvelles règles pouvaient réécrire silencieusement des accords existants, l'adhésion n'aurait aucun sens — ce à quoi tu as souscrit pourrait être modifié sans que tu t'en aperçoives. Des règles de transition explicites garantissent que les droits ne sont pas réduits rétroactivement et que les personnes opérant sous les anciennes règles disposent de temps et d'un préavis avant que le terrain ne change.
-
-</details>
-
-<details data-kind="instructions">
-<summary>Comment remplir cette section</summary>
-
-Indique les règles protégeant les titulaires de rôles existants, les membres et les registres lorsqu'un changement de règle prend effet.
-
-</details>
+*Clauses RCOS : [8.5.1](https://rcos.ecohubs.community/fr/standard/core/0.1/layer-6-evolution-adaptation#8.5.1), [8.5.2](https://rcos.ecohubs.community/fr/standard/core/0.1/layer-6-evolution-adaptation#8.5.2)*
 
 Lorsqu'un changement de règle affecte des rôles, accords ou registres existants :
 
@@ -163,41 +79,13 @@ Lorsqu'un changement de règle affecte des rôles, accords ou registres existant
 
 ## Retour en arrière
 
-*Clauses RCOS : [8.1.5](https://rcos.ecohubs.community/fr/articles/rcos-core/v0-1/layer-6-evolution-adaptation#81-change-mechanisms), [8.5.1](https://rcos.ecohubs.community/fr/articles/rcos-core/v0-1/layer-6-evolution-adaptation#85-change-safety-and-reversibility)*
-
-<details data-kind="rationale">
-<summary>Pourquoi rendre le retour en arrière symétrique à l'adoption ?</summary>
-
-Un changement qui ne peut pas être annulé par le même chemin qui l'a créé est un piège. Exiger que le retour en arrière utilise le même type de décision que l'original maintient la porte ouverte à la correction sans permettre à un seul membre d'inverser discrètement une décision communautaire en l'appelant une « correction ».
-
-</details>
-
-<details data-kind="instructions">
-<summary>Comment remplir cette section</summary>
-
-Indique que le retour en arrière utilise le même type de décision et le même processus que l'adoption originale.
-
-</details>
+*Clauses RCOS : [8.1.5](https://rcos.ecohubs.community/fr/standard/core/0.1/layer-6-evolution-adaptation#8.1.5), [8.5.1](https://rcos.ecohubs.community/fr/standard/core/0.1/layer-6-evolution-adaptation#8.5.1)*
 
 _<Toute décision adoptée peut être annulée par le même processus que l'original. Tout Membre de plein droit peut déclencher un nouveau vote en soumettant une objection écrite et motivée qui n'a pas été prise en compte lors de la délibération originale. Le retour en arrière utilise le même type de décision que l'original.>_
 
 ## Changements d'urgence
 
-*Clauses RCOS : [8.5.3](https://rcos.ecohubs.community/fr/articles/rcos-core/v0-1/layer-6-evolution-adaptation#85-change-safety-and-reversibility)*
-
-<details data-kind="rationale">
-<summary>Pourquoi autoriser les changements d'urgence ?</summary>
-
-Certains dommages se produisent plus vite qu'un vote ne peut être convoqué. Un chemin d'urgence étroit et bien encadré permet à la communauté de répondre à de véritables problèmes de sécurité ou défaillances de plateforme sans accorder à quiconque un pouvoir de dérogation général. Le cycle obligatoire de signalement, examen et ratification-ou-retour-en-arrière est ce qui empêche les pouvoirs d'urgence de devenir des pouvoirs ordinaires.
-
-</details>
-
-<details data-kind="instructions">
-<summary>Comment remplir cette section</summary>
-
-Définis les conditions dans lesquelles un changement d'urgence peut être effectué, qui peut le faire, et le cycle obligatoire de signalement-examen-ratification-ou-retour-en-arrière.
-
-</details>
+*Clauses RCOS : [8.5.3](https://rcos.ecohubs.community/fr/standard/core/0.1/layer-6-evolution-adaptation#8.5.3)*
 
 Un changement opérationnel d'urgence peut être effectué par _<rôle>_ uniquement si toutes les conditions suivantes sont réunies :
 
@@ -213,21 +101,7 @@ Les changements d'urgence doivent être :
 
 ## Expérimentations
 
-*Clauses RCOS : [8.3.1](https://rcos.ecohubs.community/fr/articles/rcos-core/v0-1/layer-6-evolution-adaptation#83-experiments), [8.3.2](https://rcos.ecohubs.community/fr/articles/rcos-core/v0-1/layer-6-evolution-adaptation#83-experiments), [8.3.3](https://rcos.ecohubs.community/fr/articles/rcos-core/v0-1/layer-6-evolution-adaptation#83-experiments), [8.3.4](https://rcos.ecohubs.community/fr/articles/rcos-core/v0-1/layer-6-evolution-adaptation#83-experiments), [8.3.5](https://rcos.ecohubs.community/fr/articles/rcos-core/v0-1/layer-6-evolution-adaptation#83-experiments), [8.7.3](https://rcos.ecohubs.community/fr/articles/rcos-core/v0-1/layer-6-evolution-adaptation#87-layer-invariants)*
-
-<details data-kind="rationale">
-<summary>Pourquoi traiter les expérimentations comme un mécanisme distinct ?</summary>
-
-La communauté a besoin d'un moyen d'essayer de nouvelles choses sans devoir les adopter définitivement pour les tester. Les expérimentations créent cet espace — mais seulement si elles sont limitées dans le temps, étiquetées et à expiration automatique. Sans ces garde-fous, une « expérimentation » devient le moyen le plus rapide d'installer une règle permanente sans véritable délibération.
-
-</details>
-
-<details data-kind="instructions">
-<summary>Comment remplir cette section</summary>
-
-Définis les règles que chaque expérimentation doit satisfaire. Réfère-toi au Modèle d'expérimentation pour la structure complète de soumission.
-
-</details>
+*Clauses RCOS : [8.3.1](https://rcos.ecohubs.community/fr/standard/core/0.1/layer-6-evolution-adaptation#8.3.1), [8.3.2](https://rcos.ecohubs.community/fr/standard/core/0.1/layer-6-evolution-adaptation#8.3.2), [8.3.3](https://rcos.ecohubs.community/fr/standard/core/0.1/layer-6-evolution-adaptation#8.3.3), [8.3.4](https://rcos.ecohubs.community/fr/standard/core/0.1/layer-6-evolution-adaptation#8.3.4), [8.3.5](https://rcos.ecohubs.community/fr/standard/core/0.1/layer-6-evolution-adaptation#8.3.5), [8.7.3](https://rcos.ecohubs.community/fr/standard/core/0.1/layer-6-evolution-adaptation#8.7.3)*
 
 _<Tout Membre de plein droit peut proposer une expérimentation limitée dans le temps via une décision stratégique. Voir le Modèle d'expérimentation pour les champs obligatoires.>_
 

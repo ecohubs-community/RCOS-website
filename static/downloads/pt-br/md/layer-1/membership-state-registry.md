@@ -2,34 +2,20 @@
 
 # Registro de Estados de Associação
 
-- **Gerado em:** 2026-08-31
+- **Gerado em:** 2026-11-02
 - **Fonte (versão mais recente):** [https://rcos.ecohubs.community/pt-br/articles/rcos-templates/layer-1/membership-state-registry](https://rcos.ecohubs.community/pt-br/articles/rcos-templates/layer-1/membership-state-registry)
 - **Todos os modelos RCOS:** [https://rcos.ecohubs.community/pt-br/articles/rcos-templates](https://rcos.ecohubs.community/pt-br/articles/rcos-templates)
 
 ---
 - **Camada:** 1 — Sistema de Associação
 - **Status:** Modelo — adapte para sua comunidade
-- **Referência RCOS:** [§3.1](https://rcos.ecohubs.community/pt-br/articles/rcos-core/v0-1/layer-1-membership-system#31-membership-states)
+- **Referência RCOS:** [§3.1](https://rcos.ecohubs.community/pt-br/standard/core/0.1/layer-1-membership-system#3.1)
 
 ---
 
 ## Estados de Associação Definidos
 
-*Cláusulas RCOS: [3.1.1](https://rcos.ecohubs.community/pt-br/articles/rcos-core/v0-1/layer-1-membership-system#31-membership-states), [3.1.2](https://rcos.ecohubs.community/pt-br/articles/rcos-core/v0-1/layer-1-membership-system#31-membership-states), [3.1.3](https://rcos.ecohubs.community/pt-br/articles/rcos-core/v0-1/layer-1-membership-system#31-membership-states), [3.1.4](https://rcos.ecohubs.community/pt-br/articles/rcos-core/v0-1/layer-1-membership-system#31-membership-states), [3.1.5](https://rcos.ecohubs.community/pt-br/articles/rcos-core/v0-1/layer-1-membership-system#31-membership-states)*
-
-<details data-kind="rationale">
-<summary>Por que uma única tabela de estados?</summary>
-
-Direitos e obrigações espalhados por vários documentos acabam divergindo. Reunir cada estado, seus direitos, suas obrigações e suas transições em uma única tabela torna o sistema de associação auditável de relance — você consegue ver cada porta de entrada e de saída da comunidade, e o que cada uma concede. Se dois documentos algum dia discordarem, este registro é o desempate.
-
-</details>
-
-<details data-kind="instructions">
-<summary>Como preencher</summary>
-
-Defina cada estado de associação que sua comunidade reconhece (por exemplo, Candidato, Membro em Período de Experiência, Membro Pleno, Membro Egresso). Para cada um, liste direitos, obrigações, condição de entrada e condição de saída. Mantenha os estados mutuamente exclusivos — nenhuma pessoa pode estar em dois estados ao mesmo tempo.
-
-</details>
+*Cláusulas RCOS: [3.1.1](https://rcos.ecohubs.community/pt-br/standard/core/0.1/layer-1-membership-system#3.1.1), [3.1.2](https://rcos.ecohubs.community/pt-br/standard/core/0.1/layer-1-membership-system#3.1.2), [3.1.3](https://rcos.ecohubs.community/pt-br/standard/core/0.1/layer-1-membership-system#3.1.3), [3.1.4](https://rcos.ecohubs.community/pt-br/standard/core/0.1/layer-1-membership-system#3.1.4), [3.1.5](https://rcos.ecohubs.community/pt-br/standard/core/0.1/layer-1-membership-system#3.1.5)*
 
 | Estado | Direitos | Obrigações | Condição de entrada | Condição de saída |
 |---|---|---|---|---|

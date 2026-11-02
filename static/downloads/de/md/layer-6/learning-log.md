@@ -2,14 +2,14 @@
 
 # Lernprotokoll
 
-- **Generiert:** 2026-08-31
+- **Generiert:** 2026-11-02
 - **Quelle (aktuelle Version):** [https://rcos.ecohubs.community/de/articles/rcos-templates/layer-6/learning-log](https://rcos.ecohubs.community/de/articles/rcos-templates/layer-6/learning-log)
 - **Alle RCOS-Vorlagen:** [https://rcos.ecohubs.community/de/articles/rcos-templates](https://rcos.ecohubs.community/de/articles/rcos-templates)
 
 ---
 - **Schicht:** 6 — Evolution & Anpassung
 - **Status:** Vorlage — an deine Gemeinschaft anpassen; wird aktualisiert, wenn lernrelevante Ereignisse eintreten
-- **RCOS-Referenz:** [§8.4](https://rcos.ecohubs.community/de/articles/rcos-core/v0-1/layer-6-evolution-adaptation#84-learning-and-feedback-capture), [§8.6](https://rcos.ecohubs.community/de/articles/rcos-core/v0-1/layer-6-evolution-adaptation#86-artifacts)
+- **RCOS-Referenz:** [§8.4](https://rcos.ecohubs.community/de/standard/core/0.1/layer-6-evolution-adaptation#8.4), [§8.6](https://rcos.ecohubs.community/de/standard/core/0.1/layer-6-evolution-adaptation#8.6)
 
 > Dokumentiert größere Fehler, Anpassungen, Rücknahmen und systemische Erkenntnisse. Wiederkehrende Fehlermuster müssen eine strukturelle Überprüfung auslösen, keine individuelle Schuldzuweisung. Einträge werden vorangestellt (neueste zuerst).
 
@@ -17,21 +17,7 @@
 
 ## Was ein lernrelevantes Ereignis ausmacht
 
-*RCOS-Klauseln: [8.4.1](https://rcos.ecohubs.community/de/articles/rcos-core/v0-1/layer-6-evolution-adaptation#84-learning-and-feedback-capture), [8.4.4](https://rcos.ecohubs.community/de/articles/rcos-core/v0-1/layer-6-evolution-adaptation#84-learning-and-feedback-capture), [8.6.5](https://rcos.ecohubs.community/de/articles/rcos-core/v0-1/layer-6-evolution-adaptation#86-artifacts), [8.7.4](https://rcos.ecohubs.community/de/articles/rcos-core/v0-1/layer-6-evolution-adaptation#87-layer-invariants)*
-
-<details data-kind="rationale">
-<summary>Warum den Auslöser explizit definieren?</summary>
-
-Wenn „daraus sollten wir lernen" dem individuellen Ermessen überlassen wird, sind die härtesten Lektionen — jene, die mit Konflikten, Scheitern oder Peinlichkeit verbunden sind — am ehesten diejenigen, die undokumentiert bleiben. Die konkreten Ereignisse zu benennen, die einen Eintrag erzeugen MÜSSEN, nimmt die Frage aus dem Moment heraus und stellt sicher, dass unbequeme Erkenntnisse festgehalten werden, anstatt stillschweigend unter den Tisch zu fallen.
-
-</details>
-
-<details data-kind="instructions">
-<summary>Wie du das ausfüllst</summary>
-
-Liste die konkreten Ereignisse auf, die einen Eintrag im Lernprotokoll verpflichtend machen. Benenne, wer das Protokoll pflegt, und den Rhythmus der Zusammenfassung.
-
-</details>
+*RCOS-Klauseln: [8.4.1](https://rcos.ecohubs.community/de/standard/core/0.1/layer-6-evolution-adaptation#8.4.1), [8.4.4](https://rcos.ecohubs.community/de/standard/core/0.1/layer-6-evolution-adaptation#8.4.4), [8.6.5](https://rcos.ecohubs.community/de/standard/core/0.1/layer-6-evolution-adaptation#8.6.5), [8.7.4](https://rcos.ecohubs.community/de/standard/core/0.1/layer-6-evolution-adaptation#8.7.4)*
 
 Ein Eintrag MUSS erstellt werden, wenn eines der folgenden Ereignisse eintritt:
 
@@ -57,21 +43,7 @@ _Noch keine Einträge. Der erste Eintrag wird hinzugefügt, wenn das erste lernr
 
 ## Eintragsformat
 
-*RCOS-Klauseln: [8.4.2](https://rcos.ecohubs.community/de/articles/rcos-core/v0-1/layer-6-evolution-adaptation#84-learning-and-feedback-capture), [8.4.3](https://rcos.ecohubs.community/de/articles/rcos-core/v0-1/layer-6-evolution-adaptation#84-learning-and-feedback-capture), [8.6.5](https://rcos.ecohubs.community/de/articles/rcos-core/v0-1/layer-6-evolution-adaptation#86-artifacts)*
-
-<details data-kind="rationale">
-<summary>Warum eine feste Eintragsvorlage?</summary>
-
-Freie Reflexion ist wertvoll, lässt sich aber nicht aggregieren. Ein einheitliches Schema — Auslöser, Signale, was sich geändert hat, Ergebnis, Verantwortliche*r für die Nachverfolgung — ermöglicht es, Einträge über Jahre hinweg nach wiederkehrenden Mustern zu durchsuchen und einzelne Vorfälle in strukturelle Erkenntnisse umzuwandeln. Es zwingt außerdem jeden Eintrag, eine verantwortliche Person zu benennen, damit Lernen nicht bei „wir haben es bemerkt" endet.
-
-</details>
-
-<details data-kind="instructions">
-<summary>Wie du das ausfüllst</summary>
-
-Verwende die unten stehende Vorlage für jeden Eintrag. Jedes Feld erzwingt einen anderen Blickwinkel auf das Ereignis; überspringe nicht die verantwortliche Person für die Nachverfolgung.
-
-</details>
+*RCOS-Klauseln: [8.4.2](https://rcos.ecohubs.community/de/standard/core/0.1/layer-6-evolution-adaptation#8.4.2), [8.4.3](https://rcos.ecohubs.community/de/standard/core/0.1/layer-6-evolution-adaptation#8.4.3), [8.6.5](https://rcos.ecohubs.community/de/standard/core/0.1/layer-6-evolution-adaptation#8.6.5)*
 
 ```markdown
 ## <JJJJ-MM-TT> — <Kurztitel>

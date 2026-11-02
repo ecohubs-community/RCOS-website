@@ -130,6 +130,7 @@
 	"downloads_bundle_fallback": "Für diese Sprache sind noch keine Übersetzungen verfügbar – das Bündel wird auf {served} ausgeliefert.",
 	"downloads_template_fallback_inline": "Noch nicht übersetzt – die Datei wird auf {served} ausgeliefert.",
 	"downloads_template_fallback_tooltip": "Noch nicht in deine gewählte Sprache übersetzt – Rückfall auf Englisch.",
+	"downloads_include_explanations": "Erläuterungen & Anleitungen einbeziehen",
 	"footer_link_about_us": "Über uns",
 	"footer_link_join_us": "Mitmachen",
 	"footer_link_github": "GitHub",

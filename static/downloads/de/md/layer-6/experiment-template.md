@@ -2,14 +2,14 @@
 
 # Experiment-Vorlage
 
-- **Generiert:** 2026-08-31
+- **Generiert:** 2026-11-02
 - **Quelle (aktuelle Version):** [https://rcos.ecohubs.community/de/articles/rcos-templates/layer-6/experiment-template](https://rcos.ecohubs.community/de/articles/rcos-templates/layer-6/experiment-template)
 - **Alle RCOS-Vorlagen:** [https://rcos.ecohubs.community/de/articles/rcos-templates](https://rcos.ecohubs.community/de/articles/rcos-templates)
 
 ---
 - **Schicht:** 6 — Evolution & Anpassung
 - **Status:** Vorlage — verwende sie, um ein zeitlich begrenztes Experiment vorzuschlagen
-- **RCOS-Referenz:** [§8.3](https://rcos.ecohubs.community/de/articles/rcos-core/v0-1/layer-6-evolution-adaptation#83-experiments), [§8.7](https://rcos.ecohubs.community/de/articles/rcos-core/v0-1/layer-6-evolution-adaptation#87-layer-invariants)
+- **RCOS-Referenz:** [§8.3](https://rcos.ecohubs.community/de/standard/core/0.1/layer-6-evolution-adaptation#8.3), [§8.7](https://rcos.ecohubs.community/de/standard/core/0.1/layer-6-evolution-adaptation#8.7)
 
 > Experimente erlauben es der Gemeinschaft, eine Änderung auszuprobieren, ohne sie dauerhaft zu übernehmen. Damit das sicher bleibt, muss jedes Experiment zeitlich begrenzt, gekennzeichnet und automatisch ablaufend sein — und seine Ergebnisse im Lernprotokoll festhalten.
 
@@ -17,21 +17,7 @@
 
 ## Pflichtfelder
 
-*RCOS-Klauseln: [8.3.1](https://rcos.ecohubs.community/de/articles/rcos-core/v0-1/layer-6-evolution-adaptation#83-experiments), [8.3.2](https://rcos.ecohubs.community/de/articles/rcos-core/v0-1/layer-6-evolution-adaptation#83-experiments), [8.3.3](https://rcos.ecohubs.community/de/articles/rcos-core/v0-1/layer-6-evolution-adaptation#83-experiments), [8.3.4](https://rcos.ecohubs.community/de/articles/rcos-core/v0-1/layer-6-evolution-adaptation#83-experiments), [8.3.5](https://rcos.ecohubs.community/de/articles/rcos-core/v0-1/layer-6-evolution-adaptation#83-experiments), [8.7.3](https://rcos.ecohubs.community/de/articles/rcos-core/v0-1/layer-6-evolution-adaptation#87-layer-invariants)*
-
-<details data-kind="rationale">
-<summary>Warum sind diese Felder erforderlich?</summary>
-
-Ohne Umfang, Dauer, Erfolgskriterien und Rollback ist ein „Experiment" nur eine dauerhafte Änderung mit freundlicherem Etikett. Indem jeder Vorschlag angeben muss, was er ändert, wann er endet, wie er überprüft wird und wie er rückgängig gemacht wird, bleibt Experimentieren umkehrbar — und das Experiment-Label kann nicht dazu verwendet werden, die Beratung zu umgehen.
-
-</details>
-
-<details data-kind="instructions">
-<summary>Wie du das ausfüllst</summary>
-
-Fülle jedes Feld aus. Die maximale Dauer wird durch dein Änderungsprotokoll festgelegt. Die Entscheidungsbefugnis muss aus der Entscheidungsmatrix stammen.
-
-</details>
+*RCOS-Klauseln: [8.3.1](https://rcos.ecohubs.community/de/standard/core/0.1/layer-6-evolution-adaptation#8.3.1), [8.3.2](https://rcos.ecohubs.community/de/standard/core/0.1/layer-6-evolution-adaptation#8.3.2), [8.3.3](https://rcos.ecohubs.community/de/standard/core/0.1/layer-6-evolution-adaptation#8.3.3), [8.3.4](https://rcos.ecohubs.community/de/standard/core/0.1/layer-6-evolution-adaptation#8.3.4), [8.3.5](https://rcos.ecohubs.community/de/standard/core/0.1/layer-6-evolution-adaptation#8.3.5), [8.7.3](https://rcos.ecohubs.community/de/standard/core/0.1/layer-6-evolution-adaptation#8.7.3)*
 
 - **Titel:** _<kurzer Experimentname.>_
 - **Vorschlagende Person:** _<Name des Mitglieds.>_
@@ -47,20 +33,6 @@ Fülle jedes Feld aus. Die maximale Dauer wird durch dein Änderungsprotokoll fe
 - **Sicherheitsaussetzung:** _<bestätige, dass eine Notaussetzung gemäß Änderungsprotokoll eingeleitet werden kann, wenn ein glaubhaftes Sicherheitsrisiko entsteht.>_
 
 ## Ablauf und Verlängerung
-
-<details data-kind="rationale">
-<summary>Warum müssen Experimente ablaufen?</summary>
-
-Die Gemeinschaft braucht die Möglichkeit, Änderungen rückgängig zu machen. Automatisches Ablaufen erzwingt eine bewusste Entscheidung, die Änderung dauerhaft zu übernehmen — statt eines schleichenden Drifts, bei dem sich niemand mehr erinnert, dass sie jemals vorläufig war.
-
-</details>
-
-<details data-kind="instructions">
-<summary>Wie du das ausfüllst</summary>
-
-Halte die Regel zum automatischen Ablauf, den Verlängerungsmechanismus und die Pflicht zur Ergebniserfassung im Lernprotokoll fest.
-
-</details>
 
 - _<Experimente laufen automatisch am Ende ihrer festgelegten Dauer ab, sofern sie nicht ausdrücklich durch einen neuen Vorschlag verlängert werden. Eine Verlängerung erfordert eine neue strategische Abstimmung.>_
 - _<Ergebnisse und Erkenntnisse werden im Lernprotokoll festgehalten.>_

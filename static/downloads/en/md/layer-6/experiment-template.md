@@ -2,14 +2,14 @@
 
 # Experiment Template
 
-- **Generated:** 2026-08-31
+- **Generated:** 2026-11-02
 - **Source (latest version):** [https://rcos.ecohubs.community/articles/rcos-templates/layer-6/experiment-template](https://rcos.ecohubs.community/articles/rcos-templates/layer-6/experiment-template)
 - **All RCOS templates:** [https://rcos.ecohubs.community/articles/rcos-templates](https://rcos.ecohubs.community/articles/rcos-templates)
 
 ---
 - **Layer:** 6 — Evolution & Adaptation
 - **Status:** Template — use to propose a time-bounded experiment
-- **RCOS reference:** [§8.3](https://rcos.ecohubs.community/articles/rcos-core/v0-1/layer-6-evolution-adaptation#83-experiments), [§8.7](https://rcos.ecohubs.community/articles/rcos-core/v0-1/layer-6-evolution-adaptation#87-layer-invariants)
+- **RCOS reference:** [§8.3](https://rcos.ecohubs.community/standard/core/0.1/layer-6-evolution-adaptation#8.3), [§8.7](https://rcos.ecohubs.community/standard/core/0.1/layer-6-evolution-adaptation#8.7)
 
 > Experiments let the community try a change without permanently adopting it. To stay safe, every experiment must be time-bounded, labeled, and auto-expiring — and must record its results in the Learning Log.
 
@@ -17,21 +17,7 @@
 
 ## Required Fields
 
-*RCOS clauses: [8.3.1](https://rcos.ecohubs.community/articles/rcos-core/v0-1/layer-6-evolution-adaptation#83-experiments), [8.3.2](https://rcos.ecohubs.community/articles/rcos-core/v0-1/layer-6-evolution-adaptation#83-experiments), [8.3.3](https://rcos.ecohubs.community/articles/rcos-core/v0-1/layer-6-evolution-adaptation#83-experiments), [8.3.4](https://rcos.ecohubs.community/articles/rcos-core/v0-1/layer-6-evolution-adaptation#83-experiments), [8.3.5](https://rcos.ecohubs.community/articles/rcos-core/v0-1/layer-6-evolution-adaptation#83-experiments), [8.7.3](https://rcos.ecohubs.community/articles/rcos-core/v0-1/layer-6-evolution-adaptation#87-layer-invariants)*
-
-<details data-kind="rationale">
-<summary>Why require these fields?</summary>
-
-Without scope, duration, success criteria, and rollback, an "experiment" is just a permanent change with friendlier branding. Forcing every proposal to specify what it changes, when it ends, how it will be reviewed, and how it will be rolled back keeps experimentation reversible — and prevents the experiment label from being used to bypass deliberation.
-
-</details>
-
-<details data-kind="instructions">
-<summary>How to fill this in</summary>
-
-Fill each field. Maximum duration is set by your Change Protocol. The decision authority must come from the Decision Matrix.
-
-</details>
+*RCOS clauses: [8.3.1](https://rcos.ecohubs.community/standard/core/0.1/layer-6-evolution-adaptation#8.3.1), [8.3.2](https://rcos.ecohubs.community/standard/core/0.1/layer-6-evolution-adaptation#8.3.2), [8.3.3](https://rcos.ecohubs.community/standard/core/0.1/layer-6-evolution-adaptation#8.3.3), [8.3.4](https://rcos.ecohubs.community/standard/core/0.1/layer-6-evolution-adaptation#8.3.4), [8.3.5](https://rcos.ecohubs.community/standard/core/0.1/layer-6-evolution-adaptation#8.3.5), [8.7.3](https://rcos.ecohubs.community/standard/core/0.1/layer-6-evolution-adaptation#8.7.3)*
 
 - **Title:** _<short experiment name.>_
 - **Proposer:** _<member name.>_
@@ -47,20 +33,6 @@ Fill each field. Maximum duration is set by your Change Protocol. The decision a
 - **Safety suspension:** _<acknowledge that an emergency suspension may be invoked under the Change Protocol if a credible safety risk emerges.>_
 
 ## Expiry and Renewal
-
-<details data-kind="rationale">
-<summary>Why must experiments expire?</summary>
-
-The community needs the option to revert. Auto-expiry forces a deliberate decision to make the change permanent — not a slow drift in which nobody remembers it was ever conditional.
-
-</details>
-
-<details data-kind="instructions">
-<summary>How to fill this in</summary>
-
-State the auto-expiry rule, the renewal mechanism, and the obligation to record results in the Learning Log.
-
-</details>
 
 - _<Experiments expire automatically at the end of their defined duration unless explicitly renewed via a new proposal. Renewal requires a new Strategic vote.>_
 - _<Results and learnings are recorded in the Learning Log.>_

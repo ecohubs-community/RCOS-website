@@ -2,14 +2,14 @@
 
 # Plantilla de Experimento
 
-- **Generado:** 2026-08-31
+- **Generado:** 2026-11-02
 - **Fuente (versión más reciente):** [https://rcos.ecohubs.community/es/articles/rcos-templates/layer-6/experiment-template](https://rcos.ecohubs.community/es/articles/rcos-templates/layer-6/experiment-template)
 - **Todas las plantillas RCOS:** [https://rcos.ecohubs.community/es/articles/rcos-templates](https://rcos.ecohubs.community/es/articles/rcos-templates)
 
 ---
 - **Capa:** 6 — Evolución y Adaptación
 - **Estado:** Plantilla — úsala para proponer un experimento acotado en el tiempo
-- **Referencia RCOS:** [§8.3](https://rcos.ecohubs.community/es/articles/rcos-core/v0-1/layer-6-evolution-adaptation#83-experiments), [§8.7](https://rcos.ecohubs.community/es/articles/rcos-core/v0-1/layer-6-evolution-adaptation#87-layer-invariants)
+- **Referencia RCOS:** [§8.3](https://rcos.ecohubs.community/es/standard/core/0.1/layer-6-evolution-adaptation#8.3), [§8.7](https://rcos.ecohubs.community/es/standard/core/0.1/layer-6-evolution-adaptation#8.7)
 
 > Los experimentos permiten que la comunidad pruebe un cambio sin adoptarlo de forma permanente. Para mantener la seguridad, cada experimento DEBE estar acotado en el tiempo, etiquetado y con expiración automática — y DEBE registrar sus resultados en el Registro de Aprendizajes.
 
@@ -17,21 +17,7 @@
 
 ## Campos Requeridos
 
-*Cláusulas RCOS: [8.3.1](https://rcos.ecohubs.community/es/articles/rcos-core/v0-1/layer-6-evolution-adaptation#83-experiments), [8.3.2](https://rcos.ecohubs.community/es/articles/rcos-core/v0-1/layer-6-evolution-adaptation#83-experiments), [8.3.3](https://rcos.ecohubs.community/es/articles/rcos-core/v0-1/layer-6-evolution-adaptation#83-experiments), [8.3.4](https://rcos.ecohubs.community/es/articles/rcos-core/v0-1/layer-6-evolution-adaptation#83-experiments), [8.3.5](https://rcos.ecohubs.community/es/articles/rcos-core/v0-1/layer-6-evolution-adaptation#83-experiments), [8.7.3](https://rcos.ecohubs.community/es/articles/rcos-core/v0-1/layer-6-evolution-adaptation#87-layer-invariants)*
-
-<details data-kind="rationale">
-<summary>¿Por qué se requieren estos campos?</summary>
-
-Sin alcance, duración, criterios de éxito y reversión, un "experimento" es simplemente un cambio permanente con un nombre más amigable. Obligar a cada propuesta a especificar qué cambia, cuándo termina, cómo se evaluará y cómo se revertirá mantiene la experimentación reversible — e impide que la etiqueta de experimento se use para eludir la deliberación.
-
-</details>
-
-<details data-kind="instructions">
-<summary>Cómo completar esto</summary>
-
-Completa cada campo. La duración máxima la establece tu Protocolo de Cambios. La autoridad de decisión DEBE provenir de la Matriz de Decisiones.
-
-</details>
+*Cláusulas RCOS: [8.3.1](https://rcos.ecohubs.community/es/standard/core/0.1/layer-6-evolution-adaptation#8.3.1), [8.3.2](https://rcos.ecohubs.community/es/standard/core/0.1/layer-6-evolution-adaptation#8.3.2), [8.3.3](https://rcos.ecohubs.community/es/standard/core/0.1/layer-6-evolution-adaptation#8.3.3), [8.3.4](https://rcos.ecohubs.community/es/standard/core/0.1/layer-6-evolution-adaptation#8.3.4), [8.3.5](https://rcos.ecohubs.community/es/standard/core/0.1/layer-6-evolution-adaptation#8.3.5), [8.7.3](https://rcos.ecohubs.community/es/standard/core/0.1/layer-6-evolution-adaptation#8.7.3)*
 
 - **Título:** _<nombre breve del experimento.>_
 - **Proponente:** _<nombre del miembro.>_
@@ -47,20 +33,6 @@ Completa cada campo. La duración máxima la establece tu Protocolo de Cambios. 
 - **Suspensión de seguridad:** _<reconoce que se PUEDE invocar una suspensión de emergencia bajo el Protocolo de Cambios si surge un riesgo de seguridad creíble.>_
 
 ## Expiración y Renovación
-
-<details data-kind="rationale">
-<summary>¿Por qué los experimentos deben expirar?</summary>
-
-La comunidad necesita la opción de revertir. La expiración automática obliga a tomar una decisión deliberada para hacer el cambio permanente — en lugar de una deriva lenta en la que nadie recuerda que alguna vez fue condicional.
-
-</details>
-
-<details data-kind="instructions">
-<summary>Cómo completar esto</summary>
-
-Indica la regla de expiración automática, el mecanismo de renovación y la obligación de registrar los resultados en el Registro de Aprendizajes.
-
-</details>
 
 - _<Los experimentos expiran automáticamente al final de su duración definida, a menos que se renueven explícitamente mediante una nueva propuesta. La renovación requiere una nueva votación Estratégica.>_
 - _<Los resultados y aprendizajes se registran en el Registro de Aprendizajes.>_

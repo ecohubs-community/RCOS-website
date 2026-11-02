@@ -2,34 +2,20 @@
 
 # Manual de Operaciones
 
-- **Generado:** 2026-08-31
+- **Generado:** 2026-11-02
 - **Fuente (versión más reciente):** [https://rcos.ecohubs.community/es/articles/rcos-templates/layer-5/operations-manual](https://rcos.ecohubs.community/es/articles/rcos-templates/layer-5/operations-manual)
 - **Todas las plantillas RCOS:** [https://rcos.ecohubs.community/es/articles/rcos-templates](https://rcos.ecohubs.community/es/articles/rcos-templates)
 
 ---
 - **Capa:** 5 — Operaciones y Coordinación
 - **Estado:** Plantilla — adaptar para tu comunidad
-- **Referencia RCOS:** [§7.1](https://rcos.ecohubs.community/es/articles/rcos-core/v0-1/layer-5-operations-coordination#71-roles-and-responsibilities), [§7.3](https://rcos.ecohubs.community/es/articles/rcos-core/v0-1/layer-5-operations-coordination#73-documentation-and-information-flow), [§7.4](https://rcos.ecohubs.community/es/articles/rcos-core/v0-1/layer-5-operations-coordination#74-workload-and-capacity-boundaries), [§7.5](https://rcos.ecohubs.community/es/articles/rcos-core/v0-1/layer-5-operations-coordination#75-operational-continuity), [§7.6](https://rcos.ecohubs.community/es/articles/rcos-core/v0-1/layer-5-operations-coordination#76-artifacts)
+- **Referencia RCOS:** [§7.1](https://rcos.ecohubs.community/es/standard/core/0.1/layer-5-operations-coordination#7.1), [§7.3](https://rcos.ecohubs.community/es/standard/core/0.1/layer-5-operations-coordination#7.3), [§7.4](https://rcos.ecohubs.community/es/standard/core/0.1/layer-5-operations-coordination#7.4), [§7.5](https://rcos.ecohubs.community/es/standard/core/0.1/layer-5-operations-coordination#7.5), [§7.6](https://rcos.ecohubs.community/es/standard/core/0.1/layer-5-operations-coordination#7.6)
 
 ---
 
 ## Procesos Operativos Fundamentales
 
-*Cláusulas RCOS: [7.3.4](https://rcos.ecohubs.community/es/articles/rcos-core/v0-1/layer-5-operations-coordination#73-documentation-and-information-flow), [7.7.2](https://rcos.ecohubs.community/es/articles/rcos-core/v0-1/layer-5-operations-coordination#77-layer-invariants), [7.6.3](https://rcos.ecohubs.community/es/articles/rcos-core/v0-1/layer-5-operations-coordination#76-artifacts)*
-
-<details data-kind="rationale">
-<summary>¿Por qué documentar los procesos críticos?</summary>
-
-Si un proceso solo existe en la cabeza de una persona, la comunidad depende de que esa persona aparezca — para siempre. Documentar los procesos críticos por escrito, con responsables nombrados, es lo que convierte el conocimiento privado en un activo comunitario que sobrevive a traspasos, ausencias y salidas.
-
-</details>
-
-<details data-kind="instructions">
-<summary>Cómo rellenar esto</summary>
-
-Para cada proceso crítico recurrente (incorporación, salida, publicación de propuestas, registro de contribuciones, cadencia de reuniones, gestión de tesorería, revisión de accesos a plataformas), nombra un responsable y una breve descripción.
-
-</details>
+*Cláusulas RCOS: [7.3.4](https://rcos.ecohubs.community/es/standard/core/0.1/layer-5-operations-coordination#7.3.4), [7.7.2](https://rcos.ecohubs.community/es/standard/core/0.1/layer-5-operations-coordination#7.7.2), [7.6.3](https://rcos.ecohubs.community/es/standard/core/0.1/layer-5-operations-coordination#7.6.3)*
 
 | Proceso | Quién | Detalle |
 |---|---|---|
@@ -43,21 +29,7 @@ Para cada proceso crítico recurrente (incorporación, salida, publicación de p
 
 ## Responsabilidades Temporales y Ad-Hoc
 
-*Cláusulas RCOS: [7.1.5](https://rcos.ecohubs.community/es/articles/rcos-core/v0-1/layer-5-operations-coordination#71-roles-and-responsibilities), [7.1.4](https://rcos.ecohubs.community/es/articles/rcos-core/v0-1/layer-5-operations-coordination#71-roles-and-responsibilities), [7.7.1](https://rcos.ecohubs.community/es/articles/rcos-core/v0-1/layer-5-operations-coordination#77-layer-invariants)*
-
-<details data-kind="rationale">
-<summary>¿Por qué limitar las responsabilidades temporales?</summary>
-
-Las tareas ad-hoc se solidifican silenciosamente en trabajos permanentes no remunerados — generalmente sobre quien dijo que sí una vez. Un límite temporal estricto y una revisión obligatoria marcan la diferencia entre "cubrí durante una semana" y "aparentemente este es mi rol ahora."
-
-</details>
-
-<details data-kind="instructions">
-<summary>Cómo rellenar esto</summary>
-
-Establece que toda responsabilidad temporal DEBE estar acotada en el tiempo al asignarla, documentada, revisada antes del vencimiento, y formalizada o terminada.
-
-</details>
+*Cláusulas RCOS: [7.1.5](https://rcos.ecohubs.community/es/standard/core/0.1/layer-5-operations-coordination#7.1.5), [7.1.4](https://rcos.ecohubs.community/es/standard/core/0.1/layer-5-operations-coordination#7.1.4), [7.7.1](https://rcos.ecohubs.community/es/standard/core/0.1/layer-5-operations-coordination#7.7.1)*
 
 Cuando una tarea o responsabilidad se asigna temporalmente, DEBE:
 
@@ -71,21 +43,7 @@ _<Duración máxima de cualquier responsabilidad temporal antes de que DEBA asig
 
 ## Interfaces entre Roles y Dominios
 
-*Cláusulas RCOS: [7.6.3](https://rcos.ecohubs.community/es/articles/rcos-core/v0-1/layer-5-operations-coordination#76-artifacts), [7.3.4](https://rcos.ecohubs.community/es/articles/rcos-core/v0-1/layer-5-operations-coordination#73-documentation-and-information-flow)*
-
-<details data-kind="rationale">
-<summary>¿Por qué mapear los traspasos explícitamente?</summary>
-
-La mayoría de los fallos operativos no ocurren dentro de un rol sino entre roles — en las fronteras donde el trabajo pasa de un responsable al siguiente. Nombrar los traspasos convierte dependencias invisibles en dependencias revisables, y previene los fallos de "yo pensaba que lo tenías tú".
-
-</details>
-
-<details data-kind="instructions">
-<summary>Cómo rellenar esto</summary>
-
-Para cada par de roles que se pasan trabajo entre sí, nombra el traspaso y el tipo de trabajo transferido.
-
-</details>
+*Cláusulas RCOS: [7.6.3](https://rcos.ecohubs.community/es/standard/core/0.1/layer-5-operations-coordination#7.6.3), [7.3.4](https://rcos.ecohubs.community/es/standard/core/0.1/layer-5-operations-coordination#7.3.4)*
 
 | De | A | Traspaso |
 |---|---|---|
@@ -94,21 +52,7 @@ Para cada par de roles que se pasan trabajo entre sí, nombra el traspaso y el t
 
 ## Límites de Carga de Trabajo
 
-*Cláusulas RCOS: [7.4.1](https://rcos.ecohubs.community/es/articles/rcos-core/v0-1/layer-5-operations-coordination#74-workload-and-capacity-boundaries), [7.4.2](https://rcos.ecohubs.community/es/articles/rcos-core/v0-1/layer-5-operations-coordination#74-workload-and-capacity-boundaries), [7.4.3](https://rcos.ecohubs.community/es/articles/rcos-core/v0-1/layer-5-operations-coordination#74-workload-and-capacity-boundaries), [7.4.4](https://rcos.ecohubs.community/es/articles/rcos-core/v0-1/layer-5-operations-coordination#74-workload-and-capacity-boundaries), [7.7.3](https://rcos.ecohubs.community/es/articles/rcos-core/v0-1/layer-5-operations-coordination#77-layer-invariants)*
-
-<details data-kind="rationale">
-<summary>¿Por qué hacer explícitos los límites de carga de trabajo?</summary>
-
-La carga de coordinación ilimitada es el modo de fallo predeterminado de las comunidades voluntarias — quema silenciosamente a los miembros más comprometidos hasta que se van. Límites explícitos y revisables hacen de la capacidad una preocupación compartida en lugar de una carga privada.
-
-</details>
-
-<details data-kind="instructions">
-<summary>Cómo rellenar esto</summary>
-
-Establece límites para la carga de reuniones, carga de roles, expectativas de tiempo de respuesta, y el camino para renegociar responsabilidades.
-
-</details>
+*Cláusulas RCOS: [7.4.1](https://rcos.ecohubs.community/es/standard/core/0.1/layer-5-operations-coordination#7.4.1), [7.4.2](https://rcos.ecohubs.community/es/standard/core/0.1/layer-5-operations-coordination#7.4.2), [7.4.3](https://rcos.ecohubs.community/es/standard/core/0.1/layer-5-operations-coordination#7.4.3), [7.4.4](https://rcos.ecohubs.community/es/standard/core/0.1/layer-5-operations-coordination#7.4.4), [7.7.3](https://rcos.ecohubs.community/es/standard/core/0.1/layer-5-operations-coordination#7.7.3)*
 
 - **Carga de reuniones:** _<cadencia de reuniones recurrentes y duración máxima; reglas para reuniones extraordinarias.>_
 - **Carga de roles:** _<tope si lo hay; regla para señalar sobrecarga; plazo de resolución.>_
@@ -118,21 +62,7 @@ Establece límites para la carga de reuniones, carga de roles, expectativas de t
 
 ## Continuidad Operativa
 
-*Cláusulas RCOS: [7.5.1](https://rcos.ecohubs.community/es/articles/rcos-core/v0-1/layer-5-operations-coordination#75-operational-continuity), [7.5.2](https://rcos.ecohubs.community/es/articles/rcos-core/v0-1/layer-5-operations-coordination#75-operational-continuity), [7.5.3](https://rcos.ecohubs.community/es/articles/rcos-core/v0-1/layer-5-operations-coordination#75-operational-continuity)*
-
-<details data-kind="rationale">
-<summary>¿Por qué planificar la continuidad ahora?</summary>
-
-Una comunidad que depende de una persona irremplazable está a una enfermedad, un conflicto o una salida de distancia del colapso. Nombrar los puntos únicos de fallo — con honestidad — e incorporar el traspaso en cada rol es lo que permite a la comunidad sobrevivir a sus fundadores.
-
-</details>
-
-<details data-kind="instructions">
-<summary>Cómo rellenar esto</summary>
-
-Nombra honestamente los puntos únicos de fallo actuales. Establece el requisito de traspaso para cada rol y la cadencia de revisión de continuidad.
-
-</details>
+*Cláusulas RCOS: [7.5.1](https://rcos.ecohubs.community/es/standard/core/0.1/layer-5-operations-coordination#7.5.1), [7.5.2](https://rcos.ecohubs.community/es/standard/core/0.1/layer-5-operations-coordination#7.5.2), [7.5.3](https://rcos.ecohubs.community/es/standard/core/0.1/layer-5-operations-coordination#7.5.3)*
 
 - **Estado actual:** _<lista honesta de puntos únicos de fallo; plan de reclutamiento para reducir la concentración.>_
 - **Mecanismos de traspaso:** _<referencia a los requisitos de traspaso por rol en el Registro de Roles; el traspaso DEBE completarse antes de que un rol quede vacante.>_
@@ -140,21 +70,7 @@ Nombra honestamente los puntos únicos de fallo actuales. Establece el requisito
 
 ## Flujo de Información y Anti-Monopolización
 
-*Cláusulas RCOS: [7.3.5](https://rcos.ecohubs.community/es/articles/rcos-core/v0-1/layer-5-operations-coordination#73-documentation-and-information-flow), [7.7.4](https://rcos.ecohubs.community/es/articles/rcos-core/v0-1/layer-5-operations-coordination#77-layer-invariants), [7.3.2](https://rcos.ecohubs.community/es/articles/rcos-core/v0-1/layer-5-operations-coordination#73-documentation-and-information-flow)*
-
-<details data-kind="rationale">
-<summary>¿Por qué tratar el acceso a la información como un asunto de gobernanza?</summary>
-
-Quien controla el acceso a la información controla la comunidad, lo pretenda o no. Hacer explícitas las reglas de acceso — y prohibir los puntos únicos de acceso — es lo que impide que los guardianes informales acumulen el tipo de poder que el sistema de gobernanza se supone que debe controlar.
-
-</details>
-
-<details data-kind="instructions">
-<summary>Cómo rellenar esto</summary>
-
-Indica qué registros están abiertos a todos los Miembros Plenos, el plazo de respuesta para solicitudes de información, y la regla contra los puntos únicos de acceso para información relevante de gobernanza.
-
-</details>
+*Cláusulas RCOS: [7.3.5](https://rcos.ecohubs.community/es/standard/core/0.1/layer-5-operations-coordination#7.3.5), [7.7.4](https://rcos.ecohubs.community/es/standard/core/0.1/layer-5-operations-coordination#7.7.4), [7.3.2](https://rcos.ecohubs.community/es/standard/core/0.1/layer-5-operations-coordination#7.3.2)*
 
 - _<Decisiones de gobernanza accesibles para todos los Miembros Plenos.>_
 - _<Actas de reuniones publicadas en un plazo de X horas.>_
@@ -168,21 +84,7 @@ Indica qué registros están abiertos a todos los Miembros Plenos, el plazo de r
 
 ## Ubicaciones de Documentación y Procedimientos de Actualización
 
-*Cláusulas RCOS: [7.3.1](https://rcos.ecohubs.community/es/articles/rcos-core/v0-1/layer-5-operations-coordination#73-documentation-and-information-flow), [7.3.2](https://rcos.ecohubs.community/es/articles/rcos-core/v0-1/layer-5-operations-coordination#73-documentation-and-information-flow), [7.3.3](https://rcos.ecohubs.community/es/articles/rcos-core/v0-1/layer-5-operations-coordination#73-documentation-and-information-flow), [7.8.1](https://rcos.ecohubs.community/es/articles/rcos-core/v0-1/layer-5-operations-coordination#78-explicitness-rules)*
-
-<details data-kind="rationale">
-<summary>¿Por qué nombrar dónde vive cada documento?</summary>
-
-Si nadie puede decir dónde está la versión canónica de algo, no hay versión canónica. Nombrar la ubicación, el responsable y la cadencia de revisión de cada tipo de documento es lo que hace que la memoria de la comunidad sea auditable en lugar de folclórica.
-
-</details>
-
-<details data-kind="instructions">
-<summary>Cómo rellenar esto</summary>
-
-Para cada tipo de documento, nombra la ubicación canónica, el responsable y la cadencia de revisión.
-
-</details>
+*Cláusulas RCOS: [7.3.1](https://rcos.ecohubs.community/es/standard/core/0.1/layer-5-operations-coordination#7.3.1), [7.3.2](https://rcos.ecohubs.community/es/standard/core/0.1/layer-5-operations-coordination#7.3.2), [7.3.3](https://rcos.ecohubs.community/es/standard/core/0.1/layer-5-operations-coordination#7.3.3), [7.8.1](https://rcos.ecohubs.community/es/standard/core/0.1/layer-5-operations-coordination#7.8.1)*
 
 | Tipo de documento | Ubicación | Responsable | Cadencia de revisión |
 |---|---|---|---|

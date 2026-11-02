@@ -2,14 +2,14 @@
 
 # Learning Log
 
-- **Generated:** 2026-08-31
+- **Generated:** 2026-11-02
 - **Source (latest version):** [https://rcos.ecohubs.community/articles/rcos-templates/layer-6/learning-log](https://rcos.ecohubs.community/articles/rcos-templates/layer-6/learning-log)
 - **All RCOS templates:** [https://rcos.ecohubs.community/articles/rcos-templates](https://rcos.ecohubs.community/articles/rcos-templates)
 
 ---
 - **Layer:** 6 — Evolution & Adaptation
 - **Status:** Template — adapt for your community; updated when learnable events occur
-- **RCOS reference:** [§8.4](https://rcos.ecohubs.community/articles/rcos-core/v0-1/layer-6-evolution-adaptation#84-learning-and-feedback-capture), [§8.6](https://rcos.ecohubs.community/articles/rcos-core/v0-1/layer-6-evolution-adaptation#86-artifacts)
+- **RCOS reference:** [§8.4](https://rcos.ecohubs.community/standard/core/0.1/layer-6-evolution-adaptation#8.4), [§8.6](https://rcos.ecohubs.community/standard/core/0.1/layer-6-evolution-adaptation#8.6)
 
 > Records major failures, adaptations, reversals, and systemic learnings. Repeated failure patterns must trigger structural review, not individual blame. Entries are prepended (most recent first).
 
@@ -17,21 +17,7 @@
 
 ## What Constitutes a Learnable Event
 
-*RCOS clauses: [8.4.1](https://rcos.ecohubs.community/articles/rcos-core/v0-1/layer-6-evolution-adaptation#84-learning-and-feedback-capture), [8.4.4](https://rcos.ecohubs.community/articles/rcos-core/v0-1/layer-6-evolution-adaptation#84-learning-and-feedback-capture), [8.6.5](https://rcos.ecohubs.community/articles/rcos-core/v0-1/layer-6-evolution-adaptation#86-artifacts), [8.7.4](https://rcos.ecohubs.community/articles/rcos-core/v0-1/layer-6-evolution-adaptation#87-layer-invariants)*
-
-<details data-kind="rationale">
-<summary>Why define the trigger explicitly?</summary>
-
-If "we should learn from this" is left to individual judgement, the hardest lessons — the ones involving conflict, failure, or embarrassment — are the ones most likely to go unrecorded. Naming the specific events that MUST produce an entry takes the question out of the moment, and makes sure uncomfortable learnings are captured rather than quietly dropped.
-
-</details>
-
-<details data-kind="instructions">
-<summary>How to fill this in</summary>
-
-List the specific events that obligate a Learning Log entry. State who owns the log and the synthesis cadence.
-
-</details>
+*RCOS clauses: [8.4.1](https://rcos.ecohubs.community/standard/core/0.1/layer-6-evolution-adaptation#8.4.1), [8.4.4](https://rcos.ecohubs.community/standard/core/0.1/layer-6-evolution-adaptation#8.4.4), [8.6.5](https://rcos.ecohubs.community/standard/core/0.1/layer-6-evolution-adaptation#8.6.5), [8.7.4](https://rcos.ecohubs.community/standard/core/0.1/layer-6-evolution-adaptation#8.7.4)*
 
 An entry MUST be added when any of the following occur:
 
@@ -57,21 +43,7 @@ _No entries yet. First entry will be added when the first learnable event occurs
 
 ## Entry Format
 
-*RCOS clauses: [8.4.2](https://rcos.ecohubs.community/articles/rcos-core/v0-1/layer-6-evolution-adaptation#84-learning-and-feedback-capture), [8.4.3](https://rcos.ecohubs.community/articles/rcos-core/v0-1/layer-6-evolution-adaptation#84-learning-and-feedback-capture), [8.6.5](https://rcos.ecohubs.community/articles/rcos-core/v0-1/layer-6-evolution-adaptation#86-artifacts)*
-
-<details data-kind="rationale">
-<summary>Why a fixed entry template?</summary>
-
-Free-form reflection is valuable, but it does not aggregate. A consistent schema — trigger, signals, what changed, outcome, follow-up owner — makes it possible to scan years of entries for recurring patterns and to turn isolated incidents into structural evidence. It also forces each entry to name an owner, so learning does not stop at "we noticed."
-
-</details>
-
-<details data-kind="instructions">
-<summary>How to fill this in</summary>
-
-Use the template below for every entry. Each field forces a different lens on the event; do not skip the follow-up owner.
-
-</details>
+*RCOS clauses: [8.4.2](https://rcos.ecohubs.community/standard/core/0.1/layer-6-evolution-adaptation#8.4.2), [8.4.3](https://rcos.ecohubs.community/standard/core/0.1/layer-6-evolution-adaptation#8.4.3), [8.6.5](https://rcos.ecohubs.community/standard/core/0.1/layer-6-evolution-adaptation#8.6.5)*
 
 ```markdown
 ## <YYYY-MM-DD> — <Short title>

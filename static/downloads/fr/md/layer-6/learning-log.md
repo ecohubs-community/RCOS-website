@@ -2,14 +2,14 @@
 
 # Journal d'apprentissage
 
-- **Généré:** 2026-08-31
+- **Généré:** 2026-11-02
 - **Source (version la plus récente):** [https://rcos.ecohubs.community/fr/articles/rcos-templates/layer-6/learning-log](https://rcos.ecohubs.community/fr/articles/rcos-templates/layer-6/learning-log)
 - **Tous les modèles RCOS:** [https://rcos.ecohubs.community/fr/articles/rcos-templates](https://rcos.ecohubs.community/fr/articles/rcos-templates)
 
 ---
 - **Couche :** 6 — Évolution et adaptation
 - **Statut :** Modèle — à adapter pour ta communauté ; mis à jour lorsque des événements apprenants surviennent
-- **Référence RCOS :** [§8.4](https://rcos.ecohubs.community/fr/articles/rcos-core/v0-1/layer-6-evolution-adaptation#84-learning-and-feedback-capture), [§8.6](https://rcos.ecohubs.community/fr/articles/rcos-core/v0-1/layer-6-evolution-adaptation#86-artifacts)
+- **Référence RCOS :** [§8.4](https://rcos.ecohubs.community/fr/standard/core/0.1/layer-6-evolution-adaptation#8.4), [§8.6](https://rcos.ecohubs.community/fr/standard/core/0.1/layer-6-evolution-adaptation#8.6)
 
 > Consigne les échecs majeurs, les adaptations, les retours en arrière et les apprentissages systémiques. Les schémas d'échec récurrents DOIVENT déclencher une revue structurelle, pas une mise en cause individuelle. Les entrées sont ajoutées en tête de liste (la plus récente en premier).
 
@@ -17,21 +17,7 @@
 
 ## Ce qui constitue un événement apprenant
 
-*Clauses RCOS : [8.4.1](https://rcos.ecohubs.community/fr/articles/rcos-core/v0-1/layer-6-evolution-adaptation#84-learning-and-feedback-capture), [8.4.4](https://rcos.ecohubs.community/fr/articles/rcos-core/v0-1/layer-6-evolution-adaptation#84-learning-and-feedback-capture), [8.6.5](https://rcos.ecohubs.community/fr/articles/rcos-core/v0-1/layer-6-evolution-adaptation#86-artifacts), [8.7.4](https://rcos.ecohubs.community/fr/articles/rcos-core/v0-1/layer-6-evolution-adaptation#87-layer-invariants)*
-
-<details data-kind="rationale">
-<summary>Pourquoi définir le déclencheur explicitement ?</summary>
-
-Si « on devrait tirer des leçons de ceci » est laissé au jugement individuel, les leçons les plus difficiles — celles qui impliquent un conflit, un échec ou un embarras — sont celles qui ont le plus de chances de ne jamais être consignées. Nommer les événements spécifiques qui DOIVENT produire une entrée retire la question du moment présent et garantit que les apprentissages inconfortables sont capturés plutôt que discrètement oubliés.
-
-</details>
-
-<details data-kind="instructions">
-<summary>Comment remplir cette section</summary>
-
-Liste les événements spécifiques qui obligent à créer une entrée dans le Journal d'apprentissage. Indique qui est responsable du journal et la cadence de synthèse.
-
-</details>
+*Clauses RCOS : [8.4.1](https://rcos.ecohubs.community/fr/standard/core/0.1/layer-6-evolution-adaptation#8.4.1), [8.4.4](https://rcos.ecohubs.community/fr/standard/core/0.1/layer-6-evolution-adaptation#8.4.4), [8.6.5](https://rcos.ecohubs.community/fr/standard/core/0.1/layer-6-evolution-adaptation#8.6.5), [8.7.4](https://rcos.ecohubs.community/fr/standard/core/0.1/layer-6-evolution-adaptation#8.7.4)*
 
 Une entrée DOIT être ajoutée lorsque l'un des événements suivants se produit :
 
@@ -57,21 +43,7 @@ _Aucune entrée pour le moment. La première entrée sera ajoutée lorsque le pr
 
 ## Format des entrées
 
-*Clauses RCOS : [8.4.2](https://rcos.ecohubs.community/fr/articles/rcos-core/v0-1/layer-6-evolution-adaptation#84-learning-and-feedback-capture), [8.4.3](https://rcos.ecohubs.community/fr/articles/rcos-core/v0-1/layer-6-evolution-adaptation#84-learning-and-feedback-capture), [8.6.5](https://rcos.ecohubs.community/fr/articles/rcos-core/v0-1/layer-6-evolution-adaptation#86-artifacts)*
-
-<details data-kind="rationale">
-<summary>Pourquoi un modèle d'entrée fixe ?</summary>
-
-La réflexion libre a de la valeur, mais elle ne s'agrège pas. Un schéma cohérent — déclencheur, signaux, ce qui a changé, résultat, responsable du suivi — permet de parcourir des années d'entrées à la recherche de schémas récurrents et de transformer des incidents isolés en preuves structurelles. Il oblige aussi chaque entrée à nommer un responsable, pour que l'apprentissage ne s'arrête pas à « on a remarqué ».
-
-</details>
-
-<details data-kind="instructions">
-<summary>Comment remplir cette section</summary>
-
-Utilise le modèle ci-dessous pour chaque entrée. Chaque champ impose un angle différent sur l'événement ; ne saute pas le responsable du suivi.
-
-</details>
+*Clauses RCOS : [8.4.2](https://rcos.ecohubs.community/fr/standard/core/0.1/layer-6-evolution-adaptation#8.4.2), [8.4.3](https://rcos.ecohubs.community/fr/standard/core/0.1/layer-6-evolution-adaptation#8.4.3), [8.6.5](https://rcos.ecohubs.community/fr/standard/core/0.1/layer-6-evolution-adaptation#8.6.5)*
 
 ```markdown
 ## <AAAA-MM-JJ> — <Titre court>

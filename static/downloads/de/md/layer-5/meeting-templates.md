@@ -2,14 +2,14 @@
 
 # Sitzungsvorlagen
 
-- **Generiert:** 2026-08-31
+- **Generiert:** 2026-11-02
 - **Quelle (aktuelle Version):** [https://rcos.ecohubs.community/de/articles/rcos-templates/layer-5/meeting-templates](https://rcos.ecohubs.community/de/articles/rcos-templates/layer-5/meeting-templates)
 - **Alle RCOS-Vorlagen:** [https://rcos.ecohubs.community/de/articles/rcos-templates](https://rcos.ecohubs.community/de/articles/rcos-templates)
 
 ---
 - **Schicht:** 5 — Betrieb & Koordination
 - **Status:** Vorlage — an eure Gemeinschaft anpassen
-- **RCOS-Referenz:** [§7.2](https://rcos.ecohubs.community/de/articles/rcos-core/v0-1/layer-5-operations-coordination#72-meeting-system), [§7.6](https://rcos.ecohubs.community/de/articles/rcos-core/v0-1/layer-5-operations-coordination#76-artifacts)
+- **RCOS-Referenz:** [§7.2](https://rcos.ecohubs.community/de/standard/core/0.1/layer-5-operations-coordination#7.2), [§7.6](https://rcos.ecohubs.community/de/standard/core/0.1/layer-5-operations-coordination#7.6)
 
 > Sitzungsvorlagen legen Zweck, Entscheidungsbereich, Beschlussfähigkeit und Struktur jedes Sitzungstyps fest. Eine Sitzung ohne festgelegte Vorlage wird mit der Zeit Befugnisse ansammeln, die sie nicht haben sollte. Passt diese Vorlagen an und fügt Sitzungstypen hinzu oder entfernt sie, wie es eure Gemeinschaft braucht.
 
@@ -17,21 +17,7 @@
 
 ## Sitzungstyp: Operativ
 
-*RCOS-Klauseln: [7.2.1](https://rcos.ecohubs.community/de/articles/rcos-core/v0-1/layer-5-operations-coordination#72-meeting-system), [7.2.2](https://rcos.ecohubs.community/de/articles/rcos-core/v0-1/layer-5-operations-coordination#72-meeting-system), [7.2.3](https://rcos.ecohubs.community/de/articles/rcos-core/v0-1/layer-5-operations-coordination#72-meeting-system), [7.2.4](https://rcos.ecohubs.community/de/articles/rcos-core/v0-1/layer-5-operations-coordination#72-meeting-system), [7.6.4](https://rcos.ecohubs.community/de/articles/rcos-core/v0-1/layer-5-operations-coordination#76-artifacts)*
-
-<details data-kind="rationale">
-<summary>Warum eine regelmäßige operative Sitzung?</summary>
-
-Die tägliche Koordination braucht einen regelmäßigen Rhythmus, keine Ad-hoc-Improvisation. Die operative Sitzung ist der Herzschlag der Gemeinschaft — ein vorhersehbarer Raum, um laufende Arbeit zu prüfen, Hindernisse sichtbar zu machen und kleine operative Entscheidungen zu treffen. Entscheidend ist: Hier fallen nur operative Entscheidungen; strategische und konstitutionelle laufen über den Governance-Prozess, sodass die Sitzung nicht stillschweigend Befugnisse ansammeln kann, die sie nicht hat.
-
-</details>
-
-<details data-kind="instructions">
-<summary>Wie ihr das ausfüllt</summary>
-
-Legt Zweck, Entscheidungsbereich, erforderliche und optionale Teilnehmende, Rhythmus, Dauer und Moderationsregeln fest. Beschränkt den Entscheidungsbereich auf ausschließlich operative Entscheidungen.
-
-</details>
+*RCOS-Klauseln: [7.2.1](https://rcos.ecohubs.community/de/standard/core/0.1/layer-5-operations-coordination#7.2.1), [7.2.2](https://rcos.ecohubs.community/de/standard/core/0.1/layer-5-operations-coordination#7.2.2), [7.2.3](https://rcos.ecohubs.community/de/standard/core/0.1/layer-5-operations-coordination#7.2.3), [7.2.4](https://rcos.ecohubs.community/de/standard/core/0.1/layer-5-operations-coordination#7.2.4), [7.6.4](https://rcos.ecohubs.community/de/standard/core/0.1/layer-5-operations-coordination#7.6.4)*
 
 - **Zweck:** _<laufende Arbeit prüfen, Aufgaben koordinieren, Hindernisse sichtbar machen, operative Entscheidungen treffen.>_
 - **Entscheidungsbereich:** Nur operative Entscheidungen — keine strategischen oder konstitutionellen Entscheidungen.
@@ -71,21 +57,7 @@ Legt Zweck, Entscheidungsbereich, erforderliche und optionale Teilnehmende, Rhyt
 
 ## Sitzungstyp: Governance
 
-*RCOS-Klauseln: [7.2.1](https://rcos.ecohubs.community/de/articles/rcos-core/v0-1/layer-5-operations-coordination#72-meeting-system), [7.2.2](https://rcos.ecohubs.community/de/articles/rcos-core/v0-1/layer-5-operations-coordination#72-meeting-system), [7.2.3](https://rcos.ecohubs.community/de/articles/rcos-core/v0-1/layer-5-operations-coordination#72-meeting-system), [7.6.4](https://rcos.ecohubs.community/de/articles/rcos-core/v0-1/layer-5-operations-coordination#76-artifacts)*
-
-<details data-kind="rationale">
-<summary>Warum Beratung und verbindliche Abstimmung trennen?</summary>
-
-Wenn eine Sitzung gleichzeitig diskutieren und entscheiden kann, bestimmen diejenigen, die gerade im Raum sind — ungeachtet der Quorum- oder Befugnisregeln. Die Trennung von Beratung und verbindlicher Abstimmung wahrt die Integrität der Entscheidungsmatrix und stellt sicher, dass abwesende Mitglieder trotzdem mitabstimmen können.
-
-</details>
-
-<details data-kind="instructions">
-<summary>Wie ihr das ausfüllt</summary>
-
-Diese Sitzung berät über aktive Vorschläge während ihrer Beratungsphase. Die verbindliche Entscheidung erfolgt über den Governance-Prozess gemäß der Entscheidungsmatrix.
-
-</details>
+*RCOS-Klauseln: [7.2.1](https://rcos.ecohubs.community/de/standard/core/0.1/layer-5-operations-coordination#7.2.1), [7.2.2](https://rcos.ecohubs.community/de/standard/core/0.1/layer-5-operations-coordination#7.2.2), [7.2.3](https://rcos.ecohubs.community/de/standard/core/0.1/layer-5-operations-coordination#7.2.3), [7.6.4](https://rcos.ecohubs.community/de/standard/core/0.1/layer-5-operations-coordination#7.6.4)*
 
 - **Zweck:** Beratung über einen aktiven Vorschlag während seiner Beratungsphase.
 - **Entscheidungsbereich:** Nur Beratung — die verbindliche Entscheidung erfolgt über den Governance-Prozess gemäß der Entscheidungsmatrix.
@@ -124,21 +96,7 @@ Diese Sitzung berät über aktive Vorschläge während ihrer Beratungsphase. Die
 
 ## Sitzungstyp: Koordination & Abstimmung
 
-*RCOS-Klauseln: [7.2.1](https://rcos.ecohubs.community/de/articles/rcos-core/v0-1/layer-5-operations-coordination#72-meeting-system), [7.2.2](https://rcos.ecohubs.community/de/articles/rcos-core/v0-1/layer-5-operations-coordination#72-meeting-system), [7.2.3](https://rcos.ecohubs.community/de/articles/rcos-core/v0-1/layer-5-operations-coordination#72-meeting-system), [7.6.4](https://rcos.ecohubs.community/de/articles/rcos-core/v0-1/layer-5-operations-coordination#76-artifacts)*
-
-<details data-kind="rationale">
-<summary>Warum eine eigene Koordinationssitzung?</summary>
-
-Manche Hindernisse betreffen mehr als eine Rolle und lassen sich im regulären operativen Rhythmus nicht lösen. Koordination & Abstimmung gibt rollenübergreifender Arbeit einen eigenen Raum — für Abhängigkeiten, Übergaben und konkurrierende Prioritäten — damit die wöchentliche Sitzung nicht ausufert, weil sie alles auffangen muss.
-
-</details>
-
-<details data-kind="instructions">
-<summary>Wie ihr das ausfüllt</summary>
-
-Nutzt diese Vorlage, wenn rollenübergreifende Koordination nötig ist. Beschränkt den Entscheidungsbereich auf operative Entscheidungen und begrenzt die erforderlichen Teilnehmenden auf diejenigen mit aktiven Initiativen.
-
-</details>
+*RCOS-Klauseln: [7.2.1](https://rcos.ecohubs.community/de/standard/core/0.1/layer-5-operations-coordination#7.2.1), [7.2.2](https://rcos.ecohubs.community/de/standard/core/0.1/layer-5-operations-coordination#7.2.2), [7.2.3](https://rcos.ecohubs.community/de/standard/core/0.1/layer-5-operations-coordination#7.2.3), [7.6.4](https://rcos.ecohubs.community/de/standard/core/0.1/layer-5-operations-coordination#7.6.4)*
 
 - **Zweck:** Arbeit über Rollen und Initiativen hinweg synchronisieren; Abhängigkeiten und Hindernisse sichtbar machen; Prioritäten abstimmen.
 - **Entscheidungsbereich:** Nur operative Entscheidungen.
@@ -166,21 +124,7 @@ Nutzt diese Vorlage, wenn rollenübergreifende Koordination nötig ist. Beschrä
 
 ## Sitzungstyp: Reflexion & Lernen
 
-*RCOS-Klauseln: [7.2.1](https://rcos.ecohubs.community/de/articles/rcos-core/v0-1/layer-5-operations-coordination#72-meeting-system), [7.2.2](https://rcos.ecohubs.community/de/articles/rcos-core/v0-1/layer-5-operations-coordination#72-meeting-system), [7.2.3](https://rcos.ecohubs.community/de/articles/rcos-core/v0-1/layer-5-operations-coordination#72-meeting-system), [7.6.4](https://rcos.ecohubs.community/de/articles/rcos-core/v0-1/layer-5-operations-coordination#76-artifacts)*
-
-<details data-kind="rationale">
-<summary>Warum bekommt Reflexion einen eigenen Sitzungstyp?</summary>
-
-Reflexion, die nur stattfindet, wenn gerade Zeit ist, findet nie statt. Ein benannter Sitzungstyp mit festem Rhythmus schafft Raum für den Rückblick — und verhindert, dass Retrospektiven von der operativen Dringlichkeit verdrängt werden. Ohne das bleibt das Lernprotokoll (Schicht 6) leer und das Framework hört auf, sich weiterzuentwickeln.
-
-</details>
-
-<details data-kind="instructions">
-<summary>Wie ihr das ausfüllt</summary>
-
-Diese Sitzung bilanziert den letzten Zeitraum und speist Erkenntnisse in das Lernprotokoll (Schicht 6) und die Warteschlange für zukünftige Vorschläge ein.
-
-</details>
+*RCOS-Klauseln: [7.2.1](https://rcos.ecohubs.community/de/standard/core/0.1/layer-5-operations-coordination#7.2.1), [7.2.2](https://rcos.ecohubs.community/de/standard/core/0.1/layer-5-operations-coordination#7.2.2), [7.2.3](https://rcos.ecohubs.community/de/standard/core/0.1/layer-5-operations-coordination#7.2.3), [7.6.4](https://rcos.ecohubs.community/de/standard/core/0.1/layer-5-operations-coordination#7.6.4)*
 
 - **Zweck:** Erfahrungen auswerten, Muster erkennen, Erkenntnisse festhalten, Einsichten ins Framework zurückspielen.
 - **Entscheidungsbereich:** Kann Änderungsvorschläge hervorbringen; keine direkte Entscheidungsbefugnis, sofern nicht in der Entscheidungsmatrix festgelegt.
@@ -212,21 +156,7 @@ Diese Sitzung bilanziert den letzten Zeitraum und speist Erkenntnisse in das Ler
 
 ## Sitzungstyp: Konfliktbearbeitung
 
-*RCOS-Klauseln: [7.2.1](https://rcos.ecohubs.community/de/articles/rcos-core/v0-1/layer-5-operations-coordination#72-meeting-system), [7.2.2](https://rcos.ecohubs.community/de/articles/rcos-core/v0-1/layer-5-operations-coordination#72-meeting-system), [7.2.3](https://rcos.ecohubs.community/de/articles/rcos-core/v0-1/layer-5-operations-coordination#72-meeting-system), [7.6.4](https://rcos.ecohubs.community/de/articles/rcos-core/v0-1/layer-5-operations-coordination#76-artifacts); siehe auch Schicht 4 — [Konfliktlösungsleiter](https://rcos.ecohubs.community/de/articles/rcos-core/v0-1/layer-4-conflict-repair-accountability#62-resolution-pathways)*
-
-<details data-kind="rationale">
-<summary>Warum ein eigener Sitzungstyp für Konflikte?</summary>
-
-Konfliktarbeit hat Regeln, die andere Sitzungen nicht haben: Vertraulichkeit, Moderator:innen-Auswahl, die die Parteipräferenzen umgeht, Schutz vor Vergeltung und eingeschränkte Protokollierung. Die operative Vorlage für eine Konfliktsitzung zu verwenden, würde stillschweigend all diese Regeln verletzen. Eine eigene Vorlage macht den unterschiedlichen Rahmen ab der ersten Minute sichtbar.
-
-</details>
-
-<details data-kind="instructions">
-<summary>Wie ihr das ausfüllt</summary>
-
-Verwendet diese Vorlage nur für moderierte Sitzungen gemäß den Stufen 2–4 der Konfliktlösungsleiter. Datenschutz- und Moderator:innen-Auswahlregeln werden durch Schicht 4 geregelt, nicht durch die Sitzung selbst.
-
-</details>
+*RCOS-Klauseln: [7.2.1](https://rcos.ecohubs.community/de/standard/core/0.1/layer-5-operations-coordination#7.2.1), [7.2.2](https://rcos.ecohubs.community/de/standard/core/0.1/layer-5-operations-coordination#7.2.2), [7.2.3](https://rcos.ecohubs.community/de/standard/core/0.1/layer-5-operations-coordination#7.2.3), [7.6.4](https://rcos.ecohubs.community/de/standard/core/0.1/layer-5-operations-coordination#7.6.4); siehe auch Schicht 4 — [Konfliktlösungsleiter](https://rcos.ecohubs.community/de/standard/core/0.1/layer-4-conflict-repair-accountability#6.2)*
 
 - **Zweck:** Lösung auf einer definierten Stufe der Konfliktlösungsleiter moderieren (Stufen 2–4).
 - **Entscheidungsbereich:** Erarbeitet Reparaturpläne, Vereinbarungen oder Eskalationsentscheidungen; verbindliche Ergebnisse erfordern die in der Konfliktlösungsleiter und der Entscheidungsmatrix festgelegte Befugnis.
