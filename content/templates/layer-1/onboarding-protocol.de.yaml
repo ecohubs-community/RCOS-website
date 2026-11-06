@@ -1,10 +1,12 @@
 lang: de
-sourceHash: 'cbf0e539'
+sourceHash: '498e1bc1'
 title: Onboarding-Protokoll
 preamble: |-
   - **Schicht:** 1 — Mitgliedschaftssystem
   - **Status:** Vorlage — an deine Gemeinschaft anpassen
   - **RCOS-Referenz:** [§3.2](rcos:§3.2), [§3.3](rcos:§3.3), [§3.8](rcos:§3.8)
+
+  > Legt fest, wie eine Person Mitglied wird: die Aufnahmekriterien, die Onboarding-Schritte, der Mitgliedschaftsstatus, mit dem sie beginnt, und wie die Probezeit bewertet und dokumentiert wird.
 
   ---
 sections:

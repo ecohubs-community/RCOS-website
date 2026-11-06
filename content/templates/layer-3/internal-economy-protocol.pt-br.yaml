@@ -1,10 +1,12 @@
 lang: pt-br
-sourceHash: 'ff1d75cd'
+sourceHash: 'c0ef6de9'
 title: Protocolo de Economia Interna
 preamble: |-
   - **Camada:** 3 — Sistema Econômico e de Recursos
   - **Status:** Modelo — adapte para sua comunidade
   - **Referência RCOS:** [§5.1](rcos:§5.1), [§5.2](rcos:§5.2), [§5.4](rcos:§5.4), [§5.5](rcos:§5.5)
+
+  > Define o que é bem comum e o que é privado, quais contribuições são reconhecidas e como, as unidades internas existentes e os limites que impedem que o valor se concentre em poucas mãos.
 
   ---
 sections:

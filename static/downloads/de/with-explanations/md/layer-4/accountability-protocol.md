@@ -2,7 +2,7 @@
 
 # Rechenschaftsprotokoll
 
-- **Generiert:** 2026-11-02
+- **Generiert:** 2026-11-06
 - **Quelle (aktuelle Version):** [https://rcos.ecohubs.community/de/articles/rcos-templates/layer-4/accountability-protocol](https://rcos.ecohubs.community/de/articles/rcos-templates/layer-4/accountability-protocol)
 - **Alle RCOS-Vorlagen:** [https://rcos.ecohubs.community/de/articles/rcos-templates](https://rcos.ecohubs.community/de/articles/rcos-templates)
 
@@ -10,6 +10,8 @@
 - **Ebene:** 4 — Konflikt, Wiedergutmachung & Rechenschaft
 - **Status:** Vorlage — an deine Gemeinschaft anpassen
 - **RCOS-Referenz:** [§6.4](https://rcos.ecohubs.community/de/standard/core/0.1/layer-4-conflict-repair-accountability#6.4), [§6.5](https://rcos.ecohubs.community/de/standard/core/0.1/layer-4-conflict-repair-accountability#6.5)
+
+> Legt fest, was geschieht, wenn eine Vereinbarung gebrochen wird: was eine Überprüfung auslöst, wie untersucht wird, welche Verfahrensgarantien und welcher Schutz vor Vergeltung gelten, welche Wiedergutmachungs- und Sanktionsoptionen es gibt und wie Rechte wiederhergestellt werden.
 
 ---
 

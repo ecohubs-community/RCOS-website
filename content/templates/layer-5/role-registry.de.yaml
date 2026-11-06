@@ -1,10 +1,12 @@
 lang: de
-sourceHash: '2786224c'
+sourceHash: 'd78d07e8'
 title: Rollenverzeichnis
 preamble: |-
   - **Ebene:** 5 — Betrieb & Koordination
   - **Status:** Vorlage — an eure Gemeinschaft anpassen
   - **RCOS-Referenz:** [§7.1](rcos:§7.1), [§7.6](rcos:§7.6)
+
+  > Listet jede operative und funktionale Rolle eurer Gemeinschaft mit Zweck, Zuständigkeitsbereich und aktueller Besetzung auf, damit immer klar ist, wer was tut — und keine Rolle ungeschrieben bleibt.
 
   ---
 sections:

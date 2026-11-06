@@ -2,7 +2,7 @@
 
 # Registro de Papéis
 
-- **Gerado em:** 2026-11-02
+- **Gerado em:** 2026-11-06
 - **Fonte (versão mais recente):** [https://rcos.ecohubs.community/pt-br/articles/rcos-templates/layer-5/role-registry](https://rcos.ecohubs.community/pt-br/articles/rcos-templates/layer-5/role-registry)
 - **Todos os modelos RCOS:** [https://rcos.ecohubs.community/pt-br/articles/rcos-templates](https://rcos.ecohubs.community/pt-br/articles/rcos-templates)
 
@@ -10,6 +10,8 @@
 - **Camada:** 5 — Operações e Coordenação
 - **Status:** Modelo — adapte para sua comunidade
 - **Referência RCOS:** [§7.1](https://rcos.ecohubs.community/pt-br/standard/core/0.1/layer-5-operations-coordination#7.1), [§7.6](https://rcos.ecohubs.community/pt-br/standard/core/0.1/layer-5-operations-coordination#7.6)
+
+> Lista cada papel operacional e funcional da sua comunidade com seu propósito, domínio e titular atual, para que sempre fique claro quem faz o quê — e nenhum papel fique sem registro.
 
 ---
 

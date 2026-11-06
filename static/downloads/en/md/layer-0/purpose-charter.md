@@ -2,7 +2,7 @@
 
 # Purpose Charter
 
-- **Generated:** 2026-11-02
+- **Generated:** 2026-11-06
 - **Source (latest version):** [https://rcos.ecohubs.community/articles/rcos-templates/layer-0/purpose-charter](https://rcos.ecohubs.community/articles/rcos-templates/layer-0/purpose-charter)
 - **All RCOS templates:** [https://rcos.ecohubs.community/articles/rcos-templates](https://rcos.ecohubs.community/articles/rcos-templates)
 
@@ -10,6 +10,8 @@
 - **Layer:** 0 — Identity & Scope
 - **Status:** Template — adapt for your community
 - **RCOS reference:** [§2.1](https://rcos.ecohubs.community/standard/core/0.1/layer-0-identity-scope#2.1), [§2.5](https://rcos.ecohubs.community/standard/core/0.1/layer-0-identity-scope#2.5)
+
+> States the one primary purpose your community exists for, its secondary purposes and explicit non-goals, and the conditions under which that purpose may change.
 
 ---
 

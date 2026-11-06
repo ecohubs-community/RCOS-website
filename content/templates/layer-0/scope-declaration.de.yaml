@@ -1,10 +1,12 @@
 lang: de
-sourceHash: 'b2f58556'
+sourceHash: '19b82e18'
 title: Geltungsbereichserklärung
 preamble: |-
   - **Schicht:** 0 — Identität & Geltungsbereich
   - **Status:** Vorlage — an eure Gemeinschaft anpassen
   - **RCOS-Referenz:** [§2.2](rcos:§2.2), [§2.5](rcos:§2.5)
+
+  > Zieht die Grenze dessen, was eure Gemeinschaft regelt: die erfassten Vermögenswerte, Entscheidungsbereiche, Aktivitäten und Verantwortlichkeiten — und was ausdrücklich nicht erfasst ist.
 
   ---
 sections:

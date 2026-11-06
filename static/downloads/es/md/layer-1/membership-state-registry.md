@@ -2,7 +2,7 @@
 
 # Registro de Estados de Membresía
 
-- **Generado:** 2026-11-02
+- **Generado:** 2026-11-06
 - **Fuente (versión más reciente):** [https://rcos.ecohubs.community/es/articles/rcos-templates/layer-1/membership-state-registry](https://rcos.ecohubs.community/es/articles/rcos-templates/layer-1/membership-state-registry)
 - **Todas las plantillas RCOS:** [https://rcos.ecohubs.community/es/articles/rcos-templates](https://rcos.ecohubs.community/es/articles/rcos-templates)
 
@@ -10,6 +10,8 @@
 - **Capa:** 1 — Sistema de Membresía
 - **Estado:** Plantilla — adaptar para tu comunidad
 - **Referencia RCOS:** [§3.1](https://rcos.ecohubs.community/es/standard/core/0.1/layer-1-membership-system#3.1)
+
+> Enumera cada estado de membresía que reconoce tu comunidad, con los derechos y obligaciones de cada uno y cómo se pasa de uno a otro. Cada persona tiene exactamente un estado a la vez.
 
 ---
 

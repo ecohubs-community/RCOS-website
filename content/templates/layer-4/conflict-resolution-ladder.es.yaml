@@ -1,10 +1,12 @@
 lang: es
-sourceHash: '74c79c52'
+sourceHash: '9706d5ba'
 title: Escalera de Resolución de Conflictos
 preamble: |-
   - **Capa:** 4 — Conflicto, Reparación y Rendición de Cuentas
   - **Estado:** Plantilla — adaptar para tu comunidad
   - **Referencia RCOS:** [§6.1](rcos:§6.1), [§6.2](rcos:§6.2), [§6.3](rcos:§6.3), [§6.5](rcos:§6.5)
+
+  > Da a cada conflicto un camino claro, desde la conversación directa pasando por el diálogo facilitado y la revisión formal hasta una decisión de gobernanza, con reglas para la falta de respuesta, el punto muerto, la facilitación y la privacidad en el camino.
 
   ---
 sections:

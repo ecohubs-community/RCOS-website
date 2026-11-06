@@ -9,6 +9,8 @@ preamble: |-
   - **Status:** Template — adapt for your community
   - **RCOS reference:** [§5.3](rcos:§5.3), [§5.5](rcos:§5.5)
 
+  > Sets the rules for the community's shared money: what the treasury covers, where income comes from, who may spend and up to what limit, how it is reported, and the limits on reserves, risk, debt, and conflicts of interest.
+
   ---
 sections:
   - id: treasury-scope

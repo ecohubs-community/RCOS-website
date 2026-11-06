@@ -1,10 +1,12 @@
 lang: pt-br
-sourceHash: '28e93a6e'
+sourceHash: '501a9bb8'
 title: Registro de Estados de Associação
 preamble: |-
   - **Camada:** 1 — Sistema de Associação
   - **Status:** Modelo — adapte para sua comunidade
   - **Referência RCOS:** [§3.1](rcos:§3.1)
+
+  > Lista cada estado de associação que sua comunidade reconhece, com os direitos e obrigações de cada um e como se passa de um para outro. Cada pessoa tem exatamente um estado por vez.
 
   ---
 sections:

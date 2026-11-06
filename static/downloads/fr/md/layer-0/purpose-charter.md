@@ -2,7 +2,7 @@
 
 # Charte de raison d'être
 
-- **Généré:** 2026-11-02
+- **Généré:** 2026-11-06
 - **Source (version la plus récente):** [https://rcos.ecohubs.community/fr/articles/rcos-templates/layer-0/purpose-charter](https://rcos.ecohubs.community/fr/articles/rcos-templates/layer-0/purpose-charter)
 - **Tous les modèles RCOS:** [https://rcos.ecohubs.community/fr/articles/rcos-templates](https://rcos.ecohubs.community/fr/articles/rcos-templates)
 
@@ -10,6 +10,8 @@
 - **Couche :** 0 — Identité et périmètre
 - **Statut :** Modèle — à adapter pour ta communauté
 - **Référence RCOS :** [§2.1](https://rcos.ecohubs.community/fr/standard/core/0.1/layer-0-identity-scope#2.1), [§2.5](https://rcos.ecohubs.community/fr/standard/core/0.1/layer-0-identity-scope#2.5)
+
+> Énonce l'unique raison d'être principale de ta communauté, ses raisons d'être secondaires et ses non-objectifs explicites, ainsi que les conditions dans lesquelles cette raison d'être peut changer.
 
 ---
 

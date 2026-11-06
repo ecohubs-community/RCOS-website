@@ -2,7 +2,7 @@
 
 # Declaración de Alcance
 
-- **Generado:** 2026-11-02
+- **Generado:** 2026-11-06
 - **Fuente (versión más reciente):** [https://rcos.ecohubs.community/es/articles/rcos-templates/layer-0/scope-declaration](https://rcos.ecohubs.community/es/articles/rcos-templates/layer-0/scope-declaration)
 - **Todas las plantillas RCOS:** [https://rcos.ecohubs.community/es/articles/rcos-templates](https://rcos.ecohubs.community/es/articles/rcos-templates)
 
@@ -10,6 +10,8 @@
 - **Capa:** 0 — Identidad y Alcance
 - **Estado:** Plantilla — adaptar para tu comunidad
 - **Referencia RCOS:** [§2.2](https://rcos.ecohubs.community/es/standard/core/0.1/layer-0-identity-scope#2.2), [§2.5](https://rcos.ecohubs.community/es/standard/core/0.1/layer-0-identity-scope#2.5)
+
+> Traza el límite de lo que gobierna tu comunidad: los activos, dominios de decisión, actividades y responsabilidades dentro del alcance — y lo que queda explícitamente fuera.
 
 ---
 

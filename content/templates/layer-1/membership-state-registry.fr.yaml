@@ -1,10 +1,12 @@
 lang: fr
-sourceHash: '28e93a6e'
+sourceHash: '501a9bb8'
 title: Registre des états de membre
 preamble: |-
   - **Couche :** 1 — Système de membres
   - **Statut :** Modèle — à adapter pour ta communauté
   - **Référence RCOS :** [§3.1](rcos:§3.1)
+
+  > Répertorie chaque état de membre que reconnaît ta communauté, avec les droits et obligations de chacun et la manière de passer de l'un à l'autre. Chaque personne a exactement un état à la fois.
 
   ---
 sections:

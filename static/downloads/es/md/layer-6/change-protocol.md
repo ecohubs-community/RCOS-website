@@ -2,7 +2,7 @@
 
 # Protocolo de Cambios
 
-- **Generado:** 2026-11-02
+- **Generado:** 2026-11-06
 - **Fuente (versión más reciente):** [https://rcos.ecohubs.community/es/articles/rcos-templates/layer-6/change-protocol](https://rcos.ecohubs.community/es/articles/rcos-templates/layer-6/change-protocol)
 - **Todas las plantillas RCOS:** [https://rcos.ecohubs.community/es/articles/rcos-templates](https://rcos.ecohubs.community/es/articles/rcos-templates)
 
@@ -10,6 +10,8 @@
 - **Capa:** 6 — Evolución y Adaptación
 - **Estado:** Plantilla — adaptar para tu comunidad
 - **Referencia RCOS:** [§8.1](https://rcos.ecohubs.community/es/standard/core/0.1/layer-6-evolution-adaptation#8.1), [§8.5](https://rcos.ecohubs.community/es/standard/core/0.1/layer-6-evolution-adaptation#8.5), [§8.6](https://rcos.ecohubs.community/es/standard/core/0.1/layer-6-evolution-adaptation#8.6)
+
+> Define cómo cambian las reglas de la comunidad: cómo se propone, clasifica, revisa, adopta o rechaza, implementa y revierte un cambio — además de las vías estrechas para cambios de emergencia y experimentos.
 
 ---
 

@@ -9,6 +9,8 @@ preamble: |-
   - **Status:** Template — adapt for your community
   - **RCOS reference:** [§8.1](rcos:§8.1), [§8.5](rcos:§8.5), [§8.6](rcos:§8.6)
 
+  > Defines how the community's rules change: how a change is proposed, classified, reviewed, adopted or rejected, rolled out and rolled back — plus the narrow paths for emergency changes and experiments.
+
   ---
 sections:
   - id: how-changes-are-proposed

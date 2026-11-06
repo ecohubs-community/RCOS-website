@@ -1,10 +1,12 @@
 lang: es
-sourceHash: '39212d28'
+sourceHash: 'd5036468'
 title: Carta de Propósito
 preamble: |-
   - **Capa:** 0 — Identidad y Alcance
   - **Estado:** Plantilla — adaptar para tu comunidad
   - **Referencia RCOS:** [§2.1](rcos:§2.1), [§2.5](rcos:§2.5)
+
+  > Establece el único propósito principal por el que existe tu comunidad, sus propósitos secundarios y sus no-objetivos explícitos, y las condiciones bajo las cuales ese propósito puede cambiar.
 
   ---
 sections:

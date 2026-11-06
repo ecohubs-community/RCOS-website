@@ -2,7 +2,7 @@
 
 # Carta de Propósito
 
-- **Gerado em:** 2026-11-02
+- **Gerado em:** 2026-11-06
 - **Fonte (versão mais recente):** [https://rcos.ecohubs.community/pt-br/articles/rcos-templates/layer-0/purpose-charter](https://rcos.ecohubs.community/pt-br/articles/rcos-templates/layer-0/purpose-charter)
 - **Todos os modelos RCOS:** [https://rcos.ecohubs.community/pt-br/articles/rcos-templates](https://rcos.ecohubs.community/pt-br/articles/rcos-templates)
 
@@ -10,6 +10,8 @@
 - **Camada:** 0 — Identidade e Escopo
 - **Status:** Modelo — adapte para sua comunidade
 - **Referência RCOS:** [§2.1](https://rcos.ecohubs.community/pt-br/standard/core/0.1/layer-0-identity-scope#2.1), [§2.5](https://rcos.ecohubs.community/pt-br/standard/core/0.1/layer-0-identity-scope#2.5)
+
+> Declara o único propósito primário pelo qual sua comunidade existe, seus propósitos secundários e não-objetivos explícitos, e as condições em que esse propósito pode mudar.
 
 ---
 

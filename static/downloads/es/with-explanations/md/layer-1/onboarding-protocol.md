@@ -2,7 +2,7 @@
 
 # Protocolo de Incorporación
 
-- **Generado:** 2026-11-02
+- **Generado:** 2026-11-06
 - **Fuente (versión más reciente):** [https://rcos.ecohubs.community/es/articles/rcos-templates/layer-1/onboarding-protocol](https://rcos.ecohubs.community/es/articles/rcos-templates/layer-1/onboarding-protocol)
 - **Todas las plantillas RCOS:** [https://rcos.ecohubs.community/es/articles/rcos-templates](https://rcos.ecohubs.community/es/articles/rcos-templates)
 
@@ -10,6 +10,8 @@
 - **Capa:** 1 — Sistema de Membresía
 - **Estado:** Plantilla — adaptar para tu comunidad
 - **Referencia RCOS:** [§3.2](https://rcos.ecohubs.community/es/standard/core/0.1/layer-1-membership-system#3.2), [§3.3](https://rcos.ecohubs.community/es/standard/core/0.1/layer-1-membership-system#3.3), [§3.8](https://rcos.ecohubs.community/es/standard/core/0.1/layer-1-membership-system#3.8)
+
+> Define cómo una persona se convierte en miembro: los criterios de admisión, los pasos de incorporación, el estado de membresía con el que empieza y cómo se evalúa y registra el período de prueba.
 
 ---
 

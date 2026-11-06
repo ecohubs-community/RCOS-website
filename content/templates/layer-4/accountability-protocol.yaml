@@ -9,6 +9,8 @@ preamble: |-
   - **Status:** Template — adapt for your community
   - **RCOS reference:** [§6.4](rcos:§6.4), [§6.5](rcos:§6.5)
 
+  > Defines what happens when an agreement is broken: what triggers a review, how it is investigated, the due-process and anti-retaliation guarantees, the repair and sanction options, and how rights are restored.
+
   ---
 sections:
   - id: triggers

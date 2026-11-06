@@ -2,7 +2,7 @@
 
 # Austritts- & Trennungsprotokoll
 
-- **Generiert:** 2026-11-02
+- **Generiert:** 2026-11-06
 - **Quelle (aktuelle Version):** [https://rcos.ecohubs.community/de/articles/rcos-templates/layer-1/exit-protocol](https://rcos.ecohubs.community/de/articles/rcos-templates/layer-1/exit-protocol)
 - **Alle RCOS-Vorlagen:** [https://rcos.ecohubs.community/de/articles/rcos-templates](https://rcos.ecohubs.community/de/articles/rcos-templates)
 
@@ -10,6 +10,8 @@
 - **Schicht:** 1 — Mitgliedschaftssystem
 - **Status:** Vorlage — an deine Gemeinschaft anpassen
 - **RCOS-Referenz:** [§3.6](https://rcos.ecohubs.community/de/standard/core/0.1/layer-1-membership-system#3.6), [§3.7](https://rcos.ecohubs.community/de/standard/core/0.1/layer-1-membership-system#3.7), [§3.8](https://rcos.ecohubs.community/de/standard/core/0.1/layer-1-membership-system#3.8)
+
+> Legt fest, wie eine Mitgliedschaft endet — freiwilliger Austritt jederzeit, erzwungener Austritt und Suspendierung mit fairem Verfahren — und wie Vermögenswerte, Rollen und Verantwortlichkeiten getrennt werden, wenn jemand geht.
 
 ---
 

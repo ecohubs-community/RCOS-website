@@ -2,7 +2,7 @@
 
 # Protocole de changement
 
-- **Généré:** 2026-11-02
+- **Généré:** 2026-11-06
 - **Source (version la plus récente):** [https://rcos.ecohubs.community/fr/articles/rcos-templates/layer-6/change-protocol](https://rcos.ecohubs.community/fr/articles/rcos-templates/layer-6/change-protocol)
 - **Tous les modèles RCOS:** [https://rcos.ecohubs.community/fr/articles/rcos-templates](https://rcos.ecohubs.community/fr/articles/rcos-templates)
 
@@ -10,6 +10,8 @@
 - **Couche :** 6 — Évolution et adaptation
 - **Statut :** Modèle — à adapter pour ta communauté
 - **Référence RCOS :** [§8.1](https://rcos.ecohubs.community/fr/standard/core/0.1/layer-6-evolution-adaptation#8.1), [§8.5](https://rcos.ecohubs.community/fr/standard/core/0.1/layer-6-evolution-adaptation#8.5), [§8.6](https://rcos.ecohubs.community/fr/standard/core/0.1/layer-6-evolution-adaptation#8.6)
+
+> Définit comment les règles de la communauté changent : comment un changement est proposé, classifié, examiné, adopté ou rejeté, mis en place et annulé — ainsi que les voies étroites pour les changements d'urgence et les expérimentations.
 
 ---
 

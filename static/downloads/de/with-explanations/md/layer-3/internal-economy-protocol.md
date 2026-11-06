@@ -2,7 +2,7 @@
 
 # Protokoll für die interne Wirtschaft
 
-- **Generiert:** 2026-11-02
+- **Generiert:** 2026-11-06
 - **Quelle (aktuelle Version):** [https://rcos.ecohubs.community/de/articles/rcos-templates/layer-3/internal-economy-protocol](https://rcos.ecohubs.community/de/articles/rcos-templates/layer-3/internal-economy-protocol)
 - **Alle RCOS-Vorlagen:** [https://rcos.ecohubs.community/de/articles/rcos-templates](https://rcos.ecohubs.community/de/articles/rcos-templates)
 
@@ -10,6 +10,8 @@
 - **Ebene:** 3 — Wirtschafts- & Ressourcensystem
 - **Status:** Vorlage — an deine Gemeinschaft anpassen
 - **RCOS-Referenz:** [§5.1](https://rcos.ecohubs.community/de/standard/core/0.1/layer-3-economic-resource-system#5.1), [§5.2](https://rcos.ecohubs.community/de/standard/core/0.1/layer-3-economic-resource-system#5.2), [§5.4](https://rcos.ecohubs.community/de/standard/core/0.1/layer-3-economic-resource-system#5.4), [§5.5](https://rcos.ecohubs.community/de/standard/core/0.1/layer-3-economic-resource-system#5.5)
+
+> Legt fest, was Gemeingut und was privat ist, welche Beiträge wie anerkannt werden, welche internen Einheiten es gibt und welche Grenzen verhindern, dass sich Werte in wenigen Händen sammeln.
 
 ---
 

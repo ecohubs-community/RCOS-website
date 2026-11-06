@@ -2,7 +2,7 @@
 
 # Déclaration de périmètre
 
-- **Généré:** 2026-11-02
+- **Généré:** 2026-11-06
 - **Source (version la plus récente):** [https://rcos.ecohubs.community/fr/articles/rcos-templates/layer-0/scope-declaration](https://rcos.ecohubs.community/fr/articles/rcos-templates/layer-0/scope-declaration)
 - **Tous les modèles RCOS:** [https://rcos.ecohubs.community/fr/articles/rcos-templates](https://rcos.ecohubs.community/fr/articles/rcos-templates)
 
@@ -10,6 +10,8 @@
 - **Couche :** 0 — Identité et périmètre
 - **Statut :** Modèle — à adapter pour ta communauté
 - **Référence RCOS :** [§2.2](https://rcos.ecohubs.community/fr/standard/core/0.1/layer-0-identity-scope#2.2), [§2.5](https://rcos.ecohubs.community/fr/standard/core/0.1/layer-0-identity-scope#2.5)
+
+> Trace la limite de ce que ta communauté gouverne : les actifs, domaines de décision, activités et responsabilités dans le périmètre — et ce qui en est explicitement exclu.
 
 ---
 

@@ -2,7 +2,7 @@
 
 # Änderungsprotokoll
 
-- **Generiert:** 2026-11-02
+- **Generiert:** 2026-11-06
 - **Quelle (aktuelle Version):** [https://rcos.ecohubs.community/de/articles/rcos-templates/layer-6/change-protocol](https://rcos.ecohubs.community/de/articles/rcos-templates/layer-6/change-protocol)
 - **Alle RCOS-Vorlagen:** [https://rcos.ecohubs.community/de/articles/rcos-templates](https://rcos.ecohubs.community/de/articles/rcos-templates)
 
@@ -10,6 +10,8 @@
 - **Schicht:** 6 — Evolution & Anpassung
 - **Status:** Vorlage — an eure Gemeinschaft anpassen
 - **RCOS-Referenz:** [§8.1](https://rcos.ecohubs.community/de/standard/core/0.1/layer-6-evolution-adaptation#8.1), [§8.5](https://rcos.ecohubs.community/de/standard/core/0.1/layer-6-evolution-adaptation#8.5), [§8.6](https://rcos.ecohubs.community/de/standard/core/0.1/layer-6-evolution-adaptation#8.6)
+
+> Legt fest, wie sich die Regeln der Gemeinschaft ändern: wie eine Änderung vorgeschlagen, eingestuft, geprüft, angenommen oder abgelehnt, eingeführt und zurückgenommen wird — dazu die engen Wege für Notfalländerungen und Experimente.
 
 ---
 

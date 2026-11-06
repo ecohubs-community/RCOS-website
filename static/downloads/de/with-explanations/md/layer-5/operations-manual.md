@@ -2,7 +2,7 @@
 
 # Betriebshandbuch
 
-- **Generiert:** 2026-11-02
+- **Generiert:** 2026-11-06
 - **Quelle (aktuelle Version):** [https://rcos.ecohubs.community/de/articles/rcos-templates/layer-5/operations-manual](https://rcos.ecohubs.community/de/articles/rcos-templates/layer-5/operations-manual)
 - **Alle RCOS-Vorlagen:** [https://rcos.ecohubs.community/de/articles/rcos-templates](https://rcos.ecohubs.community/de/articles/rcos-templates)
 
@@ -10,6 +10,8 @@
 - **Ebene:** 5 — Betrieb & Koordination
 - **Status:** Vorlage — für eure Gemeinschaft anpassen
 - **RCOS-Referenz:** [§7.1](https://rcos.ecohubs.community/de/standard/core/0.1/layer-5-operations-coordination#7.1), [§7.3](https://rcos.ecohubs.community/de/standard/core/0.1/layer-5-operations-coordination#7.3), [§7.4](https://rcos.ecohubs.community/de/standard/core/0.1/layer-5-operations-coordination#7.4), [§7.5](https://rcos.ecohubs.community/de/standard/core/0.1/layer-5-operations-coordination#7.5), [§7.6](https://rcos.ecohubs.community/de/standard/core/0.1/layer-5-operations-coordination#7.6)
+
+> Beschreibt, wie die tägliche Arbeit erledigt wird: die zentralen Prozesse, Ad-hoc-Verantwortlichkeiten, wie Rollen einander Arbeit übergeben, Belastungsgrenzen, Kontinuität bei Abwesenheit und wo die Dokumentation liegt.
 
 ---
 

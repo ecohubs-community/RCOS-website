@@ -2,7 +2,7 @@
 
 # Zweckcharta
 
-- **Generiert:** 2026-11-02
+- **Generiert:** 2026-11-06
 - **Quelle (aktuelle Version):** [https://rcos.ecohubs.community/de/articles/rcos-templates/layer-0/purpose-charter](https://rcos.ecohubs.community/de/articles/rcos-templates/layer-0/purpose-charter)
 - **Alle RCOS-Vorlagen:** [https://rcos.ecohubs.community/de/articles/rcos-templates](https://rcos.ecohubs.community/de/articles/rcos-templates)
 
@@ -10,6 +10,8 @@
 - **Schicht:** 0 — Identität & Geltungsbereich
 - **Status:** Vorlage — an eure Gemeinschaft anpassen
 - **RCOS-Referenz:** [§2.1](https://rcos.ecohubs.community/de/standard/core/0.1/layer-0-identity-scope#2.1), [§2.5](https://rcos.ecohubs.community/de/standard/core/0.1/layer-0-identity-scope#2.5)
+
+> Legt den einen primären Zweck fest, für den eure Gemeinschaft existiert, dazu ihre sekundären Zwecke und ausdrücklichen Nicht-Ziele sowie die Bedingungen, unter denen sich dieser Zweck ändern darf.
 
 ---
 

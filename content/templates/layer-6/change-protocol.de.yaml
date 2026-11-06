@@ -1,10 +1,12 @@
 lang: de
-sourceHash: 'e0fa104b'
+sourceHash: '244155aa'
 title: Änderungsprotokoll
 preamble: |-
   - **Schicht:** 6 — Evolution & Anpassung
   - **Status:** Vorlage — an eure Gemeinschaft anpassen
   - **RCOS-Referenz:** [§8.1](rcos:§8.1), [§8.5](rcos:§8.5), [§8.6](rcos:§8.6)
+
+  > Legt fest, wie sich die Regeln der Gemeinschaft ändern: wie eine Änderung vorgeschlagen, eingestuft, geprüft, angenommen oder abgelehnt, eingeführt und zurückgenommen wird — dazu die engen Wege für Notfalländerungen und Experimente.
 
   ---
 sections:

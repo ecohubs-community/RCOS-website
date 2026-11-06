@@ -1,10 +1,12 @@
 lang: es
-sourceHash: 'beba769c'
+sourceHash: '481eca3a'
 title: Reglamento de Tesorería
 preamble: |-
   - **Capa:** 3 — Sistema Económico y de Recursos
   - **Estado:** Plantilla — adaptar para tu comunidad
   - **Referencia RCOS:** [§5.3](rcos:§5.3), [§5.5](rcos:§5.5)
+
+  > Fija las reglas del dinero compartido de la comunidad: qué cubre la tesorería, de dónde vienen los ingresos, quién puede gastar y hasta qué límite, cómo se informa y los límites sobre reservas, riesgo, deuda y conflictos de intereses.
 
   ---
 sections:

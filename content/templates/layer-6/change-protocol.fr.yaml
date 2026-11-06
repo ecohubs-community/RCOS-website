@@ -1,10 +1,12 @@
 lang: fr
-sourceHash: 'e0fa104b'
+sourceHash: '244155aa'
 title: Protocole de changement
 preamble: |-
   - **Couche :** 6 — Évolution et adaptation
   - **Statut :** Modèle — à adapter pour ta communauté
   - **Référence RCOS :** [§8.1](rcos:§8.1), [§8.5](rcos:§8.5), [§8.6](rcos:§8.6)
+
+  > Définit comment les règles de la communauté changent : comment un changement est proposé, classifié, examiné, adopté ou rejeté, mis en place et annulé — ainsi que les voies étroites pour les changements d'urgence et les expérimentations.
 
   ---
 sections:

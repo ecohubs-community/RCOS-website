@@ -2,7 +2,7 @@
 
 # Protocole d'intégration
 
-- **Généré:** 2026-11-02
+- **Généré:** 2026-11-06
 - **Source (version la plus récente):** [https://rcos.ecohubs.community/fr/articles/rcos-templates/layer-1/onboarding-protocol](https://rcos.ecohubs.community/fr/articles/rcos-templates/layer-1/onboarding-protocol)
 - **Tous les modèles RCOS:** [https://rcos.ecohubs.community/fr/articles/rcos-templates](https://rcos.ecohubs.community/fr/articles/rcos-templates)
 
@@ -10,6 +10,8 @@
 - **Couche :** 1 — Système d'adhésion
 - **Statut :** Modèle — à adapter pour ta communauté
 - **Référence RCOS :** [§3.2](https://rcos.ecohubs.community/fr/standard/core/0.1/layer-1-membership-system#3.2), [§3.3](https://rcos.ecohubs.community/fr/standard/core/0.1/layer-1-membership-system#3.3), [§3.8](https://rcos.ecohubs.community/fr/standard/core/0.1/layer-1-membership-system#3.8)
+
+> Définit comment une personne devient membre : les critères d'admission, les étapes d'intégration, l'état d'adhésion de départ et la manière dont la période d'essai est évaluée et consignée.
 
 ---
 

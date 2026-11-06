@@ -2,7 +2,7 @@
 
 # Role Registry
 
-- **Generated:** 2026-11-02
+- **Generated:** 2026-11-06
 - **Source (latest version):** [https://rcos.ecohubs.community/articles/rcos-templates/layer-5/role-registry](https://rcos.ecohubs.community/articles/rcos-templates/layer-5/role-registry)
 - **All RCOS templates:** [https://rcos.ecohubs.community/articles/rcos-templates](https://rcos.ecohubs.community/articles/rcos-templates)
 
@@ -10,6 +10,8 @@
 - **Layer:** 5 — Operations & Coordination
 - **Status:** Template — adapt for your community
 - **RCOS reference:** [§7.1](https://rcos.ecohubs.community/standard/core/0.1/layer-5-operations-coordination#7.1), [§7.6](https://rcos.ecohubs.community/standard/core/0.1/layer-5-operations-coordination#7.6)
+
+> Lists every operational and functional role in your community with its purpose, domain, and current holder, so it is always clear who does what — and that no one's role is unwritten.
 
 ---
 

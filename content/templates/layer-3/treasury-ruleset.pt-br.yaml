@@ -1,10 +1,12 @@
 lang: pt-br
-sourceHash: 'beba769c'
+sourceHash: '481eca3a'
 title: Regulamento da Tesouraria
 preamble: |-
   - **Camada:** 3 — Sistema Econômico e de Recursos
   - **Status:** Modelo — adapte para a sua comunidade
   - **Referência RCOS:** [§5.3](rcos:§5.3), [§5.5](rcos:§5.5)
+
+  > Define as regras do dinheiro compartilhado da comunidade: o que a tesouraria cobre, de onde vem a receita, quem pode gastar e até que limite, como se presta contas e os limites para reservas, risco, dívida e conflitos de interesses.
 
   ---
 sections:

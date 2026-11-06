@@ -1,10 +1,12 @@
 lang: fr
-sourceHash: 'beba769c'
+sourceHash: '481eca3a'
 title: Règles de trésorerie
 preamble: |-
   - **Couche :** 3 — Système économique et des ressources
   - **Statut :** Modèle — à adapter pour ta communauté
   - **Référence RCOS :** [§5.3](rcos:§5.3), [§5.5](rcos:§5.5)
+
+  > Fixe les règles de l'argent commun de la communauté : ce que couvre la trésorerie, d'où viennent les revenus, qui peut dépenser et jusqu'à quelle limite, comment on en rend compte, et les limites en matière de réserves, de risque, de dette et de conflits d'intérêts.
 
   ---
 sections:

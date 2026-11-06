@@ -1,10 +1,12 @@
 lang: fr
-sourceHash: 'b2f58556'
+sourceHash: '19b82e18'
 title: Déclaration de périmètre
 preamble: |-
   - **Couche :** 0 — Identité et périmètre
   - **Statut :** Modèle — à adapter pour ta communauté
   - **Référence RCOS :** [§2.2](rcos:§2.2), [§2.5](rcos:§2.5)
+
+  > Trace la limite de ce que ta communauté gouverne : les actifs, domaines de décision, activités et responsabilités dans le périmètre — et ce qui en est explicitement exclu.
 
   ---
 sections:

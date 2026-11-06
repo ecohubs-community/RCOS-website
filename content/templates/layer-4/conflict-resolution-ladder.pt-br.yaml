@@ -1,10 +1,12 @@
 lang: pt-br
-sourceHash: '74c79c52'
+sourceHash: '9706d5ba'
 title: Escada de Resolução de Conflitos
 preamble: |-
   - **Camada:** 4 — Conflito, Reparação e Responsabilização
   - **Status:** Modelo — adapte para sua comunidade
   - **Referência RCOS:** [§6.1](rcos:§6.1), [§6.2](rcos:§6.2), [§6.3](rcos:§6.3), [§6.5](rcos:§6.5)
+
+  > Dá a cada conflito um caminho claro, da conversa direta ao diálogo facilitado e à revisão formal até uma decisão de governança, com regras para não-resposta, impasse, facilitação e privacidade ao longo do caminho.
 
   ---
 sections:

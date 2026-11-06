@@ -1,10 +1,12 @@
 lang: fr
-sourceHash: '74c79c52'
+sourceHash: '9706d5ba'
 title: Échelle de résolution des conflits
 preamble: |-
   - **Couche :** 4 — Conflit, réparation et responsabilité
   - **Statut :** Modèle — à adapter pour ta communauté
   - **Référence RCOS :** [§6.1](rcos:§6.1), [§6.2](rcos:§6.2), [§6.3](rcos:§6.3), [§6.5](rcos:§6.5)
+
+  > Donne à chaque conflit un chemin clair, de la conversation directe au dialogue facilité et à l'examen formel jusqu'à une décision de gouvernance, avec des règles pour la non-réponse, l'impasse, la facilitation et la vie privée en cours de route.
 
   ---
 sections:

@@ -2,7 +2,7 @@
 
 # Scope Declaration
 
-- **Generated:** 2026-11-02
+- **Generated:** 2026-11-06
 - **Source (latest version):** [https://rcos.ecohubs.community/articles/rcos-templates/layer-0/scope-declaration](https://rcos.ecohubs.community/articles/rcos-templates/layer-0/scope-declaration)
 - **All RCOS templates:** [https://rcos.ecohubs.community/articles/rcos-templates](https://rcos.ecohubs.community/articles/rcos-templates)
 
@@ -10,6 +10,8 @@
 - **Layer:** 0 — Identity & Scope
 - **Status:** Template — adapt for your community
 - **RCOS reference:** [§2.2](https://rcos.ecohubs.community/standard/core/0.1/layer-0-identity-scope#2.2), [§2.5](https://rcos.ecohubs.community/standard/core/0.1/layer-0-identity-scope#2.5)
+
+> Draws the boundary of what your community governs: the assets, decision domains, activities, and responsibilities in scope — and what is explicitly out of scope.
 
 ---
 
