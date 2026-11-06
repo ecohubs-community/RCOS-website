@@ -1,5 +1,5 @@
 {
-  "generated": "2026-10-05",
+  "generated": "2026-11-06",
   "licence": "CC BY 4.0 — https://creativecommons.org/licenses/by/4.0/",
   "attribution": "RCOS — Regenerative Community Operating System, EcoHubs",
   "standards": [
@@ -29,8 +29,8 @@
       "bytes": 1292554
     },
     "rcos-core/0.1/artifacts.yaml": {
-      "sha256": "ddd2ee1e003459d31ecfb2d670193566aff4b5bc6eca781970770cb18a349ec7",
-      "bytes": 33480
+      "sha256": "e8cbbbab619b53231edc217883a3601440a8952a8ba34c6651e5ee51f744e276",
+      "bytes": 42193
     },
     "rcos-core/0.1/glossary.yaml": {
       "sha256": "6d63d85757135aab4298484364330ec5266c758e8dd2f78c5e38516d16c2056e",
@@ -41,7 +41,7 @@
       "bytes": 190677
     },
     "rcos-core/0.1/meta.yaml": {
-      "sha256": "e85b11c18f35211932de7e26c8098f981dd343180c56e8389da1eb29e7049ab2",
+      "sha256": "4b966c795baa291a658d3917603ab21f28b1c88839e29fb4399ed12217f1b62a",
       "bytes": 728
     },
     "rcos-core/0.1/schema.json": {

@@ -1,10 +1,12 @@
 lang: pt-br
-sourceHash: 'cbf0e539'
+sourceHash: '498e1bc1'
 title: Protocolo de Integração
 preamble: |-
   - **Camada:** 1 — Sistema de Associação
   - **Status:** Modelo — adapte para sua comunidade
   - **Referência RCOS:** [§3.2](rcos:§3.2), [§3.3](rcos:§3.3), [§3.8](rcos:§3.8)
+
+  > Define como uma pessoa se torna membro: os critérios de admissão, as etapas de integração, o estado de associação em que ela começa e como o período de experiência é avaliado e registrado.
 
   ---
 sections:

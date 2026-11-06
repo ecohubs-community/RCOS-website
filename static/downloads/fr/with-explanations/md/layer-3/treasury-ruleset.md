@@ -2,7 +2,7 @@
 
 # Règles de trésorerie
 
-- **Généré:** 2026-11-02
+- **Généré:** 2026-11-06
 - **Source (version la plus récente):** [https://rcos.ecohubs.community/fr/articles/rcos-templates/layer-3/treasury-ruleset](https://rcos.ecohubs.community/fr/articles/rcos-templates/layer-3/treasury-ruleset)
 - **Tous les modèles RCOS:** [https://rcos.ecohubs.community/fr/articles/rcos-templates](https://rcos.ecohubs.community/fr/articles/rcos-templates)
 
@@ -10,6 +10,8 @@
 - **Couche :** 3 — Système économique et des ressources
 - **Statut :** Modèle — à adapter pour ta communauté
 - **Référence RCOS :** [§5.3](https://rcos.ecohubs.community/fr/standard/core/0.1/layer-3-economic-resource-system#5.3), [§5.5](https://rcos.ecohubs.community/fr/standard/core/0.1/layer-3-economic-resource-system#5.5)
+
+> Fixe les règles de l'argent commun de la communauté : ce que couvre la trésorerie, d'où viennent les revenus, qui peut dépenser et jusqu'à quelle limite, comment on en rend compte, et les limites en matière de réserves, de risque, de dette et de conflits d'intérêts.
 
 ---
 

@@ -2,7 +2,7 @@
 
 # Reglamento de Tesorería
 
-- **Generado:** 2026-11-02
+- **Generado:** 2026-11-06
 - **Fuente (versión más reciente):** [https://rcos.ecohubs.community/es/articles/rcos-templates/layer-3/treasury-ruleset](https://rcos.ecohubs.community/es/articles/rcos-templates/layer-3/treasury-ruleset)
 - **Todas las plantillas RCOS:** [https://rcos.ecohubs.community/es/articles/rcos-templates](https://rcos.ecohubs.community/es/articles/rcos-templates)
 
@@ -10,6 +10,8 @@
 - **Capa:** 3 — Sistema Económico y de Recursos
 - **Estado:** Plantilla — adaptar para tu comunidad
 - **Referencia RCOS:** [§5.3](https://rcos.ecohubs.community/es/standard/core/0.1/layer-3-economic-resource-system#5.3), [§5.5](https://rcos.ecohubs.community/es/standard/core/0.1/layer-3-economic-resource-system#5.5)
+
+> Fija las reglas del dinero compartido de la comunidad: qué cubre la tesorería, de dónde vienen los ingresos, quién puede gastar y hasta qué límite, cómo se informa y los límites sobre reservas, riesgo, deuda y conflictos de intereses.
 
 ---
 

@@ -2,7 +2,7 @@
 
 # Registre des états de membre
 
-- **Généré:** 2026-11-02
+- **Généré:** 2026-11-06
 - **Source (version la plus récente):** [https://rcos.ecohubs.community/fr/articles/rcos-templates/layer-1/membership-state-registry](https://rcos.ecohubs.community/fr/articles/rcos-templates/layer-1/membership-state-registry)
 - **Tous les modèles RCOS:** [https://rcos.ecohubs.community/fr/articles/rcos-templates](https://rcos.ecohubs.community/fr/articles/rcos-templates)
 
@@ -10,6 +10,8 @@
 - **Couche :** 1 — Système de membres
 - **Statut :** Modèle — à adapter pour ta communauté
 - **Référence RCOS :** [§3.1](https://rcos.ecohubs.community/fr/standard/core/0.1/layer-1-membership-system#3.1)
+
+> Répertorie chaque état de membre que reconnaît ta communauté, avec les droits et obligations de chacun et la manière de passer de l'un à l'autre. Chaque personne a exactement un état à la fois.
 
 ---
 

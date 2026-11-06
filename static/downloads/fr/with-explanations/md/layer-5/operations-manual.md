@@ -2,7 +2,7 @@
 
 # Manuel opérationnel
 
-- **Généré:** 2026-11-02
+- **Généré:** 2026-11-06
 - **Source (version la plus récente):** [https://rcos.ecohubs.community/fr/articles/rcos-templates/layer-5/operations-manual](https://rcos.ecohubs.community/fr/articles/rcos-templates/layer-5/operations-manual)
 - **Tous les modèles RCOS:** [https://rcos.ecohubs.community/fr/articles/rcos-templates](https://rcos.ecohubs.community/fr/articles/rcos-templates)
 
@@ -10,6 +10,8 @@
 - **Couche :** 5 — Opérations et coordination
 - **Statut :** Modèle — à adapter pour ta communauté
 - **Référence RCOS :** [§7.1](https://rcos.ecohubs.community/fr/standard/core/0.1/layer-5-operations-coordination#7.1), [§7.3](https://rcos.ecohubs.community/fr/standard/core/0.1/layer-5-operations-coordination#7.3), [§7.4](https://rcos.ecohubs.community/fr/standard/core/0.1/layer-5-operations-coordination#7.4), [§7.5](https://rcos.ecohubs.community/fr/standard/core/0.1/layer-5-operations-coordination#7.5), [§7.6](https://rcos.ecohubs.community/fr/standard/core/0.1/layer-5-operations-coordination#7.6)
+
+> Décrit comment le travail quotidien se fait : les processus essentiels, les responsabilités ponctuelles, la façon dont les rôles se transmettent le travail, les limites de charge, la continuité en cas d'absence et l'emplacement de la documentation.
 
 ---
 

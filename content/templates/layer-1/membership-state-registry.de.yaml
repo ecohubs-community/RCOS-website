@@ -1,10 +1,12 @@
 lang: de
-sourceHash: '28e93a6e'
+sourceHash: '501a9bb8'
 title: Mitgliedschaftsstatus-Register
 preamble: |-
   - **Ebene:** 1 — Mitgliedschaftssystem
   - **Status:** Vorlage — an eure Gemeinschaft anpassen
   - **RCOS-Referenz:** [§3.1](rcos:§3.1)
+
+  > Listet jeden Mitgliedschaftsstatus auf, den eure Gemeinschaft kennt, mit seinen Rechten und Pflichten und den Wegen zwischen den Status. Jede Person hat zu jedem Zeitpunkt genau einen Status.
 
   ---
 sections:

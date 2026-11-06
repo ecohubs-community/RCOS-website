@@ -2,7 +2,7 @@
 
 # Kassensatzung
 
-- **Generiert:** 2026-11-02
+- **Generiert:** 2026-11-06
 - **Quelle (aktuelle Version):** [https://rcos.ecohubs.community/de/articles/rcos-templates/layer-3/treasury-ruleset](https://rcos.ecohubs.community/de/articles/rcos-templates/layer-3/treasury-ruleset)
 - **Alle RCOS-Vorlagen:** [https://rcos.ecohubs.community/de/articles/rcos-templates](https://rcos.ecohubs.community/de/articles/rcos-templates)
 
@@ -10,6 +10,8 @@
 - **Ebene:** 3 — Wirtschafts- & Ressourcensystem
 - **Status:** Vorlage — an eure Gemeinschaft anpassen
 - **RCOS-Referenz:** [§5.3](https://rcos.ecohubs.community/de/standard/core/0.1/layer-3-economic-resource-system#5.3), [§5.5](https://rcos.ecohubs.community/de/standard/core/0.1/layer-3-economic-resource-system#5.5)
+
+> Regelt das gemeinsame Geld der Gemeinschaft: wofür die Kasse da ist, woher Einnahmen kommen, wer bis zu welcher Grenze ausgeben darf, wie berichtet wird und welche Grenzen für Rücklagen, Risiko, Schulden und Interessenkonflikte gelten.
 
 ---
 

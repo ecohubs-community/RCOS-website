@@ -2,7 +2,7 @@
 
 # Protocolo de Integração
 
-- **Gerado em:** 2026-11-02
+- **Gerado em:** 2026-11-06
 - **Fonte (versão mais recente):** [https://rcos.ecohubs.community/pt-br/articles/rcos-templates/layer-1/onboarding-protocol](https://rcos.ecohubs.community/pt-br/articles/rcos-templates/layer-1/onboarding-protocol)
 - **Todos os modelos RCOS:** [https://rcos.ecohubs.community/pt-br/articles/rcos-templates](https://rcos.ecohubs.community/pt-br/articles/rcos-templates)
 
@@ -10,6 +10,8 @@
 - **Camada:** 1 — Sistema de Associação
 - **Status:** Modelo — adapte para sua comunidade
 - **Referência RCOS:** [§3.2](https://rcos.ecohubs.community/pt-br/standard/core/0.1/layer-1-membership-system#3.2), [§3.3](https://rcos.ecohubs.community/pt-br/standard/core/0.1/layer-1-membership-system#3.3), [§3.8](https://rcos.ecohubs.community/pt-br/standard/core/0.1/layer-1-membership-system#3.8)
+
+> Define como uma pessoa se torna membro: os critérios de admissão, as etapas de integração, o estado de associação em que ela começa e como o período de experiência é avaliado e registrado.
 
 ---
 

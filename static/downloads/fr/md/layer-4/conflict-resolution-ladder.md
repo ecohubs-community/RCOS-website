@@ -2,7 +2,7 @@
 
 # Échelle de résolution des conflits
 
-- **Généré:** 2026-11-02
+- **Généré:** 2026-11-06
 - **Source (version la plus récente):** [https://rcos.ecohubs.community/fr/articles/rcos-templates/layer-4/conflict-resolution-ladder](https://rcos.ecohubs.community/fr/articles/rcos-templates/layer-4/conflict-resolution-ladder)
 - **Tous les modèles RCOS:** [https://rcos.ecohubs.community/fr/articles/rcos-templates](https://rcos.ecohubs.community/fr/articles/rcos-templates)
 
@@ -10,6 +10,8 @@
 - **Couche :** 4 — Conflit, réparation et responsabilité
 - **Statut :** Modèle — à adapter pour ta communauté
 - **Référence RCOS :** [§6.1](https://rcos.ecohubs.community/fr/standard/core/0.1/layer-4-conflict-repair-accountability#6.1), [§6.2](https://rcos.ecohubs.community/fr/standard/core/0.1/layer-4-conflict-repair-accountability#6.2), [§6.3](https://rcos.ecohubs.community/fr/standard/core/0.1/layer-4-conflict-repair-accountability#6.3), [§6.5](https://rcos.ecohubs.community/fr/standard/core/0.1/layer-4-conflict-repair-accountability#6.5)
+
+> Donne à chaque conflit un chemin clair, de la conversation directe au dialogue facilité et à l'examen formel jusqu'à une décision de gouvernance, avec des règles pour la non-réponse, l'impasse, la facilitation et la vie privée en cours de route.
 
 ---
 

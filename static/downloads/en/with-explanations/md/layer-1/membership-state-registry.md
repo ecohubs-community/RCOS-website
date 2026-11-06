@@ -2,7 +2,7 @@
 
 # Membership State Registry
 
-- **Generated:** 2026-11-02
+- **Generated:** 2026-11-06
 - **Source (latest version):** [https://rcos.ecohubs.community/articles/rcos-templates/layer-1/membership-state-registry](https://rcos.ecohubs.community/articles/rcos-templates/layer-1/membership-state-registry)
 - **All RCOS templates:** [https://rcos.ecohubs.community/articles/rcos-templates](https://rcos.ecohubs.community/articles/rcos-templates)
 
@@ -10,6 +10,8 @@
 - **Layer:** 1 — Membership System
 - **Status:** Template — adapt for your community
 - **RCOS reference:** [§3.1](https://rcos.ecohubs.community/standard/core/0.1/layer-1-membership-system#3.1)
+
+> Lists every membership state your community recognizes, with the rights and obligations of each and how people move between them. Each person holds exactly one state at a time.
 
 ---
 

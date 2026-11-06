@@ -2,7 +2,7 @@
 
 # Escalera de Resolución de Conflictos
 
-- **Generado:** 2026-11-02
+- **Generado:** 2026-11-06
 - **Fuente (versión más reciente):** [https://rcos.ecohubs.community/es/articles/rcos-templates/layer-4/conflict-resolution-ladder](https://rcos.ecohubs.community/es/articles/rcos-templates/layer-4/conflict-resolution-ladder)
 - **Todas las plantillas RCOS:** [https://rcos.ecohubs.community/es/articles/rcos-templates](https://rcos.ecohubs.community/es/articles/rcos-templates)
 
@@ -10,6 +10,8 @@
 - **Capa:** 4 — Conflicto, Reparación y Rendición de Cuentas
 - **Estado:** Plantilla — adaptar para tu comunidad
 - **Referencia RCOS:** [§6.1](https://rcos.ecohubs.community/es/standard/core/0.1/layer-4-conflict-repair-accountability#6.1), [§6.2](https://rcos.ecohubs.community/es/standard/core/0.1/layer-4-conflict-repair-accountability#6.2), [§6.3](https://rcos.ecohubs.community/es/standard/core/0.1/layer-4-conflict-repair-accountability#6.3), [§6.5](https://rcos.ecohubs.community/es/standard/core/0.1/layer-4-conflict-repair-accountability#6.5)
+
+> Da a cada conflicto un camino claro, desde la conversación directa pasando por el diálogo facilitado y la revisión formal hasta una decisión de gobernanza, con reglas para la falta de respuesta, el punto muerto, la facilitación y la privacidad en el camino.
 
 ---
 

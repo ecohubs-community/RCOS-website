@@ -2,7 +2,7 @@
 
 # Exit & Separation Protocol
 
-- **Generated:** 2026-11-02
+- **Generated:** 2026-11-06
 - **Source (latest version):** [https://rcos.ecohubs.community/articles/rcos-templates/layer-1/exit-protocol](https://rcos.ecohubs.community/articles/rcos-templates/layer-1/exit-protocol)
 - **All RCOS templates:** [https://rcos.ecohubs.community/articles/rcos-templates](https://rcos.ecohubs.community/articles/rcos-templates)
 
@@ -10,6 +10,8 @@
 - **Layer:** 1 — Membership System
 - **Status:** Template — adapt for your community
 - **RCOS reference:** [§3.6](https://rcos.ecohubs.community/standard/core/0.1/layer-1-membership-system#3.6), [§3.7](https://rcos.ecohubs.community/standard/core/0.1/layer-1-membership-system#3.7), [§3.8](https://rcos.ecohubs.community/standard/core/0.1/layer-1-membership-system#3.8)
+
+> Defines how membership ends — voluntary exit at any time, forced exit and suspension with due process — and how assets, roles, and responsibilities are separated when someone leaves.
 
 ---
 

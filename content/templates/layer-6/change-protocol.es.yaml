@@ -1,10 +1,12 @@
 lang: es
-sourceHash: 'e0fa104b'
+sourceHash: '244155aa'
 title: Protocolo de Cambios
 preamble: |-
   - **Capa:** 6 — Evolución y Adaptación
   - **Estado:** Plantilla — adaptar para tu comunidad
   - **Referencia RCOS:** [§8.1](rcos:§8.1), [§8.5](rcos:§8.5), [§8.6](rcos:§8.6)
+
+  > Define cómo cambian las reglas de la comunidad: cómo se propone, clasifica, revisa, adopta o rechaza, implementa y revierte un cambio — además de las vías estrechas para cambios de emergencia y experimentos.
 
   ---
 sections:

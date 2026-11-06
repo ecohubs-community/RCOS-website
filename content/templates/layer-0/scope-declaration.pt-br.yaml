@@ -1,10 +1,12 @@
 lang: pt-br
-sourceHash: 'b2f58556'
+sourceHash: '19b82e18'
 title: Declaração de Escopo
 preamble: |-
   - **Camada:** 0 — Identidade e Escopo
   - **Status:** Modelo — adapte para sua comunidade
   - **Referência RCOS:** [§2.2](rcos:§2.2), [§2.5](rcos:§2.5)
+
+  > Traça o limite do que sua comunidade governa: os ativos, domínios de decisão, atividades e responsabilidades dentro do escopo — e o que fica explicitamente fora dele.
 
   ---
 sections:

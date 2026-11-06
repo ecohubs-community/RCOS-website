@@ -2,7 +2,7 @@
 
 # Internal Economy Protocol
 
-- **Generated:** 2026-11-02
+- **Generated:** 2026-11-06
 - **Source (latest version):** [https://rcos.ecohubs.community/articles/rcos-templates/layer-3/internal-economy-protocol](https://rcos.ecohubs.community/articles/rcos-templates/layer-3/internal-economy-protocol)
 - **All RCOS templates:** [https://rcos.ecohubs.community/articles/rcos-templates](https://rcos.ecohubs.community/articles/rcos-templates)
 
@@ -10,6 +10,8 @@
 - **Layer:** 3 — Economic & Resource System
 - **Status:** Template — adapt for your community
 - **RCOS reference:** [§5.1](https://rcos.ecohubs.community/standard/core/0.1/layer-3-economic-resource-system#5.1), [§5.2](https://rcos.ecohubs.community/standard/core/0.1/layer-3-economic-resource-system#5.2), [§5.4](https://rcos.ecohubs.community/standard/core/0.1/layer-3-economic-resource-system#5.4), [§5.5](https://rcos.ecohubs.community/standard/core/0.1/layer-3-economic-resource-system#5.5)
+
+> Defines what is commons and what is private, which contributions are recognized and how, any internal units, and the limits that keep value from concentrating in a few hands.
 
 ---
 

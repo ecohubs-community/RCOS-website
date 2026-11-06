@@ -1,10 +1,12 @@
 lang: pt-br
-sourceHash: 'e0fa104b'
+sourceHash: '244155aa'
 title: Protocolo de Mudanças
 preamble: |-
   - **Camada:** 6 — Evolução e Adaptação
   - **Status:** Modelo — adapte para a sua comunidade
   - **Referência RCOS:** [§8.1](rcos:§8.1), [§8.5](rcos:§8.5), [§8.6](rcos:§8.6)
+
+  > Define como as regras da comunidade mudam: como uma mudança é proposta, classificada, revisada, adotada ou rejeitada, implementada e revertida — além dos caminhos estreitos para mudanças de emergência e experimentos.
 
   ---
 sections:

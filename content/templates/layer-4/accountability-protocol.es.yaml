@@ -1,10 +1,12 @@
 lang: es
-sourceHash: '00595305'
+sourceHash: 'df071f4d'
 title: Protocolo de Rendición de Cuentas
 preamble: |-
   - **Capa:** 4 — Conflicto, Reparación y Rendición de Cuentas
   - **Estado:** Plantilla — adaptar para tu comunidad
   - **Referencia RCOS:** [§6.4](rcos:§6.4), [§6.5](rcos:§6.5)
+
+  > Define qué ocurre cuando se incumple un acuerdo: qué activa una revisión, cómo se investiga, las garantías de debido proceso y contra represalias, las opciones de reparación y sanción, y cómo se restituyen los derechos.
 
   ---
 sections:

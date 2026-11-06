@@ -1,10 +1,12 @@
 lang: es
-sourceHash: '094e0e0d'
+sourceHash: '954141bf'
 title: Manual de Operaciones
 preamble: |-
   - **Capa:** 5 — Operaciones y Coordinación
   - **Estado:** Plantilla — adaptar para tu comunidad
   - **Referencia RCOS:** [§7.1](rcos:§7.1), [§7.3](rcos:§7.3), [§7.4](rcos:§7.4), [§7.5](rcos:§7.5), [§7.6](rcos:§7.6)
+
+  > Describe cómo se hace el trabajo del día a día: los procesos fundamentales, las responsabilidades ad hoc, cómo los roles se pasan el trabajo, los límites de carga, la continuidad cuando alguien no está y dónde vive la documentación.
 
   ---
 sections:

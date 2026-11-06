@@ -2,7 +2,7 @@
 
 # Konfliktlösungsleiter
 
-- **Generiert:** 2026-11-02
+- **Generiert:** 2026-11-06
 - **Quelle (aktuelle Version):** [https://rcos.ecohubs.community/de/articles/rcos-templates/layer-4/conflict-resolution-ladder](https://rcos.ecohubs.community/de/articles/rcos-templates/layer-4/conflict-resolution-ladder)
 - **Alle RCOS-Vorlagen:** [https://rcos.ecohubs.community/de/articles/rcos-templates](https://rcos.ecohubs.community/de/articles/rcos-templates)
 
@@ -10,6 +10,8 @@
 - **Schicht:** 4 — Konflikt, Wiedergutmachung & Rechenschaftspflicht
 - **Status:** Vorlage — an deine Gemeinschaft anpassen
 - **RCOS-Referenz:** [§6.1](https://rcos.ecohubs.community/de/standard/core/0.1/layer-4-conflict-repair-accountability#6.1), [§6.2](https://rcos.ecohubs.community/de/standard/core/0.1/layer-4-conflict-repair-accountability#6.2), [§6.3](https://rcos.ecohubs.community/de/standard/core/0.1/layer-4-conflict-repair-accountability#6.3), [§6.5](https://rcos.ecohubs.community/de/standard/core/0.1/layer-4-conflict-repair-accountability#6.5)
+
+> Gibt jedem Konflikt einen klaren Weg, vom direkten Gespräch über moderierten Dialog und formelle Überprüfung bis zur Governance-Entscheidung, mit Regeln für Nichtreaktion, Pattsituationen, Moderation und Datenschutz unterwegs.
 
 ---
 

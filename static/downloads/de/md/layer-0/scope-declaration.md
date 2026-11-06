@@ -2,7 +2,7 @@
 
 # Geltungsbereichserklärung
 
-- **Generiert:** 2026-11-02
+- **Generiert:** 2026-11-06
 - **Quelle (aktuelle Version):** [https://rcos.ecohubs.community/de/articles/rcos-templates/layer-0/scope-declaration](https://rcos.ecohubs.community/de/articles/rcos-templates/layer-0/scope-declaration)
 - **Alle RCOS-Vorlagen:** [https://rcos.ecohubs.community/de/articles/rcos-templates](https://rcos.ecohubs.community/de/articles/rcos-templates)
 
@@ -10,6 +10,8 @@
 - **Schicht:** 0 — Identität & Geltungsbereich
 - **Status:** Vorlage — an eure Gemeinschaft anpassen
 - **RCOS-Referenz:** [§2.2](https://rcos.ecohubs.community/de/standard/core/0.1/layer-0-identity-scope#2.2), [§2.5](https://rcos.ecohubs.community/de/standard/core/0.1/layer-0-identity-scope#2.5)
+
+> Zieht die Grenze dessen, was eure Gemeinschaft regelt: die erfassten Vermögenswerte, Entscheidungsbereiche, Aktivitäten und Verantwortlichkeiten — und was ausdrücklich nicht erfasst ist.
 
 ---
 

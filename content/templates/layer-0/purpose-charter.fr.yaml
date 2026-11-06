@@ -1,10 +1,12 @@
 lang: fr
-sourceHash: '39212d28'
+sourceHash: 'd5036468'
 title: Charte de raison d'être
 preamble: |-
   - **Couche :** 0 — Identité et périmètre
   - **Statut :** Modèle — à adapter pour ta communauté
   - **Référence RCOS :** [§2.1](rcos:§2.1), [§2.5](rcos:§2.5)
+
+  > Énonce l'unique raison d'être principale de ta communauté, ses raisons d'être secondaires et ses non-objectifs explicites, ainsi que les conditions dans lesquelles cette raison d'être peut changer.
 
   ---
 sections:

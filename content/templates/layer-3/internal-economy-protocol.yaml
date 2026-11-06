@@ -9,6 +9,8 @@ preamble: |-
   - **Status:** Template — adapt for your community
   - **RCOS reference:** [§5.1](rcos:§5.1), [§5.2](rcos:§5.2), [§5.4](rcos:§5.4), [§5.5](rcos:§5.5)
 
+  > Defines what is commons and what is private, which contributions are recognized and how, any internal units, and the limits that keep value from concentrating in a few hands.
+
   ---
 sections:
   - id: commons-vs-private-classification

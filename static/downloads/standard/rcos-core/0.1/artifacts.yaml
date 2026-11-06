@@ -91,19 +91,32 @@
   i18n:
     en:
       title: Purpose Charter
-      summary: null
+      summary: >-
+        States the one primary purpose your community exists for, its secondary purposes and
+        explicit non-goals, and the conditions under which that purpose may change.
     de:
       title: Zweckcharta
-      summary: null
+      summary: >-
+        Legt den einen primären Zweck fest, für den eure Gemeinschaft existiert, dazu ihre
+        sekundären Zwecke und ausdrücklichen Nicht-Ziele sowie die Bedingungen, unter denen sich
+        dieser Zweck ändern darf.
     es:
       title: Carta de Propósito
-      summary: null
+      summary: >-
+        Establece el único propósito principal por el que existe tu comunidad, sus propósitos
+        secundarios y sus no-objetivos explícitos, y las condiciones bajo las cuales ese propósito
+        puede cambiar.
     fr:
       title: Charte de raison d'être
-      summary: null
+      summary: >-
+        Énonce l'unique raison d'être principale de ta communauté, ses raisons d'être secondaires et
+        ses non-objectifs explicites, ainsi que les conditions dans lesquelles cette raison d'être
+        peut changer.
     pt-br:
       title: Carta de Propósito
-      summary: null
+      summary: >-
+        Declara o único propósito primário pelo qual sua comunidade existe, seus propósitos
+        secundários e não-objetivos explícitos, e as condições em que esse propósito pode mudar.
   mandatory: true
   sectionKeys:
     - purpose-charter.primary-purpose
@@ -118,19 +131,30 @@
   i18n:
     en:
       title: Scope Declaration
-      summary: null
+      summary: >-
+        Draws the boundary of what your community governs: the assets, decision domains, activities,
+        and responsibilities in scope — and what is explicitly out of scope.
     de:
       title: Geltungsbereichserklärung
-      summary: null
+      summary: >-
+        Zieht die Grenze dessen, was eure Gemeinschaft regelt: die erfassten Vermögenswerte,
+        Entscheidungsbereiche, Aktivitäten und Verantwortlichkeiten — und was ausdrücklich nicht
+        erfasst ist.
     es:
       title: Declaración de Alcance
-      summary: null
+      summary: >-
+        Traza el límite de lo que gobierna tu comunidad: los activos, dominios de decisión,
+        actividades y responsabilidades dentro del alcance — y lo que queda explícitamente fuera.
     fr:
       title: Déclaration de périmètre
-      summary: null
+      summary: >-
+        Trace la limite de ce que ta communauté gouverne : les actifs, domaines de décision,
+        activités et responsabilités dans le périmètre — et ce qui en est explicitement exclu.
     pt-br:
       title: Declaração de Escopo
-      summary: null
+      summary: >-
+        Traça o limite do que sua comunidade governa: os ativos, domínios de decisão, atividades e
+        responsabilidades dentro do escopo — e o que fica explicitamente fora dele.
   mandatory: true
   sectionKeys:
     - scope-declaration.in-scope-assets
@@ -145,19 +169,33 @@
   i18n:
     en:
       title: Exit & Separation Protocol
-      summary: null
+      summary: >-
+        Defines how membership ends — voluntary exit at any time, forced exit and suspension with
+        due process — and how assets, roles, and responsibilities are separated when someone leaves.
     de:
       title: Austritts- & Trennungsprotokoll
-      summary: null
+      summary: >-
+        Legt fest, wie eine Mitgliedschaft endet — freiwilliger Austritt jederzeit, erzwungener
+        Austritt und Suspendierung mit fairem Verfahren — und wie Vermögenswerte, Rollen und
+        Verantwortlichkeiten getrennt werden, wenn jemand geht.
     es:
       title: Protocolo de Salida y Separación
-      summary: null
+      summary: >-
+        Define cómo termina la membresía — salida voluntaria en cualquier momento, salida forzada y
+        suspensión con debido proceso — y cómo se separan los activos, roles y responsabilidades
+        cuando alguien se va.
     fr:
       title: Protocole de sortie et de séparation
-      summary: null
+      summary: >-
+        Définit comment l'adhésion prend fin — sortie volontaire à tout moment, sortie forcée et
+        suspension avec une procédure régulière — et comment les actifs, rôles et responsabilités
+        sont séparés lorsqu'une personne part.
     pt-br:
       title: Protocolo de Saída e Separação
-      summary: null
+      summary: >-
+        Define como a associação termina — saída voluntária a qualquer momento, saída forçada e
+        suspensão com devido processo — e como ativos, papéis e responsabilidades são separados
+        quando alguém sai.
   mandatory: true
   sectionKeys:
     - exit-protocol.voluntary-exit
@@ -211,19 +249,31 @@
   i18n:
     en:
       title: Membership State Registry
-      summary: No individual may hold multiple membership states simultaneously.
+      summary: >-
+        Lists every membership state your community recognizes, with the rights and obligations of
+        each and how people move between them. Each person holds exactly one state at a time.
     de:
       title: Mitgliedschaftsstatus-Register
-      summary: Keine Person darf mehrere Mitgliedschaftsstatus gleichzeitig innehaben.
+      summary: >-
+        Listet jeden Mitgliedschaftsstatus auf, den eure Gemeinschaft kennt, mit seinen Rechten und
+        Pflichten und den Wegen zwischen den Status. Jede Person hat zu jedem Zeitpunkt genau einen
+        Status.
     es:
       title: Registro de Estados de Membresía
-      summary: Ninguna persona puede tener múltiples estados de membresía simultáneamente.
+      summary: >-
+        Enumera cada estado de membresía que reconoce tu comunidad, con los derechos y obligaciones
+        de cada uno y cómo se pasa de uno a otro. Cada persona tiene exactamente un estado a la vez.
     fr:
       title: Registre des états de membre
-      summary: Aucune personne ne peut détenir plusieurs états de membre simultanément.
+      summary: >-
+        Répertorie chaque état de membre que reconnaît ta communauté, avec les droits et obligations
+        de chacun et la manière de passer de l'un à l'autre. Chaque personne a exactement un état à
+        la fois.
     pt-br:
       title: Registro de Estados de Associação
-      summary: Nenhuma pessoa pode estar em múltiplos estados de associação ao mesmo tempo.
+      summary: >-
+        Lista cada estado de associação que sua comunidade reconhece, com os direitos e obrigações
+        de cada um e como se passa de um para outro. Cada pessoa tem exatamente um estado por vez.
   mandatory: true
   sectionKeys:
     - membership-state-registry.defined-membership-states
@@ -235,19 +285,33 @@
   i18n:
     en:
       title: Onboarding Protocol
-      summary: null
+      summary: >-
+        Defines how a person becomes a member: the admission criteria, the onboarding steps, the
+        membership state they start in, and how the trial period is evaluated and recorded.
     de:
       title: Onboarding-Protokoll
-      summary: null
+      summary: >-
+        Legt fest, wie eine Person Mitglied wird: die Aufnahmekriterien, die Onboarding-Schritte,
+        der Mitgliedschaftsstatus, mit dem sie beginnt, und wie die Probezeit bewertet und
+        dokumentiert wird.
     es:
       title: Protocolo de Incorporación
-      summary: null
+      summary: >-
+        Define cómo una persona se convierte en miembro: los criterios de admisión, los pasos de
+        incorporación, el estado de membresía con el que empieza y cómo se evalúa y registra el
+        período de prueba.
     fr:
       title: Protocole d'intégration
-      summary: null
+      summary: >-
+        Définit comment une personne devient membre : les critères d'admission, les étapes
+        d'intégration, l'état d'adhésion de départ et la manière dont la période d'essai est évaluée
+        et consignée.
     pt-br:
       title: Protocolo de Integração
-      summary: null
+      summary: >-
+        Define como uma pessoa se torna membro: os critérios de admissão, as etapas de integração, o
+        estado de associação em que ela começa e como o período de experiência é avaliado e
+        registrado.
   mandatory: true
   sectionKeys:
     - onboarding-protocol.admission-criteria
@@ -376,28 +440,32 @@
     en:
       title: Internal Economy Protocol
       summary: >-
-        Any unclassified resource must not be allocated, encumbered, monetized, or transferred until
-        classification is completed.
+        Defines what is commons and what is private, which contributions are recognized and how, any
+        internal units, and the limits that keep value from concentrating in a few hands.
     de:
       title: Protokoll für die interne Wirtschaft
       summary: >-
-        Nicht klassifizierte Ressourcen dürfen weder zugewiesen, belastet, monetarisiert noch
-        übertragen werden, bis die Klassifikation abgeschlossen ist.
+        Legt fest, was Gemeingut und was privat ist, welche Beiträge wie anerkannt werden, welche
+        internen Einheiten es gibt und welche Grenzen verhindern, dass sich Werte in wenigen Händen
+        sammeln.
     es:
       title: Protocolo de Economía Interna
       summary: >-
-        Cualquier recurso sin clasificar no DEBE ser asignado, gravado, monetizado ni transferido
-        hasta que se complete la clasificación.
+        Define qué es bien común y qué es privado, qué contribuciones se reconocen y cómo, las
+        unidades internas que existan y los límites que evitan que el valor se concentre en pocas
+        manos.
     fr:
       title: Protocole d'économie interne
       summary: >-
-        Toute ressource non classifiée NE DOIT PAS être allouée, grevée, monétisée ou transférée
-        tant que la classification n'est pas complétée.
+        Définit ce qui relève des communs et ce qui est privé, quelles contributions sont reconnues
+        et comment, les éventuelles unités internes, et les limites qui empêchent la valeur de se
+        concentrer entre quelques mains.
     pt-br:
       title: Protocolo de Economia Interna
       summary: >-
-        Qualquer recurso não classificado não deve ser alocado, onerado, monetizado ou transferido
-        até que a classificação seja concluída.
+        Define o que é bem comum e o que é privado, quais contribuições são reconhecidas e como, as
+        unidades internas existentes e os limites que impedem que o valor se concentre em poucas
+        mãos.
   mandatory: true
   sectionKeys:
     - internal-economy-protocol.commons-vs-private-classification
@@ -415,19 +483,34 @@
   i18n:
     en:
       title: Treasury Ruleset
-      summary: null
+      summary: >-
+        Sets the rules for the community's shared money: what the treasury covers, where income
+        comes from, who may spend and up to what limit, how it is reported, and the limits on
+        reserves, risk, debt, and conflicts of interest.
     de:
       title: Kassensatzung
-      summary: null
+      summary: >-
+        Regelt das gemeinsame Geld der Gemeinschaft: wofür die Kasse da ist, woher Einnahmen kommen,
+        wer bis zu welcher Grenze ausgeben darf, wie berichtet wird und welche Grenzen für
+        Rücklagen, Risiko, Schulden und Interessenkonflikte gelten.
     es:
       title: Reglamento de Tesorería
-      summary: null
+      summary: >-
+        Fija las reglas del dinero compartido de la comunidad: qué cubre la tesorería, de dónde
+        vienen los ingresos, quién puede gastar y hasta qué límite, cómo se informa y los límites
+        sobre reservas, riesgo, deuda y conflictos de intereses.
     fr:
       title: Règles de trésorerie
-      summary: null
+      summary: >-
+        Fixe les règles de l'argent commun de la communauté : ce que couvre la trésorerie, d'où
+        viennent les revenus, qui peut dépenser et jusqu'à quelle limite, comment on en rend compte,
+        et les limites en matière de réserves, de risque, de dette et de conflits d'intérêts.
     pt-br:
       title: Regulamento da Tesouraria
-      summary: null
+      summary: >-
+        Define as regras do dinheiro compartilhado da comunidade: o que a tesouraria cobre, de onde
+        vem a receita, quem pode gastar e até que limite, como se presta contas e os limites para
+        reservas, risco, dívida e conflitos de interesses.
   mandatory: true
   sectionKeys:
     - treasury-ruleset.treasury-scope
@@ -445,37 +528,34 @@
     en:
       title: Accountability Protocol
       summary: >-
-        **Breach severity guidance:** _<medium = non-compliance with a Membership Agreement
-        obligation that does not threaten member safety or community integrity; serious = Layer 0
-        invariant violation, credible safety concern, persistent bad-faith conduct.>_
+        Defines what happens when an agreement is broken: what triggers a review, how it is
+        investigated, the due-process and anti-retaliation guarantees, the repair and sanction
+        options, and how rights are restored.
     de:
       title: Rechenschaftsprotokoll
       summary: >-
-        **Leitlinie zur Verstoßschwere:** _<mittel = Nichteinhaltung einer Pflicht aus der
-        Mitgliedschaftsvereinbarung, die weder die Sicherheit von Mitgliedern noch die Integrität
-        der Gemeinschaft gefährdet; schwer = Verletzung einer Invariante der Schicht 0, glaubwürdige
-        Sicherheitsbedenken, anhaltend bösgläubiges Verhalten.>_
+        Legt fest, was geschieht, wenn eine Vereinbarung gebrochen wird: was eine Überprüfung
+        auslöst, wie untersucht wird, welche Verfahrensgarantien und welcher Schutz vor Vergeltung
+        gelten, welche Wiedergutmachungs- und Sanktionsoptionen es gibt und wie Rechte
+        wiederhergestellt werden.
     es:
       title: Protocolo de Rendición de Cuentas
       summary: >-
-        **Guía de gravedad del incumplimiento:** _<intermedio = incumplimiento de una obligación del
-        Acuerdo de Membresía que no amenaza la seguridad de los miembros ni la integridad de la
-        comunidad; grave = violación de invariante de la Capa 0, preocupación creíble de seguridad,
-        conducta persistente de mala fe.>_
+        Define qué ocurre cuando se incumple un acuerdo: qué activa una revisión, cómo se investiga,
+        las garantías de debido proceso y contra represalias, las opciones de reparación y sanción,
+        y cómo se restituyen los derechos.
     fr:
       title: Protocole de responsabilisation
       summary: >-
-        **Guide de gravité des manquements :** _<intermédiaire = non-respect d'une obligation de
-        l'Accord d'adhésion qui ne menace pas la sécurité des membres ni l'intégrité de la
-        communauté ; grave = violation d'un invariant de la Couche 0, préoccupation crédible de
-        sécurité, conduite persistante de mauvaise foi.>_
+        Définit ce qui se passe lorsqu'un accord est rompu : ce qui déclenche un examen, comment
+        l'enquête se déroule, les garanties de procédure régulière et contre les représailles, les
+        options de réparation et de sanction, et comment les droits sont rétablis.
     pt-br:
       title: Protocolo de Responsabilização
       summary: >-
-        **Orientação sobre a gravidade do descumprimento:** _<médio = descumprimento de uma
-        obrigação do Acordo de Membresia que não ameaça a segurança dos membros ou a integridade da
-        comunidade; sério = violação de invariante da Camada 0, preocupação crível com segurança,
-        conduta persistente de má-fé.>_
+        Define o que acontece quando um acordo é rompido: o que aciona uma revisão, como se
+        investiga, as garantias de devido processo e contra retaliação, as opções de reparação e
+        sanção, e como os direitos são restaurados.
   mandatory: true
   sectionKeys:
     - accountability-protocol.triggers
@@ -494,28 +574,33 @@
     en:
       title: Conflict Resolution Ladder
       summary: >-
-        Safety-critical conflicts override participation rights, role continuity, and operational
-        convenience.
+        Gives every conflict a clear path, from direct conversation through facilitated dialogue and
+        formal review up to a governance decision, with rules for non-response, deadlock,
+        facilitators, and privacy along the way.
     de:
       title: Konfliktlösungsleiter
       summary: >-
-        Sicherheitskritische Konflikte setzen Teilnahmerechte, Rollenkontinuität und betriebliche
-        Zweckmässigkeit ausser Kraft.
+        Gibt jedem Konflikt einen klaren Weg, vom direkten Gespräch über moderierten Dialog und
+        formelle Überprüfung bis zur Governance-Entscheidung, mit Regeln für Nichtreaktion,
+        Pattsituationen, Moderation und Datenschutz unterwegs.
     es:
       title: Escalera de Resolución de Conflictos
       summary: >-
-        Los conflictos críticos para la seguridad prevalecen sobre los derechos de participación, la
-        continuidad de roles y la conveniencia operativa.
+        Da a cada conflicto un camino claro, desde la conversación directa pasando por el diálogo
+        facilitado y la revisión formal hasta una decisión de gobernanza, con reglas para la falta
+        de respuesta, el punto muerto, la facilitación y la privacidad en el camino.
     fr:
       title: Échelle de résolution des conflits
       summary: >-
-        Les conflits critiques pour la sécurité priment sur les droits de participation, la
-        continuité des rôles et la commodité opérationnelle.
+        Donne à chaque conflit un chemin clair, de la conversation directe au dialogue facilité et à
+        l'examen formel jusqu'à une décision de gouvernance, avec des règles pour la non-réponse,
+        l'impasse, la facilitation et la vie privée en cours de route.
     pt-br:
       title: Escada de Resolução de Conflitos
       summary: >-
-        Conflitos críticos de segurança prevalecem sobre direitos de participação, continuidade de
-        papéis e conveniência operacional.
+        Dá a cada conflito um caminho claro, da conversa direta ao diálogo facilitado e à revisão
+        formal até uma decisão de governança, com regras para não-resposta, impasse, facilitação e
+        privacidade ao longo do caminho.
   mandatory: true
   sectionKeys:
     - conflict-resolution-ladder.conflict-classification
@@ -580,19 +665,34 @@
   i18n:
     en:
       title: Operations Manual
-      summary: null
+      summary: >-
+        Describes how day-to-day work gets done: the core processes, ad-hoc responsibilities, how
+        roles hand work to each other, workload limits, continuity when people are away, and where
+        the documentation lives.
     de:
       title: Betriebshandbuch
-      summary: null
+      summary: >-
+        Beschreibt, wie die tägliche Arbeit erledigt wird: die zentralen Prozesse,
+        Ad-hoc-Verantwortlichkeiten, wie Rollen einander Arbeit übergeben, Belastungsgrenzen,
+        Kontinuität bei Abwesenheit und wo die Dokumentation liegt.
     es:
       title: Manual de Operaciones
-      summary: null
+      summary: >-
+        Describe cómo se hace el trabajo del día a día: los procesos fundamentales, las
+        responsabilidades ad hoc, cómo los roles se pasan el trabajo, los límites de carga, la
+        continuidad cuando alguien no está y dónde vive la documentación.
     fr:
       title: Manuel opérationnel
-      summary: null
+      summary: >-
+        Décrit comment le travail quotidien se fait : les processus essentiels, les responsabilités
+        ponctuelles, la façon dont les rôles se transmettent le travail, les limites de charge, la
+        continuité en cas d'absence et l'emplacement de la documentation.
     pt-br:
       title: Manual de Operações
-      summary: null
+      summary: >-
+        Descreve como o trabalho do dia a dia é feito: os processos essenciais, as responsabilidades
+        ad hoc, como os papéis passam o trabalho entre si, os limites de carga, a continuidade
+        quando alguém está ausente e onde fica a documentação.
   mandatory: true
   sectionKeys:
     - operations-manual.core-operational-processes
@@ -611,33 +711,31 @@
     en:
       title: Role Registry
       summary: >-
-        **"In good standing"** means a Full Member who has met their participation expectations in
-        the last _<period>_ and is not currently subject to an active accountability process or
-        conflict review under Layer 4.
+        Lists every operational and functional role in your community with its purpose, domain, and
+        current holder, so it is always clear who does what — and that no one's role is unwritten.
     de:
       title: Rollenverzeichnis
       summary: >-
-        **„In gutem Status"** bedeutet ein Vollmitglied, das seine Mitwirkungserwartungen in den
-        letzten _<Zeitraum>_ erfüllt hat und derzeit keinem aktiven Rechenschaftsprozess oder
-        Konfliktprüfung nach Schicht 4 unterliegt.
+        Listet jede operative und funktionale Rolle eurer Gemeinschaft mit Zweck,
+        Zuständigkeitsbereich und aktueller Besetzung auf, damit immer klar ist, wer was tut — und
+        keine Rolle ungeschrieben bleibt.
     es:
       title: Registro de Roles
       summary: >-
-        **"En buen estado"** significa un Miembro Pleno que ha cumplido sus expectativas de
-        participación en el último _<período>_ y no está actualmente sujeto a un proceso de
-        rendición de cuentas activo ni a una revisión de conflicto bajo la Capa 4.
+        Enumera cada rol operativo y funcional de tu comunidad con su propósito, dominio y titular
+        actual, para que siempre quede claro quién hace qué — y ningún rol quede sin escribir.
     fr:
       title: Registre des rôles
       summary: >-
-        **« En règle »** signifie un Membre à part entière qui a rempli ses attentes de
-        participation au cours de la dernière _<période>_ et qui ne fait pas actuellement l'objet
-        d'un processus de redevabilité ou d'un examen de conflit en cours au titre de la Couche 4.
+        Répertorie chaque rôle opérationnel et fonctionnel de ta communauté avec sa raison d'être,
+        son domaine et la personne qui l'occupe, pour qu'il soit toujours clair qui fait quoi — et
+        qu'aucun rôle ne reste non écrit.
     pt-br:
       title: Registro de Papéis
       summary: >-
-        **"Em situação regular"** significa um Membro Pleno que cumpriu suas expectativas de
-        participação no último _<período>_ e não está atualmente sujeito a um processo ativo de
-        responsabilização ou revisão de conflito sob a Camada 4.
+        Lista cada papel operacional e funcional da sua comunidade com seu propósito, domínio e
+        titular atual, para que sempre fique claro quem faz o quê — e nenhum papel fique sem
+        registro.
   mandatory: true
   sectionKeys:
     - role-registry.overview
@@ -652,19 +750,34 @@
   i18n:
     en:
       title: Change Protocol
-      summary: If classification is unclear, it defaults to the higher-impact type.
+      summary: >-
+        Defines how the community's rules change: how a change is proposed, classified, reviewed,
+        adopted or rejected, rolled out and rolled back — plus the narrow paths for emergency
+        changes and experiments.
     de:
       title: Änderungsprotokoll
-      summary: Wenn die Klassifikation unklar ist, wird standardmäßig der höhere Auswirkungstyp angenommen.
+      summary: >-
+        Legt fest, wie sich die Regeln der Gemeinschaft ändern: wie eine Änderung vorgeschlagen,
+        eingestuft, geprüft, angenommen oder abgelehnt, eingeführt und zurückgenommen wird — dazu
+        die engen Wege für Notfalländerungen und Experimente.
     es:
       title: Protocolo de Cambios
-      summary: Si la clasificación no está clara, se aplica por defecto el tipo de mayor impacto.
+      summary: >-
+        Define cómo cambian las reglas de la comunidad: cómo se propone, clasifica, revisa, adopta o
+        rechaza, implementa y revierte un cambio — además de las vías estrechas para cambios de
+        emergencia y experimentos.
     fr:
       title: Protocole de changement
-      summary: En cas de doute sur la classification, le type à impact supérieur s'applique par défaut.
+      summary: >-
+        Définit comment les règles de la communauté changent : comment un changement est proposé,
+        classifié, examiné, adopté ou rejeté, mis en place et annulé — ainsi que les voies étroites
+        pour les changements d'urgence et les expérimentations.
     pt-br:
       title: Protocolo de Mudanças
-      summary: Se a classificação não for clara, ela é elevada por padrão ao tipo de maior impacto.
+      summary: >-
+        Define como as regras da comunidade mudam: como uma mudança é proposta, classificada,
+        revisada, adotada ou rejeitada, implementada e revertida — além dos caminhos estreitos para
+        mudanças de emergência e experimentos.
   mandatory: true
   sectionKeys:
     - change-protocol.how-changes-are-proposed

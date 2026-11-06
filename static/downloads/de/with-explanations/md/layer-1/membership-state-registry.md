@@ -2,7 +2,7 @@
 
 # Mitgliedschaftsstatus-Register
 
-- **Generiert:** 2026-11-02
+- **Generiert:** 2026-11-06
 - **Quelle (aktuelle Version):** [https://rcos.ecohubs.community/de/articles/rcos-templates/layer-1/membership-state-registry](https://rcos.ecohubs.community/de/articles/rcos-templates/layer-1/membership-state-registry)
 - **Alle RCOS-Vorlagen:** [https://rcos.ecohubs.community/de/articles/rcos-templates](https://rcos.ecohubs.community/de/articles/rcos-templates)
 
@@ -10,6 +10,8 @@
 - **Ebene:** 1 — Mitgliedschaftssystem
 - **Status:** Vorlage — an eure Gemeinschaft anpassen
 - **RCOS-Referenz:** [§3.1](https://rcos.ecohubs.community/de/standard/core/0.1/layer-1-membership-system#3.1)
+
+> Listet jeden Mitgliedschaftsstatus auf, den eure Gemeinschaft kennt, mit seinen Rechten und Pflichten und den Wegen zwischen den Status. Jede Person hat zu jedem Zeitpunkt genau einen Status.
 
 ---
 

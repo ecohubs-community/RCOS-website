@@ -1,10 +1,12 @@
 lang: fr
-sourceHash: 'ff1d75cd'
+sourceHash: 'c0ef6de9'
 title: Protocole d'économie interne
 preamble: |-
   - **Couche :** 3 — Système économique et des ressources
   - **Statut :** Modèle — à adapter pour ta communauté
   - **Référence RCOS :** [§5.1](rcos:§5.1), [§5.2](rcos:§5.2), [§5.4](rcos:§5.4), [§5.5](rcos:§5.5)
+
+  > Définit ce qui relève des communs et ce qui est privé, quelles contributions sont reconnues et comment, les éventuelles unités internes, et les limites qui empêchent la valeur de se concentrer entre quelques mains.
 
   ---
 sections:

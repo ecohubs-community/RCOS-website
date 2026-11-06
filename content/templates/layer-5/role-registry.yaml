@@ -9,6 +9,8 @@ preamble: |-
   - **Status:** Template — adapt for your community
   - **RCOS reference:** [§7.1](rcos:§7.1), [§7.6](rcos:§7.6)
 
+  > Lists every operational and functional role in your community with its purpose, domain, and current holder, so it is always clear who does what — and that no one's role is unwritten.
+
   ---
 sections:
   - id: overview

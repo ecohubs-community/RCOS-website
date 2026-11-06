@@ -1,10 +1,12 @@
 lang: pt-br
-sourceHash: '2786224c'
+sourceHash: 'd78d07e8'
 title: Registro de Papéis
 preamble: |-
   - **Camada:** 5 — Operações e Coordenação
   - **Status:** Modelo — adapte para sua comunidade
   - **Referência RCOS:** [§7.1](rcos:§7.1), [§7.6](rcos:§7.6)
+
+  > Lista cada papel operacional e funcional da sua comunidade com seu propósito, domínio e titular atual, para que sempre fique claro quem faz o quê — e nenhum papel fique sem registro.
 
   ---
 sections:

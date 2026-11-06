@@ -2,7 +2,7 @@
 
 # Manual de Operações
 
-- **Gerado em:** 2026-11-02
+- **Gerado em:** 2026-11-06
 - **Fonte (versão mais recente):** [https://rcos.ecohubs.community/pt-br/articles/rcos-templates/layer-5/operations-manual](https://rcos.ecohubs.community/pt-br/articles/rcos-templates/layer-5/operations-manual)
 - **Todos os modelos RCOS:** [https://rcos.ecohubs.community/pt-br/articles/rcos-templates](https://rcos.ecohubs.community/pt-br/articles/rcos-templates)
 
@@ -10,6 +10,8 @@
 - **Camada:** 5 — Operações e Coordenação
 - **Status:** Modelo — adapte para a sua comunidade
 - **Referência RCOS:** [§7.1](https://rcos.ecohubs.community/pt-br/standard/core/0.1/layer-5-operations-coordination#7.1), [§7.3](https://rcos.ecohubs.community/pt-br/standard/core/0.1/layer-5-operations-coordination#7.3), [§7.4](https://rcos.ecohubs.community/pt-br/standard/core/0.1/layer-5-operations-coordination#7.4), [§7.5](https://rcos.ecohubs.community/pt-br/standard/core/0.1/layer-5-operations-coordination#7.5), [§7.6](https://rcos.ecohubs.community/pt-br/standard/core/0.1/layer-5-operations-coordination#7.6)
+
+> Descreve como o trabalho do dia a dia é feito: os processos essenciais, as responsabilidades ad hoc, como os papéis passam o trabalho entre si, os limites de carga, a continuidade quando alguém está ausente e onde fica a documentação.
 
 ---
 

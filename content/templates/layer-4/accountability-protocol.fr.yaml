@@ -1,10 +1,12 @@
 lang: fr
-sourceHash: '00595305'
+sourceHash: 'df071f4d'
 title: Protocole de responsabilisation
 preamble: |-
   - **Couche :** 4 — Conflit, réparation et responsabilisation
   - **Statut :** Modèle — à adapter pour ta communauté
   - **Référence RCOS :** [§6.4](rcos:§6.4), [§6.5](rcos:§6.5)
+
+  > Définit ce qui se passe lorsqu'un accord est rompu : ce qui déclenche un examen, comment l'enquête se déroule, les garanties de procédure régulière et contre les représailles, les options de réparation et de sanction, et comment les droits sont rétablis.
 
   ---
 sections:

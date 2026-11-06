@@ -9,6 +9,8 @@ preamble: |-
   - **Status:** Template — adapt for your community
   - **RCOS reference:** [§7.1](rcos:§7.1), [§7.3](rcos:§7.3), [§7.4](rcos:§7.4), [§7.5](rcos:§7.5), [§7.6](rcos:§7.6)
 
+  > Describes how day-to-day work gets done: the core processes, ad-hoc responsibilities, how roles hand work to each other, workload limits, continuity when people are away, and where the documentation lives.
+
   ---
 sections:
   - id: core-operational-processes

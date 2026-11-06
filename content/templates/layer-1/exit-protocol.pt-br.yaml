@@ -1,10 +1,12 @@
 lang: pt-br
-sourceHash: '7f9faef1'
+sourceHash: '66d3c1f2'
 title: Protocolo de Saída e Separação
 preamble: |-
   - **Camada:** 1 — Sistema de Membresia
   - **Status:** Modelo — adapte para sua comunidade
   - **Referência RCOS:** [§3.6](rcos:§3.6), [§3.7](rcos:§3.7), [§3.8](rcos:§3.8)
+
+  > Define como a associação termina — saída voluntária a qualquer momento, saída forçada e suspensão com devido processo — e como ativos, papéis e responsabilidades são separados quando alguém sai.
 
   ---
 sections:

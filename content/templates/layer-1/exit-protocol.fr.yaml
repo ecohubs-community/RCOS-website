@@ -1,10 +1,12 @@
 lang: fr
-sourceHash: '7f9faef1'
+sourceHash: '66d3c1f2'
 title: Protocole de sortie et de séparation
 preamble: |-
   - **Couche :** 1 — Système d'adhésion
   - **Statut :** Modèle — à adapter pour ta communauté
   - **Référence RCOS :** [§3.6](rcos:§3.6), [§3.7](rcos:§3.7), [§3.8](rcos:§3.8)
+
+  > Définit comment l'adhésion prend fin — sortie volontaire à tout moment, sortie forcée et suspension avec une procédure régulière — et comment les actifs, rôles et responsabilités sont séparés lorsqu'une personne part.
 
   ---
 sections:

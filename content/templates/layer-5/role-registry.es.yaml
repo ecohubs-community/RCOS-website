@@ -1,10 +1,12 @@
 lang: es
-sourceHash: '2786224c'
+sourceHash: 'd78d07e8'
 title: Registro de Roles
 preamble: |-
   - **Capa:** 5 — Operaciones y Coordinación
   - **Estado:** Plantilla — adapta para tu comunidad
   - **Referencia RCOS:** [§7.1](rcos:§7.1), [§7.6](rcos:§7.6)
+
+  > Enumera cada rol operativo y funcional de tu comunidad con su propósito, dominio y titular actual, para que siempre quede claro quién hace qué — y ningún rol quede sin escribir.
 
   ---
 sections:

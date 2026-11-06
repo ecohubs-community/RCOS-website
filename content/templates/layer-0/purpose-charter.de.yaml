@@ -1,10 +1,12 @@
 lang: de
-sourceHash: '39212d28'
+sourceHash: 'd5036468'
 title: Zweckcharta
 preamble: |-
   - **Schicht:** 0 — Identität & Geltungsbereich
   - **Status:** Vorlage — an eure Gemeinschaft anpassen
   - **RCOS-Referenz:** [§2.1](rcos:§2.1), [§2.5](rcos:§2.5)
+
+  > Legt den einen primären Zweck fest, für den eure Gemeinschaft existiert, dazu ihre sekundären Zwecke und ausdrücklichen Nicht-Ziele sowie die Bedingungen, unter denen sich dieser Zweck ändern darf.
 
   ---
 sections:

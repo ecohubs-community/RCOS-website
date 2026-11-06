@@ -1,10 +1,12 @@
 lang: fr
-sourceHash: '094e0e0d'
+sourceHash: '954141bf'
 title: Manuel opérationnel
 preamble: |-
   - **Couche :** 5 — Opérations et coordination
   - **Statut :** Modèle — à adapter pour ta communauté
   - **Référence RCOS :** [§7.1](rcos:§7.1), [§7.3](rcos:§7.3), [§7.4](rcos:§7.4), [§7.5](rcos:§7.5), [§7.6](rcos:§7.6)
+
+  > Décrit comment le travail quotidien se fait : les processus essentiels, les responsabilités ponctuelles, la façon dont les rôles se transmettent le travail, les limites de charge, la continuité en cas d'absence et l'emplacement de la documentation.
 
   ---
 sections:

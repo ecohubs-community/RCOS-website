@@ -2,7 +2,7 @@
 
 # Declaração de Escopo
 
-- **Gerado em:** 2026-11-02
+- **Gerado em:** 2026-11-06
 - **Fonte (versão mais recente):** [https://rcos.ecohubs.community/pt-br/articles/rcos-templates/layer-0/scope-declaration](https://rcos.ecohubs.community/pt-br/articles/rcos-templates/layer-0/scope-declaration)
 - **Todos os modelos RCOS:** [https://rcos.ecohubs.community/pt-br/articles/rcos-templates](https://rcos.ecohubs.community/pt-br/articles/rcos-templates)
 
@@ -10,6 +10,8 @@
 - **Camada:** 0 — Identidade e Escopo
 - **Status:** Modelo — adapte para sua comunidade
 - **Referência RCOS:** [§2.2](https://rcos.ecohubs.community/pt-br/standard/core/0.1/layer-0-identity-scope#2.2), [§2.5](https://rcos.ecohubs.community/pt-br/standard/core/0.1/layer-0-identity-scope#2.5)
+
+> Traça o limite do que sua comunidade governa: os ativos, domínios de decisão, atividades e responsabilidades dentro do escopo — e o que fica explicitamente fora dele.
 
 ---
 

@@ -2,7 +2,7 @@
 
 # Treasury Ruleset
 
-- **Generated:** 2026-11-02
+- **Generated:** 2026-11-06
 - **Source (latest version):** [https://rcos.ecohubs.community/articles/rcos-templates/layer-3/treasury-ruleset](https://rcos.ecohubs.community/articles/rcos-templates/layer-3/treasury-ruleset)
 - **All RCOS templates:** [https://rcos.ecohubs.community/articles/rcos-templates](https://rcos.ecohubs.community/articles/rcos-templates)
 
@@ -10,6 +10,8 @@
 - **Layer:** 3 — Economic & Resource System
 - **Status:** Template — adapt for your community
 - **RCOS reference:** [§5.3](https://rcos.ecohubs.community/standard/core/0.1/layer-3-economic-resource-system#5.3), [§5.5](https://rcos.ecohubs.community/standard/core/0.1/layer-3-economic-resource-system#5.5)
+
+> Sets the rules for the community's shared money: what the treasury covers, where income comes from, who may spend and up to what limit, how it is reported, and the limits on reserves, risk, debt, and conflicts of interest.
 
 ---
 

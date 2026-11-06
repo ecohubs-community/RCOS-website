@@ -2,7 +2,7 @@
 
 # Protocolo de Rendición de Cuentas
 
-- **Generado:** 2026-11-02
+- **Generado:** 2026-11-06
 - **Fuente (versión más reciente):** [https://rcos.ecohubs.community/es/articles/rcos-templates/layer-4/accountability-protocol](https://rcos.ecohubs.community/es/articles/rcos-templates/layer-4/accountability-protocol)
 - **Todas las plantillas RCOS:** [https://rcos.ecohubs.community/es/articles/rcos-templates](https://rcos.ecohubs.community/es/articles/rcos-templates)
 
@@ -10,6 +10,8 @@
 - **Capa:** 4 — Conflicto, Reparación y Rendición de Cuentas
 - **Estado:** Plantilla — adaptar para tu comunidad
 - **Referencia RCOS:** [§6.4](https://rcos.ecohubs.community/es/standard/core/0.1/layer-4-conflict-repair-accountability#6.4), [§6.5](https://rcos.ecohubs.community/es/standard/core/0.1/layer-4-conflict-repair-accountability#6.5)
+
+> Define qué ocurre cuando se incumple un acuerdo: qué activa una revisión, cómo se investiga, las garantías de debido proceso y contra represalias, las opciones de reparación y sanción, y cómo se restituyen los derechos.
 
 ---
 

@@ -2,7 +2,7 @@
 
 # Conflict Resolution Ladder
 
-- **Generated:** 2026-11-02
+- **Generated:** 2026-11-06
 - **Source (latest version):** [https://rcos.ecohubs.community/articles/rcos-templates/layer-4/conflict-resolution-ladder](https://rcos.ecohubs.community/articles/rcos-templates/layer-4/conflict-resolution-ladder)
 - **All RCOS templates:** [https://rcos.ecohubs.community/articles/rcos-templates](https://rcos.ecohubs.community/articles/rcos-templates)
 
@@ -10,6 +10,8 @@
 - **Layer:** 4 — Conflict, Repair & Accountability
 - **Status:** Template — adapt for your community
 - **RCOS reference:** [§6.1](https://rcos.ecohubs.community/standard/core/0.1/layer-4-conflict-repair-accountability#6.1), [§6.2](https://rcos.ecohubs.community/standard/core/0.1/layer-4-conflict-repair-accountability#6.2), [§6.3](https://rcos.ecohubs.community/standard/core/0.1/layer-4-conflict-repair-accountability#6.3), [§6.5](https://rcos.ecohubs.community/standard/core/0.1/layer-4-conflict-repair-accountability#6.5)
+
+> Gives every conflict a clear path, from direct conversation through facilitated dialogue and formal review up to a governance decision, with rules for non-response, deadlock, facilitators, and privacy along the way.
 
 ---
 

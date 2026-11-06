@@ -2,7 +2,7 @@
 
 # Protocole de sortie et de séparation
 
-- **Généré:** 2026-11-02
+- **Généré:** 2026-11-06
 - **Source (version la plus récente):** [https://rcos.ecohubs.community/fr/articles/rcos-templates/layer-1/exit-protocol](https://rcos.ecohubs.community/fr/articles/rcos-templates/layer-1/exit-protocol)
 - **Tous les modèles RCOS:** [https://rcos.ecohubs.community/fr/articles/rcos-templates](https://rcos.ecohubs.community/fr/articles/rcos-templates)
 
@@ -10,6 +10,8 @@
 - **Couche :** 1 — Système d'adhésion
 - **Statut :** Modèle — à adapter pour ta communauté
 - **Référence RCOS :** [§3.6](https://rcos.ecohubs.community/fr/standard/core/0.1/layer-1-membership-system#3.6), [§3.7](https://rcos.ecohubs.community/fr/standard/core/0.1/layer-1-membership-system#3.7), [§3.8](https://rcos.ecohubs.community/fr/standard/core/0.1/layer-1-membership-system#3.8)
+
+> Définit comment l'adhésion prend fin — sortie volontaire à tout moment, sortie forcée et suspension avec une procédure régulière — et comment les actifs, rôles et responsabilités sont séparés lorsqu'une personne part.
 
 ---
 

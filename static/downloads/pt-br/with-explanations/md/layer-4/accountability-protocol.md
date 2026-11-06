@@ -2,7 +2,7 @@
 
 # Protocolo de Responsabilização
 
-- **Gerado em:** 2026-11-02
+- **Gerado em:** 2026-11-06
 - **Fonte (versão mais recente):** [https://rcos.ecohubs.community/pt-br/articles/rcos-templates/layer-4/accountability-protocol](https://rcos.ecohubs.community/pt-br/articles/rcos-templates/layer-4/accountability-protocol)
 - **Todos os modelos RCOS:** [https://rcos.ecohubs.community/pt-br/articles/rcos-templates](https://rcos.ecohubs.community/pt-br/articles/rcos-templates)
 
@@ -10,6 +10,8 @@
 - **Camada:** 4 — Conflito, Reparação e Responsabilização
 - **Status:** Modelo — adapte para a sua comunidade
 - **Referência RCOS:** [§6.4](https://rcos.ecohubs.community/pt-br/standard/core/0.1/layer-4-conflict-repair-accountability#6.4), [§6.5](https://rcos.ecohubs.community/pt-br/standard/core/0.1/layer-4-conflict-repair-accountability#6.5)
+
+> Define o que acontece quando um acordo é rompido: o que aciona uma revisão, como se investiga, as garantias de devido processo e contra retaliação, as opções de reparação e sanção, e como os direitos são restaurados.
 
 ---
 

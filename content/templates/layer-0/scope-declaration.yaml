@@ -9,6 +9,8 @@ preamble: |-
   - **Status:** Template — adapt for your community
   - **RCOS reference:** [§2.2](rcos:§2.2), [§2.5](rcos:§2.5)
 
+  > Draws the boundary of what your community governs: the assets, decision domains, activities, and responsibilities in scope — and what is explicitly out of scope.
+
   ---
 sections:
   - id: in-scope-assets

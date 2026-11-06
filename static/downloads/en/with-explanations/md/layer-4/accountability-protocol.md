@@ -2,7 +2,7 @@
 
 # Accountability Protocol
 
-- **Generated:** 2026-11-02
+- **Generated:** 2026-11-06
 - **Source (latest version):** [https://rcos.ecohubs.community/articles/rcos-templates/layer-4/accountability-protocol](https://rcos.ecohubs.community/articles/rcos-templates/layer-4/accountability-protocol)
 - **All RCOS templates:** [https://rcos.ecohubs.community/articles/rcos-templates](https://rcos.ecohubs.community/articles/rcos-templates)
 
@@ -10,6 +10,8 @@
 - **Layer:** 4 — Conflict, Repair & Accountability
 - **Status:** Template — adapt for your community
 - **RCOS reference:** [§6.4](https://rcos.ecohubs.community/standard/core/0.1/layer-4-conflict-repair-accountability#6.4), [§6.5](https://rcos.ecohubs.community/standard/core/0.1/layer-4-conflict-repair-accountability#6.5)
+
+> Defines what happens when an agreement is broken: what triggers a review, how it is investigated, the due-process and anti-retaliation guarantees, the repair and sanction options, and how rights are restored.
 
 ---
 

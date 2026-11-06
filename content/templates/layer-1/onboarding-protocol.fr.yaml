@@ -1,10 +1,12 @@
 lang: fr
-sourceHash: 'cbf0e539'
+sourceHash: '498e1bc1'
 title: Protocole d'intégration
 preamble: |-
   - **Couche :** 1 — Système d'adhésion
   - **Statut :** Modèle — à adapter pour ta communauté
   - **Référence RCOS :** [§3.2](rcos:§3.2), [§3.3](rcos:§3.3), [§3.8](rcos:§3.8)
+
+  > Définit comment une personne devient membre : les critères d'admission, les étapes d'intégration, l'état d'adhésion de départ et la manière dont la période d'essai est évaluée et consignée.
 
   ---
 sections:

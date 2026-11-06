@@ -2,7 +2,7 @@
 
 # Protocolo de Economia Interna
 
-- **Gerado em:** 2026-11-02
+- **Gerado em:** 2026-11-06
 - **Fonte (versão mais recente):** [https://rcos.ecohubs.community/pt-br/articles/rcos-templates/layer-3/internal-economy-protocol](https://rcos.ecohubs.community/pt-br/articles/rcos-templates/layer-3/internal-economy-protocol)
 - **Todos os modelos RCOS:** [https://rcos.ecohubs.community/pt-br/articles/rcos-templates](https://rcos.ecohubs.community/pt-br/articles/rcos-templates)
 
@@ -10,6 +10,8 @@
 - **Camada:** 3 — Sistema Econômico e de Recursos
 - **Status:** Modelo — adapte para sua comunidade
 - **Referência RCOS:** [§5.1](https://rcos.ecohubs.community/pt-br/standard/core/0.1/layer-3-economic-resource-system#5.1), [§5.2](https://rcos.ecohubs.community/pt-br/standard/core/0.1/layer-3-economic-resource-system#5.2), [§5.4](https://rcos.ecohubs.community/pt-br/standard/core/0.1/layer-3-economic-resource-system#5.4), [§5.5](https://rcos.ecohubs.community/pt-br/standard/core/0.1/layer-3-economic-resource-system#5.5)
+
+> Define o que é bem comum e o que é privado, quais contribuições são reconhecidas e como, as unidades internas existentes e os limites que impedem que o valor se concentre em poucas mãos.
 
 ---
 

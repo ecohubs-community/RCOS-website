@@ -2,7 +2,7 @@
 
 # Rollenverzeichnis
 
-- **Generiert:** 2026-11-02
+- **Generiert:** 2026-11-06
 - **Quelle (aktuelle Version):** [https://rcos.ecohubs.community/de/articles/rcos-templates/layer-5/role-registry](https://rcos.ecohubs.community/de/articles/rcos-templates/layer-5/role-registry)
 - **Alle RCOS-Vorlagen:** [https://rcos.ecohubs.community/de/articles/rcos-templates](https://rcos.ecohubs.community/de/articles/rcos-templates)
 
@@ -10,6 +10,8 @@
 - **Ebene:** 5 — Betrieb & Koordination
 - **Status:** Vorlage — an eure Gemeinschaft anpassen
 - **RCOS-Referenz:** [§7.1](https://rcos.ecohubs.community/de/standard/core/0.1/layer-5-operations-coordination#7.1), [§7.6](https://rcos.ecohubs.community/de/standard/core/0.1/layer-5-operations-coordination#7.6)
+
+> Listet jede operative und funktionale Rolle eurer Gemeinschaft mit Zweck, Zuständigkeitsbereich und aktueller Besetzung auf, damit immer klar ist, wer was tut — und keine Rolle ungeschrieben bleibt.
 
 ---
 

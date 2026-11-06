@@ -9,6 +9,8 @@ preamble: |-
   - **Status:** Template — adapt for your community
   - **RCOS reference:** [§3.1](rcos:§3.1)
 
+  > Lists every membership state your community recognizes, with the rights and obligations of each and how people move between them. Each person holds exactly one state at a time.
+
   ---
 sections:
   - id: defined-membership-states

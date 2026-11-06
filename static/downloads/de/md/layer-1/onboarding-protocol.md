@@ -2,7 +2,7 @@
 
 # Onboarding-Protokoll
 
-- **Generiert:** 2026-11-02
+- **Generiert:** 2026-11-06
 - **Quelle (aktuelle Version):** [https://rcos.ecohubs.community/de/articles/rcos-templates/layer-1/onboarding-protocol](https://rcos.ecohubs.community/de/articles/rcos-templates/layer-1/onboarding-protocol)
 - **Alle RCOS-Vorlagen:** [https://rcos.ecohubs.community/de/articles/rcos-templates](https://rcos.ecohubs.community/de/articles/rcos-templates)
 
@@ -10,6 +10,8 @@
 - **Schicht:** 1 — Mitgliedschaftssystem
 - **Status:** Vorlage — an deine Gemeinschaft anpassen
 - **RCOS-Referenz:** [§3.2](https://rcos.ecohubs.community/de/standard/core/0.1/layer-1-membership-system#3.2), [§3.3](https://rcos.ecohubs.community/de/standard/core/0.1/layer-1-membership-system#3.3), [§3.8](https://rcos.ecohubs.community/de/standard/core/0.1/layer-1-membership-system#3.8)
+
+> Legt fest, wie eine Person Mitglied wird: die Aufnahmekriterien, die Onboarding-Schritte, der Mitgliedschaftsstatus, mit dem sie beginnt, und wie die Probezeit bewertet und dokumentiert wird.
 
 ---
 

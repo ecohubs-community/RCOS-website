@@ -1,10 +1,12 @@
 lang: de
-sourceHash: 'ff1d75cd'
+sourceHash: 'c0ef6de9'
 title: Protokoll für die interne Wirtschaft
 preamble: |-
   - **Ebene:** 3 — Wirtschafts- & Ressourcensystem
   - **Status:** Vorlage — an deine Gemeinschaft anpassen
   - **RCOS-Referenz:** [§5.1](rcos:§5.1), [§5.2](rcos:§5.2), [§5.4](rcos:§5.4), [§5.5](rcos:§5.5)
+
+  > Legt fest, was Gemeingut und was privat ist, welche Beiträge wie anerkannt werden, welche internen Einheiten es gibt und welche Grenzen verhindern, dass sich Werte in wenigen Händen sammeln.
 
   ---
 sections:

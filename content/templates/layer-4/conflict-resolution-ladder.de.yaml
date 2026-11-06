@@ -1,10 +1,12 @@
 lang: de
-sourceHash: '74c79c52'
+sourceHash: '9706d5ba'
 title: Konfliktlösungsleiter
 preamble: |-
   - **Schicht:** 4 — Konflikt, Wiedergutmachung & Rechenschaftspflicht
   - **Status:** Vorlage — an deine Gemeinschaft anpassen
   - **RCOS-Referenz:** [§6.1](rcos:§6.1), [§6.2](rcos:§6.2), [§6.3](rcos:§6.3), [§6.5](rcos:§6.5)
+
+  > Gibt jedem Konflikt einen klaren Weg, vom direkten Gespräch über moderierten Dialog und formelle Überprüfung bis zur Governance-Entscheidung, mit Regeln für Nichtreaktion, Pattsituationen, Moderation und Datenschutz unterwegs.
 
   ---
 sections:

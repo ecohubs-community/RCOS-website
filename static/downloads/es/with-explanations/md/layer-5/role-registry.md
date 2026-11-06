@@ -2,7 +2,7 @@
 
 # Registro de Roles
 
-- **Generado:** 2026-11-02
+- **Generado:** 2026-11-06
 - **Fuente (versión más reciente):** [https://rcos.ecohubs.community/es/articles/rcos-templates/layer-5/role-registry](https://rcos.ecohubs.community/es/articles/rcos-templates/layer-5/role-registry)
 - **Todas las plantillas RCOS:** [https://rcos.ecohubs.community/es/articles/rcos-templates](https://rcos.ecohubs.community/es/articles/rcos-templates)
 
@@ -10,6 +10,8 @@
 - **Capa:** 5 — Operaciones y Coordinación
 - **Estado:** Plantilla — adapta para tu comunidad
 - **Referencia RCOS:** [§7.1](https://rcos.ecohubs.community/es/standard/core/0.1/layer-5-operations-coordination#7.1), [§7.6](https://rcos.ecohubs.community/es/standard/core/0.1/layer-5-operations-coordination#7.6)
+
+> Enumera cada rol operativo y funcional de tu comunidad con su propósito, dominio y titular actual, para que siempre quede claro quién hace qué — y ningún rol quede sin escribir.
 
 ---
 

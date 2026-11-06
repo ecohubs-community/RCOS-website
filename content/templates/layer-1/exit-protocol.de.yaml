@@ -1,10 +1,12 @@
 lang: de
-sourceHash: '7f9faef1'
+sourceHash: '66d3c1f2'
 title: Austritts- & Trennungsprotokoll
 preamble: |-
   - **Schicht:** 1 — Mitgliedschaftssystem
   - **Status:** Vorlage — an deine Gemeinschaft anpassen
   - **RCOS-Referenz:** [§3.6](rcos:§3.6), [§3.7](rcos:§3.7), [§3.8](rcos:§3.8)
+
+  > Legt fest, wie eine Mitgliedschaft endet — freiwilliger Austritt jederzeit, erzwungener Austritt und Suspendierung mit fairem Verfahren — und wie Vermögenswerte, Rollen und Verantwortlichkeiten getrennt werden, wenn jemand geht.
 
   ---
 sections:
