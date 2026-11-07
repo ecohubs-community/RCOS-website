@@ -17,7 +17,7 @@
 
 ## Primary Purpose
 
-*RCOS clauses: [2.1.1](https://rcos.ecohubs.community/standard/core/0.1/layer-0-identity-scope#2.1.1), [2.1.2](https://rcos.ecohubs.community/standard/core/0.1/layer-0-identity-scope#2.1.2), [2.1.5](https://rcos.ecohubs.community/standard/core/0.1/layer-0-identity-scope#2.1.5)*
+*RCOS clauses: [2.1.1](https://rcos.ecohubs.community/standard/core/0.1/layer-0-identity-scope#2.1.1), [2.1.2](https://rcos.ecohubs.community/standard/core/0.1/layer-0-identity-scope#2.1.2), [2.1.3](https://rcos.ecohubs.community/standard/core/0.1/layer-0-identity-scope#2.1.3), [2.1.5](https://rcos.ecohubs.community/standard/core/0.1/layer-0-identity-scope#2.1.5)*
 
 <details data-kind="rationale">
 <summary>Why a single enduring purpose?</summary>
@@ -59,7 +59,7 @@ List concrete secondary outcomes the community pursues. They must not conflict w
 
 ## Non-Goals and Exclusions
 
-*RCOS clauses: [2.1.5](https://rcos.ecohubs.community/standard/core/0.1/layer-0-identity-scope#2.1.5)*
+*RCOS clauses: [2.1.5](https://rcos.ecohubs.community/standard/core/0.1/layer-0-identity-scope#2.1.5) — this section is recommended, not required: naming non-goals makes it easier to see when an action or decision contradicts the primary purpose.*
 
 <details data-kind="rationale">
 <summary>Why state what the community is not?</summary>
@@ -71,7 +71,7 @@ Communities drift by accretion — one uncontested assumption at a time. Naming 
 <details data-kind="instructions">
 <summary>How to fill this in</summary>
 
-Name the things your community is explicitly NOT, especially identities or roles others might assume by default (political party, investment vehicle, religious group, etc.).
+Name the things your community is explicitly NOT, especially identities or roles others might assume by default (political party, investment vehicle, religious group, etc.). Recommended, not required by RCOS-Core. Remove the section entirely if you have none.
 
 </details>
 

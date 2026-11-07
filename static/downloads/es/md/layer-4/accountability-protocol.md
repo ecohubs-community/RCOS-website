@@ -46,7 +46,7 @@ Se inicia una revisión de rendición de cuentas cuando:
 
 ## Protecciones contra Represalias
 
-*Cláusulas RCOS: [6.3.2](https://rcos.ecohubs.community/es/standard/core/0.1/layer-4-conflict-repair-accountability#6.3.2)*
+*Cláusulas RCOS: [6.3.2](https://rcos.ecohubs.community/es/standard/core/0.1/layer-4-conflict-repair-accountability#6.3.2), [6.5.4](https://rcos.ecohubs.community/es/standard/core/0.1/layer-4-conflict-repair-accountability#6.5.4)*
 
 _<Las represalias contra un miembro por participar en cualquier parte de este proceso son en sí mismas un desencadenante de rendición de cuentas.>_
 
@@ -66,7 +66,7 @@ _<Las represalias contra un miembro por participar en cualquier parte de este pr
 
 ## Condiciones para la Restitución de Derechos
 
-*Cláusulas RCOS: [6.4.4](https://rcos.ecohubs.community/es/standard/core/0.1/layer-4-conflict-repair-accountability#6.4.4)*
+*Cláusulas RCOS: [6.4.3](https://rcos.ecohubs.community/es/standard/core/0.1/layer-4-conflict-repair-accountability#6.4.3), [6.4.4](https://rcos.ecohubs.community/es/standard/core/0.1/layer-4-conflict-repair-accountability#6.4.4)*
 
 - **Tras salida voluntaria:** _<re-solicitud a través del Protocolo de Incorporación; sin restitución automática.>_
 - **Tras salida forzada:** _<bloqueo mínimo de re-solicitud; se aplica el proceso estándar de admisión.>_
@@ -74,7 +74,7 @@ _<Las represalias contra un miembro por participar en cualquier parte de este pr
 
 ## Coordinación con la Capa 1
 
-*Cláusulas RCOS: [6.4.4](https://rcos.ecohubs.community/es/standard/core/0.1/layer-4-conflict-repair-accountability#6.4.4)*
+*Cláusulas RCOS: [6.4.4](https://rcos.ecohubs.community/es/standard/core/0.1/layer-4-conflict-repair-accountability#6.4.4), [6.5.4](https://rcos.ecohubs.community/es/standard/core/0.1/layer-4-conflict-repair-accountability#6.5.4)*
 
 _<Todas las salidas forzadas y restricciones temporales de acceso siguen el Protocolo de Salida y Separación (Capa 1). Una restricción temporal de acceso no constituye una salida y no activa el bloqueo de re-solicitud a menos que los Miembros Plenos voten posteriormente una salida forzada.>_
 

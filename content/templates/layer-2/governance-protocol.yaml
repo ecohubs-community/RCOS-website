@@ -67,6 +67,7 @@ sections:
         kind: clauses
         refs:
           - 4.5.1
+          - 4.5.2
           - 4.5.4
       - id: rationale
         kind: rationale
@@ -88,6 +89,7 @@ sections:
       - id: clauses
         kind: clauses
         refs:
+          - 4.5.2
           - 4.5.4
       - id: rationale
         kind: rationale

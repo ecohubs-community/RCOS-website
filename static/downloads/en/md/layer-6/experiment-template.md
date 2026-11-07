@@ -2,7 +2,7 @@
 
 # Experiment Template
 
-- **Generated:** 2026-11-02
+- **Generated:** 2026-11-06
 - **Source (latest version):** [https://rcos.ecohubs.community/articles/rcos-templates/layer-6/experiment-template](https://rcos.ecohubs.community/articles/rcos-templates/layer-6/experiment-template)
 - **All RCOS templates:** [https://rcos.ecohubs.community/articles/rcos-templates](https://rcos.ecohubs.community/articles/rcos-templates)
 
@@ -33,6 +33,8 @@
 - **Safety suspension:** _<acknowledge that an emergency suspension may be invoked under the Change Protocol if a credible safety risk emerges.>_
 
 ## Expiry and Renewal
+
+*RCOS clauses: [8.3.4](https://rcos.ecohubs.community/standard/core/0.1/layer-6-evolution-adaptation#8.3.4)*
 
 - _<Experiments expire automatically at the end of their defined duration unless explicitly renewed via a new proposal. Renewal requires a new Strategic vote.>_
 - _<Results and learnings are recorded in the Learning Log.>_

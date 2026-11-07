@@ -170,7 +170,7 @@ Indica qué registros están abiertos a todos los Miembros Plenos, el plazo de r
 
 ## Ubicaciones de Documentación y Procedimientos de Actualización
 
-*Cláusulas RCOS: [7.3.1](https://rcos.ecohubs.community/es/standard/core/0.1/layer-5-operations-coordination#7.3.1), [7.3.2](https://rcos.ecohubs.community/es/standard/core/0.1/layer-5-operations-coordination#7.3.2), [7.3.3](https://rcos.ecohubs.community/es/standard/core/0.1/layer-5-operations-coordination#7.3.3), [7.8.1](https://rcos.ecohubs.community/es/standard/core/0.1/layer-5-operations-coordination#7.8.1)*
+*Cláusulas RCOS: [7.3.1](https://rcos.ecohubs.community/es/standard/core/0.1/layer-5-operations-coordination#7.3.1), [7.3.2](https://rcos.ecohubs.community/es/standard/core/0.1/layer-5-operations-coordination#7.3.2), [7.3.3](https://rcos.ecohubs.community/es/standard/core/0.1/layer-5-operations-coordination#7.3.3), [7.6.3](https://rcos.ecohubs.community/es/standard/core/0.1/layer-5-operations-coordination#7.6.3), [7.8.1](https://rcos.ecohubs.community/es/standard/core/0.1/layer-5-operations-coordination#7.8.1)*
 
 <details data-kind="rationale">
 <summary>¿Por qué nombrar dónde vive cada documento?</summary>

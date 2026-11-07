@@ -2,7 +2,7 @@
 
 # Modèle d'expérimentation
 
-- **Généré:** 2026-11-02
+- **Généré:** 2026-11-06
 - **Source (version la plus récente):** [https://rcos.ecohubs.community/fr/articles/rcos-templates/layer-6/experiment-template](https://rcos.ecohubs.community/fr/articles/rcos-templates/layer-6/experiment-template)
 - **Tous les modèles RCOS:** [https://rcos.ecohubs.community/fr/articles/rcos-templates](https://rcos.ecohubs.community/fr/articles/rcos-templates)
 
@@ -47,6 +47,8 @@ Remplis chaque champ. La durée maximale est définie par ton Protocole de chang
 - **Suspension de sécurité :** _<reconnaître qu'une suspension d'urgence PEUT être invoquée en vertu du Protocole de changement si un risque crédible pour la sécurité apparaît.>_
 
 ## Expiration et renouvellement
+
+*Clauses RCOS : [8.3.4](https://rcos.ecohubs.community/fr/standard/core/0.1/layer-6-evolution-adaptation#8.3.4)*
 
 <details data-kind="rationale">
 <summary>Pourquoi les expérimentations doivent-elles expirer ?</summary>

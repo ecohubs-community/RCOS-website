@@ -23,13 +23,13 @@ _<Legt fest, welche Konten die Gemeinschaftskasse bilden — explizite Wallet-Ad
 
 ## Einnahmequellen
 
-*RCOS-Klauseln: [5.3.2](https://rcos.ecohubs.community/de/standard/core/0.1/layer-3-economic-resource-system#5.3.2)*
+*RCOS-Klauseln: [5.3.2](https://rcos.ecohubs.community/de/standard/core/0.1/layer-3-economic-resource-system#5.3.2), [5.5.4](https://rcos.ecohubs.community/de/standard/core/0.1/layer-3-economic-resource-system#5.5.4)*
 
 _<Listet die aktuellen Einnahmequellen auf oder stellt fest, dass es keine gibt. Verweist auf den Abschnitt „Externe Einnahmeschnittstellen" im Binnenwirtschaftsprotokoll.>_
 
 ## Ausgabenbefugnis
 
-*RCOS-Klauseln: [5.3.3](https://rcos.ecohubs.community/de/standard/core/0.1/layer-3-economic-resource-system#5.3.3), [5.7.1](https://rcos.ecohubs.community/de/standard/core/0.1/layer-3-economic-resource-system#5.7.1)*
+*RCOS-Klauseln: [5.3.3](https://rcos.ecohubs.community/de/standard/core/0.1/layer-3-economic-resource-system#5.3.3), [5.5.4](https://rcos.ecohubs.community/de/standard/core/0.1/layer-3-economic-resource-system#5.5.4), [5.7.1](https://rcos.ecohubs.community/de/standard/core/0.1/layer-3-economic-resource-system#5.7.1)*
 
 | Betrag | Entscheidungstyp | Befugtes Gremium | Mechanismus |
 |---:|---|---|---|
@@ -39,7 +39,7 @@ _<Listet die aktuellen Einnahmequellen auf oder stellt fest, dass es keine gibt.
 
 ## Transparenz und Berichtswesen
 
-*RCOS-Klauseln: [5.3.4](https://rcos.ecohubs.community/de/standard/core/0.1/layer-3-economic-resource-system#5.3.4), [5.3.5](https://rcos.ecohubs.community/de/standard/core/0.1/layer-3-economic-resource-system#5.3.5), [5.6.1](https://rcos.ecohubs.community/de/standard/core/0.1/layer-3-economic-resource-system#5.6.1)*
+*RCOS-Klauseln: [5.3.4](https://rcos.ecohubs.community/de/standard/core/0.1/layer-3-economic-resource-system#5.3.4), [5.3.5](https://rcos.ecohubs.community/de/standard/core/0.1/layer-3-economic-resource-system#5.3.5), [5.5.4](https://rcos.ecohubs.community/de/standard/core/0.1/layer-3-economic-resource-system#5.5.4), [5.6.1](https://rcos.ecohubs.community/de/standard/core/0.1/layer-3-economic-resource-system#5.6.1)*
 
 - _<Primäre Kasse (z. B. Safe Multi-Sig): Alle Vollmitglieder haben mindestens Lesezugriff; Echtzeit-Sichtbarkeit.>_
 - _<Andere deklarierte Konten: direkter Mehrbenutzerzugriff zum Lesen, falls unterstützt; andernfalls periodische Saldo- und Transaktionsübersicht.>_
@@ -47,7 +47,7 @@ _<Listet die aktuellen Einnahmequellen auf oder stellt fest, dass es keine gibt.
 
 ## Rücklagen-, Risiko- und Schuldenbeschränkungen
 
-*RCOS-Klauseln: [5.3.6](https://rcos.ecohubs.community/de/standard/core/0.1/layer-3-economic-resource-system#5.3.6)*
+*RCOS-Klauseln: [5.3.6](https://rcos.ecohubs.community/de/standard/core/0.1/layer-3-economic-resource-system#5.3.6), [5.5.4](https://rcos.ecohubs.community/de/standard/core/0.1/layer-3-economic-resource-system#5.5.4)*
 
 - **Schulden:** _<nur per Strategischer Abstimmung zulässig.>_
 - **Langfristige Verpflichtungen:** _<wiederkehrende Kosten / Verträge nur per Strategischer Abstimmung zulässig.>_
@@ -56,7 +56,7 @@ _<Listet die aktuellen Einnahmequellen auf oder stellt fest, dass es keine gibt.
 
 ## Interessenkonfliktregeln
 
-*RCOS-Klauseln: [5.4.3](https://rcos.ecohubs.community/de/standard/core/0.1/layer-3-economic-resource-system#5.4.3)*
+*RCOS-Klauseln: [5.4.3](https://rcos.ecohubs.community/de/standard/core/0.1/layer-3-economic-resource-system#5.4.3), [5.5.4](https://rcos.ecohubs.community/de/standard/core/0.1/layer-3-economic-resource-system#5.5.4)*
 
 - _<Antragstellende dürfen ihre eigenen Ausgabenanträge nicht genehmigen.>_
 - _<Mitglieder mit einem direkten finanziellen Interesse an einer Ausgabenentscheidung müssen dieses offenlegen und sich enthalten.>_

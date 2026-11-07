@@ -14,19 +14,20 @@
         "mandatoryArtifacts": 21,
         "sections": 118,
         "authoredSections": 94,
-        "sectionsWithoutClauses": 25,
+        "optionalSections": 1,
+        "sectionsWithoutClauses": 24,
         "glossary": 37
       }
     }
   ],
   "files": {
     "rcos-core/0.1/clauses.yaml": {
-      "sha256": "2a99596862087cfba52f444c9715739fcd004fa071628519927e1794eadc8768",
-      "bytes": 272223
+      "sha256": "294fbaa31575a7a27225547dad02dc81f1a04263f244ba33ba4e616715c67003",
+      "bytes": 273966
     },
     "rcos-core/0.1/sections.yaml": {
-      "sha256": "71b0be1fa903cbe858eed29e7d72070b790722083b61f676bddef1f8b00c15f7",
-      "bytes": 1292554
+      "sha256": "067bc3819cae888fcd3e9f411e52e5a08706b74bf1b5538d53d7e13f80e44330",
+      "bytes": 1295820
     },
     "rcos-core/0.1/artifacts.yaml": {
       "sha256": "e8cbbbab619b53231edc217883a3601440a8952a8ba34c6651e5ee51f744e276",
@@ -41,12 +42,12 @@
       "bytes": 190677
     },
     "rcos-core/0.1/meta.yaml": {
-      "sha256": "4b966c795baa291a658d3917603ab21f28b1c88839e29fb4399ed12217f1b62a",
-      "bytes": 728
+      "sha256": "1a55d98dca91135fd12b0003612f769e5cea95637313daaf1d315ef2a0dd0810",
+      "bytes": 750
     },
     "rcos-core/0.1/schema.json": {
-      "sha256": "e504fb1b4b8f63bfdc6f6722bacf8099bbcd788974ec876ec31d63341e94fc06",
-      "bytes": 22694
+      "sha256": "ad239c550aebd188cabfd913c915fb3e04967e23fa92053044072c2cbcb4af3c",
+      "bytes": 22925
     }
   }
 }

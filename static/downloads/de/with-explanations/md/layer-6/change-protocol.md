@@ -45,7 +45,7 @@ _<Jedes Vollmitglied darf eine Änderung an jedem RCOS-Artefakt vorschlagen. Geb
 
 ## Wie Vorschläge klassifiziert werden
 
-*RCOS-Klauseln: [8.1.2](https://rcos.ecohubs.community/de/standard/core/0.1/layer-6-evolution-adaptation#8.1.2), [8.1.4](https://rcos.ecohubs.community/de/standard/core/0.1/layer-6-evolution-adaptation#8.1.4)*
+*RCOS-Klauseln: [8.1.2](https://rcos.ecohubs.community/de/standard/core/0.1/layer-6-evolution-adaptation#8.1.2), [8.1.4](https://rcos.ecohubs.community/de/standard/core/0.1/layer-6-evolution-adaptation#8.1.4), [8.6.3](https://rcos.ecohubs.community/de/standard/core/0.1/layer-6-evolution-adaptation#8.6.3)*
 
 <details data-kind="rationale">
 <summary>Warum nach Auswirkung klassifizieren?</summary>
@@ -69,7 +69,7 @@ Definiert, was unter jeden Entscheidungstyp fällt. Legt die Regel fest, dass un
 
 ## Prüfung und Beratung
 
-*RCOS-Klauseln: [8.1.2](https://rcos.ecohubs.community/de/standard/core/0.1/layer-6-evolution-adaptation#8.1.2), [8.7.1](https://rcos.ecohubs.community/de/standard/core/0.1/layer-6-evolution-adaptation#8.7.1)*
+*RCOS-Klauseln: [8.1.2](https://rcos.ecohubs.community/de/standard/core/0.1/layer-6-evolution-adaptation#8.1.2), [8.6.3](https://rcos.ecohubs.community/de/standard/core/0.1/layer-6-evolution-adaptation#8.6.3), [8.7.1](https://rcos.ecohubs.community/de/standard/core/0.1/layer-6-evolution-adaptation#8.7.1)*
 
 <details data-kind="rationale">
 <summary>Warum Mindestberatungsfristen vorschreiben?</summary>
@@ -116,7 +116,7 @@ Wenn ein Vorschlag angenommen wird:
 
 ## Ablehnung
 
-*RCOS-Klauseln: [8.2.2](https://rcos.ecohubs.community/de/standard/core/0.1/layer-6-evolution-adaptation#8.2.2), [8.2.4](https://rcos.ecohubs.community/de/standard/core/0.1/layer-6-evolution-adaptation#8.2.4)*
+*RCOS-Klauseln: [8.2.2](https://rcos.ecohubs.community/de/standard/core/0.1/layer-6-evolution-adaptation#8.2.2), [8.2.4](https://rcos.ecohubs.community/de/standard/core/0.1/layer-6-evolution-adaptation#8.2.4), [8.6.3](https://rcos.ecohubs.community/de/standard/core/0.1/layer-6-evolution-adaptation#8.6.3)*
 
 <details data-kind="rationale">
 <summary>Warum abgelehnte Vorschläge archivieren?</summary>
@@ -140,7 +140,7 @@ Wenn ein Vorschlag abgelehnt wird:
 
 ## Übergang und Migration
 
-*RCOS-Klauseln: [8.5.1](https://rcos.ecohubs.community/de/standard/core/0.1/layer-6-evolution-adaptation#8.5.1), [8.5.2](https://rcos.ecohubs.community/de/standard/core/0.1/layer-6-evolution-adaptation#8.5.2)*
+*RCOS-Klauseln: [8.5.1](https://rcos.ecohubs.community/de/standard/core/0.1/layer-6-evolution-adaptation#8.5.1), [8.5.2](https://rcos.ecohubs.community/de/standard/core/0.1/layer-6-evolution-adaptation#8.5.2), [8.6.3](https://rcos.ecohubs.community/de/standard/core/0.1/layer-6-evolution-adaptation#8.6.3)*
 
 <details data-kind="rationale">
 <summary>Warum bestehende Rechte während Übergängen schützen?</summary>
@@ -165,7 +165,7 @@ Wenn eine Regeländerung bestehende Rollen, Vereinbarungen oder Aufzeichnungen b
 
 ## Rücknahme
 
-*RCOS-Klauseln: [8.1.5](https://rcos.ecohubs.community/de/standard/core/0.1/layer-6-evolution-adaptation#8.1.5), [8.5.1](https://rcos.ecohubs.community/de/standard/core/0.1/layer-6-evolution-adaptation#8.5.1)*
+*RCOS-Klauseln: [8.1.5](https://rcos.ecohubs.community/de/standard/core/0.1/layer-6-evolution-adaptation#8.1.5), [8.5.1](https://rcos.ecohubs.community/de/standard/core/0.1/layer-6-evolution-adaptation#8.5.1), [8.6.3](https://rcos.ecohubs.community/de/standard/core/0.1/layer-6-evolution-adaptation#8.6.3)*
 
 <details data-kind="rationale">
 <summary>Warum soll die Rücknahme symmetrisch zur Annahme sein?</summary>
@@ -185,7 +185,7 @@ _<Jede angenommene Entscheidung kann über denselben Prozess wie die ursprüngli
 
 ## Notfalländerungen
 
-*RCOS-Klauseln: [8.5.3](https://rcos.ecohubs.community/de/standard/core/0.1/layer-6-evolution-adaptation#8.5.3)*
+*RCOS-Klauseln: [8.5.3](https://rcos.ecohubs.community/de/standard/core/0.1/layer-6-evolution-adaptation#8.5.3), [8.6.3](https://rcos.ecohubs.community/de/standard/core/0.1/layer-6-evolution-adaptation#8.6.3)*
 
 <details data-kind="rationale">
 <summary>Warum überhaupt Notfalländerungen zulassen?</summary>

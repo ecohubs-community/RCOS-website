@@ -42,7 +42,7 @@
 
 ## Não-Resposta, Retirada e Impasse
 
-*Cláusulas RCOS: [6.2.5](https://rcos.ecohubs.community/pt-br/standard/core/0.1/layer-4-conflict-repair-accountability#6.2.5), [6.1.5](https://rcos.ecohubs.community/pt-br/standard/core/0.1/layer-4-conflict-repair-accountability#6.1.5)*
+*Cláusulas RCOS: [6.2.5](https://rcos.ecohubs.community/pt-br/standard/core/0.1/layer-4-conflict-repair-accountability#6.2.5), [6.1.5](https://rcos.ecohubs.community/pt-br/standard/core/0.1/layer-4-conflict-repair-accountability#6.1.5), [6.2.3](https://rcos.ecohubs.community/pt-br/standard/core/0.1/layer-4-conflict-repair-accountability#6.2.3)*
 
 **Se uma parte não responder dentro do prazo definido:**
 - _<Aviso de acompanhamento; período de tolerância adicional; tratamento do silêncio continuado como não-resolução; regra de escalada.>_
@@ -60,7 +60,7 @@
 
 ## Seleção e Substituição de Facilitador
 
-*Cláusulas RCOS: [6.3.1](https://rcos.ecohubs.community/pt-br/standard/core/0.1/layer-4-conflict-repair-accountability#6.3.1), [6.3.3](https://rcos.ecohubs.community/pt-br/standard/core/0.1/layer-4-conflict-repair-accountability#6.3.3)*
+*Cláusulas RCOS: [6.2.3](https://rcos.ecohubs.community/pt-br/standard/core/0.1/layer-4-conflict-repair-accountability#6.2.3), [6.3.1](https://rcos.ecohubs.community/pt-br/standard/core/0.1/layer-4-conflict-repair-accountability#6.3.1), [6.3.3](https://rcos.ecohubs.community/pt-br/standard/core/0.1/layer-4-conflict-repair-accountability#6.3.3), [6.5.3](https://rcos.ecohubs.community/pt-br/standard/core/0.1/layer-4-conflict-repair-accountability#6.5.3)*
 
 - _<Papel padrão do facilitador conforme o Registro de Papéis.>_
 - _<Regra quando o facilitador é uma das partes — seleção de um substituto neutro.>_
@@ -69,7 +69,7 @@
 
 ## Limites de Privacidade e Acesso à Informação
 
-*Cláusulas RCOS: [6.5.3](https://rcos.ecohubs.community/pt-br/standard/core/0.1/layer-4-conflict-repair-accountability#6.5.3)*
+*Cláusulas RCOS: [6.2.3](https://rcos.ecohubs.community/pt-br/standard/core/0.1/layer-4-conflict-repair-accountability#6.2.3), [6.5.3](https://rcos.ecohubs.community/pt-br/standard/core/0.1/layer-4-conflict-repair-accountability#6.5.3)*
 
 - _<Passos 1–4: totalmente confidenciais; apenas as partes e o Facilitador podem acessar os registros.>_
 - _<Passos 5–6: informação mínima necessária divulgada aos Membros Plenos; partes notificadas antes da divulgação. Defina o que significa "mínima necessária".>_
@@ -78,7 +78,7 @@
 
 ## Salvaguardas
 
-*Cláusulas RCOS: [6.3.1](https://rcos.ecohubs.community/pt-br/standard/core/0.1/layer-4-conflict-repair-accountability#6.3.1), [6.3.2](https://rcos.ecohubs.community/pt-br/standard/core/0.1/layer-4-conflict-repair-accountability#6.3.2), [6.3.3](https://rcos.ecohubs.community/pt-br/standard/core/0.1/layer-4-conflict-repair-accountability#6.3.3), [6.3.4](https://rcos.ecohubs.community/pt-br/standard/core/0.1/layer-4-conflict-repair-accountability#6.3.4), [6.3.5](https://rcos.ecohubs.community/pt-br/standard/core/0.1/layer-4-conflict-repair-accountability#6.3.5), [6.6.2](https://rcos.ecohubs.community/pt-br/standard/core/0.1/layer-4-conflict-repair-accountability#6.6.2)*
+*Cláusulas RCOS: [6.3.1](https://rcos.ecohubs.community/pt-br/standard/core/0.1/layer-4-conflict-repair-accountability#6.3.1), [6.3.2](https://rcos.ecohubs.community/pt-br/standard/core/0.1/layer-4-conflict-repair-accountability#6.3.2), [6.3.3](https://rcos.ecohubs.community/pt-br/standard/core/0.1/layer-4-conflict-repair-accountability#6.3.3), [6.3.4](https://rcos.ecohubs.community/pt-br/standard/core/0.1/layer-4-conflict-repair-accountability#6.3.4), [6.3.5](https://rcos.ecohubs.community/pt-br/standard/core/0.1/layer-4-conflict-repair-accountability#6.3.5), [6.5.3](https://rcos.ecohubs.community/pt-br/standard/core/0.1/layer-4-conflict-repair-accountability#6.5.3), [6.6.2](https://rcos.ecohubs.community/pt-br/standard/core/0.1/layer-4-conflict-repair-accountability#6.6.2)*
 
 - **Antirretaliação:** _<retaliação contra um membro que levanta um conflito de boa-fé é, em si, motivo para um processo de responsabilização.>_
 - **Denúncias de má-fé:** _<denúncias deliberadamente falsas podem desencadear um processo de responsabilização contra o denunciante.>_

@@ -37,7 +37,7 @@
 
 ## Estado Inicial de Associação
 
-*Cláusulas RCOS: [3.1.2](https://rcos.ecohubs.community/pt-br/standard/core/0.1/layer-1-membership-system#3.1.2), [3.1.4](https://rcos.ecohubs.community/pt-br/standard/core/0.1/layer-1-membership-system#3.1.4)*
+*Cláusulas RCOS: [3.1.2](https://rcos.ecohubs.community/pt-br/standard/core/0.1/layer-1-membership-system#3.1.2), [3.1.4](https://rcos.ecohubs.community/pt-br/standard/core/0.1/layer-1-membership-system#3.1.4), [3.2.2](https://rcos.ecohubs.community/pt-br/standard/core/0.1/layer-1-membership-system#3.2.2)*
 
 - Ao aprovar: _<ex. Membro em Período de Experiência.>_
 - Ao concluir a integração: _<ex. Membro Pleno (automático ao concluir).>_

@@ -65,7 +65,7 @@ Liste die geordneten Schritte auf, die jedes neue Mitglied durchlaufen muss, um 
 
 ## Anfänglicher Mitgliedschaftsstatus
 
-*RCOS-Klauseln: [3.1.2](https://rcos.ecohubs.community/de/standard/core/0.1/layer-1-membership-system#3.1.2), [3.1.4](https://rcos.ecohubs.community/de/standard/core/0.1/layer-1-membership-system#3.1.4)*
+*RCOS-Klauseln: [3.1.2](https://rcos.ecohubs.community/de/standard/core/0.1/layer-1-membership-system#3.1.2), [3.1.4](https://rcos.ecohubs.community/de/standard/core/0.1/layer-1-membership-system#3.1.4), [3.2.2](https://rcos.ecohubs.community/de/standard/core/0.1/layer-1-membership-system#3.2.2)*
 
 <details data-kind="rationale">
 <summary>Warum am Ende des Onboardings einen Status zuweisen?</summary>

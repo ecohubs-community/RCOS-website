@@ -17,7 +17,7 @@
 
 ## Primärer Zweck
 
-*RCOS-Klauseln: [2.1.1](https://rcos.ecohubs.community/de/standard/core/0.1/layer-0-identity-scope#2.1.1), [2.1.2](https://rcos.ecohubs.community/de/standard/core/0.1/layer-0-identity-scope#2.1.2), [2.1.5](https://rcos.ecohubs.community/de/standard/core/0.1/layer-0-identity-scope#2.1.5)*
+*RCOS-Klauseln: [2.1.1](https://rcos.ecohubs.community/de/standard/core/0.1/layer-0-identity-scope#2.1.1), [2.1.2](https://rcos.ecohubs.community/de/standard/core/0.1/layer-0-identity-scope#2.1.2), [2.1.3](https://rcos.ecohubs.community/de/standard/core/0.1/layer-0-identity-scope#2.1.3), [2.1.5](https://rcos.ecohubs.community/de/standard/core/0.1/layer-0-identity-scope#2.1.5)*
 
 _<Der primäre Zweck eurer Gemeinschaft, in ein bis zwei Sätzen.>_
 
@@ -31,7 +31,7 @@ _<Der primäre Zweck eurer Gemeinschaft, in ein bis zwei Sätzen.>_
 
 ## Nicht-Ziele und Ausschlüsse
 
-*RCOS-Klauseln: [2.1.5](https://rcos.ecohubs.community/de/standard/core/0.1/layer-0-identity-scope#2.1.5)*
+*RCOS-Klauseln: [2.1.5](https://rcos.ecohubs.community/de/standard/core/0.1/layer-0-identity-scope#2.1.5) — dieser Abschnitt ist empfohlen, nicht vorgeschrieben: Benannte Nicht-Ziele machen leichter sichtbar, wenn eine Handlung oder Entscheidung dem primären Zweck widerspricht.*
 
 1. _<Nicht-Ziel 1.>_
 2. _<Nicht-Ziel 2.>_

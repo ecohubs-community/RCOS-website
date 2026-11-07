@@ -305,6 +305,7 @@
           sobre terra e construções diz como isso foi verificado.
   disposition: authored
   dispositionNote: null
+  optional: false
   ownsClauses:
     - 2.4.1
     - 2.4.2
@@ -471,6 +472,7 @@
           reunião anual de reflexão.
   disposition: authored
   dispositionNote: null
+  optional: false
   ownsClauses:
     - 2.4.3
     - 2.4.4
@@ -643,6 +645,7 @@
           redação antiga quanto a nova permanecem no histórico do registro.
   disposition: authored
   dispositionNote: null
+  optional: false
   ownsClauses: []
 - key: identity-constraints-register.ratification-record
   artifact: identity-constraints-register
@@ -683,6 +686,7 @@
   dispositionNote: >-
     Written from the decision that adopted this artifact: reference, date, mechanism, tally and
     attendance as recorded at freeze time.
+  optional: false
   ownsClauses: []
 - key: invariants-register.active-invariants
   artifact: invariants-register
@@ -983,6 +987,7 @@
           prevalecem, e só mudam pelo nosso processo de mudança constitucional.
   disposition: authored
   dispositionNote: null
+  optional: false
   ownsClauses:
     - 2.3.1
     - 2.3.2
@@ -1029,6 +1034,7 @@
   dispositionNote: >-
     Written from the decision that adopted this artifact: reference, date, mechanism, tally and
     attendance as recorded at freeze time.
+  optional: false
   ownsClauses: []
 - key: purpose-charter.primary-purpose
   artifact: purpose-charter
@@ -1036,6 +1042,7 @@
   clauseRefs:
     - 2.1.1
     - 2.1.2
+    - 2.1.3
     - 2.1.5
   i18n:
     en:
@@ -1187,6 +1194,7 @@
           que encontramos.
   disposition: authored
   dispositionNote: null
+  optional: false
   ownsClauses:
     - 2.1.1
     - 2.1.2
@@ -1369,6 +1377,7 @@
           propósito secundário é reduzido ou abandonado.
   disposition: authored
   dispositionNote: null
+  optional: false
   ownsClauses:
     - 2.1.4
 - key: purpose-charter.non-goals-and-exclusions
@@ -1387,6 +1396,7 @@
       whatToDefine: >-
         Name the things your community is explicitly NOT, especially identities or roles others
         might assume by default (political party, investment vehicle, religious group, etc.).
+        Recommended, not required by RCOS-Core. Remove the section entirely if you have none.
       placeholders:
         - Non-goal 1.
         - Non-goal 2.
@@ -1419,7 +1429,8 @@
       whatToDefine: >-
         Benennt die Dinge, die eure Gemeinschaft ausdrücklich NICHT ist, insbesondere Identitäten
         oder Rollen, die andere möglicherweise standardmäßig annehmen könnten (politische Partei,
-        Investmentvehikel, religiöse Gruppe usw.).
+        Investmentvehikel, religiöse Gruppe usw.). Empfohlen, von RCOS-Core aber nicht
+        vorgeschrieben. Entfernt diesen Abschnitt vollständig, wenn ihr keine habt.
       placeholders:
         - Nicht-Ziel 1.
         - Nicht-Ziel 2.
@@ -1453,7 +1464,8 @@
       whatToDefine: >-
         Nombra las cosas que tu comunidad explícitamente NO es, especialmente identidades o roles
         que otros podrían asumir por defecto (partido político, vehículo de inversión, grupo
-        religioso, etc.).
+        religioso, etc.). Recomendable, pero no exigido por RCOS-Core. Elimina esta sección por
+        completo si no tienes ninguno.
       placeholders:
         - No-objetivo 1.
         - No-objetivo 2.
@@ -1486,7 +1498,8 @@
       whatToDefine: >-
         Nomme les choses que ta communauté n'est explicitement PAS, en particulier les identités ou
         rôles que d'autres pourraient supposer par défaut (parti politique, véhicule
-        d'investissement, groupe religieux, etc.).
+        d'investissement, groupe religieux, etc.). Recommandé, mais non exigé par RCOS-Core.
+        Supprime entièrement cette section si tu n'en as aucun.
       placeholders:
         - Non-objectif 1.
         - Non-objectif 2.
@@ -1520,7 +1533,8 @@
       whatToDefine: >-
         Nomeie as coisas que sua comunidade explicitamente NÃO é, especialmente identidades ou
         papéis que outros possam presumir por padrão (partido político, veículo de investimento,
-        grupo religioso, etc.).
+        grupo religioso, etc.). Recomendado, mas não exigido pelo RCOS-Core. Remova a seção inteira
+        se você não tiver nenhum.
       placeholders:
         - Não-objetivo 1.
         - Não-objetivo 2.
@@ -1543,7 +1557,11 @@
           compartilhados nunca são administrados para gerar lucro para os membros. Não somos um
           grupo religioso ou espiritual, e nenhuma crença ou prática é esperada de quem participa.
   disposition: authored
-  dispositionNote: null
+  dispositionNote: >-
+    No RCOS-Core clause requires non-goals; the section follows the example Purpose Charter in
+    Appendix B. Recommended, because naming them in advance makes it easier to see when something
+    contradicts the primary purpose (2.1.5, owned by Primary Purpose).
+  optional: true
   ownsClauses: []
 - key: purpose-charter.conditions-for-purpose-change
   artifact: purpose-charter
@@ -1740,6 +1758,7 @@
           uma decisão comum da comunidade.
   disposition: authored
   dispositionNote: null
+  optional: false
   ownsClauses:
     - 2.1.3
 - key: purpose-charter.ratification-record
@@ -1781,6 +1800,7 @@
   dispositionNote: >-
     Written from the decision that adopted this artifact: reference, date, mechanism, tally and
     attendance as recorded at freeze time.
+  optional: false
   ownsClauses: []
 - key: scope-declaration.in-scope-assets
   artifact: scope-declaration
@@ -1984,6 +2004,7 @@
           em nome do coletivo pertence ao coletivo.
   disposition: authored
   dispositionNote: null
+  optional: false
   ownsClauses:
     - 2.2.1
     - 2.2.2
@@ -2174,6 +2195,7 @@
           cada domicílio permanecem com aquele domicílio.
   disposition: authored
   dispositionNote: null
+  optional: false
   ownsClauses: []
 - key: scope-declaration.in-scope-activities-and-responsibilities
   artifact: scope-declaration
@@ -2361,6 +2383,7 @@
           coletiva.
   disposition: authored
   dispositionNote: null
+  optional: false
   ownsClauses: []
 - key: scope-declaration.explicitly-out-of-scope
   artifact: scope-declaration
@@ -2595,6 +2618,7 @@
           essas áreas não tem efeito.
   disposition: authored
   dispositionNote: null
+  optional: false
   ownsClauses:
     - 2.2.3
     - 2.2.4
@@ -2638,6 +2662,7 @@
   dispositionNote: >-
     Written from the decision that adopted this artifact: reference, date, mechanism, tally and
     attendance as recorded at freeze time.
+  optional: false
   ownsClauses: []
 - key: exit-protocol.voluntary-exit
   artifact: exit-protocol
@@ -2845,6 +2870,7 @@
           dinheiro que a comunidade lhe deve.
   disposition: authored
   dispositionNote: null
+  optional: false
   ownsClauses:
     - 3.6.1
     - 3.6.2
@@ -3107,6 +3133,7 @@
           ler o registro.
   disposition: authored
   dispositionNote: null
+  optional: false
   ownsClauses:
     - 3.6.3
 - key: exit-protocol.suspension
@@ -3328,6 +3355,7 @@
           primeiro, e não pode ser renovada para o mesmo assunto.
   disposition: authored
   dispositionNote: null
+  optional: false
   ownsClauses:
     - 3.7.1
     - 3.7.2
@@ -3584,6 +3612,7 @@
           pagamento, antes de a saída ser marcada como concluída.
   disposition: authored
   dispositionNote: null
+  optional: false
   ownsClauses:
     - 3.6.5
 - key: exit-protocol.ratification-record
@@ -3625,6 +3654,7 @@
   dispositionNote: >-
     Written from the decision that adopted this artifact: reference, date, mechanism, tally and
     attendance as recorded at freeze time.
+  optional: false
   ownsClauses: []
 - key: membership-agreement.membership-state-on-signing
   artifact: membership-agreement
@@ -3784,6 +3814,7 @@
           da sua integração é registrada; a assinatura, por si só, nunca torna alguém Membro Pleno.
   disposition: authored
   dispositionNote: null
+  optional: false
   ownsClauses: []
 - key: membership-agreement.member-rights
   artifact: membership-agreement
@@ -4049,6 +4080,7 @@
           compartilhados, então também têm o voto que os Membros em Experiência não têm.
   disposition: authored
   dispositionNote: null
+  optional: false
   ownsClauses:
     - 3.4.1
     - 3.4.3
@@ -4057,6 +4089,7 @@
   order: 2
   clauseRefs:
     - 3.4.2
+    - 3.4.3
     - 3.4.4
     - 3.4.5
   i18n:
@@ -4316,6 +4349,7 @@
           um membro, a menos que a lista seja alterada por decisão.
   disposition: authored
   dispositionNote: null
+  optional: false
   ownsClauses:
     - 3.4.2
     - 3.4.4
@@ -4577,6 +4611,7 @@
           sem aviso abrem uma verificação de responsabilização.
   disposition: authored
   dispositionNote: null
+  optional: false
   ownsClauses:
     - 3.5.1
     - 3.5.2
@@ -4729,6 +4764,7 @@
           escrita em um desses dois documentos pode ser usada contra um membro.
   disposition: authored
   dispositionNote: null
+  optional: false
   ownsClauses: []
 - key: membership-agreement.consent-acknowledgment
   artifact: membership-agreement
@@ -4883,6 +4919,7 @@
           versão, e a assinatura é datada.
   disposition: authored
   dispositionNote: null
+  optional: false
   ownsClauses: []
 - key: membership-agreement.ratification-record
   artifact: membership-agreement
@@ -4923,6 +4960,7 @@
   dispositionNote: >-
     Written from the decision that adopted this artifact: reference, date, mechanism, tally and
     attendance as recorded at freeze time.
+  optional: false
   ownsClauses: []
 - key: membership-state-registry.defined-membership-states
   artifact: membership-state-registry
@@ -5221,6 +5259,7 @@
           candidatar de novo como Candidato. Cada pessoa tem exatamente um estado por vez.
   disposition: authored
   dispositionNote: null
+  optional: false
   ownsClauses:
     - 3.1.1
     - 3.1.2
@@ -5266,6 +5305,7 @@
   dispositionNote: >-
     Written from the decision that adopted this artifact: reference, date, mechanism, tally and
     attendance as recorded at freeze time.
+  optional: false
   ownsClauses: []
 - key: onboarding-protocol.admission-criteria
   artifact: onboarding-protocol
@@ -5434,6 +5474,7 @@
         - Como garantimos que ninguém se torne membro de modo informal, ou depois do fato?
   disposition: authored
   dispositionNote: null
+  optional: false
   ownsClauses:
     - 3.2.3
     - 3.2.4
@@ -5673,6 +5714,7 @@
           Membro Pleno.
   disposition: authored
   dispositionNote: null
+  optional: false
   ownsClauses:
     - 3.2.1
     - 3.2.2
@@ -5682,6 +5724,7 @@
   clauseRefs:
     - 3.1.2
     - 3.1.4
+    - 3.2.2
   i18n:
     en:
       title: Initial Membership State
@@ -5845,6 +5888,7 @@
           dia.
   disposition: authored
   dispositionNote: null
+  optional: false
   ownsClauses: []
 - key: onboarding-protocol.trial-and-evaluation
   artifact: onboarding-protocol
@@ -6092,6 +6136,7 @@
           meses.
   disposition: authored
   dispositionNote: null
+  optional: false
   ownsClauses:
     - 3.3.1
     - 3.3.2
@@ -6249,6 +6294,7 @@
           marcada com a data de saída.
   disposition: authored
   dispositionNote: null
+  optional: false
   ownsClauses: []
 - key: onboarding-protocol.ratification-record
   artifact: onboarding-protocol
@@ -6289,6 +6335,7 @@
   dispositionNote: >-
     Written from the decision that adopted this artifact: reference, date, mechanism, tally and
     attendance as recorded at freeze time.
+  optional: false
   ownsClauses: []
 - key: authority-registry.registered-authorities
   artifact: authority-registry
@@ -6599,6 +6646,7 @@
           horas, e a próxima assembleia geral revisa o que elas fizeram.
   disposition: authored
   dispositionNote: null
+  optional: false
   ownsClauses:
     - 4.3.1
     - 4.3.2
@@ -6639,6 +6687,7 @@
   dispositionNote: >-
     Written from the decision that adopted this artifact: reference, date, mechanism, tally and
     attendance as recorded at freeze time.
+  optional: false
   ownsClauses: []
 - key: decision-matrix.voting-principles
   artifact: decision-matrix
@@ -6963,6 +7012,7 @@
           área sem votação.
   disposition: authored
   dispositionNote: null
+  optional: false
   ownsClauses:
     - 4.2.1
     - 4.2.2
@@ -7374,6 +7424,7 @@
           tomada fora dela não tem efeito até ser tomada de novo pela linha correta.
   disposition: authored
   dispositionNote: null
+  optional: false
   ownsClauses:
     - 4.4.1
     - 4.4.2
@@ -7643,6 +7694,7 @@
           alguém tiver dúvida sobre qual é o tipo de uma decisão, ela é tratada como o tipo maior.
   disposition: authored
   dispositionNote: null
+  optional: false
   ownsClauses:
     - 4.1.1
     - 4.1.2
@@ -7683,6 +7735,7 @@
   dispositionNote: >-
     Written from the decision that adopted this artifact: reference, date, mechanism, tally and
     attendance as recorded at freeze time.
+  optional: false
   ownsClauses: []
 - key: governance-protocol.proposal-submission
   artifact: governance-protocol
@@ -7945,6 +7998,7 @@
           de proposta.
   disposition: authored
   dispositionNote: null
+  optional: false
   ownsClauses:
     - 4.5.1
     - 4.5.2
@@ -8186,12 +8240,14 @@
           membros levantem preocupações nessa janela, não depois da votação.
   disposition: authored
   dispositionNote: null
+  optional: false
   ownsClauses: []
 - key: governance-protocol.decision-execution
   artifact: governance-protocol
   order: 2
   clauseRefs:
     - 4.5.1
+    - 4.5.2
     - 4.5.4
   i18n:
     en:
@@ -8402,11 +8458,13 @@
           caso à próxima assembleia geral e uma nova pessoa é designada.
   disposition: authored
   dispositionNote: null
+  optional: false
   ownsClauses: []
 - key: governance-protocol.documentation-and-publication
   artifact: governance-protocol
   order: 3
   clauseRefs:
+    - 4.5.2
     - 4.5.4
   i18n:
     en:
@@ -8614,6 +8672,7 @@
           entradas.
   disposition: authored
   dispositionNote: null
+  optional: false
   ownsClauses:
     - 4.5.4
 - key: governance-protocol.appeal-and-review
@@ -8833,6 +8892,7 @@
           meses precisa do apoio escrito de cinco membros plenos.
   disposition: authored
   dispositionNote: null
+  optional: false
   ownsClauses: []
 - key: governance-protocol.conflict-between-decisions
   artifact: governance-protocol
@@ -9017,6 +9077,7 @@
           regra, e uma proposta para eliminar a contradição vai à próxima assembleia geral.
   disposition: authored
   dispositionNote: null
+  optional: false
   ownsClauses:
     - 4.5.3
 - key: governance-protocol.safeguards-and-failure-modes
@@ -9225,6 +9286,7 @@
         - Qual padrão de falhas força uma revisão formal — e quem a inicia?
   disposition: authored
   dispositionNote: null
+  optional: false
   ownsClauses:
     - 4.6.1
     - 4.6.2
@@ -9263,6 +9325,7 @@
   dispositionNote: >-
     Written from the decision that adopted this artifact: reference, date, mechanism, tally and
     attendance as recorded at freeze time.
+  optional: false
   ownsClauses: []
 - key: internal-economy-protocol.commons-vs-private-classification
   artifact: internal-economy-protocol
@@ -9273,6 +9336,7 @@
     - 5.1.3
     - 5.1.4
     - 5.1.5
+    - 5.5.3
     - 5.6.2
   i18n:
     en:
@@ -9607,6 +9671,7 @@
           intocada até ser classificada.
   disposition: authored
   dispositionNote: null
+  optional: false
   ownsClauses:
     - 5.1.1
     - 5.1.2
@@ -9620,6 +9685,7 @@
   clauseRefs:
     - 5.2.1
     - 5.2.3
+    - 5.5.3
     - 5.6.3
   i18n:
     en:
@@ -9876,6 +9942,7 @@
           em um dever rotativo.
   disposition: authored
   dispositionNote: null
+  optional: false
   ownsClauses:
     - 5.2.1
     - 5.2.3
@@ -9886,6 +9953,7 @@
   clauseRefs:
     - 5.2.2
     - 5.2.5
+    - 5.5.3
   i18n:
     en:
       title: Contribution Recognition Mechanism
@@ -10072,6 +10140,7 @@
           qualquer decisão.
   disposition: authored
   dispositionNote: null
+  optional: false
   ownsClauses:
     - 5.2.2
     - 5.2.5
@@ -10081,6 +10150,7 @@
   clauseRefs:
     - 5.2.4
     - 5.2.5
+    - 5.5.3
   i18n:
     en:
       title: Internal Units
@@ -10391,6 +10461,7 @@
           este protocolo.
   disposition: authored
   dispositionNote: null
+  optional: false
   ownsClauses:
     - 5.2.4
 - key: internal-economy-protocol.accumulation-constraints
@@ -10401,6 +10472,7 @@
     - 5.4.2
     - 5.4.3
     - 5.4.4
+    - 5.5.3
     - 5.6.4
   i18n:
     en:
@@ -10612,6 +10684,7 @@
           votação.
   disposition: authored
   dispositionNote: null
+  optional: false
   ownsClauses:
     - 5.4.1
     - 5.4.2
@@ -10623,6 +10696,7 @@
   order: 5
   clauseRefs:
     - 5.3.2
+    - 5.5.3
   i18n:
     en:
       title: External Income Interfaces
@@ -10810,6 +10884,7 @@
           quaisquer deveres de prestação de contas ou condições sobre nosso modo de trabalhar.
   disposition: authored
   dispositionNote: null
+  optional: false
   ownsClauses: []
 - key: internal-economy-protocol.dispute-resolution-for-economic-records
   artifact: internal-economy-protocol
@@ -10992,6 +11067,7 @@
           final.
   disposition: authored
   dispositionNote: null
+  optional: false
   ownsClauses:
     - 5.5.3
 - key: internal-economy-protocol.ratification-record
@@ -11028,6 +11104,7 @@
   dispositionNote: >-
     Written from the decision that adopted this artifact: reference, date, mechanism, tally and
     attendance as recorded at freeze time.
+  optional: false
   ownsClauses: []
 - key: treasury-ruleset.treasury-scope
   artifact: treasury-ruleset
@@ -11245,6 +11322,7 @@
           é gasto em reparos dentro de apartamentos privados.
   disposition: authored
   dispositionNote: null
+  optional: false
   ownsClauses:
     - 5.3.1
     - 5.5.4
@@ -11253,6 +11331,7 @@
   order: 1
   clauseRefs:
     - 5.3.2
+    - 5.5.4
   i18n:
     en:
       title: Income Sources
@@ -11422,6 +11501,7 @@
           sempre que uma fonte termina ou seus termos mudam.
   disposition: authored
   dispositionNote: null
+  optional: false
   ownsClauses:
     - 5.3.2
 - key: treasury-ruleset.spending-authority
@@ -11429,6 +11509,7 @@
   order: 2
   clauseRefs:
     - 5.3.3
+    - 5.5.4
     - 5.7.1
   i18n:
     en:
@@ -11672,6 +11753,7 @@
           dentro de uma semana com valor, finalidade, quem aprovou e um link para a decisão.
   disposition: authored
   dispositionNote: null
+  optional: false
   ownsClauses:
     - 5.3.3
     - 5.7.1
@@ -11681,6 +11763,7 @@
   clauseRefs:
     - 5.3.4
     - 5.3.5
+    - 5.5.4
     - 5.6.1
   i18n:
     en:
@@ -11916,6 +11999,7 @@
           completos.
   disposition: authored
   dispositionNote: null
+  optional: false
   ownsClauses:
     - 5.3.4
     - 5.3.5
@@ -11925,6 +12009,7 @@
   order: 4
   clauseRefs:
     - 5.3.6
+    - 5.5.4
   i18n:
     en:
       title: Reserve, Risk, and Debt Constraints
@@ -12122,6 +12207,7 @@
           membros.
   disposition: authored
   dispositionNote: null
+  optional: false
   ownsClauses:
     - 5.3.6
 - key: treasury-ruleset.conflict-of-interest-rules
@@ -12129,6 +12215,7 @@
   order: 5
   clauseRefs:
     - 5.4.3
+    - 5.5.4
   i18n:
     en:
       title: Conflict-of-Interest Rules
@@ -12331,6 +12418,7 @@
           vier à luz depois, a decisão é revisada na próxima assembleia de membros.
   disposition: authored
   dispositionNote: null
+  optional: false
   ownsClauses: []
 - key: treasury-ruleset.ratification-record
   artifact: treasury-ruleset
@@ -12366,6 +12454,7 @@
   dispositionNote: >-
     Written from the decision that adopted this artifact: reference, date, mechanism, tally and
     attendance as recorded at freeze time.
+  optional: false
   ownsClauses: []
 - key: accountability-protocol.triggers
   artifact: accountability-protocol
@@ -12586,6 +12675,7 @@
           Desaprovar alguém não é um gatilho.
   disposition: authored
   dispositionNote: null
+  optional: false
   ownsClauses:
     - 6.5.4
 - key: accountability-protocol.investigation-and-review
@@ -12835,6 +12925,7 @@
           compor o painel.
   disposition: authored
   dispositionNote: null
+  optional: false
   ownsClauses: []
 - key: accountability-protocol.due-process-guarantees
   artifact: accountability-protocol
@@ -13028,12 +13119,14 @@
           ninguém que tomou a decisão original pode conduzir o recurso.
   disposition: authored
   dispositionNote: null
+  optional: false
   ownsClauses: []
 - key: accountability-protocol.anti-retaliation-protections
   artifact: accountability-protocol
   order: 3
   clauseRefs:
     - 6.3.2
+    - 6.5.4
   i18n:
     en:
       title: Anti-Retaliation Protections
@@ -13205,6 +13298,7 @@
           proteção dura dois anos depois do encerramento do processo.
   disposition: authored
   dispositionNote: null
+  optional: false
   ownsClauses:
     - 6.3.2
 - key: accountability-protocol.sanction-and-repair-options
@@ -13479,6 +13573,7 @@
           imediato à segurança nos permite ir direto a uma restrição.
   disposition: authored
   dispositionNote: null
+  optional: false
   ownsClauses:
     - 6.4.1
     - 6.4.2
@@ -13490,6 +13585,7 @@
   artifact: accountability-protocol
   order: 5
   clauseRefs:
+    - 6.4.3
     - 6.4.4
   i18n:
     en:
@@ -13696,12 +13792,14 @@
           candidatar de novo após dois anos, e vale o processo normal de admissão.
   disposition: authored
   dispositionNote: null
+  optional: false
   ownsClauses: []
 - key: accountability-protocol.coordination-with-layer-1
   artifact: accountability-protocol
   order: 6
   clauseRefs:
     - 6.4.4
+    - 6.5.4
   i18n:
     en:
       title: Coordination with Layer 1
@@ -13918,6 +14016,7 @@
           por escrito, o prazo completo de resposta e a chance de recorrer.
   disposition: authored
   dispositionNote: null
+  optional: false
   ownsClauses:
     - 6.4.4
 - key: accountability-protocol.ratification-record
@@ -13954,6 +14053,7 @@
   dispositionNote: >-
     Written from the decision that adopted this artifact: reference, date, mechanism, tally and
     attendance as recorded at freeze time.
+  optional: false
   ownsClauses: []
 - key: conflict-resolution-ladder.conflict-classification
   artifact: conflict-resolution-ladder
@@ -14275,6 +14375,7 @@
           processo.
   disposition: authored
   dispositionNote: null
+  optional: false
   ownsClauses:
     - 6.1.1
     - 6.1.2
@@ -14578,6 +14679,7 @@
           passo; deixar um conflito conhecido sem tratamento é uma quebra de acordo.
   disposition: authored
   dispositionNote: null
+  optional: false
   ownsClauses:
     - 6.2.1
     - 6.2.2
@@ -14591,6 +14693,7 @@
   clauseRefs:
     - 6.2.5
     - 6.1.5
+    - 6.2.3
   i18n:
     en:
       title: Non-Response, Withdrawal, and Deadlock
@@ -14826,13 +14929,16 @@
           conflitos, e três em um ano iniciam uma revisão desta escada.
   disposition: authored
   dispositionNote: null
+  optional: false
   ownsClauses: []
 - key: conflict-resolution-ladder.facilitator-selection-and-replacement
   artifact: conflict-resolution-ladder
   order: 3
   clauseRefs:
+    - 6.2.3
     - 6.3.1
     - 6.3.3
+    - 6.5.3
   i18n:
     en:
       title: Facilitator Selection and Replacement
@@ -15013,11 +15119,13 @@
           paga pelo fundo comum.
   disposition: authored
   dispositionNote: null
+  optional: false
   ownsClauses: []
 - key: conflict-resolution-ladder.privacy-and-information-access-boundaries
   artifact: conflict-resolution-ladder
   order: 4
   clauseRefs:
+    - 6.2.3
     - 6.5.3
   i18n:
     en:
@@ -15237,6 +15345,7 @@
           as partes.
   disposition: authored
   dispositionNote: null
+  optional: false
   ownsClauses: []
 - key: conflict-resolution-ladder.safeguards
   artifact: conflict-resolution-ladder
@@ -15247,6 +15356,7 @@
     - 6.3.3
     - 6.3.4
     - 6.3.5
+    - 6.5.3
     - 6.6.2
   i18n:
     en:
@@ -15510,6 +15620,7 @@
           custa um papel a alguém ou é inconveniente.
   disposition: authored
   dispositionNote: null
+  optional: false
   ownsClauses:
     - 6.3.1
     - 6.3.3
@@ -15550,6 +15661,7 @@
   dispositionNote: >-
     Written from the decision that adopted this artifact: reference, date, mechanism, tally and
     attendance as recorded at freeze time.
+  optional: false
   ownsClauses: []
 - key: meeting-templates.meeting-type-operations
   artifact: meeting-templates
@@ -15859,6 +15971,7 @@
           para a revisão trimestral de carga de trabalho.
   disposition: authored
   dispositionNote: null
+  optional: false
   ownsClauses:
     - 7.2.1
     - 7.2.2
@@ -16138,6 +16251,7 @@
           até dois dias.
   disposition: authored
   dispositionNote: null
+  optional: false
   ownsClauses: []
 - key: meeting-templates.meeting-type-coordination-alignment
   artifact: meeting-templates
@@ -16376,6 +16490,7 @@
           ata com as passagens acordadas vai para o canal compartilhado na mesma semana.
   disposition: authored
   dispositionNote: null
+  optional: false
   ownsClauses: []
 - key: meeting-templates.meeting-type-reflection-learning
   artifact: meeting-templates
@@ -16617,6 +16732,7 @@
           "nada", é publicada junto com a ata em até uma semana.
   disposition: authored
   dispositionNote: null
+  optional: false
   ownsClauses: []
 - key: meeting-templates.meeting-type-conflict-handling
   artifact: meeting-templates
@@ -16863,6 +16979,7 @@
           alcançado, encaminhado à etapa seguinte, ou suspenso.
   disposition: authored
   dispositionNote: null
+  optional: false
   ownsClauses: []
 - key: meeting-templates.ratification-record
   artifact: meeting-templates
@@ -16898,6 +17015,7 @@
   dispositionNote: >-
     Written from the decision that adopted this artifact: reference, date, mechanism, tally and
     attendance as recorded at freeze time.
+  optional: false
   ownsClauses: []
 - key: operations-manual.core-operational-processes
   artifact: operations-manual
@@ -17219,6 +17337,7 @@
           uma semana depois de qualquer mudança na prática.
   disposition: authored
   dispositionNote: null
+  optional: false
   ownsClauses:
     - 7.3.4
     - 7.6.3
@@ -17434,6 +17553,7 @@
           pode durar mais de 90 dias no total, incluindo prorrogações.
   disposition: authored
   dispositionNote: null
+  optional: false
   ownsClauses:
     - 7.1.5
 - key: operations-manual.role-and-domain-interfaces
@@ -17641,6 +17761,7 @@
           atribuída a um papel nomeado na ata, e esse papel confirma que a assumiu.
   disposition: authored
   dispositionNote: null
+  optional: false
   ownsClauses: []
 - key: operations-manual.workload-boundaries
   artifact: operations-manual
@@ -17904,6 +18025,7 @@
           e reparação. Esses limites são revisados anualmente e alterados por proposta.
   disposition: authored
   dispositionNote: null
+  optional: false
   ownsClauses:
     - 7.4.1
     - 7.4.2
@@ -18114,6 +18236,7 @@
           de Infraestrutura revisa essa lista a cada trimestre e sempre que um papel troca de mãos.
   disposition: authored
   dispositionNote: null
+  optional: false
   ownsClauses:
     - 7.5.1
     - 7.5.2
@@ -18364,6 +18487,7 @@
           tratado como uma questão de responsabilização no nosso processo de conflito.
   disposition: authored
   dispositionNote: null
+  optional: false
   ownsClauses:
     - 7.3.5
     - 7.7.4
@@ -18374,6 +18498,7 @@
     - 7.3.1
     - 7.3.2
     - 7.3.3
+    - 7.6.3
     - 7.8.1
   i18n:
     en:
@@ -18688,6 +18813,7 @@
           proteção e de conflito, que só as pessoas envolvidas e dois guardiões nomeados podem ver.
   disposition: authored
   dispositionNote: null
+  optional: false
   ownsClauses:
     - 7.3.1
     - 7.3.2
@@ -18727,6 +18853,7 @@
   dispositionNote: >-
     Written from the decision that adopted this artifact: reference, date, mechanism, tally and
     attendance as recorded at freeze time.
+  optional: false
   ownsClauses: []
 - key: role-registry.overview
   artifact: role-registry
@@ -18954,6 +19081,7 @@
           nomeação, revisão e destituição. Os guardiões conferem o registro a cada seis meses.
   disposition: authored
   dispositionNote: null
+  optional: false
   ownsClauses:
     - 7.1.1
     - 7.1.2
@@ -19024,6 +19152,7 @@
     A table of the roles defined in the sections below it. Generated from them, so a community that
     edits a role does not have to remember to edit the summary — and cannot leave the two
     disagreeing.
+  optional: false
   ownsClauses: []
 - key: role-registry.operational-roles
   artifact: role-registry
@@ -19341,6 +19470,7 @@
           bancário, as faturas em aberto e o checklist de relatórios.
   disposition: authored
   dispositionNote: null
+  optional: false
   ownsClauses:
     - 7.1.3
 - key: role-registry.functional-roles
@@ -19349,6 +19479,7 @@
   clauseRefs:
     - 7.1.1
     - 7.1.2
+    - 7.1.3
   i18n:
     en:
       title: Functional Roles
@@ -19579,6 +19710,7 @@
           ações em aberto.
   disposition: authored
   dispositionNote: null
+  optional: false
   ownsClauses: []
 - key: role-registry.ratification-record
   artifact: role-registry
@@ -19614,6 +19746,7 @@
   dispositionNote: >-
     Written from the decision that adopted this artifact: reference, date, mechanism, tally and
     attendance as recorded at freeze time.
+  optional: false
   ownsClauses: []
 - key: change-protocol.how-changes-are-proposed
   artifact: change-protocol
@@ -19872,6 +20005,7 @@
           Formulários incompletos são devolvidos antes de a discussão começar.
   disposition: authored
   dispositionNote: null
+  optional: false
   ownsClauses:
     - 8.1.1
     - 8.1.3
@@ -19883,6 +20017,7 @@
   clauseRefs:
     - 8.1.2
     - 8.1.4
+    - 8.6.3
   i18n:
     en:
       title: How Proposals Are Classified
@@ -20120,6 +20255,7 @@
           o mais alto.
   disposition: authored
   dispositionNote: null
+  optional: false
   ownsClauses:
     - 8.1.2
     - 8.1.4
@@ -20128,6 +20264,7 @@
   order: 2
   clauseRefs:
     - 8.1.2
+    - 8.6.3
     - 8.7.1
   i18n:
     en:
@@ -20326,6 +20463,7 @@
           Membro Pleno pode convocar uma segunda votação.
   disposition: authored
   dispositionNote: null
+  optional: false
   ownsClauses:
     - 8.7.1
 - key: change-protocol.adoption-and-publication
@@ -20529,6 +20667,7 @@
           claramente as pessoas se lembrem de ter concordado com ela.
   disposition: authored
   dispositionNote: null
+  optional: false
   ownsClauses:
     - 8.2.5
 - key: change-protocol.rejection
@@ -20537,6 +20676,7 @@
   clauseRefs:
     - 8.2.2
     - 8.2.4
+    - 8.6.3
   i18n:
     en:
       title: Rejection
@@ -20714,6 +20854,7 @@
           quem facilita decide se uma proposta que volta é substancialmente a mesma.
   disposition: authored
   dispositionNote: null
+  optional: false
   ownsClauses: []
 - key: change-protocol.transition-and-migration
   artifact: change-protocol
@@ -20721,6 +20862,7 @@
   clauseRefs:
     - 8.5.1
     - 8.5.2
+    - 8.6.3
   i18n:
     en:
       title: Transition and Migration
@@ -20960,6 +21102,7 @@
           votação Constitucional, e registros feitos sob a regra antiga não são alterados.
   disposition: authored
   dispositionNote: null
+  optional: false
   ownsClauses:
     - 8.5.2
 - key: change-protocol.rollback
@@ -20968,6 +21111,7 @@
   clauseRefs:
     - 8.1.5
     - 8.5.1
+    - 8.6.3
   i18n:
     en:
       title: Rollback
@@ -21156,6 +21300,7 @@
           mesmo problema, escolhemos a que é mais fácil de desfazer.
   disposition: authored
   dispositionNote: null
+  optional: false
   ownsClauses:
     - 8.1.5
     - 8.5.1
@@ -21164,6 +21309,7 @@
   order: 7
   clauseRefs:
     - 8.5.3
+    - 8.6.3
   i18n:
     en:
       title: Emergency Changes
@@ -21386,6 +21532,7 @@
           menos que as pessoas a ratifiquem pelo tipo de decisão que a mudança normalmente exigiria.
   disposition: authored
   dispositionNote: null
+  optional: false
   ownsClauses:
     - 8.5.3
 - key: change-protocol.experiments
@@ -21667,6 +21814,7 @@
           em até 14 dias.
   disposition: authored
   dispositionNote: null
+  optional: false
   ownsClauses:
     - 8.3.1
     - 8.3.2
@@ -21708,6 +21856,7 @@
   dispositionNote: >-
     Written from the decision that adopted this artifact: reference, date, mechanism, tally and
     attendance as recorded at freeze time.
+  optional: false
   ownsClauses: []
 - key: experiment-template.required-fields
   artifact: experiment-template
@@ -21986,11 +22135,13 @@
           decisão.
   disposition: authored
   dispositionNote: null
+  optional: false
   ownsClauses: []
 - key: experiment-template.expiry-and-renewal
   artifact: experiment-template
   order: 1
-  clauseRefs: []
+  clauseRefs:
+    - 8.3.4
   i18n:
     en:
       title: Expiry and Renewal
@@ -22139,9 +22290,9 @@
   disposition: authored
   dispositionNote: >-
     A real definition a community should write — the auto-expiry rule, the renewal mechanism, the
-    obligation to record results in the Learning Log. It carries no clause reference only because
-    the experiment MUSTs were moved to the Change Protocol (see rule 2 above), so it is written but
-    counts toward nothing.
+    obligation to record results in the Learning Log. It cites 8.3.4 but owns no clause, because the
+    experiment MUSTs belong to the Change Protocol (see rule 2 above).
+  optional: false
   ownsClauses: []
 - key: experiment-template.outcome-record-filled-in-at-experiment-end
   artifact: experiment-template
@@ -22205,6 +22356,7 @@
   dispositionNote: >-
     Filled in per experiment, at its end — the template says so in its own title. Not a one-time
     community definition.
+  optional: false
   ownsClauses: []
 - key: learning-log.what-constitutes-a-learnable-event
   artifact: learning-log
@@ -22530,6 +22682,7 @@
           revisamos a estrutura por trás dela em vez de procurar alguém para culpar.
   disposition: authored
   dispositionNote: null
+  optional: false
   ownsClauses:
     - 8.4.1
     - 8.4.4
@@ -22698,6 +22851,7 @@
           podem ler; os nomes das pessoas envolvidas ficam de fora, a menos que elas concordem.
   disposition: authored
   dispositionNote: null
+  optional: false
   ownsClauses:
     - 8.4.2
     - 8.4.3
@@ -22735,6 +22889,7 @@
   dispositionNote: >-
     A specimen learning-log entry, not a definition. One is written per learnable event; the format
     itself is defined in `entry-format`.
+  optional: false
   ownsClauses: []
 - key: version-history.entry-format
   artifact: version-history
@@ -22933,6 +23088,7 @@
           antiga.
   disposition: authored
   dispositionNote: null
+  optional: false
   ownsClauses:
     - 8.2.1
     - 8.2.2
@@ -22972,6 +23128,7 @@
       placeholders: []
   disposition: instance_record
   dispositionNote: A specimen version-history entry. One per adopted version.
+  optional: false
   ownsClauses: []
 - key: version-history.current-version-v0-0-repository-initialized
   artifact: version-history
@@ -23007,4 +23164,5 @@
   dispositionNote: >-
     The template's own seed entry (v0.0, repository initialised). It describes the starting state of
     a fresh repository, not something to define.
+  optional: false
   ownsClauses: []

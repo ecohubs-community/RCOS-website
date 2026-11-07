@@ -96,6 +96,7 @@ sections:
         kind: clauses
         refs:
           - 6.3.2
+          - 6.5.4
       - id: rationale
         kind: rationale
         summary: Why protect participants explicitly?
@@ -148,6 +149,7 @@ sections:
       - id: clauses
         kind: clauses
         refs:
+          - 6.4.3
           - 6.4.4
       - id: rationale
         kind: rationale
@@ -170,6 +172,7 @@ sections:
         kind: clauses
         refs:
           - 6.4.4
+          - 6.5.4
       - id: rationale
         kind: rationale
         summary: Why tie this to the Exit & Separation Protocol?

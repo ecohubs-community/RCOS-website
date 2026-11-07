@@ -17,7 +17,7 @@
 
 ## Primärer Zweck
 
-*RCOS-Klauseln: [2.1.1](https://rcos.ecohubs.community/de/standard/core/0.1/layer-0-identity-scope#2.1.1), [2.1.2](https://rcos.ecohubs.community/de/standard/core/0.1/layer-0-identity-scope#2.1.2), [2.1.5](https://rcos.ecohubs.community/de/standard/core/0.1/layer-0-identity-scope#2.1.5)*
+*RCOS-Klauseln: [2.1.1](https://rcos.ecohubs.community/de/standard/core/0.1/layer-0-identity-scope#2.1.1), [2.1.2](https://rcos.ecohubs.community/de/standard/core/0.1/layer-0-identity-scope#2.1.2), [2.1.3](https://rcos.ecohubs.community/de/standard/core/0.1/layer-0-identity-scope#2.1.3), [2.1.5](https://rcos.ecohubs.community/de/standard/core/0.1/layer-0-identity-scope#2.1.5)*
 
 <details data-kind="rationale">
 <summary>Warum ein einzelner dauerhafter Zweck?</summary>
@@ -59,7 +59,7 @@ Listet konkrete sekundäre Ergebnisse auf, die die Gemeinschaft verfolgt. Sie d�
 
 ## Nicht-Ziele und Ausschlüsse
 
-*RCOS-Klauseln: [2.1.5](https://rcos.ecohubs.community/de/standard/core/0.1/layer-0-identity-scope#2.1.5)*
+*RCOS-Klauseln: [2.1.5](https://rcos.ecohubs.community/de/standard/core/0.1/layer-0-identity-scope#2.1.5) — dieser Abschnitt ist empfohlen, nicht vorgeschrieben: Benannte Nicht-Ziele machen leichter sichtbar, wenn eine Handlung oder Entscheidung dem primären Zweck widerspricht.*
 
 <details data-kind="rationale">
 <summary>Warum festhalten, was die Gemeinschaft nicht ist?</summary>
@@ -71,7 +71,7 @@ Gemeinschaften driften durch Anhäufung ab — eine unwidersprochen gebliebene A
 <details data-kind="instructions">
 <summary>Wie ihr das ausfüllt</summary>
 
-Benennt die Dinge, die eure Gemeinschaft ausdrücklich NICHT ist, insbesondere Identitäten oder Rollen, die andere möglicherweise standardmäßig annehmen könnten (politische Partei, Investmentvehikel, religiöse Gruppe usw.).
+Benennt die Dinge, die eure Gemeinschaft ausdrücklich NICHT ist, insbesondere Identitäten oder Rollen, die andere möglicherweise standardmäßig annehmen könnten (politische Partei, Investmentvehikel, religiöse Gruppe usw.). Empfohlen, von RCOS-Core aber nicht vorgeschrieben. Entfernt diesen Abschnitt vollständig, wenn ihr keine habt.
 
 </details>
 

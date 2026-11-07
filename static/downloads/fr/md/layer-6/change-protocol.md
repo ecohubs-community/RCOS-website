@@ -31,7 +31,7 @@ _<Tout Membre de plein droit peut proposer un changement à tout artefact RCOS. 
 
 ## Comment les propositions sont classifiées
 
-*Clauses RCOS : [8.1.2](https://rcos.ecohubs.community/fr/standard/core/0.1/layer-6-evolution-adaptation#8.1.2), [8.1.4](https://rcos.ecohubs.community/fr/standard/core/0.1/layer-6-evolution-adaptation#8.1.4)*
+*Clauses RCOS : [8.1.2](https://rcos.ecohubs.community/fr/standard/core/0.1/layer-6-evolution-adaptation#8.1.2), [8.1.4](https://rcos.ecohubs.community/fr/standard/core/0.1/layer-6-evolution-adaptation#8.1.4), [8.6.3](https://rcos.ecohubs.community/fr/standard/core/0.1/layer-6-evolution-adaptation#8.6.3)*
 
 - **Opérationnel :** _<corrections de formulation, mise en forme, mises à jour mineures de contenu ; aucun vote requis ; exécuté par le rôle responsable dans les limites de sa délégation.>_
 - **Stratégique :** _<changements du contenu des Couches 1 à 5 qui affectent les droits des membres, les processus ou les structures.>_
@@ -41,7 +41,7 @@ _<Tout Membre de plein droit peut proposer un changement à tout artefact RCOS. 
 
 ## Examen et délibération
 
-*Clauses RCOS : [8.1.2](https://rcos.ecohubs.community/fr/standard/core/0.1/layer-6-evolution-adaptation#8.1.2), [8.7.1](https://rcos.ecohubs.community/fr/standard/core/0.1/layer-6-evolution-adaptation#8.7.1)*
+*Clauses RCOS : [8.1.2](https://rcos.ecohubs.community/fr/standard/core/0.1/layer-6-evolution-adaptation#8.1.2), [8.6.3](https://rcos.ecohubs.community/fr/standard/core/0.1/layer-6-evolution-adaptation#8.6.3), [8.7.1](https://rcos.ecohubs.community/fr/standard/core/0.1/layer-6-evolution-adaptation#8.7.1)*
 
 - **Opérationnel :** _<aucune délibération requise.>_
 - **Stratégique :** _<délibération minimale de X jours ; lieu de délibération.>_
@@ -60,7 +60,7 @@ Lorsqu'une proposition est adoptée :
 
 ## Rejet
 
-*Clauses RCOS : [8.2.2](https://rcos.ecohubs.community/fr/standard/core/0.1/layer-6-evolution-adaptation#8.2.2), [8.2.4](https://rcos.ecohubs.community/fr/standard/core/0.1/layer-6-evolution-adaptation#8.2.4)*
+*Clauses RCOS : [8.2.2](https://rcos.ecohubs.community/fr/standard/core/0.1/layer-6-evolution-adaptation#8.2.2), [8.2.4](https://rcos.ecohubs.community/fr/standard/core/0.1/layer-6-evolution-adaptation#8.2.4), [8.6.3](https://rcos.ecohubs.community/fr/standard/core/0.1/layer-6-evolution-adaptation#8.6.3)*
 
 Lorsqu'une proposition est rejetée :
 
@@ -70,7 +70,7 @@ Lorsqu'une proposition est rejetée :
 
 ## Transition et migration
 
-*Clauses RCOS : [8.5.1](https://rcos.ecohubs.community/fr/standard/core/0.1/layer-6-evolution-adaptation#8.5.1), [8.5.2](https://rcos.ecohubs.community/fr/standard/core/0.1/layer-6-evolution-adaptation#8.5.2)*
+*Clauses RCOS : [8.5.1](https://rcos.ecohubs.community/fr/standard/core/0.1/layer-6-evolution-adaptation#8.5.1), [8.5.2](https://rcos.ecohubs.community/fr/standard/core/0.1/layer-6-evolution-adaptation#8.5.2), [8.6.3](https://rcos.ecohubs.community/fr/standard/core/0.1/layer-6-evolution-adaptation#8.6.3)*
 
 Lorsqu'un changement de règle affecte des rôles, accords ou registres existants :
 
@@ -81,13 +81,13 @@ Lorsqu'un changement de règle affecte des rôles, accords ou registres existant
 
 ## Retour en arrière
 
-*Clauses RCOS : [8.1.5](https://rcos.ecohubs.community/fr/standard/core/0.1/layer-6-evolution-adaptation#8.1.5), [8.5.1](https://rcos.ecohubs.community/fr/standard/core/0.1/layer-6-evolution-adaptation#8.5.1)*
+*Clauses RCOS : [8.1.5](https://rcos.ecohubs.community/fr/standard/core/0.1/layer-6-evolution-adaptation#8.1.5), [8.5.1](https://rcos.ecohubs.community/fr/standard/core/0.1/layer-6-evolution-adaptation#8.5.1), [8.6.3](https://rcos.ecohubs.community/fr/standard/core/0.1/layer-6-evolution-adaptation#8.6.3)*
 
 _<Toute décision adoptée peut être annulée par le même processus que l'original. Tout Membre de plein droit peut déclencher un nouveau vote en soumettant une objection écrite et motivée qui n'a pas été prise en compte lors de la délibération originale. Le retour en arrière utilise le même type de décision que l'original.>_
 
 ## Changements d'urgence
 
-*Clauses RCOS : [8.5.3](https://rcos.ecohubs.community/fr/standard/core/0.1/layer-6-evolution-adaptation#8.5.3)*
+*Clauses RCOS : [8.5.3](https://rcos.ecohubs.community/fr/standard/core/0.1/layer-6-evolution-adaptation#8.5.3), [8.6.3](https://rcos.ecohubs.community/fr/standard/core/0.1/layer-6-evolution-adaptation#8.6.3)*
 
 Un changement opérationnel d'urgence peut être effectué par _<rôle>_ uniquement si toutes les conditions suivantes sont réunies :
 

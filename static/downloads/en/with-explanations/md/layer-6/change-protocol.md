@@ -45,7 +45,7 @@ _<Any Full Member may propose a change to any RCOS artifact. State the submissio
 
 ## How Proposals Are Classified
 
-*RCOS clauses: [8.1.2](https://rcos.ecohubs.community/standard/core/0.1/layer-6-evolution-adaptation#8.1.2), [8.1.4](https://rcos.ecohubs.community/standard/core/0.1/layer-6-evolution-adaptation#8.1.4)*
+*RCOS clauses: [8.1.2](https://rcos.ecohubs.community/standard/core/0.1/layer-6-evolution-adaptation#8.1.2), [8.1.4](https://rcos.ecohubs.community/standard/core/0.1/layer-6-evolution-adaptation#8.1.4), [8.6.3](https://rcos.ecohubs.community/standard/core/0.1/layer-6-evolution-adaptation#8.6.3)*
 
 <details data-kind="rationale">
 <summary>Why classify by impact?</summary>
@@ -69,7 +69,7 @@ Define what falls under each decision type. State the default-higher rule for am
 
 ## Review and Deliberation
 
-*RCOS clauses: [8.1.2](https://rcos.ecohubs.community/standard/core/0.1/layer-6-evolution-adaptation#8.1.2), [8.7.1](https://rcos.ecohubs.community/standard/core/0.1/layer-6-evolution-adaptation#8.7.1)*
+*RCOS clauses: [8.1.2](https://rcos.ecohubs.community/standard/core/0.1/layer-6-evolution-adaptation#8.1.2), [8.6.3](https://rcos.ecohubs.community/standard/core/0.1/layer-6-evolution-adaptation#8.6.3), [8.7.1](https://rcos.ecohubs.community/standard/core/0.1/layer-6-evolution-adaptation#8.7.1)*
 
 <details data-kind="rationale">
 <summary>Why enforce minimum deliberation windows?</summary>
@@ -116,7 +116,7 @@ When a proposal passes:
 
 ## Rejection
 
-*RCOS clauses: [8.2.2](https://rcos.ecohubs.community/standard/core/0.1/layer-6-evolution-adaptation#8.2.2), [8.2.4](https://rcos.ecohubs.community/standard/core/0.1/layer-6-evolution-adaptation#8.2.4)*
+*RCOS clauses: [8.2.2](https://rcos.ecohubs.community/standard/core/0.1/layer-6-evolution-adaptation#8.2.2), [8.2.4](https://rcos.ecohubs.community/standard/core/0.1/layer-6-evolution-adaptation#8.2.4), [8.6.3](https://rcos.ecohubs.community/standard/core/0.1/layer-6-evolution-adaptation#8.6.3)*
 
 <details data-kind="rationale">
 <summary>Why archive rejected proposals?</summary>
@@ -140,7 +140,7 @@ When a proposal is rejected:
 
 ## Transition and Migration
 
-*RCOS clauses: [8.5.1](https://rcos.ecohubs.community/standard/core/0.1/layer-6-evolution-adaptation#8.5.1), [8.5.2](https://rcos.ecohubs.community/standard/core/0.1/layer-6-evolution-adaptation#8.5.2)*
+*RCOS clauses: [8.5.1](https://rcos.ecohubs.community/standard/core/0.1/layer-6-evolution-adaptation#8.5.1), [8.5.2](https://rcos.ecohubs.community/standard/core/0.1/layer-6-evolution-adaptation#8.5.2), [8.6.3](https://rcos.ecohubs.community/standard/core/0.1/layer-6-evolution-adaptation#8.6.3)*
 
 <details data-kind="rationale">
 <summary>Why protect existing rights during transitions?</summary>
@@ -165,7 +165,7 @@ When a rule change affects existing roles, agreements, or records:
 
 ## Rollback
 
-*RCOS clauses: [8.1.5](https://rcos.ecohubs.community/standard/core/0.1/layer-6-evolution-adaptation#8.1.5), [8.5.1](https://rcos.ecohubs.community/standard/core/0.1/layer-6-evolution-adaptation#8.5.1)*
+*RCOS clauses: [8.1.5](https://rcos.ecohubs.community/standard/core/0.1/layer-6-evolution-adaptation#8.1.5), [8.5.1](https://rcos.ecohubs.community/standard/core/0.1/layer-6-evolution-adaptation#8.5.1), [8.6.3](https://rcos.ecohubs.community/standard/core/0.1/layer-6-evolution-adaptation#8.6.3)*
 
 <details data-kind="rationale">
 <summary>Why make rollback symmetrical with adoption?</summary>
@@ -185,7 +185,7 @@ _<Any passed decision can be reversed through the same process as the original. 
 
 ## Emergency Changes
 
-*RCOS clauses: [8.5.3](https://rcos.ecohubs.community/standard/core/0.1/layer-6-evolution-adaptation#8.5.3)*
+*RCOS clauses: [8.5.3](https://rcos.ecohubs.community/standard/core/0.1/layer-6-evolution-adaptation#8.5.3), [8.6.3](https://rcos.ecohubs.community/standard/core/0.1/layer-6-evolution-adaptation#8.6.3)*
 
 <details data-kind="rationale">
 <summary>Why allow emergency changes at all?</summary>

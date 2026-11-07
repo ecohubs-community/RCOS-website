@@ -42,7 +42,7 @@
 
 ## Non-réponse, retrait et impasse
 
-*Clauses RCOS : [6.2.5](https://rcos.ecohubs.community/fr/standard/core/0.1/layer-4-conflict-repair-accountability#6.2.5), [6.1.5](https://rcos.ecohubs.community/fr/standard/core/0.1/layer-4-conflict-repair-accountability#6.1.5)*
+*Clauses RCOS : [6.2.5](https://rcos.ecohubs.community/fr/standard/core/0.1/layer-4-conflict-repair-accountability#6.2.5), [6.1.5](https://rcos.ecohubs.community/fr/standard/core/0.1/layer-4-conflict-repair-accountability#6.1.5), [6.2.3](https://rcos.ecohubs.community/fr/standard/core/0.1/layer-4-conflict-repair-accountability#6.2.3)*
 
 **Si une partie ne répond pas dans le délai défini :**
 - _<Relance ; délai de grâce supplémentaire ; traitement du silence prolongé comme non-résolution ; règle d'escalade.>_
@@ -60,7 +60,7 @@
 
 ## Sélection et remplacement du facilitateur ou de la facilitatrice
 
-*Clauses RCOS : [6.3.1](https://rcos.ecohubs.community/fr/standard/core/0.1/layer-4-conflict-repair-accountability#6.3.1), [6.3.3](https://rcos.ecohubs.community/fr/standard/core/0.1/layer-4-conflict-repair-accountability#6.3.3)*
+*Clauses RCOS : [6.2.3](https://rcos.ecohubs.community/fr/standard/core/0.1/layer-4-conflict-repair-accountability#6.2.3), [6.3.1](https://rcos.ecohubs.community/fr/standard/core/0.1/layer-4-conflict-repair-accountability#6.3.1), [6.3.3](https://rcos.ecohubs.community/fr/standard/core/0.1/layer-4-conflict-repair-accountability#6.3.3), [6.5.3](https://rcos.ecohubs.community/fr/standard/core/0.1/layer-4-conflict-repair-accountability#6.5.3)*
 
 - _<Rôle de facilitateur·rice par défaut selon le Registre des rôles.>_
 - _<Règle lorsque le facilitateur ou la facilitatrice est partie au conflit — sélection d'un·e remplaçant·e neutre.>_
@@ -69,7 +69,7 @@
 
 ## Vie privée et limites d'accès à l'information
 
-*Clauses RCOS : [6.5.3](https://rcos.ecohubs.community/fr/standard/core/0.1/layer-4-conflict-repair-accountability#6.5.3)*
+*Clauses RCOS : [6.2.3](https://rcos.ecohubs.community/fr/standard/core/0.1/layer-4-conflict-repair-accountability#6.2.3), [6.5.3](https://rcos.ecohubs.community/fr/standard/core/0.1/layer-4-conflict-repair-accountability#6.5.3)*
 
 - _<Étapes 1–4 : entièrement confidentielles ; seules les parties et le facilitateur ou la facilitatrice peuvent accéder aux dossiers.>_
 - _<Étapes 5–6 : information minimale nécessaire divulguée aux Membres Titulaires ; les parties sont notifiées avant la divulgation. Définis ce que signifie « minimale nécessaire ».>_
@@ -78,7 +78,7 @@
 
 ## Garde-fous
 
-*Clauses RCOS : [6.3.1](https://rcos.ecohubs.community/fr/standard/core/0.1/layer-4-conflict-repair-accountability#6.3.1), [6.3.2](https://rcos.ecohubs.community/fr/standard/core/0.1/layer-4-conflict-repair-accountability#6.3.2), [6.3.3](https://rcos.ecohubs.community/fr/standard/core/0.1/layer-4-conflict-repair-accountability#6.3.3), [6.3.4](https://rcos.ecohubs.community/fr/standard/core/0.1/layer-4-conflict-repair-accountability#6.3.4), [6.3.5](https://rcos.ecohubs.community/fr/standard/core/0.1/layer-4-conflict-repair-accountability#6.3.5), [6.6.2](https://rcos.ecohubs.community/fr/standard/core/0.1/layer-4-conflict-repair-accountability#6.6.2)*
+*Clauses RCOS : [6.3.1](https://rcos.ecohubs.community/fr/standard/core/0.1/layer-4-conflict-repair-accountability#6.3.1), [6.3.2](https://rcos.ecohubs.community/fr/standard/core/0.1/layer-4-conflict-repair-accountability#6.3.2), [6.3.3](https://rcos.ecohubs.community/fr/standard/core/0.1/layer-4-conflict-repair-accountability#6.3.3), [6.3.4](https://rcos.ecohubs.community/fr/standard/core/0.1/layer-4-conflict-repair-accountability#6.3.4), [6.3.5](https://rcos.ecohubs.community/fr/standard/core/0.1/layer-4-conflict-repair-accountability#6.3.5), [6.5.3](https://rcos.ecohubs.community/fr/standard/core/0.1/layer-4-conflict-repair-accountability#6.5.3), [6.6.2](https://rcos.ecohubs.community/fr/standard/core/0.1/layer-4-conflict-repair-accountability#6.6.2)*
 
 - **Anti-représailles :** _<les représailles contre un membre soulevant un conflit de bonne foi constituent elles-mêmes un motif de processus de responsabilité.>_
 - **Plaintes de mauvaise foi :** _<les plaintes délibérément fausses peuvent déclencher un processus de responsabilité contre le ou la plaignant·e.>_

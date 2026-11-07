@@ -2,7 +2,7 @@
 
 # Protocole de gouvernance
 
-- **Généré:** 2026-11-02
+- **Généré:** 2026-11-06
 - **Source (version la plus récente):** [https://rcos.ecohubs.community/fr/articles/rcos-templates/layer-2/governance-protocol](https://rcos.ecohubs.community/fr/articles/rcos-templates/layer-2/governance-protocol)
 - **Tous les modèles RCOS:** [https://rcos.ecohubs.community/fr/articles/rcos-templates](https://rcos.ecohubs.community/fr/articles/rcos-templates)
 
@@ -36,7 +36,7 @@
 
 ## Exécution de la décision
 
-*Clauses RCOS : [4.5.1](https://rcos.ecohubs.community/fr/standard/core/0.1/layer-2-governance-decision-logic#4.5.1), [4.5.4](https://rcos.ecohubs.community/fr/standard/core/0.1/layer-2-governance-decision-logic#4.5.4)*
+*Clauses RCOS : [4.5.1](https://rcos.ecohubs.community/fr/standard/core/0.1/layer-2-governance-decision-logic#4.5.1), [4.5.2](https://rcos.ecohubs.community/fr/standard/core/0.1/layer-2-governance-decision-logic#4.5.2), [4.5.4](https://rcos.ecohubs.community/fr/standard/core/0.1/layer-2-governance-decision-logic#4.5.4)*
 
 - _<En cas d'adoption : comment la proposition est classée ; les artefacts concernés sont mis à jour ; une entrée dans l'historique des versions est créée.>_
 - _<En cas de rejet : où la proposition est archivée.>_
@@ -44,7 +44,7 @@
 
 ## Documentation et publication
 
-*Clauses RCOS : [4.5.4](https://rcos.ecohubs.community/fr/standard/core/0.1/layer-2-governance-decision-logic#4.5.4)*
+*Clauses RCOS : [4.5.2](https://rcos.ecohubs.community/fr/standard/core/0.1/layer-2-governance-decision-logic#4.5.2), [4.5.4](https://rcos.ecohubs.community/fr/standard/core/0.1/layer-2-governance-decision-logic#4.5.4)*
 
 - _<Toutes les propositions adoptées et rejetées sont classées dans les X jours suivant la clôture du vote.>_
 - _<L'artefact de vote (p. ex. lien Snapshot) sert de registre de décision.>_

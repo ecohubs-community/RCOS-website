@@ -65,7 +65,7 @@ Liste as etapas ordenadas que toda pessoa nova membro DEVE completar para passar
 
 ## Estado Inicial de Associação
 
-*Cláusulas RCOS: [3.1.2](https://rcos.ecohubs.community/pt-br/standard/core/0.1/layer-1-membership-system#3.1.2), [3.1.4](https://rcos.ecohubs.community/pt-br/standard/core/0.1/layer-1-membership-system#3.1.4)*
+*Cláusulas RCOS: [3.1.2](https://rcos.ecohubs.community/pt-br/standard/core/0.1/layer-1-membership-system#3.1.2), [3.1.4](https://rcos.ecohubs.community/pt-br/standard/core/0.1/layer-1-membership-system#3.1.4), [3.2.2](https://rcos.ecohubs.community/pt-br/standard/core/0.1/layer-1-membership-system#3.2.2)*
 
 <details data-kind="rationale">
 <summary>Por que atribuir um estado ao final da integração?</summary>

@@ -17,7 +17,7 @@
 
 ## Propósito Principal
 
-*Cláusulas RCOS: [2.1.1](https://rcos.ecohubs.community/es/standard/core/0.1/layer-0-identity-scope#2.1.1), [2.1.2](https://rcos.ecohubs.community/es/standard/core/0.1/layer-0-identity-scope#2.1.2), [2.1.5](https://rcos.ecohubs.community/es/standard/core/0.1/layer-0-identity-scope#2.1.5)*
+*Cláusulas RCOS: [2.1.1](https://rcos.ecohubs.community/es/standard/core/0.1/layer-0-identity-scope#2.1.1), [2.1.2](https://rcos.ecohubs.community/es/standard/core/0.1/layer-0-identity-scope#2.1.2), [2.1.3](https://rcos.ecohubs.community/es/standard/core/0.1/layer-0-identity-scope#2.1.3), [2.1.5](https://rcos.ecohubs.community/es/standard/core/0.1/layer-0-identity-scope#2.1.5)*
 
 <details data-kind="rationale">
 <summary>¿Por qué un único propósito perdurable?</summary>
@@ -59,7 +59,7 @@ Enumera los resultados secundarios concretos que la comunidad persigue. NO DEBEN
 
 ## No-Objetivos y Exclusiones
 
-*Cláusulas RCOS: [2.1.5](https://rcos.ecohubs.community/es/standard/core/0.1/layer-0-identity-scope#2.1.5)*
+*Cláusulas RCOS: [2.1.5](https://rcos.ecohubs.community/es/standard/core/0.1/layer-0-identity-scope#2.1.5) — esta sección es recomendable, no obligatoria: nombrar los no-objetivos facilita ver cuándo una acción o decisión contradice el propósito principal.*
 
 <details data-kind="rationale">
 <summary>¿Por qué declarar lo que la comunidad no es?</summary>
@@ -71,7 +71,7 @@ Las comunidades derivan por acumulación — una suposición no cuestionada a la
 <details data-kind="instructions">
 <summary>Cómo completar esta sección</summary>
 
-Nombra las cosas que tu comunidad explícitamente NO es, especialmente identidades o roles que otros podrían asumir por defecto (partido político, vehículo de inversión, grupo religioso, etc.).
+Nombra las cosas que tu comunidad explícitamente NO es, especialmente identidades o roles que otros podrían asumir por defecto (partido político, vehículo de inversión, grupo religioso, etc.). Recomendable, pero no exigido por RCOS-Core. Elimina esta sección por completo si no tienes ninguno.
 
 </details>
 

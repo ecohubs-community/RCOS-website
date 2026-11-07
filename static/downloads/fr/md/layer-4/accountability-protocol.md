@@ -46,7 +46,7 @@ Un contrôle de responsabilisation est initié lorsque :
 
 ## Protections contre les représailles
 
-*Clauses RCOS : [6.3.2](https://rcos.ecohubs.community/fr/standard/core/0.1/layer-4-conflict-repair-accountability#6.3.2)*
+*Clauses RCOS : [6.3.2](https://rcos.ecohubs.community/fr/standard/core/0.1/layer-4-conflict-repair-accountability#6.3.2), [6.5.4](https://rcos.ecohubs.community/fr/standard/core/0.1/layer-4-conflict-repair-accountability#6.5.4)*
 
 _<Les représailles contre un membre pour sa participation à toute partie de ce processus constituent elles-mêmes un déclencheur de responsabilisation.>_
 
@@ -66,7 +66,7 @@ _<Les représailles contre un membre pour sa participation à toute partie de ce
 
 ## Conditions de rétablissement des droits
 
-*Clauses RCOS : [6.4.4](https://rcos.ecohubs.community/fr/standard/core/0.1/layer-4-conflict-repair-accountability#6.4.4)*
+*Clauses RCOS : [6.4.3](https://rcos.ecohubs.community/fr/standard/core/0.1/layer-4-conflict-repair-accountability#6.4.3), [6.4.4](https://rcos.ecohubs.community/fr/standard/core/0.1/layer-4-conflict-repair-accountability#6.4.4)*
 
 - **Après un départ volontaire :** _<nouvelle candidature via le Protocole d'intégration ; pas de rétablissement automatique.>_
 - **Après une exclusion forcée :** _<période minimale de blocage de candidature ; le processus d'admission standard s'applique.>_
@@ -74,7 +74,7 @@ _<Les représailles contre un membre pour sa participation à toute partie de ce
 
 ## Coordination avec la Couche 1
 
-*Clauses RCOS : [6.4.4](https://rcos.ecohubs.community/fr/standard/core/0.1/layer-4-conflict-repair-accountability#6.4.4)*
+*Clauses RCOS : [6.4.4](https://rcos.ecohubs.community/fr/standard/core/0.1/layer-4-conflict-repair-accountability#6.4.4), [6.5.4](https://rcos.ecohubs.community/fr/standard/core/0.1/layer-4-conflict-repair-accountability#6.5.4)*
 
 _<Toutes les exclusions forcées et restrictions d'accès temporaires suivent le Protocole de sortie et de séparation (Couche 1). Une restriction d'accès temporaire ne constitue pas une sortie et ne déclenche pas la période de blocage de candidature, sauf si une exclusion forcée est ensuite votée par les Membres titulaires.>_
 

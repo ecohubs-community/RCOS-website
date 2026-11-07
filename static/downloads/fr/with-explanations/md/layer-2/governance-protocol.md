@@ -2,7 +2,7 @@
 
 # Protocole de gouvernance
 
-- **Généré:** 2026-11-02
+- **Généré:** 2026-11-06
 - **Source (version la plus récente):** [https://rcos.ecohubs.community/fr/articles/rcos-templates/layer-2/governance-protocol](https://rcos.ecohubs.community/fr/articles/rcos-templates/layer-2/governance-protocol)
 - **Tous les modèles RCOS:** [https://rcos.ecohubs.community/fr/articles/rcos-templates](https://rcos.ecohubs.community/fr/articles/rcos-templates)
 
@@ -64,7 +64,7 @@ Nomme les lieux de délibération et les périodes minimales pour les décisions
 
 ## Exécution de la décision
 
-*Clauses RCOS : [4.5.1](https://rcos.ecohubs.community/fr/standard/core/0.1/layer-2-governance-decision-logic#4.5.1), [4.5.4](https://rcos.ecohubs.community/fr/standard/core/0.1/layer-2-governance-decision-logic#4.5.4)*
+*Clauses RCOS : [4.5.1](https://rcos.ecohubs.community/fr/standard/core/0.1/layer-2-governance-decision-logic#4.5.1), [4.5.2](https://rcos.ecohubs.community/fr/standard/core/0.1/layer-2-governance-decision-logic#4.5.2), [4.5.4](https://rcos.ecohubs.community/fr/standard/core/0.1/layer-2-governance-decision-logic#4.5.4)*
 
 <details data-kind="rationale">
 <summary>Pourquoi lier l'exécution au registre ?</summary>
@@ -86,7 +86,7 @@ Indique ce qui se passe quand une proposition est adoptée (mise à jour des art
 
 ## Documentation et publication
 
-*Clauses RCOS : [4.5.4](https://rcos.ecohubs.community/fr/standard/core/0.1/layer-2-governance-decision-logic#4.5.4)*
+*Clauses RCOS : [4.5.2](https://rcos.ecohubs.community/fr/standard/core/0.1/layer-2-governance-decision-logic#4.5.2), [4.5.4](https://rcos.ecohubs.community/fr/standard/core/0.1/layer-2-governance-decision-logic#4.5.4)*
 
 <details data-kind="rationale">
 <summary>Pourquoi documenter chaque résultat, y compris les rejets ?</summary>

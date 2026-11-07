@@ -2,7 +2,7 @@
 
 # Governance Protocol
 
-- **Generated:** 2026-11-02
+- **Generated:** 2026-11-06
 - **Source (latest version):** [https://rcos.ecohubs.community/articles/rcos-templates/layer-2/governance-protocol](https://rcos.ecohubs.community/articles/rcos-templates/layer-2/governance-protocol)
 - **All RCOS templates:** [https://rcos.ecohubs.community/articles/rcos-templates](https://rcos.ecohubs.community/articles/rcos-templates)
 
@@ -36,7 +36,7 @@
 
 ## Decision Execution
 
-*RCOS clauses: [4.5.1](https://rcos.ecohubs.community/standard/core/0.1/layer-2-governance-decision-logic#4.5.1), [4.5.4](https://rcos.ecohubs.community/standard/core/0.1/layer-2-governance-decision-logic#4.5.4)*
+*RCOS clauses: [4.5.1](https://rcos.ecohubs.community/standard/core/0.1/layer-2-governance-decision-logic#4.5.1), [4.5.2](https://rcos.ecohubs.community/standard/core/0.1/layer-2-governance-decision-logic#4.5.2), [4.5.4](https://rcos.ecohubs.community/standard/core/0.1/layer-2-governance-decision-logic#4.5.4)*
 
 - _<On passing: how proposal is filed; affected artifacts updated; version history entry made.>_
 - _<On rejection: where proposal is archived.>_
@@ -44,7 +44,7 @@
 
 ## Documentation and Publication
 
-*RCOS clauses: [4.5.4](https://rcos.ecohubs.community/standard/core/0.1/layer-2-governance-decision-logic#4.5.4)*
+*RCOS clauses: [4.5.2](https://rcos.ecohubs.community/standard/core/0.1/layer-2-governance-decision-logic#4.5.2), [4.5.4](https://rcos.ecohubs.community/standard/core/0.1/layer-2-governance-decision-logic#4.5.4)*
 
 - _<All passed and rejected proposals are filed within X days of the vote closing.>_
 - _<The vote artifact (e.g. Snapshot link) serves as the decision record.>_

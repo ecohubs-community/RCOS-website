@@ -2,7 +2,7 @@
 
 # Governance-Protokoll
 
-- **Generiert:** 2026-11-02
+- **Generiert:** 2026-11-06
 - **Quelle (aktuelle Version):** [https://rcos.ecohubs.community/de/articles/rcos-templates/layer-2/governance-protocol](https://rcos.ecohubs.community/de/articles/rcos-templates/layer-2/governance-protocol)
 - **Alle RCOS-Vorlagen:** [https://rcos.ecohubs.community/de/articles/rcos-templates](https://rcos.ecohubs.community/de/articles/rcos-templates)
 
@@ -36,7 +36,7 @@
 
 ## Entscheidungsumsetzung
 
-*RCOS-Klauseln: [4.5.1](https://rcos.ecohubs.community/de/standard/core/0.1/layer-2-governance-decision-logic#4.5.1), [4.5.4](https://rcos.ecohubs.community/de/standard/core/0.1/layer-2-governance-decision-logic#4.5.4)*
+*RCOS-Klauseln: [4.5.1](https://rcos.ecohubs.community/de/standard/core/0.1/layer-2-governance-decision-logic#4.5.1), [4.5.2](https://rcos.ecohubs.community/de/standard/core/0.1/layer-2-governance-decision-logic#4.5.2), [4.5.4](https://rcos.ecohubs.community/de/standard/core/0.1/layer-2-governance-decision-logic#4.5.4)*
 
 - _<Bei Annahme: wie der Antrag abgelegt wird; betroffene Artefakte aktualisiert werden; Eintrag in der Versionshistorie erstellt wird.>_
 - _<Bei Ablehnung: wo der Antrag archiviert wird.>_
@@ -44,7 +44,7 @@
 
 ## Dokumentation und Veröffentlichung
 
-*RCOS-Klauseln: [4.5.4](https://rcos.ecohubs.community/de/standard/core/0.1/layer-2-governance-decision-logic#4.5.4)*
+*RCOS-Klauseln: [4.5.2](https://rcos.ecohubs.community/de/standard/core/0.1/layer-2-governance-decision-logic#4.5.2), [4.5.4](https://rcos.ecohubs.community/de/standard/core/0.1/layer-2-governance-decision-logic#4.5.4)*
 
 - _<Alle angenommenen und abgelehnten Anträge werden innerhalb von X Tagen nach Abstimmungsende abgelegt.>_
 - _<Das Abstimmungsartefakt (z. B. Snapshot-Link) dient als Entscheidungsprotokoll.>_

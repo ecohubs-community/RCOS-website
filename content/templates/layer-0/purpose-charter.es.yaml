@@ -1,5 +1,5 @@
 lang: es
-sourceHash: 'd5036468'
+sourceHash: '626bd90f'
 title: Carta de Propósito
 preamble: |-
   - **Capa:** 0 — Identidad y Alcance
@@ -38,12 +38,14 @@ sections:
   non-goals-and-exclusions:
     title: No-Objetivos y Exclusiones
     blocks:
+      clauses:
+        note: ' — esta sección es recomendable, no obligatoria: nombrar los no-objetivos facilita ver cuándo una acción o decisión contradice el propósito principal.'
       rationale:
         summary: ¿Por qué declarar lo que la comunidad no es?
         body: Las comunidades derivan por acumulación — una suposición no cuestionada a la vez. Nombrar lo que la comunidad explícitamente *no es* hace visibles las violaciones de límites desde el principio, y da a cualquiera una base clara para objetar antes de que una actividad se normalice. El silencio aquí se interpreta como consentimiento.
       instructions:
         summary: Cómo completar esta sección
-        body: Nombra las cosas que tu comunidad explícitamente NO es, especialmente identidades o roles que otros podrían asumir por defecto (partido político, vehículo de inversión, grupo religioso, etc.).
+        body: 'Nombra las cosas que tu comunidad explícitamente NO es, especialmente identidades o roles que otros podrían asumir por defecto (partido político, vehículo de inversión, grupo religioso, etc.). Recomendable, pero no exigido por RCOS-Core. Elimina esta sección por completo si no tienes ninguno.'
       m1:
         md: |-
           1. _<No-objetivo 1.>_

@@ -88,7 +88,7 @@ Indique o direito à notificação escrita, uma janela mínima de resposta e um 
 
 ## Proteções Antirretaliação
 
-*Cláusulas RCOS: [6.3.2](https://rcos.ecohubs.community/pt-br/standard/core/0.1/layer-4-conflict-repair-accountability#6.3.2)*
+*Cláusulas RCOS: [6.3.2](https://rcos.ecohubs.community/pt-br/standard/core/0.1/layer-4-conflict-repair-accountability#6.3.2), [6.5.4](https://rcos.ecohubs.community/pt-br/standard/core/0.1/layer-4-conflict-repair-accountability#6.5.4)*
 
 <details data-kind="rationale">
 <summary>Por que proteger explicitamente os participantes?</summary>
@@ -136,7 +136,7 @@ Para cada tipo de sanção, defina as pré-condições, o órgão autorizado e o
 
 ## Condições para Restauração de Direitos
 
-*Cláusulas RCOS: [6.4.4](https://rcos.ecohubs.community/pt-br/standard/core/0.1/layer-4-conflict-repair-accountability#6.4.4)*
+*Cláusulas RCOS: [6.4.3](https://rcos.ecohubs.community/pt-br/standard/core/0.1/layer-4-conflict-repair-accountability#6.4.3), [6.4.4](https://rcos.ecohubs.community/pt-br/standard/core/0.1/layer-4-conflict-repair-accountability#6.4.4)*
 
 <details data-kind="rationale">
 <summary>Por que tornar explícitas as condições de restauração?</summary>
@@ -158,7 +158,7 @@ Para cada classe de sanção, indique o caminho para a restauração de direitos
 
 ## Coordenação com a Camada 1
 
-*Cláusulas RCOS: [6.4.4](https://rcos.ecohubs.community/pt-br/standard/core/0.1/layer-4-conflict-repair-accountability#6.4.4)*
+*Cláusulas RCOS: [6.4.4](https://rcos.ecohubs.community/pt-br/standard/core/0.1/layer-4-conflict-repair-accountability#6.4.4), [6.5.4](https://rcos.ecohubs.community/pt-br/standard/core/0.1/layer-4-conflict-repair-accountability#6.5.4)*
 
 <details data-kind="rationale">
 <summary>Por que vincular isto ao Protocolo de Saída e Separação?</summary>

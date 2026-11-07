@@ -70,7 +70,7 @@ Definiere jede Leiterstufe: wer beteiligt ist, was passiert, das Zeitfenster und
 
 ## Nichtreaktion, Rückzug und Pattsituation
 
-*RCOS-Klauseln: [6.2.5](https://rcos.ecohubs.community/de/standard/core/0.1/layer-4-conflict-repair-accountability#6.2.5), [6.1.5](https://rcos.ecohubs.community/de/standard/core/0.1/layer-4-conflict-repair-accountability#6.1.5)*
+*RCOS-Klauseln: [6.2.5](https://rcos.ecohubs.community/de/standard/core/0.1/layer-4-conflict-repair-accountability#6.2.5), [6.1.5](https://rcos.ecohubs.community/de/standard/core/0.1/layer-4-conflict-repair-accountability#6.1.5), [6.2.3](https://rcos.ecohubs.community/de/standard/core/0.1/layer-4-conflict-repair-accountability#6.2.3)*
 
 <details data-kind="rationale">
 <summary>Was verhindert, dass ein Prozess durch Schweigen sabotiert wird?</summary>
@@ -102,7 +102,7 @@ Definiere, wie Nichtreaktion, Rückzug während des Prozesses, Pattsituationen u
 
 ## Auswahl und Ersetzung der Moderation
 
-*RCOS-Klauseln: [6.3.1](https://rcos.ecohubs.community/de/standard/core/0.1/layer-4-conflict-repair-accountability#6.3.1), [6.3.3](https://rcos.ecohubs.community/de/standard/core/0.1/layer-4-conflict-repair-accountability#6.3.3)*
+*RCOS-Klauseln: [6.2.3](https://rcos.ecohubs.community/de/standard/core/0.1/layer-4-conflict-repair-accountability#6.2.3), [6.3.1](https://rcos.ecohubs.community/de/standard/core/0.1/layer-4-conflict-repair-accountability#6.3.1), [6.3.3](https://rcos.ecohubs.community/de/standard/core/0.1/layer-4-conflict-repair-accountability#6.3.3), [6.5.3](https://rcos.ecohubs.community/de/standard/core/0.1/layer-4-conflict-repair-accountability#6.5.3)*
 
 <details data-kind="rationale">
 <summary>Warum festlegen, wie die Moderation ausgewählt oder ersetzt wird?</summary>
@@ -125,7 +125,7 @@ Lege die standardmässige Moderationsrolle fest, die Regel für den Fall, dass d
 
 ## Datenschutz und Informationszugangsgrenzen
 
-*RCOS-Klauseln: [6.5.3](https://rcos.ecohubs.community/de/standard/core/0.1/layer-4-conflict-repair-accountability#6.5.3)*
+*RCOS-Klauseln: [6.2.3](https://rcos.ecohubs.community/de/standard/core/0.1/layer-4-conflict-repair-accountability#6.2.3), [6.5.3](https://rcos.ecohubs.community/de/standard/core/0.1/layer-4-conflict-repair-accountability#6.5.3)*
 
 <details data-kind="rationale">
 <summary>Warum den Informationsfluss so streng begrenzen?</summary>
@@ -148,7 +148,7 @@ Lege fest, welche Stufen vollständig vertraulich sind, welche Mindestinformatio
 
 ## Schutzmassnahmen
 
-*RCOS-Klauseln: [6.3.1](https://rcos.ecohubs.community/de/standard/core/0.1/layer-4-conflict-repair-accountability#6.3.1), [6.3.2](https://rcos.ecohubs.community/de/standard/core/0.1/layer-4-conflict-repair-accountability#6.3.2), [6.3.3](https://rcos.ecohubs.community/de/standard/core/0.1/layer-4-conflict-repair-accountability#6.3.3), [6.3.4](https://rcos.ecohubs.community/de/standard/core/0.1/layer-4-conflict-repair-accountability#6.3.4), [6.3.5](https://rcos.ecohubs.community/de/standard/core/0.1/layer-4-conflict-repair-accountability#6.3.5), [6.6.2](https://rcos.ecohubs.community/de/standard/core/0.1/layer-4-conflict-repair-accountability#6.6.2)*
+*RCOS-Klauseln: [6.3.1](https://rcos.ecohubs.community/de/standard/core/0.1/layer-4-conflict-repair-accountability#6.3.1), [6.3.2](https://rcos.ecohubs.community/de/standard/core/0.1/layer-4-conflict-repair-accountability#6.3.2), [6.3.3](https://rcos.ecohubs.community/de/standard/core/0.1/layer-4-conflict-repair-accountability#6.3.3), [6.3.4](https://rcos.ecohubs.community/de/standard/core/0.1/layer-4-conflict-repair-accountability#6.3.4), [6.3.5](https://rcos.ecohubs.community/de/standard/core/0.1/layer-4-conflict-repair-accountability#6.3.5), [6.5.3](https://rcos.ecohubs.community/de/standard/core/0.1/layer-4-conflict-repair-accountability#6.5.3), [6.6.2](https://rcos.ecohubs.community/de/standard/core/0.1/layer-4-conflict-repair-accountability#6.6.2)*
 
 <details data-kind="rationale">
 <summary>Warum gibt es Schutzmassnahmen zusätzlich zur Leiter?</summary>

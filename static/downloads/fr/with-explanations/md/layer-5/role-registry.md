@@ -104,7 +104,7 @@ Les rôles opérationnels détiennent une autorité déléguée pour agir dans d
 
 ## Rôles fonctionnels
 
-*Clauses RCOS : [7.1.1](https://rcos.ecohubs.community/fr/standard/core/0.1/layer-5-operations-coordination#7.1.1), [7.1.2](https://rcos.ecohubs.community/fr/standard/core/0.1/layer-5-operations-coordination#7.1.2)*
+*Clauses RCOS : [7.1.1](https://rcos.ecohubs.community/fr/standard/core/0.1/layer-5-operations-coordination#7.1.1), [7.1.2](https://rcos.ecohubs.community/fr/standard/core/0.1/layer-5-operations-coordination#7.1.2), [7.1.3](https://rcos.ecohubs.community/fr/standard/core/0.1/layer-5-operations-coordination#7.1.3)*
 
 <details data-kind="rationale">
 <summary>Pourquoi séparer les rôles fonctionnels des rôles opérationnels ?</summary>

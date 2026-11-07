@@ -17,7 +17,7 @@
 
 ## Raison d'être principale
 
-*Clauses RCOS : [2.1.1](https://rcos.ecohubs.community/fr/standard/core/0.1/layer-0-identity-scope#2.1.1), [2.1.2](https://rcos.ecohubs.community/fr/standard/core/0.1/layer-0-identity-scope#2.1.2), [2.1.5](https://rcos.ecohubs.community/fr/standard/core/0.1/layer-0-identity-scope#2.1.5)*
+*Clauses RCOS : [2.1.1](https://rcos.ecohubs.community/fr/standard/core/0.1/layer-0-identity-scope#2.1.1), [2.1.2](https://rcos.ecohubs.community/fr/standard/core/0.1/layer-0-identity-scope#2.1.2), [2.1.3](https://rcos.ecohubs.community/fr/standard/core/0.1/layer-0-identity-scope#2.1.3), [2.1.5](https://rcos.ecohubs.community/fr/standard/core/0.1/layer-0-identity-scope#2.1.5)*
 
 _<La raison d'être principale de ta communauté, en une ou deux phrases.>_
 
@@ -31,7 +31,7 @@ _<La raison d'être principale de ta communauté, en une ou deux phrases.>_
 
 ## Non-objectifs et exclusions
 
-*Clauses RCOS : [2.1.5](https://rcos.ecohubs.community/fr/standard/core/0.1/layer-0-identity-scope#2.1.5)*
+*Clauses RCOS : [2.1.5](https://rcos.ecohubs.community/fr/standard/core/0.1/layer-0-identity-scope#2.1.5) — cette section est recommandée, non obligatoire : nommer les non-objectifs permet de voir plus facilement quand une action ou une décision contredit la raison d'être principale.*
 
 1. _<Non-objectif 1.>_
 2. _<Non-objectif 2.>_

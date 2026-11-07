@@ -17,7 +17,7 @@
 
 ## Clasificación de Bienes Comunes vs. Privados
 
-*Cláusulas RCOS: [5.1.1](https://rcos.ecohubs.community/es/standard/core/0.1/layer-3-economic-resource-system#5.1.1), [5.1.2](https://rcos.ecohubs.community/es/standard/core/0.1/layer-3-economic-resource-system#5.1.2), [5.1.3](https://rcos.ecohubs.community/es/standard/core/0.1/layer-3-economic-resource-system#5.1.3), [5.1.4](https://rcos.ecohubs.community/es/standard/core/0.1/layer-3-economic-resource-system#5.1.4), [5.1.5](https://rcos.ecohubs.community/es/standard/core/0.1/layer-3-economic-resource-system#5.1.5), [5.6.2](https://rcos.ecohubs.community/es/standard/core/0.1/layer-3-economic-resource-system#5.6.2)*
+*Cláusulas RCOS: [5.1.1](https://rcos.ecohubs.community/es/standard/core/0.1/layer-3-economic-resource-system#5.1.1), [5.1.2](https://rcos.ecohubs.community/es/standard/core/0.1/layer-3-economic-resource-system#5.1.2), [5.1.3](https://rcos.ecohubs.community/es/standard/core/0.1/layer-3-economic-resource-system#5.1.3), [5.1.4](https://rcos.ecohubs.community/es/standard/core/0.1/layer-3-economic-resource-system#5.1.4), [5.1.5](https://rcos.ecohubs.community/es/standard/core/0.1/layer-3-economic-resource-system#5.1.5), [5.5.3](https://rcos.ecohubs.community/es/standard/core/0.1/layer-3-economic-resource-system#5.5.3), [5.6.2](https://rcos.ecohubs.community/es/standard/core/0.1/layer-3-economic-resource-system#5.6.2)*
 
 | Recurso | Clasificación | Custodio | Reglas de acceso | Restricciones de transferencia |
 |---|---|---|---|---|
@@ -31,7 +31,7 @@
 
 ## Categorías de Contribución Reconocidas
 
-*Cláusulas RCOS: [5.2.1](https://rcos.ecohubs.community/es/standard/core/0.1/layer-3-economic-resource-system#5.2.1), [5.2.3](https://rcos.ecohubs.community/es/standard/core/0.1/layer-3-economic-resource-system#5.2.3), [5.6.3](https://rcos.ecohubs.community/es/standard/core/0.1/layer-3-economic-resource-system#5.6.3)*
+*Cláusulas RCOS: [5.2.1](https://rcos.ecohubs.community/es/standard/core/0.1/layer-3-economic-resource-system#5.2.1), [5.2.3](https://rcos.ecohubs.community/es/standard/core/0.1/layer-3-economic-resource-system#5.2.3), [5.5.3](https://rcos.ecohubs.community/es/standard/core/0.1/layer-3-economic-resource-system#5.5.3), [5.6.3](https://rcos.ecohubs.community/es/standard/core/0.1/layer-3-economic-resource-system#5.6.3)*
 
 | Categoría | Ejemplos |
 |---|---|
@@ -45,7 +45,7 @@
 
 ## Mecanismo de Reconocimiento de Contribuciones
 
-*Cláusulas RCOS: [5.2.2](https://rcos.ecohubs.community/es/standard/core/0.1/layer-3-economic-resource-system#5.2.2), [5.2.5](https://rcos.ecohubs.community/es/standard/core/0.1/layer-3-economic-resource-system#5.2.5)*
+*Cláusulas RCOS: [5.2.2](https://rcos.ecohubs.community/es/standard/core/0.1/layer-3-economic-resource-system#5.2.2), [5.2.5](https://rcos.ecohubs.community/es/standard/core/0.1/layer-3-economic-resource-system#5.2.5), [5.5.3](https://rcos.ecohubs.community/es/standard/core/0.1/layer-3-economic-resource-system#5.5.3)*
 
 - **Qué califica:** _<qué actividades cuentan y a declaración de quién.>_
 - **Cómo se registran las contribuciones:** _<canal estructurado; canal informal/auto-reportado.>_
@@ -55,7 +55,7 @@
 
 ## Unidades Internas
 
-*Cláusulas RCOS: [5.2.4](https://rcos.ecohubs.community/es/standard/core/0.1/layer-3-economic-resource-system#5.2.4), [5.2.5](https://rcos.ecohubs.community/es/standard/core/0.1/layer-3-economic-resource-system#5.2.5)*
+*Cláusulas RCOS: [5.2.4](https://rcos.ecohubs.community/es/standard/core/0.1/layer-3-economic-resource-system#5.2.4), [5.2.5](https://rcos.ecohubs.community/es/standard/core/0.1/layer-3-economic-resource-system#5.2.5), [5.5.3](https://rcos.ecohubs.community/es/standard/core/0.1/layer-3-economic-resource-system#5.5.3)*
 
 | Propiedad | _<Unidad A>_ | _<Unidad B>_ |
 |---|---|---|
@@ -71,7 +71,7 @@
 
 ## Restricciones de Acumulación
 
-*Cláusulas RCOS: [5.4.1](https://rcos.ecohubs.community/es/standard/core/0.1/layer-3-economic-resource-system#5.4.1), [5.4.2](https://rcos.ecohubs.community/es/standard/core/0.1/layer-3-economic-resource-system#5.4.2), [5.4.3](https://rcos.ecohubs.community/es/standard/core/0.1/layer-3-economic-resource-system#5.4.3), [5.4.4](https://rcos.ecohubs.community/es/standard/core/0.1/layer-3-economic-resource-system#5.4.4), [5.6.4](https://rcos.ecohubs.community/es/standard/core/0.1/layer-3-economic-resource-system#5.6.4)*
+*Cláusulas RCOS: [5.4.1](https://rcos.ecohubs.community/es/standard/core/0.1/layer-3-economic-resource-system#5.4.1), [5.4.2](https://rcos.ecohubs.community/es/standard/core/0.1/layer-3-economic-resource-system#5.4.2), [5.4.3](https://rcos.ecohubs.community/es/standard/core/0.1/layer-3-economic-resource-system#5.4.3), [5.4.4](https://rcos.ecohubs.community/es/standard/core/0.1/layer-3-economic-resource-system#5.4.4), [5.5.3](https://rcos.ecohubs.community/es/standard/core/0.1/layer-3-economic-resource-system#5.5.3), [5.6.4](https://rcos.ecohubs.community/es/standard/core/0.1/layer-3-economic-resource-system#5.6.4)*
 
 - _<Tope máximo de unidades internas, si lo hay.>_
 - _<Regla de decaimiento, si la hay.>_
@@ -79,7 +79,7 @@
 
 ## Interfaces de Ingresos Externos
 
-*Cláusulas RCOS: [5.3.2](https://rcos.ecohubs.community/es/standard/core/0.1/layer-3-economic-resource-system#5.3.2)*
+*Cláusulas RCOS: [5.3.2](https://rcos.ecohubs.community/es/standard/core/0.1/layer-3-economic-resource-system#5.3.2), [5.5.3](https://rcos.ecohubs.community/es/standard/core/0.1/layer-3-economic-resource-system#5.5.3)*
 
 - _<Canales de ingresos actuales.>_
 - _<Posibles canales de ingresos futuros.>_

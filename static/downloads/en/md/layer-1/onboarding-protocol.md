@@ -37,7 +37,7 @@
 
 ## Initial Membership State
 
-*RCOS clauses: [3.1.2](https://rcos.ecohubs.community/standard/core/0.1/layer-1-membership-system#3.1.2), [3.1.4](https://rcos.ecohubs.community/standard/core/0.1/layer-1-membership-system#3.1.4)*
+*RCOS clauses: [3.1.2](https://rcos.ecohubs.community/standard/core/0.1/layer-1-membership-system#3.1.2), [3.1.4](https://rcos.ecohubs.community/standard/core/0.1/layer-1-membership-system#3.1.4), [3.2.2](https://rcos.ecohubs.community/standard/core/0.1/layer-1-membership-system#3.2.2)*
 
 - On approval: _<e.g. Trial Member.>_
 - On onboarding completion: _<e.g. Full Member (automatic upon completion).>_

@@ -477,6 +477,9 @@ function applyGlossarySections(glossary, artifacts, authored) {
  *   derived               a view over other sections, generated, never authored.
  *   instance_record       one entry per event, not one definition per community:
  *                         a learning-log entry, a version-history line.
+ *
+ * An authored section may also be `optional`: written if the community wants
+ * to, never counted toward completeness. It may own no MUST clause.
  */
 const SECTION_DISPOSITIONS = new Set([
 	'authored',
@@ -496,6 +499,15 @@ function applySectionDispositions(artifacts, authored) {
 			const entry = authoredSections[section.key];
 			section.disposition = entry?.disposition ?? 'authored';
 			section.dispositionNote = entry?.note ?? null;
+			section.optional = entry?.optional ?? false;
+
+			if (typeof section.optional !== 'boolean') {
+				problems.push(`section ${section.key}: optional must be true or false`);
+			} else if (section.optional && section.disposition !== 'authored') {
+				problems.push(
+					`section ${section.key}: only an authored section can be optional, not "${section.disposition}"`
+				);
+			}
 
 			if (entry && !SECTION_DISPOSITIONS.has(entry.disposition)) {
 				problems.push(
@@ -708,6 +720,17 @@ async function main() {
 				`section ${section.key}: disposition "${section.disposition}" but it owns ${section.ownsClauses.length} clause(s) — only an authored section can answer one`
 			);
 		}
+		// Skipping an optional section must never leave an obligation unanswered.
+		const ownedMusts = section.optional
+			? section.ownsClauses.filter(
+					(ref) => clauses.find((c) => c.ref === ref)?.normativity === 'MUST'
+				)
+			: [];
+		if (ownedMusts.length > 0) {
+			problems.push(
+				`section ${section.key}: optional, but it owns MUST clause(s) ${ownedMusts.join(', ')}`
+			);
+		}
 	}
 	const artifactsOut = artifacts.map(({ sections: s, ...rest }) => ({
 		...rest,
@@ -726,6 +749,7 @@ async function main() {
 		// What a community is actually asked to write, which is the number that
 		// decides whether an artifact can ever be complete.
 		authoredSections: sections.filter((s) => s.disposition === 'authored').length,
+		optionalSections: sections.filter((s) => s.optional).length,
 		sectionsWithoutClauses: sections.filter((s) => s.clauseRefs.length === 0).length,
 		glossary: glossary.length
 	};

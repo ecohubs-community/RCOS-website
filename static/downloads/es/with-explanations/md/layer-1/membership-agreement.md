@@ -2,7 +2,7 @@
 
 # Acuerdo de Membresía
 
-- **Generado:** 2026-11-02
+- **Generado:** 2026-11-06
 - **Fuente (versión más reciente):** [https://rcos.ecohubs.community/es/articles/rcos-templates/layer-1/membership-agreement](https://rcos.ecohubs.community/es/articles/rcos-templates/layer-1/membership-agreement)
 - **Todas las plantillas RCOS:** [https://rcos.ecohubs.community/es/articles/rcos-templates](https://rcos.ecohubs.community/es/articles/rcos-templates)
 
@@ -64,7 +64,7 @@ Enumera los derechos concretos otorgados a cada estado de membresía. Consulta l
 
 ## Obligaciones del Miembro
 
-*Cláusulas RCOS: [3.4.2](https://rcos.ecohubs.community/es/standard/core/0.1/layer-1-membership-system#3.4.2), [3.4.4](https://rcos.ecohubs.community/es/standard/core/0.1/layer-1-membership-system#3.4.4), [3.4.5](https://rcos.ecohubs.community/es/standard/core/0.1/layer-1-membership-system#3.4.5)*
+*Cláusulas RCOS: [3.4.2](https://rcos.ecohubs.community/es/standard/core/0.1/layer-1-membership-system#3.4.2), [3.4.3](https://rcos.ecohubs.community/es/standard/core/0.1/layer-1-membership-system#3.4.3), [3.4.4](https://rcos.ecohubs.community/es/standard/core/0.1/layer-1-membership-system#3.4.4), [3.4.5](https://rcos.ecohubs.community/es/standard/core/0.1/layer-1-membership-system#3.4.5)*
 
 <details data-kind="rationale">
 <summary>¿Por qué acotar las obligaciones estrictamente?</summary>

@@ -65,7 +65,7 @@ Liste les étapes ordonnées que chaque nouveau membre doit accomplir pour passe
 
 ## État d'adhésion initial
 
-*Clauses RCOS : [3.1.2](https://rcos.ecohubs.community/fr/standard/core/0.1/layer-1-membership-system#3.1.2), [3.1.4](https://rcos.ecohubs.community/fr/standard/core/0.1/layer-1-membership-system#3.1.4)*
+*Clauses RCOS : [3.1.2](https://rcos.ecohubs.community/fr/standard/core/0.1/layer-1-membership-system#3.1.2), [3.1.4](https://rcos.ecohubs.community/fr/standard/core/0.1/layer-1-membership-system#3.1.4), [3.2.2](https://rcos.ecohubs.community/fr/standard/core/0.1/layer-1-membership-system#3.2.2)*
 
 <details data-kind="rationale">
 <summary>Pourquoi attribuer un état à la fin de l'intégration ?</summary>

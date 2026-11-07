@@ -42,7 +42,7 @@
 
 ## Falta de Respuesta, Retiro y Punto Muerto
 
-*Cláusulas RCOS: [6.2.5](https://rcos.ecohubs.community/es/standard/core/0.1/layer-4-conflict-repair-accountability#6.2.5), [6.1.5](https://rcos.ecohubs.community/es/standard/core/0.1/layer-4-conflict-repair-accountability#6.1.5)*
+*Cláusulas RCOS: [6.2.5](https://rcos.ecohubs.community/es/standard/core/0.1/layer-4-conflict-repair-accountability#6.2.5), [6.1.5](https://rcos.ecohubs.community/es/standard/core/0.1/layer-4-conflict-repair-accountability#6.1.5), [6.2.3](https://rcos.ecohubs.community/es/standard/core/0.1/layer-4-conflict-repair-accountability#6.2.3)*
 
 **Si una parte no responde dentro de la ventana definida:**
 - _<Aviso de seguimiento; período de gracia adicional; tratamiento del silencio continuado como no resolución; regla de escalada.>_
@@ -60,7 +60,7 @@
 
 ## Selección y Sustitución del Facilitador
 
-*Cláusulas RCOS: [6.3.1](https://rcos.ecohubs.community/es/standard/core/0.1/layer-4-conflict-repair-accountability#6.3.1), [6.3.3](https://rcos.ecohubs.community/es/standard/core/0.1/layer-4-conflict-repair-accountability#6.3.3)*
+*Cláusulas RCOS: [6.2.3](https://rcos.ecohubs.community/es/standard/core/0.1/layer-4-conflict-repair-accountability#6.2.3), [6.3.1](https://rcos.ecohubs.community/es/standard/core/0.1/layer-4-conflict-repair-accountability#6.3.1), [6.3.3](https://rcos.ecohubs.community/es/standard/core/0.1/layer-4-conflict-repair-accountability#6.3.3), [6.5.3](https://rcos.ecohubs.community/es/standard/core/0.1/layer-4-conflict-repair-accountability#6.5.3)*
 
 - _<Rol de facilitador por defecto según el Registro de Roles.>_
 - _<Regla cuando el facilitador es parte — selección de un sustituto neutral.>_
@@ -69,7 +69,7 @@
 
 ## Privacidad y Límites de Acceso a la Información
 
-*Cláusulas RCOS: [6.5.3](https://rcos.ecohubs.community/es/standard/core/0.1/layer-4-conflict-repair-accountability#6.5.3)*
+*Cláusulas RCOS: [6.2.3](https://rcos.ecohubs.community/es/standard/core/0.1/layer-4-conflict-repair-accountability#6.2.3), [6.5.3](https://rcos.ecohubs.community/es/standard/core/0.1/layer-4-conflict-repair-accountability#6.5.3)*
 
 - _<Pasos 1–4: completamente confidenciales; solo las partes y el Facilitador pueden acceder a los registros.>_
 - _<Pasos 5–6: información mínima necesaria divulgada a los Miembros Plenos; las partes son notificadas antes de la divulgación. Definir qué significa "mínimo necesario".>_
@@ -78,7 +78,7 @@
 
 ## Salvaguardas
 
-*Cláusulas RCOS: [6.3.1](https://rcos.ecohubs.community/es/standard/core/0.1/layer-4-conflict-repair-accountability#6.3.1), [6.3.2](https://rcos.ecohubs.community/es/standard/core/0.1/layer-4-conflict-repair-accountability#6.3.2), [6.3.3](https://rcos.ecohubs.community/es/standard/core/0.1/layer-4-conflict-repair-accountability#6.3.3), [6.3.4](https://rcos.ecohubs.community/es/standard/core/0.1/layer-4-conflict-repair-accountability#6.3.4), [6.3.5](https://rcos.ecohubs.community/es/standard/core/0.1/layer-4-conflict-repair-accountability#6.3.5), [6.6.2](https://rcos.ecohubs.community/es/standard/core/0.1/layer-4-conflict-repair-accountability#6.6.2)*
+*Cláusulas RCOS: [6.3.1](https://rcos.ecohubs.community/es/standard/core/0.1/layer-4-conflict-repair-accountability#6.3.1), [6.3.2](https://rcos.ecohubs.community/es/standard/core/0.1/layer-4-conflict-repair-accountability#6.3.2), [6.3.3](https://rcos.ecohubs.community/es/standard/core/0.1/layer-4-conflict-repair-accountability#6.3.3), [6.3.4](https://rcos.ecohubs.community/es/standard/core/0.1/layer-4-conflict-repair-accountability#6.3.4), [6.3.5](https://rcos.ecohubs.community/es/standard/core/0.1/layer-4-conflict-repair-accountability#6.3.5), [6.5.3](https://rcos.ecohubs.community/es/standard/core/0.1/layer-4-conflict-repair-accountability#6.5.3), [6.6.2](https://rcos.ecohubs.community/es/standard/core/0.1/layer-4-conflict-repair-accountability#6.6.2)*
 
 - **Anti-represalias:** _<las represalias contra un miembro que plantea un conflicto de buena fe son en sí mismas motivo para un proceso de rendición de cuentas.>_
 - **Quejas de mala fe:** _<las quejas deliberadamente falsas pueden desencadenar un proceso de rendición de cuentas contra el denunciante.>_

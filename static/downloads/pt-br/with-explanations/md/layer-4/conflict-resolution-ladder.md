@@ -70,7 +70,7 @@ Defina cada passo da escada: quem está envolvido, o que acontece, o prazo e a r
 
 ## Não-Resposta, Retirada e Impasse
 
-*Cláusulas RCOS: [6.2.5](https://rcos.ecohubs.community/pt-br/standard/core/0.1/layer-4-conflict-repair-accountability#6.2.5), [6.1.5](https://rcos.ecohubs.community/pt-br/standard/core/0.1/layer-4-conflict-repair-accountability#6.1.5)*
+*Cláusulas RCOS: [6.2.5](https://rcos.ecohubs.community/pt-br/standard/core/0.1/layer-4-conflict-repair-accountability#6.2.5), [6.1.5](https://rcos.ecohubs.community/pt-br/standard/core/0.1/layer-4-conflict-repair-accountability#6.1.5), [6.2.3](https://rcos.ecohubs.community/pt-br/standard/core/0.1/layer-4-conflict-repair-accountability#6.2.3)*
 
 <details data-kind="rationale">
 <summary>O que impede que um processo seja morto pelo silêncio?</summary>
@@ -102,7 +102,7 @@ Defina como a não-resposta, a retirada no meio do processo, o impasse e a falha
 
 ## Seleção e Substituição de Facilitador
 
-*Cláusulas RCOS: [6.3.1](https://rcos.ecohubs.community/pt-br/standard/core/0.1/layer-4-conflict-repair-accountability#6.3.1), [6.3.3](https://rcos.ecohubs.community/pt-br/standard/core/0.1/layer-4-conflict-repair-accountability#6.3.3)*
+*Cláusulas RCOS: [6.2.3](https://rcos.ecohubs.community/pt-br/standard/core/0.1/layer-4-conflict-repair-accountability#6.2.3), [6.3.1](https://rcos.ecohubs.community/pt-br/standard/core/0.1/layer-4-conflict-repair-accountability#6.3.1), [6.3.3](https://rcos.ecohubs.community/pt-br/standard/core/0.1/layer-4-conflict-repair-accountability#6.3.3), [6.5.3](https://rcos.ecohubs.community/pt-br/standard/core/0.1/layer-4-conflict-repair-accountability#6.5.3)*
 
 <details data-kind="rationale">
 <summary>Por que definir como o Facilitador é escolhido ou substituído?</summary>
@@ -125,7 +125,7 @@ Indique o papel padrão do facilitador, a regra quando o facilitador é uma das 
 
 ## Limites de Privacidade e Acesso à Informação
 
-*Cláusulas RCOS: [6.5.3](https://rcos.ecohubs.community/pt-br/standard/core/0.1/layer-4-conflict-repair-accountability#6.5.3)*
+*Cláusulas RCOS: [6.2.3](https://rcos.ecohubs.community/pt-br/standard/core/0.1/layer-4-conflict-repair-accountability#6.2.3), [6.5.3](https://rcos.ecohubs.community/pt-br/standard/core/0.1/layer-4-conflict-repair-accountability#6.5.3)*
 
 <details data-kind="rationale">
 <summary>Por que delimitar o fluxo de informação de forma tão estrita?</summary>
@@ -148,7 +148,7 @@ Indique quais passos são totalmente confidenciais, qual a informação mínima 
 
 ## Salvaguardas
 
-*Cláusulas RCOS: [6.3.1](https://rcos.ecohubs.community/pt-br/standard/core/0.1/layer-4-conflict-repair-accountability#6.3.1), [6.3.2](https://rcos.ecohubs.community/pt-br/standard/core/0.1/layer-4-conflict-repair-accountability#6.3.2), [6.3.3](https://rcos.ecohubs.community/pt-br/standard/core/0.1/layer-4-conflict-repair-accountability#6.3.3), [6.3.4](https://rcos.ecohubs.community/pt-br/standard/core/0.1/layer-4-conflict-repair-accountability#6.3.4), [6.3.5](https://rcos.ecohubs.community/pt-br/standard/core/0.1/layer-4-conflict-repair-accountability#6.3.5), [6.6.2](https://rcos.ecohubs.community/pt-br/standard/core/0.1/layer-4-conflict-repair-accountability#6.6.2)*
+*Cláusulas RCOS: [6.3.1](https://rcos.ecohubs.community/pt-br/standard/core/0.1/layer-4-conflict-repair-accountability#6.3.1), [6.3.2](https://rcos.ecohubs.community/pt-br/standard/core/0.1/layer-4-conflict-repair-accountability#6.3.2), [6.3.3](https://rcos.ecohubs.community/pt-br/standard/core/0.1/layer-4-conflict-repair-accountability#6.3.3), [6.3.4](https://rcos.ecohubs.community/pt-br/standard/core/0.1/layer-4-conflict-repair-accountability#6.3.4), [6.3.5](https://rcos.ecohubs.community/pt-br/standard/core/0.1/layer-4-conflict-repair-accountability#6.3.5), [6.5.3](https://rcos.ecohubs.community/pt-br/standard/core/0.1/layer-4-conflict-repair-accountability#6.5.3), [6.6.2](https://rcos.ecohubs.community/pt-br/standard/core/0.1/layer-4-conflict-repair-accountability#6.6.2)*
 
 <details data-kind="rationale">
 <summary>Por que existem salvaguardas além da escada?</summary>

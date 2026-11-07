@@ -125,6 +125,7 @@ sections:
         refs:
           - 7.1.1
           - 7.1.2
+          - 7.1.3
       - id: rationale
         kind: rationale
         summary: Why separate functional from operational roles?

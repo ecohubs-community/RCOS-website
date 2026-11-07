@@ -23,13 +23,13 @@ _<Define which accounts are community treasury — explicit wallet addresses, ba
 
 ## Income Sources
 
-*RCOS clauses: [5.3.2](https://rcos.ecohubs.community/standard/core/0.1/layer-3-economic-resource-system#5.3.2)*
+*RCOS clauses: [5.3.2](https://rcos.ecohubs.community/standard/core/0.1/layer-3-economic-resource-system#5.3.2), [5.5.4](https://rcos.ecohubs.community/standard/core/0.1/layer-3-economic-resource-system#5.5.4)*
 
 _<List current income sources, or state that there are none. Reference the External Income Interfaces section in the Internal Economy Protocol.>_
 
 ## Spending Authority
 
-*RCOS clauses: [5.3.3](https://rcos.ecohubs.community/standard/core/0.1/layer-3-economic-resource-system#5.3.3), [5.7.1](https://rcos.ecohubs.community/standard/core/0.1/layer-3-economic-resource-system#5.7.1)*
+*RCOS clauses: [5.3.3](https://rcos.ecohubs.community/standard/core/0.1/layer-3-economic-resource-system#5.3.3), [5.5.4](https://rcos.ecohubs.community/standard/core/0.1/layer-3-economic-resource-system#5.5.4), [5.7.1](https://rcos.ecohubs.community/standard/core/0.1/layer-3-economic-resource-system#5.7.1)*
 
 | Amount | Decision Type | Authorized Body | Mechanism |
 |---:|---|---|---|
@@ -39,7 +39,7 @@ _<List current income sources, or state that there are none. Reference the Exter
 
 ## Transparency and Reporting
 
-*RCOS clauses: [5.3.4](https://rcos.ecohubs.community/standard/core/0.1/layer-3-economic-resource-system#5.3.4), [5.3.5](https://rcos.ecohubs.community/standard/core/0.1/layer-3-economic-resource-system#5.3.5), [5.6.1](https://rcos.ecohubs.community/standard/core/0.1/layer-3-economic-resource-system#5.6.1)*
+*RCOS clauses: [5.3.4](https://rcos.ecohubs.community/standard/core/0.1/layer-3-economic-resource-system#5.3.4), [5.3.5](https://rcos.ecohubs.community/standard/core/0.1/layer-3-economic-resource-system#5.3.5), [5.5.4](https://rcos.ecohubs.community/standard/core/0.1/layer-3-economic-resource-system#5.5.4), [5.6.1](https://rcos.ecohubs.community/standard/core/0.1/layer-3-economic-resource-system#5.6.1)*
 
 - _<Primary treasury (e.g. Safe multi-sig): all Full Members hold at minimum read access; real-time visibility.>_
 - _<Other declared accounts: direct multi-user read access if supported; otherwise periodic balance and transaction summary.>_
@@ -47,7 +47,7 @@ _<List current income sources, or state that there are none. Reference the Exter
 
 ## Reserve, Risk, and Debt Constraints
 
-*RCOS clauses: [5.3.6](https://rcos.ecohubs.community/standard/core/0.1/layer-3-economic-resource-system#5.3.6)*
+*RCOS clauses: [5.3.6](https://rcos.ecohubs.community/standard/core/0.1/layer-3-economic-resource-system#5.3.6), [5.5.4](https://rcos.ecohubs.community/standard/core/0.1/layer-3-economic-resource-system#5.5.4)*
 
 - **Debt:** _<allowed only via Strategic vote.>_
 - **Long-term obligations:** _<recurring costs / contracts allowed only via Strategic vote.>_
@@ -56,7 +56,7 @@ _<List current income sources, or state that there are none. Reference the Exter
 
 ## Conflict-of-Interest Rules
 
-*RCOS clauses: [5.4.3](https://rcos.ecohubs.community/standard/core/0.1/layer-3-economic-resource-system#5.4.3)*
+*RCOS clauses: [5.4.3](https://rcos.ecohubs.community/standard/core/0.1/layer-3-economic-resource-system#5.4.3), [5.5.4](https://rcos.ecohubs.community/standard/core/0.1/layer-3-economic-resource-system#5.5.4)*
 
 - _<Requesters may not approve their own spending requests.>_
 - _<Members with a direct financial interest in a spending decision must declare it and abstain.>_

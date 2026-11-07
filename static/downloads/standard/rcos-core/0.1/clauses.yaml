@@ -72,6 +72,7 @@
       definido na Camada 6.
   disposition: defined_by_section
   referencedBy:
+    - purpose-charter.primary-purpose
     - purpose-charter.conditions-for-purpose-change
   owner: purpose-charter.conditions-for-purpose-change
 - ref: 2.1.4
@@ -776,6 +777,7 @@
   referencedBy:
     - membership-agreement.consent-acknowledgment
     - onboarding-protocol.onboarding-steps
+    - onboarding-protocol.initial-membership-state
   owner: onboarding-protocol.onboarding-steps
 - ref: 3.2.3
   layer: 1
@@ -963,6 +965,7 @@
   disposition: defined_by_section
   referencedBy:
     - membership-agreement.member-rights
+    - membership-agreement.member-obligations
   owner: membership-agreement.member-rights
 - ref: 3.4.4
   layer: 1
@@ -1950,6 +1953,8 @@
   referencedBy:
     - governance-protocol.proposal-submission
     - governance-protocol.review-and-deliberation
+    - governance-protocol.decision-execution
+    - governance-protocol.documentation-and-publication
     - governance-protocol.appeal-and-review
   owner: governance-protocol.proposal-submission
 - ref: 4.5.3
@@ -3156,6 +3161,12 @@
       - Resolução de disputas e mecanismos de correção para registros econômicos
   disposition: defined_by_section
   referencedBy:
+    - internal-economy-protocol.commons-vs-private-classification
+    - internal-economy-protocol.recognized-contribution-categories
+    - internal-economy-protocol.contribution-recognition-mechanism
+    - internal-economy-protocol.internal-units
+    - internal-economy-protocol.accumulation-constraints
+    - internal-economy-protocol.external-income-interfaces
     - internal-economy-protocol.dispute-resolution-for-economic-records
   owner: internal-economy-protocol.dispute-resolution-for-economic-records
 - ref: 5.5.4
@@ -3204,6 +3215,11 @@
   disposition: defined_by_section
   referencedBy:
     - treasury-ruleset.treasury-scope
+    - treasury-ruleset.income-sources
+    - treasury-ruleset.spending-authority
+    - treasury-ruleset.transparency-and-reporting
+    - treasury-ruleset.reserve-risk-and-debt-constraints
+    - treasury-ruleset.conflict-of-interest-rules
   owner: treasury-ruleset.treasury-scope
 - ref: 5.6.1
   layer: 3
@@ -3727,6 +3743,9 @@
   disposition: defined_by_section
   referencedBy:
     - conflict-resolution-ladder.resolution-ladder-steps
+    - conflict-resolution-ladder.non-response-withdrawal-and-deadlock
+    - conflict-resolution-ladder.facilitator-selection-and-replacement
+    - conflict-resolution-ladder.privacy-and-information-access-boundaries
   owner: conflict-resolution-ladder.resolution-ladder-steps
 - ref: 6.2.4
   layer: 4
@@ -4127,6 +4146,7 @@
   referencedBy:
     - accountability-protocol.investigation-and-review
     - accountability-protocol.sanction-and-repair-options
+    - accountability-protocol.conditions-for-restoring-rights
   owner: accountability-protocol.sanction-and-repair-options
 - ref: 6.4.4
   layer: 4
@@ -4335,7 +4355,9 @@
   referencedBy:
     - conflict-resolution-ladder.conflict-classification
     - conflict-resolution-ladder.resolution-ladder-steps
+    - conflict-resolution-ladder.facilitator-selection-and-replacement
     - conflict-resolution-ladder.privacy-and-information-access-boundaries
+    - conflict-resolution-ladder.safeguards
   owner: conflict-resolution-ladder.conflict-classification
 - ref: 6.5.4
   layer: 4
@@ -4385,7 +4407,9 @@
     - accountability-protocol.triggers
     - accountability-protocol.investigation-and-review
     - accountability-protocol.due-process-guarantees
+    - accountability-protocol.anti-retaliation-protections
     - accountability-protocol.sanction-and-repair-options
+    - accountability-protocol.coordination-with-layer-1
   owner: accountability-protocol.triggers
 - ref: 6.6.1
   layer: 4
@@ -4717,6 +4741,7 @@
   disposition: defined_by_section
   referencedBy:
     - role-registry.operational-roles
+    - role-registry.functional-roles
   owner: role-registry.operational-roles
 - ref: 7.1.4
   layer: 5
@@ -5449,6 +5474,7 @@
   referencedBy:
     - operations-manual.core-operational-processes
     - operations-manual.role-and-domain-interfaces
+    - operations-manual.documentation-locations-and-update-procedures
   owner: operations-manual.core-operational-processes
 - ref: 7.6.4
   layer: 5
@@ -6171,6 +6197,7 @@
   referencedBy:
     - change-protocol.experiments
     - experiment-template.required-fields
+    - experiment-template.expiry-and-renewal
   owner: change-protocol.experiments
 - ref: 8.3.5
   layer: 6
@@ -6571,7 +6598,13 @@
   disposition: defined_by_section
   referencedBy:
     - change-protocol.how-changes-are-proposed
+    - change-protocol.how-proposals-are-classified
+    - change-protocol.review-and-deliberation
     - change-protocol.adoption-and-publication
+    - change-protocol.rejection
+    - change-protocol.transition-and-migration
+    - change-protocol.rollback
+    - change-protocol.emergency-changes
   owner: change-protocol.how-changes-are-proposed
 - ref: 8.6.4
   layer: 6

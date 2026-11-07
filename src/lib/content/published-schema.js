@@ -66,6 +66,11 @@ export const section = z
 		),
 		disposition: z.enum(['authored', 'filled_from_decision', 'derived', 'instance_record']),
 		dispositionNote: z.string().nullable(),
+		optional: z
+			.boolean()
+			.describe(
+				'An authored section RCOS-Core does not require: written if the community wants to, never counted toward completeness. Owns no MUST clause.'
+			),
 		ownsClauses: z.array(z.string().regex(CLAUSE_REF))
 	})
 	.describe('A section of a template (artifact): one thing a community writes down');
