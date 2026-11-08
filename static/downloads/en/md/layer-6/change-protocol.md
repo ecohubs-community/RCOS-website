@@ -31,7 +31,7 @@ _<Any Full Member may propose a change to any RCOS artifact. State the submissio
 
 ## How Proposals Are Classified
 
-*RCOS clauses: [8.1.2](https://rcos.ecohubs.community/standard/core/0.1/layer-6-evolution-adaptation#8.1.2), [8.1.4](https://rcos.ecohubs.community/standard/core/0.1/layer-6-evolution-adaptation#8.1.4)*
+*RCOS clauses: [8.1.2](https://rcos.ecohubs.community/standard/core/0.1/layer-6-evolution-adaptation#8.1.2), [8.1.4](https://rcos.ecohubs.community/standard/core/0.1/layer-6-evolution-adaptation#8.1.4), [8.6.3](https://rcos.ecohubs.community/standard/core/0.1/layer-6-evolution-adaptation#8.6.3)*
 
 - **Operational:** _<wording corrections, formatting, minor content updates; no vote required; executed by the responsible role within delegated limits.>_
 - **Strategic:** _<changes to Layer 1–5 content that affect member rights, processes, or structures.>_
@@ -41,7 +41,7 @@ _<Any Full Member may propose a change to any RCOS artifact. State the submissio
 
 ## Review and Deliberation
 
-*RCOS clauses: [8.1.2](https://rcos.ecohubs.community/standard/core/0.1/layer-6-evolution-adaptation#8.1.2), [8.7.1](https://rcos.ecohubs.community/standard/core/0.1/layer-6-evolution-adaptation#8.7.1)*
+*RCOS clauses: [8.1.2](https://rcos.ecohubs.community/standard/core/0.1/layer-6-evolution-adaptation#8.1.2), [8.6.3](https://rcos.ecohubs.community/standard/core/0.1/layer-6-evolution-adaptation#8.6.3), [8.7.1](https://rcos.ecohubs.community/standard/core/0.1/layer-6-evolution-adaptation#8.7.1)*
 
 - **Operational:** _<no deliberation required.>_
 - **Strategic:** _<minimum X-day deliberation; deliberation venue.>_
@@ -60,7 +60,7 @@ When a proposal passes:
 
 ## Rejection
 
-*RCOS clauses: [8.2.2](https://rcos.ecohubs.community/standard/core/0.1/layer-6-evolution-adaptation#8.2.2), [8.2.4](https://rcos.ecohubs.community/standard/core/0.1/layer-6-evolution-adaptation#8.2.4)*
+*RCOS clauses: [8.2.2](https://rcos.ecohubs.community/standard/core/0.1/layer-6-evolution-adaptation#8.2.2), [8.2.4](https://rcos.ecohubs.community/standard/core/0.1/layer-6-evolution-adaptation#8.2.4), [8.6.3](https://rcos.ecohubs.community/standard/core/0.1/layer-6-evolution-adaptation#8.6.3)*
 
 When a proposal is rejected:
 
@@ -70,7 +70,7 @@ When a proposal is rejected:
 
 ## Transition and Migration
 
-*RCOS clauses: [8.5.1](https://rcos.ecohubs.community/standard/core/0.1/layer-6-evolution-adaptation#8.5.1), [8.5.2](https://rcos.ecohubs.community/standard/core/0.1/layer-6-evolution-adaptation#8.5.2)*
+*RCOS clauses: [8.5.1](https://rcos.ecohubs.community/standard/core/0.1/layer-6-evolution-adaptation#8.5.1), [8.5.2](https://rcos.ecohubs.community/standard/core/0.1/layer-6-evolution-adaptation#8.5.2), [8.6.3](https://rcos.ecohubs.community/standard/core/0.1/layer-6-evolution-adaptation#8.6.3)*
 
 When a rule change affects existing roles, agreements, or records:
 
@@ -81,13 +81,13 @@ When a rule change affects existing roles, agreements, or records:
 
 ## Rollback
 
-*RCOS clauses: [8.1.5](https://rcos.ecohubs.community/standard/core/0.1/layer-6-evolution-adaptation#8.1.5), [8.5.1](https://rcos.ecohubs.community/standard/core/0.1/layer-6-evolution-adaptation#8.5.1)*
+*RCOS clauses: [8.1.5](https://rcos.ecohubs.community/standard/core/0.1/layer-6-evolution-adaptation#8.1.5), [8.5.1](https://rcos.ecohubs.community/standard/core/0.1/layer-6-evolution-adaptation#8.5.1), [8.6.3](https://rcos.ecohubs.community/standard/core/0.1/layer-6-evolution-adaptation#8.6.3)*
 
 _<Any passed decision can be reversed through the same process as the original. Any Full Member may trigger a re-vote by submitting a written reasoned objection that was not considered during the original deliberation. Rollback uses the same decision type as the original.>_
 
 ## Emergency Changes
 
-*RCOS clauses: [8.5.3](https://rcos.ecohubs.community/standard/core/0.1/layer-6-evolution-adaptation#8.5.3)*
+*RCOS clauses: [8.5.3](https://rcos.ecohubs.community/standard/core/0.1/layer-6-evolution-adaptation#8.5.3), [8.6.3](https://rcos.ecohubs.community/standard/core/0.1/layer-6-evolution-adaptation#8.6.3)*
 
 An emergency operational change may be made by _<role>_ only if all of the following conditions are met:
 

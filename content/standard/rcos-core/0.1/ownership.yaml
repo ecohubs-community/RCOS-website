@@ -28,6 +28,9 @@
 
 owners:
   # ---- Layer 0 · Identity & Scope -----------------------------------------
+  # Cited by Primary Purpose too (stability is part of what the purpose is), but
+  # the change procedure is written under Conditions for Purpose Change.
+  '2.1.3': purpose-charter.conditions-for-purpose-change
   '2.1.5': purpose-charter.primary-purpose
   '2.2.1': scope-declaration.in-scope-assets
   '2.2.2': scope-declaration.in-scope-assets
@@ -43,6 +46,9 @@ owners:
   '3.1.2': membership-state-registry.defined-membership-states
   '3.1.4': membership-state-registry.defined-membership-states
   '3.2.2': onboarding-protocol.onboarding-steps
+  # Symmetry is a property of rights and obligations together; both sections
+  # cite it, and rights is where the pairing is set out first.
+  '3.4.3': membership-agreement.member-rights
   # An obligation with no matching right binds obligations, so it lives there.
   '3.4.4': membership-agreement.member-obligations
   '3.6.3': exit-protocol.forced-exit
@@ -59,10 +65,18 @@ owners:
   # Income is treasury business even when the interface is an internal one.
   '5.3.2': treasury-ruleset.income-sources
   '5.4.3': internal-economy-protocol.accumulation-constraints
+  # "The Internal Economy Protocol / Treasury Ruleset MUST define, at minimum: …"
+  # Every section answering a listed item cites the umbrella; ownership stays
+  # where it was when only one section cited it.
+  '5.5.3': internal-economy-protocol.dispute-resolution-for-economic-records
+  '5.5.4': treasury-ruleset.treasury-scope
 
   # ---- Layer 4 · Conflict --------------------------------------------------
   '6.1.5': conflict-resolution-ladder.conflict-classification
   '6.2.5': conflict-resolution-ladder.resolution-ladder-steps
+  # The ladder's minimum contents; the sections for non-response, facilitators
+  # and documentation access cite it for their own items.
+  '6.2.3': conflict-resolution-ladder.resolution-ladder-steps
   '6.3.1': conflict-resolution-ladder.safeguards
   # The Accountability Protocol has a section named for exactly this obligation.
   '6.3.2': accountability-protocol.anti-retaliation-protections
@@ -78,6 +92,8 @@ owners:
   # ---- Layer 5 · Operations ------------------------------------------------
   '7.1.1': role-registry.overview
   '7.1.2': role-registry.overview
+  # Applies to every role; functional roles cite it too.
+  '7.1.3': role-registry.operational-roles
   '7.1.4': role-registry.overview
   '7.2.1': meeting-templates.meeting-type-operations
   '7.2.2': meeting-templates.meeting-type-operations
@@ -222,6 +238,11 @@ dispositions:
 # community's queue of things to decide.
 #
 # Vocabulary: authored | filled_from_decision | derived | instance_record
+#
+# An authored section may also be `optional: true`: a community may write it,
+# but nothing in RCOS-Core requires it, so it never counts toward an artifact's
+# completeness. Only for sections that own no MUST clause — the build refuses
+# anything else, because skipping the section would leave that clause unanswered.
 
 sections:
   # ---- Ratification records (19) ------------------------------------------
@@ -298,9 +319,26 @@ sections:
     note: >-
       A real definition a community should write — the auto-expiry rule, the
       renewal mechanism, the obligation to record results in the Learning Log.
-      It carries no clause reference only because the experiment MUSTs were
-      moved to the Change Protocol (see rule 2 above), so it is written but
-      counts toward nothing.
+      It cites 8.3.4 but owns no clause, because the experiment MUSTs belong to
+      the Change Protocol (see rule 2 above).
+
+  # ---- Optional (1) ---------------------------------------------------------
+  #
+  # Counting it toward completeness would make a community write "none" to
+  # satisfy a tool, not the standard.
+  #
+  # Secondary Purposes is NOT optional, although its template also says "remove
+  # the section if you have none": it owns 2.1.4, whose "MUST NOT conflict with
+  # the primary purpose" makes it a MUST clause. A community with no secondary
+  # purposes answers it by saying so.
+  purpose-charter.non-goals-and-exclusions:
+    disposition: authored
+    optional: true
+    note: >-
+      No RCOS-Core clause requires non-goals; the section follows the example
+      Purpose Charter in Appendix B. Recommended, because naming them in advance
+      makes it easier to see when something contradicts the primary purpose
+      (2.1.5, owned by Primary Purpose).
 
 # ---------------------------------------------------------------------------
 # Glossary terms → the section a community writes its own answer in

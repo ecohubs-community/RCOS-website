@@ -2,7 +2,7 @@
 
 # Acordo de Associação
 
-- **Gerado em:** 2026-11-02
+- **Gerado em:** 2026-11-06
 - **Fonte (versão mais recente):** [https://rcos.ecohubs.community/pt-br/articles/rcos-templates/layer-1/membership-agreement](https://rcos.ecohubs.community/pt-br/articles/rcos-templates/layer-1/membership-agreement)
 - **Todos os modelos RCOS:** [https://rcos.ecohubs.community/pt-br/articles/rcos-templates](https://rcos.ecohubs.community/pt-br/articles/rcos-templates)
 
@@ -36,7 +36,7 @@ _<Estado de associação atribuído na assinatura — por exemplo, Membro Experi
 
 ## Obrigações dos Membros
 
-*Cláusulas RCOS: [3.4.2](https://rcos.ecohubs.community/pt-br/standard/core/0.1/layer-1-membership-system#3.4.2), [3.4.4](https://rcos.ecohubs.community/pt-br/standard/core/0.1/layer-1-membership-system#3.4.4), [3.4.5](https://rcos.ecohubs.community/pt-br/standard/core/0.1/layer-1-membership-system#3.4.5)*
+*Cláusulas RCOS: [3.4.2](https://rcos.ecohubs.community/pt-br/standard/core/0.1/layer-1-membership-system#3.4.2), [3.4.3](https://rcos.ecohubs.community/pt-br/standard/core/0.1/layer-1-membership-system#3.4.3), [3.4.4](https://rcos.ecohubs.community/pt-br/standard/core/0.1/layer-1-membership-system#3.4.4), [3.4.5](https://rcos.ecohubs.community/pt-br/standard/core/0.1/layer-1-membership-system#3.4.5)*
 
 1. _<Obrigação 1, por exemplo, aderir a todas as restrições e invariantes de identidade da Camada 0 em todos os momentos.>_
 2. _<Obrigação 2, por exemplo, contribuir para a comunidade em pelo menos uma categoria reconhecida por período definido.>_

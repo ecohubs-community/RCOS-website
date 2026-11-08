@@ -76,7 +76,7 @@ Los roles operativos tienen autoridad delegada para actuar dentro de límites ex
 
 ## Roles funcionales
 
-*Cláusulas RCOS: [7.1.1](https://rcos.ecohubs.community/es/standard/core/0.1/layer-5-operations-coordination#7.1.1), [7.1.2](https://rcos.ecohubs.community/es/standard/core/0.1/layer-5-operations-coordination#7.1.2)*
+*Cláusulas RCOS: [7.1.1](https://rcos.ecohubs.community/es/standard/core/0.1/layer-5-operations-coordination#7.1.1), [7.1.2](https://rcos.ecohubs.community/es/standard/core/0.1/layer-5-operations-coordination#7.1.2), [7.1.3](https://rcos.ecohubs.community/es/standard/core/0.1/layer-5-operations-coordination#7.1.3)*
 
 Los roles funcionales definen el ámbito de contribución de un miembro. No tienen autoridad de gobernanza delegada más allá de los derechos de Miembro Pleno. Cualquier Miembro Pleno puede asumir un rol funcional declarándolo; no se requiere votación. Los roles pueden dejarse vacantes en cualquier momento mediante notificación.
 

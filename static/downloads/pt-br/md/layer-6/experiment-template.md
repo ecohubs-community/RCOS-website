@@ -2,7 +2,7 @@
 
 # Modelo de Experimento
 
-- **Gerado em:** 2026-11-02
+- **Gerado em:** 2026-11-06
 - **Fonte (versão mais recente):** [https://rcos.ecohubs.community/pt-br/articles/rcos-templates/layer-6/experiment-template](https://rcos.ecohubs.community/pt-br/articles/rcos-templates/layer-6/experiment-template)
 - **Todos os modelos RCOS:** [https://rcos.ecohubs.community/pt-br/articles/rcos-templates](https://rcos.ecohubs.community/pt-br/articles/rcos-templates)
 
@@ -33,6 +33,8 @@
 - **Suspensão por segurança:** _<reconheça que uma suspensão de emergência PODE ser invocada nos termos do Protocolo de Mudança caso surja um risco de segurança crível.>_
 
 ## Expiração e Renovação
+
+*Cláusulas RCOS: [8.3.4](https://rcos.ecohubs.community/pt-br/standard/core/0.1/layer-6-evolution-adaptation#8.3.4)*
 
 - _<Os experimentos expiram automaticamente ao final da duração definida, a menos que sejam explicitamente renovados por meio de uma nova proposta. A renovação requer uma nova votação Estratégica.>_
 - _<Os resultados e aprendizados são registrados no Registro de Aprendizados.>_

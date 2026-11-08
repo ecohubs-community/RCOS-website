@@ -17,7 +17,7 @@
 
 ## Classificação Bens Comuns vs. Privados
 
-*Cláusulas RCOS: [5.1.1](https://rcos.ecohubs.community/pt-br/standard/core/0.1/layer-3-economic-resource-system#5.1.1), [5.1.2](https://rcos.ecohubs.community/pt-br/standard/core/0.1/layer-3-economic-resource-system#5.1.2), [5.1.3](https://rcos.ecohubs.community/pt-br/standard/core/0.1/layer-3-economic-resource-system#5.1.3), [5.1.4](https://rcos.ecohubs.community/pt-br/standard/core/0.1/layer-3-economic-resource-system#5.1.4), [5.1.5](https://rcos.ecohubs.community/pt-br/standard/core/0.1/layer-3-economic-resource-system#5.1.5), [5.6.2](https://rcos.ecohubs.community/pt-br/standard/core/0.1/layer-3-economic-resource-system#5.6.2)*
+*Cláusulas RCOS: [5.1.1](https://rcos.ecohubs.community/pt-br/standard/core/0.1/layer-3-economic-resource-system#5.1.1), [5.1.2](https://rcos.ecohubs.community/pt-br/standard/core/0.1/layer-3-economic-resource-system#5.1.2), [5.1.3](https://rcos.ecohubs.community/pt-br/standard/core/0.1/layer-3-economic-resource-system#5.1.3), [5.1.4](https://rcos.ecohubs.community/pt-br/standard/core/0.1/layer-3-economic-resource-system#5.1.4), [5.1.5](https://rcos.ecohubs.community/pt-br/standard/core/0.1/layer-3-economic-resource-system#5.1.5), [5.5.3](https://rcos.ecohubs.community/pt-br/standard/core/0.1/layer-3-economic-resource-system#5.5.3), [5.6.2](https://rcos.ecohubs.community/pt-br/standard/core/0.1/layer-3-economic-resource-system#5.6.2)*
 
 <details data-kind="rationale">
 <summary>Por que classificar cada recurso?</summary>
@@ -45,7 +45,7 @@ Para cada recurso que a comunidade possui, declare a classificação (Bens Comun
 
 ## Categorias de Contribuição Reconhecidas
 
-*Cláusulas RCOS: [5.2.1](https://rcos.ecohubs.community/pt-br/standard/core/0.1/layer-3-economic-resource-system#5.2.1), [5.2.3](https://rcos.ecohubs.community/pt-br/standard/core/0.1/layer-3-economic-resource-system#5.2.3), [5.6.3](https://rcos.ecohubs.community/pt-br/standard/core/0.1/layer-3-economic-resource-system#5.6.3)*
+*Cláusulas RCOS: [5.2.1](https://rcos.ecohubs.community/pt-br/standard/core/0.1/layer-3-economic-resource-system#5.2.1), [5.2.3](https://rcos.ecohubs.community/pt-br/standard/core/0.1/layer-3-economic-resource-system#5.2.3), [5.5.3](https://rcos.ecohubs.community/pt-br/standard/core/0.1/layer-3-economic-resource-system#5.5.3), [5.6.3](https://rcos.ecohubs.community/pt-br/standard/core/0.1/layer-3-economic-resource-system#5.6.3)*
 
 <details data-kind="rationale">
 <summary>Por que nomear os tipos de trabalho que contam?</summary>
@@ -73,7 +73,7 @@ Liste as categorias de contribuição que sua comunidade reconhece. Cuidado, fac
 
 ## Mecanismo de Reconhecimento de Contribuições
 
-*Cláusulas RCOS: [5.2.2](https://rcos.ecohubs.community/pt-br/standard/core/0.1/layer-3-economic-resource-system#5.2.2), [5.2.5](https://rcos.ecohubs.community/pt-br/standard/core/0.1/layer-3-economic-resource-system#5.2.5)*
+*Cláusulas RCOS: [5.2.2](https://rcos.ecohubs.community/pt-br/standard/core/0.1/layer-3-economic-resource-system#5.2.2), [5.2.5](https://rcos.ecohubs.community/pt-br/standard/core/0.1/layer-3-economic-resource-system#5.2.5), [5.5.3](https://rcos.ecohubs.community/pt-br/standard/core/0.1/layer-3-economic-resource-system#5.5.3)*
 
 <details data-kind="rationale">
 <summary>Por que definir como o reconhecimento realmente funciona?</summary>
@@ -97,7 +97,7 @@ Indique o que se qualifica, como os reconhecimentos são registrados, quem valid
 
 ## Unidades Internas
 
-*Cláusulas RCOS: [5.2.4](https://rcos.ecohubs.community/pt-br/standard/core/0.1/layer-3-economic-resource-system#5.2.4), [5.2.5](https://rcos.ecohubs.community/pt-br/standard/core/0.1/layer-3-economic-resource-system#5.2.5)*
+*Cláusulas RCOS: [5.2.4](https://rcos.ecohubs.community/pt-br/standard/core/0.1/layer-3-economic-resource-system#5.2.4), [5.2.5](https://rcos.ecohubs.community/pt-br/standard/core/0.1/layer-3-economic-resource-system#5.2.5), [5.5.3](https://rcos.ecohubs.community/pt-br/standard/core/0.1/layer-3-economic-resource-system#5.5.3)*
 
 <details data-kind="rationale">
 <summary>Por que definir as unidades internas com tanta precisão?</summary>
@@ -127,7 +127,7 @@ Se sua comunidade usa unidades internas (XP, ECO, créditos, etc.), defina o pro
 
 ## Restrições de Acumulação
 
-*Cláusulas RCOS: [5.4.1](https://rcos.ecohubs.community/pt-br/standard/core/0.1/layer-3-economic-resource-system#5.4.1), [5.4.2](https://rcos.ecohubs.community/pt-br/standard/core/0.1/layer-3-economic-resource-system#5.4.2), [5.4.3](https://rcos.ecohubs.community/pt-br/standard/core/0.1/layer-3-economic-resource-system#5.4.3), [5.4.4](https://rcos.ecohubs.community/pt-br/standard/core/0.1/layer-3-economic-resource-system#5.4.4), [5.6.4](https://rcos.ecohubs.community/pt-br/standard/core/0.1/layer-3-economic-resource-system#5.6.4)*
+*Cláusulas RCOS: [5.4.1](https://rcos.ecohubs.community/pt-br/standard/core/0.1/layer-3-economic-resource-system#5.4.1), [5.4.2](https://rcos.ecohubs.community/pt-br/standard/core/0.1/layer-3-economic-resource-system#5.4.2), [5.4.3](https://rcos.ecohubs.community/pt-br/standard/core/0.1/layer-3-economic-resource-system#5.4.3), [5.4.4](https://rcos.ecohubs.community/pt-br/standard/core/0.1/layer-3-economic-resource-system#5.4.4), [5.5.3](https://rcos.ecohubs.community/pt-br/standard/core/0.1/layer-3-economic-resource-system#5.5.3), [5.6.4](https://rcos.ecohubs.community/pt-br/standard/core/0.1/layer-3-economic-resource-system#5.6.4)*
 
 <details data-kind="rationale">
 <summary>Por que restringir a acumulação?</summary>
@@ -149,7 +149,7 @@ Indique a regra atual de acumulação (limite, decaimento, nenhuma) e a regra de
 
 ## Interfaces de Receita Externa
 
-*Cláusulas RCOS: [5.3.2](https://rcos.ecohubs.community/pt-br/standard/core/0.1/layer-3-economic-resource-system#5.3.2)*
+*Cláusulas RCOS: [5.3.2](https://rcos.ecohubs.community/pt-br/standard/core/0.1/layer-3-economic-resource-system#5.3.2), [5.5.3](https://rcos.ecohubs.community/pt-br/standard/core/0.1/layer-3-economic-resource-system#5.5.3)*
 
 <details data-kind="rationale">
 <summary>Por que exigir aprovação antes que o dinheiro chegue?</summary>

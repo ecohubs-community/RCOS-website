@@ -224,6 +224,8 @@ export const ownership = z.strictObject({
 		z.string(),
 		z.strictObject({
 			disposition: z.enum(['authored', 'filled_from_decision', 'derived', 'instance_record']),
+			/** Written if the community wants to; never counted toward completeness. */
+			optional: z.boolean().optional(),
 			note: text
 		})
 	),

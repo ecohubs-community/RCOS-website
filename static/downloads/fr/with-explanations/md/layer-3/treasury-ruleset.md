@@ -37,7 +37,7 @@ _<Définis quels comptes constituent la trésorerie communautaire — adresses d
 
 ## Sources de revenus
 
-*Clauses RCOS : [5.3.2](https://rcos.ecohubs.community/fr/standard/core/0.1/layer-3-economic-resource-system#5.3.2)*
+*Clauses RCOS : [5.3.2](https://rcos.ecohubs.community/fr/standard/core/0.1/layer-3-economic-resource-system#5.3.2), [5.5.4](https://rcos.ecohubs.community/fr/standard/core/0.1/layer-3-economic-resource-system#5.5.4)*
 
 <details data-kind="rationale">
 <summary>Pourquoi faire transiter tous les revenus par une liste unique et déclarée ?</summary>
@@ -57,7 +57,7 @@ _<Liste les sources de revenus actuelles, ou indique qu'il n'y en a aucune. Renv
 
 ## Autorité de dépense
 
-*Clauses RCOS : [5.3.3](https://rcos.ecohubs.community/fr/standard/core/0.1/layer-3-economic-resource-system#5.3.3), [5.7.1](https://rcos.ecohubs.community/fr/standard/core/0.1/layer-3-economic-resource-system#5.7.1)*
+*Clauses RCOS : [5.3.3](https://rcos.ecohubs.community/fr/standard/core/0.1/layer-3-economic-resource-system#5.3.3), [5.5.4](https://rcos.ecohubs.community/fr/standard/core/0.1/layer-3-economic-resource-system#5.5.4), [5.7.1](https://rcos.ecohubs.community/fr/standard/core/0.1/layer-3-economic-resource-system#5.7.1)*
 
 <details data-kind="rationale">
 <summary>Pourquoi détailler les seuils dans un tableau ?</summary>
@@ -81,7 +81,7 @@ Définis des paliers de dépense par montant avec le type de décision, l'organe
 
 ## Transparence et rapports
 
-*Clauses RCOS : [5.3.4](https://rcos.ecohubs.community/fr/standard/core/0.1/layer-3-economic-resource-system#5.3.4), [5.3.5](https://rcos.ecohubs.community/fr/standard/core/0.1/layer-3-economic-resource-system#5.3.5), [5.6.1](https://rcos.ecohubs.community/fr/standard/core/0.1/layer-3-economic-resource-system#5.6.1)*
+*Clauses RCOS : [5.3.4](https://rcos.ecohubs.community/fr/standard/core/0.1/layer-3-economic-resource-system#5.3.4), [5.3.5](https://rcos.ecohubs.community/fr/standard/core/0.1/layer-3-economic-resource-system#5.3.5), [5.5.4](https://rcos.ecohubs.community/fr/standard/core/0.1/layer-3-economic-resource-system#5.5.4), [5.6.1](https://rcos.ecohubs.community/fr/standard/core/0.1/layer-3-economic-resource-system#5.6.1)*
 
 <details data-kind="rationale">
 <summary>Pourquoi faire de la transparence le défaut, et non une fonctionnalité ?</summary>
@@ -103,7 +103,7 @@ Indique le niveau de visibilité par défaut pour chaque compte de trésorerie. 
 
 ## Réserve, risque et contraintes d'endettement
 
-*Clauses RCOS : [5.3.6](https://rcos.ecohubs.community/fr/standard/core/0.1/layer-3-economic-resource-system#5.3.6)*
+*Clauses RCOS : [5.3.6](https://rcos.ecohubs.community/fr/standard/core/0.1/layer-3-economic-resource-system#5.3.6), [5.5.4](https://rcos.ecohubs.community/fr/standard/core/0.1/layer-3-economic-resource-system#5.5.4)*
 
 <details data-kind="rationale">
 <summary>Pourquoi bloquer la dette et les engagements à long terme par défaut ?</summary>
@@ -126,7 +126,7 @@ Indique les règles concernant la dette, les engagements récurrents, les réser
 
 ## Règles relatives aux conflits d'intérêts
 
-*Clauses RCOS : [5.4.3](https://rcos.ecohubs.community/fr/standard/core/0.1/layer-3-economic-resource-system#5.4.3)*
+*Clauses RCOS : [5.4.3](https://rcos.ecohubs.community/fr/standard/core/0.1/layer-3-economic-resource-system#5.4.3), [5.5.4](https://rcos.ecohubs.community/fr/standard/core/0.1/layer-3-economic-resource-system#5.5.4)*
 
 <details data-kind="rationale">
 <summary>Pourquoi interdire purement et simplement l'auto-approbation ?</summary>

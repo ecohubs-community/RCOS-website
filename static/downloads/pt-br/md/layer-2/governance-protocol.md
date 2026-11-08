@@ -2,7 +2,7 @@
 
 # Protocolo de Governança
 
-- **Gerado em:** 2026-11-02
+- **Gerado em:** 2026-11-06
 - **Fonte (versão mais recente):** [https://rcos.ecohubs.community/pt-br/articles/rcos-templates/layer-2/governance-protocol](https://rcos.ecohubs.community/pt-br/articles/rcos-templates/layer-2/governance-protocol)
 - **Todos os modelos RCOS:** [https://rcos.ecohubs.community/pt-br/articles/rcos-templates](https://rcos.ecohubs.community/pt-br/articles/rcos-templates)
 
@@ -36,7 +36,7 @@
 
 ## Execução da Decisão
 
-*Cláusulas RCOS: [4.5.1](https://rcos.ecohubs.community/pt-br/standard/core/0.1/layer-2-governance-decision-logic#4.5.1), [4.5.4](https://rcos.ecohubs.community/pt-br/standard/core/0.1/layer-2-governance-decision-logic#4.5.4)*
+*Cláusulas RCOS: [4.5.1](https://rcos.ecohubs.community/pt-br/standard/core/0.1/layer-2-governance-decision-logic#4.5.1), [4.5.2](https://rcos.ecohubs.community/pt-br/standard/core/0.1/layer-2-governance-decision-logic#4.5.2), [4.5.4](https://rcos.ecohubs.community/pt-br/standard/core/0.1/layer-2-governance-decision-logic#4.5.4)*
 
 - _<Em caso de aprovação: como a proposta é arquivada; artefatos afetados atualizados; entrada no histórico de versões.>_
 - _<Em caso de rejeição: onde a proposta é arquivada.>_
@@ -44,7 +44,7 @@
 
 ## Documentação e Publicação
 
-*Cláusulas RCOS: [4.5.4](https://rcos.ecohubs.community/pt-br/standard/core/0.1/layer-2-governance-decision-logic#4.5.4)*
+*Cláusulas RCOS: [4.5.2](https://rcos.ecohubs.community/pt-br/standard/core/0.1/layer-2-governance-decision-logic#4.5.2), [4.5.4](https://rcos.ecohubs.community/pt-br/standard/core/0.1/layer-2-governance-decision-logic#4.5.4)*
 
 - _<Todas as propostas aprovadas e rejeitadas são arquivadas em até X dias após o encerramento da votação.>_
 - _<O artefato da votação (por exemplo, link do Snapshot) serve como registro de decisão.>_

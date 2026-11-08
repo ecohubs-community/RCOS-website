@@ -70,7 +70,7 @@ Define each ladder step: who is involved, what happens, the time window, and the
 
 ## Non-Response, Withdrawal, and Deadlock
 
-*RCOS clauses: [6.2.5](https://rcos.ecohubs.community/standard/core/0.1/layer-4-conflict-repair-accountability#6.2.5), [6.1.5](https://rcos.ecohubs.community/standard/core/0.1/layer-4-conflict-repair-accountability#6.1.5)*
+*RCOS clauses: [6.2.5](https://rcos.ecohubs.community/standard/core/0.1/layer-4-conflict-repair-accountability#6.2.5), [6.1.5](https://rcos.ecohubs.community/standard/core/0.1/layer-4-conflict-repair-accountability#6.1.5), [6.2.3](https://rcos.ecohubs.community/standard/core/0.1/layer-4-conflict-repair-accountability#6.2.3)*
 
 <details data-kind="rationale">
 <summary>What stops a process from being killed by silence?</summary>
@@ -102,7 +102,7 @@ Define how non-response, mid-process withdrawal, deadlock, and procedural failur
 
 ## Facilitator Selection and Replacement
 
-*RCOS clauses: [6.3.1](https://rcos.ecohubs.community/standard/core/0.1/layer-4-conflict-repair-accountability#6.3.1), [6.3.3](https://rcos.ecohubs.community/standard/core/0.1/layer-4-conflict-repair-accountability#6.3.3)*
+*RCOS clauses: [6.2.3](https://rcos.ecohubs.community/standard/core/0.1/layer-4-conflict-repair-accountability#6.2.3), [6.3.1](https://rcos.ecohubs.community/standard/core/0.1/layer-4-conflict-repair-accountability#6.3.1), [6.3.3](https://rcos.ecohubs.community/standard/core/0.1/layer-4-conflict-repair-accountability#6.3.3), [6.5.3](https://rcos.ecohubs.community/standard/core/0.1/layer-4-conflict-repair-accountability#6.5.3)*
 
 <details data-kind="rationale">
 <summary>Why name how the Facilitator is chosen or replaced?</summary>
@@ -125,7 +125,7 @@ State the default facilitator role, the rule when the facilitator is a party, th
 
 ## Privacy and Information Access Boundaries
 
-*RCOS clauses: [6.5.3](https://rcos.ecohubs.community/standard/core/0.1/layer-4-conflict-repair-accountability#6.5.3)*
+*RCOS clauses: [6.2.3](https://rcos.ecohubs.community/standard/core/0.1/layer-4-conflict-repair-accountability#6.2.3), [6.5.3](https://rcos.ecohubs.community/standard/core/0.1/layer-4-conflict-repair-accountability#6.5.3)*
 
 <details data-kind="rationale">
 <summary>Why bound information flow so tightly?</summary>
@@ -148,7 +148,7 @@ State which steps are fully confidential, what minimum information may be disclo
 
 ## Safeguards
 
-*RCOS clauses: [6.3.1](https://rcos.ecohubs.community/standard/core/0.1/layer-4-conflict-repair-accountability#6.3.1), [6.3.2](https://rcos.ecohubs.community/standard/core/0.1/layer-4-conflict-repair-accountability#6.3.2), [6.3.3](https://rcos.ecohubs.community/standard/core/0.1/layer-4-conflict-repair-accountability#6.3.3), [6.3.4](https://rcos.ecohubs.community/standard/core/0.1/layer-4-conflict-repair-accountability#6.3.4), [6.3.5](https://rcos.ecohubs.community/standard/core/0.1/layer-4-conflict-repair-accountability#6.3.5), [6.6.2](https://rcos.ecohubs.community/standard/core/0.1/layer-4-conflict-repair-accountability#6.6.2)*
+*RCOS clauses: [6.3.1](https://rcos.ecohubs.community/standard/core/0.1/layer-4-conflict-repair-accountability#6.3.1), [6.3.2](https://rcos.ecohubs.community/standard/core/0.1/layer-4-conflict-repair-accountability#6.3.2), [6.3.3](https://rcos.ecohubs.community/standard/core/0.1/layer-4-conflict-repair-accountability#6.3.3), [6.3.4](https://rcos.ecohubs.community/standard/core/0.1/layer-4-conflict-repair-accountability#6.3.4), [6.3.5](https://rcos.ecohubs.community/standard/core/0.1/layer-4-conflict-repair-accountability#6.3.5), [6.5.3](https://rcos.ecohubs.community/standard/core/0.1/layer-4-conflict-repair-accountability#6.5.3), [6.6.2](https://rcos.ecohubs.community/standard/core/0.1/layer-4-conflict-repair-accountability#6.6.2)*
 
 <details data-kind="rationale">
 <summary>Why do safeguards exist on top of the ladder?</summary>

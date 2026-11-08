@@ -2,7 +2,7 @@
 
 # Governance-Protokoll
 
-- **Generiert:** 2026-11-02
+- **Generiert:** 2026-11-06
 - **Quelle (aktuelle Version):** [https://rcos.ecohubs.community/de/articles/rcos-templates/layer-2/governance-protocol](https://rcos.ecohubs.community/de/articles/rcos-templates/layer-2/governance-protocol)
 - **Alle RCOS-Vorlagen:** [https://rcos.ecohubs.community/de/articles/rcos-templates](https://rcos.ecohubs.community/de/articles/rcos-templates)
 
@@ -64,7 +64,7 @@ Benenne die Beratungsorte und die Mindestfristen für strategische und Verfassun
 
 ## Entscheidungsumsetzung
 
-*RCOS-Klauseln: [4.5.1](https://rcos.ecohubs.community/de/standard/core/0.1/layer-2-governance-decision-logic#4.5.1), [4.5.4](https://rcos.ecohubs.community/de/standard/core/0.1/layer-2-governance-decision-logic#4.5.4)*
+*RCOS-Klauseln: [4.5.1](https://rcos.ecohubs.community/de/standard/core/0.1/layer-2-governance-decision-logic#4.5.1), [4.5.2](https://rcos.ecohubs.community/de/standard/core/0.1/layer-2-governance-decision-logic#4.5.2), [4.5.4](https://rcos.ecohubs.community/de/standard/core/0.1/layer-2-governance-decision-logic#4.5.4)*
 
 <details data-kind="rationale">
 <summary>Warum die Umsetzung an die Dokumentation binden?</summary>
@@ -86,7 +86,7 @@ Lege fest, was passiert, wenn ein Antrag angenommen wird (Artefakt-Aktualisierun
 
 ## Dokumentation und Veröffentlichung
 
-*RCOS-Klauseln: [4.5.4](https://rcos.ecohubs.community/de/standard/core/0.1/layer-2-governance-decision-logic#4.5.4)*
+*RCOS-Klauseln: [4.5.2](https://rcos.ecohubs.community/de/standard/core/0.1/layer-2-governance-decision-logic#4.5.2), [4.5.4](https://rcos.ecohubs.community/de/standard/core/0.1/layer-2-governance-decision-logic#4.5.4)*
 
 <details data-kind="rationale">
 <summary>Warum jedes Ergebnis dokumentieren, einschließlich Ablehnungen?</summary>

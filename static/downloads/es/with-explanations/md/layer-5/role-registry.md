@@ -104,7 +104,7 @@ Los roles operativos tienen autoridad delegada para actuar dentro de límites ex
 
 ## Roles funcionales
 
-*Cláusulas RCOS: [7.1.1](https://rcos.ecohubs.community/es/standard/core/0.1/layer-5-operations-coordination#7.1.1), [7.1.2](https://rcos.ecohubs.community/es/standard/core/0.1/layer-5-operations-coordination#7.1.2)*
+*Cláusulas RCOS: [7.1.1](https://rcos.ecohubs.community/es/standard/core/0.1/layer-5-operations-coordination#7.1.1), [7.1.2](https://rcos.ecohubs.community/es/standard/core/0.1/layer-5-operations-coordination#7.1.2), [7.1.3](https://rcos.ecohubs.community/es/standard/core/0.1/layer-5-operations-coordination#7.1.3)*
 
 <details data-kind="rationale">
 <summary>¿Por qué separar los roles funcionales de los operativos?</summary>

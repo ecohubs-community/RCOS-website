@@ -88,7 +88,7 @@ Indique le droit à une notification écrite, un délai de réponse minimum et u
 
 ## Protections contre les représailles
 
-*Clauses RCOS : [6.3.2](https://rcos.ecohubs.community/fr/standard/core/0.1/layer-4-conflict-repair-accountability#6.3.2)*
+*Clauses RCOS : [6.3.2](https://rcos.ecohubs.community/fr/standard/core/0.1/layer-4-conflict-repair-accountability#6.3.2), [6.5.4](https://rcos.ecohubs.community/fr/standard/core/0.1/layer-4-conflict-repair-accountability#6.5.4)*
 
 <details data-kind="rationale">
 <summary>Pourquoi protéger explicitement les participants ?</summary>
@@ -136,7 +136,7 @@ Pour chaque type de sanction, définis les conditions préalables, l'organe habi
 
 ## Conditions de rétablissement des droits
 
-*Clauses RCOS : [6.4.4](https://rcos.ecohubs.community/fr/standard/core/0.1/layer-4-conflict-repair-accountability#6.4.4)*
+*Clauses RCOS : [6.4.3](https://rcos.ecohubs.community/fr/standard/core/0.1/layer-4-conflict-repair-accountability#6.4.3), [6.4.4](https://rcos.ecohubs.community/fr/standard/core/0.1/layer-4-conflict-repair-accountability#6.4.4)*
 
 <details data-kind="rationale">
 <summary>Pourquoi rendre explicites les conditions de rétablissement ?</summary>
@@ -158,7 +158,7 @@ Pour chaque catégorie de sanction, indique le chemin vers le rétablissement de
 
 ## Coordination avec la Couche 1
 
-*Clauses RCOS : [6.4.4](https://rcos.ecohubs.community/fr/standard/core/0.1/layer-4-conflict-repair-accountability#6.4.4)*
+*Clauses RCOS : [6.4.4](https://rcos.ecohubs.community/fr/standard/core/0.1/layer-4-conflict-repair-accountability#6.4.4), [6.5.4](https://rcos.ecohubs.community/fr/standard/core/0.1/layer-4-conflict-repair-accountability#6.5.4)*
 
 <details data-kind="rationale">
 <summary>Pourquoi relier cela au Protocole de sortie et de séparation ?</summary>

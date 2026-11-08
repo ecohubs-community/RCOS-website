@@ -23,13 +23,13 @@ _<Définis quels comptes constituent la trésorerie communautaire — adresses d
 
 ## Sources de revenus
 
-*Clauses RCOS : [5.3.2](https://rcos.ecohubs.community/fr/standard/core/0.1/layer-3-economic-resource-system#5.3.2)*
+*Clauses RCOS : [5.3.2](https://rcos.ecohubs.community/fr/standard/core/0.1/layer-3-economic-resource-system#5.3.2), [5.5.4](https://rcos.ecohubs.community/fr/standard/core/0.1/layer-3-economic-resource-system#5.5.4)*
 
 _<Liste les sources de revenus actuelles, ou indique qu'il n'y en a aucune. Renvoie à la section Interfaces de revenus externes du Protocole d'économie interne.>_
 
 ## Autorité de dépense
 
-*Clauses RCOS : [5.3.3](https://rcos.ecohubs.community/fr/standard/core/0.1/layer-3-economic-resource-system#5.3.3), [5.7.1](https://rcos.ecohubs.community/fr/standard/core/0.1/layer-3-economic-resource-system#5.7.1)*
+*Clauses RCOS : [5.3.3](https://rcos.ecohubs.community/fr/standard/core/0.1/layer-3-economic-resource-system#5.3.3), [5.5.4](https://rcos.ecohubs.community/fr/standard/core/0.1/layer-3-economic-resource-system#5.5.4), [5.7.1](https://rcos.ecohubs.community/fr/standard/core/0.1/layer-3-economic-resource-system#5.7.1)*
 
 | Montant | Type de décision | Organe autorisé | Mécanisme |
 |---:|---|---|---|
@@ -39,7 +39,7 @@ _<Liste les sources de revenus actuelles, ou indique qu'il n'y en a aucune. Renv
 
 ## Transparence et rapports
 
-*Clauses RCOS : [5.3.4](https://rcos.ecohubs.community/fr/standard/core/0.1/layer-3-economic-resource-system#5.3.4), [5.3.5](https://rcos.ecohubs.community/fr/standard/core/0.1/layer-3-economic-resource-system#5.3.5), [5.6.1](https://rcos.ecohubs.community/fr/standard/core/0.1/layer-3-economic-resource-system#5.6.1)*
+*Clauses RCOS : [5.3.4](https://rcos.ecohubs.community/fr/standard/core/0.1/layer-3-economic-resource-system#5.3.4), [5.3.5](https://rcos.ecohubs.community/fr/standard/core/0.1/layer-3-economic-resource-system#5.3.5), [5.5.4](https://rcos.ecohubs.community/fr/standard/core/0.1/layer-3-economic-resource-system#5.5.4), [5.6.1](https://rcos.ecohubs.community/fr/standard/core/0.1/layer-3-economic-resource-system#5.6.1)*
 
 - _<Trésorerie principale (p. ex. multi-sig Safe) : tous les Membres à part entière disposent au minimum d'un accès en lecture ; visibilité en temps réel.>_
 - _<Autres comptes déclarés : accès en lecture multi-utilisateur direct si possible ; sinon, résumé périodique des soldes et transactions.>_
@@ -47,7 +47,7 @@ _<Liste les sources de revenus actuelles, ou indique qu'il n'y en a aucune. Renv
 
 ## Réserve, risque et contraintes d'endettement
 
-*Clauses RCOS : [5.3.6](https://rcos.ecohubs.community/fr/standard/core/0.1/layer-3-economic-resource-system#5.3.6)*
+*Clauses RCOS : [5.3.6](https://rcos.ecohubs.community/fr/standard/core/0.1/layer-3-economic-resource-system#5.3.6), [5.5.4](https://rcos.ecohubs.community/fr/standard/core/0.1/layer-3-economic-resource-system#5.5.4)*
 
 - **Dette :** _<autorisée uniquement par vote Stratégique.>_
 - **Engagements à long terme :** _<coûts récurrents / contrats autorisés uniquement par vote Stratégique.>_
@@ -56,7 +56,7 @@ _<Liste les sources de revenus actuelles, ou indique qu'il n'y en a aucune. Renv
 
 ## Règles relatives aux conflits d'intérêts
 
-*Clauses RCOS : [5.4.3](https://rcos.ecohubs.community/fr/standard/core/0.1/layer-3-economic-resource-system#5.4.3)*
+*Clauses RCOS : [5.4.3](https://rcos.ecohubs.community/fr/standard/core/0.1/layer-3-economic-resource-system#5.4.3), [5.5.4](https://rcos.ecohubs.community/fr/standard/core/0.1/layer-3-economic-resource-system#5.5.4)*
 
 - _<Les demandeur·euse·s NE DOIVENT PAS approuver leurs propres demandes de dépense.>_
 - _<Les membres ayant un intérêt financier direct dans une décision de dépense DOIVENT le déclarer et s'abstenir.>_

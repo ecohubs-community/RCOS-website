@@ -37,7 +37,7 @@ _<Define which accounts are community treasury — explicit wallet addresses, ba
 
 ## Income Sources
 
-*RCOS clauses: [5.3.2](https://rcos.ecohubs.community/standard/core/0.1/layer-3-economic-resource-system#5.3.2)*
+*RCOS clauses: [5.3.2](https://rcos.ecohubs.community/standard/core/0.1/layer-3-economic-resource-system#5.3.2), [5.5.4](https://rcos.ecohubs.community/standard/core/0.1/layer-3-economic-resource-system#5.5.4)*
 
 <details data-kind="rationale">
 <summary>Why route all income through one declared list?</summary>
@@ -57,7 +57,7 @@ _<List current income sources, or state that there are none. Reference the Exter
 
 ## Spending Authority
 
-*RCOS clauses: [5.3.3](https://rcos.ecohubs.community/standard/core/0.1/layer-3-economic-resource-system#5.3.3), [5.7.1](https://rcos.ecohubs.community/standard/core/0.1/layer-3-economic-resource-system#5.7.1)*
+*RCOS clauses: [5.3.3](https://rcos.ecohubs.community/standard/core/0.1/layer-3-economic-resource-system#5.3.3), [5.5.4](https://rcos.ecohubs.community/standard/core/0.1/layer-3-economic-resource-system#5.5.4), [5.7.1](https://rcos.ecohubs.community/standard/core/0.1/layer-3-economic-resource-system#5.7.1)*
 
 <details data-kind="rationale">
 <summary>Why spell out thresholds in a table?</summary>
@@ -81,7 +81,7 @@ Define spending tiers by amount and the decision type, authorized body, and mech
 
 ## Transparency and Reporting
 
-*RCOS clauses: [5.3.4](https://rcos.ecohubs.community/standard/core/0.1/layer-3-economic-resource-system#5.3.4), [5.3.5](https://rcos.ecohubs.community/standard/core/0.1/layer-3-economic-resource-system#5.3.5), [5.6.1](https://rcos.ecohubs.community/standard/core/0.1/layer-3-economic-resource-system#5.6.1)*
+*RCOS clauses: [5.3.4](https://rcos.ecohubs.community/standard/core/0.1/layer-3-economic-resource-system#5.3.4), [5.3.5](https://rcos.ecohubs.community/standard/core/0.1/layer-3-economic-resource-system#5.3.5), [5.5.4](https://rcos.ecohubs.community/standard/core/0.1/layer-3-economic-resource-system#5.5.4), [5.6.1](https://rcos.ecohubs.community/standard/core/0.1/layer-3-economic-resource-system#5.6.1)*
 
 <details data-kind="rationale">
 <summary>Why make transparency the default, not a feature?</summary>
@@ -103,7 +103,7 @@ State the visibility default for each treasury account. Where direct visibility 
 
 ## Reserve, Risk, and Debt Constraints
 
-*RCOS clauses: [5.3.6](https://rcos.ecohubs.community/standard/core/0.1/layer-3-economic-resource-system#5.3.6)*
+*RCOS clauses: [5.3.6](https://rcos.ecohubs.community/standard/core/0.1/layer-3-economic-resource-system#5.3.6), [5.5.4](https://rcos.ecohubs.community/standard/core/0.1/layer-3-economic-resource-system#5.5.4)*
 
 <details data-kind="rationale">
 <summary>Why block debt and long-term obligations by default?</summary>
@@ -126,7 +126,7 @@ State the rules on debt, recurring obligations, contingency reserves, and off-tr
 
 ## Conflict-of-Interest Rules
 
-*RCOS clauses: [5.4.3](https://rcos.ecohubs.community/standard/core/0.1/layer-3-economic-resource-system#5.4.3)*
+*RCOS clauses: [5.4.3](https://rcos.ecohubs.community/standard/core/0.1/layer-3-economic-resource-system#5.4.3), [5.5.4](https://rcos.ecohubs.community/standard/core/0.1/layer-3-economic-resource-system#5.5.4)*
 
 <details data-kind="rationale">
 <summary>Why ban self-approval outright?</summary>

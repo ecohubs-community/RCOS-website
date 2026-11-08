@@ -70,7 +70,7 @@ Define cada paso de la escalera: quién participa, qué sucede, la ventana tempo
 
 ## Falta de Respuesta, Retiro y Punto Muerto
 
-*Cláusulas RCOS: [6.2.5](https://rcos.ecohubs.community/es/standard/core/0.1/layer-4-conflict-repair-accountability#6.2.5), [6.1.5](https://rcos.ecohubs.community/es/standard/core/0.1/layer-4-conflict-repair-accountability#6.1.5)*
+*Cláusulas RCOS: [6.2.5](https://rcos.ecohubs.community/es/standard/core/0.1/layer-4-conflict-repair-accountability#6.2.5), [6.1.5](https://rcos.ecohubs.community/es/standard/core/0.1/layer-4-conflict-repair-accountability#6.1.5), [6.2.3](https://rcos.ecohubs.community/es/standard/core/0.1/layer-4-conflict-repair-accountability#6.2.3)*
 
 <details data-kind="rationale">
 <summary>¿Qué impide que un proceso sea anulado por el silencio?</summary>
@@ -102,7 +102,7 @@ Define cómo se manejan la falta de respuesta, el retiro a mitad del proceso, el
 
 ## Selección y Sustitución del Facilitador
 
-*Cláusulas RCOS: [6.3.1](https://rcos.ecohubs.community/es/standard/core/0.1/layer-4-conflict-repair-accountability#6.3.1), [6.3.3](https://rcos.ecohubs.community/es/standard/core/0.1/layer-4-conflict-repair-accountability#6.3.3)*
+*Cláusulas RCOS: [6.2.3](https://rcos.ecohubs.community/es/standard/core/0.1/layer-4-conflict-repair-accountability#6.2.3), [6.3.1](https://rcos.ecohubs.community/es/standard/core/0.1/layer-4-conflict-repair-accountability#6.3.1), [6.3.3](https://rcos.ecohubs.community/es/standard/core/0.1/layer-4-conflict-repair-accountability#6.3.3), [6.5.3](https://rcos.ecohubs.community/es/standard/core/0.1/layer-4-conflict-repair-accountability#6.5.3)*
 
 <details data-kind="rationale">
 <summary>¿Por qué especificar cómo se elige o sustituye al Facilitador?</summary>
@@ -125,7 +125,7 @@ Indica el rol de facilitador por defecto, la regla cuando el facilitador es part
 
 ## Privacidad y Límites de Acceso a la Información
 
-*Cláusulas RCOS: [6.5.3](https://rcos.ecohubs.community/es/standard/core/0.1/layer-4-conflict-repair-accountability#6.5.3)*
+*Cláusulas RCOS: [6.2.3](https://rcos.ecohubs.community/es/standard/core/0.1/layer-4-conflict-repair-accountability#6.2.3), [6.5.3](https://rcos.ecohubs.community/es/standard/core/0.1/layer-4-conflict-repair-accountability#6.5.3)*
 
 <details data-kind="rationale">
 <summary>¿Por qué limitar el flujo de información tan estrictamente?</summary>
@@ -148,7 +148,7 @@ Indica qué pasos son completamente confidenciales, qué información mínima pu
 
 ## Salvaguardas
 
-*Cláusulas RCOS: [6.3.1](https://rcos.ecohubs.community/es/standard/core/0.1/layer-4-conflict-repair-accountability#6.3.1), [6.3.2](https://rcos.ecohubs.community/es/standard/core/0.1/layer-4-conflict-repair-accountability#6.3.2), [6.3.3](https://rcos.ecohubs.community/es/standard/core/0.1/layer-4-conflict-repair-accountability#6.3.3), [6.3.4](https://rcos.ecohubs.community/es/standard/core/0.1/layer-4-conflict-repair-accountability#6.3.4), [6.3.5](https://rcos.ecohubs.community/es/standard/core/0.1/layer-4-conflict-repair-accountability#6.3.5), [6.6.2](https://rcos.ecohubs.community/es/standard/core/0.1/layer-4-conflict-repair-accountability#6.6.2)*
+*Cláusulas RCOS: [6.3.1](https://rcos.ecohubs.community/es/standard/core/0.1/layer-4-conflict-repair-accountability#6.3.1), [6.3.2](https://rcos.ecohubs.community/es/standard/core/0.1/layer-4-conflict-repair-accountability#6.3.2), [6.3.3](https://rcos.ecohubs.community/es/standard/core/0.1/layer-4-conflict-repair-accountability#6.3.3), [6.3.4](https://rcos.ecohubs.community/es/standard/core/0.1/layer-4-conflict-repair-accountability#6.3.4), [6.3.5](https://rcos.ecohubs.community/es/standard/core/0.1/layer-4-conflict-repair-accountability#6.3.5), [6.5.3](https://rcos.ecohubs.community/es/standard/core/0.1/layer-4-conflict-repair-accountability#6.5.3), [6.6.2](https://rcos.ecohubs.community/es/standard/core/0.1/layer-4-conflict-repair-accountability#6.6.2)*
 
 <details data-kind="rationale">
 <summary>¿Por qué existen salvaguardas además de la escalera?</summary>

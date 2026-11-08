@@ -45,7 +45,7 @@ _<Tout Membre de plein droit peut proposer un changement à tout artefact RCOS. 
 
 ## Comment les propositions sont classifiées
 
-*Clauses RCOS : [8.1.2](https://rcos.ecohubs.community/fr/standard/core/0.1/layer-6-evolution-adaptation#8.1.2), [8.1.4](https://rcos.ecohubs.community/fr/standard/core/0.1/layer-6-evolution-adaptation#8.1.4)*
+*Clauses RCOS : [8.1.2](https://rcos.ecohubs.community/fr/standard/core/0.1/layer-6-evolution-adaptation#8.1.2), [8.1.4](https://rcos.ecohubs.community/fr/standard/core/0.1/layer-6-evolution-adaptation#8.1.4), [8.6.3](https://rcos.ecohubs.community/fr/standard/core/0.1/layer-6-evolution-adaptation#8.6.3)*
 
 <details data-kind="rationale">
 <summary>Pourquoi classifier selon l'impact ?</summary>
@@ -69,7 +69,7 @@ Définis ce qui relève de chaque type de décision. Indique la règle de classi
 
 ## Examen et délibération
 
-*Clauses RCOS : [8.1.2](https://rcos.ecohubs.community/fr/standard/core/0.1/layer-6-evolution-adaptation#8.1.2), [8.7.1](https://rcos.ecohubs.community/fr/standard/core/0.1/layer-6-evolution-adaptation#8.7.1)*
+*Clauses RCOS : [8.1.2](https://rcos.ecohubs.community/fr/standard/core/0.1/layer-6-evolution-adaptation#8.1.2), [8.6.3](https://rcos.ecohubs.community/fr/standard/core/0.1/layer-6-evolution-adaptation#8.6.3), [8.7.1](https://rcos.ecohubs.community/fr/standard/core/0.1/layer-6-evolution-adaptation#8.7.1)*
 
 <details data-kind="rationale">
 <summary>Pourquoi imposer des périodes minimales de délibération ?</summary>
@@ -116,7 +116,7 @@ Lorsqu'une proposition est adoptée :
 
 ## Rejet
 
-*Clauses RCOS : [8.2.2](https://rcos.ecohubs.community/fr/standard/core/0.1/layer-6-evolution-adaptation#8.2.2), [8.2.4](https://rcos.ecohubs.community/fr/standard/core/0.1/layer-6-evolution-adaptation#8.2.4)*
+*Clauses RCOS : [8.2.2](https://rcos.ecohubs.community/fr/standard/core/0.1/layer-6-evolution-adaptation#8.2.2), [8.2.4](https://rcos.ecohubs.community/fr/standard/core/0.1/layer-6-evolution-adaptation#8.2.4), [8.6.3](https://rcos.ecohubs.community/fr/standard/core/0.1/layer-6-evolution-adaptation#8.6.3)*
 
 <details data-kind="rationale">
 <summary>Pourquoi archiver les propositions rejetées ?</summary>
@@ -140,7 +140,7 @@ Lorsqu'une proposition est rejetée :
 
 ## Transition et migration
 
-*Clauses RCOS : [8.5.1](https://rcos.ecohubs.community/fr/standard/core/0.1/layer-6-evolution-adaptation#8.5.1), [8.5.2](https://rcos.ecohubs.community/fr/standard/core/0.1/layer-6-evolution-adaptation#8.5.2)*
+*Clauses RCOS : [8.5.1](https://rcos.ecohubs.community/fr/standard/core/0.1/layer-6-evolution-adaptation#8.5.1), [8.5.2](https://rcos.ecohubs.community/fr/standard/core/0.1/layer-6-evolution-adaptation#8.5.2), [8.6.3](https://rcos.ecohubs.community/fr/standard/core/0.1/layer-6-evolution-adaptation#8.6.3)*
 
 <details data-kind="rationale">
 <summary>Pourquoi protéger les droits existants pendant les transitions ?</summary>
@@ -165,7 +165,7 @@ Lorsqu'un changement de règle affecte des rôles, accords ou registres existant
 
 ## Retour en arrière
 
-*Clauses RCOS : [8.1.5](https://rcos.ecohubs.community/fr/standard/core/0.1/layer-6-evolution-adaptation#8.1.5), [8.5.1](https://rcos.ecohubs.community/fr/standard/core/0.1/layer-6-evolution-adaptation#8.5.1)*
+*Clauses RCOS : [8.1.5](https://rcos.ecohubs.community/fr/standard/core/0.1/layer-6-evolution-adaptation#8.1.5), [8.5.1](https://rcos.ecohubs.community/fr/standard/core/0.1/layer-6-evolution-adaptation#8.5.1), [8.6.3](https://rcos.ecohubs.community/fr/standard/core/0.1/layer-6-evolution-adaptation#8.6.3)*
 
 <details data-kind="rationale">
 <summary>Pourquoi rendre le retour en arrière symétrique à l'adoption ?</summary>
@@ -185,7 +185,7 @@ _<Toute décision adoptée peut être annulée par le même processus que l'orig
 
 ## Changements d'urgence
 
-*Clauses RCOS : [8.5.3](https://rcos.ecohubs.community/fr/standard/core/0.1/layer-6-evolution-adaptation#8.5.3)*
+*Clauses RCOS : [8.5.3](https://rcos.ecohubs.community/fr/standard/core/0.1/layer-6-evolution-adaptation#8.5.3), [8.6.3](https://rcos.ecohubs.community/fr/standard/core/0.1/layer-6-evolution-adaptation#8.6.3)*
 
 <details data-kind="rationale">
 <summary>Pourquoi autoriser les changements d'urgence ?</summary>

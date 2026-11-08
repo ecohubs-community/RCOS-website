@@ -37,7 +37,7 @@ _<Defina quais contas são a tesouraria da comunidade — endereços específico
 
 ## Fontes de Receita
 
-*Cláusulas RCOS: [5.3.2](https://rcos.ecohubs.community/pt-br/standard/core/0.1/layer-3-economic-resource-system#5.3.2)*
+*Cláusulas RCOS: [5.3.2](https://rcos.ecohubs.community/pt-br/standard/core/0.1/layer-3-economic-resource-system#5.3.2), [5.5.4](https://rcos.ecohubs.community/pt-br/standard/core/0.1/layer-3-economic-resource-system#5.5.4)*
 
 <details data-kind="rationale">
 <summary>Por que canalizar toda receita por uma única lista declarada?</summary>
@@ -57,7 +57,7 @@ _<Liste as fontes de receita atuais, ou declare que não há nenhuma. Faça refe
 
 ## Autoridade de Gastos
 
-*Cláusulas RCOS: [5.3.3](https://rcos.ecohubs.community/pt-br/standard/core/0.1/layer-3-economic-resource-system#5.3.3), [5.7.1](https://rcos.ecohubs.community/pt-br/standard/core/0.1/layer-3-economic-resource-system#5.7.1)*
+*Cláusulas RCOS: [5.3.3](https://rcos.ecohubs.community/pt-br/standard/core/0.1/layer-3-economic-resource-system#5.3.3), [5.5.4](https://rcos.ecohubs.community/pt-br/standard/core/0.1/layer-3-economic-resource-system#5.5.4), [5.7.1](https://rcos.ecohubs.community/pt-br/standard/core/0.1/layer-3-economic-resource-system#5.7.1)*
 
 <details data-kind="rationale">
 <summary>Por que detalhar os limites em uma tabela?</summary>
@@ -81,7 +81,7 @@ Defina os escalões de gasto por valor e o tipo de decisão, órgão autorizado 
 
 ## Transparência e Prestação de Contas
 
-*Cláusulas RCOS: [5.3.4](https://rcos.ecohubs.community/pt-br/standard/core/0.1/layer-3-economic-resource-system#5.3.4), [5.3.5](https://rcos.ecohubs.community/pt-br/standard/core/0.1/layer-3-economic-resource-system#5.3.5), [5.6.1](https://rcos.ecohubs.community/pt-br/standard/core/0.1/layer-3-economic-resource-system#5.6.1)*
+*Cláusulas RCOS: [5.3.4](https://rcos.ecohubs.community/pt-br/standard/core/0.1/layer-3-economic-resource-system#5.3.4), [5.3.5](https://rcos.ecohubs.community/pt-br/standard/core/0.1/layer-3-economic-resource-system#5.3.5), [5.5.4](https://rcos.ecohubs.community/pt-br/standard/core/0.1/layer-3-economic-resource-system#5.5.4), [5.6.1](https://rcos.ecohubs.community/pt-br/standard/core/0.1/layer-3-economic-resource-system#5.6.1)*
 
 <details data-kind="rationale">
 <summary>Por que tornar a transparência o padrão, e não um recurso opcional?</summary>
@@ -103,7 +103,7 @@ Declare o padrão de visibilidade para cada conta da tesouraria. Onde a visibili
 
 ## Restrições de Reserva, Risco e Dívida
 
-*Cláusulas RCOS: [5.3.6](https://rcos.ecohubs.community/pt-br/standard/core/0.1/layer-3-economic-resource-system#5.3.6)*
+*Cláusulas RCOS: [5.3.6](https://rcos.ecohubs.community/pt-br/standard/core/0.1/layer-3-economic-resource-system#5.3.6), [5.5.4](https://rcos.ecohubs.community/pt-br/standard/core/0.1/layer-3-economic-resource-system#5.5.4)*
 
 <details data-kind="rationale">
 <summary>Por que bloquear dívida e obrigações de longo prazo por padrão?</summary>
@@ -126,7 +126,7 @@ Declare as regras sobre dívida, obrigações recorrentes, reservas de contingê
 
 ## Regras de Conflito de Interesses
 
-*Cláusulas RCOS: [5.4.3](https://rcos.ecohubs.community/pt-br/standard/core/0.1/layer-3-economic-resource-system#5.4.3)*
+*Cláusulas RCOS: [5.4.3](https://rcos.ecohubs.community/pt-br/standard/core/0.1/layer-3-economic-resource-system#5.4.3), [5.5.4](https://rcos.ecohubs.community/pt-br/standard/core/0.1/layer-3-economic-resource-system#5.5.4)*
 
 <details data-kind="rationale">
 <summary>Por que proibir a autoaprovação de forma direta?</summary>

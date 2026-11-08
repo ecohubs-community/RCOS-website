@@ -34,5 +34,6 @@ counts:
   mandatoryArtifacts: 21
   sections: 118
   authoredSections: 94
-  sectionsWithoutClauses: 25
+  optionalSections: 1
+  sectionsWithoutClauses: 24
   glossary: 37

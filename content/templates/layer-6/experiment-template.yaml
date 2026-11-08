@@ -51,6 +51,10 @@ sections:
   - id: expiry-and-renewal
     title: Expiry and Renewal
     blocks:
+      - id: clauses
+        kind: clauses
+        refs:
+          - 8.3.4
       - id: rationale
         kind: rationale
         summary: Why must experiments expire?

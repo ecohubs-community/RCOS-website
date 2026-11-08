@@ -17,7 +17,7 @@
 
 ## Propósito Principal
 
-*Cláusulas RCOS: [2.1.1](https://rcos.ecohubs.community/es/standard/core/0.1/layer-0-identity-scope#2.1.1), [2.1.2](https://rcos.ecohubs.community/es/standard/core/0.1/layer-0-identity-scope#2.1.2), [2.1.5](https://rcos.ecohubs.community/es/standard/core/0.1/layer-0-identity-scope#2.1.5)*
+*Cláusulas RCOS: [2.1.1](https://rcos.ecohubs.community/es/standard/core/0.1/layer-0-identity-scope#2.1.1), [2.1.2](https://rcos.ecohubs.community/es/standard/core/0.1/layer-0-identity-scope#2.1.2), [2.1.3](https://rcos.ecohubs.community/es/standard/core/0.1/layer-0-identity-scope#2.1.3), [2.1.5](https://rcos.ecohubs.community/es/standard/core/0.1/layer-0-identity-scope#2.1.5)*
 
 _<El propósito principal de tu comunidad, en una o dos oraciones.>_
 
@@ -31,7 +31,7 @@ _<El propósito principal de tu comunidad, en una o dos oraciones.>_
 
 ## No-Objetivos y Exclusiones
 
-*Cláusulas RCOS: [2.1.5](https://rcos.ecohubs.community/es/standard/core/0.1/layer-0-identity-scope#2.1.5)*
+*Cláusulas RCOS: [2.1.5](https://rcos.ecohubs.community/es/standard/core/0.1/layer-0-identity-scope#2.1.5) — esta sección es recomendable, no obligatoria: nombrar los no-objetivos facilita ver cuándo una acción o decisión contradice el propósito principal.*
 
 1. _<No-objetivo 1.>_
 2. _<No-objetivo 2.>_

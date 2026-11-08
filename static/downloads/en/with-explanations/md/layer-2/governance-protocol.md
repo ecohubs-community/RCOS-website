@@ -2,7 +2,7 @@
 
 # Governance Protocol
 
-- **Generated:** 2026-11-02
+- **Generated:** 2026-11-06
 - **Source (latest version):** [https://rcos.ecohubs.community/articles/rcos-templates/layer-2/governance-protocol](https://rcos.ecohubs.community/articles/rcos-templates/layer-2/governance-protocol)
 - **All RCOS templates:** [https://rcos.ecohubs.community/articles/rcos-templates](https://rcos.ecohubs.community/articles/rcos-templates)
 
@@ -64,7 +64,7 @@ Name the deliberation venues and the minimum periods for Strategic and Constitut
 
 ## Decision Execution
 
-*RCOS clauses: [4.5.1](https://rcos.ecohubs.community/standard/core/0.1/layer-2-governance-decision-logic#4.5.1), [4.5.4](https://rcos.ecohubs.community/standard/core/0.1/layer-2-governance-decision-logic#4.5.4)*
+*RCOS clauses: [4.5.1](https://rcos.ecohubs.community/standard/core/0.1/layer-2-governance-decision-logic#4.5.1), [4.5.2](https://rcos.ecohubs.community/standard/core/0.1/layer-2-governance-decision-logic#4.5.2), [4.5.4](https://rcos.ecohubs.community/standard/core/0.1/layer-2-governance-decision-logic#4.5.4)*
 
 <details data-kind="rationale">
 <summary>Why tie execution to the record?</summary>
@@ -86,7 +86,7 @@ State what happens when a proposal passes (artifact updates, version history) an
 
 ## Documentation and Publication
 
-*RCOS clauses: [4.5.4](https://rcos.ecohubs.community/standard/core/0.1/layer-2-governance-decision-logic#4.5.4)*
+*RCOS clauses: [4.5.2](https://rcos.ecohubs.community/standard/core/0.1/layer-2-governance-decision-logic#4.5.2), [4.5.4](https://rcos.ecohubs.community/standard/core/0.1/layer-2-governance-decision-logic#4.5.4)*
 
 <details data-kind="rationale">
 <summary>Why document every outcome, including rejections?</summary>

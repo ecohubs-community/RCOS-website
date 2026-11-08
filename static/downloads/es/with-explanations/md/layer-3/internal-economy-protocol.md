@@ -17,7 +17,7 @@
 
 ## Clasificación de Bienes Comunes vs. Privados
 
-*Cláusulas RCOS: [5.1.1](https://rcos.ecohubs.community/es/standard/core/0.1/layer-3-economic-resource-system#5.1.1), [5.1.2](https://rcos.ecohubs.community/es/standard/core/0.1/layer-3-economic-resource-system#5.1.2), [5.1.3](https://rcos.ecohubs.community/es/standard/core/0.1/layer-3-economic-resource-system#5.1.3), [5.1.4](https://rcos.ecohubs.community/es/standard/core/0.1/layer-3-economic-resource-system#5.1.4), [5.1.5](https://rcos.ecohubs.community/es/standard/core/0.1/layer-3-economic-resource-system#5.1.5), [5.6.2](https://rcos.ecohubs.community/es/standard/core/0.1/layer-3-economic-resource-system#5.6.2)*
+*Cláusulas RCOS: [5.1.1](https://rcos.ecohubs.community/es/standard/core/0.1/layer-3-economic-resource-system#5.1.1), [5.1.2](https://rcos.ecohubs.community/es/standard/core/0.1/layer-3-economic-resource-system#5.1.2), [5.1.3](https://rcos.ecohubs.community/es/standard/core/0.1/layer-3-economic-resource-system#5.1.3), [5.1.4](https://rcos.ecohubs.community/es/standard/core/0.1/layer-3-economic-resource-system#5.1.4), [5.1.5](https://rcos.ecohubs.community/es/standard/core/0.1/layer-3-economic-resource-system#5.1.5), [5.5.3](https://rcos.ecohubs.community/es/standard/core/0.1/layer-3-economic-resource-system#5.5.3), [5.6.2](https://rcos.ecohubs.community/es/standard/core/0.1/layer-3-economic-resource-system#5.6.2)*
 
 <details data-kind="rationale">
 <summary>¿Por qué clasificar cada recurso?</summary>
@@ -45,7 +45,7 @@ Para cada recurso que posea la comunidad, declara la clasificación (Bienes Comu
 
 ## Categorías de Contribución Reconocidas
 
-*Cláusulas RCOS: [5.2.1](https://rcos.ecohubs.community/es/standard/core/0.1/layer-3-economic-resource-system#5.2.1), [5.2.3](https://rcos.ecohubs.community/es/standard/core/0.1/layer-3-economic-resource-system#5.2.3), [5.6.3](https://rcos.ecohubs.community/es/standard/core/0.1/layer-3-economic-resource-system#5.6.3)*
+*Cláusulas RCOS: [5.2.1](https://rcos.ecohubs.community/es/standard/core/0.1/layer-3-economic-resource-system#5.2.1), [5.2.3](https://rcos.ecohubs.community/es/standard/core/0.1/layer-3-economic-resource-system#5.2.3), [5.5.3](https://rcos.ecohubs.community/es/standard/core/0.1/layer-3-economic-resource-system#5.5.3), [5.6.3](https://rcos.ecohubs.community/es/standard/core/0.1/layer-3-economic-resource-system#5.6.3)*
 
 <details data-kind="rationale">
 <summary>¿Por qué nombrar los tipos de trabajo que cuentan?</summary>
@@ -73,7 +73,7 @@ Enumera las categorías de contribución que tu comunidad reconoce. El cuidado, 
 
 ## Mecanismo de Reconocimiento de Contribuciones
 
-*Cláusulas RCOS: [5.2.2](https://rcos.ecohubs.community/es/standard/core/0.1/layer-3-economic-resource-system#5.2.2), [5.2.5](https://rcos.ecohubs.community/es/standard/core/0.1/layer-3-economic-resource-system#5.2.5)*
+*Cláusulas RCOS: [5.2.2](https://rcos.ecohubs.community/es/standard/core/0.1/layer-3-economic-resource-system#5.2.2), [5.2.5](https://rcos.ecohubs.community/es/standard/core/0.1/layer-3-economic-resource-system#5.2.5), [5.5.3](https://rcos.ecohubs.community/es/standard/core/0.1/layer-3-economic-resource-system#5.5.3)*
 
 <details data-kind="rationale">
 <summary>¿Por qué definir cómo funciona realmente el reconocimiento?</summary>
@@ -97,7 +97,7 @@ Indica qué califica, cómo se registran los reconocimientos, quién valida, qu�
 
 ## Unidades Internas
 
-*Cláusulas RCOS: [5.2.4](https://rcos.ecohubs.community/es/standard/core/0.1/layer-3-economic-resource-system#5.2.4), [5.2.5](https://rcos.ecohubs.community/es/standard/core/0.1/layer-3-economic-resource-system#5.2.5)*
+*Cláusulas RCOS: [5.2.4](https://rcos.ecohubs.community/es/standard/core/0.1/layer-3-economic-resource-system#5.2.4), [5.2.5](https://rcos.ecohubs.community/es/standard/core/0.1/layer-3-economic-resource-system#5.2.5), [5.5.3](https://rcos.ecohubs.community/es/standard/core/0.1/layer-3-economic-resource-system#5.5.3)*
 
 <details data-kind="rationale">
 <summary>¿Por qué definir las unidades internas con tanta precisión?</summary>
@@ -127,7 +127,7 @@ Si tu comunidad usa unidades internas (XP, ECO, créditos, etc.), define para ca
 
 ## Restricciones de Acumulación
 
-*Cláusulas RCOS: [5.4.1](https://rcos.ecohubs.community/es/standard/core/0.1/layer-3-economic-resource-system#5.4.1), [5.4.2](https://rcos.ecohubs.community/es/standard/core/0.1/layer-3-economic-resource-system#5.4.2), [5.4.3](https://rcos.ecohubs.community/es/standard/core/0.1/layer-3-economic-resource-system#5.4.3), [5.4.4](https://rcos.ecohubs.community/es/standard/core/0.1/layer-3-economic-resource-system#5.4.4), [5.6.4](https://rcos.ecohubs.community/es/standard/core/0.1/layer-3-economic-resource-system#5.6.4)*
+*Cláusulas RCOS: [5.4.1](https://rcos.ecohubs.community/es/standard/core/0.1/layer-3-economic-resource-system#5.4.1), [5.4.2](https://rcos.ecohubs.community/es/standard/core/0.1/layer-3-economic-resource-system#5.4.2), [5.4.3](https://rcos.ecohubs.community/es/standard/core/0.1/layer-3-economic-resource-system#5.4.3), [5.4.4](https://rcos.ecohubs.community/es/standard/core/0.1/layer-3-economic-resource-system#5.4.4), [5.5.3](https://rcos.ecohubs.community/es/standard/core/0.1/layer-3-economic-resource-system#5.5.3), [5.6.4](https://rcos.ecohubs.community/es/standard/core/0.1/layer-3-economic-resource-system#5.6.4)*
 
 <details data-kind="rationale">
 <summary>¿Por qué restringir la acumulación?</summary>
@@ -149,7 +149,7 @@ Indica la regla de acumulación actual (tope, decaimiento, ninguna) y la regla d
 
 ## Interfaces de Ingresos Externos
 
-*Cláusulas RCOS: [5.3.2](https://rcos.ecohubs.community/es/standard/core/0.1/layer-3-economic-resource-system#5.3.2)*
+*Cláusulas RCOS: [5.3.2](https://rcos.ecohubs.community/es/standard/core/0.1/layer-3-economic-resource-system#5.3.2), [5.5.3](https://rcos.ecohubs.community/es/standard/core/0.1/layer-3-economic-resource-system#5.5.3)*
 
 <details data-kind="rationale">
 <summary>¿Por qué requerir aprobación antes de que llegue el dinero?</summary>

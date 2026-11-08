@@ -37,7 +37,7 @@
 
 ## Anfänglicher Mitgliedschaftsstatus
 
-*RCOS-Klauseln: [3.1.2](https://rcos.ecohubs.community/de/standard/core/0.1/layer-1-membership-system#3.1.2), [3.1.4](https://rcos.ecohubs.community/de/standard/core/0.1/layer-1-membership-system#3.1.4)*
+*RCOS-Klauseln: [3.1.2](https://rcos.ecohubs.community/de/standard/core/0.1/layer-1-membership-system#3.1.2), [3.1.4](https://rcos.ecohubs.community/de/standard/core/0.1/layer-1-membership-system#3.1.4), [3.2.2](https://rcos.ecohubs.community/de/standard/core/0.1/layer-1-membership-system#3.2.2)*
 
 - Bei Genehmigung: _<z. B. Probemitglied.>_
 - Bei Onboarding-Abschluss: _<z. B. Vollmitglied (automatisch bei Abschluss).>_

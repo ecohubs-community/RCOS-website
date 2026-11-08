@@ -23,13 +23,13 @@ _<Define qué cuentas son tesorería comunitaria — direcciones de billetera ex
 
 ## Fuentes de Ingreso
 
-*Cláusulas RCOS: [5.3.2](https://rcos.ecohubs.community/es/standard/core/0.1/layer-3-economic-resource-system#5.3.2)*
+*Cláusulas RCOS: [5.3.2](https://rcos.ecohubs.community/es/standard/core/0.1/layer-3-economic-resource-system#5.3.2), [5.5.4](https://rcos.ecohubs.community/es/standard/core/0.1/layer-3-economic-resource-system#5.5.4)*
 
 _<Enumera las fuentes de ingreso actuales, o indica que no hay ninguna. Referencia la sección de Interfaces de Ingresos Externos en el Protocolo de Economía Interna.>_
 
 ## Autoridad de Gasto
 
-*Cláusulas RCOS: [5.3.3](https://rcos.ecohubs.community/es/standard/core/0.1/layer-3-economic-resource-system#5.3.3), [5.7.1](https://rcos.ecohubs.community/es/standard/core/0.1/layer-3-economic-resource-system#5.7.1)*
+*Cláusulas RCOS: [5.3.3](https://rcos.ecohubs.community/es/standard/core/0.1/layer-3-economic-resource-system#5.3.3), [5.5.4](https://rcos.ecohubs.community/es/standard/core/0.1/layer-3-economic-resource-system#5.5.4), [5.7.1](https://rcos.ecohubs.community/es/standard/core/0.1/layer-3-economic-resource-system#5.7.1)*
 
 | Monto | Tipo de Decisión | Órgano Autorizado | Mecanismo |
 |---:|---|---|---|
@@ -39,7 +39,7 @@ _<Enumera las fuentes de ingreso actuales, o indica que no hay ninguna. Referenc
 
 ## Transparencia y Reportes
 
-*Cláusulas RCOS: [5.3.4](https://rcos.ecohubs.community/es/standard/core/0.1/layer-3-economic-resource-system#5.3.4), [5.3.5](https://rcos.ecohubs.community/es/standard/core/0.1/layer-3-economic-resource-system#5.3.5), [5.6.1](https://rcos.ecohubs.community/es/standard/core/0.1/layer-3-economic-resource-system#5.6.1)*
+*Cláusulas RCOS: [5.3.4](https://rcos.ecohubs.community/es/standard/core/0.1/layer-3-economic-resource-system#5.3.4), [5.3.5](https://rcos.ecohubs.community/es/standard/core/0.1/layer-3-economic-resource-system#5.3.5), [5.5.4](https://rcos.ecohubs.community/es/standard/core/0.1/layer-3-economic-resource-system#5.5.4), [5.6.1](https://rcos.ecohubs.community/es/standard/core/0.1/layer-3-economic-resource-system#5.6.1)*
 
 - _<Tesorería principal (p. ej. multi-firma Safe): todos los Miembros Plenos tienen como mínimo acceso de lectura; visibilidad en tiempo real.>_
 - _<Otras cuentas declaradas: acceso directo de lectura multiusuario si es compatible; de lo contrario, resumen periódico de saldo y transacciones.>_
@@ -47,7 +47,7 @@ _<Enumera las fuentes de ingreso actuales, o indica que no hay ninguna. Referenc
 
 ## Reservas, Riesgos y Restricciones de Deuda
 
-*Cláusulas RCOS: [5.3.6](https://rcos.ecohubs.community/es/standard/core/0.1/layer-3-economic-resource-system#5.3.6)*
+*Cláusulas RCOS: [5.3.6](https://rcos.ecohubs.community/es/standard/core/0.1/layer-3-economic-resource-system#5.3.6), [5.5.4](https://rcos.ecohubs.community/es/standard/core/0.1/layer-3-economic-resource-system#5.5.4)*
 
 - **Deuda:** _<permitida solo mediante votación Estratégica.>_
 - **Obligaciones a largo plazo:** _<costes recurrentes / contratos permitidos solo mediante votación Estratégica.>_
@@ -56,7 +56,7 @@ _<Enumera las fuentes de ingreso actuales, o indica que no hay ninguna. Referenc
 
 ## Reglas de Conflicto de Intereses
 
-*Cláusulas RCOS: [5.4.3](https://rcos.ecohubs.community/es/standard/core/0.1/layer-3-economic-resource-system#5.4.3)*
+*Cláusulas RCOS: [5.4.3](https://rcos.ecohubs.community/es/standard/core/0.1/layer-3-economic-resource-system#5.4.3), [5.5.4](https://rcos.ecohubs.community/es/standard/core/0.1/layer-3-economic-resource-system#5.5.4)*
 
 - _<Los solicitantes no PUEDEN aprobar sus propias solicitudes de gasto.>_
 - _<Los miembros con un interés financiero directo en una decisión de gasto DEBEN declararlo y abstenerse.>_

@@ -1,5 +1,5 @@
 lang: fr
-sourceHash: 'd5036468'
+sourceHash: '626bd90f'
 title: Charte de raison d'être
 preamble: |-
   - **Couche :** 0 — Identité et périmètre
@@ -38,12 +38,14 @@ sections:
   non-goals-and-exclusions:
     title: Non-objectifs et exclusions
     blocks:
+      clauses:
+        note: ' — cette section est recommandée, non obligatoire : nommer les non-objectifs permet de voir plus facilement quand une action ou une décision contredit la raison d''être principale.'
       rationale:
         summary: Pourquoi énoncer ce que la communauté n'est pas ?
         body: Les communautés dérivent par accumulation — une hypothèse non contestée à la fois. Nommer ce que la communauté n'est explicitement *pas* rend les violations de périmètre visibles tôt, et donne à quiconque une base claire pour s'opposer avant qu'une activité ne devienne normalisée. Le silence ici est interprété comme un consentement.
       instructions:
         summary: Comment remplir cette section
-        body: Nomme les choses que ta communauté n'est explicitement PAS, en particulier les identités ou rôles que d'autres pourraient supposer par défaut (parti politique, véhicule d'investissement, groupe religieux, etc.).
+        body: 'Nomme les choses que ta communauté n''est explicitement PAS, en particulier les identités ou rôles que d''autres pourraient supposer par défaut (parti politique, véhicule d''investissement, groupe religieux, etc.). Recommandé, mais non exigé par RCOS-Core. Supprime entièrement cette section si tu n''en as aucun.'
       m1:
         md: |-
           1. _<Non-objectif 1.>_

@@ -42,7 +42,7 @@
 
 ## Nichtreaktion, Rückzug und Pattsituation
 
-*RCOS-Klauseln: [6.2.5](https://rcos.ecohubs.community/de/standard/core/0.1/layer-4-conflict-repair-accountability#6.2.5), [6.1.5](https://rcos.ecohubs.community/de/standard/core/0.1/layer-4-conflict-repair-accountability#6.1.5)*
+*RCOS-Klauseln: [6.2.5](https://rcos.ecohubs.community/de/standard/core/0.1/layer-4-conflict-repair-accountability#6.2.5), [6.1.5](https://rcos.ecohubs.community/de/standard/core/0.1/layer-4-conflict-repair-accountability#6.1.5), [6.2.3](https://rcos.ecohubs.community/de/standard/core/0.1/layer-4-conflict-repair-accountability#6.2.3)*
 
 **Wenn eine Partei nicht innerhalb des definierten Zeitfensters reagiert:**
 - _<Folgebenachrichtigung; zusätzliche Nachfrist; Behandlung anhaltenden Schweigens als Nichtlösung; Eskalationsregel.>_
@@ -60,7 +60,7 @@
 
 ## Auswahl und Ersetzung der Moderation
 
-*RCOS-Klauseln: [6.3.1](https://rcos.ecohubs.community/de/standard/core/0.1/layer-4-conflict-repair-accountability#6.3.1), [6.3.3](https://rcos.ecohubs.community/de/standard/core/0.1/layer-4-conflict-repair-accountability#6.3.3)*
+*RCOS-Klauseln: [6.2.3](https://rcos.ecohubs.community/de/standard/core/0.1/layer-4-conflict-repair-accountability#6.2.3), [6.3.1](https://rcos.ecohubs.community/de/standard/core/0.1/layer-4-conflict-repair-accountability#6.3.1), [6.3.3](https://rcos.ecohubs.community/de/standard/core/0.1/layer-4-conflict-repair-accountability#6.3.3), [6.5.3](https://rcos.ecohubs.community/de/standard/core/0.1/layer-4-conflict-repair-accountability#6.5.3)*
 
 - _<Standard-Moderationsrolle gemäss dem Rollenverzeichnis.>_
 - _<Regel für den Fall, dass die moderierende Person selbst Partei ist — Auswahl einer neutralen Vertretung.>_
@@ -69,7 +69,7 @@
 
 ## Datenschutz und Informationszugangsgrenzen
 
-*RCOS-Klauseln: [6.5.3](https://rcos.ecohubs.community/de/standard/core/0.1/layer-4-conflict-repair-accountability#6.5.3)*
+*RCOS-Klauseln: [6.2.3](https://rcos.ecohubs.community/de/standard/core/0.1/layer-4-conflict-repair-accountability#6.2.3), [6.5.3](https://rcos.ecohubs.community/de/standard/core/0.1/layer-4-conflict-repair-accountability#6.5.3)*
 
 - _<Stufen 1–4: vollständig vertraulich; nur Parteien und Moderation haben Zugang zu den Akten.>_
 - _<Stufen 5–6: minimalnotwendige Informationen werden den Vollmitgliedern offengelegt; Parteien werden vor der Offenlegung benachrichtigt. Definiere, was „minimalnotwendig" bedeutet.>_
@@ -78,7 +78,7 @@
 
 ## Schutzmassnahmen
 
-*RCOS-Klauseln: [6.3.1](https://rcos.ecohubs.community/de/standard/core/0.1/layer-4-conflict-repair-accountability#6.3.1), [6.3.2](https://rcos.ecohubs.community/de/standard/core/0.1/layer-4-conflict-repair-accountability#6.3.2), [6.3.3](https://rcos.ecohubs.community/de/standard/core/0.1/layer-4-conflict-repair-accountability#6.3.3), [6.3.4](https://rcos.ecohubs.community/de/standard/core/0.1/layer-4-conflict-repair-accountability#6.3.4), [6.3.5](https://rcos.ecohubs.community/de/standard/core/0.1/layer-4-conflict-repair-accountability#6.3.5), [6.6.2](https://rcos.ecohubs.community/de/standard/core/0.1/layer-4-conflict-repair-accountability#6.6.2)*
+*RCOS-Klauseln: [6.3.1](https://rcos.ecohubs.community/de/standard/core/0.1/layer-4-conflict-repair-accountability#6.3.1), [6.3.2](https://rcos.ecohubs.community/de/standard/core/0.1/layer-4-conflict-repair-accountability#6.3.2), [6.3.3](https://rcos.ecohubs.community/de/standard/core/0.1/layer-4-conflict-repair-accountability#6.3.3), [6.3.4](https://rcos.ecohubs.community/de/standard/core/0.1/layer-4-conflict-repair-accountability#6.3.4), [6.3.5](https://rcos.ecohubs.community/de/standard/core/0.1/layer-4-conflict-repair-accountability#6.3.5), [6.5.3](https://rcos.ecohubs.community/de/standard/core/0.1/layer-4-conflict-repair-accountability#6.5.3), [6.6.2](https://rcos.ecohubs.community/de/standard/core/0.1/layer-4-conflict-repair-accountability#6.6.2)*
 
 - **Vergeltungsschutz:** _<Vergeltung gegen ein Mitglied, das in gutem Glauben einen Konflikt meldet, ist selbst Grund für ein Rechenschaftsverfahren.>_
 - **Böswillige Beschwerden:** _<Vorsätzlich falsche Beschwerden können ein Rechenschaftsverfahren gegen die beschwerdeführende Person auslösen.>_

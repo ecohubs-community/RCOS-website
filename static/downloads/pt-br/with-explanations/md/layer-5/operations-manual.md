@@ -170,7 +170,7 @@ Estabeleça quais registros são abertos a todos os Membros Plenos, a janela de 
 
 ## Localização da Documentação e Procedimentos de Atualização
 
-*Cláusulas RCOS: [7.3.1](https://rcos.ecohubs.community/pt-br/standard/core/0.1/layer-5-operations-coordination#7.3.1), [7.3.2](https://rcos.ecohubs.community/pt-br/standard/core/0.1/layer-5-operations-coordination#7.3.2), [7.3.3](https://rcos.ecohubs.community/pt-br/standard/core/0.1/layer-5-operations-coordination#7.3.3), [7.8.1](https://rcos.ecohubs.community/pt-br/standard/core/0.1/layer-5-operations-coordination#7.8.1)*
+*Cláusulas RCOS: [7.3.1](https://rcos.ecohubs.community/pt-br/standard/core/0.1/layer-5-operations-coordination#7.3.1), [7.3.2](https://rcos.ecohubs.community/pt-br/standard/core/0.1/layer-5-operations-coordination#7.3.2), [7.3.3](https://rcos.ecohubs.community/pt-br/standard/core/0.1/layer-5-operations-coordination#7.3.3), [7.6.3](https://rcos.ecohubs.community/pt-br/standard/core/0.1/layer-5-operations-coordination#7.6.3), [7.8.1](https://rcos.ecohubs.community/pt-br/standard/core/0.1/layer-5-operations-coordination#7.8.1)*
 
 <details data-kind="rationale">
 <summary>Por que nomear onde cada documento vive?</summary>

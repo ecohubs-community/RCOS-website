@@ -76,7 +76,7 @@ Operative Rollen tragen delegierte Autorität, innerhalb explizit definierter Gr
 
 ## Funktionale Rollen
 
-*RCOS-Klauseln: [7.1.1](https://rcos.ecohubs.community/de/standard/core/0.1/layer-5-operations-coordination#7.1.1), [7.1.2](https://rcos.ecohubs.community/de/standard/core/0.1/layer-5-operations-coordination#7.1.2)*
+*RCOS-Klauseln: [7.1.1](https://rcos.ecohubs.community/de/standard/core/0.1/layer-5-operations-coordination#7.1.1), [7.1.2](https://rcos.ecohubs.community/de/standard/core/0.1/layer-5-operations-coordination#7.1.2), [7.1.3](https://rcos.ecohubs.community/de/standard/core/0.1/layer-5-operations-coordination#7.1.3)*
 
 Funktionale Rollen definieren den Beitragsbereich eines Mitglieds. Sie tragen keine delegierte Governance-Autorität über die Rechte als Vollmitglied hinaus. Jedes Vollmitglied kann eine funktionale Rolle durch Erklärung übernehmen; eine Abstimmung ist nicht erforderlich. Rollen können jederzeit durch Benachrichtigung niedergelegt werden.
 

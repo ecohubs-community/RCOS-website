@@ -42,7 +42,7 @@
 
 ## Non-Response, Withdrawal, and Deadlock
 
-*RCOS clauses: [6.2.5](https://rcos.ecohubs.community/standard/core/0.1/layer-4-conflict-repair-accountability#6.2.5), [6.1.5](https://rcos.ecohubs.community/standard/core/0.1/layer-4-conflict-repair-accountability#6.1.5)*
+*RCOS clauses: [6.2.5](https://rcos.ecohubs.community/standard/core/0.1/layer-4-conflict-repair-accountability#6.2.5), [6.1.5](https://rcos.ecohubs.community/standard/core/0.1/layer-4-conflict-repair-accountability#6.1.5), [6.2.3](https://rcos.ecohubs.community/standard/core/0.1/layer-4-conflict-repair-accountability#6.2.3)*
 
 **If a party does not respond within the defined window:**
 - _<Follow-up notice; additional grace period; treatment of continued silence as non-resolution; escalation rule.>_
@@ -60,7 +60,7 @@
 
 ## Facilitator Selection and Replacement
 
-*RCOS clauses: [6.3.1](https://rcos.ecohubs.community/standard/core/0.1/layer-4-conflict-repair-accountability#6.3.1), [6.3.3](https://rcos.ecohubs.community/standard/core/0.1/layer-4-conflict-repair-accountability#6.3.3)*
+*RCOS clauses: [6.2.3](https://rcos.ecohubs.community/standard/core/0.1/layer-4-conflict-repair-accountability#6.2.3), [6.3.1](https://rcos.ecohubs.community/standard/core/0.1/layer-4-conflict-repair-accountability#6.3.1), [6.3.3](https://rcos.ecohubs.community/standard/core/0.1/layer-4-conflict-repair-accountability#6.3.3), [6.5.3](https://rcos.ecohubs.community/standard/core/0.1/layer-4-conflict-repair-accountability#6.5.3)*
 
 - _<Default facilitator role per the Role Registry.>_
 - _<Rule when the facilitator is a party — selection of a neutral substitute.>_
@@ -69,7 +69,7 @@
 
 ## Privacy and Information Access Boundaries
 
-*RCOS clauses: [6.5.3](https://rcos.ecohubs.community/standard/core/0.1/layer-4-conflict-repair-accountability#6.5.3)*
+*RCOS clauses: [6.2.3](https://rcos.ecohubs.community/standard/core/0.1/layer-4-conflict-repair-accountability#6.2.3), [6.5.3](https://rcos.ecohubs.community/standard/core/0.1/layer-4-conflict-repair-accountability#6.5.3)*
 
 - _<Steps 1–4: fully confidential; only parties and Facilitator may access records.>_
 - _<Steps 5–6: minimum necessary information disclosed to Full Members; parties notified before disclosure. Define what "minimum necessary" means.>_
@@ -78,7 +78,7 @@
 
 ## Safeguards
 
-*RCOS clauses: [6.3.1](https://rcos.ecohubs.community/standard/core/0.1/layer-4-conflict-repair-accountability#6.3.1), [6.3.2](https://rcos.ecohubs.community/standard/core/0.1/layer-4-conflict-repair-accountability#6.3.2), [6.3.3](https://rcos.ecohubs.community/standard/core/0.1/layer-4-conflict-repair-accountability#6.3.3), [6.3.4](https://rcos.ecohubs.community/standard/core/0.1/layer-4-conflict-repair-accountability#6.3.4), [6.3.5](https://rcos.ecohubs.community/standard/core/0.1/layer-4-conflict-repair-accountability#6.3.5), [6.6.2](https://rcos.ecohubs.community/standard/core/0.1/layer-4-conflict-repair-accountability#6.6.2)*
+*RCOS clauses: [6.3.1](https://rcos.ecohubs.community/standard/core/0.1/layer-4-conflict-repair-accountability#6.3.1), [6.3.2](https://rcos.ecohubs.community/standard/core/0.1/layer-4-conflict-repair-accountability#6.3.2), [6.3.3](https://rcos.ecohubs.community/standard/core/0.1/layer-4-conflict-repair-accountability#6.3.3), [6.3.4](https://rcos.ecohubs.community/standard/core/0.1/layer-4-conflict-repair-accountability#6.3.4), [6.3.5](https://rcos.ecohubs.community/standard/core/0.1/layer-4-conflict-repair-accountability#6.3.5), [6.5.3](https://rcos.ecohubs.community/standard/core/0.1/layer-4-conflict-repair-accountability#6.5.3), [6.6.2](https://rcos.ecohubs.community/standard/core/0.1/layer-4-conflict-repair-accountability#6.6.2)*
 
 - **Anti-retaliation:** _<retaliation against a member raising a conflict in good faith is itself grounds for an accountability process.>_
 - **Bad-faith complaints:** _<deliberately false complaints may trigger an accountability process against the complainant.>_

@@ -17,7 +17,7 @@
 
 ## Primary Purpose
 
-*RCOS clauses: [2.1.1](https://rcos.ecohubs.community/standard/core/0.1/layer-0-identity-scope#2.1.1), [2.1.2](https://rcos.ecohubs.community/standard/core/0.1/layer-0-identity-scope#2.1.2), [2.1.5](https://rcos.ecohubs.community/standard/core/0.1/layer-0-identity-scope#2.1.5)*
+*RCOS clauses: [2.1.1](https://rcos.ecohubs.community/standard/core/0.1/layer-0-identity-scope#2.1.1), [2.1.2](https://rcos.ecohubs.community/standard/core/0.1/layer-0-identity-scope#2.1.2), [2.1.3](https://rcos.ecohubs.community/standard/core/0.1/layer-0-identity-scope#2.1.3), [2.1.5](https://rcos.ecohubs.community/standard/core/0.1/layer-0-identity-scope#2.1.5)*
 
 _<Your community's primary purpose, in one or two sentences.>_
 
@@ -31,7 +31,7 @@ _<Your community's primary purpose, in one or two sentences.>_
 
 ## Non-Goals and Exclusions
 
-*RCOS clauses: [2.1.5](https://rcos.ecohubs.community/standard/core/0.1/layer-0-identity-scope#2.1.5)*
+*RCOS clauses: [2.1.5](https://rcos.ecohubs.community/standard/core/0.1/layer-0-identity-scope#2.1.5) — this section is recommended, not required: naming non-goals makes it easier to see when an action or decision contradicts the primary purpose.*
 
 1. _<Non-goal 1.>_
 2. _<Non-goal 2.>_

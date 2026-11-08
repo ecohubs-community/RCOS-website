@@ -2,7 +2,7 @@
 
 # Experiment Template
 
-- **Generated:** 2026-11-02
+- **Generated:** 2026-11-06
 - **Source (latest version):** [https://rcos.ecohubs.community/articles/rcos-templates/layer-6/experiment-template](https://rcos.ecohubs.community/articles/rcos-templates/layer-6/experiment-template)
 - **All RCOS templates:** [https://rcos.ecohubs.community/articles/rcos-templates](https://rcos.ecohubs.community/articles/rcos-templates)
 
@@ -47,6 +47,8 @@ Fill each field. Maximum duration is set by your Change Protocol. The decision a
 - **Safety suspension:** _<acknowledge that an emergency suspension may be invoked under the Change Protocol if a credible safety risk emerges.>_
 
 ## Expiry and Renewal
+
+*RCOS clauses: [8.3.4](https://rcos.ecohubs.community/standard/core/0.1/layer-6-evolution-adaptation#8.3.4)*
 
 <details data-kind="rationale">
 <summary>Why must experiments expire?</summary>

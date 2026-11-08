@@ -46,7 +46,7 @@ Eine Rechenschaftsprüfung wird eingeleitet, wenn:
 
 ## Schutz vor Vergeltung
 
-*RCOS-Klauseln: [6.3.2](https://rcos.ecohubs.community/de/standard/core/0.1/layer-4-conflict-repair-accountability#6.3.2)*
+*RCOS-Klauseln: [6.3.2](https://rcos.ecohubs.community/de/standard/core/0.1/layer-4-conflict-repair-accountability#6.3.2), [6.5.4](https://rcos.ecohubs.community/de/standard/core/0.1/layer-4-conflict-repair-accountability#6.5.4)*
 
 _<Vergeltung gegen ein Mitglied für die Teilnahme an irgendeinem Teil dieses Prozesses ist selbst ein Auslöser für eine Rechenschaftsprüfung.>_
 
@@ -66,7 +66,7 @@ _<Vergeltung gegen ein Mitglied für die Teilnahme an irgendeinem Teil dieses Pr
 
 ## Bedingungen für die Wiederherstellung von Rechten
 
-*RCOS-Klauseln: [6.4.4](https://rcos.ecohubs.community/de/standard/core/0.1/layer-4-conflict-repair-accountability#6.4.4)*
+*RCOS-Klauseln: [6.4.3](https://rcos.ecohubs.community/de/standard/core/0.1/layer-4-conflict-repair-accountability#6.4.3), [6.4.4](https://rcos.ecohubs.community/de/standard/core/0.1/layer-4-conflict-repair-accountability#6.4.4)*
 
 - **Nach freiwilligem Austritt:** _<Erneute Bewerbung über das Onboarding-Protokoll; keine automatische Wiederherstellung.>_
 - **Nach erzwungenem Austritt:** _<Mindest-Sperrfrist für erneute Bewerbung; das reguläre Aufnahmeverfahren gilt.>_
@@ -74,7 +74,7 @@ _<Vergeltung gegen ein Mitglied für die Teilnahme an irgendeinem Teil dieses Pr
 
 ## Abstimmung mit Schicht 1
 
-*RCOS-Klauseln: [6.4.4](https://rcos.ecohubs.community/de/standard/core/0.1/layer-4-conflict-repair-accountability#6.4.4)*
+*RCOS-Klauseln: [6.4.4](https://rcos.ecohubs.community/de/standard/core/0.1/layer-4-conflict-repair-accountability#6.4.4), [6.5.4](https://rcos.ecohubs.community/de/standard/core/0.1/layer-4-conflict-repair-accountability#6.5.4)*
 
 _<Alle erzwungenen Austritte und vorübergehenden Zugangsbeschränkungen folgen dem Austritts- und Trennungsprotokoll (Schicht 1). Eine vorübergehende Zugangsbeschränkung stellt keinen Austritt dar und löst keine Sperrfrist für eine erneute Bewerbung aus, es sei denn, ein erzwungener Austritt wird anschließend von den Vollmitgliedern beschlossen.>_
 

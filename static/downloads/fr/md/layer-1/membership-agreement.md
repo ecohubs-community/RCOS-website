@@ -2,7 +2,7 @@
 
 # Accord d'adhésion
 
-- **Généré:** 2026-11-02
+- **Généré:** 2026-11-06
 - **Source (version la plus récente):** [https://rcos.ecohubs.community/fr/articles/rcos-templates/layer-1/membership-agreement](https://rcos.ecohubs.community/fr/articles/rcos-templates/layer-1/membership-agreement)
 - **Tous les modèles RCOS:** [https://rcos.ecohubs.community/fr/articles/rcos-templates](https://rcos.ecohubs.community/fr/articles/rcos-templates)
 
@@ -36,7 +36,7 @@ _<État d'adhésion attribué à la signature — par ex. Membre à l'essai apr�
 
 ## Obligations des membres
 
-*Clauses RCOS : [3.4.2](https://rcos.ecohubs.community/fr/standard/core/0.1/layer-1-membership-system#3.4.2), [3.4.4](https://rcos.ecohubs.community/fr/standard/core/0.1/layer-1-membership-system#3.4.4), [3.4.5](https://rcos.ecohubs.community/fr/standard/core/0.1/layer-1-membership-system#3.4.5)*
+*Clauses RCOS : [3.4.2](https://rcos.ecohubs.community/fr/standard/core/0.1/layer-1-membership-system#3.4.2), [3.4.3](https://rcos.ecohubs.community/fr/standard/core/0.1/layer-1-membership-system#3.4.3), [3.4.4](https://rcos.ecohubs.community/fr/standard/core/0.1/layer-1-membership-system#3.4.4), [3.4.5](https://rcos.ecohubs.community/fr/standard/core/0.1/layer-1-membership-system#3.4.5)*
 
 1. _<Obligation 1, par ex. respecter en permanence toutes les contraintes d'identité et invariants de la Couche 0.>_
 2. _<Obligation 2, par ex. contribuer à la communauté dans au moins une catégorie reconnue par période définie.>_

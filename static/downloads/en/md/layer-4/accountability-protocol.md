@@ -46,7 +46,7 @@ An accountability check is initiated when:
 
 ## Anti-Retaliation Protections
 
-*RCOS clauses: [6.3.2](https://rcos.ecohubs.community/standard/core/0.1/layer-4-conflict-repair-accountability#6.3.2)*
+*RCOS clauses: [6.3.2](https://rcos.ecohubs.community/standard/core/0.1/layer-4-conflict-repair-accountability#6.3.2), [6.5.4](https://rcos.ecohubs.community/standard/core/0.1/layer-4-conflict-repair-accountability#6.5.4)*
 
 _<Retaliation against a member for participating in any part of this process is itself an accountability trigger.>_
 
@@ -66,7 +66,7 @@ _<Retaliation against a member for participating in any part of this process is 
 
 ## Conditions for Restoring Rights
 
-*RCOS clauses: [6.4.4](https://rcos.ecohubs.community/standard/core/0.1/layer-4-conflict-repair-accountability#6.4.4)*
+*RCOS clauses: [6.4.3](https://rcos.ecohubs.community/standard/core/0.1/layer-4-conflict-repair-accountability#6.4.3), [6.4.4](https://rcos.ecohubs.community/standard/core/0.1/layer-4-conflict-repair-accountability#6.4.4)*
 
 - **After voluntary exit:** _<re-application via Onboarding Protocol; no automatic restoration.>_
 - **After forced exit:** _<minimum re-application block; standard admission process applies.>_
@@ -74,7 +74,7 @@ _<Retaliation against a member for participating in any part of this process is 
 
 ## Coordination with Layer 1
 
-*RCOS clauses: [6.4.4](https://rcos.ecohubs.community/standard/core/0.1/layer-4-conflict-repair-accountability#6.4.4)*
+*RCOS clauses: [6.4.4](https://rcos.ecohubs.community/standard/core/0.1/layer-4-conflict-repair-accountability#6.4.4), [6.5.4](https://rcos.ecohubs.community/standard/core/0.1/layer-4-conflict-repair-accountability#6.5.4)*
 
 _<All forced exits and temporary access restrictions follow the Exit & Separation Protocol (Layer 1). A temporary access restriction does not constitute exit and does not trigger the re-application block unless a forced exit is subsequently voted by Full Members.>_
 

@@ -2,7 +2,7 @@
 
 # Experiment-Vorlage
 
-- **Generiert:** 2026-11-02
+- **Generiert:** 2026-11-06
 - **Quelle (aktuelle Version):** [https://rcos.ecohubs.community/de/articles/rcos-templates/layer-6/experiment-template](https://rcos.ecohubs.community/de/articles/rcos-templates/layer-6/experiment-template)
 - **Alle RCOS-Vorlagen:** [https://rcos.ecohubs.community/de/articles/rcos-templates](https://rcos.ecohubs.community/de/articles/rcos-templates)
 
@@ -47,6 +47,8 @@ Fülle jedes Feld aus. Die maximale Dauer wird durch dein Änderungsprotokoll fe
 - **Sicherheitsaussetzung:** _<bestätige, dass eine Notaussetzung gemäß Änderungsprotokoll eingeleitet werden kann, wenn ein glaubhaftes Sicherheitsrisiko entsteht.>_
 
 ## Ablauf und Verlängerung
+
+*RCOS-Klauseln: [8.3.4](https://rcos.ecohubs.community/de/standard/core/0.1/layer-6-evolution-adaptation#8.3.4)*
 
 <details data-kind="rationale">
 <summary>Warum müssen Experimente ablaufen?</summary>

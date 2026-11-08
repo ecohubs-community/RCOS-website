@@ -37,7 +37,7 @@ _<Legt fest, welche Konten die Gemeinschaftskasse bilden — explizite Wallet-Ad
 
 ## Einnahmequellen
 
-*RCOS-Klauseln: [5.3.2](https://rcos.ecohubs.community/de/standard/core/0.1/layer-3-economic-resource-system#5.3.2)*
+*RCOS-Klauseln: [5.3.2](https://rcos.ecohubs.community/de/standard/core/0.1/layer-3-economic-resource-system#5.3.2), [5.5.4](https://rcos.ecohubs.community/de/standard/core/0.1/layer-3-economic-resource-system#5.5.4)*
 
 <details data-kind="rationale">
 <summary>Warum alle Einnahmen über eine einzige deklarierte Liste laufen lassen?</summary>
@@ -57,7 +57,7 @@ _<Listet die aktuellen Einnahmequellen auf oder stellt fest, dass es keine gibt.
 
 ## Ausgabenbefugnis
 
-*RCOS-Klauseln: [5.3.3](https://rcos.ecohubs.community/de/standard/core/0.1/layer-3-economic-resource-system#5.3.3), [5.7.1](https://rcos.ecohubs.community/de/standard/core/0.1/layer-3-economic-resource-system#5.7.1)*
+*RCOS-Klauseln: [5.3.3](https://rcos.ecohubs.community/de/standard/core/0.1/layer-3-economic-resource-system#5.3.3), [5.5.4](https://rcos.ecohubs.community/de/standard/core/0.1/layer-3-economic-resource-system#5.5.4), [5.7.1](https://rcos.ecohubs.community/de/standard/core/0.1/layer-3-economic-resource-system#5.7.1)*
 
 <details data-kind="rationale">
 <summary>Warum Schwellenwerte in einer Tabelle festhalten?</summary>
@@ -81,7 +81,7 @@ Definiert Ausgabenstufen nach Betrag sowie den Entscheidungstyp, das befugte Gre
 
 ## Transparenz und Berichtswesen
 
-*RCOS-Klauseln: [5.3.4](https://rcos.ecohubs.community/de/standard/core/0.1/layer-3-economic-resource-system#5.3.4), [5.3.5](https://rcos.ecohubs.community/de/standard/core/0.1/layer-3-economic-resource-system#5.3.5), [5.6.1](https://rcos.ecohubs.community/de/standard/core/0.1/layer-3-economic-resource-system#5.6.1)*
+*RCOS-Klauseln: [5.3.4](https://rcos.ecohubs.community/de/standard/core/0.1/layer-3-economic-resource-system#5.3.4), [5.3.5](https://rcos.ecohubs.community/de/standard/core/0.1/layer-3-economic-resource-system#5.3.5), [5.5.4](https://rcos.ecohubs.community/de/standard/core/0.1/layer-3-economic-resource-system#5.5.4), [5.6.1](https://rcos.ecohubs.community/de/standard/core/0.1/layer-3-economic-resource-system#5.6.1)*
 
 <details data-kind="rationale">
 <summary>Warum Transparenz zum Standard machen statt zum Feature?</summary>
@@ -103,7 +103,7 @@ Legt den Sichtbarkeitsstandard für jedes Kassenkonto fest. Wo direkte Einsicht 
 
 ## Rücklagen-, Risiko- und Schuldenbeschränkungen
 
-*RCOS-Klauseln: [5.3.6](https://rcos.ecohubs.community/de/standard/core/0.1/layer-3-economic-resource-system#5.3.6)*
+*RCOS-Klauseln: [5.3.6](https://rcos.ecohubs.community/de/standard/core/0.1/layer-3-economic-resource-system#5.3.6), [5.5.4](https://rcos.ecohubs.community/de/standard/core/0.1/layer-3-economic-resource-system#5.5.4)*
 
 <details data-kind="rationale">
 <summary>Warum Schulden und langfristige Verpflichtungen standardmäßig sperren?</summary>
@@ -126,7 +126,7 @@ Legt die Regeln zu Schulden, wiederkehrenden Verpflichtungen, Rücklagen und au�
 
 ## Interessenkonfliktregeln
 
-*RCOS-Klauseln: [5.4.3](https://rcos.ecohubs.community/de/standard/core/0.1/layer-3-economic-resource-system#5.4.3)*
+*RCOS-Klauseln: [5.4.3](https://rcos.ecohubs.community/de/standard/core/0.1/layer-3-economic-resource-system#5.4.3), [5.5.4](https://rcos.ecohubs.community/de/standard/core/0.1/layer-3-economic-resource-system#5.5.4)*
 
 <details data-kind="rationale">
 <summary>Warum Selbstgenehmigung komplett verbieten?</summary>

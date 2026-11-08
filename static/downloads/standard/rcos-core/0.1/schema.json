@@ -430,6 +430,10 @@
 							"null"
 						]
 					},
+					"optional": {
+						"type": "boolean",
+						"description": "An authored section RCOS-Core does not require: written if the community wants to, never counted toward completeness. Owns no MUST clause."
+					},
 					"ownsClauses": {
 						"type": "array",
 						"items": {
@@ -446,6 +450,7 @@
 					"i18n",
 					"disposition",
 					"dispositionNote",
+					"optional",
 					"ownsClauses"
 				],
 				"additionalProperties": false,

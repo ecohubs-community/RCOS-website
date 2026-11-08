@@ -17,7 +17,7 @@
 
 ## Raison d'être principale
 
-*Clauses RCOS : [2.1.1](https://rcos.ecohubs.community/fr/standard/core/0.1/layer-0-identity-scope#2.1.1), [2.1.2](https://rcos.ecohubs.community/fr/standard/core/0.1/layer-0-identity-scope#2.1.2), [2.1.5](https://rcos.ecohubs.community/fr/standard/core/0.1/layer-0-identity-scope#2.1.5)*
+*Clauses RCOS : [2.1.1](https://rcos.ecohubs.community/fr/standard/core/0.1/layer-0-identity-scope#2.1.1), [2.1.2](https://rcos.ecohubs.community/fr/standard/core/0.1/layer-0-identity-scope#2.1.2), [2.1.3](https://rcos.ecohubs.community/fr/standard/core/0.1/layer-0-identity-scope#2.1.3), [2.1.5](https://rcos.ecohubs.community/fr/standard/core/0.1/layer-0-identity-scope#2.1.5)*
 
 <details data-kind="rationale">
 <summary>Pourquoi une raison d'être unique et pérenne ?</summary>
@@ -59,7 +59,7 @@ Liste les résultats secondaires concrets que la communauté poursuit. Ils NE DO
 
 ## Non-objectifs et exclusions
 
-*Clauses RCOS : [2.1.5](https://rcos.ecohubs.community/fr/standard/core/0.1/layer-0-identity-scope#2.1.5)*
+*Clauses RCOS : [2.1.5](https://rcos.ecohubs.community/fr/standard/core/0.1/layer-0-identity-scope#2.1.5) — cette section est recommandée, non obligatoire : nommer les non-objectifs permet de voir plus facilement quand une action ou une décision contredit la raison d'être principale.*
 
 <details data-kind="rationale">
 <summary>Pourquoi énoncer ce que la communauté n'est pas ?</summary>
@@ -71,7 +71,7 @@ Les communautés dérivent par accumulation — une hypothèse non contestée à
 <details data-kind="instructions">
 <summary>Comment remplir cette section</summary>
 
-Nomme les choses que ta communauté n'est explicitement PAS, en particulier les identités ou rôles que d'autres pourraient supposer par défaut (parti politique, véhicule d'investissement, groupe religieux, etc.).
+Nomme les choses que ta communauté n'est explicitement PAS, en particulier les identités ou rôles que d'autres pourraient supposer par défaut (parti politique, véhicule d'investissement, groupe religieux, etc.). Recommandé, mais non exigé par RCOS-Core. Supprime entièrement cette section si tu n'en as aucun.
 
 </details>
 

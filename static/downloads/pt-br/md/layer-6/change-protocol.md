@@ -31,7 +31,7 @@ _<Qualquer Membro Pleno pode propor uma mudança em qualquer artefato RCOS. Decl
 
 ## Como as Propostas São Classificadas
 
-*Cláusulas RCOS: [8.1.2](https://rcos.ecohubs.community/pt-br/standard/core/0.1/layer-6-evolution-adaptation#8.1.2), [8.1.4](https://rcos.ecohubs.community/pt-br/standard/core/0.1/layer-6-evolution-adaptation#8.1.4)*
+*Cláusulas RCOS: [8.1.2](https://rcos.ecohubs.community/pt-br/standard/core/0.1/layer-6-evolution-adaptation#8.1.2), [8.1.4](https://rcos.ecohubs.community/pt-br/standard/core/0.1/layer-6-evolution-adaptation#8.1.4), [8.6.3](https://rcos.ecohubs.community/pt-br/standard/core/0.1/layer-6-evolution-adaptation#8.6.3)*
 
 - **Operacional:** _<correções de redação, formatação, atualizações menores de conteúdo; não exige votação; executada pelo papel responsável dentro dos limites delegados.>_
 - **Estratégica:** _<mudanças no conteúdo das Camadas 1–5 que afetam direitos, processos ou estruturas dos membros.>_
@@ -41,7 +41,7 @@ _<Qualquer Membro Pleno pode propor uma mudança em qualquer artefato RCOS. Decl
 
 ## Revisão e Deliberação
 
-*Cláusulas RCOS: [8.1.2](https://rcos.ecohubs.community/pt-br/standard/core/0.1/layer-6-evolution-adaptation#8.1.2), [8.7.1](https://rcos.ecohubs.community/pt-br/standard/core/0.1/layer-6-evolution-adaptation#8.7.1)*
+*Cláusulas RCOS: [8.1.2](https://rcos.ecohubs.community/pt-br/standard/core/0.1/layer-6-evolution-adaptation#8.1.2), [8.6.3](https://rcos.ecohubs.community/pt-br/standard/core/0.1/layer-6-evolution-adaptation#8.6.3), [8.7.1](https://rcos.ecohubs.community/pt-br/standard/core/0.1/layer-6-evolution-adaptation#8.7.1)*
 
 - **Operacional:** _<não exige deliberação.>_
 - **Estratégica:** _<deliberação mínima de X dias; espaço de deliberação.>_
@@ -60,7 +60,7 @@ Quando uma proposta é aprovada:
 
 ## Rejeição
 
-*Cláusulas RCOS: [8.2.2](https://rcos.ecohubs.community/pt-br/standard/core/0.1/layer-6-evolution-adaptation#8.2.2), [8.2.4](https://rcos.ecohubs.community/pt-br/standard/core/0.1/layer-6-evolution-adaptation#8.2.4)*
+*Cláusulas RCOS: [8.2.2](https://rcos.ecohubs.community/pt-br/standard/core/0.1/layer-6-evolution-adaptation#8.2.2), [8.2.4](https://rcos.ecohubs.community/pt-br/standard/core/0.1/layer-6-evolution-adaptation#8.2.4), [8.6.3](https://rcos.ecohubs.community/pt-br/standard/core/0.1/layer-6-evolution-adaptation#8.6.3)*
 
 Quando uma proposta é rejeitada:
 
@@ -70,7 +70,7 @@ Quando uma proposta é rejeitada:
 
 ## Transição e Migração
 
-*Cláusulas RCOS: [8.5.1](https://rcos.ecohubs.community/pt-br/standard/core/0.1/layer-6-evolution-adaptation#8.5.1), [8.5.2](https://rcos.ecohubs.community/pt-br/standard/core/0.1/layer-6-evolution-adaptation#8.5.2)*
+*Cláusulas RCOS: [8.5.1](https://rcos.ecohubs.community/pt-br/standard/core/0.1/layer-6-evolution-adaptation#8.5.1), [8.5.2](https://rcos.ecohubs.community/pt-br/standard/core/0.1/layer-6-evolution-adaptation#8.5.2), [8.6.3](https://rcos.ecohubs.community/pt-br/standard/core/0.1/layer-6-evolution-adaptation#8.6.3)*
 
 Quando uma mudança de regra afeta papéis, acordos ou registros existentes:
 
@@ -81,13 +81,13 @@ Quando uma mudança de regra afeta papéis, acordos ou registros existentes:
 
 ## Reversão
 
-*Cláusulas RCOS: [8.1.5](https://rcos.ecohubs.community/pt-br/standard/core/0.1/layer-6-evolution-adaptation#8.1.5), [8.5.1](https://rcos.ecohubs.community/pt-br/standard/core/0.1/layer-6-evolution-adaptation#8.5.1)*
+*Cláusulas RCOS: [8.1.5](https://rcos.ecohubs.community/pt-br/standard/core/0.1/layer-6-evolution-adaptation#8.1.5), [8.5.1](https://rcos.ecohubs.community/pt-br/standard/core/0.1/layer-6-evolution-adaptation#8.5.1), [8.6.3](https://rcos.ecohubs.community/pt-br/standard/core/0.1/layer-6-evolution-adaptation#8.6.3)*
 
 _<Qualquer decisão aprovada pode ser revertida pelo mesmo processo que a original. Qualquer Membro Pleno pode acionar uma nova votação ao submeter uma objeção fundamentada por escrito que não foi considerada durante a deliberação original. A reversão usa o mesmo tipo de decisão da original.>_
 
 ## Mudanças de Emergência
 
-*Cláusulas RCOS: [8.5.3](https://rcos.ecohubs.community/pt-br/standard/core/0.1/layer-6-evolution-adaptation#8.5.3)*
+*Cláusulas RCOS: [8.5.3](https://rcos.ecohubs.community/pt-br/standard/core/0.1/layer-6-evolution-adaptation#8.5.3), [8.6.3](https://rcos.ecohubs.community/pt-br/standard/core/0.1/layer-6-evolution-adaptation#8.6.3)*
 
 Uma mudança operacional de emergência pode ser feita por _<papel>_ apenas se todas as seguintes condições forem atendidas:
 

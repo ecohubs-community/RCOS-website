@@ -76,7 +76,7 @@ Papéis operacionais carregam autoridade delegada para agir dentro de limites ex
 
 ## Papéis Funcionais
 
-*Cláusulas RCOS: [7.1.1](https://rcos.ecohubs.community/pt-br/standard/core/0.1/layer-5-operations-coordination#7.1.1), [7.1.2](https://rcos.ecohubs.community/pt-br/standard/core/0.1/layer-5-operations-coordination#7.1.2)*
+*Cláusulas RCOS: [7.1.1](https://rcos.ecohubs.community/pt-br/standard/core/0.1/layer-5-operations-coordination#7.1.1), [7.1.2](https://rcos.ecohubs.community/pt-br/standard/core/0.1/layer-5-operations-coordination#7.1.2), [7.1.3](https://rcos.ecohubs.community/pt-br/standard/core/0.1/layer-5-operations-coordination#7.1.3)*
 
 Papéis funcionais definem o escopo de contribuição de um membro. Eles não carregam autoridade delegada de governança além dos direitos de Membro Pleno. Qualquer Membro Pleno PODE assumir um papel funcional ao declará-lo; nenhuma votação é exigida. Os papéis podem ser deixados a qualquer momento mediante notificação.
 

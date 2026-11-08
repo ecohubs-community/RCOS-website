@@ -88,7 +88,7 @@ State the right to written notice, a minimum response window, and an explicit ap
 
 ## Anti-Retaliation Protections
 
-*RCOS clauses: [6.3.2](https://rcos.ecohubs.community/standard/core/0.1/layer-4-conflict-repair-accountability#6.3.2)*
+*RCOS clauses: [6.3.2](https://rcos.ecohubs.community/standard/core/0.1/layer-4-conflict-repair-accountability#6.3.2), [6.5.4](https://rcos.ecohubs.community/standard/core/0.1/layer-4-conflict-repair-accountability#6.5.4)*
 
 <details data-kind="rationale">
 <summary>Why protect participants explicitly?</summary>
@@ -136,7 +136,7 @@ For each sanction type, define preconditions, authorized body, and appeal path. 
 
 ## Conditions for Restoring Rights
 
-*RCOS clauses: [6.4.4](https://rcos.ecohubs.community/standard/core/0.1/layer-4-conflict-repair-accountability#6.4.4)*
+*RCOS clauses: [6.4.3](https://rcos.ecohubs.community/standard/core/0.1/layer-4-conflict-repair-accountability#6.4.3), [6.4.4](https://rcos.ecohubs.community/standard/core/0.1/layer-4-conflict-repair-accountability#6.4.4)*
 
 <details data-kind="rationale">
 <summary>Why make restoration conditions explicit?</summary>
@@ -158,7 +158,7 @@ For each sanction class, state the path to restoration of rights — re-applicat
 
 ## Coordination with Layer 1
 
-*RCOS clauses: [6.4.4](https://rcos.ecohubs.community/standard/core/0.1/layer-4-conflict-repair-accountability#6.4.4)*
+*RCOS clauses: [6.4.4](https://rcos.ecohubs.community/standard/core/0.1/layer-4-conflict-repair-accountability#6.4.4), [6.5.4](https://rcos.ecohubs.community/standard/core/0.1/layer-4-conflict-repair-accountability#6.5.4)*
 
 <details data-kind="rationale">
 <summary>Why tie this to the Exit & Separation Protocol?</summary>

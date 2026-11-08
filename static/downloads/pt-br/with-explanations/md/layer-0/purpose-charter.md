@@ -17,7 +17,7 @@
 
 ## Propósito Primário
 
-*Cláusulas RCOS: [2.1.1](https://rcos.ecohubs.community/pt-br/standard/core/0.1/layer-0-identity-scope#2.1.1), [2.1.2](https://rcos.ecohubs.community/pt-br/standard/core/0.1/layer-0-identity-scope#2.1.2), [2.1.5](https://rcos.ecohubs.community/pt-br/standard/core/0.1/layer-0-identity-scope#2.1.5)*
+*Cláusulas RCOS: [2.1.1](https://rcos.ecohubs.community/pt-br/standard/core/0.1/layer-0-identity-scope#2.1.1), [2.1.2](https://rcos.ecohubs.community/pt-br/standard/core/0.1/layer-0-identity-scope#2.1.2), [2.1.3](https://rcos.ecohubs.community/pt-br/standard/core/0.1/layer-0-identity-scope#2.1.3), [2.1.5](https://rcos.ecohubs.community/pt-br/standard/core/0.1/layer-0-identity-scope#2.1.5)*
 
 <details data-kind="rationale">
 <summary>Por que um único propósito duradouro?</summary>
@@ -59,7 +59,7 @@ Liste resultados secundários concretos que a comunidade persegue. Eles não dev
 
 ## Não-Objetivos e Exclusões
 
-*Cláusulas RCOS: [2.1.5](https://rcos.ecohubs.community/pt-br/standard/core/0.1/layer-0-identity-scope#2.1.5)*
+*Cláusulas RCOS: [2.1.5](https://rcos.ecohubs.community/pt-br/standard/core/0.1/layer-0-identity-scope#2.1.5) — esta seção é recomendada, não obrigatória: nomear os não-objetivos facilita perceber quando uma ação ou decisão contradiz o propósito primário.*
 
 <details data-kind="rationale">
 <summary>Por que declarar o que a comunidade não é?</summary>
@@ -71,7 +71,7 @@ Comunidades derivam por acréscimo — uma suposição não contestada de cada v
 <details data-kind="instructions">
 <summary>Como preencher isto</summary>
 
-Nomeie as coisas que sua comunidade explicitamente NÃO é, especialmente identidades ou papéis que outros possam presumir por padrão (partido político, veículo de investimento, grupo religioso, etc.).
+Nomeie as coisas que sua comunidade explicitamente NÃO é, especialmente identidades ou papéis que outros possam presumir por padrão (partido político, veículo de investimento, grupo religioso, etc.). Recomendado, mas não exigido pelo RCOS-Core. Remova a seção inteira se você não tiver nenhum.
 
 </details>
 

@@ -104,7 +104,7 @@ Operational roles carry delegated authority to act within explicitly defined lim
 
 ## Functional Roles
 
-*RCOS clauses: [7.1.1](https://rcos.ecohubs.community/standard/core/0.1/layer-5-operations-coordination#7.1.1), [7.1.2](https://rcos.ecohubs.community/standard/core/0.1/layer-5-operations-coordination#7.1.2)*
+*RCOS clauses: [7.1.1](https://rcos.ecohubs.community/standard/core/0.1/layer-5-operations-coordination#7.1.1), [7.1.2](https://rcos.ecohubs.community/standard/core/0.1/layer-5-operations-coordination#7.1.2), [7.1.3](https://rcos.ecohubs.community/standard/core/0.1/layer-5-operations-coordination#7.1.3)*
 
 <details data-kind="rationale">
 <summary>Why separate functional from operational roles?</summary>

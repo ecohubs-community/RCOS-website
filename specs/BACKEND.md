@@ -135,6 +135,7 @@ sha256 (`standard/upstream-manifest.json` there):
 - `clauses.yaml`, `sections.yaml`, `artifacts.yaml`, `glossary.yaml`, `meta.yaml`, `specSections.yaml`, `schema.json`
 - one file per kind, all locales inline (`i18n: {en, de, …}`)
 - template sections carry `question`, `prompts` and `examples`; `specSections.yaml` carries "In short" and the reader questions. Compass keeps only `effort` and `dependsOn` in its own `annotations.yaml`.
+- every template section carries `disposition` (does a community write it?) and `optional` (is it required?). Both come from `ownership.yaml`'s `sections:`. Compass counts only authored, non-optional sections toward completeness; an optional section may own no MUST clause, and the build refuses one that does.
 
 To update Compass: regenerate here, copy the files listed in
 `manifest-standard.json` and the manifest itself into Compass `standard/`, and

@@ -86,6 +86,7 @@ sections:
         refs:
           - 6.2.5
           - 6.1.5
+          - 6.2.3
       - id: rationale
         kind: rationale
         summary: What stops a process from being killed by silence?
@@ -123,8 +124,10 @@ sections:
       - id: clauses
         kind: clauses
         refs:
+          - 6.2.3
           - 6.3.1
           - 6.3.3
+          - 6.5.3
       - id: rationale
         kind: rationale
         summary: Why name how the Facilitator is chosen or replaced?
@@ -146,6 +149,7 @@ sections:
       - id: clauses
         kind: clauses
         refs:
+          - 6.2.3
           - 6.5.3
       - id: rationale
         kind: rationale
@@ -173,6 +177,7 @@ sections:
           - 6.3.3
           - 6.3.4
           - 6.3.5
+          - 6.5.3
           - 6.6.2
       - id: rationale
         kind: rationale

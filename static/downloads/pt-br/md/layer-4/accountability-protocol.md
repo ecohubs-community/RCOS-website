@@ -46,7 +46,7 @@ Uma verificação de responsabilização é iniciada quando:
 
 ## Proteções Antirretaliação
 
-*Cláusulas RCOS: [6.3.2](https://rcos.ecohubs.community/pt-br/standard/core/0.1/layer-4-conflict-repair-accountability#6.3.2)*
+*Cláusulas RCOS: [6.3.2](https://rcos.ecohubs.community/pt-br/standard/core/0.1/layer-4-conflict-repair-accountability#6.3.2), [6.5.4](https://rcos.ecohubs.community/pt-br/standard/core/0.1/layer-4-conflict-repair-accountability#6.5.4)*
 
 _<A retaliação contra um membro por participar de qualquer parte deste processo é, ela própria, um gatilho de responsabilização.>_
 
@@ -66,7 +66,7 @@ _<A retaliação contra um membro por participar de qualquer parte deste process
 
 ## Condições para Restauração de Direitos
 
-*Cláusulas RCOS: [6.4.4](https://rcos.ecohubs.community/pt-br/standard/core/0.1/layer-4-conflict-repair-accountability#6.4.4)*
+*Cláusulas RCOS: [6.4.3](https://rcos.ecohubs.community/pt-br/standard/core/0.1/layer-4-conflict-repair-accountability#6.4.3), [6.4.4](https://rcos.ecohubs.community/pt-br/standard/core/0.1/layer-4-conflict-repair-accountability#6.4.4)*
 
 - **Após saída voluntária:** _<nova candidatura via Protocolo de Integração; sem restauração automática.>_
 - **Após saída forçada:** _<bloqueio mínimo de nova candidatura; aplica-se o processo padrão de admissão.>_
@@ -74,7 +74,7 @@ _<A retaliação contra um membro por participar de qualquer parte deste process
 
 ## Coordenação com a Camada 1
 
-*Cláusulas RCOS: [6.4.4](https://rcos.ecohubs.community/pt-br/standard/core/0.1/layer-4-conflict-repair-accountability#6.4.4)*
+*Cláusulas RCOS: [6.4.4](https://rcos.ecohubs.community/pt-br/standard/core/0.1/layer-4-conflict-repair-accountability#6.4.4), [6.5.4](https://rcos.ecohubs.community/pt-br/standard/core/0.1/layer-4-conflict-repair-accountability#6.5.4)*
 
 _<Todas as saídas forçadas e restrições temporárias de acesso seguem o Protocolo de Saída e Separação (Camada 1). Uma restrição temporária de acesso não constitui saída e não aciona o bloqueio de nova candidatura, a menos que uma saída forçada seja subsequentemente votada pelos Membros Plenos.>_
 

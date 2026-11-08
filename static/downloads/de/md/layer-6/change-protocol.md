@@ -31,7 +31,7 @@ _<Jedes Vollmitglied darf eine Änderung an jedem RCOS-Artefakt vorschlagen. Geb
 
 ## Wie Vorschläge klassifiziert werden
 
-*RCOS-Klauseln: [8.1.2](https://rcos.ecohubs.community/de/standard/core/0.1/layer-6-evolution-adaptation#8.1.2), [8.1.4](https://rcos.ecohubs.community/de/standard/core/0.1/layer-6-evolution-adaptation#8.1.4)*
+*RCOS-Klauseln: [8.1.2](https://rcos.ecohubs.community/de/standard/core/0.1/layer-6-evolution-adaptation#8.1.2), [8.1.4](https://rcos.ecohubs.community/de/standard/core/0.1/layer-6-evolution-adaptation#8.1.4), [8.6.3](https://rcos.ecohubs.community/de/standard/core/0.1/layer-6-evolution-adaptation#8.6.3)*
 
 - **Operativ:** _<Formulierungskorrekturen, Formatierung, kleinere inhaltliche Aktualisierungen; keine Abstimmung erforderlich; wird von der zuständigen Rolle im Rahmen delegierter Befugnisse umgesetzt.>_
 - **Strategisch:** _<Änderungen an Inhalten der Schichten 1–5, die Mitgliedsrechte, Prozesse oder Strukturen betreffen.>_
@@ -41,7 +41,7 @@ _<Jedes Vollmitglied darf eine Änderung an jedem RCOS-Artefakt vorschlagen. Geb
 
 ## Prüfung und Beratung
 
-*RCOS-Klauseln: [8.1.2](https://rcos.ecohubs.community/de/standard/core/0.1/layer-6-evolution-adaptation#8.1.2), [8.7.1](https://rcos.ecohubs.community/de/standard/core/0.1/layer-6-evolution-adaptation#8.7.1)*
+*RCOS-Klauseln: [8.1.2](https://rcos.ecohubs.community/de/standard/core/0.1/layer-6-evolution-adaptation#8.1.2), [8.6.3](https://rcos.ecohubs.community/de/standard/core/0.1/layer-6-evolution-adaptation#8.6.3), [8.7.1](https://rcos.ecohubs.community/de/standard/core/0.1/layer-6-evolution-adaptation#8.7.1)*
 
 - **Operativ:** _<Keine Beratung erforderlich.>_
 - **Strategisch:** _<Mindestens X Tage Beratung; Beratungsort.>_
@@ -60,7 +60,7 @@ Wenn ein Vorschlag angenommen wird:
 
 ## Ablehnung
 
-*RCOS-Klauseln: [8.2.2](https://rcos.ecohubs.community/de/standard/core/0.1/layer-6-evolution-adaptation#8.2.2), [8.2.4](https://rcos.ecohubs.community/de/standard/core/0.1/layer-6-evolution-adaptation#8.2.4)*
+*RCOS-Klauseln: [8.2.2](https://rcos.ecohubs.community/de/standard/core/0.1/layer-6-evolution-adaptation#8.2.2), [8.2.4](https://rcos.ecohubs.community/de/standard/core/0.1/layer-6-evolution-adaptation#8.2.4), [8.6.3](https://rcos.ecohubs.community/de/standard/core/0.1/layer-6-evolution-adaptation#8.6.3)*
 
 Wenn ein Vorschlag abgelehnt wird:
 
@@ -70,7 +70,7 @@ Wenn ein Vorschlag abgelehnt wird:
 
 ## Übergang und Migration
 
-*RCOS-Klauseln: [8.5.1](https://rcos.ecohubs.community/de/standard/core/0.1/layer-6-evolution-adaptation#8.5.1), [8.5.2](https://rcos.ecohubs.community/de/standard/core/0.1/layer-6-evolution-adaptation#8.5.2)*
+*RCOS-Klauseln: [8.5.1](https://rcos.ecohubs.community/de/standard/core/0.1/layer-6-evolution-adaptation#8.5.1), [8.5.2](https://rcos.ecohubs.community/de/standard/core/0.1/layer-6-evolution-adaptation#8.5.2), [8.6.3](https://rcos.ecohubs.community/de/standard/core/0.1/layer-6-evolution-adaptation#8.6.3)*
 
 Wenn eine Regeländerung bestehende Rollen, Vereinbarungen oder Aufzeichnungen betrifft:
 
@@ -81,13 +81,13 @@ Wenn eine Regeländerung bestehende Rollen, Vereinbarungen oder Aufzeichnungen b
 
 ## Rücknahme
 
-*RCOS-Klauseln: [8.1.5](https://rcos.ecohubs.community/de/standard/core/0.1/layer-6-evolution-adaptation#8.1.5), [8.5.1](https://rcos.ecohubs.community/de/standard/core/0.1/layer-6-evolution-adaptation#8.5.1)*
+*RCOS-Klauseln: [8.1.5](https://rcos.ecohubs.community/de/standard/core/0.1/layer-6-evolution-adaptation#8.1.5), [8.5.1](https://rcos.ecohubs.community/de/standard/core/0.1/layer-6-evolution-adaptation#8.5.1), [8.6.3](https://rcos.ecohubs.community/de/standard/core/0.1/layer-6-evolution-adaptation#8.6.3)*
 
 _<Jede angenommene Entscheidung kann über denselben Prozess wie die ursprüngliche rückgängig gemacht werden. Jedes Vollmitglied kann eine erneute Abstimmung auslösen, indem es einen schriftlichen begründeten Einwand einreicht, der in der ursprünglichen Beratung nicht berücksichtigt wurde. Die Rücknahme verwendet denselben Entscheidungstyp wie das Original.>_
 
 ## Notfalländerungen
 
-*RCOS-Klauseln: [8.5.3](https://rcos.ecohubs.community/de/standard/core/0.1/layer-6-evolution-adaptation#8.5.3)*
+*RCOS-Klauseln: [8.5.3](https://rcos.ecohubs.community/de/standard/core/0.1/layer-6-evolution-adaptation#8.5.3), [8.6.3](https://rcos.ecohubs.community/de/standard/core/0.1/layer-6-evolution-adaptation#8.6.3)*
 
 Eine operative Notfalländerung darf von _<Rolle>_ nur vorgenommen werden, wenn alle folgenden Bedingungen erfüllt sind:
 

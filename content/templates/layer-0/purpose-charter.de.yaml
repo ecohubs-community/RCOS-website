@@ -1,5 +1,5 @@
 lang: de
-sourceHash: 'd5036468'
+sourceHash: '626bd90f'
 title: Zweckcharta
 preamble: |-
   - **Schicht:** 0 — Identität & Geltungsbereich
@@ -38,12 +38,14 @@ sections:
   non-goals-and-exclusions:
     title: Nicht-Ziele und Ausschlüsse
     blocks:
+      clauses:
+        note: ' — dieser Abschnitt ist empfohlen, nicht vorgeschrieben: Benannte Nicht-Ziele machen leichter sichtbar, wenn eine Handlung oder Entscheidung dem primären Zweck widerspricht.'
       rationale:
         summary: Warum festhalten, was die Gemeinschaft nicht ist?
         body: Gemeinschaften driften durch Anhäufung ab — eine unwidersprochen gebliebene Annahme nach der anderen. Zu benennen, was die Gemeinschaft ausdrücklich *nicht* ist, macht Grenzüberschreitungen frühzeitig sichtbar und gibt allen eine klare Grundlage, Einspruch zu erheben, bevor eine Aktivität zur Normalität wird. Schweigen wird hier als Zustimmung gelesen.
       instructions:
         summary: Wie ihr das ausfüllt
-        body: Benennt die Dinge, die eure Gemeinschaft ausdrücklich NICHT ist, insbesondere Identitäten oder Rollen, die andere möglicherweise standardmäßig annehmen könnten (politische Partei, Investmentvehikel, religiöse Gruppe usw.).
+        body: 'Benennt die Dinge, die eure Gemeinschaft ausdrücklich NICHT ist, insbesondere Identitäten oder Rollen, die andere möglicherweise standardmäßig annehmen könnten (politische Partei, Investmentvehikel, religiöse Gruppe usw.). Empfohlen, von RCOS-Core aber nicht vorgeschrieben. Entfernt diesen Abschnitt vollständig, wenn ihr keine habt.'
       m1:
         md: |-
           1. _<Nicht-Ziel 1.>_

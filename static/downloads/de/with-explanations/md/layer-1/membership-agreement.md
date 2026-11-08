@@ -2,7 +2,7 @@
 
 # Mitgliedschaftsvereinbarung
 
-- **Generiert:** 2026-11-02
+- **Generiert:** 2026-11-06
 - **Quelle (aktuelle Version):** [https://rcos.ecohubs.community/de/articles/rcos-templates/layer-1/membership-agreement](https://rcos.ecohubs.community/de/articles/rcos-templates/layer-1/membership-agreement)
 - **Alle RCOS-Vorlagen:** [https://rcos.ecohubs.community/de/articles/rcos-templates](https://rcos.ecohubs.community/de/articles/rcos-templates)
 
@@ -64,7 +64,7 @@ Liste konkrete Rechte auf, die jedem Mitgliedschaftsstatus gewährt werden. Verw
 
 ## Pflichten der Mitglieder
 
-*RCOS-Klauseln: [3.4.2](https://rcos.ecohubs.community/de/standard/core/0.1/layer-1-membership-system#3.4.2), [3.4.4](https://rcos.ecohubs.community/de/standard/core/0.1/layer-1-membership-system#3.4.4), [3.4.5](https://rcos.ecohubs.community/de/standard/core/0.1/layer-1-membership-system#3.4.5)*
+*RCOS-Klauseln: [3.4.2](https://rcos.ecohubs.community/de/standard/core/0.1/layer-1-membership-system#3.4.2), [3.4.3](https://rcos.ecohubs.community/de/standard/core/0.1/layer-1-membership-system#3.4.3), [3.4.4](https://rcos.ecohubs.community/de/standard/core/0.1/layer-1-membership-system#3.4.4), [3.4.5](https://rcos.ecohubs.community/de/standard/core/0.1/layer-1-membership-system#3.4.5)*
 
 <details data-kind="rationale">
 <summary>Warum Pflichten eng begrenzen?</summary>

@@ -17,7 +17,7 @@
 
 ## Klassifikation: Gemeingut vs. Privateigentum
 
-*RCOS-Klauseln: [5.1.1](https://rcos.ecohubs.community/de/standard/core/0.1/layer-3-economic-resource-system#5.1.1), [5.1.2](https://rcos.ecohubs.community/de/standard/core/0.1/layer-3-economic-resource-system#5.1.2), [5.1.3](https://rcos.ecohubs.community/de/standard/core/0.1/layer-3-economic-resource-system#5.1.3), [5.1.4](https://rcos.ecohubs.community/de/standard/core/0.1/layer-3-economic-resource-system#5.1.4), [5.1.5](https://rcos.ecohubs.community/de/standard/core/0.1/layer-3-economic-resource-system#5.1.5), [5.6.2](https://rcos.ecohubs.community/de/standard/core/0.1/layer-3-economic-resource-system#5.6.2)*
+*RCOS-Klauseln: [5.1.1](https://rcos.ecohubs.community/de/standard/core/0.1/layer-3-economic-resource-system#5.1.1), [5.1.2](https://rcos.ecohubs.community/de/standard/core/0.1/layer-3-economic-resource-system#5.1.2), [5.1.3](https://rcos.ecohubs.community/de/standard/core/0.1/layer-3-economic-resource-system#5.1.3), [5.1.4](https://rcos.ecohubs.community/de/standard/core/0.1/layer-3-economic-resource-system#5.1.4), [5.1.5](https://rcos.ecohubs.community/de/standard/core/0.1/layer-3-economic-resource-system#5.1.5), [5.5.3](https://rcos.ecohubs.community/de/standard/core/0.1/layer-3-economic-resource-system#5.5.3), [5.6.2](https://rcos.ecohubs.community/de/standard/core/0.1/layer-3-economic-resource-system#5.6.2)*
 
 <details data-kind="rationale">
 <summary>Warum jede Ressource klassifizieren?</summary>
@@ -45,7 +45,7 @@ Lege für jede Ressource der Gemeinschaft die Klassifikation fest (Gemeingut / P
 
 ## Anerkannte Beitragskategorien
 
-*RCOS-Klauseln: [5.2.1](https://rcos.ecohubs.community/de/standard/core/0.1/layer-3-economic-resource-system#5.2.1), [5.2.3](https://rcos.ecohubs.community/de/standard/core/0.1/layer-3-economic-resource-system#5.2.3), [5.6.3](https://rcos.ecohubs.community/de/standard/core/0.1/layer-3-economic-resource-system#5.6.3)*
+*RCOS-Klauseln: [5.2.1](https://rcos.ecohubs.community/de/standard/core/0.1/layer-3-economic-resource-system#5.2.1), [5.2.3](https://rcos.ecohubs.community/de/standard/core/0.1/layer-3-economic-resource-system#5.2.3), [5.5.3](https://rcos.ecohubs.community/de/standard/core/0.1/layer-3-economic-resource-system#5.5.3), [5.6.3](https://rcos.ecohubs.community/de/standard/core/0.1/layer-3-economic-resource-system#5.6.3)*
 
 <details data-kind="rationale">
 <summary>Warum benennen, welche Arten von Arbeit zählen?</summary>
@@ -73,7 +73,7 @@ Liste die Beitragskategorien auf, die deine Gemeinschaft anerkennt. Fürsorge, F
 
 ## Mechanismus zur Beitragsanerkennung
 
-*RCOS-Klauseln: [5.2.2](https://rcos.ecohubs.community/de/standard/core/0.1/layer-3-economic-resource-system#5.2.2), [5.2.5](https://rcos.ecohubs.community/de/standard/core/0.1/layer-3-economic-resource-system#5.2.5)*
+*RCOS-Klauseln: [5.2.2](https://rcos.ecohubs.community/de/standard/core/0.1/layer-3-economic-resource-system#5.2.2), [5.2.5](https://rcos.ecohubs.community/de/standard/core/0.1/layer-3-economic-resource-system#5.2.5), [5.5.3](https://rcos.ecohubs.community/de/standard/core/0.1/layer-3-economic-resource-system#5.5.3)*
 
 <details data-kind="rationale">
 <summary>Warum genau festlegen, wie Anerkennung funktioniert?</summary>
@@ -97,7 +97,7 @@ Lege fest, was zählt, wie Anerkennungen dokumentiert werden, wer sie bestätigt
 
 ## Interne Einheiten
 
-*RCOS-Klauseln: [5.2.4](https://rcos.ecohubs.community/de/standard/core/0.1/layer-3-economic-resource-system#5.2.4), [5.2.5](https://rcos.ecohubs.community/de/standard/core/0.1/layer-3-economic-resource-system#5.2.5)*
+*RCOS-Klauseln: [5.2.4](https://rcos.ecohubs.community/de/standard/core/0.1/layer-3-economic-resource-system#5.2.4), [5.2.5](https://rcos.ecohubs.community/de/standard/core/0.1/layer-3-economic-resource-system#5.2.5), [5.5.3](https://rcos.ecohubs.community/de/standard/core/0.1/layer-3-economic-resource-system#5.5.3)*
 
 <details data-kind="rationale">
 <summary>Warum interne Einheiten so genau definieren?</summary>
@@ -127,7 +127,7 @@ Wenn deine Gemeinschaft interne Einheiten verwendet (XP, ECO, Credits usw.), def
 
 ## Akkumulationsbeschränkungen
 
-*RCOS-Klauseln: [5.4.1](https://rcos.ecohubs.community/de/standard/core/0.1/layer-3-economic-resource-system#5.4.1), [5.4.2](https://rcos.ecohubs.community/de/standard/core/0.1/layer-3-economic-resource-system#5.4.2), [5.4.3](https://rcos.ecohubs.community/de/standard/core/0.1/layer-3-economic-resource-system#5.4.3), [5.4.4](https://rcos.ecohubs.community/de/standard/core/0.1/layer-3-economic-resource-system#5.4.4), [5.6.4](https://rcos.ecohubs.community/de/standard/core/0.1/layer-3-economic-resource-system#5.6.4)*
+*RCOS-Klauseln: [5.4.1](https://rcos.ecohubs.community/de/standard/core/0.1/layer-3-economic-resource-system#5.4.1), [5.4.2](https://rcos.ecohubs.community/de/standard/core/0.1/layer-3-economic-resource-system#5.4.2), [5.4.3](https://rcos.ecohubs.community/de/standard/core/0.1/layer-3-economic-resource-system#5.4.3), [5.4.4](https://rcos.ecohubs.community/de/standard/core/0.1/layer-3-economic-resource-system#5.4.4), [5.5.3](https://rcos.ecohubs.community/de/standard/core/0.1/layer-3-economic-resource-system#5.5.3), [5.6.4](https://rcos.ecohubs.community/de/standard/core/0.1/layer-3-economic-resource-system#5.6.4)*
 
 <details data-kind="rationale">
 <summary>Warum Akkumulation überhaupt beschränken?</summary>
@@ -149,7 +149,7 @@ Lege die aktuelle Akkumulationsregel fest (Obergrenze, Verfall, keine) und die R
 
 ## Externe Einkommensschnittstellen
 
-*RCOS-Klauseln: [5.3.2](https://rcos.ecohubs.community/de/standard/core/0.1/layer-3-economic-resource-system#5.3.2)*
+*RCOS-Klauseln: [5.3.2](https://rcos.ecohubs.community/de/standard/core/0.1/layer-3-economic-resource-system#5.3.2), [5.5.3](https://rcos.ecohubs.community/de/standard/core/0.1/layer-3-economic-resource-system#5.5.3)*
 
 <details data-kind="rationale">
 <summary>Warum vor dem Geldeingang eine Genehmigung verlangen?</summary>

@@ -65,7 +65,7 @@ List the ordered steps every new member must complete to move from applicant to 
 
 ## Initial Membership State
 
-*RCOS clauses: [3.1.2](https://rcos.ecohubs.community/standard/core/0.1/layer-1-membership-system#3.1.2), [3.1.4](https://rcos.ecohubs.community/standard/core/0.1/layer-1-membership-system#3.1.4)*
+*RCOS clauses: [3.1.2](https://rcos.ecohubs.community/standard/core/0.1/layer-1-membership-system#3.1.2), [3.1.4](https://rcos.ecohubs.community/standard/core/0.1/layer-1-membership-system#3.1.4), [3.2.2](https://rcos.ecohubs.community/standard/core/0.1/layer-1-membership-system#3.2.2)*
 
 <details data-kind="rationale">
 <summary>Why assign a state at the end of onboarding?</summary>

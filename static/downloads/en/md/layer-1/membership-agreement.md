@@ -2,7 +2,7 @@
 
 # Membership Agreement
 
-- **Generated:** 2026-11-02
+- **Generated:** 2026-11-06
 - **Source (latest version):** [https://rcos.ecohubs.community/articles/rcos-templates/layer-1/membership-agreement](https://rcos.ecohubs.community/articles/rcos-templates/layer-1/membership-agreement)
 - **All RCOS templates:** [https://rcos.ecohubs.community/articles/rcos-templates](https://rcos.ecohubs.community/articles/rcos-templates)
 
@@ -36,7 +36,7 @@ _<Membership state assigned at signing — e.g. Trial Member on application appr
 
 ## Member Obligations
 
-*RCOS clauses: [3.4.2](https://rcos.ecohubs.community/standard/core/0.1/layer-1-membership-system#3.4.2), [3.4.4](https://rcos.ecohubs.community/standard/core/0.1/layer-1-membership-system#3.4.4), [3.4.5](https://rcos.ecohubs.community/standard/core/0.1/layer-1-membership-system#3.4.5)*
+*RCOS clauses: [3.4.2](https://rcos.ecohubs.community/standard/core/0.1/layer-1-membership-system#3.4.2), [3.4.3](https://rcos.ecohubs.community/standard/core/0.1/layer-1-membership-system#3.4.3), [3.4.4](https://rcos.ecohubs.community/standard/core/0.1/layer-1-membership-system#3.4.4), [3.4.5](https://rcos.ecohubs.community/standard/core/0.1/layer-1-membership-system#3.4.5)*
 
 1. _<Obligation 1, e.g. adhere to all Layer 0 identity constraints and invariants at all times.>_
 2. _<Obligation 2, e.g. contribute to the community in at least one recognized category per defined period.>_
